@@ -1,4 +1,3 @@
-
 (function($){
       $.fn.CodehimPreview = function(options) {
       var setting = $.extend({
@@ -70,7 +69,7 @@ var mobile = {
 };
  
 var codehim_item = {
-	'src' : "https://github.com/CodeHimBlog/"+item,
+   'src' : "https://codehimblog.github.io/"+item+"/",
 
 };
 
@@ -203,4 +202,3 @@ $("#codehim-logo").hide();
       };
     
     })(jQuery);
-
