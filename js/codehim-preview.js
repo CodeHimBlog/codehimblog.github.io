@@ -32,6 +32,25 @@ params = getParams();
 item = unescape(params["item"]);
 file = unescape(params["file"]);
 
+var f_y = item.split("/");
+
+var $file = "https://github.com/CodeHimBlog/"+f_y[0]+"/archive/master.zip";
+
+var t_y = (f_y[1]).toString().split("-");
+
+var item_title = [];
+
+
+  for (var i=0; i <= t_y.length; i++){
+
+    item_title.push(t_y[i]); 
+
+}
+
+var $t_y = item_title.toString().replace(/\,/g, " ");
+
+var $title = $t_y.charAt(0).toUpperCase() + $t_y.slice(1);
+
 
 
 var userDevice = {
@@ -77,8 +96,14 @@ var btnControl = $(".btn-control");
 var active = "active";
 
 
+document.title = $title + " demo - Codehim";
+              
+//Download File 
 
-document.title = item + " Example & Demo - Codehim";
+$(".download").on("click", function(){
+   window.location.href = $file;
+
+});
 
 
 //apply the screen size according to the user device 
