@@ -69,7 +69,7 @@ var mobile = {
 };
  
 var codehim_item = {
-   'src' : "https://codehimblog.github.io/"+item+"/",
+   'src' : "https://codehimblog.github.io/"+item,
 
 };
 
