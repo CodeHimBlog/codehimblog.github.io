@@ -11,6 +11,73 @@
 
 <title>CodeHimBlog :: Codes for Beginners </title>
 
+    
+    <style>
+*{margin: 0; padding: 0;}
+
+
+.codehim-projects-feed{
+  padding: 10px 0;
+ 
+  list-style: none;
+
+}
+
+
+.codehim-projects-feed li {
+  border-bottom: 1px dotted #ccc;
+  padding: 10px;
+  clear: both;
+  
+}
+.codehim-projects-feed li:hover {
+  background: #eee;
+
+}
+
+
+.codehim-projects-feed .item-preview  {
+  width: 120px;
+  height: 100px;
+  float: left;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-right: 8px;
+  border: 0;
+
+}
+
+
+.codehim-projects-feed .item-preview img  {
+  width: 100%;
+  object-fit: cover;
+  padding-right: 5px;
+  
+}
+.item-title{
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #444;
+  
+
+}
+ .item-title a {
+   text-decoration: none;
+   color: #444;
+ 
+ }
+
+ .item-des {
+   color: #717171;
+   font-size: 12px;
+ 
+ }
+  
+</style>
+    
+    
+    
     <script>
         $(document).ready(function(){
           $(".more-project").load("more-projects.html");
