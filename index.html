@@ -122,6 +122,238 @@
 <div class="dim-overlay"></div>
 
 
+<style>
+
+
+
+
+.jp-header {
+   background: transparent;
+   width: 100%;
+   height: 60px;
+   position: fixed;
+   top: 0;
+   
+   
+
+}
+.shadow{
+  background: #fff;
+box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  
+
+}
+
+.jp-logo {
+  position: absolute;
+  left: 60px;
+  top: 10px;
+  z-index: 99;
+}
+.jp-logo img {
+  width: 160px;
+  height: auto;
+  
+
+}
+.shadow,
+.jp-menu-trigger, 
+.jp-search.open,
+.jp-nav.open,
+.jp-nav,
+.jp-search,
+.jp-header {
+   transition: .4s ease-in-out;
+   -webkit-transition: .4s ease-in-out;
+   -moz-transition: .4s ease-in-out;
+
+}
+
+
+.jp-trigger{
+  
+  position: absolute;
+  font-family: FontAwesome;
+  top: 12px;
+  font-size: 20px;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  color: #666666;
+  transition: .4s;
+  z-index: 99;
+
+} 
+
+.menu-btn {
+   left: 5px;
+}
+
+.search-btn {
+   right: 5px;
+}
+
+.menu-btn:before{
+  content: "\f0c9";
+
+}
+.search-btn:before{
+   content: "\f002";
+
+}
+
+.jp-trigger:hover {
+   transition: .4s;
+   background: #e1e1e1;
+
+}
+
+
+.jp-search{
+   width: 100%;
+   background: #fff;
+   display: block;
+   z-index: 100;
+   position: absolute;
+   right: -100%;
+   
+   
+}
+.jp-search.open{
+   right: 0;
+
+}
+.jp-nav {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  height: 100vh;
+  width: 270px;
+  background: #fff;
+  left: -270px;
+  z-index: 101;
+}
+.jp-nav.open {
+  left: 0;
+
+}
+
+
+
+
+.jp-main {
+   margin-top: 60px;
+
+}
+/* Dim background effect */
+.dim-overlay{
+   display: none;
+}
+
+.dim-overlay:before {
+	content: "";
+	background-color: rgba(0, 0, 10, .4);
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	z-index: 1;
+}
+
+
+
+
+@media only screen and (min-width: 520px){
+.jp-search{
+   width: 360px;
+   right: 5px;
+   display: inline-block;
+   } 
+.search-btn {
+   display: none;
+
+}
+
+
+}
+
+
+
+
+</style>
+
+<script>
+$(document).ready(function(){
+
+   var jpHeader = $(".jp-header");
+   var searchBtn = $(".search-btn");
+   var menuBtn = $(".menu-btn");
+   var jpNav = $(".jp-nav");
+   var jpSearch = $(".jp-search");
+   var dimmy = $(".dim-overlay");
+
+$(window).on('scroll', function(){
+
+if ($(this).scrollTop() > 20 && !$(jpNav).hasClass("open")){
+
+   $(jpHeader).addClass("shadow");
+
+   }
+   else{
+   
+   $(jpHeader).removeClass("shadow");
+
+     
+   }
+   
+   $(jpSearch).removeClass("open");
+   
+
+});
+
+$(searchBtn).click(function(){
+  
+   $(jpSearch).addClass("open");
+
+});
+
+$(menuBtn).click(function(){
+
+   $(jpNav).addClass("open");
+   $(dimmy).fadeIn();
+
+});
+
+//close menu if user click outside of it
+   $(window).click(function(e) {
+    if ($(e.target).closest(menuBtn).length){
+     return;}
+    if ($(e.target).closest(jpNav).length){
+     return;}
+    
+ $(jpNav).removeClass("open");
+    if (!$(jpNav).hasClass("open")) {
+     $(dimmy).fadeOut();
+        }
+      });
+
+
+
+
+
+
+}); //jQuery 
+
+</script>
     
   <!-- End menu section -->
 
