@@ -198,6 +198,20 @@ Author URI : http://www.markups.io/
   border-color:#e41b17;
 }
 
+		  .footer-menu{
+		  list-style-type: none;
+		  }
+		  .footer-menu li {
+			display: inline;
+			 margin: 5px;
+		  }
+		  .footer-menu li a{
+			color: #8c8c8c;
+		  }
+		   .footer-menu li a:hover{
+		 text-decoration: underline;
+			   color: #f2f2f2;
+		  }
 /*=======================================
 Template Design By MarkUps.
 Author URI : http://www.markups.io/
