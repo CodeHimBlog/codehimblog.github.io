@@ -239,16 +239,21 @@ Our plugins are quite beginners friendly because we provide beginners friendly p
  	  
 	  
 	
-	  
+	  <h2> Recent Work</h2>  
 
   <!-- Start Portfolio section -->
-  <section id="latest-projects" class="recent-projects"> 
-	  <h2> Recent jQuery Plugin Projects</h2>
-              
+  <section class="recent-projects"> 
+	
   </section>
   <!-- End Portfolio section -->
 
- 
+ <script>
+	 $(function){
+	$(".recent-projects").load("recent.html");	 
+		 
+	 });
+	 
+	  </script>
  
 
 
@@ -284,7 +289,7 @@ Our plugins are quite beginners friendly because we provide beginners friendly p
 	  
 	    <p class="jp-copyright"> Copyright 2019 &copy; Query Projects - All Rights Reserved </p>
     </div>
-  </footer>
+	  </footer>
   <!-- End Footer -->
 	  
   <!-- jQuery library -->
