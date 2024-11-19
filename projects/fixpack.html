@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #343a40;
+      padding-top: 56px;
+    }
+	  a{
+		  text-decoration: none;
+	  }
+	  .site-main, .sidebar{
+		  background: #fff;
+		  
+	  }
+	  .sidebar{
+		  margin-right: 12px;
+		  padding: 12px;
+	  }
+	  
+    .package-image {
+      max-width: 120px;
+      max-height: 120px;
+      object-fit: contain;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      gap: 1rem;
+    }
+    .stat-box {
+      text-align: center;
+      flex: 1;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .stat-box i {
+      font-size: 1.4rem;
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    .breadcrumbs {
+      margin-bottom: 1.5rem;
+      background: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    .metadata-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+    .metadata-item i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-house-door me-1"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-box me-1"></i>Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-book me-1"></i>Docs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-envelope me-1"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumbs -->
+  <div class="container mt-4 breadcrumbs">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Projects</a></li>
+        <li class="breadcrumb-item active" aria-current="page">fixpack</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-md-4">
+		  <div class="sidebar">
+        <div class="sidebar-item">
+          <h5>Owner</h5>
+          <div class="d-flex align-items-center">
+            <img src="https://avatars.githubusercontent.com/u/67925?v=4" alt="Owner Avatar" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+            <a href="https://github.com/HenrikJoreteg" target="_blank" id="ownerName">HenrikJoreteg</a>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <h5>Metadata</h5>
+          <div class="metadata-item">
+            <i class="bi bi-calendar"></i>
+            <strong>Created At:</strong> <span id="createdAt">February 1, 2014</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-pencil-square"></i>
+            <strong>Last Updated:</strong> <span id="updatedAt">June 10, 2024</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-code-slash"></i>
+            <strong>Language:</strong> <span id="language">JavaScript</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <strong>Size:</strong> <span id="repoSize">0.1 MB</span>
+          </div>
+        </div>
+			  	  </div>
+      </aside>
+
+      <!-- Main Details -->
+      <main class="col-md-8 site-main">
+        <!-- Project Name & Description -->
+        <h1 id="packageName">fixpack</h1>
+        <p id="packageDescription" class="text-muted">A package.json file scrubber for the truly insane.</p>
+
+        <!-- Statistics -->
+        <div class="stat-row">
+          <div class="stat-box">
+            <i class="bi bi-star-fill text-warning"></i>
+            <span id="stargazersCount">461</span>
+            <p>Stars</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-arrow-repeat text-secondary"></i>
+            <span id="forksCount">29</span>
+            <p>Forks</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-exclamation-circle text-danger"></i>
+            <span id="openIssuesCount">18</span>
+            <p>Open Issues</p>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mb-4">
+          <a href="#" target="_blank" class="btn btn-success me-2" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+          <a href="https://github.com/HenrikJoreteg/fixpack/archive/refs/heads/main.zip" class="btn btn-primary me-2" id="downloadBtn">
+            <i class="bi bi-cloud-download me-2"></i>Download ZIP
+          </a>
+          <a href="" target="_blank" class="btn btn-outline-secondary" id="githubBtn">
+            <i class="bi bi-github me-2"></i>Fork on GitHub
+          </a>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+              <i class="bi bi-file-earmark-text"></i> Readme
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="dependencies-tab" data-bs-toggle="tab" data-bs-target="#dependencies" type="button" role="tab" aria-controls="dependencies" aria-selected="false">
+              <i class="bi bi-diagram-2-fill me-2"></i> Dependencies
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+              <i class="bi bi-journal-text me-2"></i> Changelog
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contributors-tab" data-bs-toggle="tab" data-bs-target="#contributors" type="button" role="tab" aria-controls="contributors" aria-selected="false">
+              <i class="bi bi-people me-2"></i> Contributors
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1 id="fixpack">fixpack</h1>
+<p>A package.json file scrubber for the truly insane.</p>
+<p>It will re-write your package.json file as follows:</p>
+<ul>
+<li>name first</li>
+<li>description second</li>
+<li>version third</li>
+<li>author fourth</li>
+<li>all other keys in alphabetical order</li>
+<li>dependencies and devDependencies sorted alphabetically</li>
+<li>newline at the end of the file</li>
+</ul>
+<p>It will warn you if any of these are missing:</p>
+<ul>
+<li>description</li>
+<li>author</li>
+<li>repository</li>
+<li>keywords</li>
+<li>main</li>
+<li>bugs</li>
+<li>homepage</li>
+<li>license</li>
+</ul>
+<p>Maintain current indentation, End of Line, and Final New Line, or set them to your configured value
+(see <a href="#configuration">configuration</a>).</p>
+<p>Oh, and it will tolerate improperly quoted and comma'd JSON thanks to <a href="https://npmjs.org/package/alce">ALCE</a>.</p>
+<p>Oh, and can do same if you pass it a <code>bower.json</code> file or whatnot.</p>
+<p>Oh, and it will exit with <code>0</code> when already fixed or with <code>1</code> otherwise (so combined with <code>--dryRun</code> flag it can be used as CI check)</p>
+<h2 id="usage">Usage</h2>
+<ol>
+<li>install it globally</li>
+</ol>
+<pre><code>npm i -g fixpack
+</code></pre>
+<ol start="2">
+<li>run it in the same directory as your package.json, that's it.</li>
+</ol>
+<pre><code>fixpack
+</code></pre>
+<h2 id="whatyoumightdoifyoureclever">What you might do if you're clever</h2>
+<pre><code>npm i cool_package --save &amp;&amp; fixpack
+</code></pre>
+<h2 id="configuration">Configuration</h2>
+<p>It's configurable. You can create a <code>.fixpackrc</code> file in your project or anywhere up the tree to your <code>$HOME</code> directory. Or overwrite options via CLI arguments.</p>
+<p>Uses the <a href="https://www.npmjs.com/package/rc">rc</a> module to do this. So you can pass all these as CLI args too.</p>
+<p>The available options and their defaults shown below:</p>
+<pre class="prettyprint linenums lang-js"><code>{
+    // will put these first in this order if present
+    sortToTop: [
+        'name',
+        'description',
+        'version',
+        'author'
+    ],
+    // will error if these not present
+    required: [
+        'name',
+        'version'
+    ],
+    // will warn if these not present
+    warn: [
+        'description',
+        'author',
+        'repository',
+        'keywords',
+        'main',
+        'bugs',
+        'homepage',
+        'license'
+    ],
+    // if `private: true` in package.json will use the next two lists instead
+    requiredOnPrivate: [],
+    warnOnPrivate: ['name', 'version', 'description', 'main'],
+    // sub items to sort by default
+    sortedSubItems: [
+        'dependencies',
+        'devDependencies',
+        'jshintConfig',
+        'scripts',
+        'keywords'
+    ],
+    // if you set quiet to true it won't do output anything to the console
+    quiet: false,
+    // files to scrub
+    files: ['package.json'],
+    // Will not fix file, only inform if is fixed
+    dryRun: false,
+    // Will set all deps to '*'
+    // this may be useful because then you can
+    // run npm update --save &amp;&amp; npm update --save-dev
+    // to install latest stable releases of everything.
+    wipe: false,
+    // Sets the expected indentation. If number, is number of spaces,
+    // otherwise can be string to use as indentation (like a tab).
+    // if undefined/null (default), indentation is detected from file and preserved.
+    indent: null,
+    // Sets line endings to be either "LF" or "CRLF"
+    // if undefined/null (default), newLine is detected from file and preserved.
+    newLine: null,
+    // Boolean if there should be an empty line at the end of the file.
+    // if undefined/null (default), finalNewLine is detected from file and preserved.
+    finalNewLine: null
+}
+</code></pre>
+<h2 id="changelog">Changelog</h2>
+<ul>
+<li>3.0.6 - Fix <code>false</code> removal issue.</li>
+<li>3.0.5 - Fix coloration of warnings</li>
+<li>3.0.4 - OS specific EOL</li>
+<li>3.0.3 - updates to remove NSP warnings in deps.</li>
+<li>2.3.0 - add <code>wipe</code> option that sets all dep versions to <code>*</code> for easier bulk updating.</li>
+<li>2.2.0 - add <code>optionalDependencies</code> to auto sorted</li>
+<li>2.1.0 - switched to <a href="https://github.com/feross/standard">standard</a> style. Add <code>peerDependencies</code> to default sorted keys.</li>
+<li>2.0.1 - don't error on missing bower file by default.</li>
+<li>2.0.0 - configurable via <code>.fixpackrc</code> file using rc module.</li>
+<li>x.x.x - unknown miscellaneous madness and poor version tracking</li>
+<li>0.0.2 <a href="https://github.com/HenrikJoreteg/fixpack/compare/v0.0.1…v0.0.2">diff</a> - EOF newline</li>
+<li>0.0.1 - initial release</li>
+</ul>
+<h2 id="credits">Credits</h2>
+<p>This embarrassing display of insanity,
+type-A-ness, and OCD brought to you by <a href="http://twitter.com/henrikjoreteg">@HenrikJoreteg</a>.</p>
+<h2 id="license">License</h2>
+<p>MIT</p>
+          </div>
+          <div class="tab-pane fade" id="dependencies" role="tabpanel" aria-labelledby="dependencies-tab">
+            <h5>Dependencies</h5>
+            <ul id="dependenciesList">
+              <li>alce (1.2.0)</li><li>chalk (^3.0.0)</li><li>detect-indent (^6.0.0)</li><li>detect-newline (^3.1.0)</li><li>extend-object (^1.0.0)</li><li>rc (^1.2.8)</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <h5>Changelog</h5>
+            <ul id="changelogList">
+              <p>No changelog available.</p>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="contributors" role="tabpanel" aria-labelledby="contributors-tab">
+            <h5>Contributors</h5>
+            <ul id="contributorsList">
+              <li>HenrikJoreteg (44 contributions)</li><li>notslang (5 contributions)</li><li>okunishinishi (4 contributions)</li><li>oBusk (3 contributions)</li><li>pke (2 contributions)</li><li>friederbluemle (1 contributions)</li><li>kubawerlos (1 contributions)</li><li>kemitchell (1 contributions)</li><li>lukekarrys (1 contributions)</li><li>nizaroni (1 contributions)</li><li>robertrossmann (1 contributions)</li><li>dependabot[bot] (1 contributions)</li><li>numb86 (1 contributions)</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">© 2024 Package Hub Pro - Powered by Bootstrap</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+</html>
