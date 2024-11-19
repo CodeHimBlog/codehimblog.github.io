@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #343a40;
+      padding-top: 56px;
+    }
+	  a{
+		  text-decoration: none;
+	  }
+	  .site-main, .sidebar{
+		  background: #fff;
+		  
+	  }
+	  .sidebar{
+		  margin-right: 12px;
+		  padding: 12px;
+	  }
+	  
+    .package-image {
+      max-width: 120px;
+      max-height: 120px;
+      object-fit: contain;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      gap: 1rem;
+    }
+    .stat-box {
+      text-align: center;
+      flex: 1;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .stat-box i {
+      font-size: 1.4rem;
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    .breadcrumbs {
+      margin-bottom: 1.5rem;
+      background: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    .metadata-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+    .metadata-item i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-house-door me-1"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-box me-1"></i>Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-book me-1"></i>Docs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-envelope me-1"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumbs -->
+  <div class="container mt-4 breadcrumbs">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Projects</a></li>
+        <li class="breadcrumb-item active" aria-current="page">napa</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-md-4">
+		  <div class="sidebar">
+        <div class="sidebar-item">
+          <h5>Owner</h5>
+          <div class="d-flex align-items-center">
+            <img src="https://avatars.githubusercontent.com/u/99604?v=4" alt="Owner Avatar" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+            <a href="https://github.com/shama" target="_blank" id="ownerName">shama</a>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <h5>Metadata</h5>
+          <div class="metadata-item">
+            <i class="bi bi-calendar"></i>
+            <strong>Created At:</strong> <span id="createdAt">August 15, 2013</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-pencil-square"></i>
+            <strong>Last Updated:</strong> <span id="updatedAt">August 27, 2024</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-code-slash"></i>
+            <strong>Language:</strong> <span id="language">JavaScript</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <strong>Size:</strong> <span id="repoSize">0.1 MB</span>
+          </div>
+        </div>
+			  	  </div>
+      </aside>
+
+      <!-- Main Details -->
+      <main class="col-md-8 site-main">
+        <!-- Project Name & Description -->
+        <h1 id="packageName">napa</h1>
+        <p id="packageDescription" class="text-muted">:wine_glass: A helper for installing stuff without a package.json with npm.</p>
+
+        <!-- Statistics -->
+        <div class="stat-row">
+          <div class="stat-box">
+            <i class="bi bi-star-fill text-warning"></i>
+            <span id="stargazersCount">413</span>
+            <p>Stars</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-arrow-repeat text-secondary"></i>
+            <span id="forksCount">34</span>
+            <p>Forks</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-exclamation-circle text-danger"></i>
+            <span id="openIssuesCount">20</span>
+            <p>Open Issues</p>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mb-4">
+          <a href="#" target="_blank" class="btn btn-success me-2" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+          <a href="/archive/refs/heads/main.zip" class="btn btn-primary me-2" id="downloadBtn">
+            <i class="bi bi-cloud-download me-2"></i>Download ZIP
+          </a>
+          <a href="" target="_blank" class="btn btn-outline-secondary" id="githubBtn">
+            <i class="bi bi-github me-2"></i>Fork on GitHub
+          </a>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+              <i class="bi bi-file-earmark-text"></i> Readme
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="dependencies-tab" data-bs-toggle="tab" data-bs-target="#dependencies" type="button" role="tab" aria-controls="dependencies" aria-selected="false">
+              <i class="bi bi-diagram-2-fill me-2"></i> Dependencies
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+              <i class="bi bi-journal-text me-2"></i> Changelog
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contributors-tab" data-bs-toggle="tab" data-bs-target="#contributors" type="button" role="tab" aria-controls="contributors" aria-selected="false">
+              <i class="bi bi-people me-2"></i> Contributors
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1 id="napabuildstatushttpimgshieldsiotravisshamanapasvglabeltravis20ci20buildhttpstravisciorgshamanapaappveyorhttpsimgshieldsioappveyorcishamanapasvglabelappveyor20buildhttpsciappveyorcomprojectshamanapabranchmastercodeclimatehttpsimgshieldsiocodeclimatecoveragegithubshamanapasvghttpscodeclimatecomgithubshamanapadavidhttpsimgshieldsiodavidshamanapasvghttpsdaviddmorgshamanapajsstandardstylehttpsimgshieldsiobadgecode20stylestandardbrightgreensvgstyleflathttpstandardjscom">napa <a href="https://travis-ci.org/shama/napa"><img src="http://img.shields.io/travis/shama/napa.svg?label=Travis%20CI%20build" alt="Build Status" /></a> <a href="https://ci.appveyor.com/project/shama/napa/branch/master"><img src="https://img.shields.io/appveyor/ci/shama/napa.svg?label=AppVeyor%20build" alt="AppVeyor" /></a> <a href="https://codeclimate.com/github/shama/napa"><img src="https://img.shields.io/codeclimate/coverage/github/shama/napa.svg" alt="Code Climate" /></a> <a href="https://david-dm.org/shama/napa"><img src="https://img.shields.io/david/shama/napa.svg" alt="David" /></a> <a href="http://standardjs.com/"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat" alt="js-standard-style" /></a></h1>
+<p>A helper for installing repos without a <code>package.json</code> with npm.</p>
+<p><a href="https://nodei.co/npm/napa/"><img src="https://nodei.co/npm/napa.png?downloads=true" alt="NPM" /></a></p>
+<h2 id="usage">usage</h2>
+<p>Install with <code>npm install napa --save-dev</code> then setup your local <code>package.json</code> scripts as such:</p>
+<pre class="prettyprint linenums lang-json"><code>{
+  "scripts": {
+    "install": "napa username/repo"
+  }
+}
+</code></pre>
+<p>Now when you run <code>npm install</code> it will <code>git clone git://github.com/username/repo node_modules/repo</code>.</p>
+<h3 id="wanttonamethepackagesomethingelse">Want to name the package something else?</h3>
+<pre class="prettyprint linenums lang-json"><code>{
+  "scripts": {
+    "install": "napa username/repo:adifferentname"
+  }
+}
+</code></pre>
+<p>Now it will install to <code>node_modules/adifferentname</code>.</p>
+<h3 id="wanttoinstallapackagenotongithub">Want to install a package not on github?</h3>
+<pre class="prettyprint linenums lang-json"><code>{
+  "scripts": {
+    "install": "napa git://example.com/user/repo:privatepackage"
+  }
+}
+</code></pre>
+<h3 id="multiplepackages">Multiple packages?</h3>
+<pre class="prettyprint linenums lang-json"><code>{
+  "scripts": {
+    "install": "napa user/repo1:dude user/repo2:rad user/repo3:cool"
+  }
+}
+</code></pre>
+<h3 id="preferamorestructuredapproach">Prefer a more structured approach?</h3>
+<pre class="prettyprint linenums lang-json"><code>{
+  "scripts": {
+    "install": "napa"
+  },
+  "napa": {
+    "foo": "username/repo",
+    "bar": "git@example.com:user/repo"
+  }
+}
+</code></pre>
+<h3 id="lookingtojustdownloadataggedreleaseabranchaspecificcommitongithuborjustaziportargzurl">Looking to just download a tagged release/a branch/a specific commit on github or just a zip or tar.gz url?</h3>
+<pre class="prettyprint linenums lang-json"><code>{
+  "scripts": {
+    "install": "napa"
+  },
+  "napa": {
+    "foo": "username/repo#v1.2.3",
+    "bar": "username/bar#some-branch",
+    "baz": "username/baz#347259472813400c7a982690acaa516292a8be40",
+    "qoo": "https://example.com/downloads/release.tar.gz",
+    "fuz": "git+https://yourcompany.com/repos/project.git",
+    "goo": "git+ssh://yourcompany.com/repos/project.git"
+  }
+}
+</code></pre>
+<h3 id="additionalconfiguration">Additional configuration</h3>
+<p>The application currently supports the following configuration options under a <code>napa-config</code> property in <code>package.json</code>.</p>
+<p>Option name | Default value | Desctiption
+---|---|---
+<code>cache</code> | <code>true</code> | Set to <code>false</code> to completely disable package caching
+<code>cache-path</code> | <a href="https://github.com/shama/napa/blob/master/lib/pkg.js#L8"><code>'&lt;OS temp&gt;/cache'</code></a> | Override default path to a specific location<br>(relative to the current working directory)
+<code>log-level</code> | <code>'info'</code>  | Set the log level: <code>'silent'</code>/<code>'error'</code>/<code>'warn'</code>/<code>'verbose'</code>/<code>'silly'</code></p>
+<pre class="prettyprint linenums lang-json"><code>{
+  "napa-config": {
+    "cache": false,
+    "cache-path": "../.napa-cache",
+    "log-level": "error"
+  }
+}
+</code></pre>
+<h3 id="usingnodejs4">Using Node.js &lt; 4?</h3>
+<p>Please use <code>npm install napa@2.3.0</code> and upgrade your Node.js.</p>
+<h2 id="releasehistory">Release History</h2>
+<p>Please view https://github.com/shama/napa/commits/master for history.</p>
+<ul>
+<li><code>2.0.1</code> - Fix path must be a string error (<a href="//github.com/caseyWebb">@caseyWebb</a>).</li>
+<li><code>2.0.0</code> - Better detection for GitHub repos, fixes when creating a <code>package.json</code>, cached git <code>#tag</code> urls now get updated properly (<a href="//github.com/tomekwi">@tomekwi</a>). Add config options for disabling cache or setting cache path (<a href="//github.com/bbsbb">@bbsbb</a>). Fix for npm 3 erroring when <code>.git</code> folder present (<a href="//github.com/caseyWebb">@caseyWebb</a>). Updating dependencies.</li>
+<li><code>1.2.0</code> - Callback optional with CLI and do not ignore <code>.gitignore</code> files when unpacking (<a href="//github.com/dai-shi">@dai-shi</a>).</li>
+<li><code>1.1.0</code> - Upgrade download for better downloads behind proxies (<a href="//github.com/msieurtoph">@msieurtoph</a>).</li>
+<li><code>1.0.2</code> - Fix references to git specifiers. Thanks <a href="//github.com/jsdevel">@jsdevel</a>!</li>
+<li><code>1.0.1</code> - Fix path to CLI.</li>
+<li><code>1.0.0</code> - Avoids duplicate installs and will install from cache.</li>
+<li><code>0.4.1</code> - Fix git reporting non-errors on stderr by running in quiet mode.</li>
+<li><code>0.4.0</code> - Add <code>strip: 1</code> when downloading to avoid untarring within a sub-directory. Thanks <a href="//github.com/seei">@seei</a>!</li>
+<li><code>0.3.0</code> - Ability to download packages using any URL</li>
+<li><code>0.2.0</code> - Ability to set packages using napa key in <code>package.json</code></li>
+<li><code>0.1.1</code> - <code>--depth 1</code> for faster cloning</li>
+<li><code>0.1.0</code> - initial release</li>
+</ul>
+<h2 id="license">License</h2>
+<p>Copyright (c) 2017 Kyle Robinson Young
+Licensed under the MIT license.</p>
+          </div>
+          <div class="tab-pane fade" id="dependencies" role="tabpanel" aria-labelledby="dependencies-tab">
+            <h5>Dependencies</h5>
+            <ul id="dependenciesList">
+              <li>download (^6.2.2)</li><li>extend (^3.0.1)</li><li>load-json-file (^2.0.0)</li><li>minimist (^1.2.0)</li><li>mkdirp (^0.5.1)</li><li>npm-cache-filename (^1.0.2)</li><li>npmlog (^4.1.0)</li><li>rimraf (^2.6.1)</li><li>tar-pack (^3.4.0)</li><li>write-json-file (^2.2.0)</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <h5>Changelog</h5>
+            <ul id="changelogList">
+              <p>No changelog available.</p>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="contributors" role="tabpanel" aria-labelledby="contributors-tab">
+            <h5>Contributors</h5>
+            <ul id="contributorsList">
+              <li>shama (70 contributions)</li><li>caseyWebb (14 contributions)</li><li>jebaird (7 contributions)</li><li>Grawl (4 contributions)</li><li>chitoku-k (3 contributions)</li><li>DjebbZ (3 contributions)</li><li>dai-shi (2 contributions)</li><li>msieurtoph (2 contributions)</li><li>tschaub (1 contributions)</li><li>seei (1 contributions)</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">© 2024 Package Hub Pro - Powered by Bootstrap</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+</html>
