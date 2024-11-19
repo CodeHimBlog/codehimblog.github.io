@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #343a40;
+      padding-top: 56px;
+    }
+	  a{
+		  text-decoration: none;
+	  }
+	  .site-main, .sidebar{
+		  background: #fff;
+		  
+	  }
+	  .sidebar{
+		  margin-right: 12px;
+		  padding: 12px;
+	  }
+	  
+    .package-image {
+      max-width: 120px;
+      max-height: 120px;
+      object-fit: contain;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      gap: 1rem;
+    }
+    .stat-box {
+      text-align: center;
+      flex: 1;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .stat-box i {
+      font-size: 1.4rem;
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    .breadcrumbs {
+      margin-bottom: 1.5rem;
+      background: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    .metadata-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+    .metadata-item i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-house-door me-1"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-box me-1"></i>Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-book me-1"></i>Docs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-envelope me-1"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumbs -->
+  <div class="container mt-4 breadcrumbs">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Projects</a></li>
+        <li class="breadcrumb-item active" aria-current="page">sort-package-json</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-md-4">
+		  <div class="sidebar">
+        <div class="sidebar-item">
+          <h5>Owner</h5>
+          <div class="d-flex align-items-center">
+            <img src="https://avatars.githubusercontent.com/u/118266?v=4" alt="Owner Avatar" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+            <a href="https://github.com/keithamus" target="_blank" id="ownerName">keithamus</a>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <h5>Metadata</h5>
+          <div class="metadata-item">
+            <i class="bi bi-calendar"></i>
+            <strong>Created At:</strong> <span id="createdAt">December 9, 2015</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-pencil-square"></i>
+            <strong>Last Updated:</strong> <span id="updatedAt">November 15, 2024</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-code-slash"></i>
+            <strong>Language:</strong> <span id="language">JavaScript</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <strong>Size:</strong> <span id="repoSize">1.23 MB</span>
+          </div>
+        </div>
+			  	  </div>
+      </aside>
+
+      <!-- Main Details -->
+      <main class="col-md-8 site-main">
+        <!-- Project Name & Description -->
+        <h1 id="packageName">sort-package-json</h1>
+        <p id="packageDescription" class="text-muted">Sort an Object or package.json based on the well-known package.json keys</p>
+
+        <!-- Statistics -->
+        <div class="stat-row">
+          <div class="stat-box">
+            <i class="bi bi-star-fill text-warning"></i>
+            <span id="stargazersCount">806</span>
+            <p>Stars</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-arrow-repeat text-secondary"></i>
+            <span id="forksCount">88</span>
+            <p>Forks</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-exclamation-circle text-danger"></i>
+            <span id="openIssuesCount">37</span>
+            <p>Open Issues</p>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mb-4">
+          <a href="#" target="_blank" class="btn btn-success me-2" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+          <a href="/archive/refs/heads/main.zip" class="btn btn-primary me-2" id="downloadBtn">
+            <i class="bi bi-cloud-download me-2"></i>Download ZIP
+          </a>
+          <a href="" target="_blank" class="btn btn-outline-secondary" id="githubBtn">
+            <i class="bi bi-github me-2"></i>Fork on GitHub
+          </a>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+              <i class="bi bi-file-earmark-text"></i> Readme
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="dependencies-tab" data-bs-toggle="tab" data-bs-target="#dependencies" type="button" role="tab" aria-controls="dependencies" aria-selected="false">
+              <i class="bi bi-diagram-2-fill me-2"></i> Dependencies
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+              <i class="bi bi-journal-text me-2"></i> Changelog
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contributors-tab" data-bs-toggle="tab" data-bs-target="#contributors" type="button" role="tab" aria-controls="contributors" aria-selected="false">
+              <i class="bi bi-people me-2"></i> Contributors
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1 id="sortpackagejson">Sort Package.json</h1>
+<p><a href="https://github.com/keithamus/sort-package-json/actions?query=workflow%3ACI+branch%3Amain"><img src="https://img.shields.io/github/actions/workflow/status/keithamus/sort-package-json/pr.yml" alt="Build Status" /></a>
+<a href="https://www.npmjs.com/package/sort-package-json"><img src="https://img.shields.io/npm/v/sort-package-json.svg" alt="NPM Version" /></a></p>
+<h2 id="cli">CLI</h2>
+<h3 id="runvianpxnpm52required">Run via npx (npm@5.2+ required)</h3>
+<pre class="prettyprint linenums lang-bash"><code>npx sort-package-json
+</code></pre>
+<h3 id="install">Install</h3>
+<pre class="prettyprint linenums lang-bash"><code>npm install --global sort-package-json
+</code></pre>
+<h3 id="usage">Usage</h3>
+<pre class="prettyprint linenums lang-console"><code>$ cd my-project
+$ cat package.json
+{
+  "dependencies": {
+    "sort-package-json": "1.0.0",
+    "sort-object-keys": "1.0.0"
+  },
+  "version": "1.0.0",
+  "name": "my-awesome-project"
+}
+
+$ npx sort-package-json
+package.json is sorted!
+
+Found 1 file.
+1 file successfully sorted.
+
+$ cat package.json
+{
+  "name": "my-awesome-project",
+  "version": "1.0.0",
+  "dependencies": {
+    "sort-object-keys": "1.0.0",
+    "sort-package-json": "1.0.0"
+  }
+}
+</code></pre>
+<p>CLI also supports multi file paths or <a href="https://github.com/sindresorhus/globby"><code>glob</code></a> - so you can give it a bunch of <code>package.json</code> file(s) to sort.</p>
+<pre class="prettyprint linenums lang-bash"><code>$ sort-package-json "my-package/package.json" "other-package/package.json"
+
+$ sort-package-json "package.json" "packages/*/package.json"
+</code></pre>
+<h4 id="checkflag"><code>--check</code> flag</h4>
+<p>When you want to check if your files are sorted, you can run CLI with the <code>--check</code> flag (or <code>-c</code>). This will output a list of not sorted files, if any.</p>
+<pre class="prettyprint linenums lang-console"><code>$ sort-package-json "**/package.json" --check
+
+Found 5 files.
+5 files were already sorted.
+
+$ sort-package-json "**/package.json" --check
+foo/package.json
+bar/package.json
+
+Found 5 files.
+3 files were not sorted.
+2 files were already sorted.
+</code></pre>
+<h4 id="quietflag"><code>--quiet</code> flag</h4>
+<p>In order to silence any successful output, you can run CLI with the <code>--quiet</code> flag (or <code>-q</code>). This will stop the CLI from outputting if it runs successfully, but won't effect error messages and the exit code.</p>
+<pre class="prettyprint linenums lang-bash"><code>$ sort-package-json "**/package.json" --check --quiet
+$ sort-package-json "**/package.json" --quiet
+</code></pre>
+<h4 id="stdinflag"><code>--stdin</code> flag</h4>
+<p>To read from <code>stdin</code> and output the result to <code>stdout</code> use the <code>--stdin</code> flag.</p>
+<pre class="prettyprint linenums lang-bash"><code>$ cat package.json | sort-package-json --stdin
+</code></pre>
+<p>This can, for instance, be used to generate a diff before changing <code>package.json</code>.</p>
+<pre class="prettyprint linenums lang-bash"><code>$ ( PKG="./package.json" ; cat "${PKG?}" | sort-package-json --stdin | diff "${PKG?}" - ; )
+</code></pre>
+<h2 id="api">API</h2>
+<h3 id="install-1">Install</h3>
+<pre class="prettyprint linenums lang-bash"><code>npm install --save-dev sort-package-json
+</code></pre>
+<h3 id="usage-1">Usage</h3>
+<pre class="prettyprint linenums lang-js"><code>sortPackageJson(packageJson, options?)
+</code></pre>
+<p>Pass a JSON string, return a new sorted JSON string.\
+Pass a JSON object, return a new sorted JSON object.</p>
+<pre class="prettyprint linenums lang-js"><code>import sortPackageJson from 'sort-package-json'
+
+const packageJsonString = `{
+  "dependencies": {
+    "sort-package-json": "1.0.0",
+    "sort-object-keys": "1.0.0"
+  },
+  "version": "1.0.0",
+  "name": "my-awesome-project"
+}`
+
+console.log(sortPackageJson(packageJsonString))
+/* =&gt; string:
+{
+  "name": "my-awesome-project",
+  "version": "1.0.0",
+  "dependencies": {
+    "sort-object-keys": "1.0.0",
+    "sort-package-json": "1.0.0"
+  }
+}
+*/
+
+const packageJsonObject = JSON.parse(packageJsonString)
+console.log(sortPackageJson(packageJsonObject))
+/* =&gt; object:
+{
+  name: 'my-awesome-project',
+  version: '1.0.0',
+  dependencies: {
+    'sort-object-keys': '1.0.0',
+    'sort-package-json': '1.0.0'
+  }
+}
+*/
+</code></pre>
+<h4 id="optionssortorder">options.sortOrder</h4>
+<p>Type: <code>string[] | Function</code>\
+Default: <code>sortPackageJson.sortOrder</code></p>
+<p>Custom ordering array or comparator function.</p>
+<p>If an array, sort keys in ordering of <code>options.sortOrder</code>.</p>
+<p><strong>Notice</strong>: fields not in this array, will still sort by <code>defaultSortOrder</code></p>
+<pre class="prettyprint linenums lang-js"><code>const sorted = sortPackageJson(packageJsonObject, {
+  sortOrder: ['version'],
+})
+
+console.log(Object.keys(sorted))
+
+// -&gt; [ 'version', 'name', 'dependencies' ]
+//                 ^^^^^^^^^^^^^^^^^^^^^^
+//                 `name` and `dependencies` are sorted by defaultSortOrder
+</code></pre>
+<p>If a function, sort fields by <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Description">Array#sort(options.sortOrder)</a></p>
+<pre class="prettyprint linenums lang-js"><code>const sorted = sortPackageJson(packageJsonObject, {
+  sortOrder(left, right) {
+    return left.localeCompare(right)
+  },
+})
+
+console.log(Object.keys(sorted))
+
+// -&gt; [ 'dependencies', 'name', 'version' ]
+</code></pre>
+<h2 id="relatedtools">Related tools</h2>
+<ul>
+<li><a href="https://github.com/kellyselden/eslint-plugin-json-files#supported-rules">ESLint Rule with Autofix</a></li>
+<li><a href="https://github.com/matzkoh/prettier-plugin-packagejson">Prettier Plugin</a></li>
+<li><a href="https://github.com/unional/vscode-sort-package-json">Visual Studio Code Extension</a></li>
+</ul>
+<h2 id="supportedlibraries">Supported Libraries</h2>
+<ul>
+<li><a href="https://github.com/avajs/ava">AVA</a></li>
+<li><a href="https://babeljs.io/">Babel</a></li>
+<li><a href="http://browserify.org/">Browserify</a></li>
+<li><a href="https://github.com/bcoe/c8">c8</a></li>
+<li><a href="https://commitlint.js.org/">commitlint</a></li>
+<li><a href="https://eslint.org/">ESLint</a></li>
+<li><a href="https://github.com/typicode/husky">Husky</a></li>
+<li><a href="https://istanbul.js.org/">Istanbul</a></li>
+<li><a href="https://jestjs.io/">Jest</a></li>
+<li><a href="https://github.com/okonet/lint-staged">lint-staged</a></li>
+<li><a href="https://mochajs.org/">Mocha</a></li>
+<li><a href="https://github.com/mapbox/node-pre-gyp">node-pre-gyp</a></li>
+<li><a href="https://npmpackagejsonlint.org/">npm-package-json-lint</a></li>
+<li><a href="https://oclif.io/">oclif</a></li>
+<li><a href="https://pnpm.io/">pnpm</a></li>
+<li><a href="https://prettier.io/">Prettier</a></li>
+<li><a href="https://remark.js.org/">remark</a></li>
+<li><a href="https://github.com/semantic-release/semantic-release">semantic-release</a></li>
+<li><a href="https://github.com/stylelint/stylelint">stylelint</a></li>
+<li><a href="https://node-tap.org/">Tap</a></li>
+<li><a href="https://github.com/xojs/xo">xojs</a></li>
+</ul>
+<p><em>Alphabetically ordered.</em></p>
+<h2 id="automaticallysort">Automatically Sort</h2>
+<p>The package.json file can be sorted automatically before committing.</p>
+<pre class="prettyprint linenums lang-bash"><code>npm install husky lint-staged --save-dev
+npm pkg set scripts.prepare="husky install"
+npm run prepare
+npx husky add .husky/pre-commit "npx lint-staged"
+</code></pre>
+<p>Add the following to your <code>package.json</code> file</p>
+<pre class="prettyprint linenums lang-json"><code>{
+  "lint-staged": {
+    "package.json": "sort-package-json"
+  }
+}
+</code></pre>
+<p>See <a href="https://github.com/typicode/husky">Husky</a> and <a href="https://github.com/okonet/lint-staged">lint-staged</a> for more information.</p>
+<h2 id="pfaqpotentialfrequentlyaskedquestions">PFAQ: Potential Frequently Asked Questions</h2>
+<h3 id="howdoesitsort">How does it sort?</h3>
+<p>It sorts using <a href="http://github.com/keithamus/sort-object-keys"><code>sort-object-keys</code></a>. It sorts using the well-known keys of a package.json. For the full list check the <a href="./defaultRules.md">default rules</a>. It sorts sub-keys too - sometimes by a well-known order, other times alphabetically. The initial order was derived from the <a href="https://docs.npmjs.com/files/package.json">package.json docs</a> with a few extras added for good measure.</p>
+<h3 id="itdoesntsortx">It doesn't sort X?</h3>
+<p>Cool. Send a PR! It might get denied if it is a specific vendor key of an unpopular project (e.g. <code>"my-super-unknown-project"</code>). We sort keys like "browserify" because it is a project with millions of users. If your project has, say, over 100 users, then we'll add it. Sound fair?</p>
+<h3 id="isntthisjustlikeprojectx">Isn't this just like Project X?</h3>
+<p>Could be. I wanted this one because at the time of writing, nothing is:</p>
+<ul>
+<li>Zero config</li>
+<li>Able to be used in a library</li>
+<li>Quiet (i.e. not spitting out annoying log messages, when used in a library mode)</li>
+</ul>
+<h3 id="iwouldlikethistooltobeconfigurablewithaconfigfileorcommandlinearguments">I would like this tool to be configurable with a config file or command line arguments.</h3>
+<p>The lack of configuration here is a feature, not a bug. The intent of this tool is that a user can open a package json and always expect to see keys in a particular order. If we add a configuration for this tool, then that promise is broken, as users will first need to look at the configuration for each project to learn the ways in which this tool will change the <code>package.json</code>. The structure of the <code>package.json</code> should always be predictable &amp; deterministic from project to project. I think the <em>reason</em> why this project is well used is because it is not another "tool" you have to set up with yet another JSON file and more cruft in your project to support it. You run a command and it does what it says on the tin.</p>
+<p>A lot of people who ask for configuration cite the use case that they simply don't like the given order that exists and want to make sweeping changes. To me this seems far better suited to simply making a fork of this project as then you can go far further than specifying configuration.</p>
+<h3 id="whatistheorderthispackagedefaultsto">What is the order this package defaults to?</h3>
+<p>The default order is exported as a <code>sortOrder</code> object.</p>
+<p><details>
+<summary>Properties mentioned in the npm docs</summary></p>
+<ol>
+<li><code>name</code></li>
+<li><code>version</code></li>
+<li><code>private</code></li>
+<li><code>description</code></li>
+<li><code>keywords</code></li>
+<li><code>homepage</code></li>
+<li><code>bugs</code></li>
+<li><code>repository</code></li>
+<li><code>funding</code></li>
+<li><code>license</code></li>
+<li><code>author</code></li>
+<li><code>contributors</code></li>
+<li><code>main</code></li>
+<li><code>browser</code></li>
+<li><code>bin</code></li>
+<li><code>man</code></li>
+<li><code>directories</code></li>
+<li><code>files</code></li>
+<li><code>workspaces</code></li>
+<li><code>scripts</code></li>
+<li><code>config</code></li>
+<li><code>dependencies</code></li>
+<li><code>engines</code></li>
+<li><code>os</code></li>
+<li><code>cpu</code></li>
+</ol>
+<p></details></p>
+<p><details>
+<summary>Full list of recognized properties</summary></p>
+<ol>
+<li><code>$schema</code></li>
+<li><code>name</code></li>
+<li><code>displayName</code></li>
+<li><code>version</code></li>
+<li><code>private</code></li>
+<li><code>description</code></li>
+<li><code>categories</code></li>
+<li><code>keywords</code></li>
+<li><code>homepage</code></li>
+<li><code>bugs</code></li>
+<li><code>repository</code></li>
+<li><code>funding</code></li>
+<li><code>license</code></li>
+<li><code>qna</code></li>
+<li><code>author</code></li>
+<li><code>maintainers</code></li>
+<li><code>contributors</code></li>
+<li><code>publisher</code></li>
+<li><code>sideEffects</code></li>
+<li><code>type</code></li>
+<li><code>imports</code></li>
+<li><code>exports</code></li>
+<li><code>main</code></li>
+<li><code>svelte</code></li>
+<li><code>umd:main</code></li>
+<li><code>jsdelivr</code></li>
+<li><code>unpkg</code></li>
+<li><code>module</code></li>
+<li><code>source</code></li>
+<li><code>jsnext:main</code></li>
+<li><code>browser</code></li>
+<li><code>react-native</code></li>
+<li><code>types</code></li>
+<li><code>typesVersions</code></li>
+<li><code>typings</code></li>
+<li><code>style</code></li>
+<li><code>example</code></li>
+<li><code>examplestyle</code></li>
+<li><code>assets</code></li>
+<li><code>bin</code></li>
+<li><code>man</code></li>
+<li><code>directories</code></li>
+<li><code>files</code></li>
+<li><code>workspaces</code></li>
+<li><code>binary</code></li>
+<li><code>scripts</code></li>
+<li><code>betterScripts</code></li>
+<li><code>contributes</code></li>
+<li><code>activationEvents</code></li>
+<li><code>husky</code></li>
+<li><code>simple-git-hooks</code></li>
+<li><code>pre-commit</code></li>
+<li><code>commitlint</code></li>
+<li><code>lint-staged</code></li>
+<li><code>nano-staged</code></li>
+<li><code>config</code></li>
+<li><code>nodemonConfig</code></li>
+<li><code>browserify</code></li>
+<li><code>babel</code></li>
+<li><code>browserslist</code></li>
+<li><code>xo</code></li>
+<li><code>prettier</code></li>
+<li><code>eslintConfig</code></li>
+<li><code>eslintIgnore</code></li>
+<li><code>npmpkgjsonlint</code></li>
+<li><code>npmPackageJsonLintConfig</code></li>
+<li><code>npmpackagejsonlint</code></li>
+<li><code>release</code></li>
+<li><code>remarkConfig</code></li>
+<li><code>stylelint</code></li>
+<li><code>ava</code></li>
+<li><code>jest</code></li>
+<li><code>jest-junit</code></li>
+<li><code>jest-stare</code></li>
+<li><code>mocha</code></li>
+<li><code>nyc</code></li>
+<li><code>c8</code></li>
+<li><code>tap</code></li>
+<li><code>resolutions</code></li>
+<li><code>dependencies</code></li>
+<li><code>devDependencies</code></li>
+<li><code>dependenciesMeta</code></li>
+<li><code>peerDependencies</code></li>
+<li><code>peerDependenciesMeta</code></li>
+<li><code>optionalDependencies</code></li>
+<li><code>bundledDependencies</code></li>
+<li><code>bundleDependencies</code></li>
+<li><code>extensionPack</code></li>
+<li><code>extensionDependencies</code></li>
+<li><code>flat</code></li>
+<li><code>packageManager</code></li>
+<li><code>engines</code></li>
+<li><code>engineStrict</code></li>
+<li><code>volta</code></li>
+<li><code>languageName</code></li>
+<li><code>os</code></li>
+<li><code>cpu</code></li>
+<li><code>preferGlobal</code></li>
+<li><code>publishConfig</code></li>
+<li><code>icon</code></li>
+<li><code>badges</code></li>
+<li><code>galleryBanner</code></li>
+<li><code>preview</code></li>
+<li><code>markdown</code></li>
+<li><code>pnpm</code></li>
+</ol>
+<p></details></p>
+<h3 id="whatwhywouldyouwanttodothis">What?! Why would you want to do this?!</h3>
+<p>Well, it's nice to have the keys of a package.json in a well sorted order. Almost everyone would agree having "name" at the top of a package.json is sensible (rather than sorted alphabetically or somewhere silly like the bottom), so why not the rest of the package.json?</p>
+          </div>
+          <div class="tab-pane fade" id="dependencies" role="tabpanel" aria-labelledby="dependencies-tab">
+            <h5>Dependencies</h5>
+            <ul id="dependenciesList">
+              <li>detect-indent (^7.0.1)</li><li>detect-newline (^4.0.0)</li><li>get-stdin (^9.0.0)</li><li>git-hooks-list (^3.0.0)</li><li>is-plain-obj (^4.1.0)</li><li>semver (^7.6.0)</li><li>sort-object-keys (^1.1.3)</li><li>tinyglobby (^0.2.9)</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <h5>Changelog</h5>
+            <ul id="changelogList">
+              <p>No changelog available.</p>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="contributors" role="tabpanel" aria-labelledby="contributors-tab">
+            <h5>Contributors</h5>
+            <ul id="contributorsList">
+              <li>fisker (69 contributions)</li><li>keithamus (41 contributions)</li><li>greenkeeper[bot] (8 contributions)</li><li>aarondill (7 contributions)</li><li>bluelovers (6 contributions)</li><li>dependabot[bot] (5 contributions)</li><li>amilajack (3 contributions)</li><li>shaneog (2 contributions)</li><li>Xunnamius (2 contributions)</li><li>vincentbriglia (2 contributions)</li><li>tylerbutler (2 contributions)</li><li>Shingyx (2 contributions)</li><li>simonkberg (2 contributions)</li><li>foray1010 (2 contributions)</li><li>danielpza (2 contributions)</li><li>friederbluemle (2 contributions)</li><li>G-Rath (2 contributions)</li><li>unional (2 contributions)</li><li>selbekk (2 contributions)</li><li>sublimator (1 contributions)</li><li>Americas (1 contributions)</li><li>pi0 (1 contributions)</li><li>raphinesse (1 contributions)</li><li>RebeccaStevens (1 contributions)</li><li>remcohaszing (1 contributions)</li><li>jeddy3 (1 contributions)</li><li>revelt (1 contributions)</li><li>ntwb (1 contributions)</li><li>hyoban (1 contributions)</li><li>regseb (1 contributions)</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">© 2024 Package Hub Pro - Powered by Bootstrap</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+</html>
