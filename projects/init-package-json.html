@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #343a40;
+      padding-top: 56px;
+    }
+	  a{
+		  text-decoration: none;
+	  }
+	  .site-main, .sidebar{
+		  background: #fff;
+		  
+	  }
+	  .sidebar{
+		  margin-right: 12px;
+		  padding: 12px;
+	  }
+	  
+    .package-image {
+      max-width: 120px;
+      max-height: 120px;
+      object-fit: contain;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      gap: 1rem;
+    }
+    .stat-box {
+      text-align: center;
+      flex: 1;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .stat-box i {
+      font-size: 1.4rem;
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    .breadcrumbs {
+      margin-bottom: 1.5rem;
+      background: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    .metadata-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+    .metadata-item i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-house-door me-1"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-box me-1"></i>Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-book me-1"></i>Docs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-envelope me-1"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumbs -->
+  <div class="container mt-4 breadcrumbs">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Projects</a></li>
+        <li class="breadcrumb-item active" aria-current="page">init-package-json</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-md-4">
+		  <div class="sidebar">
+        <div class="sidebar-item">
+          <h5>Owner</h5>
+          <div class="d-flex align-items-center">
+            <img src="https://avatars.githubusercontent.com/u/6078720?v=4" alt="Owner Avatar" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+            <a href="https://github.com/npm" target="_blank" id="ownerName">npm</a>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <h5>Metadata</h5>
+          <div class="metadata-item">
+            <i class="bi bi-calendar"></i>
+            <strong>Created At:</strong> <span id="createdAt">June 17, 2012</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-pencil-square"></i>
+            <strong>Last Updated:</strong> <span id="updatedAt">November 16, 2024</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-code-slash"></i>
+            <strong>Language:</strong> <span id="language">JavaScript</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <strong>Size:</strong> <span id="repoSize">0.7 MB</span>
+          </div>
+        </div>
+			  	  </div>
+      </aside>
+
+      <!-- Main Details -->
+      <main class="col-md-8 site-main">
+        <!-- Project Name & Description -->
+        <h1 id="packageName">init-package-json</h1>
+        <p id="packageDescription" class="text-muted">A node module to get your node module started</p>
+
+        <!-- Statistics -->
+        <div class="stat-row">
+          <div class="stat-box">
+            <i class="bi bi-star-fill text-warning"></i>
+            <span id="stargazersCount">312</span>
+            <p>Stars</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-arrow-repeat text-secondary"></i>
+            <span id="forksCount">150</span>
+            <p>Forks</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-exclamation-circle text-danger"></i>
+            <span id="openIssuesCount">20</span>
+            <p>Open Issues</p>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mb-4">
+          <a href="#" target="_blank" class="btn btn-success me-2" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+          <a href="https://github.com/npm/init-package-json/archive/refs/heads/master.zip" class="btn btn-primary me-2" id="downloadBtn">
+            <i class="bi bi-cloud-download me-2"></i>Download ZIP
+          </a>
+          <a href="" target="_blank" class="btn btn-outline-secondary" id="githubBtn">
+            <i class="bi bi-github me-2"></i>Fork on GitHub
+          </a>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+              <i class="bi bi-file-earmark-text"></i> Readme
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="dependencies-tab" data-bs-toggle="tab" data-bs-target="#dependencies" type="button" role="tab" aria-controls="dependencies" aria-selected="false">
+              <i class="bi bi-diagram-2-fill me-2"></i> Dependencies
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+              <i class="bi bi-journal-text me-2"></i> Changelog
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contributors-tab" data-bs-toggle="tab" data-bs-target="#contributors" type="button" role="tab" aria-controls="contributors" aria-selected="false">
+              <i class="bi bi-people me-2"></i> Contributors
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1 id="initpackagejson">init-package-json</h1>
+<p>A node module to get your node module started.</p>
+<h2 id="usage">Usage</h2>
+<pre class="prettyprint linenums lang-javascript"><code>const init = require('init-package-json')
+const path = require('path')
+
+// a path to a promzard module.  In the event that this file is
+// not found, one will be provided for you.
+const initFile = path.resolve(process.env.HOME, '.npm-init')
+
+// the dir where we're doin stuff.
+const dir = process.cwd()
+
+// extra stuff that gets put into the PromZard module's context.
+// In npm, this is the resolved config object.  Exposed as 'config'
+// Optional.
+const configData = { some: 'extra stuff' }
+
+// Any existing stuff from the package.json file is also exposed in the
+// PromZard module as the `package` object.  There will also be three
+// vars for:
+// * `filename` path to the package.json file
+// * `basename` the tip of the package dir
+// * `dirname` the parent of the package dir
+
+const data = await init(dir, initFile, configData)
+// the data's already been written to {dir}/package.json
+// now you can do stuff with it
+</code></pre>
+<p>See <a href="https://github.com/npm/promzard">PromZard</a> for details about
+what can go in the config file.</p>
+          </div>
+          <div class="tab-pane fade" id="dependencies" role="tabpanel" aria-labelledby="dependencies-tab">
+            <h5>Dependencies</h5>
+            <ul id="dependenciesList">
+              <li>@npmcli/package-json (^6.0.0)</li><li>npm-package-arg (^12.0.0)</li><li>promzard (^2.0.0)</li><li>read (^4.0.0)</li><li>semver (^7.3.5)</li><li>validate-npm-package-license (^3.0.4)</li><li>validate-npm-package-name (^6.0.0)</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <h5>Changelog</h5>
+            <ul id="changelogList">
+              <h1 id="changelog">Changelog</h1>
+<h2 id="701httpsgithubcomnpminitpackagejsoncomparev700v70120241002"><a href="https://github.com/npm/init-package-json/compare/v7.0.0…v7.0.1">7.0.1</a> (2024-10-02)</h2>
+<h3 id="dependencies">Dependencies</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/90305f11cfa78b8e40f990da46eaeda852d2454b"><code>90305f1</code></a> <a href="https://github.com/npm/init-package-json/pull/308">#308</a> bump <code>@npmcli/package-json@6.0.0</code></li>
+</ul>
+<h2 id="700httpsgithubcomnpminitpackagejsoncomparev603v70020240926"><a href="https://github.com/npm/init-package-json/compare/v6.0.3…v7.0.0">7.0.0</a> (2024-09-26)</h2>
+<h3 id="breakingchanges">⚠️ BREAKING CHANGES</h3>
+<ul>
+<li><code>init-package-json</code> now supports node <code>^18.17.0 || &gt;=20.5.0</code></li>
+</ul>
+<h3 id="bugfixes">Bug Fixes</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/2c785335c783231adaeb5d00f5323c7f24fdc0ba"><code>2c78533</code></a> <a href="https://github.com/npm/init-package-json/pull/305">#305</a> align to npm 10 node engine range (@reggi)</li>
+</ul>
+<h3 id="dependencies-1">Dependencies</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/732dc0d4d73bf9278e2ffe5ee672f1853a76bfd2"><code>732dc0d</code></a> <a href="https://github.com/npm/init-package-json/pull/305">#305</a> <code>validate-npm-package-name@6.0.0</code></li>
+<li><a href="https://github.com/npm/init-package-json/commit/bdb71d9bb45806c3550fefa6688438a38f3b7b18"><code>bdb71d9</code></a> <a href="https://github.com/npm/init-package-json/pull/305">#305</a> <code>read@4.0.0</code></li>
+<li><a href="https://github.com/npm/init-package-json/commit/2a6ebd2ec94bb0ade18c8b22e9f4e869b0460b8b"><code>2a6ebd2</code></a> <a href="https://github.com/npm/init-package-json/pull/305">#305</a> <code>promzard@2.0.0</code></li>
+<li><a href="https://github.com/npm/init-package-json/commit/45bb12a76030e8c246e9f6d22a120c50bb52774a"><code>45bb12a</code></a> <a href="https://github.com/npm/init-package-json/pull/305">#305</a> <code>npm-package-arg@12.0.0</code></li>
+</ul>
+<h3 id="chores">Chores</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/c8deea51d429511976cdae5e296f24559068aacd"><code>c8deea5</code></a> <a href="https://github.com/npm/init-package-json/pull/305">#305</a> run template-oss-apply (@reggi)</li>
+<li><a href="https://github.com/npm/init-package-json/commit/e61c6c7f998918098342eecd79c426b56fc992bf"><code>e61c6c7</code></a> <a href="https://github.com/npm/init-package-json/pull/299">#299</a> bump @npmcli/eslint-config from 4.0.5 to 5.0.0 (@dependabot[bot])</li>
+<li><a href="https://github.com/npm/init-package-json/commit/c3f2bfef507b9d4413d59d399b827c6e0aa7e44f"><code>c3f2bfe</code></a> <a href="https://github.com/npm/init-package-json/pull/300">#300</a> postinstall for dependabot template-oss PR (@hashtagchris)</li>
+<li><a href="https://github.com/npm/init-package-json/commit/9569c5d9bc26a9e3f75ef47c7ef17ae638f00fc9"><code>9569c5d</code></a> <a href="https://github.com/npm/init-package-json/pull/300">#300</a> bump @npmcli/template-oss from 4.23.1 to 4.23.3 (@dependabot[bot])</li>
+</ul>
+<h2 id="603httpsgithubcomnpminitpackagejsoncomparev602v60320240504"><a href="https://github.com/npm/init-package-json/compare/v6.0.2…v6.0.3">6.0.3</a> (2024-05-04)</h2>
+<h3 id="bugfixes-1">Bug Fixes</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/3d500804f644efa8743f16bd4d101f749c3d433b"><code>3d50080</code></a> <a href="https://github.com/npm/init-package-json/pull/284">#284</a> linting: no-console (@lukekarrys)</li>
+</ul>
+<h3 id="chores-1">Chores</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/c089e8cfa73347b736c7ae238cec0ec0de5d3056"><code>c089e8c</code></a> <a href="https://github.com/npm/init-package-json/pull/284">#284</a> increase tap timeout (@lukekarrys)</li>
+<li><a href="https://github.com/npm/init-package-json/commit/d9deb25ac3628763ab31c3f9f5fcbc961e1d808a"><code>d9deb25</code></a> <a href="https://github.com/npm/init-package-json/pull/284">#284</a> bump @npmcli/template-oss to 4.22.0 (@lukekarrys)</li>
+<li><a href="https://github.com/npm/init-package-json/commit/5b599d701c45ec2ac0c2c208ddf1571296a437ee"><code>5b599d7</code></a> <a href="https://github.com/npm/init-package-json/pull/284">#284</a> postinstall for dependabot template-oss PR (@lukekarrys)</li>
+<li><a href="https://github.com/npm/init-package-json/commit/2421ced93d851b93239da66703855a4320ee9769"><code>2421ced</code></a> <a href="https://github.com/npm/init-package-json/pull/282">#282</a> bump @npmcli/template-oss from 4.21.3 to 4.21.4 (@dependabot[bot])</li>
+</ul>
+<h2 id="602httpsgithubcomnpminitpackagejsoncomparev601v60220240301"><a href="https://github.com/npm/init-package-json/compare/v6.0.1…v6.0.2">6.0.2</a> (2024-03-01)</h2>
+<h3 id="dependencies-2">Dependencies</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/4e2383e5bb6648a6f3511fd5e6d788f0a260412b"><code>4e2383e</code></a> <a href="https://github.com/npm/init-package-json/pull/275">#275</a> bump @npmcli/package-json from 4.0.1 to 5.0.0 (#275) (@dependabot[bot])</li>
+</ul>
+<h2 id="601httpsgithubcomnpminitpackagejsoncomparev600v60120240229"><a href="https://github.com/npm/init-package-json/compare/v6.0.0…v6.0.1">6.0.1</a> (2024-02-29)</h2>
+<h3 id="bugfixes-2">Bug Fixes</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/4eca245b0bb4576b9174efe4c1fbd5f3ddf68b73"><code>4eca245</code></a> <a href="https://github.com/npm/init-package-json/pull/263">#263</a> move to @npmcli/package-json (@wraithgar)</li>
+</ul>
+<h3 id="dependencies-3">Dependencies</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/85b4452f8f3c2060ff24ef8b8ff8a72dcae5a1ee"><code>85b4452</code></a> <a href="https://github.com/npm/init-package-json/pull/274">#274</a> bump read from 2.1.0 to 3.0.1 (#274)</li>
+<li><a href="https://github.com/npm/init-package-json/commit/16f1fcc94a8b5ac3f145ec4f2e6f5a340f46c54c"><code>16f1fcc</code></a> <a href="https://github.com/npm/init-package-json/pull/263">#263</a> remove read-package-json</li>
+<li><a href="https://github.com/npm/init-package-json/commit/5c0da7f5d83c78d7b688b45f236daedb4a083e38"><code>5c0da7f</code></a> <a href="https://github.com/npm/init-package-json/pull/263">#263</a> add new dependency <code>@npmcli/package-json@4.0.1</code></li>
+</ul>
+<h3 id="chores-2">Chores</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/0a12bd77e8c1206f6427ecca6d46fb20357b1b70"><code>0a12bd7</code></a> <a href="https://github.com/npm/init-package-json/pull/273">#273</a> bump @npmcli/config from 7.2.0 to 8.2.0 (#273) (@dependabot[bot])</li>
+<li><a href="https://github.com/npm/init-package-json/commit/b216462566c6a0ab627905a94d1c3ff21fc1121e"><code>b216462</code></a> <a href="https://github.com/npm/init-package-json/pull/267">#267</a> postinstall for dependabot template-oss PR (@lukekarrys)</li>
+<li><a href="https://github.com/npm/init-package-json/commit/36addd83b459288dae6330bb0493572f1c676944"><code>36addd8</code></a> <a href="https://github.com/npm/init-package-json/pull/267">#267</a> bump @npmcli/template-oss from 4.21.1 to 4.21.3 (@dependabot[bot])</li>
+<li><a href="https://github.com/npm/init-package-json/commit/38ee762cc43577d25b512c1a7b185a17fd9c9582"><code>38ee762</code></a> <a href="https://github.com/npm/init-package-json/pull/261">#261</a> postinstall for dependabot template-oss PR (@lukekarrys)</li>
+<li><a href="https://github.com/npm/init-package-json/commit/642e170a7060969c479005e47e7017c58f1691d7"><code>642e170</code></a> <a href="https://github.com/npm/init-package-json/pull/261">#261</a> bump @npmcli/template-oss from 4.19.0 to 4.21.1 (@dependabot[bot])</li>
+<li><a href="https://github.com/npm/init-package-json/commit/4a9b5f1832bd2709e6e432f019f1a964b7159910"><code>4a9b5f1</code></a> <a href="https://github.com/npm/init-package-json/pull/239">#239</a> postinstall for dependabot template-oss PR (@lukekarrys)</li>
+<li><a href="https://github.com/npm/init-package-json/commit/0920582b941e39a71bf3b89f3abe28d6533779a9"><code>0920582</code></a> <a href="https://github.com/npm/init-package-json/pull/239">#239</a> bump @npmcli/template-oss from 4.18.1 to 4.19.0 (@dependabot[bot])</li>
+<li><a href="https://github.com/npm/init-package-json/commit/9e08db33cd8705c0e1b1c0a44a4e000d8ffa4f94"><code>9e08db3</code></a> <a href="https://github.com/npm/init-package-json/pull/238">#238</a> postinstall for dependabot template-oss PR (@lukekarrys)</li>
+<li><a href="https://github.com/npm/init-package-json/commit/4a274d1b17be42a091b39672301b9e7b08e81395"><code>4a274d1</code></a> <a href="https://github.com/npm/init-package-json/pull/238">#238</a> bump @npmcli/template-oss from 4.18.0 to 4.18.1 (@dependabot[bot])</li>
+</ul>
+<h2 id="600httpsgithubcomnpminitpackagejsoncomparev500v60020230815"><a href="https://github.com/npm/init-package-json/compare/v5.0.0…v6.0.0">6.0.0</a> (2023-08-15)</h2>
+<h3 id="breakingchanges-1">⚠️ BREAKING CHANGES</h3>
+<ul>
+<li>support for node 14 has been removed</li>
+</ul>
+<h3 id="bugfixes-3">Bug Fixes</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/97b1efeccb6eac3d0669fcd5703ade57ec7fd148"><code>97b1efe</code></a> <a href="https://github.com/npm/init-package-json/pull/235">#235</a> drop node14 support (@lukekarrys)</li>
+</ul>
+<h3 id="dependencies-4">Dependencies</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/9eccb043c2993371013749a92702b6e4fcdd033d"><code>9eccb04</code></a> <a href="https://github.com/npm/init-package-json/pull/233">#233</a> bump read-package-json from 6.0.4 to 7.0.0</li>
+<li><a href="https://github.com/npm/init-package-json/commit/3024040dec8c5f0215f9dea8652a28669e9d1c9f"><code>3024040</code></a> <a href="https://github.com/npm/init-package-json/pull/234">#234</a> bump npm-package-arg from 10.1.0 to 11.0.0</li>
+</ul>
+<h2 id="500httpsgithubcomnpminitpackagejsoncomparev401v50020230206"><a href="https://github.com/npm/init-package-json/compare/v4.0.1…v5.0.0">5.0.0</a> (2023-02-06)</h2>
+<h3 id="breakingchanges-2">⚠️ BREAKING CHANGES</h3>
+<ul>
+<li>this module is now Promise only and no longer accepts a callback parameter</li>
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/8b919b74149af92f4cad76c96080a254a72b7018"><code>8b919b7</code></a> refactor (@lukekarrys)</li>
+</ul>
+<h2 id="401httpsgithubcomnpminitpackagejsoncomparev400v40120221018"><a href="https://github.com/npm/init-package-json/compare/v4.0.0…v4.0.1">4.0.1</a> (2022-10-18)</h2>
+<h3 id="dependencies-5">Dependencies</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/4dea7685efa3a596eb04d2d4de21902efb0f6c84"><code>4dea768</code></a> <a href="https://github.com/npm/init-package-json/pull/172">#172</a> bump npm-package-arg from 9.1.2 to 10.0.0</li>
+</ul>
+<h2 id="400httpsgithubcomnpminitpackagejsoncomparev302v40020221014"><a href="https://github.com/npm/init-package-json/compare/v3.0.2…v4.0.0">4.0.0</a> (2022-10-14)</h2>
+<h3 id="breakingchanges-3">⚠️ BREAKING CHANGES</h3>
+<ul>
+<li><code>init-package-json</code> is now compatible with the following semver range for node: <code>^14.17.0 || ^16.13.0 || &gt;=18.0.0</code></li>
+</ul>
+<h3 id="features-1">Features</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/e8ea83a9546678c63b8f4d842e0819fced2f7513"><code>e8ea83a</code></a> <a href="https://github.com/npm/init-package-json/pull/159">#159</a> postinstall for dependabot template-oss PR (@lukekarrys)</li>
+</ul>
+<h3 id="dependencies-6">Dependencies</h3>
+<ul>
+<li><a href="https://github.com/npm/init-package-json/commit/b869b31550beb4a66f72e0232aee2b4e0225a282"><code>b869b31</code></a> <a href="https://github.com/npm/init-package-json/pull/170">#170</a> bump read-package-json from 5.0.2 to 6.0.0 (#170)</li>
+<li><a href="https://github.com/npm/init-package-json/commit/d342821532d3066b2db6f681e922131cd5943b01"><code>d342821</code></a> <a href="https://github.com/npm/init-package-json/pull/168">#168</a> bump validate-npm-package-name from 4.0.0 to 5.0.0 (#168)</li>
+</ul>
+<h3 id="302httpsgithubcomnpminitpackagejsoncomparev301v30220220329"><a href="https://github.com/npm/init-package-json/compare/v3.0.1…v3.0.2">3.0.2</a> (2022-03-29)</h3>
+<h3 id="dependencies-7">Dependencies</h3>
+<ul>
+<li>bump validate-npm-package-name from 3.0.0 to 4.0.0 (<a href="https://github.com/npm/init-package-json/issues/144">#144</a>) (<a href="https://github.com/npm/init-package-json/commit/fa7574adb3672c8c7b537bf960c7860900828ecb">fa7574a</a>)</li>
+<li>update npm-package-arg requirement from ^9.0.0 to ^9.0.1 (<a href="https://github.com/npm/init-package-json/issues/136">#136</a>) (<a href="https://github.com/npm/init-package-json/commit/b1ec548592760fd95b6d60f98e61abe4fe84f09f">b1ec548</a>)</li>
+</ul>
+<h3 id="301httpswwwgithubcomnpminitpackagejsoncomparev300v30120220315"><a href="https://www.github.com/npm/init-package-json/compare/v3.0.0…v3.0.1">3.0.1</a> (2022-03-15)</h3>
+<h3 id="dependencies-8">Dependencies</h3>
+<ul>
+<li>bump read-package-json from 4.1.2 to 5.0.0 (<a href="https://www.github.com/npm/init-package-json/issues/134">#134</a>) (<a href="https://www.github.com/npm/init-package-json/commit/3b7a1099ee0241e8dc1f0ff95eca999a699699fc">3b7a109</a>)</li>
+</ul>
+<h2 id="300httpswwwgithubcomnpminitpackagejsoncomparev205v30020220216"><a href="https://www.github.com/npm/init-package-json/compare/v2.0.5…v3.0.0">3.0.0</a> (2022-02-16)</h2>
+<h3 id="breakingchanges-4">⚠ BREAKING CHANGES</h3>
+<ul>
+<li>this drops support for node10 and non-LTS versions of node12 and node14</li>
+</ul>
+<h3 id="dependencies-9">Dependencies</h3>
+<ul>
+<li>@npmcli/template-oss@2.7.1 (<a href="https://www.github.com/npm/init-package-json/commit/257ba391909a7220da964128836b40b14728fab3">257ba39</a>)</li>
+<li>npm-package-arg@9.0.0, @npmcli/config@4.0.0 (<a href="https://www.github.com/npm/init-package-json/commit/5e744c8269a75acfb93ce00a8472532873ffdb47">5e744c8</a>)</li>
+<li>update read requirement from ~1.0.1 to ^1.0.7 (<a href="https://www.github.com/npm/init-package-json/commit/4425b9af9ba4136f4df13ad84cfb541312d4eadf">4425b9a</a>)</li>
+</ul>
+<h2 id="200httpsgithubcomnpminitpackagejsoncomparev1103v20020201009"><a href="https://github.com/npm/init-package-json/compare/v1.10.3…v2.0.0">2.0.0</a> (2020-10-09)</h2>
+<ul>
+<li>BREAKING: requires node10+</li>
+<li>fix: compat with new <code>@npmcli/config</code> module</li>
+<li>chore: update deps to latest and greatest</li>
+</ul>
+<p><a name="1.10.3"></a></p>
+<h2 id="1103httpsgithubcomnpminitpackagejsoncomparev1102v110320180307"><a href="https://github.com/npm/init-package-json/compare/v1.10.2…v1.10.3">1.10.3</a> (2018-03-07)</h2>
+<p><a name="1.10.2"></a></p>
+<h2 id="1102httpsgithubcomnpminitpackagejsoncomparev1101v110220180307"><a href="https://github.com/npm/init-package-json/compare/v1.10.1…v1.10.2">1.10.2</a> (2018-03-07)</h2>
+<h3 id="bugfixes-4">Bug Fixes</h3>
+<ul>
+<li><strong>default-input:</strong> Catch errors from npa (<a href="https://github.com/npm/init-package-json/issues/71">#71</a>) (<a href="https://github.com/npm/init-package-json/commit/11aee1e">11aee1e</a>)</li>
+<li><strong>grammar:</strong> Fix minor style issue in final prompt (<a href="https://github.com/npm/init-package-json/issues/76">#76</a>) (<a href="https://github.com/npm/init-package-json/commit/ba259ce">ba259ce</a>)</li>
+</ul>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="contributors" role="tabpanel" aria-labelledby="contributors-tab">
+            <h5>Contributors</h5>
+            <ul id="contributorsList">
+              <li>dependabot[bot] (49 contributions)</li><li>isaacs (42 contributions)</li><li>lukekarrys (34 contributions)</li><li>ruyadorno (33 contributions)</li><li>othiym23 (29 contributions)</li><li>iarna (16 contributions)</li><li>zkat (15 contributions)</li><li>github-actions[bot] (12 contributions)</li><li>wraithgar (11 contributions)</li><li>reggi (7 contributions)</li><li>michaelnisi (5 contributions)</li><li>watilde (4 contributions)</li><li>kemitchell (3 contributions)</li><li>legodude17 (3 contributions)</li><li>addaleax (2 contributions)</li><li>hashtagchris (2 contributions)</li><li>Zearin (1 contributions)</li><li>mmmm1998 (1 contributions)</li><li>timoxley (1 contributions)</li><li>sammwyy (1 contributions)</li><li>rvagg (1 contributions)</li><li>bertday (1 contributions)</li><li>pke (1 contributions)</li><li>nizaroni (1 contributions)</li><li>MisumiRize (1 contributions)</li><li>mikolalysenko (1 contributions)</li><li>apaleslimghost (1 contributions)</li><li>mfncooper (1 contributions)</li><li>luk- (1 contributions)</li><li>lucthev (1 contributions)</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">© 2024 Package Hub Pro - Powered by Bootstrap</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+</html>
