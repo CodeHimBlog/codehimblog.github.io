@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ntl</title>
+    <meta name="description" content="Node Task List: Interactive cli to list and run package.json scripts">
+    <meta name="author" content="ruyadorno">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags (for Social Media) -->
+    <meta property="og:title" content="{{og_title}}">
+    <meta property="og:description" content="{{og_description}}">
+    <meta property="og:image" content="{{og_image}}">
+    <meta property="og:url" content="{{og_url}}">
+    <meta property="og:type" content="{{og_type}}">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="{{twitter_card}}">
+    <meta name="twitter:title" content="{{twitter_title}}">
+    <meta name="twitter:description" content="{{twitter_description}}">
+    <meta name="twitter:image" content="{{twitter_image}}">
+    <meta name="twitter:site" content="{{twitter_site}}">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{canonical_url}}">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #343a40;
+      padding-top: 56px;
+    }
+	  a{
+		  text-decoration: none;
+	  }
+	  .site-main, .sidebar{
+		  background: #fff;
+		  
+	  }
+	  .sidebar{
+		  padding: 12px;
+	  }
+	  
+    .package-image {
+      max-width: 120px;
+      max-height: 120px;
+      object-fit: contain;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      gap: 1rem;
+    }
+    .stat-box {
+      text-align: center;
+      flex: 1;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .stat-box i {
+      font-size: 1.4rem;
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    .breadcrumbs {
+      margin-bottom: 1.5rem;
+      background: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    .metadata-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+    .metadata-item i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/projects/">Projects</a></li>
+      <li class="breadcrumb-item active" aria-current="page">ntl</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Projects",
+      "item": "https://codehimblog.github.io/projects/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "ntl",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+  
+
+      <!-- Main Details -->
+      <main class="col-md-8 site-main">
+        <!-- Project Name & Description -->
+        <h1 id="packageName">ntl</h1>
+        <p id="packageDescription" class="text-muted">Node Task List: Interactive cli to list and run package.json scripts</p>
+
+        <!-- Statistics -->
+        <div class="stat-row">
+          <div class="stat-box">
+            <i class="bi bi-star-fill text-warning"></i>
+            <span id="stargazersCount">935</span>
+            <p>Stars</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-arrow-repeat text-secondary"></i>
+            <span id="forksCount">35</span>
+            <p>Forks</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-exclamation-circle text-danger"></i>
+            <span id="openIssuesCount">26</span>
+            <p>Open Issues</p>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mb-4">
+          <a href="https://www.npmjs.com/package/ntl" target="_blank" class="btn btn-success me-2" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+          <a href="https://github.com/ruyadorno/ntl/archive/refs/heads/master.zip" class="btn btn-primary me-2" id="downloadBtn">
+            <i class="bi bi-cloud-download me-2"></i>Download ZIP
+          </a>
+          <a href="https://github.com/ruyadorno/ntl" target="_blank" class="btn btn-outline-secondary" id="githubBtn">
+            <i class="bi bi-github me-2"></i>Fork on GitHub
+          </a>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+              <i class="bi bi-file-earmark-text"></i> Readme
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="dependencies-tab" data-bs-toggle="tab" data-bs-target="#dependencies" type="button" role="tab" aria-controls="dependencies" aria-selected="false">
+              <i class="bi bi-diagram-2-fill me-2"></i> Dependencies
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+              <i class="bi bi-journal-text me-2"></i> Changelog
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contributors-tab" data-bs-toggle="tab" data-bs-target="#contributors" type="button" role="tab" aria-controls="contributors" aria-selected="false">
+              <i class="bi bi-people me-2"></i> Contributors
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <div align="center">
+    <br>
+    <br>
+    <br>
+    <img alt="ntl" width="300" src="https://ruyadorno.github.io/svg-demos/ntl/logo.min.svg">
+    <br>
+    <br>
+    <br>
+</div>
+<h1 id="nodetasklist">Node Task List</h1>
+<p><a href="https://npmjs.org/package/ntl"><img src="https://badge.fury.io/js/ntl.svg" alt="NPM version" /></a>
+<a href="https://travis-ci.org/ruyadorno/ntl"><img src="https://travis-ci.org/ruyadorno/ntl.svg?branch=master" alt="Build Status" /></a>
+<a href="https://coveralls.io/github/ruyadorno/ntl?branch=master"><img src="https://coveralls.io/repos/github/ruyadorno/ntl/badge.svg?branch=master" alt="Coverage Status" /></a>
+<a href="https://raw.githubusercontent.com/ruyadorno/ipt/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License" /></a>
+<a href="https://gitter.im/ipipeto/Lobby"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/ipipeto/Lobby" /></a></p>
+<p>Interactive cli tool that lists and run <code>package.json</code> scripts.</p>
+<blockquote>
+  <p>An <a href="https://github.com/ruyadorno/ipt">iPipeTo</a> workflow</p>
+</blockquote>
+<p><br /></p>
+<h2 id="tableofcontents">Table of Contents</h2>
+<ul>
+<li><a href="#arrow_down-install">Install</a></li>
+<li><a href="#mag_right-usage">Usage</a></li>
+<li><a href="#heart_eyes-features">Features</a></li>
+<li><a href="#books-customize">Customize</a><ul>
+<li><a href="#custom-runner">Custom runner</a></li>
+<li><a href="#using-task-descriptions">Using task descriptions</a></li>
+<li><a href="#displaying-task-contents">Displaying task contents</a></li>
+<li><a href="#exclude-tasks-from-ui">Exclude tasks from UI</a></li>
+<li><a href="#exclude-tasks-with-missing-descriptions">Exclude tasks with missing descriptions</a></li>
+<li><a href="#customize-cache">Customize cache</a></li>
+<li><a href="#ui-size">UI Size</a></li></ul></li>
+<li><a href="#arrows_counterclockwise-repeat-the-last-ran-task">Repeat the last ran task</a></li>
+<li><a href="#m-run-multiple-tasks">Run multiple tasks</a><ul>
+<li><a href="#run-multiple-tasks-in-order-of-selection">Preserve selection order</a></li></ul></li>
+<li><a href="#fast_forward-run-in-autocomplete-or-fuzzy-search-mode">Run in autocomplete or fuzzy search mode</a></li>
+<li><a href="#white_check_mark-tips">Tips</a><ul>
+<li><a href="#ntl-as-default-task">ntl as default task</a></li>
+<li><a href="#exclude-scripts">Exclude scripts</a></li>
+<li><a href="#included-command-aliases">Included command aliases</a></li></ul></li>
+<li><a href="#information_source-help">Help</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<p><br /></p>
+<h2 id="arrow_downinstall">:arrow_down: Install</h2>
+<pre><code>$ npm install -g ntl
+</code></pre>
+<p><br /></p>
+<h2 id="mag_rightusage">:mag_right: Usage</h2>
+<p>Navigate to any folder containing a <code>package.json</code> file (usually a Node.js project) that has configured <strong>scripts</strong>, then just use the ntl command:</p>
+<pre class="prettyprint linenums lang-sh"><code>ntl
+</code></pre>
+<p>You can also specify a path to a project folder containing a <code>package.json</code> file:</p>
+<pre class="prettyprint linenums lang-sh"><code>ntl ./my-node-project
+</code></pre>
+<p><br />
+<br /></p>
+<p align="center">
+<img alt="demo animation" width="540" src="https://ruyadorno.github.io/svg-demos/ntl/examples/intro.svg" />
+</p>
+<p><br /></p>
+<h2 id="heart_eyesfeatures">:heart_eyes: Features</h2>
+<ul>
+<li>Interactive interface that lists all <code>package.json</code> scripts</li>
+<li>Select any item in the interactive interface to execute that task</li>
+<li>Add descriptions to each task that can be shown in the UI</li>
+<li>Multiple interactive interfaces (menu list, autocomplete fuzzy search)</li>
+<li>Many options to customize the UI (exclude scripts, amount of items, etc)</li>
+<li>Easy to repeat last ran script (<code>nt</code> and <code>rerun</code> options)</li>
+<li>Run multiple tasks</li>
+<li>Repeat previously set of ran tasks</li>
+<li>Preserve order of selection</li>
+<li>Customize rerun cache options</li>
+</ul>
+<p><br /></p>
+<h2 id="bookscustomize">:books: Customize</h2>
+<h3 id="customrunner">Custom runner</h3>
+<p>By default <strong>Node Task List</strong> tries to use <a href="https://github.com/npm/cli/">npm</a> to run the configured <code>script</code> tasks. In case you want to use a custom runner (e.g: <code>yarn</code> or <code>pnpm</code>) you can configure <strong>ntl</strong> to use whatever runner you prefer.</p>
+<p>That can be configured system-wide by setting the environment variable in your profile file (<code>.bashrc</code> or <code>.bash_profile</code> for macos). In case you only want to ever use <strong>yarn</strong> as your node task runner, you should set:</p>
+<pre class="prettyprint linenums lang-sh"><code># .bashrc (linux) OR .bash_profile (macos)
+export NTL_RUNNER=yarn
+</code></pre>
+<p>Keep in mind environment variables are flexible enough that they can also be set temporarily prior to running a command, so the following would also work:</p>
+<pre class="prettyprint linenums lang-sh"><code>NTL_RUNNER=yarn ntl
+</code></pre>
+<p>:heavy<em>exclamation</em>mark: You can also define a <code>runner</code> in a per-project basis using the <code>ntl</code> configuration of your <code>package.json</code>, e.g:</p>
+<pre class="prettyprint linenums lang-json"><code>{
+  "name": "&lt;project&gt;",
+  "version": "1.0.0",
+  "ntl": {
+    "runner": "yarn"
+  }
+}
+</code></pre>
+<p><br /></p>
+<h3 id="usingtaskdescriptions">Using task descriptions</h3>
+<p>:memo: You can define descriptions for your tasks in your <code>package.json</code> file by defining a <code>ntl</code> section, e.g:</p>
+<pre class="prettyprint linenums lang-json"><code>{
+  "name": "&lt;project&gt;",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "make build",
+    "coverage": "jest --coverage",
+    "test": "jest"
+  },
+  "ntl": {
+    "descriptions": {
+      "build": "Builds the project",
+      "coverage": "Run test outputing code coverage",
+      "test": "Run project's tests"
+    }
+  }
+}
+</code></pre>
+<p>These descriptions will be shown anytime you run <code>ntl</code>.</p>
+<p><br /></p>
+<h3 id="displayingtaskcontents">Displaying task contents</h3>
+<p>Use the <code>--info</code> or simply <code>-i</code> option in order to display the contents of each script task, like:</p>
+<pre class="prettyprint linenums lang-sh"><code>$ ntl -i
+⬢  Node Task List
+? Select a task to run: (Use arrow keys)
+❯ generate-manual › maked-man README.md &gt; man/man1/ntl.1
+          pretest › eslint cli.js rerun.js test
+             test › cross-env NTL_NO_RERUN_CACHE=1 tap
+</code></pre>
+<p>Task contents will also be shown when using the <code>--descriptions</code> option and no description is available for a given item.</p>
+<p><br /></p>
+<h3 id="excludetasksfromui">Exclude tasks from UI</h3>
+<p>You can define a list of scripts to be excluded from the interactive menu using the <code>--exclude</code> option:</p>
+<pre><code>$ ntl -e coverall tasks
+⬢  Node Task List
+? Select a task to run: (Use arrow keys)
+❯ test
+  test:watch
+</code></pre>
+<p>You can also use a wildcard character to exclude multiple scripts:</p>
+<pre><code>$ ntl -e "test*"
+⬢  Node Task List
+? Select a task to run: (Use arrow keys)
+❯ coveralls
+  tasks
+</code></pre>
+<p><br /></p>
+<h3 id="excludetaskswithmissingdescriptions">Exclude tasks with missing descriptions</h3>
+<p>You can also filter out items that doesn't have a description using the <code>--descriptions-only</code> or <code>-o</code> option.</p>
+<p><br /></p>
+<h3 id="customizecache">Customize cache</h3>
+<p><strong>ntl</strong> uses a cache system that stores the last ran command for each project in order to make it easier for users to repeat it. Given its importance, the following environment variables are available in order to customize its location and size:</p>
+<ul>
+<li><code>NTL_RERUN_CACHE_DIR</code>: Defines a directory to store the cache file</li>
+<li><code>NTL_RERUN_CACHE_NAME</code>: Filename to use for the cache</li>
+<li><code>NTL_RERUN_CACHE_MAX</code>: Number of items to store in the cache (defaults to <code>10</code>)</li>
+<li><code>NTL_NO_RERUN_CACHE</code>: When defined, avoid the cache system completely</li>
+</ul>
+<p>For example, if a given user wanted to store its cache in <code>~/.ntl/cache</code> location and save up to 100 items in it, they could add the following to their <code>.bashrc</code> (linux) or <code>.bash_profile</code> (macos):</p>
+<pre class="prettyprint linenums lang-sh"><code>export NTL_RERUN_CACHE_DIR=$HOME
+export NTL_RERUN_CACHE_NAME=cache
+export NTL_RERUN_CACHE_MAX=100
+</code></pre>
+<p>The cache can also be customized through command line options:</p>
+<ul>
+<li><code>--rerun-cache-dir</code> Defines a directory to store the cache file</li>
+<li><code>--rerun-cache-name</code>: Filename to use for the cache</li>
+<li><code>--no-rerun-cache</code>: Avoids the cache system completely</li>
+</ul>
+<p><br /></p>
+<h3 id="uisize">UI Size</h3>
+<p>You can increase/reduce the size of the presented UI list using the <code>--size</code> or <code>-s</code> option. In this example we just increased the size of the list to show up to 12 items at once:</p>
+<pre><code>$ ntl -s 12
+⬢  Node Task List
+? Select a task to run:
+❯ build
+  generate-manual
+  hello
+  bomdia
+  bonjour
+  test
+  test:dev
+  test:ci
+  test:integration
+  test:unit
+  test:e2e
+  start
+</code></pre>
+<p>The default size value is 7 items.</p>
+<p><br /></p>
+<h2 id="arrows_counterclockwiserepeatthelastrantask">:arrows_counterclockwise: Repeat the last ran task</h2>
+<p><strong>ntl</strong> provides many options to make it easier to rerun the last task, either through having it selected as default option the next time you run the <code>ntl</code> command, or by using one of the following:</p>
+<ul>
+<li><strong>The ultra convenient way</strong>: <code>nt</code> command shorthand :sunglasses: (You should think of <code>nt</code> as: "ok, just run the last node task", in contrast to <code>ntl</code> which should be interpreted as: "ok, give me the node task list again") in case no previous task is available, running <code>nt</code> will behave exactly as <code>ntl</code></li>
+<li>Using a <code>--rerun</code> or <code>-r</code> flag, e.g: <code>ntl -r</code></li>
+<li>Prepending the <code>NTL_RERUN</code> env variable, e.g: <code>NTL_RERUN=true ntl</code></li>
+</ul>
+<p align="center">
+<img alt="demo animation showing how to rerun a script using the nt command shorthand" width="540" src="https://ruyadorno.github.io/svg-demos/ntl/examples/option-rerun.svg" />
+</p>
+<p><br /></p>
+<h2 id="mrunmultipletasks">:m: Run multiple tasks</h2>
+<p>Using the <code>--multiple</code> or <code>-m</code> option, the interface becomes a checkbox-based list that allows you to select multiple tasks and run them in serial.</p>
+<pre class="prettyprint linenums lang-sh"><code>$ ntl -m
+⬢  Node Task List
+? Select a task to run:
+ ◯ start
+ ◉ test
+❯◉ test:ci
+</code></pre>
+<p align="center">
+<img alt="demo animation showing how to use -m to have a checkbox interface allowing for selection of multiple tasks to be ran in serial" width="540" src="https://ruyadorno.github.io/svg-demos/ntl/examples/option-multiple.svg" />
+</p>
+<p>Better yet, combine that with the <strong>rerun</strong> feature and you can repeat multiple tasks using the <code>nt</code> command.</p>
+<h3 id="runmultipletasksinorderofselection">Run multiple tasks in order of selection</h3>
+<p>You can run multiple tasks in the order you pick them :sunglasses: Use the <code>--ordered</code> or <code>-O</code> option:</p>
+<pre class="prettyprint linenums lang-sh"><code>$ ntl -O
+⬢  Node Task List
+? Select a task to run: (Press &lt;space&gt; to select, &lt;r&gt; to res
+et)
+ ◯   bar › Test task
+ ◯   foo › Test task
+❯2 hello › Hello world
+ ◯ start › Start the development server
+ 1  test › Run all tests for the project
+</code></pre>
+<p><br /></p>
+<h2 id="fast_forwardruninautocompleteorfuzzysearchmode">:fast_forward: Run in autocomplete or fuzzy search mode</h2>
+<p>Use <code>--autocomplete</code> or <code>-A</code> option in order to use an interface variation that allows you to type the name of the task instead of browsing through an arrow-based menu. This mode can be very helpful when managing a long list of tasks.</p>
+<pre class="prettyprint linenums lang-sh"><code>$ ntl -A
+⬢  Node Task List
+? Select a task to run: t
+❯ pretest
+  test
+  start
+</code></pre>
+<p align="center">
+<img alt="demo animation showing how to use -m to have a checkbox interface allowing for selection of multiple tasks to be ran in serial" width="540" src="https://ruyadorno.github.io/svg-demos/ntl/examples/option-autocomplete.svg" />
+</p>
+<p><br /></p>
+<h2 id="white_check_marktips">:white<em>check</em>mark: Tips</h2>
+<h3 id="ntlasdefaulttask">ntl as default task</h3>
+<p>You can define <code>ntl</code> as a dev dependency and one of the tasks of your project, specially <code>start</code> - so whenever someone runs <code>npm start</code> or <code>yarn start</code> they get the convenient <strong>ntl</strong> interface. Like in the following <code>package.json</code> example:</p>
+<pre class="prettyprint linenums lang-json"><code>{
+  "name": "&lt;project&gt;",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ntl"
+  },
+  "devDependencies": {
+    "ntl": "^5.0.0"
+  }
+}
+</code></pre>
+<h3 id="excludescripts">Exclude scripts</h3>
+<p>You can also define a task that invokes <code>ntl</code> while excluding other tasks, e.g:</p>
+<pre class="prettyprint linenums lang-json"><code>{
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watchAll",
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "tasks": "ntl --exclude coverall tasks"
+  }
+}
+</code></pre>
+<h3 id="includedcommandaliases">Included command aliases</h3>
+<ul>
+<li><code>ntl</code> The default command</li>
+<li><code>nodetasklist</code> Longhand version in case users have conflicting <code>ntl</code> commands</li>
+<li><code>npm-tasklist</code> Legacy longhand version</li>
+<li><code>nt</code> Rerun last script shortcut</li>
+<li><code>nodetask</code> Rerun last script longhand</li>
+</ul>
+<p><br /></p>
+<h2 id="information_sourcehelp">:information_source: Help</h2>
+<p>Still feel like you could use some <code>--help</code> ?</p>
+<pre class="prettyprint linenums lang-sh"><code>Usage:
+  ntl [&lt;path&gt;]             Build an interactive interface and run any script
+  nt [&lt;path&gt;]              Rerun last executed script
+
+Options:
+  -a, --all                Includes pre and post scripts on the list   [boolean]
+  -A, --autocomplete       Starts in autocomplete mode                 [boolean]
+  -D, --debug              Prints to stderr any internal error         [boolean]
+  -d, --descriptions       Displays the descriptions of each script    [boolean]
+  -o, --descriptions-only  Limits output to scripts with a description [boolean]
+  -h, --help               Shows this help message                     [boolean]
+  -i, --info               Displays the contents of each script        [boolean]
+  -e, --exclude            Excludes specific scripts                     [array]
+  -m, --multiple           Allows the selection of multiple items      [boolean]
+  -O, --ordered            Selects multiple items in order             [boolean]
+  -s, --size               Amount of lines to display at once           [number]
+  --rerun-cache-dir        Defines the rerun task cache location        [string]
+  --rerun-cache-name       Defines the rerun task cache filename        [string]
+  --no-rerun-cache         Never write to or read from cache           [boolean]
+  -v, --version            Show version number                         [boolean]
+  -r, --rerun              Rerun last executed script                  [boolean]
+
+Visit https://github.com/ruyadorno/ntl for more info
+</code></pre>
+<p><br /></p>
+<h2 id="license">License</h2>
+<p><a href="LICENSE">MIT</a> © 2020 <a href="http://ruyadorno.com">Ruy Adorno</a></p>
+          </div>
+          <div class="tab-pane fade" id="dependencies" role="tabpanel" aria-labelledby="dependencies-tab">
+            <h5>Dependencies</h5>
+            <ul id="dependenciesList">
+              <li>ipt (^3.1.1)</li><li>lru-cache-fs (^2.0.1)</li><li>read-pkg (^5.2.0)</li><li>simple-output (^2.1.1)</li><li>yargs (^15.3.1)</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <h5>Changelog</h5>
+            <ul id="changelogList">
+              <p>No changelog available.</p>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="contributors" role="tabpanel" aria-labelledby="contributors-tab">
+            <h5>Contributors</h5>
+            <ul id="contributorsList">
+              <li>ruyadorno (136 contributions)</li><li>mischah (10 contributions)</li><li>dependabot[bot] (2 contributions)</li><li>bclinkinbeard (1 contributions)</li><li>darahak (1 contributions)</li><li>vladimyr (1 contributions)</li><li>RecuencoJones (1 contributions)</li><li>LittleWhiteYA (1 contributions)</li><li>Mehdi-Hp (1 contributions)</li><li>Goatfried (1 contributions)</li><li>mkamakura (1 contributions)</li><li>wgolledge (1 contributions)</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4">
+		  <div class="sidebar">
+        <div class="sidebar-item">
+          <h5>Owner</h5>
+          <div class="d-flex align-items-center">
+            <img src="https://avatars.githubusercontent.com/u/220900?v=4" alt="Owner Avatar" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+            <a href="https://github.com/ruyadorno" target="_blank" id="ownerName">ruyadorno</a>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <h5>Metadata</h5>
+          <div class="metadata-item">
+            <i class="bi bi-calendar"></i>
+            <strong>Created At:</strong> <span id="createdAt">February 8, 2016</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-pencil-square"></i>
+            <strong>Last Updated:</strong> <span id="updatedAt">November 12, 2024</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-code-slash"></i>
+            <strong>Language:</strong> <span id="language">JavaScript</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <strong>Size:</strong> <span id="repoSize">0.83 MB</span>
+          </div>
+        </div>
+			  	  </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">© 2024 Package Hub Pro - Powered by Bootstrap</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+</html>
