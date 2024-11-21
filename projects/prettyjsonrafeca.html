@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prettyjson</title>
+    <meta name="description" content="Package for formatting JSON data in a coloured YAML-style, perfect for CLI output">
+    <meta name="author" content="rafeca">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags (for Social Media) -->
+    <meta property="og:title" content="{{og_title}}">
+    <meta property="og:description" content="{{og_description}}">
+    <meta property="og:image" content="{{og_image}}">
+    <meta property="og:url" content="{{og_url}}">
+    <meta property="og:type" content="{{og_type}}">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="{{twitter_card}}">
+    <meta name="twitter:title" content="{{twitter_title}}">
+    <meta name="twitter:description" content="{{twitter_description}}">
+    <meta name="twitter:image" content="{{twitter_image}}">
+    <meta name="twitter:site" content="{{twitter_site}}">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{canonical_url}}">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #343a40;
+      padding-top: 56px;
+    }
+	  a{
+		  text-decoration: none;
+	  }
+	  .site-main, .sidebar{
+		  background: #fff;
+		  
+	  }
+	  .sidebar{
+		  padding: 12px;
+	  }
+	  
+    .package-image {
+      max-width: 120px;
+      max-height: 120px;
+      object-fit: contain;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      gap: 1rem;
+    }
+    .stat-box {
+      text-align: center;
+      flex: 1;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .stat-box i {
+      font-size: 1.4rem;
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    .breadcrumbs {
+      margin-bottom: 1.5rem;
+      background: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    .metadata-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+    .metadata-item i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/projects/">Projects</a></li>
+      <li class="breadcrumb-item active" aria-current="page">prettyjson</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Projects",
+      "item": "https://codehimblog.github.io/projects/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "prettyjson",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+  
+
+      <!-- Main Details -->
+      <main class="col-md-8 site-main">
+        <!-- Project Name & Description -->
+        <h1 id="packageName">prettyjson</h1>
+        <p id="packageDescription" class="text-muted">Package for formatting JSON data in a coloured YAML-style, perfect for CLI output</p>
+
+        <!-- Statistics -->
+        <div class="stat-row">
+          <div class="stat-box">
+            <i class="bi bi-star-fill text-warning"></i>
+            <span id="stargazersCount">481</span>
+            <p>Stars</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-arrow-repeat text-secondary"></i>
+            <span id="forksCount">56</span>
+            <p>Forks</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-exclamation-circle text-danger"></i>
+            <span id="openIssuesCount">22</span>
+            <p>Open Issues</p>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mb-4">
+          <a href="http://rafeca.com/prettyjson" target="_blank" class="btn btn-success me-2" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+          <a href="https://github.com/rafeca/prettyjson/archive/refs/heads/master.zip" class="btn btn-primary me-2" id="downloadBtn">
+            <i class="bi bi-cloud-download me-2"></i>Download ZIP
+          </a>
+          <a href="https://github.com/rafeca/prettyjson" target="_blank" class="btn btn-outline-secondary" id="githubBtn">
+            <i class="bi bi-github me-2"></i>Fork on GitHub
+          </a>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+              <i class="bi bi-file-earmark-text"></i> Readme
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="dependencies-tab" data-bs-toggle="tab" data-bs-target="#dependencies" type="button" role="tab" aria-controls="dependencies" aria-selected="false">
+              <i class="bi bi-diagram-2-fill me-2"></i> Dependencies
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+              <i class="bi bi-journal-text me-2"></i> Changelog
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contributors-tab" data-bs-toggle="tab" data-bs-target="#contributors" type="button" role="tab" aria-controls="contributors" aria-selected="false">
+              <i class="bi bi-people me-2"></i> Contributors
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1 id="prettyjsonbuildstatushttpstravisciorgrafecaprettyjsonsvghttpstravisciorgrafecaprettyjsonnpmversionhttpsbadgefuryiojsprettyjsonsvghttpsbadgefuryiojsprettyjsoncoveragestatushttpscoverallsioreposgithubrafecaprettyjsonbadgesvgbranchmasterhttpscoverallsiogithubrafecaprettyjsonbranchmaster">prettyjson <a href="https://travis-ci.org/rafeca/prettyjson"><img src="https://travis-ci.org/rafeca/prettyjson.svg" alt="Build Status" /></a> <a href="https://badge.fury.io/js/prettyjson"><img src="https://badge.fury.io/js/prettyjson.svg" alt="NPM version" /></a> <a href="https://coveralls.io/github/rafeca/prettyjson?branch=master"><img src="https://coveralls.io/repos/github/rafeca/prettyjson/badge.svg?branch=master" alt="Coverage Status" /></a></h1>
+<p>Package for formatting JSON data in a coloured YAML-style, perfect for CLI output.</p>
+<h2 id="howtoinstall">How to install</h2>
+<p>Just install it via NPM:</p>
+<pre class="prettyprint linenums lang-bash"><code>$ npm install -g prettyjson
+</code></pre>
+<p>This will install <code>prettyjson</code> globally, so it will be added automatically
+to your <code>PATH</code>.</p>
+<h2 id="usingitfromthecli">Using it (from the CLI)</h2>
+<p>This package installs a command line interface to render JSON data in a more
+convenient way. You can use the CLI in three different ways:</p>
+<p><strong>Decode a JSON file:</strong> If you want to see the contents of a JSON file, just pass
+it as the first argument to the CLI:</p>
+<pre class="prettyprint linenums lang-bash"><code>$ prettyjson package.json
+</code></pre>
+<p><img src="https://raw.github.com/rafeca/prettyjson/master/images/example3.png" alt="Example 1" /></p>
+<p><strong>Decode the stdin:</strong> You can also pipe the result of a command (for example an
+HTTP request) to the CLI to see the JSON result in a clearer way:</p>
+<pre class="prettyprint linenums lang-bash"><code>$ curl https://api.github.com/users/rafeca | prettyjson
+</code></pre>
+<p><img src="https://raw.github.com/rafeca/prettyjson/master/images/example4.png" alt="Example 2" /></p>
+<p><strong>Decode random strings:</strong> if you call the CLI with no arguments, you'll get a
+prompt where you can past JSON strings and they'll be automatically displayed in a clearer way:</p>
+<p><img src="https://raw.github.com/rafeca/prettyjson/master/images/example5.png" alt="Example 3" /></p>
+<h3 id="commandlineoptions">Command line options</h3>
+<p>It's possible to customize the output through some command line options:</p>
+<pre class="prettyprint linenums lang-bash"><code># Change colors
+$ prettyjson --string=red --multiline_string=cyan --keys=blue --dash=yellow --number=green package.json
+
+# Do not use colors
+$ prettyjson --nocolor=1 package.json
+
+# Change indentation
+$ prettyjson --indent=4 package.json
+
+# Render arrays elements in a single line
+$ prettyjson --inline-arrays=1 package.json
+
+# Escape conflictive strings
+$ prettyjson --escape=1 package.json
+</code></pre>
+<p><strong>Deprecation Notice</strong>: The old configuration through environment variables is
+deprecated and it will be removed in the next major version (1.0.0).</p>
+<h2 id="usingitfromnodejs">Using it (from Node.js)</h2>
+<p>It's pretty easy to use it. You just have to include it in your script and call
+the <code>render()</code> method:</p>
+<pre class="prettyprint linenums lang-javascript"><code>var prettyjson = require('prettyjson');
+
+var data = {
+  username: 'rafeca',
+  url: 'https://github.com/rafeca',
+  twitter_account: 'https://twitter.com/rafeca',
+  projects: ['prettyprint', 'connfu']
+};
+
+var options = {
+  noColor: true
+};
+
+console.log(prettyjson.render(data, options));
+</code></pre>
+<p>And will output:</p>
+<p><img src="https://raw.github.com/rafeca/prettyjson/master/images/example1.png" alt="Example 4" /></p>
+<p>You can also configure the colors of the hash keys and array dashes
+(using <a href="https://github.com/Marak/colors.js">colors.js</a> colors syntax):</p>
+<pre class="prettyprint linenums lang-javascript"><code>var prettyjson = require('prettyjson');
+
+var data = {
+  username: 'rafeca',
+  url: 'https://github.com/rafeca',
+  twitter_account: 'https://twitter.com/rafeca',
+  projects: ['prettyprint', 'connfu']
+};
+
+console.log(prettyjson.render(data, {
+  keysColor: 'rainbow',
+  dashColor: 'magenta',
+  stringColor: 'white',
+  multilineStringColor: 'cyan'
+}));
+</code></pre>
+<p>Will output something like:</p>
+<p><img src="https://raw.github.com/rafeca/prettyjson/master/images/example2.png" alt="Example 5" /></p>
+<h2 id="runningtests">Running Tests</h2>
+<p>To run the test suite first invoke the following command within the repo,
+installing the development dependencies:</p>
+<pre class="prettyprint linenums lang-bash"><code>$ npm install
+</code></pre>
+<p>then run the tests:</p>
+<pre class="prettyprint linenums lang-bash"><code>$ npm test
+</code></pre>
+<p>On windows, you can run the tests with:</p>
+<pre class="prettyprint linenums lang-cmd"><code>C:\git\prettyjson&gt; npm run-script testwin
+</code></pre>
+          </div>
+          <div class="tab-pane fade" id="dependencies" role="tabpanel" aria-labelledby="dependencies-tab">
+            <h5>Dependencies</h5>
+            <ul id="dependenciesList">
+              <li>@colors/colors (1.5.0)</li><li>minimist (^1.2.0)</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <h5>Changelog</h5>
+            <ul id="changelogList">
+              <p>No changelog available.</p>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="contributors" role="tabpanel" aria-labelledby="contributors-tab">
+            <h5>Contributors</h5>
+            <ul id="contributorsList">
+              <li>rafeca (152 contributions)</li><li>dlight (2 contributions)</li><li>shaunmccarthy (2 contributions)</li><li>SuperPaintman (2 contributions)</li><li>nem035 (2 contributions)</li><li>exos (2 contributions)</li><li>fengzilong (1 contributions)</li><li>mercan01 (1 contributions)</li><li>tiye (1 contributions)</li><li>gotterdemarung (1 contributions)</li><li>XhmikosR (1 contributions)</li><li>EndangeredMassa (1 contributions)</li><li>pdehaan (1 contributions)</li><li>MichaelDeBoey (1 contributions)</li><li>mmalecki (1 contributions)</li><li>sonicdoe (1 contributions)</li><li>dgoguerra (1 contributions)</li><li>bahamas10 (1 contributions)</li><li>DABH (1 contributions)</li><li>alexey-detr (1 contributions)</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4">
+		  <div class="sidebar">
+        <div class="sidebar-item">
+          <h5>Owner</h5>
+          <div class="d-flex align-items-center">
+            <img src="https://avatars.githubusercontent.com/u/408035?v=4" alt="Owner Avatar" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+            <a href="https://github.com/rafeca" target="_blank" id="ownerName">rafeca</a>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <h5>Metadata</h5>
+          <div class="metadata-item">
+            <i class="bi bi-calendar"></i>
+            <strong>Created At:</strong> <span id="createdAt">October 10, 2011</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-pencil-square"></i>
+            <strong>Last Updated:</strong> <span id="updatedAt">October 15, 2024</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-code-slash"></i>
+            <strong>Language:</strong> <span id="language">JavaScript</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <strong>Size:</strong> <span id="repoSize">1.01 MB</span>
+          </div>
+        </div>
+			  	  </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">© 2024 Package Hub Pro - Powered by Bootstrap</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+</html>
