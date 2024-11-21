@@ -610,9 +610,11 @@ Visit https://github.com/ruyadorno/ntl for more info
 
         // Create a map for quick lookup
         const emojiMap = emojis.reduce((map, emoji) => {
-          emoji.names.forEach((name) => {
-            map[name] = emoji.emoji;
-          });
+          if (emoji.aliases) {
+            emoji.aliases.forEach((alias) => {
+              map[alias] = emoji.emoji;
+            });
+          }
           return map;
         }, {});
 
