@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>read-package-json</title>
+    <meta name="description" content="The thing npm uses to read package.json files with semantics and defaults and validation and stuff">
+    <meta name="author" content="npm">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags (for Social Media) -->
+    <meta property="og:title" content="{{og_title}}">
+    <meta property="og:description" content="{{og_description}}">
+    <meta property="og:image" content="{{og_image}}">
+    <meta property="og:url" content="{{og_url}}">
+    <meta property="og:type" content="{{og_type}}">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="{{twitter_card}}">
+    <meta name="twitter:title" content="{{twitter_title}}">
+    <meta name="twitter:description" content="{{twitter_description}}">
+    <meta name="twitter:image" content="{{twitter_image}}">
+    <meta name="twitter:site" content="{{twitter_site}}">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{canonical_url}}">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #343a40;
+      padding-top: 56px;
+    }
+	  a{
+		  text-decoration: none;
+	  }
+	  .site-main, .sidebar{
+		  background: #fff;
+		  
+	  }
+	  .sidebar{
+		  padding: 12px;
+	  }
+	  
+    .package-image {
+      max-width: 120px;
+      max-height: 120px;
+      object-fit: contain;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      gap: 1rem;
+    }
+    .stat-box {
+      text-align: center;
+      flex: 1;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .stat-box i {
+      font-size: 1.4rem;
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    .breadcrumbs {
+      margin-bottom: 1.5rem;
+      background: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    .metadata-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+    .metadata-item i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/projects/">Projects</a></li>
+      <li class="breadcrumb-item active" aria-current="page">read-package-json</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Projects",
+      "item": "https://codehimblog.github.io/projects/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "read-package-json",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+  
+
+      <!-- Main Details -->
+      <main class="col-md-8 site-main">
+        <!-- Project Name & Description -->
+        <h1 id="packageName">read-package-json</h1>
+        <p id="packageDescription" class="text-muted">The thing npm uses to read package.json files with semantics and defaults and validation and stuff</p>
+
+        <!-- Statistics -->
+        <div class="stat-row">
+          <div class="stat-box">
+            <i class="bi bi-star-fill text-warning"></i>
+            <span id="stargazersCount">224</span>
+            <p>Stars</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-arrow-repeat text-secondary"></i>
+            <span id="forksCount">80</span>
+            <p>Forks</p>
+          </div>
+          <div class="stat-box">
+            <i class="bi bi-exclamation-circle text-danger"></i>
+            <span id="openIssuesCount">0</span>
+            <p>Open Issues</p>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mb-4">
+          <a href="#" target="_blank" class="btn btn-success me-2" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+          <a href="https://github.com/npm/read-package-json/archive/refs/heads/master.zip" class="btn btn-primary me-2" id="downloadBtn">
+            <i class="bi bi-cloud-download me-2"></i>Download ZIP
+          </a>
+          <a href="https://github.com/npm/read-package-json" target="_blank" class="btn btn-outline-secondary" id="githubBtn">
+            <i class="bi bi-github me-2"></i>Fork on GitHub
+          </a>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+              <i class="bi bi-file-earmark-text"></i> Readme
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="dependencies-tab" data-bs-toggle="tab" data-bs-target="#dependencies" type="button" role="tab" aria-controls="dependencies" aria-selected="false">
+              <i class="bi bi-diagram-2-fill me-2"></i> Dependencies
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+              <i class="bi bi-journal-text me-2"></i> Changelog
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contributors-tab" data-bs-toggle="tab" data-bs-target="#contributors" type="button" role="tab" aria-controls="contributors" aria-selected="false">
+              <i class="bi bi-people me-2"></i> Contributors
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1 id="readpackagejson">read-package-json</h1>
+<blockquote>
+  <p>[!NOTE] 
+  This repo has been archived. Please use <a href="https://github.com/package-json">npm/package-json</a> instead.</p>
+</blockquote>
+<p>This is the thing that npm uses to read package.json files.  It
+validates some stuff, and loads some default things.</p>
+<p>It keeps a cache of the files you've read, so that you don't end
+up reading the same package.json file multiple times.</p>
+<p>Note that if you just want to see what's literally in the package.json
+file, you can usually do <code>var data = require('some-module/package.json')</code>.</p>
+<p>This module is basically only needed by npm, but it's handy to see what
+npm will see when it looks at your package.</p>
+<h2 id="usage">Usage</h2>
+<pre class="prettyprint linenums lang-javascript"><code>var readJson = require('read-package-json')
+
+// readJson(filename, [logFunction=noop], [strict=false], cb)
+readJson('/path/to/package.json', console.error, false, function (er, data) {
+  if (er) {
+    console.error("There was an error reading the file")
+    return
+  }
+
+  console.error('the package data is', data)
+});
+</code></pre>
+<h2 id="readjsonfilelogfnnoopstrictfalsecb">readJson(file, [logFn = noop], [strict = false], cb)</h2>
+<ul>
+<li><code>file</code> {String} The path to the package.json file</li>
+<li><code>logFn</code> {Function} Function to handle logging.  Defaults to a noop.</li>
+<li><code>strict</code> {Boolean} True to enforce SemVer 2.0 version strings, and
+other strict requirements.</li>
+<li><code>cb</code> {Function} Gets called with <code>(er, data)</code>, as is The Node Way.</li>
+</ul>
+<p>Reads the JSON file and does the things.</p>
+<h2 id="packagejsonfields"><code>package.json</code> Fields</h2>
+<p>See <code>man 5 package.json</code> or <code>npm help json</code>.</p>
+<h2 id="readjsonlog">readJson.log</h2>
+<p>By default this is a reference to the <code>npmlog</code> module.  But if that
+module can't be found, then it'll be set to just a dummy thing that does
+nothing.</p>
+<p>Replace with your own <code>{log,warn,error}</code> object for fun loggy time.</p>
+<h2 id="readjsonextrasfiledatacb">readJson.extras(file, data, cb)</h2>
+<p>Run all the extra stuff relative to the file, with the parsed data.</p>
+<p>Modifies the data as it does stuff.  Calls the cb when it's done.</p>
+<h2 id="readjsonextrasetfnfn">readJson.extraSet = [fn, fn, …]</h2>
+<p>Array of functions that are called by <code>extras</code>.  Each one receives the
+arguments <code>fn(file, data, cb)</code> and is expected to call <code>cb(er, data)</code>
+when done or when an error occurs.</p>
+<p>Order is indeterminate, so each function should be completely
+independent.</p>
+<p>Mix and match!</p>
+<h2 id="otherrelevantfilesbesidespackagejson">Other Relevant Files Besides <code>package.json</code></h2>
+<p>Some other files have an effect on the resulting data object, in the
+following ways:</p>
+<h3 id="readme"><code>README?(.*)</code></h3>
+<p>If there is a <code>README</code> or <code>README.*</code> file present, then npm will attach
+a <code>readme</code> field to the data with the contents of this file.</p>
+<p>Owing to the fact that roughly 100% of existing node modules have
+Markdown README files, it will generally be assumed to be Markdown,
+regardless of the extension.  Please plan accordingly.</p>
+<h3 id="serverjs"><code>server.js</code></h3>
+<p>If there is a <code>server.js</code> file, and there is not already a
+<code>scripts.start</code> field, then <code>scripts.start</code> will be set to <code>node
+server.js</code>.</p>
+<h3 id="authors"><code>AUTHORS</code></h3>
+<p>If there is not already a <code>contributors</code> field, then the <code>contributors</code>
+field will be set to the contents of the <code>AUTHORS</code> file, split by lines,
+and parsed.</p>
+<h3 id="bindingsgyp"><code>bindings.gyp</code></h3>
+<p>If a bindings.gyp file exists, and there is not already a
+<code>scripts.install</code> field, then the <code>scripts.install</code> field will be set to
+<code>node-gyp rebuild</code>.</p>
+<h3 id="indexjs"><code>index.js</code></h3>
+<p>If the json file does not exist, but there is a <code>index.js</code> file
+present instead, and that file has a package comment, then it will try
+to parse the package comment, and use that as the data instead.</p>
+<p>A package comment looks like this:</p>
+<pre class="prettyprint linenums lang-javascript"><code>/**package
+ * { "name": "my-bare-module"
+ * , "version": "1.2.3"
+ * , "description": "etc...." }
+ **/
+
+// or...
+
+/**package
+{ "name": "my-bare-module"
+, "version": "1.2.3"
+, "description": "etc...." }
+**/
+</code></pre>
+<p>The important thing is that it starts with <code>/**package</code>, and ends with
+<code>**/</code>.  If the package.json file exists, then the index.js is not
+parsed.</p>
+<h3 id="directoriesman09"><code>{directories.man}/*.[0-9]</code></h3>
+<p>If there is not already a <code>man</code> field defined as an array of files or a
+single file, and
+there is a <code>directories.man</code> field defined, then that directory will
+be searched for manpages.</p>
+<p>Any valid manpages found in that directory will be assigned to the <code>man</code>
+array, and installed in the appropriate man directory at package install
+time, when installed globally on a Unix system.</p>
+<h3 id="directoriesbin"><code>{directories.bin}/*</code></h3>
+<p>If there is not already a <code>bin</code> field defined as a string filename or a
+hash of <code>&lt;name&gt; : &lt;filename&gt;</code> pairs, then the <code>directories.bin</code>
+directory will be searched and all the files within it will be linked as
+executables at install time.</p>
+<p>When installing locally, npm links bins into <code>node_modules/.bin</code>, which
+is in the <code>PATH</code> environ when npm runs scripts.  When
+installing globally, they are linked into <code>{prefix}/bin</code>, which is
+presumably in the <code>PATH</code> environment variable.</p>
+<h3 id="typesfield"><code>types</code> field</h3>
+<p>If you do not have a <code>types</code> field, then it will check if a
+corresponding <code>*.d.ts</code> file exists for your package entry file and add
+it to the <code>package.json</code>.</p>
+          </div>
+          <div class="tab-pane fade" id="dependencies" role="tabpanel" aria-labelledby="dependencies-tab">
+            <h5>Dependencies</h5>
+            <ul id="dependenciesList">
+              <li>glob (^10.2.2)</li><li>json-parse-even-better-errors (^3.0.0)</li><li>normalize-package-data (^6.0.0)</li><li>npm-normalize-package-bin (^3.0.0)</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <h5>Changelog</h5>
+            <ul id="changelogList">
+              <h1 id="changelog">Changelog</h1>
+<h2 id="701httpsgithubcomnpmreadpackagejsoncomparev700v70120240504"><a href="https://github.com/npm/read-package-json/compare/v7.0.0…v7.0.1">7.0.1</a> (2024-05-04)</h2>
+<h3 id="bugfixes">Bug Fixes</h3>
+<ul>
+<li><a href="https://github.com/npm/read-package-json/commit/bfaffbf63f10bd8b68dcafaa2254566f52e14fb3"><code>bfaffbf</code></a> <a href="https://github.com/npm/read-package-json/pull/223">#223</a> linting: no-unused-vars (@lukekarrys)</li>
+</ul>
+<h3 id="chores">Chores</h3>
+<ul>
+<li><a href="https://github.com/npm/read-package-json/commit/fae32106c8323b3e29bb5a0d32b34d71c8404b6c"><code>fae3210</code></a> <a href="https://github.com/npm/read-package-json/pull/223">#223</a> bump @npmcli/template-oss to 4.22.0 (@lukekarrys)</li>
+<li><a href="https://github.com/npm/read-package-json/commit/c73cf0dcbc5cb4debe94bd328b1206b0f56a867d"><code>c73cf0d</code></a> <a href="https://github.com/npm/read-package-json/pull/190">#190</a> use npm 9 for CI (#190) (@wraithgar)</li>
+<li><a href="https://github.com/npm/read-package-json/commit/1f477a848cdbe0627958cf06d36f54b137b466c1"><code>1f477a8</code></a> <a href="https://github.com/npm/read-package-json/pull/189">#189</a> Fix out-of-order ChangeLog entry (#189) (@daniel-santos)</li>
+<li><a href="https://github.com/npm/read-package-json/commit/153cfda5bd8726fdc4b815fcc226d437fee10941"><code>153cfda</code></a> <a href="https://github.com/npm/read-package-json/pull/223">#223</a> postinstall for dependabot template-oss PR (@lukekarrys)</li>
+<li><a href="https://github.com/npm/read-package-json/commit/cd2962f5ba0008ab9b9617ce44ddc6ca25d1204b"><code>cd2962f</code></a> <a href="https://github.com/npm/read-package-json/pull/221">#221</a> bump @npmcli/template-oss from 4.21.3 to 4.21.4 (@dependabot[bot])</li>
+</ul>
+<h2 id="700httpsgithubcomnpmreadpackagejsoncomparev604v70020230815"><a href="https://github.com/npm/read-package-json/compare/v6.0.4…v7.0.0">7.0.0</a> (2023-08-15)</h2>
+<h3 id="breakingchanges">⚠️ BREAKING CHANGES</h3>
+<ul>
+<li>support for node 14 has been removed</li>
+</ul>
+<h3 id="bugfixes-1">Bug Fixes</h3>
+<ul>
+<li><a href="https://github.com/npm/read-package-json/commit/2845aa5ee0fdd0c20fd385f8e9bea4119dd8de2a"><code>2845aa5</code></a> <a href="https://github.com/npm/read-package-json/pull/187">#187</a> drop node14 support (@lukekarrys)</li>
+</ul>
+<h3 id="dependencies">Dependencies</h3>
+<ul>
+<li><a href="https://github.com/npm/read-package-json/commit/3c10858a4230bc750a4e0522465e4e6e7f0d2cb9"><code>3c10858</code></a> <a href="https://github.com/npm/read-package-json/pull/186">#186</a> bump normalize-package-data from 5.0.0 to 6.0.0</li>
+</ul>
+<h2 id="604httpsgithubcomnpmreadpackagejsoncomparev603v60420230531"><a href="https://github.com/npm/read-package-json/compare/v6.0.3…v6.0.4">6.0.4</a> (2023-05-31)</h2>
+<h3 id="bugfixes-2">Bug Fixes</h3>
+<ul>
+<li><a href="https://github.com/npm/read-package-json/commit/d8eca922bb6a99fc84c4d5585ea4d3de7137f911"><code>d8eca92</code></a> <a href="https://github.com/npm/read-package-json/pull/177">#177</a> prevent directory.bin referencing outside the package root (#177) (@antongolub)</li>
+</ul>
+<h2 id="603httpsgithubcomnpmreadpackagejsoncomparev602v60320230503"><a href="https://github.com/npm/read-package-json/compare/v6.0.2…v6.0.3">6.0.3</a> (2023-05-03)</h2>
+<h3 id="bugfixes-3">Bug Fixes</h3>
+<ul>
+<li><a href="https://github.com/npm/read-package-json/commit/7b516f18dd84055f330a44a596bc7fc68c6f2c31"><code>7b516f1</code></a> <a href="https://github.com/npm/read-package-json/pull/174">#174</a> use jsonClone to fix cache layer (#174) (@antongolub)</li>
+</ul>
+<h2 id="602httpsgithubcomnpmreadpackagejsoncomparev601v60220230427"><a href="https://github.com/npm/read-package-json/compare/v6.0.1…v6.0.2">6.0.2</a> (2023-04-27)</h2>
+<h3 id="dependencies-1">Dependencies</h3>
+<ul>
+<li><a href="https://github.com/npm/read-package-json/commit/30cea18041ae857d27e720fda576c2d43a535fe3"><code>30cea18</code></a> <a href="https://github.com/npm/read-package-json/pull/170">#170</a> bump glob from 9.3.5 to 10.2.2 (#170)</li>
+</ul>
+<h2 id="601httpsgithubcomnpmreadpackagejsoncomparev600v60120230321"><a href="https://github.com/npm/read-package-json/compare/v6.0.0…v6.0.1">6.0.1</a> (2023-03-21)</h2>
+<h3 id="dependencies-2">Dependencies</h3>
+<ul>
+<li><a href="https://github.com/npm/read-package-json/commit/bd925f0abd1a30688de37f45d1612c5e8053b88f"><code>bd925f0</code></a> <a href="https://github.com/npm/read-package-json/pull/162">#162</a> bump glob from 8.1.0 to 9.3.0 (#162)</li>
+</ul>
+<h2 id="600httpsgithubcomnpmreadpackagejsoncomparev502v60020221014"><a href="https://github.com/npm/read-package-json/compare/v5.0.2…v6.0.0">6.0.0</a> (2022-10-14)</h2>
+<h3 id="breakingchanges-1">⚠️ BREAKING CHANGES</h3>
+<ul>
+<li><code>read-package-json</code> is now compatible with the following semver range for node: <code>^14.17.0 || ^16.13.0 || &gt;=18.0.0</code></li>
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li><a href="https://github.com/npm/read-package-json/commit/0952b2c6ba94bc1caaca68cc88aba95c0c22a99b"><code>0952b2c</code></a> <a href="https://github.com/npm/read-package-json/pull/140">#140</a> postinstall for dependabot template-oss PR (@lukekarrys)</li>
+</ul>
+<h3 id="dependencies-3">Dependencies</h3>
+<ul>
+<li><a href="https://github.com/npm/read-package-json/commit/16f6e3181240bfa9a748df795483d80ddeb0d15d"><code>16f6e31</code></a> <a href="https://github.com/npm/read-package-json/pull/150">#150</a> bump normalize-package-data from 4.0.1 to 5.0.0</li>
+<li><a href="https://github.com/npm/read-package-json/commit/d7365487d46c5bcf0e0a33a4bd7edaf8175a7658"><code>d736548</code></a> <a href="https://github.com/npm/read-package-json/pull/148">#148</a> bump npm-normalize-package-bin from 2.0.0 to 3.0.0</li>
+<li><a href="https://github.com/npm/read-package-json/commit/505edd7703f9eb75e05656e5e2f1c0b34b669378"><code>505edd7</code></a> <a href="https://github.com/npm/read-package-json/pull/147">#147</a> bump json-parse-even-better-errors from 2.3.1 to 3.0.0</li>
+</ul>
+<h2 id="502httpsgithubcomnpmreadpackagejsoncomparev501v50220220823"><a href="https://github.com/npm/read-package-json/compare/v5.0.1…v5.0.2">5.0.2</a> (2022-08-23)</h2>
+<h3 id="dependencies-4">Dependencies</h3>
+<ul>
+<li>bump npm-normalize-package-bin from 1.0.1 to 2.0.0 (<a href="https://github.com/npm/read-package-json/issues/129">#129</a>) (<a href="https://github.com/npm/read-package-json/commit/6ce55010e88f83a4d59097e5583e4a8715260a63">6ce5501</a>)</li>
+</ul>
+<h3 id="501httpsgithubcomnpmreadpackagejsoncomparev500v50120220420"><a href="https://github.com/npm/read-package-json/compare/v5.0.0…v5.0.1">5.0.1</a> (2022-04-20)</h3>
+<h3 id="dependencies-5">Dependencies</h3>
+<ul>
+<li>bump glob from 7.2.0 to 8.0.1 (<a href="https://github.com/npm/read-package-json/issues/124">#124</a>) (<a href="https://github.com/npm/read-package-json/commit/ddd4a2aecb327c0884e7d6641f20255abcc464c6">ddd4a2a</a>)</li>
+</ul>
+<h2 id="500httpswwwgithubcomnpmreadpackagejsoncomparev412v50020220315"><a href="https://www.github.com/npm/read-package-json/compare/v4.1.2…v5.0.0">5.0.0</a> (2022-03-15)</h2>
+<h3 id="breakingchanges-2">⚠ BREAKING CHANGES</h3>
+<ul>
+<li>This drops support for node10 and non-LTS versions of node12 and node14</li>
+</ul>
+<h3 id="bugfixes-4">Bug Fixes</h3>
+<ul>
+<li><p>always use / in package.json paths (<a href="https://www.github.com/npm/read-package-json/commit/18cc3faafae4aa39d5c5243feb5240a55da64965">18cc3fa</a>)</p></li>
+<li><p>move files to lib (<a href="https://www.github.com/npm/read-package-json/commit/bd7fac4862a6f230bc0e37b3483079cf9a49c275">bd7fac4</a>)</p></li>
+<li><p>@npmcli/template-oss@2.9.2 (<a href="https://www.github.com/npm/read-package-json/commit/2122bc20231dfd0d6cee85e014e118f12192cdfc">2122bc2</a>)</p></li>
+</ul>
+<h3 id="dependencies-6">Dependencies</h3>
+<ul>
+<li>bump normalize-package-data from 3.0.3 to 4.0.0 (<a href="https://www.github.com/npm/read-package-json/issues/113">#113</a>) (<a href="https://www.github.com/npm/read-package-json/commit/b90544351fea84cf557572509129e84c06e8be45">b905443</a>)</li>
+<li>update glob requirement from ^7.1.1 to ^7.2.0 (<a href="https://www.github.com/npm/read-package-json/issues/115">#115</a>) (<a href="https://www.github.com/npm/read-package-json/commit/35482c48afde7d7d3fc647416acfb30a9c753b1d">35482c4</a>)</li>
+<li>update json-parse-even-better-errors requirement (<a href="https://www.github.com/npm/read-package-json/issues/116">#116</a>) (<a href="https://www.github.com/npm/read-package-json/commit/1b1b3f0a979d1f6cd4a46b86b21abe020d849052">1b1b3f0</a>)</li>
+<li>update npm-normalize-package-bin requirement from ^1.0.0 to ^1.0.1 (<a href="https://www.github.com/npm/read-package-json/issues/114">#114</a>) (<a href="https://www.github.com/npm/read-package-json/commit/d1f64a5d8250cc96df2f21200f92c5633418b33e">d1f64a5</a>)</li>
+</ul>
+<h1 id="400httpsgithubcomnpmreadpackagejsoncomparev301v40020210818"><a href="https://github.com/npm/read-package-json/compare/v3.0.1…v4.0.0">4.0.0</a> (2021-08-18)</h1>
+<h3 id="bugfixes-5">Bug Fixes</h3>
+<ul>
+<li><strong>parseError:</strong> use file not path attribute (<a href="https://github.com/npm/read-package-json/commit/5002e00">5002e00</a>)</li>
+</ul>
+<h3 id="breakingchanges-3">BREAKING CHANGES</h3>
+<ul>
+<li><strong>parseError:</strong> rename file attribute to path</li>
+</ul>
+<p>In order to align with the way our other "fast" json parsers work the
+err.file attribute needs to be renamed to err.path.</p>
+<p>Also other errors i.e. ENOENT attach a path attribute.</p>
+<p><a name="3.0.1"></a></p>
+<h2 id="301httpsgithubcomnpmreadpackagejsoncomparev300v30120210222"><a href="https://github.com/npm/read-package-json/compare/v3.0.0…v3.0.1">3.0.1</a> (2021-02-22)</h2>
+<h3 id="bugfixes-6">Bug Fixes</h3>
+<ul>
+<li>Strip underscore prefixed fields from file contents (<a href="https://github.com/npm/read-package-json/commit/ac771d8">ac771d8</a>)</li>
+</ul>
+<p><a name="3.0.0"></a></p>
+<h1 id="300httpsgithubcomnpmreadpackagejsoncomparev212v30020201013"><a href="https://github.com/npm/read-package-json/compare/v2.1.2…v3.0.0">3.0.0</a> (2020-10-13)</h1>
+<h3 id="bugfixes-7">Bug Fixes</h3>
+<ul>
+<li>check-in updated lockfile (<a href="https://github.com/npm/read-package-json/commit/19d9fbe">19d9fbe</a>)</li>
+</ul>
+<p><a name="2.1.2"></a></p>
+<h2 id="212httpsgithubcomnpmreadpackagejsoncomparev211v21220200820"><a href="https://github.com/npm/read-package-json/compare/v2.1.1…v2.1.2">2.1.2</a> (2020-08-20)</h2>
+<h3 id="bugfixes-8">Bug Fixes</h3>
+<ul>
+<li>even better json errors, remove graceful-fs (<a href="https://github.com/npm/read-package-json/commit/fdbf082">fdbf082</a>)</li>
+</ul>
+<p><a name="2.1.1"></a></p>
+<h2 id="211httpsgithubcomnpmreadpackagejsoncomparev210v21120191209"><a href="https://github.com/npm/read-package-json/compare/v2.1.0…v2.1.1">2.1.1</a> (2019-12-09)</h2>
+<h3 id="bugfixes-9">Bug Fixes</h3>
+<ul>
+<li>normalize and sanitize pkg bin entries (<a href="https://github.com/npm/read-package-json/commit/b8cb5fa">b8cb5fa</a>)</li>
+</ul>
+<p><a name="2.1.0"></a></p>
+<h1 id="210httpsgithubcomnpmreadpackagejsoncomparev2013v21020190813"><a href="https://github.com/npm/read-package-json/compare/v2.0.13…v2.1.0">2.1.0</a> (2019-08-13)</h1>
+<h3 id="features-1">Features</h3>
+<ul>
+<li>support bundleDependencies: true (<a href="https://github.com/npm/read-package-json/commit/76f6f42">76f6f42</a>)</li>
+</ul>
+<p><a name="2.0.13"></a></p>
+<h2 id="2013httpsgithubcomnpmreadpackagejsoncomparev2012v201320180308"><a href="https://github.com/npm/read-package-json/compare/v2.0.12…v2.0.13">2.0.13</a> (2018-03-08)</h2>
+<h3 id="bugfixes-10">Bug Fixes</h3>
+<ul>
+<li><strong>git:</strong> support git packed refs --all mode (<a href="https://github.com/npm/read-package-json/issues/77">#77</a>) (<a href="https://github.com/npm/read-package-json/commit/1869940">1869940</a>)</li>
+</ul>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="contributors" role="tabpanel" aria-labelledby="contributors-tab">
+            <h5>Contributors</h5>
+            <ul id="contributorsList">
+              <li>isaacs (133 contributions)</li><li>dependabot[bot] (39 contributions)</li><li>lukekarrys (24 contributions)</li><li>wraithgar (21 contributions)</li><li>othiym23 (19 contributions)</li><li>iarna (18 contributions)</li><li>zkat (13 contributions)</li><li>github-actions[bot] (10 contributions)</li><li>darcyclarke (8 contributions)</li><li>kenany (3 contributions)</li><li>antongolub (2 contributions)</li><li>robertkowalski (2 contributions)</li><li>fat (2 contributions)</li><li>thefourtheye (1 contributions)</li><li>smikes (1 contributions)</li><li>rentzsch (1 contributions)</li><li>paulirish (1 contributions)</li><li>nicks (1 contributions)</li><li>mikesherov (1 contributions)</li><li>mikegerwitz (1 contributions)</li><li>myrne (1 contributions)</li><li>cioddi (1 contributions)</li><li>KevinTCoughlin (1 contributions)</li><li>daniel-santos (1 contributions)</li><li>BorisKozo (1 contributions)</li><li>artemv (1 contributions)</li><li>mjomble (1 contributions)</li><li>aaronj1335 (1 contributions)</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4">
+		  <div class="sidebar">
+        <div class="sidebar-item">
+          <h5>Owner</h5>
+          <div class="d-flex align-items-center">
+            <img src="https://avatars.githubusercontent.com/u/6078720?v=4" alt="Owner Avatar" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+            <a href="https://github.com/npm" target="_blank" id="ownerName">npm</a>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <h5>Metadata</h5>
+          <div class="metadata-item">
+            <i class="bi bi-calendar"></i>
+            <strong>Created At:</strong> <span id="createdAt">June 11, 2012</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-pencil-square"></i>
+            <strong>Last Updated:</strong> <span id="updatedAt">October 9, 2024</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-code-slash"></i>
+            <strong>Language:</strong> <span id="language">JavaScript</span>
+          </div>
+          <div class="metadata-item">
+            <i class="bi bi-box-arrow-in-down"></i>
+            <strong>Size:</strong> <span id="repoSize">0.75 MB</span>
+          </div>
+        </div>
+			  	  </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">© 2024 Package Hub Pro - Powered by Bootstrap</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+</html>
