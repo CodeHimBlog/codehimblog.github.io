@@ -611,24 +611,24 @@ Visit https://github.com/ruyadorno/ntl for more info
         // Create a map for quick lookup
         const emojiMap = emojis.reduce((map, emoji) => {
           if (emoji.aliases) {
-            emoji.aliases.forEach((alias) => {
-              map[alias] = emoji.emoji;
+            emoji.aliases.forEach(alias => {
+              map[alias] = emoji.emoji; // Map each alias to the corresponding emoji
             });
           }
           return map;
         }, {});
 
-        // Replace emoji shortcodes in text
+        // Replace emoji shortcodes in the text
         const contentElement = document.getElementById("content");
         contentElement.innerHTML = contentElement.innerHTML.replace(/:([a-zA-Z0-9_+-]+):/g, (match, shortcode) => {
-          return emojiMap[shortcode] || match; // Replace or keep original if not found
+          return emojiMap[shortcode] || match; // Replace if found, else keep the original
         });
       } catch (error) {
         console.error("Failed to fetch emojis:", error);
       }
     }
 
-    // Call the function to replace emojis
+    // Run the function to replace emojis
     replaceEmojis();
   </script>
 </body>
