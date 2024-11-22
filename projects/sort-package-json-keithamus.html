@@ -42,7 +42,7 @@ body {
   font-size: 16px;
   font-weight: 400; /* Set the default weight for readability */
   line-height: 1.6; /* Enhance readability with appropriate spacing */
-  letter-spacing: 0.5px; /* Subtle spacing for a polished look */
+  letter-spacing: 0.4px; /* Subtle spacing for a polished look */
   word-spacing: 1px; /* Consistent word spacing */
   text-rendering: optimizeLegibility; /* Optimize for legibility on most screens */
   -webkit-font-smoothing: antialiased; /* Smooth font rendering for WebKit browsers */
@@ -66,6 +66,87 @@ body {
 	  .sidebar{
 		  margin-left: 20px;
 	  }
+	  
+/* Article */
+	  .site-main article img{
+		  width: 100%;
+		  height: auto;
+	  }
+	  
+/* Heading styles */
+#changelogList h1 {
+    font-size: 26px;
+    color: #0073e6;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#changelogList h2 {
+    font-size: 22px;
+    color: #005bb5;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-left: 4px solid #0073e6;
+    padding-left: 10px;
+}
+
+#changelogList h3 {
+    font-size: 18px;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-left: 3px solid #005bb5;
+    padding-left: 8px;
+}
+
+/* Text and link styles */
+#changelogList p {
+    margin: 10px 0;
+    color: #555;
+}
+
+#changelogList a {
+    color: #0073e6;
+    text-decoration: none;
+    border-bottom: 1px dashed #0073e6;
+}
+
+#changelogList a:hover {
+    color: #005bb5;
+    border-bottom: 1px solid #005bb5;
+}
+
+/* List styles */
+#changelogList ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+#changelogList ul ul {
+    list-style-type: circle;
+    margin-top: 10px;
+}
+
+/* Code block styles */
+#changelogList code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f4;
+    color: #c7254e;
+    padding: 2px 4px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+/* Added emphasis for version tags */
+#changelogList h2::after {
+    content: attr(id);
+    font-size: 0.875rem;
+    color: #777;
+    margin-left: 10px;
+    font-style: italic;
+}  
 	  
 /* Stat Row */
 .stat-row {
@@ -707,7 +788,6 @@ npx husky add .husky/pre-commit "npx lint-staged"
           </div>
 
           <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
-            <h5>Changelog</h5>
             <ul id="changelogList">
               <p>No changelog available.</p>
             </ul>
@@ -745,6 +825,13 @@ npx husky add .husky/pre-commit "npx lint-staged"
       <strong>Language:</strong>
       <span id="language" class="ms-1">JavaScript</span>
     </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	 
 
 	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
             <i class="bi bi-house-door me-2"></i>Visit Homepage
