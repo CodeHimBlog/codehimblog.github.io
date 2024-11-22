@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Schema To Openapi Schema by wework</title>
+    <meta name="description" content="A little NodeJS package to convert JSON Schema to OpenAPI Schema Objects">
+    <meta name="author" content="wework">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags (for Social Media) -->
+    <meta property="og:title" content="{{og_title}}">
+    <meta property="og:description" content="{{og_description}}">
+    <meta property="og:image" content="{{og_image}}">
+    <meta property="og:url" content="{{og_url}}">
+    <meta property="og:type" content="{{og_type}}">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="{{twitter_card}}">
+    <meta name="twitter:title" content="{{twitter_title}}">
+    <meta name="twitter:description" content="{{twitter_description}}">
+    <meta name="twitter:image" content="{{twitter_image}}">
+    <meta name="twitter:site" content="{{twitter_site}}">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{canonical_url}}">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Custom Styles -->
+  <style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #343a40;
+  padding-top: 56px;
+  font-size: 16px;
+  font-weight: 400; /* Set the default weight for readability */
+  line-height: 1.6; /* Enhance readability with appropriate spacing */
+  letter-spacing: 0.4px; /* Subtle spacing for a polished look */
+  word-spacing: 1px; /* Consistent word spacing */
+  text-rendering: optimizeLegibility; /* Optimize for legibility on most screens */
+  -webkit-font-smoothing: antialiased; /* Smooth font rendering for WebKit browsers */
+}
+	  .action-btn{
+		  font-size: 16px;
+		  
+	  }
+	  a{
+		  text-decoration: none;
+	  }
+	  .site-main article, .sidebar,   .breadcrumbs{
+		  background: #fff;
+		  
+	  }
+	  
+	  .site-main article, .sidebar{
+		  padding: 16px;
+	  }
+	  
+	  .sidebar{
+		  margin-left: 20px;
+	  }
+	  
+/* Stat Row */
+.stat-row {
+  background-color: #f8f9fa; /* Light background */
+  border: 1px solid #dee2e6; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 8px; /* Padding inside the container */
+  font-size: 0.85rem; /* Small font size for stats */
+}
+
+/* Individual Stat Boxes */
+.stat-box {
+  flex: 1; /* Allow boxes to evenly divide space */
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  justify-content: start; /* Left-align content */
+  padding: 4px;
+}
+
+/* Stat Value */
+.stat-value {
+  font-size: 14px; /* Slightly larger for emphasis */
+  font-weight: 600; /* Bold value */
+  color: #212529; /* Default text color */
+}
+
+/* Stat Label */
+.stat-label {
+  font-size: 13px; /* Smaller size for the label */
+  color: #6c757d; /* Subtle text color */
+  margin: 0; /* Remove default margin */
+}
+
+/* Icon Styles */
+.stat-box i {
+  font-size: 1.2rem; /* Larger icons for visual hierarchy */
+}
+
+
+	  
+	  
+    .breadcrumbs {
+    padding: 10px;
+		font-size: 14px;
+		box-sizing: border-box;
+    }
+	  
+    .metadata-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+	  
+    .metadata-item i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      color: #6c757d;
+    }
+	  
+	  
+	  /* Sidebar Styles */
+
+
+/* Section Titles */
+.sidebar-title {
+  font-size: 1rem;
+  color: #343a40;
+  margin-bottom: 12px;
+}
+
+/* Owner Avatar */
+.owner-avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* Links */
+.sidebar-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar-link:hover {
+  text-decoration: underline;
+}
+
+/* Metadata Items */
+.metadata-item {
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.metadata-item strong {
+  font-weight: 600;
+  color: #212529;
+}
+
+.metadata-item i {
+  color: #6c757d;
+}
+
+.metadata-item span {
+  color: #495057;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 12px;
+  }
+  .sidebar-title {
+    font-size: 0.95rem;
+  }
+  .metadata-item {
+    font-size: 0.85rem;
+  }
+}
+
+	  
+	  /* Footer link styles */
+	  .page-footer, .footer-link{
+		    font-size: 0.85rem; /* Small font size */
+           color: rgba(255, 255, 255, 0.7); /* Dim white color */
+	  }
+.footer-link {
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.footer-link:hover {
+  color: rgba(255, 255, 255, 1); /* Lighten on hover */
+}
+
+/* Separator style */
+.list-inline-item span {
+  font-size: 0.85rem; /* Match the link font size */
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/projects/">Projects</a></li>
+      <li class="breadcrumb-item active" aria-current="page">JSON Schema To Openapi Schema</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Projects",
+      "item": "https://codehimblog.github.io/projects/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "JSON Schema To Openapi Schema",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+
+
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+  
+
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">JSON Schema To Openapi Schema</h1>
+        <p id="packageDescription" class="text-muted">A little NodeJS package to convert JSON Schema to OpenAPI Schema Objects</p>
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center">
+    <i class="bi bi-star-fill text-warning me-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">217</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+	
+	  <div class="stat-box d-flex align-items-center">
+     <i class="bi bi-box-arrow-in-down me-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.11 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+	
+  <div class="stat-box d-flex align-items-center">
+    <i class="bi bi-arrow-repeat text-secondary me-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">45</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+  <div class="stat-box d-flex align-items-center">
+    <i class="bi bi-exclamation-circle text-danger me-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">13</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-start">
+    <a href="https://github.com/wework/json-schema-to-openapi-schema/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/wework/json-schema-to-openapi-schema" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+
+
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1 id="jsonschematoopenapischema">JSON Schema to OpenAPI Schema</h1>
+<p>A little NodeJS package to convert JSON Schema to <a href="https://swagger.io/specification/#schemaObject">OpenAPI Schema Objects</a>.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>converts JSON Schema Draft 00 Wright (a.k.a draft v5) to OpenAPI 3.0 Schema Object</li>
+<li>switches <code>type: ['foo', 'null']</code> to <code>type: foo</code> and <code>nullable: true</code></li>
+<li>supports deep structures with nested <code>allOf</code>s etc.</li>
+<li>switches <code>patternProperties</code> to <code>x-patternProperties</code></li>
+<li>converts <code>dependencies</code> to an allOf + oneOf OpenAPI-valid equivalent</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<pre><code>npm install --save json-schema-to-openapi-schema
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>Here's a small example to get the idea:</p>
+<pre class="prettyprint linenums lang-js"><code>const toOpenApi = require('json-schema-to-openapi-schema');
+
+const schema = {
+  '$schema': 'http://json-schema.org/draft-04/schema#',
+  type: ['string', 'null'],
+  format: 'date-time',
+};
+
+const convertedSchema = toOpenApi(schema);
+
+console.log(convertedSchema);
+</code></pre>
+<p>The example prints out</p>
+<pre class="prettyprint linenums lang-js"><code>{
+  type: 'string',
+  format: 'date-time',
+  nullable: true
+}
+</code></pre>
+<p><strong>NOTE</strong>: <code>$ref</code>s are not dereferenced. Use a dereferencer such as <a href="https://www.npmjs.com/package/json-schema-ref-parser">json-schema-ref-parser</a> prior to using this package.</p>
+<h3 id="options">Options</h3>
+<p>The function accepts <code>options</code> object as the second argument.</p>
+<h4 id="cloneschemaboolean"><code>cloneSchema</code> (boolean)</h4>
+<p>If set to <code>false</code>, converts the provided schema in place. If <code>true</code>, clones the schema by converting it to JSON and back. The overhead of the cloning is usually negligible. Defaults to <code>true</code>.</p>
+<h2 id="why">Why?</h2>
+<p>OpenAPI is often described as an extension of JSON Schema, but both specs have changed over time and grown independently. OpenAPI v2 was based on JSON Schema draft v4 with a long list of deviations, but OpenAPI v3 shrank that list, upping their support to draft v4 and making the list of discrepancies shorter. Despite OpenAPI v3 closing the gap, the issue of JSON Schema divergence has not been resolved fully.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/0*hijIL-3Xa5EFZ783.png" alt="Diagram showing data model (the objects, payload bodies, etc) and service model (endpoints, headers, metadata, etc)" /></p>
+<p>Carefully writing JSON Schema for your data model kiiiinda works, but it is possible to write JSON Schema that creates invalid OpenAPI, and vice versa. For more on this, read the article <a href="https://blog.apisyouwonthate.com/openapi-and-json-schema-divergence-part-1-1daf6678d86e"><em>OpenAPI and JSON Schema Divergence</em></a>.</p>
+<p>This tool sets out to allow folks to convert from JSON Schema (their one source of truth for everything) to OpenAPI (a thing for HTML docs and making SDKs).</p>
+<h2 id="versions">Versions</h2>
+<ul>
+<li><strong>From:</strong> <a href="http://json-schema.org/specification-links.html#draft-5">JSON Schema Draft v5 †</a></li>
+<li><strong>To:</strong> <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md">OpenAPI 3.0</a></li>
+</ul>
+<p><em>† Draft v5 is also known as Draft Wright 00, as the drafts are often named after the author, and this was the first one by A. Wright. Amongst other things, draft v5 aimed to rewrite the meta files, but the experiment failed, meaning we need to continue to use the draft v4 metafiles. Ugh.</em></p>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>[ ] Support later JSON Schema drafts via <a href="https://github.com/cloudflare/json-schema-tools/blob/master/workspaces/json-schema-transform/README.md">cloudflare/json-schema-transformer</a> when it adds that functionality</li>
+</ul>
+<h2 id="convertingback">Converting Back</h2>
+<p>To convert the other way, check out <a href="https://github.com/mikunn/openapi-schema-to-json-schema">openapi-schema-to-json-schema</a>, which this package was based on.</p>
+<h2 id="tests">Tests</h2>
+<p>To run the test-suite:</p>
+<pre class="prettyprint linenums lang-shell"><code>npm test
+</code></pre>
+<h2 id="credits">Credits</h2>
+<ul>
+<li><a href="https://github.com/mikunn">mikunn</a> for creating <a href="https://github.com/mikunn/openapi-schema-to-json-schema">openapi-schema-to-json-schema</a> which this is based on</li>
+<li><a href="https://github.com/philsturgeon">Phil Sturgeon</a> for flipping that conversion script about face</li>
+<li><a href="https://github.com/wework/json-schema-to-openapi-schema/graphs/contributors">All Contributors</a></li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <h5>Changelog</h5>
+            <ul id="changelogList">
+              <h1 id="changelog">Changelog</h1>
+<p>All notable changes to this project will be documented in this file.</p>
+<p>The format is based on <a href="http://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>
+and this project adheres to <a href="http://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<h2 id="unreleased">[Unreleased]</h2>
+<h2 id="03020181218">[0.3.0] - 2018-12-18</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Create empty items, as it must always be present for type: array</li>
+<li>Rewrite exclusiveMinimum/exclusiveMaximum</li>
+<li>Rewrite if/then/else as oneOf + allOf</li>
+<li>Rewrite const as single element enum</li>
+</ul>
+<h2 id="02020180510">[0.2.0] - 2018-05-10</h2>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Implemented <a href="https://github.com/cloudflare/json-schema-tools#cloudflarejson-schema-walker">@cloudflare/json-schema-walker</a> to make sure all subschemas are
+processed</li>
+</ul>
+<h2 id="01120180409">[0.1.1] - 2018-04-09</h2>
+<h3 id="added-1">Added</h3>
+<ul>
+<li>Convert <code>dependencies</code> to an allOf + oneOf OpenAPI-valid equivalent</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  </article>
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/4072897?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/wework" target="_blank" id="ownerName" class="sidebar-link">wework</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">April 2, 2018</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 26, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-code-slash me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+
+    
+			
+			 
+			   <div class="sidebar-item mb-2">
+    <h5 class="sidebar-title">Dependencies</h5>
+			             <ul id="dependenciesList">
+              <li>@cloudflare/json-schema-walker (^0.1.1)</li>
+            </ul>
+			 
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush"><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/7352117?v=4" alt="mikunn" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mikunn" target="_blank" class="text-decoration-none fw-bold">mikunn</a><p class="mb-0 text-muted small">16 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/21603?v=4" alt="MikeRalphson" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/MikeRalphson" target="_blank" class="text-decoration-none fw-bold">MikeRalphson</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/916191?v=4" alt="dangoosby" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dangoosby" target="_blank" class="text-decoration-none fw-bold">dangoosby</a><p class="mb-0 text-muted small">5 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+</div>
+		  
+		    
+
+      </aside>
+    </div>
+  </div>
+
+	
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+</html>
