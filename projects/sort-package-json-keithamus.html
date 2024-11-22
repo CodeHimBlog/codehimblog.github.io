@@ -43,10 +43,15 @@
 	  a{
 		  text-decoration: none;
 	  }
-	  .site-main, .sidebar,   .breadcrumbs{
+	  .site-main article, .sidebar,   .breadcrumbs{
 		  background: #fff;
 		  
 	  }
+	  
+	  .site-main article{
+		  padding: 14px;
+	  }
+	  
 	  .sidebar{
 		  padding: 12px;
 	  }
@@ -269,6 +274,7 @@
 
       <!-- Main Details -->
       <main class="col-md-8 site-main">
+		  <article>
         <!-- Project Name & Description -->
         <h1 id="packageName">Sort Package JSON</h1>
         <p id="packageDescription" class="text-muted">Sort an Object or package.json based on the well-known package.json keys</p>
@@ -712,6 +718,7 @@ npx husky add .husky/pre-commit "npx lint-staged"
             </ul>
           </div>
         </div>
+			  </article>
       </main>
 		    <!-- Sidebar -->
       <aside class="col-md-4">
