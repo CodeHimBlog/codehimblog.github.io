@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package JSON To Readme by zeke</title>
+    <meta name="description" content="Generate README.md from package.json contents">
+    <meta name="author" content="zeke">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/projects/package-json-to-readme-by-zeke.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Custom Styles -->
+  <style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #343a40;
+  padding-top: 56px;
+  font-size: 16px;
+  font-weight: 400; /* Set the default weight for readability */
+  line-height: 1.6; /* Enhance readability with appropriate spacing */
+  letter-spacing: 0.4px; /* Subtle spacing for a polished look */
+  word-spacing: 1px; /* Consistent word spacing */
+  text-rendering: optimizeLegibility; /* Optimize for legibility on most screens */
+  -webkit-font-smoothing: antialiased; /* Smooth font rendering for WebKit browsers */
+}
+	  .action-btn{
+		  font-size: 16px;
+		  
+	  }
+	  a{
+		  text-decoration: none;
+	  }
+	  .site-main article, .sidebar,   .breadcrumbs{
+		  background: #fff;
+		  
+	  }
+	  
+	  .site-main article, .sidebar{
+		  padding: 16px;
+	  }
+	  
+	  .sidebar{
+		  margin-left: 20px;
+	  }
+	  
+
+/* Apply responsiveness to all images except those inside anchor tags */
+.site-main article img:not(a img) {
+    width: 100%; /* Make them responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure that images inside anchor tags keep their natural size */
+.site-main article a img {
+    width: auto; /* Retain original size */
+    height: auto; /* Maintain aspect ratio */
+}
+	  
+/* Heading styles */
+#changelogList h1 {
+    font-size: 26px;
+    color: #0073e6;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#changelogList h2 {
+    font-size: 22px;
+    color: #005bb5;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-left: 4px solid #0073e6;
+    padding-left: 10px;
+}
+
+#changelogList h3 {
+    font-size: 18px;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-left: 3px solid #005bb5;
+    padding-left: 8px;
+}
+
+/* Text and link styles */
+#changelogList p {
+    margin: 10px 0;
+    color: #555;
+}
+
+#changelogList a {
+    color: #0073e6;
+    text-decoration: none;
+    border-bottom: 1px dashed #0073e6;
+}
+
+#changelogList a:hover {
+    color: #005bb5;
+    border-bottom: 1px solid #005bb5;
+}
+
+/* List styles */
+#changelogList ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+#changelogList ul ul {
+    list-style-type: circle;
+    margin-top: 10px;
+}
+
+/* Code block styles */
+#changelogList code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f4;
+    color: #c7254e;
+    padding: 2px 4px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+/* Added emphasis for version tags */
+#changelogList h2::after {
+    content: attr(id);
+    font-size: 0.875rem;
+    color: #777;
+    margin-left: 10px;
+    font-style: italic;
+}  
+	  
+/* Stat Row */
+.stat-row {
+  background-color: #f8f9fa; /* Light background */
+  border: 1px solid #dee2e6; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 8px; /* Padding inside the container */
+  font-size: 0.85rem; /* Small font size for stats */
+}
+
+/* Individual Stat Boxes */
+.stat-box {
+  flex: 1; /* Allow boxes to evenly divide space */
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  justify-content: start; /* Left-align content */
+  padding: 4px;
+}
+
+/* Stat Value */
+.stat-value {
+  font-size: 14px; /* Slightly larger for emphasis */
+  font-weight: 600; /* Bold value */
+  color: #212529; /* Default text color */
+}
+
+/* Stat Label */
+.stat-label {
+  font-size: 13px; /* Smaller size for the label */
+  color: #6c757d; /* Subtle text color */
+  margin: 0; /* Remove default margin */
+}
+
+/* Icon Styles */
+.stat-box i {
+  font-size: 1.2rem; /* Larger icons for visual hierarchy */
+}
+
+
+	  
+	  
+    .breadcrumbs {
+    padding: 10px;
+		font-size: 14px;
+		box-sizing: border-box;
+    }
+	  
+    .metadata-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+	  
+    .metadata-item i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      color: #6c757d;
+    }
+	  
+	  
+	  /* Sidebar Styles */
+
+
+/* Section Titles */
+.sidebar-title {
+  font-size: 1rem;
+  color: #343a40;
+  margin-bottom: 12px;
+}
+
+/* Owner Avatar */
+.owner-avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* Links */
+.sidebar-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar-link:hover {
+  text-decoration: underline;
+}
+
+/* Metadata Items */
+.metadata-item {
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.metadata-item strong {
+  font-weight: 600;
+  color: #212529;
+}
+
+.metadata-item i {
+  color: #6c757d;
+}
+
+.metadata-item span {
+  color: #495057;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 12px;
+  }
+  .sidebar-title {
+    font-size: 0.95rem;
+  }
+  .metadata-item {
+    font-size: 0.85rem;
+  }
+}
+
+	  
+	  /* Footer link styles */
+	  .page-footer, .footer-link{
+		    font-size: 0.85rem; /* Small font size */
+           color: rgba(255, 255, 255, 0.7); /* Dim white color */
+	  }
+.footer-link {
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.footer-link:hover {
+  color: rgba(255, 255, 255, 1); /* Lighten on hover */
+}
+
+/* Separator style */
+.list-inline-item span {
+  font-size: 0.85rem; /* Match the link font size */
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/projects/">Projects</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Package JSON To Readme</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Projects",
+      "item": "https://codehimblog.github.io/projects/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Package JSON To Readme",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+
+
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+  
+
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Package JSON To Readme</h1>
+        <p id="packageDescription" class="text-muted">Generate README.md from package.json contents</p>
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center">
+    <i class="bi bi-star-fill text-warning me-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">385</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+	
+	  <div class="stat-box d-flex align-items-center">
+     <i class="bi bi-box-arrow-in-down me-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.53 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+	
+  <div class="stat-box d-flex align-items-center">
+    <i class="bi bi-arrow-repeat text-secondary me-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">51</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+  <div class="stat-box d-flex align-items-center">
+    <i class="bi bi-exclamation-circle text-danger me-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">8</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/zeke/package-json-to-readme/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/zeke/package-json-to-readme" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+
+
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1 id="packagejsontoreadmebuildstatushttpstravisciorgzekepackagejsontoreadmesvgbranchmasterhttpstravisciorgzekepackagejsontoreadme">package-json-to-readme <a href="https://travis-ci.org/zeke/package-json-to-readme"><img src="https://travis-ci.org/zeke/package-json-to-readme.svg?branch=master" alt="Build Status" /></a></h1>
+<p>Generate a README.md from package.json contents. Works with node and io.js.</p>
+<h2 id="why">Why?</h2>
+<p>Every project worth its salt has a README that answers (at least) the following questions:</p>
+<ul>
+<li>What's it called?</li>
+<li>What is it for?</li>
+<li>How do I install it?</li>
+<li>How do I use it?</li>
+<li>How do I test it?</li>
+<li>What is the license?</li>
+</ul>
+<p>With npm modules, most of that info can be gleaned from properties in the <code>package.json</code> file: <code>name</code>, <code>description</code>, <code>scripts.test</code>, <code>preferGlobal</code>, etc. That's why <code>package-json-to-readme</code> exists. Use it to generate a decent boilerplate README, then iterate from there.</p>
+<h2 id="installation">Installation</h2>
+<pre class="prettyprint linenums lang-sh"><code>npm i -g package-json-to-readme
+</code></pre>
+<h2 id="usage">Usage</h2>
+<pre class="prettyprint linenums lang-sh"><code># Write to stdout
+readme package.json
+
+# Pipe output into a new file
+readme package.json &gt; README.md
+
+# Add a Travis badge
+readme package.json --travis
+
+# Run tests and add their output
+readme package.json --tests
+
+# Do it all
+readme package.json --tests --travis &gt; README.md
+
+# If your package has an example.sh or example.js file, it will be used to
+# generate a usage section like this one.
+
+# If your example.js has a require("./") statement, the relative path will be
+# replaced with the package name.
+</code></pre>
+<h2 id="tests">Tests</h2>
+<pre class="prettyprint linenums lang-sh"><code>npm install
+npm test
+</code></pre>
+<h2 id="dependencies">Dependencies</h2>
+<ul>
+<li><a href="https://github.com/zeke/github-url-to-object">github-url-to-object</a>: Extract user, repo, and other interesting properties from GitHub URLs</li>
+<li><a href="https://github.com/twitter/hogan.js">hogan.js</a>: A mustache compiler.</li>
+<li><a href="https://github.com/chalk/strip-ansi">strip-ansi</a>: Strip ANSI escape codes</li>
+<li><a href="https://github.com/gvarsanyi/sync-exec">sync-exec</a>: Synchronous exec with status code support. Requires no external dependencies, no need for node-gyp compilations etc.</li>
+<li><a href="https://github.com/bcoe/yargs">yargs</a>: Light-weight option parsing with an argv hash. No optstrings attached.</li>
+</ul>
+<h2 id="devdependencies">Dev Dependencies</h2>
+<ul>
+<li><a href="https://github.com/mochajs/mocha">mocha</a>: simple, flexible, fun test framework</li>
+<li><a href="https://github.com/vesln/nixt">nixt</a>: Simple and powerful testing for command-line apps</li>
+</ul>
+<h2 id="license">License</h2>
+<p>MIT</p>
+<h2 id="seealso">See Also</h2>
+<ul>
+<li><a href="https://github.com/kefranabg/readme-md-generator">readme-md-generator</a>, a CLI that's able to read your environment (package.json, git config…) to suggest you default answers during the README creation process.</li>
+<li><a href="https://github.com/zkochan/mos">mos</a>, a pluggable module that injects content into your markdown files via hidden JavaScript snippets.</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <p>No changelog available.</p>
+            </ul>
+          </div>
+
+        </div>
+			  </article>
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/2289?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/zeke" target="_blank" id="ownerName" class="sidebar-link">zeke</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">May 21, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 5, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	 
+
+	        <a href="http://npm.im/package-json-to-readme" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+
+    
+			
+			 
+			   <div class="sidebar-item mb-2">
+    <h5 class="sidebar-title">Dependencies</h5>
+			             <ul id="dependenciesList">
+              <li>github-url-to-object (^1.6.0)</li><li>hogan.js (^2.0.0)</li><li>strip-ansi (^0.2.2)</li><li>yargs (^3.0.4)</li>
+            </ul>
+			 
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush"><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/2289?v=4" alt="zeke" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zeke" target="_blank" class="text-decoration-none fw-bold">zeke</a><p class="mb-0 text-muted small">65 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/389319?v=4" alt="Zerogiven" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Zerogiven" target="_blank" class="text-decoration-none fw-bold">Zerogiven</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/43438?v=4" alt="timoxley" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/timoxley" target="_blank" class="text-decoration-none fw-bold">timoxley</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/194609?v=4" alt="bcoe" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bcoe" target="_blank" class="text-decoration-none fw-bold">bcoe</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/402894?v=4" alt="ChrisPearce" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ChrisPearce" target="_blank" class="text-decoration-none fw-bold">ChrisPearce</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/3408480?v=4" alt="dawsbot" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dawsbot" target="_blank" class="text-decoration-none fw-bold">dawsbot</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/15367484?v=4" alt="ReadmeCritic" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ReadmeCritic" target="_blank" class="text-decoration-none fw-bold">ReadmeCritic</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/587740?v=4" alt="billiegoose" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/billiegoose" target="_blank" class="text-decoration-none fw-bold">billiegoose</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/18315?v=4" alt="hemanth" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hemanth" target="_blank" class="text-decoration-none fw-bold">hemanth</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+</div>
+		  
+		    
+
+      </aside>
+    </div>
+  </div>
+
+	
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+</html>
