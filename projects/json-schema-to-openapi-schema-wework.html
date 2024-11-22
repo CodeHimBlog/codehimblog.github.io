@@ -67,11 +67,18 @@ body {
 		  margin-left: 20px;
 	  }
 	  
-/* Article */
-	  .site-main article img{
-		  width: 100%;
-		  height: auto;
-	  }
+
+/* Apply responsiveness to all images except those inside anchor tags */
+.site-main article img:not(a img) {
+    width: 100%; /* Make them responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure that images inside anchor tags keep their natural size */
+.site-main article a img {
+    width: auto; /* Retain original size */
+    height: auto; /* Maintain aspect ratio */
+}
 	  
 /* Heading styles */
 #changelogList h1 {
@@ -563,10 +570,17 @@ processed</li>
       <span id="updatedAt" class="ms-1">October 26, 2024</span>
     </div>
     <div class="metadata-item d-flex align-items-center mt-2">
-      <i class="bi bi-code-slash me-2"></i>
+     <i class="bi bi-file-earmark-code me-2"></i>
       <strong>Language:</strong>
       <span id="language" class="ms-1">JavaScript</span>
     </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	 
 
 	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
             <i class="bi bi-house-door me-2"></i>Visit Homepage
