@@ -1,3 +1,264 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #343a40;
+  padding-top: 56px;
+  font-size: 16px;
+  font-weight: 400; /* Set the default weight for readability */
+  line-height: 1.6; /* Enhance readability with appropriate spacing */
+  letter-spacing: 0.4px; /* Subtle spacing for a polished look */
+  word-spacing: 1px; /* Consistent word spacing */
+  text-rendering: optimizeLegibility; /* Optimize for legibility on most screens */
+  -webkit-font-smoothing: antialiased; /* Smooth font rendering for WebKit browsers */
+}
+	  .action-btn{
+		  font-size: 16px;
+		  
+	  }
+	  a{
+		  text-decoration: none;
+	  }
+	  .site-main article, .sidebar,   .breadcrumbs{
+		  background: #fff;
+		  
+	  }
+	  
+	  .site-main article, .sidebar{
+		  padding: 16px;
+	  }
+	  
+	  .sidebar{
+		  margin-left: 20px;
+	  }
+	  
+
+/* Apply responsiveness to all images except those inside anchor tags */
+.site-main article img:not(a img) {
+    width: 100%; /* Make them responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure that images inside anchor tags keep their natural size */
+.site-main article a img {
+    width: auto; /* Retain original size */
+    height: auto; /* Maintain aspect ratio */
+}
+	  
+/* Heading styles */
+#changelogList h1 {
+    font-size: 26px;
+    color: #0073e6;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#changelogList h2 {
+    font-size: 22px;
+    color: #005bb5;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-left: 4px solid #0073e6;
+    padding-left: 10px;
+}
+
+#changelogList h3 {
+    font-size: 18px;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-left: 3px solid #005bb5;
+    padding-left: 8px;
+}
+
+/* Text and link styles */
+#changelogList p {
+    margin: 10px 0;
+    color: #555;
+}
+
+#changelogList a {
+    color: #0073e6;
+    text-decoration: none;
+    border-bottom: 1px dashed #0073e6;
+}
+
+#changelogList a:hover {
+    color: #005bb5;
+    border-bottom: 1px solid #005bb5;
+}
+
+/* List styles */
+#changelogList ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+#changelogList ul ul {
+    list-style-type: circle;
+    margin-top: 10px;
+}
+
+/* Code block styles */
+#changelogList code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f4;
+    color: #c7254e;
+    padding: 2px 4px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+/* Added emphasis for version tags */
+#changelogList h2::after {
+    content: attr(id);
+    font-size: 0.875rem;
+    color: #777;
+    margin-left: 10px;
+    font-style: italic;
+}  
+	  
+/* Stat Row */
+.stat-row {
+  background-color: #f8f9fa; /* Light background */
+  border: 1px solid #dee2e6; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 8px; /* Padding inside the container */
+  font-size: 0.85rem; /* Small font size for stats */
+}
+
+/* Individual Stat Boxes */
+.stat-box {
+  flex: 1; /* Allow boxes to evenly divide space */
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  justify-content: start; /* Left-align content */
+  padding: 4px;
+}
+
+/* Stat Value */
+.stat-value {
+  font-size: 14px; /* Slightly larger for emphasis */
+  font-weight: 600; /* Bold value */
+  color: #212529; /* Default text color */
+}
+
+/* Stat Label */
+.stat-label {
+  font-size: 13px; /* Smaller size for the label */
+  color: #6c757d; /* Subtle text color */
+  margin: 0; /* Remove default margin */
+}
+
+/* Icon Styles */
+.stat-box i {
+  font-size: 1.2rem; /* Larger icons for visual hierarchy */
+}
+
+
+	  
+	  
+    .breadcrumbs {
+    padding: 10px;
+		font-size: 14px;
+		box-sizing: border-box;
+    }
+	  
+    .metadata-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+	  
+    .metadata-item i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      color: #6c757d;
+    }
+	  
+	  
+	  /* Sidebar Styles */
+
+
+/* Section Titles */
+.sidebar-title {
+  font-size: 1rem;
+  color: #343a40;
+  margin-bottom: 12px;
+}
+
+/* Owner Avatar */
+.owner-avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* Links */
+.sidebar-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar-link:hover {
+  text-decoration: underline;
+}
+
+/* Metadata Items */
+.metadata-item {
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.metadata-item strong {
+  font-weight: 600;
+  color: #212529;
+}
+
+.metadata-item i {
+  color: #6c757d;
+}
+
+.metadata-item span {
+  color: #495057;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 12px;
+  }
+  .sidebar-title {
+    font-size: 0.95rem;
+  }
+  .metadata-item {
+    font-size: 0.85rem;
+  }
+}
+
+	  
+	  /* Footer link styles */
+	  .page-footer, .footer-link{
+		    font-size: 0.85rem; /* Small font size */
+           color: rgba(255, 255, 255, 0.7); /* Dim white color */
+	  }
+.footer-link {
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.footer-link:hover {
+  color: rgba(255, 255, 255, 1); /* Lighten on hover */
+}
+
+/* Separator style */
+.list-inline-item span {
+  font-size: 0.85rem; /* Match the link font size */
+}
+
 /*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
 pre.prettyprint {
   background: #1d1f21 !important;
