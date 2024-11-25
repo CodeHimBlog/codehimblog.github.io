@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+ document.addEventListener("DOMContentLoaded", function () {
         const contributorsList = document.querySelector("#contributorsList");
         const toggleContributorsLink = document.getElementById("toggleContributors");
         const maxVisibleContributors = 5;
@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         function toggleContributors() {
             const isShowingAll = toggleContributorsLink.textContent === "View Less";
             
+            // Show or hide contributors based on the toggle state
             contributors.forEach((contributor, index) => {
                 if (isShowingAll || index < maxVisibleContributors) {
                     contributor.classList.remove("d-none");
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
+            // Toggle the link text based on the current state
             if (isShowingAll) {
                 toggleContributorsLink.textContent = `+${totalContributors - maxVisibleContributors} more Contributors`;
             } else {
@@ -25,10 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
+        // Click event for the "View More / View Less" link
         if (toggleContributorsLink) {
             toggleContributorsLink.addEventListener("click", function (e) {
                 e.preventDefault();
-                toggleContributors();
+                toggleContributors();  // Toggle the contributors and text
             });
         }
     });
