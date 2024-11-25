@@ -174,93 +174,69 @@
 </div>
         <div class="tab-content mt-3" id="infoTabsContent">
           <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
-            malihu custom scrollbar plugin
-================================
+            <h1>malihu custom scrollbar plugin</h1>
+<p>Highly customizable custom scrollbar jQuery plugin (<a href="http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html">Demo</a>). Features include: </p>
+<ul>
+<li>Vertical and/or horizontal scrollbar(s)  </li>
+<li>Adjustable scrolling momentum </li>
+<li>Mouse-wheel, keyboard and touch support </li>
+<li>Ready-to-use themes and customization via CSS </li>
+<li>RTL direction support </li>
+<li>Option parameters for full control of scrollbar functionality </li>
+<li>Methods for triggering actions like scroll-to, update, destroy etc. </li>
+<li>User-defined callbacks </li>
+<li>Selectable/searchable content</li>
+</ul>
+<p><strong><a href="http://manos.malihu.gr/jquery-custom-content-scroller/">Plugin homepage and documentation</a></strong> (<a href="http://manos.malihu.gr/jquery-custom-content-scroller/2/">Changelog</a>) </p>
+<h4>Installation</h4>
+<p>npm: <code>npm install malihu-custom-scrollbar-plugin</code> </p>
+<p>Bower: <code>bower install malihu-custom-scrollbar-plugin</code> </p>
+<p><a href="http://manos.malihu.gr/jquery-custom-content-scroller/#get-started-section">Manual</a> </p>
+<h4>Usage</h4>
+<p>Manual: <code>$(selector).mCustomScrollbar();</code> </p>
+<p><a href="http://browserify.org/">Browserify</a>: </p>
+<pre><code>var $ = require('jquery');
+require('malihu-custom-scrollbar-plugin')($);</code></pre>
+<p><a href="https://webpack.github.io/">webpack</a>: </p>
+<pre><code>npm install imports-loader
+npm install jquery-mousewheel
+npm install malihu-custom-scrollbar-plugin
 
-Highly customizable custom scrollbar jQuery plugin ([Demo](http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html)). Features include: 
+module.exports = {
+    module: {
+        loaders: [
+            { test: /jquery-mousewheel/, loader: "imports?define=&gt;false&amp;this=&gt;window" },
+            { test: /malihu-custom-scrollbar-plugin/, loader: "imports?define=&gt;false&amp;this=&gt;window" }
+        ]
+    }
+};
 
-* Vertical and/or horizontal scrollbar(s)  
-* Adjustable scrolling momentum 
-* Mouse-wheel, keyboard and touch support 
-* Ready-to-use themes and customization via CSS 
-* RTL direction support 
-* Option parameters for full control of scrollbar functionality 
-* Methods for triggering actions like scroll-to, update, destroy etc. 
-* User-defined callbacks 
-* Selectable/searchable content
-
-**[Plugin homepage and documentation](http://manos.malihu.gr/jquery-custom-content-scroller/)** ([Changelog](http://manos.malihu.gr/jquery-custom-content-scroller/2/)) 
-
-#### Installation
-
-npm: `npm install malihu-custom-scrollbar-plugin` 
-
-Bower: `bower install malihu-custom-scrollbar-plugin` 
-
-[Manual](http://manos.malihu.gr/jquery-custom-content-scroller/#get-started-section) 
-
-#### Usage 
-
-Manual: `$(selector).mCustomScrollbar();` 
-
-[Browserify](http://browserify.org/): 
-
-    var $ = require('jquery');
-    require('malihu-custom-scrollbar-plugin')($);
-
-[webpack](https://webpack.github.io/): 
-
-    npm install imports-loader
-	npm install jquery-mousewheel
-	npm install malihu-custom-scrollbar-plugin
-
-	module.exports = {
-		module: {
-			loaders: [
-				{ test: /jquery-mousewheel/, loader: "imports?define=>false&this=>window" },
-				{ test: /malihu-custom-scrollbar-plugin/, loader: "imports?define=>false&this=>window" }
-			]
-		}
-	};
-
-	var $ = require('jquery');
-	require("jquery-mousewheel")($);
-    require('malihu-custom-scrollbar-plugin')($);
-
-
-Requirements
--------------------------
-
-jQuery version **1.6.0** or higher
-
-Browser compatibility
--------------------------
-
-* Internet Explorer 8+ 
-* Firefox 
-* Chrome 
-* Opera 
-* Safari  
-* iOS 
-* Android 
-* Windows Phone
-
-License 
--------------------------
-
-MIT License (MIT)
-
-http://opensource.org/licenses/MIT
-
-Donate 
--------------------------
-
-https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UYJ5G65M6ZA28
+var $ = require('jquery');
+require("jquery-mousewheel")($);
+require('malihu-custom-scrollbar-plugin')($);</code></pre>
+<h2>Requirements</h2>
+<p>jQuery version <strong>1.6.0</strong> or higher</p>
+<h2>Browser compatibility</h2>
+<ul>
+<li>Internet Explorer 8+ </li>
+<li>Firefox </li>
+<li>Chrome </li>
+<li>Opera </li>
+<li>Safari  </li>
+<li>iOS </li>
+<li>Android </li>
+<li>Windows Phone</li>
+</ul>
+<h2>License </h2>
+<p>MIT License (MIT)</p>
+<p><a href="http://opensource.org/licenses/MIT">http://opensource.org/licenses/MIT</a></p>
+<h2>Donate </h2>
+<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UYJ5G65M6ZA28">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UYJ5G65M6ZA28</a></p>
           </div>
 
           <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
             <ul id="changelogList">
-              {"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/contents#get-repository-content","status":"404"}
+              <p>{&quot;message&quot;:&quot;Not Found&quot;,&quot;documentation_url&quot;:&quot;<a href="https://docs.github.com/rest/repos/contents#get-repository-content&quot;,&quot;status&quot;:&quot;404">https://docs.github.com/rest/repos/contents#get-repository-content","status":"404</a>&quot;}</p>
             </ul>
           </div>
 
