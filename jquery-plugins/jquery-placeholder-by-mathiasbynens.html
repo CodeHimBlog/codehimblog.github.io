@@ -174,105 +174,64 @@
 </div>
         <div class="tab-content mt-3" id="infoTabsContent">
           <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
-            # HTML5 Placeholder jQuery Plugin
-
-## Demo & Examples
-
-<https://mathiasbynens.github.io/jquery-placeholder/>
-
-## Example Usage
-
-### HTML
-
-```html
-<input type="text" name="name" placeholder="e.g. John Doe">
-<input type="email" name="email" placeholder="e.g. address@example.ext">
-<input type="url" name="url" placeholder="e.g. https://mathiasbynens.be/">
-<input type="tel" name="tel" placeholder="e.g. +32 472 77 69 88">
-<input type="password" name="password" placeholder="e.g. h4x0rpr00fz">
-<input type="search" name="search" placeholder="Search this site…">
-<textarea name="message" placeholder="Your message goes here"></textarea>
-```
-
-### jQuery
-
-Use the plugin as follows:
-
-```js
-$('input, textarea').placeholder();
-```
-
-By default, `.placeholder` css class will be added. You can override default by passing the `customClass` option:
-```js
-$('input, textarea').placeholder({ customClass: 'my-placeholder' });
-```
-
-You’ll still be able to use `jQuery.val()` to get and set the input values. If the element is currently showing a placeholder, `.val()` will return an empty string instead of the placeholder text, just like it does in browsers with a native `@placeholder` implementation. Calling `.val('')` to set an element’s value to the empty string will result in the placeholder text (re)appearing.
-
-### CSS
-
-The plugin automatically adds `class="placeholder"` to the elements who are currently showing their placeholder text. You can use this to style placeholder text differently:
-
-```css
-input, textarea { color: #000; }
-.placeholder { color: #aaa; }
-```
-
-I’d suggest sticking to the `#aaa` color for placeholder text, as it’s the default in most browsers that support `@placeholder`. If you really want to, though, you can [style the placeholder text in some of the browsers that natively support it](https://stackoverflow.com/a/2610741/96656).
-
-## Installation
-
-You can install jquery-placeholder by using [Bower](http://bower.io/).
-
-```bash
-bower install jquery-placeholder
-```
-
-Or you can install it through [npm](https://www.npmjs.com/):
-
-```
-npm install --save jquery-placeholder
-```
-
-Contributors should install the »dev dependencies« after forking and cloning via [npm](https://www.npmjs.com/).
-
-```bash
-npm install
-```
-
-## Notes
-
-* Requires jQuery 1.6+. For an older version of this plugin that works under jQuery 1.4.2+, see [v1.8.7](https://github.com/mathiasbynens/jquery-placeholder/tree/v1.8.7).
-* Works in all A-grade browsers, including IE6.
-* Automatically checks if the browser natively supports the HTML5 `placeholder` attribute for `input` and `textarea` elements. If this is the case, the plugin won’t do anything. If `@placeholder` is only supported for `input` elements, the plugin will leave those alone and apply to `textarea`s exclusively. (This is the case for Safari 4, Opera 11.00, and possibly other browsers.)
-* Caches the results of its two feature tests in `jQuery.fn.placeholder.input` and `jQuery.fn.placeholder.textarea`. For example, if `@placeholder` is natively supported for `input` elements, `jQuery.fn.placeholder.input` will be `true`. After loading the plugin, you can re-use these properties in your own code.
-* Using `<input type="reset" />` will break the plugin functionality 
-* Makes sure it never causes duplicate IDs in your DOM, even in browsers that need an extra `input` element to fake `@placeholder` for password inputs. This means you can safely do stuff like:
-
-    ```html
-    <label for="bar">Example label</label>
-    <input type="password" placeholder="foo" id="bar">
-    ```
-
-    And the `<label>` will always point to the `<input>` element you’d expect. Also, all CSS styles based on the ID will just work™.
-
-## License
-
-This plugin is available under [the MIT license](http://mths.be/mit).
-
-## Thanks to…
-
-* [Paul Irish](http://paulirish.com/) for his inspiring snippet in [jQuery 1.4 Hawtness #1](http://jquery14.com/day-05/jquery-1-4-hawtness-1-with-paul-irish)
-* everyone from [#jquery](http://webchat.freenode.net/?channels=jquery) for the tips, ideas and patches
-* anyone who [contributed a patch](https://github.com/mathiasbynens/jquery-placeholder/contributors) or [made a helpful suggestion](https://github.com/mathiasbynens/jquery-placeholder/issues)
-
-_– [Mathias](http://mathiasbynens.be/)_
-
+            <h1>HTML5 Placeholder jQuery Plugin</h1>
+<h2>Demo &amp; Examples</h2>
+<p><a href="https://mathiasbynens.github.io/jquery-placeholder/">https://mathiasbynens.github.io/jquery-placeholder/</a></p>
+<h2>Example Usage</h2>
+<h3>HTML</h3>
+<pre class="prettyprint linenums lang-language"><code>&lt;input type="text" name="name" placeholder="e.g. John Doe"&gt;
+&lt;input type="email" name="email" placeholder="e.g. address@example.ext"&gt;
+&lt;input type="url" name="url" placeholder="e.g. https://mathiasbynens.be/"&gt;
+&lt;input type="tel" name="tel" placeholder="e.g. +32 472 77 69 88"&gt;
+&lt;input type="password" name="password" placeholder="e.g. h4x0rpr00fz"&gt;
+&lt;input type="search" name="search" placeholder="Search this site…"&gt;
+&lt;textarea name="message" placeholder="Your message goes here"&gt;&lt;/textarea&gt;</code></pre>
+<h3>jQuery</h3>
+<p>Use the plugin as follows:</p>
+<pre class="prettyprint linenums lang-language"><code>$('input, textarea').placeholder();</code></pre>
+<p>By default, <code>.placeholder</code> css class will be added. You can override default by passing the <code>customClass</code> option:</p>
+<pre class="prettyprint linenums lang-language"><code>$('input, textarea').placeholder({ customClass: 'my-placeholder' });</code></pre>
+<p>You’ll still be able to use <code>jQuery.val()</code> to get and set the input values. If the element is currently showing a placeholder, <code>.val()</code> will return an empty string instead of the placeholder text, just like it does in browsers with a native <code>@placeholder</code> implementation. Calling <code>.val('')</code> to set an element’s value to the empty string will result in the placeholder text (re)appearing.</p>
+<h3>CSS</h3>
+<p>The plugin automatically adds <code>class="placeholder"</code> to the elements who are currently showing their placeholder text. You can use this to style placeholder text differently:</p>
+<pre class="prettyprint linenums lang-language"><code>input, textarea { color: #000; }
+.placeholder { color: #aaa; }</code></pre>
+<p>I’d suggest sticking to the <code>#aaa</code> color for placeholder text, as it’s the default in most browsers that support <code>@placeholder</code>. If you really want to, though, you can <a href="https://stackoverflow.com/a/2610741/96656">style the placeholder text in some of the browsers that natively support it</a>.</p>
+<h2>Installation</h2>
+<p>You can install jquery-placeholder by using <a href="http://bower.io/">Bower</a>.</p>
+<pre class="prettyprint linenums lang-language"><code>bower install jquery-placeholder</code></pre>
+<p>Or you can install it through <a href="https://www.npmjs.com/">npm</a>:</p>
+<pre><code>npm install --save jquery-placeholder</code></pre>
+<p>Contributors should install the »dev dependencies« after forking and cloning via <a href="https://www.npmjs.com/">npm</a>.</p>
+<pre class="prettyprint linenums lang-language"><code>npm install</code></pre>
+<h2>Notes</h2>
+<ul>
+<li>Requires jQuery 1.6+. For an older version of this plugin that works under jQuery 1.4.2+, see <a href="https://github.com/mathiasbynens/jquery-placeholder/tree/v1.8.7">v1.8.7</a>.</li>
+<li>Works in all A-grade browsers, including IE6.</li>
+<li>Automatically checks if the browser natively supports the HTML5 <code>placeholder</code> attribute for <code>input</code> and <code>textarea</code> elements. If this is the case, the plugin won’t do anything. If <code>@placeholder</code> is only supported for <code>input</code> elements, the plugin will leave those alone and apply to <code>textarea</code>s exclusively. (This is the case for Safari 4, Opera 11.00, and possibly other browsers.)</li>
+<li>Caches the results of its two feature tests in <code>jQuery.fn.placeholder.input</code> and <code>jQuery.fn.placeholder.textarea</code>. For example, if <code>@placeholder</code> is natively supported for <code>input</code> elements, <code>jQuery.fn.placeholder.input</code> will be <code>true</code>. After loading the plugin, you can re-use these properties in your own code.</li>
+<li>Using <code>&lt;input type="reset" /&gt;</code> will break the plugin functionality </li>
+<li>
+<p>Makes sure it never causes duplicate IDs in your DOM, even in browsers that need an extra <code>input</code> element to fake <code>@placeholder</code> for password inputs. This means you can safely do stuff like:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;label for="bar"&gt;Example label&lt;/label&gt;
+&lt;input type="password" placeholder="foo" id="bar"&gt;</code></pre>
+<p>And the <code>&lt;label&gt;</code> will always point to the <code>&lt;input&gt;</code> element you’d expect. Also, all CSS styles based on the ID will just work™.</p>
+</li>
+</ul>
+<h2>License</h2>
+<p>This plugin is available under <a href="http://mths.be/mit">the MIT license</a>.</p>
+<h2>Thanks to…</h2>
+<ul>
+<li><a href="http://paulirish.com/">Paul Irish</a> for his inspiring snippet in <a href="http://jquery14.com/day-05/jquery-1-4-hawtness-1-with-paul-irish">jQuery 1.4 Hawtness #1</a></li>
+<li>everyone from <a href="http://webchat.freenode.net/?channels=jquery">#jquery</a> for the tips, ideas and patches</li>
+<li>anyone who <a href="https://github.com/mathiasbynens/jquery-placeholder/contributors">contributed a patch</a> or <a href="https://github.com/mathiasbynens/jquery-placeholder/issues">made a helpful suggestion</a></li>
+</ul>
+<p><em>– <a href="http://mathiasbynens.be/">Mathias</a></em></p>
           </div>
 
           <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
             <ul id="changelogList">
-              {"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/contents#get-repository-content","status":"404"}
+              <p>{&quot;message&quot;:&quot;Not Found&quot;,&quot;documentation_url&quot;:&quot;<a href="https://docs.github.com/rest/repos/contents#get-repository-content&quot;,&quot;status&quot;:&quot;404">https://docs.github.com/rest/repos/contents#get-repository-content","status":"404</a>&quot;}</p>
             </ul>
           </div>
 
