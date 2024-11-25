@@ -7,31 +7,23 @@ document.addEventListener("DOMContentLoaded", function () {
         const contributors = Array.from(contributorsList.getElementsByClassName("contributor-item"));
         const totalContributors = contributors.length;
 
-        // Initialize: Set the correct state for the button and list
-        const initState = toggleContributorsLink.textContent.includes("more");
-        if (initState) {
-            contributors.forEach((contributor, index) => {
-                if (index >= maxVisibleContributors) {
-                    contributor.classList.add("d-none");
-                }
-            });
-        }
-
         // Function to toggle contributors visibility
         function toggleContributors() {
-            const isShowingAll = toggleContributorsLink.textContent === "View Less";
+            const isExpanded = toggleContributorsLink.textContent.includes("View Less");
 
             // Toggle visibility
             contributors.forEach((contributor, index) => {
-                if (isShowingAll || index < maxVisibleContributors) {
-                    contributor.classList.remove("d-none");
-                } else {
-                    contributor.classList.add("d-none");
+                if (index >= maxVisibleContributors) {
+                    if (isExpanded) {
+                        contributor.classList.add("d-none");
+                    } else {
+                        contributor.classList.remove("d-none");
+                    }
                 }
             });
 
-            // Update the button text
-            toggleContributorsLink.textContent = isShowingAll
+            // Update the link text
+            toggleContributorsLink.textContent = isExpanded
                 ? `+${totalContributors - maxVisibleContributors} more Contributors`
                 : "View Less";
         }
@@ -41,5 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             toggleContributors();
         });
+
+        // Initial state setup (if necessary)
+        toggleContributors(); // Ensure initial DOM state matches the button state
     }
 });
