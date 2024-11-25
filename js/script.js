@@ -3,15 +3,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const contributorsList = document.getElementById("contributorsList");
     const maxVisibleContributors = 5;
 
-    if (toggleContributorsLink) {
+    if (toggleContributorsLink && contributorsList) {
         const contributors = Array.from(contributorsList.getElementsByClassName("contributor-item"));
         const totalContributors = contributors.length;
+
+        // Initialize: Set the correct state for the button and list
+        const initState = toggleContributorsLink.textContent.includes("more");
+        if (initState) {
+            contributors.forEach((contributor, index) => {
+                if (index >= maxVisibleContributors) {
+                    contributor.classList.add("d-none");
+                }
+            });
+        }
 
         // Function to toggle contributors visibility
         function toggleContributors() {
             const isShowingAll = toggleContributorsLink.textContent === "View Less";
-            
-            // Show or hide contributors based on the current state
+
+            // Toggle visibility
             contributors.forEach((contributor, index) => {
                 if (isShowingAll || index < maxVisibleContributors) {
                     contributor.classList.remove("d-none");
@@ -21,27 +31,15 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             // Update the button text
-            if (isShowingAll) {
-                toggleContributorsLink.textContent = `+${totalContributors - maxVisibleContributors} more Contributors`;
-            } else {
-                toggleContributorsLink.textContent = "View Less";
-            }
+            toggleContributorsLink.textContent = isShowingAll
+                ? `+${totalContributors - maxVisibleContributors} more Contributors`
+                : "View Less";
         }
-
-        // Initialize the state (start with showing only the first 5)
-        contributors.forEach((contributor, index) => {
-            if (index >= maxVisibleContributors) {
-                contributor.classList.add("d-none");
-            }
-        });
-
-        // Set the initial button text
-        toggleContributorsLink.textContent = `+${totalContributors - maxVisibleContributors} more Contributors`;
 
         // Add the click event listener
         toggleContributorsLink.addEventListener("click", function (e) {
             e.preventDefault();
-            toggleContributors(); // Toggle visibility and update text
+            toggleContributors();
         });
     }
 });
