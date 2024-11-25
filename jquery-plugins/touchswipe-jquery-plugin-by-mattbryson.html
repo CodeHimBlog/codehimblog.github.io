@@ -174,49 +174,35 @@
 </div>
         <div class="tab-content mt-3" id="infoTabsContent">
           <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
-            # TouchSwipe 1.6
-A jQuery plugin to be used on touch devices such as iPad, iPhone, Android etc.
-
-Detects single and multiple finger swipes, pinches and falls back to mouse 'drags' on the desktop.
-
-Time and distance thresholds can be set to distinguish between swipe gesture and slow drag.
-
-Allows exclusion of child elements (interactive elements) as well allowing page scrolling or page zooming depending on configuration.
-
-* Detects swipes in 4 directions, "up", "down", "left" and "right"
-* Detects pinches "in" and "out"
-* Supports single finger or double finger touch events
-* Supports click events both on the touchSwipe object and its child objects
-* Definable threshold / maxTimeThreshold to determin when a gesture is actually a swipe
-* Events triggered for swipe "start","move","end" and "cancel"
-* End event can be triggered either on touch release, or as soon as threshold is met
-* Allows swiping and page scrolling
-* Disables user input elements (Button, form, text etc) from triggering swipes
-
-## Demos, examples and docs
-
-[http://labs.rampinteractive.co.uk/touchSwipe](http://labs.rampinteractive.co.uk/touchSwipe)  
-[http://labs.rampinteractive.co.uk/touchSwipe/docs](http://labs.rampinteractive.co.uk/touchSwipe/docs)
-
-
-## Installation  
-### NPM
-````bash
-npm install jquery-touchswipe --save
-````
-### Bower
-````bash
-bower install jquery-touchswipe --save
-````
-### Manual
-Include the minified file in your project.
-````html
-<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
-````
-
-## Usage
-````javascript
-$(function() {
+            <h1>TouchSwipe 1.6</h1>
+<p>A jQuery plugin to be used on touch devices such as iPad, iPhone, Android etc.</p>
+<p>Detects single and multiple finger swipes, pinches and falls back to mouse 'drags' on the desktop.</p>
+<p>Time and distance thresholds can be set to distinguish between swipe gesture and slow drag.</p>
+<p>Allows exclusion of child elements (interactive elements) as well allowing page scrolling or page zooming depending on configuration.</p>
+<ul>
+<li>Detects swipes in 4 directions, &quot;up&quot;, &quot;down&quot;, &quot;left&quot; and &quot;right&quot;</li>
+<li>Detects pinches &quot;in&quot; and &quot;out&quot;</li>
+<li>Supports single finger or double finger touch events</li>
+<li>Supports click events both on the touchSwipe object and its child objects</li>
+<li>Definable threshold / maxTimeThreshold to determin when a gesture is actually a swipe</li>
+<li>Events triggered for swipe &quot;start&quot;,&quot;move&quot;,&quot;end&quot; and &quot;cancel&quot;</li>
+<li>End event can be triggered either on touch release, or as soon as threshold is met</li>
+<li>Allows swiping and page scrolling</li>
+<li>Disables user input elements (Button, form, text etc) from triggering swipes</li>
+</ul>
+<h2>Demos, examples and docs</h2>
+<p><a href="http://labs.rampinteractive.co.uk/touchSwipe">http://labs.rampinteractive.co.uk/touchSwipe</a><br />
+<a href="http://labs.rampinteractive.co.uk/touchSwipe/docs">http://labs.rampinteractive.co.uk/touchSwipe/docs</a></p>
+<h2>Installation</h2>
+<h3>NPM</h3>
+<pre class="prettyprint linenums lang-language"><code>npm install jquery-touchswipe --save</code></pre>
+<h3>Bower</h3>
+<pre class="prettyprint linenums lang-language"><code>bower install jquery-touchswipe --save</code></pre>
+<h3>Manual</h3>
+<p>Include the minified file in your project.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script type="text/javascript" src="js/jquery.touchSwipe.min.js"&gt;&lt;/script&gt;</code></pre>
+<h2>Usage</h2>
+<pre class="prettyprint linenums lang-language"><code>$(function() {
   $("#test").swipe( {
     //Generic swipe handler for all directions
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -226,41 +212,24 @@ $(function() {
 
   //Set some options later
   $("#test").swipe( {fingers:2} );
-});
-````
-
-For full demos, code examples and documentation, see below.
-
-
-## Development
-Install dependencies
-````bash
-npm install
-````
-
-To minify
-````bash
-npm run minify
-````
-
-To build docs
-````bash
-npm run docs
-````
-
-To do both
-````bash
-npm run build
- ````
-
-### For port to XUI see:
-https://github.com/cowgp/xui-touchSwipe
-
+});</code></pre>
+<p>For full demos, code examples and documentation, see below.</p>
+<h2>Development</h2>
+<p>Install dependencies</p>
+<pre class="prettyprint linenums lang-language"><code>npm install</code></pre>
+<p>To minify</p>
+<pre class="prettyprint linenums lang-language"><code>npm run minify</code></pre>
+<p>To build docs</p>
+<pre class="prettyprint linenums lang-language"><code>npm run docs</code></pre>
+<p>To do both</p>
+<pre class="prettyprint linenums lang-language"><code>npm run build</code></pre>
+<h3>For port to XUI see:</h3>
+<p><a href="https://github.com/cowgp/xui-touchSwipe">https://github.com/cowgp/xui-touchSwipe</a></p>
           </div>
 
           <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
             <ul id="changelogList">
-              {"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/contents#get-repository-content","status":"404"}
+              <p>{&quot;message&quot;:&quot;Not Found&quot;,&quot;documentation_url&quot;:&quot;<a href="https://docs.github.com/rest/repos/contents#get-repository-content&quot;,&quot;status&quot;:&quot;404">https://docs.github.com/rest/repos/contents#get-repository-content","status":"404</a>&quot;}</p>
             </ul>
           </div>
 
