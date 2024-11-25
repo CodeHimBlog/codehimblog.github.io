@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Mask Plugin</title>
+    <meta name="description" content="Inputmask by RobinHerbots. Input Mask plugin">
+    <meta name="author" content="RobinHerbots">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/inputmask-by-robinherbots.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Inputmask</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Inputmask",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Inputmask</h1>
+        <p id="packageDescription" class="text-muted">Input Mask plugin</p>
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center">
+    <i class="bi bi-star-fill text-warning me-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">6408</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+	
+	  <div class="stat-box d-flex align-items-center">
+     <i class="bi bi-box-arrow-in-down me-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">64.28 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+	
+  <div class="stat-box d-flex align-items-center">
+    <i class="bi bi-arrow-repeat text-secondary me-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">2162</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+  <div class="stat-box d-flex align-items-center">
+    <i class="bi bi-exclamation-circle text-danger me-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">669</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/RobinHerbots/Inputmask/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/RobinHerbots/Inputmask" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            No README available
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  </article>
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/318447?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/RobinHerbots" target="_blank" id="ownerName" class="sidebar-link">RobinHerbots</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">September 20, 2010</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 23, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://robinherbots.github.io/Inputmask/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+    <h5 class="sidebar-title">Dependencies</h5>
+			             <ul id="dependenciesList">
+              <li>No dependencies listed.</li>
+            </ul>
+			 
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush"><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/318447?v=4" alt="RobinHerbots" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/RobinHerbots" target="_blank" class="text-decoration-none fw-bold">RobinHerbots</a><p class="mb-0 text-muted small">2823 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/669012?v=4" alt="rosshadden" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rosshadden" target="_blank" class="text-decoration-none fw-bold">rosshadden</a><p class="mb-0 text-muted small">12 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/60626689?v=4" alt="SteveDavis-TR" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/SteveDavis-TR" target="_blank" class="text-decoration-none fw-bold">SteveDavis-TR</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/3757319?v=4" alt="vsn4ik" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vsn4ik" target="_blank" class="text-decoration-none fw-bold">vsn4ik</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/307859?v=4" alt="adlerdias" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/adlerdias" target="_blank" class="text-decoration-none fw-bold">adlerdias</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/2237299?v=4" alt="kgeis" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kgeis" target="_blank" class="text-decoration-none fw-bold">kgeis</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1404810?v=4" alt="SimenB" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/SimenB" target="_blank" class="text-decoration-none fw-bold">SimenB</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/9027592?v=4" alt="grimalschi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/grimalschi" target="_blank" class="text-decoration-none fw-bold">grimalschi</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/6244226?v=4" alt="zeskysee" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zeskysee" target="_blank" class="text-decoration-none fw-bold">zeskysee</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1267438?v=4" alt="Rouche" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Rouche" target="_blank" class="text-decoration-none fw-bold">Rouche</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/2154886?v=4" alt="jdnichollsc" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jdnichollsc" target="_blank" class="text-decoration-none fw-bold">jdnichollsc</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/9734881?v=4" alt="fquiroz01" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fquiroz01" target="_blank" class="text-decoration-none fw-bold">fquiroz01</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1413874?v=4" alt="dasmfm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dasmfm" target="_blank" class="text-decoration-none fw-bold">dasmfm</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/2073337?v=4" alt="alexandrbig" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/alexandrbig" target="_blank" class="text-decoration-none fw-bold">alexandrbig</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/7635259?v=4" alt="ajacome" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ajacome" target="_blank" class="text-decoration-none fw-bold">ajacome</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/2759192?v=4" alt="VladimirKuzmin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/VladimirKuzmin" target="_blank" class="text-decoration-none fw-bold">VladimirKuzmin</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/837227?v=4" alt="OddEssay" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/OddEssay" target="_blank" class="text-decoration-none fw-bold">OddEssay</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1371298?v=4" alt="larmic" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/larmic" target="_blank" class="text-decoration-none fw-bold">larmic</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/11869830?v=4" alt="RareSecond" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/RareSecond" target="_blank" class="text-decoration-none fw-bold">RareSecond</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/43959850?v=4" alt="aiscorp" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aiscorp" target="_blank" class="text-decoration-none fw-bold">aiscorp</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1027364?v=4" alt="erbridge" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/erbridge" target="_blank" class="text-decoration-none fw-bold">erbridge</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/16133710?v=4" alt="chalda-pnuzig" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/chalda-pnuzig" target="_blank" class="text-decoration-none fw-bold">chalda-pnuzig</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/2203770?v=4" alt="andr-04" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/andr-04" target="_blank" class="text-decoration-none fw-bold">andr-04</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/156867?v=4" alt="Krinkle" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Krinkle" target="_blank" class="text-decoration-none fw-bold">Krinkle</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/484530?v=4" alt="wingyplus" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/wingyplus" target="_blank" class="text-decoration-none fw-bold">wingyplus</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/22620126?v=4" alt="simonfels" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/simonfels" target="_blank" class="text-decoration-none fw-bold">simonfels</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/626420?v=4" alt="mufasa71" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mufasa71" target="_blank" class="text-decoration-none fw-bold">mufasa71</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/3519243?v=4" alt="serkanince" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/serkanince" target="_blank" class="text-decoration-none fw-bold">serkanince</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/5593135?v=4" alt="SabbeRubbish" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/SabbeRubbish" target="_blank" class="text-decoration-none fw-bold">SabbeRubbish</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1597667?v=4" alt="Lemaro86" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Lemaro86" target="_blank" class="text-decoration-none fw-bold">Lemaro86</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
