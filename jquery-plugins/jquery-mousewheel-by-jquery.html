@@ -174,24 +174,17 @@
 </div>
         <div class="tab-content mt-3" id="infoTabsContent">
           <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
-            # jQuery Mouse Wheel Plugin
-
-A [jQuery](http://jquery.com/) plugin that adds cross-browser mouse wheel support with delta normalization.
-
-In order to use the plugin, simply bind the `mousewheel` event to an element.
-
-It also provides two helper methods called `mousewheel` and `unmousewheel`
-that act just like other event helper methods in jQuery.
-
-The event object is updated with the normalized `deltaX` and `deltaY` properties.
-In addition there is a new property on the event object called `deltaFactor`. Multiply
-the `deltaFactor` by `deltaX` or `deltaY` to get the scroll distance that the browser
-has reported.
-
-Here is an example of using both the bind and helper method syntax:
-
-```js
-// using on
+            <h1>jQuery Mouse Wheel Plugin</h1>
+<p>A <a href="http://jquery.com/">jQuery</a> plugin that adds cross-browser mouse wheel support with delta normalization.</p>
+<p>In order to use the plugin, simply bind the <code>mousewheel</code> event to an element.</p>
+<p>It also provides two helper methods called <code>mousewheel</code> and <code>unmousewheel</code>
+that act just like other event helper methods in jQuery.</p>
+<p>The event object is updated with the normalized <code>deltaX</code> and <code>deltaY</code> properties.
+In addition there is a new property on the event object called <code>deltaFactor</code>. Multiply
+the <code>deltaFactor</code> by <code>deltaX</code> or <code>deltaY</code> to get the scroll distance that the browser
+has reported.</p>
+<p>Here is an example of using both the bind and helper method syntax:</p>
+<pre class="prettyprint linenums lang-language"><code>// using on
 $('#my_elem').on('mousewheel', function(event) {
     console.log(event.deltaX, event.deltaY, event.deltaFactor);
 });
@@ -199,49 +192,35 @@ $('#my_elem').on('mousewheel', function(event) {
 // using the event helper
 $('#my_elem').mousewheel(function(event) {
     console.log(event.deltaX, event.deltaY, event.deltaFactor);
-});
-```
-
-The old behavior of adding three arguments (`delta`, `deltaX`, and `deltaY`) to the
-event handler is now deprecated and will be removed in later releases.
-
-
-## The Deltas...
-
-The combination of browsers, operating systems, and devices offer a huge range of possible delta values. In fact if the user
+});</code></pre>
+<p>The old behavior of adding three arguments (<code>delta</code>, <code>deltaX</code>, and <code>deltaY</code>) to the
+event handler is now deprecated and will be removed in later releases.</p>
+<h2>The Deltas...</h2>
+<p>The combination of browsers, operating systems, and devices offer a huge range of possible delta values. In fact if the user
 uses a trackpad and then a physical mouse wheel the delta values can differ wildly. This plugin normalizes those
 values so you get a whole number starting at +-1 and going up in increments of +-1 according to the force or
 acceleration that is used. This number has the potential to be in the thousands depending on the device.
-Check out some of the data collected from users [here](http://mousewheeldatacollector.herokuapp.com/).
-
-### Getting the scroll distance
-
-In some use-cases we prefer to have the normalized delta but in others we want to know how far the browser should
-scroll based on the users input. This can be done by multiplying the `deltaFactor` by the `deltaX` or `deltaY`
-event property to find the scroll distance the browser reported.
-
-The `deltaFactor` property was added to the event object in 3.1.5 so that the actual reported delta value can be
-extracted. This is a non-standard property.
-
-## Building the code in the repo
-
-```sh
-$ git clone git@github.com:jquery/jquery-mousewheel.git
+Check out some of the data collected from users <a href="http://mousewheeldatacollector.herokuapp.com/">here</a>.</p>
+<h3>Getting the scroll distance</h3>
+<p>In some use-cases we prefer to have the normalized delta but in others we want to know how far the browser should
+scroll based on the users input. This can be done by multiplying the <code>deltaFactor</code> by the <code>deltaX</code> or <code>deltaY</code>
+event property to find the scroll distance the browser reported.</p>
+<p>The <code>deltaFactor</code> property was added to the event object in 3.1.5 so that the actual reported delta value can be
+extracted. This is a non-standard property.</p>
+<h2>Building the code in the repo</h2>
+<pre class="prettyprint linenums lang-language"><code>$ git clone git@github.com:jquery/jquery-mousewheel.git
 $ cd jquery-mousewheel/
 $ npm install
 $ npm run build
-$ npm run karma
-```
-
-The unit tests run by karma are _very_ basic sanity checks; improvements welcome.
-To fully test the plugin, load [test/index.html](test/index.html) in each supported
-browser and follow the instructions at the top of the file after the unit tests finish.
-
+$ npm run karma</code></pre>
+<p>The unit tests run by karma are <em>very</em> basic sanity checks; improvements welcome.
+To fully test the plugin, load <a href="test/index.html">test/index.html</a> in each supported
+browser and follow the instructions at the top of the file after the unit tests finish.</p>
           </div>
 
           <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
             <ul id="changelogList">
-              {"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/contents#get-repository-content","status":"404"}
+              <p>{&quot;message&quot;:&quot;Not Found&quot;,&quot;documentation_url&quot;:&quot;<a href="https://docs.github.com/rest/repos/contents#get-repository-content&quot;,&quot;status&quot;:&quot;404">https://docs.github.com/rest/repos/contents#get-repository-content","status":"404</a>&quot;}</p>
             </ul>
           </div>
 
