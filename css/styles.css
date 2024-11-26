@@ -379,6 +379,22 @@ li.L9 {
   }
 }
 
+/* On mobile, change the layout to stack the icon on top */
+@media (max-width: 991px) { /* Mobile breakpoint */
+    .flex-column-mobile {
+        flex-direction: column !important; /* Stack the icon on top of the text */
+        align-items: center; /* Center-align the text */
+    }
+}
+
+/* On larger screens, the default horizontal layout will be kept */
+@media (min-width: 992px) { /* Desktop breakpoint */
+    .flex-column-mobile {
+        flex-direction: row !important; /* Keep the icon to the left of the text */
+        align-items: center; /* Keep text centered vertically */
+    }
+}
+
 
 @media only screen and (max-width: 640px){
    
