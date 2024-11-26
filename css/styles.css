@@ -381,12 +381,20 @@ li.L9 {
 
 /* On mobile, change the layout to stack the icon on top */
 @media (max-width: 991px) { /* Mobile breakpoint */
+
+	.stat-box{
+	padding: 0;
+	}
+	.stat-row{
+	    padding: 8px 0;
+	}
+	
     .flex-column-mobile {
         flex-direction: column !important; /* Stack the icon on top of the text */
         align-items: center; /* Center-align the text */
     }
     .flex-column-mobile i {
-        margin-bottom: 0.5rem !important; /* Reduce gap below icon on mobile */
+        margin-bottom: 0 !important; /* Reduce gap below icon on mobile */
     }
 }
 
