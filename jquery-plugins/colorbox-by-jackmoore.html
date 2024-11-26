@@ -703,7 +703,7 @@
 <li>Added a maximum width and maximum height. Example: {height:800, maxHeight:'100%'}, would allow the box to be a maximum potential height of 800px, instead of a fixed height of 800px.  With maxHeight of 100% the height of Colorbox cannot exceed the height of the browser window.</li>
 <li>Added 'rel' setting to add the ability to set an alternative rel for any Colorbox call.  This allows the user to group any combination of elements together for a gallery, or to override an existing rel. attribute so those element are not grouped together, without having to alter their rel in the HTML.</li>
 <li>Added a 'photo' setting to force Colorbox to display a link as a photo.  Use this when automatic photo detection fails (such as using a url like 'photo.php' instead of 'photo.jpg', 'photo.jpg#1', or 'photo.jpg?pic=1')</li>
-<li>Removed the need to ever create disposable elements to call colorbox on.  Colorbox can now be called directly, without being associated with any existing element, by using the following format:
+<li>Removed the need to ever create disposable elements to call colorbox on.  Colorbox can now be called directly, without being associated with any existing element, by using the following format:<br />
 <code>$.colorbox({open:true, href:'yourLink.xxx'});</code></li>
 <li>Colorbox settings are now persistent and unique for each element.  This allows for extremely flexible options for individual elements.  You could use this to create a gallery in which each page in the gallery has different settings.  One could be a photo with a fade transition, next could be an inline element with an elastic transition with a set width and height, etc.</li>
 <li>For user callbacks, 'this' now refers to the element colorbox was opened from.</li>
@@ -771,8 +771,8 @@
 <li>Added support for % sizing.</li>
 <li>Callback option added.</li>
 <li>Inline content now preserves JavaScript events, and changes made while Colorbox is open are also preserved.</li>
-<li>Added 'href' setting to add the ability to set an alternative href for any anchor, or to assign the Colorbox event to non-anchors.
-Example: $('button').colorbox({'href':'process.php'})
+<li>Added 'href' setting to add the ability to set an alternative href for any anchor, or to assign the Colorbox event to non-anchors.<br />
+Example: $('button').colorbox({'href':'process.php'})<br />
 Example: $('a[href='<a href="http://msn.com&#039;]).colorbox({&#039;href&#039;:&#039;http://google.com">http://msn.com']).colorbox({'href':'http://google.com</a>', iframe:true});</li>
 <li>Photos are now horizontally centered if they are smaller than the lightbox size.  Also vertically centered for browsers newer than IE7.</li>
 <li>Buttons in the examples are now included in the 'protected zone'.  The lightbox will never expand it's borders or buttons beyond an accessible area of the screen.</li>
