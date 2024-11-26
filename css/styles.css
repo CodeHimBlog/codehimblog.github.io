@@ -385,6 +385,9 @@ li.L9 {
         flex-direction: column !important; /* Stack the icon on top of the text */
         align-items: center; /* Center-align the text */
     }
+    .flex-column-mobile i {
+        margin-bottom: 0.5rem !important; /* Reduce gap below icon on mobile */
+    }
 }
 
 /* On larger screens, the default horizontal layout will be kept */
@@ -393,7 +396,11 @@ li.L9 {
         flex-direction: row !important; /* Keep the icon to the left of the text */
         align-items: center; /* Keep text centered vertically */
     }
+    .flex-column-mobile i {
+        margin-right: 1rem !important; /* Add gap to the right of the icon on desktop */
+    }
 }
+
 
 
 @media only screen and (max-width: 640px){
