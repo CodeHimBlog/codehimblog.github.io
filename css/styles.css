@@ -378,3 +378,16 @@ li.L9 {
     color: #81a2be !important;
   }
 }
+
+
+@media only screen and (max-width: 640px){
+   
+.sidebar{
+   margin-left: 0;
+}
+
+.site-main article, .sidebar{
+   padding: 20px;
+}
+
+}
