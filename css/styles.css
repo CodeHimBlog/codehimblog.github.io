@@ -396,6 +396,23 @@ li.L9 {
     .flex-column-mobile i {
         margin-bottom: 0 !important; /* Reduce gap below icon on mobile */
     }
+   /* Target the specific row containing tabs and action buttons */
+    .row.mb-4 {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    /* Move the tabs below the action buttons */
+    .row.mb-4 .col-12.col-md-6.d-flex.justify-content-start {
+        order: 1; /* Move tabs below the action buttons */
+    }
+
+    /* Ensure action buttons stay at the top */
+    .row.mb-4 .col-12.col-md-6.d-flex.justify-content-end {
+        order: 2; /* Keep action buttons at the top */
+        margin-bottom: 15px; /* Add some space below action buttons */
+    }
+	
 }
 
 /* On larger screens, the default horizontal layout will be kept */
