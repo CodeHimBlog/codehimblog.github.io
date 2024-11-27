@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery_jeditable by Nicolascarpi</title>
+    <meta name="description" content="jQuery edit in place plugin. Extendable via plugin architecture. Plugins for plugin. Really.">
+    <meta name="author" content="NicolasCARPi">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery_jeditable-by-nicolascarpi.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jquery_jeditable</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jquery_jeditable",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jquery_jeditable</h1>
+        <p id="packageDescription" class="text-muted">jQuery edit in place plugin. Extendable via plugin architecture. Plugins for plugin. Really.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1742</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.04 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">459</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">0</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/NicolasCARPi/jquery_jeditable/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/NicolasCARPi/jquery_jeditable" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jquery-jeditable</h1>
+<p><a href="https://www.npmjs.com/package/jquery-jeditable"><img src="https://img.shields.io/npm/v/jquery-jeditable.svg" alt="npm" /></a><br />
+<a href="https://www.codacy.com/app/elabftw/jquery_jeditable"><img src="https://api.codacy.com/project/badge/Grade/0cb32ce695b743d68257021455330c66" alt="Codacy Badge" /></a><br />
+<a href="https://github.com/NicolasCARPi/jquery_jeditable/blob/master/LICENSE"><img src="https://img.shields.io/github/license/NicolasCARPi/jquery_jeditable.svg" alt="GitHub license" /></a></p>
+<h1>DEPRECATION NOTICE</h1>
+<p><strong>This project is deprecated</strong> and should not be used in a fresh project. Have a look at <a href="https://github.com/deltablot/malle/">Malle</a> library instead. It is more or less the same, but in typescript and without a jQuery dependency.</p>
+<h2>Alternative library</h2>
+<p>Use <a href="https://github.com/deltablot/malle/">Malle</a>.</p>
+<h2>Description</h2>
+<p>Edit in place plugin for <a href="https://jquery.com/">jQuery</a> (compatible with jQuery v3.4.0+).</p>
+<p>Bind it to an element on the page, and when clicked the element will become a form that will be sent by asynchronous (ajax) POST request to an URL.</p>
+<p><a href="https://jeditable.elabftw.net"><img src="https://i.imgur.com/lEmY8l0.gif" alt="demo" /></a></p>
+<p>Works with text inputs, textarea, select, datepicker, and more… Comes with a ton of different options you can use to do exactly what you want!</p>
+<h2>Live demo</h2>
+<p>See it in action: <a href="https://jeditable.elabftw.net/">LIVE DEMO</a></p>
+<h2>Installation</h2>
+<pre class="prettyprint linenums lang-language"><code>npm install jquery-jeditable</code></pre>
+<h2>Usage</h2>
+<h3>Loading the library</h3>
+<p>Use a <code>&lt;script&gt;</code> tag loading the file <code>dist/jquery.jeditable.min.js</code> from your server, or use the <a href="https://cdnjs.com/libraries/jeditable.js">CDNJS link</a>.</p>
+<h3>Most basic usage</h3>
+<p>There is only one mandatory parameter. URL where browser sends edited content.</p>
+<pre class="prettyprint linenums lang-language"><code>$(document).ready(function() {
+     $('.edit').editable('save.php');
+ });</code></pre>
+<p>Code above does several things:</p>
+<p>Elements with class <code>edit</code> become editable. Editing starts with single mouse click. Form input element is text. Width and height of input element matches the original element. If user clicks outside form, changes are discarded. Same thing happens if user hits ESC. When user hits ENTER, browser submits text to save.php.</p>
+<p>Not bad for oneliner, huh? Let's add some options.</p>
+<h3>Adding options</h3>
+<pre class="prettyprint linenums lang-language"><code>$(document).ready(function() {
+    $('.edit').editable('save.php', {
+        indicator : 'Saving…',
+        event     : 'dbclick',
+        cssclass  : 'custom-css',
+        submit    : 'Save',
+        tooltip   : 'Double click to edit…'
+    });
+
+    $('.edit_area').editable('save.php', {
+        type      : 'textarea',
+        cancel    : 'Cancel',
+        submit    : 'OK',
+        indicator : '&lt;img src="img/spinner.svg" /&gt;',
+        tooltip   : 'Click to edit…'
+    });
+
+    $('.edit_select').editable('save.php', {
+        type           : 'select',
+        indicator      : 'Saving ...',
+        loadurl        : 'api/load.php',
+        inputcssclass  : 'form-control',
+        cssclass       : 'form'
+    });
+});</code></pre>
+<p>In the code above, the elements of class <code>edit</code> will become editable with a double click. It will show 'Saving…' when sending the data. The CSS class <code>custom-css</code> will be applied to the element. The button to submit will show the 'Save' text.</p>
+<p>The elements of class <code>edit_area</code> will become editable with a textarea. An image will be displayed during the save.</p>
+<p>The elements of class <code>edit_select</code> will become a selectable drop-down list.</p>
+<p>Both elements will have a tooltip showing when mouse is hovering.</p>
+<p>The <a href="https://jeditable.elabftw.net">live demo</a> shows more example but with that you can already do plenty!</p>
+<p>The complete list of options is available here: <a href="https://jeditable.elabftw.net/api/#jquery-jeditable">FULL LIST OF OPTIONS</a></p>
+<h3>What is sent to the server?</h3>
+<p>When the user clicks the submit button a POST request is sent to the target URL like this:</p>
+<pre class="prettyprint linenums lang-language"><code>id=element_id&amp;value=user_edited_content</code></pre>
+<p>Where <code>element_id</code> is the id of the element and <code>user_edited_content</code> is what the user entered in the input.</p>
+<p>If you'd like to change the names of the parameters sent, you need to add two options:</p>
+<pre class="prettyprint linenums lang-language"><code>$('.edit').editable('save.php', {
+    id   : 'bookId',
+    name : 'bookTitle'
+});</code></pre>
+<p>And the code above will result in this being sent to the server:</p>
+<pre class="prettyprint linenums lang-language"><code>bookId=element_id&amp;bookTitle=user_edited_content</code></pre>
+<h3>Loading data</h3>
+<p>If you need to load a different content than the one displayed (element is from a Wiki or is in Markdown or Textile and you need to load the source), you can do so with the <code>loadurl</code> option.</p>
+<pre class="prettyprint linenums lang-language"><code>$('.edit_area').editable('save.php', {
+    loadurl  : 'load.php',
+    loadtype : 'POST',
+    loadtext : 'Loading…',
+    type    : 'textarea',
+    submit  : 'OK'
+});</code></pre>
+<p>By default it will do a GET request to <code>loadurl</code>, so if you want POST, add the <code>loadtype</code> option. And <code>loadtext</code> is to display something while the request is being made.</p>
+<p>The PHP script <code>load.php</code> should return the source of the text (so markdown or wiki text but not html).</p>
+<p>And save.php should return the html (because this is what is displayed to the user after submit).</p>
+<p>Or you can pass the source in the <code>data</code> option (which accepts a string or a function).</p>
+<p>I like writing sentences (and finishing them with text in parenthesis).</p>
+<h3>Using selects</h3>
+<p>You can use selects by giving type parameter value of select. Select is built from JSON encoded array. This array can be given using either <code>data</code> parameter or fetched from external URL given in <code>loadurl</code> parameter. Array keys are values for <code>&lt;option&gt;</code> tag. Array values are text shown in pulldown.</p>
+<p>JSON encoded array looks like this:</p>
+<pre class="prettyprint linenums lang-language"><code>{"E":"Letter E","F":"Letter F","G":"Letter G", "selected":"F"}</code></pre>
+<p>Note the last entry. It is special. With value of <code>selected</code> in array you can tell Jeditable which option should be selected by default. Lets make two simple examples. First we pass values for pulldown in data parameter:</p>
+<pre class="prettyprint linenums lang-language"><code>$('.editable-select').editable('save.php', {
+    data   : '{"E":"Letter E","F":"Letter F","G":"Letter G", "selected":"F"}',
+    type   : 'select',
+    submit : 'OK'
+});</code></pre>
+<p>What if you need to generate values for pulldown dynamically? Then you can fetch values from external URL. Let's assume we have the following PHP script:</p>
+<pre class="prettyprint linenums lang-language"><code> &lt;?php // json.php
+ $array['E'] =  'Letter E';
+ $array['F'] =  'Letter F';
+ $array['G'] =  'Letter G';
+ $array['selected'] =  'F';
+ echo json_encode($array);</code></pre>
+<p>Then instead of <code>data</code> parameter we use <code>loadurl</code>:</p>
+<pre class="prettyprint linenums lang-language"><code>$('.editable-select').editable('save.php', {
+    loadurl : 'json.php',
+    type   : 'select',
+    submit : 'OK'
+});</code></pre>
+<h3>Styling elements</h3>
+<p>You can style input element with <code>cssclass</code> and <code>style</code> parameters. First one assumes to be the name of a class defined in your CSS. Second one can be any valid style declaration as string. Check the following examples:</p>
+<pre class="prettyprint linenums lang-language"><code>$('.editable').editable('save.php', {
+    cssclass : 'someclass'
+});
+
+$('.editable').editable('save.php', {
+    loadurl : 'json.php',
+    type    : 'select',
+    submit  : 'OK',
+    style   : 'display: inline'
+});</code></pre>
+<p>Both parameters can have special value of <code>inherit</code>. Setting class to <code>inherit</code> will make the form inherit the parent's class. Setting <code>style</code> to <code>inherit</code> will make form to have same style attribute as its parent.</p>
+<p>Following example will make the word <strong>oranges</strong> editable with a pulldown menu. This pulldown inherits style from <code>&lt;span&gt;</code>. Thus it will be displayed inline.</p>
+<pre class="prettyprint linenums lang-language"><code>I love eating &lt;span class="editable" style="display: inline"&gt;oranges&lt;/span&gt;.</code></pre>
+<pre class="prettyprint linenums lang-language"><code>$('.editable').editable('save.php', {
+    loadurl : 'json.php',
+    type    : 'select',
+    submit  : 'OK',
+    style   : 'inherit'
+});</code></pre>
+<h3>Submitting to function instead of URL</h3>
+<p>Some people want to control absolutely everything. I want to keep you happy. You can get full control of Ajax request. Just submit to function instead of URL. Parameters passed are same as with callback.</p>
+<pre class="prettyprint linenums lang-language"><code>$('.editable').editable(function(value, settings) {
+    console.log(this);
+    console.log(value);
+    console.log(settings);
+    return(value);
+}, {
+    type    : 'textarea',
+    submit  : 'OK',
+});</code></pre>
+<p>Note that the function must return a string. Usually the edited content. This will be displayed on the page after editing.</p>
+<h3>Other options</h3>
+<p>The demo contains other examples, <a href="https://jeditable.elabftw.net">have a look!</a></p>
+<p>The complete list of options is available here: <a href="https://jeditable.elabftw.net/api/#jquery-jeditable">FULL LIST OF OPTIONS</a></p>
+<h2>Support</h2>
+<p>Please open a <a href="https://github.com/NicolasCARPi/jquery_jeditable/issues/new">GitHub issue</a> if you have a bug to report, a question to ask or if you just want to discuss something related to the project.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h1>Changelog</h1>
+<h2>2.0.21</h2>
+<ul>
+<li>Fix tooltip getting overwritten (#241)</li>
+<li>Update dev dependencies</li>
+</ul>
+<h2>2.0.20</h2>
+<ul>
+<li>Update dev dependencies</li>
+</ul>
+<h2>2.0.19</h2>
+<ul>
+<li>Fix warnings from jquery-migrate (#230) by Shaun Case</li>
+<li>Upgrade dependencies</li>
+</ul>
+<h2>2.0.18</h2>
+<ul>
+<li>Upgrade dependencies</li>
+<li>Formatting fix (remove tabs)</li>
+<li>Add FUNDING.yml</li>
+<li>Fix changelog (#218)</li>
+</ul>
+<h2>2.0.17</h2>
+<ul>
+<li>Upgrade jquery to 3.5.0 because of vulnerability in previous versions</li>
+</ul>
+<h2>2.0.16</h2>
+<ul>
+<li>Get text instead of html in callback result (#214)</li>
+<li>Enable shift+enter to submit form (#216)</li>
+</ul>
+<h2>2.0.15</h2>
+<ul>
+<li>Remove deprecated .blur() calls and replace them with .on() (#211)</li>
+</ul>
+<h2>2.0.14</h2>
+<ul>
+<li>Remove deprecated jQuery functions and replace them by modern counterparts (#211)</li>
+</ul>
+<h2>2.0.13</h2>
+<ul>
+<li>Accept list of tuples as items for select element (#208 by @emjayko)</li>
+</ul>
+<h2>2.0.12</h2>
+<ul>
+<li>Wrap the plugins in functions for non-conflict mode (#205)</li>
+</ul>
+<h2>2.0.11</h2>
+<ul>
+<li>Use text() instead of html() for revert (#203)</li>
+</ul>
+<h2>2.0.10</h2>
+<ul>
+<li>Regenerate the minified files</li>
+</ul>
+<h2>2.0.9</h2>
+<ul>
+<li>Allow resubmiting if onsubmit or submit returns false (#201 by @RobdeT)</li>
+</ul>
+<h2>2.0.8</h2>
+<ul>
+<li>Update dependencies to fix security vulnerabilities (CVE-2019-11358, and in js-yaml)</li>
+</ul>
+<h2>2.0.7</h2>
+<ul>
+<li>Change isSubmitting back to false onComplete (#192)</li>
+<li>Width/height now correctly taken into account for masked inputs (#189)</li>
+<li>Pass event object to the before callback (#188)</li>
+</ul>
+<h2>2.0.6</h2>
+<ul>
+<li>Fix cancel when ESC is pressed (#177) by @thezoggy</li>
+<li>Fix &quot;main&quot; entry of package.json (#181)</li>
+</ul>
+<h2>2.0.5</h2>
+<ul>
+<li>Sorting of select items is now an option (default is not sorted). by @nathanvda (#178)</li>
+</ul>
+<h2>2.0.3</h2>
+<ul>
+<li>Add ability to apply css to input element (#173)</li>
+</ul>
+<h2>2.0.2</h2>
+<ul>
+<li>Fix a bug where selected value will get added to the select options. by @eman1986 (#166)</li>
+</ul>
+<h2>2.0.1</h2>
+<ul>
+<li>Fix width setting to number, url and email (#163)</li>
+</ul>
+<h2>2.0.0</h2>
+<ul>
+<li>BREAKING: remove ajaxupload and old datepicker plugins (new datepicker added)</li>
+<li>BREAKING: change the autogrow plugin for another one</li>
+<li>Add datepicker plugin for jQuery-UI's datepicker</li>
+<li>Add form param to onblur apply (#37)</li>
+<li>Allow onblur function to cancel form if it returns false (#14)</li>
+<li>Properly cleanup after destroy. by  @Scottmitch (#125)</li>
+<li>Return submitdata if it's a function. by @mkdgs (#109)</li>
+<li>Add onedit example + doc. by @chriskeeble (#122)</li>
+<li>Stop event propagation for charcounter. by @twashing (#86)</li>
+<li>Add multiselect support. by @nicholasryan (#75)</li>
+<li>Add html5 text attributes, email, number and url types. by @nfreear (#87)</li>
+<li>Add maxlength to textarea too. by @estebistec (#68)</li>
+<li>Add option to style buttons and add id to form. by @quocvu (#71)</li>
+<li>Add intercept option useful for preprocessing data. by @randell (#66)</li>
+<li>Pass the source event to the onedit hook. by @gfouquet (#104)</li>
+<li>Return element to target function (#67)</li>
+<li>Add 'before' option. by @bp323 (#113)</li>
+<li>Fix issue with html encodable characters (#110)</li>
+<li>Add checkbox type. by @oneslash and @pushpinderbagga (#52)</li>
+<li>Correctly check if checkbox is checked</li>
+<li>Select options are now sorted by value. by @jjwdesign (#97)</li>
+<li>Add submitdata to callback. by @mikemeier (#64)</li>
+<li>Adjust the width of the element to account for border/margin/padding</li>
+<li>Fix loadtext not showing (#15)</li>
+<li>Pass a response callback function to custom target function. by bshelton229. (#65)</li>
+<li>Add showfn for jquery animations before displaying form (#46)</li>
+<li>Remove extra loop. by @dgm (#45)</li>
+<li>Better demo page showing more example</li>
+<li>Add proper API documentation</li>
+<li>Add usage documentation in README.md</li>
+<li>Add Dockerfile to serve the demos</li>
+<li>Add LICENSE file</li>
+</ul>
+<h2>1.8.0</h2>
+<ul>
+<li>A lot of cleanup in the repo after years of abandon</li>
+<li>The demos folder now contains a page (index.html) with all the demo code</li>
+<li>Removed Textile stuff</li>
+<li>Removed SQLite from the demo</li>
+<li>Add support for configuring size and maxlength. by @bonkowski (#32)</li>
+<li>Set &quot;cache&quot; to false on loadurl. Fix issue with IE8. by @spikex (#33)</li>
+<li>Add package.json for npm hosting</li>
+<li>Remove eval to allow compilation with Closure &amp; Fix for newer jQuery. by @flavour (#158)</li>
+<li>Fix issue with width/height (#137)</li>
+<li>Fix issue with selected in select element (#106)</li>
+<li>Add label settings. by @tomasm- (#40)</li>
+</ul>
+<h2>1.7.3</h2>
+<ul>
+<li>Add support for &quot;jQuery plugin repository&quot;: <a href="http://plugins.jquery.com/">http://plugins.jquery.com/</a></li>
+</ul>
+<h2>1.7.2</h2>
+<ul>
+<li>Submit on change if input type select and no submit button defined (&quot;gregpyp&quot;:<a href="http://github.com/gregpyp">http://github.com/gregpyp</a>)</li>
+</ul>
+<h2>1.7.1</h2>
+<ul>
+<li>Namespace default event as click.editable (&quot;Zangetsu&quot;:<a href="http://github.com/Zangetsu">http://github.com/Zangetsu</a>)</li>
+<li>Trim whitespace when determining the selected value of pulldown (&quot;binarylogic&quot;:<a href="http://github.com/binarylogic">http://github.com/binarylogic</a>)</li>
+<li>Make default settings publicly available (&quot;lawrencepit&quot;:<a href="http://github.com/lawrencepit">http://github.com/lawrencepit</a>)</li>
+<li>Allow ajax calls other than 'html', e.g. json and script calls. (&quot;lawrencepit&quot;:<a href="http://github.com/lawrencepit">http://github.com/lawrencepit</a>)</li>
+<li>Do not follow links if they are editable (&quot;Darwin&quot;:<a href="http://github.com/darwin">http://github.com/darwin</a>)</li>
+<li>make JSLInt happy (&quot;olleolleolle&quot;:<a href="http://github.com/olleolleolle">http://github.com/olleolleolle</a>)</li>
+</ul>
+<h2>1.7.0</h2>
+<ul>
+<li>Full control over jQuery AJAX options for those who want to tinker.</li>
+<li>Fix problem with IE and placeholder with HTML tags.</li>
+<li>Add $.editable('disable'), $.editable('enable') and $.editable('destroy')</li>
+<li>Add onedit, onsubmit, onreset and onerror hooks. </li>
+<li>Allow passing select options as JavaScript object.</li>
+<li>Fix IE throwing error with textareas when width or height was set to 'none'.</li>
+</ul>
+<h2>1.6.2</h2>
+<ul>
+<li>Fix problems when xhtml is served application/xhtml+xml.</li>
+</ul>
+<h2>1.6.1</h2>
+<ul>
+<li>Submit method can now be POST (default) or PUT.</li>
+<li>Fix form being submitted twice in some cases.</li>
+</ul>
+<h2>1.6.0</h2>
+<ul>
+<li>Onblur parameter can now be a function.</li>
+<li>Support for any arbitrary event for triggering Jeditable</li>
+<li>Submitting of form will be canceled if submit() method of custom input returns false. </li>
+<li>Custom inputs now have access to reset() method. </li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/edit-in-place" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>edit-in-place</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/mit-license" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>mit-license</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/3043706?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/NicolasCARPi" target="_blank" id="ownerName" class="sidebar-link">NicolasCARPi</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">November 10, 2008</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 12, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://jeditable.elabftw.net" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (^3.5.1)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>documentation (^13.1.0)</li><li>grunt (^1.3.0)</li><li>grunt-contrib-uglify-es (^3.3.0)</li><li>lodash (^4.17.20)</li><li>merge (^2.1.0)</li><li>qunit (^2.13.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/21913?v=4" alt="tuupola" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tuupola" target="_blank" class="text-decoration-none fw-bold">tuupola</a><p class="mb-0 text-muted small">309 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3043706?v=4" alt="NicolasCARPi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/NicolasCARPi" target="_blank" class="text-decoration-none fw-bold">NicolasCARPi</a><p class="mb-0 text-muted small">193 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/115?v=4" alt="lawrencepit" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lawrencepit" target="_blank" class="text-decoration-none fw-bold">lawrencepit</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5453?v=4" alt="darwin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/darwin" target="_blank" class="text-decoration-none fw-bold">darwin</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2071?v=4" alt="JackDanger" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/JackDanger" target="_blank" class="text-decoration-none fw-bold">JackDanger</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/500882?v=4" alt="thezoggy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/thezoggy" target="_blank" class="text-decoration-none fw-bold">thezoggy</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3641499?v=4" alt="warmsocks" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/warmsocks" target="_blank" class="text-decoration-none fw-bold">warmsocks</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3919303?v=4" alt="francesco-pesenti" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/francesco-pesenti" target="_blank" class="text-decoration-none fw-bold">francesco-pesenti</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1663286?v=4" alt="binarylogic" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/binarylogic" target="_blank" class="text-decoration-none fw-bold">binarylogic</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1977375?v=4" alt="Uplink03" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Uplink03" target="_blank" class="text-decoration-none fw-bold">Uplink03</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5315?v=4" alt="spikex" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/spikex" target="_blank" class="text-decoration-none fw-bold">spikex</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/49274532?v=4" alt="RobdeT" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/RobdeT" target="_blank" class="text-decoration-none fw-bold">RobdeT</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/34460?v=4" alt="nathanvda" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nathanvda" target="_blank" class="text-decoration-none fw-bold">nathanvda</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2761007?v=4" alt="michal-juranyi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/michal-juranyi" target="_blank" class="text-decoration-none fw-bold">michal-juranyi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4532871?v=4" alt="mendizalea" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mendizalea" target="_blank" class="text-decoration-none fw-bold">mendizalea</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8566510?v=4" alt="JavierPDev" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/JavierPDev" target="_blank" class="text-decoration-none fw-bold">JavierPDev</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1112671?v=4" alt="JamoCA" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/JamoCA" target="_blank" class="text-decoration-none fw-bold">JamoCA</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/389592?v=4" alt="flavour" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/flavour" target="_blank" class="text-decoration-none fw-bold">flavour</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2343334?v=4" alt="eman1986" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/eman1986" target="_blank" class="text-decoration-none fw-bold">eman1986</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/30107487?v=4" alt="iedutu" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/iedutu" target="_blank" class="text-decoration-none fw-bold">iedutu</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/10556?v=4" alt="hitsvilleusa" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hitsvilleusa" target="_blank" class="text-decoration-none fw-bold">hitsvilleusa</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/306661?v=4" alt="bonkowski" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bonkowski" target="_blank" class="text-decoration-none fw-bold">bonkowski</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+17 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
