@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A User Friendly Html5 Form Validation jQuery Plugin for Bootstrap 3</title>
+    <meta name="description" content="bootstrap-validator by 1000hz. A user-friendly HTML5 form validation jQuery plugin for Bootstrap 3">
+    <meta name="author" content="1000hz">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/bootstrap-validator-by-1000hz.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Bootstrap Validator</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Bootstrap Validator",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Bootstrap Validator</h1>
+        <p id="packageDescription" class="text-muted">A user-friendly HTML5 form validation jQuery plugin for Bootstrap 3</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">2376</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.53 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">1068</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">157</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/1000hz/bootstrap-validator/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/1000hz/bootstrap-validator" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Validator, for Bootstrap 3</h1>
+<p>The Validator plugin offers automatic form validation configurable via mostly HTML5 standard attributes.<br />
+It also provides an unobtrusive user experience, because nobody likes a naggy form.</p>
+<h2>Features</h2>
+<ul>
+<li>Configurable via data-api and standard HTML5 attributes</li>
+<li>Patient to inform user of errors and eager to let them know the errors have been resolved</li>
+<li>Submit is disabled until the form is valid and all required fields are complete</li>
+<li>Customizable error messages</li>
+<li>Custom validator functions</li>
+<li>Validation of an input field via AJAX</li>
+</ul>
+<h2>Installation</h2>
+<ul>
+<li>CDN on <a href="https://cdnjs.com">CDNJS</a>: <a href="https://cdnjs.com/libraries/1000hz-bootstrap-validator">https://cdnjs.com/libraries/1000hz-bootstrap-validator</a></li>
+<li>Clone the repo: <code>git clone https://github.com/1000hz/bootstrap-validator.git</code>.</li>
+<li>Install with <a href="http://bower.io">Bower</a>: <code>bower install bootstrap-validator</code>.</li>
+<li>Install with <a href="https://www.npmjs.com">npm</a>: <code>npm install bootstrap-validator</code>.</li>
+</ul>
+<h2>Documentation</h2>
+<p>See the project docs at <a href="http://1000hz.github.io/bootstrap-validator">http://1000hz.github.io/bootstrap-validator</a></p>
+<h2>Contributing</h2>
+<h4>Found an issue?</h4>
+<p>Be sure to include a reproducible test case on JS Bin with your report. Here's a <a href="http://jsbin.com/fopaposaci/1/edit?html,js,output">template</a> to get started.</p>
+<h4>Submitting a pull request?</h4>
+<p>Fork this repo and create a new branch for your patch.<br />
+Try to adhere to the code style of Bootstrap 3's JS as much as possible.<br />
+Be sure to add any relevant unit tests.<br />
+Make sure everything's still ok by running <code>grunt test</code>.<br />
+Lastly, don't pollute your patch branch with any unrelated changes.</p>
+<h2>Donating</h2>
+<p>If you've found this project particularly useful and feel like giving a little back, you can donate what you want via PayPal or Square Cash.</p>
+<p><a href="https://paypal.me/1000hz"><img src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate via PayPal"></a><br />
+<a href="https://cash.me/$cina"><img src="https://img.shields.io/badge/Donate-Square Cash-brightgreen.svg" alt="Donate via Square Cash"></a></p>
+<h2>Author</h2>
+<p><strong>Cina Saffary</strong></p>
+<ul>
+<li><a href="http://twitter.com/1000hz">http://twitter.com/1000hz</a></li>
+<li><a href="http://github.com/1000hz">http://github.com/1000hz</a></li>
+</ul>
+<p>Thanks to  <a href="https://github.com/mdo">@mdo</a> and <a href="https://github.com/fat">@fat</a> for <a href="http://getbootstrap.com">Bootstrap</a>. &lt;3</p>
+<h2>Copyright and license</h2>
+<p>Copyright 2016 Cina Saffary under the MIT license.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h1>Changelog</h1>
+<h3>0.11.9</h3>
+<ul>
+<li>Fixing another issue with <code>&lt;select multiple/&gt;</code> elements. (#463)</li>
+<li>No longer skipping a custom validator if its attribute has a falsy value. (#475)</li>
+<li>Fixing stale values being read for data-attributes.</li>
+</ul>
+<h3>0.11.8</h3>
+<ul>
+<li>Properly updating the submit button state when you run <code>.validator(‘update’)</code>. (#461)</li>
+<li>Clearing errors on fields with <code>data-validate="false"</code> upon calling <code>.validator('update')</code>. (#387)</li>
+</ul>
+<h3>0.11.7</h3>
+<ul>
+<li>Skip auto-validation of fields with errors that were set before plugin init. (#401)</li>
+<li>Fixing non-multiple select validation, which accidentally broke in the last release. (#453)</li>
+</ul>
+<h3>0.11.6</h3>
+<ul>
+<li>Scope <code>focus</code> option's error scrolling to only inputs within the validator's form element. (#385)</li>
+<li>Fixing <code>&lt;select multiple required /&gt;</code> being marked as invalid by default with jQuery 3.x (#393)</li>
+<li>Fixing a memory leak of <code>this.$inputs</code> on <code>.validator('destroy')</code></li>
+</ul>
+<h3>0.11.5</h3>
+<ul>
+<li>Fixed an event binding order issue when the form is reset. (<a href="https://github.com/1000hz/bootstrap-validator/pull/375">#375</a>)</li>
+</ul>
+<h3>0.11.3</h3>
+<ul>
+<li>Fixed <code>.has-success</code> not being cleared if a field <code>.has-feedback</code> and has it's value cleared.  Shoutout to <a href="https://github.com/1000hz/bootstrap-validator/pull/375">@net</a> for bringing the bugs fixed in 0.11.1 - 0.11.3 to my attention.</li>
+</ul>
+<h3>0.11.2</h3>
+<ul>
+<li>Added <code>input[type="reset"]</code> to the ignored input filter</li>
+</ul>
+<h3>0.11.1</h3>
+<ul>
+<li>Added a <code>reset</code> event listener on the form to reinitialize the plugin</li>
+<li>Fixed a missed bit of cleanup in <code>.validator('destroy')</code> where it wasn't removing the <code>.has-success</code> class</li>
+</ul>
+<h3>0.11.0</h3>
+<h6>BREAKING CHANGES:</h6>
+<ul>
+<li>Custom validators are now expected to return an error string if the field is invalid.</li>
+<li>The errors option has been removed. Override <code>$.fn.validator.Constructor.DEFAULTS.errors</code> if you want to change the default <code>match</code> and <code>minlength</code> errors.</li>
+<li>The validator no longer skips disabled/invisible fields. If you want this behavior back, add <code>$.fn.validator.Constructor.INPUT_SELECTOR += ':enabled:visible'</code> to your code. (<a href="https://github.com/1000hz/bootstrap-validator/issues/115">#115</a>) (<a href="https://github.com/1000hz/bootstrap-validator/issues/134">#134</a>) (<a href="https://github.com/1000hz/bootstrap-validator/issues/317">#317</a>)</li>
+</ul>
+<h6>Enhancements:</h6>
+<ul>
+<li>Added support for distinct custom errors for the standard HTML5 attribute validators. No more being stuck with <code>data-native-error=""</code> for all of them. (<a href="https://github.com/1000hz/bootstrap-validator/issues/222">#222</a>) (<a href="https://github.com/1000hz/bootstrap-validator/issues/241">#241</a>) (<a href="https://github.com/1000hz/bootstrap-validator/issues/285">#285</a>)</li>
+<li>Added a <code>.validator('update')</code> method to refresh the set of fields that will be validated (<a href="https://github.com/1000hz/bootstrap-validator/issues/306">#306</a>)</li>
+<li>Added support of <code>data-validate="true|false"</code> on inputs to force validation of that field</li>
+<li>Immediately validating fields that already have a value upon validator initialization (<a href="https://github.com/1000hz/bootstrap-validator/issues/350">#350</a>)</li>
+</ul>
+<h6>Bugfixes:</h6>
+<ul>
+<li>Fixed a bug in Safari where <code>element.checkValidity()</code> was returning stale values (<a href="https://github.com/1000hz/bootstrap-validator/issues/293">#293</a>)</li>
+<li>Fixed a bug where spaces at the end of inputs were being trimmed off before being run through validators (<a href="https://github.com/1000hz/bootstrap-validator/issues/338">#338</a>)</li>
+<li>Custom validators no longer leak to other instances of Validator. (<a href="https://github.com/1000hz/bootstrap-validator/issues/176">#176</a>)</li>
+<li>Scrolling with <code>focus: true</code> option is now triggered on <code>$('html, body')</code> instead of <code>$(document.body)</code> for better cross-browser support (<a href="https://github.com/1000hz/bootstrap-validator/issues/282">#282</a>)</li>
+<li>Removed (value == previousValue =&gt; skip) optimization. It was breaking the match validator and wasn't improving perf that much. (<a href="https://github.com/1000hz/bootstrap-validator/issues/316">#316</a>) (<a href="https://github.com/1000hz/bootstrap-validator/issues/340">#340</a>)</li>
+<li>Added <code>$.fn.validator.Constructor.VERSION</code> property for parity with core Bootstrap plugins</li>
+</ul>
+<h6>Docs Changes:</h6>
+<ul>
+<li>Docs: Added an Overview section which calls out that whatever conventions apply to Bootstrap's core plugins also apply here</li>
+<li>Docs: Added a callout blurb about the standard attribute validators</li>
+<li>Docs: Added a &quot;Validated fields&quot; section to document the Validator.INPUT_SELECTOR field</li>
+<li>Docs: Removed <code>$()</code> from method headers, which was confusing some people (<a href="https://github.com/1000hz/bootstrap-validator/issues/202">#202</a>)</li>
+</ul>
+<h3>0.10.2</h3>
+<ul>
+<li>Fixed a bug with the form still submitting even with errors when using the <code>disable: false</code> option. (<a href="https://github.com/1000hz/bootstrap-validator/issues/310">#310</a>)</li>
+<li>Fixed a bug with the error field not being focused when using the <code>disable: false</code> option. (<a href="https://github.com/1000hz/bootstrap-validator/issues/310">#310</a>)</li>
+</ul>
+<h3>0.10.1</h3>
+<ul>
+<li>You can now override <code>$.fn.validator.Constructor.FOCUS_OFFSET</code> to set a custom offset from the top of the window the page should scroll to when the <code>focus</code> option is true. Defaults to 20px.</li>
+</ul>
+<h3>0.10.0</h3>
+<ul>
+<li>Adding the <code>focus</code> option to scroll to and focus the first field with an error (<a href="https://github.com/1000hz/bootstrap-validator/issues/128">#128</a>)</li>
+<li>Add support for Bootstrap 4 <code>.has-danger</code> class (<a href="https://github.com/1000hz/bootstrap-validator/issues/271">#271</a>)</li>
+<li>Only running validators if the field has a value or is required (<a href="https://github.com/1000hz/bootstrap-validator/issues/214">#214</a>)</li>
+<li>Immediately validate on blur (<a href="https://github.com/1000hz/bootstrap-validator/issues/130">#130</a>)</li>
+<li>Caching selected form fields to greatly improve performance (<a href="https://github.com/1000hz/bootstrap-validator/issues/234">#234</a>)</li>
+<li>Only validate a field if it is dirty or invalid (<a href="https://github.com/1000hz/bootstrap-validator/issues/258">#258</a>, <a href="https://github.com/1000hz/bootstrap-validator/issues/152">#152</a>)</li>
+<li>Handle feedback icons in .destroy() (<a href="https://github.com/1000hz/bootstrap-validator/issues/123">#123</a>)</li>
+<li>Change feedback to check if .form-group .has-feedback</li>
+<li>Only show success feedback if field has value (<a href="https://github.com/1000hz/bootstrap-validator/issues/252">#252</a>)</li>
+<li>Scoping <code>input</code>/<code>change</code>/<code>focusout</code> event handlers to <code>INPUT_SELECTOR</code> elements (<a href="https://github.com/1000hz/bootstrap-validator/issues/251">#251</a>)</li>
+<li>Updated the <code>main</code> path in bower.json (<a href="https://github.com/1000hz/bootstrap-validator/issues/219">#219</a>)</li>
+</ul>
+<h3>0.9.0</h3>
+<ul>
+<li>Adding new <code>feedback</code> option to override the classes used for feedback icons (<a href="https://github.com/1000hz/bootstrap-validator/issues/97">#97</a>)</li>
+<li>Exposing selector used to determine which inputs to validate as <code>Validator.INPUT_SELECTOR</code></li>
+<li>Removing inline styles on submit button no longer needed in Bootstrap v3.3.5 (<a href="https://github.com/1000hz/bootstrap-validator/issues/166">#166</a>)</li>
+<li>Add <code>jquery &gt;= 1.8.3</code> to bower.json (<a href="https://github.com/1000hz/bootstrap-validator/issues/160">#160</a>)</li>
+</ul>
+<h6>Docs Changes</h6>
+<ul>
+<li>Upgrade to Bootstrap v3.3.5</li>
+<li>Added a form-feedback example to the docs</li>
+<li>Added a custom validator server example to the docs</li>
+</ul>
+<h3>0.8.1</h3>
+<ul>
+<li>No longer running validators on button elements. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/93">#93</a>.</li>
+<li>No longer running validators on invisible input elements. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/65">#65</a>.</li>
+<li>Adding support for <code>button[form="myForm"]</code>. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/74">#74</a>.</li>
+</ul>
+<h3>0.8.0</h3>
+<ul>
+<li>Adding custom validators option.</li>
+<li>Only adding .has-success class if there is a <code>.form-control-feedback</code> present.</li>
+</ul>
+<h3>0.7.3</h3>
+<ul>
+<li>No longer validating <code>input[type="hidden"]</code> fields. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/84">#84</a>.</li>
+<li>Adding support for Bootstrap's feedback icons.</li>
+</ul>
+<h3>0.7.2</h3>
+<ul>
+<li>Namespacing the manually-triggered <code>input</code> events. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/38">#38</a>.</li>
+<li>Adding a note to the docs about polyfills and cross-browser compatibility in IE9 and older. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/18">#18</a>.</li>
+<li>Adding a note to the docs about conditionally handling the submit event if the form is invalid. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/44">#44</a>.</li>
+</ul>
+<h3>0.7.0</h3>
+<ul>
+<li>Adding a <code>disable</code> option to control whether or not the form submit is disabled if the form is invalid. Defaults to true. See <a href="https://github.com/1000hz/bootstrap-validator/issues/46">#46</a>.</li>
+<li>URI-encoding params sent via remote validator. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/56">#56</a>.</li>
+</ul>
+<h3>0.6.0</h3>
+<ul>
+<li>Adding <code>.validator('destroy')</code> method. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/10">#10</a>.</li>
+<li>Not calling window.setTimeout() if options.delay == 0</li>
+<li>Fixing broken docs example</li>
+<li>Moved docs content to /docs directory of project</li>
+</ul>
+<h3>0.5.0</h3>
+<ul>
+<li>Adding <code>remote</code> validator to send an AJAX request to determine a fields validity. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/2">#2</a>.</li>
+<li>Making the disabled submit button clickable to reveal what errors are keeping the form disabled. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/8">#8</a>.</li>
+<li>Fixing small issue with errored radio buttons that made the form stay disabled until you toggled through each radio button. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/21">#21</a>.</li>
+</ul>
+<h3>0.4.0</h3>
+<ul>
+<li>Adding <code>html</code> option to allow html in error messages. Defaults to false.</li>
+<li>Validator now ignores disabled fields and won't consider them to be invalid. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/13">#13</a>.</li>
+<li>Validator only disables buttons with <code>[type="submit"]</code>. Best practice is still to give a <code>[type="button"]</code> for all non-submit buttons. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/17">#17</a>.</li>
+<li>Fixing <code>.noConflict()</code> as per twbs/bootstrap<a href="https://github.com/1000hz/bootstrap-validator/issues/11464">#11464</a>.</li>
+<li>Namespacing all data attributes the plugin sets with <code>bs.validator</code>.</li>
+</ul>
+<h3>0.3.0</h3>
+<ul>
+<li>Adding support for required radio buttons and checkboxes. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/7">#7</a>.</li>
+<li>Changing jekyll to serve docs from <code>/</code> instead of <code>/validator</code> when running docs locally</li>
+</ul>
+<h3>0.2.1</h3>
+<ul>
+<li>Validating fields on blur so empty required fields are subject to validation once they've been touched. Fixes <a href="https://github.com/1000hz/bootstrap-validator/issues/3">#3</a>.</li>
+</ul>
+<h3>0.2.0</h3>
+<ul>
+<li>Initial public release</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/bootstrap" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>bootstrap</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/bootstrap3" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>bootstrap3</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/form" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>form</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/validator" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>validator</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/validation" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>validation</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>plugin</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/1395018?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/1000hz" target="_blank" id="ownerName" class="sidebar-link">1000hz</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">November 16, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 4, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://1000hz.github.io/bootstrap-validator" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (~0.4.1)</li><li>grunt-contrib-uglify (~0.2.7)</li><li>grunt-contrib-qunit (^1.2.0)</li><li>grunt-contrib-jshint (~0.7.1)</li><li>grunt-contrib-watch (~0.5.3)</li><li>grunt-sed (~0.1.1)</li><li>grunt-html-validation (~0.1.6)</li><li>grunt-jekyll (~0.4.0)</li><li>grunt-contrib-concat (~0.3.0)</li><li>grunt-contrib-copy (~0.5.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1395018?v=4" alt="1000hz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/1000hz" target="_blank" class="text-decoration-none fw-bold">1000hz</a><p class="mb-0 text-muted small">115 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1478487?v=4" alt="marten-seemann" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/marten-seemann" target="_blank" class="text-decoration-none fw-bold">marten-seemann</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2909337?v=4" alt="mrDinckleman" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mrDinckleman" target="_blank" class="text-decoration-none fw-bold">mrDinckleman</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/465562?v=4" alt="r0ro" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/r0ro" target="_blank" class="text-decoration-none fw-bold">r0ro</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1768446?v=4" alt="balcsida" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/balcsida" target="_blank" class="text-decoration-none fw-bold">balcsida</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/979699?v=4" alt="n3t" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/n3t" target="_blank" class="text-decoration-none fw-bold">n3t</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/945116?v=4" alt="chrislawes" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/chrislawes" target="_blank" class="text-decoration-none fw-bold">chrislawes</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/169873?v=4" alt="ptica" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ptica" target="_blank" class="text-decoration-none fw-bold">ptica</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9272498?v=4" alt="nelson6e65" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nelson6e65" target="_blank" class="text-decoration-none fw-bold">nelson6e65</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7031578?v=4" alt="desfero" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/desfero" target="_blank" class="text-decoration-none fw-bold">desfero</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3691490?v=4" alt="PeterDaveHello" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/PeterDaveHello" target="_blank" class="text-decoration-none fw-bold">PeterDaveHello</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+6 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
