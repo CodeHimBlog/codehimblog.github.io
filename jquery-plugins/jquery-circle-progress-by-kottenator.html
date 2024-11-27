@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugin to Draw Animated Circular Progress Bars</title>
+    <meta name="description" content="jquery-circle-progress by kottenator. jQuery Plugin to draw animated circular progress bars">
+    <meta name="author" content="kottenator">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-circle-progress-by-kottenator.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Circle Progress</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Circle Progress",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Circle Progress</h1>
+        <p id="packageDescription" class="text-muted">jQuery Plugin to draw animated circular progress bars</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1097</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.13 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">312</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">34</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/kottenator/jquery-circle-progress/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/kottenator/jquery-circle-progress" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jquery-circle-progress</h1>
+<p><a href="https://travis-ci.org/kottenator/jquery-circle-progress"><img src="https://travis-ci.org/kottenator/jquery-circle-progress.svg?branch=master" alt="Build status" /></a><br />
+<a href="https://bower.io/search/?q=jquery-circle-progress"><img src="https://img.shields.io/bower/v/jquery-circle-progress.svg?maxAge=3600" alt="Bower version" /></a><br />
+<a href="https://www.npmjs.com/package/jquery-circle-progress"><img src="https://img.shields.io/npm/v/jquery-circle-progress.svg?maxAge=3600" alt="NPM version" /></a></p>
+<p>jQuery Plugin to draw animated circular progress bars like this:</p>
+<p><img src="http://i.imgur.com/zV5VUQG.png" alt="" /></p>
+<p>Check out <a href="http://kottenator.github.io/jquery-circle-progress/">more examples</a>! Or maybe the crazy <a href="http://jsbin.com/vatuza/5/">one</a>?</p>
+<h2>Install</h2>
+<p>Make your choice:</p>
+<ul>
+<li>Download <a href="https://github.com/kottenator/jquery-circle-progress/releases">latest GitHub release</a></li>
+<li><code>bower install jquery-circle-progress</code></li>
+<li><code>npm install jquery-circle-progress</code></li>
+</ul>
+<h2>Usage</h2>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="jquery-circle-progress/dist/circle-progress.js"&gt;&lt;/script&gt;
+
+&lt;div id="circle"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  $('#circle').circleProgress({
+    value: 0.75,
+    size: 80,
+    fill: {
+      gradient: ["red", "orange"]
+    }
+  });
+&lt;/script&gt;</code></pre>
+<p>If you use AMD or CommonJS with some JS bundler - see the <a href="#umd">UMD section</a> below.</p>
+<h2>Options</h2>
+<p>Specify options like in example above.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>value</strong></td>
+<td>This is the only required option. It should be from <code>0.0</code> to <code>1.0</code> <br> Default: <code>0</code></td>
+</tr>
+<tr>
+<td>size</td>
+<td>Size of the circle / canvas in pixels <br> Default: <code>100</code></td>
+</tr>
+<tr>
+<td>startAngle</td>
+<td>Initial angle (for <code>0</code> value) <br> Default: <code>-Math.PI</code></td>
+</tr>
+<tr>
+<td>reverse</td>
+<td>Reverse animation and arc draw <br> Default: <code>false</code></td>
+</tr>
+<tr>
+<td>thickness</td>
+<td>Width of the arc. By default it's automatically calculated as 1/14 of <code>size</code> but you may set your own number <br> Default: <code>"auto"</code></td>
+</tr>
+<tr>
+<td>lineCap</td>
+<td>Arc line cap: <code>"butt"</code>, <code>"round"</code> or <code>"square"</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D.lineCap">read more</a> <br> Default: <code>"butt"</code></td>
+</tr>
+<tr>
+<td>fill</td>
+<td>The arc fill config. You may specify next:  <br>- <code>"#ff1e41"</code> <br>- <code>{ color: "#ff1e41" }</code> <br>- <code>{ color: 'rgba(255, 255, 255, .3)' }</code> <br>- <code>{ gradient: ["red", "green", "blue"] }</code> <br>- <code>{ gradient: [["red", .2], ["green", .3], ["blue", .8]] }</code> <br>- <code>{ gradient: [ ... ], gradientAngle: Math.PI / 4 }</code> <br>- <code>{ gradient: [ ... ], gradientDirection: [x0, y0, x1, y1] }</code> <br>- <code>{ image: "http://i.imgur.com/pT0i89v.png" }</code><br>- <code>{ image: imageInstance }</code><br>- <code>{ color: "lime", image: "http://i.imgur.com/pT0i89v.png" }</code> <br> Default: <code>{ gradient: ["#3aeabb", "#fdd250"] }</code></td>
+</tr>
+<tr>
+<td>emptyFill</td>
+<td>Color of the &quot;empty&quot; arc. Only a color fill supported by now <br> Default: <code>"rgba(0, 0, 0, .1)"</code></td>
+</tr>
+<tr>
+<td>animation</td>
+<td>Animation config. See <a href="http://api.jquery.com/animate/">jQuery animations</a>. <br> You may also set it to <code>false</code> <br> Default: <code>{ duration: 1200, easing: "circleProgressEasing" }</code>  <br> <code>"circleProgressEasing"</code> <em>is just a ease-in-out-cubic easing</em></td>
+</tr>
+<tr>
+<td>animationStartValue</td>
+<td>Default animation starts at <code>0.0</code> and ends at specified <code>value</code>. Let's call this direct animation. If you want to make reversed animation then you should set <code>animationStartValue</code> to <code>1.0</code>. Also you may specify any other value from <code>0.0</code> to <code>1.0</code> <br> Default: <code>0.0</code></td>
+</tr>
+<tr>
+<td>insertMode</td>
+<td>Canvas insertion mode: append or prepend it into the parent element? <br> Default: <code>"prepend"</code></td>
+</tr>
+</tbody>
+</table>
+<p>From version <code>1.1.3</code> you can specify any config option as HTML <code>data-</code> attribute.</p>
+<p>It will work <em>only on init</em>, i.e. after the widget is inited you may update its properties only via <code>.circleProgress({/*...*/})</code> method. <code>data-</code> attributes will be ignored.</p>
+<p>Also, object options like <code>"fill"</code> or <code>"animation"</code> should be valid JSON (and don't forget about HTML-escaping):</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div
+  class="circle"
+  data-value="0.9"
+  data-size="60"
+  data-thickness="20"
+  data-animation-start-value="1.0"
+  data-fill="{
+    &amp;quot;color&amp;quot;: &amp;quot;rgba(0, 0, 0, .3)&amp;quot;,
+    &amp;quot;image&amp;quot;: &amp;quot;http://i.imgur.com/pT0i89v.png&amp;quot;
+  }"
+  data-reverse="true"
+&gt;&lt;/div&gt;</code></pre>
+<h2>Events</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+<th>Handler</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>circle-inited</code></td>
+<td>Triggered on init or re-init.</td>
+<td><code>function(event)</code>: <br>- <code>event</code> - jQuery event</td>
+</tr>
+<tr>
+<td><code>circle-animation-start</code></td>
+<td>Triggered once the animation is started.</td>
+<td><code>function(event)</code>: <br>- <code>event</code> - jQuery event</td>
+</tr>
+<tr>
+<td><code>circle-animation-progress</code></td>
+<td>Triggered on each <a href="http://api.jquery.com/animate/#step">animation tick</a>.</td>
+<td><code>function(event, animationProgress, stepValue)</code>: <br>- <code>event</code> - jQuery event <br>- <code>animationProgress</code> - from <code>0.0</code> to <code>1.0</code> <br>- <code>stepValue</code> - current step value: from <code>0.0</code> to <code>value</code></td>
+</tr>
+<tr>
+<td><code>circle-animation-end</code></td>
+<td>Triggered once the animation is finished.</td>
+<td><code>function(event)</code>: <br>- <code>event</code> - jQuery event</td>
+</tr>
+</tbody>
+</table>
+<h2>Browsers support</h2>
+<p>The library uses <code>&lt;canvas&gt;</code> which is supported by all modern browsers <em>(including mobile browsers)</em><br />
+and Internet Explorer 9+ (<a href="http://caniuse.com/#search=canvas">Can I Use</a>).</p>
+<p>I haven't implemented any fallback / polyfill for unsupported browsers yet<br />
+<em>(i.e. for Internet Explorer 8 and older / misc browsers)</em>.</p>
+<h2>UMD</h2>
+<p>I use <a href="https://github.com/umdjs/umd/blob/d31bb6ee7098715e019f52bdfe27b3e4bfd2b97e/templates/jqueryPlugin.js">UMD template for jQuery plugin</a> which combines three things:</p>
+<ul>
+<li>works fine with <em>browser globals</em></li>
+<li>works fine with AMD</li>
+<li>works fine with CommonJS</li>
+</ul>
+<h3>Browser globals</h3>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="jquery-circle-progress/dist/circle-progress.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  $('#circle').circleProgress({
+    value: 0.75,
+  });
+&lt;/script&gt;</code></pre>
+<h3>AMD</h3>
+<p>Assuming that you have <code>jquery</code>, <code>jquery-circle-progress</code> and <code>requirejs</code> in <code>libs/</code> directory:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="libs/requirejs/require.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  requirejs.config({
+    paths: {
+      'jquery': 'libs/jquery/dist/jquery', // 'jquery' path is required - 'jquery-circle-progress' requires it
+      'jquery-circle-progress': 'libs/jquery-circle-progress/dist/circle-progress' // and this one is for your convenience
+    }
+  });
+  requirejs(['jquery', 'jquery-circle-progress'], function($) {
+    $('#circle').circleProgress({
+      value: 0.75
+    });
+  });
+&lt;/script&gt;</code></pre>
+<p>You can <a href="http://requirejs.org/docs/api.html">configure RequireJS</a> as you wish, just make <code>'jquery'</code> dependency reachable.</p>
+<h3>CommonJS</h3>
+<pre class="prettyprint linenums lang-language"><code>// script.js
+require('jquery-circle-progress');
+var $ = require('jquery');
+$('#circle').circleProgress({
+  value: 0.75
+});</code></pre>
+<pre class="prettyprint linenums lang-language"><code>some-js-bundler &lt; script.js &gt; script.bundle.js</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="script.bundle.js"&gt;&lt;/script&gt;</code></pre>
+<p>You can use any JS bundler (<a href="https://webpack.github.io/">Webpack</a>, <a href="http://browserify.org/">Browserify</a>, etc) - no specific configuration required.</p>
+<h2>API</h2>
+<h3>Get/set value</h3>
+<p>Get it:</p>
+<pre class="prettyprint linenums lang-language"><code>$('.circle').circleProgress({ value: 0.5 });
+var value = $('.circle').circleProgress('value'); // 0.5</code></pre>
+<p>It will return the <em>first</em> item's value (by <em>first</em> I mean when <code>$('.circle').length &gt;= 1</code>).<br />
+<em>It works only if the widget is already inited. Raises an error otherwise</em>.</p>
+<p>Set it:</p>
+<pre class="prettyprint linenums lang-language"><code>$('.circle').circleProgress('value', 0.75); // set value to 0.75 &amp; animate the change</code></pre>
+<p>It will update <em>all</em> selected items value and animate the change.<br />
+It doesn't <em>redraw</em> the widget - it updates the value &amp; animates the changes.<br />
+For example, it may be an AJAX loading indicator, which shows the loading progress.</p>
+<h3>Get <code>&lt;canvas&gt;</code></h3>
+<pre class="prettyprint linenums lang-language"><code>$('.circle').circleProgress({ value: 0.5 });
+var canvas = $('.circle').circleProgress('widget');</code></pre>
+<p>It will return the <em>first</em> item's <code>&lt;canvas&gt;</code> (by <em>first</em> I mean when <code>$('.circle').length &gt;= 1</code>).<br />
+<em>It works only if the widget is already inited. Raises an error otherwise</em>.</p>
+<h3>Get <code>CircleProgress</code> instance</h3>
+<pre class="prettyprint linenums lang-language"><code>var instance = $('#circle').data('circle-progress');</code></pre>
+<h3>Redraw existing circle</h3>
+<pre class="prettyprint linenums lang-language"><code>$('#circle').circleProgress({ value: 0.5, fill: { color: 'orange' }});
+$('#circle').circleProgress('redraw'); // use current configuration and redraw
+$('#circle').circleProgress(); // alias for 'redraw'
+$('#circle').circleProgress({ size: 150 }); // set new size and redraw</code></pre>
+<p><em>It works only if the widget is already inited. Raises an error otherwise</em>.</p>
+<h3>Change default options</h3>
+<pre class="prettyprint linenums lang-language"><code>$.circleProgress.defaults.size = 50;</code></pre>
+<h2>FAQ</h2>
+<dl>
+<dt>How to start the animation only when the circle appears in browser's view (on scrolling)?
+<dd>Here is <a href="https://github.com/kottenator/jquery-circle-progress/issues/8">my proposed solution</a>.
+<dt>How to make the size flexible?
+<dd>E.g. for responsive design, you can do it <a href="https://github.com/kottenator/jquery-circle-progress/issues/17">in the following way</a>.
+<dt>What if I need it to run in IE8?
+<dd>There is no full-feature support for IE8 (actually, I didn't imlpement IE8 support at all). But you may follow <a href="https://github.com/kottenator/jquery-circle-progress/issues/35">my recommendations</a>.
+<dt>How to stop the animation?
+<dd>Here is <a href="https://github.com/kottenator/jquery-circle-progress/issues/37">what you can do</a>.
+<dt>Can I handle "click" event?
+<dd>It's not in the "core" but you can use <a href="http://output.jsbin.com/fetequ/5">my example of mouse/touch events handling</a>.
+<dt>May I customize the shape somehow?
+<dd>It's a bit "tricky" but possible. Here is <a href="https://github.com/kottenator/jquery-circle-progress/wiki/Custom-layouts">my little collection</a>.
+</dl>
+<h2>Development</h2>
+<h3>Install</h3>
+<pre class="prettyprint linenums lang-language"><code>git clone git@github.com:kottenator/jquery-circle-progress.git
+npm install</code></pre>
+<h3>Modify</h3>
+<p>You need to update <code>dist/circle-progress.min.js</code> after any change to <code>dist/circle-progress.js</code>:</p>
+<pre class="prettyprint linenums lang-language"><code>npm run build-min</code></pre>
+<p>If you're using one of JetBrains IDEs - you can configure a File Watcher.<br />
+It's also possible to use some CLI tool like <a href="https://facebook.github.io/watchman/">Watchman</a>.</p>
+<h3>Test</h3>
+<pre class="prettyprint linenums lang-language"><code>npm test</code></pre>
+<p>SauceLabs:</p>
+<pre class="prettyprint linenums lang-language"><code>export SAUCE_USERNAME=...
+export SAUCE_ACCESS_KEY=...
+export BUILD_NUMBER=...
+npm test -- karma-saucelabs.conf.js</code></pre>
+<h3>Build docs</h3>
+<p>The API docs are not complete yet but you can build them:</p>
+<pre class="prettyprint linenums lang-language"><code>npm run build-docs</code></pre>
+<p>They will be generated in <code>docs/api/</code>.</p>
+<h3>Release new version</h3>
+<ul>
+<li>finalize the code</li>
+<li>update the version in <code>package.json</code>, <code>bower.json</code> and <code>dist/circle-progress.js</code> docstring</li>
+<li>update min dist: <code>npm run build-min</code></li>
+<li>update <code>docs/index.html</code> - link to the latest dist version <em>(which doesn't exist yet)</em></li>
+<li>push the changes to <code>master</code> branch</li>
+<li>release on Bower: just create a Git tag (e.g.): <code>git tag v1.2.3 &amp;&amp; git push --tags</code></li>
+<li>release on GitHub - add release notes to the Git tag</li>
+<li>
+<p>release on NPM: <code>npm publish</code>, but be aware:</p>
+<blockquote>
+<p>Once a package is published with a given name and version, that specific name and version combination can never be used again - <a href="https://docs.npmjs.com/cli/publish">NPM docs</a></p>
+</blockquote>
+</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/animation" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>animation</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/circle" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>circle</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/371674?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/kottenator" target="_blank" id="ownerName" class="sidebar-link">kottenator</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">August 22, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 23, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://kottenator.github.io/jquery-circle-progress/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (*)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>karma (~1.2)</li><li>qunitjs (~2.0)</li><li>karma-qunit (~1.2)</li><li>karma-firefox-launcher (~1.0)</li><li>karma-phantomjs-launcher (~1.0)</li><li>karma-sauce-launcher (~1.0)</li><li>uglify-js (~2.7)</li><li>jsdoc (~3.4)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/371674?v=4" alt="kottenator" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kottenator" target="_blank" class="text-decoration-none fw-bold">kottenator</a><p class="mb-0 text-muted small">122 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2979628?v=4" alt="andreiglingeanu" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/andreiglingeanu" target="_blank" class="text-decoration-none fw-bold">andreiglingeanu</a><p class="mb-0 text-muted small">8 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1279761?v=4" alt="majestic2k" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/majestic2k" target="_blank" class="text-decoration-none fw-bold">majestic2k</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/435591?v=4" alt="dougt" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dougt" target="_blank" class="text-decoration-none fw-bold">dougt</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1915989?v=4" alt="mattmezza" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mattmezza" target="_blank" class="text-decoration-none fw-bold">mattmezza</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
