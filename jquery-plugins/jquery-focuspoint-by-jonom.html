@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Focuspoint by Jonom</title>
+    <meta name="description" content="jQuery plugin for &#039;responsive cropping&#039;. Dynamically crop images to fill available space without cutting out the image&#039;s subject. Great for full-screen images.">
+    <meta name="author" content="jonom">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-focuspoint-by-jonom.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Focuspoint</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Focuspoint",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Focuspoint</h1>
+        <p id="packageDescription" class="text-muted">jQuery plugin for &#039;responsive cropping&#039;. Dynamically crop images to fill available space without cutting out the image&#039;s subject. Great for full-screen images.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">3140</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">4.72 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">210</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">11</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/jonom/jquery-focuspoint/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/jonom/jquery-focuspoint" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery FocusPoint</h1>
+<h2>FocusPoint 2</h2>
+<p>I started work on a major update to this plugin a couple of years ago, but it has been in limbo for a while and probably won't be picked up again unless someone wants to sponsor the work (please <a href="http://jonathonmenz.com">get in touch</a> if you do!). I didn't get as far as removing the jQuery dependancy but please feel free to use the v-2-dev branch to benefit from a few new features:</p>
+<ul>
+<li>Better resizing performance</li>
+<li>More familiar coordinate system (like that used in CSS)</li>
+<li>Suppor for ideal and minimum cropping region</li>
+</ul>
+<p>If you love this plugin feel free to send me an encouraging email or consider sponsoring an update. You're also welcome to make a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=5VUDD3ACRC4TC">small donation</a> if you like. I receive an average of one per year, so it won't go unnoticed. 😄💰</p>
+<h2>Intelligent cropping for flexible image containers</h2>
+<p><img src="demos/img/demo.jpg?raw=true" alt="image" /></p>
+<p>Websites don't have a single layout any more. The space you have for an image may be portrait on a laptop, landscape on a tablet, and square on a mobile - particularly if you're using a full-screen image.</p>
+<p>If you have to use the same image file in all these contexts, you might not be happy with the results you get when you 'fill' the allocated space with your image. Your subject might be clipped or completely missing, or just really awkward looking.</p>
+<p>FocusPoint makes sure your image looks great in any container, by ensuring the 'spare' parts of your image (negative space) are cropped out before the important parts.</p>
+<p>For a quick overview of the plugin check out this <a href="http://youtu.be/Wxmxsw65BQw?t=6m49s">video by Petr Tichy</a>.</p>
+<h2>Examples</h2>
+<p>Here are some examples showing the same image cropped a variety of different ways at once. Make sure you play with resizing the browser window to get a feel for what FocusPoint does.</p>
+<ul>
+<li><a href="http://jonom.github.io/jquery-focuspoint/demos/grid/lizard.html">Lizard</a></li>
+<li><a href="http://jonom.github.io/jquery-focuspoint/demos/grid/kangaroo.html">Kangaroo</a></li>
+<li><a href="http://jonom.github.io/jquery-focuspoint/demos/grid/dolphin.html">Dolphin</a></li>
+<li><a href="http://jonom.github.io/jquery-focuspoint/demos/grid/bird.html">Bird</a></li>
+</ul>
+<p>And here is a <a href="http://jonom.github.io/jquery-focuspoint/demos/full-screen/index.html">full screen</a> demo.</p>
+<h2>How does it work?</h2>
+<p>The idea is that most images have a focal point or subject that is the most important part of the image. In the case of a traditional portrait photo this would be the subject's face (or specifically the spot right between their eyes). In the image above it's arguably the point halfway between the two people's faces.</p>
+<p>FocusPoint requires you to indicate where this focal point is located within your image, and then works in the background to ensure that point is never cropped out.</p>
+<h2>How to use</h2>
+<h4>1. Calculate your image's focus point</h4>
+<p>An image's focus point is made up of x (horizontal) and y (vertical) coordinates. The value of a coordinate can be a number with decimal points anywhere between -1 and +1, where 0 is the centre. X:-1 indicates the left edge of the image, x:1 the right edge. For the y axis, y:1 is the top edge and y:-1 is the bottom.</p>
+<p><img src="demos/img/grid.png?raw=true" alt="image" /></p>
+<p><strong>Confused?</strong> Don't worry, there's a handy script included to help you find the focus coordinates of an image with a single click. Check out the <a href="http://jonom.github.io/jquery-focuspoint/demos/helper/index.html">helper tool</a> <em>(vastly improved courtesy of <a href="https://github.com/auginator">@auginator</a>).</em></p>
+<h4>2. Include javascript and CSS</h4>
+<p>You'll need to include jQuery (v1.9 or greater), the FocusPoint script, and FocusPoint css file. Example:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link rel="stylesheet" href="focuspoint.css"&gt;
+&lt;script src="jquery.js"&gt;&lt;/script&gt;
+&lt;script src="focuspoint.js"&gt;&lt;/script&gt;</code></pre>
+<h4>3. Mark up your image container</h4>
+<p>Specify the image dimensions and focus point coordinates on the image container. The image will take up whatever space is available in the container, so make sure there is some space to fill by setting a height for the container in your CSS. Example:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="focuspoint"
+data-focus-x="0.331"
+data-focus-y="-0.224"
+data-image-w="400"
+data-image-h="300"&gt;
+    &lt;img src="image.jpg" alt="" /&gt;
+&lt;/div&gt;</code></pre>
+<p>Note: setting <code>data-image-w</code> and <code>data-image-h</code> is optional but recommended. Omitting these value means your image will not be positioned correctly inside the frame until it has finished loading, which may cause a visible jump.</p>
+<h4>4. Fire FocusPoint plugin</h4>
+<p>Usually the best place for this will be inside your <code>$(document).ready()</code> function.</p>
+<pre class="prettyprint linenums lang-language"><code>//Fire plugin
+$('.focuspoint').focusPoint();</code></pre>
+<p>That's it!</p>
+<h4>Configuration options</h4>
+<p>FocusPoint comes with a few options you can change to suit your needs.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Values</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>reCalcOnWindowResize</code></td>
+<td><code>true</code> or <code>false</code></td>
+<td><code>true</code></td>
+<td>Whether or not to re-adjust image when the window is resized</td>
+</tr>
+<tr>
+<td><code>throttleDuration</code></td>
+<td>Int e.g. <code>0</code> or <code>100</code></td>
+<td><code>17</code></td>
+<td>Throttling rate in milliseconds. Set to <code>0</code> to disable throttling.</td>
+</tr>
+</tbody>
+</table>
+<p>Example usage:</p>
+<pre class="prettyprint linenums lang-language"><code>$('.focuspoint').focusPoint({
+    throttleDuration: 100 //re-focus images at most once every 100ms.
+});</code></pre>
+<h4>FocusPoint functions</h4>
+<p>Once you have initialised FocusPoint on an image container you can access FocusPoint methods like this: <code>$(someContainer).data('focusPoint').methodName()</code>.</p>
+<p>Or the shorter way, like this: <code>$(someContainer).focusPoint('methodName')</code></p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>adjustFocus()</code></td>
+<td>Re-do calculations and re-position an image in it's frame. Call if container dimensions change.</td>
+</tr>
+<tr>
+<td><code>windowOn()</code></td>
+<td>Start window event listener and re-focus image when window is resized</td>
+</tr>
+<tr>
+<td><code>windowOff()</code></td>
+<td>Stop re-focusing image when window is resized</td>
+</tr>
+</tbody>
+</table>
+<h4>Using FocusPoint in content sliders</h4>
+<p>Currently FocusPoint can't do it's calculations properly if an image container or it's parent is set to <code>display:none</code>, as it won't have any dimensions. This can cause problems with sliders that hide non-active slides. A work-around for now is to trigger <code>adjustFocus()</code> on the image container as soon as it become visible.</p>
+<h2>Tips &amp; Tricks</h2>
+<h4>Image composition</h4>
+<p>In order for this concept of 'fluid cropping' to work well, your images will need to include some negative space around the subject that you are happy to be cropped out when necessary. You don't need space on every side of the subject - but for maximum flexibility you'll want to include both some vertical and horizontal negative space.</p>
+<h4>Pure CSS alternative</h4>
+<p>You can get a similar effect to this technique using only CSS and the <code>background-position</code> and <code>background-size</code> properties. Browser support isn't as good (at the moment) and your image won't be positioned exactly the same way - but it's pretty close. The CSS technique leans towards preserving the original composition while FocusPoint is biased towards keeping the subject of the image in the centre of the frame. Depending on your requirements either technique may suit you better.</p>
+<ul>
+<li><a href="http://jonom.github.io/jquery-focuspoint/demos/css-js-comparison/index.html">Pure CSS example and comparison</a></li>
+<li><a href="http://jonom.github.io/jquery-focuspoint/demos/helper/index.html">Helper tool for calculating CSS values</a></li>
+</ul>
+<h4>SilverStripe CMS integration</h4>
+<p>This plugin plays really well with the <a href="https://github.com/jonom/silverstripe-focuspoint">silverstripe-focuspoint</a> module, which lets you set the focuspoint on any image with just a click, and makes the info available in your front-end templates so you don't have to do any math. It also provides really easy 'destructive' cropping outputting resampled images cropped to a particular width and height based on the same logic.</p>
+<h2>Feedback welcome!</h2>
+<p>Nothing would encourage me to keep updating this script more than hearing how it's been used in the real world. Get in touch with me at <a href="http://jonathonmenz.com">jonathonmenz.com</a> to let me know how you've used this plugin or any suggestions you have for improving it. Please <a href="https://github.com/jonom/jquery-focuspoint/issues">report bugs or issues on github</a>.</p>
+<p><strong>Note:</strong> To date I'm not yet aware of any live websites (apart from my own) that use this plugin - so please get in touch if you launch a site that uses FocusPoint!</p>
+<h4>Tip jar</h4>
+<p>If FocusPoint helped you impress a client and you want to say thanks, you're welcome to <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=5VUDD3ACRC4TC">leave a small donation</a> to help fund the purchase of coffee, which will help me stay awake during future development.</p>
+<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=5VUDD3ACRC4TC"><img src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_LG.gif" alt="Donate"></a></p>
+<p>Donations received / Warm fuzzies generated: <strong>6</strong><br />
+Caffé Lattes funded: <strong>17</strong> :coffee: :relieved:<br />
+<strong>Thanks!</strong> Daniil, Cohan, Romulo, Lemuel, David</p>
+<h2>Changelog</h2>
+<h4>v1.1.1 2014-09-23</h4>
+<p>Minor fixes</p>
+<h4>v1.1.0 2014-09-18</h4>
+<p>Refactored code (thanks @xat)<br />
+Added ability to start/stop window-resize listener (thanks @xat)<br />
+Use % instead of px for positioning, for better scaling<br />
+Added shortcuts to plugin methods</p>
+<h4>v1.0.3 2014-09-06</h4>
+<p>Throttled window resize updates</p>
+<h4>v1.0.2 2014-09-05</h4>
+<p>Made setting image width and height on shell optional (thanks @luruke)</p>
+<h4>v1.0.1 2014-09-04</h4>
+<p>Cleaned up variables</p>
+<h4>v1.0.0 2014-08-19</h4>
+<p>Initial release</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/crop" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>crop</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/cropping" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>cropping</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/image" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>image</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/responsive" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>responsive</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/fill" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>fill</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/background" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>background</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/full-screen" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>full-screen</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/focus" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>focus</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/focuspoint" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>focuspoint</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/1079425?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/jonom" target="_blank" id="ownerName" class="sidebar-link">jonom</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">August 16, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 20, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Other</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1079425?v=4" alt="jonom" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jonom" target="_blank" class="text-decoration-none fw-bold">jonom</a><p class="mb-0 text-muted small">52 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/182512?v=4" alt="xat" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/xat" target="_blank" class="text-decoration-none fw-bold">xat</a><p class="mb-0 text-muted small">13 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1105657?v=4" alt="auginator" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/auginator" target="_blank" class="text-decoration-none fw-bold">auginator</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/7862297?v=4" alt="Chunhao137" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Chunhao137" target="_blank" class="text-decoration-none fw-bold">Chunhao137</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/947110?v=4" alt="kkirsche" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kkirsche" target="_blank" class="text-decoration-none fw-bold">kkirsche</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6149946?v=4" alt="LeoCreer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LeoCreer" target="_blank" class="text-decoration-none fw-bold">LeoCreer</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2297740?v=4" alt="Lagerregal" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Lagerregal" target="_blank" class="text-decoration-none fw-bold">Lagerregal</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6968611?v=4" alt="wykhuh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/wykhuh" target="_blank" class="text-decoration-none fw-bold">wykhuh</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/12285161?v=4" alt="cavemon" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cavemon" target="_blank" class="text-decoration-none fw-bold">cavemon</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+4 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
