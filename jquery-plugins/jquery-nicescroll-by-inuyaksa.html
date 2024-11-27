@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicescroll Plugin for jQuery   Scrollbars Like Iphone/ipad</title>
+    <meta name="description" content="jquery.nicescroll by inuyaksa. nicescroll plugin for jquery - scrollbars like iphone/ipad">
+    <meta name="author" content="inuyaksa">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-nicescroll-by-inuyaksa.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jquery.nicescroll</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jquery.nicescroll",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jquery.nicescroll</h1>
+        <p id="packageDescription" class="text-muted">nicescroll plugin for jquery - scrollbars like iphone/ipad</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">3601</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.45 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">1664</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">139</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/inuyaksa/jquery.nicescroll/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/inuyaksa/jquery.nicescroll" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery.NiceScroll</h1>
+<p>v. 3.7.6</p>
+<h2>The best nicescroll release ever - extremely smooth and consistent in modern browsers and mobile devices, with low resource usage</h2>
+<ul>
+<li><a href="https://nicescroll.areaaperta.com">Web Site: nicescroll.areaaperta.com</a></li>
+<li><a href="https://github.com/inuyaksa/jquery.nicescroll">Repo: github.com/inuyaksa/jquery.nicescroll</a></li>
+<li>
+<p><a href="https://twitter.com/nicescroll">Twitter: @nicescroll</a></p>
+<p><a href="https://gitter.im/inuyaksa/jquery.nicescroll?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/inuyaksa/jquery.nicescroll.svg" alt="Join the chat at https://gitter.im/inuyaksa/jquery.nicescroll" /></a></p>
+</li>
+</ul>
+<blockquote>
+<p>Nicescroll as a Greasemonkey plugin: <a href="http://userscripts.org/scripts/show/119910">http://userscripts.org/scripts/show/119910</a> (freezed)</p>
+<p>Nicescroll is a jQuery plugin, for nice scrollbars with a very similar ios/mobile style.</p>
+</blockquote>
+<ul>
+<li>HORIZONAL scrollbar support!</li>
+<li>It supports DIVs, IFrames, textarea, and document page (body) scrollbars.</li>
+<li>Compatible with all recent desktop browsers and older: Chrome, Firefox, Edge, IE8+, Safari (win/mac), Opera. (all A-grade browsers)</li>
+<li>Compatible with mobile devices: iPad/iPhone/iPod, Android 4+, Blackberry phones and Playbook (WebWorks/Table OS), Windows Phone 8 and 10.</li>
+<li>Compatible with all touch devices: iPad, Android tablets, Window Surface.</li>
+<li>Compabible with multi-input devices (mouse with touch or pen): Window Surface, Chrome Desktop on touch notebook.</li>
+<li>Compatible with 2-directional mice: Apple Magic Mouse, Apple Mouser with 2-dir wheel, PC mouse with 2-dir wheel (if browser support it).</li>
+</ul>
+<p>What you get: customizable and scrollable divs with momentum for iPad and consistent scrollable areas for all desktop and mobile platforms.</p>
+<p>Sexy zoom feature: you can &quot;zoom in&quot; on the content of any nicescroll enabled DIV.<br />
+Nice to use and nice to see: all the content of the DIV in fullscreen mode.<br />
+It works on desktop (double click on div) either in mobile/touch devices using the pinch gesture.</p>
+<p>On modern browsers hardware accelerated scrolling has been implemented.<br />
+Using animationFrame for smoother and cpu-saving scroll animations. (when browser supports)</p>
+<p>&quot;Use strict&quot; tested script for maximum code quality.<br />
+Bower and AMD ready.</p>
+<p>Warning for IE6/IE7 users: support for your browser has been deprecated. (Why do you still use this? Please upgrade to a more stable and modern browser)</p>
+<h2>FEATURES</h2>
+<ul>
+<li>Simple installation and activation: functions with NO modification of your code. (some exceptions can happen, in which case you can write to me.)</li>
+<li>Very stylish scrollbars with no occupation on your window: original browser scrollbars need some of page space and reduces window/div usable width.</li>
+<li>You can style main document scrollbar (body) too! (not all devices/browsers support this feature yet)</li>
+<li>You can scroll by dragging the cursor, mouse wheel (speed customizable), keyboard navigation (cursor keys, pagup/down keys, home/end keys) on all browsers.</li>
+<li>Scrolling is smooth (like modern tablet browsing). Speed is customizable.</li>
+<li>Zoom feature.</li>
+<li>Hardware accelerated scroll (where available).</li>
+<li>Animation frame support for smooth scrolling and cpu-saving.</li>
+<li>Dragging scroll mode with scrolling momentum (like touch devices).</li>
+<li>Tested for all major mobile and desktop browser versions.</li>
+<li>Support for touch devices.</li>
+<li>Support for multi-input devices (MSPointer/Pointer support).</li>
+<li>Compatible with many other browsers and webkit derivatives!</li>
+<li>Scrollbar has a lot a customizable features.</li>
+<li>Native scroll events are working.</li>
+<li>Fully integrated with jQuery.</li>
+<li>Compatibile with jQuery UI, jQuery Touch, jQuery Mobile</li>
+</ul>
+<h2>DEPENDENCIES</h2>
+<blockquote>
+<blockquote>
+<p>jQuery is required to be included in your scripts.<br />
+Works with jQuery 1.x / 2.x / 3.x branch (slim version don't works)</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>INSTALLATION<br />
+Put loading script tag after jquery script tag and loading the zoom image in the same folder of the script:</li>
+</ul>
+<script src="jquery.nicescroll.js"></script>
+<p>When using the zoom feature, copy &quot;zoomico.png&quot; in to the same folder as jquery.nicescroll.js.</p>
+<ul>
+<li>HOW TO USE</li>
+</ul>
+<p>ALWAYS Initialize nicescroll in a (document) ready statement.</p>
+<pre class="prettyprint linenums lang-language"><code>// 1. Simple mode, it styles document scrollbar:
+$(function() {  
+    $("body").niceScroll();
+});
+
+// 2. Instance with object returned:
+var nice = false;
+$(function() {  
+    nice = $("body").niceScroll();
+});
+
+// 3. Style a DIV and change cursor color:
+$(function() {  
+    $("#thisdiv").niceScroll({cursorcolor:"#00F"});
+});
+
+// 4. DIV with "wrapper", formed by two divs, the first is the vieport, the latter is the content:
+$(function() {
+    $("#viewportdiv").niceScroll("#wrapperdiv",{cursorcolor:"#00F"});
+});
+
+// 5. Get nicescroll object:
+var nice = $("#mydiv").getNiceScroll();
+
+// 6. Hide scrollbars:
+$("#mydiv").getNiceScroll().hide();
+
+// 7. Check for scrollbars resize (when content or position have changed):
+$("#mydiv").getNiceScroll().resize();
+
+// 8. Scrolling to a position:
+$("#mydiv").getNiceScroll(0).doScrollLeft(x, duration); // Scroll X Axis
+$("#mydiv").getNiceScroll(0).doScrollTop(y, duration); // Scroll Y Axis</code></pre>
+<h2>CONFIGURATION PARAMETERS</h2>
+<p>When you call &quot;niceScroll&quot; you can pass some parameters to custom visual aspects:</p>
+<pre class="prettyprint linenums lang-language"><code>$("#thisdiv").niceScroll({
+    cursorcolor: "#424242", // change cursor color in hex
+    cursoropacitymin: 0, // change opacity when cursor is inactive (scrollabar "hidden" state), range from 1 to 0
+    cursoropacitymax: 1, // change opacity when cursor is active (scrollabar "visible" state), range from 1 to 0
+    cursorwidth: "5px", // cursor width in pixel (you can also write "5px")
+    cursorborder: "1px solid #fff", // css definition for cursor border
+    cursorborderradius: "5px", // border radius in pixel for cursor
+    zindex: "auto" | [number], // change z-index for scrollbar div
+    scrollspeed: 60, // scrolling speed
+    mousescrollstep: 40, // scrolling speed with mouse wheel (pixel)
+    touchbehavior: false, // DEPRECATED!! use "emulatetouch"
+    emulatetouch: false, // enable cursor-drag scrolling like touch devices in desktop computer
+    hwacceleration: true, // use hardware accelerated scroll when supported
+    boxzoom: false, // enable zoom for box content
+    dblclickzoom: true, // (only when boxzoom=true) zoom activated when double click on box
+    gesturezoom: true, // (only when boxzoom=true and with touch devices) zoom activated when pinch out/in on box
+    grabcursorenabled: true // (only when touchbehavior=true) display "grab" icon
+    autohidemode: true, // how hide the scrollbar works, possible values: 
+      true | // hide when no scrolling
+      "cursor" | // only cursor hidden
+      false | // do not hide,
+      "leave" | // hide only if pointer leaves content
+      "hidden" | // hide always
+      "scroll", // show only on scroll          
+    background: "", // change css for rail background
+    iframeautoresize: true, // autoresize iframe on load event
+    cursorminheight: 32, // set the minimum cursor height (pixel)
+    preservenativescrolling: true, // you can scroll native scrollable areas with mouse, bubbling mouse wheel event
+    railoffset: false, // you can add offset top/left for rail position
+    bouncescroll: false, // (only hw accell) enable scroll bouncing at the end of content as mobile-like 
+    spacebarenabled: true, // enable page down scrolling when space bar has pressed
+    railpadding: { top: 0, right: 0, left: 0, bottom: 0 }, // set padding for rail bar
+    disableoutline: true, // for chrome browser, disable outline (orange highlight) when selecting a div with nicescroll
+    horizrailenabled: true, // nicescroll can manage horizontal scroll
+    railalign: right, // alignment of vertical rail
+    railvalign: bottom, // alignment of horizontal rail
+    enabletranslate3d: true, // nicescroll can use css translate to scroll content
+    enablemousewheel: true, // nicescroll can manage mouse wheel events
+    enablekeyboard: true, // nicescroll can manage keyboard events
+    smoothscroll: true, // scroll with ease movement
+    sensitiverail: true, // click on rail make a scroll
+    enablemouselockapi: true, // can use mouse caption lock API (same issue on object dragging)
+    cursorfixedheight: false, // set fixed height for cursor in pixel
+    hidecursordelay: 400, // set the delay in microseconds to fading out scrollbars
+    directionlockdeadzone: 6, // dead zone in pixels for direction lock activation
+    nativeparentscrolling: true, // detect bottom of content and let parent to scroll, as native scroll does
+    enablescrollonselection: true, // enable auto-scrolling of content when selection text
+    cursordragspeed: 0.3, // speed of selection when dragged with cursor
+    rtlmode: "auto", // horizontal div scrolling starts at left side
+    cursordragontouch: false, // drag cursor in touch / touchbehavior mode also
+    oneaxismousemode: "auto", // it permits horizontal scrolling with mousewheel on horizontal only content, if false (vertical-only) mousewheel don't scroll horizontally, if value is auto detects two-axis mouse
+    scriptpath: "" // define custom path for boxmode icons ("" =&gt; same script path)
+    preventmultitouchscrolling: true // prevent scrolling on multitouch events
+    disablemutationobserver: false // force MutationObserver disabled,
+    enableobserver: true // enable DOM changing observer, it tries to resize/hide/show when parent or content div had changed
+    scrollbarid: false // set a custom ID for nicescroll bars 
+});</code></pre>
+<h2>Related projects</h2>
+<ul>
+<li>
+<p><a href="https://github.com/tushariscoolster/angular-nicescroll">Nicescroll for Angular</a></p>
+</li>
+<li>
+<p>LICENSE</p>
+</li>
+</ul>
+<h2>Copyright 2011-17 InuYaksa</h2>
+<h6>Licensed under the MIT License, <a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a></h6>
+<h6>Images used for zoom icons have derived from OLPC interface, <a href="http://laptop.org/8.2.0/manual/Browse_ChangingView.html">http://laptop.org/8.2.0/manual/Browse_ChangingView.html</a></h6>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/nicescroll" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>nicescroll</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/ecosystem%3Ajquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>ecosystem:jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/interface" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>interface</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/window" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>window</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/dom" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>dom</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/div" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>div</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/scroll" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>scroll</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/ios" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>ios</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/mobile" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>mobile</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/desktop" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>desktop</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/scrollbar" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>scrollbar</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/touch" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>touch</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/android" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>android</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/chrome" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>chrome</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/firefox" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>firefox</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/safari" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>safari</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/surface" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>surface</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/edge" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>edge</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/444506?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/inuyaksa" target="_blank" id="ownerName" class="sidebar-link">inuyaksa</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 26, 2011</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 17, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="https://nicescroll.areaaperta.com/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.8.3)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/444506?v=4" alt="inuyaksa" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/inuyaksa" target="_blank" class="text-decoration-none fw-bold">inuyaksa</a><p class="mb-0 text-muted small">139 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/879612?v=4" alt="GianlucaGuarini" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/GianlucaGuarini" target="_blank" class="text-decoration-none fw-bold">GianlucaGuarini</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2617776?v=4" alt="bnadeau" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bnadeau" target="_blank" class="text-decoration-none fw-bold">bnadeau</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3757319?v=4" alt="vsn4ik" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vsn4ik" target="_blank" class="text-decoration-none fw-bold">vsn4ik</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/11938458?v=4" alt="alexandr-bbm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/alexandr-bbm" target="_blank" class="text-decoration-none fw-bold">alexandr-bbm</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/16231288?v=4" alt="HumbleDeer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/HumbleDeer" target="_blank" class="text-decoration-none fw-bold">HumbleDeer</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2269242?v=4" alt="nkovacs" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nkovacs" target="_blank" class="text-decoration-none fw-bold">nkovacs</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/381860?v=4" alt="huang-x-h" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/huang-x-h" target="_blank" class="text-decoration-none fw-bold">huang-x-h</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/347244?v=4" alt="yukulele" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/yukulele" target="_blank" class="text-decoration-none fw-bold">yukulele</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/293498?v=4" alt="barraq" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/barraq" target="_blank" class="text-decoration-none fw-bold">barraq</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11644583?v=4" alt="abhi05b" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/abhi05b" target="_blank" class="text-decoration-none fw-bold">abhi05b</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6851815?v=4" alt="silversonicaxel" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/silversonicaxel" target="_blank" class="text-decoration-none fw-bold">silversonicaxel</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/13718?v=4" alt="brandonaaron" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/brandonaaron" target="_blank" class="text-decoration-none fw-bold">brandonaaron</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/692396?v=4" alt="zcourts" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zcourts" target="_blank" class="text-decoration-none fw-bold">zcourts</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8408092?v=4" alt="f-dg" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/f-dg" target="_blank" class="text-decoration-none fw-bold">f-dg</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/806257?v=4" alt="dylanpyle" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dylanpyle" target="_blank" class="text-decoration-none fw-bold">dylanpyle</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3584916?v=4" alt="elvisqi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/elvisqi" target="_blank" class="text-decoration-none fw-bold">elvisqi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6864279?v=4" alt="eocanha" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/eocanha" target="_blank" class="text-decoration-none fw-bold">eocanha</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/466367?v=4" alt="arzafran" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/arzafran" target="_blank" class="text-decoration-none fw-bold">arzafran</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8819006?v=4" alt="gabifija" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gabifija" target="_blank" class="text-decoration-none fw-bold">gabifija</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1371503?v=4" alt="gustavnikolaj" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gustavnikolaj" target="_blank" class="text-decoration-none fw-bold">gustavnikolaj</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1064954?v=4" alt="duckzland" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/duckzland" target="_blank" class="text-decoration-none fw-bold">duckzland</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/130410645?v=4" alt="ulearj3" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ulearj3" target="_blank" class="text-decoration-none fw-bold">ulearj3</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/947110?v=4" alt="kkirsche" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kkirsche" target="_blank" class="text-decoration-none fw-bold">kkirsche</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1221?v=4" alt="levinalex" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/levinalex" target="_blank" class="text-decoration-none fw-bold">levinalex</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8516784?v=4" alt="quantumpacket" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/quantumpacket" target="_blank" class="text-decoration-none fw-bold">quantumpacket</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/20585354?v=4" alt="PatrickWynne" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/PatrickWynne" target="_blank" class="text-decoration-none fw-bold">PatrickWynne</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2633551?v=4" alt="philleepflorence" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/philleepflorence" target="_blank" class="text-decoration-none fw-bold">philleepflorence</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6061944?v=4" alt="rafasashi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rafasashi" target="_blank" class="text-decoration-none fw-bold">rafasashi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/10399647?v=4" alt="Tolc" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Tolc" target="_blank" class="text-decoration-none fw-bold">Tolc</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
