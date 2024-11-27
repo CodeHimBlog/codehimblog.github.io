@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugin to Make HTML Tables Responsive</title>
+    <meta name="description" content="FooTable by fooplugins. jQuery plugin to make HTML tables responsive">
+    <meta name="author" content="fooplugins">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/footable-by-fooplugins.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Footable</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Footable",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Footable</h1>
+        <p id="packageDescription" class="text-muted">jQuery plugin to make HTML tables responsive</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">2124</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">9.04 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">637</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">232</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/fooplugins/FooTable/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/fooplugins/FooTable" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>FooTable V3</h1>
+<p>This is a complete re-write of the plugin. There is no upgrade path from V2 to V3 at present as the options and the way the code is written are inherently different. Please check out the full documentation for V3 found in the docs folder or by viewing it <a href="http://fooplugins.github.io/FooTable/">online here</a>.</p>
+<h3>Contributors</h3>
+<p>Pull requests need to be made against the <a href="https://github.com/fooplugins/FooTable/tree/develop">develop branch</a> as a new feature. I've switched to using a GitFlow process with this repository to try keep things organized a bit more. It makes it easier for me to test and make changes to submitted pull requests before merging the feature into the develop branch. The master branch now only contains release versions of the code.</p>
+<h1>Changelog</h1>
+<h3>3.1.6</h3>
+<ul>
+<li>Fixed a critical issue with the new export feature throwing an error if Moment.js and the DateColumn were not included in the page.</li>
+</ul>
+<h3>3.1.5</h3>
+<ul>
+<li>Added two new events <code>expanded.ft.row</code> and <code>collapsed.ft.row</code> that occur after there complementary <code>expand.ft.row</code> and <code>collapse.ft.row</code> events.</li>
+<li>Added a new <code>FooTable.Export</code> component which exposes two primary methods on the <code>FooTable.Table</code> object, <code>.toJSON()</code> and <code>.toCSV()</code>.</li>
+<li>Added a new <code>array</code> column type to make rendering JavaScript arrays as cell contents easier.</li>
+<li>Added a new <code>object</code> column type to make rendering JavaScript objects containing multiple properties as cell contents easier.</li>
+<li>Added a new <code>container</code> option to the filtering component. This option allows you to provide a selector to specify where the filtering form is rendered. The selector should match only a single element and if multiple are found only the first is used.</li>
+<li>Added a new <code>container</code> option to the paging component. This option allows you to provide a selector to specify where the paging UI is rendered. The selector should match only a single element and if multiple are found only the first is used.</li>
+<li>Added <code>redrawSelf</code> as an extra parameter to the <code>FooTable.Cell#val(value, redraw, redrawSelf)</code> and <code>FooTable.Row#val(value, redraw, redrawSelf)</code> methods. This parameter dictates whether the row or cell updates its' own DOM when a value is set.</li>
+<li>Updated the <code>FooTable.Paging#pageSize</code> method to also accept string values. If the parameter is not supplied or is not a valid number the current page size is returned.</li>
+<li>Updated the <code>FooTable.Filtering#filter</code> method to accept a single boolean param simply called <code>focus</code>, if supplied and true the default search input receives focus after the component performs a filter operation. This new param is used internally when auto applying a query after a user types in the search input, or clicks the search/clear buttons. This behavior can be disabled by setting the new <code>filtering.focus</code> option to <code>false</code>.</li>
+<li>Updated the <code>.formatter()</code> function of all column types to now accept three parameters; <code>value</code>, <code>options</code> and <code>rowData</code>. <code>value</code> and <code>options</code> have always been available, the new addition is the <code>rowData</code> parameter which is an object containing the current rows' parsed values, the properties of this object match the names of the columns for the current table, if no names are specified the properties will be <code>col1</code>, <code>col2</code>, etc.</li>
+<li>Updated the <code>FooTable.HTMLColumn#sortValue</code> method to offload additional parsing to its <code>.parser()</code> method.</li>
+<li>Fixed an issue in the sorting component where values in a number column supplied as strings were being sorted as such and not as numbers as they should.</li>
+<li>Fixed an issue with the <code>FooTable.NumberColumn</code> where it was converting negative numbers to positive when parsing values directly from the DOM.</li>
+<li>Fixed the <code>FooTable.Table#_construct</code> method which was not returning a promise as it should have been doing.</li>
+<li>Fixes memory leak when destroying the table, properties that were holding onto references should now be cleared.</li>
+</ul>
+<hr />
+<h3>3.1.4</h3>
+<ul>
+<li>Updated the <code>FooTable.Table#draw</code> method to prevent unnecessary browser reflows and hide an unstyled flash of content during the initial loading of the table. (@jleider &amp; @mrdziuban)</li>
+<li>Updated the <code>FooTable.DateColumn#formatter</code> method to perform a check for invalid dates and return an empty string instead of <code>"Invalid Date"</code>. (@jnimety)</li>
+<li>Updated the <code>FooTable.Cell#collapse</code> method to copy all attributes from the original element to the one displayed in the details row. If the element has an ID, the copied version is suffixed with <code>"-detail"</code> to avoid duplicates. (@mrdziuban)</li>
+<li>Updated the <code>FooTable.Column#parser</code> method to use jQuery's <code>.html()</code> method instead of <code>.text()</code> as the latter was decoding HTML entities which were then reinserted into the DOM which opened up the possibility of XSS.</li>
+<li>Removed the <code>FooTable.Paging#_countFormat</code> private method and replaced it with a new <code>FooTable.Paging#format( string )</code> method to make custom paging UI's simpler to implement.</li>
+<li>Fixed an issue with column classes and styles supplied through the options not being applied to the actual column header <code>TH</code> element.</li>
+</ul>
+<hr />
+<h3>3.1.3</h3>
+<ul>
+<li>Added a new <code>dropdownTitle</code> option to the filtering component. This options specifies a title to display at the top of the column select dropdown.</li>
+<li>Added a new <code>exactMatch</code> option to the filtering component.</li>
+<li>Added a new utility method <code>FooTable.str.containsExact(string, match, ignoreCase)</code>.</li>
+<li>Added a class <code>footable-filtering-search</code> to the <code>form-group</code> of the built in search input for the filtering component.</li>
+<li>Added <code>footable-first-visible</code> and <code>footable-last-visible</code> classes to all cells (including headers) in either the first or last visible columns respectively.</li>
+<li>Updated the <code>min</code> option default value from <code>3</code> to <code>1</code> for the filtering component.</li>
+<li>Updated the load priority for rows and columns supplied via options or ajax load, they now take precedence over those supplied through the DOM to work around issues with the plugin being reinitialized multiple times on the same element.</li>
+<li>Fixed an issue in the <code>FooTable.Query</code> object where phrases were not being matched correctly.</li>
+<li>Fixed filtering component not properly clearing filters when the search input is cleared using backspace or delete.</li>
+<li>Fixed the resize event not being removed when the plugin is destroyed.</li>
+<li>Fixed an issue with unexpected sorting and filtering results if the <code>sortValue</code> and <code>filterValue</code> attributes contained a falsy value. The values are now subject to a strict undefined check before being passed off.</li>
+<li>Fixed an issue with the <code>date</code> column type not sorting it's values as expected.</li>
+</ul>
+<hr />
+<h3>3.1.2</h3>
+<ul>
+<li>Added <code>sortValue</code> column option. This option allows you to supply your own function to retrieve the sort value for a cell.</li>
+<li>Updated filtering component internals to clean things up a bit.</li>
+<li>Updated filtering component search input to trigger a filtering operation on paste.</li>
+<li>Updated <code>FooTable.Filtering#addFilter</code> method to accept an object or <code>FooTable.Filter</code> as the first argument to make custom filters easier to implement.</li>
+<li>Updated filtering <code>preinit</code> and <code>init</code> to return a promise to make custom filters easier to implement.</li>
+<li>Updated <code>FooTable.Filter</code> to accept a <code>FooTable.Query</code> as the query parameter along with the original plain string.</li>
+<li>Updated paging component to expose some previously private properties to make setting a custom count label element easier.</li>
+<li>Fixed issue where the filtering components <code>min</code> option was not being applied.</li>
+<li>Fixed the paging components' <code>countFormat</code> option placeholder <code>{TR}</code> to correctly reflect filtered rows.</li>
+<li>Fixed preinit unhandled exception if the <code>table</code> the plugin is initialized on has no <code>class</code> attribute.</li>
+<li>Fixed issue with the individual components .ZIP missing the <code>footable.core.bootstrap.min.css</code> and <code>footable.core.standalone.min.css</code> minified files.</li>
+</ul>
+<hr />
+<h3>3.1.1</h3>
+<ul>
+<li>Added the <code>breakpoint</code> class to the table when columns are hidden.</li>
+<li>Added an internal key used as part of the storage keys generated by the state component. Can be changed if an update breaks backwards compatibility.</li>
+<li>Added the <code>hidden</code> option that can be used for filters. When set to true the filter is always applied to the table, can not be cleared unless removed using the <code>FooTable.Filtering#removeFilter()</code> method and they will not effect the default UI search/clear buttons.</li>
+<li>Updated some utility functions with additional parameter checking to avoid unhandled errors under certain scenarios.</li>
+<li>Updated the <code>FooTable.Filtering#addFilter()</code> method to expose the last three parameters of the <code>FooTable.Filter</code> constructor; ignoreCase, connectors and space.</li>
+<li>Fixed an issue when reinitializing the plugin for a second time on a table after it's DOM had been modified by a 3rd party.</li>
+<li>Fixed an issue where the <code>FooTable.Filtering#draw()</code> method was not setting the button to the clear icon if the filter supplied was not the default.</li>
+<li>Fixed state component clearing filters supplied through options if the state value was an empty array.</li>
+<li>Fixed an issue with the incorrect sort icon appearing if a column was set to just <code>sorted=true</code> without supplying a direction.</li>
+</ul>
+<hr />
+<h3>3.1.0</h3>
+<ul>
+<li>Added a new state component that handles the page number, sorted column and any filters applied across sessions.</li>
+<li>Added in the ability to toggle the visibility of the various editing component buttons.</li>
+<li>Added in a new &quot;view&quot; button to the editing component.</li>
+<li>Added in <code>FooTable.Rows#expand()</code> and <code>FooTable.Rows#collapse()</code> methods to toggle all visible rows.</li>
+<li>Added in a new <code>FooTable.getRow()</code> utility method to retrieve the current <code>FooTable.Row</code> object given a <code>TR</code> element or any of its' children.</li>
+<li>Fixed an issue when reinitializing the plugin by doing some additional cleanup in the destroy methods for columns, rows and sorting.</li>
+<li>Fixed an issue with filtering not applying correctly when filters were supplied through the options.</li>
+<li>Fixed base <code>FooTable.Component</code> method signatures.</li>
+<li>Updated the <code>FooTable.Row#val()</code> method to merge supplied data instead of replacing it entirely.</li>
+<li>Updated the <code>FooTable.getFnPointer()</code> method to handle dot notation names.</li>
+<li>Updated the requirement checks for columns so having at least one <code>data-breakpoints</code> attribute is no longer required.</li>
+<li>Updated the <code>FooTable.Filtering#filter()</code> method to only apply all filters in the <code>FooTable.Filtering#filters</code>.</li>
+<li>Removed the <code>FooTable.Table#applyFilter()</code> and <code>FooTable.Table#removeFilter()</code> methods.</li>
+<li>Removed the <code>FooTable.components.core</code> and <code>FooTable.components.internal</code> objects.</li>
+</ul>
+<p><strong>NOTE</strong></p>
+<p>As of version 3.1.0 there are some backwards compatibility issues if you have done customizations like those seen in the <a href="http://fooplugins.github.io/FooTable/docs/examples/advanced/filter-dropdown.html">custom dropdown filter</a> example using the 3.0.x versions. The examples have been updated with the changes however the issues are listed below.</p>
+<ol>
+<li>The <code>FooTable.Filtering#filter()</code> method no longer accepts any arguments and is used purely to apply all filters found in the <code>FooTable.Filtering#filters</code> array.</li>
+<li>Due to #1 above to apply a new search filter it must now be done using the <code>FooTable.Filtering#addFilter(name, query, columns)</code> method using a name of &quot;search&quot;.</li>
+<li>The internal, core and custom component arrays that existed within the <code>FooTable.Table#components</code> object have been removed. All components are now loaded into a single array.</li>
+<li>When registering a component you now only need to use <code>FooTable.components.register()</code> method instead of having to decide between <code>FooTable.components.register()</code>, <code>FooTable.components.core.register()</code> and <code>FooTable.components.internal.register()</code> due to #3 above.</li>
+</ol>
+<hr />
+<h3>3.0.11</h3>
+<ul>
+<li>Added in a basic expandAll option for rows.</li>
+<li>Added in a <code>FooTable.Rows#load()</code> method to make supplying the table with new data much easier.</li>
+<li>Added in a redraw parameter to the <code>FooTable.Rows#add()</code>,<code>FooTable.Rows#update()</code> and <code>FooTable.Rows#delete()</code> methods to allow for better bulk operations.</li>
+<li>Added in new ignoreCase option for the filtering component.</li>
+<li>Fixed issue with breakpoints being calculated incorrectly on mobile devices.</li>
+<li>Fixed issue with the sorting component preventing the default action of click events from taking place. (think checkboxes not checking when in header)</li>
+<li>Fixed issue where the events <code>expand.ft.row</code> and <code>collapse.ft.row</code> were not supplying the row as a parameter.</li>
+</ul>
+<hr />
+<h3>3.0.10</h3>
+<ul>
+<li>Added the ability to filter for empty values.</li>
+<li>Fixed an issue where there were duplicate components being loaded when using the <code>FooTable.init()</code> constructor.</li>
+<li>Fixed an issue where the <code>FooTable.NumberColumn#thousandSeparator</code> was being initialized with an incorrect default value.</li>
+<li>Fixed an issue where the old instance id class was being left on the table when reinitializing FooTable on the same table over and over again.</li>
+</ul>
+<hr />
+<h3>3.0.9</h3>
+<ul>
+<li>Added in <code>ready.ft.table</code> and <code>postinit.ft.table</code> events.</li>
+<li>Added new <code>FooTable.Table#_construct()</code> method to allow for easier overriding.</li>
+<li>Added in three new methods for the sorting component; <code>FooTable.Sorting#toggleAllowed(state)</code>, <code>FooTable.Sorting#hasChanged()</code> and <code>FooTable.Sorting#reset()</code>.</li>
+<li>Fixed an issue where the sort direction for a column marked as sorted was defaulting to DESC instead of ASC.</li>
+<li>Fixed an issue where the <code>indexOrRow</code> parameter for the <code>FooTable.Row#delete()</code> and <code>FooTable.Row#update()</code> methods was being ignored.</li>
+</ul>
+<hr />
+<h3>3.0.8</h3>
+<ul>
+<li>Added a new editing component that provides the framework to create an editable table.</li>
+<li>Added in a new option <code>toggleSelector</code> to allow filtering of row click events.</li>
+<li>Added in a priority to component loading.</li>
+<li>Added in new events <code>expand.ft.row</code> and <code>collapse.ft.row</code>.</li>
+<li>Fixed an issue with the paging component where if the total number of rows was less than the page size breakpoints would not fire.</li>
+<li>Fixed an issue with the paging component during resizing/drawing when there was only a single page.</li>
+<li>Fixed an issue with bubbled errors and deferreds in <code>FooTable.Table</code>.</li>
+<li>Fixed the sorting components icon padding on <code>TH</code> elements being overridden by Bootstrap.</li>
+<li>Fixed breakpoint values being off by 1 pixel.</li>
+</ul>
+<hr />
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/table" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>table</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/responsive" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>responsive</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/2367948?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/fooplugins" target="_blank" id="ownerName" class="sidebar-link">fooplugins</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">November 15, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 26, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Other</span>
+    </div>
+	        <a href="https://fooplugins.com/plugins/footable-jquery/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>grunt (^0.4.1)</li><li>grunt-contrib-clean (^0.4.1)</li><li>grunt-contrib-compress (^0.13.0)</li><li>grunt-contrib-concat (^0.3.0)</li><li>grunt-contrib-copy (^0.8.2)</li><li>grunt-contrib-cssmin (^0.14.0)</li><li>grunt-contrib-uglify (^0.11.0)</li><li>jsdoc (^3.4.1)</li><li>grunt-jsdoc (^1.1.0)</li><li>jsdoc-oblivion (0.0.4)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1409490?v=4" alt="bradvin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bradvin" target="_blank" class="text-decoration-none fw-bold">bradvin</a><p class="mb-0 text-muted small">304 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1692151?v=4" alt="steveush" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/steveush" target="_blank" class="text-decoration-none fw-bold">steveush</a><p class="mb-0 text-muted small">235 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/693684?v=4" alt="seriema" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/seriema" target="_blank" class="text-decoration-none fw-bold">seriema</a><p class="mb-0 text-muted small">36 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/461172?v=4" alt="chrislaskey" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/chrislaskey" target="_blank" class="text-decoration-none fw-bold">chrislaskey</a><p class="mb-0 text-muted small">9 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/35591?v=4" alt="akf" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/akf" target="_blank" class="text-decoration-none fw-bold">akf</a><p class="mb-0 text-muted small">9 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4423458?v=4" alt="bucketpress" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bucketpress" target="_blank" class="text-decoration-none fw-bold">bucketpress</a><p class="mb-0 text-muted small">8 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/68863?v=4" alt="dboune" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dboune" target="_blank" class="text-decoration-none fw-bold">dboune</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1888486?v=4" alt="OliverRC" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/OliverRC" target="_blank" class="text-decoration-none fw-bold">OliverRC</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1511004?v=4" alt="zongwei007" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zongwei007" target="_blank" class="text-decoration-none fw-bold">zongwei007</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5434722?v=4" alt="minroo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/minroo" target="_blank" class="text-decoration-none fw-bold">minroo</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4718399?v=4" alt="mrdziuban" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mrdziuban" target="_blank" class="text-decoration-none fw-bold">mrdziuban</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/301135?v=4" alt="LorenzKahl" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LorenzKahl" target="_blank" class="text-decoration-none fw-bold">LorenzKahl</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/38108?v=4" alt="jleider" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jleider" target="_blank" class="text-decoration-none fw-bold">jleider</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2092199?v=4" alt="alonextou" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/alonextou" target="_blank" class="text-decoration-none fw-bold">alonextou</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6659033?v=4" alt="doron-nathan-epstein" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/doron-nathan-epstein" target="_blank" class="text-decoration-none fw-bold">doron-nathan-epstein</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3129448?v=4" alt="dropofwill" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dropofwill" target="_blank" class="text-decoration-none fw-bold">dropofwill</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/82473?v=4" alt="mvance" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mvance" target="_blank" class="text-decoration-none fw-bold">mvance</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1709286?v=4" alt="kurtaschliman" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kurtaschliman" target="_blank" class="text-decoration-none fw-bold">kurtaschliman</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3480592?v=4" alt="davidduda" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/davidduda" target="_blank" class="text-decoration-none fw-bold">davidduda</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/17622?v=4" alt="barchard" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/barchard" target="_blank" class="text-decoration-none fw-bold">barchard</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/19193598?v=4" alt="sergeykk" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sergeykk" target="_blank" class="text-decoration-none fw-bold">sergeykk</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5576949?v=4" alt="thesabbir" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/thesabbir" target="_blank" class="text-decoration-none fw-bold">thesabbir</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1944826?v=4" alt="pcassis" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pcassis" target="_blank" class="text-decoration-none fw-bold">pcassis</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/419275?v=4" alt="polof" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/polof" target="_blank" class="text-decoration-none fw-bold">polof</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1073964?v=4" alt="pattan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pattan" target="_blank" class="text-decoration-none fw-bold">pattan</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/443063?v=4" alt="nicmart" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nicmart" target="_blank" class="text-decoration-none fw-bold">nicmart</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1722555?v=4" alt="michael-dev" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/michael-dev" target="_blank" class="text-decoration-none fw-bold">michael-dev</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/631757?v=4" alt="apaleslimghost" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apaleslimghost" target="_blank" class="text-decoration-none fw-bold">apaleslimghost</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/778111?v=4" alt="josephdpurcell" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/josephdpurcell" target="_blank" class="text-decoration-none fw-bold">josephdpurcell</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4134970?v=4" alt="darms69" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/darms69" target="_blank" class="text-decoration-none fw-bold">darms69</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
