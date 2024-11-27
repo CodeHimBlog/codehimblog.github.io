@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>⚠️ [deprecated] No Longer Maintained, Please Use Https://github.com/fengyuanchen/jquery Cropper</title>
-    <meta name="description" content="cropper by fengyuanchen. ⚠️ [Deprecated] No longer maintained, please use https://github.com/fengyuanchen/jquery-cropper">
+    <title>Cropper by Fengyuanchen</title>
+    <meta name="description" content="⚠️ [Deprecated] No longer maintained, please use https://github.com/fengyuanchen/jquery-cropper">
     <meta name="author" content="fengyuanchen">
     <meta name="robots" content="index, follow">
     <!-- Canonical URL -->
@@ -93,39 +93,44 @@
         <!-- Project Name & Description -->
         <h1 id="packageName">Cropper</h1>
         <p id="packageDescription" class="text-muted">⚠️ [Deprecated] No longer maintained, please use https://github.com/fengyuanchen/jquery-cropper</p>
+			  
+
+
 <!-- Statistics -->
 <div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
-  <div class="stat-box d-flex align-items-center">
-    <i class="bi bi-star-fill text-warning me-2"></i>
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
     <div>
       <span id="stargazersCount" class="stat-value">7750</span>
       <p class="stat-label mb-0">Stars</p>
     </div>
   </div>
-	
-	  <div class="stat-box d-flex align-items-center">
-     <i class="bi bi-box-arrow-in-down me-2"></i>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
     <div>
       <span id="repoSize" class="stat-value">5.97 MB</span>
       <p class="stat-label mb-0">Size</p>
     </div>
   </div>
-	
-  <div class="stat-box d-flex align-items-center">
-    <i class="bi bi-arrow-repeat text-secondary me-2"></i>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
     <div>
       <span id="forksCount" class="stat-value">1735</span>
       <p class="stat-label mb-0">Forks</p>
     </div>
   </div>
-  <div class="stat-box d-flex align-items-center">
-    <i class="bi bi-exclamation-circle text-danger me-2"></i>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
     <div>
       <span id="openIssuesCount" class="stat-value">0</span>
       <p class="stat-label mb-0">Open Issues</p>
     </div>
   </div>
 </div>
+
 
 <div class="ad-unit ad-apt">
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
@@ -171,17 +176,657 @@
 </div>
         <div class="tab-content mt-3" id="infoTabsContent">
           <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
-            No README available
+            <h1>Cropper</h1>
+<p><a href="https://travis-ci.org/fengyuanchen/cropper"><img src="https://img.shields.io/travis/fengyuanchen/cropper.svg" alt="Build Status" /></a> <a href="https://www.npmjs.com/package/cropper"><img src="https://img.shields.io/npm/dm/cropper.svg" alt="Downloads" /></a> <a href="https://www.npmjs.com/package/cropper"><img src="https://img.shields.io/npm/v/cropper.svg" alt="Version" /></a> <a href="https://www.npmjs.com/package/cropper"><img src="https://img.shields.io/david/fengyuanchen/cropper.svg" alt="Dependencies" /></a></p>
+<blockquote>
+<p>A simple jQuery image cropping plugin. As of v4.0.0, the core code of Cropper is replaced with <a href="https://github.com/fengyuanchen/cropperjs">Cropper.js</a>.</p>
+</blockquote>
+<ul>
+<li><a href="https://fengyuanchen.github.io/cropper">Demo</a></li>
+<li><a href="https://github.com/fengyuanchen/cropperjs">Cropper.js</a> - JavaScript image cropper (<strong>recommended</strong>)</li>
+<li><a href="https://github.com/fengyuanchen/jquery-cropper">jquery-cropper</a> - A jQuery plugin wrapper for Cropper.js (<strong>recommended</strong> for jQuery users to use this instead of Cropper)</li>
+</ul>
+<h2>Main</h2>
+<pre class="prettyprint linenums lang-language"><code>dist/
+├── cropper.css
+├── cropper.min.css   (compressed)
+├── cropper.js        (UMD)
+├── cropper.min.js    (UMD, compressed)
+├── cropper.common.js (CommonJS, default)
+└── cropper.esm.js    (ES Module)</code></pre>
+<h2>Getting started</h2>
+<h3>Installation</h3>
+<pre class="prettyprint linenums lang-language"><code>npm install cropper jquery</code></pre>
+<p>Include files:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="/path/to/jquery.js"&gt;&lt;/script&gt;&lt;!-- jQuery is required --&gt;
+&lt;link  href="/path/to/cropper.css" rel="stylesheet"&gt;
+&lt;script src="/path/to/cropper.js"&gt;&lt;/script&gt;</code></pre>
+<h3>Usage</h3>
+<p>Initialize with <code>$.fn.cropper</code> method.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- Wrap the image or canvas element with a block element (container) --&gt;
+&lt;div&gt;
+  &lt;img id="image" src="picture.jpg"&gt;
+&lt;/div&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>/* Limit image width to avoid overflow the container */
+img {
+  max-width: 100%; /* This rule is very important, please do not ignore this! */
+}</code></pre>
+<pre class="prettyprint linenums lang-language"><code>var $image = $('#image');
+
+$image.cropper({
+  aspectRatio: 16 / 9,
+  crop: function(event) {
+    console.log(event.detail.x);
+    console.log(event.detail.y);
+    console.log(event.detail.width);
+    console.log(event.detail.height);
+    console.log(event.detail.rotate);
+    console.log(event.detail.scaleX);
+    console.log(event.detail.scaleY);
+  }
+});
+
+// Get the Cropper.js instance after initialized
+var cropper = $image.data('cropper');</code></pre>
+<h2>Options</h2>
+<p>See the available <a href="https://github.com/fengyuanchen/cropperjs#options">options</a> of Cropper.js.</p>
+<pre class="prettyprint linenums lang-language"><code>$('img').cropper(options);</code></pre>
+<h2>Methods</h2>
+<p>See the available <a href="https://github.com/fengyuanchen/cropperjs#methods">methods</a> of Cropper.js.</p>
+<pre class="prettyprint linenums lang-language"><code>$('img').once('ready', function () {
+  $(this).cropper('method', argument1, , argument2, ..., argumentN);
+});</code></pre>
+<h2>Events</h2>
+<p>See the available <a href="https://github.com/fengyuanchen/cropperjs#events">events</a> of Cropper.js.</p>
+<pre class="prettyprint linenums lang-language"><code>$('img').on('event', handler);</code></pre>
+<h2>No conflict</h2>
+<p>If you have to use other plugin with the same namespace, just call the <code>$.fn.cropper.noConflict</code> method to revert to it.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="other-plugin.js"&gt;&lt;/script&gt;
+&lt;script src="cropper.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  $.fn.cropper.noConflict();
+  // Code that uses other plugin's "$('img').cropper" can follow here.
+&lt;/script&gt;</code></pre>
+<h2>Browser support</h2>
+<p>It is the same as the <a href="https://github.com/fengyuanchen/cropperjs#browser-support">browser support of Cropper.js</a>. As a jQuery plugin, you also need to see the <a href="https://jquery.com/browser-support/">jQuery Browser Support</a>.</p>
+<h2>Contributing</h2>
+<p>Please read through our <a href=".github/CONTRIBUTING.md">contributing guidelines</a>.</p>
+<h2>Versioning</h2>
+<p>Maintained under the <a href="https://semver.org/">Semantic Versioning guidelines</a>.</p>
+<h2>License</h2>
+<p><a href="https://opensource.org/licenses/MIT">MIT</a> © <a href="https://chenfengyuan.com/">Chen Fengyuan</a></p>
           </div>
 
           <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
             <ul id="changelogList">
-              No changelog available.
+              <h1>Changelog</h1>
+<h2>4.1.0 (Oct 12, 2019)</h2>
+<ul>
+<li>Upgrade the built-in Cropper.js to v1.5.6.</li>
+</ul>
+<h2>4.0.0 (Apr 1, 2018)</h2>
+<ul>
+<li>Upgrade the built-in Cropper.js to v1.3.4.</li>
+</ul>
+<h2>4.0.0-beta (Mar 3, 2018)</h2>
+<ul>
+<li>Upgrade the built-in Cropper.js to v1.3.2.</li>
+</ul>
+<h2>4.0.0-alpha (Mar 1, 2018)</h2>
+<ul>
+<li>The core code of Cropper is replaced with <a href="https://github.com/fengyuanchen/cropperjs">Cropper.js</a> now.</li>
+<li>Migration from Cropper 3.x:
+<ul>
+<li><strong>Before:</strong>
+<pre class="prettyprint linenums lang-language"><code>$().cropper({
+crop(event) {
+console.log(
+  event.x,
+  event.y,
+  event.width,
+  event.height,
+  event.rotate,
+  event.scaleX,
+  event.scaleY,
+);
+},
+});</code></pre></li>
+<li><strong>After:</strong>
+<pre class="prettyprint linenums lang-language"><code>$().cropper({
+crop(event) {
+console.log(
+  event.detail.x,
+  event.detail.y,
+  event.detail.width,
+  event.detail.height,
+  event.detail.rotate,
+  event.detail.scaleX,
+  event.detail.scaleY,
+);
+},
+});</code></pre></li>
+</ul></li>
+</ul>
+<h2>3.1.6 (Mar 1, 2018)</h2>
+<ul>
+<li>Fixed a bug of incorrect behavior of <code>viewMode: 2</code>.</li>
+</ul>
+<h2>3.1.5 (Feb 25, 2018)</h2>
+<ul>
+<li>Fixed a bug of <code>getCroppedCanvas</code> method when provide <code>maxWidth</code> or <code>maxHeight</code> options (#953).</li>
+</ul>
+<h2>3.1.4 (Jan 13, 2018)</h2>
+<ul>
+<li>Fixed a bug of rotation (#938).</li>
+</ul>
+<h2>3.1.3 (Oct 21, 2017)</h2>
+<ul>
+<li>Fixed a bug of render when disable one of <code>rotatable</code> and <code>scalable</code> options.</li>
+</ul>
+<h2>3.1.2 (Oct 18, 2017)</h2>
+<ul>
+<li>Normalize related decimal numbers when crop an image with canvas (#918).</li>
+<li>Ignore unnecessary files when publish to NPM (#928).</li>
+</ul>
+<h2>3.1.1 (Oct 11, 2017)</h2>
+<ul>
+<li>Supports to load in node environment.</li>
+</ul>
+<h2>3.1.0 (Oct 8, 2017)</h2>
+<ul>
+<li>Added 4 new options to <code>getCroppedCanvas</code> method:  <code>minWidth</code>, <code>minHeight</code>, <code>maxWidth</code> and <code>maxHeight</code>.</li>
+<li>Enhanced image scaling: the <code>scaleX</code> and <code>scaleY</code> values should only be <code>1</code> or <code>-1</code> before, but now they can be any numbers.</li>
+<li>Improved crop box resizing behavior in the northeast, northwest, southeast and southwest directions.</li>
+</ul>
+<h2>3.0.0 (Sep 3, 2017)</h2>
+<ul>
+<li>Improved crop box resizing behavior in the east, west, south and north directions.</li>
+</ul>
+<h2>3.0.0-rc.3 (Jul 7, 2017)</h2>
+<ul>
+<li>Added two new options (<code>imageSmoothingEnabled</code> and <code>imageSmoothingQuality</code>) to <code>getCroppedCanvas</code> method.</li>
+</ul>
+<h2>3.0.0-rc.2 (May 30, 2017)</h2>
+<ul>
+<li>Improved performance for large images(#856).</li>
+<li>Fixed the issue of <code>ArrayBuffer</code> reference error in IE9 (#885).</li>
+<li>Fixed an issue of canvas box initialization.</li>
+</ul>
+<h2>3.0.0-rc.1 (Apr 30, 2017)</h2>
+<ul>
+<li>Use <code>window.jQuery</code> instead of <code>window.$</code> for browser side usage (#876).</li>
+<li>Change the <code>main</code> field value from <code>dist/cropper.js</code> (UMD) to <code>dist/cropper.common.js</code> (CommonJS).</li>
+<li>Added <code>module</code> and <code>browser</code> fields to <code>package.json</code>.</li>
+</ul>
+<h2>3.0.0-rc (Mar 25, 2017)</h2>
+<ul>
+<li>Clear cached pointers correctly to avoid touch zoom problem.</li>
+<li>Improve the <code>responsive</code> option (only available when the container width/height great than the minContainerWidth/Height)</li>
+<li>Improve the <code>toggleDragModeOnDblclick</code> option (only available when the <code>dragMode</code> option is set to <code>crop</code> or <code>move</code>)</li>
+</ul>
+<h2>3.0.0-beta (Feb 25, 2017)</h2>
+<ul>
+<li>Fixed the bug of rotate square image lead image shrink.</li>
+<li>Improved RegExps for DataURL processing.</li>
+</ul>
+<h2>3.0.0-alpha.1 (Jan 21, 2017)</h2>
+<ul>
+<li>Use CSS3 2D Transforms instead of <code>left</code> and <code>top</code> for better performance.</li>
+<li>Set <code>withCredentials</code> attribute when read the image data by XMLHttpRequest.</li>
+</ul>
+<h2>3.0.0-alpha (Jan 15, 2017)</h2>
+<ul>
+<li>Removed <code>build</code> event.</li>
+<li>Renamed <code>built</code> event to <code>ready</code>.</li>
+<li>Removed event namespace.</li>
+<li>Ported code to ECMAScript 6.</li>
+<li>Dropped IE8 support.</li>
+<li>Improved event handler for Pointer Events (#824).</li>
+<li>Improved setCropBoxData method.</li>
+<li>Fixed a bug of auto crop when replace the image.</li>
+</ul>
+<h2>2.3.4 (Sep 3, 2016)</h2>
+<ul>
+<li>Fixed a bug of cropping in view mode 1 and 2.</li>
+<li>Fixed a bug of calling <code>ready</code> event twice when call <code>replace</code> method.</li>
+<li>Fixed dependencies problem in the package.json file.</li>
+</ul>
+<h2>2.3.3 (Aug 10, 2016)</h2>
+<ul>
+<li>Allow scroll when the <code>dragMode</code> is &quot;none&quot; on touch screens (#727).</li>
+<li>Fixed the issue of orientation transform (#740).</li>
+</ul>
+<h2>2.3.2 (Jun 8, 2016)</h2>
+<ul>
+<li>Fixed wrong property reference (#705)</li>
+<li>Fixed the wrong place of the crop event triggering (#706).</li>
+<li>Fixed the calling order of <code>scale</code> and <code>rotate</code> (#709).</li>
+</ul>
+<h2>2.3.1 (May 28, 2016)</h2>
+<ul>
+<li>Improved the rotate and scale transform behavior (#633, idea by afeibus).</li>
+<li>Improved the <code>getCroppedCanvas</code> method to return the whole canvas if it is not cropped (#666, PR by @vinnymac).</li>
+<li>Check cross origin setting when load image by XMLHTTPRequest (#669)</li>
+</ul>
+<h2>2.3.0 (Feb 22, 2016)</h2>
+<ul>
+<li>Added a new parameter to the <code>replace</code> method for applying filters.</li>
+<li>Improved the image initializing for Safari (#120, #509).</li>
+<li>Fixed incorrect size limitation of the crop box.</li>
+<li>Fixed incorrect cropped canvas when scaleX or scaleY great than 1 (#598).</li>
+</ul>
+<h2>2.2.5 (Jan 18, 2016)</h2>
+<ul>
+<li>Fixed crossOriginUrl undefined error when exists the <code>crossOrigin</code> property.</li>
+</ul>
+<h2>2.2.4 (Jan 1, 2016)</h2>
+<ul>
+<li>Fixed a dimension bug in the &quot;getCroppedCanvas&quot; method.</li>
+<li>Added an example for cropping round image.</li>
+</ul>
+<h2>2.2.3 (Dec 28, 2015)</h2>
+<ul>
+<li>Supports to zoom from event triggering point.</li>
+</ul>
+<h2>2.2.2 (Dec 24, 2015)</h2>
+<ul>
+<li>Limit wheel speed to prevent zoom too fast</li>
+<li>Improve the <code>setCropBoxData</code> method</li>
+</ul>
+<h2>2.2.1 (Dec 12, 2015)</h2>
+<ul>
+<li>Handle Data URL (Fixed #540: avoid to use XMLHttpRequest to open a Data URL)</li>
+<li>Handle ajax error when load ArrayBuffer</li>
+<li>Not to transform the image to base64 when Orientation equals to <code>1</code></li>
+</ul>
+<h2>2.2.0 (Dec 6, 2015)</h2>
+<ul>
+<li>Added a new option: <code>checkOrientation</code> (#120, #509)</li>
+<li>Added a timestamp to the url of preview image (#531)</li>
+</ul>
+<h2>2.1.0 (Dec 2, 2015)</h2>
+<ul>
+<li>Added new <code>restore</code> option</li>
+</ul>
+<h2>2.0.2 (Nov 30, 2015)</h2>
+<ul>
+<li>Fixed #476: Floor the numerical parameters for <code>CanvasRenderingContext2D.drawImage</code></li>
+</ul>
+<h2>2.0.1 (Nov 18, 2015)</h2>
+<ul>
+<li>Improved new crop box creating</li>
+</ul>
+<h2>2.0.0 (Nov 11, 2015)</h2>
+<h3>Common</h3>
+<ul>
+<li>Supports four modes</li>
+<li>Supports three drag modes</li>
+<li>Improved the experience of cropping</li>
+<li>Makes the crop box's borders and handlers visible when overflow</li>
+<li>Fixed an issue of canvas limitation</li>
+<li>Fixed an issue of cropping</li>
+</ul>
+<h3>Options</h3>
+<ul>
+<li>Added <code>viewMode</code></li>
+<li>Added <code>dragMode</code></li>
+<li>Renamed <code>touchDragZoom</code> to <code>zoomOnTouch</code></li>
+<li>Renamed <code>mouseWheelZoom</code> to <code>zoomOnWheel</code></li>
+<li>Renamed <code>doubleClickToggle</code> to <code>toggleDragModeOnDblclick</code></li>
+<li>Renamed <code>checkImageOrigin</code> to <code>checkCrossOrigin</code></li>
+<li>Removed <code>strict</code> (supported by <code>viewMode: 1</code>)</li>
+<li>Removed <code>dragCrop</code> (supported by <code>dragMode: 'crop'</code>)</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>Added <code>moveTo</code></li>
+<li>Added <code>zoomTo</code></li>
+<li>Added <code>rotateTo</code></li>
+<li>Added <code>scaleX</code></li>
+<li>Added <code>scaleY</code></li>
+<li>Improved <code>getCanvasData</code> (added <code>naturalWidth</code> and <code>naturalHeight</code>)</li>
+</ul>
+<h3>Events</h3>
+<ul>
+<li>Improved <code>zoom</code> (changed <code>event.ratio</code> and added <code>event.oldRatio</code>)</li>
+</ul>
+<h2>1.0.0 (Oct 10, 2015)</h2>
+<ul>
+<li>Improved canvas limitation</li>
+<li>Improved preview</li>
+<li>Improved test</li>
+<li>Fixed an error in the <code>clear</code> method (missed parameters)</li>
+<li>Fixed the issue of crop box limitation (#430)</li>
+</ul>
+<h2>1.0.0-rc.1 (Sep 5, 2015)</h2>
+<ul>
+<li>Moved from Less to Sass</li>
+<li>Fixed the issue of <code>destroy</code> method (#434)</li>
+<li>Fixed the issue on IE8 (#319)</li>
+<li>Added an example for customizing preview</li>
+<li>Added download button to documentation</li>
+<li>Added FAQ</li>
+</ul>
+<h2>0.11.1 (Aug 22, 2015)</h2>
+<ul>
+<li>Optimize &quot;built&quot; and &quot;crop&quot; events</li>
+<li>Improve the starting speed (#422)</li>
+<li>Improve the building process (#428)</li>
+<li>Fix event issue on IE8 (#319)</li>
+</ul>
+<h2>0.11.0 (Aug 10, 2015)</h2>
+<ul>
+<li>Improve <code>setCropBoxData</code> method (#385)</li>
+<li>Fix event issue on IE10 (#394)</li>
+<li>Optimize code (use <code>var</code> for per variable)</li>
+</ul>
+<h3>Options</h3>
+<ul>
+<li>Add &quot;scalable&quot; option</li>
+<li>Add &quot;wheelZoomRatio&quot; option</li>
+<li>Convert &quot;crop&quot; option to &quot;crop&quot; event</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>Add &quot;scale&quot; method</li>
+<li>Improve &quot;move&quot; method (the <code>offsetY</code> parameter is optional now)</li>
+</ul>
+<h3>Events</h3>
+<ul>
+<li>Rename &quot;dragstart&quot; to &quot;cropstart&quot;</li>
+<li>Rename &quot;dragmove&quot; to &quot;cropmove&quot;</li>
+<li>Rename &quot;dragend&quot; to &quot;cropend&quot;</li>
+<li>Merge &quot;zoomin&quot; and &quot;zoomout&quot; to &quot;zoom&quot;</li>
+<li>Merge &quot;crop&quot; option and &quot;change&quot; event to &quot;crop&quot; event</li>
+</ul>
+<h2>0.10.1 (Jul 5, 2015)</h2>
+<ul>
+<li>Add Pointer Events support (#328)</li>
+<li>Add RTL support (#342)</li>
+<li>Add one new option: &quot;center&quot; (#367)</li>
+<li>Allow cropper to grow vertically (#350)</li>
+</ul>
+<h2>0.10.0 (Jun 8, 2015)</h2>
+<ul>
+<li>Add three new options: &quot;change&quot;, &quot;cropBoxMovable&quot;, &quot;doubleClickToggle&quot;</li>
+<li>Change &quot;movable&quot; option (only for image)</li>
+<li>Rename &quot;resizable&quot; to &quot;cropBoxResizable&quot;</li>
+<li>Add one new event: &quot;change.cropper&quot;</li>
+<li>Locking aspect ratio in &quot;free mode&quot; by holding shift key (#259)</li>
+<li>Sync drag mode to crop box when it is not movable (#300)</li>
+</ul>
+<h2>0.9.3 (May 10, 2015)</h2>
+<ul>
+<li>Add one new option: &quot;data&quot;</li>
+<li>Add two new methods: &quot;setData&quot; (#290, #296), &quot;crop&quot; (#275)</li>
+<li>Fix incorrect minWidth/Height size of canvas (#295)</li>
+<li>Fix the strict mode bug (#280)</li>
+<li>Fix the crop box resizing bug (#277)</li>
+</ul>
+<h2>0.9.2 (Apr 18, 2015)</h2>
+<ul>
+<li>Improve strict mode to show full image</li>
+<li>Add two new options: &quot;minCanvasWidth&quot; and &quot;minCanvasHeight&quot;</li>
+<li>Reverse mouse wheeling zoom</li>
+<li>Fix incorrect cursor in disabled state</li>
+</ul>
+<h2>0.9.1 (Mar 21, 2015)</h2>
+<ul>
+<li>Fix the touch zoom issue (#206)</li>
+<li>Fix the reset issue (#246)</li>
+</ul>
+<h2>0.9.0 (Mar 15, 2015)</h2>
+<ul>
+<li>Wraps image with a virtual canvas (for zooming and rotating).</li>
+<li>Limits image position and size in strict mode.</li>
+<li>Supports multiple global croppers by default.</li>
+<li>Outputs cropped canvas for display or get Data URL or get Blob</li>
+<li>Identifies drag events with &quot;event.dragType&quot; property</li>
+<li>Added zoom events for controlling the canvas (image) size.</li>
+<li>Improved responsiveness for window resizing.</li>
+</ul>
+<h3>Options</h3>
+<ul>
+<li>Change &quot;minContainerWidth&quot; (default value: 300 -&gt; 200)</li>
+<li>Change &quot;minContainerHeight&quot; (default value: 150 -&gt; 100)</li>
+<li>Add &quot;strict&quot;</li>
+<li>Add &quot;zoomin&quot;</li>
+<li>Add &quot;zoomout&quot;</li>
+<li>remove &quot;global&quot;</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>Change &quot;replace&quot; (not to change the original image any more)</li>
+<li>Change &quot;getImageData&quot; (move rotation-related properties to canvas data)</li>
+<li>Add &quot;getContainerData&quot;</li>
+<li>Add &quot;getCanvasData&quot;</li>
+<li>Add &quot;setCanvasData&quot;</li>
+<li>Add &quot;getCroppedCanvas&quot;</li>
+<li>Remove &quot;setImageData&quot; (replace with &quot;getCanvasData&quot;)</li>
+<li>Remove &quot;getDataURL&quot; (replace with &quot;getCroppedCanvas&quot;)</li>
+</ul>
+<h3>Events</h3>
+<ul>
+<li>Add &quot;event.dragType&quot; property to drag events</li>
+<li>Add &quot;zoomin.cropper&quot;</li>
+<li>Add &quot;zoomout.cropper&quot;</li>
+</ul>
+<h2>0.8.0 (Feb 19, 2015)</h2>
+<ul>
+<li>Refactored source code.</li>
+<li>Compiles CSS with <a href="http://lesscss.org">Less</a> CSS preprocessors.</li>
+<li>Supports fixed container.</li>
+<li>Supports rotation with CSS3 2D Transforms.</li>
+</ul>
+<h3>Options</h3>
+<ul>
+<li>Change the default value of &quot;aspectRatio&quot;</li>
+<li>Rename &quot;done&quot; to &quot;crop&quot;</li>
+<li>Rename &quot;dashed&quot; to &quot;guides&quot;</li>
+<li>Rename &quot;multiple&quot; to &quot;global&quot;</li>
+<li>Add &quot;background&quot;</li>
+<li>Add &quot;highlight&quot;</li>
+<li>Add &quot;responsive&quot;</li>
+<li>Add &quot;mouseWheelZoom&quot;</li>
+<li>Add &quot;touchDragZoom&quot;</li>
+<li>Add &quot;minCropBoxWidth&quot;</li>
+<li>Add &quot;minCropBoxHeight&quot;</li>
+<li>Add &quot;minContainerWidth&quot;</li>
+<li>Add &quot;minContainerHeight&quot;</li>
+<li>Remove &quot;data&quot;</li>
+<li>Remove &quot;minWidth&quot;</li>
+<li>Remove &quot;minHeight&quot;</li>
+<li>Remove &quot;maxWidth&quot;</li>
+<li>Remove &quot;maxHeight&quot;</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>Change &quot;reset&quot;</li>
+<li>Add &quot;setImageData&quot;</li>
+<li>Add &quot;getCropBoxData&quot;</li>
+<li>Add &quot;setCropBoxData&quot;</li>
+<li>Add &quot;move&quot;</li>
+<li>Remove &quot;setData&quot;</li>
+</ul>
+<h2>0.7.9 (Feb 19, 2015)</h2>
+<ul>
+<li>Improve preview.</li>
+<li>Improve rotation.</li>
+<li>Improve responsiveness (#157).</li>
+<li>Enable to move the image when the size of the crop box is the same as the container's (#186).</li>
+</ul>
+<h2>0.7.8 (Feb 8, 2015)</h2>
+<ul>
+<li>Add two new options: &quot;minContainerWidth&quot; and &quot;minContainerHeight&quot;.</li>
+<li>Improve three methods: &quot;setAspectRatio&quot;, &quot;destroy&quot; and &quot;disable&quot;.</li>
+<li>Improve mouse wheel zoom.</li>
+<li>Improve drag resizing.</li>
+</ul>
+<h2>0.7.7 (Jan 10, 2015)</h2>
+<ul>
+<li>Fix a bug of &quot;dragCrop&quot; option.</li>
+<li>Add a timestamp to the url to bust cache when it's a cross-origin image (#148).</li>
+<li>Fix the issue of &quot;autoCropArea&quot; option (#144).</li>
+</ul>
+<h2>0.7.6 (Dec 20, 2014)</h2>
+<ul>
+<li>Fix events binding bugs.</li>
+<li>Change the &quot;done&quot; option and the &quot;getData&quot; method (returns floating-point number) (#130).</li>
+<li>Fix the rotation issue after replace the image (#139).</li>
+</ul>
+<h2>0.7.5 (Nov 27, 2014)</h2>
+<ul>
+<li>Reset the ratio when replace the image.</li>
+<li>Add a new option: &quot;checkImageOrigin&quot; (#119).</li>
+<li>Prevent to call the &quot;done&quot; option when it's disabled (#107).</li>
+<li>Improve the preview (#95).</li>
+</ul>
+<h2>0.7.4 (Nov 24, 2014)</h2>
+<ul>
+<li>Improve &quot;getDataURL&quot; method, enable to customize the image sizes (#105).</li>
+<li>Fix the issue of destroy (#101).</li>
+<li>Fix the issue of canvas (#106).</li>
+</ul>
+<h2>0.7.3 (Nov 15, 2014)</h2>
+<ul>
+<li>Supports cross-origin image (#96, #97).</li>
+<li>Add a new option: &quot;autoCropArea&quot;.</li>
+<li>Improve &quot;movable&quot; option.</li>
+<li>Output rotation degree by &quot;getImageData&quot; method (#94).</li>
+</ul>
+<h2>0.7.2 (Nov 11, 2014)</h2>
+<ul>
+<li>Fix the image rotation error in Firefox (#92).</li>
+</ul>
+<h2>0.7.1 (Nov 8, 2014)</h2>
+<ul>
+<li>Rebuild &quot;rotate&quot; method (#88).</li>
+<li>Fix the issue of free ratio (#87).</li>
+<li>Improve &quot;getDataURL&quot; method (#86).</li>
+<li>Optimize event listeners.</li>
+</ul>
+<h2>0.7.0 (Oct 12, 2014)</h2>
+<ul>
+<li>Supports zoom (#36, #79).</li>
+<li>Supports rotation (#1, #81).</li>
+<li>Add two new options: &quot;zoomable&quot; and &quot;rotatable&quot;.</li>
+<li>Add six new methods: &quot;enable&quot;, &quot;disable&quot;, &quot;zoom&quot;, &quot;rotate&quot;, &quot;getDataURL&quot; (#80) and &quot;setDragMode&quot;.</li>
+<li>Rename &quot;release&quot; method to &quot;clear&quot;.</li>
+<li>Rename &quot;setImgSrc&quot; method to &quot;replace&quot;.</li>
+<li>Rename &quot;getImgInfo&quot; method to &quot;getImageData&quot;.</li>
+<li>Some other improvements.</li>
+</ul>
+<h2>0.6.2 (Oct 11, 2014)</h2>
+<ul>
+<li>Hide the modal when release the crop box.</li>
+<li>Improve touch events.</li>
+</ul>
+<h2>0.6.1 (Oct 3, 2014)</h2>
+<ul>
+<li>Fix an event error.</li>
+</ul>
+<h2>0.6.0 (Sep 20, 2014)</h2>
+<ul>
+<li>Add six new options: &quot;dashed&quot;, &quot;build&quot;, &quot;built&quot;, &quot;dragstart&quot;, &quot;dragmove&quot; and &quot;dragend&quot;.</li>
+<li>Add three new events: &quot;dragstart.cropper&quot;, &quot;dragmove.cropper&quot; and &quot;dragend.cropper&quot;.</li>
+<li>Remove an old event: &quot;render.cropper&quot;.</li>
+<li>Supports to toggle the dashed lines by &quot;dashed&quot; option (#68).</li>
+<li>Fix the issue of events (#71).</li>
+<li>Optimize the source code.</li>
+</ul>
+<h2>0.5.5 (Sep 8, 2014)</h2>
+<ul>
+<li>Improve the render when the mouse out of the cropper container (#54).</li>
+</ul>
+<h2>0.5.4 (Aug 30, 2014)</h2>
+<ul>
+<li>Fix typos: replace &quot;resizeable&quot; with &quot;resizable&quot; and &quot;moveable&quot; with &quot;movable&quot;.</li>
+</ul>
+<h2>0.5.3 (Aug 23, 2014)</h2>
+<ul>
+<li>Fix the issue (#64) that the crop box could not move after multiple touches.</li>
+</ul>
+<h2>0.5.2 (Aug 16, 2014)</h2>
+<ul>
+<li>Fix a bug of type checking in the options.</li>
+<li>Compress the cropper template string.</li>
+</ul>
+<h2>0.5.1 (Aug 12, 2014)</h2>
+<ul>
+<li>Supports canvas (#55).</li>
+</ul>
+<h2>0.5.0 (Aug 10, 2014)</h2>
+<ul>
+<li>Add a new option: &quot;multiple&quot;.</li>
+</ul>
+<p>...</p>
+<h2>0.4.0 (Jul 26, 2014)</h2>
+<ul>
+<li>Add eight new options: &quot;autoCrop&quot;, &quot;dragCrop&quot;, &quot;moveable&quot;, &quot;resizeable&quot;, &quot;maxWidth&quot;, &quot;maxHeight&quot;, &quot;minWidth&quot; and &quot;minHeight&quot;.</li>
+<li>Add three new methods: &quot;reset&quot;, &quot;release&quot; and &quot;destroy&quot;.</li>
+<li>Add three new events: &quot;build.cropper&quot;, &quot;built.cropper&quot; and &quot;render.cropper&quot;.</li>
+<li>Remove two old methods: &quot;enable&quot; and &quot;disable&quot;.</li>
+<li>Remove three old events: &quot;dragstart&quot;, &quot;dragmove&quot; and &quot;dragend&quot;.</li>
+<li>Supports no conflict with the &quot;$.fn.cropper.noConflict&quot; method.</li>
+</ul>
+<p>...</p>
+<h2>0.3.0 (May 18, 2014)</h2>
+<ul>
+<li>Supports touch.</li>
+<li>Supports events.</li>
+<li>Add three events: &quot;dargstart&quot;, &quot;dargmove&quot; and &quot;dargend&quot;.</li>
+<li>Add a new method: &quot;setImgSrc&quot;.</li>
+</ul>
+<p>...</p>
+<h2>0.2.0 (Apr 23, 2014)</h2>
+<ul>
+<li>Supports free ratio.</li>
+<li>Add a new option: &quot;data&quot;.</li>
+<li>Add four new methods: &quot;getData&quot;, &quot;setData&quot;, &quot;getImgInfo&quot; and &quot;setAspectRatio&quot;.</li>
+</ul>
+<p>...</p>
+<h2>0.1.0 (Feb 19, 2014)</h2>
+<ul>
+<li>Supports four options: &quot;aspectRatio&quot;, &quot;done&quot;, &quot;modal&quot; and &quot;preview&quot;.</li>
+<li>Supports two methods: &quot;enable&quot; and &quot;disable&quot;.</li>
+</ul>
             </ul>
           </div>
 
         </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/cropper" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>cropper</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/image-cropper" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>image-cropper</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/image-processing" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>image-processing</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a>
+</div>
+			  
 			  </article>
+
+		  
       </main>
 		    <!-- Sidebar -->
       <aside class="col-md-4 p-0">
@@ -238,17 +883,13 @@
   </div>
 			 
 			   <div class="sidebar-item mb-2">
-    <h5 class="sidebar-title">Dependencies</h5>
-			             <ul id="dependenciesList">
-              <li>No dependencies listed.</li>
-            </ul>
-			 
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>cropperjs (^1.5.6)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>@babel/core (^7.6.4)</li><li>@babel/preset-env (^7.6.3)</li><li>@commitlint/cli (^8.2.0)</li><li>@commitlint/config-conventional (^8.2.0)</li><li>babel-plugin-istanbul (^5.2.0)</li><li>chai (^4.2.0)</li><li>change-case (^3.1.0)</li><li>cpy-cli (^2.0.0)</li><li>create-banner (^1.0.0)</li><li>cssnano (^4.1.10)</li><li>del-cli (^3.0.0)</li><li>eslint (^6.5.1)</li><li>eslint-config-airbnb-base (^14.0.0)</li><li>eslint-plugin-import (^2.18.2)</li><li>husky (^3.0.8)</li><li>jquery (^3.3.1)</li><li>karma (^4.3.0)</li><li>karma-chai (^0.1.0)</li><li>karma-chrome-launcher (^3.1.0)</li><li>karma-coverage-istanbul-reporter (^2.1.0)</li><li>karma-mocha (^1.3.0)</li><li>karma-mocha-reporter (^2.2.5)</li><li>karma-rollup-preprocessor (^7.0.2)</li><li>lint-staged (^8.2.1)</li><li>mocha (^6.2.1)</li><li>npm-run-all (^4.1.5)</li><li>postcss-cli (^6.1.3)</li><li>postcss-header (^1.0.0)</li><li>postcss-import (^12.0.1)</li><li>postcss-preset-env (^6.7.0)</li><li>postcss-url (^8.0.0)</li><li>puppeteer (^1.20.0)</li><li>rollup (^1.23.1)</li><li>rollup-plugin-babel (^4.3.3)</li><li>rollup-plugin-commonjs (^10.1.0)</li><li>rollup-plugin-node-resolve (^5.2.0)</li><li>stylelint (^11.1.1)</li><li>stylelint-config-standard (^19.0.0)</li><li>stylelint-order (^3.1.1)</li><li>uglify-js (^3.6.1)</li></ul><h5 class="sidebar-title">Peer Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.9.1)</li></ul>
 			 </div>
 			 
 			 	   <div class="sidebar-item">
     <h5 class="sidebar-title">Contributors</h5>
             <ul class="p-0" id="contributorsList">
-              <ul class="list-group list-group-flush"><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/3456749?v=4" alt="fengyuanchen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fengyuanchen" target="_blank" class="text-decoration-none fw-bold">fengyuanchen</a><p class="mb-0 text-muted small">177 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/53399?v=4" alt="dantman" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dantman" target="_blank" class="text-decoration-none fw-bold">dantman</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1078012?v=4" alt="DanTup" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/DanTup" target="_blank" class="text-decoration-none fw-bold">DanTup</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/143463920?v=4" alt="pointful-mikkel" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pointful-mikkel" target="_blank" class="text-decoration-none fw-bold">pointful-mikkel</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/2038814?v=4" alt="LeEnno" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LeEnno" target="_blank" class="text-decoration-none fw-bold">LeEnno</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/252317?v=4" alt="cyjake" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cyjake" target="_blank" class="text-decoration-none fw-bold">cyjake</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/174275?v=4" alt="ciceropablo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ciceropablo" target="_blank" class="text-decoration-none fw-bold">ciceropablo</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/41535?v=4" alt="ext" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ext" target="_blank" class="text-decoration-none fw-bold">ext</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/7481783?v=4" alt="dejanstojanovic" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dejanstojanovic" target="_blank" class="text-decoration-none fw-bold">dejanstojanovic</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/4522528?v=4" alt="carrieje" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/carrieje" target="_blank" class="text-decoration-none fw-bold">carrieje</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/2119212?v=4" alt="jsoref" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jsoref" target="_blank" class="text-decoration-none fw-bold">jsoref</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/295490?v=4" alt="juanmiguelbesada" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/juanmiguelbesada" target="_blank" class="text-decoration-none fw-bold">juanmiguelbesada</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/947110?v=4" alt="kkirsche" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kkirsche" target="_blank" class="text-decoration-none fw-bold">kkirsche</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/149081?v=4" alt="builtbylane" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/builtbylane" target="_blank" class="text-decoration-none fw-bold">builtbylane</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/3697415?v=4" alt="mhretab" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mhretab" target="_blank" class="text-decoration-none fw-bold">mhretab</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/4712046?v=4" alt="MohammadYounes" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/MohammadYounes" target="_blank" class="text-decoration-none fw-bold">MohammadYounes</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/197309?v=4" alt="nchase" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nchase" target="_blank" class="text-decoration-none fw-bold">nchase</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/498197?v=4" alt="Pascalmh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Pascalmh" target="_blank" class="text-decoration-none fw-bold">Pascalmh</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/36537908?v=4" alt="pavelakafoks" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pavelakafoks" target="_blank" class="text-decoration-none fw-bold">pavelakafoks</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/4425383?v=4" alt="begin29" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/begin29" target="_blank" class="text-decoration-none fw-bold">begin29</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1832781?v=4" alt="vinnymac" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vinnymac" target="_blank" class="text-decoration-none fw-bold">vinnymac</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/6446455?v=4" alt="iamytg" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/iamytg" target="_blank" class="text-decoration-none fw-bold">iamytg</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/83861?v=4" alt="lotas" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lotas" target="_blank" class="text-decoration-none fw-bold">lotas</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/5671838?v=4" alt="serg6854" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/serg6854" target="_blank" class="text-decoration-none fw-bold">serg6854</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1571370?v=4" alt="vuiets" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vuiets" target="_blank" class="text-decoration-none fw-bold">vuiets</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3456749?v=4" alt="fengyuanchen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fengyuanchen" target="_blank" class="text-decoration-none fw-bold">fengyuanchen</a><p class="mb-0 text-muted small">177 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/53399?v=4" alt="dantman" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dantman" target="_blank" class="text-decoration-none fw-bold">dantman</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1078012?v=4" alt="DanTup" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/DanTup" target="_blank" class="text-decoration-none fw-bold">DanTup</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/143463920?v=4" alt="pointful-mikkel" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pointful-mikkel" target="_blank" class="text-decoration-none fw-bold">pointful-mikkel</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2038814?v=4" alt="LeEnno" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LeEnno" target="_blank" class="text-decoration-none fw-bold">LeEnno</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/252317?v=4" alt="cyjake" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cyjake" target="_blank" class="text-decoration-none fw-bold">cyjake</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/174275?v=4" alt="ciceropablo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ciceropablo" target="_blank" class="text-decoration-none fw-bold">ciceropablo</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/41535?v=4" alt="ext" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ext" target="_blank" class="text-decoration-none fw-bold">ext</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7481783?v=4" alt="dejanstojanovic" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dejanstojanovic" target="_blank" class="text-decoration-none fw-bold">dejanstojanovic</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4522528?v=4" alt="carrieje" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/carrieje" target="_blank" class="text-decoration-none fw-bold">carrieje</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2119212?v=4" alt="jsoref" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jsoref" target="_blank" class="text-decoration-none fw-bold">jsoref</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/295490?v=4" alt="juanmiguelbesada" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/juanmiguelbesada" target="_blank" class="text-decoration-none fw-bold">juanmiguelbesada</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/947110?v=4" alt="kkirsche" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kkirsche" target="_blank" class="text-decoration-none fw-bold">kkirsche</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/149081?v=4" alt="builtbylane" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/builtbylane" target="_blank" class="text-decoration-none fw-bold">builtbylane</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3697415?v=4" alt="mhretab" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mhretab" target="_blank" class="text-decoration-none fw-bold">mhretab</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4712046?v=4" alt="MohammadYounes" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/MohammadYounes" target="_blank" class="text-decoration-none fw-bold">MohammadYounes</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/197309?v=4" alt="nchase" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nchase" target="_blank" class="text-decoration-none fw-bold">nchase</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/498197?v=4" alt="Pascalmh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Pascalmh" target="_blank" class="text-decoration-none fw-bold">Pascalmh</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/36537908?v=4" alt="pavelakafoks" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pavelakafoks" target="_blank" class="text-decoration-none fw-bold">pavelakafoks</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4425383?v=4" alt="begin29" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/begin29" target="_blank" class="text-decoration-none fw-bold">begin29</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1832781?v=4" alt="vinnymac" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vinnymac" target="_blank" class="text-decoration-none fw-bold">vinnymac</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6446455?v=4" alt="iamytg" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/iamytg" target="_blank" class="text-decoration-none fw-bold">iamytg</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/83861?v=4" alt="lotas" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lotas" target="_blank" class="text-decoration-none fw-bold">lotas</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5671838?v=4" alt="serg6854" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/serg6854" target="_blank" class="text-decoration-none fw-bold">serg6854</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1571370?v=4" alt="vuiets" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vuiets" target="_blank" class="text-decoration-none fw-bold">vuiets</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+21 more Contributors</a></li></ul>
             </ul>
 			 
 			 </div>
@@ -294,6 +935,7 @@
   <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
 <script>
