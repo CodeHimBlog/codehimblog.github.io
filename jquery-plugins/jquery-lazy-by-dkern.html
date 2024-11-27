@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery.lazy by Dkern</title>
+    <meta name="description" content="A lightweight, fast, feature-rich, powerful and highly configurable delayed content, image and background lazy loading plugin for jQuery &amp; Zepto.">
+    <meta name="author" content="dkern">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-lazy-by-dkern.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jquery.lazy</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jquery.lazy",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jquery.lazy</h1>
+        <p id="packageDescription" class="text-muted">A lightweight, fast, feature-rich, powerful and highly configurable delayed content, image and background lazy loading plugin for jQuery &amp; Zepto.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1015</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.35 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">236</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">10</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/dkern/jquery.lazy/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/dkern/jquery.lazy" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h3>jQuery &amp; Zepto Lazy - Delayed Content, Image and Background Loader</h3>
+<p><a href="http://github.com/dkern/jquery.lazy"><img src="https://badge.fury.io/gh/dkern%2Fjquery.lazy.svg" alt="GitHub version" /></a><br />
+<a href="http://www.npmjs.org/package/jquery-lazy"><img src="https://badge.fury.io/js/jquery-lazy.svg" alt="NPM version" /></a><br />
+<a href="http://bower.io/search/?q=jquery-lazy"><img src="https://badge.fury.io/bo/jquery-lazy.svg" alt="Bower version" /></a><br />
+<a href="https://david-dm.org/dkern/jquery.lazy"><img src="https://david-dm.org/dkern/jquery.lazy/status.svg" alt="Dependencies Status" /></a><br />
+<a href="https://david-dm.org/dkern/jquery.lazy?type=dev"><img src="https://david-dm.org/dkern/jquery.lazy/dev-status.svg" alt="devDependencies Status" /></a></p>
+<hr />
+<p><a href="https://jetbrains.com/phpstorm"><img src="http://jquery.eisbehr.de/lazy/images/git_logo_jb_ps.png" alt="JetBrains &amp; PhpStorm" /></a><br />
+<em>This project is friendly supported by <a href="https://jetbrains.com">JetBrains</a> &amp; <a href="https://jetbrains.com/phpstorm">PhpStorm</a>!</em></p>
+<hr />
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="#about-lazy">About Lazy</a></li>
+<li><a href="#compatibility">Compatibility</a></li>
+<li><a href="#documentation--examples">Documentation / Examples</a></li>
+<li><a href="#installation">Installation</a>
+<ul>
+<li><a href="#cdn">CDN</a></li>
+<li><a href="#self-hosted">Self-Hosted</a></li>
+<li><a href="#package-managers">Package Managers</a></li>
+</ul></li>
+<li><a href="#basic-usage">Basic Usage</a></li>
+<li><a href="#callbacks--events">Callbacks / Events</a></li>
+<li><a href="#instances-and-public-functions">Instances and public Functions</a></li>
+<li><a href="#custom-content-loaders">Custom Content Loaders</a></li>
+<li><a href="#loader-plugins">Loader Plugins</a></li>
+<li><a href="#configuration-parameters">Configuration Parameters</a></li>
+<li><a href="#build-and-validation">Build and Validation</a>
+<ul>
+<li><a href="#available-gulp-tasks">Available gulp Tasks</a></li>
+</ul></li>
+<li><a href="#bugs--feature-request">Bugs / Feature request</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#donation">Donation</a></li>
+</ul>
+<hr />
+<h2>About Lazy</h2>
+<p>Lazy is a fast, feature-rich and lightweight delayed content loading plugin for jQuery and Zepto.<br />
+It's designed to speed up page loading times and decrease traffic to your users by only loading the content in view.<br />
+You can use Lazy in all vertical and horizontal scroll ways.<br />
+It supports images in <code>&lt;img /&gt;</code> tags and backgrounds, supplied with css like <code>background-image</code>, by default.<br />
+On those elements Lazy can set an default image or a placeholder while loading and supports retina displays as well.<br />
+But Lazy is even able to load any other content you want by <a href="#loader-plugins">plugins</a> and <a href="#custom-content-loaders">custom loaders</a>. </p>
+<h2>Compatibility</h2>
+<p>Lazy will work with a wide range of browsers and support jQuery versions for years backwards and Zepto as alternative.<br />
+You can pick any version since jQuery 1.7.2 or Zepto 1.1.6 or greater.<br />
+There is no way to guarantee, that Lazy will work with all browsers, but all I've tested worked great so far.<br />
+If you find any problems in specific browsers, <a href="http://github.com/dkern/jquery.lazy/issues">please let me know</a>. </p>
+<p><strong>Tested in:</strong> IE, Chrome (+ mobile), Firefox (+ mobile), Safari (+ mobile) and Android Browser.</p>
+<h2>Documentation / Examples</h2>
+<p>For <a href="http://jquery.eisbehr.de/lazy/#parameter">documentation</a>, <a href="http://jquery.eisbehr.de/lazy/#examples">examples</a> and other information take a look on the <a href="http://jquery.eisbehr.de/lazy/">project page</a>.</p>
+<h2>Installation</h2>
+<p>First of all, you will need a copy of <a href="http://jquery.com">jQuery</a> or <a href="http://zeptojs.com">Zepto</a> to use Lazy successfully on your project.<br />
+If you get this you can install Lazy by different ways.<br />
+Some examples below:</p>
+<h4>CDN</h4>
+<p>Lazy and all plugins are available over <a href="http://cdnjs.com">cdnjs</a> and <a href="http://jsdelivr.com">jsDelivr</a> CDN and can directly included to every page.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- jsDeliver --&gt;
+&lt;script type="text/javascript" src="//cdn.jsdelivr.net/gh/dkern/jquery.lazy@1.7.10/jquery.lazy.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.jsdelivr.net/gh/dkern/jquery.lazy@1.7.10/jquery.lazy.plugins.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- cdnjs --&gt;
+&lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.plugins.min.js"&gt;&lt;/script&gt;</code></pre>
+<h4>Self-Hosted</h4>
+<p><a href="https://github.com/dkern/jquery.lazy/archive/master.zip">Download</a> and save one of two available files to include Lazy to your page, either the <a href="http://raw.githubusercontent.com/dkern/jquery.lazy/master/jquery.lazy.js">development</a> or the <a href="http://raw.githubusercontent.com/dkern/jquery.lazy/master/jquery.lazy.min.js">minified</a> version.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script type="text/javascript" src="jquery.lazy.min.js"&gt;&lt;/script&gt;</code></pre>
+<h4>Package Managers</h4>
+<p>Lazy is even available through <a href="http://npmjs.org">NPM</a> and <a href="http://bower.io">Bower</a>.<br />
+Just use one of the following commands below:</p>
+<p><a href="https://nodei.co/npm/jquery-lazy/"><img src="https://nodei.co/npm/jquery-lazy.png?compact=true" alt="NPM" /></a></p>
+<pre class="prettyprint linenums lang-language"><code>$ npm install jquery-lazy
+$ bower install jquery-lazy</code></pre>
+<h2>Basic Usage</h2>
+<p>1.) The basic usage of Lazy is pretty easy.<br />
+First of all you need to prepare all elements you want to lazy load.<br />
+By default add a <code>data-src</code> attribute to images containing the loadable image and/or a <code>data-loader</code> attribute to elements witch shall use a <a href="#loader-plugins">plugin</a> or <a href="#custom-content-loaders">custom loaders</a>.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;img class="lazy" data-src="path/to/image_to_load.jpg" src="" /&gt;</code></pre>
+<p>2.) Start using Lazy by calling it after page load.<br />
+You don't have to specify your elements exactly, but for better performance, or different options, load your elements over unique classes or any other selector. </p>
+<pre class="prettyprint linenums lang-language"><code>$(function($) {
+    $("img.lazy").Lazy();
+});</code></pre>
+<p>Take a look at the <a href="http://jquery.eisbehr.de/lazy/">documentation</a> to get an idea what Lazy is capable of.</p>
+<h2>Callbacks / Events</h2>
+<p>Lazy comes with a bunch of <a href="http://jquery.eisbehr.de/lazy/index.php?c=callback">callbacks and events</a> you can assign to.<br />
+Just add them by initialization settings:</p>
+<ul>
+<li><code>beforeLoad</code> - before item is about to be loaded</li>
+<li><code>afterLoad</code> - after the item was loaded successfully</li>
+<li><code>onError</code> - whenever an item could not be loaded</li>
+<li><code>onFinishedAll</code> - after all items in instance was loaded or returned an error</li>
+</ul>
+<h2>Instances and public Functions</h2>
+<p>Lazy supports multiple parallel instances.<br />
+Just initialize them with different selectors.<br />
+To access an instances public functions you can initialize them in an object oriented manner or grab the instance bind to every element by default:</p>
+<pre class="prettyprint linenums lang-language"><code>// object oriented way
+var instance = $("img.lazy").Lazy({chainable: false});
+
+// grab from elements (only works well if you use same selectors)
+$("img.lazy").Lazy();
+var instance = $("img.lazy").data("plugin_lazy");</code></pre>
+<p>Every instance has some public available functions to control it's behavior.<br />
+There are currently six available:</p>
+<pre class="prettyprint linenums lang-language"><code>instance.config(entryName[, newValue]); // get or set an configuration entry
+instance.addItems(items); // add new items to current instance
+instance.getItems(); // get all unhandled items left of current instance
+instance.update([useThrottle]); // loads all elements in current viewport
+instance.force(items); // force loading specific items, ignoring the viewport
+instance.loadAll(); // loads all remaining available elements from this instance
+instance.destroy(); // unbinds all events and stop execution directly</code></pre>
+<h2>Custom Content Loaders</h2>
+<p>With the custom loaders option there is a powerful solution to load every contents the Lazy way.<br />
+Lazy will handle everything, you just create a loading method witch got triggered whenever the element hits the visibility threshold.<br />
+It is still possible to load images and custom loaders in the same Lazy instance.</p>
+<p>To use this just define a loader function inside the Lazy initialisation and pass the loader name to the <code>data-loader</code> attribute of the elements witch should be lazy loaded.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="lazy" data-loader="customLoaderName"&gt;&lt;/div&gt;
+&lt;img class="lazy" data-src="path/to/image_to_load.jpg" src="" /&gt;
+&lt;div class="lazy" data-loader="customLoaderName"&gt;&lt;/div&gt;
+&lt;div class="lazy" data-loader="asyncLoader"&gt;&lt;/div&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>$(".lazy").Lazy({
+    // callback
+    beforeLoad: function(element) {
+        console.log("start loading " + element.prop("tagName"));
+    },
+
+    // custom loaders
+    customLoaderName: function(element) {
+        element.html("element handled by custom loader");
+        element.load();
+    },
+    asyncLoader: function(element, response) {
+        setTimeout(function() {
+            element.html("element handled by async loader");
+            response(true);
+        }, 1000);
+    }
+});</code></pre>
+<h2>Loader Plugins</h2>
+<p>The loader plugins can extend the functionality of Lazy, like loading other elements and data.<br />
+It is basically the same as the <a href="#custom-content-loaders">custom content loaders</a>, with the difference, that plugins can extend all further instances globally at once permanently and let them handle specific elements like <code>&lt;video&gt;</code> by default, without <code>data-loader</code> attribute set.<br />
+With custom content loaders you have to initialize each instance on setup with the loader.<br />
+With plugins you only load the plugin file and you're done for all instances from now on. </p>
+<p>For more information and examples, take a look at the <a href="https://github.com/dkern/jquery.lazy/tree/master/plugins">existing plugins</a> or the <a href="https://github.com/dkern/jquery.lazy/tree/master/plugins/README.md">readme.md</a> in there.</p>
+<h2>Configuration Parameters</h2>
+<p>The following configurations is available by default:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><em>string</em></td>
+<td><em>'lazy'</em></td>
+<td>Internal name, used for namespaces and bindings.</td>
+</tr>
+<tr>
+<td>chainable</td>
+<td><em>boolean</em></td>
+<td><em>true</em></td>
+<td>By default Lazy is chainable and will return all elements. If set to <code>false</code> Lazy will return the created plugin instance itself for further use.</td>
+</tr>
+<tr>
+<td>autoDestroy</td>
+<td><em>boolean</em></td>
+<td><em>true</em></td>
+<td>Will automatically destroy the instance when no further elements are available to handle.</td>
+</tr>
+<tr>
+<td>bind</td>
+<td><em>string</em></td>
+<td><em>'load'</em></td>
+<td>If set to <code>load</code>' Lazy starts working directly after page load. If you want to use Lazy on own events set it to <code>event</code>'.</td>
+</tr>
+<tr>
+<td>threshold</td>
+<td><em>integer</em></td>
+<td><em>500</em></td>
+<td>Amount of pixels below the viewport, in which all images gets loaded before the user sees them.</td>
+</tr>
+<tr>
+<td>visibleOnly</td>
+<td><em>boolean</em></td>
+<td><em>false</em></td>
+<td>Determine if only visible elements should be load.</td>
+</tr>
+<tr>
+<td>appendScroll</td>
+<td><em>integer</em></td>
+<td><em>window</em></td>
+<td>An element to listen on for scroll events, useful when images are stored in a container.</td>
+</tr>
+<tr>
+<td>scrollDirection</td>
+<td><em>string</em></td>
+<td><em>'both'</em></td>
+<td>Determines the handles scroll direction. Possible values are <code>both</code>, <code>vertical</code> and <code>horizontal</code>.</td>
+</tr>
+<tr>
+<td>imageBase</td>
+<td><em>string</em></td>
+<td><em>null</em></td>
+<td>If defined this will be used as base path for all images loaded by this instance.</td>
+</tr>
+<tr>
+<td>defaultImage</td>
+<td><em>string</em></td>
+<td><em>blank image</em></td>
+<td>Base64 image string, set as default image source for every image without a predefined source attribute.</td>
+</tr>
+<tr>
+<td>placeholder</td>
+<td><em>string</em></td>
+<td><em>null</em></td>
+<td>Base64 image string, set a background on every element as loading placeholder.</td>
+</tr>
+<tr>
+<td>delay</td>
+<td><em>integer</em></td>
+<td><em>-1</em></td>
+<td>If you want to load all elements at once after page load, then you can specify a delay time in milliseconds.</td>
+</tr>
+<tr>
+<td>combined</td>
+<td><em>boolean</em></td>
+<td><em>false</em></td>
+<td>With this parameter, Lazy will combine the event driven and delayed element loading.</td>
+</tr>
+<tr>
+<td><strong>attributes</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>attribute</td>
+<td><em>string</em></td>
+<td><em>'data-src'</em></td>
+<td>Name of the image tag <code>src</code> attribute, where the image path is stored.</td>
+</tr>
+<tr>
+<td>srcsetAttribute</td>
+<td><em>string</em></td>
+<td><em>'data-srcset'</em></td>
+<td>Name of the image tag <code>srcset</code> attribute, where the source set is stored.</td>
+</tr>
+<tr>
+<td>sizesAttribute</td>
+<td><em>string</em></td>
+<td><em>'data-sizes'</em></td>
+<td>Name of the image tag <code>sizes</code> attribute, where the size definition for source set is stored.</td>
+</tr>
+<tr>
+<td>retinaAttribute</td>
+<td><em>string</em></td>
+<td><em>'data-retina'</em></td>
+<td>Name of the image tag attribute, where the path for optional retina image is stored.</td>
+</tr>
+<tr>
+<td>loaderAttribute</td>
+<td><em>string</em></td>
+<td><em>'data-loader'</em></td>
+<td>Name or the element attribute, where the identifier of the plugin or customer loader is sored.</td>
+</tr>
+<tr>
+<td>imageBaseAttribute</td>
+<td><em>string</em></td>
+<td><em>'data-imagebase'</em></td>
+<td>Name ot the image tag element, where the specific image base is stored. This will overwrite the global <code>imageBase</code> config.</td>
+</tr>
+<tr>
+<td>removeAttribute</td>
+<td><em>boolean</em></td>
+<td><em>true</em></td>
+<td>Determine if the attribute should be removed from the element after loading.</td>
+</tr>
+<tr>
+<td>handledName</td>
+<td><em>string</em></td>
+<td><em>'handled'</em></td>
+<td>Name of the element tag data attribute, to determine if element is already handled.</td>
+</tr>
+<tr>
+<td>loadedName</td>
+<td><em>string</em></td>
+<td><em>'loaded'</em></td>
+<td>Name of the element tag data attribute, to determine if element is already loaded.</td>
+</tr>
+<tr>
+<td><strong>effect</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>effect</td>
+<td><em>string</em></td>
+<td><em>'show'</em></td>
+<td>Function name of the effect you want to use to show the loaded images, like <code>show</code> or <code>fadeIn</code>.</td>
+</tr>
+<tr>
+<td>effectTime</td>
+<td><em>integer</em></td>
+<td><em>0</em></td>
+<td>Time in milliseconds the effect should use to view the image.</td>
+</tr>
+<tr>
+<td><strong>throttle</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>enableThrottle</td>
+<td><em>boolean</em></td>
+<td><em>true</em></td>
+<td>Throttle down the loading calls on scrolling event.</td>
+</tr>
+<tr>
+<td>throttle</td>
+<td><em>integer</em></td>
+<td><em>250</em></td>
+<td>Time in milliseconds the throttle will use to limit the loading calls.</td>
+</tr>
+<tr>
+<td><strong>callbacks</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>beforeLoad</td>
+<td><em>function</em></td>
+<td><em>undefined</em></td>
+<td>Callback function, which will be called before the element gets loaded. Has current element and response function as parameters. <code>this</code> is the current Lazy instance.</td>
+</tr>
+<tr>
+<td>afterLoad</td>
+<td><em>function</em></td>
+<td><em>undefined</em></td>
+<td>Callback function, which will be called after the element was loaded. Has current element and response function as parameters. <code>this</code> is the current Lazy instance.</td>
+</tr>
+<tr>
+<td>onError</td>
+<td><em>function</em></td>
+<td><em>undefined</em></td>
+<td>Callback function, which will be called if the element could not be loaded. Has current element and response function as parameters. <code>this</code> is the current Lazy instance.</td>
+</tr>
+<tr>
+<td>onFinishedAll</td>
+<td><em>function</em></td>
+<td><em>undefined</em></td>
+<td>Callback function, which will be called after all elements was loaded or returned an error. The callback has no parameters. <code>this</code> is the current Lazy instance.</td>
+</tr>
+</tbody>
+</table>
+<h2>Build and Validation</h2>
+<p>This project includes an automated build script using <code>gulp</code>.<br />
+To build your own versions of Lazy you need to <a href="#package-managers">install it</a> via <a href="https://www.npmjs.com/package/jquery-lazy">npm</a> first.<br />
+Afterwards you can use the following command in your console to automatically generate all productive files.<br />
+While building these files everything will be checked with <code>jshint</code> for validity too.</p>
+<pre class="prettyprint linenums lang-language"><code>$ gulp build</code></pre>
+<h3>Available <code>gulp</code> Tasks:</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>build</td>
+<td>check &amp; build everything</td>
+</tr>
+<tr>
+<td>build-main</td>
+<td>check &amp; build main project file</td>
+</tr>
+<tr>
+<td>build-plugins</td>
+<td>check &amp; build single plugin files</td>
+</tr>
+<tr>
+<td>concat-plugins</td>
+<td>build concatenated plugins file</td>
+</tr>
+<tr>
+<td>validate</td>
+<td>check all files with <code>jshint</code></td>
+</tr>
+<tr>
+<td>watch</td>
+<td>watches all files to check &amp; build everything on change</td>
+</tr>
+</tbody>
+</table>
+<h2>Bugs / Feature request</h2>
+<p>Please <a href="http://github.com/dkern/jquery.lazy/issues">report</a> bugs and feel free to <a href="http://github.com/dkern/jquery.lazy/issues">ask</a> for new features directly on GitHub.</p>
+<h2>License</h2>
+<p>Lazy is dual-licensed under <a href="http://www.opensource.org/licenses/mit-license.php">MIT</a> and <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPL-2.0</a> license.</p>
+<h2>Donation</h2>
+<p><em>You like to support me?</em><br />
+<em>You appreciate my work?</em><br />
+<em>You use it in commercial projects?</em>  </p>
+<p>Feel free to make a little <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=FFL6VQJCUZMXC">donation</a>! :wink:</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/background-image" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>background-image</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/images" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>images</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-lazy" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-lazy</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/lazy" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>lazy</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/lazy-load" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>lazy-load</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/lazy-loading" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>lazy-loading</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/lazyload" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>lazyload</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/lazyloading" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>lazyloading</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/pagespeed" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>pagespeed</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/zepto" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>zepto</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/917005?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/dkern" target="_blank" id="ownerName" class="sidebar-link">dkern</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">January 19, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 19, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Other</span>
+    </div>
+	        <a href="http://jquery.eisbehr.de/lazy" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.7.2)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>gulp (^3.9.1)</li><li>gulp-concat-util (^0.5.5)</li><li>gulp-data (^1.2.1)</li><li>gulp-header (^1.8.9)</li><li>gulp-jshint (^2.0.4)</li><li>gulp-noop (^1.0.0)</li><li>gulp-rename (^1.2.2)</li><li>gulp-uglify (^2.1.2)</li><li>gulp-util (^3.0.8)</li><li>jshint (^2.9.5)</li><li>jshint-stylish (^2.2.1)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/917005?v=4" alt="dkern" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dkern" target="_blank" class="text-decoration-none fw-bold">dkern</a><p class="mb-0 text-muted small">98 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/426404?v=4" alt="zspitzer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zspitzer" target="_blank" class="text-decoration-none fw-bold">zspitzer</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1691857?v=4" alt="Canu667" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Canu667" target="_blank" class="text-decoration-none fw-bold">Canu667</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1006477?v=4" alt="felixonmars" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/felixonmars" target="_blank" class="text-decoration-none fw-bold">felixonmars</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/17067774?v=4" alt="hosein2398" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hosein2398" target="_blank" class="text-decoration-none fw-bold">hosein2398</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/29752171?v=4" alt="marksto" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/marksto" target="_blank" class="text-decoration-none fw-bold">marksto</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/514234?v=4" alt="pburke" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pburke" target="_blank" class="text-decoration-none fw-bold">pburke</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2914331?v=4" alt="sadraskol" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sadraskol" target="_blank" class="text-decoration-none fw-bold">sadraskol</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+3 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
