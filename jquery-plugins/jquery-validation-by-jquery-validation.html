@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jquery Validation Plugin Library Sources</title>
+    <title>jQuery Validation Plugin Library Sources</title>
     <meta name="description" content="jquery-validation by jquery-validation. jQuery Validation Plugin library sources">
     <meta name="author" content="jquery-validation">
     <meta name="robots" content="index, follow">
@@ -52,7 +52,7 @@
     <ol class="breadcrumb mb-0">
       <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
       <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Jquery Validation</li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Validation</li>
     </ol>
   </nav>
 </div>
@@ -78,7 +78,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Jquery Validation",
+      "name": "jQuery Validation",
       "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
     }
   ]
@@ -91,41 +91,46 @@
       <main class="col-md-8 site-main p-0">
 		  <article>
         <!-- Project Name & Description -->
-        <h1 id="packageName">Jquery Validation</h1>
+        <h1 id="packageName">jQuery Validation</h1>
         <p id="packageDescription" class="text-muted">jQuery Validation Plugin library sources</p>
+			  
+
+
 <!-- Statistics -->
 <div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
-  <div class="stat-box d-flex align-items-center">
-    <i class="bi bi-star-fill text-warning me-2"></i>
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
     <div>
-      <span id="stargazersCount" class="stat-value">10352</span>
+      <span id="stargazersCount" class="stat-value">10351</span>
       <p class="stat-label mb-0">Stars</p>
     </div>
   </div>
-	
-	  <div class="stat-box d-flex align-items-center">
-     <i class="bi bi-box-arrow-in-down me-2"></i>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
     <div>
       <span id="repoSize" class="stat-value">8.25 MB</span>
       <p class="stat-label mb-0">Size</p>
     </div>
   </div>
-	
-  <div class="stat-box d-flex align-items-center">
-    <i class="bi bi-arrow-repeat text-secondary me-2"></i>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
     <div>
       <span id="forksCount" class="stat-value">2786</span>
       <p class="stat-label mb-0">Forks</p>
     </div>
   </div>
-  <div class="stat-box d-flex align-items-center">
-    <i class="bi bi-exclamation-circle text-danger me-2"></i>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
     <div>
       <span id="openIssuesCount" class="stat-value">47</span>
       <p class="stat-label mb-0">Open Issues</p>
     </div>
   </div>
 </div>
+
 
 <div class="ad-unit ad-apt">
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
@@ -171,7 +176,71 @@
 </div>
         <div class="tab-content mt-3" id="infoTabsContent">
           <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
-            No README available
+            <h1><a href="https://jqueryvalidation.org/">jQuery Validation Plugin</a> - Form validation made easy</h1>
+<p><a href="https://github.com/jquery-validation/jquery-validation/releases/latest"><img src="https://img.shields.io/github/release/jquery-validation/jquery-validation.svg" alt="release" /></a><br />
+<a href="https://github.com/jquery-validation/jquery-validation/actions/workflows/ci.yml"><img src="https://github.com/jquery-validation/jquery-validation/actions/workflows/ci.yml/badge.svg" alt="Build Status" /></a><br />
+<a href="https://david-dm.org/jquery-validation/jquery-validation#info=devDependencies"><img src="https://david-dm.org/jquery-validation/jquery-validation/dev-status.svg?theme=shields.io" alt="devDependency Status" /></a><br />
+<a href="https://www.jsdelivr.com/package/npm/jquery-validation"><img src="https://data.jsdelivr.com/v1/package/npm/jquery-validation/badge?style=rounded" alt="jsDelivr Hits" /></a></p>
+<p>The jQuery Validation Plugin provides drop-in validation for your existing forms, while making all kinds of customizations to fit your application really easy.</p>
+<h2>Getting Started</h2>
+<h3>Downloading the prebuilt files</h3>
+<p>Prebuilt files can be downloaded from <a href="https://jqueryvalidation.org/">https://jqueryvalidation.org/</a></p>
+<h3>Downloading the latest changes</h3>
+<p>The unreleased development files can be obtained by:</p>
+<ol>
+<li><a href="https://github.com/jquery-validation/jquery-validation/archive/master.zip">Downloading</a> or Forking this repository</li>
+<li><a href="CONTRIBUTING.md#build-setup">Setup the build</a></li>
+<li>Run <code>grunt</code> to create the built files in the &quot;dist&quot; directory</li>
+</ol>
+<h3>Including it on your page</h3>
+<p>Include jQuery and the plugin on a page. Then select a form to validate and call the <code>validate</code> method.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;form&gt;
+    &lt;input required&gt;
+&lt;/form&gt;
+&lt;script src="jquery.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.validate.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    $("form").validate();
+&lt;/script&gt;</code></pre>
+<p>Alternatively include jQuery and the plugin via requirejs in your module.</p>
+<pre class="prettyprint linenums lang-language"><code>define(["jquery", "jquery.validate"], function( $ ) {
+    $("form").validate();
+});</code></pre>
+<p>For more information on how to setup a rules and customizations, <a href="https://jqueryvalidation.org/documentation/">check the documentation</a>.</p>
+<h2>Reporting issues and contributing code</h2>
+<p>See the <a href="CONTRIBUTING.md">Contributing Guidelines</a> for details.</p>
+<p><strong>IMPORTANT NOTE ABOUT EMAIL VALIDATION</strong>. As of version 1.12.0 this plugin is using the same regular expression that the <a href="https://html.spec.whatwg.org/multipage/forms.html#valid-e-mail-address">HTML5 specification suggests for browsers to use</a>. We will follow their lead and use the same check. If you think the specification is wrong, please report the issue to them. If you have different requirements, consider <a href="https://jqueryvalidation.org/jQuery.validator.addMethod/">using a custom method</a>.<br />
+In case you need to adjust the built-in validation regular expression patterns, please <a href="https://jqueryvalidation.org/jQuery.validator.methods/">follow the documentation</a>.</p>
+<p><strong>IMPORTANT NOTE ABOUT REQUIRED METHOD</strong>. As of version 1.14.0 this plugin stops trimming white spaces from the value of the attached element. If you want to achieve the same result, you can use the <a href="https://jqueryvalidation.org/normalizer/"><code>normalizer</code></a> that can be used to transform the value of an element before validation. This feature was available since <code>v1.15.0</code>. In other words, you can do something like this:</p>
+<pre class="prettyprint linenums lang-language"><code>$("#myForm").validate({
+    rules: {
+        username: {
+            required: true,
+            // Using the normalizer to trim the value of the element
+            // before validating it.
+            //
+            // The value of `this` inside the `normalizer` is the corresponding
+            // DOMElement. In this example, `this` references the `username` element.
+            normalizer: function(value) {
+                return $.trim(value);
+            }
+        }
+    }
+});</code></pre>
+<h2>Accessibility</h2>
+<p>For an invalid field, the default output for the jQuery Validation Plugin is an error message in a <code>&lt;label&gt;</code> element. This results in two <code>&lt;label&gt;</code> elements pointing to a single input field using the <code>for</code> attribute. While this is valid HTML, it has inconsistent support across screen readers.</p>
+<p>For greater screen reader support in your form's validation, use the <code>errorElement</code> parameter in the <code>validate()</code> method. This option outputs the error in an element of your choice and automatically adds ARIA attributes to the HTML that help with screen reader support.</p>
+<p><code>aria-describedby</code> is added to the input field and it is programmatically tied to the error element chosen in the <code>errorElement</code> parameter.</p>
+<pre class="prettyprint linenums lang-language"><code>$("#myform").validate({
+  errorElement: "span"
+});</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;label for="name"&gt;Name&lt;/label&gt;
+&lt;input id="name" aria-describedby="unique-id-here"&gt;
+&lt;span class="error" id="unique-id-here"&gt;This field is required&lt;/span&gt;</code></pre>
+<p><a href="https://jqueryvalidation.org/validate/#errorelement">Learn more about errorElement</a></p>
+<h2>License</h2>
+<p>Copyright &copy; Jörn Zaefferer<br><br />
+Licensed under the MIT license.</p>
           </div>
 
           <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
@@ -181,7 +250,34 @@
           </div>
 
         </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/inline-validation" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>inline-validation</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-validation" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-validation</span>
+                            </div>
+                         </a>
+</div>
+			  
 			  </article>
+
+		  
       </main>
 		    <!-- Sidebar -->
       <aside class="col-md-4 p-0">
@@ -218,7 +314,7 @@
     <div class="metadata-item d-flex align-items-center mt-2">
       <i class="bi bi-pencil-square me-2"></i>
       <strong>Last Updated:</strong>
-      <span id="updatedAt" class="ms-1">November 24, 2024</span>
+      <span id="updatedAt" class="ms-1">November 26, 2024</span>
     </div>
     <div class="metadata-item d-flex align-items-center mt-2">
      <i class="bi bi-file-earmark-code me-2"></i>
@@ -238,17 +334,13 @@
   </div>
 			 
 			   <div class="sidebar-item mb-2">
-    <h5 class="sidebar-title">Dependencies</h5>
-			             <ul id="dependenciesList">
-              <li>No dependencies listed.</li>
-            </ul>
-			 
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>commitplease (2.3.1)</li><li>grunt (1.0.1)</li><li>grunt-contrib-compress (1.2.0)</li><li>grunt-contrib-concat (1.0.1)</li><li>grunt-contrib-copy (1.0.0)</li><li>grunt-contrib-jshint (1.0.0)</li><li>grunt-contrib-qunit (10.0.0)</li><li>grunt-contrib-uglify (1.0.1)</li><li>grunt-contrib-watch (1.0.0)</li><li>grunt-jscs (2.8.0)</li><li>grunt-sri (0.2.0)</li><li>grunt-text-replace (0.4.0)</li><li>qunitjs (2.3.3)</li></ul><h5 class="sidebar-title">Peer Dependencies</h5><ul class="dependencies-list"><li>jquery (^1.7 || ^2.0 || ^3.1)</li></ul>
 			 </div>
 			 
 			 	   <div class="sidebar-item">
     <h5 class="sidebar-title">Contributors</h5>
             <ul class="p-0" id="contributorsList">
-              <ul class="list-group list-group-flush"><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/52585?v=4" alt="jzaefferer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jzaefferer" target="_blank" class="text-decoration-none fw-bold">jzaefferer</a><p class="mb-0 text-muted small">285 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1297909?v=4" alt="nschonni" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nschonni" target="_blank" class="text-decoration-none fw-bold">nschonni</a><p class="mb-0 text-muted small">105 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/120441?v=4" alt="staabm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/staabm" target="_blank" class="text-decoration-none fw-bold">staabm</a><p class="mb-0 text-muted small">93 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/6888059?v=4" alt="Arkni" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Arkni" target="_blank" class="text-decoration-none fw-bold">Arkni</a><p class="mb-0 text-muted small">67 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/11214?v=4" alt="mlynch" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mlynch" target="_blank" class="text-decoration-none fw-bold">mlynch</a><p class="mb-0 text-muted small">30 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1788397?v=4" alt="bytestream" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bytestream" target="_blank" class="text-decoration-none fw-bold">bytestream</a><p class="mb-0 text-muted small">29 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1347487?v=4" alt="RobJohnston" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/RobJohnston" target="_blank" class="text-decoration-none fw-bold">RobJohnston</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/15799058?v=4" alt="skotniczny" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/skotniczny" target="_blank" class="text-decoration-none fw-bold">skotniczny</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/543007?v=4" alt="g1smd" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/g1smd" target="_blank" class="text-decoration-none fw-bold">g1smd</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1986893?v=4" alt="dorner" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dorner" target="_blank" class="text-decoration-none fw-bold">dorner</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/112515?v=4" alt="cope" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cope" target="_blank" class="text-decoration-none fw-bold">cope</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1234495?v=4" alt="bidord" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bidord" target="_blank" class="text-decoration-none fw-bold">bidord</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/81561?v=4" alt="Synchro" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Synchro" target="_blank" class="text-decoration-none fw-bold">Synchro</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/2110107?v=4" alt="patheard" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/patheard" target="_blank" class="text-decoration-none fw-bold">patheard</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1699660?v=4" alt="jcspader" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jcspader" target="_blank" class="text-decoration-none fw-bold">jcspader</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/10222521?v=4" alt="vanillajonathan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vanillajonathan" target="_blank" class="text-decoration-none fw-bold">vanillajonathan</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1907279?v=4" alt="EricDunsworth" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/EricDunsworth" target="_blank" class="text-decoration-none fw-bold">EricDunsworth</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1301698?v=4" alt="Maks3w" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Maks3w" target="_blank" class="text-decoration-none fw-bold">Maks3w</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/2720049?v=4" alt="steelywing" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/steelywing" target="_blank" class="text-decoration-none fw-bold">steelywing</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/11618829?v=4" alt="rskm1" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rskm1" target="_blank" class="text-decoration-none fw-bold">rskm1</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/5727000?v=4" alt="paladox" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/paladox" target="_blank" class="text-decoration-none fw-bold">paladox</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/160354?v=4" alt="jaubourg" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jaubourg" target="_blank" class="text-decoration-none fw-bold">jaubourg</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1810242?v=4" alt="thomasgohard" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/thomasgohard" target="_blank" class="text-decoration-none fw-bold">thomasgohard</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/2766443?v=4" alt="digitalica" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/digitalica" target="_blank" class="text-decoration-none fw-bold">digitalica</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/79215?v=4" alt="AndrewRayCode" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/AndrewRayCode" target="_blank" class="text-decoration-none fw-bold">AndrewRayCode</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/5989873?v=4" alt="ArmindoMaurits" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ArmindoMaurits" target="_blank" class="text-decoration-none fw-bold">ArmindoMaurits</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/8356869?v=4" alt="christopherbauer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/christopherbauer" target="_blank" class="text-decoration-none fw-bold">christopherbauer</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/849479?v=4" alt="dbrattli" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dbrattli" target="_blank" class="text-decoration-none fw-bold">dbrattli</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/695710?v=4" alt="jamierytlewski" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jamierytlewski" target="_blank" class="text-decoration-none fw-bold">jamierytlewski</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/1010525?v=4" alt="johnnyreilly" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/johnnyreilly" target="_blank" class="text-decoration-none fw-bold">johnnyreilly</a><p class="mb-0 text-muted small">2 contributions</p></div></li></ul>
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/52585?v=4" alt="jzaefferer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jzaefferer" target="_blank" class="text-decoration-none fw-bold">jzaefferer</a><p class="mb-0 text-muted small">285 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1297909?v=4" alt="nschonni" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nschonni" target="_blank" class="text-decoration-none fw-bold">nschonni</a><p class="mb-0 text-muted small">105 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/120441?v=4" alt="staabm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/staabm" target="_blank" class="text-decoration-none fw-bold">staabm</a><p class="mb-0 text-muted small">93 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/6888059?v=4" alt="Arkni" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Arkni" target="_blank" class="text-decoration-none fw-bold">Arkni</a><p class="mb-0 text-muted small">67 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/11214?v=4" alt="mlynch" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mlynch" target="_blank" class="text-decoration-none fw-bold">mlynch</a><p class="mb-0 text-muted small">30 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1788397?v=4" alt="bytestream" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bytestream" target="_blank" class="text-decoration-none fw-bold">bytestream</a><p class="mb-0 text-muted small">29 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1347487?v=4" alt="RobJohnston" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/RobJohnston" target="_blank" class="text-decoration-none fw-bold">RobJohnston</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/15799058?v=4" alt="skotniczny" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/skotniczny" target="_blank" class="text-decoration-none fw-bold">skotniczny</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/543007?v=4" alt="g1smd" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/g1smd" target="_blank" class="text-decoration-none fw-bold">g1smd</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1986893?v=4" alt="dorner" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dorner" target="_blank" class="text-decoration-none fw-bold">dorner</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/112515?v=4" alt="cope" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cope" target="_blank" class="text-decoration-none fw-bold">cope</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1234495?v=4" alt="bidord" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bidord" target="_blank" class="text-decoration-none fw-bold">bidord</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/81561?v=4" alt="Synchro" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Synchro" target="_blank" class="text-decoration-none fw-bold">Synchro</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2110107?v=4" alt="patheard" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/patheard" target="_blank" class="text-decoration-none fw-bold">patheard</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1699660?v=4" alt="jcspader" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jcspader" target="_blank" class="text-decoration-none fw-bold">jcspader</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/10222521?v=4" alt="vanillajonathan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vanillajonathan" target="_blank" class="text-decoration-none fw-bold">vanillajonathan</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1907279?v=4" alt="EricDunsworth" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/EricDunsworth" target="_blank" class="text-decoration-none fw-bold">EricDunsworth</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1301698?v=4" alt="Maks3w" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Maks3w" target="_blank" class="text-decoration-none fw-bold">Maks3w</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2720049?v=4" alt="steelywing" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/steelywing" target="_blank" class="text-decoration-none fw-bold">steelywing</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11618829?v=4" alt="rskm1" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rskm1" target="_blank" class="text-decoration-none fw-bold">rskm1</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5727000?v=4" alt="paladox" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/paladox" target="_blank" class="text-decoration-none fw-bold">paladox</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/160354?v=4" alt="jaubourg" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jaubourg" target="_blank" class="text-decoration-none fw-bold">jaubourg</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1810242?v=4" alt="thomasgohard" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/thomasgohard" target="_blank" class="text-decoration-none fw-bold">thomasgohard</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2766443?v=4" alt="digitalica" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/digitalica" target="_blank" class="text-decoration-none fw-bold">digitalica</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/79215?v=4" alt="AndrewRayCode" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/AndrewRayCode" target="_blank" class="text-decoration-none fw-bold">AndrewRayCode</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5989873?v=4" alt="ArmindoMaurits" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ArmindoMaurits" target="_blank" class="text-decoration-none fw-bold">ArmindoMaurits</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8356869?v=4" alt="christopherbauer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/christopherbauer" target="_blank" class="text-decoration-none fw-bold">christopherbauer</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/849479?v=4" alt="dbrattli" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dbrattli" target="_blank" class="text-decoration-none fw-bold">dbrattli</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/695710?v=4" alt="jamierytlewski" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jamierytlewski" target="_blank" class="text-decoration-none fw-bold">jamierytlewski</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1010525?v=4" alt="johnnyreilly" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/johnnyreilly" target="_blank" class="text-decoration-none fw-bold">johnnyreilly</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
             </ul>
 			 
 			 </div>
@@ -294,6 +386,7 @@
   <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
 <script>
