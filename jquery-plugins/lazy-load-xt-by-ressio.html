@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Xt is a jQuery Plugin for Images, Videos and Other Media</title>
+    <meta name="description" content="lazy-load-xt by ressio. Lazy load XT is a jQuery plugin for images, videos and other media">
+    <meta name="author" content="ressio">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/lazy-load-xt-by-ressio.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Lazy Load Xt</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Lazy Load Xt",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Lazy Load Xt</h1>
+        <p id="packageDescription" class="text-muted">Lazy load XT is a jQuery plugin for images, videos and other media</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1361</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.83 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">241</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">93</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/ressio/lazy-load-xt/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/ressio/lazy-load-xt" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Lazy Load XT jQuery plugin</h1>
+<hr />
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#download--install">Download / Install</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#jqlight">jQLight</a></li>
+<li><a href="#demo">Demo</a></li>
+<li><a href="#advanced-initialization">Advanced initialization</a></li>
+<li><a href="#browsers-with-disabled-javascript">Browsers with disabled JavaScript</a></li>
+<li><a href="#options">Options</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#more-than-images">More than images</a>
+<ul>
+<li><a href="#iframe-embedded-videos-youtube-vimeo-etc"><code>&lt;iframe&gt;</code>-embedded Videos (YouTube, Vimeo, etc.)</a></li>
+<li><a href="#support-video-tag">Support <code>&lt;video&gt;</code> tag</a></li>
+</ul></li>
+<li><a href="#extendability">Extendability</a>
+<ul>
+<li><a href="#spinner">Spinner</a></li>
+<li><a href="#fade-in-animation">Fade-in animation</a></li>
+<li><a href="#animatecss">Animate.css</a></li>
+<li><a href="#horizontal-scroll">Horizontal scroll</a></li>
+<li><a href="#infinite-scroll">Infinite scroll</a></li>
+<li><a href="#hi-dpi-retina-images">Hi-DPI (Retina) images</a></li>
+<li><a href="#ajax">AJAX</a></li>
+<li><a href="#support-of-ie6-7">Support of IE6/7</a></li>
+</ul></li>
+<li><a href="#addons">Addons</a>
+<ul>
+<li><a href="#bootstrap-and-jquerymobile">Bootstrap and jQueryMobile</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#responsive-images">Responsive images</a></li>
+<li><a href="#widgets">Widgets</a></li>
+<li><a href="#print">Print</a></li>
+<li><a href="#background-image">Background image</a></li>
+<li><a href="#script-based-tagging"><code>&lt;script&gt;</code>-based tagging</a></li>
+<li><a href="#deferred-autoload">Deferred autoload</a></li>
+</ul></li>
+<li><a href="#example-of-page-preparation-in-php">Example of page preparation in PHP</a></li>
+<li><a href="#cdn">CDN</a></li>
+<li><a href="#version-history">Version History</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>About</h2>
+<p>Mobile-oriented, fast and extensible jQuery plugin for lazy loading of images/videos.</p>
+<p>Currently tested in IE 6-11, Chrome 1-47, Firefox 1.5-43.0, Safari 3-9, Opera 10.6-34.0, iOS 5-9, Android 2.3-5.1,<br />
+Amazon Kindle Fire 2 and HD 8.9, Opera Mini 7.</p>
+<p><strong>Requires jQuery 1.7+, Zepto 1.0+, DOMtastic 0.7.3+ built with <code>--jquery-compat</code>, or <a href="#jqlight">jQLight</a>.</strong></p>
+<h2>Download / Install</h2>
+<table>
+  <tbody>
+    <tr>
+      <td>Dev version:</td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.js">jquery.lazyloadxt.js</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.extra.js">jquery.lazyloadxt.extra.js</a></td>
+    </tr>
+    <tr>
+      <td>Minified version:</td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.min.js">jquery.lazyloadxt.min.js</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.extra.min.js">jquery.lazyloadxt.extra.min.js</a></td>
+    </tr>
+  </tbody>
+</table>
+<p>Effects:</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Dev version:</td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.fadein.css">jquery.lazyloadxt.fadein.css</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.spinner.css">jquery.lazyloadxt.spinner.css</a></td>
+    </tr>
+    <tr>
+      <td>Minified version:</td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.fadein.min.css">jquery.lazyloadxt.fadein.min.css</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.spinner.min.css">jquery.lazyloadxt.spinner.min.css</a></td>
+    </tr>
+  </tbody>
+</table>
+<p>Addons:</p>
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#script-based-tagging">script-based tagging of lazy loaded elements</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.script.js">jquery.lazyloadxt.script.js</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.script.min.js">jquery.lazyloadxt.script.min.js</a></td>
+    </tr>
+    <tr>
+      <td><a href="#responsive-images">Responsive images and srcset</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.srcset.js">jquery.lazyloadxt.srcset.js</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.srcset.min.js">jquery.lazyloadxt.srcset.min.js</a></td>
+    </tr>
+    <tr>
+      <td><a href="#print">Print</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.print.js">jquery.lazyloadxt.print.js</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.print.min.js">jquery.lazyloadxt.print.min.js</a></td>
+    </tr>
+    <tr>
+      <td><a href="#background-image">Background image</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.bg.js">jquery.lazyloadxt.bg.js</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.bg.min.js">jquery.lazyloadxt.bg.min.js</a></td>
+    </tr>
+    <tr>
+      <td><a href="#deferred-autoload">Deferred load</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.autoload.js">jquery.lazyloadxt.autoload.js</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.autoload.min.js">jquery.lazyloadxt.autoload.min.js</a></td>
+     </tr>
+    <tr>
+      <td><a href="#bootstrap-and-jquerymobile">Bootstrap</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.bootstrap.js">jquery.lazyloadxt.bootstrap.js</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.bootstrap.min.js">jquery.lazyloadxt.bootstrap.min.js</a></td>
+     </tr>
+    <tr>
+      <td><a href="#bootstrap-and-jquerymobile">jQueryMobile</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.jquerymobile.js">jquery.lazyloadxt.jquerymobile.js</a></td>
+      <td><a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jquery.lazyloadxt.jquerymobile.min.js">jquery.lazyloadxt.jquerymobile.min.js</a></td>
+     </tr>
+  </tbody>
+</table>
+<p>Install and manage Lazy Load XT using <a href="http://bower.io/">Bower</a></p>
+<pre><code>$ bower install lazyloadxt</code></pre>
+<p>Install and manage using <a href="https://npmjs.org/">NPM</a></p>
+<pre><code>$ npm install lazyloadxt</code></pre>
+<p>Get full snapshot of Lazy Load XT: <a href="https://github.com/ressio/lazy-load-zt/archive/master.zip">lazy-load-xt-master.zip</a></p>
+<p>If you have any feature to request or bug to report please use<br />
+<a href="https://github.com/ressio/lazy-load-xt/issues">GitHub issues</a>.</p>
+<h2>Usage</h2>
+<p>First of all it's necessary to load jQuery and Lazy Load XT script. There are two versions of Lazy Load XT:</p>
+<ol>
+<li>
+<p><code>jquery.lazyloadxt.js</code>, standard version for lazy loading of images only.</p>
+</li>
+<li>
+<p><code>jquery.lazyloadxt.extra.js</code>, version with included video addon for lazy loading of both images and videos.</p>
+</li>
+</ol>
+<p>To make media elements (<code>img</code>, <code>video</code>, <code>source</code>, <code>iframe</code>) to be lazy loaded, rename <code>src</code> attribute to <code>data-src</code>.<br />
+It is highly recommended to set <code>width</code> and <code>height</code> attributes. Optionally you can add a placeholder <code>src</code> to bypass<br />
+HTML validators:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.lazyloadxt.js"&gt;&lt;/script&gt;
+
+&lt;img data-src="lazy.jpg" width="100" height="100"&gt;</code></pre>
+<p>PS. In <code>src</code> directory you can found <code>jquery.lazyloadxt.simple.js</code>, it is initial LazyLoadXT version of minimal size<br />
+with excluded support of on<em> handlers, lazy</em> events, <code>blankImage</code> option and addons.</p>
+<h2>jQLight</h2>
+<p>LazyLoadXT may be used without jQuery framework by loading small<br />
+<a href="https://raw.github.com/ressio/lazy-load-xt/master/dist/jqlight.lazyloadxt.min.js"><code>jqlight.lazyloadxt.min.js</code></a> script<br />
+(1.3KiB gzipped):</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jqlight.lazyloadxt.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.lazyloadxt.js"&gt;&lt;/script&gt;
+
+&lt;img data-src="lazy.jpg" width="100" height="100"&gt;</code></pre>
+<p>Note: currently <code>jquery.lazyloadxt.bg.js</code> addon is not supported by jQLight.</p>
+<h2>Demo</h2>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt">ressio.github.io/lazy-load-xt</a></p>
+<h2>Advanced initialization</h2>
+<p>There are two ways to initialize elements if auto initialization doesn't suit you:</p>
+<ol>
+<li><code>$(window).lazyLoadXT();</code> to initialize all elements matching <code>$.lazyLoadXT.selector</code></li>
+<li><code>$(elements).lazyLoadXT();</code> to initialize all selected elements.</li>
+</ol>
+<p>For example, <code>$(container).find(selector).lazyLoadXT();</code> initializes elements matching <code>selector</code> inside <code>container</code>.</p>
+<p>You can pass optional argument to override default <code>$.lazyLoadXT</code> options. The following options only may be overridden:<br />
+<code>srcAttr</code>, <code>edgeX</code>, <code>edgeY</code>, <code>visibleOnly</code>, <code>blankImage</code>, <code>checkDuplicates</code>, <code>scrollContainer</code>.</p>
+<p>Note: don’t forget to disable auto initialization with <code>$.lazyLoadXT.autoInit=false;</code> if you like to use manual<br />
+initialization of all elements.</p>
+<p>To manually show elements (may be necessary for integrating Lazy Load XT with some 3rdparty plugins), call<br />
+<code>$(elements).lazyLoadXT({show: true});</code>.</p>
+<h2>Browsers with disabled JavaScript</h2>
+<p>As JavaScript may be disabled in the browser (e.g. it may be a feature phone with limited javascript support or browser<br />
+with Noscript addon), it is usually recommended to add a fallback image in <code>&lt;noscript&gt;</code> tag, mark initial image with<br />
+<code>class="lazy"</code> attribute and hide it using CSS (otherwise browsers with disabled javascript will display both images).<br />
+Lazy Load XT plugin removes this class (<code>oninit.removeClass</code> option) at image initialization. So, final code should be<br />
+like:</p>
+<pre class="prettyprint linenums lang-language"><code>img.lazy {
+  display: none;
+}</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;img class="lazy" data-src="lazy.jpg" width="100" height="100"&gt;
+&lt;noscript&gt;&lt;img src="lazy.jpg" width="100" height="100"&gt;&lt;/noscript&gt;</code></pre>
+<p>We recommend to keep the order of attributes in both <code>&lt;img&gt;</code> tags, because of such a code will be effectively gzipped.</p>
+<p>Alternative approach is based on tagging images/videos with <code>&lt;script&gt;</code> tag. It is realized using<br />
+<code>jquery.lazyloadxt.script.js</code> addon and is described in <a href="#script-based-tagging">corresponding addon’s section</a><br />
+(note that this approach is experimental and currently is not compatible with AJAX).</p>
+<h2>Options</h2>
+<p>The plugin is very extensible and supports a lot of options that are stored in $.lazyLoadXT object:</p>
+<pre class="prettyprint linenums lang-language"><code>$.extend($.lazyLoadXT, {
+  edgeY:  200,
+  srcAttr: 'data-src'
+});</code></pre>
+<p>You can either create this object before loading of <code>jquery.lazyloadxt.js</code>, or extend it after loading (but before<br />
+jQuery's <code>ready</code> event).</p>
+<ul>
+<li><strong>autoInit</strong>: auto initialization of the plugin, that is processing of all elements matching <code>selector</code> selector in<br />
+jQuery's <code>ready</code> event, if it is disabled you have to do such initialization manually as explained in <a href="#advanced-initialization">Advanced<br />
+initialization</a> section (default <code>true</code>)</li>
+<li><strong>selector</strong>: selector for elements that should be lazy-loaded (default <code>'img[data-src]'</code>)</li>
+<li><strong>srcAttr</strong>: attribute containing actual <code>src</code> path, see example below in [Hi-DPI (Retina) images]<br />
+(#hi-dpi-retina-images) section (default <code>'data-src'</code>)</li>
+<li><strong>blankImage</strong>: blank image for used until actual image is not loaded (default is transparent 1x1 gif image in<br />
+data-uri format <code>'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'</code>)</li>
+<li><strong>edgeY</strong>: expand visible page area (viewport) in vertical direction by specified amount of pixels,<br />
+so that elements start to load even if they are not visible, but will be visible after scroll by <code>edgeY</code> pixels<br />
+(default <code>0</code>)</li>
+<li><strong>edgeX</strong>: expand visible page area in horizontal direction by specified amount of pixels (default <code>0</code>)</li>
+<li><strong>throttle</strong>: time interval (in ms) to check for visible elements, the plugin uses it to speed up page work in the<br />
+case of flow of page change events (default <code>99</code>)</li>
+<li><strong>visibleOnly</strong>: being disabled this option forces the plugin to check element position only, but not to check that<br />
+it is actually visible (default <code>true</code>)</li>
+<li><strong>checkDuplicates</strong>: prevent re-add lazy-loaded elements (default <code>true</code>)</li>
+<li><strong>scrollContainer</strong>: set scroll container (<code>overflow: scroll</code>) for adding elements (default <code>null</code>),</li>
+<li><strong>forceLoad</strong>: load all elements without checking for visibility (default <code>false</code>)</li>
+<li><strong>loadEvent</strong>: space-separated list of events when the plugin starts to found new elements matching <code>selector</code><br />
+(default <code>'pageshow'</code> to check AJAX-loaded content in jQueryMobile and to support backward navigation in iPhone)</li>
+<li><strong>updateEvent</strong>: space-separated list of events when the plugin starts to check what elements are visible in<br />
+current viewport (default <code>'load orientationchange resize scroll'</code>)</li>
+<li><strong>forceEvent</strong>: space-separated list of events when the plugin starts to load all images independently of are<br />
+they visible or not (default <code>''</code>)</li>
+<li><strong>oninit</strong>: handler called when the plugin push elements into internal list of &quot;lazy&quot; elements,<br />
+it may be either a function (DOM element is accessible using <code>this</code> object) or an object with <code>addClass</code> and/or<br />
+<code>removeClass</code> properties (<code>addClass</code> is a space-separated list of class names that should be added to the elements,<br />
+and <code>removeClass</code> contains class names that should be removed, <code>removeClass</code> has higher priority in the case of<br />
+identical class names) (default <code>{removeClass: 'lazy'}</code>)</li>
+<li><strong>onshow</strong>: handler called when an element appears in viewport area, it may be either a function or an object by<br />
+analogy to <code>oninit</code> handler, see example below in <a href="#spinner">Spinner</a> section (default <code>{addClass: 'lazy-hidden'}</code>)</li>
+<li><strong>onload</strong>: handler called when element is successfully loaded, it may be either a function or an object by analogy<br />
+to <code>oninit</code> handler (default <code>{removeClass: 'lazy-hidden', addClass: 'lazy-loaded'}</code>)</li>
+<li><strong>onerror</strong>: handler called when browser cannot load the element, it may be either a function or an object by analogy<br />
+to <code>oninit</code> handler (default <code>{removeClass: 'lazy-hidden'}</code>)</li>
+<li><strong>oncomplete</strong>: handler called when all lazy-loaded elements are loaded (default <code>null</code>)</li>
+</ul>
+<h2>Events</h2>
+<p>Lazy Load XT plugin triggers following events for loading elements (after call to corresponding handler in<br />
+<code>$.lazyLoadXT</code> options):</p>
+<ul>
+<li><code>lazystart</code>, (triggered on <code>window</code>) before plugin's initialization code (binding to events, etc.)</li>
+<li><code>lazyinit</code>, the plugin push element into internal list of &quot;lazy&quot; elements</li>
+<li><code>lazyshow</code>, element appears in viewport area</li>
+<li><code>lazyload</code>, element is successfully loaded</li>
+<li><code>lazyerror</code>, browser cannot load the element</li>
+<li><code>lazycomplete</code> (triggered on <code>&lt;html&gt;</code> element), internal list of lazy-loaded elements is empty, that is all elements<br />
+are loaded or loading.</li>
+</ul>
+<p>Unlike global handlers <code>$.lazyLoadXT</code>, using these events it's possible to assign individual handlers for media<br />
+elements.</p>
+<h2>More than images</h2>
+<p>Images are not the only page elements that may be lazy loaded. Though default value for <code>$.lazyLoadXT.selector</code> is<br />
+<code>'img'</code>, you can append it by <code>iframe</code> to use lazy-loading for iframes, <code>video</code> for videos,<br />
+etc. Full list of supported tags include all tags with <code>src</code> attribute: <code>&lt;audio&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;frame&gt;</code>,<br />
+<code>&lt;iframe&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;input type="image"&gt;</code>.</p>
+<p>We distribute special &quot;extra&quot; version of the plugin with additional code for lazyloading of <code>&lt;video&gt;</code> elements and<br />
+<code>&lt;iframe&gt;</code>ed YouTube videos. To use this version, it’s necessary to just load <code>jquery.lazyloadxt.extra.js</code> instead of<br />
+<code>jquery.lazyloadxt.js</code>.</p>
+<h3><code>&lt;iframe&gt;</code>-embedded Videos (YouTube, Vimeo, etc.)</h3>
+<p>Most of video hostings allow to embed videos as <code>&lt;iframe&gt;</code> elements (e.g. Youtube, Vimeo, DailyMotion, and even KickStarter)<br />
+and they may be lazy loaded in the way similar to images (by replacing <code>src</code> attribute by <code>data-src</code>):</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.lazyloadxt.extra.js"&gt;&lt;/script&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;iframe width="420" height="315" data-src="//www.youtube.com/embed/uOzO9O15gwI?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/youtube-iframe.htm">http://ressio.github.io/lazy-load-xt/demo/youtube-iframe.htm</a></p>
+<h3>Support <code>&lt;video&gt;</code> tag</h3>
+<p>It is easy too, just replace <code>src</code> attribute by <code>data-src</code> and <code>poster</code> by <code>data-poster</code> (if exists).</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.lazyloadxt.extra.js"&gt;&lt;/script&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;video data-poster="/path/to/poster.jpg" width="320" height="240" controls&gt;
+  &lt;source data-src="/path/to/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;
+  &lt;source data-src="/path/to/video.ogv" type='video/ogg; codecs="theora, vorbis"'&gt;
+&lt;/video&gt;
+
+&lt;video data-src="/path/to/video2.mp4" width="320" height="240" controls&gt;&lt;/video&gt;</code></pre>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/video-html5.htm">http://ressio.github.io/lazy-load-xt/demo/video-html5.htm</a></p>
+<h2>Extendability</h2>
+<p>Lazy Load XT plugin may be easily extended using <code>oninit</code>, <code>onshow</code>, <code>onload</code> and <code>onerror</code> handlers. Some examples are<br />
+listed below.</p>
+<h3>Spinner</h3>
+<p>Some effects may be easily added by using <code>lazy-hidden</code> and <code>lazy-loaded</code> css classes. For example, to display animated<br />
+spinner while image is loading, just load <code>jquery.lazyloadxt.spinner.css</code> css file:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link rel="stylesheet" href="jquery.lazyloadxt.spinner.css"&gt;</code></pre>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/spinner.htm">http://ressio.github.io/lazy-load-xt/demo/spinner.htm</a></p>
+<h3>Fade-in animation</h3>
+<p>To add fade-in animation just load <code>jquery.lazyloadxt.fadein.css</code> CSS file:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link rel="stylesheet" href="jquery.lazyloadxt.fadein.css"&gt;</code></pre>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/fadein.htm">http://ressio.github.io/lazy-load-xt/demo/fadein.htm</a></p>
+<h3>Animate.css</h3>
+<p>It's possible to use a lot of animation effects (like bounce, flip, rotate, etc.) from<br />
+<a href="https://github.com/daneden/animate.css">animate.css project</a> by altering <code>$.lazyLoadXT.onload.addClass</code> option:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link rel="stylesheet" href="animate.min.css"&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>/* JS */
+$.lazyLoadXT.onload.addClass = 'animated bounceOutLeft';</code></pre>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/animatecss.htm">http://ressio.github.io/lazy-load-xt/demo/animatecss.htm</a></p>
+<h3>Horizontal scroll</h3>
+<p>Lazy Load XT checks that an image is in viewport in both vertical and horizontal dimensions, so that it is easy to<br />
+make lazy loading of images in horizontal scroller. Let's assume that your html markup of scroller is something like</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="wrapper"&gt;
+    &lt;img data-src="/path/to/image/1" width="600" height="300"&gt;
+    &lt;img data-src="/path/to/image/2" width="600" height="300"&gt;
+    &lt;img data-src="/path/to/image/3" width="600" height="300"&gt;
+    &lt;img data-src="/path/to/image/4" width="600" height="300"&gt;
+&lt;/div&gt;</code></pre>
+<p>with following CSS rules to make <code>.wrapper</code> scrollable in horizontal direction and images to be alined:</p>
+<pre class="prettyprint linenums lang-language"><code>/* CSS */
+.wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.wrapper &gt; img {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}</code></pre>
+<p>Then all that you need is to proxy <code>scroll</code> event from <code>.wrapper</code> element to <code>window</code> because of <code>scroll</code> event <a href="http://www.w3.org/TR/2009/WD-DOM-Level-3-Events-20090908/#event-type-scroll">is not<br />
+bubbled automatically</a>. It may be easily<br />
+done using <code>scrollContainer</code> option:</p>
+<pre class="prettyprint linenums lang-language"><code>/* JS */
+$.lazyLoadXT.scrollContainer = '.wrapper';</code></pre>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/horizontal.htm">http://ressio.github.io/lazy-load-xt/demo/horizontal.htm</a></p>
+<h3>Infinite scroll</h3>
+<p>Using Lazy Load XT it is easily to get &quot;infinite scroll&quot; effect. Just put a marker element at the end of list</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div id="marker"&gt;&lt;/div&gt;</code></pre>
+<p>and load next part of elements in <code>lazyshow</code> handler, e.g.:</p>
+<pre class="prettyprint linenums lang-language"><code>/* JS */
+$(document).ready(function () {
+    $('#marker').on('lazyshow', function () {
+        $.ajax({...}).done(function (responseText) {
+            // add new elements:
+            // ...
+            // process new elements:
+            $(window).lazyLoadXT();
+            $('#marker').lazyLoadXT({visibleOnly: false, checkDuplicates: false});
+        });
+    }).lazyLoadXT({visibleOnly: false});
+});</code></pre>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/infinite.htm">http://ressio.github.io/lazy-load-xt/demo/infinite.htm</a></p>
+<h3>Hi-DPI (Retina) images</h3>
+<p>The code below allows you to use <code>data-src-3x</code> attribute for screens with 3x density (e.g. Samsung Galaxy S4),<br />
+<code>data-src-2x</code> for 2x density (e.g. iPhones 4+), and <code>data-src-1.5x</code> for 1.5x density (e.g. HTC Incredible S).</p>
+<pre class="prettyprint linenums lang-language"><code>/* JS */
+(function($, dpr) {
+  if (dpr&gt;1)
+    $.lazyLoadXT.srcAttr = 'data-src-' + (dpr &gt; 2 ? '3x' : (dpr &gt; 1.5 ? '2x' : '1.5x'));
+})(jQuery, window.devicePixelRatio || 1);</code></pre>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/retina.htm">http://ressio.github.io/lazy-load-xt/demo/retina.htm</a></p>
+<p>But in real world it's better to set <code>srcAttr</code> function and choose most suitable image URL among existing ones. Or set<br />
+<code>src</code> attribute in <code>lazyshow</code> event, like it is done in <a href="#responsive-images">Responsive images and srcset</a><br />
+addon.</p>
+<h3>AJAX</h3>
+<p>If you use jQuery-based AJAX navigation and don't like to change existing AJAX callbacks,<br />
+you can apply lazy loading to new loaded content using <code>ajaxComplete</code> event. Note that <code>$.lazyLoadXT.loadEvent = 'pageshow ajaxComplete';</code> may not work correctly because of content is not added to the page at the time of<br />
+<code>ajaxComplete</code> event, that's why it's better to postpone initialization by <code>setTimeout</code>:</p>
+<pre class="prettyprint linenums lang-language"><code>/* JS */
+$(window).on('ajaxComplete', function() {
+  setTimeout(function() {
+    $(window).lazyLoadXT();
+  }, 50);
+});</code></pre>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/ajax.htm">http://ressio.github.io/lazy-load-xt/demo/ajax.htm</a></p>
+<h3>Support of IE6/7</h3>
+<p>Lazy Load XT uses Data-URI-encoded transparent image for images outside of viewport (though this image may be visible<br />
+during fast page scroll or in print preview).  As IE 6 and 7 don't support Data-URI, you can change image for that<br />
+browsers:</p>
+<pre class="prettyprint linenums lang-language"><code>/* JS */
+if (parseInt(navigator.userAgent.toLowerCase().split('msie')[1] || 8, 10) &lt; 8)
+  $.lazyLoadXT.blankImage = '//upload.wikimedia.org/wikipedia/en/d/d0/Clear.gif';</code></pre>
+<h2>Addons</h2>
+<p>Lazy Load XT may be easily extended to support other lazyloading-related things. Some examples are part of Lazy Load XT<br />
+project and listed below.</p>
+<h3>Bootstrap and jQueryMobile</h3>
+<p>To support <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="http://jquerymobile.com/">jQueryMobile</a> frameworks, use<br />
+<code>&lt;script src="jquery.lazyloadxt.bootstrap.js"&gt;&lt;/script&gt;</code> and <code>&lt;script src="jquery.lazyloadxt.jquerymobile.js"&gt;&lt;/script&gt;</code><br />
+addons, correspondingly. These addons recheck visible images each time related javascript plugin (e.g. Bootstrap's Carousel<br />
+or jQueryMobile's Panel) changes page content.</p>
+<h3>Video</h3>
+<p>Support of video elements in extra version of Lazy Load XT is just an addon that is combined with base version of<br />
+the script. That is loading of</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.lazyloadxt.extra.js"&gt;&lt;/script&gt;</code></pre>
+<p>is identical to loading of</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.lazyloadxt.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.lazyloadxt.video.js"&gt;&lt;/script&gt;</code></pre>
+<p>Options</p>
+<p><strong>$.lazyLoadXT.videoPoster</strong> name of attribute with path to background image (by default <code>'data-poster'</code>).</p>
+<p>Note: this addon append <code>iframe[data-src]</code> to <code>$.lazyLoadXT.selector</code>, so if you change <code>$.lazyLoadXT.srcAttr</code> option,<br />
+<code>selector</code> option should be altered properly.</p>
+<h3>Responsive images</h3>
+<p>There are two addons for responsive images:</p>
+<ol>
+<li><code>srcset</code> for lazy loading of images with polyfill for <code>srcset</code> attribute.</li>
+<li><code>picture</code> for lazy loading of images with polyfill for <code>&lt;picture&gt;</code> tag.</li>
+</ol>
+<p><code>srcset</code> addon allows to combine lazy loading and responsive images description in <code>data-srcset</code> attribute of <code>&lt;img&gt;</code><br />
+tag. Format of responsive images description is based on<br />
+<a href="http://www.w3.org/html/wg/drafts/srcset/w3c-srcset/">srcset attribute</a> draft of HTML extension for adaptive images:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.lazyloadxt.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.lazyloadxt.srcset.js"&gt;&lt;/script&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;img data-srcset="image-hd.jpg 2x, image-phone.jpg 360w, image-phone-hd.jpg 360w 2x"&gt;</code></pre>
+<p>It's possible to simplify images description using <code>data-srcset-base</code> and <code>data-srcset-ext</code> attributes, so that actual<br />
+images URI is concatenation of <code>data-srcset-base</code>, chosen part of <code>data-src</code> description, and <code>data-srcset-ext</code>:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;img data-srcset-base="image" data-srcset-ext=".jpg" data-srcset="-hd 2x, -phone 360w, -phone-hd 360w 2x"&gt;</code></pre>
+<p>If you like to have fallback image name to be <code>data-srcset-base</code>+<code>data-srcset-ext</code> (<code>image.jpg</code> in above example),<br />
+just put comma at the end of <code>data-srcset</code> description: <code>data-srcset="-hd 2x, -phone 360w, -phone-hd 360w 2x,"</code>. Note<br />
+that this addon doesn't require browser to support <code>srcset</code> attribute.</p>
+<p>Options</p>
+<p><strong>$.lazyLoadXT.srcsetAttr</strong> name of attribute with <code>srcset</code>-based description (by default <code>'data-srcset'</code>).</p>
+<p><strong>$.lazyLoadXT.srcsetExtended</strong> enable support of <code>srcsetBaseAttr</code> and <code>srcsetExtAttr</code> options (by default <code>true</code>).</p>
+<p><strong>$.lazyLoadXT.srcsetBaseAttr</strong> name of attribute with prefix for image URI (by default <code>'data-srcset-base'</code>).</p>
+<p><strong>$.lazyLoadXT.srcsetExtAttr</strong> name of attribute with suffix for image URI (by default <code>'data-srcset-ext'</code>).</p>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/srcset.htm">http://ressio.github.io/lazy-load-xt/demo/srcset.htm</a></p>
+<p><code>picture</code> addon is based on <a href="http://www.w3.org/TR/html-picture-element/"><code>&lt;picture&gt;</code> tag</a> draft of HTML extension for<br />
+adaptive images. Just rename <code>&lt;source&gt;</code> tags to <code>&lt;br&gt;</code>, <code>src</code> attribute to <code>data-src</code>, and add few CSS rules to make<br />
+<code>&lt;picture&gt;</code> block element in browsers that don't support it:</p>
+<pre class="prettyprint linenums lang-language"><code>/* CSS */
+picture {
+  display: block;
+}
+picture &gt; br {
+  display: none;
+}
+img {
+  max-width: 100%;
+  height: auto !important;
+}</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="../dist/jquery.lazyloadxt.js"&gt;&lt;/script&gt;
+&lt;script src="../dist/jquery.lazyloadxt.picture.js"&gt;&lt;/script&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;picture width="640" height="480"&gt;
+  &lt;br data-src="small320.jpg"&gt;
+  &lt;br media="(min-width: 321px)" data-src="medium480.jpg"&gt;
+  &lt;br media="(min-width: 481px)" data-src="large640.jpg"&gt;
+  &lt;noscript&gt;&lt;img data-src="large640.jpg"&gt;&lt;/noscript&gt;
+  &lt;p&gt;Image caption&lt;/p&gt;
+&lt;/picture&gt;</code></pre>
+<p>Note: currently <code>data-srcset</code> attribute is not supported by this addon, but most likely further both <code>srcset</code> and<br />
+<code>picture</code> addons will be merged into single one, so that <code>srcset</code> format for responsive images will be supported by<br />
+<code>&lt;img&gt;</code> and <code>&lt;picture&gt;</code> tags.</p>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/picture.htm">http://ressio.github.io/lazy-load-xt/demo/picture.htm</a></p>
+<h3>Widgets</h3>
+<p>Images and videos are not the only heavy parts of the page. Nowadays it's hard to find website that doesn't use<br />
+widgets for different social medias (like Twitter, Facebook, Google+, etc.). If integration with such resource is done<br />
+using <code>&lt;iframe&gt;</code> tag, you can use &quot;extra&quot; version of Lazy Load XT to make it lazy loaded:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.lazyloadxt.extra.js"&gt;&lt;/script&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- Facebook Recommend Widget --&gt;
+&lt;iframe data-src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fressio.github.io%2Flazy-load-xt&amp;amp;width&amp;amp;layout=button_count&amp;amp;action=recommend&amp;amp;show_faces=true&amp;amp;share=true&amp;amp;height=21"
+        scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"&gt;&lt;/iframe&gt;</code></pre>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/widget-iframe.htm">http://ressio.github.io/lazy-load-xt/demo/widget-iframe.htm</a></p>
+<p>But in most cases JavaScript is used to embed widgets. Specially for this case we have universal<br />
+<code>jquery.lazyloadxt.widget.js</code> addon that allows to add some html code to the page when other element become visible.<br />
+The code should wrapped in html comment inside a <code>div</code> with assigned <code>id</code> attribute, and the element should have<br />
+<code>data-lazy-widget</code> attribute with value of that <code>id</code>:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.lazyloadxt.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.lazyloadxt.widget.js"&gt;&lt;/script&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- Google +1 Button --&gt;
+&lt;div data-lazy-widget="gplus" class="g-plusone" data-annotation="inline" data-width="300"&gt;&lt;/div&gt;
+&lt;div id="gplus"&gt;&lt;!--
+  &lt;script type="text/javascript"&gt;
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/platform.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  &lt;/script&gt;
+--&gt;&lt;/div&gt;</code></pre>
+<p>If <code>data-lazy-widget</code> attribute has empty value, the element itself is used as wrapper:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div data-lazy-widget&gt;&lt;!--
+  &lt;img src="image.jpg"&gt;
+--&gt;&lt;/div&gt;</code></pre>
+<p>Options:</p>
+<p><strong>$.lazyLoadXT.widgetAttr</strong> name of attribute with <code>id</code> of commented html code (by default <code>'data-lazy-widget'</code>).<br />
+Note: <code>widgetAttr</code> option should be set before loading of <code>jquery.lazyloadxt.widget.js</code> as it is used to alter<br />
+<code>$.lazyLoadXT.selector</code> option.</p>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/widget.htm">http://ressio.github.io/lazy-load-xt/demo/widget.htm</a></p>
+<h3>Print</h3>
+<p>It is another issue of lazy loading: if user prints the page, only loaded images will be printed. This addon allows<br />
+to start loading of all images just after browser switch to print mode to render page. Note that this feature is<br />
+browser-dependent and currently it works correctly in IE only. In Chrome browser caches page state until user<br />
+change print options (printer, page orientation, margins, etc.). In Firefox and Safari addon works if user chooses<br />
+Print Preview before actual print (as they don't wait until images will be loaded). In Opera it works starting from<br />
+15.0 release (Presto didn't support both <code>beforeprint</code> event and matchMedia listeners).</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.lazyloadxt.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.lazyloadxt.print.js"&gt;&lt;/script&gt;</code></pre>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/print.htm">http://ressio.github.io/lazy-load-xt/demo/print.htm</a></p>
+<h3>Background image</h3>
+<p>This addon allows you to use lazy-loading technique for background images of any tag.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.lazyloadxt.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.lazyloadxt.bg.js"&gt;&lt;/script&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;div data-bg="/path/to/image.png"&gt;...&lt;/div&gt;</code></pre>
+<p>Above code set <code>background-image</code> CSS property to <code>/path/to/image.png</code> as soon <code>div</code> element becomes visible in<br />
+viewport area.</p>
+<p>Options:</p>
+<p><strong>$.lazyLoadXT.bgAttr</strong> name of attribute with path to background image (by default <code>'data-bg'</code>). Note: option<br />
+should be set before loading of <code>jquery.lazyloadxt.bg.js</code> as it is used to alter <code>$.lazyLoadXT.selector</code> option.</p>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/bg.htm">http://ressio.github.io/lazy-load-xt/demo/bg.htm</a></p>
+<h3><code>&lt;script&gt;</code>-based tagging</h3>
+<p>The main problem of lazy loading is necessity to duplicate <code>&lt;img&gt;</code> tag in <code>&lt;noscript&gt;</code> wrapper to support browsers with<br />
+disabled JavaScript. As an alternative way, <code>jquery.lazyloadxt.script.js</code> addon allows to prepend tag <code>&lt;img&gt;</code> tag by<br />
+<code>&lt;script&gt;</code> in the following form (without duplicating and renaming <code>src</code> to <code>data-src</code>):</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.lazyloadxt.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.lazyloadxt.script.js"&gt;&lt;/script&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;script&gt;L()&lt;/script&gt;&lt;img src="/path/to/image.jpg"&gt;
+
+&lt;script&gt;Lb()&lt;/script&gt;
+&lt;video&gt;
+  &lt;source src="/path/to/video.mp4"&gt;
+&lt;/video&gt;
+&lt;script&gt;Le()&lt;/script&gt;
+
+&lt;script&gt;Lb('iframe')&lt;/script&gt;
+&lt;iframe src="/path/to/iframe.htm"&gt;&lt;/iframe&gt;
+&lt;script&gt;Le()&lt;/script&gt;</code></pre>
+<p>Here <code>L()</code> is function that should be called before self-closed tag like <code>&lt;img&gt;</code> and <code>&lt;input&gt;</code> (optional argument is<br />
+the tag name of lazy loaded element, by default <code>'img'</code>), <code>Lb()</code> should be called before other tags like <code>&lt;video&gt;</code><br />
+and <code>&lt;iframe&gt;</code> (optional argument is the tag name of lazy loaded element, by default <code>'video'</code>), and <code>Le()</code> should be<br />
+called after corresponding closing tag.</p>
+<p>Options:</p>
+<p><strong>$.lazyLoadXT.srcsetAttr</strong> name of attribute with responsive rules in srcset format,<br />
+<strong>$.lazyLoadXT.srcsetBaseAttr</strong> name of attribute for URL prefix,<br />
+<strong>$.lazyLoadXT.srcsetExtAttr</strong> name of attribute for URL suffix</p>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/script-tag.htm">http://ressio.github.io/lazy-load-xt/demo/script-tag.htm</a></p>
+<h3>Deferred autoload</h3>
+<p>This is very simple addon (just few lines of code) that loads all images after specified time after page loading. That is loading of images<br />
+doesn't affect loading of CSSes and JavaScripts, and time to initial website rendering will be decreased.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.lazyloadxt.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.lazyloadxt.autoload.js"&gt;&lt;/script&gt;</code></pre>
+<p>Options:</p>
+<p><strong>$.lazyLoadXT.autoLoadTime</strong> time interval between <code>load</code> page event and start of image loading (in ms, default is 50)</p>
+<p>Demo: <a href="http://ressio.github.io/lazy-load-xt/demo/autoload.htm">http://ressio.github.io/lazy-load-xt/demo/autoload.htm</a></p>
+<h2>Example of page preparation in PHP</h2>
+<p>Instead of manipulating <code>&lt;img&gt;</code> tags directly (that is to replace <code>src</code> by <code>data-src</code>,<br />
+add <code>&lt;noscript&gt;</code> fallback image, etc.), it's possible to do html page postprocessing using [your favorite] language.<br />
+Here is example of how to do it using PHP:</p>
+<pre class="prettyprint linenums lang-language"><code>/* PHP */
+function addLazyLoading($html) {
+  $dom = new DOMDocument();
+  if (!@$dom-&gt;loadHTML('&lt;?xml encoding="UTF-8"&gt;' . $html)) // trick to set charset
+    return $html;
+  foreach ($dom-&gt;childNodes as $item)
+    if ($item-&gt;nodeType === XML_PI_NODE) {
+      $dom-&gt;removeChild($item);
+      break;
+    }
+  $dom-&gt;encoding = 'UTF-8';
+  $images = $dom-&gt;getElementsByTagName('img');
+  $blankImage = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+  for ($i = $images-&gt;length - 1; $i &gt;= 0; $i--) {
+    $node     = $images-&gt;item($i);
+    $clone    = $node-&gt;cloneNode();
+    $noscript = $dom-&gt;createElement('noscript');
+    $noscript-&gt;appendChild($clone);
+    $node-&gt;parentNode-&gt;insertBefore($noscript, $node);
+    $node-&gt;setAttribute('data-src', $node-&gt;getAttribute('src'));
+    $node-&gt;setAttribute('src',      $blankImage);
+    $node-&gt;setAttribute('class',    trim($node-&gt;getAttribute('class') . ' lazy'));
+  }
+  $newHtml = $dom-&gt;saveHTML();
+  if (!$newHtml)
+    return $html;
+  return $newHtml;
+}</code></pre>
+<h2>CDN</h2>
+<p>Lazy Load XT may be loaded from <a href="http://www.jsdelivr.com/#!jquery.lazyloadxt">jsDelivr CDN</a></p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="//cdn.jsdelivr.net/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.min.js"&gt;&lt;/script&gt;</code></pre>
+<p>or <a href="http://cdnjs.com/libraries/jquery.lazyloadxt/">CDNJS CDN</a></p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.min.js"&gt;&lt;/script&gt;</code></pre>
+<p>Note that any of Lazy Load XT <code>dist</code> files may be loaded from CDN, not only <code>jquery.lazyloadxt.min.js</code>.</p>
+<h2>Version History</h2>
+<ul>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/1.1.0"><strong>1.1.0</strong></a> (11.01.2016): jQLight script, remove lazy-hidden class<br />
+for non-img elements, fix lazy loading if there is one image only, fix issues in bg, srcset, and video addons,<br />
+new addons for Bootstrap and jQueryMobile events</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/1.0.6"><strong>1.0.6</strong></a> (19.11.2014): fix work of srcset addons in IE6-8</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/1.0.5"><strong>1.0.5</strong></a> (05.06.2014): fix picture and script addons</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/1.0.4"><strong>1.0.4</strong></a> (30.05.2014): fix calls to each() method</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/1.0.3"><strong>1.0.3</strong></a> (28.05.2014): support DOMstatic library (<code>attr</code>, <code>class</code>, <code>data</code>, <code>event</code>, <code>selector</code>, and <code>type</code> modules are required); fix loading of images on browser's tab activation</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/1.0.2"><strong>1.0.2</strong></a> (05.03.2014): fix work in jQuery Mobile 1.4</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/1.0.1"><strong>1.0.1</strong></a> (16.02.2014): fix triggering <code>lazyload</code> and <code>lazyerror</code><br />
+events in <code>scrset</code> and <code>picture</code> addons</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/1.0.0"><strong>1.0.0</strong></a> (16.01.2014): new <code>forceLoad</code> option, <code>classNojs</code><br />
+option is removed in flavour of <code>options.oninit.removeClass</code>, <code>lazyloadall</code> event is renamed to <code>lazycomplete</code>,<br />
+new <code>oncomplete</code> option, fix work with Zepto, fix work in some old mobile browsers, default value for <code>selector</code><br />
+option is set to <code>img[data-src]</code>, lazy<em> events are triggered after corresponding on</em> handlers, new <code>lazystart</code> event,<br />
+remove &quot;simple&quot; version from build.</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/0.8.12"><strong>0.8.12</strong></a> (12.01.2014): significant performance improvement,<br />
+fix work in BlackBerry 5, fix <code>checkDuplicates</code> options</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/0.8.11"><strong>0.8.11</strong></a> (10.01.2014): fix to work in browsers without<br />
+<code>scroll</code> event (e.g. Opera Mini), handle <code>touchmove</code> event for better response on mobile devices.</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/0.8.10"><strong>0.8.10</strong></a> (07.01.2014): bugfix &quot;video&quot; addon, remove loading of<br />
+<code>bootstrap.js</code> in <code>zepto.htm</code> demo.</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/0.8.9"><strong>0.8.9</strong></a> (06.01.2014): <code>checkDuplicates</code> option, fix srcset<br />
+addon, speed up work with jQuery</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/0.8.8"><strong>0.8.8</strong></a> (26.12.2013): Fix sharing $el.lazyLoadXT object,<br />
+support $(window).lazyLoadXT({...}) call with overrides parameter</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/0.8.7"><strong>0.8.7</strong></a> (26.12.2013): New &quot;picture&quot; addon, feature to pass<br />
+original jQuery element object (with <code>.lazyLoadXT.srcAttr</code> property) to <code>init</code> and <code>show</code> callbacks/event handlers,<br />
+support empty value for <code>data-lazy-widget</code> attribute in <code>widget</code> addon, minor fixes/improvements, horizontal scroll<br />
+demo, infinite scroll demo</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/0.8.6"><strong>0.8.6</strong></a> (18.12.2013): New &quot;widget&quot; addon, support of per<br />
+element options</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/0.8.5"><strong>0.8.5</strong></a> (15.12.2013): New addons, &quot;simple&quot; version,<br />
+<code>lazyloadall</code> event, slight reduce minified size</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/0.8.4"><strong>0.8.4</strong></a> (12.12.2013): Fixed check of removed elements,<br />
+support of <code>$.lazyLoadXT.videoPoster</code> parameter, additional examples in <code>src</code> (srcset polyfill, transparent<br />
+placeholder for IE6/7)</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/0.8.3"><strong>0.8.3</strong></a> (10.12.2013): Speed up initialization,<br />
+new <code>forceEvent</code> option, additional examples of extendability in <code>/src</code> directory</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/0.8.2"><strong>0.8.2</strong></a> (08.12.2013): Built-in support of videos in<br />
+<code>jquery.lazyloadxt.extra.js</code></p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/0.8.1"><strong>0.8.1</strong></a> (06.12.2013): Add support of <code>lazyinit</code>, <code>lazyshow</code>,<br />
+<code>lazyload</code>, and <code>lazyerror</code> events</p>
+</li>
+<li>
+<p><a href="https://github.com/ressio/lazy-load-xt/tree/0.8.0"><strong>0.8.0</strong></a> (05.12.2013): Initial release</p>
+</li>
+</ul>
+<h2>License</h2>
+<p>Lazy Load XT is licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a></p>
+<p><a href="http://githalytics.com/ressio/lazy-load-xt"><img src="https://cruel-carlota.pagodabox.com/ce20db9f22e205daddcd819e106c8995" alt="githalytics.com alpha" title="githalytics.com" /></a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/effect" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>effect</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/image" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>image</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/images" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>images</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/bootstrap" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>bootstrap</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquerymobile" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquerymobile</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/lazy" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>lazy</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/lazyload" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>lazyload</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/load" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>load</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/media" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>media</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/mobile" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>mobile</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/performance" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>performance</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/responsive" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>responsive</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/speed" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>speed</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/video" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>video</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/vimeo" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>vimeo</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/youtube" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>youtube</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/6097122?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/ressio" target="_blank" id="ownerName" class="sidebar-link">ressio</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">December 3, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 6, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://ress.io/lazy-load-xt-jquery/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (~0.4.5)</li><li>grunt-cli (~0.1.13)</li><li>grunt-contrib-clean (^0.7.0)</li><li>grunt-contrib-concat (^0.5.1)</li><li>grunt-contrib-copy (^0.8.2)</li><li>grunt-contrib-cssmin (^0.14.0)</li><li>grunt-contrib-jshint (^0.11.3)</li><li>grunt-contrib-qunit (^0.7.0)</li><li>grunt-contrib-uglify (^0.11.0)</li><li>grunt-contrib-watch (^0.6.1)</li><li>jit-grunt (^0.9.1)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/378044?v=4" alt="dryabov" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dryabov" target="_blank" class="text-decoration-none fw-bold">dryabov</a><p class="mb-0 text-muted small">267 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/6497827?v=4" alt="vasani-arpit" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vasani-arpit" target="_blank" class="text-decoration-none fw-bold">vasani-arpit</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/6192180?v=4" alt="msaggiorato" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/msaggiorato" target="_blank" class="text-decoration-none fw-bold">msaggiorato</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/187639?v=4" alt="aitherios" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aitherios" target="_blank" class="text-decoration-none fw-bold">aitherios</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/22370347?v=4" alt="darius-heavy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/darius-heavy" target="_blank" class="text-decoration-none fw-bold">darius-heavy</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1541529?v=4" alt="filleokus" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/filleokus" target="_blank" class="text-decoration-none fw-bold">filleokus</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6097122?v=4" alt="ressio" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ressio" target="_blank" class="text-decoration-none fw-bold">ressio</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+2 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
