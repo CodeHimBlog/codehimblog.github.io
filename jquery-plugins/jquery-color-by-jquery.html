@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugin for Color Manipulation and Animation Support.</title>
+    <meta name="description" content="jquery-color by jquery. jQuery plugin for color manipulation and animation support.">
+    <meta name="author" content="jquery">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-color-by-jquery.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Color</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Color",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Color</h1>
+        <p id="packageDescription" class="text-muted">jQuery plugin for color manipulation and animation support.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1640</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.92 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">417</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">5</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/jquery/jquery-color/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/jquery/jquery-color" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery Color</h1>
+<p>Supported jQuery versions: 1.12+ / 2.2+</p>
+<h2>Browser Support</h2>
+<p>jQuery Color 3.x supports the following browsers:</p>
+<ul>
+<li>Chrome: Current</li>
+<li>Edge: Current</li>
+<li>Firefox: Current</li>
+<li>Safari: Current</li>
+</ul>
+<p>Other browsers may also work correctly with this plugin but support is not guaranteed.</p>
+<p>Information on browser support of jQuery Color 2.x can be found in the <a href="https://github.com/jquery/jquery-color/blob/2.x-stable/README.md#browser-support">Browser Support section</a> in its README.</p>
+<h2>Using jQuery Color in Production</h2>
+<p>We release jQuery Color by itself, or in a bundle.  The extended names can be included as a jQuery Color plugin, or you can download the version of jQuery Color that includes the names. Choose your version &amp; build from the list at <a href="https://releases.jquery.com/color/">https://releases.jquery.com/color/</a>.</p>
+<h2>How to build and test jQuery Color</h2>
+<p>First, <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">clone the jQuery Color git repo</a>.</p>
+<p>Enter the directory and install the node dependencies:</p>
+<pre class="prettyprint linenums lang-language"><code>cd jquery-color &amp;&amp; npm install</code></pre>
+<p>To build and test jQuery Color, run:</p>
+<pre><code>npm test</code></pre>
+<h2>Animated colors</h2>
+<p>This plugin installs a <a href="https://api.jquery.com/jQuery.cssHooks/"><code>cssHook</code></a> which allows jQuery's <a href="https://api.jquery.com/animate"><code>.animate()</code></a> to animate between two colors.</p>
+<h2>Supported properties</h2>
+<p><code>backgroundColor</code>, <code>borderBottomColor</code>, <code>borderLeftColor</code>, <code>borderRightColor</code>, <code>borderTopColor</code>, <code>color</code>, <code>columnRuleColor</code>, <code>outlineColor</code>, <code>textDecorationColor</code>, <code>textEmphasisColor</code></p>
+<h2>Example use</h2>
+<pre class="prettyprint linenums lang-language"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;jQuery Color demo&lt;/title&gt;
+&lt;style&gt;
+div {
+    background-color: #bada55;
+    width: 100px;
+    border: 1px solid green;
+}
+&lt;/style&gt;
+&lt;script src="https://code.jquery.com/jquery-3.7.1.min.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.color.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;button id="go"&gt;Simple&lt;/button&gt;
+&lt;button id="sat"&gt;Desaturate&lt;/button&gt;
+&lt;div id="block"&gt;Hello!&lt;/div&gt;
+&lt;script&gt;
+$( "#go" ).on( "click", function() {
+    $( "#block" ).animate( {
+        backgroundColor: "#abcdef"
+    }, 1500 );
+});
+$( "#sat" ).on( "click", function() {
+    $( "#block" ).animate( {
+        backgroundColor: jQuery.Color({ saturation: 0 })
+    }, 1500 );
+});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h2>Supporting other properties</h2>
+<p>The <code>jQuery.Color.hook()</code> function can be called to support additional css properties as colors, and allow them to be animated.</p>
+<h2>Example use</h2>
+<pre class="prettyprint linenums lang-language"><code>// we want to animate SVG fill and stroke properties
+jQuery.Color.hook( "fill stroke" );</code></pre>
+<h2>The jQuery.Color Factory</h2>
+<p>The <code>jQuery.Color()</code> function allows you to create and manipulate color objects that are accepted by jQuery's <code>.animate()</code> and <code>.css()</code> functions.</p>
+<ul>
+<li>Returns a new Color object, similar to <code>jQuery()</code> or <code>jQuery.Event</code></li>
+<li>Accepts many formats to create a new Color object with a <code>jQuery.Color.fn</code> prototype</li>
+</ul>
+<h3>Example uses:</h3>
+<pre class="prettyprint linenums lang-language"><code>// Parsing String Colors:
+jQuery.Color( "#abcdef" );
+jQuery.Color( "rgb(100, 200, 255)" );
+jQuery.Color( "rgba(100, 200, 255, 0.5)" );
+jQuery.Color( "aqua" );
+
+// Creating Color Objects in Code:
+// use null or undefined for values you wish to leave out
+jQuery.Color( red, green, blue, alpha );
+jQuery.Color([ red, green, blue, alpha ]);
+jQuery.Color({ red: red, green: green, blue: blue, alpha: alpha });
+jQuery.Color({ hue: hue, saturation: saturation, lightness: lightness, alpha: alpha });
+
+// Helper to get value from CSS
+jQuery.Color( element, cssProperty );</code></pre>
+<h2>jQuery.Color.fn / prototype / the Color Object methods</h2>
+<h3>Getters / Setters:</h3>
+<pre class="prettyprint linenums lang-language"><code>red()             // returns the "red" component of the color ( Integer from 0 - 255 )
+red( val )        // returns a copy of the color object with the red set to val
+green()           // returns the "green" component of the color from ( Integer from 0 - 255 )
+green( val )      // returns a copy of the color object with the green set to val
+blue()            // returns the "blue" component of the color from ( Integer from 0 - 255 )
+blue( val )       // returns a copy of the color object with the blue set to val
+alpha()           // returns the "alpha" component of the color from ( Float from 0.0 - 1.0 )
+alpha( val )      // returns a copy of the color object with the alpha set to val
+hue()             // returns the "hue" component of the color ( Integer from 0 - 359 )
+hue( val )        // returns a copy of the color object with the hue set to val
+saturation()      // returns the "saturation" component of the color ( Float from 0.0 - 1.0 )
+saturation( val ) // returns a copy of the color object with the saturation set to val
+lightness()       // returns the "lightness" component of the color ( Float from 0.0 - 1.0 )
+lightness( val )  // returns a copy of the color object with the lightness set to val
+// all of the above values can also take strings in the format of "+=100" or "-=100"
+
+rgba() // returns a rgba "tuple" [ red, green, blue, alpha ]
+// rgba() setters: returns a copy of the color with any defined values set to the new value
+rgba( red, green, blue, alpha )
+rgba( { red: red, green: green, blue: blue, alpha: alpha } )
+rgba( [ red, green, blue, alpha ] )
+
+hsla() // returns a HSL tuple [ hue, saturation, lightness, alpha ]
+// much like the rgb setter - returns a copy with any defined values set
+hsla( hue, saturation, lightness, alpha )
+hsla( { hue: hue, saturation: saturation, lightness: lightness, alpha: alpha } )
+hsla( [ hue, saturation, lightness, alpha ] )</code></pre>
+<h3>String methods</h3>
+<pre class="prettyprint linenums lang-language"><code>toRgbaString() // returns a css string "rgba(255, 255, 255, 0.4)"
+toHslaString() // returns a css string "hsla(330, 75%, 25%, 0.4)"
+toHexString( includeAlpha ) // returns a css string "#abcdef", with "includeAlpha" uses "#rrggbbaa" (alpha *= 255)</code></pre>
+<p>The <code>toRgbaString</code> and <code>toHslaString</code> methods will only include the alpha channel if it is not <code>1</code>. They will return <code>rgb(...)</code> and <code>hsl(...)</code> strings if the alpha is set to <code>1</code>.</p>
+<h3>Working with other colors:</h3>
+<pre class="prettyprint linenums lang-language"><code>transition( othercolor, distance ) // the color distance ( 0.0 - 1.0 ) of the way between this color and othercolor
+blend( othercolor ) // Will apply this color on top of the other color using alpha blending
+is( othercolor ) // Will determine if this color is equal to all defined properties of othercolor</code></pre>
+<h2>jQuery.Color properties</h2>
+<h2>Internals on The Color Object</h2>
+<ul>
+<li>Internally, RGBA values are stored as <code>color._rgba[0] = red, color._rgba[1] = green, color._rgba[2] = blue, color._rgba[3] = alpha</code>.  However, please remember there are nice convenient setters and getters for each of these properties.</li>
+<li><code>undefined</code>/<code>null</code> values for colors indicate non-existence. This signals the <code>transition()</code> function to keep whatever value was set in the other end of the transition. For example, animating to <code>jQuery.Color([ 255, null, null, 1 ])</code> would only animate the red and alpha values of the color.</li>
+</ul>
+<h3><code>jQuery.Color.names</code></h3>
+<p>A list of named colors is stored on the <code>jQuery.Color.names</code> object.  The value they contain should be parseable by <code>jQuery.Color()</code>. All names on this object should be lowercased.  I.E. <code>jQuery.Color("Red")</code> is the same as doing <code>jQuery.Color( jQuery.Color.names["red"] );</code></p>
+<p>There is also a named color <code>"_default"</code> which by default is white, this is used for situations where a color is unparseable.</p>
+<h3><code>"transparent"</code></h3>
+<p>A special note about the color <code>"transparent"</code> - It returns <code>null</code> for red green and blue unless you specify colors for these values.</p>
+<pre class="prettyprint linenums lang-language"><code>jQuery.Color( "#abcdef" ).transition( "transparent", 0.5 )</code></pre>
+<p>Animating to or from the value <code>"transparent"</code> will still use &quot;#abcdef&quot; for red green and blue.</p>
+<h2>HSLA Support</h2>
+<p>If a color is created using any of the HSLA functions or parsers, it will keep the <code>_rgba</code> array up to date as well as having a <code>_hsla</code> array.  Once an RGBA operation is performed on HSLA, however, the <code>_hsla</code> cache is removed and all operations will continue based off of rgb (unless you go back into HSLA). The <code>._hsla</code> array follows the same format as <code>._rbga</code>, <code>[hue, saturation, lightness, alpha ]</code>.  If you need to build an HSLA color from an HSLA array, <code>jQuery.Color().hsla( array )</code> works for that purpose.</p>
+<p><strong>Colors with 0 saturation, or 100%/0% lightness will be stored with a hue of 0</strong></p>
+<h2>Extensibility</h2>
+<p>It is possible for you to add your own functions to the color object.  For instance, this function will tell you if it's better to use black or white on a given background color.</p>
+<pre class="prettyprint linenums lang-language"><code>// method taken from https://gist.github.com/960189
+jQuery.Color.fn.contrastColor = function() {
+    var r = this._rgba[ 0 ], g = this._rgba[ 1 ], b = this._rgba[ 2 ];
+    return ( ( ( r * 299 ) + ( g * 587 ) + ( b * 144 ) ) / 1000 ) &gt;= 131.5 ? "black" : "white";
+};
+
+// usage examples:
+jQuery.Color( "#bada55" ).contrastColor(); // "black"
+element.css( "color", jQuery.Color( element, "backgroundColor" ).contrastColor() );</code></pre>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/color" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>color</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/animation" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>animation</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/ecosystem%3Ajquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>ecosystem:jquery</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/70142?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/jquery" target="_blank" id="ownerName" class="sidebar-link">jquery</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">July 25, 2009</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 26, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Other</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>@types/selenium-webdriver (4.1.22)</li><li>body-parser (1.20.3)</li><li>browserstack-local (1.5.5)</li><li>chalk (5.3.0)</li><li>commitplease (3.2.0)</li><li>diff (5.2.0)</li><li>eslint-config-jquery (3.0.2)</li><li>exit-hook (4.0.0)</li><li>express (4.21.1)</li><li>express-body-parser-error-handler (1.0.7)</li><li>globals (15.2.0)</li><li>grunt (1.6.1)</li><li>grunt-compare-size (0.4.2)</li><li>grunt-contrib-concat (2.1.0)</li><li>grunt-contrib-uglify (5.2.2)</li><li>grunt-eslint (25.0.0)</li><li>grunt-git-authors (3.2.0)</li><li>grunt-npmcopy (0.2.0)</li><li>jquery (3.7.1)</li><li>jquery-1.12.4 (npm:jquery@1.12.4)</li><li>jquery-2.2.4 (npm:jquery@2.2.4)</li><li>jquery-3.0.0 (npm:jquery@3.0.0)</li><li>jquery-3.1.1 (npm:jquery@3.1.1)</li><li>jquery-3.2.1 (npm:jquery@3.2.1)</li><li>jquery-3.3.1 (npm:jquery@3.3.1)</li><li>jquery-3.4.1 (npm:jquery@3.4.1)</li><li>jquery-3.5.1 (npm:jquery@3.5.1)</li><li>jquery-3.6.4 (npm:jquery@3.6.4)</li><li>jquery-3.7.1 (npm:jquery@3.7.1)</li><li>load-grunt-tasks (5.1.0)</li><li>qunit (2.20.1)</li><li>selenium-webdriver (4.20.0)</li><li>yargs (17.7.2)</li></ul><h5 class="sidebar-title">Peer Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.12.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/549355?v=4" alt="gnarf" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gnarf" target="_blank" class="text-decoration-none fw-bold">gnarf</a><p class="mb-0 text-muted small">126 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1758366?v=4" alt="mgol" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mgol" target="_blank" class="text-decoration-none fw-bold">mgol</a><p class="mb-0 text-muted small">81 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/141167?v=4" alt="scottgonzalez" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/scottgonzalez" target="_blank" class="text-decoration-none fw-bold">scottgonzalez</a><p class="mb-0 text-muted small">31 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/364532?v=4" alt="mikesherov" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mikesherov" target="_blank" class="text-decoration-none fw-bold">mikesherov</a><p class="mb-0 text-muted small">14 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3630346?v=4" alt="raphamorim" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/raphamorim" target="_blank" class="text-decoration-none fw-bold">raphamorim</a><p class="mb-0 text-muted small">8 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/52585?v=4" alt="jzaefferer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jzaefferer" target="_blank" class="text-decoration-none fw-bold">jzaefferer</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/156867?v=4" alt="Krinkle" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Krinkle" target="_blank" class="text-decoration-none fw-bold">Krinkle</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/301201?v=4" alt="leobalter" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/leobalter" target="_blank" class="text-decoration-none fw-bold">leobalter</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1644743?v=4" alt="antoniojrod" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/antoniojrod" target="_blank" class="text-decoration-none fw-bold">antoniojrod</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/192451?v=4" alt="timmywil" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/timmywil" target="_blank" class="text-decoration-none fw-bold">timmywil</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1570245?v=4" alt="luhn" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/luhn" target="_blank" class="text-decoration-none fw-bold">luhn</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1041375?v=4" alt="SineSwiper" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/SineSwiper" target="_blank" class="text-decoration-none fw-bold">SineSwiper</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/688413?v=4" alt="agcolom" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/agcolom" target="_blank" class="text-decoration-none fw-bold">agcolom</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2170554?v=4" alt="bseth99" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bseth99" target="_blank" class="text-decoration-none fw-bold">bseth99</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/636?v=4" alt="qerub" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/qerub" target="_blank" class="text-decoration-none fw-bold">qerub</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/300067?v=4" alt="dy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dy" target="_blank" class="text-decoration-none fw-bold">dy</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/127535?v=4" alt="eddiemonge" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/eddiemonge" target="_blank" class="text-decoration-none fw-bold">eddiemonge</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/692432?v=4" alt="Gotusso" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Gotusso" target="_blank" class="text-decoration-none fw-bold">Gotusso</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1615?v=4" alt="jeresig" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jeresig" target="_blank" class="text-decoration-none fw-bold">jeresig</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/107824?v=4" alt="rdworth" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rdworth" target="_blank" class="text-decoration-none fw-bold">rdworth</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/136959?v=4" alt="Mottie" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Mottie" target="_blank" class="text-decoration-none fw-bold">Mottie</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/645884?v=4" alt="rejacobson" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rejacobson" target="_blank" class="text-decoration-none fw-bold">rejacobson</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+18 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
