@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Ajax Uploader by Lpology</title>
+    <meta name="description" content="Javascript file upload plugin with progress bar support. Works in all major browsers, including IE7+, Chrome, Firefox, Safari, and  Opera. No dependencies - use...">
+    <meta name="author" content="LPology">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/simple-ajax-uploader-by-lpology.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Simple Ajax Uploader</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Simple Ajax Uploader",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Simple Ajax Uploader</h1>
+        <p id="packageDescription" class="text-muted">Javascript file upload plugin with progress bar support. Works in all major browsers, including IE7+, Chrome, Firefox, Safari, and  Opera. No dependencies - use it with or without jQuery.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">997</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.87 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">267</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">50</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/LPology/Simple-Ajax-Uploader/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/LPology/Simple-Ajax-Uploader" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Simple Ajax Uploader</h1>
+<p>A Javascript plugin for cross-browser Ajax file uploading. Supports drag and drop, CORS, and multiple file uploading with progress bars. Works in IE7-9, mobile, and all modern browsers.</p>
+<pre class="prettyprint linenums lang-language"><code>var uploader = new ss.SimpleUpload({
+      button: 'upload-btn', // HTML element used as upload button
+      url: '/PathTo/UploadHandler', // URL of server-side upload handler
+      name: 'uploadfile' // Parameter name of the uploaded file
+});</code></pre>
+<h3>Features</h3>
+<ul>
+<li>Cross-browser -- works in IE7+, Firefox, Chrome, Safari, Opera</li>
+<li>Supports multiple, concurrent file uploads (even in non-HTML5 browsers)</li>
+<li>Built-in CORS support</li>
+<li>Drag and drop file uploads (<strong>new in v2.0</strong>)</li>
+<li>No flash or external CSS -- a single 6Kb Javascript file (minified and gzipped)</li>
+<li>Progress bars in all browsers, including IE9 and older. Built-in support for:
+<ul>
+<li><a href="http://wiki.nginx.org/HttpUploadProgressModule">Nginx Upload Progress Module</a></li>
+<li><a href="http://www.php.net/manual/en/apc.configuration.php#ini.apc.rfc1867">PHP APC File Upload Progress</a></li>
+<li><a href="http://php.net/manual/en/session.upload-progress.php">PHP Session Upload Progress</a></li>
+</ul></li>
+<li>Use any HTML element as the upload button</li>
+<li>No dependencies - use it with or without jQuery</li>
+<li>Provides individual callback functions for XHR-supported browsers and for browsers that do not support XHR uploads</li>
+<li>Ability to pass custom headers in request such as the Authorization header</li>
+</ul>
+<h3>Frequently Asked Questions</h3>
+<p>Visit the new <a href="https://www.lpology.com/code/ajaxuploader/faq.php">FAQ</a> for solutions to the most common issues.</p>
+<h3>How to Use</h3>
+<p><a href="https://www.lpology.com/code/ajaxuploader/">Live Demo</a><br /><br />
+<a href="https://www.lpology.com/code/ajaxuploader/docs.php">API Reference</a><br /><br />
+<a href="https://www.lpology.com/code/ajaxuploader/progress.php">Upload progress bars in IE9 (and older)</a><br /><br />
+<a href="https://www.lpology.com/code/ajaxuploader/How-to-Cross-Domain-File-Uploading.php">CORS &mdash; Cross-domain file uploading with Simple Ajax Uploader</a></p>
+<p>There are two main ways to use the plugin:</p>
+<p><strong>1. Single file uploading</strong> - Only one upload allowed at a time. Progress bar is an element that is re-used for each upload.<br /><br />
+<strong>2. Multiple file uploading</strong> - Allow multiple, concurrent file uploads. Progress bars are created on the fly before each upload.</p>
+<h4>Method 1: Single file uploading (one file at a time)</h4>
+<p>Before each upload, in the <code>onSubmit()</code> callback function, the on-page <code>sizeBox</code> and <code>progress</code> elements are assigned specific roles using these two functions:</p>
+<p><code>setProgressBar(elem)</code> - Designates an element as the progress bar for an upload.<br /><br />
+<code>setFileSizeBox(elem)</code> - Designates an element as the container in which the file size of an uploading file will be inserted.</p>
+<p>As a result, when an upload begins, the file size of the upload is inserted into the <code>sizeBox</code> element and the CSS width of the <code>progress</code> element is set to 0%. As the upload progresses, the CSS width percentage of the <code>progress</code> element will be updated accordingly.</p>
+<p>This approach of assigning roles to elements provides developers with a great deal of flexibility -- progress indicators can be styled in any way and placed anywhere on the page.</p>
+<pre class="prettyprint linenums lang-language"><code>var sizeBox = document.getElementById('sizeBox'), // container for file size info
+    progress = document.getElementById('progress'); // the element we're using for a progress bar
+
+var uploader = new ss.SimpleUpload({
+      button: 'uploadButton', // file upload button
+      url: 'uploadHandler.php', // server side handler
+      name: 'uploadfile', // upload parameter name        
+      progressUrl: 'uploadProgress.php', // enables cross-browser progress support (more info below)
+      responseType: 'json',
+      allowedExtensions: ['jpg', 'jpeg', 'png', 'gif'],
+      maxSize: 1024, // kilobytes
+      hoverClass: 'ui-state-hover',
+      focusClass: 'ui-state-focus',
+      disabledClass: 'ui-state-disabled',
+      onSubmit: function(filename, extension) {
+          this.setFileSizeBox(sizeBox); // designate this element as file size container
+          this.setProgressBar(progress); // designate as progress bar
+        },         
+      onComplete: function(filename, response) {
+          if (!response) {
+              alert(filename + 'upload failed');
+              return false;            
+          }
+          // do something with response...
+        }
+});        </code></pre>
+<h4>Method 2: Multiple file uploads</h4>
+<p>Below is an example of how to implement multiple file uploading with progress bars. A new progress bar is created for each file upload within the <code>onSubmit()</code> callback function.</p>
+<p>Like in Method 1, the newly created elements are assigned roles using  the <code>setProgressBar()</code> and <code>setFileSizeBox()</code> functions.  Unlike the previous example, however, the progress elements are automatically removed when the upload is completed. </p>
+<pre class="prettyprint linenums lang-language"><code>var uploader = new ss.SimpleUpload({
+      button: 'uploadButton',
+      url: 'uploadHandler.php', // server side handler
+      progressUrl: 'uploadProgress.php', // enables cross-browser progress support (more info below)
+      responseType: 'json',
+      name: 'uploadfile',
+      multiple: true,
+      allowedExtensions: ['jpg', 'jpeg', 'png', 'gif'], // for example, if we were uploading pics
+      hoverClass: 'ui-state-hover',
+      focusClass: 'ui-state-focus',
+      disabledClass: 'ui-state-disabled',   
+      onSubmit: function(filename, extension) {
+          // Create the elements of our progress bar
+          var progress = document.createElement('div'), // container for progress bar
+              bar = document.createElement('div'), // actual progress bar
+              fileSize = document.createElement('div'), // container for upload file size
+              wrapper = document.createElement('div'), // container for this progress bar
+              //declare somewhere: &lt;div id="progressBox"&gt;&lt;/div&gt; where you want to show the progress-bar(s)
+              progressBox = document.getElementById('progressBox'); //on page container for progress bars
+
+          // Assign each element its corresponding class
+          progress.className = 'progress progress-striped';
+          bar.className = 'progress-bar progress-bar-success';
+          fileSize.className = 'size';
+          wrapper.className = 'wrapper';
+
+          // Assemble the progress bar and add it to the page
+          progress.appendChild(bar); 
+          wrapper.innerHTML = '&lt;div class="name"&gt;'+filename+'&lt;/div&gt;'; // filename is passed to onSubmit()
+          wrapper.appendChild(fileSize);
+          wrapper.appendChild(progress);                                       
+          progressBox.appendChild(wrapper); // just an element on the page to hold the progress bars    
+
+          // Assign roles to the elements of the progress bar
+          this.setProgressBar(bar); // will serve as the actual progress bar
+          this.setFileSizeBox(fileSize); // display file size beside progress bar
+          this.setProgressContainer(wrapper); // designate the containing div to be removed after upload
+        },
+
+       // Do something after finishing the upload
+       // Note that the progress bar will be automatically removed upon completion because everything 
+       // is encased in the "wrapper", which was designated to be removed with setProgressContainer() 
+      onComplete:   function(filename, response) {
+          if (!response) {
+            alert(filename + 'upload failed');
+            return false;
+          }
+          // Stuff to do after finishing an upload...
+        }
+});</code></pre>
+<p>For multiple file uploads, we use an additional function: <code>setProgressContainer(elem)</code>. This function designates an element to be removed from the DOM after the upload is completed.</p>
+<p>In the example, the element set to be removed with <code>setProgressContainer()</code> is the outer container for the progress elements. As a result, progress bars will be removed from the DOM after each upload is completed.</p>
+<h3>Form Integration</h3>
+<p>To integrate the plugin with an existing form so that file uploads include all input fields contained in the form, simply pass the form element to the <code>form</code> option, or use the <code>setForm( form )</code> instance method.</p>
+<p>Form integration respects any HTML5 validation attributes. Invalid input values will prevent the upload from occurring.</p>
+<p>By default, the plugin will override native submission of the form. Submit attempts will be caught and instead files will be uploaded along with the form data. To disable this behavior, set the <code>overrideSubmit</code> to <code>false</code>. Setting <code>overrideSubmit</code> to <code>false</code> will require that the <code>submit</code> instance method be manually called in order to upload files and form data together.</p>
+<p><strong>Note:</strong> Only use form integration if a file upload is required to be submitted with the form.</p>
+<h3>Cross-Browser Helper Functions</h3>
+<p>To ease the pain of supporting older browsers, the plugin includes a set of callback functions which allow specific behavior to be defined based on whether the user's browser supports XHR uploads/HTML5 File API:</p>
+<p><code>startXHR(filename, fileSize)</code> - Called prior to upload -- only in browsers that support XHR uploads<br /><br />
+<code>endXHR(filename)</code> - Called after upload is completed -- only in browsers that support XHR uploads<br /><br />
+<code>startNonXHR(filename)</code> - Called prior to upload -- only in browsers that <strong>do not</strong> support XHR uploads<br /><br />
+<code>endNonXHR(filename)</code> - Called after upload is completed -- only in browsers that <strong>do not</strong> support XHR uploads<br /></p>
+<p>A common use case is to show an upload progress bar in browsers that support the <code>progress</code> event while displaying an animated GIF in older browsers:</p>
+<pre class="prettyprint linenums lang-language"><code>
+var progress = document.getElementById('progress'), // progress bar
+    loaderImg = document.getElementById('loaderImg');  // "loading" animated GIF
+
+var uploader = new ss.SimpleUpload({
+      button: 'uploadButton',
+      url: 'uploadHandler.php', // server side handler
+      responseType: 'json',
+      name: 'uploadfile',
+      hoverClass: 'ui-state-hover',
+      focusClass: 'ui-state-focus',
+      disabledClass: 'ui-state-disabled',
+      startXHR: function(filename, size) {                   
+          progress.style.display = 'inline-block'; // show progress bar            
+          this.setProgressBar(progress); // designate as progress bar
+      },
+      endXHR: function(filename) {
+          progress.style.display = 'none'; // hide progress bar
+      },
+      startNonXHR: function(filename) {
+          loaderImg.style.display = 'inline-block'; // show animated GIF
+      },
+      endNonXHR: function(filename) {
+          loaderImg.style.display = 'none'; // hide animated GIF
+      }
+});</code></pre>
+<p>Returning <code>false</code> from <code>startXHR()</code> and <code>startNonXHR()</code> will prevent the upload from starting, just as it does with <code>onSubmit()</code> and <code>onChange()</code>.</p>
+<h3>Server-side file handling</h3>
+<p>Files are uploaded by POST as either raw form data or regular multipart/form-data, depending on the browser.</p>
+<h3>Using Uploader.php</h3>
+<p><strong>Note:</strong> This PHP class is included only for convenience. <strong>It is not required to use PHP with Simple Ajax Uploader.</strong> The plugin is agnostic to server configuration, so use any language you prefer.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;?php
+require('Uploader.php');
+
+$upload_dir = '/img_uploads/';
+$valid_extensions = array('gif', 'png', 'jpeg', 'jpg');
+
+$Upload = new FileUpload('uploadfile');
+$result = $Upload-&gt;handleUpload($upload_dir, $valid_extensions);
+
+if (!$result) {
+    echo json_encode(array('success' =&gt; false, 'msg' =&gt; $Upload-&gt;getErrorMsg()));   
+} else {
+    echo json_encode(array('success' =&gt; true, 'file' =&gt; $Upload-&gt;getFileName()));
+}</code></pre>
+<p>You can also save the uploaded file with a different name by setting the <code>newFileName</code> property:</p>
+<pre class="prettyprint linenums lang-language"><code>$Upload = new FileUpload('uploadfile');
+$ext = $Upload-&gt;getExtension(); // Get the extension of the uploaded file
+$Upload-&gt;newFileName = 'customFileName.'.$ext;
+$result = $Upload-&gt;handleUpload($upload_dir, $valid_extensions);</code></pre>
+<p>To access the newly uploaded file, use the <code>getSavedFile()</code> method to get the file's path after the upload is completed:</p>
+<pre class="prettyprint linenums lang-language"><code>$Upload = new FileUpload('uploadfile');
+$result = $Upload-&gt;handleUpload($upload_dir, $valid_extensions);
+
+if ($result) {
+  $path = $Upload-&gt;getSavedFile();
+  $imgsize = getimagesize($path);
+  // image resizing stuff...
+}</code></pre>
+<h3>Passing Custom Headers</h3>
+<pre class="prettyprint linenums lang-language"><code>var uploader = new ss.SimpleUpload({
+    customHeaders: {'Authorization': 'my-access-token'},
+    ...
+});
+</code></pre>
+<h3>Drag and Drop</h3>
+<p>Enable drag and drop uploading by passing an element to the <code>dropzone</code> option to serve as the drop zone:</p>
+<pre class="prettyprint linenums lang-language"><code>var uploader = new ss.SimpleUpload({
+      dropzone: 'dragbox', // ID of element to be the drop zone
+      url: 'uploadHandler.php',
+      name: 'uploadfile',
+      responseType: 'json',      
+      onComplete: function(filename, response) {
+          // do something with response...
+      }
+}); </code></pre>
+<h3>License</h3>
+<p>Released under the MIT license.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/ajax" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>ajax</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/upload" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>upload</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/cors" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>cors</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/php" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>php</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/cross-browser" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>cross-browser</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/2237504?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/LPology" target="_blank" id="ownerName" class="sidebar-link">LPology</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 25, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 25, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1897304?v=4" alt="sdturner02" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sdturner02" target="_blank" class="text-decoration-none fw-bold">sdturner02</a><p class="mb-0 text-muted small">723 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2237504?v=4" alt="LPology" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LPology" target="_blank" class="text-decoration-none fw-bold">LPology</a><p class="mb-0 text-muted small">35 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/306080?v=4" alt="vovayatsyuk" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vovayatsyuk" target="_blank" class="text-decoration-none fw-bold">vovayatsyuk</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3830968?v=4" alt="benzamin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/benzamin" target="_blank" class="text-decoration-none fw-bold">benzamin</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1995161?v=4" alt="mfurlend" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mfurlend" target="_blank" class="text-decoration-none fw-bold">mfurlend</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/564874?v=4" alt="mouse0270" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mouse0270" target="_blank" class="text-decoration-none fw-bold">mouse0270</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2730045?v=4" alt="aydun" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aydun" target="_blank" class="text-decoration-none fw-bold">aydun</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/957689?v=4" alt="alexcode-lab" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/alexcode-lab" target="_blank" class="text-decoration-none fw-bold">alexcode-lab</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/891612?v=4" alt="urcadox" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/urcadox" target="_blank" class="text-decoration-none fw-bold">urcadox</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4636330?v=4" alt="ablipan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ablipan" target="_blank" class="text-decoration-none fw-bold">ablipan</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2280844?v=4" alt="madand" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/madand" target="_blank" class="text-decoration-none fw-bold">madand</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5458596?v=4" alt="nickgardos" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nickgardos" target="_blank" class="text-decoration-none fw-bold">nickgardos</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/331403?v=4" alt="phy25" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/phy25" target="_blank" class="text-decoration-none fw-bold">phy25</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/603764?v=4" alt="zaygraveyard" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zaygraveyard" target="_blank" class="text-decoration-none fw-bold">zaygraveyard</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/486382?v=4" alt="ruanyl" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ruanyl" target="_blank" class="text-decoration-none fw-bold">ruanyl</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+10 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
