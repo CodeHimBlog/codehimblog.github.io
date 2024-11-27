@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Insert Plugin for Mediumeditor</title>
+    <meta name="description" content="medium-editor-insert-plugin by linkesch. jQuery insert plugin for MediumEditor">
+    <meta name="author" content="linkesch">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/medium-editor-insert-plugin-by-linkesch.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Medium Editor Insert Plugin</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Medium Editor Insert Plugin",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Medium Editor Insert Plugin</h1>
+        <p id="packageDescription" class="text-muted">jQuery insert plugin for MediumEditor</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1223</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">7.06 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">352</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">55</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/linkesch/medium-editor-insert-plugin/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/linkesch/medium-editor-insert-plugin" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery insert plugin for MediumEditor</h1>
+<p><a href="https://gitter.im/orthes/medium-editor-insert-plugin?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter" /></a> <a href="https://travis-ci.org/orthes/medium-editor-insert-plugin"><img src="https://travis-ci.org/orthes/medium-editor-insert-plugin.svg?branch=master" alt="Build Status" /></a> <a href="https://www.codacy.com/app/orthes_3082/medium-editor-insert-plugin?utm_source=github.com&amp;amp;utm_medium=referral&amp;amp;utm_content=orthes/medium-editor-insert-plugin&amp;amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/1f8565ed2e554e4fa952ec4da6a2080b" alt="Codacy Badge" /></a> <a href="https://cdnjs.com/libraries/medium-editor-insert-plugin"><img src="https://img.shields.io/cdnjs/v/medium-editor-insert-plugin.svg" alt="CDNJS" /></a></p>
+<p>This plugin expands capabilities of <a href="https://github.com/yabwe/medium-editor">MediumEditor</a> (a clone of medium.com WYSIWYG editor) and it enables users to insert into the editor various types of content (depending on available addons).</p>
+<p>Current available addons:</p>
+<ul>
+<li><strong>images</strong></li>
+<li><strong>embeds</strong> (either through oEmbed proxy, such as <a href="https://iframely.com/">Iframely</a>, or pre-defined parsers such as - Youtube, Vimeo, Twitter, Facebook, Instagram)</li>
+</ul>
+<h2>Demo</h2>
+<p><a href="http://orthes.github.io/medium-editor-insert-plugin">http://orthes.github.io/medium-editor-insert-plugin</a></p>
+<h2>Download</h2>
+<p><strong>Via npm:</strong></p>
+<p><code>npm install medium-editor-insert-plugin --save</code></p>
+<p><strong>Via bower:</strong></p>
+<p><code>bower install medium-editor-insert-plugin --save</code></p>
+<p><strong>Manual:</strong></p>
+<p><a href="https://github.com/orthes/medium-editor-insert-plugin/releases">Download the latest release</a></p>
+<h2>Quick Start</h2>
+<p>The first step is to include the plugin with all its dependencies to your code:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- Font Awesome for awesome icons. You can redefine icons used in a plugin configuration --&gt;
+&lt;link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"&gt;
+
+&lt;!-- CSS --&gt;
+&lt;link rel="stylesheet" href="bower_components/medium-editor/dist/css/medium-editor.min.css"&gt;
+&lt;link rel="stylesheet" href="bower_components/medium-editor/dist/css/themes/default.css"&gt;
+&lt;link rel="stylesheet" href="bower_components/medium-editor-insert-plugin/dist/css/medium-editor-insert-plugin.min.css"&gt;
+
+&lt;!-- JS --&gt;
+&lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="bower_components/medium-editor/dist/js/medium-editor.js"&gt;&lt;/script&gt;
+&lt;script src="bower_components/handlebars/handlebars.runtime.min.js"&gt;&lt;/script&gt;
+&lt;script src="bower_components/jquery-sortable/source/js/jquery-sortable-min.js"&gt;&lt;/script&gt;
+&lt;script src="bower_components/blueimp-file-upload/js/vendor/jquery.ui.widget.js"&gt;&lt;/script&gt;
+&lt;script src="bower_components/blueimp-file-upload/js/jquery.iframe-transport.js"&gt;&lt;/script&gt;
+&lt;script src="bower_components/blueimp-file-upload/js/jquery.fileupload.js"&gt;&lt;/script&gt;
+&lt;script src="bower_components/medium-editor-insert-plugin/dist/js/medium-editor-insert-plugin.min.js"&gt;&lt;/script&gt;
+
+&lt;!--
+OR YOU CAN USE CDN for a Quick Reference in Development Mode. [Dated Dec-2018 Latest Version] Recommented latest verions as moves on!
+
+CSS
+&lt;link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor-insert-plugin/2.5.0/css/medium-editor-insert-plugin-frontend.min.css" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor-insert-plugin/2.5.0/css/medium-editor-insert-plugin.min.css" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.23.3/css/medium-editor.min.css" /&gt;
+
+JS
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.runtime.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sortable/0.9.13/jquery-sortable-min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery.ui.widget@1.10.3/jquery.ui.widget.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.iframe-transport/1.0.1/jquery.iframe-transport.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.28.0/js/jquery.fileupload.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.23.3/js/medium-editor.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/medium-editor-insert-plugin/2.5.0/js/medium-editor-insert-plugin.min.js"&gt;&lt;/script&gt;
+--&gt;
+</code></pre>
+<p>Initialize MediumEditor as you normally would:</p>
+<pre class="prettyprint linenums lang-language"><code>var editor = new MediumEditor('.editable');</code></pre>
+<p>Finally, you can initialize the insert plugin:</p>
+<pre class="prettyprint linenums lang-language"><code>$(function () {
+    $('.editable').mediumInsert({
+        editor: editor
+    });
+});</code></pre>
+<h2><a href="https://github.com/orthes/medium-editor-insert-plugin/wiki">Documentation</a></h2>
+<ul>
+<li><a href="https://github.com/orthes/medium-editor-insert-plugin/wiki/v2.x-Getting-Started">Getting Started</a></li>
+<li><a href="https://github.com/orthes/medium-editor-insert-plugin/wiki/v2.x-Configuration">Configuration</a></li>
+<li><a href="https://github.com/orthes/medium-editor-insert-plugin/wiki/v2.x-Using-with-webpack">Using with webpack</a></li>
+<li><a href="https://github.com/orthes/medium-editor-insert-plugin/wiki/v2.x-Server-response">Server response</a></li>
+<li><a href="https://github.com/orthes/medium-editor-insert-plugin/wiki/v2.x-Custom-addons">Custom addons</a></li>
+<li><a href="https://github.com/orthes/medium-editor-insert-plugin/wiki/v2.x-Upgrading-from-v0.3">Upgrading from v0.3</a></li>
+<li><a href="https://github.com/orthes/medium-editor-insert-plugin/wiki/Versioning">Versioning</a></li>
+<li><a href="https://github.com/orthes/medium-editor-insert-plugin/wiki/Development-&amp;-Contributing">Development &amp; Contributing</a></li>
+<li><a href="https://github.com/orthes/medium-editor-insert-plugin/wiki/License">License</a></li>
+</ul>
+<h2>Contributors</h2>
+<p>Thanks goes to these wonderful people (<a href="https://github.com/all-contributors/all-contributors#emoji-key">emoji key</a>):</p>
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><a href="http://linkesch.com"><img src="https://avatars2.githubusercontent.com/u/312938?v=4" width="100px;" alt="Pavel Linkesch"/><br /><sub><b>Pavel Linkesch</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=orthes" title="Code">💻</a> <a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=orthes" title="Documentation">📖</a> <a href="#maintenance-orthes" title="Maintenance">🚧</a> <a href="#review-orthes" title="Reviewed Pull Requests">👀</a></th>
+<th style="text-align: center;"><a href="http://www.j0k3r.net"><img src="https://avatars2.githubusercontent.com/u/62333?v=4" width="100px;" alt="Jérémy Benoist"/><br /><sub><b>Jérémy Benoist</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=j0k3r" title="Code">💻</a> <a href="#maintenance-j0k3r" title="Maintenance">🚧</a> <a href="#review-j0k3r" title="Reviewed Pull Requests">👀</a></th>
+<th style="text-align: center;"><a href="https://github.com/nleush"><img src="https://avatars3.githubusercontent.com/u/39333?v=4" width="100px;" alt="Nazar Leush"/><br /><sub><b>Nazar Leush</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=nleush" title="Code">💻</a></th>
+<th style="text-align: center;"><a href="http://twitter.com/sitnikcode"><img src="https://avatars1.githubusercontent.com/u/19343?v=4" width="100px;" alt="Andrey Sitnik"/><br /><sub><b>Andrey Sitnik</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=ai" title="Code">💻</a></th>
+<th style="text-align: center;"><a href="http://greenash.net.au/"><img src="https://avatars1.githubusercontent.com/u/79373?v=4" width="100px;" alt="Jeremy Epstein"/><br /><sub><b>Jeremy Epstein</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=Jaza" title="Code">💻</a></th>
+<th style="text-align: center;"><a href="https://github.com/vexus2"><img src="https://avatars2.githubusercontent.com/u/1228229?v=4" width="100px;" alt="Hikaru Tooyama"/><br /><sub><b>Hikaru Tooyama</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=vexus2" title="Code">💻</a></th>
+<th style="text-align: center;"><a href="https://twitter.com/asubbotin"><img src="https://avatars2.githubusercontent.com/u/594298?v=4" width="100px;" alt="Alexandr Subbotin"/><br /><sub><b>Alexandr Subbotin</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=KELiON" title="Code">💻</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="https://github.com/patrinhani-ciandt"><img src="https://avatars3.githubusercontent.com/u/5272569?v=4" width="100px;" alt="Vinicius Patrinhani"/><br /><sub><b>Vinicius Patrinhani</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=patrinhani-ciandt" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://firas.bessadok.com"><img src="https://avatars2.githubusercontent.com/u/1790778?v=4" width="100px;" alt="Firas Bessadok"/><br /><sub><b>Firas Bessadok</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=fbessadok" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://omniagm.github.io/"><img src="https://avatars2.githubusercontent.com/u/1101183?v=4" width="100px;" alt="Omnia G Helmi"/><br /><sub><b>Omnia G Helmi</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=OmniaGM" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/daniel-huang"><img src="https://avatars2.githubusercontent.com/u/4083642?v=4" width="100px;" alt="Daniel Huang"/><br /><sub><b>Daniel Huang</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=daniel-huang" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://bertzzie.com"><img src="https://avatars2.githubusercontent.com/u/610268?v=4" width="100px;" alt="Alex Xandra Albert Sim"/><br /><sub><b>Alex Xandra Albert Sim</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=bertzzie" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/brenfrow"><img src="https://avatars3.githubusercontent.com/u/1891369?v=4" width="100px;" alt="Brandon Renfrow"/><br /><sub><b>Brandon Renfrow</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=brenfrow" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/BurnHavoc"><img src="https://avatars3.githubusercontent.com/u/5192706?v=4" width="100px;" alt="BurnHavoc"/><br /><sub><b>BurnHavoc</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=BurnHavoc" title="Code">💻</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="http://enzoz.me/"><img src="https://avatars2.githubusercontent.com/u/431361?v=4" width="100px;" alt="Enzo"/><br /><sub><b>Enzo</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=enzoz" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://idealstack.io"><img src="https://avatars0.githubusercontent.com/u/883073?v=4" width="100px;" alt="Jonathon Sim"/><br /><sub><b>Jonathon Sim</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=jonathonsim" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://kazuyahara.com"><img src="https://avatars1.githubusercontent.com/u/8471513?v=4" width="100px;" alt="Kazuya Hara"/><br /><sub><b>Kazuya Hara</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=KazuyaHara" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://rightfold.io"><img src="https://avatars2.githubusercontent.com/u/93555?v=4" width="100px;" alt="Miloš Hadžić"/><br /><sub><b>Miloš Hadžić</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=miloshadzic" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/Siron"><img src="https://avatars3.githubusercontent.com/u/1642674?v=4" width="100px;" alt="Siron"/><br /><sub><b>Siron</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=Siron" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://antha.site"><img src="https://avatars3.githubusercontent.com/u/1270102?v=4" width="100px;" alt="Sam Auciello"/><br /><sub><b>Sam Auciello</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=olleicua" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/scashin133"><img src="https://avatars0.githubusercontent.com/u/28541?v=4" width="100px;" alt="Sean Cashin"/><br /><sub><b>Sean Cashin</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=scashin133" title="Code">💻</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="https://github.com/jackyzhai"><img src="https://avatars0.githubusercontent.com/u/1086365?v=4" width="100px;" alt="Yu Zhai"/><br /><sub><b>Yu Zhai</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=jackyzhai" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/acekat"><img src="https://avatars0.githubusercontent.com/u/1449414?v=4" width="100px;" alt="acekat"/><br /><sub><b>acekat</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=acekat" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/linpekka"><img src="https://avatars1.githubusercontent.com/u/18568266?v=4" width="100px;" alt="linpekka"/><br /><sub><b>linpekka</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=linpekka" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://sa-inu.com/"><img src="https://avatars0.githubusercontent.com/u/12888685?v=4" width="100px;" alt="sainu"/><br /><sub><b>sainu</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=sainuio" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://medya-t.com"><img src="https://avatars3.githubusercontent.com/u/1642706?v=4" width="100px;" alt="Murat Tasarsu"/><br /><sub><b>Murat Tasarsu</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=tasarsu" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://anilmaurya.herokuapp.com"><img src="https://avatars1.githubusercontent.com/u/1912864?v=4" width="100px;" alt="Anil Kumar Maurya"/><br /><sub><b>Anil Kumar Maurya</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=anilmaurya" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/artshevtsov"><img src="https://avatars3.githubusercontent.com/u/8297414?v=4" width="100px;" alt="Artem Shevtsov"/><br /><sub><b>Artem Shevtsov</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=artshevtsov" title="Code">💻</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="https://github.com/bgaillard"><img src="https://avatars0.githubusercontent.com/u/1327782?v=4" width="100px;" alt="Baptiste Gaillard"/><br /><sub><b>Baptiste Gaillard</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=bgaillard" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/bernardwolff"><img src="https://avatars3.githubusercontent.com/u/2744510?v=4" width="100px;" alt="Bernard Wolff"/><br /><sub><b>Bernard Wolff</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=bernardwolff" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://gogocarl.blogspot.com"><img src="https://avatars0.githubusercontent.com/u/1719249?v=4" width="100px;" alt="Carl Scott"/><br /><sub><b>Carl Scott</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=GoGoCarl" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/flamerohr"><img src="https://avatars0.githubusercontent.com/u/1064889?v=4" width="100px;" alt="Chris Joe"/><br /><sub><b>Chris Joe</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=flamerohr" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/pvnr0082t"><img src="https://avatars1.githubusercontent.com/u/13829339?v=4" width="100px;" alt="Daniel Wang"/><br /><sub><b>Daniel Wang</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=pvnr0082t" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://derrekbertrand.com/"><img src="https://avatars0.githubusercontent.com/u/968252?v=4" width="100px;" alt="Derrek Bertrand"/><br /><sub><b>Derrek Bertrand</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=derrekbertrand" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://merqur.io"><img src="https://avatars2.githubusercontent.com/u/1485056?v=4" width="100px;" alt="Gabi Maeztu"/><br /><sub><b>Gabi Maeztu</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=merqurio" title="Code">💻</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="http://inssein.com"><img src="https://avatars1.githubusercontent.com/u/882228?v=4" width="100px;" alt="Hussein Jafferjee"/><br /><sub><b>Hussein Jafferjee</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=inssein" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://indrasantosa.com"><img src="https://avatars0.githubusercontent.com/u/433501?v=4" width="100px;" alt="Indra Santosa"/><br /><sub><b>Indra Santosa</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=indrasantosa" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://twitter.com/iparamonau"><img src="https://avatars0.githubusercontent.com/u/28841?v=4" width="100px;" alt="Ivan Paramonau"/><br /><sub><b>Ivan Paramonau</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=iparamonau" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://jerinisready.wordpress.com"><img src="https://avatars3.githubusercontent.com/u/19725964?v=4" width="100px;" alt="JK"/><br /><sub><b>JK</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=jerinisready" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://futureground.net"><img src="https://avatars0.githubusercontent.com/u/1831399?v=4" width="100px;" alt="Jeff Bellsey"/><br /><sub><b>Jeff Bellsey</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=jbellsey" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://blog.oznek.com.br"><img src="https://avatars0.githubusercontent.com/u/55442?v=4" width="100px;" alt="Kenzo Okamura"/><br /><sub><b>Kenzo Okamura</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=oznek" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://matei.dorobantu.me"><img src="https://avatars3.githubusercontent.com/u/366564?v=4" width="100px;" alt="Matei Dorobantu"/><br /><sub><b>Matei Dorobantu</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=mateid" title="Code">💻</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="http://www.maxisnow.com"><img src="https://avatars1.githubusercontent.com/u/714146?v=4" width="100px;" alt="Max Kirchoff"/><br /><sub><b>Max Kirchoff</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=maxkirchoff" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/MrEcl"><img src="https://avatars0.githubusercontent.com/u/8791672?v=4" width="100px;" alt="MrEcl"/><br /><sub><b>MrEcl</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=MrEcl" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/RifRaf44"><img src="https://avatars1.githubusercontent.com/u/2808250?v=4" width="100px;" alt="Raphaël Vercruyssen"/><br /><sub><b>Raphaël Vercruyssen</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=RifRaf44" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="http://dazorni.de"><img src="https://avatars2.githubusercontent.com/u/1658380?v=4" width="100px;" alt="Sebastian Zorn"/><br /><sub><b>Sebastian Zorn</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=dazorni" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/tsbalzhanov"><img src="https://avatars0.githubusercontent.com/u/34696545?v=4" width="100px;" alt="tsbalzhanov"/><br /><sub><b>tsbalzhanov</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=tsbalzhanov" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/bjrenfrow"><img src="https://avatars3.githubusercontent.com/u/3633090?v=4" width="100px;" alt="bjrenfrow"/><br /><sub><b>bjrenfrow</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=bjrenfrow" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://github.com/orhanveli"><img src="https://avatars1.githubusercontent.com/u/525103?v=4" width="100px;" alt="orhan"/><br /><sub><b>orhan</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=orhanveli" title="Code">💻</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="https://github.com/swolfod"><img src="https://avatars3.githubusercontent.com/u/6654724?v=4" width="100px;" alt="swolfod"/><br /><sub><b>swolfod</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=swolfod" title="Code">💻</a></td>
+<td style="text-align: center;"><a href="https://kodinu.lt"><img src="https://avatars1.githubusercontent.com/u/6559757?v=4" width="100px;" alt="Eligijus Krėpšta"/><br /><sub><b>Eligijus Krėpšta</b></sub></a><br /><a href="https://github.com/orthes/medium-editor-insert-plugin/commits?author=keligijus" title="Code">💻</a></td>
+</tr>
+</tbody>
+</table>
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+<p>This project follows the <a href="https://github.com/all-contributors/all-contributors">all-contributors</a> specification. Contributions of any kind welcome!</p>
+<h2>License</h2>
+<p><a href="https://github.com/orthes/medium-editor-insert-plugin/blob/master/LICENSE">MIT</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/contenteditable" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>contenteditable</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/editor" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>editor</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/medium" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>medium</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/wysiwyg" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>wysiwyg</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/rich-text" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>rich-text</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/images" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>images</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/embeds" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>embeds</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/videos" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>videos</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/312938?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/linkesch" target="_blank" id="ownerName" class="sidebar-link">linkesch</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 8, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 18, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://orthes.github.io/medium-editor-insert-plugin" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>blueimp-file-upload (^9.28.0)</li><li>handlebars (^4.0.12)</li><li>jquery (&gt;=1.9.0)</li><li>jquery-sortable (~0.9.12)</li><li>medium-editor (^5.15.0)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>all-contributors-cli (^5.10.2)</li><li>grunt (^1.0.3)</li><li>grunt-autoprefixer (^3.0.1)</li><li>grunt-banner (^0.6.0)</li><li>grunt-contrib-concat (^1.0.1)</li><li>grunt-contrib-handlebars (^1.0.0)</li><li>grunt-contrib-jasmine (^1.2.0)</li><li>grunt-contrib-jshint (^2.0.0)</li><li>grunt-contrib-uglify (^4.0.0)</li><li>grunt-contrib-watch (^1.1.0)</li><li>grunt-csso (^2.2.4)</li><li>grunt-jscs (^3.0.1)</li><li>grunt-sass (^3.0.2)</li><li>grunt-template-jasmine-istanbul (^0.5.0)</li><li>jit-grunt (^0.10.0)</li><li>node-sass (^4.11.0)</li><li>time-grunt (^2.0.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/312938?v=4" alt="linkesch" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/linkesch" target="_blank" class="text-decoration-none fw-bold">linkesch</a><p class="mb-0 text-muted small">452 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/62333?v=4" alt="j0k3r" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/j0k3r" target="_blank" class="text-decoration-none fw-bold">j0k3r</a><p class="mb-0 text-muted small">31 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/39333?v=4" alt="nleush" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nleush" target="_blank" class="text-decoration-none fw-bold">nleush</a><p class="mb-0 text-muted small">14 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/19343?v=4" alt="ai" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ai" target="_blank" class="text-decoration-none fw-bold">ai</a><p class="mb-0 text-muted small">10 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/79373?v=4" alt="Jaza" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Jaza" target="_blank" class="text-decoration-none fw-bold">Jaza</a><p class="mb-0 text-muted small">10 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1228229?v=4" alt="vexus2" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vexus2" target="_blank" class="text-decoration-none fw-bold">vexus2</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/594298?v=4" alt="KELiON" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/KELiON" target="_blank" class="text-decoration-none fw-bold">KELiON</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5272569?v=4" alt="patrinhani-ciandt" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/patrinhani-ciandt" target="_blank" class="text-decoration-none fw-bold">patrinhani-ciandt</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4083642?v=4" alt="daniel-huang" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/daniel-huang" target="_blank" class="text-decoration-none fw-bold">daniel-huang</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1101183?v=4" alt="OmniaGM" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/OmniaGM" target="_blank" class="text-decoration-none fw-bold">OmniaGM</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1790778?v=4" alt="iamfiras" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/iamfiras" target="_blank" class="text-decoration-none fw-bold">iamfiras</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1642706?v=4" alt="tasarsu" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tasarsu" target="_blank" class="text-decoration-none fw-bold">tasarsu</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/18568266?v=4" alt="linpekka" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/linpekka" target="_blank" class="text-decoration-none fw-bold">linpekka</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1449414?v=4" alt="acekat" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/acekat" target="_blank" class="text-decoration-none fw-bold">acekat</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1086365?v=4" alt="jackyzhai" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jackyzhai" target="_blank" class="text-decoration-none fw-bold">jackyzhai</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/28541?v=4" alt="scashin133" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/scashin133" target="_blank" class="text-decoration-none fw-bold">scashin133</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1270102?v=4" alt="olleicua" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/olleicua" target="_blank" class="text-decoration-none fw-bold">olleicua</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1642674?v=4" alt="Siron" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Siron" target="_blank" class="text-decoration-none fw-bold">Siron</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/93555?v=4" alt="miloshadzic" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/miloshadzic" target="_blank" class="text-decoration-none fw-bold">miloshadzic</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8471513?v=4" alt="KazuyaHara" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/KazuyaHara" target="_blank" class="text-decoration-none fw-bold">KazuyaHara</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/883073?v=4" alt="jonathonsim" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jonathonsim" target="_blank" class="text-decoration-none fw-bold">jonathonsim</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/431361?v=4" alt="enzoz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/enzoz" target="_blank" class="text-decoration-none fw-bold">enzoz</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5192706?v=4" alt="BurnHavoc" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/BurnHavoc" target="_blank" class="text-decoration-none fw-bold">BurnHavoc</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1891369?v=4" alt="brenfrow" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/brenfrow" target="_blank" class="text-decoration-none fw-bold">brenfrow</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/610268?v=4" alt="bertzzie" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bertzzie" target="_blank" class="text-decoration-none fw-bold">bertzzie</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/19725964?v=4" alt="jerinisready" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jerinisready" target="_blank" class="text-decoration-none fw-bold">jerinisready</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1831399?v=4" alt="jbellsey" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jbellsey" target="_blank" class="text-decoration-none fw-bold">jbellsey</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/55442?v=4" alt="oznek" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/oznek" target="_blank" class="text-decoration-none fw-bold">oznek</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/366564?v=4" alt="mateid" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mateid" target="_blank" class="text-decoration-none fw-bold">mateid</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/714146?v=4" alt="maxkirchoff" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/maxkirchoff" target="_blank" class="text-decoration-none fw-bold">maxkirchoff</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
