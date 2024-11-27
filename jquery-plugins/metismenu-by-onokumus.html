@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Collapsible jQuery Menu Plugin</title>
+    <meta name="description" content="metismenu by onokumus. A collapsible jQuery menu plugin">
+    <meta name="author" content="onokumus">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/metismenu-by-onokumus.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Metismenu</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Metismenu",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Metismenu</h1>
+        <p id="packageDescription" class="text-muted">A collapsible jQuery menu plugin</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1960</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.27 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">485</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">82</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/onokumus/metismenu/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/onokumus/metismenu" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>metismenu <a href="https://www.npmjs.com/package/metismenu"><img src="https://img.shields.io/npm/v/metismenu.svg?style=flat" alt="NPM version" /></a> <a href="https://npmjs.org/package/metismenu"><img src="https://img.shields.io/npm/dm/metismenu.svg?style=flat" alt="NPM monthly downloads" /></a> <a href="https://npmjs.org/package/metismenu"><img src="https://img.shields.io/npm/dt/metismenu.svg?style=flat" alt="NPM total downloads" /></a></h1>
+<blockquote>
+<p>A collapsible jQuery menu plugin</p>
+<p>This version does not support any version of IE browser.</p>
+</blockquote>
+<ul>
+<li><a href="#getting-started">Getting started</a>
+<ul>
+<li><a href="#install">Install</a></li>
+<li><a href="#download">Download</a></li>
+</ul></li>
+<li><a href="#usage">Usage</a>
+<ul>
+<li><a href="#stopping-list-opening-on-certain-elements">Stopping list opening on certain elements</a></li>
+<li><a href="#toggle">toggle</a></li>
+<li><a href="#dispose">dispose</a></li>
+<li><a href="#preventdefault">preventDefault</a></li>
+<li><a href="#triggerelement">triggerElement</a></li>
+<li><a href="#parenttrigger">parentTrigger</a></li>
+<li><a href="#submenu">subMenu</a></li>
+</ul></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#migrating-to-v3-from-v2">Migrating to v3 from v2</a></li>
+<li><a href="#demo">Demo</a></li>
+<li><a href="#about">About</a>
+<ul>
+<li><a href="#related-projects">Related projects</a></li>
+<li><a href="#contributors">Contributors</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#release-history">Release History</a></li>
+<li><a href="#author">Author</a></li>
+<li><a href="#license">License</a></li>
+</ul></li>
+</ul>
+<h2>Getting started</h2>
+<h3>Install</h3>
+<p>Install with <a href="https://www.npmjs.com/">npm</a>:</p>
+<pre class="prettyprint linenums lang-language"><code>npm install --save metismenu</code></pre>
+<p>Install with <a href="https://yarnpkg.com">yarn</a>:</p>
+<pre class="prettyprint linenums lang-language"><code>yarn add metismenu</code></pre>
+<p>Install with <a href="https://getcomposer.org/">composer</a></p>
+<pre class="prettyprint linenums lang-language"><code>composer require onokumus/metismenu:dev-master</code></pre>
+<h3>Download</h3>
+<p><a href="https://github.com/onokumus/metisMenu/archive/master.zip">download</a></p>
+<h2>Usage</h2>
+<ol>
+<li>
+<p>Include metismenu StyleSheet</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link rel="stylesheet" href="https://unpkg.com/metismenu/dist/metisMenu.min.css"&gt;
+&lt;!-- OR --&gt;  
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/metismenu/dist/metisMenu.min.css"&gt;</code></pre>
+</li>
+<li>
+<p>Include jQuery</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="https://unpkg.com/jquery"&gt;&lt;/script&gt;
+&lt;!-- OR --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery"&gt;&lt;/script&gt;</code></pre>
+</li>
+<li>
+<p>Include metisMenu plugin's code</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="https://unpkg.com/metismenu"&gt;&lt;/script&gt;
+&lt;!-- OR --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/metismenu"&gt;&lt;/script&gt;</code></pre>
+</li>
+<li>
+<p>Add id attribute to unordered list</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;ul id="metismenu"&gt;
+
+&lt;/ul&gt;</code></pre>
+</li>
+<li>
+<p>Make expand/collapse controls accessible</p>
+</li>
+</ol>
+<blockquote>
+<p>Be sure to add <code>aria-expanded</code> to the element <code>a</code>. This attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. If the collapsible element is closed by default, it should have a value of <code>aria-expanded="false"</code>. If you've set the collapsible element's parent <code>li</code> element to be open by default using the <code>mm-active</code> class, set <code>aria-expanded="true"</code> on the control instead. The plugin will automatically toggle this attribute based on whether or not the collapsible element has been opened or closed.</p>
+</blockquote>
+<pre class="prettyprint linenums lang-language"><code>  &lt;ul id="metismenu"&gt;
+    &lt;li class="mm-active"&gt;
+      &lt;a href="#" aria-expanded="true"&gt;Menu 1&lt;/a&gt;
+      &lt;ul&gt;
+      ...
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#" aria-expanded="false"&gt;Menu 2&lt;/a&gt;
+      &lt;ul&gt;
+      ...
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    ...
+    &lt;/ul&gt;</code></pre>
+<ol>
+<li>Arrow Options</li>
+</ol>
+<blockquote>
+<p>add <code>has-arrow</code> class to <code>a</code> element</p>
+</blockquote>
+<pre class="prettyprint linenums lang-language"><code>  &lt;ul id="metismenu"&gt;
+  &lt;li class="mm-active"&gt;
+    &lt;a class="has-arrow" href="#" aria-expanded="true"&gt;Menu 1&lt;/a&gt;
+    &lt;ul&gt;
+    ...
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a class="has-arrow" href="#" aria-expanded="false"&gt;Menu 2&lt;/a&gt;
+    &lt;ul&gt;
+    ...
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  ...
+  &lt;/ul&gt;</code></pre>
+<ol>
+<li>
+<p>Call the plugin:</p>
+<pre class="prettyprint linenums lang-language"><code>$("#metismenu").metisMenu();</code></pre>
+</li>
+</ol>
+<h3>Stopping list opening on certain elements</h3>
+<p>Setting aria-disabled=&quot;true&quot; in the <code>&lt;a&gt;</code> element as shown will stop metisMenu opening the menu for that particular list. This can be changed dynamically and will be obeyed correctly:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;a href="#" aria-expanded="false" aria-disabled="true"&gt;List 1&lt;/a&gt;</code></pre>
+<h4>toggle</h4>
+<p>Type: <code>Boolean</code><br />
+Default: <code>true</code></p>
+<p>For auto collapse support.</p>
+<pre class="prettyprint linenums lang-language"><code> $("#metismenu").metisMenu({
+   toggle: false
+ });</code></pre>
+<h4>dispose</h4>
+<p>Type: <code>String</code><br />
+Default: <code>null</code></p>
+<p>For stop and destroy metisMenu.</p>
+<pre class="prettyprint linenums lang-language"><code> $("#metismenu").metisMenu('dispose');</code></pre>
+<h4>preventDefault</h4>
+<p>Type: <code>Boolean</code><br />
+Default: <code>true</code></p>
+<blockquote>
+<p>Prevents or allows dropdowns' onclick events after expanding/collapsing.</p>
+</blockquote>
+<pre class="prettyprint linenums lang-language"><code>   $("#menu").metisMenu({
+     preventDefault: false
+   });</code></pre>
+<p><em>since from version 2.7.0</em></p>
+<h4>triggerElement</h4>
+<p>Type: <code>jQuery selector</code><br />
+Default: <code>a</code></p>
+<pre class="prettyprint linenums lang-language"><code> $("#metismenu").metisMenu({
+   triggerElement: '.nav-link' // bootstrap 5
+ });</code></pre>
+<h4>parentTrigger</h4>
+<p>Type: <code>jQuery selector</code><br />
+Default: <code>li</code></p>
+<pre class="prettyprint linenums lang-language"><code> $("#metismenu").metisMenu({
+   parentTrigger: '.nav-item' // bootstrap 5
+ });</code></pre>
+<h4>subMenu</h4>
+<p>Type: <code>jQuery selector</code><br />
+Default: <code>ul</code></p>
+<pre class="prettyprint linenums lang-language"><code> $("#metismenu").metisMenu({
+   subMenu: '.nav.flex-column' // bootstrap 5
+ });</code></pre>
+<h2>Events</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Event Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show.metisMenu</td>
+<td>This event fires immediately when the <code>_show</code> instance method is called.</td>
+</tr>
+<tr>
+<td>shown.metisMenu</td>
+<td>This event is fired when a collapse <code>ul</code> element has been made visible to the user (will wait for CSS transitions to complete).</td>
+</tr>
+<tr>
+<td>hide.metisMenu</td>
+<td>This event is fired immediately when the <code>_hide</code> method has been called.</td>
+</tr>
+<tr>
+<td>hidden.metisMenu</td>
+<td>This event is fired when a collapse <code>ul</code> element has been hidden from the user (will wait for CSS transitions to complete).</td>
+</tr>
+</tbody>
+</table>
+<h2>Migrating to v3 from v2</h2>
+<ul>
+<li>Update <code>metisMenu.js</code> &amp; <code>metisMenu.css</code> files</li>
+<li>Change <code>active</code> class to <code>mm-active</code></li>
+</ul>
+<h2>Demo</h2>
+<p><a href="http://mm.onokumus.com">http://mm.onokumus.com</a></p>
+<p>Contains a simple HTML file to demonstrate metisMenu plugin.</p>
+<h2>About</h2>
+<h3>Related projects</h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/@metismenu/react">@metismenu/react</a>: react component for MetisMenu | <a href="https://github.com/onokumus/metismenu-react#readme" title="react component for MetisMenu">homepage</a></li>
+<li><a href="https://www.npmjs.com/package/metismenujs">metismenujs</a>: MetisMenu with Vanilla-JS | <a href="https://github.com/onokumus/metismenujs#readme" title="MetisMenu with Vanilla-JS">homepage</a></li>
+</ul>
+<h3>Contributors</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Contributor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/onokumus">onokumus</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/diegozhu">diegozhu</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/sinabs">sinabs</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/DrugoLebowski">DrugoLebowski</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/BurkovBA">BurkovBA</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthurtalkgoal">arthurtalkgoal</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/mrdziuban">mrdziuban</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/nicolasigot">nicolasigot</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PeterDaveHello">PeterDaveHello</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/kalidema">kalidema</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/AndrewEastwood">AndrewEastwood</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/rgnevashev">rgnevashev</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/719media">719media</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/chriswiggins">chriswiggins</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jmagnusson">jmagnusson</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/LukasDrgon">LukasDrgon</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Cediddi">Cediddi</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/WoMayr">WoMayr</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/capynet">capynet</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Contributing</h3>
+<p>Pull requests and stars are always welcome. For bugs and feature requests, <a href="../../issues/new">please create an issue</a>.</p>
+<p>Please read the <a href=".github/contributing.md">contributing guide</a> for advice on opening issues, pull requests, and coding standards.</p>
+<h3>Release History</h3>
+<table>
+<thead>
+<tr>
+<th><strong>DATE</strong></th>
+<th><strong>VERSION</strong></th>
+<th><strong>CHANGES</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021-05-16</td>
+<td>v3.0.7</td>
+<td>sass support</td>
+</tr>
+<tr>
+<td>2020-03-22</td>
+<td>v3.0.6</td>
+<td>fix security vulnerabilities</td>
+</tr>
+<tr>
+<td>2019-12-28</td>
+<td>v3.0.5</td>
+<td>Fix dispose to be similar to init (adding event) <a href="https://github.com/onokumus/metismenu/pull/184">#184</a></td>
+</tr>
+<tr>
+<td>2019-03-07</td>
+<td>v3.0.4</td>
+<td>fix</td>
+</tr>
+<tr>
+<td>2018-10-05</td>
+<td>v3.0.3</td>
+<td>fix</td>
+</tr>
+<tr>
+<td>2018-10-05</td>
+<td>v3.0.2</td>
+<td>fix</td>
+</tr>
+<tr>
+<td>2018-10-05</td>
+<td>v3.0.1</td>
+<td>fix</td>
+</tr>
+<tr>
+<td>2018-10-05</td>
+<td>v3.0.0</td>
+<td>more functionally</td>
+</tr>
+<tr>
+<td>2018-10-05</td>
+<td>v2.7.9.1</td>
+<td>Fix dispose option <a href="https://github.com/onokumus/metismenu/pull/173">#173</a></td>
+</tr>
+<tr>
+<td>2018-06-28</td>
+<td>v2.7.9</td>
+<td>Make jquery a peer dependency</td>
+</tr>
+<tr>
+<td>2018-06-14</td>
+<td>v2.7.8</td>
+<td>remove aria-expanded attribute &amp; remove transitionend check</td>
+</tr>
+<tr>
+<td>2018-02-14</td>
+<td>v2.7.4</td>
+<td>jQuery -&gt; $ in src/metisMenu.js to fix import. <a href="https://github.com/onokumus/metismenu/pull/158">#158</a></td>
+</tr>
+<tr>
+<td>2018-02-14</td>
+<td>v2.7.3</td>
+<td>window might not be defined in node.js environment <a href="https://github.com/onokumus/metismenu/pull/156">#156</a></td>
+</tr>
+<tr>
+<td>2017-12-31</td>
+<td>v2.7.2</td>
+<td>isolate against bootstrap changes, remove old legacy ie9 code <a href="https://github.com/onokumus/metismenu/pull/154">#154</a></td>
+</tr>
+<tr>
+<td>2017-10-30</td>
+<td>v2.7.1</td>
+<td>added check in complete()-callback to break when menu was disposed <a href="https://github.com/onokumus/metismenu/pull/150">#150</a></td>
+</tr>
+<tr>
+<td>2017-03-08</td>
+<td>v2.7.0</td>
+<td>fixed <code>has-arrow</code> class border color &amp; added new 3 options</td>
+</tr>
+<tr>
+<td>2017-02-23</td>
+<td>v2.6.3</td>
+<td>fixed #129</td>
+</tr>
+<tr>
+<td>2017-02-02</td>
+<td>v2.6.2</td>
+<td>doubleTapToGo option is deprecated</td>
+</tr>
+<tr>
+<td>2016-12-06</td>
+<td>v2.6.1</td>
+<td>fix require.js</td>
+</tr>
+<tr>
+<td>2016-11-29</td>
+<td>v2.6.0</td>
+<td>dispose support</td>
+</tr>
+<tr>
+<td>2016-05-06</td>
+<td>v2.5.2</td>
+<td>fix Menu failed to remove collapsing class</td>
+</tr>
+<tr>
+<td>2016-05-06</td>
+<td>v2.5.1</td>
+<td>fixed bootstrap conflict</td>
+</tr>
+<tr>
+<td>2016-03-31</td>
+<td>v2.5.0</td>
+<td>Event support</td>
+</tr>
+<tr>
+<td>2016-03-11</td>
+<td>v2.4.3</td>
+<td>create meteor package</td>
+</tr>
+<tr>
+<td>2016-03-04</td>
+<td>v2.4.2</td>
+<td>back to version 2.4.0</td>
+</tr>
+<tr>
+<td>2016-03-03</td>
+<td>v2.4.1</td>
+<td><del>Transition element passed to methods</del> (removed)</td>
+</tr>
+<tr>
+<td>2016-01-25</td>
+<td>v2.4.0</td>
+<td>Support AMD / Node / CommonJS</td>
+</tr>
+<tr>
+<td>2016-01-08</td>
+<td>v2.3.0</td>
+<td>Adding aria-disabled=true to the link element prevents the dropdown from opening</td>
+</tr>
+<tr>
+<td>2015-09-27</td>
+<td>v2.2.0</td>
+<td>Events supported &amp; added preventDefault options</td>
+</tr>
+<tr>
+<td>2015-08-06</td>
+<td>v2.1.0</td>
+<td>RTL &amp; <code>aria-expanded</code> attribute &amp; TypeScript type definitions support</td>
+</tr>
+<tr>
+<td>2015-07-25</td>
+<td>v2.0.3</td>
+<td>When the active item has doubleTapToGo should not collapse</td>
+</tr>
+<tr>
+<td>2015-05-23</td>
+<td>v2.0.2</td>
+<td><a href="https://github.com/onokumus/metisMenu/issues/34#issuecomment-104656754">fixed</a></td>
+</tr>
+<tr>
+<td>2015-05-22</td>
+<td>v2.0.1</td>
+<td>changeable classname support</td>
+</tr>
+<tr>
+<td>2015-04-03</td>
+<td>v2.0.0</td>
+<td>Remove Bootstrap dependency</td>
+</tr>
+<tr>
+<td>2015-03-24</td>
+<td>v1.1.3</td>
+<td>composer support</td>
+</tr>
+<tr>
+<td>2014-11-01</td>
+<td>v1.1.3</td>
+<td>Bootstrap 3.3.0</td>
+</tr>
+<tr>
+<td>2014-07-07</td>
+<td>v1.1.0</td>
+<td>Add double tap functionality</td>
+</tr>
+<tr>
+<td>2014-06-24</td>
+<td>v1.0.3</td>
+<td>cdnjs support &amp; rename plugin</td>
+</tr>
+<tr>
+<td>2014-06-18</td>
+<td>v1.0.3</td>
+<td>Create grunt task</td>
+</tr>
+<tr>
+<td>2014-06-10</td>
+<td>v1.0.2</td>
+<td>Fixed for IE8 &amp; IE9</td>
+</tr>
+</tbody>
+</table>
+<h3>Author</h3>
+<p><strong>Osman Nuri Okumus</strong></p>
+<ul>
+<li><a href="https://github.com/onokumus">GitHub Profile</a></li>
+<li><a href="https://twitter.com/onokumus">Twitter Profile</a></li>
+<li><a href="https://linkedin.com/in/onokumus">LinkedIn Profile</a></li>
+</ul>
+<h3>License</h3>
+<p>Copyright © 2021, <a href="https://github.com/onokumus">Osman Nuri Okumus</a>.<br />
+Released under the <a href="LICENSE">MIT License</a>.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/menu" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>menu</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/metismenu" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>metismenu</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/742498?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/onokumus" target="_blank" id="ownerName" class="sidebar-link">onokumus</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">November 30, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 25, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://onokumus.github.io/metismenu/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>@rollup/plugin-node-resolve (^15.0.1)</li><li>@types/jquery (^3.5.14)</li><li>cross-env (^7.0.3)</li><li>eslint (^8.27.0)</li><li>eslint-config-airbnb-base (^15.0.0)</li><li>eslint-plugin-import (^2.26.0)</li><li>rollup (^3.3.0)</li><li>sass (^1.56.1)</li><li>terser (^5.15.1)</li></ul><h5 class="sidebar-title">Peer Dependencies</h5><ul class="dependencies-list"><li>jquery (^3.4.1)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/742498?v=4" alt="onokumus" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/onokumus" target="_blank" class="text-decoration-none fw-bold">onokumus</a><p class="mb-0 text-muted small">243 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1610612?v=4" alt="diegozhu" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/diegozhu" target="_blank" class="text-decoration-none fw-bold">diegozhu</a><p class="mb-0 text-muted small">8 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1351257?v=4" alt="sinabs" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sinabs" target="_blank" class="text-decoration-none fw-bold">sinabs</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/6850946?v=4" alt="DrugoLebowski" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/DrugoLebowski" target="_blank" class="text-decoration-none fw-bold">DrugoLebowski</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/7602655?v=4" alt="BurkovBA" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/BurkovBA" target="_blank" class="text-decoration-none fw-bold">BurkovBA</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/123600?v=4" alt="rgnevashev" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rgnevashev" target="_blank" class="text-decoration-none fw-bold">rgnevashev</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1483306?v=4" alt="AndrewEastwood" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/AndrewEastwood" target="_blank" class="text-decoration-none fw-bold">AndrewEastwood</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8334931?v=4" alt="kalidema" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kalidema" target="_blank" class="text-decoration-none fw-bold">kalidema</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3691490?v=4" alt="PeterDaveHello" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/PeterDaveHello" target="_blank" class="text-decoration-none fw-bold">PeterDaveHello</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/599470?v=4" alt="nicolasigot" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nicolasigot" target="_blank" class="text-decoration-none fw-bold">nicolasigot</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4718399?v=4" alt="mrdziuban" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mrdziuban" target="_blank" class="text-decoration-none fw-bold">mrdziuban</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7088330?v=4" alt="arthurtalkgoal" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/arthurtalkgoal" target="_blank" class="text-decoration-none fw-bold">arthurtalkgoal</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5250903?v=4" alt="leomeurer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/leomeurer" target="_blank" class="text-decoration-none fw-bold">leomeurer</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1402913?v=4" alt="capynet" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/capynet" target="_blank" class="text-decoration-none fw-bold">capynet</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/162571997?v=4" alt="CuWoMayr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/CuWoMayr" target="_blank" class="text-decoration-none fw-bold">CuWoMayr</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2720608?v=4" alt="Cediddi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Cediddi" target="_blank" class="text-decoration-none fw-bold">Cediddi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/37834555?v=4" alt="sbtpanja" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sbtpanja" target="_blank" class="text-decoration-none fw-bold">sbtpanja</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/15611832?v=4" alt="LukasDrgon" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LukasDrgon" target="_blank" class="text-decoration-none fw-bold">LukasDrgon</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/190835?v=4" alt="jacobsvante" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jacobsvante" target="_blank" class="text-decoration-none fw-bold">jacobsvante</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2830609?v=4" alt="chriswiggins" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/chriswiggins" target="_blank" class="text-decoration-none fw-bold">chriswiggins</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5942229?v=4" alt="719media" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/719media" target="_blank" class="text-decoration-none fw-bold">719media</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+17 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
