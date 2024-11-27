@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightweight Grid jQuery Plugin</title>
+    <meta name="description" content="jsgrid by tabalinas. Lightweight Grid jQuery Plugin">
+    <meta name="author" content="tabalinas">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jsgrid-by-tabalinas.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jsgrid</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jsgrid",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jsgrid</h1>
+        <p id="packageDescription" class="text-muted">Lightweight Grid jQuery Plugin</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1526</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">2.5 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">351</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">373</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/tabalinas/jsgrid/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/tabalinas/jsgrid" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jsGrid Lightweight Grid jQuery Plugin</h1>
+<p><a href="https://travis-ci.org/tabalinas/jsgrid"><img src="https://travis-ci.org/tabalinas/jsgrid.svg?branch=master" alt="Build Status" /></a></p>
+<p>Project site <a href="http://js-grid.com/">js-grid.com</a></p>
+<p><strong>jsGrid</strong> is a lightweight client-side data grid control based on jQuery.<br />
+It supports basic grid operations like inserting, filtering, editing, deleting, paging, sorting, and validating.<br />
+jsGrid is tunable and allows to customize appearance and components.</p>
+<p><img src="http://content.screencast.com/users/tabalinas/folders/Jing/media/beada891-57fc-41f3-ad77-fbacecd01d15/00000002.png" alt="jsGrid lightweight client-side data grid" /></p>
+<h2>Table of contents</h2>
+<ul>
+<li><a href="#demos">Demos</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#basic-usage">Basic Usage</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#grid-fields">Grid Fields</a></li>
+<li><a href="#methods">Methods</a></li>
+<li><a href="#callbacks">Callbacks</a></li>
+<li><a href="#grid-controller">Grid Controller</a></li>
+<li><a href="#validation">Validation</a></li>
+<li><a href="#localization">Localization</a></li>
+<li><a href="#sorting-strategies">Sorting Strategies</a></li>
+<li><a href="#load-strategies">Load Strategies</a></li>
+<li><a href="#load-indication">Load Indication</a></li>
+<li><a href="#requirement">Requirement</a></li>
+<li><a href="#compatibility">Compatibility</a></li>
+</ul>
+<h2>Demos</h2>
+<p>See <a href="http://js-grid.com/demos/">Demos</a> on project site.</p>
+<p>Sample projects showing how to use jsGrid with the most popular backend technologies</p>
+<ul>
+<li><strong>PHP</strong> - <a href="https://github.com/tabalinas/jsgrid-php">https://github.com/tabalinas/jsgrid-php</a></li>
+<li><strong>ASP.NET WebAPI</strong> - <a href="https://github.com/tabalinas/jsgrid-webapi">https://github.com/tabalinas/jsgrid-webapi</a></li>
+<li><strong>Express (NodeJS)</strong> - <a href="https://github.com/tabalinas/jsgrid-express">https://github.com/tabalinas/jsgrid-express</a></li>
+<li><strong>Ruby on Rail</strong> - <a href="https://github.com/tabalinas/jsgrid-rails">https://github.com/tabalinas/jsgrid-rails</a></li>
+<li><strong>Django (Python)</strong> - <a href="https://github.com/tabalinas/jsgrid-django">https://github.com/tabalinas/jsgrid-django</a></li>
+</ul>
+<h2>Installation</h2>
+<p>Install jsgrid with bower:</p>
+<pre class="prettyprint linenums lang-language"><code>
+$ bower install js-grid --save
+</code></pre>
+<p>Find jsGrid cdn links <a href="https://cdnjs.com/libraries/jsgrid">here</a>. </p>
+<h2>Basic Usage</h2>
+<p>Ensure that jQuery library of version 1.8.3 or later is included.</p>
+<p>Include <code>jsgrid.min.js</code>, <code>jsgrid-theme.min.css</code>, and <code>jsgrid.min.css</code> files into the web page.</p>
+<p>Create grid applying jQuery plugin <code>jsGrid</code> with grid config as follows:</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#jsGrid").jsGrid({
+    width: "100%",
+    height: "400px",
+
+    filtering: true,
+    editing: true,
+    sorting: true,
+    paging: true,
+
+    data: db.clients,
+
+    fields: [
+        { name: "Name", type: "text", width: 150 },
+        { name: "Age", type: "number", width: 50 },
+        { name: "Address", type: "text", width: 200 },
+        { name: "Country", type: "select", items: db.countries, valueField: "Id", textField: "Name" },
+        { name: "Married", type: "checkbox", title: "Is Married", sorting: false },
+        { type: "control" }
+    ]
+});
+</code></pre>
+<h2>Configuration</h2>
+<p>The config object may contain following options (default values are specified below):</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    fields: [],
+    data: [],
+
+    autoload: false,
+    controller: {
+        loadData: $.noop,
+        insertItem: $.noop,
+        updateItem: $.noop,
+        deleteItem: $.noop
+    },
+
+    width: "auto",
+    height: "auto",
+
+    heading: true,
+    filtering: false,
+    inserting: false,
+    editing: false,
+    selecting: true,
+    sorting: false,
+    paging: false,
+    pageLoading: false,
+
+    insertRowLocation: "bottom",
+
+    rowClass: function(item, itemIndex) { ... },
+    rowClick: function(args) { ... },
+    rowDoubleClick: function(args) { ... },
+
+    noDataContent: "Not found",
+
+    confirmDeleting: true,
+    deleteConfirm: "Are you sure?",
+
+    pagerContainer: null,
+    pageIndex: 1,
+    pageSize: 20,
+    pageButtonCount: 15,
+    pagerFormat: "Pages: {first} {prev} {pages} {next} {last} &amp;nbsp;&amp;nbsp; {pageIndex} of {pageCount}",
+    pagePrevText: "Prev",
+    pageNextText: "Next",
+    pageFirstText: "First",
+    pageLastText: "Last",
+    pageNavigatorNextText: "...",
+    pageNavigatorPrevText: "...",
+
+    invalidNotify: function(args) { ... }
+    invalidMessage: "Invalid data entered!",
+
+    loadIndication: true,
+    loadIndicationDelay: 500,
+    loadMessage: "Please, wait...",
+    loadShading: true,
+    loadIndicator: function(config) { ... }
+    loadStrategy: function(config) { ... }
+
+    updateOnResize: true,
+
+    rowRenderer: null,
+    headerRowRenderer: null,
+    filterRowRenderer: null,
+    insertRowRenderer: null,
+    editRowRenderer: null,
+    pagerRenderer: null
+}
+</code></pre>
+<h3>fields</h3>
+<p>An array of fields (columns) of the grid.</p>
+<p>Each field has general options and specific options depending on field type.</p>
+<p>General options peculiar to all field types:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    type: "",
+    name: "",
+    title: "",
+    align: "",
+    width: 100,
+    visible: true,
+
+    css: "",
+    headercss: "",
+    filtercss: "",
+    insertcss: "",
+    editcss: "",
+
+    filtering: true,
+    inserting: true,
+    editing: true,
+    sorting: true,
+    sorter: "string",
+
+    headerTemplate: function() { ... },
+    itemTemplate: function(value, item) { ... },
+    filterTemplate: function() { ... },
+    insertTemplate: function() { ... },
+    editTemplate: function(value, item) { ... },
+
+    filterValue: function() { ... },
+    insertValue: function() { ... },
+    editValue: function() { ... },
+
+    cellRenderer: null,
+
+    validate: null
+}
+</code></pre>
+<ul>
+<li><strong>type</strong> is a string key of field (<code>"text"|"number"|"checkbox"|"select"|"textarea"|"control"</code>) in fields registry <code>jsGrid.fields</code> (the registry can be easily extended with custom field types).</li>
+<li><strong>name</strong> is a property of data item associated with the column.</li>
+<li><strong>title</strong> is a text to be displayed in the header of the column. If <code>title</code> is not specified, the <code>name</code> will be used instead.</li>
+<li><strong>align</strong> is alignment of text in the cell. Accepts following values <code>"left"|"center"|"right"</code>.</li>
+<li><strong>width</strong> is a width of the column.</li>
+<li><strong>visible</strong> is a boolean specifying whether to show a column or not. (version added: 1.3)</li>
+<li><strong>css</strong> is a string representing css classes to be attached to the table cell.</li>
+<li><strong>headercss</strong> is a string representing css classes to be attached to the table header cell. If not specified, then <strong>css</strong> is attached instead.</li>
+<li><strong>filtercss</strong> is a string representing css classes to be attached to the table filter row cell. If not specified, then <strong>css</strong> is attached instead.</li>
+<li><strong>insertcss</strong> is a string representing css classes to be attached to the table insert row cell. If not specified, then <strong>css</strong> is attached instead.</li>
+<li><strong>editcss</strong> is a string representing css classes to be attached to the table edit row cell. If not specified, then <strong>css</strong> is attached instead.</li>
+<li><strong>filtering</strong> is a boolean specifying whether or not column has filtering (<code>filterTemplate()</code> is rendered and <code>filterValue()</code> is included in load filter object).</li>
+<li><strong>inserting</strong> is a boolean specifying whether or not column has inserting (<code>insertTemplate()</code> is rendered and <code>insertValue()</code> is included in inserting item).</li>
+<li><strong>editing</strong> is a boolean specifying whether or not column has editing (<code>editTemplate()</code> is rendered and <code>editValue()</code> is included in editing item).</li>
+<li><strong>sorting</strong> is a boolean specifying whether or not column has sorting ability.</li>
+<li><strong>sorter</strong> is a string or a function specifying how to sort item by the field. The string is a key of sorting strategy in the registry <code>jsGrid.sortStrategies</code> (the registry can be easily extended with custom sorting functions). Sorting function has the signature <code>function(value1, value2) { return -1|0|1; }</code>.</li>
+<li><strong>headerTemplate</strong> is a function to create column header content. It should return markup as string, DomNode or jQueryElement.</li>
+<li><strong>itemTemplate</strong> is a function to create cell content. It should return markup as string, DomNode or jQueryElement. The function signature is <code>function(value, item)</code>, where <code>value</code> is a value of column property of data item, and <code>item</code> is a row data item.</li>
+<li><strong>filterTemplate</strong> is a function to create filter row cell content. It should return markup as string, DomNode or jQueryElement.</li>
+<li><strong>insertTemplate</strong> is a function to create insert row cell content. It should return markup as string, DomNode or jQueryElement.</li>
+<li><strong>editTemplate</strong> is a function to create cell content of editing row. It should return markup as string, DomNode or jQueryElement. The function signature is <code>function(value, item)</code>, where <code>value</code> is a value of column property of data item, and <code>item</code> is a row data item.</li>
+<li><strong>filterValue</strong> is a function returning the value of filter property associated with the column.</li>
+<li><strong>insertValue</strong> is a function returning the value of inserting item property associated with the column.</li>
+<li><strong>editValue</strong> is a function returning the value of editing item property associated with the column.</li>
+<li><strong>cellRenderer</strong> is a function to customize cell rendering. The function signature is <code>function(value, item)</code>, where <code>value</code> is a value of column property of data item, and <code>item</code> is a row data item. The function should return markup as a string, jQueryElement or DomNode representing table cell <code>td</code>.</li>
+<li><strong>validate</strong> is a string as validate rule name or validation function or a validation configuration object or an array of validation configuration objects. Read more details about validation in the <a href="#validation">Validation section</a>. </li>
+</ul>
+<p>Specific field options depends on concrete field type.<br />
+Read about build-in fields in <a href="#grid-fields">Grid Fields</a> section.</p>
+<h3>data</h3>
+<p>An array of items to be displayed in the grid. The option should be used to provide static data. Use the <code>controller</code> option to provide non static data.</p>
+<h3>autoload (default <code>false</code>)</h3>
+<p>A boolean value specifying whether <code>controller.loadData</code> will be called when grid is rendered.</p>
+<h3>controller</h3>
+<p>An object or function returning an object with the following structure:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    loadData: $.noop,
+    insertItem: $.noop,
+    updateItem: $.noop,
+    deleteItem: $.noop
+}
+</code></pre>
+<ul>
+<li><strong>loadData</strong> is a function returning an array of data or jQuery promise that will be resolved with an array of data (when <code>pageLoading</code> is <code>true</code> instead of object the structure <code>{ data: [items], itemsCount: [total items count] }</code> should be returned). Accepts filter parameter including current filter options and paging parameters when <code>pageLoading</code> is <code>true</code>.</li>
+<li><strong>insertItem</strong> is a function returning inserted item or jQuery promise that will be resolved with inserted item. Accepts inserting item object.</li>
+<li><strong>updateItem</strong> is a function returning updated item or jQuery promise that will be resolved with updated item. Accepts updating item object.</li>
+<li><strong>deleteItem</strong> is a function deleting item. Returns jQuery promise that will be resolved when deletion is completed. Accepts deleting item object.</li>
+</ul>
+<p>Read more about controller interface in <a href="#grid-controller">Grid Controller</a> section.</p>
+<h3>width (default: <code>"auto"</code>)</h3>
+<p>Specifies the overall width of the grid.<br />
+Accepts all value types accepting by <code>jQuery.width</code>.</p>
+<h3>height (default: <code>"auto"</code>)</h3>
+<p>Specifies the overall height of the grid including the pager.<br />
+Accepts all value types accepting by <code>jQuery.height</code>.</p>
+<h3>heading (default: <code>true</code>)</h3>
+<p>A boolean value specifies whether to show grid header or not.</p>
+<h3>filtering (default: <code>false</code>)</h3>
+<p>A boolean value specifies whether to show filter row or not.</p>
+<h3>inserting (default: <code>false</code>)</h3>
+<p>A boolean value specifies whether to show inserting row or not.</p>
+<h3>editing (default: <code>false</code>)</h3>
+<p>A boolean value specifies whether editing is allowed.</p>
+<h3>selecting (default: <code>true</code>)</h3>
+<p>A boolean value specifies whether to highlight grid rows on hover.</p>
+<h3>sorting (default: <code>false</code>)</h3>
+<p>A boolean value specifies whether sorting is allowed.</p>
+<h3>paging (default: <code>false</code>)</h3>
+<p>A boolean value specifies whether data is displayed by pages.</p>
+<h3>pageLoading (default: <code>false</code>)</h3>
+<p>A boolean value specifies whether to load data by page.<br />
+When <code>pageLoading</code> is <code>true</code> the <code>loadData</code> method of controller accepts <code>filter</code> parameter with two additional properties <code>pageSize</code> and <code>pageIndex</code>.     </p>
+<h3>insertRowLocation (default: <code>"bottom"</code>)</h3>
+<p>Specifies the location of an inserted row within the grid.<br />
+When <code>insertRowLocation</code> is <code>"bottom"</code> the new row will appear at the bottom of the grid. When set to <code>"top"</code>, the new row will appear at the top. </p>
+<h3>rowClass</h3>
+<p>A string or a function specifying row css classes.<br />
+A string contains classes separated with spaces.<br />
+A function has signature <code>function(item, itemIndex)</code>. It accepts the data item and index of the item. It should returns a string containing classes separated with spaces.</p>
+<h3>rowClick</h3>
+<p>A function handling row click. Accepts single argument with following structure:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+     item       // data item
+     itemIndex  // data item index
+     event      // jQuery event
+}
+</code></pre>
+<p>By default <code>rowClick</code> performs row editing when <code>editing</code> is <code>true</code>.</p>
+<h3>rowDoubleClick</h3>
+<p>A function handling row double click. Accepts single argument with the following structure:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+     item       // data item
+     itemIndex  // data item index
+     event      // jQuery event
+}
+</code></pre>
+<h3>noDataContent (default <code>"Not found"</code>)</h3>
+<p>A string or a function returning a markup, jQueryElement or DomNode specifying the content to be displayed when <code>data</code> is an empty array.</p>
+<h3>confirmDeleting (default <code>true</code>)</h3>
+<p>A boolean value specifying whether to ask user to confirm item deletion.</p>
+<h3>deleteConfirm (default <code>"Are you sure?"</code>)</h3>
+<p>A string or a function returning string specifying delete confirmation message to be displayed to the user.<br />
+A function has the signature <code>function(item)</code> and accepts item to be deleted.</p>
+<h3>pagerContainer (default <code>null</code>)</h3>
+<p>A jQueryElement or DomNode to specify where to render a pager. Used for external pager rendering. When it is equal to <code>null</code>, the pager is rendered at the bottom of the grid.</p>
+<h3>pageIndex (default <code>1</code>)</h3>
+<p>An integer value specifying current page index. Applied only when <code>paging</code> is <code>true</code>.</p>
+<h3>pageSize (default <code>20</code>)</h3>
+<p>An integer value specifying the amount of items on the page. Applied only when <code>paging</code> is <code>true</code>.</p>
+<h3>pageButtonCount (default <code>15</code>)</h3>
+<p>An integer value specifying the maximum amount of page buttons to be displayed in the pager.</p>
+<h3>pagerFormat</h3>
+<p>A string specifying pager format.<br />
+The default value is  <code>"Pages: {first} {prev} {pages} {next} {last} &amp;nbsp;&amp;nbsp; {pageIndex} of {pageCount}"</code></p>
+<p>There are placeholders that can be used in the format:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{first}     // link to first page
+{prev}      // link to previous page
+{pages}     // page links
+{next}      // link to next page
+{last}      // link to last page
+{pageIndex} // current page index
+{pageCount} // total amount of pages
+{itemCount} // total amount of items
+</code></pre>
+<h3>pageNextText (default <code>"Next"</code>)</h3>
+<p>A string specifying the text of the link to the next page.</p>
+<h3>pagePrevText (default <code>"Prev"</code>)</h3>
+<p>A string specifying the text of the link to the previous page.</p>
+<h3>pageFirstText (default <code>"First"</code>)</h3>
+<p>A string specifying the text of the link to the first page.</p>
+<h3>pageLastText (default <code>"Last"</code>)</h3>
+<p>A string specifying the text of the link to the last page.</p>
+<h3>pageNavigatorNextText (default <code>"..."</code>)</h3>
+<p>A string specifying the text of the link to move to next set of page links, when total amount of pages more than <code>pageButtonCount</code>.</p>
+<h3>pageNavigatorPrevText (default <code>"..."</code>)</h3>
+<p>A string specifying the text of the link to move to previous set of page links, when total amount of pages more than <code>pageButtonCount</code>.</p>
+<h3>invalidMessage (default <code>"Invalid data entered!"</code>)</h3>
+<p>A string specifying the text of the alert message, when invalid data was entered.</p>
+<h3>invalidNotify</h3>
+<p>A function triggered, when invalid data was entered.<br />
+By default all violated validators messages are alerted.<br />
+The behavior can be customized by providing custom function.</p>
+<p>The function accepts a single argument with the following structure:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    item                // inserting/editing item
+    itemIndex           // inserting/editing item index
+    errors              // array of validation violations in format { field: "fieldName", message: "validator message" }
+}
+</code></pre>
+<p>In the following example error messages are printed in the console instead of alerting:</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid({
+    ...
+
+    invalidNotify: function(args) {
+        var messages = $.map(args.errors, function(error) {
+            return error.field + ": " + error.message;
+        });
+
+        console.log(messages);
+    }
+
+    ...
+}); 
+</code></pre>
+<h3>loadIndication (default <code>true</code>)</h3>
+<p>A boolean value specifying whether to show loading indication during controller operations execution.</p>
+<h3>loadIndicationDelay (default <code>500</code>)</h3>
+<p>An integer value specifying the delay in ms before showing load indication. Applied only when <code>loadIndication</code> is <code>true</code>.</p>
+<h3>loadMessage (default <code>"Please, wait..."</code>)</h3>
+<p>A string specifying the text of loading indication panel. Applied only when <code>loadIndication</code> is <code>true</code>.</p>
+<h3>loadShading (default <code>true</code>)</h3>
+<p>A boolean value specifying whether to show overlay (shader) over grid content during loading indication. Applied only when <code>loadIndication</code> is <code>true</code>.</p>
+<h3>loadIndicator</h3>
+<p>An object or a function returning an object representing grid load indicator. Load indicator could be any js object supporting two methods <code>show</code> and <code>hide</code>.<br />
+<code>show</code> is called on each loading start. <code>hide</code> method is called on each loading finish. Read more about custom load indicator in the <a href="#load-indication">Load Indication</a> section.</p>
+<h3>loadStrategy</h3>
+<p>An object or a function returning an object representing grid load strategy. Load strategy defines behavior of the grid after loading data (any interaction with grid controller methods including data manipulation like inserting, updating and removing).<br />
+There are two build-in load strategies: <code>DirectLoadingStrategy</code> and <code>PageLoadingStrategy</code>. Load strategy depends on <code>pageLoading</code> option value.<br />
+For advanced scenarios custom load strategy can be provided. Read more about custom load strategies in the <a href="#load-strategies">Load Strategies</a> section.</p>
+<h3>updateOnResize (default <code>true</code>)</h3>
+<p>A boolean value specifying whether to refresh grid on window resize event.</p>
+<h3>rowRenderer (default <code>null</code>)</h3>
+<p>A function to customize row rendering. The function signature is <code>function(item, itemIndex)</code>, where <code>item</code> is row data item, and <code>itemIndex</code> is the item index.<br />
+The function should return markup as a string, jQueryElement or DomNode representing table row <code>tr</code>.</p>
+<h3>headerRowRenderer (default <code>null</code>)</h3>
+<p>A function to customize grid header row.<br />
+The function should return markup as a string, jQueryElement or DomNode representing table row <code>tr</code>.</p>
+<h3>filterRowRenderer (default <code>null</code>)</h3>
+<p>A function to customize grid filter row.<br />
+The function should return markup as a string, jQueryElement or DomNode representing table row <code>tr</code>.</p>
+<h3>insertRowRenderer (default <code>null</code>)</h3>
+<p>A function to customize grid inserting row.<br />
+The function should return markup as a string, jQueryElement or DomNode representing table row <code>tr</code>.</p>
+<h3>editRowRenderer (default <code>null</code>)</h3>
+<p>A function to customize editing row rendering. The function signature is <code>function(item, itemIndex)</code>, where <code>item</code> is row data item, and <code>itemIndex</code> is the item index.<br />
+The function should return markup as a string, jQueryElement or DomNode representing table row <code>tr</code>.</p>
+<h3>pagerRenderer (default <code>null</code>)</h3>
+<blockquote>
+<p>version added: 1.2 </p>
+</blockquote>
+<p>A function to customize pager rendering. The function accepts a single argument with the following structure:</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    pageIndex,      // index of the currently opened page
+    pageCount       // total amount of grid pages 
+} </code></pre>
+<p>The function should return markup as a string, jQueryElement or DomNode representing the pager.<br />
+If <code>pagerRenderer</code> is specified, then <code>pagerFormat</code> option will be ignored.</p>
+<h2>Grid Fields</h2>
+<p>All fields supporting by grid are stored in <code>jsGrid.fields</code> object, where key is a type of the field and the value is the field class.</p>
+<p><code>jsGrid.fields</code> contains following build-in fields:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    text: { ... },      // simple text input
+    number: { ... },    // number input
+    select: { ... },    // select control
+    checkbox: { ... },  // checkbox input
+    textarea: { ... },  // textarea control (renders textarea for inserting and editing and text input for filtering)
+    control: { ... }    // control field with delete and editing buttons for data rows, search and add buttons for filter and inserting row
+}
+</code></pre>
+<p>Each build-in field can be easily customized with general configuration properties described in <a href="#fields">fields</a> section and custom field-specific properties described below.</p>
+<h3>text</h3>
+<p>Text field renders <code>&lt;input type="text"&gt;</code> in filter, inserting and editing rows.</p>
+<p>Custom properties:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    autosearch: true,   // triggers searching when the user presses `enter` key in the filter input
+    readOnly: false     // a boolean defines whether input is readonly (added in v1.4)
+}
+</code></pre>
+<h3>number</h3>
+<p>Number field renders <code>&lt;input type="number"&gt;</code> in filter, inserting and editing rows.</p>
+<p>Custom properties:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    sorter: "number",   // uses sorter for numbers
+    align: "right",     // right text alignment
+    readOnly: false     // a boolean defines whether input is readonly (added in v1.4)
+}
+</code></pre>
+<h3>select</h3>
+<p>Select field renders <code>&lt;select&gt;</code> control in filter, inserting and editing rows.</p>
+<p>Custom properties:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    align: "center",            // center text alignment
+    autosearch: true,           // triggers searching when the user changes the selected item in the filter
+    items: [],                  // an array of items for select
+    valueField: "",             // name of property of item to be used as value
+    textField: "",              // name of property of item to be used as displaying value
+    selectedIndex: -1,          // index of selected item by default
+    valueType: "number|string", // the data type of the value
+    readOnly: false             // a boolean defines whether select is readonly (added in v1.4)
+}
+</code></pre>
+<p>If valueField is not defined, then the item index is used instead.<br />
+If textField is not defined, then item itself is used to display value.</p>
+<p>For instance the simple select field config may look like:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    name: "Country",
+    type: "select",
+    items: [ "", "United States", "Canada", "United Kingdom" ]
+}
+</code></pre>
+<p>or more complex with items as objects:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    name: "Country",
+    type: "select"
+    items: [
+         { Name: "", Id: 0 },
+         { Name: "United States", Id: 1 },
+         { Name: "Canada", Id: 2 },
+         { Name: "United Kingdom", Id: 3 }
+    ],
+    valueField: "Id",
+    textField: "Name"
+}
+</code></pre>
+<p><code>valueType</code> defines whether the field value should be converted to a number or returned as a string.<br />
+The value of the option is determined automatically depending on the data type of <code>valueField</code> of the first item, but it can be overridden.</p>
+<h3>checkbox</h3>
+<p>Checkbox field renders <code>&lt;input type="checkbox"&gt;</code> in filter, inserting and editing rows.<br />
+Filter checkbox supports intermediate state for, so click switches between 3 states (checked|intermediate|unchecked).</p>
+<p>Custom properties:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    sorter: "number",   // uses sorter for numbers
+    align: "center",    // center text alignment
+    autosearch: true    // triggers searching when the user clicks checkbox in filter
+}
+</code></pre>
+<h3>textarea</h3>
+<p>Textarea field renders <code>&lt;textarea&gt;</code> in inserting and editing rows and <code>&lt;input type="text"&gt;</code> in filter row.</p>
+<p>Custom properties:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    autosearch: true,   // triggers searching when the user presses `enter` key in the filter input
+    readOnly: false     // a boolean defines whether textarea is readonly (added in v1.4)
+}
+</code></pre>
+<h3>control</h3>
+<p>Control field renders delete and editing buttons in data row, search and add buttons in filter and inserting row accordingly.<br />
+It also renders button switching between filtering and searching in header row.</p>
+<p>Custom properties:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    editButton: true,                               // show edit button
+    deleteButton: true,                             // show delete button
+    clearFilterButton: true,                        // show clear filter button
+    modeSwitchButton: true,                         // show switching filtering/inserting button
+
+    align: "center",                                // center content alignment
+    width: 50,                                      // default column width is 50px
+    filtering: false,                               // disable filtering for column
+    inserting: false,                               // disable inserting for column
+    editing: false,                                 // disable editing for column
+    sorting: false,                                 // disable sorting for column
+
+    searchModeButtonTooltip: "Switch to searching", // tooltip of switching filtering/inserting button in inserting mode
+    insertModeButtonTooltip: "Switch to inserting", // tooltip of switching filtering/inserting button in filtering mode
+    editButtonTooltip: "Edit",                      // tooltip of edit item button
+    deleteButtonTooltip: "Delete",                  // tooltip of delete item button
+    searchButtonTooltip: "Search",                  // tooltip of search button
+    clearFilterButtonTooltip: "Clear filter",       // tooltip of clear filter button
+    insertButtonTooltip: "Insert",                  // tooltip of insert button
+    updateButtonTooltip: "Update",                  // tooltip of update item button
+    cancelEditButtonTooltip: "Cancel edit",         // tooltip of cancel editing button
+}
+</code></pre>
+<h3>Custom Field</h3>
+<p>If you need a completely custom field, the object <code>jsGrid.fields</code> can be easily extended.</p>
+<p>In this example we define new grid field <code>date</code>:</p>
+<pre class="prettyprint linenums lang-language"><code>
+var MyDateField = function(config) {
+    jsGrid.Field.call(this, config);
+};
+
+MyDateField.prototype = new jsGrid.Field({
+
+    css: "date-field",            // redefine general property 'css'
+    align: "center",              // redefine general property 'align'
+
+    myCustomProperty: "foo",      // custom property
+
+    sorter: function(date1, date2) {
+        return new Date(date1) - new Date(date2);
+    },
+
+    itemTemplate: function(value) {
+        return new Date(value).toDateString();
+    },
+
+    insertTemplate: function(value) {
+        return this._insertPicker = $("&lt;input&gt;").datepicker({ defaultDate: new Date() });
+    },
+
+    editTemplate: function(value) {
+        return this._editPicker = $("&lt;input&gt;").datepicker().datepicker("setDate", new Date(value));
+    },
+
+    insertValue: function() {
+        return this._insertPicker.datepicker("getDate").toISOString();
+    },
+
+    editValue: function() {
+        return this._editPicker.datepicker("getDate").toISOString();
+    }
+});
+
+jsGrid.fields.date = MyDateField;
+</code></pre>
+<p>To have all general grid field properties custom field class should inherit <code>jsGrid.Field</code> class or any other field class.<br />
+Here <code>itemTemplate</code> just returns the string representation of a date.<br />
+<code>insertTemplate</code> and <code>editTemplate</code> create jQuery UI datePicker for inserting and editing row.<br />
+Of course jquery ui library should be included to make it work.<br />
+<code>insertValue</code> and <code>editValue</code> return date to insert and update items accordingly.<br />
+We also defined date specific sorter.</p>
+<p>Now, our new field <code>date</code> can be used in the grid config as follows:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    fields: [
+      ...
+      { type: "date", myCustomProperty: "bar" },
+      ...
+    ]
+}
+</code></pre>
+<h2>Methods</h2>
+<p>jsGrid methods could be called with <code>jsGrid</code> jQuery plugin or directly.</p>
+<p>To use jsGrid plugin to call a method, just call <code>jsGrid</code> with method name and required parameters as next arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+// calling method with jQuery plugin
+$("#grid").jsGrid("methodName", param1, param2);
+</code></pre>
+<p>To call method directly you need to retrieve grid instance or just create grid with the constructor:</p>
+<pre class="prettyprint linenums lang-language"><code>
+// retrieve grid instance from element data
+var grid = $("#grid").data("JSGrid");
+
+// create grid with the constructor
+var grid = new jsGrid.Grid($("#grid"), { ... });
+
+// call method directly
+grid.methodName(param1, param2); 
+</code></pre>
+<h3>cancelEdit()</h3>
+<p>Cancels row editing. </p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid("cancelEdit");
+</code></pre>
+<h3>clearFilter(): <code>Promise</code></h3>
+<p>Clears current filter and performs search with empty filter.<br />
+Returns jQuery promise resolved when data filtering is completed. </p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid("clearFilter").done(function() {
+    console.log("filtering completed");
+});
+</code></pre>
+<h3>clearInsert()</h3>
+<p>Clears current inserting row. </p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid("clearInsert");
+</code></pre>
+<h3>deleteItem(item|$row|rowNode): <code>Promise</code></h3>
+<p>Removes specified row from the grid.<br />
+Returns jQuery promise resolved when deletion is completed.</p>
+<p><strong>item|$row|rowNode</strong> is the reference to the item or the row jQueryElement or the row DomNode.</p>
+<pre class="prettyprint linenums lang-language"><code>
+// delete row by item reference
+$("#grid").jsGrid("deleteItem", item);
+
+// delete row by jQueryElement
+$("#grid").jsGrid("deleteItem", $(".specific-row"));
+
+// delete row by DomNode
+$("#grid").jsGrid("deleteItem", rowNode);
+</code></pre>
+<h3>destroy()</h3>
+<p>Destroys the grid and brings the Node to its original state.</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid("destroy");
+</code></pre>
+<h3>editItem(item|$row|rowNode)</h3>
+<p>Sets grid editing row.</p>
+<p><strong>item|$row|rowNode</strong> is the reference to the item or the row jQueryElement or the row DomNode.</p>
+<pre class="prettyprint linenums lang-language"><code>
+// edit row by item reference
+$("#grid").jsGrid("editItem", item);
+
+// edit row by jQueryElement
+$("#grid").jsGrid("editItem", $(".specific-row"));
+
+// edit row by DomNode
+$("#grid").jsGrid("editItem", rowNode);
+</code></pre>
+<h3>getFilter(): <code>Object</code></h3>
+<p>Get grid filter as a plain object.</p>
+<pre class="prettyprint linenums lang-language"><code>
+var filter = $("#grid").jsGrid("getFilter");
+</code></pre>
+<h3>getSorting(): <code>Object</code></h3>
+<blockquote>
+<p>version added: 1.2</p>
+</blockquote>
+<p>Get grid current sorting params as a plain object with the following format:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{  
+    field,      // the name of the field by which grid is sorted
+    order       // 'asc' or 'desc' depending on sort order
+}
+</code></pre>
+<pre class="prettyprint linenums lang-language"><code>
+var sorting = $("#grid").jsGrid("getSorting");
+</code></pre>
+<h3>fieldOption(fieldName|fieldIndex, optionName, [optionValue])</h3>
+<blockquote>
+<p>version added: 1.3</p>
+</blockquote>
+<p>Gets or sets the value of a field option.</p>
+<p><strong>fieldName|fieldIndex</strong> is the name or the index of the field to get/set the option value (if the grid contains more than one field with the same name, the first field will be used).</p>
+<p><strong>optionName</strong> is the name of the field option.</p>
+<p><strong>optionValue</strong> is the new option value to set. </p>
+<p>If <code>optionValue</code> is not specified, then the value of the field option <code>optionName</code> will be returned.</p>
+<pre class="prettyprint linenums lang-language"><code>
+// hide the field "ClientName"
+$("#grid").jsGrid("fieldOption", "ClientName", "visible", false);
+
+// get width of the 2nd field
+var secondFieldOption = $("#grid").jsGrid("fieldOption", 1, "width");
+</code></pre>
+<h3>insertItem([item]): <code>Promise</code></h3>
+<p>Inserts row into the grid based on item.<br />
+Returns jQuery promise resolved when insertion is completed. </p>
+<p><strong>item</strong> is the item to pass to <code>controller.insertItem</code>. </p>
+<p>If <code>item</code> is not specified the data from inserting row will be inserted.</p>
+<pre class="prettyprint linenums lang-language"><code>
+// insert item from inserting row
+$("#grid").jsGrid("insertItem");
+
+// insert item
+$("#grid").jsGrid("insertItem", { Name: "John", Age: 25, Country: 2 }).done(function() {
+    console.log("insertion completed");
+});
+</code></pre>
+<h3>loadData([filter]): <code>Promise</code></h3>
+<p>Loads data calling corresponding <code>controller.loadData</code> method.<br />
+Returns jQuery promise resolved when data loading is completed.<br />
+It preserves current sorting and paging unlike the <code>search</code> method .</p>
+<p><strong>filter</strong> is a filter to pass to <code>controller.loadData</code>. </p>
+<p>If <code>filter</code> is not specified the current filter (filtering row values) will be applied.</p>
+<pre class="prettyprint linenums lang-language"><code>
+// load data with current grid filter
+$("#grid").jsGrid("loadData");
+
+// loadData with custom filter
+$("#grid").jsGrid("loadData", { Name: "John" }).done(function() {
+    console.log("data loaded");
+});
+</code></pre>
+<h3>exportData([options])</h3>
+<p>Transforms the grid data into the specified output type.<br />
+Output can be formatted, filtered or modified by providing options.<br />
+Currently only supports CSV output.    </p>
+<pre class="prettyprint linenums lang-language"><code>//Basic export
+var csv = $("#grid").jsGrid("exportData");
+
+//Full Options
+var csv = $("#grid").jsGrid("exportData", {
+    type: "csv", //Only CSV supported
+    subset: "all" | "visible", //Visible will only output the currently displayed page
+    delimiter: "|", //If using csv, the character to seperate fields
+    includeHeaders: true, //Include header row in output
+    encapsulate: true, //Surround each field with qoutation marks; needed for some systems
+    newline: "\r\n", //Newline character to use
+
+    //Takes each item and returns true if it should be included in output.
+    //Executed only on the records within the given subset above.
+    filter: function(item){return true},
+
+    //Transformations are a way to modify the display value of the output.
+    //Provide a key of the field name, and a function that takes the current value.
+    transformations: {
+        "Married": function(value){
+            if (value === true){
+                return "Yes"
+            }
+            else{
+                return "No"
+            }
+        }
+    }
+});
+</code></pre>
+<h3>openPage(pageIndex)</h3>
+<p>Opens the page of specified index.</p>
+<p><strong>pageIndex</strong> is one-based index of the page to open. The value should be in range from 1 to [total amount of pages].</p>
+<h3>option(optionName, [optionValue])</h3>
+<p>Gets or sets the value of an option.</p>
+<p><strong>optionName</strong> is the name of the option.</p>
+<p><strong>optionValue</strong> is the new option value to set. </p>
+<p>If <code>optionValue</code> is not specified, then the value of the option <code>optionName</code> will be returned.</p>
+<pre class="prettyprint linenums lang-language"><code>
+// turn off paging
+$("#grid").jsGrid("option", "paging", false);
+
+// get current page index
+var pageIndex = $("#grid").jsGrid("option", "pageIndex");
+</code></pre>
+<h3>refresh()</h3>
+<p>Refreshes the grid. Renders the grid body and pager content, recalculates sizes.</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid("refresh");
+</code></pre>
+<h3>render(): <code>Promise</code></h3>
+<p>Performs complete grid rendering. If option <code>autoload</code> is <code>true</code> calls <code>controller.loadData</code>. The state of the grid like current page and sorting is retained.<br />
+Returns jQuery promise resolved when data loading is completed. If auto-loading is disabled the promise is instantly resolved.   </p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid("render").done(function() {
+    console.log("rendering completed and data loaded");
+});
+</code></pre>
+<h3>reset()</h3>
+<p>Resets the state of the grid. Goes to the first data page, resets sorting, and then calls <code>refresh</code>.  </p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid("reset");
+</code></pre>
+<h3>rowByItem(item): <code>jQueryElement</code></h3>
+<blockquote>
+<p>version added: 1.3</p>
+</blockquote>
+<p>Gets the row jQuery element corresponding to the item.</p>
+<p><strong>item</strong> is the item corresponding to the row.</p>
+<pre class="prettyprint linenums lang-language"><code>
+var $row = $("#grid").jsGrid("rowByItem", item);
+</code></pre>
+<h3>search([filter]): <code>Promise</code></h3>
+<p>Performs filtering of the grid.<br />
+Returns jQuery promise resolved when data loading is completed.<br />
+It resets current sorting and paging unlike the <code>loadData</code> method.</p>
+<p><strong>filter</strong> is a filter to pass to <code>controller.loadData</code>. </p>
+<p>If <code>filter</code> is not specified the current filter (filtering row values) will be applied.</p>
+<pre class="prettyprint linenums lang-language"><code>
+// search with current grid filter
+$("#grid").jsGrid("search");
+
+// search with custom filter
+$("#grid").jsGrid("search", { Name: "John" }).done(function() {
+    console.log("filtering completed");
+});
+</code></pre>
+<h3>showPrevPages()</h3>
+<p>Shows previous set of pages, when total amount of pages more than <code>pageButtonCount</code>.</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid("showPrevPages");
+</code></pre>
+<h3>showNextPages()</h3>
+<p>Shows next set of pages, when total amount of pages more than <code>pageButtonCount</code>.</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid("showNextPages");
+</code></pre>
+<h3>sort(sortConfig|field, [order]): <code>Promise</code></h3>
+<p>Sorts grid by specified field.<br />
+Returns jQuery promise resolved when sorting is completed.</p>
+<p><strong>sortConfig</strong> is the plain object of the following structure <code>{ field: (fieldIndex|fieldName|field), order: ("asc"|"desc") }</code></p>
+<p><strong>field</strong> is the field to sort by. It could be zero-based field index or field name or field reference</p>
+<p><strong>order</strong> is the sorting order. Accepts the following values: &quot;asc&quot;|&quot;desc&quot;</p>
+<p>If <code>order</code> is not specified, then data is sorted in the reversed to current order, when grid is already sorted by the same field. Or <code>"asc"</code> for sorting by another field.</p>
+<p>When grid data is loaded by pages (<code>pageLoading</code> is <code>true</code>) sorting calls <code>controller.loadData</code> with sorting parameters. Read more in <a href="#grid-controller">Grid Controller</a> section.</p>
+<pre class="prettyprint linenums lang-language"><code>
+// sorting grid by first field
+$("#grid").jsGrid("sort", 0);
+
+// sorting grid by field "Name" in descending order
+$("#grid").jsGrid("sort", { field: "Name", order: "desc" });
+
+// sorting grid by myField in ascending order 
+$("#grid").jsGrid("sort", myField, "asc").done(function() {
+    console.log("sorting completed");
+});
+</code></pre>
+<h3>updateItem([item|$row|rowNode], [editedItem]): <code>Promise</code></h3>
+<p>Updates item and row of the grid.<br />
+Returns jQuery promise resolved when update is completed.</p>
+<p><strong>item|$row|rowNode</strong> is the reference to the item or the row jQueryElement or the row DomNode.</p>
+<p><strong>editedItem</strong> is the changed item to pass to <code>controller.updateItem</code>.</p>
+<p>If <code>item|$row|rowNode</code> is not specified then editing row will be updated.</p>
+<p>If <code>editedItem</code> is not specified the data from editing row will be taken.</p>
+<pre class="prettyprint linenums lang-language"><code>
+// update currently editing row
+$("#grid").jsGrid("updateItem");
+
+// update currently editing row with specified data
+$("#grid").jsGrid("updateItem", { ID: 1, Name: "John", Age: 25, Country: 2 });
+
+// update specified item with particular data (row DomNode or row jQueryElement can be used instead of item reference)
+$("#grid").jsGrid("updateItem", item, { ID: 1, Name: "John", Age: 25, Country: 2 }).done(function() {
+    console.log("update completed");
+});
+</code></pre>
+<h3>jsGrid.locale(localeName|localeConfig)</h3>
+<blockquote>
+<p>version added: 1.4</p>
+</blockquote>
+<p>Set current locale of all grids.</p>
+<p><strong>localeName|localeConfig</strong> is the name of the supported locale (see <a href="src/i18n">available locales</a>) or a custom localization config.<br />
+Find more information on custom localization config in <a href="#localization">Localization</a>. </p>
+<pre class="prettyprint linenums lang-language"><code>
+// set French locale
+jsGrid.locale("fr");
+</code></pre>
+<h3>jsGrid.setDefaults(config)</h3>
+<p>Set default options for all grids.</p>
+<pre class="prettyprint linenums lang-language"><code>
+jsGrid.setDefaults({
+    filtering: true,
+    inserting: true
+});
+</code></pre>
+<h3>jsGrid.setDefaults(fieldName, config)</h3>
+<p>Set default options of the particular field.</p>
+<pre class="prettyprint linenums lang-language"><code>
+jsGrid.setDefaults("text", {
+    width: 150,
+    css: "text-field-cls"
+});
+</code></pre>
+<h2>Callbacks</h2>
+<p>jsGrid allows to specify a callback function to be executed on a particular event.</p>
+<p>The following callbacks are supported:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    onDataLoading: function(args) {},    // before controller.loadData
+    onDataLoaded: function(args) {},     // on done of controller.loadData
+    onDataExporting: function() {},      // before data export
+
+    onInit: function(args) {},           // after grid initialization 
+
+    onItemInserting: function(args) {},  // before controller.insertItem
+    onItemInserted: function(args) {},   // on done of controller.insertItem
+    onItemUpdating: function(args) {},   // before controller.updateItem
+    onItemUpdated: function(args) {},    // on done of controller.updateItem
+    onItemDeleting: function(args) {},   // before controller.deleteItem
+    onItemDeleted: function(args) {},    // on done of controller.deleteItem
+    onItemInvalid: function(args) {},    // after item validation, in case data is invalid
+
+    onError: function(args) {},          // on fail of any controller call
+
+    onOptionChanging: function(args) {}, // before changing the grid option
+    onOptionChanged: function(args) {},  // after changing the grid option
+
+    onPageChanged: function(args) {},    // after changing the current page
+
+    onRefreshing: function(args) {},     // before grid refresh
+    onRefreshed: function(args) {},      // after grid refresh
+}
+</code></pre>
+<h3>onDataLoading</h3>
+<p>Fires before data loading.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    filter              // loading filter object
+}
+</code></pre>
+<h4>Cancel Data Loading</h4>
+<blockquote>
+<p>version added: 1.2</p>
+</blockquote>
+<p>To cancel data loading set <code>args.cancel = true</code>.</p>
+<p>In the following example loading is canceled when the filter has empty 'name' field:</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid({
+    ...
+
+    onDataLoading: function(args) {
+        // cancel loading data if 'name' is empty
+        if(args.filter.name === "") {
+            args.cancel = true;
+        }
+    }
+});
+</code></pre>
+<h3>onDataLoaded</h3>
+<p>Fires after data loading.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    data                // load result (array of items or data structure for loading by page scenario) 
+}
+</code></pre>
+<p>In the following example the loaded data is written to the browser console.</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid({
+    ...
+
+    onDataLoaded: function(args) {
+        console.log(args.data);
+    }
+});
+</code></pre>
+<h3>onInit</h3>
+<blockquote>
+<p>version added: 1.5</p>
+</blockquote>
+<p>Fires after grid initialization right before rendering. Usually used to get grid instance. </p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+}
+</code></pre>
+<p>In the following example we get the grid instance on initialization:</p>
+<pre class="prettyprint linenums lang-language"><code>
+var gridInstance;
+
+$("#grid").jsGrid({
+    ...
+
+    onInit: function(args) {
+        gridInstance = args.grid;
+    }
+});
+</code></pre>
+<h3>onError</h3>
+<p>Fires when controller handler promise failed.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    args                // an array of arguments provided to fail promise handler 
+}
+</code></pre>
+<h3>onItemDeleting</h3>
+<p>Fires before item deletion.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    row                 // deleting row jQuery element
+    item                // deleting item
+    itemIndex           // deleting item index
+}
+</code></pre>
+<h4>Cancel Item Deletion</h4>
+<blockquote>
+<p>version added: 1.2</p>
+</blockquote>
+<p>To cancel item deletion set <code>args.cancel = true</code>. This allows to do a validation before performing the actual deletion.</p>
+<p>In the following example the deletion of items marked as <code>protected</code> is canceled:</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid({
+    ...
+
+    onItemDeleting: function(args) {
+        // cancel deletion of the item with 'protected' field
+        if(args.item.protected) {
+            args.cancel = true;
+        }
+    }
+});
+</code></pre>
+<h3>onItemDeleted</h3>
+<p>Fires after item deletion.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    row                 // deleted row jQuery element
+    item                // deleted item
+    itemIndex           // deleted item index
+}
+</code></pre>
+<h3>onItemEditing</h3>
+<blockquote>
+<p>version added: 1.4</p>
+</blockquote>
+<p>Fires before item editing.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    row                 // editing row jQuery element
+    item                // editing item
+    itemIndex           // editing item index
+}
+</code></pre>
+<h4>Cancel Item Editing</h4>
+<p>To cancel item editing set <code>args.cancel = true</code>. This allows to prevent row from editing conditionally.</p>
+<p>In the following example the editing of the row for item with 'ID' = 0 is canceled:</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid({
+    ...
+
+    onItemEditing: function(args) {
+        // cancel editing of the row of item with field 'ID' = 0 
+        if(args.item.ID === 0) {
+            args.cancel = true;
+        }
+    }
+});
+</code></pre>
+<h3>onItemInserting</h3>
+<p>Fires before item insertion.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    item                // inserting item
+}
+</code></pre>
+<h4>Cancel Item Insertion</h4>
+<blockquote>
+<p>version added: 1.2</p>
+</blockquote>
+<p>To cancel item insertion set <code>args.cancel = true</code>. This allows to do a validation before performing the actual insertion.</p>
+<p>In the following example insertion of items with the 'name' specified is allowed:</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid({
+    ...
+
+    onItemInserting: function(args) {
+        // cancel insertion of the item with empty 'name' field
+        if(args.item.name === "") {
+            args.cancel = true;
+            alert("Specify the name of the item!");
+        }
+    }
+});
+</code></pre>
+<h3>onItemInserted</h3>
+<p>Fires after item insertion.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    item                // inserted item
+}
+</code></pre>
+<h3>onItemInvalid</h3>
+<p>Fired when item is not following validation rules on inserting or updating.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    row                 // inserting/editing row jQuery element
+    item                // inserting/editing item
+    itemIndex           // inserting/editing item index
+    errors              // array of validation violations in format { field: "fieldName", message: "validator message" }
+}
+</code></pre>
+<p>The following handler prints errors on the console</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid({
+    ...
+
+    onItemInvalid: function(args) {
+        // prints [{ field: "Name", message: "Enter client name" }]
+        console.log(args.errors);
+    }
+});
+</code></pre>
+<h3>onItemUpdating</h3>
+<p>Fires before item update.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    row                 // updating row jQuery element
+    item                // updating item
+    itemIndex           // updating item index
+    previousItem        // shallow copy (not deep copy) of item before editing
+}
+</code></pre>
+<h4>Cancel Item Update</h4>
+<blockquote>
+<p>version added: 1.2</p>
+</blockquote>
+<p>To cancel item update set <code>args.cancel = true</code>. This allows to do a validation before performing the actual update.</p>
+<p>In the following example update of items with the 'name' specified is allowed:</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid({
+    ...
+
+    onItemUpdating: function(args) {
+        // cancel update of the item with empty 'name' field
+        if(args.item.name === "") {
+            args.cancel = true;
+            alert("Specify the name of the item!");
+        }
+    }
+});
+</code></pre>
+<h3>onItemUpdated</h3>
+<p>Fires after item update.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    row                 // updated row jQuery element
+    item                // updated item
+    itemIndex           // updated item index
+    previousItem        // shallow copy (not deep copy) of item before editing
+}
+</code></pre>
+<h3>onOptionChanging</h3>
+<p>Fires before grid option value change.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    option              // name of option to be changed
+    oldValue            // old value of option
+    newValue            // new value of option
+}
+</code></pre>
+<h3>onOptionChanged</h3>
+<p>Fires after grid option value change.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    option              // name of changed option
+    value               // changed option value
+}
+</code></pre>
+<h3>onPageChanged</h3>
+<blockquote>
+<p>version added: 1.5</p>
+</blockquote>
+<p>Fires once grid current page index is changed. It happens either by switching between the pages with the pager links, or by calling the method <code>openPage</code>, or changing the option <code>pageIndex</code>.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+    pageIndex           // current page index
+}
+</code></pre>
+<p>In the following example we print the current page index in the browser console once it has been changed:</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid({
+    ...
+
+    onPageChanged: function(args) {
+        console.log(args.pageIndex);
+    }
+});
+</code></pre>
+<h3>onRefreshing</h3>
+<p>Fires before grid refresh.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+}
+</code></pre>
+<h3>onRefreshed</h3>
+<p>Fires after grid refresh.</p>
+<p>Has the following arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    grid                // grid instance
+}
+</code></pre>
+<h2>Grid Controller</h2>
+<p>The controller is a gateway between grid and data storage. All data manipulations call accordant controller methods.<br />
+By default grid has an empty controller and can work with static array of items stored in option <code>data</code>.</p>
+<p>A controller should implement the following methods:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    loadData: function(filter) { ... },
+    insertItem: function(item) { ... },
+    updateItem: function(item) { ... },
+    deleteItem: function(item) { ... }
+}
+</code></pre>
+<p>Asynchronous controller methods should return a Promise, resolved once the request is completed.<br />
+Starting v1.5 jsGrid supports standard JavaScript Promise/A, earlier versions support only jQuery.Promise.</p>
+<p>For instance the controller for typical REST service might look like:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    loadData: function(filter) {
+        return $.ajax({
+            type: "GET",
+            url: "/items",
+            data: filter
+        });
+    },
+
+    insertItem: function(item) {
+        return $.ajax({
+            type: "POST",
+            url: "/items",
+            data: item
+        });
+    },
+
+    updateItem: function(item) {
+        return $.ajax({
+            type: "PUT",
+            url: "/items",
+            data: item
+        });
+    },
+
+    deleteItem: function(item) {
+        return $.ajax({
+            type: "DELETE",
+            url: "/items",
+            data: item
+        });
+    },
+}
+</code></pre>
+<h3>loadData(filter): <code>Promise|dataResult</code></h3>
+<p>Called on data loading.</p>
+<p><strong>filter</strong> contains all filter parameters of fields with enabled filtering</p>
+<p>When <code>pageLoading</code> is <code>true</code> and data is loaded by page, <code>filter</code> includes two more parameters:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    pageIndex     // current page index
+    pageSize      // the size of page
+}
+</code></pre>
+<p>When grid sorting is enabled, <code>filter</code> includes two more parameters:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    sortField     // the name of sorting field
+    sortOrder     // the order of sorting as string "asc"|"desc"
+}
+</code></pre>
+<p>Method should return <code>dataResult</code> or jQuery promise that will be resolved with <code>dataResult</code>.</p>
+<p><strong>dataResult</strong> depends on <code>pageLoading</code>. When <code>pageLoading</code> is <code>false</code> (by default), then data result is a plain javascript array of objects.<br />
+If <code>pageLoading</code> is <code>true</code> data result should have following structure </p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    data          // array of items
+    itemsCount    // total items amount in storage
+}
+</code></pre>
+<h3>insertItem(item): <code>Promise|insertedItem</code></h3>
+<p>Called on item insertion.</p>
+<p>Method should return <code>insertedItem</code> or jQuery promise that will be resolved with <code>insertedItem</code>.<br />
+If no item is returned, inserting item will be used as inserted item. </p>
+<p><strong>item</strong> is the item to be inserted.</p>
+<h3>updateItem(item): <code>Promise|updatedItem</code></h3>
+<p>Called on item update.</p>
+<p>Method should return <code>updatedItem</code> or jQuery promise that will be resolved with <code>updatedItem</code>.<br />
+If no item is returned, updating item will be used as updated item.</p>
+<p><strong>item</strong> is the item to be updated.</p>
+<h3>deleteItem(item): <code>Promise</code></h3>
+<p>Called on item deletion.</p>
+<p>If deletion is asynchronous, method should return jQuery promise that will be resolved when deletion is completed.</p>
+<p><strong>item</strong> is the item to be deleted.</p>
+<h2>Validation</h2>
+<blockquote>
+<p>version added: 1.4</p>
+</blockquote>
+<h3>Field Validation Config</h3>
+<p><code>validate</code> option of the field can have 4 different value types <code>string|Object|Array|function</code>:</p>
+<ol>
+<li><code>validate: "validatorName"</code></li>
+</ol>
+<p><strong>validatorName</strong> - is a string key of the validator in the <code>jsGrid.validators</code> registry. The registry can be easily extended. See available <a href="#built-in-validators">built-in validators here</a>. </p>
+<p>In the following example the <code>required</code> validator is applied:</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid({
+    ...
+
+    fields: [{ type: "text", name: "FieldName", validate: "required" }]
+});
+</code></pre>
+<ol start="2">
+<li><code>validate: validationConfig</code></li>
+</ol>
+<p><strong>validateConfig</strong> - is a plain object of the following structure:</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    validator: string|function(value, item, param), // built-in validator name or custom validation function 
+    message: string|function,                       // validation message or a function(value, item) returning validation message 
+    param: any                                      // a plain object with parameters to be passed to validation function
+}</code></pre>
+<p>In the following example the <code>range</code> validator is applied with custom validation message and range provided in parameters:</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid({
+    ...
+
+    fields: [{ 
+        type: "number", 
+        name: "Age", 
+        validate: {
+            validator: "range",
+            message: function(value, item) {
+                return "The client age should be between 21 and 80. Entered age is \"" + value + "\" is out of specified range.";
+            },
+            param: [21, 80]
+        }
+    }]
+});
+</code></pre>
+<ol start="3">
+<li><code>validate: validateArray</code></li>
+</ol>
+<p><strong>validateArray</strong> - is an array of validators. It can contain </p>
+<ul>
+<li><code>string</code> - validator name</li>
+<li><code>Object</code> - validator configuration of structure <code>{ validator, message, param }</code></li>
+<li><code>function</code> - validation function as <code>function(value, item)</code></li>
+</ul>
+<p>In the following example the field has three validators: <code>required</code>, <code>range</code>, and a custom function validator:</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid({
+    ...
+
+    fields: [{ 
+        type: "number", 
+        name: "Age", 
+        validate: [
+            "required",
+            { validator: "range", param: [21, 80] },
+            function(value, item) {
+                return item.IsRetired ? value &gt; 55 : true; 
+            }
+        ]
+    }]
+});
+</code></pre>
+<ol start="4">
+<li><code>validate: function(value, item, param)</code></li>
+</ol>
+<p>The parameters of the function:</p>
+<ul>
+<li><code>value</code> - entered value of the field</li>
+<li><code>item</code> - editing/inserting item</li>
+<li><code>param</code> - a parameter provided by validator (applicable only when validation config is defined at validation object or an array of objects)</li>
+</ul>
+<p>In the following example the field has custom validation function:</p>
+<pre class="prettyprint linenums lang-language"><code>
+$("#grid").jsGrid({
+    ...
+
+    fields: [{ 
+        type: "text", 
+        name: "Phone", 
+        validate: function(value, item) {
+            return value.length == 10 &amp;&amp; phoneBelongsToCountry(value, item.Country); 
+        }
+    }]
+});
+</code></pre>
+<h3>Built-in Validators</h3>
+<p>The <code>jsGrid.validators</code> object contains all built-in validators. The key of the hash is a validator name and the value is the validator config.</p>
+<p><code>jsGrid.validators</code> contains the following build-in validators:</p>
+<ul>
+<li><strong>required</strong> - the field value is required</li>
+<li><strong>rangeLength</strong> - the length of the field value is limited by range (the range should be provided as an array in <code>param</code> field of validation config)</li>
+<li><strong>minLength</strong> - the minimum length of the field value is limited (the minimum value should be provided in <code>param</code> field of validation config)</li>
+<li><strong>maxLength</strong> - the maximum length of the field value is limited (the maximum value should be provided in <code>param</code> field of validation config)</li>
+<li><strong>pattern</strong> - the field value should match the defined pattern (the pattern should be provided as a regexp literal or string in <code>param</code> field of validation config)</li>
+<li><strong>range</strong> - the value of the number field is limited by range (the range should be provided as an array in <code>param</code> field of validation config)</li>
+<li><strong>min</strong> - the minimum value of the number field is limited (the minimum should be provided in <code>param</code> field of validation config)</li>
+<li><strong>max</strong> - the maximum value of the number field is limited (the maximum should be provided in <code>param</code> field of validation config)</li>
+</ul>
+<h3>Custom Validators</h3>
+<p>To define a custom validator just add it to the <code>jsGrid.validators</code> object.</p>
+<p>In the following example a custom validator <code>time</code> is registered:</p>
+<pre class="prettyprint linenums lang-language"><code>
+    jsGrid.validators.time = {
+        message: "Please enter a valid time, between 00:00 and 23:59",
+        validator: function(value, item) {
+            return /^([01]\d|2[0-3]|[0-9])(:[0-5]\d){1,2}$/.test(value);
+        }
+    }
+</code></pre>
+<h2>Localization</h2>
+<blockquote>
+<p>version added: 1.4</p>
+</blockquote>
+<p>Current locale can be set for all grids on the page with the <a href="#jsgridlocalelocalenamelocaleconfig"><code>jsGrid.locale(localeName)</code></a> method.</p>
+<p>New custom locale can be added to <code>jsGrid.locales</code> hash like the following:</p>
+<pre class="prettyprint linenums lang-language"><code>
+jsGrid.locales.my_lang = {
+    // localization config goes here
+    ...
+};
+</code></pre>
+<p>Here is how localization config looks like for Spanish <a href="src/i18n/es.js">i18n/es.js</a>.</p>
+<p>Find all available locales <a href="src/i18n">here</a>.</p>
+<h2>Sorting Strategies</h2>
+<p>All supported sorting strategies are stored in <code>jsGrid.sortStrategies</code> object, where key is a name of the strategy and the value is a <code>sortingFunction</code>.</p>
+<p><code>jsGrid.sortStrategies</code> contains following build-in sorting strategies:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    string: { ... },          // string sorter
+    number: { ... },          // number sorter
+    date: { ... },            // date sorter
+    numberAsString: { ... }   // numbers are parsed before comparison
+}
+</code></pre>
+<p><strong>sortingFunction</strong> is a sorting function with the following format:</p>
+<pre class="prettyprint linenums lang-language"><code>
+function(value1, value2) {
+    if(value1 &lt; value2) return -1; // return negative value when first is less than second
+    if(value1 === value2) return 0; // return zero if values are equal
+    if(value1 &gt; value2) return 1; // return positive value when first is greater than second
+}
+</code></pre>
+<h3>Custom Sorting Strategy</h3>
+<p>If you need a custom sorting strategy, the object <code>jsGrid.sortStrategies</code> can be easily extended.</p>
+<p>In this example we define new sorting strategy for our client objects:</p>
+<pre class="prettyprint linenums lang-language"><code>
+// clients array
+var clients = [{
+    Index: 1,
+    Name: "John",
+    Age: 25
+}, ...];
+
+// sort clients by name and then by age
+jsGrid.sortStrategies.client = function(index1, index2) {
+    var client1 = clients[index1];
+    var client2 = clients[index2];
+    return client1.Name.localeCompare(client2.Name) 
+        || client1.Age - client2.Age;
+};
+</code></pre>
+<p>Now, our new sorting strategy <code>client</code> can be used in the grid config as follows:</p>
+<pre class="prettyprint linenums lang-language"><code>
+{
+    fields: [
+      ...
+      { name: "Index", sorter: "client" },
+      ...
+    ]
+}
+</code></pre>
+<p>Worth to mention, that if you need particular sorting only once, you can just inline sorting function in <code>sorter</code> not registering the new strategy:</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    fields: [
+      ...
+      { 
+          name: "Index", 
+          sorter: function(index1, index2) {
+              var client1 = clients[index1];
+              var client2 = clients[index2];
+              return client1.Name.localeCompare(client2.Name) 
+                  || client1.Age - client2.Age;
+          }
+      },
+      ...
+    ]
+}</code></pre>
+<h2>Load Strategies</h2>
+<p>The behavior of the grid regarding data source interaction is defined by load strategy. </p>
+<p>The load strategy has the following methods: </p>
+<pre class="prettyprint linenums lang-language"><code>{
+    firstDisplayIndex: function() {},                        // returns the index of the first displayed item
+    lastDisplayIndex: function() {},                         // returns the index of the last displayed item
+    itemsCount: function() {},                               // returns the total amount of grid items
+
+    openPage: function(index) {},                            // handles opening of the particular page
+    loadParams: function() {},                               // returns additional parameters for controller.loadData method
+    sort: function() {},                                     // handles sorting of data in the grid, should return a Promise
+    reset: function() {},                                    // handles grid refresh on grid reset with 'reset' method call, should return a Promise
+
+    finishLoad: function(loadedData) {},                     // handles the finish of loading data by controller.loadData
+    finishInsert: function(insertedItem) {},                 // handles the finish of inserting item by controller.insertItem
+    finishDelete: function(deletedItem, deletedItemIndex) {} // handles the finish of deleting item by controller.deleteItem
+}</code></pre>
+<p>There are two build-in load strategies: DirectLoadingStrategy (for <code>pageLoading=false</code>) and PageLoadingStrategy (for <code>pageLoading=true</code>).</p>
+<h3>DirectLoadingStrategy</h3>
+<p><strong>DirectLoadingStrategy</strong> is used when loading by page is turned off (<code>pageLoading=false</code>).</p>
+<p>It provides the following behavior:</p>
+<ul>
+<li><strong>firstDisplayIndex</strong> returns the index of the first item on the displayed page</li>
+<li><strong>lastDisplayIndex</strong> returns the index of the last item on the displayed page</li>
+<li><strong>itemsCount</strong> returns the actual amount of all the loaded items</li>
+<li><strong>openPage</strong> refreshes the grid to render items of current page</li>
+<li><strong>loadParams</strong> returns empty object, since no extra load params are needed</li>
+<li><strong>sort</strong> sorts data items and refreshes the grid calling <code>grid.refresh</code></li>
+<li><strong>reset</strong> calls <code>grid.refresh</code> method to refresh the grid</li>
+<li><strong>finishLoad</strong> puts the data coming from <code>controller.loadData</code> into the option <code>data</code> of the grid </li>
+<li><strong>finishInsert</strong> pushes new inserted item into the option <code>data</code> and refreshes the grid</li>
+<li><strong>finishDelete</strong> removes deleted item from the option <code>data</code> and resets the grid</li>
+</ul>
+<h3>PageLoadingStrategy</h3>
+<p><strong>PageLoadingStrategy</strong> is used when data is loaded to the grid by pages (<code>pageLoading=true</code>).</p>
+<p>It provides the following behavior:</p>
+<ul>
+<li><strong>firstDisplayIndex</strong> returns 0, because all loaded items displayed on the current page</li>
+<li><strong>lastDisplayIndex</strong> returns the amount of loaded items, since data loaded by page</li>
+<li><strong>itemsCount</strong> returns <code>itemsCount</code> provided by <code>controller.loadData</code> (read more in section <a href="#loaddatafilter-promisedataresult">controller.loadData</a>)</li>
+<li><strong>openPage</strong> calls <code>grid.loadData</code> to load data for the current page</li>
+<li><strong>loadParams</strong> returns an object with the structure <code>{ pageIndex, pageSize }</code> to provide server with paging info</li>
+<li><strong>sort</strong> calls <code>grid.loadData</code> to load sorted data from the server</li>
+<li><strong>reset</strong> calls <code>grid.loadData</code> method to refresh the data</li>
+<li><strong>finishLoad</strong> saves <code>itemsCount</code> returned by server and puts the <code>data</code> into the option <code>data</code> of the grid </li>
+<li><strong>finishInsert</strong> calls <code>grid.search</code> to reload the data</li>
+<li><strong>finishDelete</strong> calls <code>grid.search</code> to reload the data</li>
+</ul>
+<h3>Custom LoadStrategy</h3>
+<p>The option <code>loadStrategy</code> allows to specify a custom load strategy to customize the behavior of the grid.<br />
+The easiest way to do it is to inherit from existing strategy.</p>
+<p>By default DirectLoadingStrategy resets the grid (resets the paging and sorting) when an item is deleted.<br />
+The following example shows how to create a custom strategy to avoid grid reset on deletion of an item.</p>
+<pre class="prettyprint linenums lang-language"><code>var MyCustomDirectLoadStrategy = function(grid) {
+    jsGrid.loadStrategies.DirectLoadingStrategy.call(this, grid);
+};
+
+MyCustomDirectLoadStrategy.prototype = new jsGrid.loadStrategies.DirectLoadingStrategy();
+
+MyCustomDirectLoadStrategy.prototype.finishDelete = function(deletedItem, deletedItemIndex) {
+    var grid = this._grid;
+    grid.option("data").splice(deletedItemIndex, 1);
+    grid.refresh();
+};
+
+// use custom strategy in grid config
+$("#grid").jsGrid({
+
+    loadStrategy: function() {
+        return new MyCustomDirectLoadStrategy(this);
+    },
+
+    ...
+
+}); 
+</code></pre>
+<h2>Load Indication</h2>
+<p>By default jsGrid uses jsGrid.LoadIndicator. Load indicator can be customized with the <code>loadIndicator</code> option.<br />
+Set an object or a function returning an object supporting the following interface:</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    show: function() { ... } // called on loading start
+    hide: function() { ... } // called on loading finish
+}</code></pre>
+<p>This simple example prints messages to console instead of showing load indicator:</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    loadIndicator: {
+        show: function() { 
+            console.log("loading started");
+        },
+        hide: function() {
+            console.log("loading finished"); 
+        }
+    }
+}</code></pre>
+<p>If <code>loadIndicator</code> is a function, it accepts the config of load indicator in the following format:</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    container,  // grid container div
+    message,    // the loading message is a value of the option loadMessage
+    shading     // the boolean value defining whether to show shading. This is a value of the option loadShading
+}</code></pre>
+<p>The similar example printing messages to console shows how to configure loading indicator with a function returning an object:</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    loadIndicator: function(config) {
+        return {
+            show: function() { 
+                console.log("loading started: " + config.message);
+            },
+            hide: function() {
+                console.log("loading finished"); 
+            }
+        };
+    }
+}</code></pre>
+<p>Customization of loading indicator is useful, when you want to use any external load indicator that is used for all other ajax requests on the page.</p>
+<p>This example shows how to use <a href="http://fgnass.github.io/spin.js/">spin.js</a> to indicate loading:</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    loadIndicator: function(config) {
+        var container = config.container[0];
+        var spinner = new Spinner();
+
+        return {
+            show: function() {
+                spinner.spin(container);
+            },
+            hide: function() {
+                spinner.stop();
+            }
+        };
+    }
+}</code></pre>
+<h2>Requirement</h2>
+<p>jQuery (1.8.3 or later)</p>
+<h2>Compatibility</h2>
+<p><strong>Desktop</strong></p>
+<ul>
+<li>Chrome</li>
+<li>Safari</li>
+<li>Firefox</li>
+<li>Opera 15+</li>
+<li>IE 8+</li>
+</ul>
+<p><strong>Mobile</strong></p>
+<ul>
+<li>Safari for iOS</li>
+<li>Chrome for Android</li>
+<li>IE10 for WP8</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/grid" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>grid</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>plugin</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/3506013?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/tabalinas" target="_blank" id="ownerName" class="sidebar-link">tabalinas</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 24, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 23, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://js-grid.com" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (^0.4.5)</li><li>grunt-contrib-concat (~0.3.0)</li><li>grunt-contrib-copy (^0.7.0)</li><li>grunt-contrib-cssmin (^0.10.0)</li><li>grunt-contrib-qunit (^1.2.0)</li><li>grunt-contrib-uglify (^0.4.0)</li><li>grunt-image-embed (^0.3.1)</li><li>grunt-string-replace (^1.2.1)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3506013?v=4" alt="tabalinas" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tabalinas" target="_blank" class="text-decoration-none fw-bold">tabalinas</a><p class="mb-0 text-muted small">388 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/8130585?v=4" alt="richraid21" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/richraid21" target="_blank" class="text-decoration-none fw-bold">richraid21</a><p class="mb-0 text-muted small">11 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5988767?v=4" alt="ReneHezser" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ReneHezser" target="_blank" class="text-decoration-none fw-bold">ReneHezser</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1513436?v=4" alt="cigano" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cigano" target="_blank" class="text-decoration-none fw-bold">cigano</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/7758774?v=4" alt="overflowz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/overflowz" target="_blank" class="text-decoration-none fw-bold">overflowz</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/27495872?v=4" alt="MachacekJ" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/MachacekJ" target="_blank" class="text-decoration-none fw-bold">MachacekJ</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7027498?v=4" alt="sockhead" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sockhead" target="_blank" class="text-decoration-none fw-bold">sockhead</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8360603?v=4" alt="mapkuh0000" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mapkuh0000" target="_blank" class="text-decoration-none fw-bold">mapkuh0000</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2038509?v=4" alt="fakelbst" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fakelbst" target="_blank" class="text-decoration-none fw-bold">fakelbst</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/13752192?v=4" alt="julmarci" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/julmarci" target="_blank" class="text-decoration-none fw-bold">julmarci</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/10682835?v=4" alt="mansoor-omrani" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mansoor-omrani" target="_blank" class="text-decoration-none fw-bold">mansoor-omrani</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/12393295?v=4" alt="zsf3" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zsf3" target="_blank" class="text-decoration-none fw-bold">zsf3</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11136509?v=4" alt="saxcbr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/saxcbr" target="_blank" class="text-decoration-none fw-bold">saxcbr</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3530373?v=4" alt="maurorulli" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/maurorulli" target="_blank" class="text-decoration-none fw-bold">maurorulli</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2724141?v=4" alt="nguyentienlong" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nguyentienlong" target="_blank" class="text-decoration-none fw-bold">nguyentienlong</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/14015519?v=4" alt="keepworking" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/keepworking" target="_blank" class="text-decoration-none fw-bold">keepworking</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1888041?v=4" alt="yyc1217" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/yyc1217" target="_blank" class="text-decoration-none fw-bold">yyc1217</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6532627?v=4" alt="ylahav" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ylahav" target="_blank" class="text-decoration-none fw-bold">ylahav</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7889190?v=4" alt="Vicnovais" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Vicnovais" target="_blank" class="text-decoration-none fw-bold">Vicnovais</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4453811?v=4" alt="bboyz269" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bboyz269" target="_blank" class="text-decoration-none fw-bold">bboyz269</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/54670?v=4" alt="tribis" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tribis" target="_blank" class="text-decoration-none fw-bold">tribis</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1320709?v=4" alt="Oxicode" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Oxicode" target="_blank" class="text-decoration-none fw-bold">Oxicode</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4143818?v=4" alt="LeoQuote" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LeoQuote" target="_blank" class="text-decoration-none fw-bold">LeoQuote</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/731160?v=4" alt="lenasterg" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lenasterg" target="_blank" class="text-decoration-none fw-bold">lenasterg</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1838456?v=4" alt="kstenschke" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kstenschke" target="_blank" class="text-decoration-none fw-bold">kstenschke</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/26984827?v=4" alt="JMCanning78" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/JMCanning78" target="_blank" class="text-decoration-none fw-bold">JMCanning78</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1058753?v=4" alt="jefferson" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jefferson" target="_blank" class="text-decoration-none fw-bold">jefferson</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9038433?v=4" alt="onebree" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/onebree" target="_blank" class="text-decoration-none fw-bold">onebree</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7433231?v=4" alt="davebream" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/davebream" target="_blank" class="text-decoration-none fw-bold">davebream</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11631013?v=4" alt="arnvidhr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/arnvidhr" target="_blank" class="text-decoration-none fw-bold">arnvidhr</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
