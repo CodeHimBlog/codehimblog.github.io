@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Final Countdown Plugin for jQuery</title>
+    <meta name="description" content="jQuery.countdown by hilios. The Final Countdown plugin for jQuery">
+    <meta name="author" content="hilios">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-countdown-by-hilios.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jquery.countdown</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jquery.countdown",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jquery.countdown</h1>
+        <p id="packageDescription" class="text-muted">The Final Countdown plugin for jQuery</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">2304</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.73 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">718</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">112</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/hilios/jQuery.countdown/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/hilios/jQuery.countdown" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1><a href="http://hilios.github.io/jQuery.countdown/">The Final Countdown</a> <a href="https://travis-ci.org/hilios/jQuery.countdown"><img src="https://travis-ci.org/hilios/jQuery.countdown.svg" alt="Build Status" /></a></h1>
+<h4>A simple and html agnostic date countdown plugin for jQuery</h4>
+<p>To get started, check-it out: <a href="http://hilios.github.io/jQuery.countdown/">http://hilios.github.io/jQuery.countdown/</a></p>
+<p>The ultimate countdown plugin designed to fit in any coupon, auction site or product launch. Read our <a href="http://hilios.github.io/jQuery.countdown/documentation.html">Documentation</a> and follow our <a href="http://hilios.github.io/jQuery.countdown/examples.html">Examples</a> to see what suits your particular needs.</p>
+<h4><a href="https://github.com/hilios/jQuery.countdown/releases/download/2.1.0/jquery.countdown-2.1.0.zip">Download</a></h4>
+<p><a href="https://github.com/hilios/jQuery.countdown/releases/download/2.1.0/jquery.countdown-2.1.0.zip">Click here to download the latest version</a></p>
+<p>If you want to clone the repo always use the files under <a href="https://github.com/hilios/jQuery.countdown/tree/master/dist">dist</a> folder, they are optimized for production and development.</p>
+<h4>Install via Bower</h4>
+<pre><code>bower install jquery.countdown</code></pre>
+<p>Add a <code>script</code> to your html:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="/bower_components/jquery.countdown/dist/jquery.countdown.js"&gt;&lt;/script&gt;</code></pre>
+<h4>Install via NPM</h4>
+<pre><code>npm install --save jquery-countdown</code></pre>
+<p>Require the script:</p>
+<pre class="prettyprint linenums lang-language"><code>require('jquery-countdown');</code></pre>
+<h2>Getting started</h2>
+<pre class="prettyprint linenums lang-language"><code>&lt;div id="getting-started"&gt;&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+  $('#getting-started').countdown('2015/01/01', function(event) {
+    $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
+  });
+&lt;/script&gt;</code></pre>
+<h3>Requirements</h3>
+<p>Since version 2.0.0 we only support jQuery above <strong>1.7</strong> (including <strong>2.x</strong> and <strong>3.x</strong>). For legacy <strong>1.6</strong> support please use the version <a href="https://github.com/hilios/jQuery.countdown/releases/download/1.0.2/jquery.countdown-1.0.2.zip">1.0.2</a>.</p>
+<h3><a href="http://hilios.github.io/jQuery.countdown/documentation.html">Documentation</a></h3>
+<p>Our documentation is powered by <a href="http://jekyllrb.com/">Jekyll</a> (see <code>gh-page</code> branch) and hosted in GitHub Pages at <a href="http://hilios.github.io/jQuery.countdown/documentation.html">http://hilios.github.io/jQuery.countdown/</a>.</p>
+<h3><a href="http://hilios.github.io/jQuery.countdown/examples.html">Examples</a></h3>
+<p>There are few ways to get started, from the most simple example to advanced, we support many different countdown styles, see wich one fits your scenario, and if anyone doesn't it's a good starting point to customize your output.</p>
+<ul>
+<li><a href="http://hilios.github.io/jQuery.countdown/examples/basic-coupon-site.html">Basic coupon site with format N days hr:min:sec</a></li>
+<li><a href="http://hilios.github.io/jQuery.countdown/examples/advanced-coupon-site.html">Advance coupon with conditionals and pluralization, format N weeks N days hr:min:sec</a></li>
+<li><a href="http://hilios.github.io/jQuery.countdown/examples/website-launch.html">Product launch in... (callback style)</a></li>
+<li><a href="http://hilios.github.io/jQuery.countdown/examples/legacy-style.html">New year's eve (legacy style)</a></li>
+<li><a href="http://hilios.github.io/jQuery.countdown/examples/multiple-instances.html">Multiple instances on the same page</a></li>
+<li><a href="http://hilios.github.io/jQuery.countdown/examples/show-total-hours.html">Calculate the countdown total hours</a></li>
+</ul>
+<h2><a href="https://github.com/hilios/jQuery.countdown/releases">Release notes</a></h2>
+<p>Current version is <strong>2.2.0</strong>, to follow our change log please visit the <a href="https://github.com/hilios/jQuery.countdown/releases">release notes</a>.</p>
+<h4>What's new in 2.2.0?</h4>
+<ul>
+<li>Total count for hours <code>%I</code>, minutes <code>%N</code> and seconds <code>%T</code>;</li>
+<li>Count to weeks left to complete a month <code>%W</code>;</li>
+<li>Deferred initialization, allows to control the exact start moment;</li>
+<li>Fix pluralization bug when return is zero;</li>
+</ul>
+<h4>What's new in 2.1.0?</h4>
+<ul>
+<li>Add proper offset for days left to a month and to a week;</li>
+<li>Fix bower amd install;</li>
+</ul>
+<h2>Contributing</h2>
+<p>The Final Countdown uses <strong>Grunt</strong> and <strong>Bower</strong> with convenient methods for developing the plugin. It's how we compile our code and run tests. To get started install <a href="http://nodejs.org/">NodeJS</a>, <a href="http://bower.io/">Bower</a>, and then run some Grunt/Bower commands.</p>
+<pre class="prettyprint linenums lang-language"><code>bower install
+npm install
+grunt test  # Lint code and run test suite
+grunt build # Generate the release files (dev, min and zip)
+grunt       # Watch for updates than test and build</code></pre>
+<p>This plugin is tested with <a href="http://qunitjs.com/">QUnit</a>, under jQuery 1.7 up to 3.1, Bootstrap 3.0 and RequireJS.</p>
+<p>The functional tests made against:</p>
+<ul>
+<li>Chrome &gt;= 12</li>
+<li>Safari &gt;= 5</li>
+<li>Firefox &gt;= 5.0</li>
+<li>IE 7/8/9</li>
+</ul>
+<p>Code coverage:</p>
+<pre class="prettyprint linenums lang-language"><code>---------------|----------|----------|----------|----------|----------------|
+File           |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+---------------|----------|----------|----------|----------|----------------|
+ src/          |     98.4 |    90.63 |      100 |     98.4 |                |
+  countdown.js |     98.4 |    90.63 |      100 |     98.4 |          6,283 |
+---------------|----------|----------|----------|----------|----------------|
+All files      |     98.4 |    90.63 |      100 |     98.4 |                |
+---------------|----------|----------|----------|----------|----------------|</code></pre>
+<h3>Contributors</h3>
+<p>Thanks for bug reporting and fixes:</p>
+<ul>
+<li>Daniel Leavitt (@dleavitt)</li>
+<li>Fagner Brack (@FagnerMartinsBrack)</li>
+<li>Matthew Sigley (@msigley)</li>
+<li>Roman Shterenzon (@romanbsd)</li>
+<li>Marios (@assiotis)</li>
+<li>Zane Yao (@yaoazhen)</li>
+<li>Ricardo Calvo (@ricardocalvo)</li>
+<li>Daniel Z. (@nietonfir)</li>
+</ul>
+<h3>License</h3>
+<p>Copyright (c) 2011-2015 Edson Hilios. This is a free software is licensed under the MIT License.</p>
+<ul>
+<li><a href="http://edson.hilios.com.br">Edson Hilios</a>. Mail me: edson (at) hilios (dot) com (dot) br</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/688876?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/hilios" target="_blank" id="ownerName" class="sidebar-link">hilios</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">July 18, 2011</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 22, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://hilios.github.io/jQuery.countdown/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (~0.4)</li><li>grunt-contrib-clean (~0.5)</li><li>grunt-contrib-compress (~0.6)</li><li>grunt-contrib-jshint (~0.10)</li><li>grunt-contrib-uglify (~0.4)</li><li>grunt-jsonlint (~1.0)</li><li>grunt-karma (~0.8)</li><li>grunt-version (~0.3)</li><li>karma (~0.12)</li><li>karma-coverage (~0.2)</li><li>karma-phantomjs-launcher (~0.1)</li><li>karma-qunit (~0.1)</li><li>karma-requirejs (~0.2)</li><li>karma-sinon (~1.0)</li><li>requirejs (~2.1)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/688876?v=4" alt="hilios" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hilios" target="_blank" class="text-decoration-none fw-bold">hilios</a><p class="mb-0 text-muted small">46 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5137447?v=4" alt="bartaakos" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bartaakos" target="_blank" class="text-decoration-none fw-bold">bartaakos</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/835857?v=4" alt="FagnerMartinsBrack" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/FagnerMartinsBrack" target="_blank" class="text-decoration-none fw-bold">FagnerMartinsBrack</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/7782055?v=4" alt="benkroeger" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/benkroeger" target="_blank" class="text-decoration-none fw-bold">benkroeger</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/71686?v=4" alt="dleavitt" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dleavitt" target="_blank" class="text-decoration-none fw-bold">dleavitt</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/49660?v=4" alt="romanbsd" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/romanbsd" target="_blank" class="text-decoration-none fw-bold">romanbsd</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/303946?v=4" alt="yaoazhen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/yaoazhen" target="_blank" class="text-decoration-none fw-bold">yaoazhen</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+2 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
