@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniform by Audithsoftworks</title>
+    <meta name="description" content="A jQuery plugin to make your form controls look how you want them to. Now with HTML-5 attributes!">
+    <meta name="author" content="AudithSoftworks">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/uniform-by-audithsoftworks.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Uniform</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Uniform",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Uniform</h1>
+        <p id="packageDescription" class="text-muted">A jQuery plugin to make your form controls look how you want them to. Now with HTML-5 attributes!</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">2199</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">6.54 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">336</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">20</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/AudithSoftworks/Uniform/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/AudithSoftworks/Uniform" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>(jQuery) Uniform</h1>
+<blockquote>
+<p>A jQuery plugin to make your form controls look how you want them to. Now with HTML-5 attributes!</p>
+</blockquote>
+<p>Works well with jQuery 1.6+, but we've received patches and heard that this works with jQuery 1.3.</p>
+<p>Version 4.3.x uses jQuery 3.3.1+ and so far, things look promising.</p>
+<p><a href="https://www.npmjs.com/package/@imanov/jquery.uniform"><img src="https://img.shields.io/npm/v/@imanov/jquery.uniform.svg?maxAge=2592000?style=plastic" alt="NPM" /></a><br />
+<a href="https://github.com/AudithSoftworks/Uniform"><img src="https://img.shields.io/github/downloads/AudithSoftworks/Uniform/total.svg?maxAge=2592000?style=plastic" alt="Total Downloads" /></a><br />
+<a href="https://github.com/AudithSoftworks/Uniform"><img src="https://img.shields.io/github/contributors/AudithSoftworks/Uniform.svg?maxAge=2592000?style=plastic" alt="Contributors" /></a><br />
+<a href="https://github.com/AudithSoftworks/Uniform/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/AudithSoftworks/Uniform.svg?maxAge=2592000?style=plastic" alt="License" /></a></p>
+<h2>Installation</h2>
+<p>Packaging of Uniform comes with source SASS files and minified CSS files, ready for consumption in live/production environment. You can install Uniform via one of two methods listed below:</p>
+<h3>Via NPM</h3>
+<p><a href="https://www.npmjs.com/package/jquery.uniform"><img src="https://img.shields.io/npm/dm/jquery.uniform.svg" alt="NPM Monthly Downloads" /></a><br />
+<a href="https://www.npmjs.com/package/jquery.uniform"><img src="https://img.shields.io/npm/dt/jquery.uniform.svg" alt="NPM Total Downloads" /></a></p>
+<p>Simply run:</p>
+<pre><code>npm install --save @imanov/jquery.uniform</code></pre>
+<p>To create minified file, run (though this isn't necessary, as the minified file is already included in the package):</p>
+<pre><code>npm run build</code></pre>
+<p>Minified source file will be built inside <code>dist/</code> folder.</p>
+<h3>Via Public CDN</h3>
+<p><a href="https://cdnjs.com/libraries/Uniform.js"><img src="https://img.shields.io/cdnjs/v/Uniform.js.svg?maxAge=2592000?style=plastic" alt="CDNJS" /></a><br />
+<a href="https://www.jsdelivr.com/package/npm/jquery.uniform"><img src="https://data.jsdelivr.com/v1/package/npm/jquery.uniform/badge?style=rounded" alt="jsDelivr Hits" /></a></p>
+<h3>Un-minified CSS files</h3>
+<p>For your own development purposes, to get human-readable, un-minified CSS outputs, you will need to install Uniform via NPM (as shown above), install the necessary dependencies through <code>npm install</code> and then run <code>gulp</code>. Doing so will recreate readable CSS files in <code>dist/css</code> folder. Invoking <code>gulp --production</code> however, will recreate minified CSS files (which is default behavior, what we already have in the <code>dist</code> folder).</p>
+<h2>Implementation</h2>
+<p>There are two ways to go with this:</p>
+<h3>Basic Implementation</h3>
+<p>Basically, you can use the final assets provided in <code>dist</code> folder out of the box.</p>
+<p>Stylesheets and Javascript files should be linked in the <code>&lt;header&gt;</code> of your markup (the latter, coming after jQuery):</p>
+<pre><code>&lt;!-- Make sure your CSS file is listed before Javascript sources --&gt;
+&lt;link rel="stylesheet" href="/path-to-my-assets/uniform/dist/css/default.css" media="screen"&gt;
+&lt;script src="/path-to-my-assets/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="/path-to-my-assets/uniform/dist/js/jquery.uniform.standalone.js"&gt;&lt;/script&gt;</code></pre>
+<p>Or if you are using our bundled version - <code>jquery.uniform.bundled.js</code> file - which already comes with jQuery (beware not to include jQuery twice):</p>
+<pre><code>&lt;!-- Make sure your CSS file is listed before Javascript sources --&gt;
+&lt;link rel="stylesheet" href="/path-to-my-assets/uniform/dist/css/default.css" media="screen"&gt;
+&lt;script src="/path-to-my-assets/uniform/dist/js/jquery.uniform.bundled.js"&gt;&lt;/script&gt;</code></pre>
+<h3>Advanced Implementation</h3>
+<p>To have more control over your web assets, you can directly work with our SCSS and JS files, by importing them into or bundling with your own assets. Please be advised that our Gulp configuration (via Laravel-Elixir package) includes Auto-prefixer, i.e. browser prefixes are automatically added to CSS during the post-processing of SCSS files. Whatever your post-processing solution will be (Gulp-based or Compass), you need to make sure to include Auto-prefixer in that workflow. Our SCSS source files do not include browser prefixes out of the box! </p>
+<h2>Usage</h2>
+<p>See our <a href="https://github.com/AudithSoftworks/Uniform/wiki">Wiki page</a> for documentation.</p>
+<h2>Reporting Bugs</h2>
+<p>It sure would be handy if you could create a test page to help illustrate bugs.  When you use the <a href="https://github.com/AudithSoftworks/Uniform/issues">GitHub Issue Tracker</a>, you could use <a href="https://jsfiddle.net/Shehi/qgLwy8Ln/">this jsfiddle</a> to help illustrate your point. Additionally, we have provided some demo pages in <code>/demo</code> folder for you to use.</p>
+<p>Even if you don't use these assets, all sorts of feedback is welcome, but narrowing down your problem or providing an example would immediately help narrow down the problem quickly.</p>
+<h2>Contributor/Developer Assets</h2>
+<p>We have created a Docker container to help our contributors with development of Uniform.</p>
+<p><a href="https://microbadger.com/images/audithsoftworks/uniform" title="Docker Hub public images"><img src="https://img.shields.io/docker/automated/audithsoftworks/uniform.svg" alt="" /></a><br />
+<a href="https://microbadger.com/images/audithsoftworks/uniform" title="Docker Hub public images"><img src="https://images.microbadger.com/badges/version/audithsoftworks/uniform.svg" alt="" /></a><br />
+<a href="https://microbadger.com/images/audithsoftworks/uniform" title="Docker Hub public images layers"><img src="https://images.microbadger.com/badges/image/audithsoftworks/uniform.svg" alt="" /></a><br />
+<a href="https://microbadger.com/images/audithsoftworks/uniform" title="Docker Hub public images"><img src="https://img.shields.io/docker/pulls/audithsoftworks/uniform.svg" alt="" /></a></p>
+<p>Additionally, <code>/dev</code> folder contains following assets, to further enhance our capabilities:</p>
+<ol>
+<li><code>docker</code> folder contains necessary <code>Dockerfile</code> to build the container.</li>
+<li><code>theme-kit</code> contains assets to help you create new themes.</li>
+<li><code>build.sh</code> script, which basically spins a Docker container up and builds the package, using that instance.</li>
+</ol>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/css" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>css</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/custom-form-fields" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>custom-form-fields</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/sass" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>sass</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/uniform" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>uniform</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/7689988?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/AudithSoftworks" target="_blank" id="ownerName" class="sidebar-link">AudithSoftworks</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">June 8, 2009</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 6, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://opensource.imanov.net/uniform/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (^3.3.1)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>gulp (^3.9.1)</li><li>laravel-elixir (6.0.0-15)</li></ul><h5 class="sidebar-title">Bundled Dependencies</h5><ul class="dependencies-list"><li>0 (jquery)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/428348?v=4" alt="fidian" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fidian" target="_blank" class="text-decoration-none fw-bold">fidian</a><p class="mb-0 text-muted small">301 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/653569?v=4" alt="shehi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/shehi" target="_blank" class="text-decoration-none fw-bold">shehi</a><p class="mb-0 text-muted small">55 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1606819?v=4" alt="manish-in-java" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/manish-in-java" target="_blank" class="text-decoration-none fw-bold">manish-in-java</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/487098?v=4" alt="friscoMad" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/friscoMad" target="_blank" class="text-decoration-none fw-bold">friscoMad</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/117762?v=4" alt="issa-tseng" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/issa-tseng" target="_blank" class="text-decoration-none fw-bold">issa-tseng</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/61062?v=4" alt="kcivey" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kcivey" target="_blank" class="text-decoration-none fw-bold">kcivey</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/147533?v=4" alt="ahmedshaikhm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ahmedshaikhm" target="_blank" class="text-decoration-none fw-bold">ahmedshaikhm</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/93105?v=4" alt="dingram" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dingram" target="_blank" class="text-decoration-none fw-bold">dingram</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/77197?v=4" alt="Groxx" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Groxx" target="_blank" class="text-decoration-none fw-bold">Groxx</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/82994?v=4" alt="alexshk" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/alexshk" target="_blank" class="text-decoration-none fw-bold">alexshk</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1144722?v=4" alt="ThemeCatcher" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ThemeCatcher" target="_blank" class="text-decoration-none fw-bold">ThemeCatcher</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/849866?v=4" alt="arthuryeti" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/arthuryeti" target="_blank" class="text-decoration-none fw-bold">arthuryeti</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/567884?v=4" alt="benjamincurrie" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/benjamincurrie" target="_blank" class="text-decoration-none fw-bold">benjamincurrie</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8522789?v=4" alt="brenton-vidcorp" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/brenton-vidcorp" target="_blank" class="text-decoration-none fw-bold">brenton-vidcorp</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/879612?v=4" alt="GianlucaGuarini" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/GianlucaGuarini" target="_blank" class="text-decoration-none fw-bold">GianlucaGuarini</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/34694?v=4" alt="merbjedi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/merbjedi" target="_blank" class="text-decoration-none fw-bold">merbjedi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/227383?v=4" alt="littke" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/littke" target="_blank" class="text-decoration-none fw-bold">littke</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/93030?v=4" alt="pixelmatrix" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pixelmatrix" target="_blank" class="text-decoration-none fw-bold">pixelmatrix</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/29272?v=4" alt="jorgenskogas" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jorgenskogas" target="_blank" class="text-decoration-none fw-bold">jorgenskogas</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/15611832?v=4" alt="LukasDrgon" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LukasDrgon" target="_blank" class="text-decoration-none fw-bold">LukasDrgon</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/220759?v=4" alt="michaelmulley" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/michaelmulley" target="_blank" class="text-decoration-none fw-bold">michaelmulley</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1565602?v=4" alt="MichaelPlaxico" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/MichaelPlaxico" target="_blank" class="text-decoration-none fw-bold">MichaelPlaxico</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/86371?v=4" alt="superp" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/superp" target="_blank" class="text-decoration-none fw-bold">superp</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1978331?v=4" alt="spolischook" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/spolischook" target="_blank" class="text-decoration-none fw-bold">spolischook</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/18140782?v=4" alt="SpiderNeo1" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/SpiderNeo1" target="_blank" class="text-decoration-none fw-bold">SpiderNeo1</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4067239?v=4" alt="StephaneHeav" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/StephaneHeav" target="_blank" class="text-decoration-none fw-bold">StephaneHeav</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1202129?v=4" alt="daniel-franz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/daniel-franz" target="_blank" class="text-decoration-none fw-bold">daniel-franz</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/30813?v=4" alt="everzet" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/everzet" target="_blank" class="text-decoration-none fw-bold">everzet</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/780806?v=4" alt="bonpixel" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bonpixel" target="_blank" class="text-decoration-none fw-bold">bonpixel</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3264718?v=4" alt="schweighart" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/schweighart" target="_blank" class="text-decoration-none fw-bold">schweighart</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
