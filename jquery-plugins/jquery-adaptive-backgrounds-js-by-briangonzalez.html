@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🦎 A Jquery Plugin For Extracting The Dominant Color From Images And Applying The Color To Their Parent.</title>
-    <meta name="description" content="jquery.adaptive-backgrounds.js by briangonzalez. 🦎 A jQuery plugin for extracting the dominant color from images and applying the color to their parent.">
+    <title>Jquery.adaptive Backgrounds.js by Briangonzalez</title>
+    <meta name="description" content="🦎 A jQuery plugin for extracting the dominant color from images and applying the color to their parent.">
     <meta name="author" content="briangonzalez">
     <meta name="robots" content="index, follow">
     <!-- Canonical URL -->
@@ -93,39 +93,44 @@
         <!-- Project Name & Description -->
         <h1 id="packageName">Jquery.adaptive Backgrounds.js</h1>
         <p id="packageDescription" class="text-muted">🦎 A jQuery plugin for extracting the dominant color from images and applying the color to their parent.</p>
+			  
+
+
 <!-- Statistics -->
 <div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
-  <div class="stat-box d-flex align-items-center">
-    <i class="bi bi-star-fill text-warning me-2"></i>
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
     <div>
       <span id="stargazersCount" class="stat-value">6526</span>
       <p class="stat-label mb-0">Stars</p>
     </div>
   </div>
-	
-	  <div class="stat-box d-flex align-items-center">
-     <i class="bi bi-box-arrow-in-down me-2"></i>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
     <div>
       <span id="repoSize" class="stat-value">9.2 MB</span>
       <p class="stat-label mb-0">Size</p>
     </div>
   </div>
-	
-  <div class="stat-box d-flex align-items-center">
-    <i class="bi bi-arrow-repeat text-secondary me-2"></i>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
     <div>
       <span id="forksCount" class="stat-value">454</span>
       <p class="stat-label mb-0">Forks</p>
     </div>
   </div>
-  <div class="stat-box d-flex align-items-center">
-    <i class="bi bi-exclamation-circle text-danger me-2"></i>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
     <div>
       <span id="openIssuesCount" class="stat-value">7</span>
       <p class="stat-label mb-0">Open Issues</p>
     </div>
   </div>
 </div>
+
 
 <div class="ad-unit ad-apt">
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
@@ -171,7 +176,137 @@
 </div>
         <div class="tab-content mt-3" id="infoTabsContent">
           <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
-            No README available
+            <p><img src="https://cloud.githubusercontent.com/assets/659829/17540609/4533a390-5e6c-11e6-8438-db25bcee1adc.png" alt="artboard" /></p>
+<blockquote>
+<p>jquery.adaptive-backgrounds.js</p>
+</blockquote>
+<p><em>A simple jQuery plugin to extract the dominant color of an image and apply it to the background of its parent element.</em></p>
+<p><strong><a href="http://briangonzalez.github.io/jquery.adaptive-backgrounds.js/">Check it out on the web!</a></strong></p>
+<p><a href="#backers"><img src="https://opencollective.com/jquery-adaptive-background/backers/badge.svg" alt="OpenCollective Backers" /></a> <a href="#sponsors"><img src="https://opencollective.com/jquery-adaptive-background/sponsors/badge.svg" alt="OpenCollective Sponsors" /></a></p>
+<h2>Getting Started</h2>
+<p>Install via bower:</p>
+<pre><code>bower install --save adaptive.background</code></pre>
+<p>Then simply include jQuery and the script in your page, and invoke it like so:</p>
+<pre class="prettyprint linenums lang-language"><code>$(document).ready(function(){
+  $.adaptiveBackground.run();
+});</code></pre>
+<p>The script looks for image(s) with the <code>data-adaptive-background</code> attribute:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;img src="/image.jpg" data-adaptive-background&gt;</code></pre>
+<h3>Using an element with a CSS background image</h3>
+<p>Instead of using an <code>&lt;img&gt;</code> element nested inside of parent element, AB supports grabbing the dominant color of a background image of a standalone element, then applying the corresponding dominant color as the background color of said element.</p>
+<p>Enable this functionality by adding a data property, <code>data-ab-css-background</code> to the element. See the example below:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div style='background-image: url(/some-image.jpg)' data-adaptive-background data-ab-css-background&gt;&lt;/div&gt;</code></pre>
+<h2>Demo</h2>
+<p>Here's a little demo of how it works. (1) The page loads (2) the dominant background color of the image is extracted (3) said color is applied to parent of image. <em>Demo drastically slowed down to show effect</em>.</p>
+<hr />
+<img src="https://raw.github.com/briangonzalez/jquery.adaptive-background.js/master/misc/ab.gif">
+<h2>API</h2>
+<p>This plugin exposes one method:</p>
+<ul>
+<li><strong>$.adaptiveBackground.run(opts)</strong> <em>arg: opts (Object)</em> an optional argument to be merged in with the defaults.</li>
+</ul>
+<h2>Default Options</h2>
+<ul>
+<li><strong>selector</strong> String <em>(default: <code>'img[data-adaptive-background="1"]'</code>)</em> a CSS selector which denotes which images to grab/process. Ideally, this selector would start with <em>img</em>, to ensure we only grab and try to process actual images.</li>
+<li><strong>parent</strong> falsy <em>(default: <code>null</code>)</em> a CSS selector which denotes which parent to apply the background color to. By default, the color is applied to the parent one level up the DOM tree.</li>
+<li><strong>normalizeTextColor</strong> boolean <em>(default: <code>false</code>)</em> option to normalize the color of the parent text if background color is too dark or too light.</li>
+<li><strong>normalizedTextColors</strong> Object Literal <em>(default: <code>{dark: '#000', light: '#fff'}</code>)</em> text colors used when background is either too dark/light.</li>
+<li><strong>shadeVariation</strong> <code>blend|true|false</code> (default) option to shade the color of the parent ligher or darker (see shadePercentage) or blend the color of the parent with another color by a certain percentage (see shadeColors).</li>
+<li><strong>shadePercentage</strong> float (default: <code>0</code>) sets the percentage of shading or blending used. Can be adjusted from -1.00 to 1.00.</li>
+<li><strong>shadeColors</strong> Object Literal ( default: <code>{light:'rgb(255,255,255)',dark:'rgb(0,0,0)'}</code> ) sets the color that will be used to blend the background color with. Two values are provided to account for the background color to be light or dark to start with.</li>
+<li><strong>transparent</strong>  Transparent dominant color. Can be adjusted from 0.01 to 0.99.</li>
+</ul>
+<p><strong>Example:</strong><br />
+Call the <code>run</code> method, passing in any options you'd like to override.</p>
+<pre class="prettyprint linenums lang-language"><code>var defaults      = {
+  selector:             '[data-adaptive-background="1"]',
+  parent:               null,
+  exclude:              [ 'rgb(0,0,0)', 'rgba(255,255,255)' ],
+  shadeVariation:   false,
+  shadePercentage:  0,
+  shadeColors:  {
+    light:      'rgb(255,255,255)',
+    dark:       'rgb(0,0,0)' 
+  },
+  normalizeTextColor:   false,
+  normalizedTextColors:  {
+    light:      "#fff",
+    dark:       "#000"
+  },
+  lumaClasses:  {
+    light:      "ab-light",
+    dark:       "ab-dark"
+  },
+  transparent: null
+};
+$.adaptiveBackground.run(defaults)</code></pre>
+<h2>Events Emitted</h2>
+<ul>
+<li><strong>ab-color-found</strong> <a href="http://api.jquery.com/category/events/event-object/">Event</a> This event is fired when the dominant color of the image is found. The payload includes the dominant color as well as the color palette contained in the image.</li>
+</ul>
+<p><strong>Example:</strong><br />
+Bind to the <code>ab-color-found</code> event like so:</p>
+<pre class="prettyprint linenums lang-language"><code>$('img.my-image').on('ab-color-found', function(ev,payload){
+  console.log(payload.color);   // The dominant color in the image.
+  console.log(payload.palette); // The color palette found in the image.
+  console.log(ev);   // The jQuery.Event object
+});</code></pre>
+<h2>Success Callback</h2>
+<p>You may wish to supply a callback function which is called once the magic has been performed.</p>
+<pre class="prettyprint linenums lang-language"><code>$.adaptiveBackground.run({
+  success: function($img, data) {
+    console.log('Success!', $img, data);
+  }
+});</code></pre>
+<p>Note, this callback is called <em>once</em> for each image.</p>
+<h2>Caveats</h2>
+<p>This plugin utlizes the <code>&lt;canvas&gt;</code> element and the <code>ImageData</code> object, and due to cross-site security limitations, the script will fail if one tries to extract the colors from an image not hosted on the current domain, <em>unless</em> the image allows for <a href="http://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross Origin Resource Sharing</a>.</p>
+<p><strong>Enabling CORS on S3</strong></p>
+<p>To enable CORS for images hosted on S3 buckets, follow the Amazon guide <a href="http://docs.aws.amazon.com/AmazonS3/latest/UG/EditingBucketPermissions.html">here</a>; adding the following to the bucket's CORS configuration:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;CORSRule&gt;
+ &lt;AllowedOrigin&gt;*&lt;/AllowedOrigin&gt;
+ &lt;AllowedMethod&gt;GET&lt;/AllowedMethod&gt;
+&lt;/CORSRule&gt;</code></pre>
+<p>For all images, you can optionally also include a cross-origin attribute in your image. This is not absolutely necessary since the <code>anonymous</code> origin is set in the Javascript code, but kudos to you for being a super-developer.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;img src="/image.jpg" data-adaptive-background cross-origin="anonymous"/&gt;</code></pre>
+<h2>Credit</h2>
+<p>This plugin is built on top of a script called <a href="https://github.com/briangonzalez/rgbaster.js">RGBaster</a>.</p>
+<h2>Collaborators</h2>
+<table>
+<thead>
+<tr>
+<th><img src="http://gravatar.com/avatar/f6363fe1d9aadb1c3f07ba7867f0e854?s=70" alt="Brian Gonzalez" title="Brian Gonzalez" /></th>
+<th><img src="https://gravatar.com/avatar/0d4467ab78f0c73c7442d9b5c23299cc?s=70" alt="Scott Stern" title="Scott Stern" /></th>
+<th><img src="https://avatars2.githubusercontent.com/u/557102?v=4&amp;s=70" alt="Alfred J Kwack" title="Alfred J KWack" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://briangonzalez.org">Brian Gonzalez</a></td>
+<td><a href="https://github.com/sstern6">Scott Stern</a></td>
+<td><a href="https://github.com/AlfredJKwack">Alfred J Kwack </a></td>
+</tr>
+</tbody>
+</table>
+<p>This project exists thanks to all the people who contribute. <a href="CONTRIBUTING.md">[Contribute]</a>.<br />
+<a href="graphs/contributors"><img src="https://opencollective.com/jquery-adaptive-backgrounds/contributors.svg?width=890" /></a></p>
+<h2>Backers</h2>
+<p>Thank you to all our backers! 🙏 [<a href="https://opencollective.com/jquery-adaptive-backgrounds#backer">Become a backer</a>]</p>
+<p><a href="https://opencollective.com/jquery-adaptive-backgrounds#backers" target="_blank"><img src="https://opencollective.com/jquery-adaptive-backgrounds/backers.svg?width=890"></a></p>
+<h2>Sponsors</h2>
+<p>Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [<a href="https://opencollective.com/jquery-adaptive-backgrounds#sponsor">Become a sponsor</a>]</p>
+<p><a href="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/0/website" target="_blank"><img src="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/0/avatar.svg"></a><br />
+<a href="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/1/website" target="_blank"><img src="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/1/avatar.svg"></a><br />
+<a href="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/2/website" target="_blank"><img src="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/2/avatar.svg"></a><br />
+<a href="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/3/website" target="_blank"><img src="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/3/avatar.svg"></a><br />
+<a href="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/4/website" target="_blank"><img src="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/4/avatar.svg"></a><br />
+<a href="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/5/website" target="_blank"><img src="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/5/avatar.svg"></a><br />
+<a href="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/6/website" target="_blank"><img src="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/6/avatar.svg"></a><br />
+<a href="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/7/website" target="_blank"><img src="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/7/avatar.svg"></a><br />
+<a href="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/8/website" target="_blank"><img src="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/8/avatar.svg"></a><br />
+<a href="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/9/website" target="_blank"><img src="https://opencollective.com/jquery-adaptive-backgrounds/sponsor/9/avatar.svg"></a></p>
+<h2>License</h2>
+<p>MIT, yo.</p>
           </div>
 
           <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
@@ -181,7 +316,14 @@
           </div>
 
         </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
 			  </article>
+
+		  
       </main>
 		    <!-- Sidebar -->
       <aside class="col-md-4 p-0">
@@ -238,17 +380,13 @@
   </div>
 			 
 			   <div class="sidebar-item mb-2">
-    <h5 class="sidebar-title">Dependencies</h5>
-			             <ul id="dependenciesList">
-              <li>No dependencies listed.</li>
-            </ul>
-			 
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>opencollective (^1.0.3)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>express (^4.8.5)</li><li>serve-index (^1.1.6)</li></ul>
 			 </div>
 			 
 			 	   <div class="sidebar-item">
     <h5 class="sidebar-title">Contributors</h5>
             <ul class="p-0" id="contributorsList">
-              <ul class="list-group list-group-flush"><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/659829?v=4" alt="briangonzalez" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/briangonzalez" target="_blank" class="text-decoration-none fw-bold">briangonzalez</a><p class="mb-0 text-muted small">61 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/557102?v=4" alt="AlfredJKwack" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/AlfredJKwack" target="_blank" class="text-decoration-none fw-bold">AlfredJKwack</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/10355544?v=4" alt="sstern6" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sstern6" target="_blank" class="text-decoration-none fw-bold">sstern6</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/695790?v=4" alt="rastasheep" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rastasheep" target="_blank" class="text-decoration-none fw-bold">rastasheep</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/6106941?v=4" alt="asood123" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/asood123" target="_blank" class="text-decoration-none fw-bold">asood123</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/625787?v=4" alt="Mongey" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Mongey" target="_blank" class="text-decoration-none fw-bold">Mongey</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/570856?v=4" alt="chellem" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/chellem" target="_blank" class="text-decoration-none fw-bold">chellem</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/5917245?v=4" alt="IgorUsoltsev" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/IgorUsoltsev" target="_blank" class="text-decoration-none fw-bold">IgorUsoltsev</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/126774?v=4" alt="lucanos" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lucanos" target="_blank" class="text-decoration-none fw-bold">lucanos</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/495892?v=4" alt="mortonfox" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mortonfox" target="_blank" class="text-decoration-none fw-bold">mortonfox</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center"><img src="https://avatars.githubusercontent.com/u/10742145?v=4" alt="mzrnsh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mzrnsh" target="_blank" class="text-decoration-none fw-bold">mzrnsh</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/659829?v=4" alt="briangonzalez" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/briangonzalez" target="_blank" class="text-decoration-none fw-bold">briangonzalez</a><p class="mb-0 text-muted small">61 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/557102?v=4" alt="AlfredJKwack" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/AlfredJKwack" target="_blank" class="text-decoration-none fw-bold">AlfredJKwack</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/10355544?v=4" alt="sstern6" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sstern6" target="_blank" class="text-decoration-none fw-bold">sstern6</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/695790?v=4" alt="rastasheep" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rastasheep" target="_blank" class="text-decoration-none fw-bold">rastasheep</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/6106941?v=4" alt="asood123" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/asood123" target="_blank" class="text-decoration-none fw-bold">asood123</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/625787?v=4" alt="Mongey" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Mongey" target="_blank" class="text-decoration-none fw-bold">Mongey</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/570856?v=4" alt="chellem" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/chellem" target="_blank" class="text-decoration-none fw-bold">chellem</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5917245?v=4" alt="IgorUsoltsev" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/IgorUsoltsev" target="_blank" class="text-decoration-none fw-bold">IgorUsoltsev</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/126774?v=4" alt="lucanos" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lucanos" target="_blank" class="text-decoration-none fw-bold">lucanos</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/495892?v=4" alt="mortonfox" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mortonfox" target="_blank" class="text-decoration-none fw-bold">mortonfox</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/10742145?v=4" alt="mzrnsh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mzrnsh" target="_blank" class="text-decoration-none fw-bold">mzrnsh</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+6 more Contributors</a></li></ul>
             </ul>
 			 
 			 </div>
@@ -294,6 +432,7 @@
   <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
 <script>
