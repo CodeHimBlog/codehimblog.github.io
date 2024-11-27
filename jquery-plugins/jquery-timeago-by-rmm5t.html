@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Timeago by Rmm5t</title>
+    <meta name="description" content=":clock8: The original jQuery plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. &quot;4 minutes ago&quot;).">
+    <meta name="author" content="rmm5t">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-timeago-by-rmm5t.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Timeago</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Timeago",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Timeago</h1>
+        <p id="packageDescription" class="text-muted">:clock8: The original jQuery plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. &quot;4 minutes ago&quot;).</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">3819</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.41 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">709</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">44</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/rmm5t/jquery-timeago/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/rmm5t/jquery-timeago" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>timeago: a jQuery plugin</h1>
+<p><a href="https://www.npmjs.com/package/timeago"><img src="https://img.shields.io/npm/v/timeago.svg" alt="NPM" /></a><br />
+<a href="http://bower.io/search/?q=jquery-timeago"><img src="https://img.shields.io/bower/v/jquery-timeago.svg" alt="Bower" /></a></p>
+<p>Timeago is a jQuery plugin that makes it easy to support automatically updating<br />
+fuzzy timestamps (e.g. &quot;4 minutes ago&quot; or &quot;about 1 day ago&quot;) from ISO 8601<br />
+formatted dates and times embedded in your HTML (à la microformats).</p>
+<h2>Usage</h2>
+<p>First, load jQuery and the plugin:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="jquery.timeago.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
+<p>Now, let's attach it to your timestamps on DOM ready - put this in the head<br />
+section:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script type="text/javascript"&gt;
+   jQuery(document).ready(function() {
+     $("time.timeago").timeago();
+   });
+&lt;/script&gt;</code></pre>
+<p>This will turn all <code>&lt;time&gt;</code> elements with a class of <code>timeago</code> and a<br />
+<code>datetime</code> attribute formatted according to the<br />
+<a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> standard:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;time class="timeago" datetime="2011-12-17T09:24:17Z"&gt;December 17, 2011&lt;/time&gt;</code></pre>
+<p>into something like this:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;time class="timeago" datetime="2011-12-17T09:24:17Z" title="December 17, 2011"&gt;about 1 day ago&lt;/time&gt;</code></pre>
+<p><code>&lt;abbr&gt;</code> elements (or any other HTML elements) are also supported (this is for<br />
+<a href="http://microformats.org/wiki/datetime-design-pattern">legacy microformat support</a><br />
+and was originally supported by the library before the <code>time</code> element was<br />
+introduced to HTML5):</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;abbr class="timeago" title="2011-12-17T09:24:17Z"&gt;December 17, 2011&lt;/abbr&gt;</code></pre>
+<p>As time passes, the timestamps will automatically update.</p>
+<p>If you want to update a timestamp programatically later, call the <code>update</code><br />
+function with a new ISO8601 timestamp of <code>Date</code> object. For example:</p>
+<pre class="prettyprint linenums lang-language"><code>$("time#some_id").timeago("update", "2013-12-17T09:24:17Z");
+// or
+$("time#some_id").timeago("update", new Date());</code></pre>
+<p><strong>For more usage and examples</strong>: <a href="http://timeago.yarp.com/">http://timeago.yarp.com/</a></p>
+<p><strong>For different language configurations</strong>: visit the <a href="https://github.com/rmm5t/jquery-timeago/tree/master/locales"><code>locales</code></a> directory.</p>
+<h2>Settings</h2>
+<p><strong><code>cutoff</code></strong> : Return the original date if time distance is older than <code>cutoff</code> (miliseconds).</p>
+<pre class="prettyprint linenums lang-language"><code>// Display original dates older than 24 hours
+jQuery.timeago.settings.cutoff = 1000*60*60*24;</code></pre>
+<h2>Changes</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.6.x</td>
+<td>(<a href="https://github.com/rmm5t/jquery-timeago/compare/v1.5.4...v1.6.7">compare</a>) Wraped locales in UMD wrappers; locale improvements</td>
+</tr>
+<tr>
+<td>1.5.x</td>
+<td>(<a href="https://github.com/rmm5t/jquery-timeago/compare/v1.4.3...v1.5.4">compare</a>) Added Date as argument to update function; locales</td>
+</tr>
+<tr>
+<td>1.4.x</td>
+<td>(<a href="https://github.com/rmm5t/jquery-timeago/compare/v1.3.2...v1.4.3">compare</a>) Added allowPast setting; locale updates</td>
+</tr>
+<tr>
+<td>1.3.x</td>
+<td>(<a href="https://github.com/rmm5t/jquery-timeago/compare/v1.2.0...v1.3.2">compare</a>) Added updateFromDOM function; bug fixes; bower support</td>
+</tr>
+<tr>
+<td>1.2.x</td>
+<td>(<a href="https://github.com/rmm5t/jquery-timeago/compare/v1.1.0...v1.2.0">compare</a>) Added cutoff setting; locale updates</td>
+</tr>
+<tr>
+<td>1.1.x</td>
+<td>(<a href="https://github.com/rmm5t/jquery-timeago/compare/v1.0.2...v1.1.0">compare</a>) Added update function; locale updates</td>
+</tr>
+<tr>
+<td>1.0.x</td>
+<td>(<a href="https://github.com/rmm5t/jquery-timeago/compare/v0.11.4...v1.0.2">compare</a>) locale updates; bug fixes; AMD wrapper</td>
+</tr>
+<tr>
+<td>0.11.x</td>
+<td>(<a href="https://github.com/rmm5t/jquery-timeago/compare/v0.10.1...v0.11.4">compare</a>) natural rounding; locale updates;</td>
+</tr>
+<tr>
+<td>0.10.x</td>
+<td>(<a href="https://github.com/rmm5t/jquery-timeago/compare/v0.9.3...v0.10.1">compare</a>) locale updates</td>
+</tr>
+<tr>
+<td>0.9.x</td>
+<td>(<a href="https://github.com/rmm5t/jquery-timeago/compare/v0.8.2...v0.9.3">compare</a>) microsecond support; bug fixes</td>
+</tr>
+<tr>
+<td>0.8.x</td>
+<td>(<a href="https://github.com/rmm5t/jquery-timeago/compare/v0.7.2...v0.8.2">compare</a>) <code>&lt;time&gt;</code> element support; bug fixes</td>
+</tr>
+<tr>
+<td>0.7.x</td>
+<td>(<a href="https://github.com/rmm5t/jquery-timeago/compare/v0.6.2...v0.7.2">compare</a>) locale function overrides; unit tests</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<h2>Author</h2>
+<p><a href="http://ryan.mcgeary.org">Ryan McGeary</a> (<a href="http://twitter.com/rmm5t">@rmm5t</a>)</p>
+<h2>License</h2>
+<p><a href="https://rmm5t.mit-license.org/">MIT License</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/time" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>time</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/timeago" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>timeago</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/740?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/rmm5t" target="_blank" id="ownerName" class="sidebar-link">rmm5t</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">July 18, 2008</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 19, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://timeago.yarp.com" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.5.0 &lt;4.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/740?v=4" alt="rmm5t" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rmm5t" target="_blank" class="text-decoration-none fw-bold">rmm5t</a><p class="mb-0 text-muted small">328 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/765746?v=4" alt="oliverklee" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/oliverklee" target="_blank" class="text-decoration-none fw-bold">oliverklee</a><p class="mb-0 text-muted small">10 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/199095?v=4" alt="glensc" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/glensc" target="_blank" class="text-decoration-none fw-bold">glensc</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1662740?v=4" alt="m90" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/m90" target="_blank" class="text-decoration-none fw-bold">m90</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/107076?v=4" alt="Zoramite" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Zoramite" target="_blank" class="text-decoration-none fw-bold">Zoramite</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/540974?v=4" alt="monoblaine" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/monoblaine" target="_blank" class="text-decoration-none fw-bold">monoblaine</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/18349191?v=4" alt="kj415j45" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kj415j45" target="_blank" class="text-decoration-none fw-bold">kj415j45</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4997174?v=4" alt="ryush00" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ryush00" target="_blank" class="text-decoration-none fw-bold">ryush00</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/55860?v=4" alt="mahemoff" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mahemoff" target="_blank" class="text-decoration-none fw-bold">mahemoff</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/38747?v=4" alt="Krule" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Krule" target="_blank" class="text-decoration-none fw-bold">Krule</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/164971?v=4" alt="webhat" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/webhat" target="_blank" class="text-decoration-none fw-bold">webhat</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7371591?v=4" alt="pedro-mendonca" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pedro-mendonca" target="_blank" class="text-decoration-none fw-bold">pedro-mendonca</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/16353617?v=4" alt="gitigitibangbang" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gitigitibangbang" target="_blank" class="text-decoration-none fw-bold">gitigitibangbang</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6974718?v=4" alt="hillai" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hillai" target="_blank" class="text-decoration-none fw-bold">hillai</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8404511?v=4" alt="sky93" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sky93" target="_blank" class="text-decoration-none fw-bold">sky93</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/137188?v=4" alt="ricick" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ricick" target="_blank" class="text-decoration-none fw-bold">ricick</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/377873?v=4" alt="oscarotero" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/oscarotero" target="_blank" class="text-decoration-none fw-bold">oscarotero</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1012761?v=4" alt="forabi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/forabi" target="_blank" class="text-decoration-none fw-bold">forabi</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/762297?v=4" alt="mastef" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mastef" target="_blank" class="text-decoration-none fw-bold">mastef</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/671378?v=4" alt="kevinsawicki" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kevinsawicki" target="_blank" class="text-decoration-none fw-bold">kevinsawicki</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/800848?v=4" alt="jgraichen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jgraichen" target="_blank" class="text-decoration-none fw-bold">jgraichen</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3155556?v=4" alt="Jamil-Najafov" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Jamil-Najafov" target="_blank" class="text-decoration-none fw-bold">Jamil-Najafov</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/135676?v=4" alt="oree" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/oree" target="_blank" class="text-decoration-none fw-bold">oree</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1033021?v=4" alt="umerkulovb" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/umerkulovb" target="_blank" class="text-decoration-none fw-bold">umerkulovb</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/215433?v=4" alt="zfben" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zfben" target="_blank" class="text-decoration-none fw-bold">zfben</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1087128?v=4" alt="amenk" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/amenk" target="_blank" class="text-decoration-none fw-bold">amenk</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/29395?v=4" alt="alexrabarts" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/alexrabarts" target="_blank" class="text-decoration-none fw-bold">alexrabarts</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1195119?v=4" alt="RomainSauvaire" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/RomainSauvaire" target="_blank" class="text-decoration-none fw-bold">RomainSauvaire</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3857308?v=4" alt="tinggalklik" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tinggalklik" target="_blank" class="text-decoration-none fw-bold">tinggalklik</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3905501?v=4" alt="bryant1410" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bryant1410" target="_blank" class="text-decoration-none fw-bold">bryant1410</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
