@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web/h5/移动端pdf预览插件</title>
+    <meta name="description" content="pdfh5 by gjTool. web/h5/移动端PDF预览插件">
+    <meta name="author" content="gjTool">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/pdfh5-by-gjtool.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Pdfh5</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pdfh5",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Pdfh5</h1>
+        <p id="packageDescription" class="text-muted">web/h5/移动端PDF预览插件</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">981</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">9.23 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">241</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">70</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/gjTool/pdfh5/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/gjTool/pdfh5" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>pdfh5.js</h1>
+<p><a href="https://www.npmjs.com/package/pdfh5"><img src="https://img.shields.io/npm/v/pdfh5.svg" alt="npm version" /></a> <a href="https://www.npmjs.com/package/pdfh5"><img src="https://img.shields.io/npm/dt/pdfh5.svg" alt="npm downloads" /></a> <a href="https://www.npmjs.com/package/pdfh5"><img src="https://img.shields.io/npm/dw/pdfh5.svg" alt="npm downloads" /></a>  <a href="https://github.com/gjTool/pdfh5/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT" /></a> <a href="https://github.com/gjTool/pdfh5/issues"><img src="https://img.shields.io/github/issues/gjTool/pdfh5.svg" alt="GitHub issues" /></a> <a href="https://github.com/gjTool/pdfh5/stargazers"><img src="https://img.shields.io/github/stars/gjTool/pdfh5.svg?style=social" alt="GitHub stars" /></a> <a href="https://github.com/gjTool/pdfh5/network/members"><img src="https://img.shields.io/github/forks/gjTool/pdfh5.svg?style=social" alt="GitHub forks" /></a>  </p>
+<p><strong>1、有问题可以加Q群咨询，技术交流群，也可以探讨技术，另有微信群可以问群主拉入微信群</strong></p>
+<p><strong>2、如果有报错，请复制example运行，然后对照相关文件，以及package.json，缺什么补什么</strong></p>
+<p><strong>3、如果有某些字体显示不了，那可能是pdf.js缺少相关字库解析，可以尝试更改cMapUrl，建议去官方地址找版本</strong></p>
+<p><strong>4、如果IOS下pdf显示不了，安卓却可以，可能是pdf精度过高导致，Safari浏览器canvas渲染绘制图片宽高不能超过16777216，超过会不显示</strong> </p>
+<ul>
+<li>
+<p><a href="https://qm.qq.com/cgi-bin/qm/qr?k=3_qouxqe5w3gRCcHjpqkwtx-4yS6QSPD&amp;jump_from=webapi&amp;authKey=FlHU4wH2xOQUthUpgF5W3b1VXowCVmSRfJLU4GRcDVyBayJd1ank4HkOWSZei2f3">QQ群521681398</a></p>
+</li>
+<li>
+<p><a href="https://pdfh5.gjtool.cn/">pdfh5博客主页</a>  </p>
+</li>
+<li>
+<p><a href="https://github.com/gjTool/pdfh5">pdfh5项目GitHub地址</a>  </p>
+</li>
+<li>
+<p><a href="https://gitee.com/gjTool/pdfh5">pdfh5项目gitee地址</a></p>
+</li>
+</ul>
+<h4>react、vue均可使用</h4>
+<h4><a href="https://github.com/gjTool/pdfh5/tree/master/example/test">example/test</a>是vue使用示例</h4>
+<h4><a href="https://github.com/gjTool/pdfh5/tree/master/example/vue3demo">example/vue3demo</a>是vue3使用示例</h4>
+<h4><a href="https://github.com/gjTool/pdfh5/tree/master/example/vite4vue3">example/vite4vue3</a>是vite4+vue3+ts使用示例</h4>
+<h4><a href="https://github.com/gjTool/pdfh5/tree/master/example/react-test">example/react-test</a>是react使用示例</h4>
+<p><img src="https://img-blog.csdnimg.cn/20190731133403792.gif" alt="pdfh5.js示例" /></p>
+<h2>更新信息</h2>
+<ul>
+<li>2024.02.29 更新： 修复部分bugs。</li>
+</ul>
+<h3>pdfh5在线预览 （建议使用谷歌浏览器F12手机模式打开预览）</h3>
+<ul>
+<li><a href="https://www.gjtool.cn/pdfh5/pdf.html?file=https://www.gjtool.cn/pdfh5/git.pdf">https://www.gjtool.cn/pdfh5/pdf.html?file=https://www.gjtool.cn/pdfh5/git.pdf</a>  </li>
+</ul>
+<h2>快速使用（有两种方式）</h2>
+<h4>一、script标签引入方式（需下载本项目文件夹css/pdfh5.css、js内所有文件）</h4>
+<ul>
+<li>1.引入css   </li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>&lt;link rel="stylesheet" href="css/pdfh5.css" /&gt;</code></pre>
+<ul>
+<li>2.创建div  </li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>&lt;div id="demo"&gt;&lt;/div&gt;</code></pre>
+<ul>
+<li>3.依次引入js（需引用本项目的js,不要引用官方的pdf.js,jquery可以引用其它版的）   </li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="js/pdf.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="js/pdf.worker.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="js/pdfh5.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;</code></pre>
+<ul>
+<li>4.实例化</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>var pdfh5 = new Pdfh5('#demo', {
+  pdfurl: "./default.pdf"
+});</code></pre>
+<h4>二、npm安装方式（适应于vue）, react使用方法类似vue（example/react-test是react使用示例）</h4>
+<ul>
+<li>1.安装</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>npm install pdfh5</code></pre>
+<ul>
+<li>2.使用</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>&lt;template&gt;
+  &lt;div id="app"&gt;
+    &lt;div id="demo"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  import Pdfh5 from "pdfh5";
+  export default {
+    name: 'App',
+    data() {
+      return {
+        pdfh5: null
+      };
+    },
+    mounted() {
+        //实例化
+      this.pdfh5 = new Pdfh5("#demo", {
+        pdfurl: "../../static/test.pdf",
+        // cMapUrl:"https://unpkg.com/pdfjs-dist@3.8.162/cmaps/",
+        // responseType: "blob" // blob arraybuffer
+      });
+      //监听完成事件
+      this.pdfh5.on("complete", function (status, msg, time) {
+        console.log("状态：" + status + "，信息：" + msg + "，耗时：" + time + "毫秒，总页数：" + this.totalNum)
+        //禁止手势缩放
+        this.pdfh5.zoomEnable(false);
+      })
+    }
+  }
+&lt;/script&gt;
+
+&lt;style&gt;
+    @import "pdfh5/css/pdfh5.css";
+    *{
+    padding: 0;
+    margin: 0;
+    }
+    html,body,#app {
+    width: 100%;
+    height: 100%;
+    }
+&lt;/style&gt;</code></pre>
+<ul>
+<li><strong>注意：如果css引用报错的话，按下面的方式引用。</strong> 
+<pre class="prettyprint linenums lang-language"><code>import Pdfh5 from "pdfh5";
+import "pdfh5/css/pdfh5.css";</code></pre></li>
+</ul>
+<h1>API接口方法</h1>
+<h2>实例化</h2>
+<ul>
+<li><strong>pdfh5实例化的时候传两个参数，selector选择器，options配置项参数，会返回一个pdfh5实例对象，可以用来操作pdf，监听相关事件</strong> 
+<pre class="prettyprint linenums lang-language"><code>var pdfh5 = new Pdfh5(selector, options);</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">参数名称</th>
+<th style="text-align: center;">类型</th>
+<th style="text-align: center;">取值</th>
+<th style="text-align: center;">是否必须</th>
+<th style="text-align: center;">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">selector</td>
+<td style="text-align: center;">String</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">√</td>
+<td style="text-align: center;">pdfh5的容器选择器</td>
+</tr>
+<tr>
+<td style="text-align: center;">options</td>
+<td style="text-align: center;">Object</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">×</td>
+<td style="text-align: center;">pdfh5的配置项参数</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h2>options配置项参数列表</h2>
+<ul>
+<li><strong>示例：</strong> 配置项参数 pdfurl</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>var pdfh5 = new Pdfh5('#demo', {
+    pdfurl: "./default.pdf"
+});</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">参数名称</th>
+<th style="text-align: center;">类型</th>
+<th style="text-align: center;">取值</th>
+<th style="text-align: center;">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">pdfurl</td>
+<td style="text-align: center;">String</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">pdf地址</td>
+</tr>
+<tr>
+<td style="text-align: center;">responseType</td>
+<td style="text-align: center;">String</td>
+<td style="text-align: center;">blob 、 arraybuffer 默认 blob</td>
+<td style="text-align: center;">请求pdf数据格式</td>
+</tr>
+<tr>
+<td style="text-align: center;">URIenable</td>
+<td style="text-align: center;">Boolean</td>
+<td style="text-align: center;">true、false， 默认false</td>
+<td style="text-align: center;">true开启地址栏file参数</td>
+</tr>
+<tr>
+<td style="text-align: center;">data</td>
+<td style="text-align: center;">Array(arraybuffer)</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">pdf文件流 ，与pdfurl二选一(二进制PDF数据。使用类型化数组（Uint8Array）可以提高内存使用率。如果PDF数据是BASE64编码的，请先使用atob（）将其转换为二进制字符串。)</td>
+</tr>
+<tr>
+<td style="text-align: center;">renderType</td>
+<td style="text-align: center;">String</td>
+<td style="text-align: center;">&quot;canvas&quot;、&quot;svg&quot;，默认&quot;canvas&quot;</td>
+<td style="text-align: center;">pdf渲染模式</td>
+</tr>
+<tr>
+<td style="text-align: center;">pageNum</td>
+<td style="text-align: center;">Boolean</td>
+<td style="text-align: center;">true、false， 默认true</td>
+<td style="text-align: center;">是否显示左上角页码</td>
+</tr>
+<tr>
+<td style="text-align: center;">backTop</td>
+<td style="text-align: center;">Boolean</td>
+<td style="text-align: center;">true、false， 默认true</td>
+<td style="text-align: center;">是否显示右下角回到顶部按钮</td>
+</tr>
+<tr>
+<td style="text-align: center;">maxZoom</td>
+<td style="text-align: center;">Number</td>
+<td style="text-align: center;">最大倍数3</td>
+<td style="text-align: center;">手势缩放最大倍数</td>
+</tr>
+<tr>
+<td style="text-align: center;">scale</td>
+<td style="text-align: center;">Number</td>
+<td style="text-align: center;">最大比例5，默认1.5</td>
+<td style="text-align: center;">pdf渲染的比例</td>
+</tr>
+<tr>
+<td style="text-align: center;">scrollEnable</td>
+<td style="text-align: center;">Boolean</td>
+<td style="text-align: center;">true、false， 默认true</td>
+<td style="text-align: center;">是否允许pdf滚动</td>
+</tr>
+<tr>
+<td style="text-align: center;">zoomEnable</td>
+<td style="text-align: center;">Boolean</td>
+<td style="text-align: center;">true、false， 默认true</td>
+<td style="text-align: center;">是否允许pdf手势缩放</td>
+</tr>
+<tr>
+<td style="text-align: center;">cMapUrl</td>
+<td style="text-align: center;">String</td>
+<td style="text-align: center;">&quot;</td>
+<td style="text-align: center;">解析pdf时，特殊情况下显示完整字体的cmaps文件夹路径，例如 cMapUrl:&quot;<a href="https://unpkg.com/pdfjs-dist@2.0.943/cmaps/">https://unpkg.com/pdfjs-dist@2.0.943/cmaps/</a>&quot;</td>
+</tr>
+<tr>
+<td style="text-align: center;">limit</td>
+<td style="text-align: center;">Number</td>
+<td style="text-align: center;">默认0</td>
+<td style="text-align: center;">限制pdf加载最大页数</td>
+</tr>
+<tr>
+<td style="text-align: center;">logo</td>
+<td style="text-align: center;">Object</td>
+<td style="text-align: center;">{src:&quot;pdfh5.png&quot;,x:10,y:10,width:40,height:40}src水印图片路径（建议使用png透明图片），width水印宽度，height水印高度，以每页pdf左上角为0点，x、y为偏移值。 默认false</td>
+<td style="text-align: center;">给每页pdf添加水印logo（canvas模式下使用）</td>
+</tr>
+<tr>
+<td style="text-align: center;">goto</td>
+<td style="text-align: center;">Number</td>
+<td style="text-align: center;">默认0</td>
+<td style="text-align: center;">加载pdf跳转到第几页</td>
+</tr>
+<tr>
+<td style="text-align: center;">textLayer</td>
+<td style="text-align: center;">Boolean</td>
+<td style="text-align: center;">true、false， 默认false</td>
+<td style="text-align: center;">是否开启textLayer，可以复制文本（canvas模式下使用）【处于测试阶段，位置偏移严重】</td>
+</tr>
+<tr>
+<td style="text-align: center;">background</td>
+<td style="text-align: center;">Object</td>
+<td style="text-align: center;">{color:&quot;#fff&quot;,image:&quot;url('pdfh5.png')&quot;,repeat:&quot;no-repeat&quot;,position:&quot;left top&quot;,size:&quot;40px 40px&quot;}，和css的background属性语法相同，默认false</td>
+<td style="text-align: center;">是否开启背景图模式</td>
+</tr>
+</tbody>
+</table>
+<h2>pdf请求示例</h2>
+<p>1.</p>
+<pre class="prettyprint linenums lang-language"><code>new Pdfh5('#demo', {
+    pdfurl: "git.pdf",
+    // responseType: "blob" // blob arraybuffer
+});</code></pre>
+<ol start="3">
+<li>pdf文件流或者buffer已经得到，如何渲染
+<pre class="prettyprint linenums lang-language"><code>new Pdfh5('#demo', {
+data: blob,  //blob arraybuffer
+});</code></pre>
+<h2>methods 方法列表</h2></li>
+</ol>
+<ul>
+<li><strong>示例：</strong> 是否允许pdf滚动</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>pdfh5.scrollEnable(true) //允许pdf滚动
+pdfh5.scrollEnable(false) //不允许pdf滚动</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">方法名</th>
+<th style="text-align: center;">传参</th>
+<th style="text-align: center;">传参取值</th>
+<th style="text-align: center;">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">scrollEnable</td>
+<td style="text-align: center;">Boolean</td>
+<td style="text-align: center;">true、false， 默认true</td>
+<td style="text-align: center;">是否允许pdf滚动(需要在pdf加载完成后使用)</td>
+</tr>
+<tr>
+<td style="text-align: center;">zoomEnable</td>
+<td style="text-align: center;">Boolean</td>
+<td style="text-align: center;">true、false， 默认true</td>
+<td style="text-align: center;">是否允许pdf手势缩放(需要在pdf加载完成后使用)</td>
+</tr>
+<tr>
+<td style="text-align: center;">show</td>
+<td style="text-align: center;">Function</td>
+<td style="text-align: center;">带一个回调函数</td>
+<td style="text-align: center;">pdfh5显示</td>
+</tr>
+<tr>
+<td style="text-align: center;">hide</td>
+<td style="text-align: center;">Function</td>
+<td style="text-align: center;">带一个回调函数</td>
+<td style="text-align: center;">pdfh5隐藏</td>
+</tr>
+<tr>
+<td style="text-align: center;">reset</td>
+<td style="text-align: center;">Function</td>
+<td style="text-align: center;">带一个回调函数</td>
+<td style="text-align: center;">pdfh5还原</td>
+</tr>
+<tr>
+<td style="text-align: center;">destroy</td>
+<td style="text-align: center;">Function</td>
+<td style="text-align: center;">带一个回调函数</td>
+<td style="text-align: center;">pdfh5销毁</td>
+</tr>
+<tr>
+<td style="text-align: center;">on</td>
+<td style="text-align: center;">(String, Function)</td>
+<td style="text-align: center;">String：监听的事件名，Function：监听的事件回调</td>
+<td style="text-align: center;">on方法监听所有事件</td>
+</tr>
+<tr>
+<td style="text-align: center;">goto</td>
+<td style="text-align: center;">Number</td>
+<td style="text-align: center;">Number:要跳转的pdf页数</td>
+<td style="text-align: center;">pdf跳转到第几页（pdf加载完成后使用）</td>
+</tr>
+<tr>
+<td style="text-align: center;">download</td>
+<td style="text-align: center;">(String, Function)</td>
+<td style="text-align: center;">String：下载pdf的名称，默认download.pdf，Function：下载完成后的回调</td>
+<td style="text-align: center;">下载pdf</td>
+</tr>
+</tbody>
+</table>
+<h2>on方法监听所有事件-事件名列表</h2>
+<ul>
+<li><strong>示例：</strong> 监听pdf准备开始渲染，此时可以拿到pdf总页数</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>pdfh5.on("ready", function () {
+    console.log("总页数：" + this.totalNum)
+})</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">事件名</th>
+<th style="text-align: center;">回调</th>
+<th style="text-align: center;">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">init</td>
+<td style="text-align: center;">Function</td>
+<td style="text-align: center;">监听pdfh5开始初始化</td>
+</tr>
+<tr>
+<td style="text-align: center;">ready</td>
+<td style="text-align: center;">Function</td>
+<td style="text-align: center;">监听pdf准备开始渲染，此时可以拿到pdf总页数</td>
+</tr>
+<tr>
+<td style="text-align: center;">error</td>
+<td style="text-align: center;">Function(msg,time)</td>
+<td style="text-align: center;">监听加载失败，msg信息，time耗时</td>
+</tr>
+<tr>
+<td style="text-align: center;">success</td>
+<td style="text-align: center;">Function(msg,time)</td>
+<td style="text-align: center;">监听pdf渲染成功，msg信息，time耗时</td>
+</tr>
+<tr>
+<td style="text-align: center;">complete</td>
+<td style="text-align: center;">Function(status, msg, time)</td>
+<td style="text-align: center;">监听pdf加载完成事件，加载失败、渲染成功都会触发。status有两种状态success和error</td>
+</tr>
+<tr>
+<td style="text-align: center;">render</td>
+<td style="text-align: center;">Function(currentNum, time, currentPageDom)</td>
+<td style="text-align: center;">监听pdf渲染过程，currentPageDom当前加载的pdf的dom,currentNum当前加载的pdf页数,</td>
+</tr>
+<tr>
+<td style="text-align: center;">zoom</td>
+<td style="text-align: center;">Function(scale)</td>
+<td style="text-align: center;">监听pdf缩放，scale缩放比例</td>
+</tr>
+<tr>
+<td style="text-align: center;">scroll</td>
+<td style="text-align: center;">Function(scrollTop,currentNum)</td>
+<td style="text-align: center;">监听pdf滚动，scrollTop滚动条高度,currentNum当前页码</td>
+</tr>
+<tr>
+<td style="text-align: center;">backTop</td>
+<td style="text-align: center;">Function</td>
+<td style="text-align: center;">监听回到顶部按钮的点击事件回调</td>
+</tr>
+<tr>
+<td style="text-align: center;">zoomEnable</td>
+<td style="text-align: center;">Function(flag)</td>
+<td style="text-align: center;">监听允许缩放，flag：true，false</td>
+</tr>
+<tr>
+<td style="text-align: center;">scrollEnable</td>
+<td style="text-align: center;">Function(flag)</td>
+<td style="text-align: center;">监听允许滚动，flag：true，false</td>
+</tr>
+<tr>
+<td style="text-align: center;">show</td>
+<td style="text-align: center;">Function</td>
+<td style="text-align: center;">监听pdfh5显示</td>
+</tr>
+<tr>
+<td style="text-align: center;">hide</td>
+<td style="text-align: center;">Function</td>
+<td style="text-align: center;">监听pdfh5隐藏</td>
+</tr>
+<tr>
+<td style="text-align: center;">reset</td>
+<td style="text-align: center;">Function</td>
+<td style="text-align: center;">监听pdfh5还原</td>
+</tr>
+<tr>
+<td style="text-align: center;">destroy</td>
+<td style="text-align: center;">Function</td>
+<td style="text-align: center;">监听pdfh5销毁</td>
+</tr>
+</tbody>
+</table>
+<h2>打赏榜单</h2>
+<ul>
+<li><a href="https://github.com/110117ab">JayLin</a> ￥6.66</li>
+<li><a href="https://github.com/ljc7877376">靓仔城</a> ￥6.67</li>
+<li>南蓝 ￥8.80</li>
+<li>我是太阳 ￥29.99</li>
+<li>*小波 ￥1.00</li>
+<li>*鑫 ¥9.99</li>
+<li>*手 ¥9.99</li>
+<li>*勇 ￥19.99 </li>
+<li>*爷 ¥5.00</li>
+<li>*超 ¥20.00</li>
+<li>3*Y ¥5.00</li>
+<li>*阳 ¥5.00</li>
+<li>**雄 ¥5.00</li>
+<li>A*r ¥1.23</li>
+<li>*客 ¥5.00</li>
+<li>*运 ¥66.66</li>
+<li>*辰 ¥30.00</li>
+<li>*黎 ¥6.66+¥5.00</li>
+<li>**福 ¥6.66</li>
+<li>*🏀 ¥6.66+¥1.00</li>
+<li>*阳 ¥10.00</li>
+<li>自闭中 ¥16.66+¥16.00</li>
+<li>*焕 ¥6.66</li>
+<li>*人 ¥5.00</li>
+<li>*。 ¥5.20</li>
+<li>半*) ¥5.00</li>
+<li>*1 ¥15.00</li>
+<li>*蕾 ¥16.66+¥8.80</li>
+<li>*军 ¥10.00</li>
+<li>**强 ¥58.88</li>
+<li>E*y ¥6.60</li>
+<li>J*u ¥13.00</li>
+<li>A*a ¥50.00</li>
+<li>*东 ¥8.80</li>
+<li>j*y ¥9.99</li>
+<li>*宇 ¥6.66</li>
+<li>*涛 ￥1.00</li>
+<li>*. ￥10.00</li>
+<li>*☺ ￥6.66</li>
+<li>*霸 ￥6.66</li>
+<li>a*r ￥20.00</li>
+<li>木槿(**耀) ￥50.00</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/mobile" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>mobile</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/mobile-pdf" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>mobile-pdf</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/mobile-web" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>mobile-web</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/pdf" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>pdf</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/pdf-pdfh5" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>pdf-pdfh5</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/pdf-viewer" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>pdf-viewer</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/pdfh5" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>pdfh5</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/pdfh5js" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>pdfh5js</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/pdfjs" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>pdfjs</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/react" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>react</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/vue" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>vue</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/36074298?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/gjTool" target="_blank" id="ownerName" class="sidebar-link">gjTool</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">August 1, 2018</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 27, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://www.gjtool.cn/pdfh5/pdf.html" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/36074298?v=4" alt="gjTool" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gjTool" target="_blank" class="text-decoration-none fw-bold">gjTool</a><p class="mb-0 text-muted small">199 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/26754683?v=4" alt="qq861366490" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/qq861366490" target="_blank" class="text-decoration-none fw-bold">qq861366490</a><p class="mb-0 text-muted small">137 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">14 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/19246724?v=4" alt="Realzzz1874" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Realzzz1874" target="_blank" class="text-decoration-none fw-bold">Realzzz1874</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
