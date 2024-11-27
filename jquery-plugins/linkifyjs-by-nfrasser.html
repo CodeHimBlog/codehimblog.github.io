@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkifyjs by Nfrasser</title>
+    <meta name="description" content="JavaScript plugin for finding links in plain-text and converting them to HTML &lt;a&gt; tags.">
+    <meta name="author" content="nfrasser">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/linkifyjs-by-nfrasser.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Linkifyjs</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Linkifyjs",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Linkifyjs</h1>
+        <p id="packageDescription" class="text-muted">JavaScript plugin for finding links in plain-text and converting them to HTML &lt;a&gt; tags.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1849</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">4.11 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">184</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">41</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/nfrasser/linkifyjs/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/nfrasser/linkifyjs" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Linkify</h1>
+<p><a href="https://www.npmjs.com/package/linkifyjs"><img src="https://badge.fury.io/js/linkifyjs.svg" alt="npm version" /></a><br />
+<a href="https://github.com/nfrasser/linkifyjs/actions/workflows/ci.yml"><img src="https://github.com/nfrasser/linkifyjs/actions/workflows/ci.yml/badge.svg" alt="CI" /></a><br />
+<a href="https://automate.browserstack.com/public-build/ZVZXNFhhQ044a01nQStVeWJXSng1b01MTWFpZlZRZVg1WnAvdE9aVE9LVT0tLWZpekx6ZHUrZ2E0dDRHMDZRMnJNQlE9PQ==--4d91db279fbd0475f8d8e4b221b5a4c1e0c6a76e"><img src="https://automate.browserstack.com/badge.svg?badge_key=ZVZXNFhhQ044a01nQStVeWJXSng1b01MTWFpZlZRZVg1WnAvdE9aVE9LVT0tLWZpekx6ZHUrZ2E0dDRHMDZRMnJNQlE9PQ==--4d91db279fbd0475f8d8e4b221b5a4c1e0c6a76e" alt="BrowserStack Status" /></a><br />
+<a href="https://coveralls.io/github/nfrasser/linkifyjs?branch=main"><img src="https://coveralls.io/repos/github/nfrasser/linkifyjs/badge.svg?branch=main" alt="Coverage Status" /></a></p>
+<p>Linkify is a JavaScript plugin. Use Linkify to find links in plain-text and<br />
+convert them to HTML &lt;a&gt; tags. It automatically highlights URLs,</p>
+<h1>hashtags, @mentions and more.</h1>
+<p><strong>Jump to</strong></p>
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#demo">Demo</a></li>
+<li><a href="#installation-and-usage">Installation and Usage</a></li>
+<li><a href="#browser-support">Browser Support</a></li>
+<li><a href="#nodejs-support">Node.js Support</a></li>
+<li><a href="#downloads">Downloads</a></li>
+<li><a href="#api-documentation">API Documentation</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>Features</h2>
+<ul>
+<li>Detect URLs and email addresses</li>
+<li>
+<h1>hashtag, @mention and #-ticket plugins</h1>
+</li>
+<li>React and jQuery support</li>
+<li>Multi-language and emoji support</li>
+<li>Custom link plugins</li>
+<li>Fast, accurate and small footprint (~20kB minified, ~11kB gzipped)</li>
+<li>99% test coverage</li>
+<li>Compatible with all modern browsers (Internet Explorer 11 and up)</li>
+</ul>
+<h2>Demo</h2>
+<p><a href="https://linkify.js.org/#demo">Launch demo</a></p>
+<h2>Installation and Usage</h2>
+<p><a href="https://linkify.js.org/docs/">View full documentation</a>.</p>
+<p>Download the <a href="https://github.com/nfrasser/linkifyjs/releases">latest release</a> for direct use in the browser, or install via <a href="https://www.npmjs.com/">NPM</a>:</p>
+<pre><code>npm install linkifyjs linkify-html</code></pre>
+<h3>Quick Start</h3>
+<p>When developing in an environment with JavaScript module loader such as Webpack,<br />
+use an <code>import</code> statement:</p>
+<pre class="prettyprint linenums lang-language"><code>import * as linkify from 'linkifyjs';
+import linkifyHtml from 'linkify-html';</code></pre>
+<p>Or in Node.js with CommonJS modules</p>
+<pre class="prettyprint linenums lang-language"><code>const linkify = require('linkifyjs');
+const linkifyHtml = require('linkify-html');</code></pre>
+<p><strong>Note:</strong> When linkify-ing text that does not contain HTML, install and use the<br />
+<code>linkify-string</code> package instead of <code>linkify-html</code>. <a href="https://linkify.js.org/docs/interfaces.html">Read more about Linkify's<br />
+interfaces</a>.</p>
+<h3>Usage</h3>
+<h4>Example 1: Convert all links to &lt;a&gt; tags in the given string</h4>
+<pre class="prettyprint linenums lang-language"><code>const options = { defaultProtocol: 'https' };
+linkifyHtml('Any links to github.com here? If not, contact test@example.com', options);</code></pre>
+<p>Returns the following string:</p>
+<pre class="prettyprint linenums lang-language"><code>'Any links to &lt;a href="https://github.com"&gt;github.com&lt;/a&gt; here? If not, contact &lt;a href="mailto:test@example.com"&gt;test@example.com&lt;/a&gt;';</code></pre>
+<p>To modify the resulting links with a target attribute, class name and more, <a href="https://linkify.js.org/docs/options.html">use<br />
+the available options</a>.</p>
+<h4>Example 2: Find all links in the given string</h4>
+<pre class="prettyprint linenums lang-language"><code>linkify.find('Any links to github.com here? If not, contact test@example.com');</code></pre>
+<p>Returns the following array</p>
+<pre class="prettyprint linenums lang-language"><code>[
+  {
+    type: 'url',
+    value: 'github.com',
+    isLink: true,
+    href: 'http://github.com',
+    start: 13,
+    end: 23,
+  },
+  {
+    type: 'email',
+    value: 'test@example.com',
+    isLink: true,
+    href: 'mailto:test@example.com',
+    start: 46,
+    end: 62,
+  },
+];</code></pre>
+<h4>Example 3: Check whether a string is a valid link:</h4>
+<p>Check if as string is a valid URL or email address:</p>
+<pre class="prettyprint linenums lang-language"><code>linkify.test('github.com'); // true</code></pre>
+<p>Check if a string is a valid email address:</p>
+<pre class="prettyprint linenums lang-language"><code>linkify.test('github.com', 'email'); // false
+linkify.test('noreply@github.com', 'email'); // true</code></pre>
+<h3>Usage with React, jQuery or the browser DOM</h3>
+<p><a href="https://linkify.js.org/docs/interfaces.html">Read the interface documentation</a> to learn how to use linkify when working with a specific JavaScript environment such as React.</p>
+<h3>Plugins for @mentions, #hashtags and more</h3>
+<p>By default Linkify will only detect and highlight web URLs and e-mail addresses.<br />
+Plugins for @mentions, #hashtags and more may be installed separately. <a href="https://linkify.js.org/docs/plugins.html">Read the<br />
+plugin documentation</a>.</p>
+<h2>Browser Support</h2>
+<p>Linkify natively supports all modern browsers.</p>
+<h2>Node.js Support</h2>
+<p>Linkify is tested on Node.js 14 and up. Older Node.js versions are unofficially<br />
+supported.</p>
+<h2>Downloads</h2>
+<p>Download the <a href="https://github.com/nfrasser/linkifyjs/releases"><strong>latest release</strong></a></p>
+<h2>API Documentation</h2>
+<p>View full documentation at <a href="https://linkify.js.org/docs/">linkify.js.org/docs</a></p>
+<h2>Contributing</h2>
+<p>Check out <a href="https://github.com/nfrasser/linkifyjs/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+<h2>License</h2>
+<p>MIT</p>
+<h2>Authors</h2>
+<p>Linkify is made with ❤️ by <a href="https://github.com/nfrasser">@nfrasser</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h1>Linkify Changelog</h1>
+<h2>v4.1.4</h2>
+<ul>
+<li>Add support for full width middle dot <code>・</code> in hashtag plugin</li>
+<li>Development updates for newest Node.js versions</li>
+</ul>
+<h2>v4.1.3</h2>
+<ul>
+<li>Fix HTML entity <code>&amp;</code> symbol double-encoding in linkify-html</li>
+<li>Support for full-width brackets, full-width less-than/greater-than signs and corner bracket as delimiters</li>
+</ul>
+<h2>v4.1.2</h2>
+<ul>
+<li>Ensure linkify.find respects validate option</li>
+</ul>
+<h2>v4.1.1</h2>
+<ul>
+<li>Slightly simpler TLDs encoding/parsing</li>
+<li>Fix jsdoc in linkify-react</li>
+<li>Improved parsing of URLs with symbols</li>
+<li>Ensure function options get called with unformatted href</li>
+</ul>
+<h2>v4.1.0</h2>
+<ul>
+<li>Drop support for Safari 10</li>
+<li>Reduce core bundle file size by ~30%</li>
+<li>Restore support for email address with scheme local part</li>
+<li>Allow hashtags with emojis</li>
+</ul>
+<h2>v4.0.2</h2>
+<ul>
+<li>Fix email address detection with domains containing numbers</li>
+</ul>
+<h2>v4.0.1</h2>
+<ul>
+<li>Restore nl2br option for linkify-html</li>
+<li>Fixed duplicate key warning in linkify-react with multiple children</li>
+</ul>
+<h2>v4.0.0</h2>
+<h3>BREAKING CHANGES</h3>
+<ul>
+<li>Removed deprecated <code>linkifyjs/string</code>, <code>linkifyjs/html</code>, <code>linkifyjs/plugins/*</code><br />
+packages. Use <code>linkify-string</code>, <code>linkify-html</code> and <code>linkify-plugin-*</code> instead.</li>
+<li>Refactored scanner internals break custom link plugins created with Linkify v3</li>
+<li>Links that begin with <code>mailto:</code> now have type <code>url</code> instead of <code>email</code></li>
+<li>Drop official IE 11 support</li>
+</ul>
+<h3>Added</h3>
+<ul>
+<li><code>linkify-plugin-ip</code> plugin for detecting IPv4 and IPv6 addresses</li>
+<li><code>linkify-plugin-keyword</code> plugin for detecting arbitrary keywords</li>
+<li><code>linkify.find()</code> function accepts an <code>options</code> argument for output formatting</li>
+<li>New <code>render</code> option to override link rendering</li>
+<li>Second <code>optionalSlashSlash</code> argument for <code>registerCustomProtocol</code> to allow links that don't require <code>//</code> after <code>scheme:</code></li>
+<li>Link token methods <code>toFormattedString(options)</code>, <code>toFormattedHref(options)</code> and <code>toFormattedObject(options)</code> that accept a <code>linkify.Options</code> object</li>
+<li>More granular scanner tokens for improved plugin flexibility</li>
+<li><code>linkify-react</code>: New <code>as</code> property (alias for <code>tagName</code>)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Improved link detection with mixed languages</li>
+<li>Consistent option availability across interfaces (including <code>truncate</code>)</li>
+<li><code>linkify-html</code>: Improved HTML entity parsing</li>
+</ul>
+<h2>v3.0.5</h2>
+<ul>
+<li>Fix potential Cross-Site Scripting issue when using <code>linkify-html</code></li>
+</ul>
+<h2>v3.0.4</h2>
+<ul>
+<li>Expose ES6 modules with <code>"module"</code> field in <code>package.json</code></li>
+</ul>
+<h2>v3.0.3</h2>
+<ul>
+<li>Add linkifyjs ES6 module build</li>
+</ul>
+<h2>v3.0.2</h2>
+<ul>
+<li>Correctly detect hashtags with underscores</li>
+<li>Fix plugin import bug</li>
+<li>Fix <code>linkify-string</code> and <code>linkify-html</code> type declarations</li>
+</ul>
+<h2>v3.0.1</h2>
+<ul>
+<li>Fix React component type declarations</li>
+<li>Include LICENSE file in all published packages</li>
+</ul>
+<h2>v3.0.0</h2>
+<h3>BREAKING CHANGES</h3>
+<ul>
+<li>React, jQuery and Element interfaces moved to dedicated packages at <code>linkify-react</code>,<code>linkify-jquery</code> and <code>linkify-element</code> respectively:</li>
+<li>Remove default <code>class="linkified"</code> from all discovered links. Opt back in by setting the <code>className</code> option:
+<pre class="prettyprint linenums lang-language"><code>linkifyStr(str, { className: 'linkified' });</code></pre></li>
+<li>Remove default <code>target="_blank"</code> attribute for discovered URLs. Opt back in by setting the <code>target</code> option:
+<pre class="prettyprint linenums lang-language"><code>linkifyHtml(str, {
+target: (href, type) =&gt; type === 'url' &amp;&amp; '_blank',
+});</code></pre></li>
+<li>React component: Remove outer <code>&lt;span&gt;</code> tag wrapper in favour of tag-less <code>React.Fragment</code> for React &gt;=16. To opt back-in, set <code>tagName='span'</code>:
+<pre class="prettyprint linenums lang-language"><code>&lt;Linkify tagName="span"&gt;{content}&lt;/Linkify&gt;</code></pre></li>
+<li>AMD module interface is no longer provided. Use an ESM bundler instead.</li>
+<li>Plugins imported after linkify is called on a string for the first time will not longer work. Import all plugins <em>before</em> calling a linkify core or interface function.</li>
+<li>Custom plugin API is not compatible with previous API in Linkify v2</li>
+<li>Dropped support for Internet Explorer versions 9 and 10. IE11 is still supported</li>
+<li>Dropped support for React versions &lt;15</li>
+</ul>
+<h3>Deprecations</h3>
+<ul>
+<li>Use dedicated packages <code>linkify-string</code> and <code>linkify-html</code> instead of <code>linkifyjs/string</code> and <code>linkifyjs/html</code>. The embedded packages will be removed in v4.0</li>
+<li>Use dedicated plugin packages <code>linkify-plugin-[PLUGIN]</code> instead of <code>linkifyjs/plugin/[PLUGIN]</code>. The embedded packages will be removed in v4.0</li>
+</ul>
+<h3>All Changes</h3>
+<ul>
+<li>Full Internationalized Domain (IDN) and Emoji domain support 🇺🇳🌍✈️🎉💃! Detect URLs, #hashtags and @mentions in any language</li>
+<li>~10x faster startup; ~4x faster combined startup + first run</li>
+<li>Custom protocols with <code>linkify.registerCustomProtocol('protocol')</code></li>
+<li>Modernized codebase and build system</li>
+<li>Add new <code>rel</code> option at top level as an alternate way of including it in <code>attributes</code></li>
+<li>New and improved plugin API</li>
+<li>TypeScript definitions included in published packages</li>
+<li><code>linkify.find()</code> output includes start and end indexes for where in the string a link was found</li>
+<li>
+<p>Plugins no longer need to be called on linkify after import</p>
+<pre class="prettyprint linenums lang-language"><code>// Before
+import * as linkify from 'linkifyjs';
+import hashtag from 'linkifyjs/plugins/hashtag';
+hashtag(linkify);
+
+// After
+import * as linkify from 'linkifyjs';
+import 'linkifyjs/plugins/hashtag';</code></pre>
+</li>
+</ul>
+<h2>v2.1.9</h2>
+<ul>
+<li>Move optional dependencies to peerdependencies (#282)</li>
+<li>Fix <code>npm install</code> displays vulnerabilities. (#265)</li>
+<li>Fix typo (#275)</li>
+</ul>
+<h2>v2.1.8</h2>
+<ul>
+<li>Allow mentions with inner @ sign for federated mentions - thanks @juliushaertl!</li>
+<li>Drop official support for Internet Explorer 8 and Node.js 6 (still supported unofficially but may break in future releases)</li>
+<li>Update dev dependencies</li>
+</ul>
+<h2>v2.1.7</h2>
+<ul>
+<li>Update dependencies (#243)</li>
+<li>Ignore .babelrc file (854e6fc)</li>
+</ul>
+<h2>v2.1.6</h2>
+<ul>
+<li>Fix a bug where unique element IDs aren't unique (#215)</li>
+<li>Update tlds.js (#213)</li>
+<li>Automated browser test fixes (#224)</li>
+<li>Add partialProtocolMailtoStates to domainStates (#210)</li>
+<li>Use Object.defineProperty to extend String prototype so that 'linkify' function is not enumerable (#197)</li>
+<li>Allow null overrides in options for target and className (#189)</li>
+</ul>
+<h2>v2.1.5</h2>
+<ul>
+<li>React plugin compatibility updates</li>
+</ul>
+<h2>v2.1.4</h2>
+<ul>
+<li>Add explicit support for mailto: addresses (#186)</li>
+<li>Add support for mentions containing dots (#185)</li>
+<li>URL followed by <code>&amp;nbsp;</code> now works as expected in linkify-html (#184)</li>
+<li>Small dependency updates (#183)</li>
+<li>Drop deprecated babel-preset-es2015-loose dependency (#172)</li>
+<li>Web workers support (#168)</li>
+</ul>
+<h2>v2.1.3</h2>
+<ul>
+<li>Links in angle brackets (#166)</li>
+</ul>
+<h2>v2.1.2</h2>
+<ul>
+<li>Single quotes should be treated as punctuation (#165)</li>
+</ul>
+<h2>v2.1.1</h2>
+<ul>
+<li>Detect additional whitespace characters (#163)</li>
+</ul>
+<h2>v2.1.0</h2>
+<h3>BREAKING CHANGES</h3>
+<ul>
+<li>The <code>dist/jquery.linkify.js</code> 1.x legacy browser files have been permanently<br />
+removed from the release bundle.
+<ul>
+<li>Use <code>linkify.js</code> and <code>linkify-jquery.js</code> instead.</li>
+</ul></li>
+<li>The deprecated <code>newLine</code> option from linkify 1.x has been completely removed.
+<ul>
+<li>Use the <a href="https://linkify.js.org/docs/options.html#nl2br"><code>nl2br</code> option</a> instead.</li>
+</ul></li>
+</ul>
+<h3>Features</h3>
+<ul>
+<li><a href="https://linkify.js.org/docs/linkify-react.html">New React.js interface</a></li>
+<li><a href="https://linkify.js.org/docs/plugin-mention.html">@mention plugin</a></li>
+<li><a href="https://linkify.js.org/docs/plugin-ticket.html">GitHub-style ticket/issue reference plugin</a></li>
+<li>Improved option definitions
+<ul>
+<li>Options that take functions with value and type arguments can now be<br />
+specified as objects, where each key is the target link type.</li>
+</ul></li>
+</ul>
+<h3>Deprecations</h3>
+<ul>
+<li>The <code>linkAttributes</code> option is deprecated in favour of just <strong><code>attributes</code></strong>.</li>
+<li>The <code>linkClass</code> option is deprecated in favour of <strong><code>className</code></strong>.</li>
+<li>The default <code>.linkified</code> class is deprecated and will be fully removed<br />
+in a future release.</li>
+</ul>
+<p>To maintain compatibility with versions &gt;= 2.1, make sure options objects<br />
+include these properties instead of <code>linkAttributes</code> and <code>linkClass</code></p>
+<h3>All Changes</h3>
+<ul>
+<li>Build optimizations to make compiled AMD payload smaller</li>
+<li>Bugfix in quick-es3 task</li>
+<li>Make better use of ES6 modules and rollup</li>
+<li>Tickets plugin (#156)</li>
+<li>Additional Mentions features, enhancements, and tests (#155)</li>
+<li>Mentions plugin (#111)</li>
+<li>Revamped options utility (#154)</li>
+<li>Linkify React Interface (#150)</li>
+<li>Development upgrades (#153)</li>
+</ul>
+<h2>v2.0.5</h2>
+<ul>
+<li>Correct trailing symbol parsing (#149)</li>
+<li>Linkify element fixes (#148)</li>
+</ul>
+<h2>v2.0.4</h2>
+<ul>
+<li>Optimize class code to reduce file size (#147).</li>
+<li>Update test and dev dependencies</li>
+<li>Allow uglify to mangle properties, except for the specified ones (#146)</li>
+<li>Updated tlds.js (#121)</li>
+</ul>
+<h2>v2.0.3</h2>
+<ul>
+<li>Fixing element interface invalid DOM node error (#141)</li>
+</ul>
+<h2>v2.0.1</h2>
+<ul>
+<li>Updated build system and development dependencies</li>
+<li>IE8 Support</li>
+<li>Internal API updates</li>
+</ul>
+<h2>v2.0.0</h2>
+<ul>
+<li>New link-detection technique based on lexicographical analysis via two-stage scanner - essentially regexp with more flexibility.</li>
+<li>Faster, less destructive DOM manipulation.</li>
+<li>Node.js API via <code>var linkify = require('linkifyjs');</code></li>
+<li>Internal plugin system so you can require only features you need. e.g., <code>require('linkifyjs/plugins/hashtag')(linkify);</code></li>
+<li>Browser modules (Browserify, AMD)</li>
+<li>Mocha Unit tests</li>
+<li>ES6 Implementation</li>
+<li>Updated documentation</li>
+<li>Repository name change</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/autolink" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>autolink</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/email" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>email</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/html" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>html</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/linkify" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>linkify</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/nodejs" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>nodejs</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/react" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>react</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/url" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>url</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/1693461?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/nfrasser" target="_blank" id="ownerName" class="sidebar-link">nfrasser</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">May 2, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 26, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://linkify.js.org" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>@babel/core (^7.13.10)</li><li>@babel/eslint-parser (^7.13.10)</li><li>@babel/eslint-plugin (^7.13.10)</li><li>@babel/preset-env (^7.13.10)</li><li>@eslint/eslintrc (^3.1.0)</li><li>@eslint/js (^9.13.0)</li><li>@nfrasser/simple-html-tokenizer (==0.5.11-2)</li><li>@rollup/plugin-babel (^6.0.3)</li><li>@rollup/plugin-commonjs (^24.0.0)</li><li>@rollup/plugin-terser (^0.4.4)</li><li>@rollup/plugin-node-resolve (^15.0.1)</li><li>c8 (^10.1.2)</li><li>chai (^4.3.4)</li><li>copyfiles (^2.4.1)</li><li>coveralls (^3.1.0)</li><li>eslint (^9.13.0)</li><li>eslint-plugin-mocha (^10.0.3)</li><li>globals (^15.11.0)</li><li>jquery (^3.6.0)</li><li>jsdom (^16.5.0)</li><li>karma (^6.3.16)</li><li>karma-browserstack-launcher (^1.6.0)</li><li>karma-chrome-launcher (^3.1.0)</li><li>karma-firefox-launcher (^2.1.0)</li><li>karma-qunit (^4.1.2)</li><li>mocha (^9.2.2)</li><li>npm-run-all (^4.1.5)</li><li>prettier (^3.0.3)</li><li>punycode (^2.1.1)</li><li>qunit (^2.14.1)</li><li>react (^18.0.0)</li><li>react-dom (^18.0.0)</li><li>rollup (^2.42.1)</li><li>sinon (^17.0.0)</li><li>typescript (^5.0.2)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1693461?v=4" alt="nfrasser" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nfrasser" target="_blank" class="text-decoration-none fw-bold">nfrasser</a><p class="mb-0 text-muted small">15 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">9 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3825342?v=4" alt="mbojey" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mbojey" target="_blank" class="text-decoration-none fw-bold">mbojey</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/6643991?v=4" alt="MichaelDeBoey" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/MichaelDeBoey" target="_blank" class="text-decoration-none fw-bold">MichaelDeBoey</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1457682?v=4" alt="akiomik" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/akiomik" target="_blank" class="text-decoration-none fw-bold">akiomik</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1322715?v=4" alt="akarve" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/akarve" target="_blank" class="text-decoration-none fw-bold">akarve</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/16767271?v=4" alt="BradWalton" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/BradWalton" target="_blank" class="text-decoration-none fw-bold">BradWalton</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4392150?v=4" alt="Bubalubs" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Bubalubs" target="_blank" class="text-decoration-none fw-bold">Bubalubs</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/986903?v=4" alt="dbkr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dbkr" target="_blank" class="text-decoration-none fw-bold">dbkr</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5440884?v=4" alt="treywood" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/treywood" target="_blank" class="text-decoration-none fw-bold">treywood</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3921885?v=4" alt="kamaci" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kamaci" target="_blank" class="text-decoration-none fw-bold">kamaci</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/491549?v=4" alt="ynov" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ynov" target="_blank" class="text-decoration-none fw-bold">ynov</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6589732?v=4" alt="antoniopacheco" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/antoniopacheco" target="_blank" class="text-decoration-none fw-bold">antoniopacheco</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3404133?v=4" alt="juliusknorr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/juliusknorr" target="_blank" class="text-decoration-none fw-bold">juliusknorr</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1135690?v=4" alt="hanazuki" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hanazuki" target="_blank" class="text-decoration-none fw-bold">hanazuki</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1680868?v=4" alt="kelp404" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kelp404" target="_blank" class="text-decoration-none fw-bold">kelp404</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/420864?v=4" alt="marksyzm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/marksyzm" target="_blank" class="text-decoration-none fw-bold">marksyzm</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/71916?v=4" alt="sirlancelot" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sirlancelot" target="_blank" class="text-decoration-none fw-bold">sirlancelot</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/538003?v=4" alt="collingo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/collingo" target="_blank" class="text-decoration-none fw-bold">collingo</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8056274?v=4" alt="phanan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/phanan" target="_blank" class="text-decoration-none fw-bold">phanan</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/14883250?v=4" alt="prbobba" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/prbobba" target="_blank" class="text-decoration-none fw-bold">prbobba</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/174813786?v=4" alt="saivann" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/saivann" target="_blank" class="text-decoration-none fw-bold">saivann</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2693141?v=4" alt="scotsqueakscoot" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/scotsqueakscoot" target="_blank" class="text-decoration-none fw-bold">scotsqueakscoot</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/506932?v=4" alt="emersion" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/emersion" target="_blank" class="text-decoration-none fw-bold">emersion</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2290942?v=4" alt="sgreiner" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sgreiner" target="_blank" class="text-decoration-none fw-bold">sgreiner</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4623810?v=4" alt="tmct" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tmct" target="_blank" class="text-decoration-none fw-bold">tmct</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/233491?v=4" alt="tone81" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tone81" target="_blank" class="text-decoration-none fw-bold">tone81</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/52808268?v=4" alt="weii41392" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/weii41392" target="_blank" class="text-decoration-none fw-bold">weii41392</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6568078?v=4" alt="willamesoares" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/willamesoares" target="_blank" class="text-decoration-none fw-bold">willamesoares</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/136934?v=4" alt="EugenMayer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/EugenMayer" target="_blank" class="text-decoration-none fw-bold">EugenMayer</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
