@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugin Offering an Interface to Create Complex Queries</title>
+    <meta name="description" content="jQuery-QueryBuilder by mistic100. jQuery plugin offering an interface to create complex queries">
+    <meta name="author" content="mistic100">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-querybuilder-by-mistic100.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Querybuilder</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Querybuilder",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Querybuilder</h1>
+        <p id="packageDescription" class="text-muted">jQuery plugin offering an interface to create complex queries</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1685</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">4.2 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">552</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">100</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/mistic100/jQuery-QueryBuilder/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/mistic100/jQuery-QueryBuilder" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery QueryBuilder</h1>
+<p><a href="https://www.npmjs.com/package/jQuery-QueryBuilder"><img src="https://img.shields.io/npm/v/jQuery-QueryBuilder.svg?style=flat-square" alt="npm version" /></a><br />
+<a href="https://www.jsdelivr.com/package/npm/jQuery-QueryBuilder"><img src="https://data.jsdelivr.com/v1/package/npm/jQuery-QueryBuilder/badge" alt="jsDelivr CDN" /></a><br />
+<a href="https://github.com/mistic100/jQuery-QueryBuilder/actions"><img src="https://github.com/mistic100/jQuery-QueryBuilder/workflows/CI/badge.svg" alt="Build Status" /></a><br />
+<a href="https://gitlocalize.com/repo/5259/whole_project?utm_source=badge"><img src="https://gitlocalize.com/repo/5259/whole_project/badge.svg" alt="gitlocalized" /></a></p>
+<p>jQuery plugin offering an simple interface to create complex queries.</p>
+<p><a href="https://querybuilder.js.org"><img src="https://raw.githubusercontent.com/mistic100/jQuery-QueryBuilder/master/examples/screenshot.png" alt="screenshot" /></a></p>
+<h2>Documentation</h2>
+<p><a href="https://querybuilder.js.org">querybuilder.js.org</a></p>
+<h2>Install</h2>
+<h4>Manually</h4>
+<p><a href="https://github.com/mistic100/jQuery-QueryBuilder/releases">Download the latest release</a></p>
+<h4>With npm</h4>
+<pre class="prettyprint linenums lang-language"><code>$ npm install jQuery-QueryBuilder</code></pre>
+<h4>Via CDN</h4>
+<p>jQuery-QueryBuilder is available on <a href="https://www.jsdelivr.com/package/npm/jQuery-QueryBuilder">jsDelivr</a>.</p>
+<h3>Dependencies</h3>
+<ul>
+<li><a href="https://jquery.com">jQuery 3</a></li>
+<li><a href="https://getbootstrap.com/docs/5.3/">Bootstrap 5</a> CSS and bundle.js which includes <code>Popper</code> for tooltips and popovers</li>
+<li><a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> </li>
+<li><a href="https://github.com/mistic100/jQuery.extendext">jQuery.extendext</a></li>
+<li><a href="https://momentjs.com">MomentJS</a> (optional, for Date/Time validation)</li>
+<li><a href="https://github.com/mistic100/sql-parser">SQL Parser</a> (optional, for SQL methods)</li>
+<li>Other Bootstrap/jQuery plugins used by plugins</li>
+</ul>
+<p>($.extendext is directly included in the <a href="https://github.com/mistic100/jQuery-QueryBuilder/blob/master/dist/js/query-builder.standalone.js">standalone</a> file)</p>
+<h2>Developement</h2>
+<p>Install Node dependencies with <code>npm install</code>.</p>
+<h4>Build</h4>
+<p>Run <code>npm run build</code> in the root directory to generate production files inside <code>dist</code>.</p>
+<h4>Serve</h4>
+<p>Run <code>npm run serve</code> to open the example page with automatic build and livereload.</p>
+<h2>License</h2>
+<p>This library is available under the MIT license.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/gui" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>gui</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/mongo" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>mongo</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/sql" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>sql</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/41597?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/mistic100" target="_blank" id="ownerName" class="sidebar-link">mistic100</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">April 8, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 24, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://querybuilder.js.org" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>bootstrap (^5.3.0)</li><li>@popperjs/core (^2.11.8)</li><li>bootstrap-icons (^1.11.3)</li><li>jquery (^3.5.1)</li><li>jquery-extendext (^1.0.0)</li><li>moment (^2.29.1)</li><li>sql-parser-mistic (^1.2.3)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>alive-server (^1.3.0)</li><li>awesome-bootstrap-checkbox (^0.3.7)</li><li>bootbox (^6.0.0)</li><li>bootstrap-slider (^10.0.0)</li><li>chosenjs (^1.4.3)</li><li>concurrently (^8.2.0)</li><li>deepmerge (^2.1.0)</li><li>foodoc (^0.0.9)</li><li>glob (^10.3.1)</li><li>interactjs (^1.3.3)</li><li>nodemon (^2.0.22)</li><li>sass (^1.63.6)</li><li>@selectize/selectize (^0.15.2)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/41597?v=4" alt="mistic100" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mistic100" target="_blank" class="text-decoration-none fw-bold">mistic100</a><p class="mb-0 text-muted small">324 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/6337113?v=4" alt="aalpgiray" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aalpgiray" target="_blank" class="text-decoration-none fw-bold">aalpgiray</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/20123383?v=4" alt="tanyona" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tanyona" target="_blank" class="text-decoration-none fw-bold">tanyona</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/10037514?v=4" alt="Ruud-cb" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Ruud-cb" target="_blank" class="text-decoration-none fw-bold">Ruud-cb</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1023965?v=4" alt="ryansmith4" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ryansmith4" target="_blank" class="text-decoration-none fw-bold">ryansmith4</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/13571983?v=4" alt="mborisv" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mborisv" target="_blank" class="text-decoration-none fw-bold">mborisv</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/in/505?v=4" alt="greenkeeper[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/greenkeeper" target="_blank" class="text-decoration-none fw-bold">greenkeeper[bot]</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5751568?v=4" alt="cmrbck" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cmrbck" target="_blank" class="text-decoration-none fw-bold">cmrbck</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2283558?v=4" alt="yuks" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/yuks" target="_blank" class="text-decoration-none fw-bold">yuks</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1191646?v=4" alt="ttomor" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ttomor" target="_blank" class="text-decoration-none fw-bold">ttomor</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1050232?v=4" alt="timgws" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/timgws" target="_blank" class="text-decoration-none fw-bold">timgws</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2345587?v=4" alt="Roywcm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Roywcm" target="_blank" class="text-decoration-none fw-bold">Roywcm</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6032514?v=4" alt="Pacy88" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Pacy88" target="_blank" class="text-decoration-none fw-bold">Pacy88</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2040842?v=4" alt="liamkeily" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/liamkeily" target="_blank" class="text-decoration-none fw-bold">liamkeily</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1113245?v=4" alt="jasonhancock" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jasonhancock" target="_blank" class="text-decoration-none fw-bold">jasonhancock</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/68693?v=4" alt="jom" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jom" target="_blank" class="text-decoration-none fw-bold">jom</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6716903?v=4" alt="klelifo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/klelifo" target="_blank" class="text-decoration-none fw-bold">klelifo</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1841220?v=4" alt="mehldau" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mehldau" target="_blank" class="text-decoration-none fw-bold">mehldau</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5055566?v=4" alt="aleksandr-m" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aleksandr-m" target="_blank" class="text-decoration-none fw-bold">aleksandr-m</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/17585121?v=4" alt="ismailarilik" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ismailarilik" target="_blank" class="text-decoration-none fw-bold">ismailarilik</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9198094?v=4" alt="giessebi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/giessebi" target="_blank" class="text-decoration-none fw-bold">giessebi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/365020?v=4" alt="vhr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vhr" target="_blank" class="text-decoration-none fw-bold">vhr</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1710257?v=4" alt="totpero" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/totpero" target="_blank" class="text-decoration-none fw-bold">totpero</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/14314531?v=4" alt="Tichij" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Tichij" target="_blank" class="text-decoration-none fw-bold">Tichij</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/39006?v=4" alt="smor" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/smor" target="_blank" class="text-decoration-none fw-bold">smor</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/12749085?v=4" alt="Sedighzade" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Sedighzade" target="_blank" class="text-decoration-none fw-bold">Sedighzade</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6977223?v=4" alt="mokaddem" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mokaddem" target="_blank" class="text-decoration-none fw-bold">mokaddem</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/692029?v=4" alt="RobinvanderVliet" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/RobinvanderVliet" target="_blank" class="text-decoration-none fw-bold">RobinvanderVliet</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/18044230?v=4" alt="rickdubiel" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rickdubiel" target="_blank" class="text-decoration-none fw-bold">rickdubiel</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
