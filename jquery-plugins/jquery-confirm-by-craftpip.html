@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Confirm by Craftpip</title>
+    <meta name="description" content="A multipurpose plugin for alert, confirm &amp; dialog, with extended features.">
+    <meta name="author" content="craftpip">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-confirm-by-craftpip.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Confirm</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Confirm",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Confirm</h1>
+        <p id="packageDescription" class="text-muted">A multipurpose plugin for alert, confirm &amp; dialog, with extended features.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1871</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">2.3 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">507</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">204</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/craftpip/jquery-confirm/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/craftpip/jquery-confirm" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h3><img src="https://raw.githubusercontent.com/craftpip/jquery-confirm/master/jquery-confirm.png" alt="jquery-confirm" title="jquery-confirm" /></h3>
+<p><em>alerts, confirms and dialogs in</em> <strong><em>one.</em></strong></p>
+<p>v3.3.3</p>
+<p><a href="https://www.paypal.me/bonifacepereira"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate" /></a></p>
+<p>A multipurpose plugin for alert, confirm &amp; dialog, with Super powers.</p>
+<ul>
+<li>Listen keyboard keys </li>
+<li>Directly load content via Ajax </li>
+<li>Auto-close dialog after a specified time </li>
+<li>prevent Dialog close on background click</li>
+<li>callback function, and ton more</li>
+</ul>
+<p>View Detailed <a href="http://craftpip.github.io/jquery-confirm">Documentation &amp; Examples</a></p>
+<h2>Installation</h2>
+<p>Download the latest release <a href="https://github.com/craftpip/jquery-confirm/archive/master.zip">here</a> and use the files within <code>dist</code> folder.</p>
+<p>via CDN:<br />
+<code>&lt;link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css"&gt;</code><br />
+<code>&lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"&gt;&lt;/script&gt;</code></p>
+<p>via Bower:<br />
+<code>$ bower install craftpip/jquery-confirm</code></p>
+<p>via NPM:<br />
+<code>$ npm install jquery-confirm</code></p>
+<h2>Basic Usage</h2>
+<p>Showing a confirm box.</p>
+<pre class="prettyprint linenums lang-language"><code>$.confirm({
+    title: 'What is up?',
+    content: 'Here goes a little content',
+    type: 'green',
+    buttons: {   
+        ok: {
+            text: "ok!",
+            btnClass: 'btn-primary',
+            keys: ['enter'],
+            action: function(){
+                 console.log('the user clicked confirm');
+            }
+        },
+        cancel: function(){
+                console.log('the user clicked cancel');
+        }
+    }
+});</code></pre>
+<h2>Demo and Documentation</h2>
+<p>See Detailed Docs + Example <a href="http://craftpip.github.io/jquery-confirm">here</a>.</p>
+<h2>Authors</h2>
+<p><a href="https://github.com/craftpip">Boniface Pereira</a> &amp; <a href="https://github.com/craftpip/jquery-confirm/graphs/contributors">Awesome Contributors</a>.</p>
+<h2>Issues</h2>
+<p>Please post issues and feature request here <a href="https://github.com/craftpip/jquery-confirm/issues">Github issues</a></p>
+<h2>jconfirm alias</h2>
+<p>The <code>$.alert()</code> , <code>$.confirm()</code> &amp; <code>$.dialog()</code> are alias of <code>jconfirm();</code>.</p>
+<p>Checkout the <a href="http://craftpip.github.io/jquery-confirm">documentation</a> for further information.</p>
+<h2>Version changes</h2>
+<p>(new in 3.3.3) </p>
+<ul>
+<li>Safari height bug fix. PR by <a href="https://github.com/lanre-ade">lanre-ade</a></li>
+<li>Fix isClosed bug for firefox. PR by <a href="https://github.com/loganm">loganm</a></li>
+<li>Remove scroll to top when content height changes. PR by <a href="https://github.com/amikot">amikot</a></li>
+<li>added support for AMD and commonJS</li>
+</ul>
+<p>(new in 3.3.1) </p>
+<ul>
+<li>Pass 'false' in buttons property to remove all buttons in $.confirm and $.alert</li>
+</ul>
+<p>(new in 3.3.0)</p>
+<ul>
+<li>Moved overflow scroll inside modal <a href="https://github.com/craftpip/jquery-confirm/issues/2860">#286</a></li>
+<li>Improved draggable</li>
+<li>Added 'animateFromElement' method </li>
+<li>Added 'smoothScroll' option </li>
+<li>Added 'hilight' option </li>
+<li>Added 'showLoading','hideLoading' option </li>
+<li>Accept jquery dom element in content <a href="https://github.com/craftpip/jquery-confirm/issues/313">#313</a> </li>
+<li>Updated docs </li>
+<li>'setDialogCenter' method deprecated, dialog centered with CSS tables</li>
+<li>'alignMiddle' method deprecated</li>
+<li>fixes <a href="https://github.com/craftpip/jquery-confirm/issues/255">#255</a> <a href="https://github.com/craftpip/jquery-confirm/issues/307">#307</a> <a href="https://github.com/craftpip/jquery-confirm/issues/290">290</a></li>
+</ul>
+<p>(new in 3.2.3)</p>
+<ul>
+<li>Added lazyOpen option</li>
+<li>Added button properties isHidden and isDisabled</li>
+<li>setBoxWidth method added</li>
+</ul>
+<p>(new in 3.2.1) *untagged</p>
+<ul>
+<li>Fixed autoClose bug decimal point countdown if 1500 milliseconds was provided.</li>
+</ul>
+<p>(new in 3.2.0)</p>
+<ul>
+<li>new theme Modern added</li>
+<li>fixed <a href="https://github.com/craftpip/jquery-confirm/issues/242">#242</a> <a href="https://github.com/craftpip/jquery-confirm/issues/242">#248</a> </li>
+<li>themes RTL &amp; supervan fixes</li>
+</ul>
+<p>(new in 3.1.1)</p>
+<ul>
+<li>bug fixes</li>
+</ul>
+<p>(new in 3.1.0)</p>
+<ul>
+<li>Support for bootstrap v4</li>
+<li>Draggable dialogs</li>
+<li>Added options animateScrollToElement, alignMiddle, offsetTop, offsetBottom and drawWindowGap</li>
+</ul>
+<p>(new in 3.0.3)</p>
+<ul>
+<li>Setting defaults fixed</li>
+<li>added docs for prompt dialog</li>
+<li>added setType method</li>
+<li>users can now create custom type styles</li>
+<li>removed the annoying debug console log</li>
+<li>other fixes</li>
+</ul>
+<p>(new in 3.0.1)</p>
+<ul>
+<li>Removed bootstrap as dependency</li>
+<li>Added dialog type to identify success, failure, etc.</li>
+<li>Animate scroll to previous focused element</li>
+<li>titleClass option added</li>
+</ul>
+<p>(New in 3.0.0) <strong>no backwards compatible with v2.</strong></p>
+<ul>
+<li>Define multiple buttons</li>
+<li>Define keyboard keys for individual buttons</li>
+<li>Added setContentPrepend, setContentAppend for control over content.</li>
+<li>Added functions to enable, disable, show, hide, and more for buttons.</li>
+<li>Added aliases for columnClass</li>
+<li>Added bgOpacity</li>
+<li>Added containerFluid</li>
+<li>Added backgroundDismiss animations</li>
+<li>Added callbacks, onContentReady, onOpenBefore, onDestroy</li>
+<li>Docs added for custom animations and themes</li>
+<li>Animation fixes when loading via Ajax</li>
+<li>Restructured code</li>
+<li>Bind button to closeIcon event</li>
+<li>Bind button to backgroundDismiss event</li>
+<li>Now created and destroyed instances can be reopened. </li>
+<li>Bug fixes</li>
+</ul>
+<p>(New in 2.5.1)</p>
+<ul>
+<li>Fixes</li>
+</ul>
+<p>(New in 2.5.0)</p>
+<ul>
+<li>Added closeIconClass</li>
+<li>Added this.$target</li>
+<li>Changed modal template</li>
+<li>Watches modal for new changes auto set to center</li>
+<li>New documentation</li>
+<li>Added new theme 'material' and 'bootstrap'</li>
+<li>Removed themes 'holodark' and 'hololight'</li>
+<li>Improved performance</li>
+</ul>
+<p>(New in 2.0.0)</p>
+<ul>
+<li>Added closeAnimation</li>
+<li>Added $('a').confirm() to emulate confirm();</li>
+<li>Smoother animations</li>
+<li>Changed backgroundDismiss animation</li>
+<li>Updated documentations</li>
+</ul>
+<p>(New in 1.7.9)</p>
+<ul>
+<li>Minor bug fixes</li>
+</ul>
+<p>(New in 1.7.8)</p>
+<ul>
+<li>RTL support</li>
+<li>Option to select keyboard keys</li>
+</ul>
+<p>(New in 1.7.5)</p>
+<ul>
+<li>Callbacks added, onOpen, onClose, onAction</li>
+<li>Improved docs.</li>
+</ul>
+<p>(New in 1.7.3)</p>
+<ul>
+<li>Fix show and hide for closeIcon</li>
+<li>Improved animations, more CSS</li>
+<li>setContent method improved.</li>
+<li>setTitle method added.</li>
+</ul>
+<p>(New in 1.7.0)</p>
+<ul>
+<li>Option for custom width added (using bootstrap grid)</li>
+<li>Text overflow logic changed, #13</li>
+<li>Documentation &amp; improvements to contentLoaded callback.</li>
+</ul>
+<p>(New in 1.6.0)</p>
+<ul>
+<li>Theme 'supervan' added</li>
+<li>Load via URL advanced added. now get control over your ajax calls &amp; callbacks.</li>
+<li>methods setContent, isClosed added</li>
+<li>Improved documentation</li>
+</ul>
+<p>(New in 1.5.3)</p>
+<ul>
+<li>Bounce Animation added (kind of elastic).</li>
+<li>Hide title if false.</li>
+<li>Keyboard action, SPACE key added to trigger confirm function.</li>
+<li>Background now has fade animation (open &amp; close).</li>
+<li>Keep a record of opened, closed, currentlyOpened dialogs <code>jconfirm.record</code>.</li>
+<li>Tweaks.</li>
+</ul>
+<p>(New in 1.5.1)</p>
+<ul>
+<li>Bower added.</li>
+</ul>
+<p>(New in 1.5.0)</p>
+<ul>
+<li>Keyboard support to control modal. (ENTER and ESC).</li>
+<li>Control over the dialog via <code>this</code>.</li>
+<li>Updated DOCUMENTATION.</li>
+<li>Code optimized.</li>
+</ul>
+<p>(New in 1.1.3)</p>
+<ul>
+<li><code>$.dialog</code> alias added.</li>
+<li>Refined animations.</li>
+<li>Removed Blur animation (was buggy).</li>
+<li>Animation speed fixed.</li>
+<li>Ajax-content loading now waits and disabled buttons until loaded.</li>
+<li>Modal center justified on screen.</li>
+<li>Added close icon if buttons are disabled (dialog mode).</li>
+<li>Disabled window scroll on modal open.</li>
+<li>Fixed bugs.</li>
+</ul>
+<p>(New in 1.1.0)</p>
+<ul>
+<li>Ajax content loading <code>content: 'url:loadfrom.html'</code>.</li>
+</ul>
+<h2>Copyright and license</h2>
+<p>Copyright (C) 2014-2017 jquery-confirm</p>
+<p>Licensed under <a href="LICENSE">the MIT license</a>.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/ajax" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>ajax</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/alert" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>alert</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/callback" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>callback</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/confirm" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>confirm</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/dialog" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>dialog</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/modals" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>modals</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/popup" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>popup</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/4782473?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/craftpip" target="_blank" id="ownerName" class="sidebar-link">craftpip</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">December 22, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 22, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://craftpip.github.io/jquery-confirm/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.6)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4782473?v=4" alt="craftpip" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/craftpip" target="_blank" class="text-decoration-none fw-bold">craftpip</a><p class="mb-0 text-muted small">253 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1060150?v=4" alt="MRezaSafari" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/MRezaSafari" target="_blank" class="text-decoration-none fw-bold">MRezaSafari</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/10090115?v=4" alt="dkurlow" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dkurlow" target="_blank" class="text-decoration-none fw-bold">dkurlow</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3139646?v=4" alt="rajkumarpb" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rajkumarpb" target="_blank" class="text-decoration-none fw-bold">rajkumarpb</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1427114?v=4" alt="steelden" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/steelden" target="_blank" class="text-decoration-none fw-bold">steelden</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5494542?v=4" alt="brice-ruppen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/brice-ruppen" target="_blank" class="text-decoration-none fw-bold">brice-ruppen</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4522115?v=4" alt="gficher" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gficher" target="_blank" class="text-decoration-none fw-bold">gficher</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/539462?v=4" alt="enumag" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/enumag" target="_blank" class="text-decoration-none fw-bold">enumag</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3422269?v=4" alt="lanre-ade" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lanre-ade" target="_blank" class="text-decoration-none fw-bold">lanre-ade</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1589179?v=4" alt="loganm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/loganm" target="_blank" class="text-decoration-none fw-bold">loganm</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/227127?v=4" alt="ndlinh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ndlinh" target="_blank" class="text-decoration-none fw-bold">ndlinh</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9825719?v=4" alt="pepeloper" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pepeloper" target="_blank" class="text-decoration-none fw-bold">pepeloper</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/12469814?v=4" alt="v-honcharenko" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/v-honcharenko" target="_blank" class="text-decoration-none fw-bold">v-honcharenko</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+8 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
