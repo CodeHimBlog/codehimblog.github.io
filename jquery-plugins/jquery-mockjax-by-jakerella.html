@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Mockjax by Jakerella</title>
+    <meta name="description" content="The jQuery Mockjax Plugin provides a simple and extremely flexible interface for mocking or simulating ajax requests and responses">
+    <meta name="author" content="jakerella">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-mockjax-by-jakerella.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Mockjax</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Mockjax",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Mockjax</h1>
+        <p id="packageDescription" class="text-muted">The jQuery Mockjax Plugin provides a simple and extremely flexible interface for mocking or simulating ajax requests and responses</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">2113</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">2.2 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">375</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">5</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/jakerella/jquery-mockjax/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/jakerella/jquery-mockjax" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery Mockjax: Ajax request mocking</h1>
+<p><a href="http://github.com/jakerella/jquery-mockjax/">http://github.com/jakerella/jquery-mockjax/</a></p>
+<p><a href="https://travis-ci.com/jakerella/jquery-mockjax"><img src="https://travis-ci.com/jakerella/jquery-mockjax.svg?branch=master" alt="Travis CI Badge" /></a></p>
+<p>There are some minor breaking changes in v2, so if you need an older version, please check the <a href="https://github.com/jakerella/jquery-mockjax/tree/v1.x">v1.x</a> branch or the list of <a href="https://github.com/jakerella/jquery-mockjax/tags">releases</a> in Github.</p>
+<p>jQuery Mockjax provides request/response mocking for ajax requests using the jQuery API and provides all standard behaviors in the request/response flow.</p>
+<p>You may report any issues you may find <a href="https://github.com/jakerella/jquery-mockjax/issues">in the github issue tracking</a>.</p>
+<p><strong>Table of Contents</strong></p>
+<ul>
+<li><a href="#about-mockjax-and-its-history">About Mockjax and Its History</a></li>
+<li><a href="#basic-documentation">Basic Documentation</a>
+<ul>
+<li><a href="#api-methods">API Methods</a></li>
+<li><a href="#overview-your-first-mock">Overview: Your First Mock</a></li>
+<li><a href="#mockjax-in-depth">Mockjax in Depth</a></li>
+</ul></li>
+<li><a href="#detailed-request-and-response-definition">Detailed Request and Response Definition</a>
+<ul>
+<li><a href="#defining-a-request-to-match">Defining a Request to Match</a></li>
+<li><a href="#defining-multiple-requests">Defining Multiple Requests</a></li>
+<li><a href="#defining-a-response">Defining a Response</a></li>
+</ul></li>
+<li><a href="#advanced-mocking-techniques">Advanced Mocking Techniques</a>
+<ul>
+<li><a href="#simulating-response-time-and-latency">Simulating Response Time and Latency</a></li>
+<li><a href="#simulating-http-response-statuses">Simulating HTTP Response Statuses</a></li>
+<li><a href="#setting-the-content-type">Setting the Content-Type</a></li>
+<li><a href="#setting-additional-http-response-headers">Setting Additional HTTP Response Headers</a></li>
+<li><a href="#dynamically-generating-mock-definitions">Dynamically Generating Mock Definitions</a></li>
+<li><a href="#accessing-request-headers">Accessing Request Headers</a></li>
+<li><a href="#forced-simulation-of-server-timeouts">Forced Simulation of Server Timeouts</a></li>
+<li><a href="#dynamically-generating-mock-responses">Dynamically Generating Mock Responses</a></li>
+<li><a href="#data-types">Data Types</a></li>
+<li><a href="#performing-actions-after-request-completion">Performing Actions After Request Completion</a></li>
+<li><a href="#globally-defining-mockjax-settings">Globally Defining Mockjax Settings</a></li>
+<li><a href="#setting-global-url-namespace">Setting a Global URL Namespace</a></li>
+<li><a href="#removing-mockjax-handlers">Removing Mockjax Handlers</a></li>
+</ul></li>
+<li><a href="#miscellaneous-information">Miscellaneous Information</a>
+<ul>
+<li><a href="#jquery-version-support">jQuery Version Support</a></li>
+<li><a href="#browsers-tested">Browsers Tested</a></li>
+<li><a href="#using-mockjax-in-other-ways">Using Mockjax in Other Ways (Node, browserify, etc)</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#release-history">Release History</a></li>
+<li><a href="#license">License</a></li>
+</ul></li>
+</ul>
+<h2>About Mockjax and Its History</h2>
+<p>Most backend developers are familiar with the concepts of <a href="http://en.wikipedia.org/wiki/Mock_object">mocking<br />
+objects</a> or stubbing in<br />
+methods for unit testing. For those not familiar with mocking, it's the<br />
+simulation of an interface or API for testing or integration development<br />
+purposes. Mocking with front-end development though is still quite new. Mockjax<br />
+gives front end developers the ability to define ajax requests that should be<br />
+mocked out, as well as how those requests should be responded to. These mocks<br />
+can be extremely simple or quite complex, representing the entire request-response<br />
+workflow.</p>
+<p>At appendTo we developed a lot of applications which use<br />
+<a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">RESTFUL</a><br />
+web services, but much of the time those services are not yet created.<br />
+We spec out the service contract and data format at the beginning of a project<br />
+and develop the front-end interface against mock data while the back end team<br />
+builds the production services.</p>
+<p>This plugin was originally developed by appendTo in March 2010 and the<br />
+<a href="http://twitter.com/appendto/team">team</a> has been using it in many projects since.</p>
+<h2>Basic Documentation</h2>
+<h3>API Methods</h3>
+<p>Mockjax consists of just a few methods, each listed below. You'll find plenty of<br />
+examples in the sections below, but if you're looking for a specific option,<br />
+checkout this list:</p>
+<ul>
+<li><code>Number $.mockjax(/* Object */ options)</code>
+<ul>
+<li>Sets up a mockjax handler for a matching request</li>
+<li>Returns that handler's index, can be used to clear individual handlers</li>
+<li><code>options</code>: [Object] Defines the settings to use for the mocked request
+<ul>
+<li><code>url</code>: [String | RegExp] Specifies the url of the request that the data should be mocked for. If it is a string and contains any asterisks ( <code>*</code> ), they will be treated as a wildcard by translating to a regular expression. Any <code>*</code> will be replaced with <code>.+</code>. If you run into trouble with this shortcut, switch to using a full regular expression instead of a string and asterisk combination</li>
+<li><code>data</code>: [Object | Function] In addition to the URL, match parameters</li>
+<li><code>type</code>: [String] Specify what HTTP method to match, usually GET or POST. Case-insensitive, so <code>get</code> and <code>post</code> also work</li>
+<li><code>headers</code>: [Object] Keys will be simulated as additional headers returned from the server for the request (<strong>NOTE: This is NOT used to match request headers!</strong>)</li>
+<li><code>status</code>: [Number] An integer that specifies a valid server response code. This simulates a server response code</li>
+<li><code>statusText</code>: [String] Specifies a valid server response code description. This simulates a server response code description</li>
+<li><code>responseTime</code>: [Number] An integer that specifies a simulated network<br />
+and server latency (in milliseconds). Default is <code>500</code>. Setting this<br />
+to <code>0</code> will minimize the simulated latency</li>
+<li><code>isTimeout</code>: [Boolean] Determines whether or not the mock will force a timeout on the request</li>
+<li><code>contentType</code>: [String] Specifies the content type for the response</li>
+<li><code>response</code>: [Function] A function that accepts the request settings and allows for the dynamic setting of response settings (including the body of the response) upon each request (see examples below)</li>
+<li><code>responseText</code>: [String] Specifies the mocked text, or a mocked object literal, for the request</li>
+<li><code>responseXML</code>: [String] Specifies the mocked XML for the request</li>
+<li><code>proxy</code>: [String] Specifies a path to a file, from which the contents will be returned for the request</li>
+<li><code>lastModified</code>: [String] A date string specifying the mocked last-modified time for the request. This is used by <code>$.ajax</code> to determine if the requested data is new since the last request</li>
+<li><code>etag</code>: [String] Specifies a unique identifier referencing a specific version of the requested data. This is used by <code>$.ajax</code> to determine if the requested data is new since the last request. (see <a href="http://en.wikipedia.org/wiki/HTTP_ETag">HTTP_ETag</a>)</li>
+<li><code>onAfterSuccess</code>: [Function] A callback that will be called after the success method has been called, this is useful to check a condition after the call has been completed</li>
+<li><code>onAfterError</code>: [Function] A callback that will be called after the error method has been called, this is useful to check a condition after the call has been completed</li>
+<li><code>onAfterComplete</code>: [Function] Similar to onAfterSuccess, but will be executed after the complete method has been called</li>
+</ul></li>
+</ul></li>
+<li><code>Object $.mockjax.handler(/* Number */ id)</code>
+<ul>
+<li>Returns the mock request settings for the handler with the provided <code>id</code>. Be careful here, you're accessing the inner workings of the plugin, any changes to this object could be bad.</li>
+</ul></li>
+<li><code>Array $.mockjax.handlers()</code>
+<ul>
+<li>Returns the array of mock handlers. <strong>NOTE:</strong> This array is NOT modified when a handler is cleared, the cleared handler position is simply set to <code>null</code>. As such, the array length will only change when new mocks are added. Be careful here, you're accessing the inner workings of the plugin, any changes to the array could be very bad.</li>
+</ul></li>
+<li><code>void $.mockjax.clear([/* Number || String */ identifier])</code>
+<ul>
+<li>If the <code>identifier</code> provided is a Number, the handler with that ID is cleared (that is, requests matching it will no longer do so, the handler is completely removed)</li>
+<li>If the <code>identifier</code> provided is a String, the handler with that matching URL is cleared.</li>
+<li>If no <code>identifier</code> is provided, <em>ALL handlers are cleared</em>, resetting Mockjax to its initial state</li>
+</ul></li>
+<li><code>Array&lt;Object&gt; $.mockjax.mockedAjaxCalls()</code>
+<ul>
+<li>Returns an array of all mocked ajax calls with each entry being the request settings object as passed into the <code>$.mockjax()</code> function</li>
+<li>If `$.mockjaxSettings.retainAjaxCalls is set to false, this will always be empty</li>
+</ul></li>
+<li><code>Array&lt;Object&gt; $.mockjax.unfiredHandlers()</code>
+<ul>
+<li>Returns an array of all mock handler settings that have not been used. In other words, if a handler has been used for a <code>$.ajax()</code> call then it will <em>not</em> appear in this array</li>
+</ul></li>
+<li><code>Array&lt;Object&gt; $.mockjax.unmockedAjaxCalls()</code>
+<ul>
+<li>Returns an array of all unmocked Ajax calls that were made. The array contains the settings object passed into <code>$.ajax({...})</code></li>
+<li>If `$.mockjaxSettings.retainAjaxCalls is set to false, this will always be empty</li>
+</ul></li>
+<li><code>void $.mockjax.clearRetainedAjaxCalls()</code>
+<ul>
+<li>Empties the arrays returned by <code>$.mockjax.mockedAjaxCalls</code> and <code>$.mockjax.unmockedAjaxCalls</code></li>
+</ul></li>
+</ul>
+<h3>Overview: Your First Mock</h3>
+<p>Our first example will be for a simple REST service for a fortune app<br />
+with the REST endpoint being <code>/restful/fortune</code> which returns the<br />
+following JSON message:</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    "status": "success",
+    "fortune" : "Are you a turtle?"
+}</code></pre>
+<p>To pull the fortune into our page, we'd use the following HTML and jQuery<br />
+code:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Fortune App&lt;/title&gt;
+    &lt;script src="http://code.jquery.com/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="fortune"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>$.getJSON("/restful/fortune", function(response) {
+  if ( response.status == "success") {
+    $("#fortune").html( "Your fortune is: " + response.fortune );
+  } else {
+    $("#fortune").html( "Things do not look good, no fortune was told" );
+  }
+});</code></pre>
+<p>At this point if we were to run this code it would fail since the REST<br />
+service has yet to be implemented. This is where the benefit of the<br />
+Mockjax plugin starts to pay off. The first step in using Mockjax is to<br />
+include the plugin by just adding a regular script tag:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;head&gt;
+  ...
+  &lt;script src="vendor/jquery.mockjax.js"&gt;&lt;/script&gt;
+&lt;/head&gt;</code></pre>
+<p>Once you have that included, you can start intercepting Ajax requests<br />
+and mocking the responses. So let's mock out the service by including<br />
+the following code:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/restful/fortune",
+  responseText: {
+    status: "success",
+    fortune: "Are you a mock turtle?"
+  }
+});</code></pre>
+<p><strong>Defining a JSON string inline requires a <code>JSON.stringify()</code> method to be<br />
+available. For some browsers you may need to include<br />
+<a href="https://raw.github.com/douglascrockford/JSON-js/master/json2.js">json2.js</a>,<br />
+which is included in the <code>lib</code> folder.</strong> However, you could also simply<br />
+provide an already stringified version of your JSON in the <code>responseText</code><br />
+property.</p>
+<p><em>If you plan on mocking xml responses, you may also have to include<br />
+<code>jquery.xmldom.js</code>, which can also be found in the <code>lib</code> folder.</em></p>
+<h3>Mockjax in Depth</h3>
+<p>What Mockjax does at this point is replace the <code>$.ajax()</code> method with a<br />
+wrapper that transparently checks the URL being requested. If the URL<br />
+matches one defined by <code>$.mockjax()</code>, it intercepts the request<br />
+and sets up a mock <code>XMLHttpRequest</code> object before executing the<br />
+<code>jQuery.ajax()</code> handler. Otherwise, the request is handed back to the<br />
+native <code>$.ajax()</code> method for normal execution. One benefit in this<br />
+implementation detail is that by simulating the <code>XMLHttpRequest</code> object,<br />
+the plugin continues to make use of jQuery's native ajax handling, so<br />
+there are no concerns with implementing a custom Ajax workflow.</p>
+<p>As you write code to mock responses, there's great value in the fact that<br />
+there are no modifications required to production code. The mocks can be<br />
+transparently inserted. This provides easy integration into most<br />
+frameworks by including the plugin and mock definitions through your<br />
+build framework. It's also possible to include it at run time by<br />
+listening for a query string flag and injecting the plugin and definitions.</p>
+<p>Now let's look at the various approaches to defining mocks as offered by<br />
+the plugin. The sections below feature an extensive overview of the<br />
+flexibility in Mockjax and creating responses.</p>
+<h4>Data Types Available for Mocking</h4>
+<p>jQuery is able to handle and parse <code>Text</code>, <code>HTML</code>, <code>JSON</code>, <code>JSONP</code>,<br />
+<code>Script</code> and <code>XML</code> data formats and Mockjax is able to mock any of those<br />
+formats. Two things to note: depending upon how you mock out <code>JSON</code> and<br />
+<code>JSONP</code> you may need to include <a href="https://raw.github.com/douglascrockford/JSON-js/master/json2.js">json2.js</a><br />
+for the <code>JSON.stringify()</code> method (older browsers only, typically). Additionally<br />
+if you mock XML inline, you'll need to include the <a href="http://github.com/jakerella/jquery-xmldom"><code>xmlDOM</code></a><br />
+plugin that transforms a string of XML into a DOM object. However, if you use<br />
+the proxy approach outlined below then there should be no need to include either<br />
+the JSON or XMLDOM plugins in any case.</p>
+<h2>Detailed Request and Response Definition</h2>
+<h3>Defining a Request to Match</h3>
+<p>The first thing you need to do when mocking a request is define the URL<br />
+end-point to intercept and mock. As with our example above this can be a<br />
+simple string:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/url/to/rest-service"
+});</code></pre>
+<p>or contain a <code>*</code> as a wildcard:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  // Matches /data/quote, /data/tweet etc.
+  url: "/data/*"
+});</code></pre>
+<p>or a full regular expression:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  // Matches /data/quote, /data/tweet but not /data/quotes
+  url: /^\/data\/(quote|tweet)$/i
+});</code></pre>
+<p>You can also match against the data option in addition to url:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url:  "/rest",
+  data: { action: "foo" }
+});</code></pre>
+<p>The data option may be a custom matching function returning <code>true</code> of <code>false</code><br />
+whether the data is expected or not:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/rest",
+  data: function( data ) {
+    return deepEqual( data, expected );
+  }
+});</code></pre>
+<p>The data function is a recommended place for assertions. Return <code>true</code> and let<br />
+a testing framework of choice do the rest:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/rest",
+  data: function ( json ) {
+    assert.deepEqual( JSON.parse(json), expected ); // QUnit example.
+    return true;
+  }
+});</code></pre>
+<p>To capture URL parameters, use a capturing regular expression for the<br />
+URL and a <code>urlParams</code> array to indicate, ordinally, the names of the<br />
+paramters that will be captured:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  // matches /author/{any number here}/isbn/{any number with dashes here}
+  // for example: "/author/1234/isbn/1234-5678-9012-0"
+  url: /^\/author\/([\d]+)\/isbn\/([\d\-]+)$/,
+  // names of matching params
+  urlParams: ["authorID", "isbnNumber"],
+  response: function (settings) {
+    var authorID = settings.urlParams.authorID;
+    var isbnNumber = settings.urlParams.isbnNumber;
+    // etc...
+  }
+});</code></pre>
+<h3>Defining Multiple Requests</h3>
+<p>Since version 2.2 it is allowed to define several requests at once.<br />
+<code>$.mockjax([...])</code> returns a array of handlers' indexes. It is possible to<br />
+reset handler by index. Read more in <a href="#removing-mockjax-handlers">Removing Mockjax Handlers</a>.</p>
+<pre class="prettyprint linenums lang-language"><code>var handlers = $.mockjax([
+  {url: '/rest', responseText: 'one'},
+  {url: '/rest', responseText: 'two'}
+]);
+
+$.mockjax.clear(handlers[0]);</code></pre>
+<h3>Defining a Response</h3>
+<p>The second step is to define the type and content of the response. The two main<br />
+properties you will be dealing with are either <code>responseText</code> or<br />
+<code>responseXML</code>. These properties mirror the native <code>XMLHttpRequest</code><br />
+object properties that are set during a live response. There are three<br />
+different patterns for specifying the responses: Inline, Proxy, and<br />
+Callback.</p>
+<h4>Inline Responses</h4>
+<p>A simple text response would be:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/restful/api",
+  responseText: "A text response from the server"
+});</code></pre>
+<p>A simple JSON response would be:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/restful/api",
+  // You may need to include the [json2.js](https://raw.github.com/douglascrockford/JSON-js/master/json2.js) library for older browsers
+  responseText: { "foo": "bar" }
+});</code></pre>
+<p>Also note that a JSON response is really just a text response that jQuery will<br />
+parse as JSON for you (and return a JSON object to the <code>success</code> and <code>complete</code><br />
+callbacks).</p>
+<p>A simple XML response would be:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/restful/api",
+  // Need to include the xmlDOM plugin to have this translated into a DOM object
+  responseXML: "&lt;document&gt;&lt;quote&gt;Hello world!&lt;/quote&gt;&lt;/document&gt;"
+});</code></pre>
+<p>As you can see, if you have a significant amount of data being<br />
+mocked this becomes unwieldy. So that brings us to the next pattern:<br />
+the proxy.</p>
+<h4>Proxy</h4>
+<p>In this example below, the Mockjax plugin will intercept requests for<br />
+<code>/restful/api</code> and redirect them to <code>/mocks/data.json</code>:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/restful/api",
+  proxy: "/mocks/data.json"
+});</code></pre>
+<p>The <code>/mocks/data.json</code> file can have any valid JSON content you want, and allows<br />
+you to maintain that mock data in its own file for maintainability.</p>
+<blockquote>
+<p>Note: If you're testing your code with a poxy, it is best to run an actual web<br />
+server for the tests. Simply loading <code>test/index.html</code> from the file system may<br />
+result in the proxy file not being loaded correctly. We recommend using something<br />
+like the <a href="https://www.npmjs.com/package/http-server"><code>http-server</code> npm module</a>.</p>
+</blockquote>
+<h4>Callback</h4>
+<p>In the final response pattern, we can define a callback function on the<br />
+<code>response</code> property and have it set <code>responseText</code> or <code>responseXML</code> as<br />
+needed:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/restful/api",
+  response: function(settings) {
+    // Investigate the `settings` to determine the response...
+
+    this.responseText = "Hello world!";
+  }
+});</code></pre>
+<p>The default version of this callback is synchronous. If you provide both parameters<br />
+to the callback function, you can use asynchronous code to set the dynamic response.</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: '/restful/api',
+  response: function(settings, done) {
+    var self = this;
+    someAsyncMethod(function(data){
+      self.responseText = data;
+      done();
+    });
+  }
+});</code></pre>
+<p>Note that the callback is given the settings provided to the <code>$.mockjax({...})</code><br />
+method merged with any Ajax settings defined by jQuery or your application. This<br />
+allows you to thoroughly investigate the request before setting the response<br />
+body (or headers).</p>
+<h2>Advanced Mocking Techniques</h2>
+<p>At this point we've looked at a series of basic mocking techniques with<br />
+Mockjax and will now unpack some of the additional functionality<br />
+contained in the plugin.</p>
+<h3>Simulating Response Time and Latency</h3>
+<p>Simulating network and server latency for a mock is as simple as adding<br />
+a <code>responseTime</code> property to your mock definition:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/restful/api",
+  // Simulate a network latency of 750ms
+  responseTime: 750,
+  responseText: "A text response from the server"
+});</code></pre>
+<p>You can also use an interval for <code>responseTime</code> to randomize latency:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/restful/api",
+  // Use a random value between 250ms and 750ms
+  responseTime: [250, 750],
+  responseText: "A text response from the server"
+});</code></pre>
+<h3>Simulating HTTP Response Statuses</h3>
+<p>It's also possible to simulate response statuses other than 200 (default<br />
+for Mockjax) by simply adding a <code>status</code> property.</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/restful/api",
+  // Server 500 error occurred
+  status: 500,
+  responseText: "A text response from the server"
+});</code></pre>
+<p>The ability to provide an array of possible response statuses (from which the response<br />
+for a given request will be randomly picked from):</p>
+<pre class="prettyprint linenums lang-language"><code>// Randomly fail
+$.mockjax({
+  url: "/restful/api",
+  status: [200,400,500]
+});
+
+// Randomly fail (with a preference towards success)
+$.mockjax({
+  url: "/restful/api",
+  status: [200,400,200,500,200]
+});</code></pre>
+<p>These forced error status codes will be handled just as if the server had<br />
+returned the error: the <code>error</code> callback will get executed with the proper<br />
+arguments.</p>
+<h3>Setting the Content-Type</h3>
+<p>You can set the content type to associate with the mock response, in the<br />
+example below, we're setting a JSON content type.</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/restful/api",
+  contentType: "application/json",
+  responseText: {
+    hello: "World!"
+  }
+});</code></pre>
+<h3>Setting Additional HTTP Response Headers</h3>
+<p>Additional HTTP Response Headers may be provided by setting a key in the<br />
+headers object literal:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/restful/api",
+  contentType: "application/json",
+  responseText: {
+    hello: "World!"
+  },
+  headers: {
+    etag: "xyz123"
+  }
+});</code></pre>
+<h3>Dynamically Generating Mock Definitions</h3>
+<p>In some situations, all of your REST calls are based upon a URL schema.<br />
+Mockjax has the ability for you to specify a callback function that is<br />
+handed the <code>$.ajax</code> request settings. The callback function may then<br />
+either return false to allow the request to be handled natively, or<br />
+return an object literal with relevant Mockjax parameters set. Below is<br />
+an example that rewrites all Ajax requests to proxy to static mocks:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax(function(settings) {
+
+  // settings.url might be: "/restful/&lt;service&gt;" such as "/restful/user"
+
+  var service = settings.url.match(/\/restful\/(.*)$/);
+  if ( service ) {
+    return {
+      proxy: "/mocks/" + service[1] + ".json"
+    };
+  }
+  // If you get here, there was no url match
+  return;
+});</code></pre>
+<h3>Accessing Request Headers</h3>
+<p>In some situations, you may need access to the  request headers to determine<br />
+matching or response bodies. To do this, you will need to specify a<br />
+callback function that is handed the <code>$.ajax</code> request settings:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax(function( requestSettings ) {
+  // Here is our manual URL matching...
+  if ( requestSettings.url === "/restful/user" ) {
+    // We have a match, so we return a response callback...
+    return {
+      response: function( origSettings ) {
+
+        // now we check the request headers, which may be set directly
+        // on the xhr object through an ajaxSetup() call or otherwise:
+
+        if ( requestSettings.headers["Authentication"] === "some-token" ) {
+          this.responseText = { user: { id: 13 } };
+        } else {
+          this.status = 403;
+          this.responseText = "You are not authorized";
+        }
+      }
+    };
+  }
+  // If you get here, there was no url match
+  return;
+});</code></pre>
+<h3>Forced Simulation of Server Timeouts</h3>
+<p>Because of the way Mockjax was implemented, it takes advantage of<br />
+jQuery's internal timeout handling for requests. But if you'd like to<br />
+force a timeout for a request you can do so by setting the <code>isTimeout</code><br />
+property to true:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: '/restful/api',
+  responseTime: 1000,
+  isTimeout: true
+});</code></pre>
+<h3>Dynamically Generating Mock Responses</h3>
+<p>It's also possible to dynamically generate the response text upon each<br />
+request by implementing a callback function on the <code>response</code> parameter:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/restful/webservice",
+  dataType: "json",
+  response: function(settings) {
+    this.responseText = {
+      randomText: "random " + Math.random()
+    };
+  }
+});</code></pre>
+<h3>Data Types</h3>
+<p>Many of the examples above mock a <code>json</code> response. You can also mock <code>xml</code>:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/some/xml",
+  dataType: "xml",
+  responseXML: "&lt;document&gt;&lt;say&gt;Hello world XML&lt;/say&gt;&lt;/document&gt;"
+});</code></pre>
+<p>(Don't forget that it's likely you'll need the <a href="http://github.com/jakerella/jquery-xmldom"><code>xmlDOM</code></a> library as well!)</p>
+<p>And <code>html</code>:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/some/webservice",
+  dataType: "html",
+  responseText: "&lt;div&gt;Hello there&lt;/div&gt;"
+});</code></pre>
+<h3>Performing Actions After Request Completion</h3>
+<p>If you need to perform some actions after a call has completed you can<br />
+use one of the <code>onAfter{Xxxxx}</code> options. For example, to fire a method when<br />
+a request completes (either successfully or not):</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+  url: "/api/end/point",
+  onAfterComplete: function() {
+    // do any required cleanup
+  }
+});</code></pre>
+<h3>Globally Defining Mockjax Settings</h3>
+<p>It is also possible to define the global defaults for all Mockjax<br />
+requests by overwriting the <code>$.mockjaxSettings</code> object. By default the<br />
+settings are as follows:</p>
+<pre class="prettyprint linenums lang-language"><code>{
+  log:             null,  // DEPRECATED, use $.mockjaxSettings.logger instead
+  logger:          window.console,
+  logging:         2,
+  logLevelMethods: ['error', 'warn', 'info', 'log', 'debug'],
+  namespace:       null,
+  status:          200,
+  statusText:      "OK",
+  responseTime:    500,
+  isTimeout:       false,
+  throwUnmocked:   false,
+  retainAjaxCalls: true,
+  contentType:     "text/plain",
+  response:        "",
+  responseText:    "",
+  responseXML:     "",
+  proxy:           "",
+  proxyType:       "GET",
+  lastModified:    null,
+  etag:            "",
+  headers: {
+    etag: "IJF@H#@923uf8023hFO@I#H#",
+    "content-type" : "text/plain"
+  }
+}</code></pre>
+<p>To overwrite a particular settings such as the default <code>content-type</code>, you<br />
+would do the following:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjaxSettings.contentType = "application/json";</code></pre>
+<h3>Setting a Global URL Namespace</h3>
+<p>The namespace option in <code>$.mockjaxSettings</code> allows you to apply a prefix to<br />
+all of your mocked urls, such as <code>/api/v1</code>.</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjaxSettings.namespace = "/api/v1";</code></pre>
+<p>Then the following mock will match <code>/api/v1/rest</code>:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+    url: "/rest"
+})</code></pre>
+<p>As will the following RegExp pattern:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+    url: /^\/rest$/
+})</code></pre>
+<p>The global namespace option can also be overwritten on a particular mock.</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+    url: "/rest-2",
+    namespace: null
+})</code></pre>
+<p>Note that the namespace prefix does not apply to proxies.</p>
+<h3>Globally defining match order</h3>
+<p>By default, Mockjax matches requests in registration order (mockjax considers<br />
+the handlers registered first before handlers registered last). To reverse this<br />
+behavior:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjaxSettings.matchInRegistrationOrder = false;</code></pre>
+<p>Setting <code>matchInRegistrationOrder</code> to <code>false</code> lets you override previously defined<br />
+handlers. Suppose you had:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+    url: "/rest",
+    responseText: "hello"
+});
+$.mockjax({
+    url: "/rest",
+    responseText: "byebye"
+});</code></pre>
+<p>The default behavior is that Mockjax returns <code>"hello"</code>, but with <code>matchInRegistrationOrder</code><br />
+set to <code>false</code>, Mockjax would return <code>"byebye"</code>.</p>
+<p>This behavior allows you to override older handlers after they are initially set.</p>
+<h3>Removing Mockjax Handlers</h3>
+<p>If you need to reset the Mockjax handlers you've added, just call<br />
+<code>$.mockjax.clear()</code>. <em>This will NOT reset the <code>$.mockjaxSettings</code>!</em></p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax.clear();</code></pre>
+<p>You can also clear individual mock handlers using their ID:</p>
+<pre class="prettyprint linenums lang-language"><code>var id = $.mockjax({
+   ...
+});
+
+$.mockjax.clear(id);</code></pre>
+<p>Or you can clear a handler by the URL that it matches with either a String or RegExp:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjax({
+   url: "/api/foo",
+   ...
+});
+
+$.mockjax.clear("/api/foo");
+// or
+$.mockjax.clear(/foo/);</code></pre>
+<h2>Miscellaneous Information</h2>
+<h3>jQuery Version Support</h3>
+<p>We strive to ensure that Mockjax is tested on the furthest patch version of all<br />
+minor versions of jQuery (1.x.y through 3.x.y). In other words, we don't test<br />
+1.12.1, but rather 1.12.4 (the furthest patch version on the 1.x line). The QUnit<br />
+tests in the <code>/test</code> directory include links to each version of jQuery tested in<br />
+the header.</p>
+<h3>Browsers Tested</h3>
+<p>We use <a href="https://www.browserstack.com">BrowserStack</a>'s awesome open source<br />
+collaboration to test Mockjax in real browsers using VMs on their platform. We<br />
+run all of our tests on the current versions of the major browsers below, plus<br />
+the specific versions of Internet Explorer specified.</p>
+<ul>
+<li>Edge</li>
+<li>Firefox</li>
+<li>Chrome</li>
+<li>Safari</li>
+</ul>
+<p>Each PR will run these tests using TravisCI for continuous integration before<br />
+code is merged into master to ensure we do not introduce regressions.</p>
+<h3>Using Mockjax in Other Ways</h3>
+<p>You can use Mockjax as a Node module or with Browserify... and<br />
+presumably in other ways as well. We have tests for each of the methods above.</p>
+<p>When using Mockjax as a Node module (including with Browserify), <strong>you must<br />
+provide the module with the jQuery library and a <code>window</code></strong>. Here is an example<br />
+using a module intended for use as a &quot;browserified&quot; module:</p>
+<pre class="prettyprint linenums lang-language"><code>var jquery = require('jquery');
+var mockjax = require('jquery-mockjax')(jquery, window);
+// Note that we expect `window` to be defined once this file is browserified and
+// used in a browser. If it isn't Mockjax will have a problem!
+
+mockjax({
+    url: '/resource',
+    responseText: 'content'
+});
+
+function getResource(cb) {
+    jquery.ajax({
+        url: '/resource',
+        success: cb,
+        error: cb
+    });
+}</code></pre>
+<h3>Logging</h3>
+<p>Mockjax logs various pieces of information to the <code>console</code> (on <code>window</code>) in<br />
+browsers, or to stdout in Node). You can customize various aspects of the<br />
+logging to suit your needs. By default, only 'error', 'warn' or 'info' messages<br />
+will be shown, but detailed information may be available in debug logs. Below<br />
+are some common things you might need to do to get better logging information.</p>
+<h4>Show different levels of log messages</h4>
+<pre class="prettyprint linenums lang-language"><code>$.mockjaxSettings.logging = 4;  // very verbose debug messages
+$.mockjaxSettings.logging = 3;  // verbose log messages
+$.mockjaxSettings.logging = 2;  // informational messages
+$.mockjaxSettings.logging = 1;  // warning messages
+$.mockjaxSettings.logging = 0;  // only critical error messages</code></pre>
+<p>(Note that each level enables that level plus any lower number... thus setting<br />
+logging to <code>2</code> also enables warnings and errors.)</p>
+<h4>Implement a custom logger</h4>
+<p>If you don't want to use the <code>console</code> object, you can pass in your own logging<br />
+implementation with the <code>logger</code> setting. Note that your logger must either<br />
+implement the <code>debug</code>, <code>log</code>, <code>info</code>, <code>warn</code>, and <code>error</code> methods, or you must<br />
+also provide what methods map to the 5 levels (0 through 4).</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjaxSettings.logger = {
+  debug: function() { ... },
+  log: function() { ... },
+  // ...
+};</code></pre>
+<p>Your logger methods may receive any number of arguments to log out, either as<br />
+strings or objects, similar to how the <code>window.console</code> object methods work.</p>
+<p>If you have a logger that uses different methods names, specify them in this array:</p>
+<pre class="prettyprint linenums lang-language"><code>$.mockjaxSettings.logLevelMethods = ['critical', 'bad', 'stuff', 'log', 'verbose'];</code></pre>
+<p>Note that the first entry in this array (index <code>0</code>) will be errors while the last<br />
+entry will be verbose output. Anything beyond index <code>4</code> will be ignored.</p>
+<h4>What about the old <code>log</code> setting?</h4>
+<p>This was an undocumented feature whereby you could provide a <code>log</code> method using<br />
+<code>$.mockjaxSettings</code>, however, it is no longer used internally. This undocumented<br />
+option is now <strong>deprecated</strong>, and while it will work, log messages of ALL levels<br />
+will be sent to it.</p>
+<p>If you have no idea what we're talking about... good! Don't worry about it. The<br />
+proper way to implement your own logger is via <code>$.mockjaxSettings.logger</code>.</p>
+<h3>Release History</h3>
+<p>Please read the <a href="https://github.com/jakerella/jquery-mockjax/blob/master/CHANGELOG.md">CHANGELOG</a><br />
+for a list of changes per release.</p>
+<p>Note that all releases are tagged in Github for easy reference, the <code>master</code> branch<br />
+should <em>not</em> be considered a stable release!</p>
+<h3>License</h3>
+<p>Copyright (c) 2014-2024 Jordan Kasper, formerly appendTo</p>
+<p>NOTE: This repository was taken over by Jordan Kasper (@jakerella) October, 2014</p>
+<p>Licensed under the MIT license: <a href="http://opensource.org/licenses/MIT">http://opensource.org/licenses/MIT</a></p>
+<h3>Troubleshooting</h3>
+<p>If mockjax appears to be behaving unexpectedly, be sure to check the console<br />
+logs for warnings.</p>
+<h3>Contributing</h3>
+<p>We welcome any contributions by the community, whether in the form of a Pull<br />
+Request, issue submission and comments, or just sharing on social media!</p>
+<p>If you want to contribute code to the project, please read our<br />
+<a href="CONTRIBUTING.md">Contribution guidelines</a> to see what you need to do to get your<br />
+Pull Request ready for merging.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h2>2024-09-09 v2.7.0-beta.0</h2>
+<pre><code>* Support for jQuery 4.0.0-beta
+* Removed deprecated calls to $.isArray() and $.isFunction()
+* Updated cross-origin tests to use a safe domain
+* Thanks to @jayaddison for the nudge and PR!</code></pre>
+<h2>2024-02-17 v2.6.1</h2>
+<pre><code>* Changed license from dual (MIT &amp; GPL) to only be MIT
+* Updated authorship to myself (creator of all v2 changes) and moved JD Sharp to contributor
+* Massive (long needed) update to dev dependencies, and thus most of the test and build infrastructure
+* NO source code changes, but the minified version will change due to dependency updates
+* Remove support for IE 11 and requirejs
+* Remove support for older versions of jQuery (supporting latest on each major branch)</code></pre>
+<h2>2020-08-22 v2.6.0</h2>
+<pre><code>* Removed support for IE 9 &amp; 10
+* Removed unused config for code climate
+* Updated dev dependencies to fix browserstack and local test run issues
+* Added support for regex url matching when using a namespace (thanks @gregid)</code></pre>
+<h2>2020-03-30 v2.5.1</h2>
+<pre><code>* Fixed issue with capitalization of the "content-type" header
+* Added newer version of jQuery for testing
+* Fixed issue where we were not running one subset of tests</code></pre>
+<h2>2018-07-29 v2.5.0</h2>
+<pre><code>* Added support for ignoring test files in the automated runs; this was necessary
+  because Browserstack does something weird with the console and it causes
+  the logging tests to timeout
+* Fixed Browserstack automated runs by ignoring logging tests
+* Added an option to reverse the mock handler priority order (thanks @addepar-andy)</code></pre>
+<h2>2018-06-17 v2.4.0</h2>
+<pre><code>* Added support for an array of status codes in mocked response (thanks @reinrl)
+* Updated broken Codacy badge
+* Added jQuery 3.3.1 to test suite
+* Switched to using Chrome headless (with puppeteer) for all tests
+* No longer testing in Opera, and added Edge to the browser test list</code></pre>
+<h2>2018-01-07 v2.3.0</h2>
+<pre><code>* Added new `handlers()` method
+* Add basic support for 301 and 302 status codes with auto-redirection
+* Fix up some README issues</code></pre>
+<h2>2016-09-15 v2.2.2</h2>
+<pre><code>* Minor bug fixes having to do with namespacing (thanks @tomeara)
+* Improvement to testing CLI commands</code></pre>
+<h2>2016-09-15 v2.2.1</h2>
+<pre><code>* Add tests for jQuery 3.x
+* Add tests for Browserify usage and documentation on that subject
+* Updated dependencies for webpack, etc usage (thanks @hotoo)
+* Updated keywords to be picked up by jQuery plugin registry</code></pre>
+<h2>2016-06-08 v2.2.0</h2>
+<pre><code>* Fix bower dependency on jQuery to allow any supported version
+* Allow developer to indicate that ajax calls should _not_ be retained (thanks @suchipi)
+* Fix to allow responseTime to work with deferred jsonp
+* Updated to test on latest jQuery versions
+* Added JSDoc3 blocks to public API methods
+* Refactored logging: now has levels, easier to overwrite, more messages
+* Added ability for `data` matching to be a function (thanks @koorgoo)
+* Added ability to pass in array of mocks in addition to singles (thanks again @koorgoo)</code></pre>
+<h2>2016-02-07 v2.1.1</h2>
+<pre><code>* Reorganize test cases into separate files for ease of maintenance and testing
+* Fix #86: JSONP return data treated as JSON
+* Added jQuery 1.12.0 to test quite
+* Fix #105: Using XML files as proxies
+* Fix #267: Handle undefined URL argument correctly
+* Fix #123: Handle query string formatted data option</code></pre>
+<h2>2016-01-23</h2>
+<pre><code>* Updated to version 2.1.0
+* Removed unused testswarm files
+* Added test step in build process for dist file
+* Refactor tests to be easier to maintain and conform to current QUnit standards
+* Added global URL namespace feature (thanks @danpaz)
+* Added clearing of mocks by URL and regex (thanks @stas-vilchik)
+* Use async setting for proxy data (thanks @udnisap)
+* Update tests to jQuery 2.2.0 and fix for latest in jQuery git (thanks Simon and @gyoshev)
+* Fixed #136: cross domain requests
+* Updated contributing documentation to clearly state process for a release</code></pre>
+<h2>2015-06-11</h2>
+<pre><code>* Updated to version 2.0.1
+* Fixed name in package.json for coordination among package management systems</code></pre>
+<h2>2015-06-11</h2>
+<pre><code>* Updated to version 2.0.0
+* Fixed issue with isTimeout switch</code></pre>
+<h2>2015-05-03</h2>
+<pre><code>* Updated to version 2.0.0-beta
+* Reorganized codebase and implemented Grunt build process
+* Implemented automated QUnit tests via Grunt and "shortcut" button in web tests
+* Added JSHint task for catching issues earlier
+* Implemented UMD pattern for use with require, browser, Node, etc
+* Removesd support for jQuery &lt; 1.5.x
+* Removed deprecated `$.mockjaxClear()` method in favor of `$.mockjax.clear()`
+* Fixed numerous bugs (see issues for more info)
+* Refactored tests a bit (needs a lot more)
+* Added Travis CI for tests and Codacy for static code analysis</code></pre>
+<h2>2015-04-08</h2>
+<pre><code>* Updated to version 1.6.2
+* Update jQuery library test versions on both 1.x and 2.x branches
+* Remove duplicate "repositories" value in package.json (@wfortin)
+* Remove undefined "head" variable in jsonp request mocking
+* Added async `response` function ability
+* Added ability to specify range for responseTime with random selection
+* Reorganized documentation significantly</code></pre>
+<h2>2014-10-29</h2>
+<pre><code>* Updated to version 1.6.1
+* Changed all references to appendTo to point to github.com/jakerella (new owner)
+* removed unused testswarm files</code></pre>
+<h2>2014-10-09</h2>
+<pre><code>* Updated to version 1.6.0
+* Added `unfiredHandlers()` and `unmockedAjaxCalls()`
+* Numerous bug fixes and breaking tests
+* Internal method cleanup
+* Switched to throwing proper `Error` objects
+* Switched to tab indentation everywhere
+* Added `main` field to package.json
+* Fixed responseTime for jsonp and allowed for variable setting with array min/max
+* Added `onAfterXxxxx` callbacks
+* Updated `$.mockjaxClear()` to be `$.mockjax.clear()` with deprecation notice
+* Complete README documentation overhaul
+* Fixed issue with Async actions in response callback
+* Added "contributing" documentation</code></pre>
+<h2>2014-08-14</h2>
+<pre><code>* Spelling corrections in README.md
+* Update to newest version of QUnit (JS &amp; CSS) and fixes for doing so
+* Added further versions of jQuery to test with
+* Added some tests for various issues and split out some tests for atomicity
+* Fixed dataType check for JSONP (case insensitive)
+* ensure request `data` matching occurs when url is matched and no data matching is required</code></pre>
+<h2>2013-09-28</h2>
+<pre><code>* Fixed issue with proxy data and status codes (Thanks [Andrew Goodale](https://github.com/newyankeecodeshop)!)
+* TODO: Update this file with all changes since previous version</code></pre>
+<h2>2012-05-30</h2>
+<pre><code>* Updated to version 1.5.2
+* Added support for jQuery 1.8, 1.9, 2.0
+* TODO: Update this file with all changes since previous version</code></pre>
+<h2>2011-03-25   Jonathan Sharp (<a href="http://jdsharp.com">http://jdsharp.com</a>)</h2>
+<pre><code>* Updating jQuery 1.5rc1 to 1.5.1
+* Adding TestSwarm support</code></pre>
+<h2>2011-02-03   Jonathan Sharp (<a href="http://jdsharp.com">http://jdsharp.com</a>)</h2>
+<pre><code>* Added log setting to intercept or disable logging messages
+* Added proxyType setting to force request type when proxying a mock
+* Added 29 unit tests for jQuery 1.3 through 1.5
+* Fixed issue #4 - Compatibility with jQuery 1.3
+* Fixed issue #10 - Undefined contents
+* Fixed issue #15 - proxy setting request type
+* Fixed issue #16 - proxy setting request type
+* Fixed issue #17 - jsonp request handling
+* Fixed issue #18 - Unit test fail with jQuery 1.5</code></pre>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/ajax" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>ajax</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/mock" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>mock</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/unit" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>unit</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/testing" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>testing</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/ecosystem%3Ajquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>ecosystem:jquery</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/450036?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/jakerella" target="_blank" id="ownerName" class="sidebar-link">jakerella</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">May 5, 2010</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 1, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Other</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>browserify (^17.0.0)</li><li>browserstack-runner (^0.9.4)</li><li>grunt (^1.6.1)</li><li>grunt-browserify (^6.0.0)</li><li>grunt-contrib-concat (^2.1.0)</li><li>grunt-contrib-connect (^4.0.0)</li><li>grunt-contrib-jshint (^3.2.0)</li><li>grunt-contrib-qunit (^8.0.1)</li><li>grunt-contrib-uglify (^5.2.2)</li><li>grunt-contrib-watch (^1.1.0)</li><li>grunt-mocha-test (^0.13.3)</li><li>http-server (^14.1.1)</li><li>jquery (^3.7.1)</li><li>jsdom (^24.0.0)</li><li>load-grunt-tasks (^5.1.0)</li><li>mocha (^10.3.0)</li><li>puppeteer (^22.1.0)</li><li>qunit (^2.20.1)</li><li>sinon (^17.0.1)</li><li>xmlhttprequest (^1.8.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/450036?v=4" alt="jakerella" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jakerella" target="_blank" class="text-decoration-none fw-bold">jakerella</a><p class="mb-0 text-muted small">329 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/141104?v=4" alt="jdsharp" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jdsharp" target="_blank" class="text-decoration-none fw-bold">jdsharp</a><p class="mb-0 text-muted small">39 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/11214?v=4" alt="mlynch" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mlynch" target="_blank" class="text-decoration-none fw-bold">mlynch</a><p class="mb-0 text-muted small">29 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/801205?v=4" alt="reinrl" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/reinrl" target="_blank" class="text-decoration-none fw-bold">reinrl</a><p class="mb-0 text-muted small">29 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/52585?v=4" alt="jzaefferer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jzaefferer" target="_blank" class="text-decoration-none fw-bold">jzaefferer</a><p class="mb-0 text-muted small">26 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/106974?v=4" alt="dcneiner" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dcneiner" target="_blank" class="text-decoration-none fw-bold">dcneiner</a><p class="mb-0 text-muted small">26 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5665333?v=4" alt="danpaz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/danpaz" target="_blank" class="text-decoration-none fw-bold">danpaz</a><p class="mb-0 text-muted small">16 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/472487?v=4" alt="jcreamer898" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jcreamer898" target="_blank" class="text-decoration-none fw-bold">jcreamer898</a><p class="mb-0 text-muted small">15 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/475621?v=4" alt="johnkpaul" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/johnkpaul" target="_blank" class="text-decoration-none fw-bold">johnkpaul</a><p class="mb-0 text-muted small">10 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/412468?v=4" alt="rniemeyer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rniemeyer" target="_blank" class="text-decoration-none fw-bold">rniemeyer</a><p class="mb-0 text-muted small">8 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7010458?v=4" alt="gregid" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gregid" target="_blank" class="text-decoration-none fw-bold">gregid</a><p class="mb-0 text-muted small">8 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5336190?v=4" alt="bdusell" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bdusell" target="_blank" class="text-decoration-none fw-bold">bdusell</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2281204?v=4" alt="addepar-andy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/addepar-andy" target="_blank" class="text-decoration-none fw-bold">addepar-andy</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3383891?v=4" alt="koorgoo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/koorgoo" target="_blank" class="text-decoration-none fw-bold">koorgoo</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2317341?v=4" alt="stas-vilchik" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/stas-vilchik" target="_blank" class="text-decoration-none fw-bold">stas-vilchik</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1341513?v=4" alt="suchipi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/suchipi" target="_blank" class="text-decoration-none fw-bold">suchipi</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/777484?v=4" alt="mattmcla" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mattmcla" target="_blank" class="text-decoration-none fw-bold">mattmcla</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/197026?v=4" alt="ifandelse" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ifandelse" target="_blank" class="text-decoration-none fw-bold">ifandelse</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/521813?v=4" alt="WesWedding" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/WesWedding" target="_blank" class="text-decoration-none fw-bold">WesWedding</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/289150?v=4" alt="udnisap" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/udnisap" target="_blank" class="text-decoration-none fw-bold">udnisap</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/513420?v=4" alt="nicholascloud" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nicholascloud" target="_blank" class="text-decoration-none fw-bold">nicholascloud</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2165256?v=4" alt="wfortin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/wfortin" target="_blank" class="text-decoration-none fw-bold">wfortin</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/55398?v=4" alt="kumar303" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kumar303" target="_blank" class="text-decoration-none fw-bold">kumar303</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/328224?v=4" alt="jonspalmer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jonspalmer" target="_blank" class="text-decoration-none fw-bold">jonspalmer</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/733193?v=4" alt="prantlf" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/prantlf" target="_blank" class="text-decoration-none fw-bold">prantlf</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/86454?v=4" alt="elijahmanor" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/elijahmanor" target="_blank" class="text-decoration-none fw-bold">elijahmanor</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/76371?v=4" alt="shellscape" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/shellscape" target="_blank" class="text-decoration-none fw-bold">shellscape</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/128337?v=4" alt="alexkorban" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/alexkorban" target="_blank" class="text-decoration-none fw-bold">alexkorban</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/947110?v=4" alt="kkirsche" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kkirsche" target="_blank" class="text-decoration-none fw-bold">kkirsche</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/125014?v=4" alt="manuelzs" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/manuelzs" target="_blank" class="text-decoration-none fw-bold">manuelzs</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
