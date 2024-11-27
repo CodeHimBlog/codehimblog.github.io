@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superscrollorama by Johnpolacek</title>
+    <meta name="description" content="The original jQuery plugin for supercool scroll animation. NOTE: No longer under active development. New version is ScrollMagic.js">
+    <meta name="author" content="johnpolacek">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/superscrollorama-by-johnpolacek.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Superscrollorama</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Superscrollorama",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Superscrollorama</h1>
+        <p id="packageDescription" class="text-muted">The original jQuery plugin for supercool scroll animation. NOTE: No longer under active development. New version is ScrollMagic.js</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">2392</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.66 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">540</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">2</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/johnpolacek/superscrollorama/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/johnpolacek/superscrollorama" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>SuperScrollorama</h1>
+<p>The jQuery plugin for doing supercool scroll animation.</p>
+<p>Check out the <a href="http://johnpolacek.github.com/superscrollorama">Project Page</a> for more information.</p>
+<h2>IMPORTANT INFORMATION:</h2>
+<h3>Superscrollorama has been replaced by ScrollMagic</h3>
+<p>Check out ScrollMagic <a href="http://janpaepke.github.io/ScrollMagic/">here</a> or visit it on GitHub: <a href="https://github.com/janpaepke/ScrollMagic">https://github.com/janpaepke/ScrollMagic</a><br />
+There will be <strong>no future versions</strong> of Superscrollorama and support will also focus on ScrollMagic.<br />
+So if you're starting a new project we strongly recommend to use ScrollMagic instead.</p>
+<h2>Contact</h2>
+<p><a href="http://twitter.com/johnpolacek">Follow me on Twitter</a></p>
+<p>Need help building your website? <a href="http://johnpolacek.com/contact/">Contact us</a></p>
+<h2>License</h2>
+<p>SuperScrollorama is dual licensed under the MIT license (below) and <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPL license</a>.<br />
+The Greensock Animation Platform (GSAP) is used with permission per its license agreement (see below). For more information, go to <a href="http://www.greensock.com/licensing/">http://www.greensock.com/licensing/</a></p>
+<p><small><br />
+MIT License</p>
+<p>Copyright (c) 2012 John Polacek</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+<p>GSAP LICENSE</p>
+<h2>&quot;NO CHARGE&quot; NON-EXCLUSIVE SOFTWARE LICENSE AGREEMENT</h2>
+<p>PLAIN ENGLISH SUMMARY:</p>
+<h2>You may use the code at no charge in commercial or non-commercial apps, web sites, games, components, and other software as long as end users are not charged a fee of any kind to use your product or gain access to any part of it. If your client pays you a one-time fee to create the site/product, that's perfectly fine and qualifies under the &quot;no charge&quot; license. If end users are charged a usage/access/license fee, please sign up for a corporate Club GreenSock membership which comes with a special commercial license granting you permission to do so. See <a href="http://www.greensock.com/club/">http://www.greensock.com/club/</a> for details.<br />
+Use at your own risk. No warranties are offered.<br />
+Please respect the copyright.</h2>
+<p>LEGALESE:</p>
+<p>This is a legal agreement between you (either an individual or a single entity) and GreenSock, Inc. (&quot;GREENSOCK&quot;) for the proprietary GreenSock code known as TweenLite, TweenMax, TweenNano, TimelineLite, TimelineMax, and other copyrighted code that is available for download at <a href="http://www.greensock.com">http://www.greensock.com</a> (this code and documentation, as well as any updates which may at GREENSOCK's sole discretion be provided to you from time to time, are referred to in this Agreement as &quot;PROGRAM&quot;). By downloading, copying, or otherwise using the PROGRAM, you agree to the terms and conditions of this Agreement. If you do not agree to the terms and conditions of this Agreement, please do not download or use the PROGRAM.</p>
+<p>I. LICENSE<br />
+A. Subject to the terms and conditions of this Agreement, GREENSOCK hereby grants you a non-exclusive, worldwide, non-transferable right to use the PROGRAM in apps, web sites, games, components and other software applications (&quot;Developed Works&quot;) for which the end user is NOT charged any fees. If you would like to use the code in a commercially licensed Developed Work for which end users are charged a fee (either for usage or access), simply sign up for the appropriate corporate Club GreenSock membership at <a href="http://www.greensock.com/club/">http://www.greensock.com/club/</a>.</p>
+<p>II. LIMITATION OF LICENSE AND RESTRICTIONS<br />
+A. You agree that you will not sell, rent, or license the PROGRAM's source code or any derivative works thereof to any third party without the prior written consent of GREENSOCK. Distribution of the PROGRAM as part of your Developed Work is acceptable so long as it is used exclusively as a part of your Developed Work. You agree not to modify or delete GREENSOCK'S existing copyright notices located in the source code.</p>
+<p>B. You may use, duplicate, and distribute the compiled object code as embedded in Developed Works created by you, either for your own use or for distribution to a third party so long as end users of the Developed Work are not charged a fee for usage of or access to any portion of the Developed Work. Please see <a href="http://www.greensock.com/licensing/">http://www.greensock.com/licensing/</a> for descriptions of Developed Works that qualify for the &quot;No Charge&quot; license.</p>
+<p>C. You may make modifications to the source code exclusively for your own use in order to perform bug fixes or other minor edits required to operate the PROGRAM as originally intended.</p>
+<p>III. CONSIDERATION<br />
+A. The license rights granted to you under this Agreement are at no charge, but only in the following circumstances: If on your own behalf or on behalf of a third party you incorporate the PROGRAM into a web site, app, game, program or any component thereof (collectively, &quot;Developed Work&quot;), which in the case of a web site, must be accessible to internet users without payment of a fee of any kind, and in the case of a software application, game, program or component, neither you nor anyone to whom you distribute the Developed Work charges a user a fee of any kind to use such Developed Work or application, game, program or component into which such Developed Work is embedded. The foregoing shall apply regardless of whether you are paid to create such Developed Work.</p>
+<p>B. In the event your intended use of the PROGRAM does not meet the criteria for the &quot;no charge&quot; license rights set forth in the immediately preceding paragraph, then you are not licensed to use the PROGRAM under this Agreement and must license the PROGRAM under GREENSOCK'S separate fee-based Software License Agreement which is granted to corporate Club GreenSock members (see <a href="http://www.greensock.com/club/">http://www.greensock.com/club/</a> for details).</p>
+<p>C. You may make modifications to the source code exclusively for your own use in order to perform bug fixes or other minor edits required to operate the PROGRAM as originally intended.</p>
+<p>IV. TITLE AND OWNERSHIP<br />
+A. The PROGRAM is licensed, not sold, and is protected by copyright laws and international treaty provisions. You acknowledge that no title to the intellectual property in the PROGRAM is transferred to you. You further acknowledge that title and full ownership rights to the PROGRAM, including all intellectual property rights therein, will remain the exclusive property of GREENSOCK and you will not acquire any rights to the PROGRAM except as expressly set forth in this Agreement. You agree that any copies of the PROGRAM you make will contain the same proprietary notices which appear on and in the PROGRAM. You agree that GREENSOCK may identify you as a licensee unless you make a written request otherwise. GREENSOCK hereby grants to you the right to disclose that your product, game, software application, component, or other Developed Work makes use of GREENSOCK code (for example, &quot;Powered by TweenLite&quot;).</p>
+<p>V. DISCLAIMER OF WARRANTY AND LIMITATION OF LIABILITY<br />
+A. THE PROGRAM IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. GREENSOCK DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE PROGRAM WILL MEET YOUR REQUIREMENTS OR THAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE. GREENSOCK shall not be liable for special, indirect, incidental, or consequential damages with respect to any claim on account of or arising from this Agreement or use of the PROGRAM, even if GREENSOCK has been or is hereafter advised of the possibility of such damages. Because some states do not allow certain exclusions or limitations on implied warranties or of liability for consequential or incidental damages, the above exclusions may not apply to you. In no event, however, will GREENSOCK be liable to you, under any theory of recovery, in an amount in excess of $250. Notwithstanding anything else in this agreement, you agree to indemnify GREENSOCK, its assignees, and licensees, and hold each of them harmless from and against any and all claims, losses, damages, and expenses, including legal fees arising out of or resulting from any negligent act or omission by you.</p>
+<p>B. GREENSOCK may, at its sole discretion, provide support services related to the PROGRAM, but has no obligation to do so.</p>
+<p>VI. TERMINATION<br />
+If you at any time fail to abide by the terms of this Agreement, GREENSOCK shall have the right to immediately terminate the license granted herein and pursue any other legal or equitable remedies available.</p>
+<p>VII. MISCELLANEOUS<br />
+A. This Agreement shall be construed in accordance with the laws of the State of Illinois. In the event of any dispute between you and GREENSOCK with respect to this Agreement, we both agree that if we cannot resolve the dispute in good faith discussion, either of us may submit the dispute for resolution to arbitration with the American Arbitration Association before a single arbitrator using the AAA Rules for Commercial Arbitration. The arbitrator's decision is final and can be enforced in any court with jurisdiction over such matters.</p>
+<p>B. This agreement represents the complete and exclusive statement of the agreement between GREENSOCK and you and supersedes all prior agreements, proposals, representations and other communications, verbal or written, between them with respect to use of the program. This agreement may be modified only with the mutual written approval of authorized representatives of the parties.</p>
+<p>C. The terms and conditions of this Agreement shall prevail notwithstanding any different, conflicting, or additional terms or conditions which may appear in any purchase order or other document submitted by you. You agree that such additional or inconsistent terms are deemed rejected by GREENSOCK.</p>
+<p>D. GREENSOCK and you agree that any xerographically or electronically reproduced copy of this Agreement shall have the same legal force and effect as any copy bearing original signatures of the parties.</p>
+<p>Copyright 2006-2012, GreenSock, Inc. Updated 2012-05-15<br />
+</small></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/179482?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/johnpolacek" target="_blank" id="ownerName" class="sidebar-link">johnpolacek</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">May 20, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 13, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="http://johnpolacek.github.com/superscrollorama/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/179482?v=4" alt="johnpolacek" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/johnpolacek" target="_blank" class="text-decoration-none fw-bold">johnpolacek</a><p class="mb-0 text-muted small">72 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3076177?v=4" alt="janpaepke" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/janpaepke" target="_blank" class="text-decoration-none fw-bold">janpaepke</a><p class="mb-0 text-muted small">17 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1036950?v=4" alt="Hagith" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Hagith" target="_blank" class="text-decoration-none fw-bold">Hagith</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/571107?v=4" alt="mattgrayisok" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mattgrayisok" target="_blank" class="text-decoration-none fw-bold">mattgrayisok</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/164074?v=4" alt="gagarine" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gagarine" target="_blank" class="text-decoration-none fw-bold">gagarine</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4180800?v=4" alt="softvar" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/softvar" target="_blank" class="text-decoration-none fw-bold">softvar</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/947110?v=4" alt="kkirsche" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kkirsche" target="_blank" class="text-decoration-none fw-bold">kkirsche</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3848154?v=4" alt="kevinhamiltonsmith" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kevinhamiltonsmith" target="_blank" class="text-decoration-none fw-bold">kevinhamiltonsmith</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/126774?v=4" alt="lucanos" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lucanos" target="_blank" class="text-decoration-none fw-bold">lucanos</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1621969?v=4" alt="zeevl" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zeevl" target="_blank" class="text-decoration-none fw-bold">zeevl</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+5 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
