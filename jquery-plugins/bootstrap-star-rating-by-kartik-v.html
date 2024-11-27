@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Star Rating by Kartik V</title>
+    <meta name="description" content="A simple yet powerful JQuery star rating plugin with fractional rating support.">
+    <meta name="author" content="kartik-v">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/bootstrap-star-rating-by-kartik-v.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Bootstrap Star Rating</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Bootstrap Star Rating",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Bootstrap Star Rating</h1>
+        <p id="packageDescription" class="text-muted">A simple yet powerful JQuery star rating plugin with fractional rating support.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1055</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.52 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">399</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">2</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/kartik-v/bootstrap-star-rating/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/kartik-v/bootstrap-star-rating" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1 align="center">
+    <a href="https://plugins.krajee.com" title="Krajee Plugins" target="_blank">
+        <img src="https://kartik-v.github.io/bootstrap-fileinput-samples/samples/krajee-logo-b.png" alt="Krajee Logo"/>
+    </a>
+    <br>
+    bootstrap-star-rating
+    <hr>
+    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DTP3NZQ6G2AYU"
+       title="Donate via Paypal" target="_blank"><img src="https://kartik-v.github.io/bootstrap-fileinput-samples/samples/donate.png" height="60" alt="Donate"/></a>
+    &nbsp; &nbsp; &nbsp;
+    <a href="https://www.buymeacoffee.com/kartikv" title="Buy me a coffee" ><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="60" alt="kartikv" /></a>
+</h1>
+<div align="center">
+
+[![Financial Contributors on Open Collective](https://opencollective.com/bootstrap-star-rating/all/badge.svg?label=financial+contributors)](https://opencollective.com/bootstrap-star-rating)
+[![Bower version](https://badge.fury.io/bo/bootstrap-star-rating.svg)](http://badge.fury.io/bo/bootstrap-star-rating)
+[![Latest Stable Version](https://poser.pugx.org/kartik-v/bootstrap-star-rating/v/stable)](https://packagist.org/packages/kartik-v/bootstrap-star-rating)
+[![License](https://poser.pugx.org/kartik-v/bootstrap-star-rating/license)](https://packagist.org/packages/kartik-v/bootstrap-star-rating)
+[![Packagist Downloads](https://poser.pugx.org/kartik-v/bootstrap-star-rating/downloads)](https://packagist.org/packages/kartik-v/bootstrap-star-rating)
+[![Monthly Downloads](https://poser.pugx.org/kartik-v/bootstrap-star-rating/d/monthly)](https://packagist.org/packages/kartik-v/bootstrap-star-rating)
+
+</div>
+<p>A simple yet powerful JQuery star rating plugin for Bootstrap which supports advanced features like fractional star fill and RTL input support.<br />
+Developed with a focus on utlizing pure CSS-3 styling to render the control. The plugin uses Bootstrap markup and styling by default, but it<br />
+can be overridden with any other CSS markup. View the <a href="http://plugins.krajee.com/star-rating">documentation</a> or a <a href="http://plugins.krajee.com/star-rating/demo">complete demo</a><br />
+at Krajee JQuery plugins. </p>
+<blockquote>
+<p>NOTE: Release v4.0 is a modified rewrite with various new enhancements and BC breaking features. It allows rendering richer markup for star symbols and offers theming support.</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-fileinput-samples@0.0.1/samples/star-rating-screenshot.png" alt="Star Rating Screenshot" /></p>
+<h2>Features</h2>
+<ul>
+<li>Convert any HTML input to a star rating control. </li>
+<li>The plugin automatically converts an input to a star rating control if you set its <code>class = rating</code>.<br />
+All options to the input can be passed as HTML5 <code>data</code> attributes.</li>
+<li>You can use the HTML 5 number input for polyfill and the plugin will automatically use the number attributes like <code>min</code>, <code>max</code>, and <code>step</code>.<br />
+However, number inputs have a problem with decimal values on the Chrome Browser. Read the Browser Support section in the documentation.</li>
+<li>Involves pure CSS3 styling of the stars. Say goodbye to image sprites or playing with image backgrounds. Offers clean scalable vector<br />
+icons for consistent display across devices. Optionally one can use the Unicode character set to override symbols.</li>
+<li>Use any of your favorite font icon frameworks to render your star symbols (for example you can easily use the icons from the FontAwesome library).</li>
+<li>Render and display fractional star ratings. Configure number of stars, min, max, step, and theoretically  support any fractional rating.</li>
+<li>Uses Bootstrap 5.x, 4.x, 3.x styles &amp; Bootstrap 3.x glyphicons by default. But this can be overridden with plugin parameters and your own CSS styles.</li>
+<li>Support for RIGHT TO LEFT (RTL) input. Automatically changes star styling for RTL.</li>
+<li>Ability to clear values and options for the stars. Control where the clear button element can be shown.</li>
+<li>Reset star rating to the initial value when the form is reset.</li>
+<li>Ability to control and display caption of the selected stars. Each rated star can have its own caption. Control where the<br />
+caption element can be shown.</li>
+<li>Ability to size the rating control including the stars, caption, and clear button. Five prebuilt size templates are<br />
+available <code>xl</code>, <code>lg</code>, <code>md</code>, <code>sm</code>, and <code>xs</code>.</li>
+<li>Triggers JQuery events for advanced development. Events currently available are <code>rating.change</code>, <code>rating.clear</code>, <code>rating.reset</code>, <code>rating.refresh</code>, <code>rating.hover</code>, and <code>rating.hoverleave</code>.</li>
+<li>Disabled and readonly input star rating support.</li>
+<li>Change stars and caption on mouse hover (new feature since v3.0.0).</li>
+<li>Change stars and caption on slide and drag for mobile/touch devices (new feature since v3.1.0).</li>
+<li>Support for translations and locales.</li>
+</ul>
+<h3>New features/changes since release v4.0</h3>
+<ul>
+<li><strong>BC Breaking Change</strong>: The <code>symbol</code>, <code>glyphicon</code>, <code>ratingClass</code> properties have been removed. The functionality is replaced with the <code>theme</code> property (and can also be complemented or implemented separately using the <code>containerClass</code> property).</li>
+<li>New property <code>theme</code> will assign a CSS class with the <code>rating-&lt;theme-name&gt;</code> to the rating container.
+<ul>
+<li>Themes included
+<ul>
+<li><code>krajee-svg</code> (for displaying svg icons) - default theme since v4.1.0</li>
+<li><code>krajee-uni</code> (for displaying Krajee unicode symbols as stars)</li>
+<li><code>krajee-fas</code> (for displaying font awesome 5.x icons)</li>
+<li><code>krajee-fa</code> (for displaying font awesome 4.x icons)</li>
+<li><code>krajee-gly</code> (for displaying bootstrap 3.x glyphicons)</li>
+</ul></li>
+<li>Add ability to override and add one's own themes</li>
+</ul></li>
+<li>Stars now have a better padding and spacing that can be configured via CSS and themes</li>
+<li>New property <code>filledStar</code> - will allow one to set the markup for <code>filledStar</code> - will default to 
+<ul>
+<li><code>&lt;i class="glyphicon glyphicon-star"&gt;&lt;/i&gt;</code></li>
+</ul></li>
+<li>New property <code>emptyStar</code> - will allow one to set the markup for <code>emptyStar</code> - will default to 
+<ul>
+<li><code>&lt;i class="glyphicon glyphicon-star-empty"&gt;&lt;/i&gt;</code></li>
+</ul></li>
+<li>Exclusive support for SVG (and a prebuilt <code>krajee-svg</code> theme that contains two different ready to use SVG icons).</li>
+<li>Ability to easily set the widget as a &quot;display only&quot; rating via <code>displayOnly</code> property.</li>
+<li>New property <code>animate</code> to control animation of highlighted stars on hover or click.</li>
+</ul>
+<blockquote>
+<p>NOTE: Refer <a href="https://github.com/kartik-v/bootstrap-star-rating/blob/master/CHANGE.md">change log</a> for details on plugin enhancements, fixes, and changes.</p>
+</blockquote>
+<h2>Documentation and Demo</h2>
+<p>View the <a href="http://plugins.krajee.com/star-rating">plugin documentation</a> and <a href="http://plugins.krajee.com/star-rating/demo">plugin demos</a> at Krajee JQuery plugins. </p>
+<h2>Pre-requisites</h2>
+<ol>
+<li><a href="http://getbootstrap.com/">Bootstrap 5.x, 4.x, 3.x</a></li>
+<li>Latest <a href="http://jquery.com/">JQuery</a></li>
+<li>Most browsers supporting CSS3 &amp; JQuery. </li>
+</ol>
+<h2>Installation</h2>
+<h3>Using Bower</h3>
+<p>You can use the <code>bower</code> package manager to install. Run:</p>
+<pre><code>bower install bootstrap-star-rating</code></pre>
+<h3>Using Composer</h3>
+<p>You can use the <code>composer</code> package manager to install. Either run:</p>
+<pre><code>$ php composer.phar require kartik-v/bootstrap-star-rating "@dev"</code></pre>
+<p>or add:</p>
+<pre><code>"kartik-v/bootstrap-star-rating": "@dev"</code></pre>
+<p>to your composer.json file</p>
+<blockquote>
+<p>NOTE: You can use the <a href="https://github.com/kartik-v/bootstrap-star-rating/tree/sass">sass branch</a> for installation using <code>bootstrap-sass</code> dependency.<br />
+The <a href="https://github.com/kartik-v/bootstrap-star-rating/tree/master">master branch</a> can be used for installation using plain <code>bootstrap</code> dependency.</p>
+</blockquote>
+<h3>Manual Install</h3>
+<p>You can also manually install the plugin easily to your project. Just download the source <a href="https://github.com/kartik-v/bootstrap-star-rating/zipball/master">ZIP</a> or <a href="https://github.com/kartik-v/bootstrap-star-rating/tarball/master">TAR ball</a> and extract the plugin assets (css and js folders) into your project.</p>
+<h2>Usage</h2>
+<p>Step 1: Load the following assets in your header. </p>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- default styles --&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"&gt;
+&lt;link href="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/css/star-rating.min.css" media="all" rel="stylesheet" type="text/css" /&gt;
+
+&lt;!-- with v4.1.0 Krajee SVG theme is used as default (and must be loaded as below) - include any of the other theme CSS files as mentioned below (and change the theme property of the plugin) --&gt;
+&lt;link href="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" /&gt;
+
+&lt;!-- important mandatory libraries --&gt;
+&lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/js/star-rating.min.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;!-- with v4.1.0 Krajee SVG theme is used as default (and must be loaded as below) - include any of the other theme JS files as mentioned below (and change the theme property of the plugin) --&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/themes/krajee-svg/theme.js"&gt;&lt;/script&gt;
+
+&lt;!-- optionally if you need translation for your language then include locale file as mentioned below (replace LANG.js with your own locale file) --&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/js/locales/LANG.js"&gt;&lt;/script&gt;</code></pre>
+<p>If you noticed, you need to load the <code>jquery.min.js</code> and <code>bootstrap.min.css</code> in addition to the <code>star-rating.min.css</code> and <code>star-rating.min.js</code> for<br />
+the plugin to work with default settings.</p>
+<p>Step 2: Setup your input markup to automatically initialize the rating</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;input id="input-id" type="text" class="rating" data-size="lg" &gt;</code></pre>
+<p>Step 3: Initialize the plugin on your page for other input types. For example,</p>
+<pre class="prettyprint linenums lang-language"><code>// initialize with defaults
+$("#input-id").rating();
+
+// with plugin options (do not attach the CSS class "rating" to your input if using this approach)
+$("#input-id").rating({'size':'lg'});</code></pre>
+<p>The <code>#input-id</code> is the identifier for the input on your page (that you used to initialize the rating), and this input is hidden automatically by the plugin (by adding the bootstrap CSS class <code>hide</code>). </p>
+<p>Alternatively, you can directly call the plugin options by setting data attributes to your input field.</p>
+<h2>Contributors</h2>
+<h3>Code Contributors</h3>
+<p>This project exists thanks to all the people who contribute. [<a href="CONTRIBUTING.md">Contribute</a>].<br />
+<a href="https://github.com/kartik-v/bootstrap-star-rating/graphs/contributors"><img src="https://opencollective.com/bootstrap-star-rating/contributors.svg?width=890&button=false" /></a></p>
+<h3>Financial Contributors</h3>
+<p>Become a financial contributor and help us sustain our community. [<a href="https://opencollective.com/bootstrap-star-rating/contribute">Contribute</a>]</p>
+<h4>Individuals</h4>
+<p><a href="https://opencollective.com/bootstrap-star-rating"><img src="https://opencollective.com/bootstrap-star-rating/individuals.svg?width=890"></a></p>
+<h4>Organizations</h4>
+<p>Support this project with your organization. Your logo will show up here with a link to your website. [<a href="https://opencollective.com/bootstrap-star-rating/contribute">Contribute</a>]</p>
+<p><a href="https://opencollective.com/bootstrap-star-rating/organization/0/website"><img src="https://opencollective.com/bootstrap-star-rating/organization/0/avatar.svg"></a><br />
+<a href="https://opencollective.com/bootstrap-star-rating/organization/1/website"><img src="https://opencollective.com/bootstrap-star-rating/organization/1/avatar.svg"></a><br />
+<a href="https://opencollective.com/bootstrap-star-rating/organization/2/website"><img src="https://opencollective.com/bootstrap-star-rating/organization/2/avatar.svg"></a><br />
+<a href="https://opencollective.com/bootstrap-star-rating/organization/3/website"><img src="https://opencollective.com/bootstrap-star-rating/organization/3/avatar.svg"></a><br />
+<a href="https://opencollective.com/bootstrap-star-rating/organization/4/website"><img src="https://opencollective.com/bootstrap-star-rating/organization/4/avatar.svg"></a><br />
+<a href="https://opencollective.com/bootstrap-star-rating/organization/5/website"><img src="https://opencollective.com/bootstrap-star-rating/organization/5/avatar.svg"></a><br />
+<a href="https://opencollective.com/bootstrap-star-rating/organization/6/website"><img src="https://opencollective.com/bootstrap-star-rating/organization/6/avatar.svg"></a><br />
+<a href="https://opencollective.com/bootstrap-star-rating/organization/7/website"><img src="https://opencollective.com/bootstrap-star-rating/organization/7/avatar.svg"></a><br />
+<a href="https://opencollective.com/bootstrap-star-rating/organization/8/website"><img src="https://opencollective.com/bootstrap-star-rating/organization/8/avatar.svg"></a><br />
+<a href="https://opencollective.com/bootstrap-star-rating/organization/9/website"><img src="https://opencollective.com/bootstrap-star-rating/organization/9/avatar.svg"></a></p>
+<h2>License</h2>
+<p><strong>bootstrap-star-rating</strong> is released under the BSD-3-Clause License. See the bundled <code>LICENSE.md</code> for details.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/bootstrap-star-rating" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>bootstrap-star-rating</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/caption" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>caption</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/change-stars" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>change-stars</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/css" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>css</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/css-styles" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>css-styles</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/fractional" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>fractional</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/rate-control" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>rate-control</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/rating" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>rating</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/rtl" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>rtl</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/star" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>star</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/star-symbols" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>star-symbols</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/3592619?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/kartik-v" target="_blank" id="ownerName" class="sidebar-link">kartik-v</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">February 25, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 9, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Other</span>
+    </div>
+	        <a href="http://plugins.krajee.com/star-rating" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>opencollective-postinstall (^2.0.2)</li></ul><h5 class="sidebar-title">Peer Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;= 1.9.0)</li><li>bootstrap (&gt;= 3.0.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3592619?v=4" alt="kartik-v" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kartik-v" target="_blank" class="text-decoration-none fw-bold">kartik-v</a><p class="mb-0 text-muted small">223 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5773877?v=4" alt="henriquebelfort" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/henriquebelfort" target="_blank" class="text-decoration-none fw-bold">henriquebelfort</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/15996352?v=4" alt="1vanguard" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/1vanguard" target="_blank" class="text-decoration-none fw-bold">1vanguard</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1777147?v=4" alt="Bhoft" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Bhoft" target="_blank" class="text-decoration-none fw-bold">Bhoft</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/11256231?v=4" alt="camerontucker" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/camerontucker" target="_blank" class="text-decoration-none fw-bold">camerontucker</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7316730?v=4" alt="monkeywithacupcake" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/monkeywithacupcake" target="_blank" class="text-decoration-none fw-bold">monkeywithacupcake</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/296379?v=4" alt="russoalberto" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/russoalberto" target="_blank" class="text-decoration-none fw-bold">russoalberto</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1327782?v=4" alt="bgaillard" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bgaillard" target="_blank" class="text-decoration-none fw-bold">bgaillard</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1100843?v=4" alt="bt" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bt" target="_blank" class="text-decoration-none fw-bold">bt</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6967261?v=4" alt="dannyboscan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dannyboscan" target="_blank" class="text-decoration-none fw-bold">dannyboscan</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11462987?v=4" alt="douglaspasqualin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/douglaspasqualin" target="_blank" class="text-decoration-none fw-bold">douglaspasqualin</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4192159?v=4" alt="toriphes" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/toriphes" target="_blank" class="text-decoration-none fw-bold">toriphes</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1105768?v=4" alt="jamiehenson" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jamiehenson" target="_blank" class="text-decoration-none fw-bold">jamiehenson</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5852477?v=4" alt="symbwell" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/symbwell" target="_blank" class="text-decoration-none fw-bold">symbwell</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/19517048?v=4" alt="oguzkulcu" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/oguzkulcu" target="_blank" class="text-decoration-none fw-bold">oguzkulcu</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/34006175?v=4" alt="sandofvega" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sandofvega" target="_blank" class="text-decoration-none fw-bold">sandofvega</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/10432669?v=4" alt="sergiubologa" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sergiubologa" target="_blank" class="text-decoration-none fw-bold">sergiubologa</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/16089638?v=4" alt="charisoudis" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/charisoudis" target="_blank" class="text-decoration-none fw-bold">charisoudis</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1820114?v=4" alt="wowkin2" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/wowkin2" target="_blank" class="text-decoration-none fw-bold">wowkin2</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/388584?v=4" alt="jandosul" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jandosul" target="_blank" class="text-decoration-none fw-bold">jandosul</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/17500365?v=4" alt="azaiter" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/azaiter" target="_blank" class="text-decoration-none fw-bold">azaiter</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/39339965?v=4" alt="eazlee" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/eazlee" target="_blank" class="text-decoration-none fw-bold">eazlee</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5458930?v=4" alt="lsroudi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lsroudi" target="_blank" class="text-decoration-none fw-bold">lsroudi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7925305?v=4" alt="pkExec" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pkExec" target="_blank" class="text-decoration-none fw-bold">pkExec</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5185509?v=4" alt="primus852" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/primus852" target="_blank" class="text-decoration-none fw-bold">primus852</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3465334?v=4" alt="saeedsajadi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/saeedsajadi" target="_blank" class="text-decoration-none fw-bold">saeedsajadi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+21 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
