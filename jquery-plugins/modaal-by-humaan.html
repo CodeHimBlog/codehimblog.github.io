@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Accessible Dialog Window Library for All Humans.</title>
+    <meta name="description" content="Modaal by humaan. An accessible dialog window library for all humans.">
+    <meta name="author" content="humaan">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/modaal-by-humaan.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Modaal</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Modaal",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Modaal</h1>
+        <p id="packageDescription" class="text-muted">An accessible dialog window library for all humans.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">2715</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.67 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">183</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">47</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/humaan/Modaal/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/humaan/Modaal" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <img src="http://humaan.com/modaal/demo/social-share-modaal.png" />
+<hr />
+<ul>
+<li>Version 0.4.4</li>
+<li>Requires jQuery 1.11.2 or higher (v2 not tested, v3 works but not extensively stress tested).</li>
+<li>Built by <a href="http://www.humaan.com">Humaan</a></li>
+</ul>
+<hr />
+<h1>Modaal</h1>
+<p>Modaal is a WCAG 2.0 Level AA accessible modal window plugin.</p>
+<h2>Demos</h2>
+<p><a href="http://humaan.com/modaal">View Modaal Demos</a></p>
+<h1>Another modal plugin? why?</h1>
+<p>It's hard to find a plugin with the right mix of quality, flexibility and accessibility. We thought it would be interesting to develop something that would work in a variety of projects, furthering the cause for an accessible web.</p>
+<hr />
+<h2>1. Getting Setup</h2>
+<h4>1.1. Installation</h4>
+<ul>
+<li><a href="https://github.com/humaan/Modaal/archive/master.zip">Download ZIP</a></li>
+<li>First, copy and paste <code>js/modaal.min.js</code> in your project, and link to it before the closing <code>&lt;/body&gt;</code> element.</li>
+<li>Next, you'll need to copy and paste the plugin's css into your project. We include both a SASS file and CSS file for flexibility.</li>
+<li>Lastly, link to your new <code>modaal.css</code> file before the closing <code>&lt;/head&gt;</code> element.</li>
+</ul>
+<p>Note: This plugin requires your website or application already runs a copy of <a href="http://jquery.com/">jQuery</a>, version 1.11.2 or higher. Currently version 2 has not been tested. Version 3 works but has not been stress tested for bugs/issues.</p>
+<h4>1.2. Installation with Package Managers</h4>
+<p>Modaal is now setup and ready to be used with <a href="https://bower.io/">Bower</a> and <a href="https://www.npmjs.com/package/modaal">NPM</a> and can be installed using the following commands.</p>
+<pre class="prettyprint linenums lang-language"><code>bower install  modaal
+
+npm install  modaal</code></pre>
+<h4>1.3 Installation with CDN</h4>
+<p>Modaal is now setup and ready to be used with CDN <a href="http://www.jsdelivr.com/projects/modaal">JSDelivr</a> <a href="https://www.jsdelivr.com/package/npm/modaal"><img src="https://data.jsdelivr.com/v1/package/npm/modaal/badge" alt="jsDelivr Hits" /></a></p>
+<h4>1.4. The Basics</h4>
+<p>Out of the box Modaal is setup to work using inline content using as little customisation as possible. The first thing you'll require is a link to trigger the modal window. It's recommended that your <code>href</code> attribute targets a unique ID for a hidden element on the page containing your modal content. Like so:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;a href="#inline" class="inline"&gt;Show&lt;/a&gt;
+&lt;div id="inline" style="display:none;"&gt;
+    &lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>$('.inline').modaal();</code></pre>
+<p>If you would prefer your trigger element is <em>not</em> an <code>&lt;a href="#"&gt;</code>, you can define a <code>content_source</code> value like so:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;button class="inline"&gt;Show&lt;/button&gt;
+&lt;div id="inline" style="display:none;"&gt;
+    &lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>$('.inline').modaal({
+    content_source: '#inline'
+});</code></pre>
+<h2>2. Configuration</h2>
+<h4>2.1. Practical Example</h4>
+<pre class="prettyprint linenums lang-language"><code>$('.my-link').modaal({
+    type: 'ajax',
+    loading_content: 'Loading content, please wait.'
+});</code></pre>
+<h4>2.2. Configuration Options</h4>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>type</th>
+<th>default</th>
+<th>values</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td><code>string</code></td>
+<td><code>inline</code></td>
+<td><code>ajax</code><br /> <code>inline</code><br /> <code>image</code><br /> <code>iframe</code><br /> <code>confirm</code><br /> <code>video</code><br /> <code>instagram</code></td>
+</tr>
+<tr>
+<td>content_source</td>
+<td><code>string</code></td>
+<td>null</td>
+<td>Accepts a string value for your target element, such as '#my-content'. This allows for when trigger element is an <code>&lt;a href="#"&gt;</code> link. Not to be confused with the already existing <code>source</code> event.</td>
+</tr>
+<tr>
+<td>animation</td>
+<td><code>string</code></td>
+<td><code>fade</code></td>
+<td><code>fade</code>, <code>none</code></td>
+</tr>
+<tr>
+<td>animation_speed</td>
+<td><code>integer</code></td>
+<td><code>300</code></td>
+<td>Animation speed is the duration it takes to reveal the Modaal window once triggered. It's important to note, that if you change this, you must also change the <code>after_callback_delay</code> below so that callback events sync up. This will be overwritten and set to <code>0</code> if <code>type</code> is <code>none</code>.</td>
+</tr>
+<tr>
+<td>after_callback_delay</td>
+<td><code>integer</code></td>
+<td><code>350</code></td>
+<td>Specify a delay value for the after open callbacks. This is necessary because with the bundled animations have a set duration in the bundled CSS. Specify a delay of the same amount as the animation duration in so more accurately fire the after open/close callbacks. Defaults 350, does not apply if animation is 'none', after open callbacks are dispatched immediately</td>
+</tr>
+<tr>
+<td>is_locked</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td><code>true</code><br /> <code>false</code></td>
+<td>Set this to <code>true</code> to disable closing the modal via keypress or by clicking the close or background. Beware that if <code>type</code> is <code>confirm</code> there will be no interface to dismiss the modal. If <code>is_locked</code> is <code>true</code>, you'd have to programmatically arrange to dismiss the modal. Confirm modals are always locked regardless of this option.</td>
+</tr>
+<tr>
+<td>hide_close</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td><code>true</code><br /> <code>false</code></td>
+<td>Set this to <code>true</code> to hide the close modal button. Key press and overlay click will still close the modal. This method is best used when you want to put a custom close button inside the modal container space.</td>
+</tr>
+<tr>
+<td>background</td>
+<td><code>string</code></td>
+<td><code>#000</code></td>
+<td>Sets the background overlay color</td>
+</tr>
+<tr>
+<td>overlay_opacity</td>
+<td><code>float</code></td>
+<td><code>0.8</code></td>
+<td>Sets the background overlay transparency</td>
+</tr>
+<tr>
+<td>overlay_close</td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+<td><code>true</code><br /> <code>false</code></td>
+<td>Controls whether the overlay background can be clicked to close.</td>
+</tr>
+<tr>
+<td>accessible_title</td>
+<td><code>string</code></td>
+<td><code>Dialog Window</code></td>
+<td>Set the <code>aria-label</code> attribute value used for Accessibility purposes.</td>
+</tr>
+<tr>
+<td>start_open</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td><code>true</code><br /> <code>false</code></td>
+<td>Set this to <code>true</code> if you want the Modaal window to launch immediately on load.</td>
+</tr>
+<tr>
+<td>fullscreen</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td><code>true</code><br /> <code>false</code></td>
+<td>Set this to <code>true</code> to make the Modaal fill the entire screen, false will default to own width/height attributes.</td>
+</tr>
+<tr>
+<td>custom_class</td>
+<td><code>string</code></td>
+<td><code>''</code></td>
+<td>Fill in this string with a custom class that will be applied to the outer most modal wrapper.</td>
+</tr>
+<tr>
+<td>background_scroll</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td><code>true</code><br /> <code>false</code></td>
+<td>Set this to<code>true</code> to enable the page to scroll behind the open modal</td>
+</tr>
+<tr>
+<td>should_open</td>
+<td><code>boolean</code><br /><code>function</code></td>
+<td><code>true</code></td>
+<td>Set to <code>false</code> or make the closure return <code>false</code> to prevent the modal from opening</td>
+</tr>
+<tr>
+<td>close_text</td>
+<td><code>string</code></td>
+<td><code>Close</code></td>
+<td>String for close button text. Available for localisation and alternative languages to be used.</td>
+</tr>
+<tr>
+<td>close_aria_label</td>
+<td><code>string</code></td>
+<td><code>Close (Press escape to close)</code></td>
+<td>String for close button aria-label attribute (value that screen readers will read out). Available for localisation and alternative languages to be used.</td>
+</tr>
+<tr>
+<td>width</td>
+<td><code>integer</code></td>
+<td>null</td>
+<td>Set the desired width of the modal.</td>
+</tr>
+<tr>
+<td>height</td>
+<td><code>integer</code></td>
+<td>null</td>
+<td>Set the desired height of the modal.</td>
+</tr>
+<tr>
+<td>gallery_active_class</td>
+<td><code>string</code></td>
+<td><code>gallery_active_item</code></td>
+<td>Active class applied to the currently active image or image slide in a gallery</td>
+</tr>
+<tr>
+<td>outer_controls</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td><code>true</code><br /> <code>false</code></td>
+<td>Set to true to put the next/prev controls outside the Modaal wrapper, at the edges of the browser window.</td>
+</tr>
+<tr>
+<td>confirm_button_text</td>
+<td><code>string</code></td>
+<td><code>Confirm</code></td>
+<td>Text on the confirm button.</td>
+</tr>
+<tr>
+<td>confirm_cancel_button_text</td>
+<td><code>string</code></td>
+<td><code>Cancel</code></td>
+<td>Text on the confirm modal cancel button.</td>
+</tr>
+<tr>
+<td>confirm_title</td>
+<td><code>string</code></td>
+<td><code>Confirm Title</code></td>
+<td>Title for confirm modal. Default</td>
+</tr>
+<tr>
+<td>confirm_content</td>
+<td><code>string</code></td>
+<td><code>&lt;p&gt;This is the default confirm dialog content. Replace me through the options&lt;/p&gt;</code></td>
+<td>HTML content for confirm message</td>
+</tr>
+<tr>
+<td>loading_content</td>
+<td><code>string</code></td>
+<td><code>Loading &amp;hellip;</code></td>
+<td>HTML content for loading message.</td>
+</tr>
+<tr>
+<td>loading_class</td>
+<td><code>string</code></td>
+<td><code>is_loading</code></td>
+<td>Class name to be applied while content is loaded via AJAX.</td>
+</tr>
+<tr>
+<td>ajax_error_class</td>
+<td><code>string</code></td>
+<td><code>modaal-error</code></td>
+<td>Class name to be applied when content has failed to load. Default is ''</td>
+</tr>
+<tr>
+<td>instagram_id</td>
+<td><code>string</code></td>
+<td><code>null</code></td>
+<td>Unique photo ID for an Instagram photo.</td>
+</tr>
+</tbody>
+</table>
+<h4>2.3. Inline Attribute Configuration</h4>
+<p>Modaal has been developed to support common jQuery configuration options, but in an effort to extend functionality and widen its usage we've developed support for inline <code>data-option-name</code> attribute support.</p>
+<p>To enable this, the Modaal trigger link must have a class of <code>modaal</code>, then you can add attributes to the link as needed like so:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;a href="#inline" data-modaal-type="inline" data-modaal-animation="fade" class="modaal"&gt;Show&lt;/a&gt;</code></pre>
+<p>Or for non <code>&lt;a href="#"&gt;</code> elements:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;button data-modaal-content-source="#inline" data-modaal-type="inline" data-modaal-animation="fade" class="modaal"&gt;Show&lt;/button&gt;</code></pre>
+<p>It's important to note, that configuration options that contain an underscore (<code>_</code>) in them need to be replaced with a hyphen (<code>-</code>) in it's respective html attribute. For example, <code>overlay_opacity</code> configuration would read <code>data-overlay-opacity="0.8"</code>.</p>
+<h4>2.4. Configuration Events</h4>
+<table>
+<thead>
+<tr>
+<th>event</th>
+<th>params</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>before_open</td>
+<td><code>event</code></td>
+<td>Executed before the modaal has revealed</td>
+</tr>
+<tr>
+<td>after_open</td>
+<td><code>modal_wrapper</code></td>
+<td>Executed once the duration for Option <code>after_callback_delay</code> has expired after the open method is called.</td>
+</tr>
+<tr>
+<td>before_close</td>
+<td><code>modal_wrapper</code></td>
+<td>Executed once the Modaal has been instructed to close.</td>
+</tr>
+<tr>
+<td>after_close</td>
+<td>Executed once the the duration for <code>after_callback_delay</code> has expired after the close method is called.</td>
+</tr>
+<tr>
+<td>before_image_change</td>
+<td><code>current_item</code><br /> <code>incoming_item</code></td>
+<td>Executed before the image changes in a gallery Modaal.</td>
+</tr>
+<tr>
+<td>after_image_change</td>
+<td><code>current_item</code></td>
+<td>Executed after the image has changed in a gallery Modaal.</td>
+</tr>
+<tr>
+<td>confirm_callback</td>
+<td><code>lastFocus</code></td>
+<td>Executed when the confirm button is pressed as opposed to cancel.</td>
+</tr>
+<tr>
+<td>confirm_cancel_callback</td>
+<td><code>lastFocus</code></td>
+<td>Executed when the cancel button is pressed as opposed to confirm.</td>
+</tr>
+<tr>
+<td>source</td>
+<td>Callback function executed on the default source, it is intended to transform the source (href in an AJAX modal or iframe). The function passes in the triggering element as well as the default source depending of the modal type. The default output of the function is an untransformed default source.</td>
+</tr>
+<tr>
+<td>ajax_success</td>
+<td><code>target</code></td>
+<td>Callback for when AJAX content is loaded in</td>
+</tr>
+</tbody>
+</table>
+<h6>2.4.1 Working With Events</h6>
+<p>There are two approaches to using events. The first is to call the entire <code>function() { }</code> in where the event configuration is set as seen below in <code>before_open</code>, and the second is to reference only the JS function name where the rest of the action occurs, as seen below in <code>after_open</code>.</p>
+<pre class="prettyprint linenums lang-language"><code>$('.my-link').modaal({
+    before_open: function() {
+        alert('Before open');
+    },
+    after_open: myFunction
+});
+
+function myFunction() {
+    alert('After open');
+}</code></pre>
+<h2>3. Methods</h2>
+<h4>3.1. Programatically Creating Modaals</h4>
+<p>To initialise a programatically created Modaal, but not open, it can been called like any other doc ready instance, with </p>
+<pre class="prettyprint linenums lang-language"><code>$('.my-link').modaal();</code></pre>
+<p>Or with any options as available:</p>
+<pre class="prettyprint linenums lang-language"><code>$('.my-link').modaal({
+    type: 'ajax',
+    loading_content: 'Loading content, please wait.'
+});</code></pre>
+<h4>3.2. Programatically Open a Modaal</h4>
+<p>For any modaal instance that has already been initialised, it can be triggered to open with</p>
+<pre class="prettyprint linenums lang-language"><code>$('.my-link').modaal('open');</code></pre>
+<p>If the modaal has been programatically created and needs to open straight away, the following approach can be used to initialise <em>and</em> open immediately:</p>
+<pre class="prettyprint linenums lang-language"><code>$('.my-link').modaal({ start_open: true });</code></pre>
+<p>This approach allows you to define other options that may be required as well as open immediately once it's ready.</p>
+<h4>3.3. Programatically Close a Modaal</h4>
+<p>Currently Modaal only supports a close method which can be called like so.</p>
+<pre class="prettyprint linenums lang-language"><code>$('.my-link').modaal('close');</code></pre>
+<p>Based on this example, we know we've already established (and opened) the modal associated to the <code>.my-link</code> class, so to close we use the same selector with a string of <code>close</code> instead of options;</p>
+<h2>4. Tips &amp; Tricks</h2>
+<h4>4.1. Avoiding Conflicts</h4>
+<p>Through development, we've worked hard to ensure no conflicts will occur with any existing code, however it's important to note some of the classes currently in use and best to avoid in your own stylesheet. These include:</p>
+<p><code>modaal-inline</code>, <code>modaal-ajax</code>, <code>modaal-image</code>, <code>modaal-confirm</code>, <code>modaal-iframe</code>, <code>modaal-video</code>, <code>modaal-wrapper</code>, <code>modaal-outer-wrapper</code>, <code>modaal-inner-wrapper</code>, <code>modaal-container</code>, <code>modaal-close</code>, <code>modaal-content</code></p>
+<h4>4.2. Customising the CSS</h4>
+<p>We wanted to provide users the chance to really extend on Modaal's base through customising the modal styles to meet their own project. We understand working with various projects and differing styles how important it is to tailor the aesthetics right down to even the most minute detail.</p>
+<p>Provided in the distribution files are both un-minified css and SASS files to best integrate with your workflow. Within the SASS file you'll find a number of variables located at the top of the document for which you can tweak as desired.</p>
+<p>It's our recommendation, should you wish to change any styling, that you minify your final output so as to save on overall page weight. The primary recommendation would be to run the <code>gulp dist</code> task which will minify the CSS (and JS if changes have been made), with another alternative to be found at <a href="http://cssminifier.com/">cssminifier.com</a>.</p>
+<h4>4.3. Video file URLs</h4>
+<p>The Modaal video type has been tested thoroughly using both Vimeo and Youtube. For best outcome, please ensure the url format looks like the one of the following below. We transplant this URL into an iframe which then each service provider controls all the necessary play back from there.</p>
+<h6>4.3.1. Youtube</h6>
+<p><code>https://www.youtube.com/embed/cBJyo0tgLnw</code> where the ID at the end is your unique video id. This can be found by selecting 'Share' on a youtube video, then clicking on 'Embed'. You'll find this URL within the content presented.</p>
+<h6>4.3.1. Vimeo</h6>
+<p><code>https://player.vimeo.com/video/109626219</code> where the ID at the end is your unique video id. This can be found by selecting 'Share' on a vimeo video (commonly seen on the right hand side), and by selecting the content within 'Embed'. You'll find the URL necessary towards the very beginning of that embed code inside <code>src=""</code>.</p>
+<h2>5. Reporting issues and contributing code</h2>
+<h4>5.1. Reporting an issue</h4>
+<ol>
+<li>Please ensure the issue you're reporting is reproducible in a standalone environment, and not a result of something in your own build.</li>
+<li>Use <a href="http://jsfiddle.net">jsFiddle</a> or <a href="http://jsbin.com">jsBin</a> to provide a test page showing issue.</li>
+<li>In your issue, please indicate which <em>browser</em>, <em>operating system</em> and <em>os version</em> you're using.</li>
+<li>Please also indicate plugin version.</li>
+<li>If you have made any alterations to the plugin files (JS or CSS), please also list and include code samples.</li>
+</ol>
+<p><em>The more information you can provide regarding an issue, the better.</em></p>
+<h4>5.2. Contributing to the plugin</h4>
+<p>Thanks for your contribution! Please refer to the guidelines below.</p>
+<ol>
+<li>Please ensure the issue you're reporting is reproducible in a standalone environment, and not a result of something in your own build.</li>
+<li>Please ensure your pull request has a base branch of <code>develop</code> selected. pull request's with base <code>master</code> will not be accepted.</li>
+<li>Please ensure the problem you're resolving has an open issue ticket.</li>
+<li>Adhere to the current style and formatting of the plugin files, including CSS, SASS and JS.</li>
+<li>Please ensure any changes are tested thoroughly in multiple browsers. We will do this, but if we locate bugs in the new code, the pull request will not be accepted.</li>
+<li>Outline all changes in your commit message and also reference the issue ticket. For example &quot;Contribution: Fix for issue #17 - Update to XYZ file to do make it do ABC&quot;</li>
+</ol>
+<h4>5.3. Development Setup</h4>
+<ol>
+<li>Ensure you're running <a href="http://nodejs.org/">NodeJS</a></li>
+<li>Install Gulp by running <code>npm install --global gulp</code>. More details are available through the <a href="https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md">Gulp documentation</a>.</li>
+<li>Install the NPM dependencies by running <code>npm install</code>. (if this throws an error, try <code>sudo</code> the command).</li>
+<li>The build can now be called by running <code>gulp watch</code> to watch for SASS updates.</li>
+<li>When you're happy with the final output, please also run <code>gulp dist</code> to minify and compress changes.</li>
+</ol>
+<h2>License</h2>
+<p>Copyright © <a href="http://humaan.com">Humaan</a><br />
+Licensed under the MIT license.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/css" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>css</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/js" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>js</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/modal-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>modal-plugin</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/1941007?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/humaan" target="_blank" id="ownerName" class="sidebar-link">humaan</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">April 18, 2016</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 15, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://humaan.com/modaal/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>jquery (1.12.4)</li><li>del (^2.0.2)</li><li>gulp (^3.9.1)</li><li>gulp-cache (^0.4.1)</li><li>gulp-csso (^3.0.0)</li><li>gulp-merge-media-queries (^0.2.1)</li><li>gulp-autoprefixer (^3.1.1)</li><li>gulp-notify (^2.2.0)</li><li>gulp-rename (^1.2.2)</li><li>gulp-sass (^3.2.1)</li><li>gulp-uglify (^2.1.2)</li><li>gulp-clean-css (^3.7.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/17169855?v=4" alt="danhumaan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/danhumaan" target="_blank" class="text-decoration-none fw-bold">danhumaan</a><p class="mb-0 text-muted small">82 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2037851?v=4" alt="pzi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pzi" target="_blank" class="text-decoration-none fw-bold">pzi</a><p class="mb-0 text-muted small">25 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3414118?v=4" alt="cbotman" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cbotman" target="_blank" class="text-decoration-none fw-bold">cbotman</a><p class="mb-0 text-muted small">19 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/13129580?v=4" alt="danb-humaan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/danb-humaan" target="_blank" class="text-decoration-none fw-bold">danb-humaan</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1925373?v=4" alt="dlawidjaja" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dlawidjaja" target="_blank" class="text-decoration-none fw-bold">dlawidjaja</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5244986?v=4" alt="marcobiedermann" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/marcobiedermann" target="_blank" class="text-decoration-none fw-bold">marcobiedermann</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1639302?v=4" alt="abishekrsrikaanth" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/abishekrsrikaanth" target="_blank" class="text-decoration-none fw-bold">abishekrsrikaanth</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3112309?v=4" alt="radarhere" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/radarhere" target="_blank" class="text-decoration-none fw-bold">radarhere</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1941131?v=4" alt="lee-karolczak" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lee-karolczak" target="_blank" class="text-decoration-none fw-bold">lee-karolczak</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/15611832?v=4" alt="LukasDrgon" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LukasDrgon" target="_blank" class="text-decoration-none fw-bold">LukasDrgon</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7217420?v=4" alt="marcofugaro" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/marcofugaro" target="_blank" class="text-decoration-none fw-bold">marcofugaro</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2058170?v=4" alt="nil1511" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nil1511" target="_blank" class="text-decoration-none fw-bold">nil1511</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/42605919?v=4" alt="synthels" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/synthels" target="_blank" class="text-decoration-none fw-bold">synthels</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+8 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
