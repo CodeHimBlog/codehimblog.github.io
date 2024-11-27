@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegas by Jaysalvat</title>
+    <meta name="description" content="Vegas is a jQuery/Zepto plugin to add beautiful backgrounds and Slideshows to DOM elements.">
+    <meta name="author" content="jaysalvat">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/vegas-by-jaysalvat.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Vegas</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Vegas",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Vegas</h1>
+        <p id="packageDescription" class="text-muted">Vegas is a jQuery/Zepto plugin to add beautiful backgrounds and Slideshows to DOM elements.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1803</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">82.37 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">459</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">20</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/jaysalvat/vegas/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/jaysalvat/vegas" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Vegas – Backgrounds and Slideshows</h1>
+<p><a href="https://badge.fury.io/js/vegas"><img src="https://badge.fury.io/js/vegas.svg" alt="NPM version" /></a><br />
+<a href="https://badge.fury.io/bo/vegas"><img src="https://badge.fury.io/bo/vegas.svg" alt="Bower version" /></a></p>
+<p>Vegas is a <a href="https://jquery.com">jQuery</a>/<a href="https://zeptojs.com">Zepto</a> plugin<br />
+to add beautiful backgrounds and Slideshows to DOM elements.</p>
+<p><strong>Important note:</strong> Vegas 2 is not a drop-in replacement for version 1.x. It's a brand new plugin.</p>
+<h4>Install</h4>
+<p>Download the <a href="https://jaysalvat.github.io/vegas/releases/latest/vegas.zip">last version</a>.</p>
+<p>Or use <a href="https://bower.io/">Bower</a>:</p>
+<pre><code>bower install vegas</code></pre>
+<p>Or use <a href="https://www.npmjs.org/">NPM</a>:</p>
+<pre><code>npm install vegas</code></pre>
+<h4>Get started</h4>
+<p>First, include either <a href="https://jquery.com">jQuery</a> or <a href="https://zeptojs.com">Zepto</a>.</p>
+<p>Then...</p>
+<pre><code>$(function() {
+    $('body').vegas({
+        slides: [
+            { src: 'img1.jpg' },
+            { src: 'img2.jpg' },
+            { src: 'img3.jpg' }
+        ]
+    });
+});</code></pre>
+<h3>Official website</h3>
+<p><a href="https://vegas.jaysalvat.com/">https://vegas.jaysalvat.com/</a></p>
+<h3>Sin City demo</h3>
+<p><a href="https://vegas.jaysalvat.com/demo/">https://vegas.jaysalvat.com/demo/</a></p>
+<h3>Documentation</h3>
+<p><a href="https://vegas.jaysalvat.com/documentation/">https://vegas.jaysalvat.com/documentation/</a></p>
+<h4>Looking for Vegas v1?</h4>
+<p>The <a href="http://v1.vegas.jaysalvat.com">Vegas v1 website</a> is still available but this version is not maintained anymore.</p>
+<h2>Contributing</h2>
+<p>Please don't edit files in the <code>dist</code> directory as they are generated via <a href="https://gulpjs.com">Gulp</a>.<br />
+You'll find source code in the <code>src</code> directory!</p>
+<p>Install dependencies.</p>
+<pre><code>npm install</code></pre>
+<p>Run watch task before editing code. </p>
+<pre><code>gulp watch</code></pre>
+<p>Regarding code style like indentation and whitespace, <strong>follow the conventions you see used in the source already.</strong></p>
+<h2>License</h2>
+<p><strong>The MIT License (MIT)</strong></p>
+<p>Copyright 2024 Jay Salvat</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy<br />
+of this software and associated documentation files (the &quot;Software&quot;), to deal<br />
+in the Software without restriction, including without limitation the rights<br />
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br />
+copies of the Software, and to permit persons to whom the Software is<br />
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in<br />
+all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br />
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br />
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br />
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br />
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br />
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br />
+THE SOFTWARE.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h1>Vegas jQuery Plugin</h1>
+<h2>CHANGE LOG</h2>
+<h3>Vegas 2.6.0 2024-07-30</h3>
+<ul>
+<li>Play video inline</li>
+</ul>
+<h3>Vegas 2.5.4 2021-01-30</h3>
+<ul>
+<li>Use relative URL for overlay image (Thanks paescuj)</li>
+</ul>
+<h3>Vegas 2.5.3 2020-12-18</h3>
+<ul>
+<li>Fix padding issue on Firefox (Thanks qzminski)</li>
+</ul>
+<h3>Vegas 2.5.1 2020-04-24</h3>
+<ul>
+<li>Fix the height of the container when Vegas is in a div</li>
+</ul>
+<h3>Vegas 2.5.0 2020-04-24</h3>
+<ul>
+<li>add metro 4 support</li>
+<li>Try to fix some responsive issues on Vegas in a div</li>
+</ul>
+<h3>Vegas 2.4.4 2018-10-30</h3>
+<ul>
+<li>Merge pull request #182 from davide93/patch-1</li>
+<li>Update README.md</li>
+<li>Update README.md http:// to https:// link.</li>
+</ul>
+<h3>Vegas 2.4.2 2018-09-18</h3>
+<ul>
+<li>Update dev packages</li>
+<li>Code formating</li>
+<li>Remove IOS7 css hack.</li>
+</ul>
+<h3>Vegas 2.4.1 2018-09-17</h3>
+<ul>
+<li>Optimise overlay png with tinypng</li>
+<li>Fix a glitch on blur transition effect</li>
+<li>Autplay Enabled - Jump to a specific slide fix</li>
+</ul>
+<h3>Vegas 2.4.0 2017-01-04</h3>
+<ul>
+<li>Add will-change CSS property to slides</li>
+<li>Add slidesToKeep option to set the number of slides kept behind the main slide</li>
+</ul>
+<h3>Vegas 2.3.1 2016-09-18</h3>
+<p>Fix slide src path names that contain blank characters</p>
+<h3>Vegas 2.3.0 2016-09-17</h3>
+<ul>
+<li>Add firstTransition and firstTransitionDuration options</li>
+<li>Add Loop option to settings and end callback</li>
+<li>Check image complete property in addition to onload before changing slide.</li>
+</ul>
+<h3>Vegas 2.2.1 2016-05-04</h3>
+<ul>
+<li>Fixed _random to match last item also</li>
+</ul>
+<h3>Vegas 2.2.0 2016-01-18</h3>
+<ul>
+<li>Add cover:repeat option to display background as tiled and not resized #75</li>
+</ul>
+<h3>Vegas 2.1.3 2015-04-28</h3>
+<ul>
+<li>Fix 'TypeError' on destroy #79</li>
+</ul>
+<h3>Vegas 2.1.2 2015-04-15</h3>
+<ul>
+<li>Fix #76 with video preloading issue</li>
+</ul>
+<h3>Vegas 2.1.1 2015-04-08</h3>
+<ul>
+<li>Fix overlay destruction #74 (sumomostudio)</li>
+</ul>
+<h3>Vegas 2.1.0 2015-04-02</h3>
+<ul>
+<li>Add <code>destroy</code> method</li>
+</ul>
+<h3>Vegas 2.0.5 2015-03-18</h3>
+<ul>
+<li>Remove video canplay event not triggered properly on Firefox</li>
+<li>Timer color set to neutral white by default</li>
+</ul>
+<h3>Vegas 2.0.4 2015-03-12</h3>
+<ul>
+<li>New video options mute and loop</li>
+<li>Enhance quick transition change</li>
+</ul>
+<h3>Vegas 2.0.3 2015-03-06</h3>
+<ul>
+<li>Restore missing overlays</li>
+</ul>
+<h3>Vegas 2.0.2 2015-03-06</h3>
+<ul>
+<li>Fix a bug with random transitions</li>
+<li>Remove Transition/Animation auto-detection</li>
+<li>Aad TransitionRegister/AnimationRegister options instead</li>
+</ul>
+<h3>Vegas 2.0.1 2015-03-05</h3>
+<ul>
+<li>Remove dev folder</li>
+</ul>
+<h3>Vegas 2.0.0 2015-03-05</h3>
+<ul>
+<li>Brand new Vegas V2</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/background" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>background</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/slideshow" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>slideshow</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/fullscreen" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>fullscreen</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/vegas" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>vegas</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/zepto" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>zepto</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/55496?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/jaysalvat" target="_blank" id="ownerName" class="sidebar-link">jaysalvat</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">April 21, 2011</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 6, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="http://vegas.jaysalvat.com" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>date-format (^3.0.0)</li><li>del (^6.1.1)</li><li>exec (^0.2.1)</li><li>gulp (^4.0.2)</li><li>gulp-autoprefixer (^7.0.1)</li><li>gulp-bump (^3.2.0)</li><li>gulp-cssmin (^0.2.0)</li><li>gulp-header (^2.0.9)</li><li>gulp-jshint (^2.1.0)</li><li>gulp-load-plugins (^2.0.8)</li><li>gulp-rename (^2.0.0)</li><li>gulp-replace (^1.1.4)</li><li>gulp-sass (^4.1.1)</li><li>gulp-sourcemaps (^3.0.0)</li><li>gulp-sync (^0.1.4)</li><li>gulp-uglify (^3.0.2)</li><li>gulp-util (^3.0.8)</li><li>gulp-zip (^5.1.0)</li><li>jshint (^2.13.6)</li><li>yargs (^16.2.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/55496?v=4" alt="jaysalvat" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jaysalvat" target="_blank" class="text-decoration-none fw-bold">jaysalvat</a><p class="mb-0 text-muted small">198 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3228835?v=4" alt="davide93" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/davide93" target="_blank" class="text-decoration-none fw-bold">davide93</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/365108?v=4" alt="olton" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/olton" target="_blank" class="text-decoration-none fw-bold">olton</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/676053?v=4" alt="sleepyboy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sleepyboy" target="_blank" class="text-decoration-none fw-bold">sleepyboy</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/143068?v=4" alt="basz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/basz" target="_blank" class="text-decoration-none fw-bold">basz</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/60777?v=4" alt="mrflix" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mrflix" target="_blank" class="text-decoration-none fw-bold">mrflix</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1741273?v=4" alt="hexplor" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hexplor" target="_blank" class="text-decoration-none fw-bold">hexplor</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1328308?v=4" alt="marcelweder" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/marcelweder" target="_blank" class="text-decoration-none fw-bold">marcelweder</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1027535?v=4" alt="ldbglobe" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ldbglobe" target="_blank" class="text-decoration-none fw-bold">ldbglobe</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5363448?v=4" alt="paescuj" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/paescuj" target="_blank" class="text-decoration-none fw-bold">paescuj</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7037958?v=4" alt="yahtnif" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/yahtnif" target="_blank" class="text-decoration-none fw-bold">yahtnif</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1423115?v=4" alt="hebbet" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hebbet" target="_blank" class="text-decoration-none fw-bold">hebbet</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9667758?v=4" alt="zackschuster" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zackschuster" target="_blank" class="text-decoration-none fw-bold">zackschuster</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+8 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
