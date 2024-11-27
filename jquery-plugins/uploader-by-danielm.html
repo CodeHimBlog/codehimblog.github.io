@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploader by Danielm</title>
+    <meta name="description" content="A lightweight and very configurable jQuery plugin for file uploading using ajax(a sync); includes support for queues, progress tracking and drag and drop.">
+    <meta name="author" content="danielm">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/uploader-by-danielm.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Uploader</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Uploader",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Uploader</h1>
+        <p id="packageDescription" class="text-muted">A lightweight and very configurable jQuery plugin for file uploading using ajax(a sync); includes support for queues, progress tracking and drag and drop.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1169</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.15 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">384</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">50</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/danielm/uploader/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/danielm/uploader" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery Ajax File Uploader Widget</h1>
+<p>A jQuery plugin for file uploading using ajax(a sync); includes support for queues, progress tracking and drag and drop.</p>
+<p>Very <strong><em>configurable</em></strong> and easy to adapt to any <strong><em>Frontend</em></strong> design, and very easy to work along side any backend logic.</p>
+<p>The focus will be <strong><em>modern browsers</em></strong>, but also providing a method to know when the plugin is not supported. The idea is to keep it simple and <strong><em>lightweight</em></strong>.</p>
+<p>Basic Javascript knowledge is necessary to setup this plugin: how to set settings, callback events, etc.</p>
+<ul>
+<li>Lightweight: ~8.00 KB </li>
+<li>Dependencies: just jQuery!</li>
+<li>License: Released under the <a href="LICENSE.txt">MIT license</a></li>
+</ul>
+<p><a href="https://travis-ci.org/danielm/uploader"><img src="https://travis-ci.org/danielm/uploader.svg?branch=master" alt="Build Status" /></a><br />
+<a href="http://badge.fury.io/js/dm-file-uploader"><img src="https://badge.fury.io/js/dm-file-uploader.svg" alt="npm version" /></a><br />
+<a href="http://badge.fury.io/bo/dm-file-uploader"><img src="https://badge.fury.io/bo/dm-file-uploader.svg" alt="Bower version" /></a></p>
+<h2>Live DEMOS</h2>
+<p>Check the live Demos here: <a href="https://danielmg.org/demo/java-script/uploader">https://danielmg.org/demo/java-script/uploader</a></p>
+<h2>Table of contents</h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#migration-from-v0xx">Migration from v0.x.x</a></li>
+<li><a href="#usage">Usage</a>
+<ul>
+<li><a href="#example-markup">Markup</a></li>
+<li><a href="#initialization">Initialization</a></li>
+</ul></li>
+<li><a href="#options">Options</a></li>
+<li><a href="#callbacks">Callbacks</a></li>
+<li><a href="#methods">Methods</a></li>
+</ul>
+<h2>Installation</h2>
+<h3>NPM</h3>
+<pre class="prettyprint linenums lang-language"><code>npm install dm-file-uploader --save</code></pre>
+<h3>Bower</h3>
+<pre class="prettyprint linenums lang-language"><code>bower install dm-file-uploader --save</code></pre>
+<h3>Download tarball</h3>
+<p>You can download the latest release tarball directly from <a href="https://github.com/danielm/uploader/releases">releases</a></p>
+<h3>Git</h3>
+<pre class="prettyprint linenums lang-language"><code>git clone https://github.com/danielm/uploader.git</code></pre>
+<h2>Migration from v0.x.x</h2>
+<p>1.x.x got a lot of changes and new features, if you are a previous version user read <a href="CHANGELOG.md">CHANGELOG.md</a>, there you can find the specific details of what was changed or removed.</p>
+<h2>Usage</h2>
+<p>As shown in the demos there are many ways to use the plugin, but the basic concepts are:</p>
+<ul>
+<li>Initialize the plugin on any HTML element such as: <code><code>&lt;div /&gt;</code></code> to provide a Drag and drop area.</li>
+<li>All <code><code>&lt;input type="file"/&gt;</code></code> inside the main area element will be bound too.</li>
+<li>Optionally you can bind it directly to the <code><code>&lt;input /&gt;</code></code></li>
+</ul>
+<h3>Example Markup</h3>
+<p>This is the simple html markup. The file input is optional but it provides an alternative way to select files for the user(check the online demo to se how to hide/style it)</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div id="drop-area"&gt;
+  &lt;h3&gt;Drag and Drop Files Here&lt;h3/&gt;
+  &lt;input type="file" title="Click to add Files"&gt;
+&lt;/div&gt;</code></pre>
+<h3>Initialization</h3>
+<pre class="prettyprint linenums lang-language"><code>   &lt;script src="/path/to/jquery.dm-uploader.min.js"&gt;&lt;/script&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>$("#drop-area").dmUploader({
+  url: '/path/to/backend/upload.asp',
+  //... More settings here...
+
+  onInit: function(){
+    console.log('Callback: Plugin initialized');
+  }
+
+  // ... More callbacks
+});</code></pre>
+<p>Down below there is a detailed list of all available <a href="#options">Options</a> and <a href="#callbacks">Callbacks</a>.</p>
+<p>Additionally, after initialization you can use any of the available <a href="#methods">Methods</a> to interact with the plugin.</p>
+<h2>Options</h2>
+<ul>
+<li>
+<p><strong>queue</strong>: (boolean) <code>Default true</code> Files will upload one by one.</p>
+</li>
+<li>
+<p><strong>auto</strong>: (boolean) <code>Default true</code> Files will start uploading right after they are added.<br />
+If using the <code>queue</code> system this option means the <code>queue</code> will start automatically after the first file is added.</p>
+<p>Setting this to <code>false</code> will require you to manually start the uploads using the API <a href="#methods">Methods</a>.</p>
+</li>
+<li>
+<p><strong>dnd</strong>: (boolean) <code>Default true</code> Enables Drag and Drop.</p>
+</li>
+<li>
+<p><strong>hookDocument</strong>: (boolean) <code>Default true</code> Disables dropping files on $(document).</p>
+<p><strong>This is necessary</strong> to prevent the Browser from redirecting when dropping files.</p>
+<p>The only reason why you may want to disable it is when using multiple instances of the plugin. If that's the case you only need to use it <strong>once</strong>.</p>
+</li>
+<li>
+<p><strong>multiple</strong>: (boolean) <code>Default true</code> Allows the user to select or drop multiple files at the same time.</p>
+</li>
+<li>
+<p><strong>url</strong>: (string) <code>Default document.URL</code> Server URL to handle file uploads (backend logic).</p>
+</li>
+<li>
+<p><strong>method</strong>: (string) <code>Default POST</code> HTTP method used by the upload request.</p>
+</li>
+<li>
+<p><strong>extraData</strong>: (object/function) Collection of parameters to add in the upload request.</p>
+<pre class="prettyprint linenums lang-language"><code>// Example
+extraData: {
+  "galleryid": 666
+}</code></pre>
+<p>If you need a dynamic value this can be set as a <code>function</code>. Also, if this function returns <code>false</code> nothing will be added.</p>
+<pre class="prettyprint linenums lang-language"><code>// Example
+extraData: function() {
+  return {
+    "galleryid": $('#gallery').val()
+  };
+}</code></pre>
+</li>
+<li>
+<p><strong>headers</strong>: (object) Collection of headers to send in the upload request.</p>
+<pre class="prettyprint linenums lang-language"><code>// Example
+headers: {
+  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+}</code></pre>
+</li>
+<li>
+<p><strong>dataType</strong>: (string) <code>Default null</code> Response type of the upload request.</p>
+<p>Default is <code>null</code> which means jQuery will try to 'guess' depending of what the server returns.</p>
+<p>Other values can be: <code>xml</code>, <code>json</code>, <code>script</code>, <code>html</code> or <code>text</code></p>
+<p>Reference: <a href="http://api.jquery.com/jquery.ajax/">http://api.jquery.com/jquery.ajax/</a></p>
+</li>
+<li>
+<p><strong>fieldName</strong>: (string) <code>Default 'file'</code> Field name in the upload request where we 'attach' the file.</p>
+<pre class="prettyprint linenums lang-language"><code>// For example in PHP if using the default value you can access the file by using:
+var_dump($_FILES['file']);
+// 'file' correspond to the value of this option.</code></pre>
+</li>
+<li>
+<p><strong>maxFileSize</strong>: (integer) <code>Default 0</code> File validation: Max file size in bytes. Zero means no limit.</p>
+<pre class="prettyprint linenums lang-language"><code>maxFileSize: 3000000 // 3 Megs</code></pre>
+</li>
+<li>
+<p><strong>allowedTypes</strong>: (string) <code>Default "*"</code> File validation: Regular expression to match file mime-type.</p>
+<pre class="prettyprint linenums lang-language"><code>allowedTypes: "image/*"</code></pre>
+</li>
+<li>
+<p><strong>extFilter</strong>: (array) <code>Default null</code> File validation: Array of allowed extensions.</p>
+<pre class="prettyprint linenums lang-language"><code>extFilter: ["jpg", "jpeg", "png", "gif"]</code></pre>
+</li>
+</ul>
+<h2>Callbacks</h2>
+<h3>General purpose</h3>
+<ul>
+<li>
+<p><strong>onInit</strong>: () Widget it's ready to use.</p>
+</li>
+<li>
+<p><strong>onFallbackMode</strong>: () Triggers only when the browser is not supported by the plugin.</p>
+</li>
+<li>
+<p><strong>onDragEnter</strong>: () User is dragging files over the drop Area.</p>
+</li>
+<li>
+<p><strong>onDragLeave</strong>: () User left the drop Area.</p>
+<p>This also triggers when the files are dropped.</p>
+</li>
+<li>
+<p><strong>onDocumentDragEnter</strong>: () User is dragging files anywhere over the $(document)</p>
+</li>
+<li>
+<p><strong>onDocumentDragLeave</strong>: () User left the $(document) area.</p>
+<p>This also triggers when the files are dropped.</p>
+</li>
+<li>
+<p><strong>onComplete</strong>: () All pending files are completed. </p>
+<p>Only applies when using <code>queue: true</code>. See <a href="#options">options</a>.</p>
+<p>Triggers when the queue reaches the end (even if some files were cancelled or gave any error).</p>
+</li>
+</ul>
+<h3>File callbacks</h3>
+<p>All these include <code>id</code></p>
+<p><code>id</code> (string): Unique ID. Useful to identify the same file in subsequent callbacks.</p>
+<ul>
+<li>
+<p><strong>onNewFile</strong>: (id, file) A new file was selected or dropped by the user.</p>
+<ul>
+<li>
+<p><code>file</code> (object): File object, use it to access file details such as name, size, etc.</p>
+<p>For <a href="https://developer.mozilla.org/en-US/docs/Web/API/File">reference click here</a>.</p>
+</li>
+<li>
+<p>If multiple are added, this gets called multiple times.</p>
+</li>
+<li>
+<p>File validations were already executed.</p>
+</li>
+<li>
+<p>If a return value is provided and is <code>=== false</code> the file will be ignored by the widget.</p>
+</li>
+<li>
+<p>Use this return value to implement your own validators.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>onBeforeUpload</strong>: (id) Upload request is about to be executed.</p>
+</li>
+<li>
+<p><strong>onUploadProgress</strong>: (id, percent) Got a new upload percentage for the file</p>
+<p><code>percent</code> (integer) : 0-100</p>
+</li>
+<li>
+<p><strong>onUploadSuccess</strong>: (id, data) File was successfully uploaded and got a response form the server</p>
+<p><code>data</code> (object) : Upload request response. The object type of this parameter depends of: <code>dataType</code> </p>
+<p>See more in <a href="#options">options</a>.</p>
+</li>
+<li>
+<p><strong>onUploadError</strong>: (id, xhr, status, errorThrown) An error happened during the upload request.</p>
+<p><code>xhr</code> (object) : XMLHttpRequest</p>
+<p><code>status</code> (integer) : Error type, example: &quot;timeout&quot;, &quot;error&quot;, &quot;abort&quot;, and &quot;parsererror&quot;</p>
+<p><code>errorThrown</code> (string) : Only when an HTTP error occurs: <code>Not Found</code>, <code>Bad Request</code>, etc.</p>
+<p>Reference: <a href="http://api.jquery.com/jquery.ajax/">http://api.jquery.com/jquery.ajax/</a></p>
+</li>
+<li>
+<p><strong>onUploadComplete</strong>: (id) The upload of the file was complete.</p>
+<p>This triggers right after <code>onUploadSuccess</code> or <code>onUploadError</code>. In <strong>both</strong> cases.</p>
+</li>
+<li>
+<p><strong>onUploadCanceled</strong>: (id) Upload was cancelled by the user.</p>
+<p>This one triggers when cancelling an upload using one of the API methods.</p>
+<p>See more in <a href="#methods">methods</a>.</p>
+</li>
+</ul>
+<h3>Validation callbacks</h3>
+<ul>
+<li>
+<p><strong>onFileTypeError</strong>: (file) File type validation failed.</p>
+<p>Triggers when using the setting: <code>allowedTypes</code>.</p>
+<p>See more in <a href="#options">options</a>.</p>
+</li>
+<li>
+<p><strong>onFileSizeError</strong>: (file) File size validation failed.</p>
+<p>Triggers when using the setting: <code>maxFileSize</code>.</p>
+<p>See more in <a href="#options">options</a>.</p>
+</li>
+<li>
+<p><strong>onFileExtError</strong>: (file) File extension validation failed.</p>
+<p>Triggers when using the setting: <code>extFilter</code>.</p>
+<p>See more in <a href="#options">options</a>.</p>
+</li>
+</ul>
+<h2>Methods</h2>
+<p>There are a few methods you can use to interact with the widget, some of their behavior may depend on settings.</p>
+<ul>
+<li>
+<p><strong>start</strong>: (id) Start the upload. (id is optional)</p>
+<p>Depending on the situation this method may do:</p>
+<ul>
+<li>Start the upload of an individual file if an <code>id</code> was provided and there isn't a <code>queue</code> running.</li>
+<li>Retry a failed or a previously cancelled file.</li>
+<li>Start the queue if <code>auto</code> is set to <code>false</code> and no <code>id</code> is provided</li>
+<li>Start ALL the pending files if <code>queue</code> is set to false <code>false</code></li>
+</ul>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$("#drop-area").dmUploader("start", id);</code></pre>
+</li>
+<li>
+<p><strong>cancel</strong>: (id) Cancel the upload. (id is optional)</p>
+<p>Depending on the situation this method may do:</p>
+<ul>
+<li>Cancel a file that is currently uploading if an <code>id</code> is provided.</li>
+<li>Cancel all currently uploading files if an <code>id</code> is NOT provided.</li>
+<li>Cancel a pending file, and it it will be skipped by the <code>queue</code> if using that option</li>
+<li>Stop the current <code>queue</code> if using that option, and all current uploads.</li>
+</ul>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$("#drop-area").dmUploader("cancel", id);</code></pre>
+</li>
+<li>
+<p><strong>reset</strong>: () Resets the plugin</p>
+<ul>
+<li>Stops all uploads</li>
+<li>Removes all files</li>
+<li>Resets queue</li>
+</ul>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$("#drop-area").dmUploader("reset");</code></pre>
+</li>
+<li>
+<p><strong>destroy</strong>: () Destroys all plugin data</p>
+<ul>
+<li>Stops all uploads</li>
+<li>Removes all files</li>
+<li>Releases all the events, including the ones used by <code>hookDocument</code> if using that option</li>
+</ul>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>// Example
+$("#drop-area").dmUploader("destroy");</code></pre>
+</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h2>1.0.1</h2>
+<ul>
+<li>
+<p>The big change on this version is that now we have different modes.</p>
+<ul>
+<li>Depending on the new options: <code>auto</code> and <code>queue</code> is how the plugin handles the uploads.</li>
+<li>Uploads may or may not start automatically depending on those settings.</li>
+<li>The plugin behaves the same way (as in previous versions) if using the default settings</li>
+<li>Check the online demos to see the different modes: <a href="https://danielmg.org/demo/java-script/uploader">https://danielmg.org/demo/java-script/uploader</a></li>
+</ul>
+</li>
+<li>
+<p>Plugin API</p>
+<p>After initialization now we have a few public Methods to interact with the plugin.</p>
+<ul>
+<li><code>start</code></li>
+<li><code>cancel</code></li>
+<li><code>reset</code></li>
+<li><code>destroy</code></li>
+</ul>
+</li>
+</ul>
+<p>See <a href="README.md#methods">methods section</a> for details on each.</p>
+<ul>
+<li>
+<p>New options</p>
+<ul>
+<li><code>auto</code>, <code>queue</code>, <code>dnd</code>, <code>hookDocument</code>, <code>multiple</code>, <code>headers</code></li>
+</ul>
+</li>
+<li>
+<p>Options changed</p>
+<ul>
+<li><code>fieldName</code> Renamed. Previously known as <code>fileName</code> (was removed)</li>
+<li><code>extFilter</code> Now is an Array: Example  <code>['png','jpg','gif','jpeg']</code></li>
+<li><code>extraData</code> Now it can ALSO be a function, useful for example you need dynamic values.</li>
+</ul>
+</li>
+<li>
+<p>Options removed</p>
+<ul>
+<li><code>fileName</code> renamed to <code>fileName</code></li>
+<li><code>maxFiles</code> Functionality removed.</li>
+</ul>
+<p>Users expected diferent things from it (completed uploads, or files added, or some more dynamic stuff)</p>
+<p>Good news is that NOW you can implement your own validation checks now on the <code>onNewFile</code> callback.</p>
+</li>
+</ul>
+<p>See <a href="README.md#options">options section</a> for details</p>
+<ul>
+<li>
+<p>Callbacks changed</p>
+<ul>
+<li><code>onNewFile</code> If a return value is provided and is <code>=== false</code> the file will be ignored by the widget.</li>
+</ul>
+<p>Use this to implement your own validators.</p>
+<ul>
+<li><code>onBeforeUpload</code> The return value is now ignored. Use <code>onNewFile</code> instead.</li>
+<li><code>onUploadError</code>  New paramters xhr and status: <code>(id, xhr, status, message)</code></li>
+<li><code>onFallbackMode</code> - Parameter <code>message</code> was removed</li>
+</ul>
+</li>
+<li>
+<p>New callbacks</p>
+<ul>
+<li><code>onUploadComplete</code> This triggers right after <code>onUploadSuccess</code> or <code>onUploadError</code>. In <strong>both</strong> cases.</li>
+<li><code>onUploadCanceled</code> Triggers after a pending or uploading file is canceled (by using one of the API (README.md#methods))</li>
+<li><code>onDragEnter</code></li>
+<li><code>onDragLeave</code></li>
+<li><code>onDocumentDragEnter</code></li>
+<li><code>onDocumentDragLeave</code></li>
+</ul>
+</li>
+<li>
+<p>Callbacks removed</p>
+<ul>
+<li><code>onFilesMaxError</code> Functionality removed. Check the options cheanges for the reasons behind this change.</li>
+</ul>
+</li>
+</ul>
+<p>See <a href="README.md#callbacks">callbacks section</a> for details</p>
+<h2>0.1.2</h2>
+<ul>
+<li>Added option for pre-submit file extension validation. View doc: extFilter/onFileExtError</li>
+<li>Added option for pre-submit maxFiles validation. View doc: maxFiles/onFilesMaxError</li>
+<li>Fixed several typos / code example errors.</li>
+</ul>
+<h2>0.1.1</h2>
+<ul>
+<li>Project moved to Github.</li>
+</ul>
+<h2>0.1.0</h2>
+<ul>
+<li>Initial release.</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/ajax" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>ajax</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/dnd" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>dnd</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/drag" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>drag</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/drop" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>drop</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/file" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>file</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/forms" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>forms</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/lightweight" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>lightweight</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/multiple" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>multiple</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/progress" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>progress</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/queue" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>queue</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/upload" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>upload</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/widget" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>widget</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/57096?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/danielm" target="_blank" id="ownerName" class="sidebar-link">danielm</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">February 10, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 16, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://danielmg.org/demo/java-script/uploader" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.7.0)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (^1.0.1)</li><li>grunt-contrib-cssmin (^2.2.1)</li><li>grunt-contrib-jshint (^1.1.0)</li><li>grunt-contrib-uglify (^3.3.0)</li><li>grunt-contrib-watch (^1.0.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/57096?v=4" alt="danielm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/danielm" target="_blank" class="text-decoration-none fw-bold">danielm</a><p class="mb-0 text-muted small">49 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4100241?v=4" alt="voidabhi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/voidabhi" target="_blank" class="text-decoration-none fw-bold">voidabhi</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/66627909?v=4" alt="kauegimenes" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kauegimenes" target="_blank" class="text-decoration-none fw-bold">kauegimenes</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5858057?v=4" alt="dellert" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dellert" target="_blank" class="text-decoration-none fw-bold">dellert</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3905501?v=4" alt="bryant1410" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bryant1410" target="_blank" class="text-decoration-none fw-bold">bryant1410</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/14281228?v=4" alt="naprstek" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/naprstek" target="_blank" class="text-decoration-none fw-bold">naprstek</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/14522744?v=4" alt="orthographic-pedant" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/orthographic-pedant" target="_blank" class="text-decoration-none fw-bold">orthographic-pedant</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+2 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
