@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Powerful jQuery Wizard Plugin That Supports Accessibility and Html5.</title>
+    <meta name="description" content="jquery-steps by rstaib. A powerful jQuery wizard plugin that supports accessibility and HTML5.">
+    <meta name="author" content="rstaib">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-steps-by-rstaib.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Steps</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Steps",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Steps</h1>
+        <p id="packageDescription" class="text-muted">A powerful jQuery wizard plugin that supports accessibility and HTML5.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1690</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">17.04 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">778</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">253</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/rstaib/jquery-steps/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/rstaib/jquery-steps" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery Steps Plugin <a href="https://travis-ci.org/rstaib/jquery-steps"><img src="https://travis-ci.org/rstaib/jquery-steps.svg?branch=master" alt="Build Status" /></a> <a href="http://badge.fury.io/bo/jquery.steps"><img src="https://badge.fury.io/bo/jquery.steps.svg" alt="Bower version" /></a> <a href="http://badge.fury.io/nu/jquery.steps"><img src="https://badge.fury.io/nu/jquery.steps.svg" alt="NuGet version" /></a></h1>
+<p>A powerful jQuery wizard plugin that supports accessibility and HTML5.</p>
+<h2>Getting Started</h2>
+<p><strong>jQuery Steps</strong> is a lightweight wizard UI component written for <strong>jQuery</strong>.</p>
+<p>Everything you need to start is:</p>
+<ol>
+<li>Include <strong>jQuery</strong> and <strong>jQuery Steps</strong> in your HTML code.</li>
+<li>Then select an element represents the wizard and call the <code>steps</code> method.</li>
+</ol>
+<pre class="prettyprint linenums lang-language"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Demo&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;script src="jquery.js"&gt;&lt;/script&gt; 
+        &lt;script src="jquery.steps.js"&gt;&lt;/script&gt;
+        &lt;link href="jquery.steps.css" rel="stylesheet"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script&gt;
+            $("#wizard").steps();
+        &lt;/script&gt;
+        &lt;div id="wizard"&gt;&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<blockquote>
+<p>For more information <a href="https://github.com/rstaib/jquery-steps/wiki">check the documentation</a>.</p>
+</blockquote>
+<h3>How to add initial steps?</h3>
+<p>There are two ways to add steps and their corresponding content.</p>
+<ol>
+<li>Add HTML code into the representing wizard element.</li>
+</ol>
+<pre class="prettyprint linenums lang-language"><code>&lt;div id="wizard"&gt;
+    &lt;h1&gt;First Step&lt;/h1&gt;
+    &lt;div&gt;First Content&lt;/div&gt;
+
+    &lt;h1&gt;Second Step&lt;/h1&gt;
+    &lt;div&gt;Second Content&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<ol start="2">
+<li>Or use the API to add steps dynamically.</li>
+</ol>
+<pre class="prettyprint linenums lang-language"><code>// Initialize wizard
+var wizard = $("#wizard").steps();
+
+// Add step
+wizard.steps("add", {
+    title: "HTML code", 
+    content: "&lt;strong&gt;HTML code&lt;/strong&gt;"
+});</code></pre>
+<blockquote>
+<p>For more samples <a href="https://github.com/rstaib/jquery-steps/wiki#demo">check the demos</a>.</p>
+</blockquote>
+<h2>Reporting an Issue</h2>
+<p>Instructions will follow soon!</p>
+<h2>Asking questions</h2>
+<p>I'm always happy to help answer your questions. The best way to get quick answers is to go to <a href="http://stackoverflow.com">stackoverflow.com</a> and tag your questions always with <strong>jquery-steps</strong>.</p>
+<h2>Contributing</h2>
+<p>Instructions will follow soon!</p>
+<h2>License</h2>
+<p>Copyright (c) 2013 Rafael J. Staib Licensed under the <a href="https://github.com/rstaib/jquery-steps/blob/master/LICENSE.txt">MIT license</a>.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h1>Changelog</h1>
+<h2>1.1.0</h2>
+<ul>
+<li>Added event <code>onInit</code> which is fired when the component is completely initialized. Closes issue <a href="https://github.com/rstaib/jquery-steps/issues/80">#80</a></li>
+<li>Added event <code>onContentLoaded</code> which is fired when the step content is loaded (only in async cases relevant) Closes issue <a href="https://github.com/rstaib/jquery-steps/issues/88">#88</a> and <a href="https://github.com/rstaib/jquery-steps/issues/97">#97</a></li>
+</ul>
+<h2>1.0.8</h2>
+<ul>
+<li>Fixed issue <a href="https://github.com/rstaib/jquery-steps/issues/91">#91</a> (<code>stepChanged</code> event is fired before transitions are done)</li>
+</ul>
+<h2>1.0.7</h2>
+<ul>
+<li>Small fix. Closes issue <a href="https://github.com/rstaib/jquery-steps/issues/58">#58</a></li>
+<li>Set the default value of <code>enableCancelButton</code> for backward compatibility reasons to <code>false</code></li>
+</ul>
+<h2>1.0.6</h2>
+<ul>
+<li>Small fix. Closes issue <a href="https://github.com/rstaib/jquery-steps/issues/56">#56</a></li>
+</ul>
+<h2>1.0.5</h2>
+<ul>
+<li>Added a cancel button</li>
+<li>Fixed a bug regarding adding steps dynamically. Closes issue <a href="https://github.com/rstaib/jquery-steps/issues/56">#56</a></li>
+</ul>
+<h2>1.0.4</h2>
+<ul>
+<li>Fixed an issue regarding currentIndex on finish and finished event. Closes issue <a href="https://github.com/rstaib/jquery-steps/issues/24">#24</a> and <a href="https://github.com/rstaib/jquery-steps/issues/33">#33</a></li>
+</ul>
+<h2>1.0.3</h2>
+<ul>
+<li>Adding an id to the outer control wrapper tag will have as of now an impact on the internal uniqueid handling and therefore to the sub tag ids as well</li>
+</ul>
+<h2>1.0.2</h2>
+<ul>
+<li>Add destroy method to remove the control functionality completely</li>
+</ul>
+<h2>1.0.1</h2>
+<ul>
+<li>Fixed an iframe border and scrolling issue for older browsers (IE8 and lower)</li>
+</ul>
+<h2>1.0.0</h2>
+<ul>
+<li>Nested tags which have the same node name as the body tag cause an exception. Closes issue <a href="https://github.com/rstaib/jquery-steps/issues/4">#4</a></li>
+<li>Separated data and UI changes from each other and improved code for testability</li>
+<li>Optimized code for better minification</li>
+<li>Configurable clearfix css class</li>
+<li>Vertical step navigation (default: horizontal)</li>
+<li>Removed <code>"use strict";</code> because of an ASP.Net tracing issue related to FF (see jQuery ticket: #13335)</li>
+</ul>
+<h2>0.9.7</h2>
+<ul>
+<li>On finish failed the last step button does not become highlighted as error. Closes issue <a href="https://github.com/rstaib/jquery-steps/issues/3">#3</a></li>
+<li>Advanced accessibility support (WAI-ARIA)</li>
+<li>Replace Number() by parseInt() for parsing <code>string</code> to <code>int</code> values</li>
+<li>Add <code>"use strict";</code> and some other recommended things like the leading <code>;</code></li>
+<li>Substitute <code>ol</code> by <code>ul</code> tag for step navigation</li>
+<li>Improve performance due to code refactoring</li>
+</ul>
+<h2>0.9.6</h2>
+<ul>
+<li>Make css class for the outer component wrapper editable</li>
+<li>Add saveState option flag to enable/disable state persistence (saves last active step position)</li>
+<li>Add current class to step title and body for convinient css targeting <a href="https://github.com/rstaib/jquery-steps/issues/2">#2</a></li>
+<li>Add a bugfix related to the <code>startIndex</code> property</li>
+<li>Add a bugfix related to focusing after step changes</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/jQuery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jQuery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/Wizard" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>Wizard</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/Tabs" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>Tabs</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/Steps" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>Steps</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/Plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>Plugin</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/4325318?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/rstaib" target="_blank" id="ownerName" class="sidebar-link">rstaib</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">May 2, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 15, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://www.jquery-steps.com" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (~0.4.1)</li><li>grunt-cli (~0.1.9)</li><li>grunt-contrib-qunit (~0.2.1)</li><li>grunt-contrib-jshint (~0.4.3)</li><li>grunt-contrib-uglify (~0.2.0)</li><li>grunt-contrib-concat (~0.3.0)</li><li>grunt-contrib-yuidoc (~0.4.0)</li><li>grunt-contrib-clean (~0.4.1)</li><li>grunt-contrib-compress (~0.5.2)</li><li>grunt-regex-replace (~0.2.5)</li><li>grunt-exec (~0.4.2)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4325318?v=4" alt="rstaib" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rstaib" target="_blank" class="text-decoration-none fw-bold">rstaib</a><p class="mb-0 text-muted small">41 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4380258?v=4" alt="civico92" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/civico92" target="_blank" class="text-decoration-none fw-bold">civico92</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
