@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datepicker by Fengyuanchen</title>
+    <meta name="description" content="⚠️ [Deprecated] No longer maintained. A simple jQuery datepicker plugin.">
+    <meta name="author" content="fengyuanchen">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/datepicker-by-fengyuanchen.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Datepicker</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Datepicker",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Datepicker</h1>
+        <p id="packageDescription" class="text-muted">⚠️ [Deprecated] No longer maintained. A simple jQuery datepicker plugin.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1166</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.46 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">536</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">32</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/fengyuanchen/datepicker/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/fengyuanchen/datepicker" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Datepicker</h1>
+<p><a href="https://travis-ci.org/fengyuanchen/datepicker"><img src="https://img.shields.io/travis/fengyuanchen/datepicker.svg" alt="Build Status" /></a> <a href="https://www.npmjs.com/package/@chenfengyuan/datepicker"><img src="https://img.shields.io/npm/dm/@chenfengyuan/datepicker.svg" alt="Downloads" /></a> <a href="https://www.npmjs.com/package/@chenfengyuan/datepicker"><img src="https://img.shields.io/npm/v/@chenfengyuan/datepicker.svg" alt="Version" /></a></p>
+<blockquote>
+<p>A simple jQuery datepicker plugin.</p>
+</blockquote>
+<ul>
+<li><a href="https://fengyuanchen.github.io/datepicker">Website</a></li>
+</ul>
+<h2>Table of contents</h2>
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#main">Main</a></li>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#options">Options</a></li>
+<li><a href="#methods">Methods</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#i18n">I18n</a></li>
+<li><a href="#no-conflict">No conflict</a></li>
+<li><a href="#browser-support">Browser support</a></li>
+<li><a href="#versioning">Versioning</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>Features</h2>
+<ul>
+<li>Supports <a href="#options">options</a></li>
+<li>Supports <a href="#methods">methods</a></li>
+<li>Supports <a href="#events">events</a></li>
+<li>Supports inline mode</li>
+<li>Supports touch (mobile)</li>
+<li>Supports internationalization</li>
+<li>Cross-browser support</li>
+</ul>
+<h2>Main</h2>
+<pre class="prettyprint linenums lang-language"><code>dist/
+├── datepicker.css
+├── datepicker.min.css   (compressed)
+├── datepicker.js        (UMD)
+├── datepicker.min.js    (UMD, compressed)
+├── datepicker.common.js (CommonJS, default)
+└── datepicker.esm.js    (ES Module)</code></pre>
+<h2>Getting started</h2>
+<h3>Install</h3>
+<pre class="prettyprint linenums lang-language"><code>npm install @chenfengyuan/datepicker</code></pre>
+<p>Include files:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="/path/to/jquery.js"&gt;&lt;/script&gt;&lt;!-- jQuery is required --&gt;
+&lt;link  href="/path/to/datepicker.css" rel="stylesheet"&gt;
+&lt;script src="/path/to/datepicker.js"&gt;&lt;/script&gt;</code></pre>
+<h3>Usage</h3>
+<p>Initialize with <code>$.fn.datepicker</code> method.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;input data-toggle="datepicker"&gt;
+&lt;textarea data-toggle="datepicker"&gt;&lt;/textarea&gt;
+&lt;div data-toggle="datepicker"&gt;&lt;/div&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>$('[data-toggle="datepicker"]').datepicker();</code></pre>
+<p><a href="#table-of-contents">⬆ back to top</a></p>
+<h2>Options</h2>
+<p>You may set datepicker options with <code>$().datepicker(options)</code>.<br />
+If you want to change the global default options, You may use <code>$.fn.datepicker.setDefaults(options)</code>.</p>
+<h3>autoShow</h3>
+<ul>
+<li>Type: <code>Boolean</code></li>
+<li>Default: <code>false</code></li>
+</ul>
+<p>Show the datepicker automatically when initialized.</p>
+<h3>autoHide</h3>
+<ul>
+<li>Type: <code>Boolean</code></li>
+<li>Default: <code>false</code></li>
+</ul>
+<p>Hide the datepicker automatically when picked.</p>
+<h3>autoPick</h3>
+<ul>
+<li>Type: <code>Boolean</code></li>
+<li>Default: <code>false</code></li>
+</ul>
+<p>Pick the initial date automatically when initialized.</p>
+<h3>inline</h3>
+<ul>
+<li>Type: <code>Boolean</code></li>
+<li>Default: <code>false</code></li>
+</ul>
+<p>Enable inline mode.</p>
+<p>If the element is not an input element, will append the datepicker to the element.<br />
+If the <code>container</code> option is set, will append the datepicker to the container.</p>
+<h3>container</h3>
+<ul>
+<li>Type: <code>Element</code> or <code>String</code>(selector)</li>
+<li>Default: <code>null</code></li>
+</ul>
+<p>A element for putting the datepicker. If not set, the datepicker will be appended to <code>document.body</code> by default.</p>
+<blockquote>
+<p>Only works when the <code>inline</code> option set to <code>true</code>.</p>
+</blockquote>
+<h3>trigger</h3>
+<ul>
+<li>Type: <code>Element</code> or <code>String</code>(selector)</li>
+<li>Default: <code>null</code></li>
+</ul>
+<p>A element for triggering the datepicker.</p>
+<h3>language</h3>
+<ul>
+<li>Type: <code>String</code></li>
+<li>Default: <code>''</code></li>
+</ul>
+<p>The ISO language code. If not set, will use the built-in language (<code>en-US</code>) by default.</p>
+<blockquote>
+<p>You should define the language first. View the <a href="#i18n">I18n</a> section for more information or check out the <a href="i18n"><code>i18n</code></a> folder for available languages.</p>
+</blockquote>
+<pre class="prettyprint linenums lang-language"><code>$().datepicker({
+  language: 'en-GB'
+});</code></pre>
+<h3>format</h3>
+<ul>
+<li>Type: <code>String</code></li>
+<li>Default: <code>'mm/dd/yyyy'</code></li>
+<li>Available date placeholders:
+<ul>
+<li>Year: <code>yyyy</code>, <code>yy</code></li>
+<li>Month: <code>mm</code>, <code>m</code></li>
+<li>Day: <code>dd</code>, <code>d</code></li>
+</ul></li>
+</ul>
+<p>The date string format.</p>
+<pre class="prettyprint linenums lang-language"><code>$().datepicker({
+  format: 'yyyy-mm-dd'
+});</code></pre>
+<h3>date</h3>
+<ul>
+<li>Type: <code>Date</code> or <code>String</code></li>
+<li>Default: <code>null</code></li>
+</ul>
+<p>The initial date. If not set, will use the current date by default.</p>
+<pre class="prettyprint linenums lang-language"><code>$().datepicker({
+  date: new Date(2014, 1, 14) // Or '02/14/2014'
+});</code></pre>
+<h3>startDate</h3>
+<ul>
+<li>Type: <code>Date</code> or <code>String</code></li>
+<li>Default: <code>null</code></li>
+</ul>
+<p>The start view date. All the dates before this date will be disabled.</p>
+<h3>endDate</h3>
+<ul>
+<li>Type: <code>Date</code> or <code>String</code></li>
+<li>Default: <code>null</code></li>
+</ul>
+<p>The end view date. All the dates after this date will be disabled.</p>
+<h3>startView</h3>
+<ul>
+<li>Type: <code>Number</code></li>
+<li>Default: <code>0</code></li>
+<li>Options:
+<ul>
+<li><code>0</code>: days</li>
+<li><code>1</code>: months</li>
+<li><code>2</code>: years</li>
+</ul></li>
+</ul>
+<p>The start view when initialized.</p>
+<h3>weekStart</h3>
+<ul>
+<li>Type: <code>Number</code></li>
+<li>Default: <code>0</code></li>
+<li>Options:
+<ul>
+<li><code>0</code>: Sunday</li>
+<li><code>1</code>: Monday</li>
+<li><code>2</code>: Tuesday</li>
+<li><code>3</code>: Wednesday</li>
+<li><code>4</code>: Thursday</li>
+<li><code>5</code>: Friday</li>
+<li><code>6</code>: Saturday</li>
+</ul></li>
+</ul>
+<p>The start day of the week.</p>
+<h3>yearFirst</h3>
+<ul>
+<li>Type: <code>Boolean</code></li>
+<li>Default: <code>false</code></li>
+</ul>
+<p>Show year before month on the datepicker header</p>
+<h3>yearSuffix</h3>
+<ul>
+<li>Type: <code>String</code></li>
+<li>Default: <code>''</code></li>
+</ul>
+<p>A string suffix to the year number.</p>
+<pre class="prettyprint linenums lang-language"><code>$().datepicker({
+  yearSuffix: '年'
+});</code></pre>
+<h3>days</h3>
+<ul>
+<li>Type: <code>Array</code></li>
+<li>Default: <code>['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']</code></li>
+</ul>
+<p>Days' name of the week.</p>
+<h3>daysShort</h3>
+<ul>
+<li>Type: <code>Array</code></li>
+<li>Default: <code>['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']</code></li>
+</ul>
+<p>Shorter days' name.</p>
+<h3>daysMin</h3>
+<ul>
+<li>Type: <code>Array</code></li>
+<li>Default: <code>['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']</code></li>
+</ul>
+<p>Shortest days' name.</p>
+<h3>months</h3>
+<ul>
+<li>Type: <code>Array</code></li>
+<li>Default: <code>['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']</code></li>
+</ul>
+<p>Months' name.</p>
+<h3>monthsShort</h3>
+<ul>
+<li>Type: <code>Array</code></li>
+<li>Default: <code>['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']</code></li>
+</ul>
+<p>Shorter months' name.</p>
+<h3>itemTag</h3>
+<ul>
+<li>Type: <code>String</code></li>
+<li>Default: <code>'li'</code></li>
+</ul>
+<p>A element tag for each item of years, months and days.</p>
+<h3>mutedClass</h3>
+<ul>
+<li>Type: <code>String</code></li>
+<li>Default: <code>'muted'</code></li>
+</ul>
+<p>A class (CSS) for muted item.</p>
+<h3>pickedClass</h3>
+<ul>
+<li>Type: <code>String</code></li>
+<li>Default: <code>'picked'</code></li>
+</ul>
+<p>A class (CSS) for picked item.</p>
+<h3>disabledClass</h3>
+<ul>
+<li>Type: <code>String</code></li>
+<li>Default: <code>'disabled'</code></li>
+</ul>
+<p>A class (CSS) for disabled item.</p>
+<h3>highlightedClass</h3>
+<ul>
+<li>Type: <code>String</code></li>
+<li>Default: <code>'highlighted'</code></li>
+</ul>
+<p>A class (CSS) for highlight date item.</p>
+<h3>template</h3>
+<ul>
+<li>Type: <code>String</code></li>
+<li>Default:</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="datepicker-container"&gt;
+  &lt;div class="datepicker-panel" data-view="years picker"&gt;
+    &lt;ul&gt;
+      &lt;li data-view="years prev"&gt;&amp;lsaquo;&lt;/li&gt;
+      &lt;li data-view="years current"&gt;&lt;/li&gt;
+      &lt;li data-view="years next"&gt;&amp;rsaquo;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul data-view="years"&gt;&lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class="datepicker-panel" data-view="months picker"&gt;
+    &lt;ul&gt;
+      &lt;li data-view="year prev"&gt;&amp;lsaquo;&lt;/li&gt;
+      &lt;li data-view="year current"&gt;&lt;/li&gt;
+      &lt;li data-view="year next"&gt;&amp;rsaquo;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul data-view="months"&gt;&lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class="datepicker-panel" data-view="days picker"&gt;
+    &lt;ul&gt;
+      &lt;li data-view="month prev"&gt;&amp;lsaquo;&lt;/li&gt;
+      &lt;li data-view="month current"&gt;&lt;/li&gt;
+      &lt;li data-view="month next"&gt;&amp;rsaquo;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul data-view="week"&gt;&lt;/ul&gt;
+    &lt;ul data-view="days"&gt;&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>The template of the datepicker.</p>
+<p><strong>Note:</strong> All the <code>data-view</code> attributes must be set when you customize it.</p>
+<h3>offset</h3>
+<ul>
+<li>Type: <code>Number</code></li>
+<li>Default: <code>10</code></li>
+</ul>
+<p>The offset top or bottom of the datepicker from the element.</p>
+<h3>zIndex</h3>
+<ul>
+<li>Type: <code>Number</code></li>
+<li>Default: <code>1</code></li>
+</ul>
+<p>The CSS <code>z-index</code> style for the datepicker.</p>
+<h3>filter</h3>
+<ul>
+<li>Type: <code>Function</code></li>
+<li>Default: <code>null</code></li>
+<li>Syntax: <code>filter(date, view)</code>
+<ul>
+<li><code>date</code>: the date for checking.</li>
+<li><code>view</code>: the the current view, one of <code>day</code>, <code>month</code> or <code>year</code>.</li>
+</ul></li>
+</ul>
+<p>Filter each date item. If return a <code>false</code> value, the related date will be disabled.</p>
+<pre class="prettyprint linenums lang-language"><code>var now = Date.now();
+
+$().datepicker({
+  filter: function(date, view) {
+    if (date.getDay() === 0 &amp;&amp; view === 'day') {
+      return false; // Disable all Sundays, but still leave months/years, whose first day is a Sunday, enabled.
+    }
+  }
+});</code></pre>
+<h3>show</h3>
+<ul>
+<li>Type: <code>Function</code></li>
+<li>Default: <code>null</code></li>
+</ul>
+<p>A shortcut of the &quot;show.datepicker&quot; event.</p>
+<h3>hide</h3>
+<ul>
+<li>Type: <code>Function</code></li>
+<li>Default: <code>null</code></li>
+</ul>
+<p>A shortcut of the &quot;hide.datepicker&quot; event.</p>
+<h3>pick</h3>
+<ul>
+<li>Type: <code>Function</code></li>
+<li>Default: <code>null</code></li>
+</ul>
+<p>A shortcut of the &quot;pick.datepicker&quot; event.</p>
+<p><a href="#table-of-contents">⬆ back to top</a></p>
+<h2>Methods</h2>
+<p>Common usage:</p>
+<pre class="prettyprint linenums lang-language"><code>$().datepicker('method', argument1, , argument2, ..., argumentN);</code></pre>
+<h3>show()</h3>
+<p>Show the datepicker.</p>
+<h3>hide()</h3>
+<p>Hide the datepicker.</p>
+<h3>update()</h3>
+<p>Update the datepicker with the value or text of the current element.</p>
+<h3>pick()</h3>
+<p>Pick the current date to the element.</p>
+<h3>reset()</h3>
+<p>Reset the datepicker.</p>
+<h3>getMonthName([month[, short]])</h3>
+<ul>
+<li>
+<p><strong>month</strong> (optional):</p>
+<ul>
+<li>Type: <code>Number</code></li>
+<li>Default: the month of the current date</li>
+</ul>
+</li>
+<li>
+<p><strong>short</strong> (optional):</p>
+<ul>
+<li>Type: <code>Boolean</code></li>
+<li>Default: <code>false</code></li>
+<li>Get the shorter month name</li>
+</ul>
+</li>
+<li>
+<p>(return value):</p>
+<ul>
+<li>Type: <code>String</code></li>
+</ul>
+</li>
+</ul>
+<p>Get the month name with given argument or the current date.</p>
+<pre class="prettyprint linenums lang-language"><code>$().datepicker('getMonthName'); // 'January'
+$().datepicker('getMonthName', true); // 'Jan'
+$().datepicker('getMonthName', 11); // 'December'
+$().datepicker('getMonthName', 11, true); // 'Dec'</code></pre>
+<h3>getDayName([day[, short[, min]])</h3>
+<ul>
+<li>
+<p><strong>day</strong> (optional):</p>
+<ul>
+<li>Type: <code>Number</code></li>
+<li>Default: the day of the current date</li>
+</ul>
+</li>
+<li>
+<p><strong>short</strong> (optional):</p>
+<ul>
+<li>Type: <code>Boolean</code></li>
+<li>Default: <code>false</code></li>
+<li>Get the shorter day name</li>
+</ul>
+</li>
+<li>
+<p><strong>min</strong> (optional):</p>
+<ul>
+<li>Type: <code>Boolean</code></li>
+<li>Default: <code>false</code></li>
+<li>Get the shortest day name</li>
+</ul>
+</li>
+<li>
+<p>(return value):</p>
+<ul>
+<li>Type: <code>String</code></li>
+</ul>
+</li>
+</ul>
+<p>Get the day name with given argument or the current date.</p>
+<pre class="prettyprint linenums lang-language"><code>$().datepicker('getDayName'); // 'Sunday'
+$().datepicker('getDayName', true); // 'Sun'
+$().datepicker('getDayName', true, true); // 'Su'
+$().datepicker('getDayName', 6); // 'Saturday'
+$().datepicker('getDayName', 6, true); // 'Sat'
+$().datepicker('getDayName', 6, true, true); // 'Sa'</code></pre>
+<h3>getDate([formatted])</h3>
+<ul>
+<li>
+<p><strong>formatted</strong> (optional):</p>
+<ul>
+<li>Type: <code>Boolean</code></li>
+<li>Default: <code>false</code></li>
+<li>Get a formatted date string</li>
+</ul>
+</li>
+<li>
+<p>(return value):</p>
+<ul>
+<li>Type: <code>Date</code> or <code>String</code></li>
+</ul>
+</li>
+</ul>
+<p>Get the current date.</p>
+<pre class="prettyprint linenums lang-language"><code>$().datepicker('getDate'); // date object
+$().datepicker('getDate', true); // '02/14/2014'</code></pre>
+<h3>setDate(date)</h3>
+<ul>
+<li><strong>date</strong>:
+<ul>
+<li>Type: <code>Date</code> or <code>String</code></li>
+</ul></li>
+</ul>
+<p>Set the current date with a new date.</p>
+<pre class="prettyprint linenums lang-language"><code>$().datepicker('setDate', new Date(2014, 1, 14));
+$().datepicker('setDate', '02/14/2014');</code></pre>
+<h3>setStartDate(date)</h3>
+<ul>
+<li><strong>date</strong>:
+<ul>
+<li>Type: <code>Date</code> or <code>String</code> or <code>null</code></li>
+</ul></li>
+</ul>
+<p>Set the start view date with a new date.</p>
+<h3>setEndDate(date)</h3>
+<ul>
+<li><strong>date</strong>:
+<ul>
+<li>Type: <code>Date</code> or <code>String</code> or <code>null</code></li>
+</ul></li>
+</ul>
+<p>Set the end view date with a new date.</p>
+<h3>parseDate(date)</h3>
+<ul>
+<li><strong>date</strong>:
+<ul>
+<li>Type: <code>String</code></li>
+</ul></li>
+</ul>
+<p>Parse a date string with the set date format.</p>
+<pre class="prettyprint linenums lang-language"><code>$().datepicker('parseDate', '02/14/2014'); // date object</code></pre>
+<h3>formatDate(date)</h3>
+<ul>
+<li><strong>date</strong>:
+<ul>
+<li>Type: <code>Date</code></li>
+</ul></li>
+</ul>
+<p>Format a date object to a string with the set date format.</p>
+<pre class="prettyprint linenums lang-language"><code>$().datepicker('formatDate', new Date(2014, 1, 14)); // '02/14/2014'</code></pre>
+<h3>destroy()</h3>
+<p>Destroy the datepicker and remove the instance from the target element.</p>
+<p><a href="#table-of-contents">⬆ back to top</a></p>
+<h2>Events</h2>
+<h3>show.datepicker</h3>
+<p>This event fires when starts to show the datepicker.</p>
+<h3>hide.datepicker</h3>
+<p>This event fires when starts to hide the datepicker.</p>
+<h3>pick.datepicker</h3>
+<ul>
+<li>
+<p><strong>event.date</strong>:</p>
+<ul>
+<li>Type: <code>Date</code></li>
+<li>The current date</li>
+</ul>
+</li>
+<li>
+<p><strong>event.view</strong>:</p>
+<ul>
+<li>Type: <code>String</code></li>
+<li>Default: <code>''</code></li>
+<li>Options: <code>'year'</code>, <code>'month'</code>, <code>'day'</code></li>
+<li>The current visible view</li>
+</ul>
+</li>
+</ul>
+<p>This event fires when start to pick a year, month or day.</p>
+<pre class="prettyprint linenums lang-language"><code>$().on('pick.datepicker', function (e) {
+  if (e.date &lt; new Date()) {
+    e.preventDefault(); // Prevent to pick the date
+  }
+});</code></pre>
+<p><a href="#table-of-contents">⬆ back to top</a></p>
+<h2>I18n</h2>
+<pre class="prettyprint linenums lang-language"><code>// datepicker.zh-CN.js
+$.fn.datepicker.languages['zh-CN'] = {
+  format: 'yyyy年mm月dd日',
+  days: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
+  daysShort: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+  daysMin: ['日', '一', '二', '三', '四', '五', '六'],
+  months: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+  monthsShort: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+  weekStart: 1,
+  startView: 0,
+  yearFirst: true,
+  yearSuffix: '年'
+};</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="/path/to/datepicker.js"&gt;&lt;/script&gt;
+&lt;script src="/path/to/datepicker.zh-CN.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  $().datepicker({
+    language: 'zh-CN'
+  });
+&lt;/script&gt;</code></pre>
+<p><a href="#table-of-contents">⬆ back to top</a></p>
+<h2>No conflict</h2>
+<p>If you have to use other plugin with the same namespace, just call the <code>$.fn.datepicker.noConflict</code> method to revert to it.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="other-plugin.js"&gt;&lt;/script&gt;
+&lt;script src="datepicker.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  $.fn.datepicker.noConflict();
+  // Code that uses other plugin's "$().datepicker" can follow here.
+&lt;/script&gt;</code></pre>
+<h2>Browser support</h2>
+<ul>
+<li>Chrome (latest)</li>
+<li>Firefox (latest)</li>
+<li>Safari (latest)</li>
+<li>Opera (latest)</li>
+<li>Edge (latest)</li>
+<li>Internet Explorer 9+</li>
+</ul>
+<h2>Versioning</h2>
+<p>Maintained under the <a href="https://semver.org/">Semantic Versioning guidelines</a>.</p>
+<h2>License</h2>
+<p><a href="https://opensource.org/licenses/MIT">MIT</a> © <a href="https://chenfengyuan.com/">Chen Fengyuan</a></p>
+<p><a href="#table-of-contents">⬆ back to top</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h1>Changelog</h1>
+<h2>1.0.10 (Sep 29, 2020)</h2>
+<ul>
+<li>Add some new i18n languages.</li>
+</ul>
+<h2>1.0.9 (Sep 21, 2019)</h2>
+<ul>
+<li>Fix the issue of converting <code>31/10/2019</code> to <code>01/10/2019</code> when the current month only has 30 days (#222).</li>
+</ul>
+<h2>1.0.8 (Jun 23, 2019)</h2>
+<ul>
+<li>Fix the issue of unable to pick the current month or year again (#203).</li>
+</ul>
+<h2>1.0.7 (Feb 19, 2019)</h2>
+<ul>
+<li>Fix unexpected month changing (#198).</li>
+</ul>
+<h2>1.0.6 (Jan 19, 2019)</h2>
+<ul>
+<li>Fix wrong parameter for the <code>$.contains</code> function.</li>
+</ul>
+<h2>1.0.5 (Jan 19, 2019)</h2>
+<ul>
+<li>Emulate click in touch devices to support hiding the picker automatically (#197).</li>
+</ul>
+<h2>1.0.4 (Jan 6, 2019)</h2>
+<ul>
+<li>Fix wrong future month selection when today is 31 (#195).</li>
+<li>Fix month picking issue when the format only contains <code>YYYY</code> and <code>MM</code> (#193).</li>
+</ul>
+<h2>1.0.3 (Dec 20, 2018)</h2>
+<ul>
+<li>Ignore hours, minutes, seconds and milliseconds of parsed date to avoid side effect (#192)</li>
+<li>Fix day view when the selected day is not in the current year (#194).</li>
+</ul>
+<h2>1.0.2 (Dec 15, 2018)</h2>
+<ul>
+<li>Convert 2-digit year to 2000+ (#186).</li>
+</ul>
+<h2>1.0.1 (Nov 14, 2018)</h2>
+<ul>
+<li>Fix position problem in scrollable modal (#121).</li>
+<li>Fix the issue of the datepicker is replaced after picked a day (#128).</li>
+</ul>
+<h2>1.0.0 (Aug 5, 2018)</h2>
+<ul>
+<li>Show full month name in date picker header (#133).</li>
+<li>Fix the issue of converting <code>0</code> to <code>1</code> (#168).</li>
+</ul>
+<h2>1.0.0-beta (Jun 30, 2018)</h2>
+<ul>
+<li>Fix the issue of years and months view rendering problem (#113).</li>
+<li>Add a second parameter to the <code>filter</code> function option (#116, #151).</li>
+<li>Enhance the <code>setStartDate</code> and <code>setEndDate</code> methods, supports <code>null</code> as argument (#157).</li>
+<li>Change NPM package name scope from <code>@fengyuanchen</code> to <code>@chenfengyuan</code>.</li>
+</ul>
+<h2>0.6.5 (Mar 31, 2018)</h2>
+<ul>
+<li>Remove added data when destroy.</li>
+<li>Remove unnecessary muted class from start and end years in years view (#130).</li>
+</ul>
+<h2>0.6.4 (Nov 24, 2017)</h2>
+<ul>
+<li>Support to load in node environment.</li>
+<li>Add 3 new languages for i18n.</li>
+<li>Add example for using datepicker in modal.</li>
+</ul>
+<h2>0.6.3 (Sep 29, 2017)</h2>
+<ul>
+<li>Update view year when the month over the current year.</li>
+</ul>
+<h2>0.6.2 (Sep 29, 2017)</h2>
+<ul>
+<li>Fix the issue of days of month computing (#94).</li>
+</ul>
+<h2>0.6.1 (Sep 25, 2017)</h2>
+<ul>
+<li>Fix color function error in the CSS.</li>
+</ul>
+<h2>0.6.0 (Sep 24, 2017)</h2>
+<ul>
+<li>Refactor in ES6.</li>
+</ul>
+<h2>0.5.5 (Sep 10, 2017)</h2>
+<ul>
+<li>Fix the issue of date range limits (#89).</li>
+</ul>
+<h2>0.5.4 (Aug 5, 2017)</h2>
+<ul>
+<li>Fix the issue of date repicking (#75).</li>
+</ul>
+<h2>0.5.3 (May 30, 2017)</h2>
+<ul>
+<li>Highlight the current year and month.</li>
+<li>Highlight the picked year and month.</li>
+</ul>
+<h2>0.5.2 (Apr 8, 2017)</h2>
+<ul>
+<li>Fixed year and month picking issue.</li>
+</ul>
+<h2>0.5.1 (Mar 25, 2017)</h2>
+<ul>
+<li>Hide the picker when the target input element is blurred (#54).</li>
+<li>Hide the picker when click the trigger element again.</li>
+<li>Fixed some issues in inline mode.</li>
+</ul>
+<h2>0.5.0 (Feb 11, 2017)</h2>
+<ul>
+<li>Added a new option <code>highlightedClass</code> for highlight today (#28).</li>
+<li>Fixed the position of picker panel (#49).</li>
+</ul>
+<h2>0.4.0 (Oct 15, 2016)</h2>
+<ul>
+<li>Rename <code>autoshow</code> option to <code>autoShow</code>.</li>
+<li>Rename <code>autohide</code> option to <code>autoHide</code>.</li>
+<li>Rename <code>autopick</code> option to <code>autoPick</code>.</li>
+<li>Improved the priority of language options.</li>
+<li>Fixed the issue of date view updating (#33).</li>
+</ul>
+<h2>0.3.1 (Jan 11, 2016)</h2>
+<ul>
+<li>Fixed the issue of <code>startDate</code> option (#20)</li>
+</ul>
+<h2>0.3.0 (Dec 15, 2015)</h2>
+<ul>
+<li>Change the default value of <code>zIndex</code> option from <code>1</code> to <code>1000</code></li>
+<li>Simplify JavaScript code</li>
+<li>Optimize CSS code styles</li>
+</ul>
+<h2>0.2.2 (Dec 10, 2015)</h2>
+<ul>
+<li>Fixed the issue of options overriding (#15)</li>
+<li>Fixed the error of next view month</li>
+</ul>
+<h2>0.2.1 (Oct 26, 2015)</h2>
+<ul>
+<li>Fixed the error of month picker</li>
+</ul>
+<h2>0.2.0 (Oct 18, 2015)</h2>
+<ul>
+<li>Supports custom events</li>
+<li>Supports to set start view date and end view date</li>
+<li>Improved i18n (internationalization)</li>
+<li>Improved placement of the datepicker</li>
+<li>Improved template</li>
+</ul>
+<h3>Options</h3>
+<ul>
+<li>Added 10 options: <code>autoshow</code>, <code>autopick</code>, <code>offset</code>, <code>language</code>, <code>startDate</code>, <code>endDate</code>, <code>mutedClass</code>, <code>show</code>, <code>hide</code>, <code>pick</code></li>
+<li>Renamed <code>autoclose</code> to <code>autohide</code></li>
+<li>Renamed <code>dateFormat</code> to <code>format</code></li>
+<li>Renamed <code>viewStart</code> to <code>startView</code></li>
+<li>Renamed <code>showMonthAfterYear</code> to <code>yearFirst</code></li>
+<li>Renamed <code>selectedClass</code> to <code>pickedClass</code></li>
+<li>Renamed <code>isDisabled</code> to <code>filter</code></li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>Added 11 methods: <code>pick</code>, <code>reset</code>, <code>getMonthName</code>, <code>getDayName</code>, <code>getDate</code>, <code>setDate</code>, <code>setStartDate</code>, <code>setEndDate</code>, <code>parseDate</code>, <code>formatDate</code>, <code>destroy</code></li>
+<li>Removed 2 methods: <code>enable</code>, <code>disable</code></li>
+</ul>
+<h3>Events</h3>
+<ul>
+<li>Added 3 events: <code>show.datepicker</code>, <code>hide.datepicker</code>, <code>pick.datepicker</code></li>
+</ul>
+<h2>0.1.0 (Aug 9, 2014)</h2>
+<ul>
+<li>Fixed some bugs</li>
+<li>Added i18n files</li>
+<li>Optimized code style</li>
+</ul>
+<h2>0.1.0-beta (Feb 14, 2014)</h2>
+<ul>
+<li>Supports 21 options: <code>date</code>, <code>dateFormat</code>, <code>disabledClass</code>, <code>selectedClass</code>, <code>autoclose</code>, <code>inline</code>, <code>trigger</code>, <code>container</code>, <code>showMonthAfterYear</code>, <code>zIndex</code>, <code>viewStart</code>, <code>weekStart</code>, <code>yearSuffix</code>, <code>days</code>, <code>daysShort</code>, <code>daysMin</code>, <code>months</code>, <code>monthsShort</code>, <code>itemTag</code>, <code>template</code>, <code>isDisabled</code></li>
+<li>Supports 5 methods: <code>show</code>, <code>hide</code>, <code>enable</code>, <code>disable</code>, <code>update</code></li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/datepicker" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>datepicker</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-datepicker-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-datepicker-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/3456749?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/fengyuanchen" target="_blank" id="ownerName" class="sidebar-link">fengyuanchen</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">February 11, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 27, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://fengyuanchen.github.io/datepicker/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>@babel/core (^7.11.6)</li><li>@babel/preset-env (^7.11.5)</li><li>@commitlint/cli (^11.0.0)</li><li>@commitlint/config-conventional (^11.0.0)</li><li>cpy-cli (^3.1.1)</li><li>create-banner (^1.0.0)</li><li>cssnano (^4.1.10)</li><li>del-cli (^3.0.1)</li><li>eslint (^7.10.0)</li><li>eslint-config-airbnb-base (^14.2.0)</li><li>eslint-plugin-import (^2.22.1)</li><li>husky (^4.3.0)</li><li>jquery (^3.5.1)</li><li>lint-staged (^10.4.0)</li><li>node-qunit-phantomjs (^2.1.1)</li><li>npm-run-all (^4.1.5)</li><li>postcss-cli (^8.0.0)</li><li>postcss-header (^3.0.1)</li><li>postcss-import (^12.0.1)</li><li>postcss-preset-env (^6.7.0)</li><li>rollup (^2.28.2)</li><li>rollup-plugin-babel (^4.3.3)</li><li>rollup-plugin-commonjs (^10.1.0)</li><li>rollup-plugin-node-resolve (^5.2.0)</li><li>stylelint (^13.7.2)</li><li>stylelint-config-standard (^20.0.0)</li><li>stylelint-order (^4.1.0)</li><li>uglify-js (^3.11.0)</li></ul><h5 class="sidebar-title">Peer Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.9.1)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3456749?v=4" alt="fengyuanchen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fengyuanchen" target="_blank" class="text-decoration-none fw-bold">fengyuanchen</a><p class="mb-0 text-muted small">153 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4881679?v=4" alt="karatheodory" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/karatheodory" target="_blank" class="text-decoration-none fw-bold">karatheodory</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2633763?v=4" alt="areeb111" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/areeb111" target="_blank" class="text-decoration-none fw-bold">areeb111</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5103109?v=4" alt="arxeiss" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/arxeiss" target="_blank" class="text-decoration-none fw-bold">arxeiss</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5035925?v=4" alt="PeachScript" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/PeachScript" target="_blank" class="text-decoration-none fw-bold">PeachScript</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/33203663?v=4" alt="Quenty31" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Quenty31" target="_blank" class="text-decoration-none fw-bold">Quenty31</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/10125759?v=4" alt="tipsclick" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tipsclick" target="_blank" class="text-decoration-none fw-bold">tipsclick</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5023476?v=4" alt="arulprabakaran" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/arulprabakaran" target="_blank" class="text-decoration-none fw-bold">arulprabakaran</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11974900?v=4" alt="bgeree" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bgeree" target="_blank" class="text-decoration-none fw-bold">bgeree</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/26398225?v=4" alt="abduwaly" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/abduwaly" target="_blank" class="text-decoration-none fw-bold">abduwaly</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1548340?v=4" alt="tonyspb" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tonyspb" target="_blank" class="text-decoration-none fw-bold">tonyspb</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/68329275?v=4" alt="romanmoratov" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/romanmoratov" target="_blank" class="text-decoration-none fw-bold">romanmoratov</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/16081131?v=4" alt="IWRichard" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/IWRichard" target="_blank" class="text-decoration-none fw-bold">IWRichard</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4275294?v=4" alt="ProudOne" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ProudOne" target="_blank" class="text-decoration-none fw-bold">ProudOne</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/31336284?v=4" alt="aka-wintermute" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aka-wintermute" target="_blank" class="text-decoration-none fw-bold">aka-wintermute</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/30019118?v=4" alt="PasanBhanu" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/PasanBhanu" target="_blank" class="text-decoration-none fw-bold">PasanBhanu</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/10725732?v=4" alt="dungphanxuan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dungphanxuan" target="_blank" class="text-decoration-none fw-bold">dungphanxuan</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2271951?v=4" alt="gfragioud" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gfragioud" target="_blank" class="text-decoration-none fw-bold">gfragioud</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/22839520?v=4" alt="hphaavikko" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hphaavikko" target="_blank" class="text-decoration-none fw-bold">hphaavikko</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6796369?v=4" alt="ikeblaster" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ikeblaster" target="_blank" class="text-decoration-none fw-bold">ikeblaster</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/992714?v=4" alt="mm98" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mm98" target="_blank" class="text-decoration-none fw-bold">mm98</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/17590436?v=4" alt="nrogap" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nrogap" target="_blank" class="text-decoration-none fw-bold">nrogap</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/12240783?v=4" alt="pttsky" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pttsky" target="_blank" class="text-decoration-none fw-bold">pttsky</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8282373?v=4" alt="OArnarsson" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/OArnarsson" target="_blank" class="text-decoration-none fw-bold">OArnarsson</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/12268397?v=4" alt="NullIsNot0" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/NullIsNot0" target="_blank" class="text-decoration-none fw-bold">NullIsNot0</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/22399784?v=4" alt="ljungmark" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ljungmark" target="_blank" class="text-decoration-none fw-bold">ljungmark</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/724963?v=4" alt="questionmark78" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/questionmark78" target="_blank" class="text-decoration-none fw-bold">questionmark78</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5868797?v=4" alt="marianmirzacu" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/marianmirzacu" target="_blank" class="text-decoration-none fw-bold">marianmirzacu</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1282758?v=4" alt="luizreginaldo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/luizreginaldo" target="_blank" class="text-decoration-none fw-bold">luizreginaldo</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
