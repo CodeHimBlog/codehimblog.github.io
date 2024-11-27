@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modular and Light Weight Selection Library</title>
+    <meta name="description" content="selectivity by arendjr. Modular and light-weight selection library">
+    <meta name="author" content="arendjr">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/selectivity-by-arendjr.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Selectivity</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Selectivity",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Selectivity</h1>
+        <p id="packageDescription" class="text-muted">Modular and light-weight selection library</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1103</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">6.55 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">108</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">41</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/arendjr/selectivity/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/arendjr/selectivity" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Selectivity.js</h1>
+<p>Modular and light-weight selection library.</p>
+<p><strong>Deprecation notice:</strong> At <a href="https://speakap.com/">Speakap</a>, we are migrating to a more responsive<br />
+component library. As such, we will be migrating away from Selectivity, and we will no longer be<br />
+maintaining this library. If you are interested in taking over ownership, please<br />
+<a href="https://github.com/arendjr/selectivity/issues">file an issue</a>. Thanks for all the support!</p>
+<h2>Setup</h2>
+<h3>Dependencies</h3>
+<p>Selectivity doesn't require any external libraries to be loaded on your page, but it does have some<br />
+optional dependencies:</p>
+<ul>
+<li>There's a React build that provides the official Selectivity React API. If you wish to use this,<br />
+<a href="https://facebook.github.io/react/">React</a> should be loaded on your page.</li>
+<li>There's a jQuery build that provides the official Selectivity jQuery API. If you wish to use<br />
+this, either <a href="http://jquery.com/">jQuery</a> or <a href="http://zeptojs.com/">Zepto.js</a> should be loaded on<br />
+your page.</li>
+<li>The default templates assume that you have included<br />
+<a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a> in your page to display the icons. If<br />
+you do not want this, please specify custom templates.</li>
+</ul>
+<h3>Manual</h3>
+<p><strong>Warning:</strong> Do you use Browserify or Webpack? Please use Yarn or NPM as described below.</p>
+<p>Download and unpack the latest release from the project website:<br />
+<a href="https://arendjr.github.io/selectivity/">https://arendjr.github.io/selectivity/</a></p>
+<p>Copy the JavaScript and CSS file for your desired build from the archive into your project. See the<br />
+following table to see which files you need:</p>
+<table>
+<thead>
+<tr>
+<th>Build</th>
+<th>JavaScript file</th>
+<th>CSS file</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jQuery (development)</td>
+<td>selectivity-jquery.js</td>
+<td>selectivity-jquery.css</td>
+</tr>
+<tr>
+<td>jQuery (production)</td>
+<td>selectivity-jquery.min.js</td>
+<td>selectivity-jquery.min.css</td>
+</tr>
+<tr>
+<td>React (development)</td>
+<td>selectivity-react.js</td>
+<td>selectivity-react.css</td>
+</tr>
+<tr>
+<td>React (production)</td>
+<td>selectivity-react.min.js</td>
+<td>selectivity-react.min.css</td>
+</tr>
+<tr>
+<td><em>VanillaJS</em> (development)</td>
+<td>selectivity.js</td>
+<td>selectivity.css</td>
+</tr>
+<tr>
+<td><em>VanillaJS</em> (production)</td>
+<td>selectivity.min.js</td>
+<td>selectivity.min.css</td>
+</tr>
+</tbody>
+</table>
+<p>Reference the files from your HTML page like this:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;head&gt;
+    &lt;!-- ... --&gt;
+    &lt;link href="font-awesome.css" rel="stylesheet" /&gt;
+    &lt;link href="selectivity.css" rel="stylesheet" /&gt;
+    &lt;!-- ... --&gt;
+    &lt;script src="jquery-or-react-or-zepto.js"&gt;&lt;/script&gt;
+    &lt;script src="selectivity.js"&gt;&lt;/script&gt;
+    &lt;!-- ... --&gt;
+&lt;/head&gt;</code></pre>
+<p>Note the first line includes FontAwesome which is required for the default icons. This line is<br />
+optional if you use custom templates.</p>
+<p>The second line should reference the CSS file from the bundle you chose to use.</p>
+<p>The third line should reference jQuery, React or Zepto.js as appropriate. This line is optional if<br />
+you use the VanillaJS bundle. <em>Note: If you want to use the React templates plugin, don't forget to<br />
+also include <code>react-dom.js</code>.</em></p>
+<p>Finally, the last line should reference the JavaScript file from the bundle you chose to use.</p>
+<p>You are now ready to start using Selectivity as described on the Selectivity homepage:<br />
+<a href="https://arendjr.github.io/selectivity/">https://arendjr.github.io/selectivity/</a></p>
+<h3>Using Yarn or NPM</h3>
+<p>Use one of the following commands, depending on whether you have Yarn or NPM installed:</p>
+<pre><code>$ yarn add selectivity
+
+$ npm install --save selectivity</code></pre>
+<p>Note you will need to include the CSS yourself. You can find it in<br />
+<code>node_modules/selectivity/selectivity.css</code>.</p>
+<h4>Which module do I require?</h4>
+<p>You can <code>require()</code> Selectivity as follows:</p>
+<pre class="prettyprint linenums lang-language"><code>const Selectivity = require("selectivity");</code></pre>
+<p>But, this will only expose the main Selectivity object and will load none of the plugins, nor enable<br />
+any of the specialized APIs. You could say what you're getting is the core of the VanillaJS API.</p>
+<p>If however, you just want to use the jQuery API with all the relevant plugins loaded, you can do<br />
+this:</p>
+<pre class="prettyprint linenums lang-language"><code>require("selectivity/jquery");</code></pre>
+<p>After this you can call the jQuery API as you would expect:</p>
+<pre class="prettyprint linenums lang-language"><code>$("...").selectivity(/*...*/);</code></pre>
+<p>Similarly, if you want to use the React API with all its relevant plugins, you can do this:</p>
+<pre class="prettyprint linenums lang-language"><code>const Selectivity = require("selectivity/react");</code></pre>
+<p>The Selectivity object you receive is the same one as if you'd required <code>'selectivity'</code>, but you get<br />
+the React Component class as <code>Selectivity.React</code> so you can use it as follows:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;Selectivity.React {...props} /&gt;</code></pre>
+<p>Finally, if you're an expert (*) you can choose to use the VanillaJS API and enable just the<br />
+plugins you want one by one. For example:</p>
+<pre class="prettyprint linenums lang-language"><code>const Selectivity = require("selectivity");
+require("selectivity/dropdown");
+require("selectivity/inputs/single");
+require("selectivity/plugins/ajax");
+require("selectivity/plugins/async");
+require("selectivity/plugins/submenu");
+
+const singleInput = new Selectivity.Inputs.Single({
+    element: document.querySelector("...")
+    /* ... */
+});</code></pre>
+<p>All the modules listed in the table below under <em>Creating custom builds</em> can be required this way.</p>
+<p>*) Using the VanillaJS API isn't really that hard, but all the examples and documentation assume<br />
+you're using either the React or the jQuery API, so be prepared that you'll have to figure out a bit<br />
+more on your own.</p>
+<h3>Customization</h3>
+<p>Once installed, you may want to customize Selectivity. For example, by specifying custom templates<br />
+or localized strings. While creating a custom build is always an option (see details below), easier<br />
+options exist.</p>
+<p>To do any basic customization, you'll need a reference to the <code>Selectivity</code> object. If you have<br />
+installed through Yarn/NPM, you can get this object through<br />
+<code>const Selectivity = require("selectivity");</code>. If you're using a jQuery build, the object is exposed<br />
+as <code>$.Selectivity</code>. For non-jQuery builds that you included as a script, the object is exposed as<br />
+global variable.</p>
+<h4>Example: Customizing localization in a jQuery build</h4>
+<pre class="prettyprint linenums lang-language"><code>$.Selectivity.Locale.noResultsForTerm = term =&gt; `No results were found for &lt;b&gt;${escape(term)}&lt;/b&gt;`;</code></pre>
+<p>See <a href="https://github.com/arendjr/selectivity/blob/master/src/locale.js">locale.js</a> for an overview of<br />
+all localizable messages.</p>
+<h4>Example: Specifying a custom template when installed through NPM</h4>
+<pre class="prettyprint linenums lang-language"><code>const Selectivity = require("selectivity");
+Selectivity.Templates.loading = () =&gt;
+    '&lt;div class="selectivity-loading"&gt;&lt;div class="my-spinner"&gt;&lt;/div&gt;&lt;/div&gt;';</code></pre>
+<p>See <a href="https://github.com/arendjr/selectivity/blob/master/src/templates.js">templates.js</a> for an<br />
+overview of all templates that can be customized.</p>
+<h2>API</h2>
+<p>For usage instructions, please see the Selectivity homepage: <a href="https://arendjr.github.io/selectivity/">https://arendjr.github.io/selectivity/</a></p>
+<h2>Browser Support</h2>
+<ul>
+<li>Chrome</li>
+<li>Firefox</li>
+<li>Internet Explorer 10+</li>
+<li>Safari 6+</li>
+</ul>
+<p>Note that while Internet Explorer versions older than 10 are not supported, you might be able to get<br />
+them to work, possibly with the use of some polyfills. Reports of success or patches to create a<br />
+&quot;legacy&quot; build would be welcomed.</p>
+<h2>Build System</h2>
+<p>Selectivity is built modularly and uses Yarn and Gulp as a build system to build its distributable<br />
+files. Make sure you have the <code>yarn</code> command globally available. Then, inside the project directory,<br />
+run:</p>
+<pre><code>$ yarn</code></pre>
+<p>Now you can generate new distributable files from the sources, using:</p>
+<pre><code>$ yarn build</code></pre>
+<h3>Creating custom builds</h3>
+<p>If you want to create your own Selectivity library that contains just the modules you need, you can<br />
+use the following command:</p>
+<pre><code>$ yarn gulp [--api=&lt;react-or-jquery&gt;] --modules=&lt;comma-separated-module-list&gt;</code></pre>
+<p>The following modules are available:</p>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>inputs/email</strong></td>
+<td>Implements the 'Email' input type. This is a special case of the 'Multiple' input type with no dropdown and a specialized tokenizer for recognizing email addresses (including pasted content from address books).</td>
+</tr>
+<tr>
+<td><strong>inputs/multiple</strong></td>
+<td>Implements the 'Multiple' input type. If you only want to use Selectivity with single values, you can leave this out.</td>
+</tr>
+<tr>
+<td><strong>inputs/single</strong></td>
+<td>Implements the 'Single' input type. If you only want to use Selectivity with multiple values, you can leave this out.</td>
+</tr>
+<tr>
+<td><strong>plugins/ajax</strong></td>
+<td>Convenience module for performing AJAX requests. Needed if you want to use any <code>ajax</code> options. If you use this module, you should also include the 'async' module to correctly handle out-of-order replies. This module relies on the presence of the <code>[fetch()](https://developer.mozilla.org/en-US/docs/Web/API/GlobalFetch/fetch)</code> method which is only available in modern browsers, so you should either provide a polyfill if you want to support older browsers, or -- if you're creating a jQuery build -- you can use the 'jquery/ajax' module to provide a fallback that uses <code>$.ajax()</code> instead.</td>
+</tr>
+<tr>
+<td><strong>plugins/async</strong></td>
+<td>Blocks the query function from calling its callback functions if another query has been issued since. This prevents out-of-order replies from remote sources to display incorrect results. This module is only needed if you use the query function and call its callbacks asynchronously.</td>
+</tr>
+<tr>
+<td><strong>plugins/diacritics</strong></td>
+<td>Diacritics support. This will make sure that <code>"Łódź"</code> will match when the user searches for <code>"Lodz"</code>, for example. However, if you always query a server when searching for results, you may want to solve matching of diacritics server-side, in which case this module can be omitted.</td>
+</tr>
+<tr>
+<td><strong>plugins/keyboard</strong></td>
+<td>Provides keyboard support for navigating through the dropdown. If you don't use a dropdown, or are only targeting mobile, you may want to leave this module out.</td>
+</tr>
+<tr>
+<td><strong>plugins/submenu</strong></td>
+<td>Extends the default dropdown so that multiple levels of submenus can be created.</td>
+</tr>
+<tr>
+<td><strong>plugins/tokenizer</strong></td>
+<td>Default tokenizer implementation. This module adds support for the <code>tokenSeparators</code> option which is used by the default tokenizer. Support for tokenizers themselves is already included in the &quot;multiple&quot; module, so you can omit this module if you don't want to use any tokenizers or want to specify your own tokenizer.</td>
+</tr>
+<tr>
+<td><strong>plugins/jquery/ajax</strong></td>
+<td>Provides a fallback to use <code>$.ajax()</code> instead of the <code>fetch()</code> method for performing AJAX requests. <em>(Requires jQuery 3.0 or higher)</em></td>
+</tr>
+<tr>
+<td><strong>plugins/jquery/traditional</strong></td>
+<td>This module allows you to convert an HTML5 <code>&lt;select&gt;</code> form element into a Selectivity instance. The items will be initialized from the <code>&lt;option&gt;</code> and <code>&lt;optgroup&gt;</code> elements. <em>(jQuery only)</em></td>
+</tr>
+<tr>
+<td><strong>plugins/react/templates</strong></td>
+<td>Adds support for React (JSX) templates. Requires <code>react-dom</code> to be available.</td>
+</tr>
+<tr>
+<td><strong>dropdown</strong></td>
+<td>Module that implements the dropdown. You will most likely want to include this, unless you only want to use Selectivity without any dropdown or you provide a completely custom implementation instead.</td>
+</tr>
+<tr>
+<td><strong>locale</strong></td>
+<td>Localizable content pulled in by the default templates. You may or may not decide to use these with your own templates. Also used for localizable messages by the ajax module.</td>
+</tr>
+<tr>
+<td><strong>templates</strong></td>
+<td>Default templates to use with Selectivity. If you provide your own templates, you may want to skip this.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that the build system automatically resolves dependencies between modules. So for example, if<br />
+you specify you want the submenu plugin, the dropdown module will be automatically included.</p>
+<p>Example:</p>
+<pre><code>$ yarn gulp --api=react --modules=inputs/multiple,dropdown</code></pre>
+<p>This will create a custom build that uses the React API and which has support for selecting multiple<br />
+values with a dropdown. The build will be saved in <code>build/selectivity-custom.js</code>. There will be no<br />
+plugins available, you will have to provide your own templates with their localizable content, and<br />
+you cannot use this build for creating a single-select input.</p>
+<p>To display any other options available for custom builds, run <code>gulp usage</code>.</p>
+<h3>Development server</h3>
+<p>While developing, you can start a development server like this:</p>
+<pre><code>$ yarn start [--api=&lt;jquery-or-react&gt;]</code></pre>
+<p>You can reach the development server on the URL printed on the console (typically<br />
+<a href="http://localhost:3000">http://localhost:3000</a>), and you'll probably want to open one of the demos there:</p>
+<ul>
+<li>React: <a href="http://localhost:3000/demos/custom-react.html">http://localhost:3000/demos/custom-react.html</a> (only works if you started with<br />
+<code>yarn start --api=react</code>)</li>
+<li>jQuery: <a href="http://localhost:3000/demos/custom-jquery.html">http://localhost:3000/demos/custom-jquery.html</a> (only works if you started with<br />
+<code>yarn start --api=jquery</code>)</li>
+<li>Zepto: <a href="http://localhost:3000/demos/custom-zepto.html">http://localhost:3000/demos/custom-zepto.html</a> (only works if you started with<br />
+<code>yarn start --api=jquery</code>)</li>
+</ul>
+<h2>Unit Tests</h2>
+<p>Unit tests are available and can be ran using the following command:</p>
+<pre><code>$ yarn unit-tests</code></pre>
+<p>If you want to run an individual test, just add <code>--test=&lt;test-name&gt;</code>. Simply provide an invalid test<br />
+name to get a list of all available test names.</p>
+<h2>License</h2>
+<p>Selectivity is made available under the <a href="LICENSE">MIT license</a>.</p>
+<h2>Contributing</h2>
+<p>To read more about guidelines for submitting pull requests, please read the<br />
+<a href="CONTRIBUTING.md">Contributing document</a>.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h1>CHANGELOG</h1>
+<h2>master (4.0)</h2>
+<ul>
+<li>Upgraded dependencies. This includes replacing <code>browserify</code> with <code>rollup</code>. As a result, packages<br />
+should be even smaller than before, but the risk of breakage is also bigger than usual, hence<br />
+the major bump in version number. The <code>--derequire</code> build argument has also been removed because<br />
+of this, as it's no longer needed.</li>
+<li>Fix #248: Items update should trigger <code>setValue()</code> (thanks to @LeoDT).</li>
+</ul>
+<h2>3.1.0</h2>
+<ul>
+<li>Add <code>data</code> property to <code>change</code> events.</li>
+<li>Don't crash when some, but not all, result items have children (#227, thanks to @watsab).</li>
+<li>Trim template results to avoid runtime errors (#210, thanks to @darekzak).</li>
+<li>Fix clear button if item text is too long (#211, thanks to @dmarchuk).</li>
+<li>React: Don't use <code>componentWillReceiveProps()</code> for forward compatibility with React 17.</li>
+</ul>
+<h2>3.0.6</h2>
+<ul>
+<li>Fix updating event listeners after initial render in React API.</li>
+<li>Rerender single-value inputs when their enabled state changes.</li>
+</ul>
+<h2>3.0.5</h2>
+<ul>
+<li>Fix issue where dropdown is hard to close on Firefox (#194, thanks to @dmarchuk).</li>
+<li>Filter selected children from results (#201, thanks to @ne0guille).</li>
+<li>Move submenu up if otherwise it would fall below the fold of the page.</li>
+</ul>
+<h2>3.0.4</h2>
+<ul>
+<li>Improved compatibility with React 15.5 (no more deprecation warnings).</li>
+<li>Improved HTML5 validation support (#188, thanks to @r4z3c).</li>
+<li>Fix #180: Existing selection highlighted by default on multi-value search results (thanks to<br />
+@ahamid).</li>
+<li>Fix #177: Don't close dropdown when clicking scrollbar (thanks to @JEkedorff).</li>
+</ul>
+<h2>3.0.3</h2>
+<ul>
+<li>Fix issue when a single-value Selectivity input is reset to null throught the React API.</li>
+</ul>
+<h2>3.0.2</h2>
+<ul>
+<li>Fix #161: React API: Value should be re-set when the items change.</li>
+</ul>
+<h2>3.0.1</h2>
+<ul>
+<li>Fix #156: Don't crash when unsubscribing from non-subscribed event listener.</li>
+<li>Don't rely on <code>react-dom-server</code> in React templates plugin to avoid issues with React 15.4.</li>
+<li>Fix #158: Expose Selectivity object as <code>$.Selectivity</code> in jQuery builds.</li>
+<li>Yarn compatibility: Get rid of peerDependencies.</li>
+</ul>
+<h2>3.0.0</h2>
+<ul>
+<li>Made jQuery dependency fully optional.
+<ul>
+<li>As a result, all callbacks that received jQuery containers as argument(s) now receive plain<br />
+DOM nodes instead.</li>
+</ul></li>
+<li>Added optional React API.</li>
+<li>Fix #128: Added NPM package.</li>
+<li>Added options:
+<ul>
+<li><code>shouldOpenSubmenu()</code> - Callback that determines whether a submenu should be opened.</li>
+<li><code>selectable</code> - Allows to make items unselectable without having to disable them. This is<br />
+mainly useful for items that trigger submenus.</li>
+</ul></li>
+<li>Removed Bower and Component support.</li>
+<li>Moved option validation into its own plugin.</li>
+<li>Introduced the <code>"selectivity-change"</code> event. It's exactly the same as the <code>"change"</code> event<br />
+(which is still supported as well) from version 2, but with the added benefit it cannot be<br />
+confused with <code>"change"</code> events that bubble from internal <code>&lt;input&gt;</code> elements. The React API's<br />
+<code>onChange</code> property uses the new event.</li>
+<li>Rewrote the AJAX plugin:
+<ul>
+<li>It now relies on the <code>fetch()</code> method for performing AJAX requests. This method is only<br />
+available on modern browsers, so you'll need a polyfill if you want to use this with old<br />
+browsers, unless you're using a jQuery build in which case the <code>jquery/ajax</code> plugin can<br />
+provide a shim based on <code>$.ajax()</code> (requires jQuery 3.0 or higher).</li>
+<li>Please check the documentation for the new options that can be passed.</li>
+</ul></li>
+<li>Renamed the option <code>suppressMouseWheelSelector</code> to just <code>suppressWheelSelector</code>.</li>
+<li>Renamed the <code>Selectivity.InputTypes</code> map to <code>Selectivity.Inputs</code>.</li>
+<li>Removed dist directory from the repository.</li>
+<li>Improved submenu positioning by automatically opening them on the left-hand side if there's<br />
+insufficient space on the right side.</li>
+<li>Improve searching behavior with multiple submenus open.</li>
+<li>Fix #107: Remove the dropdown after timeout to fix &quot;hover&quot; behavior.</li>
+<li>Fix #136: Update original <code>&lt;select&gt;</code> element on &quot;change&quot; instead of &quot;selectivity-selected&quot;.</li>
+<li>Fix: When a Selectivity instance is clicked but its dropdown should not open, at least it should<br />
+be focused.</li>
+<li>Fix #144: Properly handle dynamically changing readOnly option.</li>
+<li>Fix #145: Make sure size detection works outside the DOM (thanks to @Rkokie). Also the<br />
+&quot;.selectivity-width-detector&quot; element is no longer needed.</li>
+<li>Fix #146: Selectivity created from <code>&lt;select&gt;</code> element now uses &quot;s9y_&quot; prefix for its ID (thanks<br />
+to @dr-itz).</li>
+<li>Fix: Provide correct offset in pagination when results are filtered.</li>
+</ul>
+<h2>2.1.0</h2>
+<ul>
+<li>Implemented <code>disabled</code> property on items. When an item is disabled it cannot be selected and by<br />
+default is rendered with grey text.</li>
+<li>PR #63: Fix problem with <code>closeOnSelect</code> behavior.</li>
+<li>PR #80: Added CSS classes for <code>hover</code> and <code>open</code> states.</li>
+<li>Fix #66: Respect <code>removeOnly</code> option when set after initialization.</li>
+<li>Fix #67: Pass <code>queryOptions</code> to <code>url</code> function in AJAX module.</li>
+<li>Fix #75: Make sure Enter key doesn't submit forms.</li>
+<li>Fix #93: Make the rerenderSelection() method public and document that <code>triggerChange: false</code><br />
+doesn't automatically update the UI.</li>
+<li>Fixed issue where the cursor position was constantly reset when using a tokenizer.</li>
+<li>Miscellaneous smaller fixes and styling tweaks.</li>
+</ul>
+<h2>2.0.0</h2>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/component" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>component</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/form" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>form</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/react" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>react</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/select" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>select</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/ui" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>ui</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/533294?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/arendjr" target="_blank" id="ownerName" class="sidebar-link">arendjr</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">December 29, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 24, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://arendjr.github.io/selectivity/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>lodash (^4.17.15)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>@babel/core (^7.5.5)</li><li>@babel/plugin-transform-modules-commonjs (^7.5.0)</li><li>@babel/preset-env (^7.5.5)</li><li>@babel/preset-react (^7.0.0)</li><li>@babel/register (^7.5.5)</li><li>@testing-library/jest-dom (^4.0.0)</li><li>@types/jest (^24.0.15)</li><li>ansi-colors (^4.1.1)</li><li>autoprefixer (^9.6.1)</li><li>babel-eslint (^10.0.2)</li><li>babel-jest (^24.8.0)</li><li>browser-sync (^2.26.7)</li><li>delay (^4.3.0)</li><li>enzyme (^3.10.0)</li><li>enzyme-adapter-react-16 (^1.14.0)</li><li>eslint (^6.1.0)</li><li>eslint-config-prettier (^6.0.0)</li><li>eslint-plugin-compat (^3.3.0)</li><li>eslint-plugin-import (^2.18.2)</li><li>eslint-plugin-jest (^22.13.6)</li><li>eslint-plugin-prettier (^3.1.0)</li><li>eslint-plugin-react (^7.14.3)</li><li>fancy-log (^1.3.3)</li><li>faucet (0.0.1)</li><li>freshy (^1.0.4)</li><li>glob (^7.1.4)</li><li>gulp (^4.0.2)</li><li>jest (^24.8.0)</li><li>jest-environment-enzyme (^7.0.2)</li><li>jest-enzyme (^7.0.2)</li><li>jquery (^3.4.1)</li><li>jsdom (^15.1.1)</li><li>node-sass (^4.12.0)</li><li>postcss (^7.0.17)</li><li>prettier (^1.18.2)</li><li>pretty-hrtime (^1.0.3)</li><li>prop-types (^15.7.2)</li><li>react (^16.8.6)</li><li>react-dom (^16.8.6)</li><li>rollup (^1.17.0)</li><li>rollup-plugin-babel (^4.3.3)</li><li>rollup-plugin-commonjs (^10.0.1)</li><li>rollup-plugin-node-resolve (^5.2.0)</li><li>rollup-plugin-replace (^2.2.0)</li><li>rollup-plugin-terser (^5.1.1)</li><li>rollup-plugin-virtual (^1.0.1)</li><li>tape (^4.11.0)</li><li>wait-for-expect (^2.0.0)</li><li>yargs (^14.0.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/533294?v=4" alt="arendjr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/arendjr" target="_blank" class="text-decoration-none fw-bold">arendjr</a><p class="mb-0 text-muted small">460 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1129643?v=4" alt="msx2" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/msx2" target="_blank" class="text-decoration-none fw-bold">msx2</a><p class="mb-0 text-muted small">67 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/in/505?v=4" alt="greenkeeper[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/greenkeeper" target="_blank" class="text-decoration-none fw-bold">greenkeeper[bot]</a><p class="mb-0 text-muted small">19 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/14790466?v=4" alt="greenkeeperio-bot" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/greenkeeperio-bot" target="_blank" class="text-decoration-none fw-bold">greenkeeperio-bot</a><p class="mb-0 text-muted small">14 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/670645?v=4" alt="glafarge" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/glafarge" target="_blank" class="text-decoration-none fw-bold">glafarge</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6976345?v=4" alt="r4z3c" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/r4z3c" target="_blank" class="text-decoration-none fw-bold">r4z3c</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8395106?v=4" alt="dmarchuk" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dmarchuk" target="_blank" class="text-decoration-none fw-bold">dmarchuk</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/77031?v=4" alt="ahamid" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ahamid" target="_blank" class="text-decoration-none fw-bold">ahamid</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/400625?v=4" alt="dr-itz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dr-itz" target="_blank" class="text-decoration-none fw-bold">dr-itz</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2047816?v=4" alt="andrii-maglovanyi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/andrii-maglovanyi" target="_blank" class="text-decoration-none fw-bold">andrii-maglovanyi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1076072?v=4" alt="darekzak" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/darekzak" target="_blank" class="text-decoration-none fw-bold">darekzak</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/685203?v=4" alt="LeoDT" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LeoDT" target="_blank" class="text-decoration-none fw-bold">LeoDT</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1659006?v=4" alt="gfellerph" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gfellerph" target="_blank" class="text-decoration-none fw-bold">gfellerph</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/15378800?v=4" alt="watsab" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/watsab" target="_blank" class="text-decoration-none fw-bold">watsab</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+9 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
