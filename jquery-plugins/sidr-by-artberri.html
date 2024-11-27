@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidr by Artberri</title>
+    <meta name="description" content="Sidr is a jQuery plugin for creating side menus and the easiest way for doing your menu responsive. ">
+    <meta name="author" content="artberri">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/sidr-by-artberri.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Sidr</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Sidr",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Sidr</h1>
+        <p id="packageDescription" class="text-muted">Sidr is a jQuery plugin for creating side menus and the easiest way for doing your menu responsive. </p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">2888</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.33 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">597</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">27</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/artberri/sidr/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/artberri/sidr" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Sidr</h1>
+<p><a href="https://travis-ci.org/artberri/sidr"><img src="https://travis-ci.org/artberri/sidr.svg?branch=master" alt="Build Status" /></a><br />
+<a href="https://codeclimate.com/github/artberri/sidr"><img src="https://codeclimate.com/github/artberri/sidr/badges/gpa.svg" alt="Code Climate" /></a><br />
+<a href="https://codeclimate.com/github/artberri/sidr/coverage"><img src="https://codeclimate.com/github/artberri/sidr/badges/coverage.svg" alt="Test Coverage" /></a><br />
+<a href="https://www.npmjs.com/package/sidr"><img src="https://img.shields.io/npm/dt/sidr.svg" alt="Total Downloads" /></a><br />
+<a href="https://www.npmjs.com/package/sidr"><img src="https://img.shields.io/npm/dm/sidr.svg" alt="Downloads Last Month" /></a><br />
+<a href="https://david-dm.org/artberri/sidr"><img src="https://david-dm.org/artberri/sidr.svg" alt="Dependency Status" /></a><br />
+<a href="https://npmjs.org/package/sidr"><img src="https://img.shields.io/npm/v/sidr.svg" alt="npm version" /></a><br />
+<a href="https://github.com/artberri/sidr/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/sidr.svg" alt="License" /></a></p>
+<p>Sidr is a jQuery plugin for creating side menus and the easiest way for doing your menu responsive. It uses CSS3 transitions in modern browsers and fallbacks into jQuery.animate when they are not supported.</p>
+<p>For a further description, documentation and others visit: <a href="http://www.berriart.com/sidr">http://www.berriart.com/sidr</a></p>
+<h2>Development</h2>
+<ul>
+<li>Source hosted at <a href="https://github.com/artberri/sidr">GitHub</a></li>
+<li>If you have problems implenting this, ask about it in <a href="http://stackoverflow.com/search?q=sidr">StackOverflow</a></li>
+<li>Report issues and feature requests in <a href="https://github.com/artberri/sidr/issues">GitHub Issues</a></li>
+<li>Contributing: <a href="CONTRIBUTING.md">CONTRIBUTING.md</a></li>
+</ul>
+<p>Pull requests are very welcome! Make sure your patches are well tested. Please create a topic branch for every separate change you make.</p>
+<h2>Licensing</h2>
+<p>Released under the MIT License <a href="http://opensource.org/licenses/MIT">http://opensource.org/licenses/MIT</a></p>
+<p>Copyright © 2013-2017 Alberto Varela (<a href="http://www.berriart.com">http://www.berriart.com</a>)</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h1>Changelog</h1>
+<h2>3.0.0 XXXX-XX-XX (Unreleased)</h2>
+<p>New features:</p>
+<ul>
+<li>jQuery is not needed anymore, now, Sidr is just a JS library which is available also as a jQuery Plugin</li>
+<li><code>left</code>/<code>right</code> transforms replaced with CSS3 2D Transforms (translateX) (TODO)</li>
+<li>New <code>reload</code> method to make easier to handle dynamic data, eliminating the need of destroying it and reinstantiate the slider. Thanks to @liladani: <a href="https://github.com/artberri/sidr/pull/176">https://github.com/artberri/sidr/pull/176</a></li>
+<li>New displace format resizing body. Thanks to @p0lar-bear: <a href="https://github.com/artberri/sidr/pull/150">https://github.com/artberri/sidr/pull/150</a> (TODO)</li>
+<li>Allow to keep menus opened. Thanks to @wtfred: <a href="https://github.com/artberri/sidr/pull/181">https://github.com/artberri/sidr/pull/181</a> (TODO)</li>
+</ul>
+<p>Breaking changes:</p>
+<ul>
+<li>Option 'bind' (event that triggers the menu) allows only a single event</li>
+<li>Default value for 'bind' (event that triggers the menu) is now <code>click</code> (it was <code>touchstart click</code>, both)</li>
+<li>Drop support for browsers not supporting animations</li>
+<li>Classes added to the menus change from <code>left</code> and <code>right</code> to <code>sidr-left</code> and <code>sidr-right</code> to avoid collisions</li>
+<li>Supports only browsers that natively support the following features:
+<ul>
+<li><a href="https://caniuse.com/#search=querySelectorAll">https://caniuse.com/#search=querySelectorAll</a></li>
+<li><a href="https://caniuse.com/#feat=classlist">https://caniuse.com/#feat=classlist</a></li>
+<li><a href="https://caniuse.com/#search=transitions">https://caniuse.com/#search=transitions</a></li>
+<li><a href="https://caniuse.com/#search=CSS3%202D%20Transforms">https://caniuse.com/#search=CSS3%202D%20Transforms</a></li>
+</ul></li>
+</ul>
+<p>Internals:</p>
+<ul>
+<li>Update dev dependencies</li>
+<li>Switch from Grunt to NPM Scripts</li>
+<li>Switch from SASS + COMPASS to PostCSS</li>
+<li>Switch from PhantomJS to Headless Chrome for testing</li>
+</ul>
+<h2>2.2.1 2016-02-17</h2>
+<p>Bug fixes:</p>
+<ul>
+<li>Removed the preinstall script that was generating problems when installing from npm</li>
+</ul>
+<h2>2.2.0 2016-02-16</h2>
+<p>New features:</p>
+<ul>
+<li>Added <code>bind</code> option that can be used to change the button event that will trigger the menu toggle</li>
+<li>Added the <code>status</code> method to get the Sidr status object</li>
+</ul>
+<p>From this version the bundling is done with rollup instead of browserify.</p>
+<h2>2.1.0 2016-01-20</h2>
+<p>New features:</p>
+<ul>
+<li>Now it works with CSS3 transitions by default and fallbacks to jQuery.animate when not supported</li>
+<li>Added <code>timing</code> option that can be used to indicate the transition timing function for the CSS3 transitions</li>
+<li>Added <code>method</code> option to change the default behaviour of the button (that is currently the toggle method)</li>
+<li>Added <code>onOpenEnd</code> option to add a callback that will be fired when the menu ends opening</li>
+<li>Added <code>onCloseEnd</code> option to add a callback that will be fired when the menu ends closing</li>
+</ul>
+<p>Bug fixes:</p>
+<ul>
+<li>Launch callback when a menu open is delayed until another one is closed</li>
+<li>Fixes bug introduced in 2.0.0 that added a method called 'undefined' in addition to the methods close, open, toggle</li>
+</ul>
+<p>This version has a complete code refactor for code quality improvements:</p>
+<ul>
+<li>ES2015 syntax supported</li>
+<li>jquery.sidr.js file split</li>
+<li>Start Unit testing</li>
+</ul>
+<h2>2.0.0 2016-01-10</h2>
+<p><strong>Breaking changes</strong> that require major version incrementation:</p>
+<ul>
+<li>Removing position:absolute fallback that added support for very old mobile browsers</li>
+<li>Removing toogle method that was a typo, use toggle instead</li>
+</ul>
+<p>Bug fixes:</p>
+<ul>
+<li>Fixing tap event on touchscreen devices</li>
+<li>Removing unnecessary compass mixins</li>
+<li>Fixes reinitalization</li>
+<li>Adding example</li>
+<li>Fixing bower structure</li>
+<li>Adding continous integration</li>
+<li>Fixing adding body classes when no displacing</li>
+<li>Removing only the needed styles from html and body tag</li>
+</ul>
+<h2>1.2.1 2013-11-06</h2>
+<ul>
+<li>Fixing tap event on touch devices</li>
+</ul>
+<h2>1.2.0 2013-11-05</h2>
+<ul>
+<li>Adding bind to tap event if exists instead of click    (faster)</li>
+<li>Fixed reopening menu bug in some browsers and jQuery versions</li>
+<li>Add a body class when the sidr menu is open and when animating</li>
+<li>Fixing the toogle/toggle typo</li>
+<li>Adds an option to allow choosing between displace or not the content (displace)</li>
+<li>Added callbacks for onOpen and onClose</li>
+</ul>
+<h2>1.1.1 2013-03-13</h2>
+<ul>
+<li>Fix bug when closing sidr programatically</li>
+</ul>
+<h2>1.1.0 - 2013-03-11</h2>
+<ul>
+<li>Added the <code>body</code> option</li>
+</ul>
+<h2>1.0.0 - 2013-02-20</h2>
+<ul>
+<li>First public version</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/menu" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>menu</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/navigation" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>navigation</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/responsive" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>responsive</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/454523?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/artberri" target="_blank" id="ownerName" class="sidebar-link">artberri</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">February 13, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 20, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://www.berriart.com/sidr/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;1.12.4)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>autoprefixer (^7.2.1)</li><li>babel-cli (^6.26.0)</li><li>babel-plugin-external-helpers (^6.22.0)</li><li>babel-preset-env (^1.6.1)</li><li>babelify (^8.0.0)</li><li>babelrc-rollup (^3.0.0)</li><li>chai (^4.1.2)</li><li>cross-env (^5.1.1)</li><li>cssnano (^3.10.0)</li><li>eslint (^4.12.1)</li><li>eslint-config-standard (^10.2.1)</li><li>eslint-plugin-import (^2.8.0)</li><li>eslint-plugin-node (^5.2.1)</li><li>eslint-plugin-promise (^3.6.0)</li><li>eslint-plugin-standard (^3.0.1)</li><li>http-server (^0.10.0)</li><li>karma (^1.7.1)</li><li>karma-chai (^0.1.0)</li><li>karma-chrome-launcher (^2.2.0)</li><li>karma-coverage (^1.1.1)</li><li>karma-jquery (^0.2.2)</li><li>karma-mocha (^1.3.0)</li><li>karma-mocha-reporter (^2.2.5)</li><li>karma-rollup-preprocessor (^5.0.2)</li><li>karma-sinon-chai (^1.3.3)</li><li>mocha (^4.0.1)</li><li>postcss (^6.0.14)</li><li>postcss-cli (^4.1.1)</li><li>postcss-cssnext (^3.0.2)</li><li>postcss-import (^11.0.0)</li><li>puppeteer (^0.13.0)</li><li>rollup (^0.52.1)</li><li>rollup-plugin-babel (^3.0.2)</li><li>rollup-plugin-istanbul (^2.0.0)</li><li>rollup-plugin-uglify (^2.0.1)</li><li>rollup-watch (^4.3.1)</li><li>sinon (^4.1.2)</li><li>sinon-chai (^2.14.0)</li><li>stylelint (^8.3.1)</li><li>stylelint-config-standard (^18.0.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/454523?v=4" alt="artberri" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/artberri" target="_blank" class="text-decoration-none fw-bold">artberri</a><p class="mb-0 text-muted small">126 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/108423?v=4" alt="alexkingorg" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/alexkingorg" target="_blank" class="text-decoration-none fw-bold">alexkingorg</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/40963?v=4" alt="jampow" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jampow" target="_blank" class="text-decoration-none fw-bold">jampow</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5203373?v=4" alt="brycesteinhoff" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/brycesteinhoff" target="_blank" class="text-decoration-none fw-bold">brycesteinhoff</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
