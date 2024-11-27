@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugin Date and Time Picker</title>
+    <meta name="description" content="datetimepicker by xdan. jQuery Plugin Date and Time Picker">
+    <meta name="author" content="xdan">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/datetimepicker-by-xdan.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Datetimepicker</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Datetimepicker",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Datetimepicker</h1>
+        <p id="packageDescription" class="text-muted">jQuery Plugin Date and Time Picker</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">3498</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.88 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">1512</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">431</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/xdan/datetimepicker/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/xdan/datetimepicker" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery DateTimePicker</h1>
+<p><a href="https://xdsoft.net/jqplugins/datetimepicker/">Demo and Documentation</a></p>
+<p><a href="https://travis-ci.org/xdan/datetimepicker"><img src="https://travis-ci.org/xdan/datetimepicker.svg?branch=master" alt="Build Status" /></a><br />
+<a href="https://badge.fury.io/js/jquery-datetimepicker"><img src="https://badge.fury.io/js/jquery-datetimepicker.svg" alt="npm version" /></a><br />
+<a href="https://www.npmjs.com/package/jquery-datetimepicker"><img src="https://img.shields.io/npm/dm/jquery-datetimepicker.svg" alt="npm" /></a></p>
+<p>PLEASE. Help me update the documentation.<br />
+<a href="https://github.com/xdan/datetimepicker/blob/master/doc.tpl">Doc.tpl</a><br />
+This file will be automatically displayed on the site</p>
+<h1>Installation</h1>
+<pre class="prettyprint linenums lang-language"><code>npm install jquery-datetimepicker</code></pre>
+<p>OR</p>
+<pre class="prettyprint linenums lang-language"><code>yarn add jquery-datetimepicker</code></pre>
+<p>or download <a href="https://github.com/xdan/datetimepicker/releases">zip</a></p>
+<h1>datetimepicker</h1>
+<p>==============</p>
+<p><strong>!!! In the latest version the 'lang' option is obsolete. The language setting is now global. !!!</strong></p>
+<p>Use this:</p>
+<pre class="prettyprint linenums lang-language"><code>jQuery.datetimepicker.setLocale('en');</code></pre>
+<p><a href="https://xdsoft.net/jqplugins/datetimepicker/">Documentation</a></p>
+<p>jQuery Plugin Date and Time Picker</p>
+<p>DateTimePicker</p>
+<p><img src="https://raw.github.com/xdan/datetimepicker/master/screen/1.png" alt="ScreenShot" /></p>
+<p>DatePicker</p>
+<p><img src="https://raw.github.com/xdan/datetimepicker/master/screen/2.png" alt="ScreenShot" /></p>
+<p>TimePicker</p>
+<p><img src="https://raw.github.com/xdan/datetimepicker/master/screen/3.png" alt="ScreenShot" /></p>
+<p>Options to highlight individual dates or periods</p>
+<p><img src="https://raw.github.com/Mingpao/datetimepicker/master/screen/4.png" alt="ScreenShot" /></p>
+<p><img src="https://raw.github.com/Mingpao/datetimepicker/master/screen/5.png" alt="ScreenShot" /></p>
+<p><img src="https://raw.github.com/Mingpao/datetimepicker/master/screen/6.png" alt="ScreenShot" /></p>
+<h3>JS Build help</h3>
+<p><strong>Requires Node and NPM</strong> <a href="http://nodejs.org/download/">Download and install node.js</a>.</p>
+<p>Install:</p>
+<ol>
+<li>Install <code>bower</code> globally with <code>npm install -g bower</code>.</li>
+<li>Run <code>npm install</code>. npm will look at <code>package.json</code> and automatically install the necessary dependencies. </li>
+<li>Run <code>bower install</code>, which installs front-end packages defined in <code>bower.json</code>.</li>
+</ol>
+<p>Notice: If you use Bower v1.5.2, you will get the error: <code>The "main" field cannot contain minified files</code><br />
+You can regress to version 1.3.12</p>
+<ol>
+<li><code>npm uninstall bower -g</code></li>
+<li><code>npm install -g bower@1.3.12</code></li>
+</ol>
+<p>Build:</p>
+<p>First install npm requirements: <code>npm install -g uglifycss concat-cli</code><br />
+Then build the files: <code>npm run build</code></p>
+<p>When the build completes, you'll have the following files:</p>
+<ul>
+<li><strong>build/jquery.datetimepicker.full.js</strong> - browser file</li>
+<li><strong>build/jquery.datetimepicker.full.min.js</strong> - browser minified file</li>
+<li><strong>build/jquery.datetimepicker.min.js</strong> - amd module style minified file</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/datepicker" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>datepicker</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/datetimepicker" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>datetimepicker</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/picker" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>picker</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/timepicker" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>timepicker</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/794318?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/xdan" target="_blank" id="ownerName" class="sidebar-link">xdan</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">November 3, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 20, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://xdsoft.net/jqplugins/datetimepicker/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;= 1.7.2)</li><li>jquery-mousewheel (&gt;= 3.1.13)</li><li>php-date-formatter (^1.3.6)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>chai (^4.1.2)</li><li>concat (azer/concat)</li><li>concat-cli (^4.0.0)</li><li>karma (^2.0.0)</li><li>karma-chai (^0.1.0)</li><li>karma-firefox-launcher (^1.1.0)</li><li>karma-mocha (^1.3.0)</li><li>mocha (^5.0.4)</li><li>uglify-js (^3.4.9)</li><li>uglifycss (^0.0.27)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/794318?v=4" alt="xdan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/xdan" target="_blank" class="text-decoration-none fw-bold">xdan</a><p class="mb-0 text-muted small">383 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/9365204?v=4" alt="Abarth77" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Abarth77" target="_blank" class="text-decoration-none fw-bold">Abarth77</a><p class="mb-0 text-muted small">10 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1609992?v=4" alt="demis-palma" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/demis-palma" target="_blank" class="text-decoration-none fw-bold">demis-palma</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1266205?v=4" alt="u01jmg3" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/u01jmg3" target="_blank" class="text-decoration-none fw-bold">u01jmg3</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/176694341?v=4" alt="degtyarevmaksim" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/degtyarevmaksim" target="_blank" class="text-decoration-none fw-bold">degtyarevmaksim</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/729176?v=4" alt="gsilis" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gsilis" target="_blank" class="text-decoration-none fw-bold">gsilis</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4307307?v=4" alt="KyleMit" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/KyleMit" target="_blank" class="text-decoration-none fw-bold">KyleMit</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/801600?v=4" alt="nireno" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nireno" target="_blank" class="text-decoration-none fw-bold">nireno</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1436199?v=4" alt="borc" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/borc" target="_blank" class="text-decoration-none fw-bold">borc</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/880505?v=4" alt="lampslave" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lampslave" target="_blank" class="text-decoration-none fw-bold">lampslave</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/662215?v=4" alt="psyafter" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/psyafter" target="_blank" class="text-decoration-none fw-bold">psyafter</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1088967?v=4" alt="xiaoyu5256" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/xiaoyu5256" target="_blank" class="text-decoration-none fw-bold">xiaoyu5256</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/910867?v=4" alt="mykohsu" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mykohsu" target="_blank" class="text-decoration-none fw-bold">mykohsu</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5718762?v=4" alt="isaacws" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/isaacws" target="_blank" class="text-decoration-none fw-bold">isaacws</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/16628863?v=4" alt="vzverev78" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vzverev78" target="_blank" class="text-decoration-none fw-bold">vzverev78</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4363857?v=4" alt="socheatsok78" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/socheatsok78" target="_blank" class="text-decoration-none fw-bold">socheatsok78</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/177243?v=4" alt="Pomax" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Pomax" target="_blank" class="text-decoration-none fw-bold">Pomax</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1770422?v=4" alt="jamesfholland" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jamesfholland" target="_blank" class="text-decoration-none fw-bold">jamesfholland</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/265719?v=4" alt="Znow" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Znow" target="_blank" class="text-decoration-none fw-bold">Znow</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7589350?v=4" alt="JSoon" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/JSoon" target="_blank" class="text-decoration-none fw-bold">JSoon</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11269102?v=4" alt="grazumkov" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/grazumkov" target="_blank" class="text-decoration-none fw-bold">grazumkov</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/25927715?v=4" alt="degroote-benjamin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/degroote-benjamin" target="_blank" class="text-decoration-none fw-bold">degroote-benjamin</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1592680?v=4" alt="andrewmnlv" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/andrewmnlv" target="_blank" class="text-decoration-none fw-bold">andrewmnlv</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2613208?v=4" alt="Zemistr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Zemistr" target="_blank" class="text-decoration-none fw-bold">Zemistr</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6804487?v=4" alt="greuff" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/greuff" target="_blank" class="text-decoration-none fw-bold">greuff</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/390426?v=4" alt="bartj3" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bartj3" target="_blank" class="text-decoration-none fw-bold">bartj3</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/244163?v=4" alt="burakerdem" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/burakerdem" target="_blank" class="text-decoration-none fw-bold">burakerdem</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1168777?v=4" alt="ethaizone" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ethaizone" target="_blank" class="text-decoration-none fw-bold">ethaizone</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7398530?v=4" alt="fedebruchman" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fedebruchman" target="_blank" class="text-decoration-none fw-bold">fedebruchman</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/10346452?v=4" alt="HuBandiT" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/HuBandiT" target="_blank" class="text-decoration-none fw-bold">HuBandiT</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
