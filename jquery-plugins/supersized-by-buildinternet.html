@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Background Slideshow Plugin for jQuery</title>
+    <meta name="description" content="supersized by buildinternet. Full screen background slideshow plugin for jQuery">
+    <meta name="author" content="buildinternet">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/supersized-by-buildinternet.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Supersized</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Supersized",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Supersized</h1>
+        <p id="packageDescription" class="text-muted">Full screen background slideshow plugin for jQuery</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1133</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.29 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">256</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">115</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/buildinternet/supersized/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/buildinternet/supersized" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Supersized jQuery Plugin</h1>
+<p>Documentation can be found on the official project page: <a href="http://www.buildinternet.com/project/supersized/">http://www.buildinternet.com/project/supersized/</a></p>
+<p><strong><em> Changelog </em></strong></p>
+<p>2/23/12 - 3.2.7</p>
+<pre><code>*Fixed issue with previous thumbnail not loading correctly
+*Autoplay now works when no transition is specified
+*Updated Shutter theme CSS for smooth opacity transition when thumbnails are hovered over.</code></pre>
+<p>11/28/11 - 3.2.6</p>
+<pre><code>*Fixed issue where previous slide was not displaying after goTo()
+*Update supersized.3.2.6.js</code></pre>
+<p>9/23/11 - 3.2.5</p>
+<pre><code>*Fixed resize error when only two slides were present
+*Updated comments for slide_link to reflect actual option ("number" to "num")</code></pre>
+<p>7/13/11 - 3.2.4</p>
+<pre><code>*Slideshow files updated to 3.2.4 to address Firefox 5+ bug with slides not loading
+*Flickr fix for 1.1.2 for Flickr API and window load event conflicts (thanks to dbertram)
+*Update to Shutter CSS file to fix IE7 issue where progress bar wasn't left aligned</code></pre>
+<p>7/8/11 - 3.2.3</p>
+<pre><code>*Fixed bug where certain transitions broke slideshow since the 3.2.2 update in Firefox and IE</code></pre>
+<p>7/5/11  - 3.2.2</p>
+<pre><code>*Reworked Supersized slides to be insides an unordered list, rather than anchor tags
+*Slides now load upon request and populate the respective list item. Corrects potential bandwidth problem when caching is turned off, if images keep getting reloaded.
+*Only affects base slideshow files: supersized.3.2.x.js and supersized.css</code></pre>
+<p>6/27/11 - 3.2.1</p>
+<pre><code>*Fixed Supersized loader not displaying initially (theme files unaffected)
+*Supersized project page now updated</code></pre>
+<p>6/20/11 - 3.2.0 Early Release</p>
+<pre><code>*Documentation, announcement post, and project page update to follow
+*The Flickr edition is not updated from 3.1.3 yet - this is on it's way</code></pre>
+<p>3/15/11 - 3.1.3 Update (All editions)</p>
+<pre><code>*Added fix for images on IE failing to resize when loaded (update supersized.3.1.x.js)</code></pre>
+<p>3/11/11 - Supersized 3.1.2 Updates (All editions)</p>
+<pre><code>*Added option for random slide order
+*Updated min_height and min_width performance</code></pre>
+<p>3/5/11 - Supersized 3.1.1 and Supersized Flickr 1.1 Updates and Fixes</p>
+<pre><code>*Smoother slide transitions (no longer uses the slide function)
+*Files "effects.core.min.js" and "effects.slide.min.js" are no longer required
+*Fixed overlapping images when sliding
+*Fixed image resizing for slideshows with only 1 image
+*Path for navigation button images is now defined in options
+*Added option for basic JS image protection against right click/dragging
+*Random start slides now possible in Slideshows (0 is random)
+*Updated default #supersized-loader CSS and animated GIF to work better on light and dark backgrounds</code></pre>
+<p>2/27/11 - Updates to project page and licenses</p>
+<pre><code>*Supersized 3.1 is licensed under either the MIT or GPL License
+*Demos and documentation can now be found at the project page (http://buildinternet.com/project/supersized)</code></pre>
+<p>2/26/11 - Supersized 3.1 and Supersized Flickr 1.0 Released</p>
+<pre><code>*Complete rewrite of the Supersized script
+*Added image rendering for faster transition speeds on FF and IE
+*Dynamic image handling (no longer relies on predefined ratios)
+*Unobtrusive backgrounds - you no longer need to wrap your content in a special div.
+*Many options added, including fit to screen, keyboard navigation, transition speed, and more.
+*Created seperate script specifically for Flickr - can pull by user, set, or group.
+*API Key is needed to use Supersized Flickr (http://www.flickr.com/services/apps/create/)
+
+Expect updates to the project page, demos, and a corresponding announcement post on Build Internet.
+
+**If you are upgrading from a previous version, the structure has changed - I will post how to go about this when I do the corresponding post.</code></pre>
+<p>2/11/11 - Supersized Core files updated with reduced code, cleaner file structure, and dynamic image proportions.</p>
+<h2>Contact</h2>
+<ul>
+<li><a href="http://twitter.com/vivalasam">http://twitter.com/vivalasam</a></li>
+<li>sam@onemightyroar.com</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/445666?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/buildinternet" target="_blank" id="ownerName" class="sidebar-link">buildinternet</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">December 31, 2010</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 7, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Other</span>
+    </div>
+	        <a href="http://www.buildinternet.com/project/supersized/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/445687?v=4" alt="samdunn" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/samdunn" target="_blank" class="text-decoration-none fw-bold">samdunn</a><p class="mb-0 text-muted small">34 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/138033?v=4" alt="zachdunn" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zachdunn" target="_blank" class="text-decoration-none fw-bold">zachdunn</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1893578?v=4" alt="RichardVanDerMeer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/RichardVanDerMeer" target="_blank" class="text-decoration-none fw-bold">RichardVanDerMeer</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/373389?v=4" alt="matt-richardson" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/matt-richardson" target="_blank" class="text-decoration-none fw-bold">matt-richardson</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/864848?v=4" alt="dbertram" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dbertram" target="_blank" class="text-decoration-none fw-bold">dbertram</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/408939?v=4" alt="JamesChevalier" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/JamesChevalier" target="_blank" class="text-decoration-none fw-bold">JamesChevalier</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2971906?v=4" alt="angekouf" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/angekouf" target="_blank" class="text-decoration-none fw-bold">angekouf</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4051639?v=4" alt="micrgl" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/micrgl" target="_blank" class="text-decoration-none fw-bold">micrgl</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+3 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
