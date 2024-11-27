@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avgrund is jQuery Plugin with New Modal Concept for Popups</title>
+    <meta name="description" content="jquery.avgrund.js by voronianski. Avgrund is jQuery plugin with new modal concept for popups">
+    <meta name="author" content="voronianski">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-avgrund-js-by-voronianski.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jquery.avgrund.js</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jquery.avgrund.js",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jquery.avgrund.js</h1>
+        <p id="packageDescription" class="text-muted">Avgrund is jQuery plugin with new modal concept for popups</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1754</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.07 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">354</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">18</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/voronianski/jquery.avgrund.js/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/voronianski/jquery.avgrund.js" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Avgrund</h1>
+<p><a href="http://libscore.com/#$.fn.avgrund"><img src="http://img.shields.io/badge/libscore-34-brightgreen.svg?style=flat-square" alt="Libscore Badge" /></a></p>
+<p>Avgrund is a jQuery plugin for your modal boxes and popups. It uses new concept showing depth between popup and page.</p>
+<p>It works in all modern browsers and gracefully degrade in those that do not support CSS transitions and transformations.</p>
+<p>Tested with jQuery versions 1.4+</p>
+<p>File size of minified version is <code>~1Kb</code>.</p>
+<h2>Usage</h2>
+<p>You can simply include javascript file and init Avgrund with one line:</p>
+<pre class="prettyprint linenums lang-language"><code>$('element').avgrund();</code></pre>
+<p>and linking <code>avgrund.css</code> file to the project:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link rel="stylesheet" href="path/to/your/avgrund.css"&gt;</code></pre>
+<p>If you use <a href="https://github.com/bower/bower">bower</a> then you can simply install it as:</p>
+<pre class="prettyprint linenums lang-language"><code>bower install jquery.avgrund</code></pre>
+<h3>Using plugin with <a href="http://browserify.org/">Browserify</a></h3>
+<p>At first install plugin via NPM:</p>
+<pre class="prettyprint linenums lang-language"><code>npm install jquery.avgrund
+npm install jquery-browserify</code></pre>
+<p>In your server-side node.js (e.g. <a href="http://expressjs.com/">express</a> app):</p>
+<pre class="prettyprint linenums lang-language"><code>app.use(require('browserify')({
+    require : ['jquery-browserify', 'jquery.avgrund']
+}));</code></pre>
+<p>And in your browser-side you can init plugin now:</p>
+<pre class="prettyprint linenums lang-language"><code>var $ = require('jquery-browserify');
+require('jquery.avgrund')($);</code></pre>
+<h3>Options</h3>
+<p>You're also able to use some of the options that let you customize it as you wish:</p>
+<pre class="prettyprint linenums lang-language"><code>$('element').avgrund({
+    width: 380, // max is 640px
+    height: 280, // max is 350px
+    showClose: false, // switch to 'true' for enabling close button
+    showCloseText: '', // type your text for close button
+    closeByEscape: true, // enables closing popup by 'Esc'..
+    closeByDocument: true, // ..and by clicking document itself
+    holderClass: '', // lets you name custom class for popin holder..
+    overlayClass: '', // ..and overlay block
+    enableStackAnimation: false, // enables different type of popin's animation
+    onBlurContainer: '', // enables blur filter for specified block
+    openOnEvent: true, // set to 'false' to init on load
+    setEvent: 'click', // use your event like 'mouseover', 'touchmove', etc.
+    onLoad: function (elem) { ... }, // set custom call before popin is inited..
+    onUnload: function (elem) { ... }, // ..and after it was closed
+    template: 'Your string content goes here..' // or function (elem) { ... }, or selector $('.content')
+});</code></pre>
+<p>More detailed information on every option you can find <a href="https://github.com/voronianski/jquery.avgrund.js#Documentation">here</a>.</p>
+<h2>Documentation</h2>
+<p>Here is the list of available avgrund options:</p>
+<h5>width - string | number, default: '380px'</h5>
+<p>Set popup width (currently stict to max <code>640px</code>).</p>
+<h5>height - string | number, default: '280px'</h5>
+<p>Set popup height (currently strict to max <code>350px</code>).</p>
+<h5>showClose - boolean, default: false</h5>
+<p>Show/hide close button.</p>
+<h5>showCloseText - string</h5>
+<p>If you decided to show close button then you probably want to add close text to it.</p>
+<h5>closeByEscape - boolean, default: true</h5>
+<p>Allow users to close popup by clicking <code>Esc</code> button.</p>
+<h5>closeByDocument -  boolean, default: true</h5>
+<p>Allow users to close popup by clicking everywhere on <code>document</code> (except popup of course).</p>
+<h5>holderClass - string</h5>
+<p>Adds custom css classes to avgrund popup, example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(element).avgrund({
+    holderClass: 'my-custom-class'
+});</code></pre>
+<p>results in adding this class to avgrund container:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="avgrund-popin my-custom-class"&gt;...&lt;/div&gt;</code></pre>
+<h5>overlayClass - string</h5>
+<p>Adds custom css classes to avgrund overlay container.</p>
+<h5>enableStackAnimation - boolean, default: false</h5>
+<p>Possibility to add a bit different popup hiding animation type.</p>
+<h5>onBlurContainer - string</h5>
+<p>Class name for container element that will be blurred when popup appears, example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(element).avgrund({
+    onBlurContainer: '#my-container'
+});</code></pre>
+<p>Please note that currently css <code>blur</code> is not supported in all modern browsers.</p>
+<h5>openOnEvent - boolean, default: true</h5>
+<p>If you want to show avgrund on page load set this option value to <code>false</code>, example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(document).avgrund({
+    openOnEvent: false
+});</code></pre>
+<h5>setEvent - string, default: 'click'</h5>
+<p>With this option you can manage events that will open popup on certain element:</p>
+<pre class="prettyprint linenums lang-language"><code>$(element).avgrund({
+    setEvent: 'mouseover' // will open popin on element's mouseover
+});</code></pre>
+<h5>onLoad - function</h5>
+<p>If you need to make some preparations or whatever before avgrund popup will be shown, example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(element).avgrund({
+    onLoad: function (element) {
+        console.log('This function will be called before dialog is initialized');
+    }
+});</code></pre>
+<h5>onUnload - function</h5>
+<p>This function will be executed after popup was closed, example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(element).avgrund({
+    onUnload: function (element) {
+        console.log('This message will be shown after dialog is closed');
+    }
+});</code></pre>
+<h5>template - string | function | jQuery object</h5>
+<p>Specify your content for popin here, it can be <code>string</code> value:</p>
+<pre class="prettyprint linenums lang-language"><code>$(element).avgrund({
+    template: '&lt;p&gt;This is popin content!&lt;/p&gt;'
+});</code></pre>
+<p>or <code>function</code> that returns content itself:</p>
+<pre class="prettyprint linenums lang-language"><code>$(element).avgrund({
+    template: function (element) {
+        // return 'your content..'
+    }
+});</code></pre>
+<p>Also it accepts jQuery objects (dynamic as well), so you can create element with content inside your app:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="content" style="display: none;"&gt;
+    My content for popin!
+&lt;/div&gt;</code></pre>
+<p>and use it in <code>template</code> of popin:</p>
+<pre class="prettyprint linenums lang-language"><code>$('element').avgrund({
+    template: $('.content')
+});</code></pre>
+<h2>Demo</h2>
+<p>Check the example here: <a href="http://labs.voronianski.dev/jquery.avgrund.js/">http://labs.voronianski.dev/jquery.avgrund.js/</a></p>
+<p>Inspired by Hakim's demo: <a href="https://github.com/hakimel/avgrund/">https://github.com/hakimel/avgrund/</a></p>
+<h2>Changelog</h2>
+<h3>Update (Sep 28, 2013)</h3>
+<p>Added AMD and CommonJS styles support.</p>
+<h3>Update (Sep 22, 2013)</h3>
+<p>Added support jQuery selectors in template option.</p>
+<h3>Update (June 15, 2013)</h3>
+<p>Better fix for overlay and long content pages, minor add-ons.</p>
+<h3>Update (May 26, 2013)</h3>
+<p>Few fixes, and plugin is available as bower package now. So you can simply install it as:</p>
+<h3>Update (Feb 25, 2013)</h3>
+<p>A bunch of small but very useful fixes and updates, including multiple avgrund popins on a page, removing popins from DOM after deactivation (also fixed an issue to make sure avgrund close effect works) and position:fixed/transform/overflow issue for scrolled pages in -webkit.</p>
+<h3>Update (Nov 18, 2012)</h3>
+<p>Get 2 new useful options for popin that were missed before. Now you can set your custom functions before Avgrund dialog is open and after it was closed.</p>
+<h3>Update (Sep 30, 2012)</h3>
+<p>Some new updates include initializing popin without event. Also now you can set up your own event for an element. Added ability to use a custom function inside avgrund's template option. Thanks to <a href="https://github.com/juice49">juice49</a> for pull request.</p>
+<h3>Update (Aug 31, 2012)</h3>
+<p>New options added - disable closing popup by 'Esc' and 'Document click'. Blur css filter for browsers that support it (seems only webkit ones for now).</p>
+<h2>Contribution</h2>
+<p>We still have some issues to fix and make avgrund better, if you have any suggestions raise them in <a href="https://github.com/voronianski/jquery.avgrund.js/issues">issues</a> please.</p>
+<hr />
+<p>MIT Licensed</p>
+<p><strong>enjoy!</strong></p>
+<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/voronianski/jquery.avgrund.js/trend.png" alt="Bitdeli Badge" /></a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/popin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>popin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/modal" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>modal</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/popup" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>popup</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/ui" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>ui</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/lightbox" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>lightbox</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/974035?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/voronianski" target="_blank" id="ownerName" class="sidebar-link">voronianski</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">August 25, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 20, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="https://labs.voronianski.dev/jquery.avgrund.js/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (~0.4.1)</li><li>grunt-contrib-uglify (~0.2.4)</li><li>grunt-contrib-jshint (~0.6.4)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/974035?v=4" alt="voronianski" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/voronianski" target="_blank" class="text-decoration-none fw-bold">voronianski</a><p class="mb-0 text-muted small">111 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/47586?v=4" alt="ayoung" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ayoung" target="_blank" class="text-decoration-none fw-bold">ayoung</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5245?v=4" alt="zaa" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zaa" target="_blank" class="text-decoration-none fw-bold">zaa</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/105852?v=4" alt="iurisilvio" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/iurisilvio" target="_blank" class="text-decoration-none fw-bold">iurisilvio</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/947110?v=4" alt="kkirsche" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kkirsche" target="_blank" class="text-decoration-none fw-bold">kkirsche</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/301201?v=4" alt="leobalter" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/leobalter" target="_blank" class="text-decoration-none fw-bold">leobalter</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/434750?v=4" alt="mason-stewart" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mason-stewart" target="_blank" class="text-decoration-none fw-bold">mason-stewart</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+2 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
