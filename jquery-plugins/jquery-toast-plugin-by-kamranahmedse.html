@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highly Customizable jQuery Plugin to Show Toast Messages</title>
+    <meta name="description" content="jquery-toast-plugin by kamranahmedse. Highly customizable jquery plugin to show toast messages">
+    <meta name="author" content="kamranahmedse">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-toast-plugin-by-kamranahmedse.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Toast Plugin</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Toast Plugin",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Toast Plugin</h1>
+        <p id="packageDescription" class="text-muted">Highly customizable jquery plugin to show toast messages</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1515</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.18 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">507</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">34</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/kamranahmedse/jquery-toast-plugin/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/kamranahmedse/jquery-toast-plugin" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Jquery Toast Plugin</h1>
+<p>A plugin to show highly customizable notifications to the user. </p>
+<img src="http://i.imgur.com/RRrb0KE.png" />
+<h1>How to use</h1>
+<ul>
+<li>
+<p>You can install the plugin via Bower:</p>
+<pre class="prettyprint linenums lang-language"><code>bower install jquery-toast-plugin</code></pre>
+<p>or via <code>npm</code></p>
+<pre class="prettyprint linenums lang-language"><code>npm install jquery-toast-plugin</code></pre>
+<p>Or directly download the repository and place the content of <code>dist</code> wherever you can access them.</p>
+</li>
+<li>Include the CSS and JS files.</li>
+<li>Simply do <code>$.toast('Toast message to be shown')</code> Of course it would be the world's simplest toast message but believe me <strong>you can do a lot more</strong> with the options.</li>
+</ul>
+<h1>Demo</h1>
+<p>For some quick demos and a detailed documentation accompanied by the demos for each of the available options can be accessed through <a href="http://kamranahmed.info/toast">http://kamranahmed.info/toast</a></p>
+<h2>Quick usage examples</h2>
+<p><strong>Simple textual toast</strong></p>
+<pre class="prettyprint linenums lang-language"><code>// Non sticky version
+$.toast("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, consequuntur doloremque eveniet eius eaque dicta repudiandae illo ullam. Minima itaque sint magnam dolorum asperiores repudiandae dignissimos expedita, voluptatum vitae velit.")
+// Sticky version
+$.toast({
+  text : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, consequuntur doloremque eveniet eius eaque dicta repudiandae illo ullam. Minima itaque sint magnam dolorum asperiores repudiandae dignissimos expedita, voluptatum vitae velit.",
+  hideAfter : false
+})</code></pre>
+<p><strong>Toast using HTML as a text</strong></p>
+<pre class="prettyprint linenums lang-language"><code>// Non sticky
+$.toast("Let's test some HTML stuff... &lt;a href='#'&gt;github&lt;/a&gt;")
+// sticky
+$.toast({
+  text : "&lt;strong&gt;Remember!&lt;/strong&gt; You can &lt;span style='font-weight: bold; color:red;' class='horribly-styled'&gt;always&lt;/span&gt; introduce your own × HTML and &lt;span style='font-size: 18px;'&gt;CSS&lt;/span&gt; in the toast.",
+  hideAfter : false
+})</code></pre>
+<p><strong>Unordered list elements as the text of toast using array</strong></p>
+<pre class="prettyprint linenums lang-language"><code>// Non sticky version
+$.toast(["Ubuntu : One of it's kind", "Sublime Text : Productivity unleashed", "HeidiSQL : Just love it", "Github : Just Lovely"])
+// Sticky version
+$.toast({
+  text : ["Ubuntu : One of it's kind", "Sublime Text : Productivity unleashed", "HeidiSQL : Just love it", "Github : Just Lovely"],
+  hideAfter : false
+})</code></pre>
+<p><strong>Changing the animations</strong></p>
+<pre class="prettyprint linenums lang-language"><code>$.toast({ 
+  text : "Let's test some HTML stuff... &lt;a href='#'&gt;github&lt;/a&gt;", 
+  showHideTransition : 'slide'  // It can be plain, fade or slide
+})</code></pre>
+<p><strong>Changing the formatting</strong></p>
+<pre class="prettyprint linenums lang-language"><code>$.toast({ 
+  text : "Let's test some HTML stuff... &lt;a href='#'&gt;github&lt;/a&gt;", 
+  showHideTransition : 'slide',  // It can be plain, fade or slide
+  bgColor : 'blue',              // Background color for toast
+  textColor : '#eee',            // text color
+  allowToastClose : false,       // Show the close button or not
+  hideAfter : 5000,              // `false` to make it sticky or time in miliseconds to hide after
+  stack : 5,                     // `fakse` to show one stack at a time count showing the number of toasts that can be shown at once
+  textAlign : 'left',            // Alignment of text i.e. left, right, center
+  position : 'bottom-left'       // bottom-left or bottom-right or bottom-center or top-left or top-right or top-center or mid-center or an object representing the left, right, top, bottom values to position the toast on page
+})</code></pre>
+<p><strong>Resetting the toast</strong></p>
+<pre class="prettyprint linenums lang-language"><code>var myToast = $.toast('Some toast that needs to be removed.');
+myToast.reset(); // remove the toast "Some toast that needs to be removed"</code></pre>
+<p>What if I want to reset all the toasts at once? You may ask. Well in that case, you can do the following:</p>
+<pre class="prettyprint linenums lang-language"><code>$.toast().reset('all');</code></pre>
+<p><strong>Updating the toast</strong><br />
+Suppose, you had shown some toast upon the page, a sticky toast for example and now you want to update the toast. You can do the following</p>
+<pre class="prettyprint linenums lang-language"><code>var myToast = $.toast({
+  text : 'Some toast that needs to show the success message after the ajax call.',
+  hideAfter : false,
+  bgColor : '#E01A31'
+});
+
+window.setTimeout(function(){
+  myToast.update({
+    text : '&lt;strong&gt;Updated after a few seconds&lt;/strong&gt;',
+    bgColor : '#23B65D'
+  });
+}, 5000);</code></pre>
+<p>To learn more about how to use and customize it, head to <a href="http://kamranahmed.info/toast" target="_blank"><a href="http://kamranahmed.info/toast">http://kamranahmed.info/toast</a></a>. Also you can find a customizer there that will let you modify the look and feel of the toast however you like it.</p>
+<hr>
+<p>You can simply download the repo or if you are in rush the <a href="https://raw.githubusercontent.com/kamranahmedse/jquery-toast-plugin/master/jquery.toast.min.css" target="_blank">minified CSS</a> or <a href="https://raw.githubusercontent.com/kamranahmedse/jquery-toast-plugin/master/jquery.toast.css">non-minified CSS</a> can be found and <a href="https://raw.githubusercontent.com/kamranahmedse/jquery-toast-plugin/master/jquery.toast.min.js" target="_blank">minified JS</a> and <a href="https://raw.githubusercontent.com/kamranahmedse/jquery-toast-plugin/master/jquery.toast.js" target="_blank">non minified JS</a> can also be found.</p>
+<h1>Features</h1>
+<ul>
+  <li>Show different types of toasts i.e. informational, warning, errors and success</li>
+  <li>Custom <strong>toast background color</strong> and <strong>text color</strong></li>
+  <li>Ability to <strong>hack the CSS</strong> to add your own thing</li>
+  <li>
+    <strong>Text can be</strong> provided in the form of
+    <ul>
+      <li><strong>Array</strong> (It's elements will be changed to an un ordered list)</li>
+      <li><strong>Simple text</strong></li>
+      <li><strong>HTML</strong></li>
+    </ul>
+  </li>
+  <li><strong>Events support</strong> i.e. <code>beforeHide</code>, <code>afterHidden</code>, <code>beforeShow</code>, <code>afterShown</code></li>
+
+  <li><code>Fade</code> and <code>Slide</code> show/hide transitions support (More to come)</li>
+  <li>Supports showing the loader for the toast</li>
+  <li>You can <strong>position the toast, wherever you want</strong> there is support for <code>top-left</code>, <code>top-right</code> <code>bottom-left</code> and <strong>bottom-right</strong>, <code>top-center</code>, <code>bottom-center</code> and <code>mid-center</code> ...sighs! That's a whole lot of options, isn't it? No, you say. Ok then here is the most exciting thing, you can also introduce <strong>your own positioning</strong> just <strong>by passing a simple js object</strong> containing <code>{ top: - , bottom: -, left: -, right: - }</code> </li>
+
+  <li>Ability to add <strong>sticky toast</strong></li>
+
+  <li>Optional <strong>stack length can be defined</strong> (i.e. maximum number of toasts that can be shown at once)</li>
+
+</ul>
+<p>Please report any bugs or features you would like added.</p>
+<h1>Copyright</h1>
+<p>MIT © <a href="http://kamranahmed.info">Kamran Ahmed</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/growl" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>growl</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/growl-notifications" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>growl-notifications</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-toast-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-toast-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/notifications" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>notifications</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/toast" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>toast</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/toast-message" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>toast-message</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/toastr" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>toastr</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/4921183?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/kamranahmedse" target="_blank" id="ownerName" class="sidebar-link">kamranahmedse</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 1, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 25, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="http://kamranahmed.info/toast" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4921183?v=4" alt="kamranahmedse" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kamranahmedse" target="_blank" class="text-decoration-none fw-bold">kamranahmedse</a><p class="mb-0 text-muted small">78 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/8089285?v=4" alt="akram-rameez" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/akram-rameez" target="_blank" class="text-decoration-none fw-bold">akram-rameez</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/6839243?v=4" alt="imranjs" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/imranjs" target="_blank" class="text-decoration-none fw-bold">imranjs</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3092978?v=4" alt="bitdeli-chef" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bitdeli-chef" target="_blank" class="text-decoration-none fw-bold">bitdeli-chef</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/10915753?v=4" alt="mazyvan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mazyvan" target="_blank" class="text-decoration-none fw-bold">mazyvan</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/748011?v=4" alt="jasonday" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jasonday" target="_blank" class="text-decoration-none fw-bold">jasonday</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11497012?v=4" alt="Martin-Nyaga" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Martin-Nyaga" target="_blank" class="text-decoration-none fw-bold">Martin-Nyaga</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3905501?v=4" alt="bryant1410" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bryant1410" target="_blank" class="text-decoration-none fw-bold">bryant1410</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1207513?v=4" alt="Stephen9s" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Stephen9s" target="_blank" class="text-decoration-none fw-bold">Stephen9s</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/696470?v=4" alt="mahadazad" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mahadazad" target="_blank" class="text-decoration-none fw-bold">mahadazad</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3309521?v=4" alt="n3gotium" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/n3gotium" target="_blank" class="text-decoration-none fw-bold">n3gotium</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+6 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
