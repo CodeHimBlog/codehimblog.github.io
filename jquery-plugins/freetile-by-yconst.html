@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freetile by Yconst</title>
+    <meta name="description" content="Freetile jQuery layout plugin">
+    <meta name="author" content="yconst">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/freetile-by-yconst.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Freetile</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Freetile",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Freetile</h1>
+        <p id="packageDescription" class="text-muted">Freetile jQuery layout plugin</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1000</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.12 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">167</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">7</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/yconst/Freetile/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/yconst/Freetile" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Freetile</h1>
+<p>Freetile is a plugin for <a href="http://jquery.com">jQuery</a> that enables the organization of webpage content in an efficient, dynamic and responsive layout. It can be applied to a container element and it will attempt to arrange its children in a layout that makes optimal use of screen space, by &quot;packing&quot; them in a tight arrangement. Freetile has been the layout engine behind <a href="http://yconst.com/web/assemblage">Assemblage</a> and <a href="http://yconst.com/web/assemblage-plus">Assemblage Plus</a> for almost two years, and now it becomes available as an independent Open Source project. </p>
+<h1>Features</h1>
+<p>Freetile is inspired by similar, existing efforts such as <a href="http://masonry.desandro.com/">Masonry</a>, <a href="https://github.com/xlune/jQuery-vGrid-Plugin">vGrid</a> and <a href="http://www.wookmark.com/jquery-plugin">Wookmark</a>.<br />
+However, it differs from these solutions in some aspects:</p>
+<ul>
+<li>
+<p>It allows for any size of elements to be packed without using a fixed-size column grid, so you don't have to worry about specifying a column width appropriate to the size of your elements.</p>
+</li>
+<li>
+<p>The algorithm that evaluates each possible insertion position is easily customizable, allowing for different preferences to be expressed, e.g. a preference to left- or right-alignment of elements, or proximity between certain elements.</p>
+</li>
+</ul>
+<p>Additionally, Freetile has the following key features:</p>
+<ul>
+<li>
+<p>A smart animation routine allows distinguishing between elements that is meaningful to be animated and ones that are not (e.g. elements that have been just added to the arrangement, or those that are not visible). Special classes allow for explicitly limiting animation to select elements.</p>
+</li>
+<li>
+<p>It has been battle-tested through it's use in the many hundreds sites that make use of the <a href="http://yconst.com/web/assemblage">Assemblage</a> and <a href="http://yconst.com/web/assemblage-plus">Assemblage Plus</a> templates.</p>
+</li>
+</ul>
+<h1>Usage</h1>
+<p>Default usage:</p>
+<pre>
+$('#container').freetile();
+</pre>
+<p>Enable animation, with a per-element delay of 30ms:</p>
+<pre>
+$('#container').freetile({
+    animate: true,
+    elementDelay: 30
+});
+</pre>
+<p>Specify a custom element selector:</p>
+<pre>
+$('#container').freetile({
+    selector: 'customSelector'
+});
+</pre>
+<p>Specify a scoring function with a preference for left side placement:</p>
+<pre>
+$('#container').freetile({
+    scoreFunction: function(o) {
+        return -(o.TestedTop) * 8 - (o.TestedLeft);
+    }
+});
+</pre>
+<p>Append some elements to an existing container:</p>
+<pre>
+$('#container').freetile({
+    contentToAppend: 'someSelector';
+});
+</pre>
+<h1>Options</h1>
+<p>Various options may be passed along to Freetile when it is called:</p>
+<pre>
+$('#container').freetile({
+    // options
+    option1: 'value',
+    option2: 'value',
+    option3: 'value'
+    // etc...
+});
+</pre>
+<p>Following is a short list of options and their description.</p>
+<pre>
+    selector
+</pre>
+<p>Elements matching the selector will be tiled, others will be ignored.</p>
+<pre>
+    animate
+</pre>
+<p>Should elements be animated? Animation will occur for elements that have been already placed and are visible, i.e. elements that are about to appear or are invisible will not be animated (but will still be tiled). Furthermore, elements with both their starting and ending position outside the window area will not be animated.<br />
+Default: false</p>
+<pre>
+    elementDelay
+</pre>
+<p>A delay may be inserted between each element's animation start, resulting in more appealing animations. Units in ms.<br />
+Default: 0</p>
+<pre>
+    containerResize
+</pre>
+<p>Should the content be re-tiled on window resize?<br />
+Default: true</p>
+<pre>
+    containerAnimate
+</pre>
+<p>Should the container of the elements be animated, as its size changes? Useful if the placement of surrounding content depends on the container size.<br />
+Default: false</p>
+<pre>
+    customEvents
+</pre>
+<p>One or more custom events to trigger re-tiling.</p>
+<pre>
+    loadCheckSelector
+</pre>
+<p>Freetile will make sure that images of elements matching this selector are loaded (using ImagesLoaded).<br />
+Useful to exclude elements if inline dimension styles are being applied to e.g. images.<br />
+Default: :not(.ignore-load-check)</p>
+<pre>
+    callback
+</pre>
+<p>A callback function to be called when tiling is done. Please note that this includes the animation delay.</p>
+<pre>
+    persistentCallback
+</pre>
+<p>Should the callback function be persistent or reset after next tiling (one-shot)? Useful for triggering common tasks at the end of the animation process.<br />
+Default: false</p>
+<h2>CSS3 GPU animations</h2>
+<p>Using CSS3 <code>translate3d</code> significantly improves animation performance, especially on mobile devices. You can force CSS3 translations with this new option.  </p>
+<pre>
+    csstransforms3d
+</pre>
+<p>If set to true, it means that css3 3D transforms (on the GPU) are available and should be used for all animations over the slower <code>jquery.animate</code>.<br />
+Default: false</p>
+<p>Should be set to the value of a feature detect (e.g. using Modernizr)</p>
+<pre>
+$('#container').freetile({
+    ...
+    selector: '.grid-item',
+    csstransforms3d: $('html').is('.csstransforms3d')
+});
+</pre>
+<p><em>Gotcha: CSS transforms do not effect document flow so your tile container height will no longer reflect the true height of your grid</em> </p>
+<p>Make sure you are also using CSS3 transitions on each element in your grid to get it to animate: </p>
+<pre>
+
+.grid-item{
+    webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    -ms-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+</pre>
+<h1>Demo</h1>
+<p><a href="http://yconst.com/freetile-demo/">Demo</a> at <a href="http://yconst.com">yconst.com</a></p>
+<h1>License</h1>
+<p>Freetile is licensed under the <a href="http://www.opensource.org/licenses/bsd-license.php">BSD License</a>.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/529837?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/yconst" target="_blank" id="ownerName" class="sidebar-link">yconst</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">May 26, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 19, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/529837?v=4" alt="yconst" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/yconst" target="_blank" class="text-decoration-none fw-bold">yconst</a><p class="mb-0 text-muted small">41 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/164279?v=4" alt="gavJackson" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gavJackson" target="_blank" class="text-decoration-none fw-bold">gavJackson</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/433913?v=4" alt="bchhun" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bchhun" target="_blank" class="text-decoration-none fw-bold">bchhun</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/47231?v=4" alt="bsuh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bsuh" target="_blank" class="text-decoration-none fw-bold">bsuh</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/15369204?v=4" alt="karayount" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/karayount" target="_blank" class="text-decoration-none fw-bold">karayount</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1621782?v=4" alt="mindmelting" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mindmelting" target="_blank" class="text-decoration-none fw-bold">mindmelting</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3899654?v=4" alt="rafgeekee" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rafgeekee" target="_blank" class="text-decoration-none fw-bold">rafgeekee</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+2 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
