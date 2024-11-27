@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewer by Fengyuanchen</title>
+    <meta name="description" content="⚠️ [Deprecated] No longer maintained, please use https://github.com/fengyuanchen/jquery-viewer">
+    <meta name="author" content="fengyuanchen">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/viewer-by-fengyuanchen.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Viewer</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Viewer",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Viewer</h1>
+        <p id="packageDescription" class="text-muted">⚠️ [Deprecated] No longer maintained, please use https://github.com/fengyuanchen/jquery-viewer</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1020</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">10.7 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">362</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">0</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/fengyuanchen/viewer/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/fengyuanchen/viewer" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Viewer</h1>
+<p><a href="https://travis-ci.org/fengyuanchen/viewer"><img src="https://img.shields.io/travis/fengyuanchen/viewer.svg" alt="Build Status" /></a> <a href="https://www.npmjs.com/package/imageviewer"><img src="https://img.shields.io/npm/dm/imageviewer.svg" alt="Downloads" /></a> <a href="https://www.npmjs.com/package/imageviewer"><img src="https://img.shields.io/npm/v/imageviewer.svg" alt="Version" /></a> <a href="https://www.npmjs.com/package/imageviewer"><img src="https://img.shields.io/david/fengyuanchen/viewer.svg" alt="Dependencies" /></a></p>
+<blockquote>
+<p>A simple jQuery image viewing plugin. As of v1.0.0, the core code of Viewer is replaced with <a href="https://github.com/fengyuanchen/viewerjs">Viewer.js</a>.</p>
+</blockquote>
+<ul>
+<li><a href="https://fengyuanchen.github.io/viewer">Demo</a></li>
+<li><a href="https://github.com/fengyuanchen/viewerjs">Viewer.js</a> - JavaScript image viewer (<strong>recommended</strong>)</li>
+<li><a href="https://github.com/fengyuanchen/jquery-viewer">jquery-viewer</a> - A jQuery plugin wrapper for Viewer.js (<strong>recommended</strong> for jQuery users to use this instead of Viewer)</li>
+</ul>
+<h2>Main</h2>
+<pre class="prettyprint linenums lang-language"><code>dist/
+├── viewer.css
+├── viewer.min.css   (compressed)
+├── viewer.js        (UMD)
+├── viewer.min.js    (UMD, compressed)
+├── viewer.common.js (CommonJS, default)
+└── viewer.esm.js    (ES Module)</code></pre>
+<h2>Getting started</h2>
+<h3>Installation</h3>
+<pre class="prettyprint linenums lang-language"><code>npm install imageviewer jquery</code></pre>
+<p>Include files:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="/path/to/jquery.js"&gt;&lt;/script&gt;&lt;!-- jQuery is required --&gt;
+&lt;script src="/path/to/viewer.js"&gt;&lt;/script&gt;
+&lt;link  href="/path/to/viewer.css" rel="stylesheet"&gt;</code></pre>
+<h3>Usage</h3>
+<p>Initialize with <code>$.fn.viewer</code> method.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- a block container is required --&gt;
+&lt;div&gt;
+  &lt;img id="image" src="picture.jpg" alt="Picture"&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;ul id="images"&gt;
+    &lt;li&gt;&lt;img src="picture-1.jpg" alt="Picture 1"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src="picture-2.jpg" alt="Picture 2"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src="picture-3.jpg" alt="Picture 3"&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>var $image = $('#image');
+
+$image.viewer({
+  inline: true,
+  viewed: function() {
+    $image.viewer('zoomTo', 1);
+  }
+});
+
+// Get the Viewer.js instance after initialized
+var viewer = $image.data('viewer');
+
+// View a list of images
+$('#images').viewer();</code></pre>
+<h2>Options</h2>
+<p>See the available <a href="https://github.com/fengyuanchen/viewerjs#options">options</a> of Viewer.js.</p>
+<pre class="prettyprint linenums lang-language"><code>$().viewer(options);</code></pre>
+<h2>Methods</h2>
+<p>See the available <a href="https://github.com/fengyuanchen/viewerjs#methods">methods</a> of Viewer.js.</p>
+<pre class="prettyprint linenums lang-language"><code>$().viewer('method', argument1, , argument2, ..., argumentN);</code></pre>
+<h2>Events</h2>
+<p>See the available <a href="https://github.com/fengyuanchen/viewerjs#events">events</a> of Viewer.js.</p>
+<pre class="prettyprint linenums lang-language"><code>$().on('event', handler);</code></pre>
+<h2>No conflict</h2>
+<p>If you have to use other plugin with the same namespace, just call the <code>$.fn.viewer.noConflict</code> method to revert to it.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="other-plugin.js"&gt;&lt;/script&gt;
+&lt;script src="viewer.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  $.fn.viewer.noConflict();
+  // Code that uses other plugin's "$().viewer" can follow here.
+&lt;/script&gt;</code></pre>
+<h2>Browser support</h2>
+<p>It is the same as the <a href="https://github.com/fengyuanchen/viewerjs#browser-support">browser support of Viewer.js</a>. As a jQuery plugin, you also need to see the <a href="https://jquery.com/browser-support/">jQuery Browser Support</a>.</p>
+<h2>Versioning</h2>
+<p>Maintained under the <a href="https://semver.org/">Semantic Versioning guidelines</a>.</p>
+<h2>License</h2>
+<p><a href="https://opensource.org/licenses/MIT">MIT</a> © <a href="https://chenfengyuan.com/">Chen Fengyuan</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h1>Changelog</h1>
+<h2>1.1.0 (Dec 14 2019)</h2>
+<ul>
+<li>Upgrade the built-in Viewer.js to v1.5.0.</li>
+</ul>
+<h2>1.0.0 (Apr 1, 2018)</h2>
+<ul>
+<li>Upgrade Viewer.js to v1.0.0.</li>
+</ul>
+<h2>1.0.0-beta (Mar 15, 2018)</h2>
+<ul>
+<li>Upgrade Viewer.js to v1.0.0-rc.1.</li>
+</ul>
+<h2>1.0.0-alpha (Mar 11, 2018)</h2>
+<ul>
+<li>The core code of Viewer is replaced with <a href="https://github.com/fengyuanchen/viewerjs">Viewer.js</a> now.</li>
+</ul>
+<h2>0.7.0 (Mar 11, 2018)</h2>
+<ul>
+<li>Emulate scroll bar width when modal opening.</li>
+<li>Disallow to show again if it had shown.</li>
+</ul>
+<h2>0.6.0 (Oct 7, 2017)</h2>
+<ul>
+<li>Refactor in ES6.</li>
+<li>Build CSS code with PostCSS.</li>
+<li>Removed <code>build</code> event.</li>
+<li>Renamed <code>built</code> event to <code>ready</code>.</li>
+<li>Removed event namespace.</li>
+</ul>
+<h2>0.5.1 (Mar 11, 2016)</h2>
+<ul>
+<li>Fixed the issue of the &quot;button&quot; option (#8).</li>
+<li>Fixed the issue of the &quot;$.fn.viewer.setDefault&quot; static method (#9).</li>
+</ul>
+<h2>0.5.0 (Jan 21, 2016)</h2>
+<ul>
+<li>Add more available values to the &quot;title&quot;, &quot;toolbar&quot; and &quot;navbar&quot; options.</li>
+<li>Support to toggle the visibility of title, toolbar and navbar between different screen widths.</li>
+<li>Exit fullscreen when stop playing.</li>
+<li>Fixed title not generated bug (#6).</li>
+</ul>
+<h2>0.4.0 (Jan 1, 2016)</h2>
+<ul>
+<li>Added &quot;update&quot; method for update image dynamically.</li>
+<li>Hides title and toolbar on small screen (width &lt; 768px).</li>
+</ul>
+<h2>0.3.1 (Dec 28, 2015)</h2>
+<ul>
+<li>Supports to zoom from event triggering point.</li>
+<li>Fix a bug of the index of viewing image.</li>
+</ul>
+<h2>0.3.0 (Dec 24, 2015)</h2>
+<ul>
+<li>Add 2 new options: &quot;view&quot; and &quot;viewed&quot;</li>
+<li>Add 2 new events: &quot;view&quot; and &quot;viewed&quot;</li>
+<li>Add keyboard support: stop playing when tap the <code>Space</code> key</li>
+<li>Fix lost transition after call full method in inline mode</li>
+<li>Fix incorrect tooltip after switch image quickly</li>
+</ul>
+<h2>0.2.0 (Oct 18, 2015)</h2>
+<ul>
+<li>Added one new method: &quot;moveTo&quot;</li>
+<li>Improved the image loading and showing</li>
+</ul>
+<h2>0.1.1 (Oct 7, 2015)</h2>
+<ul>
+<li>Fixed the issue of modal closing after zoomed in and zoomed out</li>
+</ul>
+<h2>0.1.0 (Sep 2, 2015)</h2>
+<ul>
+<li>Supports 2 modes: &quot;modal&quot; (default), &quot;inline&quot;</li>
+<li>Supports 28 options: &quot;inline&quot;, &quot;button&quot;, &quot;navbar&quot;, &quot;title&quot;, &quot;toolbar&quot;, &quot;tooltip&quot;, &quot;movable&quot;, &quot;zoomable&quot;, &quot;rotatable&quot;, &quot;scalable&quot;, &quot;transition&quot;, &quot;fullscreen&quot;, &quot;keyboard&quot;, &quot;interval&quot;, &quot;minWidth&quot;, &quot;minHeight&quot;, &quot;zoomRatio&quot;, &quot;minZoomRatio&quot;, &quot;maxZoomRatio&quot;, &quot;zIndex&quot;, &quot;zIndexInline&quot;, &quot;url&quot;, &quot;build&quot;, &quot;built&quot;, &quot;show&quot;, &quot;shown&quot;, &quot;hide&quot;, &quot;hidden&quot;</li>
+<li>Supports 21 methods: &quot;show&quot;, &quot;hide&quot;, &quot;view&quot;, &quot;prev&quot;, &quot;next&quot;, &quot;move&quot;, &quot;zoom&quot;, &quot;zoomTo&quot;, &quot;rotate&quot;, &quot;rotateTo&quot;, &quot;scale&quot;, &quot;scaleX&quot;, &quot;scaleY&quot;, &quot;play&quot;, &quot;stop&quot;, &quot;full&quot;, &quot;exit&quot;, &quot;tooltip&quot;, &quot;toggle&quot;, &quot;reset&quot;, &quot;destroy&quot;</li>
+<li>Supports 6 events: &quot;build.viewer&quot;, &quot;built.viewer&quot;, &quot;show.viewer&quot;, &quot;shown.viewer&quot;, &quot;hide.viewer&quot;, &quot;hidden.viewer&quot;</li>
+</ul>
+<h2>0.0.1 (Apr 19, 2015)</h2>
+<ul>
+<li>Improve UI</li>
+<li>Develop a alpha version</li>
+</ul>
+<h2>0.0.0 (Apr 19, 2014)</h2>
+<ul>
+<li>Design UI</li>
+<li>Develop a draft version</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/image-viewer" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>image-viewer</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/viewer" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>viewer</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/3456749?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/fengyuanchen" target="_blank" id="ownerName" class="sidebar-link">fengyuanchen</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">September 2, 2015</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 22, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>viewerjs (^1.5.0)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>@babel/core (^7.7.5)</li><li>@babel/preset-env (^7.7.6)</li><li>@commitlint/cli (^8.2.0)</li><li>@commitlint/config-conventional (^8.2.0)</li><li>babel-plugin-istanbul (^5.2.0)</li><li>chai (^4.2.0)</li><li>change-case (^4.1.0)</li><li>cpy-cli (^3.0.0)</li><li>create-banner (^1.0.0)</li><li>cssnano (^4.1.10)</li><li>del-cli (^3.0.0)</li><li>eslint (^6.7.2)</li><li>eslint-config-airbnb-base (^14.0.0)</li><li>eslint-plugin-import (^2.19.1)</li><li>husky (^3.1.0)</li><li>jquery (^3.4.1)</li><li>karma (^4.4.1)</li><li>karma-chai (^0.1.0)</li><li>karma-chrome-launcher (^3.1.0)</li><li>karma-coverage-istanbul-reporter (^2.1.1)</li><li>karma-mocha (^1.3.0)</li><li>karma-mocha-reporter (^2.2.5)</li><li>karma-rollup-preprocessor (^7.0.2)</li><li>lint-staged (^9.5.0)</li><li>mocha (^6.2.2)</li><li>npm-run-all (^4.1.5)</li><li>postcss-cli (^6.1.3)</li><li>postcss-header (^1.0.0)</li><li>postcss-import (^12.0.1)</li><li>postcss-preset-env (^6.7.0)</li><li>postcss-url (^8.0.0)</li><li>puppeteer (^2.0.0)</li><li>rollup (^1.27.12)</li><li>rollup-plugin-babel (^4.3.3)</li><li>rollup-plugin-commonjs (^10.1.0)</li><li>rollup-plugin-node-resolve (^5.2.0)</li><li>stylelint (^12.0.0)</li><li>stylelint-config-standard (^19.0.0)</li><li>stylelint-order (^3.1.1)</li><li>uglify-js (^3.7.2)</li></ul><h5 class="sidebar-title">Peer Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.9.1)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3456749?v=4" alt="fengyuanchen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fengyuanchen" target="_blank" class="text-decoration-none fw-bold">fengyuanchen</a><p class="mb-0 text-muted small">58 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/9976654?v=4" alt="dab0bby" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dab0bby" target="_blank" class="text-decoration-none fw-bold">dab0bby</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
