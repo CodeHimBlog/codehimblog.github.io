@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Printing Plugin; Print Specific Elements on a Page</title>
+    <meta name="description" content="printThis by jasonday. jQuery printing plugin; print specific elements on a page">
+    <meta name="author" content="jasonday">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/printthis-by-jasonday.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Printthis</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Printthis",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Printthis</h1>
+        <p id="packageDescription" class="text-muted">jQuery printing plugin; print specific elements on a page</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1059</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.61 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">455</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">18</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/jasonday/printThis/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/jasonday/printThis" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <p><a href="https://badge.fury.io/js/print-this"><a href="https://opencollective.com/printThis" ><img src="https://opencollective.com/printThis/all/badge.svg?label=financial+contributors" alt="Financial Contributors on Open Collective"/></a> <img src="https://badge.fury.io/js/print-this.svg" alt="npm version" height="18" align="right"></a></p>
+<h1>printThis</h1>
+<p>Printing plug-in for jQuery</p>
+<h4><a href="https://jasonday.github.io/printThis/">Try the Demo</a></h4>
+<h2>Features</h2>
+<ul>
+<li>Print specific &amp; multiple DOM elements</li>
+<li>Preserve page CSS/styling<br />
+** or add new CSS; the world is your oyster!</li>
+<li>Preserve form entries</li>
+<li>Canvas support</li>
+</ul>
+<h2>Usage</h2>
+<h3>Basic</h3>
+<pre class="prettyprint linenums lang-language"><code>$('selector').printThis();</code></pre>
+<h3>Advanced Features</h3>
+<pre class="prettyprint linenums lang-language"><code>$('#kitty-one, #kitty-two, #kitty-three').printThis({
+    importCSS: false,
+    loadCSS: "",
+    header: "&lt;h1&gt;Look at all of my kitties!&lt;/h1&gt;"
+});</code></pre>
+<h3>Troubleshooting</h3>
+<p><a href="https://github.com/jasonday/printThis/wiki">Check the printThis wiki for common issues and questions</a></p>
+<p><em>Covers common issues related to styling and printing limitations regarding page breaks</em></p>
+<h3>Options</h3>
+<p>Now with TypeScript definitions.</p>
+<h4>debug</h4>
+<p>Debug leaves the iframe visible on the page after <code>printThis</code> runs, allowing you to inspect the markup and CSS.</p>
+<h4>importCSS</h4>
+<p>Copy CSS <code>&lt;link&gt;</code> tags to the printThis iframe. On by default.</p>
+<h4>importStyle</h4>
+<p>Copy CSS <code>&lt;style&gt;</code> tags to the printThis iframe. On by default.</p>
+<h4>printContainer</h4>
+<p>Includes the markup of the selected container, not just its contents. On by default.</p>
+<h4>loadCSS</h4>
+<p>Provide a URL for an additional stylesheet to the printThis iframe. Empty string (off) by default.</p>
+<h4>pageTitle</h4>
+<p>Use a custom page title on the iframe. This may be reflected on the printed page, depending on settings. Blank by default.</p>
+<h4>removeInline</h4>
+<p>Eliminates any inline style attributes from the content. Off by default.</p>
+<h4>removeInlineSelector</h4>
+<p>Filter which inline style attributes to remove. Requires <code>removeInline</code> to be true.<br />
+Accepts custom CSS/jQuery selectors. Default is <code>"*"</code></p>
+<h4>printDelay</h4>
+<p>The amount of time to wait before calling <code>print()</code> in the printThis iframe. Defaults to 1000 milliseconds.<br />
+Appropriate values depend heavily on the content and network performance. Graphics heavy, slow, or uncached content may need extra time to load.</p>
+<h4>header &amp; footer</h4>
+<p>A string or jQuery object to prepend or append to the printThis iframe content. <code>null</code> by default.</p>
+<pre class="prettyprint linenums lang-language"><code>$('#mySelector').printThis({
+    header: "&lt;h1&gt;Amazing header&lt;/h1&gt;"
+});
+
+$('#mySelector').printThis({
+    footer: $('.hidden-print-header-content')
+});</code></pre>
+<p>jQuery objects are cloned rather than moved.</p>
+<h4>base</h4>
+<p>The <code>base</code> option allows several behaviors.<br />
+By default it is <code>false</code>, meaning a the current document will be set as the base URL.  </p>
+<p>If set to <code>true</code>, a <code>&lt;base&gt;</code> attribute will be set if one exists on the page.<br />
+If none is found, the tag is omitted, which may be suitable for pages with Fully Qualified URLs.</p>
+<p>When passed as a string, it will be used as the <code>href</code> attribute of a <code>&lt;base&gt;</code> tag.</p>
+<h4>formValues</h4>
+<p>This setting copies the current values of form elements into the printThis iframe. On by default.</p>
+<h4>canvas</h4>
+<p>Canvas elements will be copied to the printThis iframe<br />
+and you can call printThis directly on a canvas element if you choose.</p>
+<h4>doctypeString</h4>
+<p>A doctype string to use on the printThis iframe. Defaults to the HTML5 doctype.</p>
+<h4>removeScripts</h4>
+<p>Deletes script tags from the content to avoid errors or unexpected behavior during print. Disabled by default.</p>
+<h4>copyTagClasses: true</h4>
+<p>Copies classes from the body and html tags into the printThis iframe.<br />
+Accepts <code>true</code>, <code>"b"</code>, <code>"h"</code>, or <code>"bh"</code> to test for <code>"b"</code> and <code>"h"</code> for body and html tags, respectively.</p>
+<h4>copyTagStyles: true</h4>
+<p>Copies style attributes from the body and html tags into the printThis iframe.<br />
+Added to provide support for CSS Variables.<br />
+Accepts <code>true</code>, <code>"b"</code>, <code>"h"</code>, or <code>"bh"</code> to test for <code>"b"</code> and <code>"h"</code> for body and html tags, respectively.  </p>
+<h4>beforePrintEvent: null</h4>
+<p>Function to run inside the iframe before the print occurs.<br />
+<em>This function has not been validated on all browsers.</em></p>
+<h4>beforePrint: null</h4>
+<p>Function called before the iframe is populated with content.</p>
+<h4>afterPrint: null</h4>
+<p>Function called after the print and before the iframe is removed from the page.<br />
+This is called even if <code>debug: true</code>, which does not remove the iframe.</p>
+<h3>All Options</h3>
+<pre class="prettyprint linenums lang-language"><code>$("#mySelector").printThis({
+    debug: false,               // show the iframe for debugging
+    importCSS: true,            // import parent page css
+    importStyle: true,          // import style tags
+    printContainer: true,       // print outer container/$.selector
+    loadCSS: "",                // path to additional css file - use an array [] for multiple
+    pageTitle: "",              // add title to print page
+    removeInline: false,        // remove inline styles from print elements
+    removeInlineSelector: "*",  // custom selectors to filter inline styles. removeInline must be true
+    printDelay: 1000,           // variable print delay
+    header: null,               // prefix to html
+    footer: null,               // postfix to html
+    base: false,                // preserve the BASE tag or accept a string for the URL
+    formValues: true,           // preserve input/form values
+    canvas: false,              // copy canvas content
+    doctypeString: '...',       // enter a different doctype for older markup
+    removeScripts: false,       // remove script tags from print content
+    copyTagClasses: true,       // copy classes from the html &amp; body tag
+    copyTagStyles: true,        // copy styles from html &amp; body tag (for CSS Variables)
+    beforePrintEvent: null,     // function for printEvent in iframe
+    beforePrint: null,          // function called before iframe is filled
+    afterPrint: null            // function called before iframe is removed
+});</code></pre>
+<h2>Please read</h2>
+<ul>
+<li>&quot;It's not working&quot; without any details is not a valid issue and will be closed</li>
+<li>A url, or html file, is necessary to debug. Due to the complexities of printing and this plugin, an example is the best way to debug</li>
+<li>When troubleshooting, set <code>debug: true</code> and inspect the iframe. Please report your findings when reporting an issue</li>
+<li>Every user should be active in the debugging process</li>
+</ul>
+<h2>ToDo:</h2>
+<ul>
+<li>Look at alternative to setTimeout ($.deferred?)</li>
+</ul>
+<h2>Contributors</h2>
+<h3>Code Contributors</h3>
+<p>This project exists thanks to all the people who contribute. [<a href="CONTRIBUTING.md">Contribute</a>].<br />
+<a href="https://github.com/jasonday/printThis/graphs/contributors"><img src="https://opencollective.com/printThis/contributors.svg?width=890&button=false" /></a></p>
+<h3>Financial Contributors</h3>
+<p>Become a financial contributor and help us sustain our community. [<a href="https://opencollective.com/printThis/contribute">Contribute</a>]</p>
+<h4>Individuals</h4>
+<p><a href="https://opencollective.com/printThis"><img src="https://opencollective.com/printThis/individuals.svg?width=890"></a></p>
+<h4>Organizations</h4>
+<p>Support this project with your organization. Your logo will show up here with a link to your website. [<a href="https://opencollective.com/printThis/contribute">Contribute</a>]</p>
+<p><a href="https://opencollective.com/printThis/organization/0/website"><img src="https://opencollective.com/printThis/organization/0/avatar.svg"></a><br />
+<a href="https://opencollective.com/printThis/organization/1/website"><img src="https://opencollective.com/printThis/organization/1/avatar.svg"></a><br />
+<a href="https://opencollective.com/printThis/organization/2/website"><img src="https://opencollective.com/printThis/organization/2/avatar.svg"></a><br />
+<a href="https://opencollective.com/printThis/organization/3/website"><img src="https://opencollective.com/printThis/organization/3/avatar.svg"></a><br />
+<a href="https://opencollective.com/printThis/organization/4/website"><img src="https://opencollective.com/printThis/organization/4/avatar.svg"></a><br />
+<a href="https://opencollective.com/printThis/organization/5/website"><img src="https://opencollective.com/printThis/organization/5/avatar.svg"></a><br />
+<a href="https://opencollective.com/printThis/organization/6/website"><img src="https://opencollective.com/printThis/organization/6/avatar.svg"></a><br />
+<a href="https://opencollective.com/printThis/organization/7/website"><img src="https://opencollective.com/printThis/organization/7/avatar.svg"></a><br />
+<a href="https://opencollective.com/printThis/organization/8/website"><img src="https://opencollective.com/printThis/organization/8/avatar.svg"></a><br />
+<a href="https://opencollective.com/printThis/organization/9/website"><img src="https://opencollective.com/printThis/organization/9/avatar.svg"></a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/print" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>print</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/printing" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>printing</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/748011?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/jasonday" target="_blank" id="ownerName" class="sidebar-link">jasonday</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">November 1, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 26, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://jasonday.github.io/printThis/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.11)</li><li>opencollective-postinstall (^2.0.2)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/748011?v=4" alt="jasonday" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jasonday" target="_blank" class="text-decoration-none fw-bold">jasonday</a><p class="mb-0 text-muted small">113 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1731657?v=4" alt="oculus42" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/oculus42" target="_blank" class="text-decoration-none fw-bold">oculus42</a><p class="mb-0 text-muted small">59 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/724959?v=4" alt="klarkc" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/klarkc" target="_blank" class="text-decoration-none fw-bold">klarkc</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/23696461?v=4" alt="Geezerdiamond" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Geezerdiamond" target="_blank" class="text-decoration-none fw-bold">Geezerdiamond</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2874325?v=4" alt="caseyjhol" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/caseyjhol" target="_blank" class="text-decoration-none fw-bold">caseyjhol</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3893505?v=4" alt="Subtletree" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Subtletree" target="_blank" class="text-decoration-none fw-bold">Subtletree</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7316730?v=4" alt="monkeywithacupcake" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/monkeywithacupcake" target="_blank" class="text-decoration-none fw-bold">monkeywithacupcake</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4744510?v=4" alt="eakkew" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/eakkew" target="_blank" class="text-decoration-none fw-bold">eakkew</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/843026?v=4" alt="flashnet69" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/flashnet69" target="_blank" class="text-decoration-none fw-bold">flashnet69</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/474830?v=4" alt="alandmoore" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/alandmoore" target="_blank" class="text-decoration-none fw-bold">alandmoore</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/731158?v=4" alt="Relequestual" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Relequestual" target="_blank" class="text-decoration-none fw-bold">Relequestual</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9306368?v=4" alt="ClavinMacario" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ClavinMacario" target="_blank" class="text-decoration-none fw-bold">ClavinMacario</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/14794095?v=4" alt="Uriel2015" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Uriel2015" target="_blank" class="text-decoration-none fw-bold">Uriel2015</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/37843242?v=4" alt="idkn" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/idkn" target="_blank" class="text-decoration-none fw-bold">idkn</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1380307?v=4" alt="nip3o" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nip3o" target="_blank" class="text-decoration-none fw-bold">nip3o</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4064875?v=4" alt="0x6368656174" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/0x6368656174" target="_blank" class="text-decoration-none fw-bold">0x6368656174</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3905501?v=4" alt="bryant1410" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bryant1410" target="_blank" class="text-decoration-none fw-bold">bryant1410</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/184547?v=4" alt="stritti" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/stritti" target="_blank" class="text-decoration-none fw-bold">stritti</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/205261?v=4" alt="tanathos" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tanathos" target="_blank" class="text-decoration-none fw-bold">tanathos</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+14 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
