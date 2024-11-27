@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag It by Aehlke</title>
+    <meta name="description" content="A jQuery UI plugin to handle multi-tag fields as well as tag suggestions/autocomplete.">
+    <meta name="author" content="aehlke">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/tag-it-by-aehlke.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Tag It</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tag It",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Tag It</h1>
+        <p id="packageDescription" class="text-muted">A jQuery UI plugin to handle multi-tag fields as well as tag suggestions/autocomplete.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">2480</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.65 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">825</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">252</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/aehlke/tag-it/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/aehlke/tag-it" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Tag-it: a jQuery UI plugin</h1>
+<hr />
+<p><strong>IMPORTANT: tag-it is <em>unmaintained</em>.</strong></p>
+<p>Tag-it has reached end-of-life, and we're not looking to update or maintain it.  This library <em>should</em> still work, but there are many PRs open and forks that you might want to consider before using it.</p>
+<p>As a tag-it replacement, we currently recommend <a href="https://github.com/yairEO/tagify">tagify</a>, which appears to be a popular library that is still being actively developed as of late 2023.</p>
+<p>Thank you!</p>
+<hr />
+<p>Tag-it is a simple and configurable tag editing widget with autocomplete support.</p>
+<p><a href="http://aehlke.github.com/tag-it/">Homepage</a></p>
+<h2>Demo</h2>
+<p><img src="http://aehlke.github.com/tag-it/_static/screenshot.png" alt="Screenshot" /></p>
+<p>Check the <a href="http://aehlke.github.com/tag-it/examples.html">examples.html</a> for several demos and the <a href="http://aehlke.github.com/tag-it/prototype.js">prototype.js</a> file for a JavaScript prototype with all options and events.</p>
+<h2>Usage</h2>
+<p>First, load <a href="http://jquery.com/">jQuery</a> (v1.4 or greater), <a href="http://jqueryui.com/">jQuery UI</a> (v1.8 or greater), and the plugin:</p>
+<pre><code>&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="js/tag-it.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;</code></pre>
+<p>If you're using a custom jQuery UI build, it must contain the Core, Widget, Position, and Autocomplete components. The Effects Core with &quot;Blind&quot; and &quot;Highlight&quot; Effect components are optional, but used if available.</p>
+<p>The plugin requires either a jQuery UI theme or a Tag-it theme to be present, as well as its own included base CSS file (<a href="http://github.com/aehlke/tag-it/raw/master/css/jquery.tagit.css">jquery.tagit.css</a>). Here we use the Flick theme as an example:</p>
+<pre><code>&lt;link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css"&gt;
+&lt;link href="css/jquery.tagit.css" rel="stylesheet" type="text/css"&gt;</code></pre>
+<p>Now, let's attach it to an existing <code>&lt;ul&gt;</code> box:</p>
+<pre><code>&lt;script type="text/javascript"&gt;
+    $(document).ready(function() {
+        $("#myTags").tagit();
+    });
+&lt;/script&gt;
+
+&lt;ul id="myTags"&gt;
+    &lt;!-- Existing list items will be pre-added to the tags --&gt;
+    &lt;li&gt;Tag1&lt;/li&gt;
+    &lt;li&gt;Tag2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<p>This will turn the list into a tag-it widget. There are several other possible configurations and ways to instantiate the widget, including one that uses a single comma-delimited <code>input</code> field rather than one per tag, so see the <strong>Options</strong> documentation below as well as the <a href="http://aehlke.github.com/tag-it/examples.html">examples page</a> (and its source) which demonstrates most of them, as well as the Tag-it Zendesk theme used in the screenshot above.</p>
+<h2>Theming</h2>
+<p>Tag-it is as easily themeable as any jQuery UI widget, using your own theme made with <a href="http://jqueryui.com/themeroller/">Themeroller</a>, or one of the jQuery UI <a href="http://jqueryui.com/themeroller/#themeGallery">premade themes</a>. The old ZenDesk-like theme is included as an optional CSS file (<a href="http://github.com/aehlke/tag-it/raw/master/css/tagit.ui-zendesk.css">tagit.ui-zendesk.css</a>).</p>
+<h2>Options</h2>
+<p>Tag-it accepts several options to customize its behaviour:</p>
+<h3>fieldName (String)</h3>
+<p>Each tag's hidden input field will have this name.<br />
+If you're using PHP, you may want to use something like <code>itemName[fieldName][]</code> for this option's value.</p>
+<pre><code>$("#myTags").tagit({
+    fieldName: "skills"
+});</code></pre>
+<p>Defaults to <em>tags</em>.</p>
+<h3>availableTags (Array)</h3>
+<p>Used as source for the autocompletion, unless <strong>autocomplete.source</strong> is overridden.</p>
+<pre><code>$("#myTags").tagit({
+    availableTags: ["c++", "java", "php", "javascript", "ruby", "python", "c"]
+});</code></pre>
+<p>If you define your own <strong>autocomplete.source</strong>, this option is unused (unless you choose to reference it yourself from your custom <strong>autocomplete.source</strong> of course.)</p>
+<p>Defaults to an empty array <em>[]</em>.</p>
+<h3>autocomplete (Object)</h3>
+<p>Allows overriding the <code>source</code> and <code>select</code> options that are set by default,<br />
+as well as adding any other options you want to pass to the jQuery UI Autocomplete widget, such as <code>minLength</code> or <code>delay</code>.</p>
+<p>The <code>autocomplete.source</code> should be overridden if you want to use custom autocompletion sources, like an Ajax / XHR response.</p>
+<p>For example:</p>
+<pre><code>$("#myTags").tagit({
+    autocomplete: {delay: 0, minLength: 2}
+});</code></pre>
+<p>The default <code>autocomplete.source</code> function filters the strings in <strong>availableTags</strong> and subtracts the already assigned tags. It also positions autocomplete underneath tag input. See the full list of available options <a href="http://jqueryui.com/demos/autocomplete/">here</a>.</p>
+<h3>showAutocompleteOnFocus (boolean)</h3>
+<p>Shows autocomplete when the tag input first receives focus, before the user even types anything.</p>
+<p>If enabled, this will also make <strong>autocomplete.minLength</strong> default to <code>0</code> unless you override that, so that autocomplete can show up with a blank search.</p>
+<p>Defaults to <em>false</em>.</p>
+<h3>removeConfirmation (boolean)</h3>
+<p>When removeConfirmation is enabled the user has to press the backspace key twice to remove the last tag.<br />
+After the first keypress the last tag receives a <em>remove</em> css class which can be used to visually highlight the tag.</p>
+<p>Defaults to <em>false</em>.</p>
+<h3>caseSensitive (boolean)</h3>
+<p>whether the duplication check should do a case sensitive check or not.</p>
+<p>Defaults to <em>true</em>.</p>
+<h3>allowDuplicates (boolean)</h3>
+<p>Allows duplicate tags to be created.<br />
+One implication of this is that <code>removeTagByLabel</code> will remove all tags which match the given label.</p>
+<p>Defaults to <em>false</em>.</p>
+<h3>allowSpaces (boolean)</h3>
+<p>When allowSpaces is enabled the user is not required to wrap multi-word tags in quotation marks.<br />
+For example, the user can enter <code>John Smith</code> instead of <code>"John Smith"</code>.</p>
+<p>Defaults to <em>false</em>.</p>
+<h3>readOnly (boolean)</h3>
+<p>When enabled, tag-it just render tags. It disables the ability to edit tags.</p>
+<p>Defaults to <em>false</em>.</p>
+<h3>tagLimit (integer)</h3>
+<p>Limits the total number of tags that can be entered at once. Note that if you use this option with preloaded data,<br />
+it may truncate the number of preloaded tags. Set to <code>null</code> for unlimited tags. See the <strong>onTagLimitExceeded</strong><br />
+callback for customizing this behavior.</p>
+<p>Defaults to <em>null</em>.</p>
+<h3>singleField (boolean)</h3>
+<p>When enabled, will use a single hidden field for the form, rather than one per tag.<br />
+It will delimit tags in the field with <strong>singleFieldDelimiter</strong>.</p>
+<p>Defaults to <em>false</em>, unless Tag-it was created on an <code>input</code> element, in which case <strong>singleField</strong> will be overridden as true.</p>
+<h3>singleFieldDelimiter (String)</h3>
+<p>Defaults to <em>&quot;,&quot;</em></p>
+<h3>singleFieldNode (DomNode)</h3>
+<p>Set this to an input DOM node to use an existing form field.<br />
+Any text in it will be erased on init. But it will be populated with the text of tags as they are created, delimited by <strong>singleFieldDelimiter</strong>.<br />
+If this is not set, we create an input node for it, with the name given in <strong>fieldName</strong>.</p>
+<p>Defaults to <em>null</em>, unless Tag-it was created on an <code>input</code> element, in which case <strong>singleFieldNode</strong> will be overridden with that element.</p>
+<h3>tabIndex (integer)</h3>
+<p>Optionally set a <em>tabindex</em> attribute on the <code>input</code> that gets created for tag-it user input.</p>
+<p>Defaults to <em>null</em></p>
+<h3>placeholderText (String)</h3>
+<p>Optionally set a <em>placeholder</em> attribute on the <code>input</code> that gets created for tag-it user input.</p>
+<p>Defaults to <em>null</em></p>
+<h2>Events</h2>
+<h3>beforeTagAdded (function, Callback)</h3>
+<p>Can be used to add custom behaviour before the tag is added to the DOM.</p>
+<p>The function receives a null event, and an object containing the properties <code>tag</code>, <code>tagLabel</code>, and <code>duringInitialization</code>.</p>
+<p><code>duringInitialization</code> is a boolean indicating whether the tag was added during the initial construction of this widget,<br />
+e.g. when initializing tag-it on an input with preloaded data. You can use this to tell whether the event was initiated by<br />
+the user or by the widget's initialization.</p>
+<p>To cancel a tag from being added, simply return <code>false</code> in your event callback to bail out from adding the tag and stop propagation of the event.</p>
+<pre><code>$("#myTags").tagit({
+    beforeTagAdded: function(event, ui) {
+        // do something special
+        console.log(ui.tag);
+    }
+});</code></pre>
+<h3>afterTagAdded (function, Callback)</h3>
+<p>Behaves the same as <strong>beforeTagAdded</strong> except that it fires after the tag has been added to the DOM.<br />
+It too receives the <code>duringInitialization</code> parameter — see <strong>beforeTagAdded</strong> for details.</p>
+<h3>beforeTagRemoved (function, Callback)</h3>
+<p>Can be used to add custom behaviour before the tag is removed from the DOM.</p>
+<p>To cancel a tag from being removed, simply return <code>false</code> in your event callback to bail out from removing the tag and stop propagation of the event.</p>
+<p>The function receives a null event, and an object with <code>tag</code> and <code>tagLabel</code> properties.</p>
+<pre><code>$("#myTags").tagit({
+    beforeTagRemoved: function(event, ui) {
+        // do something special
+        console.log(ui.tag);
+    }
+});</code></pre>
+<h3>afterTagRemoved (function, Callback)</h3>
+<p>Behaves the same as <strong>beforeTagRemoved</strong> except that it fires after the tag has been removed from the DOM.</p>
+<h3>onTagExists (function, Callback)</h3>
+<p>Triggered when attempting to add a tag that has already been added in the widget. The callback receives a null event,<br />
+and an object containing the properties <code>existingTag</code> and <code>duringInitialization</code>, since technically you could try to preload<br />
+duplicate tags during the widget initialization.</p>
+<p>If the <strong>allowDuplicates</strong> option is enabled, this will not be triggered.</p>
+<p>By default it will visually highlight the existing tag, unless you return <em>false</em> in your callback.</p>
+<h3>onTagClicked (function, Callback)</h3>
+<p>Can be used to add custom behaviour when the tag is clicked.<br />
+The function receives the click event and an objecting containing <code>tag</code> and <code>tagLabel</code> properties.</p>
+<pre><code>$("#myTags").tagit({
+    onTagClicked: function(event, ui) {
+        // do something special
+        console.log(ui.tag);
+    }
+});</code></pre>
+<h3>onTagLimitExceeded (function, Callback)</h3>
+<p>Called when attempting to create a tag while the tag limit has already been reached. Receives a null event,<br />
+and an object with the property <code>duringInitialization</code>. This can only be called if <strong>tagLimit</strong> is set.</p>
+<h2>Methods</h2>
+<h3>assignedTags()</h3>
+<p>Returns an array of the text values of all the tags currently in the widget.</p>
+<pre><code>$("#myTags").tagit("assignedTags");</code></pre>
+<h3>createTag(tagLabel, additionalClass)</h3>
+<p>Adds new tag to the list. The <code>additionalClass</code> parameter is an optional way to add classes to the tag element.</p>
+<pre><code>$("#myTags").tagit("createTag", "brand-new-tag");</code></pre>
+<h3>preprocessTag(function, Callback)</h3>
+<p>Set a function to be called before tag is created. Callback receives the<br />
+value of the tag created.</p>
+<pre><code>// ensure all tags are capitalized
+$(#tag-it").tagit("preprocessTag", function(val) {
+  if (!val) { return ''; }
+  return val[0].toUpperCase() + val.slice(1, val.length);
+});
+// foo -&gt; Foo</code></pre>
+<h3>removeTagByLabel(tagLabel, animate)</h3>
+<p>Finds the tag with the label <code>tagLabel</code> and removes it. If no such tag is found, it'll throw an exception.</p>
+<pre><code>$("#myTags").tagit("removeTagByLabel", "my-tag");</code></pre>
+<h3>removeAll()</h3>
+<p>Clears the widget of all tags — removes each tag it contains, so the <strong>beforeTagRemoved</strong> / <strong>afterTagRemoved</strong> event callbacks (if set) will be called for each.</p>
+<pre><code>$("#myTags").tagit("removeAll");</code></pre>
+<h2>Properties</h2>
+<h3>tagInput</h3>
+<p>The <code>&lt;input&gt;</code> field which is used for entering new tags. It's a jQuery object, so you may use it to add a class or anything to it, e.g.:</p>
+<pre><code>$("#myTags").data("ui-tagit").tagInput.addClass("fancy");</code></pre>
+<h2>Authors</h2>
+<ul>
+<li><a href="http://github.com/levycarneiro">Levy Carneiro Jr.</a> <em>original author</em></li>
+<li><a href="http://github.com/martinrehfeld">Martin Rehfeld</a></li>
+<li><a href="http://github.com/grobie">Tobias Schmidt</a></li>
+<li><a href="http://github.com/sskylar">Skylar Challand</a></li>
+<li><a href="http://github.com/aehlke">Alex Ehlke</a> <em>current maintainer</em></li>
+</ul>
+<h2>License</h2>
+<p>tag-it is released under the <a href="http://github.com/aehlke/tag-it/raw/master/LICENSE">MIT license</a>.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/71601?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/aehlke" target="_blank" id="ownerName" class="sidebar-link">aehlke</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">February 6, 2011</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 16, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://aehlke.github.com/tag-it/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/71601?v=4" alt="aehlke" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aehlke" target="_blank" class="text-decoration-none fw-bold">aehlke</a><p class="mb-0 text-muted small">178 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3432?v=4" alt="grobie" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/grobie" target="_blank" class="text-decoration-none fw-bold">grobie</a><p class="mb-0 text-muted small">8 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/153030?v=4" alt="cail" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cail" target="_blank" class="text-decoration-none fw-bold">cail</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/26666?v=4" alt="levycarneiro" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/levycarneiro" target="_blank" class="text-decoration-none fw-bold">levycarneiro</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/423740?v=4" alt="sskylar" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sskylar" target="_blank" class="text-decoration-none fw-bold">sskylar</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/177844?v=4" alt="COil" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/COil" target="_blank" class="text-decoration-none fw-bold">COil</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/12112?v=4" alt="GUI" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/GUI" target="_blank" class="text-decoration-none fw-bold">GUI</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1221772?v=4" alt="Yavari" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Yavari" target="_blank" class="text-decoration-none fw-bold">Yavari</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/16768?v=4" alt="julen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/julen" target="_blank" class="text-decoration-none fw-bold">julen</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/409321?v=4" alt="kevinslin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kevinslin" target="_blank" class="text-decoration-none fw-bold">kevinslin</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/72524?v=4" alt="matthandlersux" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/matthandlersux" target="_blank" class="text-decoration-none fw-bold">matthandlersux</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3656279?v=4" alt="AfzalMasood11" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/AfzalMasood11" target="_blank" class="text-decoration-none fw-bold">AfzalMasood11</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/387791?v=4" alt="andrusha" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/andrusha" target="_blank" class="text-decoration-none fw-bold">andrusha</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/137604?v=4" alt="benoberkfell" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/benoberkfell" target="_blank" class="text-decoration-none fw-bold">benoberkfell</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/33106?v=4" alt="shiftb" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/shiftb" target="_blank" class="text-decoration-none fw-bold">shiftb</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2793150?v=4" alt="chung-leong" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/chung-leong" target="_blank" class="text-decoration-none fw-bold">chung-leong</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/161972?v=4" alt="gosukiwi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gosukiwi" target="_blank" class="text-decoration-none fw-bold">gosukiwi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/863125?v=4" alt="gregarcara" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gregarcara" target="_blank" class="text-decoration-none fw-bold">gregarcara</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1637133?v=4" alt="jzohrab" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jzohrab" target="_blank" class="text-decoration-none fw-bold">jzohrab</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/219618?v=4" alt="jobywalker" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jobywalker" target="_blank" class="text-decoration-none fw-bold">jobywalker</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/134310?v=4" alt="jpotterm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jpotterm" target="_blank" class="text-decoration-none fw-bold">jpotterm</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/637675?v=4" alt="Nabuchodonozor" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Nabuchodonozor" target="_blank" class="text-decoration-none fw-bold">Nabuchodonozor</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/283842?v=4" alt="nolanlawson" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nolanlawson" target="_blank" class="text-decoration-none fw-bold">nolanlawson</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1511557?v=4" alt="ptr07" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ptr07" target="_blank" class="text-decoration-none fw-bold">ptr07</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/80499?v=4" alt="toao" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/toao" target="_blank" class="text-decoration-none fw-bold">toao</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8193601?v=4" alt="Sameer711" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Sameer711" target="_blank" class="text-decoration-none fw-bold">Sameer711</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/395269?v=4" alt="timrchavez" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/timrchavez" target="_blank" class="text-decoration-none fw-bold">timrchavez</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1006056?v=4" alt="berwinter" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/berwinter" target="_blank" class="text-decoration-none fw-bold">berwinter</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/277348?v=4" alt="iBiryukov" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/iBiryukov" target="_blank" class="text-decoration-none fw-bold">iBiryukov</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2290461?v=4" alt="sonots" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sonots" target="_blank" class="text-decoration-none fw-bold">sonots</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
