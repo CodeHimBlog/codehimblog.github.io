@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Geocoding and Places Autocomplete Plugin</title>
+    <meta name="description" content="geocomplete by ubilabs. jQuery Geocoding and Places Autocomplete Plugin">
+    <meta name="author" content="ubilabs">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/geocomplete-by-ubilabs.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Geocomplete</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Geocomplete",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Geocomplete</h1>
+        <p id="packageDescription" class="text-muted">jQuery Geocoding and Places Autocomplete Plugin</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">1223</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.63 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">406</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">195</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/ubilabs/geocomplete/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/ubilabs/geocomplete" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>$.geocomplete() - Version 1.7.0</h1>
+<h2>jQuery Geocoding and Places Autocomplete Plugin</h2>
+<p>An advanced jQuery plugin that wraps the Google Maps API's <a href="https://code.google.com/apis/maps/documentation/javascript/geocoding.html">Geocoding</a> and <a href="https://code.google.com/apis/maps/documentation/javascript/places.html#places_autocomplete">Places Autocomplete</a> services. You simply provide an input that lets you search for locations with a nice autocomplete dropdown. Optionally add a container to show an interactive map and a form that will be populated with the address details.</p>
+<p>View the <a href="http://ubilabs.github.com/geocomplete/docs/">annotated source</a>.</p>
+<h2>⚠️ NOT MAINTAINED</h2>
+<p><em>Please note:</em> <strong>This project is not maintained anymore. We do not use jQuery in production and switched to React about two years ago. Feel free to discuss issues here but please do not expect new features or changes in the default behavior.</strong></p>
+<p>For a new and way more flexible solution, see our <a href="http://ubilabs.github.io/react-geosuggest/">React Geosuggest</a> plugin.</p>
+<p>If you would like to take over the project, please let us know! There are many people out there who would be happy to have new supporters.</p>
+<h2>Basic Usage</h2>
+<p>To convert an input into an autocomplete field, simply call the Geocomplete plugin:</p>
+<pre class="prettyprint linenums lang-language"><code>$("input").geocomplete();  // Option 1: Call on element.
+$.fn.geocomplete("input"); // Option 2: Pass element as argument.</code></pre>
+<h2>Examples</h2>
+<p>Here is a list of basic uses:</p>
+<ul>
+<li><a href="http://ubilabs.github.com/geocomplete/examples/simple.html">Simple</a> - Single input with an event logger.</li>
+<li><a href="http://ubilabs.github.com/geocomplete/examples/map.html">Map</a> - Adding a map.</li>
+<li><a href="http://ubilabs.github.com/geocomplete/examples/location.html">Location</a> - Adding a default location.</li>
+<li><a href="http://ubilabs.github.com/geocomplete/examples/form.html">Form</a> - Populate form fields.</li>
+<li><a href="http://ubilabs.github.com/geocomplete/examples/custom_attribute.html">Attribute</a> - Using custom attributes to populate data.</li>
+<li><a href="http://ubilabs.github.com/geocomplete/examples/multiple_results.html">Multiple results</a> - Handling multiple results from the geocoder.</li>
+<li><a href="http://ubilabs.github.com/geocomplete/examples/draggable.html">Draggable</a> -  A draggable marker to redefine the position.</li>
+<li><a href="http://ubilabs.github.com/geocomplete/examples/styled.html">Styled</a> -  A styled map example.</li>
+</ul>
+<h2>Requirements</h2>
+<p>Make sure you include the Google Maps API with the Places Library before loading this plugin as described <a href="https://developers.google.com/maps/documentation/javascript/places#loading_the_library">here</a>.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;libraries=places"&gt;&lt;/script&gt;
+&lt;script src="jquery.geocomplete.js"&gt;&lt;/script&gt;</code></pre>
+<p>If you use the plugin without showing a map you must display the &quot;<a href="https://developers.google.com/maps/documentation/javascript/places#autocomplete_no_map">powered by Google</a>&quot; logo under the text field.</p>
+<h2>Trigger Request</h2>
+<p>To trigger a geocoding request from outside (eg. when hitting the &quot;find&quot; button), simply trigger the &quot;geocode&quot; event on the element.</p>
+<pre class="prettyprint linenums lang-language"><code>$("input").geocomplete();
+
+// Trigger geocoding request.
+$("button.find").click(function(){
+  $("input").trigger("geocode");
+});</code></pre>
+<h2>Adding a Map Preview</h2>
+<p>To link the geocode results with an interactive map, you can pass <code>map</code> as an option to the plugin.</p>
+<pre class="prettyprint linenums lang-language"><code>$("#my_input").geocomplete({
+  map: "#my_map"
+});</code></pre>
+<p>The <code>map</code> option might be a selector, a jQuery object or a DOM element.</p>
+<h2>Populate Form Data</h2>
+<p>You can pass <code>details</code> as an option to specify a container that will be populated when a geocoding request was successful.</p>
+<p>By default the plugin analyses the <code>name</code> attribute of the containers child nodes and replaces the content. You can override the <code>detailsAttribute</code> to use another attribute such as <code>data-geo</code>.</p>
+<p>If the element is an input, the value will be replaced otherwise the plugin overrides the current text.</p>
+<p>If you have multiple geocomplete fields on a page, use <code>detailsScope</code> option scope your 'details' container.</p>
+<p><strong>Note</strong>: Some address components such as &quot;country&quot; return an additional <code>short_name</code>. You can access them by simply adding <code>_short</code> at the end of the type.</p>
+<p>Simple Example:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;form&gt;
+  Latitude:   &lt;input name="lat" type="text" value=""&gt;
+  Longitude:  &lt;input name="lng" type="text" value=""&gt;
+  Address:    &lt;input name="formatted_address" type="text" value=""&gt;
+&lt;/form&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>$("input").geocomplete({ details: "form" });</code></pre>
+<p>Advanced Example:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="details"&gt;
+  Latitude:     &lt;span data-geo="lat" /&gt;
+  Longitude:    &lt;span data-geo="lng" /&gt;
+  Address:      &lt;span data-geo="formatted_address" /&gt;
+  Country Code: &lt;span data-geo="country_short" /&gt;
+&lt;/div&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>$("input").geocomplete({
+  details: ".details",
+  detailsAttribute: "data-geo"
+});</code></pre>
+<h2>List of Options</h2>
+<p>The following options might be passed to the plugin call. If you omit them, they fall back to the default.</p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$("#my_input").geocomplete({
+  map: "#my_map",
+  mapOptions: {
+    zoom: 10
+  },
+  markerOptions: {
+    draggable: true
+  },
+  details: "#my_form"
+});</code></pre>
+<ul>
+<li><code>map</code> - Might be a selector, a jQuery object or a DOM element. Default is <code>false</code> which shows no map.</li>
+<li><code>details</code> - The container that should be populated with data. Defaults to <code>false</code> which ignores the setting.</li>
+<li>'detailsScope' - Allows you to scope the 'details' container and have multiple geocomplete fields on one page. Must be a parent of the input. Default is 'null'</li>
+<li><code>location</code> - Location to initialize the map on. Might be an address <code>string</code> or an <code>array</code> with [latitude, longitude] or a <code>google.maps.LatLng</code>object. Default is <code>false</code> which shows a blank map.</li>
+<li><code>bounds</code> - Whether to snap geocode search to map bounds. Default: <code>true</code> if false search globally. Alternatively pass a custom LatLngBounds object</li>
+<li><code>detailsAttribute</code> - The attribute's name to use as an indicator. Default: <code>"name"</code></li>
+<li><code>mapOptions</code> - Options to pass to the <code>google.maps.Map</code> constructor. See the full list <a href="http://code.google.com/apis/maps/documentation/javascript/reference.html#MapOptions">here</a>.</li>
+<li><code>mapOptions.zoom</code> - The inital zoom level. Default: <code>14</code></li>
+<li><code>mapOptions.scrollwheel</code> - Whether to enable the scrollwheel to zoom the map. Default: <code>false</code></li>
+<li><code>mapOptions.mapTypeId</code> - The map type. Default: <code>"roadmap"</code></li>
+<li><code>markerOptions</code> - The options to pass to the <code>google.maps.Marker</code> constructor. See the full list <a href="http://code.google.com/apis/maps/documentation/javascript/reference.html#MarkerOptions">here</a>.</li>
+<li><code>markerOptions.draggable</code> - If the marker is draggable. Default: <code>false</code>. Set to true to enable dragging.</li>
+<li><code>markerOptions.disabled</code> - Do not show marker. Default: <code>false</code>. Set to true to disable marker.</li>
+<li><code>maxZoom</code> - The maximum zoom level to zoom in after a geocoding response. Default: <code>16</code></li>
+<li><code>componentRestrictions</code> - Option for Google Places Autocomplete to restrict results by country. See the <a href="https://developers.google.com/maps/documentation/javascript/places#places_autocomplete">docs</a></li>
+<li><code>types</code> - An array containing one or more of the supported types for the places request. Default: <code>['geocode']</code> See the full list <a href="http://code.google.com/apis/maps/documentation/javascript/places.html#place_search_requests">here</a>.</li>
+<li><code>blur</code> - Defaults to <code>false</code>. When enabled it will trigger the geocoding request whenever the geofield is blured. (See jQuery <code>.blur()</code>)</li>
+</ul>
+<h2>Events</h2>
+<p>You can subscribe to events of the geocode plugin by using the default jQuery syntax:</p>
+<pre class="prettyprint linenums lang-language"><code>$("input")
+  .geocomplete()
+  .bind("geocode:result", function(event, result){
+    console.log(result);
+  });</code></pre>
+<p>The following events are supported:</p>
+<ul>
+<li><code>"geocode:result"</code> - Geocode was successful. Passes the original result as described <a href="http://code.google.com/apis/maps/documentation/javascript/geocoding.html#GeocodingResults">here</a>.</li>
+<li><code>"geocode:error"</code> - Fired when the geocode returns an error. Passes the current status as listed <a href="http://code.google.com/apis/maps/documentation/javascript/geocoding.html#GeocodingStatusCodes">here</a>.</li>
+<li><code>"geocode:multiple"</code> - Fired immediately after the &quot;result&quot; event if multiple results were found. Passes an array of all results.</li>
+<li><code>"geocode:dragged"</code> - Fired when the marker's position was modified manually. Passes the updated location.</li>
+<li><code>"geocode:click"</code> - Fired when 'click' event occurs on the map. Passes the location where the click had place.</li>
+<li><code>"geocode:mapdragged"</code> - Fired when the map bounds are modified by dragging manually. Passes the location of the current map center.</li>
+<li><code>"geocode:idle"</code> - Fired when the map becomes idle after panning or zooming. Passes the location of the current map center.</li>
+</ul>
+<h2>Methods and Properties</h2>
+<p>You can access all properties and methods of the plugin from outside. Simply add a string as the first argument to the <code>.geocomplete</code> method after you initialized the plugin.</p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>// Initialize the plugin.
+$("input").geocomplete({ map: ".map_canvas" });
+
+// Call the find method with the parameter "NYC".
+$("input").geocomplete("find", "NYC");
+
+// Get the map and set a new zoom level.
+var map = $("input").geocomplete("map");
+map.setZoom(3);</code></pre>
+<h2>Address and Places Specific Component Types</h2>
+<p>The following types are supported by the geocoder and will be passed to the provided form or container:</p>
+<p><code>street_address</code>, <code>route</code>, <code>intersection</code>, <code>political</code>, <code>country</code>, <code>administrative_area_level_1</code>, <code>administrative_area_level_2</code>, <code>administrative_area_level_3</code>, <code>colloquial_area</code>, <code>locality</code>, <code>sublocality</code>, <code>neighborhood</code>, <code>premise</code>, <code>subpremise</code>, <code>postal_code</code>, <code>natural_feature</code>, <code>airport</code>, <code>park</code>, <code>point_of_interest</code>, <code>post_box</code>, <code>street_number</code>, <code>floor</code>, <code>room</code>, <code>lat</code>, <code>lng</code>, <code>viewport</code>, <code>location</code>, <code>formatted_address</code>, <code>location_type</code>, <code>bounds</code></p>
+<p>For more information about address components visit <a href="http://code.google.com/apis/maps/documentation/geocoding/#Types">http://code.google.com/apis/maps/documentation/geocoding/#Types</a></p>
+<p>Additionally the following details are passed when the Places API was requested:</p>
+<p><code>id</code>, <code>url</code>, <code>website</code>, <code>vicinity</code>, <code>reference</code>, <code>rating</code>, <code>international_phone_number</code>, <code>icon</code>, <code>formatted_phone_number</code></p>
+<p>More information can be found here: <a href="https://developers.google.com/maps/documentation/javascript/places#place_details_responses">https://developers.google.com/maps/documentation/javascript/places#place_details_responses</a></p>
+<h2>About</h2>
+<p>Developed by <a href="http://twitter.com/aemkei">Martin Kleppe</a> at <a href="http://ubilabs.net">Ubilabs</a>.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/50165?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/ubilabs" target="_blank" id="ownerName" class="sidebar-link">ubilabs</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">March 9, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 30, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://ubilabs.github.com/geocomplete/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>docco (^0.6.3)</li><li>uglifyjs (^2.3.6)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (^0.4.5)</li><li>grunt-release (^0.7.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1521?v=4" alt="aemkei" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aemkei" target="_blank" class="text-decoration-none fw-bold">aemkei</a><p class="mb-0 text-muted small">102 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1606808?v=4" alt="DanielOchoa" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/DanielOchoa" target="_blank" class="text-decoration-none fw-bold">DanielOchoa</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/6493975?v=4" alt="hinshun" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hinshun" target="_blank" class="text-decoration-none fw-bold">hinshun</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2751442?v=4" alt="MacWeber" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/MacWeber" target="_blank" class="text-decoration-none fw-bold">MacWeber</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/658082?v=4" alt="zipang" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zipang" target="_blank" class="text-decoration-none fw-bold">zipang</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/151262?v=4" alt="jpsirois" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jpsirois" target="_blank" class="text-decoration-none fw-bold">jpsirois</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/484865?v=4" alt="diazruy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/diazruy" target="_blank" class="text-decoration-none fw-bold">diazruy</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1384973?v=4" alt="vit-lebediev" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vit-lebediev" target="_blank" class="text-decoration-none fw-bold">vit-lebediev</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4193?v=4" alt="vitaly" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vitaly" target="_blank" class="text-decoration-none fw-bold">vitaly</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/676686?v=4" alt="Coolagin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Coolagin" target="_blank" class="text-decoration-none fw-bold">Coolagin</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/165461?v=4" alt="cuchac" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cuchac" target="_blank" class="text-decoration-none fw-bold">cuchac</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/213229?v=4" alt="klausi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/klausi" target="_blank" class="text-decoration-none fw-bold">klausi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/133575?v=4" alt="mbertheau" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mbertheau" target="_blank" class="text-decoration-none fw-bold">mbertheau</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/721926?v=4" alt="mirceapricop" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mirceapricop" target="_blank" class="text-decoration-none fw-bold">mirceapricop</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/76379?v=4" alt="robertodecurnex" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/robertodecurnex" target="_blank" class="text-decoration-none fw-bold">robertodecurnex</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/952809?v=4" alt="tylerpearson" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tylerpearson" target="_blank" class="text-decoration-none fw-bold">tylerpearson</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9126?v=4" alt="jumski" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jumski" target="_blank" class="text-decoration-none fw-bold">jumski</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7725464?v=4" alt="cpa99dcs" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cpa99dcs" target="_blank" class="text-decoration-none fw-bold">cpa99dcs</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+13 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
