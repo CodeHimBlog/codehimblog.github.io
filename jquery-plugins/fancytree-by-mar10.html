@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancytree by Mar10</title>
+    <meta name="description" content="JavaScript tree view / tree grid plugin with support for keyboard, inline editing, filtering, checkboxes, drag&#039;n&#039;drop, and lazy loading">
+    <meta name="author" content="mar10">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/fancytree-by-mar10.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Fancytree</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Fancytree",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Fancytree</h1>
+        <p id="packageDescription" class="text-muted">JavaScript tree view / tree grid plugin with support for keyboard, inline editing, filtering, checkboxes, drag&#039;n&#039;drop, and lazy loading</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">2851</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">13.95 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">601</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">2</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/mar10/fancytree/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/mar10/fancytree" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1><img src="doc/logo.png?raw=true" alt="logo" /> Fancytree</h1>
+<p><a href="https://github.com/mar10/fancytree/releases/latest"><img src="https://badge.fury.io/gh/mar10%2Ffancytree.svg" alt="GitHub version" /></a><br />
+<a href="https://travis-ci.com/github/mar10/fancytree"><img src="https://travis-ci.com/mar10/fancytree.svg?branch=master" alt="Build Status" /></a><br />
+<a href="https://www.npmjs.com/package/jquery.fancytree"><img src="https://img.shields.io/npm/dm/jquery.fancytree.svg" alt="npm" /></a><br />
+<a href="https://www.jsdelivr.com/package/npm/jquery.fancytree"><img src="https://data.jsdelivr.com/v1/package/npm/jquery.fancytree/badge" alt="jsDelivr" /></a><br />
+<a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="code style: prettier" /></a><br />
+<a href="https://github.com/mar10/grunt-yabs"><img src="https://img.shields.io/badge/released%20with-grunt--yabs-yellowgreen" alt="Released with: grunt-yabs" /></a><br />
+<a href="https://stackoverflow.com/questions/tagged/fancytree"><img src="https://img.shields.io/badge/StackOverflow-fancytree-blue.svg" alt="StackOverflow: fancytree" /></a></p>
+<p>Fancytree (sequel of <a href="https://code.google.com/p/dynatree/">DynaTree 1.x</a>) is a<br />
+JavaScript tree view / tree grid plugin with support for keyboard, inline editing,<br />
+filtering, checkboxes, drag'n'drop, and lazy loading.</p>
+<blockquote>
+<p><strong>NOTE:</strong><br><br />
+Fancytree is considered feature-complete. <br><br />
+The code is still maintained and bugfixes will be commited.<br />
+However do not expect new major features.</p>
+<p>For a modernized and more capable alternative, have a look at the designated<br />
+successor <a href="https://github.com/mar10/wunderbaum">Wunderbaum</a>.</p>
+</blockquote>
+<p><a href="https://wwWendt.de/tech/fancytree/demo" title="Live demo"> <img src="doc/teaser2.png?raw=true" alt="sample" /> </a></p>
+<h3>Get Started</h3>
+<ul>
+<li><a href="https://wwWendt.de/tech/fancytree/demo">Try the live demo</a>.</li>
+<li><a href="https://github.com/mar10/fancytree/wiki">Read the documentation</a>.</li>
+<li><a href="https://github.com/mar10/fancytree/discussions">Check the Q&amp;A forum</a> or<br />
+<a href="https://stackoverflow.com/questions/tagged/fancytree">Stackoverflow</a> if you have questions.</li>
+<li>Play with <a href="http://jsfiddle.net/mar10/KcxRd/">jsFiddle</a>,<br />
+<a href="https://codepen.io/mar10/pen/WMWrbq">CodePen</a>,<br />
+or <a href="http://plnkr.co/edit/8sdy3r?p=preview">Plunker</a>.</li>
+<li><a href="https://github.com/mar10/fancytree/wiki/HowtoContribute">Contribute</a></li>
+</ul>
+<h3>ES6 Quickstart</h3>
+<pre class="prettyprint linenums lang-language"><code>import $ from "jquery";
+
+import 'jquery.fancytree/dist/skin-lion/ui.fancytree.less';  // CSS or LESS
+
+import {createTree} from 'jquery.fancytree';
+
+import 'jquery.fancytree/dist/modules/jquery.fancytree.edit';
+import 'jquery.fancytree/dist/modules/jquery.fancytree.filter';
+
+const tree = createTree('#tree', {
+  extensions: ['edit', 'filter'],
+  source: {...},
+  ...
+});
+// Note: Loading and initialization may be asynchronous, so the nodes may not be accessible yet.</code></pre>
+<p>See <a href="https://github.com/mar10/fancytree/wiki#use-a-module-loader">module loader support</a> and<br />
+<a href="https://wwWendt.de/tech/fancytree/doc/jsdoc/Fancytree_Static.html#createTree">API docs</a>.</p>
+<h3>Credits</h3>
+<p>Thanks to all <a href="https://github.com/mar10/fancytree/contributors">contributors</a>.</p>
+<!--
+### Browser Status Matrix
+[![Selenium Test Status](https://saucelabs.com/browser-matrix/sauce-fancytree.svg)](https://saucelabs.com/u/sauce-fancytree)
+-->
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h1>2.38.4-0 / Unreleased</h1>
+<ul>
+<li>[Changed] <a href="https://github.com/mar10/fancytree/issues/1143">#1143</a> Improve the appearance of vertical connectors of skin XP</li>
+<li>[Fixed] <a href="https://github.com/mar10/fancytree/issues/1153">#1153</a> jQuery .focus() is deprecated</li>
+<li>[Fixed] <a href="https://github.com/mar10/fancytree/issues/1157">#1157</a> Sporadic error restoring expansion</li>
+<li>[Fixed] <a href="https://github.com/mar10/fancytree/issues/1158">#1158</a> Add guard for error handling </li>
+</ul>
+<h1>2.38.3 / 2023-02-01</h1>
+<ul>
+<li>
+<h1>1113 Update jQuery UI to 1.13.2</h1>
+</li>
+</ul>
+<h1>2.38.2-0 / 2022-06-30</h1>
+<ul>
+<li>[Fixed] #1097 Removed incorrect set-function for jQuery cookie</li>
+<li>[Fixed] #1108 minExpandLevel: 2 together with table extension does not work</li>
+</ul>
+<h1>2.38.1 / 2022-01-14</h1>
+<ul>
+<li>Replace deprecated jQuery functions: <code>$.isArray()</code>, <code>$.isFunction()</code>,<br />
+<code>$.trim()</code>, <code>$().click()</code></li>
+<li>Update to jQuery 3.6.0 and jQuery UI 1.13.0</li>
+<li>Update formatter to <a href="https://prettier.io/blog/2020/03/21/2.0.0.html">Prettier 2.0</a></li>
+</ul>
+<h1>2.38.0 / 2021-02-09</h1>
+<ul>
+<li>[Added] #1041 Make assertions more debuggable</li>
+<li>[Added] #1051 ext-filter Fuzzy matched title segment is not highlighted</li>
+<li>[Added] #1053 ext-dnd5 new option <code>dnd5.sourceCopyHook</code> (optional callback<br />
+passed to <code>toDict</code> on dragStart)</li>
+<li>[Added] #1054 ext-filter tree.updateFilter()</li>
+<li>[Fixed] #700 ext-filter Doing fuzzy filtering doesn't escape regex characters like the non fuzzy case</li>
+<li>[Fixed] #1042 Don't scroll while clicking an embedded link</li>
+<li>[Fixed] #1045 re-init exception (grid-ext)</li>
+</ul>
+<h1>2.37.0 / 2020-09-11</h1>
+<ul>
+<li>[Changed] #871, #1032 ext-glyph:
+<ul>
+<li>Support for SVG tags as used by fontawesome 5 with <code>all.js</code> library</li>
+<li>Improved padding and alignment for skin-awesome icons</li>
+<li>Allow to pass a callback() as <code>glyph.map&lt;TYPE&gt;</code> option</li>
+<li>Update Fontwesome demos to v5.0.13</li>
+</ul></li>
+<li>[Changed] #1025 ext-dnd5: changed behavior when <code>dndOpts.multiSource</code> is<br />
+true. Now dragging an unselected node will only drag that single node (while<br />
+keeping the other nodes selected). You have to drag one of the <em>selected</em><br />
+nodes in order to drag the whole group.</li>
+<li>[Fixed] #1022 ext-persist: Handle 'Access is denied for this document'</li>
+<li>[Fixed] #1028 Uncaught TypeError: apply is not a function (regression of #1019)</li>
+<li>[Fixed] #1029 Fast expand/collapse of folder leads to inconsistent state</li>
+</ul>
+<h1>2.36.1 / 2020-07-25</h1>
+<ul>
+<li>[Fixed] #1021 ext-dnd5 Regression (#1012) in drop marker</li>
+</ul>
+<h1>2.36.0 / 2020-07-15</h1>
+<ul>
+<li>[Changed] #1005 Cast key to string in getNodeByKey()</li>
+<li>[Changed] #1013 ext-dnd5: log warning when jQuery is too old</li>
+<li>[Added] #1012 <code>dnd5.dropMarkerParent</code> allows usage in Webcomponents (i.e. shadow DOM)</li>
+<li>[Added] #1017 <code>copyFunctionsToData</code> allows also copying functions to the data property of the node</li>
+<li>[Fixed] #921 ext-edit / focus handling: Internet Explorer scrolls briefly<br />
+to the top/left after editing if the tree container is partially outside the viewport</li>
+<li>[Fixed] #1001 Invalid urls in skin-xp CSS</li>
+<li>[Fixed] ext-dnd5: dropEffectCallback=none was not reset in some cases</li>
+<li>[Fixed] #1018 ContextMenu extension always focuses the first node in the tree</li>
+</ul>
+<h1>2.35.0 / 2020-03-27</h1>
+<ul>
+<li>[Changed] The <code>enableAspx</code> option will default to 'false' in the future.<br />
+For now, a warning is emitted, to explicitly set it or use the <code>postProcess</code><br />
+event instead.</li>
+<li>[Added] #988 New option <code>dnd5.preventLazyParents</code> prevents dropping items on<br />
+unloaded lazy nodes (defaults to true)</li>
+<li>[Fixed] #983 lazyLoad with promise not calling postProcess</li>
+<li>[Fixed] #984 ext-edit: Exception when cancelling addSibling() or addChildren()</li>
+<li>[Fixed] #987 Lazy load puts &quot;Load error&quot; for content outside tree div<br />
+if parent folder is removed before loads ends</li>
+<li>[Fixed] #989 <code>node.toDict()</code> keeps empty <code>children</code> array</li>
+<li>[Fixed] #998 dnd5 triggering multiple loads of lazy nodes on hover</li>
+</ul>
+<h1>2.34.0 / 2019-12-26</h1>
+<ul>
+<li>[DEPRECATED] jQuery UI widget methods:<br />
+Use <code>tree.METHOD()</code> instead of <code>$().fancytree("METHOD")</code>.</li>
+<li>[Added] <code>tree.debugTime()</code>, <code>tree.debugTimeEnd()</code> for debugging.</li>
+<li>[Added] <code>tree.destroy()</code> as alternative for <code>tree.widget.destroy()</code>.</li>
+<li>[Fixed] <code>$.ui.fancytree.getTree()</code> for Element arg.</li>
+<li>[Fixed] #973 when use ext-grid in one tree, other tree not use ext-grid has error on click.</li>
+<li>[Fixed] #974 ext-grid: too much output in production mode.</li>
+<li>[Fixed] #975 ext-grid: fix <code>tree.visitRows()</code> for empty tree.</li>
+<li>[Fixed] #978 ext-grid: addChildren() throws error when grid is hidden.</li>
+</ul>
+<h1>2.33.0 / 2019-10-29</h1>
+<ul>
+<li>[Added] event <code>preInit</code> (fired before nodes are loaded).</li>
+<li>[Changed] jQuery is now a peerDependency (&gt;=1.9), so users can install or re-use their own version.</li>
+<li>[Changed] ext-grid: <code>updateViewport</code> event is now also triggered for 'renumber' (i.e. expand, collapse)</li>
+<li>[Fixed] #963: tree.setExpanded() fails when autoScroll is enabled</li>
+<li>[Fixed] #964: handle case when <code>source</code> is not passed and no <code>&lt;ul&gt;</code> is embedded.</li>
+<li>[Fixed] #966: ext-dnd5: bug in function onDropEvent (case 'dragover')</li>
+<li>[Fixed] ext-filter: sub-match counter is one too high.</li>
+</ul>
+<h1>2.32.0 / 2019-09-10</h1>
+<ul>
+<li>[Added] <code>node.hasClass()</code></li>
+<li>[Added] <code>tree.applyCommand()</code> and <code>node.applyCommand()</code> (experimental!)</li>
+<li>[Added] <code>tree.isLoading()</code></li>
+<li>[Added] <code>tree.toDict(includeRoot, callback)</code> and <code>node.toDict(recursive, callback)</code>:<br />
+callback can now return <code>false</code> or <code>"skip"</code> to skip nodes.</li>
+<li>[Fixed] #951 Hover issue in unselectable radio</li>
+<li>ext-dnd5: allow autoExpand even if dropping is prevented</li>
+<li>[Fixed] ext-filter: tree.rootNode.subMatchCount is now set correctly</li>
+<li>[Fixed] #955 node.navigate($.ui.keyCode.DOWN, false) does not return promise</li>
+<li>Stop testing with jQuery UI 1.10 and 1.11 (only jQuery UI 1.12 remains)</li>
+</ul>
+<h1>2.31.0 / 2019-05-30</h1>
+<ul>
+<li>New extension <strong>ext-grid</strong> (experimental)<br><br />
+This is a variant of <code>ext-table</code> that introduces viewport support, which<br />
+allows to maintain <em>huge</em> data models while only rendering as many DOM elements as necessary.<br><br />
+Main changes:
+<ul>
+<li>A viewport is defined by the number of visible rows (<code>tree.viewport.count</code>) and the index of the first visible row (<code>.start</code>)</li>
+<li>When scrolling, rows are not hidden, but removed and replaced. (This implies that the contents of embedded input fields should be written into the model immediately.)</li>
+</ul></li>
+<li>Refactored <strong>ext-dnd5</strong><br><br />
+Some <strong>breaking changes</strong> were made, mainly to improve handling of the dropEffect<br />
+(note that ext-dnd5 was and still is experimental and in progress).
+<ul>
+<li>Remove <code>dnd5.dropEffect</code> callback option (set <code>data.dropEffect</code> instead)</li>
+<li>Remove <code>dnd5.dragImage</code> callback option (call <code>data.dataTransfer.setDragImage()</code></li>
+<li>and set <code>data.useDefaultImage = false</code> instead)</li>
+<li>Rename <code>dnd5.preventRecursiveMoves</code> to <code>dnd5.preventRecursion</code></li>
+<li><code>dnd5.preventVoidMoves</code> now only aplies to 'move' operations, so we can <em>copy</em> before self</li>
+<li>[Added] <code>dnd5.preventSameParent</code> option</li>
+</ul></li>
+<li>[Added] hook <code>treeStructureChanged</code></li>
+<li>[Added] methods <code>tree.findRelatedNode()</code>, <code>node.findRelatedNode()</code></li>
+<li>[Added] method <code>node.getPath()</code></li>
+<li>[Added] methods <code>$.ui.fancytree.getDragNode()</code>, <code>$.ui.fancytree.getDragNodeList()</code></li>
+<li>[Added] event <code>updateViewport</code></li>
+<li>[Added] tree option <code>.checkboxAutoHide</code> to hide checkboxes unless selected or hovered.</li>
+<li>[Added] tree option <code>.treeId</code> to prevent generation of a new sequence if the tree is re-initialized on a page.</li>
+<li>[Changed] <code>.getTree()</code> now also accepts the tree id string</li>
+<li>[Changed] #939: Keep a <code>partsel</code> flag that was explicitly set on a lazy node</li>
+<li>[Changed] ext-clones: make default key generation more robust against collisions</li>
+<li>[DEPRECATED] loaderror and lazyload options now throw an error instead of falling back to the correct loadError and lazyLoad</li>
+<li>[DEPRECATED] <code>tree.applyFilter</code> was removed</li>
+<li>[Fixed] #918 SVG font awesome 5 glyphs remove badge counter when parent node is collapsed</li>
+<li>[Fixed] #921 ext-edit respectively focus handling: Internet Explorer scrolls briefly<br />
+to the top/left of the tree container element after editing a node title if the<br />
+tree container is partially outside the viewport</li>
+<li>[Fixed] #931 Selecting grandparent selects all nodes of radiogroup in selectMode=3</li>
+<li>[Fixed] #946 dnd5 - Counter badge shows up, although the drag was cancelled from dragStart callback</li>
+<li>[Fixed] #947 dnd5 - dragEnd is fired only when re-ordering nodes within the same parent</li>
+<li>[Fixed] missing tree.error() and broken node.error()</li>
+<li>[Fixed] a bug in ext-logger</li>
+<li>Optimized performance of <code>expandAll()</code> and <code>ext-filter</code></li>
+<li>Replace jshint/jscs with eslint</li>
+<li>Now testing on Puppeteer/Chromium instead of PhantonJS</li>
+<li>Use LF on Windows when checking out from git (added .gitattributes)</li>
+<li>Update to jQuery 3.4</li>
+</ul>
+<h1>2.30.2 / 2019-01-13</h1>
+<ul>
+<li>Stop testing on IE 8 (no longer available on Saucelabs)</li>
+<li>[Fixed] #910 ext-dnd5 throws error for draggable column headers</li>
+<li>[Fixed] overrideMethod()'s calling context</li>
+<li>[Fixed] #912 ext-dnd5 + ext-glyph awesome5 does not show the icons when dragging an item</li>
+<li>[Fixed] #919 ext-multi: JavaScript error (event is not defined) in nodeKeydown</li>
+<li>[Fixed] #922 scrollIntoView for plain trees that don't have a scrollbar</li>
+<li>[Fixed] #924 ext-edit: Fix caret position for mouse-click in input</li>
+<li>[Fixed] #928 ext-dnd5: Fix <code>preventNonNodes</code> option</li>
+<li>[Fixed] #929 Fix <code>.getTree()</code> for jQuery 3</li>
+<li>[Fixed] #930 ext-dnd5: If drag does not start, no drag data should be stored</li>
+</ul>
+<h1>2.30.1 / 2018-11-13</h1>
+<ul>
+<li>[Changed] Apply and enforce 'prettier' codestyle</li>
+<li>[Changed] #897 Set font for table extension</li>
+<li>[Fixed] #883: Font Awesome 4 animation spinner stays visible</li>
+<li>[Fixed] #894: Fancytree assertion failed: scrollParent should be a simple element or <code>window</code>, not document or body.</li>
+<li>[Fixed] #896 _requireExtension: order managment</li>
+<li>[Fixed] #899 Creating duplicate icon when removing node using extension columnview</li>
+<li>[Fixed] #900 ColumnView Extension - Toggle between parent and children not working</li>
+<li>[Fixed] #909 With quicksearch enabled, does not search for non-Latin character</li>
+</ul>
+<h1>2.30.0 / 2018-09-02</h1>
+<ul>
+<li>[Changed] ext-edit trigger 'clickActive' now only triggers if no modifier keys<br />
+(shift, meta, control, ...) are pressed.<br><br />
+Trigger 'shift+click' now only triggers if no other modifier key (control, ...)<br />
+is pressed.</li>
+<li>[Changed] #879 Rename ext-debug to ext-logger<br />
+(jquery.fancytree.debug.js =&gt; jquery.fancytree.logger.js)</li>
+<li>[Added] ext-multi is now deployed with jquery.fancytree-all.js (still experimental)</li>
+<li>[Added] tree.activateKey(key, opts) now has an <code>opts</code> argument</li>
+<li>[Added] <code>nodata</code> option (bool, string, or callback)</li>
+<li>[Added] ext-table <code>mergeStatusColumns</code> option</li>
+<li>[Added] new method <code>tree.enable(flag)</code></li>
+<li>[Added] new method <code>tree.expandAll(flag, opts)</code></li>
+<li>[Added] new methods <code>tree.setOption(name, value)</code> and <code>tree.getOption(name)</code></li>
+<li>[Fixed] ES6 import dependency on jquery for jquery.fancytree.ui-deps.js</li>
+<li>[Fixed] #863 setActive() sometimes does not scroll node into view</li>
+<li>[Fixed] #877 postProcess may now also return the object form <code>{..., children: []}</code></li>
+<li>[Fixed] #884 ReferenceError: jQuery is not defined at _simpleDeepMerge</li>
+<li>[Fixed] autoScroll, node.scrollIntoView(), and .makeVisible() now work for tables as well.</li>
+</ul>
+<h1>2.29.1 / 2018-06-27</h1>
+<ul>
+<li>[Fixed] #848 Drag End Error with dnd5 extension (again):<br />
+fancytree-drag-remove class not removed on drop/dragend</li>
+<li>[Fixed] #875 ext-dnd5: Unwanted expanding of folder node when a node is dragged<br />
+before/after it</li>
+<li>[Fixed] #876 <code>triggerStart: []</code> does not override the default settings.<br><br />
+<strong>NOTE:</strong> Options of type <code>Array</code> will now override the default option.<br />
+Before, arrays were merged with the default.</li>
+<li>[Fixed] ext-ariagrid default actions</li>
+</ul>
+<h1>2.29.0 / 2018-06-16</h1>
+<ul>
+<li>[Changed]<br />
+<code>toggleEffect</code> now also accepts &quot;toggle&quot; or &quot;slideToggle&quot; to use jQuery effects instead of jQueryUI.<br><br />
+<code>toggleEffect: { effect: "slideToggle", duration: 200 }</code> is now the default.<br><br />
+'effects' component was removed from the bundled jquery.fancytree.ui-deps.js</li>
+<li>[Fixed] #746 Animation bug when expanding/collapsing nodes</li>
+<li>[Fixed] #848 Drag End Error with dnd5 extension</li>
+<li>[Fixed] #850 ext-childcounter doesn't work with custom icons</li>
+<li>[Fixed] #859 Fix log level configuration problem</li>
+<li>[Fixed] #865 toggleEffect animation (effect: blind) sometimes got stuck.</li>
+<li>Stop testing jQuery UI 1.9</li>
+<li>Update to jQuery 3.3.1</li>
+</ul>
+<h1>2.28.1 / 2018-03-19</h1>
+<ul>
+<li>[Fixed] #844 Fix RTL for ext-table</li>
+<li>[Fixed] #845 Fix RTL for ext-dnd/ext-dnd5</li>
+<li>[Fixed] #764 Fix clicks on embedded <a> tags when filter is on</li>
+</ul>
+<h1>2.28.0 / 2018-03-02</h1>
+<ul>
+<li>[Added] New extension ext-multi (experimental).</li>
+<li>[Added] ext-dnd5 support for dragging multiple selected nodes.</li>
+<li>[Added] #830 support for Font Awesome 5 (ext-glyph preset).</li>
+<li>[Added] ext-glyph supports SVG icons.</li>
+<li>[Added] <code>icon</code> option supports <code>{html: "..."}</code> content (also available for glyph-ext mapping).</li>
+<li>[Added] New method tree.visitRows()</li>
+<li>[Added] New method tree.selectAll()</li>
+<li>[Added] New method node.isBelowOf()</li>
+<li>[Added] New extension ext-fixed (experimental).</li>
+<li>[Changed] Re-rename clearData() to clearPersistData()</li>
+<li>[Changed] #828 Re-scale debugLevel from 0:quiet to 4:verbose, allowing to suppress warnings<br />
+and even errors.</li>
+<li>[Added] CSS helper classes:<br><br />
+<code>.fancytree-helper-disabled</code><br><br />
+<code>.fancytree-helper-hidden</code> (replaces <code>ui-helper-hidden</code>)<br><br />
+<code>.fancytree-helper-indeterminate-cb</code><br><br />
+<code>fancytree-helper-spin</code> for icon animations (replaces <code>glyphicon-spin</code>)</li>
+<li>[Fixed] #819: ext-filter: Handle nodes without title.</li>
+<li>[Fixed] #835: ext-dnd5: Accept drop externals after drag.</li>
+</ul>
+<h1>2.27.0 / 2017-12-16</h1>
+<ul>
+<li><strong>BREAKING CHANGES:</strong>
+<ul>
+<li><code>node.type</code> is now a first-class property of FancytreeNode.<br />
+Node data <code>{..., type: "foo"}</code> is now available as <code>node.type</code> (before: <code>node.data.type</code>).</li>
+<li>The properties <code>tree.types</code> and <code>tree.columns</code> have been added to Fancytree.<br />
+If passed with source data, they are now available directly instead of<br />
+<code>tree.data.types</code> or <code>tree.data.columns</code>.</li>
+</ul></li>
+<li><strong>Support patterns for node types:</strong>
+<ul>
+<li>The properties <code>node.type</code> and <code>tree.types</code> are recommended to implement node-type<br />
+specific configuration (<a href="https://github.com/mar10/fancytree/wiki/TutorialNodeTypes">details</a>).</li>
+<li>Event <code>data</code> argument contains <code>typeInfo == tree.types[node.type]</code>.</li>
+</ul></li>
+<li><strong>Improved ext-glyph:</strong>
+<ul>
+<li>[Added] support for ligature icons (e.g. <a href="https://material.io/icons/">material icons</a>).</li>
+<li>[Added] <code>icon</code> option can now return a dict to create a ligature icon.</li>
+</ul></li>
+<li><strong>Improved tree.loadKeyPath():</strong>
+<ul>
+<li>[Added] support for a custom path segment matcher.<br />
+This allows to have key paths with segments other than <code>node.key</code>.</li>
+<li>[Improved] the returned deferred promise now triggers <code>progress()</code> events which can<br />
+be used instead of the callback.</li>
+</ul></li>
+<li>The property <code>tree.columns</code> was added to Fancytree. Currently only reserved as<br />
+recommended pattern to pass global meta-data for ext-table.</li>
+<li>[Added] ext-edit: new trigger mode <code>clickActive</code> for option <code>triggerStart: [...]</code>.</li>
+<li>[Added] #798 Tooltip support for icons (dynamic option <code>iconTooltip</code>).</li>
+<li>[Added] #808 Pass custom storage providers to ext-persist.</li>
+<li>[Improved] ext-table no longer needs empty tbody/tr if thead is present.</li>
+<li>[Fixed] #796 UMD requirements for node/CommonJS</li>
+<li>[Fixed] #803 jquery.fancytree.ui-deps.js does not override existing widgets.</li>
+<li>[Fixed] #815 <code>&lt;mark&gt;</code> element missing in filtered nodes (minified bundle, IE 11).</li>
+<li>[Fixed] #816 findNextNode() doesn't set default for 'startNode' argument.</li>
+<li>[Added] Material Design demo</li>
+<li>[Added] Demo for Fancytree inside a jquery-confirm popup</li>
+<li>[Changed] String representation is now <code>"FancytreeNode@_4[title='My name']"</code></li>
+<li>[DEPRECATED] <code>tree.clearCookies()</code>. Use <del><code>tree.clearData()</code></del> <code>tree.clearPersistData()</code> instead.</li>
+</ul>
+<h1>2.26.0 / 2017-11-04</h1>
+<ul>
+<li><strong>BREAKING CHANGES:</strong>
+<ul>
+<li>[Fixed] #792 postProcess is now also called for non-Ajax sources.</li>
+</ul></li>
+<li>[Improved] LESS now compiles with webpack</li>
+<li>[Added] #791 ext-glyph support for radio buttons</li>
+<li>[Added] Color definitions for skin-awesome (taken from skin-lion)</li>
+<li>[Fixed] <code>$.ui.fancytree.getNode()</code> for ES6 environments</li>
+<li>[Fixed] #789 Wrong node is activated in IE, when clicking in unfocused container</li>
+</ul>
+<h1>2.25.0 / 2017-10-31</h1>
+<ul>
+<li><strong>BREAKING CHANGES:</strong>
+<ul>
+<li>The <code>dist/src/</code> folder was renamed to <code>dist/modules</code>.</li>
+<li>Some directories like <code>demo/</code> are no longer part of the npm install.</li>
+</ul></li>
+<li><strong>Improved Module Support and Distribution</strong><br>
+<ul>
+<li>The <code>dist/</code> folder now includes a <code>modules/</code> directory with fancytree core<br />
+and all extensions.</li>
+<li>All modules have UMD wrappers with defined dependencies.</li>
+<li>Internal jQuery UI dependencies are deployed as module and implicitly loaded.</li>
+<li><code>jquery.fancytree/dist/modules/jquery.fancytree</code> is defined as<br />
+package main module, so Fancytree can be included using a simple<br><br />
+<code>fancytree = require('jquery.fancytree')</code>.<br><br />
+See <a href="https://github.com/mar10/fancytree/wiki/TutorialIntegration">the docs</a><br />
+for details.</li>
+<li>All modules now return the<br />
+<a href="https://wwWendt.de/tech/fancytree/doc/jsdoc/Fancytree_Static.html">$.ui.fancytree object</a>.</li>
+<li>[Added] new static method <code>$.ui.fancytree.createTree(elem, opts)</code></li>
+</ul></li>
+<li>[Added] Source map files for <code>jquery.fancytree-all-deps.min.js</code></li>
+<li>[Added] New extension ext-fixed (work-in-progress, experimental)</li>
+<li>[Fixed] #767: Input inside table head not working</li>
+<li>[Fixed] #768: Can't use keyboard to select nodes when <code>checkbox</code> option is false</li>
+<li>[Fixed] #782: wide extension - padding is off when checkbox option is changed</li>
+<li>[Fixed] #787: Fix getEventTarget() for custom icons</li>
+</ul>
+<h1>2.24.0 / 2017-08-26</h1>
+<ul>
+<li>[Added] ext-glyph option <code>preset</code> (making the <code>map</code> option optional)</li>
+<li>[Fixed] Drop marker for ext-glyph + ext-dnd5</li>
+<li>[Fixed] #695: List AMD dependency on jQuery UI</li>
+<li>[Fixed] #735: Trying to set root node selected throws an error</li>
+<li>[Fixed] #740: Filtering must not consider escaped html entities</li>
+<li>[Fixed] #741: Passing an empty string (&quot;&quot;) as filter calls clearFilter()</li>
+<li>[Fixed] #748: Drag start should not activate a node</li>
+<li>[Fixed] #761: ext-dnd5 throws exception when tree is empty</li>
+<li>[Fixed] #764: ext-filter breaks links</li>
+<li>Updated jsdoc to 3.5</li>
+</ul>
+<h1>2.23.0 / 2017-05-27</h1>
+<ul>
+<li>
+<p><strong>The external dependency on jQuery UI was removed</strong>.<br><br />
+A new library <code>jquery.fancytree-all-deps.min.js</code> is now added to the<br />
+distribution. It includes all dependencies on jQuery UI, so the only<br />
+remaining external dependency is jQuery.<br><br />
+Continue to use <code>jquery.fancytree-all.min.js</code> if jQuery UI is already<br />
+included anyway.</p>
+</li>
+<li>
+<p><strong>Refactored the select behavior</strong><br><br />
+<a href="https://github.com/mar10/fancytree/wiki/SpecSelect">details</a>:</p>
+<!-- [details](https://github.com/mar10/fancytree/wiki#selection-and-checkboxes) -->
+<ul>
+<li>[Added] Allow control of selection status propagation with new options:<br />
+<code>unselectable</code>, <code>unselectableIgnore</code>, <code>unselectableStatus</code>.</li>
+<li>[Added] node option <code>radiogroup</code> to enable single-select for child nodes</li>
+<li>[Added] option <code>opts.noEvents</code> to <code>setSelected(flag, opts)</code></li>
+<li>[Improved] Option 'checkbox' can have the string value &quot;radio&quot; (only has<br />
+the visual effect of replacing the icon)</li>
+</ul>
+</li>
+<li>
+<p><strong>BREAKING CHANGES:</strong></p>
+<ul>
+<li>The <code>hideCheckbox</code> option was removed. Use <code>checkbox: false</code> instead.<br><br />
+Note that the <code>&lt;li class='hideCheckbox'&gt;</code> is still parsed from input<br />
+HTML and converted accordingly.</li>
+<li>The optional modifier class <code>&lt;div class='fancytree-radio'&gt;</code> was removed.<br />
+This class was used on the <em>container</em> to turn all checkbox items into<br />
+radio buttons.<br><br />
+Instead, this class is now added to <code>&lt;span class="fancytree-checkbox fancytree-radio"&gt;</code>.<br />
+Use the <code>tree.checkox: "radio"</code> option to activate this for the whole tree.</li>
+<li>The callback signature for the <code>tree.tooltip</code> option has changed to<br />
+<code>tooltip(event, data)</code></li>
+</ul>
+</li>
+<li>
+<p>[Improved] <code>aria</code> option is now on by default</p>
+</li>
+<li>
+<p>Use the new dynamic options pattern for<br />
+<code>checkbox</code>, <code>icon</code>, <code>tooltip</code>, <code>unselectable</code>, <code>unselectableIgnore</code>,<br />
+<code>unselectableStatus</code>.<br><br />
+See also <a href="https://github.com/mar10/fancytree/wiki#dynamic-options">dynamic options</a>.</p>
+</li>
+<li>
+<p>[Added] New method <code>node.visitSiblings()</code></p>
+</li>
+<li>
+<p>[Added] #730 ext-persist option <code>expandOpts</code> is passed to setExpanded()<br />
+Allows to suppress animation or event generation.</p>
+</li>
+</ul>
+<h1>2.22.5 / 2017-05-11</h1>
+<ul>
+<li>[Improved] #709 experimental ext-ariagrid</li>
+</ul>
+<h1>2.22.4 / 2017-05-06</h1>
+<ul>
+<li>[Improved] #709 experimental ext-ariagrid</li>
+</ul>
+<h1>2.22.3 / 2017-05-05</h1>
+<ul>
+<li>[Improved] #709 experimental ext-ariagrid</li>
+</ul>
+<h1>2.22.2 / 2017-04-29</h1>
+<ul>
+<li>[Fixed] #729 Fix regression with addChild performance improvements (#708)</li>
+</ul>
+<h1>2.22.1 / 2017-04-21</h1>
+<ul>
+<li>[Fixed] #722 Fix regression with addChild performance improvements (#708)</li>
+</ul>
+<h1>2.22.0 / 2017-04-11</h1>
+<ul>
+<li>[Added] ext-dnd5 now part of standard distribution</li>
+<li>[Added] #693 ext-dnd/dnd5: configurable drop marker offset</li>
+<li>[Added] #616 ext-wide: configurable left padding</li>
+<li>[Added] New method $.ui.fancytree.evalOption()</li>
+<li>[Improved] #601 ext-filter: improve performance (don't render hidden nodes)</li>
+<li>[Improved] ext-contextMenu: disable keyboard while popup is open and restore focus</li>
+<li>[Improved] #701 ext-hotkeys: Prevent default behavior on hot key combination</li>
+<li>[Improved] #708 speedup improvement for addChildren</li>
+<li>[Fixed] #680 ext-dnd5: top level nodes not draggable</li>
+<li>[Fixed] #681 ext-table: exception when a lazy node has <code>children: []</code></li>
+<li>[Fixed] #699 ext-dnd5: Icon remains after dnd is cancelled</li>
+<li>[Fixed] #702 $.ui.fancytree.getNode(jQuery)' for jQuery v3.x</li>
+<li>[Fixed] #706 Fix DND where fancytree-title span is not a direct child due to custom layouts</li>
+<li>[Fixed] #712 When clicking in a scrolled tree for the first time, focus is not set properly</li>
+<li>[Fixed] #716 ext-wide: animation 'jumps' (jQuery UI 1.12)</li>
+<li>[Fixed] #717, #719 expand/collapse shows displaced child nodes when scrolled (jQuery UI 1.12)</li>
+<li>Update demos to jQuery 3.2.1 / jQuery UI 1.12.1</li>
+</ul>
+<h1>2.21.0 / 2017-01-15</h1>
+<ul>
+<li>[Added] New extension 'ext-dnd5' (beta) for native HTML5 drag'n'drop support</li>
+<li>[Added] <code>rtl</code> option for right-to-left script support</li>
+<li>[Added] Add $.ui.fancytree.overrideMethod()</li>
+<li>[Added] hook <code>treeSetOption</code> allows extensions to update on option changes</li>
+<li>[Changed] standard CSS no longer defines <code>overflow: auto</code> for the container.<br />
+If the tree container has a fixed height, <code>overflow: auto</code> or <code>overflow: scroll</code><br />
+should be added to make it scrollable.<br />
+(Otherwise this always would be the scroll parent for ext-dnd5.)</li>
+<li>[Improved] better support for initializing from embedded JSON using the<br />
+<code>data-type="json"</code> attribute</li>
+<li>[Fixed] corner case of #658 when ext-edit is loaded, but inactive</li>
+<li>[Fixed] #396 Don't load 'loading.gif' for glyph skins</li>
+<li>[Fixed] #675 ext-table: node.render(false) puts first node at end</li>
+</ul>
+<h1>2.20.0 / 2016-11-13</h1>
+<ul>
+<li>[Added] #419 <code>modifyChild</code> event. This event is also a good place to<br />
+implement auto sorting (#559)</li>
+<li>[Added] #419 node.triggerModifyChild() and node.triggerModify()</li>
+<li>[Added] #595 add custom node filter to <code>generateFormElements()</code></li>
+<li>[Added] #610 <code>tree.tooltip</code> option allows automatic or custom tooltips</li>
+<li>[Added] #620 improved tooltip escaping to allow newlines</li>
+<li>[DEPRECATED] <code>removeNode</code> event. Listen for <code>modifyChild</code> with operation<br />
+'remove' instead (which is fired on the parent)</li>
+<li>[Improved] ThemeRoller theme</li>
+<li>[Improved] ext-filter
+<ul>
+<li>
+<h1>297 add filter option 'hideExpanders' to remove expanders if all child</h1>
+<p>nodes are hidden by filter</p>
+</li>
+<li>Filter options and the <code>opts</code> argument of <code>filterNodes()</code> / <code>filterBranches()</code><br />
+have been unified</li>
+<li>[Fixed] #230 themeroller theme compatible with ext-filter</li>
+<li>[Fixed] #528 autoCollapse option blocks filter's autoExpand option</li>
+<li>[Fixed] #529 Filter: Mark matching nodes even if parent was matched in branch mode</li>
+<li>[Fixed] #643 Exceptions in ext-filter if expression contains special chars</li>
+<li>[Fixed] #658 ext-filter does not work with ext-edit <code>editCreateNode()</code></li>
+</ul></li>
+<li>[Improved] #656 WAI-ARIA support
+<ul>
+<li>Set focus to first node on first tab-in</li>
+<li>Support [home] and [end] keys</li>
+<li>Set aria-activedescendant on container to active ID</li>
+<li>Set aria-multiselectable on container if selectMode != 1</li>
+<li>Set aria-treeitem, -selected, -expanded, on title span instead <code>&lt;li&gt;</code></li>
+</ul></li>
+<li>[Fixed] #576 <code>loadKeyPath()</code> sometimes gets the root wrong</li>
+<li>[Fixed] #615 Drag &amp; drop helper icons lose indentation with table extension</li>
+<li>[Fixed] #632 Tabbing is not working if there is an anchor tag in treeview</li>
+<li>[Fixed] #644 New nodes created with ext-edit, are hidden in filtered trees</li>
+<li>[Fixed] #647 ext-table: tree.render(true) does not discard existing markup</li>
+<li>[Fixed] #659 handling of function keys, when quicksearch is on</li>
+<li>Use QUnit 2.0</li>
+</ul>
+<h1>2.19.0 / 2016-08-11</h1>
+<ul>
+<li>[Added] #607 tree.enableUpdate() to temporarily disable rendering to improve<br />
+performance on bulk updates</li>
+<li>[Added] modifier class <code>.fancytree-connectors</code> to be set on container<br><br />
+Note: Experimental! Not required for skin-xp and not compatible with ext-table</li>
+<li>[Added] #623 ext-edit: <code>data.originalEvent</code> is now passed to <code>beforeClose</code></li>
+<li>[Fixed] #604 Set <code>source</code> option does not update tree</li>
+<li>[Fixed] #609 node.load(true); doesn't maintain expanded</li>
+<li>[Fixed] #621 Cannot focus embedded input controls</li>
+<li>[Improved] #611 Keyboard navigation honors autoScroll option</li>
+<li>Extensions inherit main version number</li>
+</ul>
+<h1>2.18.0 / 2016-05-02</h1>
+<ul>
+<li>[Added] #586 node.discardMarkup() (useful in the <code>collapsed</code> event)</li>
+<li>[Added] #171 new option <code>.escapeTitles</code></li>
+<li>[Added] new callback <code>.enhanceTitle()</code></li>
+<li>[Fixed] #515 Html tags included in filter results</li>
+<li>[Fixed] #593 ext-dnd revert position fails for tables</li>
+</ul>
+<h1>2.17.0 / 2016-04-11</h1>
+<ul>
+<li>[Added] <code>node.addClass()</code>, <code>.removeClass()</code>, and <code>.toggleClass()</code></li>
+<li>[Added] ext-filter: matcher-callback for <code>tree.filterNodes()</code> may now return<br />
+<code>"branch"</code> and <code>"skip"</code></li>
+<li>[Added] ext-filter: new option<code>nodata</code> allows to configure a status node for<br />
+empty results</li>
+<li>[Added] <code>digits</code> argument to <code>node.getIndexHier(separator, digits)</code></li>
+<li>[Added] tree option <code>.tabindex</code>, default is &quot;0&quot;. Pass &quot;&quot; to resolve #577</li>
+<li>[DEPRECATED] tree option <code>.tabbable</code>. Use <code>.tabindex</code> instead</li>
+<li>[Added] New option <code>mode='firstChild'</code> for <code>node.moveTo()</code></li>
+<li>[Added] New option <code>digits=&lt;int&gt;</code> for <code>node.getIndexHier()</code></li>
+<li>[Fixed] ext-filter: branch mode honors <code>autoExpand: true</code></li>
+<li>[Fixed] #584: aria-labelledby ids not unique</li>
+<li>Update to jQuery UI 1.11.4</li>
+</ul>
+<h1>2.16.1 / 2016-03-18</h1>
+<ul>
+<li>[Added] ext-glyph: new icon for 'nodata' status nodes</li>
+<li>[Fixed] #575 missing loading icon in non-bootstrap themes.<br><br />
+Glyph themes now display status images in icon span (was expander span before)</li>
+</ul>
+<h1>2.16.0 / 2016-03-16</h1>
+<ul>
+<li>[Added] ext-clones: new method node.setRefKey(refKey)</li>
+<li>[Added] modifier class <code>.fancytree-fade-expander</code> to be set on container</li>
+<li>[Added] ext-dnd: <code>.dragExpand()</code> callback to prevent auto-expand</li>
+<li>[Improved] load error reporting</li>
+<li>[Improved] bootstrap theme icons and style (samples use bootstrap 3.3)</li>
+<li>[Improved] status nodes don't have icons</li>
+<li>[Improved] pass data argument to <code>source</code> callback</li>
+<li>[Improved] Handle exceptions inside <code>postProcess</code></li>
+<li>[Improved] #568 ext-dnd: Auto-expanding of collapsed nodes should also work<br />
+when dropping is not allowed</li>
+<li>[Improved] #567 ext-dnd: fix revert position</li>
+<li>[Improved] #565 ext-dnd: fix intermediate display of wrong icon (sending 'over' after 'enter')</li>
+<li>[Fixed] #569 node.navigate does not return a Promise object</li>
+<li>[Fixed] #563 <code>tree.reactivate(false)</code> sets fancytree-treefocus and <code>tree.reactivate(true)</code><br />
+doesn't set keyboard focus</li>
+<li>[Fixed] #562 Node span tag leaks outside table cell</li>
+<li>[Fixed] #526 tree.setFocus() does not set keyboard focus</li>
+<li>Updated to jQuery 1.12.1</li>
+<li>Updated grunt devDependencies</li>
+<li>Add jQuery 3.0 beta to test suite</li>
+<li>Added LICENSE.txt to dist</li>
+</ul>
+<h1>2.15.0 / 2016-01-11</h1>
+<ul>
+<li>[Changed] Renamed class <code>fancytree-statusnode-wait</code> to <code>fancytree-statusnode-loading</code></li>
+<li>[Added] new event <code>renderStatusColumns</code></li>
+<li>[DEPRECATED] ext-table option <code>customStatus</code>. Use <code>renderStatusColumns</code> instead</li>
+<li>[Added] new event <code>clickPaging</code></li>
+<li>[Added] new mode <code>nodata</code> for use with node.setStatus()</li>
+<li>[Added] new method <code>node.addPagingNode()</code></li>
+<li>[Added] new method <code>node.replaceWith()</code></li>
+<li>[Added] new type 'paging' for <code>node.statusNodeType</code></li>
+<li>[Added] #542 new method <code>node.getSelectedNodes()</code></li>
+<li>[Added] Helper class <code>glyphicon-spin</code> to allow rotating loading icon with bootstrap3</li>
+<li>[Improved] #356: serialize load requests</li>
+<li>[Improved] #538: Be more robust if site css defines custom li:before</li>
+<li>[Improved] ext-table: Define table row templates in <code>&lt;tbody&gt;</code></li>
+<li>[Improved] ext-table: <code>&lt;thead&gt;</code> is now optional if <code>&lt;tbody&gt;</code> contains <code>&lt;td&gt;</code>s</li>
+</ul>
+<h1>2.14.0 / 2015-12-19</h1>
+<ul>
+<li>[CHANGED] #519 Refactored custom icon configuration:<br><br />
+(see also the <a href="https://github.com/mar10/fancytree/wiki/TutorialTheming">theming tutorial</a>)
+<ul>
+<li>[Added] <code>options.icon</code> option/callback.<br><br />
+Valid values are true, false, a string containing a class name or image<br />
+url, or a callback returning that.</li>
+<li>[Changed] <code>node.icon</code> option. Valid values are true, false, or a string<br />
+containing a class name or image url.<br><br />
+This option existed before, but was stored in the <code>node.data.icon</code> namespace,<br />
+and did not accept class names.</li>
+<li>[DEPRECATED] <code>options.iconClass</code> callback: use <code>options.icon</code> instead</li>
+<li>[DEPRECATED] <code>options.icons</code>: use <code>options.icon</code> instead</li>
+<li>[DEPRECATED] <code>node.data.iconclass</code> option: use <code>node.icon</code> instead</li>
+<li>[DEPRECATED] <code>node.data.icon</code> option: use <code>node.icon</code> instead</li>
+</ul></li>
+<li>[Added] <code>tree.clear()</code> method.</li>
+<li>[Added] #520 ext-persist: new event <code>beforeRestore</code></li>
+<li>[Fixed] #533 table-ext: nodeSetExpanded triggers redundant events</li>
+</ul>
+<h1>2.13.0 / 2015-11-16</h1>
+<ul>
+<li>[Changed] If a node is initalized as <code>lazy: true</code>, and <code>children: []</code>,<br />
+treat it as 'loaded leaf node'.<br><br />
+This is consistent with a lazy node that has no children property at all (i.e.<br />
+<code>undefined</code>). This would issue a lazyLoad event and a resopnse of <code>[]</code> would<br />
+mark the node as leaf node.</li>
+<li>[Added] new function $.ui.fancytree.getTree()</li>
+<li>[Added] ext-filter methods node.isMatched() and tree.isFilterActive()</li>
+<li>[Added] CSS for ext-childcounter badges is now part of the standard themes</li>
+<li>[Added] ext-childcounter method node.updateCounter()`</li>
+<li>[Fixed] #507 data-hideCheckbox=&quot;true&quot;</li>
+<li>[Fixed] #513 activeVisible option does not work on init</li>
+<li>[Fixed] #516 ExtPersist requires cookie.js even when not using cookies</li>
+</ul>
+<h1>2.12.0 / 2015-09-10</h1>
+<ul>
+<li>[Changed] Documented <code>iconClass</code> callback and changed signature from<br />
+<code>iconClass(node)</code> to <code>iconClass(event, data)</code></li>
+<li>[Added] ext-dnd events <code>initHelper</code> and <code>updateHelper</code></li>
+<li>[Added] ext-dnd option <code>smartRevert</code></li>
+<li>[Added] #146 sample for multi-node drag'n'drop</li>
+<li>[Added] Sample for modifier keys to control copy/move behavior while dragging</li>
+<li>[Added] <code>highlight</code> and <code>fuzzy</code> options to ext-filter</li>
+<li>[Added] <code>fireActivate</code> option to ext-persist (default: true)</li>
+<li>[Added] #496 new methods tree.findFirst() / .findAll()</li>
+<li>[Improved] clearFilter() performance #491</li>
+<li>[Improved] dnd registers global handlers to cancel on ESC and mousedown</li>
+<li>[Fixed] #475 Font color while editing node title with bootstrap skin</li>
+<li>[Fixed] #484 Glyph plugin: Missing margin-left for span.fancytree-custom-icon</li>
+<li>[Fixed] #486 node.render(true) moves the node to the end of the list</li>
+<li>[Fixed] #489 <code>focusOnClick</code> option is ignored for tables if 'dnd' is listed after 'table' extension</li>
+<li>[Fixed] #495 Double clicking on expander with lazy-load causes assertion error</li>
+</ul>
+<h1>2.11.0 / 2015-07-26</h1>
+<ul>
+<li>[Changed] Adding <code>fancytree-plain</code> class to container (if not table), allowing for more efficient css</li>
+<li>[Changed] #434: Use data-uris to inline loading.gif image</li>
+<li>[Changed] #460: Use padding-left instead of margin-left for table indent</li>
+<li>[Changed] #465: Add <code>node</code> argument to the <code>toDict()</code> callback</li>
+<li>[Improved] Nicer bootstrap theme and added table to the example</li>
+<li>[Improved] #464: ext-dnd supports ext-glyph</li>
+<li>[Improved] #466: Add counter badges to ext-filter</li>
+<li>[Fixed] Win8 theme jumpy hover effects</li>
+<li>[Fixed] #411: ext-edit fails with ext-table, when edit was cancelled</li>
+<li>[Fixed] #463: ext-table: render(deep) does not work</li>
+<li>[Fixed] #470: Wide plugin not present in jquery.fancytree-all.min.js</li>
+</ul>
+<h1>2.10.2 / 2015-07-02</h1>
+<ul>
+<li>[Fixed] Add <code>dist/skin-custom-1</code> sample (again)</li>
+<li>[Fixed] #459 Don't collapse root folder when last node is removed</li>
+</ul>
+<h1>2.10.1 / 2015-06-27</h1>
+<ul>
+<li>[Changed] Undo #340: Revert dist folder layout to v2.9.0, but add<br />
+dist/skin-common.less</li>
+</ul>
+<h1>2.10.0 / 2015-06-26 [YANKED]</h1>
+<ul>
+<li>[Changed] #340: New dist folder layout: moved skin-* folders into src/ folder<br />
+(<strong>Note:</strong> this change was reverted in v2.10.1)</li>
+<li>[Improved] Update to jQuery UI 1.11.4, jQuery 1.11.3</li>
+<li>[Improved] #340: add <code>dist/skin-common.less</code> to fix theme imports</li>
+<li>[Improved] #443 Support js-cookie (still compatible with jquery-cookie)</li>
+<li>[Fixed] #415 selected and unselectable shows unchecked checkbox</li>
+<li>[Fixed] #427 table + themeroller: apply color to TR</li>
+<li>[Fixed] #442 filterBranches shall use opts to allow autoExpand</li>
+<li>[Fixed] #445 enter key not handled correctly</li>
+<li>[Fixed] #449 After deleting last child, parent node remains expanded</li>
+<li>[Fixed] #452 destroy not removing nodes with ext-table</li>
+<li>[Fixed] #457 Autoscroll fails with lazyloading returning empty list</li>
+</ul>
+<h1>2.9.0 / 2015-04-19</h1>
+<ul>
+<li>[Changed] ext-filter: <code>tree.filterNodes(filter, opts)</code> now accept an <code>opts</code><br />
+object instead of <code>leavesOnly</code></li>
+<li>[Improved] #417 only raise exception about data being a string if dataType is &quot;json&quot;</li>
+<li>[Added] #394 New option <code>autoExpand</code> for [ext-filter]</li>
+<li>[Fixed] #402, #405 rare exception in dnd events</li>
+<li>[Fixed] #420 nodeSetActive not returning promise</li>
+<li>[Fixed] #270 Keyboard focus not working when using dnd extension</li>
+</ul>
+<h1>2.8.1 / 2015-03-01</h1>
+<ul>
+<li>[Improved] generateFormElements() new argument <code>opts</code>, default: <code>{stopOnParents: true}</code></li>
+<li>[Fixed] #393 ext-table: checkboxColumnIdx not working</li>
+<li>[Fixed] #397 ext-edit: Creating sub category fails</li>
+<li>[Fixed] #403 generateFormElements() doesn't work with string args</li>
+</ul>
+<h1>2.8.0 / 2015-02-08</h1>
+<ul>
+<li>[Changed] Deprecated ext-menu (was never officially supported, see <a href="http://localhost:8080/demo/index.html#sample-ext-menu.html">http://localhost:8080/demo/index.html#sample-ext-menu.html</a>)</li>
+<li>[Improved] Bluring the widget will now blur the focused node too.</li>
+<li>[Improved] Persistence will only set node focus if widget had focus (otherwise only activate the node).</li>
+<li>[Improved] Set default focus on first keypress to active node (first node otherwise)</li>
+<li>[Improved] #383 Accept <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise">ECMAScript 6 Promise</a> as source</li>
+<li>[Added] <code>_superApply()</code> for hook handlers.</li>
+<li>[Added] eventToString() supports mouse events</li>
+<li>[Fixed] persistence for focus (when using non-cookie storage)</li>
+<li>[Fixed] #391 Exception on autoscrolling filtered trees</li>
+</ul>
+<h1>2.7.0 / 2014-12-21</h1>
+<ul>
+<li>[CHANGED] Dropped <code>fx</code> option. Use <code>toggleEffect</code> instead.</li>
+<li>[CHANGED] 'win8' and 'bootstrap' skins where modified to highlight the<br />
+title span instead of the node span, in order to be compatible with<br />
+[ext-wide]. The original skins are available as 'skin-win8-n' and<br />
+'skin-bootstrap-n' respectively.</li>
+<li>[Added] ext-wide extension (experimental)</li>
+<li>[Added] LESS files to distribution</li>
+<li>[Added] Publish on <a href="https://cdnjs.com/libraries/jquery.fancytree">cdnjs</a></li>
+<li>[Improved] tree.reactivate() returns a promise</li>
+<li>[Fixed] #246 Gaps when filtering in hide mode (patch by @lefunque)</li>
+<li>[Fixed] #287 wrong image on hovers</li>
+<li>[Fixed] #368 Standard browser behavior prevented (e.g. zoom with Ctrl+'+'/'-')</li>
+<li>[Fixed] #369 Suppress warning, when dropping top- on top-node</li>
+</ul>
+<h1>2.6.0 / 2014-11-29</h1>
+<ul>
+<li>[Added] Option <code>focusOnSelect</code> to set focus when node is checked by a mouse<br />
+click (default: false)</li>
+<li>[Added] <code>restore</code> event, sent after ext-persist has restored the tree state</li>
+<li>[Improved] #359 Better navigation performance when skipping hidden nodes</li>
+<li>Publish on npm Registry</li>
+</ul>
+<h1>2.5.0 / 2014-11-23</h1>
+<ul>
+<li>[CHANGED] [ext-persist] overrideSource option now defaults to true</li>
+<li>[Added] [ext-filter] Option <code>autoApply</code> re-applies filter on lazy loading<br />
+(on by default)</li>
+<li>[Added] quicksearch: navigate to next node by typing the first letters</li>
+<li>[Improved] [ext-dnd] Make draggable helper and parent configurable</li>
+<li>[Improved] #153 Add class <code>fancytree-unselectable</code> to respective nodes and<br />
+dim unselectable checkboxes</li>
+<li>[Improved] Update to jQuery 1.1.11, jQuery UI 1.11.2</li>
+<li>[Improved] New mode 'firstChild' for node.addNode()</li>
+<li>[Fixed] #324 Fix problem where minExpandLevel was not expanding root node</li>
+<li>[Fixed] #300 dnd.focusOnClick for jQuery UI 1.11</li>
+<li>[Fixed] #354 [ext-persist] with selectMode 3</li>
+</ul>
+<h1>2.4.1 / 2014-09-23</h1>
+<ul>
+<li>[Fixed] Regression #323</li>
+</ul>
+<h1>2.4.0 / 2014-09-21</h1>
+<ul>
+<li>[CHANGED] Renamed dist/jquery.fancytree-custom.min.js to jquery.fancytree-all.min.js</li>
+<li>[CHANGED] ext-edit callbacks no longer pass <code>data.value</code> (use <code>data.input.val()</code> instead).</li>
+<li>[Added] CDN support (<a href="http://www.jsdelivr.com/#!jquery.fancytree">http://www.jsdelivr.com/#!jquery.fancytree</a>)</li>
+<li>[Added] New method <code>node.visitAndLoad()</code></li>
+<li>[Added] New method <code>node.editCreateNode()</code> (ext-edit)</li>
+<li>[Added] New method <code>node.isRootNode()</code></li>
+<li>[Added] New method <code>node.isTopLevel()</code></li>
+<li>[Added] New option <code>id</code> to override default tree id</li>
+<li>[Added] New argument <code>stopOnParents</code> for tree.generateFormElements()</li>
+<li>[Improved] #294 node.load() should resolve 'ok', if node is already loaded</li>
+<li>[Improved] #293 minExpandLevel does not auto-expand</li>
+<li>[Improved] #313 Allow HTML in tooltips</li>
+<li>[Fixed] crash in scrollIntoView() when parent is <code>window</code></li>
+<li>[Fixed] #305 Checkbox doesn't show with Glyph + Table</li>
+<li>[Fixed] #316 Fix hasChildren() when children = []</li>
+<li>[Fixed] #237 Ajax LoadError not updated in StatusNode with Table ext</li>
+<li>[Fixed] #295 loadKeyPath with multiple paths</li>
+<li>[DEPRECATED] node.isRoot(). Use node.isRootNode() instead</li>
+</ul>
+<h1>2.3.0 / 2014-08-17</h1>
+<ul>
+<li>[CHANGED] renamed (undocumented) event 'loaderror' to 'loadError'</li>
+<li>[Added] postProcess now allows to signal error conditions (so it becomes easy to handle custom Ajax response formats)</li>
+<li>[Added] node.setStatus()</li>
+<li>[Added] ext-clones to the standard distribution.</li>
+<li>[Improved] loadError allows to return <code>false</code> to prevent default handling</li>
+<li>[Fixed] #258 Fix moveTo when moving a node to same parent</li>
+<li>[Fixed] #257 Glyph expander sometimes disappears</li>
+</ul>
+<h1>2.2.0 / 2014-06-28</h1>
+<ul>
+<li>[Added] Option dnd.focusOnClick sets focus to tree widget, even when dragging<br />
+is enabled</li>
+<li>[Added] node.info()</li>
+<li>[Improved] #245 tree.generateInput() now returns data using PHPs array<br />
+convention, i.e. by appending brackets to the name: 'ft_1[]'.</li>
+<li>[Fixed] #250: Children lazy empty nodes remain checked when parent is<br />
+unchecked with hierarchical multi-selection</li>
+<li>[Fixed] #272 Navigation in filtered trees</li>
+</ul>
+<h1>2.1.0 / 2014-05-29</h1>
+<ul>
+<li>[Added] #210: [ext-persist] optionally store information in sessionStorage or localStorage</li>
+<li>[Added] #64 [ext-filter] filterBranches() will restrict display to sub-trees</li>
+<li>[Added] New options 'scrollParent' and 'scrollOfs' are evaluated by node.scrollIntoView()<br />
+(which is also called on expand). This allows autoScroll to work with<br />
+[ext-table]: set scrollParent to <code>window</code> or a wrapper DIV with overflow: auto</li>
+<li>[Added] [ext-wide] use 100% wide selection bar (experimental)</li>
+<li>[Added] $.ui.fancytree.debounce()</li>
+<li>[Improved] [ext-columnview] css</li>
+<li>[Improved] skin-win8 now includes the loading.gif as inline CSS for faster response</li>
+<li>[Improved] Add 'fancytree-icon' class to icon IMG</li>
+<li>[Improved] css v-align for checkboxes and icons</li>
+<li>[Fixed] #217: persistence when node keys are numeric</li>
+<li>[Fixed] #228: html in node title prevents click</li>
+<li>[Fixed] #235: D'n'd helper is displaced, when window is scrolled</li>
+<li>[Fixed] #241: fromDict() does not update node title</li>
+<li>[Fixed] relative custom imagePath option</li>
+<li>[DEPRECATED] [ext-filter] Use filterNodes() instead of applyFilter()</li>
+<li>[DEPRECATED] [ext-filter] 'leavesOnly' option removed (see filterNodes())</li>
+</ul>
+<h1>2.0.0 / 2014-05-01</h1>
+<ul>
+<li>Released 2.0.0</li>
+</ul>
+<h1>1.x</h1>
+<ul>
+<li>See <a href="https://code.google.com/p/dynatree/">Dynatree</a></li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/checkboxes" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>checkboxes</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/drag-and-drop" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>drag-and-drop</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/fancytree" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>fancytree</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/persistence" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>persistence</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/tree" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>tree</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/treegrid" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>treegrid</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/41663?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/mar10" target="_blank" id="ownerName" class="sidebar-link">mar10</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">February 16, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 24, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Other</span>
+    </div>
+	        <a href="http://wwwendt.de/tech/fancytree/demo" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>coffeescript (^2.5.1)</li><li>eslint (^7.8.1)</li><li>eslint-config-jquery (^3.0.0)</li><li>eslint-config-prettier (^8.0.0)</li><li>eslint-plugin-prettier (^3.1.4)</li><li>grunt (^1.4.0)</li><li>grunt-contrib-clean (^2.0.0)</li><li>grunt-contrib-compress (^2.0.0)</li><li>grunt-contrib-concat (^1.0.0)</li><li>grunt-contrib-connect (^3.0.0)</li><li>grunt-contrib-copy (^1.0.0)</li><li>grunt-contrib-cssmin (^4.0.0)</li><li>grunt-contrib-less (^3.0.0)</li><li>grunt-contrib-qunit (^6.0.0)</li><li>grunt-contrib-uglify (^5.0.0)</li><li>grunt-contrib-watch (^1.1.0)</li><li>grunt-docco (^0.5.0)</li><li>grunt-eslint (^23.0.0)</li><li>grunt-exec (^3.0.0)</li><li>grunt-jsdoc (^2.4.1)</li><li>grunt-text-replace (^0.4.0)</li><li>grunt-yabs (^1.3.0)</li><li>jsdoc (^3.6.7)</li><li>marked (^3.0.8 &lt;4.0)</li><li>prettier (^2.8.4)</li><li>puppeteer (^22.11.2)</li><li>qunit (^2.18.1)</li></ul><h5 class="sidebar-title">Peer Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.9)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/41663?v=4" alt="mar10" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mar10" target="_blank" class="text-decoration-none fw-bold">mar10</a><p class="mb-0 text-muted small">1704 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4620597?v=4" alt="Koloto" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Koloto" target="_blank" class="text-decoration-none fw-bold">Koloto</a><p class="mb-0 text-muted small">17 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2071346?v=4" alt="ewya" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ewya" target="_blank" class="text-decoration-none fw-bold">ewya</a><p class="mb-0 text-muted small">8 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1525682?v=4" alt="wolfmanx" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/wolfmanx" target="_blank" class="text-decoration-none fw-bold">wolfmanx</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3637479?v=4" alt="rayner133" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rayner133" target="_blank" class="text-decoration-none fw-bold">rayner133</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11216127?v=4" alt="cuziacmihai" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cuziacmihai" target="_blank" class="text-decoration-none fw-bold">cuziacmihai</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1376358?v=4" alt="aleventhal" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aleventhal" target="_blank" class="text-decoration-none fw-bold">aleventhal</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2722872?v=4" alt="norkunas" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/norkunas" target="_blank" class="text-decoration-none fw-bold">norkunas</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7650?v=4" alt="mcspring" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mcspring" target="_blank" class="text-decoration-none fw-bold">mcspring</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/893608?v=4" alt="kachar" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kachar" target="_blank" class="text-decoration-none fw-bold">kachar</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1462539?v=4" alt="Ariesto" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Ariesto" target="_blank" class="text-decoration-none fw-bold">Ariesto</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1253866?v=4" alt="0cv" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/0cv" target="_blank" class="text-decoration-none fw-bold">0cv</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4680160?v=4" alt="HobieCat" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/HobieCat" target="_blank" class="text-decoration-none fw-bold">HobieCat</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/12268397?v=4" alt="NullIsNot0" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/NullIsNot0" target="_blank" class="text-decoration-none fw-bold">NullIsNot0</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/364896?v=4" alt="jogibear9988" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jogibear9988" target="_blank" class="text-decoration-none fw-bold">jogibear9988</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/43747420?v=4" alt="Skkay" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Skkay" target="_blank" class="text-decoration-none fw-bold">Skkay</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/203996?v=4" alt="smeyfroi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/smeyfroi" target="_blank" class="text-decoration-none fw-bold">smeyfroi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3337476?v=4" alt="dodubassman" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dodubassman" target="_blank" class="text-decoration-none fw-bold">dodubassman</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2174103?v=4" alt="tsohr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tsohr" target="_blank" class="text-decoration-none fw-bold">tsohr</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7042593?v=4" alt="chino23" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/chino23" target="_blank" class="text-decoration-none fw-bold">chino23</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/425166?v=4" alt="flack" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/flack" target="_blank" class="text-decoration-none fw-bold">flack</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8628543?v=4" alt="glegoux" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/glegoux" target="_blank" class="text-decoration-none fw-bold">glegoux</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7082150?v=4" alt="hglty07" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hglty07" target="_blank" class="text-decoration-none fw-bold">hglty07</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11746375?v=4" alt="jcrosetto" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jcrosetto" target="_blank" class="text-decoration-none fw-bold">jcrosetto</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2735395?v=4" alt="jon-m-bottoms" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jon-m-bottoms" target="_blank" class="text-decoration-none fw-bold">jon-m-bottoms</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/67059?v=4" alt="m5" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/m5" target="_blank" class="text-decoration-none fw-bold">m5</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8835207?v=4" alt="preda7or" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/preda7or" target="_blank" class="text-decoration-none fw-bold">preda7or</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/13412526?v=4" alt="sbespaly" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sbespaly" target="_blank" class="text-decoration-none fw-bold">sbespaly</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/15051871?v=4" alt="stagefright5" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/stagefright5" target="_blank" class="text-decoration-none fw-bold">stagefright5</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
