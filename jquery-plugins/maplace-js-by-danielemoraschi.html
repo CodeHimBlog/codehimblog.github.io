@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Google Maps JavaScript Plugin for Jquery.</title>
+    <meta name="description" content="maplace.js by danielemoraschi. A Google Maps Javascript plugin for jQuery.">
+    <meta name="author" content="danielemoraschi">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/maplace-js-by-danielemoraschi.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Maplace.js</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Maplace.js",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Maplace.js</h1>
+        <p id="packageDescription" class="text-muted">A Google Maps Javascript plugin for jQuery.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">999</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">4.69 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">190</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">42</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/danielemoraschi/maplace.js/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/danielemoraschi/maplace.js" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Maplace.js <a href="https://travis-ci.org/danielemoraschi/maplace.js"><img src="https://travis-ci.org/danielemoraschi/maplace.js.svg" alt="Build Status" /></a> - currently unmaintained</h1>
+<p>Helps you to embed Google Maps into your website, quickly create markers and controls menu for the locations on map.</p>
+<h2>Demo</h2>
+<p>See <strong><a href="http://maplacejs.com/">demo website</a></strong></p>
+<h2>Setup</h2>
+<p>Download the latest version of Maplace.js and include the Google Maps API v3 along with jQuery.</p>
+<h3>JS</h3>
+<pre class="prettyprint linenums lang-language"><code>new Maplace({
+    locations: data,
+    controls_type: 'list',
+    controls_on_map: false
+}).Load();</code></pre>
+<h3>HTML</h3>
+<pre class="prettyprint linenums lang-language"><code>&lt;div id="controls"&gt;&lt;/div&gt;
+&lt;div id="gmap" style="with:300px;height:250px;"&gt;&lt;/div&gt;</code></pre>
+<h3>Locations Array</h3>
+<pre class="prettyprint linenums lang-language"><code>var data = [{
+        lat: 45.9,
+        lon: 10.9,
+        title: 'Title A1',
+        html: '&lt;h3&gt;Content A1&lt;/h3&gt;',
+        zoom: 8,
+        icon: 'http://www.google.com/mapfiles/markerA.png'
+    },{
+        lat: 44.8,
+        lon: 1.7,
+        title: 'Title B1',
+        html: '&lt;h3&gt;Content B1&lt;/h3&gt;',
+        show_infowindow: false
+    }
+];</code></pre>
+<h2>Options</h2>
+<table>
+    <thead>
+      <tr>
+        <th>Option</th>
+        <th>Type</th>
+        <th width="200" style="width:200px">Default</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>map_div</td>
+        <td>string</td>
+        <td>#gmap</td>
+        <td>
+          Where you want to show the Map
+        </td>
+      </tr>
+      <tr>
+        <td>controls_div</td>
+        <td>string</td>
+        <td>#controls</td>
+        <td>
+          Where you want to show the menu.
+          <strong>generate_controls</strong> must be <strong>true</strong>
+          <strong>controls_on_map</strong> must be <strong>false</strong>
+          At least more than one location on map
+        </td>
+      </tr>
+      <tr>
+        <td>generate_controls</td>
+        <td>boolean</td>
+        <td>true</td>
+        <td>
+          If <strong>false</strong>, the menu will not generated
+        </td>
+      </tr>
+      <tr>
+        <td>controls_type</td>
+        <td>string</td>
+        <td>dropdown</td>
+        <td>
+          To set the menu type choose between: <strong>dropdown</strong> | <strong>list</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>controls_on_map</td>
+        <td>boolean</td>
+        <td>true</td>
+        <td>
+          If <strong><em>false</em></strong>, the menu will be generated into the element defined by the property <strong>controls_div</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>controls_title</td>
+        <td>string</td>
+        <td></td>
+        <td>
+          Add a title/header text to the menu
+        </td>
+      </tr>
+      <tr>
+        <td>controls_cssclass</td>
+        <td>string</td>
+        <td></td>
+        <td>
+          Add a custom class to the menu element
+        </td>
+      </tr>
+      <tr>
+        <td>controls_applycss</td>
+        <td>boolean</td>
+        <td>true</td>
+        <td>
+          If <strong><em>false</em></strong>, default styles to the menu will not be applied
+        </td>
+      </tr>
+      <tr>
+        <td>controls_position</td>
+        <td>string</td>
+        <td>'RIGHT_TOP'</td>
+        <td>
+          Controls position on the right, below top-right elements of the map.
+        </td>
+      </tr>
+      <tr>
+        <td>type</td>
+        <td>string</td>
+        <td>marker</td>
+        <td>
+          To set the Map type choose between: <strong>marker</strong> | <strong>polyline</strong> | <strong>polygon</strong> | <strong>directions</strong> | <strong>fusion</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>view_all</td>
+        <td>boolean</td>
+        <td>true</td>
+        <td>
+          If <strong><em>false</em></strong> the link "view all" will not be created
+        </td>
+      </tr>
+      <tr>
+        <td>view_all_text</td>
+        <td>string</td>
+        <td>View All</td>
+        <td>
+          Set a custom text for the link "view all"
+        </td>
+      </tr>
+      <tr>
+        <td>start</td>
+        <td>integer</td>
+        <td>0</td>
+        <td>
+          Set the first location to show, <strong><em>0</em></strong> stands for "view all"
+        </td>
+      </tr>
+      <tr>
+        <td>locations</td>
+        <td>Array [locations]</td>
+        <td>[]</td>
+        <td>
+          List of locations being marked on the map
+        </td>
+      </tr>
+      <tr>
+        <td>commons</td>
+        <td>object</td>
+        <td>{}</td>
+        <td>
+          Overwrite every location with a set of common properties
+        </td>
+      </tr>
+      <tr>
+        <td>show_markers</td>
+        <td>boolean</td>
+        <td>true</td>
+        <td>
+          If <strong><em>false</em></strong>, markers will not be visible on the map
+        </td>
+      </tr>
+      <tr>
+        <td>show_infowindows</td>
+        <td>boolean</td>
+        <td>true</td>
+        <td>
+          If <strong><em>false</em></strong>, infowindows will not be created
+        </td>
+      </tr>
+      <tr>
+        <td>infowindow_type</td>
+        <td>string</td>
+        <td>bubble</td>
+        <td>
+          Only <strong>bubble</strong> is supported
+        </td>
+      </tr>
+      <tr>
+        <td>map_options</td>
+        <td>Object</td>
+        <td>
+        <code>
+        {<br/>
+            mapTypeId: google.maps.MapTypeId.ROADMAP, //or roadmap<br/>
+            zoom: 1<br/>
+        }
+        </code>
+        </td>
+        <td>
+          Map options object, as defined by <a href="https://developers.google.com/maps/documentation/javascript/reference#MapOptions" target="_blank">Google</a>.<br/>
+          The property <strong>center</strong> will be ignored. Check at the Install page to see how to center the map with only one location
+        </td>
+      </tr>
+      <tr>
+        <td>styles</td>
+        <td>Object</td>
+        <td>{}</td>
+        <td>
+          Style options as defined by <a href="https://developers.google.com/maps/documentation/javascript/styling#stylers" target="_blank">Google</a>
+        </td>
+      </tr>
+      <tr>
+        <td>stroke_options</td>
+        <td>Object</td>
+        <td>
+        <code>
+        {<br/>
+        strokeColor: '#0000FF',<br/>
+        strokeOpacity: 0.8,<br/>
+        strokeWeight: 2,<br/>
+        fillColor: '#0000FF',<br/>
+        fillOpacity: 0.4<br/>
+        }
+        </code>
+        </td>
+        <td>
+          Stroke options object, as defined by <a href="https://developers.google.com/maps/documentation/javascript/reference#PolylineOptions" target="_blank">Google</a>.<br/>
+          Used in Polyline/Polygon/Directions/Fusion Map type.
+        </td>
+      </tr>
+      <tr>
+        <td>directions_options</td>
+        <td>Object</td>
+        <td>
+        <code>
+        {<br/>
+        travelMode: 'DRIVING',<br/>
+        unitSystem: 'METRIC',<br/>
+        optimizeWaypoints: false,<br/>
+        provideRouteAlternatives: false,<br/>
+        avoidHighways: false,<br/>
+        avoidTolls: false<br/>
+        }
+        </code>
+        </td>
+        <td>
+          Direction options object, as defined by <a href="https://developers.google.com/maps/documentation/javascript/reference#DirectionsRequest" target="_blank">Google</a>
+        </td>
+      </tr>
+      <tr>
+        <td>directions_panel</td>
+        <td>string</td>
+        <td>null</td>
+        <td>
+          ID or class of the div in which to display the directions steps.
+        </td>
+      </tr>
+      <tr>
+        <td>fusion_options</td>
+        <td>Object</td>
+        <td>{}</td>
+        <td>
+          Fusion tables options as defined by <a href="https://developers.google.com/maps/documentation/javascript/reference#FusionTablesLayerOptions" target="_blank">Google</a>
+        </td>
+      </tr>
+      <tr>
+        <td>draggable</td>
+        <td>boolean</td>
+        <td>false</td>
+        <td>
+          If <strong>true</strong>, allows the user to drag and modify the <strong>route</strong>, the <strong>polyline</strong> or the <strong>polygon</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>listeners</td>
+        <td>Object</td>
+        <td>{}</td>
+        <td>Example:<br/>
+        <code>
+        listeners: {<br/>
+            click: function(map, event) {<br/>
+                map.setOptions({scrollwheel: true});<br/>
+            }<br/>
+        }<br/>
+        </code>
+        Docs: <a href="https://developers.google.com/maps/documentation/javascript/events#UIEvents" target="_blank">Google maps Events</a>
+        </td>
+      </tr>
+    </tbody>
+</table>
+<h2>Methods</h2>
+<table>
+    <thead>
+      <tr>
+        <th>Function</th>
+        <th>Params</th>
+        <th>Return</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>AddControl</td>
+        <td>string [name], function</td>
+        <td></td>
+        <td>Add you own menu type to the map</td>
+      </tr>
+      <tr>
+        <td>CloseInfoWindow</td>
+        <td></td>
+        <td></td>
+        <td>Close the current infowindow</td>
+      </tr>
+      <tr>
+        <td>ShowOnMenu</td>
+        <td>integer [index]</td>
+        <td>boolean</td>
+        <td>Checks if a location has to be shown on menu</td>
+      </tr>
+      <tr>
+        <td>ViewOnMap</td>
+        <td>integer [index]</td>
+        <td></td>
+        <td>Triggers to show a location on map</td>
+      </tr>
+      <tr>
+        <td>SetLocations</td>
+        <td>array [locations], boolean [reload]</td>
+        <td></td>
+        <td>Replace the current locations</td>
+      </tr>
+      <tr>
+        <td>AddLocations</td>
+        <td>array [locations] | object [location], boolean [reload]</td>
+        <td></td>
+        <td>Adds one or many locations</td>
+      </tr>
+      <tr>
+        <td>AddLocation</td>
+        <td>object [location], integer [index], boolean [reload]</td>
+        <td></td>
+        <td>Adds one location at the specific index</td>
+      </tr>
+      <tr>
+        <td>RemoveLocations</td>
+        <td>array [indexes] | integer [index], boolean [reload]</td>
+        <td></td>
+        <td>Delete one or many locations</td>
+      </tr>
+      <tr>
+        <td>Load</td>
+        <td>null | boolean | object [options]</td>
+        <td></td>
+        <td>Loads, updates the current options or force to reload the current options and construct the map</td>
+      </tr>
+      <tr>
+        <td>Loaded</td>
+        <td></td>
+        <td></td>
+        <td>Checks if a Load() was already been called<br/></td>
+      </tr>
+    </tbody>
+</table>
+<h2>Events</h2>
+<table>
+    <thead>
+      <tr>
+        <th>Option</th>
+        <th>Type</th>
+        <th>Default</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>beforeViewAll</td>
+        <td>function</td>
+        <td></td>
+        <td>
+          Fires before showing all the locations
+        </td>
+      </tr>
+      <tr>
+        <td>afterViewAll</td>
+        <td>function</td>
+        <td></td>
+        <td>
+          Fires after showing all the locations
+        </td>
+      </tr>
+      <tr>
+        <td>beforeShow</td>
+        <td>function</td>
+        <td>(index, location, marker){}</td>
+        <td>
+          Fires before showing the current triggered location
+        </td>
+      </tr>
+      <tr>
+        <td>afterShow</td>
+        <td>function</td>
+        <td>(index, location, marker){}</td>
+        <td>
+          Fires after showing the current triggered location
+        </td>
+      </tr>
+      <tr>
+        <td>afterCreateMarker</td>
+        <td>function</td>
+        <td>(index, location, marker){}</td>
+        <td>
+          Fires after a marker creation
+        </td>
+      </tr>
+      <tr>
+        <td>beforeCloseInfowindow</td>
+        <td>function</td>
+        <td>(index, location){}</td>
+        <td>
+          Fires before closing the infowindow
+        </td>
+      </tr>
+      <tr>
+        <td>afterCloseInfowindow</td>
+        <td>function</td>
+        <td>(index, location){}</td>
+        <td>
+          Function called after closing the infowindow
+        </td>
+      </tr>
+      <tr>
+        <td>beforeOpenInfowindow</td>
+        <td>function</td>
+        <td>(index, location, marker){}</td>
+        <td>
+          Fires before opening the infowindow
+        </td>
+      </tr>
+      <tr>
+        <td>afterOpenInfowindow</td>
+        <td>function</td>
+        <td>(index, location, marker){}</td>
+        <td>
+          Fires after opening the infowindow
+        </td>
+      </tr>
+      <tr>
+        <td>afterRoute</td>
+        <td>function</td>
+        <td>(distance, status, result){}</td>
+        <td>
+          Fires after the route calcoule
+        </td>
+      </tr>
+      <tr>
+        <td>onPolylineClick</td>
+        <td>function</td>
+        <td>(obj) {}</td>
+        <td>
+          Fires when click on polylines
+        </td>
+      </tr>
+      <tr>
+      <td>circleRadiusChanged</td>
+          <td>function</td>
+          <td>(index, location, marker){}</td>
+          <td>
+              This event is fired when the circle's radius is changed.
+          </td>
+      </tr>
+      <tr>
+          <td>circleCenterChanged</td>
+          <td>function</td>
+          <td>(index, location, marker){}</td>
+          <td>
+              This event is fired when the circle's center is changed.
+          </td>
+      </tr>
+      <tr>
+          <td>drag</td>
+          <td>function</td>
+          <td>(index, location, marker){}</td>
+          <td>
+              This event is fired while a marker is dragged.
+          </td>
+      </tr>
+      <tr>
+          <td>dragEnd</td>
+          <td>function</td>
+          <td>(index, location, marker){}</td>
+          <td>
+              This event is fired when the drag event ends.
+          </td>
+      </tr>
+      <tr>
+          <td>dragStart</td>
+          <td>function</td>
+          <td>(index, location, marker){}</td>
+          <td>
+              This event is fired when the drag event starts.
+          </td>
+      </tr>
+
+    </tbody>
+</table>
+<h2>Requirements</h2>
+<p>Maplace.js requires jQuery and Google Maps Library v3.</p>
+<h2>Source code</h2>
+<p>All efforts have been made to keep the source as clean and readable as possible.<br/><br />
+Maplace.js is released under an MIT License.</p>
+<h2>Changelog</h2>
+<p><strong>v0.2.10</strong></p>
+<ul>
+<li>Fixed <code>afterRoute</code> not passing status or location with draggable <a href="https://github.com/danielemoraschi/maplace.js/issues/147">#147</a> and <a href="https://github.com/danielemoraschi/maplace.js/issues/139">#139</a></li>
+<li>Added listener for 'insert_at' polygon events <a href="https://github.com/danielemoraschi/maplace.js/issues/164">#164</a></li>
+</ul>
+<p><strong>v0.2.9</strong></p>
+<ul>
+<li>Fixed <a target="_blank" href="https://github.com/danielemoraschi/maplace.js/issues/137">#137</a></li>
+<li>All event functions are now scoped to the current Maplace instance object</li>
+</ul>
+<p><strong>v0.2.8</strong></p>
+<ul>
+<li>Fixed <a target="_blank" href="https://github.com/danielemoraschi/maplace.js/issues/161">#161</a></li>
+<li>Fixed <a target="_blank" href="https://github.com/danielemoraschi/maplace.js/issues/160">#160</a></li>
+</ul>
+<p><strong>v0.2.7</strong></p>
+<ul>
+<li>Fixed <a target="_blank" href="https://github.com/danielemoraschi/maplace.js/issues/132">#132</a></li>
+<li>Fixed <a target="_blank" href="https://github.com/danielemoraschi/maplace.js/issues/127">#127</a></li>
+</ul>
+<p><strong>v0.2.0</strong></p>
+<ul>
+<li>Updated to jQuery ~2.1</li>
+<li>Source directory for the build moved from &quot;src&quot; to &quot;dist&quot;</li>
+<li>Use Grunt tasks to generate distribution artifacts</li>
+<li>Changed default border color for in-map menu panel to match with Google Maps new UI</li>
+<li>Updated package.json and bower.js</li>
+</ul>
+<p><strong>v0.1.3</strong></p>
+<ul>
+<li>Added circles support allowing mixed markers/circles</li>
+<li>Removed 'hide_marker' option for consistency with &quot;visible&quot;</li>
+<li>Added support to set the initial center position and zoom of the Map</li>
+<li>Improved editable polyline and polygon when visible markers</li>
+<li>Added drag events between markers, circles, polyline and polygon</li>
+<li>Return &quot;this&quot; for public functions to allow method chaining</li>
+<li>Renamed property 'commons' to 'shared' now overridden by location specific options</li>
+<li>Added external reference to <a target="_blank" href="http://snazzymaps.com/">Snazzy Maps</a> website for Google Map styling</li>
+<li>Changed debug strategy</li>
+<li>General fixes and enhancements</li>
+</ul>
+<p><strong>v0.1.2</strong></p>
+<ul>
+<li>General fixes and enhancements</li>
+</ul>
+<p><strong>v0.1.0</strong></p>
+<ul>
+<li>Initial release</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/google-maps" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>google-maps</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/google-maps-api" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>google-maps-api</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/maps" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>maps</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/markers" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>markers</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/872066?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/danielemoraschi" target="_blank" id="ownerName" class="sidebar-link">danielemoraschi</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">February 17, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">August 6, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://maplacejs.com/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (~2.1)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (~0.4.5)</li><li>grunt-string-replace (~1.2.1)</li><li>grunt-contrib-uglify (~0.11.0)</li><li>grunt-contrib-watch (~0.6.1)</li><li>grunt-contrib-jshint (~0.11.3)</li><li>grunt-contrib-copy (~0.8.2)</li><li>grunt-jscs (~2.5.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/872066?v=4" alt="danielemoraschi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/danielemoraschi" target="_blank" class="text-decoration-none fw-bold">danielemoraschi</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/12547857?v=4" alt="douglas-andrew-harley" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/douglas-andrew-harley" target="_blank" class="text-decoration-none fw-bold">douglas-andrew-harley</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/438664?v=4" alt="dcalhoun" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dcalhoun" target="_blank" class="text-decoration-none fw-bold">dcalhoun</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4119508?v=4" alt="jonian" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jonian" target="_blank" class="text-decoration-none fw-bold">jonian</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/484331?v=4" alt="raphaelluchini" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/raphaelluchini" target="_blank" class="text-decoration-none fw-bold">raphaelluchini</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/602088?v=4" alt="sahanh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sahanh" target="_blank" class="text-decoration-none fw-bold">sahanh</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6740804?v=4" alt="mirzat" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mirzat" target="_blank" class="text-decoration-none fw-bold">mirzat</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1060164?v=4" alt="plamba95" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/plamba95" target="_blank" class="text-decoration-none fw-bold">plamba95</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+3 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
