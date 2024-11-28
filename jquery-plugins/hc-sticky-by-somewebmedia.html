@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hc Sticky by Somewebmedia</title>
+    <meta name="description" content="JavaScript library that makes any element on your page visible while you scroll.">
+    <meta name="author" content="somewebmedia">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/hc-sticky-by-somewebmedia.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Hc Sticky</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Hc Sticky",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Hc Sticky</h1>
+        <p id="packageDescription" class="text-muted">JavaScript library that makes any element on your page visible while you scroll.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">462</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.56 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">114</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">7</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/somewebmedia/hc-sticky/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/somewebmedia/hc-sticky" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>HC-Sticky</h1>
+<p><a href="https://www.npmjs.com/package/hc-sticky"><img src="https://img.shields.io/npm/v/hc-sticky.svg" alt="Version" /></a> <a href="https://www.npmjs.com/package/hc-sticky"><img src="https://img.shields.io/npm/dt/hc-sticky.svg" alt="Downloads" /></a></p>
+<p>JavaScript library that makes any element on your page visible while you scroll. Dependency free, but lso works as a jQuery plugin.<br />
+Check out the <a href="https://somewebmedia.github.io/hc-sticky">demos</a>.</p>
+<h2>Quick start</h2>
+<h3>Install</h3>
+<p>This package can be installed with:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/hc-sticky">npm</a>: <code>npm install --save hc-sticky</code></li>
+</ul>
+<p>Or download the <a href="https://github.com/somewebmedia/hc-sticky/releases">latest release</a>.</p>
+<h3>Including HC-Sticky</h3>
+<h4>Script tag</h4>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="/path/to/hc-sticky.js"&gt;&lt;/script&gt;</code></pre>
+<h4>Webpack/Browserify</h4>
+<p>In the script, including HC-Sticky will usually look like this:</p>
+<pre class="prettyprint linenums lang-language"><code>const hcSticky = require('hc-sticky');</code></pre>
+<h4>Babel</h4>
+<pre class="prettyprint linenums lang-language"><code>import hcSticky from 'hc-sticky';</code></pre>
+<h4>AMD (Asynchronous Module Definition)</h4>
+<p>If using AMD, the module will be automatically defined as <code>hcSticky</code>.</p>
+<h3>Usage</h3>
+<p>Be sure to call HC-Sticky once your element is available in the DOM.</p>
+<h4>Vanilla JS</h4>
+<pre class="prettyprint linenums lang-language"><code>document.addEventListener('DOMContentLoaded', function() {
+
+  var Sticky = new hcSticky('#element', {
+    stickTo: '#content'
+  });
+
+});</code></pre>
+<h4>jQuery</h4>
+<pre class="prettyprint linenums lang-language"><code>jQuery(document).ready(function($) {
+
+  $('#element').hcSticky({
+    stickTo: $('#content')
+  });
+
+});</code></pre>
+<p>For HC-Sticky to work as a jQuery plugin, jQuery has to be a property of global <code>window</code> object, so be careful when using it in compbination with Babel/Webpack/Browserify and jQuery.</p>
+<h2>Options</h2>
+<p>HC Sticky has a wide range of options you can set to have a full controll over the sticky elements.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><code>top</code></em></td>
+<td>0</td>
+<td>int</td>
+<td>The distance from the top of the <em>Window</em> at which to trigger HC-Sticky.</td>
+</tr>
+<tr>
+<td><em><code>bottom</code></em></td>
+<td>0</td>
+<td>int</td>
+<td>The distance from the bottom of the <em>Window</em> at which to attach HC-Sticky.</td>
+</tr>
+<tr>
+<td><em><code>innerTop</code></em></td>
+<td>0</td>
+<td>int</td>
+<td>The distance from the top inside of the sticky element at which to trigger HC-Sticky.</td>
+</tr>
+<tr>
+<td><em><code>innerSticker</code></em></td>
+<td>null</td>
+<td>string / element object</td>
+<td>Element inside of the sticky element at which to attach HC-Sticky. This has higher priority than innerTop option.</td>
+</tr>
+<tr>
+<td><em><code>bottomEnd</code></em></td>
+<td>0</td>
+<td>int</td>
+<td>The distance from the bottom of the referring element at which to stop HC-Sticky.</td>
+</tr>
+<tr>
+<td><em><code>stickTo</code></em></td>
+<td>null (parent element)</td>
+<td>string / element object</td>
+<td>Element that represents the reference for height instead of height of the container.</td>
+</tr>
+<tr>
+<td><em><code>followScroll</code></em></td>
+<td>true</td>
+<td>boolean</td>
+<td>When set to <code>false</code>, sticky content will not move with the page if it is bigger than <em>Window</em>.</td>
+</tr>
+<tr>
+<td><em><code>stickyClass</code></em></td>
+<td>'sticky'</td>
+<td>string</td>
+<td>HTML class that will be applied to sticky element while it is attached.</td>
+</tr>
+<tr>
+<td><em><code>responsive</code></em></td>
+<td>null</td>
+<td>object</td>
+<td>Object containing responsive breakpoints, on which you can tell HC Sticky what to do.</td>
+</tr>
+<tr>
+<td><em><code>mobileFirst</code></em></td>
+<td>false</td>
+<td>boolean</td>
+<td>Direction of the responsive queries.</td>
+</tr>
+<tr>
+<td><em><code>disable</code></em></td>
+<td>false</td>
+<td>boolean</td>
+<td>Disable the plugin. Usualy used with responsive object.</td>
+</tr>
+<tr>
+<td><em><code>onStart</code></em></td>
+<td>null</td>
+<td>function</td>
+<td>Callback function fired when the element becomes attached.</td>
+</tr>
+<tr>
+<td><em><code>onStop</code></em></td>
+<td>null</td>
+<td>function</td>
+<td>Callback function fired when the element stops floating.</td>
+</tr>
+<tr>
+<td><em><code>onBeforeResize</code></em></td>
+<td>null</td>
+<td>function</td>
+<td>Callback function fired before sticky has been resized (happens after <em>Window</em> resize and before sticky reinit).</td>
+</tr>
+<tr>
+<td><em><code>onResize</code></em></td>
+<td>null</td>
+<td>function</td>
+<td>Callback function fired after sticky has been resized (happens after <em>Window</em> resize and sticky reinit).</td>
+</tr>
+<tr>
+<td><em><code>resizeDebounce</code></em></td>
+<td>100</td>
+<td>int</td>
+<td>Limit the rate at which the HC Sticky can fire on window resize.</td>
+</tr>
+</tbody>
+</table>
+<p>More on how to use the responsive object <a href="https://github.com/somewebmedia/hc-sticky/issues/55#issuecomment-416826958">here</a>.</p>
+<h3>Methods</h3>
+<p>Methods are used to control the plugin after initialization.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Accepts</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><code>options</code></em></td>
+<td>string</td>
+<td>Returns current settings, or a specific setting if you specify it.</td>
+</tr>
+<tr>
+<td><em><code>update</code></em></td>
+<td>object</td>
+<td>Updates the settings with the new ones.</td>
+</tr>
+<tr>
+<td><em><code>refresh</code></em></td>
+<td>N/A</td>
+<td>Recalculates sticky size and position. Useful after altering DOM elements inside sticky.</td>
+</tr>
+<tr>
+<td><em><code>detach</code></em></td>
+<td>N/A</td>
+<td>Detaches the HC-Sticky from element, preventing it from running.</td>
+</tr>
+<tr>
+<td><em><code>attach</code></em></td>
+<td>N/A</td>
+<td>Attaches the HC-Sticky back to the element.</td>
+</tr>
+<tr>
+<td><em><code>destroy</code></em></td>
+<td>N/A</td>
+<td>Completely destroys HC-Sticky and reverts element to original state.</td>
+</tr>
+</tbody>
+</table>
+<h4>Vanilla JS</h4>
+<pre class="prettyprint linenums lang-language"><code>var Sticky = new hcSticky('#element', {
+  stickTo: '#content'
+});
+
+Sticky.update({
+  top: 20
+});</code></pre>
+<h4>jQuery</h4>
+<pre class="prettyprint linenums lang-language"><code>var $sticky = $('#element');
+
+$sticky.hcSticky({
+  stickTo: '#content'
+});
+
+$sticky.hcSticky('update', {
+  top: 20
+});</code></pre>
+<h2>Dev Building</h2>
+<p>This package comes with <a href="https://gulpjs.com/">Gulp</a>. The following tasks are available:</p>
+<ul>
+<li><code>default</code> compiles the JS into <code>/dist</code> and builds the Demos into <code>/docs</code>.</li>
+<li><code>watch</code> watches source JS and Demo files and builds them automatically whenever you save.</li>
+</ul>
+<p>You can pass a <code>--dev</code> command if you don't want the compiled JS to be minified.</p>
+<h2>License</h2>
+<p>The code and the documentation are released under the MIT License.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/affix" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>affix</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/fixed" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>fixed</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/scroll" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>scroll</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/sidebar" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>sidebar</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/sticky" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>sticky</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/2186159?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/somewebmedia" target="_blank" id="ownerName" class="sidebar-link">somewebmedia</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">February 9, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 26, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://somewebmedia.github.io/hc-sticky/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>@babel/cli (^7.10.5)</li><li>@babel/core (^7.11.1)</li><li>@babel/preset-env (^7.11.0)</li><li>gulp (^4.0.2)</li><li>gulp-autoprefixer (^6.1.0)</li><li>gulp-babel (^8.0.0)</li><li>gulp-browserify (^0.5.1)</li><li>gulp-bump (^3.2.0)</li><li>gulp-concat (^2.6.1)</li><li>gulp-rename (^1.4.0)</li><li>gulp-replace (^1.0.0)</li><li>gulp-sass (^4.1.0)</li><li>gulp-uglify (^3.0.2)</li><li>uglify-save-license (^0.4.1)</li><li>yargs (^17.0.1)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2186159?v=4" alt="somewebmedia" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/somewebmedia" target="_blank" class="text-decoration-none fw-bold">somewebmedia</a><p class="mb-0 text-muted small">97 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/807425?v=4" alt="alexcason" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/alexcason" target="_blank" class="text-decoration-none fw-bold">alexcason</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/404344?v=4" alt="kusmierz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kusmierz" target="_blank" class="text-decoration-none fw-bold">kusmierz</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/17254073?v=4" alt="Almo7aya" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Almo7aya" target="_blank" class="text-decoration-none fw-bold">Almo7aya</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5084118?v=4" alt="dailyraisin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dailyraisin" target="_blank" class="text-decoration-none fw-bold">dailyraisin</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
