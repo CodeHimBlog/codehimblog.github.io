@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery.areyousure by Codedance</title>
+    <meta name="description" content="A light-weight jQuery &quot;dirty forms&quot; Plugin - it monitors html forms and alerts users to unsaved changes if they attempt to close the browser or navigate away fr...">
+    <meta name="author" content="codedance">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-areyousure-by-codedance.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jquery.areyousure</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jquery.areyousure",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jquery.areyousure</h1>
+        <p id="packageDescription" class="text-muted">A light-weight jQuery &quot;dirty forms&quot; Plugin - it monitors html forms and alerts users to unsaved changes if they attempt to close the browser or navigate away from the page. (Are you sure?)</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">507</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.1 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">143</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">82</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/codedance/jquery.AreYouSure/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/codedance/jquery.AreYouSure" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Are You Sure? - A light &quot;dirty forms&quot; JQuery Plugin</h1>
+<p><strong>Version:</strong> 1.9</p>
+<p><em>Are-you-sure</em> (<code>jquery.are-you-sure.js</code>) is simple light-weight &quot;dirty<br />
+form&quot; JQuery Plugin for modern browsers.  It helps prevent users from losing<br />
+unsaved HTML Form changes by promoting the user to save/submit.</p>
+<p>It's simple to use.  Just add the following line to your page's ready<br />
+function:</p>
+<pre class="prettyprint linenums lang-language"><code>$('form').areYouSure();</code></pre>
+<p><em>Are-you-sure</em> is a minimal plugin for modern browsers.  There are plenty of<br />
+&quot;dirty forms&quot; implementations out there, however they all seemed very<br />
+heavyweight and over-engineered...! Most were written some time back and<br />
+contain many 'hacks' to support legacy browsers, and/or rely on other fat<br />
+dependencies such as FaceBox or jQueryUI.  <em>Are-you-sure</em> solves this by<br />
+doing this simple task in the simplest possible way.</p>
+<p><em>Are-you-sure</em> is as simple as it gets:</p>
+<ul>
+<li>100% JS with zero dependencies and no external CSS.</li>
+<li>Leverages <code>onBeforeUnload</code> to detect all page/browser exit events.</li>
+<li>Works on forms of any size.</li>
+<li>Correct state management - if a user edits then restores a value, the form<br />
+is not considered dirty.</li>
+<li>Easy to understand - less than a &quot;terminal screen&quot; of code!</li>
+<li>Graceful degradation on legacy browsers (i.e. if you're running an old<br />
+browser... remember to save :-)</li>
+</ul>
+<h3>Basic Usage</h3>
+<pre class="prettyprint linenums lang-language"><code>
+$(function() {
+
+    // Enable on all forms
+    $('form').areYouSure();
+
+    // Enable on selected forms
+    $('form.dirty-check').areYouSure();
+
+    // With a custom message
+    $('form').areYouSure( {'message':'Your profile details are not saved!'} );
+
+}</code></pre>
+<p>To ignore selected fields from the dirtyness check: </p>
+<pre class="prettyprint linenums lang-language"><code>  &lt;form id="myForm" name="myform" action="/post" method="post"&gt;
+
+    Field 1: (checked)  &lt;input type="text" name="field1"&gt; &lt;br /&gt;
+    Field 2: (ignored): &lt;input type="text" name="field2" data-ays-ignore="true"&gt; &lt;br /&gt;
+    Field 3: (ignored): &lt;input type="text" name="field3" class="ays-ignore"&gt; &lt;br /&gt;
+
+    &lt;input type="submit" value="Submit"&gt;
+
+  &lt;/form&gt;</code></pre>
+<h3>Advanced Usage</h3>
+<pre class="prettyprint linenums lang-language"><code>
+$(function() {
+
+    /*
+    *  Make Are-You-Sure "silent" by disabling the warning message 
+    *  (tracking/monitoring only mode). This option is useful when you wish to 
+    *  use the dirty/save events and/or use the dirtyness tracking in your own 
+    *  beforeunload handler.
+    */
+    $('form').areYouSure( {'silent':true} );
+
+    /*
+    *  Dirtyness Change Events
+    *  Are-You-Sure fires off "dirty" and "clean" events when the form's state
+    *  changes. You can bind() or on(), these events to implement your own form
+    *  state logic.  A good example is enabling/disabling a Save button.
+    *
+    *  "this" refers to the form that fired the event.
+    */
+    $('form').on('dirty.areYouSure', function() {
+      // Enable save button only as the form is dirty.
+      $(this).find('input[type="submit"]').removeAttr('disabled');
+    });
+    $('form').on('clean.areYouSure', function() {
+      // Form is clean so nothing to save - disable the save button.
+      $(this).find('input[type="submit"]').attr('disabled', 'disabled');
+    });
+
+    /*
+    *  It's easy to test if a form is dirty in your own code - just check
+    *  to see if it has a "dirty" CSS class.
+    */
+    if ($('#my-form').hasClass('dirty')) {
+        // Do something
+    }
+
+    /*
+    *  If you're dynamically adding new fields/inputs, and would like to track 
+    *  their state, trigger Are-You-Sure to rescan the form like this:
+    */
+    $('#my-form').trigger('rescan.areYouSure');
+
+    /*
+    *  If you'd like to reset/reinitialize the form's state as clean and 
+    *  start tracking again from this new point onwards, trigger the
+    *  reinitalize as follows. This is handy if say you've managing your
+    *  own form save/submit via asyc AJAX.
+    */
+    $('#my-form').trigger('reinitialize.areYouSure');
+
+    /*
+    *  In some situations it may be desirable to look for other form
+    *  changes such as adding/removing fields. This is useful for forms that
+    *  can change their field count, such as address/phone contact forms.
+    *  Form example, you might remove a phone number from a contact form
+    *  but update nothing else. This should mark the form as dirty.
+    */
+    $('form').areYouSure( {'addRemoveFieldsMarksDirty':true} );
+
+    /*
+    *  Sometimes you may have advanced forms that change their state via
+    *  custom JavaScript or 3rd-party component JavaScript. Are-You-Sure may 
+    *  not automatically detect these state changes. Examples include:
+    *     - Updating a hidden input field via background JS.
+    *     - Using a [rich WYSIWYG edit control](https://github.com/codedance/jquery.AreYouSure/issues/17).
+    *  One solution is to manually trigger a form check as follows:
+    */
+    $('#my-form').trigger('checkform.areYouSure');
+
+    /*
+    *  As an alternative to using events, you can pass in a custom change 
+    *  function.
+    */
+    $('#my-adv-form').areYouSure({
+        change: function() {
+              // Enable save button only if the form is dirty. i.e. something to save.
+              if ($(this).hasClass('dirty')) {
+                $(this).find('input[type="submit"]').removeAttr('disabled');
+              } else {
+                $(this).find('input[type="submit"]').attr('disabled', 'disabled');
+              }
+            }
+    });
+
+    /*
+    *  Mixing in your own logic into the warning.
+    */
+    $('#my-form').areYouSure( {'silent':true} );
+    $(window).on('beforeunload', function() {
+        isSunday = (0 == (new Date()).getDay());
+        if ($('#my-form').hasClass('dirty') &amp;&amp; isSunday) {
+            return "Because it's Sunday, I'll be nice and let you know you forgot to save!";
+        }
+    }
+
+}</code></pre>
+<p>The <a href="http://www.papercut.com/products/free_software/are-you-sure/demo/are-you-sure-demo.html">demo page</a><br />
+shows the advanced usage options in more detail.</p>
+<h3>Install</h3>
+<p>Are-You-Sure is a light-weight jQuery plugin - it's a single standalone<br />
+JavaScript file. You can download the<br />
+<a href="https://raw.github.com/codedance/jquery.AreYouSure/master/jquery.are-you-sure.js">jquery.are-you-sure.js</a><br />
+file and include it in your page. Because it's so simple it seems a shame<br />
+to add an extra browser round trip. It's recommended that you consider<br />
+concatenating it with other common JS lib files, and/or even cut-n-pasting<br />
+the code (and license header) into one of your existing JS files.</p>
+<p>For experimental Mobile Safari support, also include <code>ays-beforeunload-shim.js</code><br />
+(see Known Issues below).</p>
+<p><em>Are-you-sure</em> may also be installed with <a href="http://twitter.github.com/bower/">Bower</a>:</p>
+<pre class="prettyprint linenums lang-language"><code>$ bower install jquery.are-you-sure</code></pre>
+<p>If you're using, or like, <em>Are-you-sure</em> make sure you <strong>star/watch</strong> this project<br />
+so you can stay up-to-date with updates.</p>
+<h3>Demo</h3>
+<p>This <a href="http://www.papercut.com/products/free_software/are-you-sure/demo/are-you-sure-demo.html">demo page</a><br />
+hosts a number of example forms.</p>
+<h3>Supported Browsers</h3>
+<p><em>Are-you-sure</em> has been tested on and fully supports the following browsers:</p>
+<ul>
+<li>IE 9 through 11</li>
+<li>Google Chrome (versions since 2012)</li>
+<li>Firefox (versions since 2012)</li>
+<li>Safari (versions since 2012)</li>
+</ul>
+<p>Experimental support is available on iOS and Opera via the <em>beforeunload</em> shim (see below).</p>
+<h3>Known Issues &amp; Limitations</h3>
+<h4>Mobile Safari and Opera</h4>
+<p>The <code>windows.beforeunload</code> event is not supported on iOS (iPhone, iPad, and iPod). An<br />
+experimental shim offering partial <em>beforeunload</em> emulation is provided to help plug this gap.<br />
+It works by scanning the page for anchor links and augments the default behaviour to first<br />
+check with <em>Are-you-sure</em> before navigating away. To use, simply include<br />
+<code>ays-beforeunload-shim.js</code> in your page.</p>
+<h4>Firefox</h4>
+<p>The custom message option may not work on Firefox (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=588292">Firefox bug 588292</a>).</p>
+<h3>Development</h3>
+<p>The aim is to keep <em>Are-you-sure</em> simple and light. If you think you have<br />
+a good idea which is aligned with this objective, please voice your thoughts<br />
+in the issues list.</p>
+<h4>Pull Requests</h4>
+<p>If possible, please submit your pull request against the most recent <code>dev-*</code> branch rather than master. This will make it easier to merge your code into the next planned release.</p>
+<h4>Running tests</h4>
+<pre class="prettyprint linenums lang-language"><code>$ npm install
+$ npm test</code></pre>
+<h3>Release History</h3>
+<p><strong>2014-08-13</strong> (1.9) - This is a minor bugfix release:</p>
+<ul>
+<li>Addressed issue <a href="https://github.com/codedance/jquery.AreYouSure/issues/55">#45</a> seen with empty select fields.</li>
+<li>Thanks <a href="https://github.com/valgen">valgen</a> and <a href="https://github.com/tus124">tus124</a> for the contribution.</li>
+</ul>
+<p><strong>2014-06-22</strong> (1.8) - This is a minor bugfix release:</p>
+<ul>
+<li>Fixed NPE that may occur when using a 'multiple' option field.</li>
+<li>Minor timing tweak to help mitigate bypass issue raised in <a href="https://github.com/codedance/jquery.AreYouSure/issues/45">#45</a></li>
+<li>Thanks <a href="https://github.com/apassant">apassant</a> and <a href="https://github.com/amatenkov">amatenkov</a> for the contribution.</li>
+</ul>
+<p><strong>2014-05-28</strong> (1.7)</p>
+<ul>
+<li>Fixed multiple warning dialogs that may appear on IE and recent versions of Chrome</li>
+<li>Experimental support for iOS Mobile Safari (via a <em>beforeunload</em> shim)</li>
+<li>Various minor fixes (e.g. support input fields with no type=)</li>
+<li>Minor performance improvements on pages with multiple forms</li>
+<li>Improved documentation and examples</li>
+<li>Thanks to <a href="https://github.com/lfjeff">lfjeff</a> and <a href="https://github.com/aqlong">aqlong</a> for the contribution and ideas!</li>
+</ul>
+<p><strong>2014-02-07</strong> (1.6)</p>
+<ul>
+<li>Add field count tracking (<code>addRemoveFieldsMarksDirty</code>) (contrib <em>jonegerton</em>)</li>
+<li>Added event to manually trigger a form check/recheck  (contrib <em>jonegerton</em>)</li>
+<li>Thanks to <a href="https://github.com/jonegerton">jonegerton</a> for the contribution!</li>
+</ul>
+<p><strong>2013-11-15</strong> (1.5)</p>
+<ul>
+<li>Added support for HTML5 input field types. (contrib <em>albinsunnanbo</em>)</li>
+<li>New option to reinitialize/reset the dirty state.  This is handy if you're managing your own async submit/save using AJAX. (contrib <em>albinsunnanbo</em>)</li>
+<li>Thanks to <a href="https://github.com/albinsunnanbo">albinsunnanbo</a> for the contribution!</li>
+</ul>
+<p><strong>2013-10-2</strong> (1.4)</p>
+<ul>
+<li>Added dirty and clean &quot;events&quot; </li>
+<li>Added an option to disable the message (dirty tracking only)</li>
+<li>Added an option to rescan a form to look/detect any new fields</li>
+</ul>
+<p><strong>2013-07-24</strong> - Minor fix - don't fail if form elements have no &quot;name&quot; attribute.</p>
+<p><strong>2013-05-14</strong> - Added support for form reset buttons (contributed by codev).</p>
+<p><strong>2013-05-01</strong> - Added support for hidden and disabled form fields.</p>
+<p><strong>2013-02-03</strong> - Add demo page.</p>
+<p><strong>2013-01-28</strong> - Add <code>change</code> event support and a demo page.</p>
+<p><strong>2012-10-26</strong> - Use dashes in class names rather than camel case.</p>
+<p><strong>2012-10-24</strong> - Initial public release.</p>
+<h3>Prerequisites</h3>
+<p>jQuery version 1.4.2 or higher. 2.0+ or 1.10+ recommended.</p>
+<h3>License</h3>
+<p>The same as JQuery...</p>
+<pre><code>jQuery Plugin: Are-You-Sure (Dirty Form Detection)
+https://github.com/codedance/jquery.AreYouSure/
+
+Copyright (c) 2012-2014, Chris Dance - PaperCut Software http://www.papercut.com/
+Dual licensed under the MIT or GPL Version 2 licenses.
+http://jquery.org/license</code></pre>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/dirty" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>dirty</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/form" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>form</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/onbeforeunload" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>onbeforeunload</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/save" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>save</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/check" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>check</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/978738?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/codedance" target="_blank" id="ownerName" class="sidebar-link">codedance</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 23, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">September 5, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.4.2)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>bower (^1.3.1)</li><li>grunt (^0.4.5)</li><li>grunt-cli (^0.1.13)</li><li>grunt-karma (^0.8.3)</li><li>karma-chrome-launcher (^0.1.4)</li><li>karma-jasmine (^0.2.2)</li><li>karma-ie-launcher (^0.1.5)</li><li>karma-firefox-launcher (^0.1.3)</li><li>karma-safari-launcher (^0.1.1)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/978738?v=4" alt="codedance" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/codedance" target="_blank" class="text-decoration-none fw-bold">codedance</a><p class="mb-0 text-muted small">69 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/98344?v=4" alt="tclift" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tclift" target="_blank" class="text-decoration-none fw-bold">tclift</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5158396?v=4" alt="albinsunnanbo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/albinsunnanbo" target="_blank" class="text-decoration-none fw-bold">albinsunnanbo</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2043077?v=4" alt="jonegerton" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jonegerton" target="_blank" class="text-decoration-none fw-bold">jonegerton</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/699216?v=4" alt="nicolas-brousse" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nicolas-brousse" target="_blank" class="text-decoration-none fw-bold">nicolas-brousse</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/402693?v=4" alt="apassant" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apassant" target="_blank" class="text-decoration-none fw-bold">apassant</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/10966925?v=4" alt="atefBB" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/atefBB" target="_blank" class="text-decoration-none fw-bold">atefBB</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2560?v=4" alt="bjeanes" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bjeanes" target="_blank" class="text-decoration-none fw-bold">bjeanes</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3905501?v=4" alt="bryant1410" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bryant1410" target="_blank" class="text-decoration-none fw-bold">bryant1410</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5068577?v=4" alt="Scadoodles" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Scadoodles" target="_blank" class="text-decoration-none fw-bold">Scadoodles</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2526064?v=4" alt="valgen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/valgen" target="_blank" class="text-decoration-none fw-bold">valgen</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+6 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
