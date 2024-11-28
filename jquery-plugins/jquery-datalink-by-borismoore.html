@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Data Linking Plugin for Jquery.</title>
+    <meta name="description" content="jquery-datalink by BorisMoore. A data linking plugin for jQuery.">
+    <meta name="author" content="BorisMoore">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-datalink-by-borismoore.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Datalink</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Datalink",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Datalink</h1>
+        <p id="packageDescription" class="text-muted">A data linking plugin for jQuery.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">423</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.17 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">42</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">25</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/BorisMoore/jquery-datalink/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/BorisMoore/jquery-datalink" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery Data Link plugin v1.0.0pre.</h1>
+<p><strong><em>Note</em>: This plugin is currently in beta form. It will not continue past beta, and has been superceded by <a href="https://github.com/BorisMoore/jsviews">JsViews</a>, which integrates data linking with templated rendering, using <a href="https://github.com/BorisMoore/jsrender">JsRender templates</a> (next-generation jQuery Templates).</strong></p>
+<p><strong>See <a href="http://www.borismoore.com/2011/10/jquery-templates-and-jsviews-roadmap.html">this blog post</a> for more context on the roadmap for jQuery Templates, JsRender and JsViews...</strong> </p>
+<p><em>Note: To continue to use this plugin, see tagged versions for stable Beta releases. Requires jquery version 1.4.2.</em></p>
+<p>Documentation for the <em>jQuery Data Link</em> plugin can be found on the jQuery documentation site:<br />
+[<a href="http://api.jquery.com/category/plugins/data-link/">http://api.jquery.com/category/plugins/data-link/</a>] (<a href="http://api.jquery.com/category/plugins/data-link">http://api.jquery.com/category/plugins/data-link</a>)</p>
+<p>
+==================================== WARNING ====================================<br/>
+<i><b>Breaking change:</b>
+<br />In jQuery 1.5, the behavior of $(plainObject).data() has been modified. In order to work against all versions of jQuery including jQuery 1.5,
+current builds of jquery-datalink have therefore been modified as follows:
+<ul>
+<li>The API to modify field values is now .setField( name, value ), rather than .data( name, value ). (Examples below).</li>
+<li>The events associated with the modified field are now "setField" and "changeField", rather than "setData" and changeData".</li>
+</ul></i>
+Note: This plugin currently depends on jQuery version 1.4.3.<br/>
+=================================================================================
+</p>
+<p></p></p>
+<h1>Introduction</h1>
+<p>
+This is the official jQuery DataLink plugin. The term "data linking" is used here to mean "automatically linking the field of an object to another field of another object." That is to say, the two objects are "linked" to each other, where changing the value of one object (the 'source') automatically updates the value in the other object (the 'target').
+</p>
+<h2>jQuery(..).link() API</h2>
+<p>
+The link API allows you to very quickly and easily link fields of a form to an object. Any changes to the form fields are automatically pushed onto the object, saving you from writing retrieval code. By default, changes to the object are also automatically pushed back onto the corresponding form field, saving you from writing even more code. Furthermore, converters lets you modify the format or type of the value as it flows between the two sides (for example, formatting a phone number, or parsing a string to a number).
+</p>
+<pre>
+&lt;script>
+$().ready(function() {
+    var person = {};
+    $("form").link(person);
+
+    $("[name=name]").val("NewValue"); // Set firstName to a value.
+    alert(person.name); // NewValue
+
+    $(person).setField("name", "NewValue");
+    alert($("[name=name]").val()); // NewValue
+
+    // ... user changes value ...
+    $("form").change(function() {
+        // &lt;user typed value&gt;
+        alert(person.name);
+    });
+});
+&lt;/script>
+
+&lt;form name="person">
+    &lt;label for="name">Name:&lt;/label>
+    &lt;input type="text" name="name" id="name" />
+&lt;/form>
+</pre>
+<p>
+The jQuery selector serves as a container for the link. Any change events received by that container are processed. So linking with $("form") for example would hookup all input elements. You may also target a specific element, such as with $("#name").link(..).
+
+<h2>Customizing the Mapping</h2>
+
+<p>
+It is not always that case that the field of an object and the name of a form input are the same. You might want the "first-name" input to set the obj.firstName field, for example. Or you may only want specific fields mapped rather than all inputs.
+</p>
+<pre>
+var person = {};
+$("form").link(person, {
+    firstName: "first-name",
+    lastName: "last-name",
+});
+</pre>
+<p>
+This links only the input with name "first-name" to obj.firstName, and the input with name "last-name" to obj.lastName.
+</p>
+
+<h2>Converters and jQuery.convertFn</h2>
+
+<p>
+Often times, it is necessary to modify the value as it flows from one side of a link to the other. For example, to convert null to "None", to format or parse a date, or parse a string to a number. The link APIs support specifying a converter function, either as a name of a function defined on jQuery.convertFn, or as a function itself.
+</p>
+<p>
+The plugin comes with one converter named "!" which negates the value.
+</p>
+
+<pre>
+&lt;script>
+$().ready(function() {
+    var person = {};
+
+    $.convertFn.round = function(value) {
+        return Math.round( parseFloat( value ) );
+    }
+
+    $("#age").link(person, {
+        age: {
+            convert: "round"
+        }
+    });
+
+    /* Once the user enters their age, the change event will fire which, in turn, will
+     * cause the round function to be called. This will then round the age up or down,
+     * set the rounded value on the object which will then cause the input field to be
+     * updated with the new value.
+     */
+    $("#age").change(function() {
+        alert(person.age);
+    });
+});
+&lt;/script>
+
+&lt;form name="person">
+    &lt;label for="age">Age:&lt;/label>
+    &lt;input type="text" name="age" id="age" />
+&lt;/form>
+</pre>
+
+<p>
+It is convenient to reuse converters by naming them this way. But you may also specify the converter directly as a function.
+</p>
+
+<pre>
+var person = {};
+$("#age").link(person, {
+    age: {
+        convert: function(value) {
+            return Math.round( Math.parseFloat( value ) );
+        }
+    }
+});
+
+$("#name").val("7.5");
+alert(person.age); // 8
+</pre>
+
+<p>
+Converter functions receive the value that came from the source, the source object, and the target object. If a converter does not return a value or it returns undefined, the update does not occur. This allows you to not only be able to convert the value as it is updated, but to customize how the value is assigned.
+</p>
+<pre>
+var person = {};
+$("#age").link(person, {
+    age: {
+        convert: function(value, source, target) {
+            var age = Math.round( Math.parseFloat( value ) );
+            target.age = age;
+            target.canVote = age >= 18;
+        }
+    }
+});
+$("#name").val("7.5");
+alert(person.age); // 8
+alert(person.canVote); // false
+$("#name").val("18");
+alert(person.canVote); // true
+</pre>
+<p>
+In this example, the converter sets two fields on the target, and neglects to return a value to cancel the default operation of setting the age field.
+</p>
+<p>
+Converters can also be specified for the reverse process of updating the source from a change to the target. You can use this to customize the attribute used to represent the value, rather than the default of setting the 'value'.
+</p>
+<pre>
+var product = { };
+$("#rank").link(product, {
+    salesRank: {
+        convertBack: function(value, source, target) {
+            $(target).height(value * 2);
+        }
+    }
+});
+$(product).setField("salesRank", 12);
+alert($("#rank").height()); // 24
+</pre>
+<p>
+This example links the height of the element with id "rank" to the salesRank field of the product object. When the salesRank changes, so does the height of the element. Note in this case there is no linking in the opposite direction. Changing the height of the rank element will not update the product.salesRank field.
+</p>
+
+<h2>Updating immediately</h2>
+<p>
+Sometimes it is desired that the target of a link reflect the source value immediately, even before the source is changed. Currently there is no built-in API for this, but you can force by triggering a change event.
+</p>
+
+<pre>
+$(source)
+    .link(target)
+    .trigger("change");
+
+alert(target.input1); // value
+
+// or in reverse
+$(source)
+    .link(target);
+
+$(target)
+    .trigger("changeField");
+
+alert($("[name=age]").val()); // target.age
+</pre>
+
+<h2>jQuery(..).unlink() API</h2>
+<p>
+This removes a link previously established with link.
+</p>
+
+<pre>
+$(source)
+    .link(target) // create link
+    .unlink(target); // cancel link
+</pre>
+
+<strong>Automatic unlinking</strong><br/>
+
+<p>
+Links are cleaned up when its target or source is a DOM element that is being destroyed. For example, the following setups a link between an input and a span, then destroys the span by clearing it's parent html. The link is automatically removed.
+</p>
+
+<pre>
+$("#input1").link("#span1", {
+    text: "input1"
+});
+$("#span1").parent().html("");
+</pre>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/202658?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/BorisMoore" target="_blank" id="ownerName" class="sidebar-link">BorisMoore</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">September 21, 2010</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 31, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/202658?v=4" alt="BorisMoore" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/BorisMoore" target="_blank" class="text-decoration-none fw-bold">BorisMoore</a><p class="mb-0 text-muted small">21 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/260923?v=4" alt="joefeser" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/joefeser" target="_blank" class="text-decoration-none fw-bold">joefeser</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/52585?v=4" alt="jzaefferer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jzaefferer" target="_blank" class="text-decoration-none fw-bold">jzaefferer</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/107824?v=4" alt="rdworth" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rdworth" target="_blank" class="text-decoration-none fw-bold">rdworth</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1615?v=4" alt="jeresig" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jeresig" target="_blank" class="text-decoration-none fw-bold">jeresig</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
