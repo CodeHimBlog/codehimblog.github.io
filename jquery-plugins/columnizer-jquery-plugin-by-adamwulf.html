@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columnizer jQuery Plugin by Adamwulf</title>
+    <meta name="description" content="The Columnizer jQuery Plugin will automatically layout your content in newspaper column format. You can specify either column width or a static number of column...">
+    <meta name="author" content="adamwulf">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/columnizer-jquery-plugin-by-adamwulf.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Columnizer jQuery Plugin</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Columnizer jQuery Plugin",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Columnizer jQuery Plugin</h1>
+        <p id="packageDescription" class="text-muted">The Columnizer jQuery Plugin will automatically layout your content in newspaper column format. You can specify either column width or a static number of columns. And, of course, it’s easy to use!</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">760</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.33 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">148</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">98</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/adamwulf/Columnizer-jQuery-Plugin/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/adamwulf/Columnizer-jQuery-Plugin" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h2>Support</h2>
+<p>Has Columnizer saved you hours? Become a <a href="https://github.com/sponsors/adamwulf">Github Sponsor</a> and buy me a coffee ☕️ 😄</p>
+<h2>Documentation</h2>
+<h3>CSS Classes for Created Columns</h3>
+<p>Columnizer will add CSS classes to the columns it creates. Each column will have a &quot;column&quot; classname. The first column will have &quot;first&quot; and last column will have &quot;last&quot;. This lets you target specific columns in your CSS markup more easily.</p>
+<h3>Options</h3>
+<table style="width: 100%; border: 1px solid #000000; margin-bottom: 25px;" border="1" cellspacing="0" cellpadding="3">
+<tbody>
+<tr>
+<th style="width: 200px; background-color: #6690bc;" align="center" valign="middle"><span style="color: #ffffff;">Option Name</span></th>
+<th style="background-color: #6690bc;" align="center" valign="middle"><span style="color: #ffffff;">Purpose</span></th>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>width</em></td>
+<td style="padding-left: 10px;">a rough width your columns, and Columnizer will create as many as will fit in the browser window</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>height</em></td>
+<td style="padding-left: 10px;">This option can only be used in conjunction with the width option. When both the width and height options are set, columns will continue to be built to those measurements to fill all of the content. This is useful for scrolling columns horizontally. See <a href="http://welcome.totheinter.net/autocolumn/sample5.html">sample 5</a> for an example.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>columns</em></td>
+<td style="padding-left: 10px;">an alternative to the width option. Sets a static number of columns to build, regardless of widget.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>target</em></td>
+<td style="padding-left: 10px;">An optional CSS selector may be used here to determine where the columnized content should be placed. If a target is specified, the columnized node will remain unchanged, and the target node will contain columnized content.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>doneFunc</em></td>
+<td style="padding-left: 10px;">This function will be called when columnizing is complete.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>ignoreImageLoading<br>
+</em></td>
+<td style="padding-left: 10px;">true by default. If set to false, Columnizer will try to wait until images in the content have loaded before columnizing the data.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>columnFloat</em></td>
+<td style="padding-left: 10px;">default is “left”. Change to “right” for right to left languages.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>lastNeverTallest<br>
+</em></td>
+<td style="padding-left: 10px;">false by default. Set to true to ensure that the last column of the columnized content is not the tallest column.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>buildOnce</em></td>
+<td style="padding-left: 10px;">if buildOnce is false, the content will be re-columnized when the window is resized. If buildOnce is true, the content will only be columnized once.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;" rowspan="4" valign="top"><em>overflow</em></td>
+<td style="padding-left: 10px;">If this option is used, then a static height is set to the columnized content, and any content that does not fit within the height is put into the element specified by $(id). See <a href="http://welcome.totheinter.net/autocolumn/sample1.html">demo 1</a> for an example.</td>
+</tr>
+<tr>
+<td style="padding-left: 10px;"><em>height</em> (required): the static height for the columnized content</td>
+</tr>
+<tr>
+<td style="padding-left: 10px;"><em>id</em> (required): The id of the element to put the remainder of the content</td>
+</tr>
+<tr>
+<td style="padding-left: 10px;"><em>doneFunc</em> (optional): a function to be called after the content has been columnized. This is a great place to columnize the remainder content.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>manualBreaks</em></td>
+<td style="padding-left: 10px;">Defaults to false. Set to true if you only want to create columns with manual column breaks. If true, then width, height, columns options are ignored.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>disableSingle</em></td>
+<td style="padding-left: 10px;">
+Disables single column layout if number of columns is less or equal to 1. Useful to force columns scrolling horizontally on small screens. See <a href="http://welcome.totheinter.net/autocolumn/sample5.html">demo 5</a> for an example.</td>. Default is false.
+</td>
+</tr>
+</tbody>
+</table>
+<h3>CSS Classes</h3>
+<table style="width: 100%; border: 1px solid #000000; margin-bottom: 25px;" border="1" cellspacing="0" cellpadding="3">
+<tbody>
+<tr>
+<th style="width: 200px; background-color: #6690bc;" align="center" valign="middle"><span style="color: #ffffff;">Class Name</span></th>
+<th style="background-color: #6690bc;" align="center" valign="middle"><span style="color: #ffffff;">Purpose</span></th>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>columnbreak</em></td>
+<td style="padding-left: 10px;">Any node that has the CSS class “columnbreak” will act as a column break, as you'd expect in any word processor. The "columnbreak" node will always be the last node in its column. Works well with the optional "columnBreak" option.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>dontsplit</em></td>
+<td style="padding-left: 10px;">Any node that has the CSS class “dontsplit” won’t be split into multiple columns. This is handy to make sure that tables, etc, aren’t chopped in half if they land at the bottom of a column.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>dontend</em></td>
+<td style="padding-left: 10px;">Any node that has the CSS class “dontend” will never be put at the end of a column.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>removeiffirst</em></td>
+<td style="padding-left: 10px;">Any node that has the CSS class “removeiffirst” will be removed from the content if it is the first node in a column.</td>
+</tr>
+<tr>
+<td style="text-align: right; padding-right: 10px;"><em>removeiflast</em></td>
+<td style="padding-left: 10px;">Any node that has the CSS class “removeiflast” will be removed from the content if it is the last node in a column.</td>
+</tr>
+</table>
+<h3>Helpful Hints</h3>
+<ol>
+<li>You can specify a rough width your columns, and Columnizer will create as many as will fit in the browser window. Just use: $(‘selector’).columnize({width: 400 }) syntax</li>
+<li>You can specify a specific number of columns, and Columnizer will distribute your content between that many columns. Just use: $(‘selector’).columnize({columns: 2 }) syntax</li>
+<li>When using the width and height options to scroll horizontally, make sure that the .column CSS class does not specify any padding or margin or border. See CSS for sample 5 for an example on how to create buffer between columns.</li>
+<li>Make sure that you are columnizing visible content. If your content is display:none it may not columnize correctly. Try visibility:hidden and display:block instead.</li>
+<li>Columnizer does not auto-class any of your content. See the Suggested Defaults For Your Content section.</li>
+</ol>
+<h3>Suggested Defaults For Your Content</h3>
+<p>Columnizer does not add default &quot;dontsplit&quot; or &quot;dontend&quot; classes to your content. If you are finding your content is breaking columns at awkward locations, try the following:</p>
+<pre><code> $yourContent.find('table, thead, tbody, tfoot, colgroup, caption, label, legend, script, style, textarea, button, object, embed, tr, th, td, li, h1, h2, h3, h4, h5, h6, form').addClass('dontsplit');
+ $yourContent.find('h1, h2, h3, h4, h5, h6').addClass('dontend');
+ $yourContent.find('br').addClass('removeiflast').addClass('removeiffirst');</code></pre>
+<h3>Uncolumnize</h3>
+<p>You can revert your columnized DOM by using the &quot;uncolumnize&quot; function.</p>
+<pre><code>$('selector').uncolumnize();</code></pre>
+<h2>Troubleshooting</h2>
+<h3>Why isn't my content columnizing?</h3>
+<p>Make sure that your content &quot;has display&quot;. If the content you're columnizing has display:none, then the browser has difficulty estimating the size of some nodes, which makes columnizing impossible. instead of display:none, use visibility:hidden and keep display:block. then in the doneFunc() of columnizer, change the visibility and display to whatever your page or application needs.</p>
+<h2>Additional Notes</h2>
+<h3>Minimize</h3>
+<p>To compress into a zip file, run compress.sh</p>
+<h3>Bug report?</h3>
+<p>Check the issues on the <a href="https://github.com/adamwulf/Columnizer-jQuery-Plugin/issues">GitHub page</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/columns" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>columns</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/columnizer" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>columnizer</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/text" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>text</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/layout" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>layout</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/251087?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/adamwulf" target="_blank" id="ownerName" class="sidebar-link">adamwulf</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">December 11, 2010</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 31, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Other</span>
+    </div>
+	        <a href="http://welcome.totheinter.net/columnizer-jquery-plugin/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/251087?v=4" alt="adamwulf" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/adamwulf" target="_blank" class="text-decoration-none fw-bold">adamwulf</a><p class="mb-0 text-muted small">94 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/925047?v=4" alt="tomalterman" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tomalterman" target="_blank" class="text-decoration-none fw-bold">tomalterman</a><p class="mb-0 text-muted small">8 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/141337900?v=4" alt="nathanziarek-ds" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nathanziarek-ds" target="_blank" class="text-decoration-none fw-bold">nathanziarek-ds</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1219518?v=4" alt="faizshukri" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/faizshukri" target="_blank" class="text-decoration-none fw-bold">faizshukri</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4281333?v=4" alt="jmarceli" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jmarceli" target="_blank" class="text-decoration-none fw-bold">jmarceli</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/354376?v=4" alt="mklickman" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mklickman" target="_blank" class="text-decoration-none fw-bold">mklickman</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/430385?v=4" alt="borkweb" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/borkweb" target="_blank" class="text-decoration-none fw-bold">borkweb</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1030377?v=4" alt="SlashLife" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/SlashLife" target="_blank" class="text-decoration-none fw-bold">SlashLife</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7120051?v=4" alt="RoboterHund" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/RoboterHund" target="_blank" class="text-decoration-none fw-bold">RoboterHund</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9491270?v=4" alt="boryane" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/boryane" target="_blank" class="text-decoration-none fw-bold">boryane</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1349077?v=4" alt="josephdburdick" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/josephdburdick" target="_blank" class="text-decoration-none fw-bold">josephdburdick</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/445704?v=4" alt="kirara" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kirara" target="_blank" class="text-decoration-none fw-bold">kirara</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/346217?v=4" alt="msamsonoff" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/msamsonoff" target="_blank" class="text-decoration-none fw-bold">msamsonoff</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4087959?v=4" alt="scm6079" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/scm6079" target="_blank" class="text-decoration-none fw-bold">scm6079</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/208529?v=4" alt="sfgeorge" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sfgeorge" target="_blank" class="text-decoration-none fw-bold">sfgeorge</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/811865?v=4" alt="vldmit" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vldmit" target="_blank" class="text-decoration-none fw-bold">vldmit</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2513213?v=4" alt="danbrianwhite" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/danbrianwhite" target="_blank" class="text-decoration-none fw-bold">danbrianwhite</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+12 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
