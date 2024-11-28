@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roundabout by Fredleblanc</title>
+    <meta name="description" content="A 3D Turntable jQuery Plugin.">
+    <meta name="author" content="fredleblanc">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/roundabout-by-fredleblanc.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Roundabout</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Roundabout",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Roundabout</h1>
+        <p id="packageDescription" class="text-muted">A 3D Turntable jQuery Plugin.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">645</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.25 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">203</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">104</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/fredleblanc/roundabout/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/fredleblanc/roundabout" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Roundabout</h1>
+<p><strong>Note: Roundabout is no longer under active development. I've moved the documentation over here to support the exists plugin, but there are known issues and such that won't be fixed. Use at your own risk.</strong></p>
+<p>Roundabout is a jQuery plugin that easily converts unordered lists &amp; other nested HTML structures into entertaining, interactive, turntable-like areas.</p>
+<p>It’s ready-to-go straight out of the box, but if you want to get crazy, Roundabout is highly-customizable with an extensive API that allows for some pretty amazing results.</p>
+<p>Roundabout requires jQuery (at least version 1.2).</p>
+<h2>Add-Ons</h2>
+<p>Roundabout is equipped to play nicely with a couple of other plugins if they’re made available.</p>
+<ul>
+<li>
+<p><a href="http://fredhq.com/projects/roundabout-shapes">Roundabout Shapes</a> by Fred LeBlanc<br />
+Roundabout can move in more ways than just a turntable. With Shapes, you have many other ways you can move your content around the page.</p>
+</li>
+<li>
+<p><a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing</a> by George McGinley Smith<br />
+jQuery comes with two easing styles built in, but this plugin adds many, many more. Include this script and use any of its defined easing functions in your Roundabout animations.</p>
+</li>
+<li>
+<p><a href="http://threedubmedia.com/code/event/drag">Event.drag</a> &amp; <a href="http://threedubmedia.com/code/event/drop">Event.drop</a> by ThreeDubMedia<br />
+In addition to rotating on click, Roundabout can also move by clicking and dragging on the Roundabout element itself. Include these scripts and turn on enableDrag.</p>
+</li>
+</ul>
+<h3>But That’s Not All!</h3>
+<p>The list above is only a list of the plugins that have support baked in, but Roundabout will play nicely with many other plugins. (It’s up to you to integrate those yourself.)</p>
+<h2>Using Roundabout</h2>
+<p>Include the <code>jquery.roundabout.js</code> JavaScript file on your page after you include jQuery itself. Also, either link to the included CSS file, or copy the CSS styles from that file and paste them into your site's CSS file.</p>
+<p>To activate Roundabout in its simplest form, you can do this:</p>
+<pre class="prettyprint linenums lang-language"><code>$('ul').roundabout();</code></pre>
+<p>Of course, this will change <em>all</em> of your <code>ul</code> elements into Roundabouts, which probably isn't what you want, but you can easily change the selector to only target the elements you wish to convert</p>
+<h3>Setting Options</h3>
+<p>You can set options on Roundabout to change how it behaves. Do this by passing in an object of options into the main Roundabout call upon initialization, like so:</p>
+<pre class="prettyprint linenums lang-language"><code>$('ul').roundabout({
+    btnNext: ".next"
+});</code></pre>
+<h3>Incorporating Roundabout Shapes</h3>
+<p>If you're using the sister plugin Roundabout Shapes, be sure to include the <code>jquery.roundabout-shapes.js</code> file after you include the main Roundabout JavaScript file. Next, you'll select the shape as on of the options that you pass into Roundabout upon initialization:</p>
+<pre class="prettyprint linenums lang-language"><code>$('ul').roundabout({
+    btnNext: ".next",
+    shape: "figure8"
+});</code></pre>
+<h3>Calling Roundabout Methods</h3>
+<p>Roundabout comes with a number of methods you can call to better control how it works. Calling those methods are done by re-calling <code>roundabout</code> on the element that Roundabout is already working on and passing in the name of the method to use as the first parameter. If the method requires other parameters, pass those in as subsequent parameters.</p>
+<p>For example, instead of using the <code>btnNext</code> option, you can manually implement this yourself like this:</p>
+<pre class="prettyprint linenums lang-language"><code>$('.btnNext', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+
+    // this is the action
+    $('ul#myRoundabout').roundabout('animateToNextChild');
+
+    return false;
+});</code></pre>
+<h3>Enabling Drag &amp; Drop</h3>
+<p>Lately it seems that this doesn't work as well as it once did. Not sure why, but you can still enable it. To do this, you'll need to grab v2 of the <code>jquery.event.drag</code> and <code>jquery.event.drop</code> plugins by ThreeDubMedia. Include them on your page after Roundabout is included.</p>
+<p>Next, enable your Roundabout to use drag and drop like so:</p>
+<pre class="prettyprint linenums lang-language"><code>$('ul').roundabout({
+    enableDrag: true
+});</code></pre>
+<h3>Using Autoplay</h3>
+<p>Autoplay lets you have Roundabout automatically animate on an interval. This functionality is included with the Roundabout core, so no additional scripts are needed to get this working.</p>
+<p>To enable autoplay, there are three options you can set:</p>
+<pre class="prettyprint linenums lang-language"><code>$('ul').roundabout({
+    autoplay: true,
+    autoplayDuration: 5000,
+    autoplayPauseOnHover: true
+});</code></pre>
+<p>The first option, <code>autoplay</code> will turn on autoplay. The second, <code>autoplayDuration</code> is the length of time in milliseconds between animation triggers. The final option, <code>autoplayPauseOnHover</code> will force autoplay never to figure while the user has their cursor over the Roundabout itself.</p>
+<h2>Support</h2>
+<p>Version 2 (the current version) works reasonably well, although if you look in the issues you'll see a number of things that don't work for some people. As mentioned above, this plugin is no longer under active development. Feel free to continue submitting issues for others to see, but no further official action can be guaranteed at all.</p>
+<h2>API</h2>
+<h3>Settable Options</h3>
+<p>Roundabout comes with many settable configuration options that let you customize how it operates.</p>
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Option</th>
+            <th scope="col">Description</th>
+            <th scope="col">Data Type</th>
+            <th scope="col" class="default-value">Default</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="bearing">
+            <td class="option"><code>bearing</code></td>
+            <td>
+                The starting direction in which Roundabout should
+                face relative to the <code>focusBearing</code>.
+            </td>
+            <td class="data-type">float</td>
+            <td class="default-value"><code>0.0</code></td>
+        </tr>
+
+        <tr id="tilt">
+            <td class="option"><code>tilt</code></td>
+            <td>
+                Slightly alters the calculations of moving elements.
+                In the default <code>shape</code>,
+                it adjusts the apparent <code>tilt</code>. Other shapes
+                will differ.
+            </td>
+            <td class="data-type">float</td>
+            <td class="default-value"><code>0.0</code></td>
+        </tr>
+
+        <tr id="minZ">
+            <td class="option"><code>minZ</code></td>
+            <td>
+                The lowest z-index that will be assigned to a moving
+                element. This occurs when the moving element is
+                opposite of (that is, 180° away from) the 
+                <code>focusBearing</code>.
+            </td>
+            <td class="data-type">integer</td>
+            <td class="default-value"><code>100</code></td>
+        </tr>
+
+        <tr id="maxZ">
+            <td class="option"><code>maxZ</code></td>
+            <td>
+                The greatest z-index that will be assigned to a
+                moving element. This occurs when the moving element
+                is at the same bearing as the 
+                <code>focusBearing</code>.
+            </td>
+            <td class="data-type">integer</td>
+            <td class="default-value"><code>280</code></td>
+        </tr>
+
+        <tr id="minOpacity">
+            <td class="option"><code>minOpacity</code></td>
+            <td>
+                The lowest opacity that will be assigned to a moving
+                element. This occurs when the moving element is
+                opposite of (that is, 180° away
+                from) the <code>focusBearing</code>.
+            </td>
+            <td class="data-type">float</td>
+            <td class="default-value"><code>0.4</code></td>
+        </tr>
+
+        <tr id="maxOpacity">
+            <td class="option"><code>maxOpacity</code></td>
+            <td>
+                The greatest opacity that will be assigned to a
+                moving element. This occurs when the moving element
+                is at the same bearing as the
+                <code>focusBearing</code>.
+            </td>
+            <td class="data-type">float</td>
+            <td class="default-value"><code>1.0</code></td>
+        </tr>
+
+        <tr id="minScale">
+            <td class="option"><code>minScale</code></td>
+            <td>
+                The lowest size (relative to its starting size) that
+                will be assigned to a moving element. This occurs
+                when the moving element is opposite of (that is, 180°
+                away from) the
+                <code>focusBearing</code>.
+            </td>
+            <td class="data-type">float</td>
+            <td class="default-value"><code>0.4</code></td>
+        </tr>
+
+        <tr id="maxScale">
+            <td class="option"><code>maxScale</code></td>
+            <td>
+                The greatest size (relative to its starting size)
+                that will be assigned to a moving element. This
+                occurs when the moving element is at the same bearing
+                as the
+                <code>focusBearing</code>.
+            </td>
+            <td class="data-type">float</td>
+            <td class="default-value"><code>1.0</code></td>
+        </tr>
+
+        <tr id="duration">
+            <td class="option"><code>duration</code></td>
+            <td>
+                The length of time Roundabout will take to move from
+                one child element being in focus to another (when an
+                animation is triggered). This value acts as the
+                default for Roundabout, but each animation action can
+                be given a custom duration for that animation.
+            </td>
+            <td class="data-type">integer</td>
+            <td class="default-value"><code>600</code></td>
+        </tr>
+
+        <tr id="btnNext">
+            <td class="option"><code>btnNext</code></td>
+            <td>
+                A jQuery selector of page elements that, when
+                clicked, will trigger the Roundabout to animate to
+                the next moving element.
+            </td>
+            <td class="data-type">string</td>
+            <td class="default-value"><code>null</code></td>
+        </tr>
+
+        <tr id="btnNextCallback">
+            <td class="option"><code>btnNextCallback</code></td>
+            <td>
+                A function that will be called once the animation
+                triggered by a
+                <code>btnNext</code>-related 
+                click has finished.
+            </td>
+            <td class="data-type">function</td>
+            <td class="default-value"><code>function() {}</code></td>
+        </tr>
+
+        <tr id="btnPrev">
+            <td class="option"><code>btnPrev</code></td>
+            <td>
+                A jQuery selector of page elements that, when
+                clicked, will trigger the Roundabout to animate to
+                the previous moving element.
+            </td>
+            <td class="data-type">string</td>
+            <td class="default-value"><code>null</code></td>
+        </tr>
+
+        <tr id="btnPrevCallback">
+            <td class="option"><code>btnPrevCallback</code></td>
+            <td>
+                A function that will be called once the animation
+                triggered by a
+                <code>btnPrev</code>-releated 
+                click has finished.
+            </td>
+            <td class="data-type">function</td>
+            <td class="default-value"><code>function() {}</code></td>
+        </tr>
+
+        <tr id="btnToggleAutoplay">
+            <td class="option"><code>btnToggleAutoplay</code></td>
+            <td>
+                A jQuery selector of page elements that, when
+                clicked, will toggle the Roundabout’s <a
+                href="#autoplay"><code>autoplay</code></a> state
+                (either starting or stopping).
+            </td>
+            <td class="data-type">string</td>
+            <td class="default-value"><code>null</code></td>
+        </tr>
+
+        <tr id="btnStartAutoplay">
+            <td class="option"><code>btnStartAutoplay</code></td>
+            <td>
+                A jQuery selector of page elements that, when
+                clicked, will start the Roundabout’s 
+                <code>autoplay</code> feature
+                (if it’s currently stopped).
+            </td>
+            <td class="data-type">string</td>
+            <td class="default-value"><code>null</code></td>
+        </tr>
+
+        <tr id="btnStopAutoplay">
+            <td class="option"><code>btnStopAutoplay</code></td>
+            <td>
+                A jQuery selector of page elements that, when
+                clicked, will stop the Roundabout’s
+                <code>autoplay</code>
+                feature (if it’s current playing).
+            </td>
+            <td class="data-type">string</td>
+            <td class="default-value"><code>null</code></td>
+        </tr>
+
+        <tr id="easing">
+            <td class="option"><code>easing</code></td>
+            <td>
+                The easing function to use when animating Roundabout.
+                With no other plugins, the standard jQuery easing
+                functions are available. When using the 
+                jQuery easing plugin, 
+                all of its easing functions will also be available.
+            </td>
+            <td class="data-type">string</td>
+            <td class="default-value"><code>"swing"</code></td>
+        </tr>
+
+        <tr id="clickToFocus">
+            <td class="option"><code>clickToFocus</code></td>
+            <td>
+                When <code>true</code>, Roundabout will bring
+                non-focused moving elements into focus when they’re
+                clicked. Otherwise, click events won’t be captured
+                and will be passed through to the moving child
+                elements.
+            </td>
+            <td class="data-type">boolean</td>
+            <td class="default-value"><code>true</code></td>
+        </tr>
+
+        <tr id="clickToFocusCallback">
+            <td class="option"><code>clickToFocusCallback</code></td>
+            <td>
+                A function that will be called once the 
+                <code>clickToFocus</code> 
+                animation has completed.
+            </td>
+            <td class="data-type">function</td>
+            <td class="default-value"><code>function() {}</code></td>
+        </tr>
+
+        <tr id="focusBearing">
+            <td class="option"><code>focusBearing</code></td>
+            <td>
+                The bearing that Roundabout will use as the focus
+                point. All animations that move Roundabout between
+                children will animate the given child element to this
+                bearing.
+            </td>
+            <td class="data-type">float</td>
+            <td class="default-value"><code>0.0</code></td>
+        </tr>
+
+        <tr id="shape">
+            <td class="option"><code>shape</code></td>
+            <td>
+                The path that moving elements follow. By default,
+                Roundabout comes with one shape, which is
+                <code>lazySusan</code>. When using Roundabout with the
+                Roundabout Shapes
+                plugin, there are many other shapes available.
+            </td>
+            <td class="data-type">string</td>
+            <td class="default-value"><code>"lazySusan"</code></td>
+        </tr>
+
+        <tr id="debug">
+            <td class="option"><code>debug</code></td>
+            <td>
+                When <code>true</code>, Roundabout will replace the
+                contents of moving elements with information about
+                the moving elements themselves.
+            </td>
+            <td class="data-type">boolean</td>
+            <td class="default-value"><code>false</code></td>
+        </tr>
+
+        <tr id="childSelector">
+            <td class="option"><code>childSelector</code></td>
+            <td>
+                A jQuery selector of child elements within the elements Roundabout
+                is called upon that will become the moving elements within
+                Roundabout. By default, Roundabout works on unordered lists, but it
+                can be changed to work with any nested set of child elements.
+            </td>
+            <td class="data-type">string</td>
+            <td class="default-value"><code>"li"</code></td>
+        </tr>
+
+        <tr id="startingChild">
+            <td class="option"><code>startingChild</code></td>
+            <td>
+                The child element that will start at the Roundabout’s 
+                <code>focusBearing</code>
+                on load. This is a zero-based counter based on the
+                order of markup.
+            </td>
+            <td class="data-type">integer</td>
+            <td class="default-value"><code>0</code></td>
+        </tr>
+
+        <tr id="reflect">
+            <td class="option"><code>reflect</code></td>
+            <td>
+                When <code>true</code>, reverses the direction in which
+                Roundabout will operate. By default, <em>next</em>
+                animations will rotate moving elements in a clockwise
+                direction and <em>previous</em> animations will be
+                counterclockwise. Using reflect will flip the two.
+            </td>
+            <td class="data-type">boolean</td>
+            <td class="default-value"><code>false</code></td>
+        </tr>
+
+        <tr id="floatComparisonThreshold">
+            <td class="option"><code>floatComparisonThreshold</code></td>
+            <td>
+                The maximum distance two values can be from one
+                another to still be considered equal by Roundabout’s
+                standards. This prevents JavaScript rounding errors.
+            </td>
+            <td class="data-type">float</td>
+            <td class="default-value"><code>0.001</code></td>
+        </tr>
+
+        <tr id="autoplay">
+            <td class="option"><code>autoplay</code></td>
+            <td>
+                When true, Roundabout will automatically advance the
+                moving elements to the next child at a regular
+                interval (settable as
+                <code>autoplayDuration</code>).
+            </td>
+            <td class="data-type">boolean</td>
+            <td class="default-value"><code>false</code></td>
+        </tr>
+
+        <tr id="autoplayInitialDelay">
+            <td class="option"><code>autoplayInitialDelay</code><small>added in v2.4</small></td>
+            <td>
+                The length of time (in milliseconds) to delay the start of 
+                Roundabout’s configured <code>autoplay</code>
+                option. This only works with setting <code>autoplay</code> to
+                <code>true</code>, and only on the first start of <code>autoplay</code>.
+            </td>
+            <td class="data-type">integer</td>
+            <td class="default-value"><code>0</code></td>
+        </tr>
+
+        <tr id="autoplayDuration">
+            <td class="option"><code>autoplayDuration</code></td>
+            <td>
+                The length of time (in milliseconds) between
+                animation triggers when a
+                Roundabout’s <code>autoplay</code>
+                is playing.
+            </td>
+            <td class="data-type">integer</td>
+            <td class="default-value"><code>1000</code></td>
+        </tr>
+
+        <tr id="autoplayPauseOnHover">
+            <td class="option"><code>autoplayPauseOnHover</code></td>
+            <td>
+                When <code>true</code>, Roundabout will pause 
+                <code>autoplay</code> when the
+                user moves the cursor over the Roundabout container.
+            </td>
+            <td class="data-type">boolean</td>
+            <td class="default-value"><code>false</code></td>
+        </tr>
+
+        <tr id="enableDrag">
+            <td class="option"><code>enableDrag</code></td>
+            <td>
+                Requires event.drag 
+                and 
+                event.drop
+                plugins by 
+                ThreeDubMedia. 
+                Allows a user to rotate Roundabout be clicking and
+                dragging the Roundabout area itself.
+            </td>
+            <td class="data-type">boolean</td>
+            <td class="default-value"><code>false</code></td>
+        </tr>
+
+        <tr id="dropDuration">
+            <td class="option"><code>dropDuration</code></td>
+            <td>
+                The length of time (in milliseconds) the animation
+                will take to animate Roundabout to the appropriate
+                child when the Roundabout is “dropped.”
+            </td>
+            <td class="data-type">integer</td>
+            <td class="default-value"><code>600</code></td>
+        </tr>
+
+        <tr id="dropEasing">
+            <td class="option"><code>dropEasing</code></td>
+            <td>
+                The easing function to use when animating Roundabout
+                after it has been “dropped.” With no other plugins, 
+                the standard jQuery easing functions are available. 
+                When using the 
+                jQuery easing plugin
+                all of its easing functions will also be available.
+            </td>
+            <td class="data-type">string</td>
+            <td class="default-value"><code>"swing"</code></td>
+        </tr>
+
+        <tr id="dropAnimateTo">
+            <td class="option"><code>dropAnimateTo</code></td>
+            <td>
+                The animation method to use when a dragged Roundabout
+                is “dropped.” Valid values are <em>next</em>,
+                <em>previous</em>, or <em>nearest</em>.
+            </td>
+            <td class="data-type">string</td>
+            <td class="default-value"><code>"nearest"</code></td>
+        </tr>
+
+        <tr id="dropCallback">
+            <td class="option"><code>dropCallback</code></td>
+            <td>
+                A function that will be called once the dropped
+                animation has completed.
+            </td>
+            <td class="data-type">function</td>
+            <td class="default-value"><code>function() {}</code></td>
+        </tr>
+
+        <tr id="dragAxis">
+            <td class="option"><code>dragAxis</code></td>
+            <td>
+                The axis along which drag events are measured. Valid
+                values are <em>x</em> and <em>y</em>.
+            </td>
+            <td class="data-type">string</td>
+            <td class="default-value"><code>"x"</code></td>
+        </tr>
+
+        <tr id="dragFactor">
+            <td class="option"><code>dragFactor</code></td>
+            <td>
+                Alters the rate at which dragging moves the
+                Roundabout’s moving elements. Higher numbers will
+                cause the moving elements to move less.
+            </td>
+            <td class="data-type">integer</td>
+            <td class="default-value"><code>4</code></td>
+        </tr>
+
+        <tr id="triggerFocusEvents">
+            <td class="option"><code>triggerFocusEvents</code></td>
+            <td>
+                When <code>true</code>, a <code>focus</code> event will
+                be triggered on the child element that moves into
+                focus when it does so.
+            </td>
+            <td class="data-type">boolean</td>
+            <td class="default-value"><code>true</code></td>
+        </tr>
+
+        <tr id="triggerBlurEvents">
+            <td class="option"><code>triggerBlurEvents</code></td>
+            <td>
+                When <code>true</code>, a <code>blur</code> event will be
+                triggered on the child element that moves out of the
+                focused position when it does so.
+            </td>
+            <td class="data-type">boolean</td>
+            <td class="default-value"><code>true</code></td>
+        </tr>
+
+        <tr id="responsive">
+            <td class="option"><code>responsive</code><small>added in v2.1</small></td>
+            <td>
+                When <code>true</code>, attaches a resize event onto the 
+                window and will automatically relayout Roundabout’s
+                child elements as the holder element changes size.
+            </td>
+            <td class="data-type">boolean</td>
+            <td class="default-value"><code>false</code></td>
+        </tr>
+    </tbody>
+</table>
+<h3>Callable Methods</h3>
+<p>Roundabout does a lot on its own, but all of the methods it uses internally to perform actions are publicly usable as well. Manually calling these methods give even more control over how Roundabout functions.</p>
+<hr />
+<h4><code>roundabout</code></h4>
+<p>Starts the Roundabout.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout()
+.roundabout(options)
+.roundabout(callback)
+.roundabout(options, callback)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">object</td>
+            <td class="parameter">
+                <code>options</code> is an object of
+                options to configure how
+                Roundabout acts
+            </td>
+        </tr>
+        <tr>
+            <td class="type">function</td>
+            <td class="parameter">
+                <code>callback</code> is a function 
+                that is called once the Roundabout is ready
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>setBearing</code></h4>
+<p>Changes the <code>bearing</code> of the Roundabout.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("setBearing", bearing)
+.roundabout("setBearing", bearing, callback)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">float</td>
+            <td class="parameter">
+                <code>bearing</code> is a value
+                between <code>0.0</code> and <code>359.9</code>
+            </td>
+        </tr>
+        <tr>
+            <td class="type">function</td>
+            <td class="parameter">
+                <code>callback</code> is a function 
+                that is called once the change&nbsp;completes
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>adjustBearing</code></h4>
+<p>Alters the <code>bearing</code> of the Roundabout by a given amount, either positive or negative degrees.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("adjustBearing", delta)
+.roundabout("adjustBearing", delta, callback)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">float</td>
+            <td class="parameter">
+                <code>delta</code> is the amount by
+                which the <code>bearing</code> will change
+                (either positive or&nbsp;negative)
+            </td>
+        </tr>
+        <tr>
+            <td class="type">function</td>
+            <td class="parameter">
+                <code>callback</code> is a function 
+                that is called once the change&nbsp;completes
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>setTilt</code></h4>
+<p>Changes the <code>tilt</code> of the Roundabout.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("setTilt", tilt)
+.roundabout("setTilt", tilt, callback)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">tilt</td>
+            <td class="parameter">
+                <code>tilt</code> is a value 
+                typically between <code>-2.0</code> and 
+                <code>10.0</code>
+            </td>
+        </tr>
+        <tr>
+            <td class="type">function</td>
+            <td class="parameter">
+                <code>callback</code> is a function 
+                that is called once the change&nbsp;completes
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>adjustTilt</code></h4>
+<p>Alters the <code>tilt</code> of the Roundabout by a given amount, either in positive or negative mounts.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("adjustTilt", delta)
+.roundabout("adjustTilt", delta, callback)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">tilt</td>
+            <td class="parameter">
+                <code>delta</code> is the amount by
+                which the <code>tilt</code> will change
+                (either positive or&nbsp;negative)
+            </td>
+        </tr>
+        <tr>
+            <td class="type">function</td>
+            <td class="parameter">
+                <code>callback</code> is a function 
+                that is called once the change&nbsp;completes
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>animateToNearestChild</code></h4>
+<p>Animates the Roundabout to the nearest child. This animation will not move the Roundabout if any child is already in focus.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("animateToNearestChild")
+.roundabout("animateToNearestChild", callback)
+.roundabout("animateToNearestChild", duration, easing, callback)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">integer</td>
+            <td class="parameter">
+                <code>duration</code> is the length
+                of time (in milliseconds) that the animation
+                will take to&nbsp;complete; uses Roundabout’s
+                configured <code>duration</code> if no value
+                is set&nbsp;here
+            </td>
+        </tr>
+        <tr>
+            <td class="type">string</td>
+            <td class="parameter">
+                <code>easing</code> is the name of
+                the easing function to use for&nbsp;movement;
+                uses Roundabout’s configured <code>easing</code>
+                if no value is set&nbsp;here
+            </td>
+        </tr>
+        <tr>
+            <td class="type">function</td>
+            <td class="parameter">
+                <code>callback</code> is a function 
+                that is called once the change&nbsp;completes
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>animateToChild</code></h4>
+<p>Animates the Roundabout to the given <code>childPosition</code>, which is a zero-based counter of children based on the order of markup.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("animateToChild", childPosition)
+.roundabout("animateToChild", childPosition, callback)
+.roundabout("animateToChild", childPosition, duration, easing)
+.roundabout("animateToChild", childPosition, duration, easing, callback)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">integer</td>
+            <td class="parameter">
+                <code>childPosition</code> is the
+                zero-based child to which Roundabout 
+                will&nbsp;animate
+            </td>
+        </tr>
+        <tr>
+            <td class="type">integer</td>
+            <td class="parameter">
+                <code>duration</code> is the length
+                of time (in milliseconds) that the animation
+                will take to&nbsp;complete; uses Roundabout’s
+                configured <code>duration</code> if no value
+                is set&nbsp;here
+            </td>
+        </tr>
+        <tr>
+            <td class="type">string</td>
+            <td class="parameter">
+                <code>easing</code> is the name of
+                the easing function to use for&nbsp;movement;
+                uses Roundabout’s configured <code>easing</code>
+                if no value is set&nbsp;here
+            </td>
+        </tr>
+        <tr>
+            <td class="type">function</td>
+            <td class="parameter">
+                <code>callback</code> is a function 
+                that is called once the change&nbsp;completes
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>animateToNextChild</code></h4>
+<p>Animates the Roundabout to the next child element.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("animateToNextChild")
+.roundabout("animateToNextChild", callback)
+.roundabout("animateToNextChild", duration, easing)
+.roundabout("animateToNextChild", duration, easing, callback)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">integer</td>
+            <td class="parameter">
+                <code>duration</code> is the length
+                of time (in milliseconds) that the animation
+                will take to&nbsp;complete; uses Roundabout’s
+                configured <code>duration</code> if no value
+                is set&nbsp;here
+            </td>
+        </tr>
+        <tr>
+            <td class="type">string</td>
+            <td class="parameter">
+                <code>easing</code> is the name of
+                the easing function to use for&nbsp;movement;
+                uses Roundabout’s configured <code>easing</code>
+                if no value is set&nbsp;here
+            </td>
+        </tr>
+        <tr>
+            <td class="type">function</td>
+            <td class="parameter">
+                <code>callback</code> is a function 
+                that is called once the change&nbsp;completes
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.<br />
+Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>animateToPreviousChild</code></h4>
+<p>Animates the Roundabout to the previous child element.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("animateToPreviousChild")
+.roundabout("animateToPreviousChild", callback)
+.roundabout("animateToPreviousChild", duration, easing)
+.roundabout("animateToPreviousChild", duration, easing, callback)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">integer</td>
+            <td class="parameter">
+                <code>duration</code> is the length
+                of time (in milliseconds) that the animation
+                will take to&nbsp;complete; uses Roundabout’s
+                configured <code>duration</code> if no value
+                is set&nbsp;here
+            </td>
+        </tr>
+        <tr>
+            <td class="type">string</td>
+            <td class="parameter">
+                <code>easing</code> is the name of
+                the easing function to use for&nbsp;movement;
+                uses Roundabout’s configured <code>easing</code>
+                if no value is set&nbsp;here
+            </td>
+        </tr>
+        <tr>
+            <td class="type">function</td>
+            <td class="parameter">
+                <code>callback</code> is a function 
+                that is called once the change&nbsp;completes
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>animateToDelta</code></h4>
+<p>Animates the Roundabout to the given amount of degrees away from its current <code>bearing</code> (either positive or negative degrees).</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("animateToDelta", degrees)
+.roundabout("animateToDelta", degrees, callback)
+.roundabout("animateToDelta", degrees, duration, easing)
+.roundabout("animateToDelta", degrees, duration, easing, callback)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">float</td>
+            <td class="parameter">
+                <code>degrees</code> is the amount
+                by which the <code>bearing</code> will change
+                (either positive or&nbsp;negative)
+            </td>
+        </tr>
+        <tr>
+            <td class="type">integer</td>
+            <td class="parameter">
+                <code>duration</code> is the length
+                of time (in milliseconds) that the animation
+                will take to&nbsp;complete; uses Roundabout’s
+                configured <code>duration</code> if no value
+                is set&nbsp;here
+            </td>
+        </tr>
+        <tr>
+            <td class="type">string</td>
+            <td class="parameter">
+                <code>easing</code> is the name of
+                the easing function to use for&nbsp;movement;
+                uses Roundabout’s configured <code>easing</code>
+                if no value is set&nbsp;here
+            </td>
+        </tr>
+        <tr>
+            <td class="type">function</td>
+            <td class="parameter">
+                <code>callback</code> is a function 
+                that is called once the change&nbsp;completes
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>animateBearingToFocus</code></h4>
+<p>Animates the Roundabout so that a given <code>bearing</code> ends at the configured <code>focusBearing</code>.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("animateBearingToFocus", degrees)
+.roundabout("animateBearingToFocus", degrees, callback)
+.roundabout("animateBearingToFocus", degrees, duration, easing)
+.roundabout("animateBearingToFocus", degrees, duration, easing, callback)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">float</td>
+            <td class="parameter">
+                <code>degrees</code> is a value
+                between <code>0.0</code> and <code>359.9</code>
+            </td>
+        </tr>
+        <tr>
+            <td class="type">integer</td>
+            <td class="parameter">
+                <code>duration</code> is the length
+                of time (in milliseconds) that the animation
+                will take to&nbsp;complete; uses Roundabout’s
+                configured <code>duration</code> if no value
+                is set&nbsp;here
+            </td>
+        </tr>
+        <tr>
+            <td class="type">string</td>
+            <td class="parameter">
+                <code>easing</code> is the name of
+                the easing function to use for&nbsp;movement;
+                uses Roundabout’s configured <code>easing</code>
+                if no value is set&nbsp;here
+            </td>
+        </tr>
+        <tr>
+            <td class="type">function</td>
+            <td class="parameter">
+                <code>callback</code> is a function 
+                that is called once the change&nbsp;completes
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>startAutoplay</code></h4>
+<p>Starts the Roundabout’s <code>autoplay</code> feature.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("startAutoplay")
+.roundabout("startAutoplay", callback)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">function</td>
+            <td class="parameter">
+                <code>callback</code> is a function 
+                that is called after each autoplay
+                animation&nbsp;completes
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>stopAutoplay</code></h4>
+<p>Stops the Roundabout’s <code>autoplay</code> feature.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("stopAutoplay")
+.roundabout("stopAutoplay", keepAutoplayBindings)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">boolean</td>
+            <td class="parameter">
+                <code>keepAutoplayBindings</code> — when <code>true</code> —
+                will not destroy any autoplay <code>mouseenter</code> and <code>mouseleave</code>
+                event bindings that were set by <code>autoplayPauseOnHover</code>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>toggleAutoplay</code></h4>
+<p>Starts or stops the Roundabout’s <code>autoplay</code> feature (based upon its current state).</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("toggleAutoplay")
+.roundabout("toggleAutoplay", callback)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">function</td>
+            <td class="parameter">
+                <code>callback</code> is a function 
+                that is called after each autoplay
+                animation&nbsp;completes
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>isAutoplaying</code></h4>
+<p>Checks to see if the Roundabout’s <code>autoplay</code> feature is currently playing or not.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("isAutoplaying")</code></pre>
+<h5>Parameters</h5>
+<p><em>No parameters.</em></p>
+<p>Returns a <em>boolean</em>.</p>
+<hr />
+<h4><code>changeAutoplayDuration</code></h4>
+<p>Changes the length of time (in milliseconds) that the Roundabout’s <code>autoplay</code> feature waits between attempts to animate to the next child.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("changeAutoplayDuration", duration)</code></pre>
+<h5>Parameters</h5>
+<table class="parameters">
+    <tbody>
+        <tr>
+            <td class="type">integer</td>
+            <td class="parameter">
+                <code>duration</code> is a length of
+                time (in milliseconds) between attempts to have
+                autoplay animate to the next child element
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>relayoutChildren</code></h4>
+<p>Repositions child elements based on new contextual information. This is most helpful when the Roundabout element itself changes size and moving child elements within need readjusting.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("relayoutChildren")</code></pre>
+<h5>Parameters</h5>
+<p><em>No parameters.</em></p>
+<p>Returns a <em>jQuery object</em>.</p>
+<hr />
+<h4><code>getNearestChild</code></h4>
+<p>Gets the nearest child element to the <code>focusBearing</code>. This number is a zero-based counter based on order of markup.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("getNearestChild")</code></pre>
+<h5>Parameters</h5>
+<p><em>No parameters.</em></p>
+<p>Returns a <em>integer</em>.</p>
+<hr />
+<h4><code>getChildInFocus</code></h4>
+<p>Gets the child currently in focus. This number is a zero-based counter based on order of markup.</p>
+<h5>Usage</h5>
+<pre class="prettyprint linenums lang-language"><code>.roundabout("getChildInFocus")</code></pre>
+<h5>Parameters</h5>
+<p><em>No parameters.</em></p>
+<p>Returns a <em>integer</em>.</p>
+<h3>Hookable Events</h3>
+<p>Roundabout is equipped to trigger events on both the Roundabout element itself and the moving child elements.</p>
+<h4><code>ready</code></h4>
+<p>This event fires on the Roundabout element once it and its child elements have been initialized. It also fires on each child element once it has been initialized.</p>
+<h4><code>focus</code></h4>
+<p>This event fires on child elements that land in the <code>focusBearing</code> at the end of an animation. Will only fire if <code>triggerFocusEvents</code> is set to <code>true</code>.</p>
+<h4><code>blur</code></h4>
+<p>This event fires on child elements that move away from the <code>focusBearing</code> at the start of an animation. Will only fire if <code>triggerBlurEvents</code> is set to <code>true</code>.</p>
+<h4><code>childrenUpdated</code></h4>
+<p>This event fires on the Roundabout element when its child elements have been repositioned and are in place.</p>
+<h4><code>reposition</code></h4>
+<p>This event fires on child elements that have been repositioned and are in place.</p>
+<h4><code>bearingSet</code></h4>
+<p>This event fires on the Roundabout element when its <code>bearing</code> has been set.</p>
+<h4><code>moveClockwiseThroughBack</code></h4>
+<p>This event fires on moving child elements when an animation causes them pass through the point that is opposite (or 180°) from the <code>focusBearing</code> in a clockwise motion.</p>
+<h4><code>moveCounterclockwiseThroughBack</code></h4>
+<p>This event fires on moving child elements when an animation causes them to pass through the point that is opposite (or 180°) from the <code>focusBearing</code> in a counterclockwise motion.</p>
+<h4><code>animationStart</code></h4>
+<p>This event fires on the Roundabout element at the start of any animation.</p>
+<h4><code>animationEnd</code></h4>
+<p>This event fires on the Roundabout element at the end of any animation.</p>
+<h4><code>autoplayStart</code></h4>
+<p>This event fires on the Roundabout element when the <code>autoplay</code> feature starts.</p>
+<h4><code>autoplayStop</code></h4>
+<p>This event fires on the Roundabout element when the <code>autoplay</code> feature stops.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/649331?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/fredleblanc" target="_blank" id="ownerName" class="sidebar-link">fredleblanc</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 19, 2011</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">September 4, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/649331?v=4" alt="fredleblanc" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fredleblanc" target="_blank" class="text-decoration-none fw-bold">fredleblanc</a><p class="mb-0 text-muted small">32 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/202527?v=4" alt="VanTanev" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/VanTanev" target="_blank" class="text-decoration-none fw-bold">VanTanev</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
