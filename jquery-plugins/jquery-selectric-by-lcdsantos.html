@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugin for Easy Manipulation and Customization of HTML Selects</title>
+    <meta name="description" content="jQuery-Selectric by lcdsantos. jQuery plugin for easy manipulation and customization of HTML selects">
+    <meta name="author" content="lcdsantos">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-selectric-by-lcdsantos.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Selectric</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Selectric",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Selectric</h1>
+        <p id="packageDescription" class="text-muted">jQuery plugin for easy manipulation and customization of HTML selects</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">728</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.85 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">157</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">64</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/lcdsantos/jQuery-Selectric/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/lcdsantos/jQuery-Selectric" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <p><a href="http://js.org"><img src="https://img.shields.io/badge/js.org-selectric-ffb400.svg" alt="JS.ORG" /></a><br />
+<a href="https://travis-ci.org/lcdsantos/jQuery-Selectric"><img src="https://img.shields.io/travis/lcdsantos/jQuery-Selectric.svg" alt="Travis" /></a><br />
+<a href="https://codecov.io/github/lcdsantos/jQuery-Selectric?branch=master"><img src="https://codecov.io/github/lcdsantos/jQuery-Selectric/coverage.svg?branch=master" alt="codecov.io" /></a><br />
+<a href="https://www.npmjs.com/package/selectric"><img src="https://img.shields.io/npm/v/selectric.svg" alt="npm" /></a><br />
+<a href="https://www.jsdelivr.com/package/npm/selectric"><img src="https://data.jsdelivr.com/v1/package/npm/selectric/badge?style=rounded" alt="jsDelivr Hits" /></a></p>
+<h1>jQuery Selectric <img src="http://i.imgur.com/D2hcnUN.png" alt="icon" /></h1>
+<p>jQuery Selectric is a jQuery plugin designed to help at stylizing and manipulating HTML selects.</p>
+<ul>
+<li>Keyboard navigation (Up/Down/Left/Right/Word search)</li>
+<li>Easily customizable</li>
+<li>Pretty lightweight</li>
+<li>Options box always stay visible</li>
+<li>Doesn't rely on external libraries (besides jQuery)</li>
+<li>Word search works with western latin characters set (for example: á, ñ, ç...)</li>
+</ul>
+<h3><a href="http://lcdsantos.github.io/jQuery-Selectric/">Demo</a></h3>
+<h2>How to use:</h2>
+<p>Install via NPM:</p>
+<pre class="prettyprint linenums lang-language"><code>npm install selectric</code></pre>
+<p>Make sure to include jQuery in your page:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;</code></pre>
+<p>Include <strong>jQuery Selectric:</strong></p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="js/jquery.selectric.min.js"&gt;&lt;/script&gt;</code></pre>
+<p>Include <strong>jQuery Selectric</strong> styles, and change it to your taste :D <em>(please refer to our <a href="http://lcdsantos.github.io/jQuery-Selectric/demo.html">demo page</a> for more themes and other customizations)</em></p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link rel="stylesheet" href="selectric.css"&gt;</code></pre>
+<p>Initialize <strong>jQuery Selectric:</strong></p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script&gt;
+$(function() {
+  $('select').selectric();
+});
+&lt;/script&gt;</code></pre>
+<h2>Options:</h2>
+<p>You can pass an options object as the first parameter when you call the plugin. For example:</p>
+<pre class="prettyprint linenums lang-language"><code>$('select').selectric({
+  maxHeight: 200
+});</code></pre>
+<pre class="prettyprint linenums lang-language"><code>{
+  /*
+   * Type: Function
+   * Description: Function called before plugin initialize
+   */
+  onBeforeInit: function() {},
+
+  /*
+   * Type: Function
+   * Description: Function called plugin has been fully initialized
+   */
+  onInit: function() {},
+
+  /*
+   * Type: Function
+   * Description: Function called before select options opens
+   */
+  onBeforeOpen: function() {},
+
+  /*
+   * Type: Function
+   * Description: Function called after select options opens
+   */
+  onOpen: function() {},
+
+  /*
+   * Type: Function
+   * Description: Function called before select options closes
+   */
+  onBeforeClose: function() {},
+
+  /*
+   * Type: Function
+   * Description: Function called after select options closes
+   */
+  onClose: function() {},
+
+  /*
+   * Type: Function
+   * Description: Function called before select options change
+   */
+  onBeforeChange: function() {},
+
+  /*
+   * Type: Function
+   * Description: Function called when select options change
+   */
+  onChange: function(element) {
+    $(element).change();
+  },
+
+  /*
+   * Type: Function
+   * Description: Function called when the Selectric is refreshed
+   */
+  onRefresh: function() {},
+
+  /*
+   * Type: Integer
+   * Description: Maximum height options box can be
+   */
+  maxHeight: 300,
+
+  /*
+   * Type: Integer
+   * Description: After this time without pressing
+   *              any key, the search string is reset
+   */
+  keySearchTimeout: 500,
+
+  /*
+   * Type: String [HTML]
+   * Description: Markup for open options button
+   */
+  arrowButtonMarkup: '&amp;lt;b class=&amp;quot;button&amp;quot;&amp;gt;&amp;amp;#x25be;&amp;lt;/b&amp;gt;',
+
+  /*
+   * Type: Boolean
+   * Description: Initialize plugin on mobile browsers
+   */
+  disableOnMobile: false,
+
+  /*
+   * Type: Boolean
+   * Description: Open select box on hover, instead of click
+   */
+  openOnHover: false,
+
+  /*
+   * Type: Integer
+   * Description: Timeout to close options box after mouse leave plugin area
+   */
+  hoverIntentTimeout: 500,
+
+  /*
+   * Type: Boolean
+   * Description: Expand options box past wrapper
+   */
+  expandToItemText: false,
+
+  /*
+   * Type: Boolean
+   * Description: The select element become responsive
+   */
+  responsive: false,
+
+  /*
+   * Type: Object
+   * Description: Customize classes.
+   */
+  customClass: {
+    prefix: 'selectric', // Type: String.  Description: Prefixed string of every class name.
+    camelCase: false     // Type: Boolean. Description: Switch classes style between camelCase or dash-case.
+  },
+
+  /*
+   * Type: String or Function
+   * Description: Define how each option should be rendered inside its &lt;li&gt; element.
+   *
+   *              If it's a string, all keys wrapped in brackets will be replaced by
+   *              the respective values in itemData. Available keys are:
+   *              'value', 'text', 'slug', 'index'.
+   *
+   *              If it's a function, it will be called with the following parameter:
+   *              (itemData). The function must return a string. If available all keys
+   *              will be replaced by the respective values in itemData.
+   *
+   *              itemData&lt;Object&gt; {
+   *                 className // Type: String.          Description: option class names.
+   *                 disabled  // Type: Boolean.         Description: option is disabled true/false
+   *                 selected  // Type: Boolean.         Description: option is selected true/false
+   *                 element   // Type: HTMLDomElement.  Description: current select element
+   *                 index     // Type: Number.          Description: current option index
+   *                 slug      // Type: String.          Description: option slug
+   *                 text      // Type: String.          Description: option text
+   *                 value     // Type: String.          Description: option value
+   *              }
+   *
+   *              EXAMPLE:
+   *
+   *              function(itemData) {
+   *                  return '{text}';
+   *              }
+   *
+   *              // you're free to build and return your own strings
+   *              function(itemData) {
+   *                  return itemData.text + '(' + itemData.index + ')';
+   *              }
+   */
+  optionsItemBuilder: '{text}',
+
+  /*
+   * Type: String or Function
+   * Description: Define how each select label should be rendered. Allows HTML.
+   *
+   *              If it's a string, all keys wrapped in brackets will be replaced by
+   *              the respective values in currItem. Available keys are:
+   *              'value', 'text', 'slug', 'disabled'.
+   *
+   *              If it's a function, it will be called with the following parameters:
+   *              (currItem). The function must return a string, no keys will be
+   *              replaced in this method.
+   */
+  labelBuilder: '{text}',
+
+  /*
+   * Type: Boolean
+   * Description: Prevent scroll on window when using mouse wheel inside options box
+   *              to match common browsers behavior.
+   */
+  preventWindowScroll: true,
+
+  /*
+   * Type: Boolean
+   * Description: Inherit width from original element
+   */
+  inheritOriginalWidth: false,
+
+  /*
+   * Type: Boolean
+   * Description: call stopProgation on onOpen click event
+   */
+  stopPropagation: true,
+
+  /*
+   * Type: Boolean
+   * Description: Determine if current selected option should jump to
+   *              first (or last) once reach the end (or start) item of list upon
+   *              keyboard arrow navigation.
+   */
+  allowWrap: true,
+
+  /*
+   * Type: Boolean
+   * Description: By default the options box gets opened above if it's outside the window.
+   *              In case this auto detection doesn't work as expected (e.g. in transform/relative scopes)
+   *              you may force opening above.
+   */
+  forceRenderAbove: false,
+
+  /*
+   * Type: Boolean
+   * Description: In some cases the options box gets opened above even though the desired behavior would be below.
+   *              If the auto dectection doesn't work as expected you may force opening below.
+   */
+  forceRenderBelow: false,
+
+  /*
+   * Type: Object
+   * Description: Customize select "multiple" behavior
+   */
+  multiple: {
+    separator: ', ',       // Type: String.             Description: Items separator.
+    keepMenuOpen: true,    // Type: Boolean.            Description: Close after an item is selected.
+    maxLabelEntries: false // Type: Boolean or Integer. Description: Max selected items do show.
+  }
+}</code></pre>
+<h2>Events:</h2>
+<p>All events are called on original element, first argument is the original element too. And can be bound like this:</p>
+<pre class="prettyprint linenums lang-language"><code>$('select').on('eventname', function(element) {
+  // your code
+});</code></pre>
+<p><code>eventname</code> can be one of the following:</p>
+<table>
+  <tr>
+    <td><strong>Event name</strong></td>
+    <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+    <td><code>selectric-before-init</code></td>
+    <td>Fired before plugin initialize</td>
+  </tr>
+  <tr>
+    <td><code>selectric-init</code></td>
+    <td>Fired plugin has been fully initialized</td>
+  </tr>
+  <tr>
+    <td><code>selectric-before-open</code></td>
+    <td>Fired before select options opens</td>
+  </tr>
+  <tr>
+    <td><code>selectric-open</code></td>
+    <td>Fired after select options opens</td>
+  </tr>
+  <tr>
+    <td><code>selectric-before-close</code></td>
+    <td>Fired before select options closes</td>
+  </tr>
+  <tr>
+    <td><code>selectric-close</code></td>
+    <td>Fired after select options closes</td>
+  </tr>
+  <tr>
+    <td><code>selectric-before-highlight</code></td>
+    <td>Fired before a select option is highlighted</td>
+  </tr>
+  <tr>
+    <td><code>selectric-highlight</code></td>
+    <td>Fired when a select option is highlighted</td>
+  </tr>
+  <tr>
+    <td><code>selectric-before-select</code></td>
+    <td>Fired before a select option is selected</td>
+  </tr>
+  <tr>
+    <td><code>selectric-select</code></td>
+    <td>Fired before a select option is selected</td>
+  </tr>
+  <tr>
+    <td><code>selectric-before-change</code></td>
+    <td>Fired before select options change</td>
+  </tr>
+  <tr>
+    <td><code>selectric-change</code></td>
+    <td>Fired when select options change</td>
+  </tr>
+  <tr>
+    <td><code>selectric-refresh</code></td>
+    <td>Fired when the Selectric is refreshed</td>
+  </tr>
+</table>
+<h2>Public methods:</h2>
+<pre class="prettyprint linenums lang-language"><code>var Selectric = $('select').data('selectric');
+
+Selectric.open();    // Open options
+Selectric.close();   // Close options
+Selectric.destroy(); // Destroy select and go back to normal
+Selectric.refresh(); // Reconstruct the plugin options box
+Selectric.init();    // Reinitialize the plugin
+
+// Or...
+$('select').selectric('open');    // Open options
+$('select').selectric('close');   // Close options
+$('select').selectric('destroy'); // Destroy select and go back to normal
+$('select').selectric('refresh'); // Reconstruct the plugin options box
+$('select').selectric('init');    // Reinitialize the plugin</code></pre>
+<h2>Browser support:</h2>
+<ul>
+<li>Firefox</li>
+<li>Chrome</li>
+<li>Safari</li>
+<li>Internet Explorer 7+</li>
+<li>Opera</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/dropdown" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>dropdown</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/select" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>select</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/selectbox" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>selectbox</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/selectric" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>selectric</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/910974?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/lcdsantos" target="_blank" id="ownerName" class="sidebar-link">lcdsantos</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">March 28, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 18, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://selectric.js.org/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (^3.1.1)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>codecov (^1.0.1)</li><li>eslint (^3.13.1)</li><li>gulp (^3.9.1)</li><li>gulp-autoprefixer (^3.1.1)</li><li>gulp-bump (^2.5.1)</li><li>gulp-connect (^5.0.0)</li><li>gulp-eslint (^3.0.1)</li><li>gulp-gh-pages (^0.5.4)</li><li>gulp-header (^1.8.8)</li><li>gulp-load-plugins (^1.4.0)</li><li>gulp-rename (^1.2.2)</li><li>gulp-sass (^3.1.0)</li><li>gulp-template (^4.0.0)</li><li>gulp-uglify (^2.0.0)</li><li>gulp-util (^3.0.8)</li><li>gulp-zip (^3.2.0)</li><li>istanbul (^0.4.5)</li><li>jasmine-core (^2.5.2)</li><li>karma (^1.3.0)</li><li>karma-chrome-launcher (^2.0.0)</li><li>karma-coverage (^1.1.1)</li><li>karma-jasmine (^1.1.0)</li><li>karma-mocha-reporter (^2.2.1)</li><li>karma-phantomjs-launcher (^1.0.2)</li><li>phantomjs-prebuilt (^2.1.14)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/910974?v=4" alt="lcdsantos" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lcdsantos" target="_blank" class="text-decoration-none fw-bold">lcdsantos</a><p class="mb-0 text-muted small">189 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/965069?v=4" alt="gearsdigital" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gearsdigital" target="_blank" class="text-decoration-none fw-bold">gearsdigital</a><p class="mb-0 text-muted small">27 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/22547016?v=4" alt="tj-shapeways" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tj-shapeways" target="_blank" class="text-decoration-none fw-bold">tj-shapeways</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/19912475?v=4" alt="SassNinja" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/SassNinja" target="_blank" class="text-decoration-none fw-bold">SassNinja</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3818554?v=4" alt="nlopezcenteno" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nlopezcenteno" target="_blank" class="text-decoration-none fw-bold">nlopezcenteno</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1650008?v=4" alt="huncode" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/huncode" target="_blank" class="text-decoration-none fw-bold">huncode</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/184472?v=4" alt="levani" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/levani" target="_blank" class="text-decoration-none fw-bold">levani</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11589143?v=4" alt="antogyn" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/antogyn" target="_blank" class="text-decoration-none fw-bold">antogyn</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5795227?v=4" alt="breadadams" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/breadadams" target="_blank" class="text-decoration-none fw-bold">breadadams</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4621169?v=4" alt="Epiphero" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Epiphero" target="_blank" class="text-decoration-none fw-bold">Epiphero</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/15343730?v=4" alt="japick" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/japick" target="_blank" class="text-decoration-none fw-bold">japick</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/15611832?v=4" alt="LukasDrgon" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LukasDrgon" target="_blank" class="text-decoration-none fw-bold">LukasDrgon</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/72065975?v=4" alt="n1k0laj" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/n1k0laj" target="_blank" class="text-decoration-none fw-bold">n1k0laj</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/461084?v=4" alt="pocesar" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pocesar" target="_blank" class="text-decoration-none fw-bold">pocesar</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/884872?v=4" alt="pianomansam" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pianomansam" target="_blank" class="text-decoration-none fw-bold">pianomansam</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2909337?v=4" alt="mrDinckleman" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mrDinckleman" target="_blank" class="text-decoration-none fw-bold">mrDinckleman</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2046274?v=4" alt="indus" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/indus" target="_blank" class="text-decoration-none fw-bold">indus</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8152848?v=4" alt="narol1024" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/narol1024" target="_blank" class="text-decoration-none fw-bold">narol1024</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+13 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
