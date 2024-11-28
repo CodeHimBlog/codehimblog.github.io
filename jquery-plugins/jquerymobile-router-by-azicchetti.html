@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquerymobile Router by Azicchetti</title>
+    <meta name="description" content="A router/controller for jquery mobile. Also adds support for client-side parameters in the hash part of the url. The routes handles regexp based routes. This pl...">
+    <meta name="author" content="azicchetti">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquerymobile-router-by-azicchetti.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jquerymobile Router</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jquerymobile Router",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jquerymobile Router</h1>
+        <p id="packageDescription" class="text-muted">A router/controller for jquery mobile. Also adds support for client-side parameters in the hash part of the url. The routes handles regexp based routes. This plugin can be used alone or (better) with Backbone.js or Spine.js, because it&#039;s originally meant to replace their router with something integrated with jQM.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">402</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.78 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">69</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">22</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/azicchetti/jquerymobile-router/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/azicchetti/jquerymobile-router" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQueryMobile-Router</h1>
+<p>jQuery Mobile router is a plugin for jQuery Mobile to enhance the framework<br />
+with a client side router/controller that works with jQuery Mobile events<br />
+(pagebeforecreate, pagecreate, pagebeforeshow, pageshow, pagebeforehide, pagehide,<br />
+pageremove).</p>
+<p>In addition, it extends jQM with a client-side parameters in the hash part of the url<br />
+(yay!!!)</p>
+<p>The jQuery Mobile router javascript file must be loaded before jQuery Mobile.</p>
+<p>This plugin can be used alone or (better) with Backbone.js or Spine.js, because it's<br />
+originally meant to replace their router with something integrated with jQM.</p>
+<h1>Why</h1>
+<p>A lot of people wonder why this router uses jQuery Mobile events instead of simply listening for hashchange, as a normal controller would do.</p>
+<p>The main reason is to preserve the granularity offered by jQuery Mobile while giving the programmer a simple way to tap into &quot;unusual&quot; page transition states, such as &quot;pageinit&quot; or &quot;pageremove&quot;, as if they were standard routes. The outcome is a controller which is more powerful and versatile, in the jQM realm, than its purely hashchange based counterpart.</p>
+<p>Without a tight integration with the framework one would lose a lot of the possibilities offered by jQuery Mobile and this is not only a pity, but also very frustrating, especially when things get complicated (as it always does in real-life projects) and you need to resort to its most advanced functions.</p>
+<p>In addition, if you want to use standard hashchange-based routers, you have to disable some of the features that make jQuery Mobile so unique among similar libraries and do a few things &quot;by hand&quot;, just to fill an irreconcilable gap between how jQuery Mobile works and how we are used to handle routes in normal web applications.</p>
+<h1>What's new in the latest versions</h1>
+<ul>
+<li>New options for pagebeforechange events: you can choose what kind of <code>toPage</code> argument your handler is<br />
+expecting: a string, a jQuery object or both</li>
+<li>Slightly changed the special support for pagebeforechange events. You have to call e.preventDefault()<br />
+to pause the transition and use the deferred object</li>
+<li>Added a &quot;special&quot; support for the pagebeforechange event, modeled after the pagebeforeload event</li>
+<li>Support for jQM 1.3.0. Older jQM version are still supported in the legacy version<br />
+(jquery.mobile.router-legacy.js)</li>
+<li>Form parameters are now correctly handled</li>
+<li>support for pagebeforechange, pagebeforeload, pageload</li>
+<li>Added a parameter in the configuration object to execute only the first route handler found</li>
+<li>Support for a different syntax defining your routes</li>
+<li>Added a nice getParams() function to actually 'parse' parameters in the hash and get<br />
+a simple object to play with them.</li>
+<li>Support for the pageinit event.</li>
+<li>Bugfixes to support events for the first displayed page.</li>
+<li>Default handler support</li>
+<li>The original jquery mobile event is passed down to route handlers</li>
+</ul>
+<h1>Upgrade notes</h1>
+<p>v20130515 to v20130525<br />
+Your bC handlers need to explicitly invoke e.preventDefault()</p>
+<p>0.5 to 0.6<br />
+You can define a default handler in the &quot;conf&quot; object. This will be called when<br />
+no matching routes are found in the set you've provided</p>
+<p>0.3 to 0.4<br />
+The main javascript file has been renamed to jquery.mobile.router.js</p>
+<p>0.2 to 0.3<br />
+There's no need to use the data-params=&quot;true&quot; anymore in your anchors since hash params<br />
+are enabled by default.</p>
+<p><strong>The reuseQueriedAjaxPages extension was removed since it wasn't so useful and<br />
+a similar behaviour can be achieved with the new jquery mobile caching mechanism<br />
+(but if you need it please mail me).</strong></p>
+<h1>The router/controller</h1>
+<p>Whenever jQuery Mobile changes the url (usually the fragment part) the router checks<br />
+if that particular url matches one of your routes and calls the handler you've<br />
+provided with a bunch of useful arguments.</p>
+<p>When you define a route, you'll provide:</p>
+<ul>
+<li>a regular expression to test the url/hash against</li>
+<li>a handler (a function)</li>
+<li>when your handler must be called (for example, you may decide to setup a route only when the pagecreate and pagebeforeshow jQM events are dispatched)</li>
+</ul>
+<p>The plugin exports a class in $.mobile.Router and you can instantiate your routers<br />
+with the following arguments:</p>
+<p><code>var approuter=new $.mobile.Router(myRoutes, myHandlers, options);</code></p>
+<ul>
+<li>myRoutes is an object or an array defining your routes</li>
+<li>myHandlers is an object with your function handlers</li>
+<li>options is an object with a certain configuration (see below)</li>
+</ul>
+<p>Here are a few examples:</p>
+<pre class="prettyprint linenums lang-language"><code>var router=new $.mobile.Router([
+        { "/index.html": { events: "i", handler: "index" } },
+        { "/restaurant.html[?]id=(\\d+)": { events: "i", handler: "restaurantDetail" } }, // handwritten regexp
+        { "/events.html(?:[?](.*))?": { events: "i", handler: "events" } }, // handwritten regexp
+        { "/eventDetail.html": { events: "i", handler: "eventDetail", argsre: true } },
+        { "/accomodations.html": { events: "i", handler: "accomodationsTaxonomy", argsre: true } },
+        { "/accomodationList.html(?:[?](.*))?": { events: "i", handler: "accomodations" } } // handwritten regexp
+], ControllerObject, { ajaxApp: true} );
+
+var router=new $.mobile.Router([
+        { "#ticketPlanner(?:[?](.*))?$": "ticketPlannerShown" },
+        { "#ticketConfirm": "ticketConfirmShown" },
+        { "#ticketDetail": { handler: "ticketDetailPage", events: "bs,h", argsre: true } },
+        { "#ticketHistory": "ticketHistoryShown" },
+        { "#map": { handler: "mapHidden", events: "bh" } },
+        { "#map": { handler: "mapShown", events: "s" } }
+], ControllerObject);</code></pre>
+<p><strong>----- IMPORTANT (no kidding!) -----</strong></p>
+<ul>
+<li>
+<p>By default, the router will match the routes against the hash part of the url.<br />
+If you need the FULL PATH (pathname+search+hash), please set the &quot;ajaxApp&quot; configuration<br />
+parameter to TRUE (see below)</p>
+</li>
+<li>
+<p>If you're using a multipage template in your jquerymobile application, the first displayed page is quite an &quot;anomaly&quot; in the navigation model, because, even if it has its own id, this<br />
+is not reflected in the hash. This doesn't happen for other pages. This &quot;empty hash&quot; problem<br />
+may come into play when the back button is used by the user.<br />
+Since writing an &quot;empty&quot; regular expression such as &quot;^$&quot; to match this page seems really<br />
+strange, the router will accept <em>only</em> a route with the page id, for example &quot;#foobar&quot;</p>
+</li>
+<li>
+<p>If you need to use backslashes (as in: \d, \s, etc) in your regular expressions, please make sure to escape them (\\d, \\s). You may test your regexp by using: &quot;path to be matched&quot;.match( new RegExp(&quot;matching regexp&quot;) ).<br />
+However, you'll hardly need to write any regular expression in your routes. If you want to match parameters, you should use the <code>argsre</code> property (or the <code>defaultArgsRe</code> configuration setting). See below for an explanation.</p>
+</li>
+</ul>
+<h2>myRoutes object</h2>
+<p><code>myRoutes</code> supports the following formats:</p>
+<ol>
+<li>This one binds a certain route to the pagebeforeshow event and calls the handler, which can be an inline function or a function name (a string) that must be defined<br />
+in the myHandlers object</li>
+</ol>
+<pre class="prettyprint linenums lang-language"><code>    {
+        "regularExpression": "handlerName",
+
+        /* or */
+
+        "regularExpression": function(){
+            // your inline function here ...
+        }
+
+        /* or */
+
+        "regularExpression": someobject.functionReference
+    }</code></pre>
+<ol start="2">
+<li>This is the full syntax to specify various jQM events you want your route to be<br />
+bound to.<br />
+The object defines a &quot;handler&quot; property with a string value: this is the name<br />
+of a function defined in the myHandlers object. Again, you may also put an inline<br />
+function in the &quot;handler&quot; property instead of a string.<br />
+The object also defines an &quot;events&quot; property with a string value: this is a list<br />
+of (shortened) jQM events, separated by a &quot;,&quot;. Your route will be called only when<br />
+these events are fired. </li>
+</ol>
+<pre class="prettyprint linenums lang-language"><code>    {
+        "regularExpression": { 
+            handler: "handlerName",
+            events: "bc,c,bs,s,bh,h",
+            argsre: true  //a boolean, can be omitted if false. see below
+        },
+
+        /* or */
+
+        "regularExpression": { 
+            handler: function(){ ... },
+            events: "bc,c,bs,s,bh,h",
+            argsre: true  //a boolean, can be omitted if false. see below
+        },
+    }       </code></pre>
+<p>Please refer to the following schema to understand event codes (it's really straightforward)</p>
+<pre class="prettyprint linenums lang-language"><code>    bc  =&gt; pagebeforecreate
+    c   =&gt; pagecreate
+    i   =&gt; pageinit
+    bs  =&gt; pagebeforeshow
+    s   =&gt; pageshow
+    bh  =&gt; pagebeforehide
+    h   =&gt; pagehide
+    rm  =&gt; pageremove
+    bC  =&gt; pagebeforechange
+    bl  =&gt; pagebeforeload
+    l   =&gt; pageload
+</code></pre>
+<ul>
+<li>The above syntax, however, doesn't let one use the same regular expression to call different handlers (this is due to the fact that the regexp is a key into an hashmap,<br />
+so it must be unique). If you need, for instance, to call the function &quot;foo&quot; when a<br />
+certain page has been shown, and the function &quot;bar&quot; when the same page has been hidden,<br />
+you could use the following syntax:</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>    var approuter=new $.mobile.Router([
+        { "#certainPage": { handler: "foo", events: "s", argsre: true } },
+        { "#certainPage": { handler: "bar", events: "h" } }
+    ], {
+        foo: function(...){...},
+        bar: function(...){...}
+    }, options);</code></pre>
+<p>By using an array, you can specify the <strong>SAME REGULAR EXPRESSION</strong> multiple times, but for <strong>DIFFERENT EVENT TYPES</strong>.</p>
+<p>The pagebeforechange event supports an additional parameter <code>step</code>, whose values can be:</p>
+<pre><code>* `page`: invoke the handler when `data.toPage` is a jQuery object.
+  This is the default when step is omitted
+
+* `url` (or `string`): invoke the handler when `data.toPage` is a string
+
+* `all`: always invoke the handler</code></pre>
+<p>This parameter is a convenient way to let the router know what kind of <code>data.toPage</code> parameter your handler is expecting. Please note that when the handler is invoked with a string argument, the <code>page</code> argument won't be available for manipulation.</p>
+<p>The &quot;argsre&quot; property is a boolean setting you can use to automatically append:</p>
+<pre><code>    (?:[?](.*))?$</code></pre>
+<p>to the end of each regular expression.<br />
+It's a really convenient way to:</p>
+<pre><code>1) avoid the most common mistake in using the router (forgetting the $ operator)
+2) define a route that supports hash parameters
+3) use the router even without knowing what a regular expression is</code></pre>
+<p>You'll <em>hardly</em> need to write complex regular expressions, everything you may need can be accomplished<br />
+by setting argsre to true. You can also set the <code>defaultArgsRe</code> configuration switch to true,<br />
+so that every single route will automatically use the arguments-catcher regexp (you can override this<br />
+setting on a per-route basis with <code>argsre: false</code>)</p>
+<p>Please remember that you can split the parameters and get them in a nice javascript object by using:</p>
+<pre><code>    routerInstance.getParams(string)</code></pre>
+<p>See below for an example.</p>
+<p>This is an example of a common <code>myRoutes</code> object:</p>
+<p>Syntax 1:</p>
+<pre class="prettyprint linenums lang-language"><code>    {
+        "#localpage": {
+            handler: "localpage", events: "bs,bh", argsre: true
+        },
+
+        "ajaxPage.html(?:[?](.*))?": {
+            handler: "ajaxPage", events: "c,bs"
+        }
+    }</code></pre>
+<p>Syntax 2:</p>
+<pre class="prettyprint linenums lang-language"><code>    [
+        { "#localpage": { handler: "localpage", events: "bs,bh", argsre: true } },
+
+        { "ajaxPage.html(?:[?](.*))?": { handler: "ajaxPage", events: "c,bs" } }
+    ]</code></pre>
+<h2>Choosing the right event</h2>
+<p>In order to successfully exploit routing under jQuery Mobile, the developer should have<br />
+at least a minimal knowledge of its event system (among other things!):<br />
+<a href="http://api.jquerymobile.com/category/events/">http://api.jquerymobile.com/category/events/</a></p>
+<p>Once you're familiar with page change events, you can choose the right one in order to achieve<br />
+the desired behaviour in your application.<br />
+I know this may be a difficult choice, at least initially, so I'll try to sort things out for you.<br />
+Bear in mind that the following are just suggestions that cannot replace a deep knowledge<br />
+of the jQuery Mobile framework.</p>
+<p>For single-file multipage applications (you have an html file containing a lot of jQM pages):</p>
+<ul>
+<li>
+<p>pagebeforeshow or pageshow:<br />
+These events are called every time a particular page is shown.<br />
+This is perfect to render and update a page, often using the parameters in the hash part of the url</p>
+</li>
+<li>
+<p>pagebeforehide or pagehide:<br />
+These events are called every time a particular page is hidden.<br />
+You can use these events to clean views or models, to free resources and clean the DOM</p>
+</li>
+<li>
+<p>pagebeforechange:<br />
+Use this event if you want to STOP the transition from happening until you resolve a certain deferred<br />
+object. There's a paragraph describing this technique below</p>
+</li>
+</ul>
+<p>For ajax applications (multiple files containing a single jQM page):</p>
+<ul>
+<li>
+<p>You can still use the events described above... but keep on reading, you may find a better option</p>
+</li>
+<li>
+<p>pagebeforecreate, pagecreate or pageinit:<br />
+These events are called before/after a jQuery Mobile page has been initialized. Remember that initialization<br />
+happens <strong><em>just once</em></strong> for a particular page (unless it's removed from the DOM, see below).<br />
+If you make changes to the DOM before a page or a widget is initialized, you won't have to update<br />
+or refresh it. But please note that if your models need to be refreshed through an ajax call,<br />
+you'll probably get your results back from the remote server when the page has already been widget-ified<br />
+by jQuery Mobile, so pay attention to this scenario and prefer the &quot;pageinit&quot; event, unless you know<br />
+what you're doing.</p>
+</li>
+<li>
+<p>pageremove:<br />
+This one is called when a page is automatically removed from the DOM by the framework. This applies only<br />
+to pages that were fetched via ajax.<br />
+When the user navigates away from a certain page, jQuery Mobile will remove it from the DOM to keep its<br />
+size small, unless otherwise specified (see the data-dom-cache=&quot;true&quot; option in the doc).<br />
+Use this event to clean models and views references.</p>
+</li>
+</ul>
+<h2>myHandlers object</h2>
+<p>There isn't much to say about this object. Simply provide the function handlers you've<br />
+specified in the myRoutes object.<br />
+By default, your route handlers are executed in the myHandlers scope.</p>
+<p>For example:</p>
+<pre class="prettyprint linenums lang-language"><code>    {
+        handlerName: function(eventType, matchObj, ui, page, evt){
+            // your code here
+        }
+    }</code></pre>
+<p>Your handlers will be called with the following arguments:</p>
+<ul>
+<li>
+<p>eventType: the name of the jQM event that's triggering the handler (pagebeforeshow,<br />
+pagecreate, pagehide, etc)</p>
+</li>
+<li>
+<p>matchObj: the handler is called when your regular expression matches the current<br />
+url or fragment. This is the match object of the regular expression.<br />
+If the regular expression uses groups, they will be available in this object.<br />
+Cool eh?</p>
+</li>
+<li>
+<p>ui: this is the second argument provided by the jQuery Mobile event. Usually holds<br />
+the reference to either the next page (nextPage) or previous page (prevPage).<br />
+More information here: (<a href="http://jquerymobile.com/demos/1.0/docs/api/events.html)[http://jquerymobile.com/demos/1.0/docs/api/events.html">http://jquerymobile.com/demos/1.0/docs/api/events.html)[http://jquerymobile.com/demos/1.0/docs/api/events.html</a>]</p>
+</li>
+<li>
+<p>page: the dom element that originated the jquery mobile page event</p>
+</li>
+<li>
+<p>evt: the original event that comes from jquery mobile. You can use this to<br />
+prevent the default behaviour and, for instance, stop a certain page from being<br />
+removed from the dom during the pageremove event.</p>
+</li>
+</ul>
+<h2>About pagebeforechange</h2>
+<p>This is a special event withing jQuery Mobile, so it deserves a &quot;special&quot; support in the router.</p>
+<p>When you want to &quot;stop&quot; a certain transition until you've done something to the page, this is the<br />
+right event to use.<br />
+Re-routing to another location works as well, more on that later.</p>
+<p>I've modeled the way it works after the pagebeforeload event. When your bC route is matched,<br />
+you can call e.preventDefault() to temporarily stop the transition and make your modifications<br />
+to the page.</p>
+<p>You should know from jQM documentation that pagebeforechange is usually invoked twice, the first<br />
+time with a string parameter and eventually with a jQuery object.<br />
+By specifying the <code>step</code> parameter (see above), you can choose if you want your handler to be invoked<br />
+either with the string url, the page object or both. If <code>step</code> is omitted, it defaults to <code>page</code>.</p>
+<p>The page reference is normalized by the router whenever it's possible (but when toPage is a string, page is<br />
+set to null) so that you get a nice jQuery object as if it was a standard pagebeforeshow event.</p>
+<p>Take this simple handler as an example:</p>
+<pre><code>  beforeChangeHandler: function(type, match, ui, page, e){
+    e.preventDefault();
+    console.log(page); // this is the page reference or null if ui.toPage is a string
+    console.log("Waiting 6 seconds before resolving the deferred...");
+    setTimeout(function(){
+        ui.bCDeferred.resolve();
+    },6000);
+  }</code></pre>
+<p>If you invoke preventDefault(), YOU MUST CALL: <code>ui.bCDeferred.resolve();</code> to continue the transition.</p>
+<p>Please DON'T call $.mobile.changePage(...) in this handler, because the router<br />
+does that for you, but if you're trying to achieve something different (that is to say, the scenario<br />
+described above does not match your situation) you may have to bind to pagebeforechange yourself and<br />
+implement your own logic.</p>
+<p>You can also change the ui.toPage property from your handler, in order to re-route the transition<br />
+to another location. This seems to work but I've not tested it extensively, so use it with caution.<br />
+Remember to also change the ui.options.dataUrl property if you want the url to reflect this change.</p>
+<h2>Common mistakes</h2>
+<p>jQuery Mobile is a wonderful framework and it seems really easy to use at first.<br />
+While this may be true for server-side generated mobile pages, things are very different<br />
+once you have to do a full client-side web application, using backbone.js or spine.js and<br />
+possibly Phonegap/Cordova.</p>
+<p>The whole hash handling performed by jQuery Mobile may be confusing, dynamic page loading/injection<br />
+must be understood in order to be successfully exploited, and you should also know the jQM<br />
+event system to have a fine grained control over page switching.</p>
+<p>Here is a list of things you should check when you're in trouble, based on my experience but,<br />
+more importantly, on the email I've received from other users of the jQM router.</p>
+<ul>
+<li>
+<p>the router should be instantiated as soon as possible, possibly just after loading jquery mobile.<br />
+This ensures that even the first pageinit event can be catched and handled by the router</p>
+</li>
+<li>
+<p>please make sure that the router is not instantiated multiple times by mistake. This will lead to<br />
+routes being fired twice, at least</p>
+</li>
+<li>
+<p>do not assign id's to page divs, unless you're using a single-file multipage template. In fact,<br />
+ids will interfere with data-url generation (at jquery mobile level) in ajax applications</p>
+</li>
+<li>
+<p>do not call $.mobile.changePage during a page transition with the destination page being the one<br />
+the framework is already transitioning to.<br />
+That is to say, if you click on a link to #foo and you have a pagebeforeshow route bound to it,<br />
+DO NOT invoke $.mobile.changePage(&quot;#foo&quot;) in your handler (the result will be an epic failure due to<br />
+a bug in jquery mobile)</p>
+</li>
+<li>
+<p>pay attention to the ORDER in which events are fired. Remember that pagebeforeshow is fired <em>before</em><br />
+pagebeforehide, so if you're cleaning the dom when the page is being hidden and do your rendering stuff<br />
+in pagebeforeshow, you have to be careful during same-page transitions or you'll get a blank page.<br />
+You can use a certain counter (incremented during *show events and decremented during the hiding) and<br />
+clean the dom only when it's 0, or examine window.location, or (better) use the &quot;ui&quot; argument passed to<br />
+the handler (.nextPage is the property that you need)</p>
+</li>
+<li>
+<p>DOUBLE CHECK your REGULAR EXPRESSIONS! A typical mistake is forgetting the $ operator.<br />
+If you have two pages, such as #product and #productList, a hypothetical route &quot;#product&quot; would<br />
+match both pages, leading to unexpected behaviors. Use the $ operator when unsure: &quot;#product$&quot;<br />
+or (better) the <code>argsre</code> (or <code>defaultArgsRe</code>) property set to true. See the <code>argsre</code> explanation above.</p>
+</li>
+<li>
+<p>use setTimeout to avoid doing time-consuming tasks in a page-transition handler. If you have<br />
+a route bound to pagebeforeshow (or even other events) and your code takes too much to execute<br />
+(for instance, very long foreach loops, synchronous ajax calls, complex manupulations<br />
+of markers in a google map), jquery mobile may throw an error.</p>
+</li>
+</ul>
+<h2>Public methods</h2>
+<p>Router objects have the following public methods:</p>
+<ul>
+<li>
+<p><code>add(myRoutes,myHandlers)</code>:<br />
+You can dynamically add routes on an already instantiated router.<br />
+The myRoutes and myHandlers objects were already described above.</p>
+</li>
+<li>
+<p><code>destroy()</code>:<br />
+Unbind events and deactivate this router instance</p>
+</li>
+<li>
+<p><code>getParams(hashPartOfTheUrl)</code>:<br />
+Returns an object with the parameters encoded in the url or null<br />
+if nothing's found. It's particularly useful when used with a general regexp<br />
+such as the following one:<br />
+<code>#page(?:[?](.*))?</code><br />
+or with the <code>argsre</code> property set to true.</p>
+<p>For instance, if you have this url:  <code>#page?id=3&amp;foo=bar</code><br />
+and call:<br />
+<code>routerInstance.getParams("?id=3&amp;foo=bar")</code><br />
+or (if you used the regexp or the argsre property)<br />
+<code>routerInstance.getParams(match[1])</code></p>
+<p>you'll get this object:</p>
+</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>    {
+        id: "3",
+        foo: "bar"
+    }</code></pre>
+<p><strong>There's an example under examples/backbone-example !</strong></p>
+<h1>jQM Configuration</h1>
+<p>jQuery Mobile Router supports the following parameters:</p>
+<p>*<code>ajaxApp</code>: tells the plugin to use the full page path for its matches instead of<br />
+the hash part of the url</p>
+<p>*<code>firstMatchOnly</code>: stop searching for other route matches once the first one has been found<br />
+(only the first handler is executed). Defaults to false </p>
+<p><em><code>defaultArgsRe</code>: always append the default arguments-catcher regular expression to the end of<br />
+each route, unless argsre is false. </em>I strongly suggest you set this to true*.<br />
+Please see the <code>argsre</code> explanation above. Defaults to false.</p>
+<p>*<code>defaultHandler</code>: a function reference or a function name to be called when no matching<br />
+route is found. You MUST also define the <code>defaultHandlerEvents</code> property when using<br />
+this one</p>
+<p>*<code>defaultHandlerEvents</code>: the defaultHandler will be called for these events, if<br />
+no routes are matched. Please note that THESE EVENTS MUST BE DEFINED<br />
+AT LEAST ONCE IN ANOTHER ROUTE, otherwise the defaultHandler won't be executed.<br />
+That is to say, if your routes are defined for &quot;pagebeforeshow&quot; and &quot;pageshow&quot;<br />
+events only, a defaultHandler for the &quot;pagehide&quot; event won't work!</p>
+<p>*<code>debugHandler</code>: a function reference or a function name that will be called with<br />
+debugging information. If none supplied, this will default to <code>console.log</code> if<br />
+such exists. Set this to <code>false</code> to disable debugging completely.</p>
+<p>You can pass an object with the above properties to the single router instance or set it<br />
+globally with this code (must be used BEFORE loading jquery.mobile.router.js):</p>
+<pre class="prettyprint linenums lang-language"><code>    $(document).bind("mobileinit",function(){
+        $.mobile.jqmRouter={
+            ajaxApp: true
+        };
+    });</code></pre>
+<h1>Phonegap/Cordova</h1>
+<p>There is nothing to do to use the router in a Phonegap/Cordova environment, just include the<br />
+cordova javascript file and you're done.</p>
+<p>However, you must pay attention to a super-stupid bug of the Android platform that impacts on the<br />
+ability to use jQuery Mobile (not the router) in &quot;ajax mode&quot; on certain Android 3.x and 4.0.x versions:</p>
+<pre><code>http://code.google.com/p/android/issues/detail?id=17535</code></pre>
+<p>Cordova 2.x includes a workaround for this, but if you need to use an older version for whatever reason,<br />
+you may experience the dreaded &quot;chromium error: -6&quot;.<br />
+However, there's a simple patch you can apply using the router and the pagebeforeload event.<br />
+I won't put it here in the documentation since it's not a general use-case, but if you really need it,<br />
+just open an issue on github or send me a private email.</p>
+<h1>Notes on jQM router</h1>
+<p>Have you ever wanted client-side parameters in the hash part of the url in jQuery Mobile?</p>
+<p>Well, jquery mobile router automatically enables this feature for you and fixes what's actually<br />
+broken in the partial support offered by jQM itself. </p>
+<p>For bugs, comments, patches and requests mail me!</p>
+<h1>License</h1>
+<p>Copyright 2011 (c) Andrea Zicchetti</p>
+<p>You may use jQueryMobile-Router under the terms of either the MIT License or the GNU General Public License (GPL) Version 2.</p>
+<p>You don’t have to do anything special to choose one license or the other and you don’t have to notify anyone which license you are using. You are free to use a jQueryMobile-Router in commercial projects as long as the copyright header is left intact.</p>
+<p><strong>For more information see:</strong></p>
+<ul>
+<li><a href="http://github.com/azicchetti/jquerymobile-router/blob/master/MIT-LICENSE.txt">MIT License</a> <a href="http://en.wikipedia.org/wiki/MIT_License">(More Information)</a></li>
+<li><a href="http://github.com/azicchetti/jquerymobile-router/blob/master/GPL-LICENSE.txt">GPL</a> <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">(More Information)</a></li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/917189?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/azicchetti" target="_blank" id="ownerName" class="sidebar-link">azicchetti</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">July 19, 2011</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">December 15, 2023</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">GNU General Public License v2.0</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/917189?v=4" alt="azicchetti" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/azicchetti" target="_blank" class="text-decoration-none fw-bold">azicchetti</a><p class="mb-0 text-muted small">88 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/326163?v=4" alt="piscis" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/piscis" target="_blank" class="text-decoration-none fw-bold">piscis</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/581644?v=4" alt="RainerAtSpirit" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/RainerAtSpirit" target="_blank" class="text-decoration-none fw-bold">RainerAtSpirit</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/179458?v=4" alt="garrensmith" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/garrensmith" target="_blank" class="text-decoration-none fw-bold">garrensmith</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/454010?v=4" alt="brianantonelli" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/brianantonelli" target="_blank" class="text-decoration-none fw-bold">brianantonelli</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/70075?v=4" alt="sukima" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sukima" target="_blank" class="text-decoration-none fw-bold">sukima</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/602307?v=4" alt="ivorbosloper" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ivorbosloper" target="_blank" class="text-decoration-none fw-bold">ivorbosloper</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/214645?v=4" alt="mzedeler" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mzedeler" target="_blank" class="text-decoration-none fw-bold">mzedeler</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/551404?v=4" alt="russelldavis" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/russelldavis" target="_blank" class="text-decoration-none fw-bold">russelldavis</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/33161?v=4" alt="TomiS" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/TomiS" target="_blank" class="text-decoration-none fw-bold">TomiS</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+5 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
