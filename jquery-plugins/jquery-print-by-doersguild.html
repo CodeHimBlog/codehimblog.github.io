@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy to Use, Element Printing Plugin for jQuery</title>
+    <meta name="description" content="jQuery.print by DoersGuild. Easy to use, Element Printing Plugin for jQuery">
+    <meta name="author" content="DoersGuild">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-print-by-doersguild.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jquery.print</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jquery.print",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jquery.print</h1>
+        <p id="packageDescription" class="text-muted">Easy to use, Element Printing Plugin for jQuery</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">840</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.17 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">457</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">9</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/DoersGuild/jQuery.print/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/DoersGuild/jQuery.print" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery Print Plugin</h1>
+<p>jQuery.print is a plugin for printing specific parts of a page</p>
+<h2>Usage</h2>
+<p>Include it in your HTML after importing jQuery, like:</p>
+<pre class="prettyprint linenums lang-language"><code>    &lt;script type="text/JavaScript" src="path/to/jquery.print.js"&gt;&lt;/script&gt;</code></pre>
+<p>Use it like:</p>
+<pre class="prettyprint linenums lang-language"><code>    $("#myElementId").print(/*options*/);</code></pre>
+<p>or</p>
+<pre class="prettyprint linenums lang-language"><code>    $.print("#myElementId" /*, options*/);</code></pre>
+<p>You can submit the options object like:</p>
+<pre class="prettyprint linenums lang-language"><code>    $("#myElementId").print({
+            globalStyles: true,
+            mediaPrint: false,
+            stylesheet: null,
+            noPrintSelector: ".no-print",
+            iframe: true,
+            append: null,
+            prepend: null,
+            manuallyCopyFormValues: true,
+            deferred: $.Deferred(),
+            timeout: 750,
+            title: null,
+            doctype: '&lt;!doctype html&gt;'
+    });</code></pre>
+<p>Currently this plugin supports the following options:</p>
+<h4>globalStyles</h4>
+<ul>
+<li>Default: <code>true</code>  </li>
+<li>Acceptable-Values: Boolean  </li>
+<li>Function: Whether or not the styles from the parent document should be included</li>
+</ul>
+<h4>mediaPrint</h4>
+<ul>
+<li>Default: <code>false</code>  </li>
+<li>Acceptable-Values: Boolean  </li>
+<li>Function: Whether or not link tags with media='print' should be included; Over-riden by the <code>globalStyles</code> option</li>
+</ul>
+<h4>stylesheet</h4>
+<ul>
+<li>Default: <code>null</code></li>
+<li>Acceptable-Values: URL-string or Array of URL-strings</li>
+<li>Function: URL of an external stylesheet to be included</li>
+</ul>
+<h4>noPrintSelector</h4>
+<ul>
+<li>Default: <code>".no-print"</code></li>
+<li>Acceptable-Values: Any valid <code>jQuery-selector</code></li>
+<li>Function: A selector for the items that are to be excluded from printing</li>
+</ul>
+<h4>iframe</h4>
+<ul>
+<li>Default: <code>true</code>, creates a hidden iframe if no-vaild iframe selector is passed</li>
+<li>Acceptable-Values: Any valid <code>jQuery-selector</code> or Boolean</li>
+<li>Function: Whether to print from an iframe instead of a pop-up window; can take the <code>jQuery-selector</code> of an existing iframe as value</li>
+</ul>
+<h4>append/prepend</h4>
+<ul>
+<li>Default: <code>null</code></li>
+<li>Acceptable-Values: Any valid <code>jQuery-selector</code> or HTML-text</li>
+<li>Function: Adds custom HTML before (prepend) or after (append) the selected content</li>
+</ul>
+<h4>manuallyCopyFormValues</h4>
+<ul>
+<li>Default: <code>true</code></li>
+<li>Acceptable-Values: Boolean</li>
+<li>Function: Should it copy user-updated form input values onto the printed markup (this is done by manually iterating over each form element)</li>
+</ul>
+<h4>deferred</h4>
+<ul>
+<li>Default: <code>$.Deferred()</code></li>
+<li>Acceptable-Values: Any valid <code>jQuery.Deferred</code> object</li>
+<li>Function: A jQuery.Deferred object that is resolved once the print function is called. Can be used <a href="https://github.com/DoersGuild/jQuery.print/wiki/Using-the-deferred-option-to-set-up-a-callback-after-printing">to setup callbacks - see wiki</a></li>
+</ul>
+<h4>timeout</h4>
+<ul>
+<li>Default: <code>750</code></li>
+<li>Acceptable-Values: Time in Milliseconds for <code>setTimeout</code></li>
+<li>Function: To change the amount of max time to wait for the content, etc to load before printing the element from the new window/iframe created, as a fallback if the <a href="https://developer.mozilla.org/en-US/docs/Web/Events/load"><code>load</code> event</a> for the new window/iframe has not fired yet</li>
+</ul>
+<h4>title</h4>
+<ul>
+<li>Default: <code>null</code>, uses the host page title</li>
+<li>Acceptable-Values: Any single-line string</li>
+<li>Function: To change the printed title</li>
+</ul>
+<h4>doctype</h4>
+<ul>
+<li>Default: <code>'&lt;!doctype html&gt;'</code></li>
+<li>Acceptable-Values: Any valid doctype string</li>
+<li>Function: To prepend a doctype to the printed document frame</li>
+</ul>
+<h2>Tested with</h2>
+<h3>jQuery</h3>
+<ul>
+<li><a href="http://jquery.com/">jQuery</a> v. 1.7.2</li>
+<li><a href="http://jquery.com/">jQuery</a> v. 1.9.1</li>
+<li><a href="http://jquery.com/">jQuery</a> v. 2.2.0</li>
+<li><a href="http://jquery.com/">jQuery</a> v. 3.1.1</li>
+</ul>
+<h3>Browsers</h3>
+<ul>
+<li>Google Chrome - v 20, 26, 48, 55</li>
+<li>Internet Explorer - v 10, 11</li>
+<li>Firefox - v 35</li>
+</ul>
+<h2>License</h2>
+<p><a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a>.</p>
+<h2>Demo</h2>
+<p><a href="http://doersguild.github.io/jQuery.print/demo/">jQuery.print/demo</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/element" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>element</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/print" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>print</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/2218677?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/DoersGuild" target="_blank" id="ownerName" class="sidebar-link">DoersGuild</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">July 16, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">September 29, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Other</span>
+    </div>
+	        <a href="http://doersguild.github.io/jQuery.print" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.7.2)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/12667865?v=4" alt="steven777400" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/steven777400" target="_blank" class="text-decoration-none fw-bold">steven777400</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1957737?v=4" alt="ahmadsoe" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ahmadsoe" target="_blank" class="text-decoration-none fw-bold">ahmadsoe</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/19517254?v=4" alt="lancescole" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lancescole" target="_blank" class="text-decoration-none fw-bold">lancescole</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/11368547?v=4" alt="Paul-Moura" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Paul-Moura" target="_blank" class="text-decoration-none fw-bold">Paul-Moura</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3905501?v=4" alt="bryant1410" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bryant1410" target="_blank" class="text-decoration-none fw-bold">bryant1410</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/25244481?v=4" alt="sselvara" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sselvara" target="_blank" class="text-decoration-none fw-bold">sselvara</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9105024?v=4" alt="vileen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vileen" target="_blank" class="text-decoration-none fw-bold">vileen</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/10386849?v=4" alt="anterodev" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/anterodev" target="_blank" class="text-decoration-none fw-bold">anterodev</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+3 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
