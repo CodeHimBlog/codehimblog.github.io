@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugin to Format Date Outputs Using JavaScript</title>
+    <meta name="description" content="jquery-dateFormat by phstc. jQuery Plugin to format Date outputs using JavaScript">
+    <meta name="author" content="phstc">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-dateformat-by-phstc.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Dateformat</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Dateformat",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Dateformat</h1>
+        <p id="packageDescription" class="text-muted">jQuery Plugin to format Date outputs using JavaScript</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">678</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.5 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">239</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">18</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/phstc/jquery-dateFormat/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/phstc/jquery-dateFormat" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <p>jquery-dateFormat - jQuery Plugin to format Date outputs using JavaScript - <strong><em>Having less than 5kb, jquery-dateFormat is the smallest date format library available!</em></strong></p>
+<p><a href="http://travis-ci.org/phstc/jquery-dateFormat"><img src="https://travis-ci.org/phstc/jquery-dateFormat.png" alt="build passing" title="build passing" /></a></p>
+<h1>Installation</h1>
+<p>Download latest jquery.dateFormat.js or jquery.dateFormat.min.js.</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/phstc/jquery-dateFormat/master/dist/jquery-dateformat.js">jquery-dateFormat.js</a></li>
+<li><a href="https://raw.githubusercontent.com/phstc/jquery-dateFormat/master/dist/jquery-dateformat.min.js">jquery-dateFormat.min.js</a></li>
+<li><a href="https://raw.github.com/phstc/jquery-dateFormat/master/dist/dateFormat.js">dateFormat.js</a> (pure Javascript, no jQuery dependency)</li>
+<li><a href="https://raw.github.com/phstc/jquery-dateFormat/master/dist/dateFormat.min.js">dateFormat.min.js</a> (pure Javascript, no jQuery dependency)</li>
+</ul>
+<p>You can use <strong>jquery-dateFormat without jQuery</strong>. You just need to import the dateFormat.js above and instead of formatting with <code>$.format(...)</code> you should use <code>DateFormat.format(...)</code>.</p>
+<p>If you use <strong>jQuery Validate</strong> plugin you must use jquery-dateFormat without jQuery.</p>
+<h1>Format patterns</h1>
+<p>The patterns to formatting are based on <a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html">java.text.SimpleDateFormat</a>.</p>
+<h2>Date and time patterns</h2>
+<ul>
+<li>yy = short year</li>
+<li>yyyy = long year</li>
+<li>M = month (1-12)</li>
+<li>MM = month (01-12)</li>
+<li>MMM = month abbreviation (Jan, Feb ... Dec)</li>
+<li>MMMM = long month (January, February ... December)</li>
+<li>d = day (1 - 31)</li>
+<li>dd = day (01 - 31)</li>
+<li>ddd = day of the week in words (Monday, Tuesday ... Sunday)</li>
+<li>E = short day of the week in words (Mon, Tue ... Sun)</li>
+<li>D - Ordinal day (1st, 2nd, 3rd, 21st, 22nd, 23rd, 31st, 4th...)</li>
+<li>h = hour in am/pm (0-12)</li>
+<li>hh = hour in am/pm (00-12)</li>
+<li>H = hour in day (0-23)</li>
+<li>HH = hour in day (00-23)</li>
+<li>mm = minute</li>
+<li>ss = second</li>
+<li>SSS = milliseconds</li>
+<li>a = AM/PM marker</li>
+<li>p = a.m./p.m. marker</li>
+</ul>
+<h1>Expected input dates formats</h1>
+<ul>
+<li>1982-10-15T01:10:20+02:00</li>
+<li>1982-10-15T01:10:20Z</li>
+<li>Thu Oct 15 01:10:20 CET 1982</li>
+<li>1982-10-15 01:10:20.546</li>
+<li>Thu Oct 15 1982 01:10:20 GMT-0800 (PST)</li>
+<li>Thu Oct 15 1982 01:10:20 GMT+0800 (China Standard Time)</li>
+<li>Thu Oct 15 1982 01:10:20 GMT+0200 (W. Europe Daylight Time)</li>
+<li>1982-10-15CET01:10:20</li>
+<li>JavaScript: new Date().getTime()</li>
+</ul>
+<p><a href="https://github.com/phstc/jquery-dateFormat/blob/master/test/format_parse_date_spec.js">Some examples</a>.</p>
+<h1>Usage</h1>
+<pre class="prettyprint linenums lang-language"><code> &lt;script&gt;
+   document.write($.format.date("2009-12-18 10:54:50.546", "Test: dd/MM/yyyy"));
+   document.write($.format.date("Wed Jan 13 10:43:41 CET 2010", "dd~MM~yyyy"));
+ &lt;/script&gt;</code></pre>
+<p><strong>Output</strong></p>
+<pre><code> =&gt; Test: 18/12/2009
+ =&gt; 13~01~2010</code></pre>
+<h2>Formatting using css classes</h2>
+<pre class="prettyprint linenums lang-language"><code>  &lt;span class="shortDateFormat"&gt;2009-12-18 10:54:50.546&lt;/span&gt;
+  &lt;span class="longDateFormat"&gt;2009-12-18 10:54:50.546&lt;/span&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>  jQuery(function() {
+      var shortDateFormat = 'dd/MM/yyyy';
+      var longDateFormat  = 'dd/MM/yyyy HH:mm:ss';
+
+      jQuery(".shortDateFormat").each(function (idx, elem) {
+          if (jQuery(elem).is(":input")) {
+              jQuery(elem).val(jQuery.format.date(jQuery(elem).val(), shortDateFormat));
+          } else {
+              jQuery(elem).text(jQuery.format.date(jQuery(elem).text(), shortDateFormat));
+          }
+      });
+      jQuery(".longDateFormat").each(function (idx, elem) {
+          if (jQuery(elem).is(":input")) {
+              jQuery(elem).val(jQuery.format.date(jQuery(elem).val(), longDateFormat));
+          } else {
+              jQuery(elem).text(jQuery.format.date(jQuery(elem).text(), longDateFormat));
+          }
+      });
+  });</code></pre>
+<p><strong>Output</strong></p>
+<pre><code> =&gt; 18/12/2009
+ =&gt; 18/12/2009 10:54:50</code></pre>
+<h2>Pretty date formatting</h2>
+<p><code>jQuery.format.prettyDate(value)</code> returns a string representing how long ago the date represents</p>
+<ul>
+<li>value = String representing ISO time or date in milliseconds or javascript Date object
+<pre class="prettyprint linenums lang-language"><code>jQuery.format.prettyDate(new Date())             // =&gt; "just now"
+jQuery.format.prettyDate(new Date().getTime())   // =&gt; "just now"
+jQuery.format.prettyDate("2008-01-28T20:24:17Z") // =&gt; "2 hours ago"
+jQuery.format.prettyDate("2008-01-27T22:24:17Z") // =&gt; "Yesterday"
+jQuery.format.prettyDate("2008-01-26T22:24:17Z") // =&gt; "2 days ago"
+jQuery.format.prettyDate("2008-01-14T22:24:17Z") // =&gt; "2 weeks ago"
+jQuery.format.prettyDate("2007-12-15T22:24:17Z") // =&gt; "more than 5 weeks ago"</code></pre></li>
+</ul>
+<h2>toBrowserTimeZone</h2>
+<p><code>jQuery.format.toBrowserTimeZone(value, format)</code> converts into browsers timezone.</p>
+<ul>
+<li>value = String representing date in ISO time (&quot;2013-09-14T23:22:33Z&quot;) or String representing default JAXB formatting of <code>java.util.Date</code> (&quot;2013-09-14T16:22:33.527-07:00&quot;) or String representing Unix Timestamp (Sat Sep 14 2013 16:22:33 GMT-0700 (PDT)) or javascript date object.</li>
+<li>format = All input formats valid for <code>jQuery.format.date</code> are valid for this method. The defaut format is MM/dd/yyyy HH:mm:ss.</li>
+</ul>
+<h3>Valid input formats</h3>
+<pre class="prettyprint linenums lang-language"><code> var date1 = "2013-09-14T23:22:33Z";
+ var date2 = "2013-09-14T16:22:33.527-07:00";
+ var date3 = "Sat Sep 14 2013 16:22:33 GMT-0700 (PDT)";
+
+ $.format.toBrowserTimeZone(date1)
+ $.format.toBrowserTimeZone(date2)
+ $.format.toBrowserTimeZone(date3)</code></pre>
+<h1>Development</h1>
+<p>To compile jquery-dateFormat (generate dist files):</p>
+<pre class="prettyprint linenums lang-language"><code>npm run compile</code></pre>
+<h2>Testing</h2>
+<p>Tests are written using Jasmine. To run the test suite with PhantomJS, run <code>npm run test</code>. To run the test suite in your default browser, run <code>npm run test:browser</code>.</p>
+<h1>Licenses</h1>
+<p>jquery-dateFormat is released under the <a href="http://opensource.org/licenses/MIT">MIT License</a>.</p>
+<h1>Do you want to improve jquery-dateFormat</h1>
+<p>You're welcome to make your contributions and send them as a pull request.</p>
+<h2>Contributors</h2>
+<p>Thanks to <a href="https://github.com/phstc/jquery-dateFormat/graphs/contributors">all contributors</a>.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/105652?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/phstc" target="_blank" id="ownerName" class="sidebar-link">phstc</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">January 24, 2010</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">June 30, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>grunt-contrib-uglify (^3.3.0)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt-cli (~1.3.2)</li><li>grunt (~0.4.2)</li><li>grunt-contrib-concat (~0.1)</li><li>grunt-contrib-jasmine (~1.0.3)</li><li>grunt-contrib-jshint (~0.7)</li><li>grunt-contrib-watch (~0.2)</li><li>grunt-exec (~0.4)</li><li>grunt-template-jasmine-istanbul (~0.4.0)</li><li>hoek (~&gt; 5.0.3)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/105652?v=4" alt="phstc" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/phstc" target="_blank" class="text-decoration-none fw-bold">phstc</a><p class="mb-0 text-muted small">86 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1576323?v=4" alt="ssproessig" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ssproessig" target="_blank" class="text-decoration-none fw-bold">ssproessig</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1629692?v=4" alt="CJxD" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/CJxD" target="_blank" class="text-decoration-none fw-bold">CJxD</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/613351?v=4" alt="arjunballa" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/arjunballa" target="_blank" class="text-decoration-none fw-bold">arjunballa</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/12501775?v=4" alt="dwaxweiler" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dwaxweiler" target="_blank" class="text-decoration-none fw-bold">dwaxweiler</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/397859?v=4" alt="buholzer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/buholzer" target="_blank" class="text-decoration-none fw-bold">buholzer</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/830864?v=4" alt="joostory" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/joostory" target="_blank" class="text-decoration-none fw-bold">joostory</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/127927?v=4" alt="jafin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jafin" target="_blank" class="text-decoration-none fw-bold">jafin</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/187096?v=4" alt="Zyber17" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Zyber17" target="_blank" class="text-decoration-none fw-bold">Zyber17</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/150349?v=4" alt="thiloplanz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/thiloplanz" target="_blank" class="text-decoration-none fw-bold">thiloplanz</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1613739?v=4" alt="jwadhams" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jwadhams" target="_blank" class="text-decoration-none fw-bold">jwadhams</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1056098?v=4" alt="Dahdread" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Dahdread" target="_blank" class="text-decoration-none fw-bold">Dahdread</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5441612?v=4" alt="AndreyCarter" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/AndreyCarter" target="_blank" class="text-decoration-none fw-bold">AndreyCarter</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/in/19479?v=4" alt="merge-when-green[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/merge-when-green" target="_blank" class="text-decoration-none fw-bold">merge-when-green[bot]</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/745503?v=4" alt="hafeyang" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hafeyang" target="_blank" class="text-decoration-none fw-bold">hafeyang</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/179714?v=4" alt="fero" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fero" target="_blank" class="text-decoration-none fw-bold">fero</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3186282?v=4" alt="drcreazy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/drcreazy" target="_blank" class="text-decoration-none fw-bold">drcreazy</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2491781?v=4" alt="vejuhust" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vejuhust" target="_blank" class="text-decoration-none fw-bold">vejuhust</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11228346?v=4" alt="tfrajt" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tfrajt" target="_blank" class="text-decoration-none fw-bold">tfrajt</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/646566?v=4" alt="peerb" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/peerb" target="_blank" class="text-decoration-none fw-bold">peerb</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/22558?v=4" alt="mikedemers" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mikedemers" target="_blank" class="text-decoration-none fw-bold">mikedemers</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4926329?v=4" alt="argentinaluiz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/argentinaluiz" target="_blank" class="text-decoration-none fw-bold">argentinaluiz</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/167352?v=4" alt="jharting" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jharting" target="_blank" class="text-decoration-none fw-bold">jharting</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1436730?v=4" alt="jonathanargentiero" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jonathanargentiero" target="_blank" class="text-decoration-none fw-bold">jonathanargentiero</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/89259811?v=4" alt="gnashdrw" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gnashdrw" target="_blank" class="text-decoration-none fw-bold">gnashdrw</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2623283?v=4" alt="Px-Factor" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Px-Factor" target="_blank" class="text-decoration-none fw-bold">Px-Factor</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/739250?v=4" alt="rdgr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rdgr" target="_blank" class="text-decoration-none fw-bold">rdgr</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1618130?v=4" alt="enhan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/enhan" target="_blank" class="text-decoration-none fw-bold">enhan</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/500922?v=4" alt="docchang" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/docchang" target="_blank" class="text-decoration-none fw-bold">docchang</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4285?v=4" alt="daviscabral" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/daviscabral" target="_blank" class="text-decoration-none fw-bold">daviscabral</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
