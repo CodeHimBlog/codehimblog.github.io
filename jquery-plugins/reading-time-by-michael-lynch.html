@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Time by Michael Lynch</title>
+    <meta name="description" content="A simple, lightweight jQuery plugin used to display an estimated time to read some text.">
+    <meta name="author" content="michael-lynch">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/reading-time-by-michael-lynch.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Reading Time</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Reading Time",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Reading Time</h1>
+        <p id="packageDescription" class="text-muted">A simple, lightweight jQuery plugin used to display an estimated time to read some text.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">660</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.14 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">106</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">8</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/michael-lynch/reading-time/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/michael-lynch/reading-time" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Reading Time</h1>
+<p><a href="https://cdnjs.com/libraries/reading-time"><img src="https://img.shields.io/cdnjs/v/reading-time.svg" alt="CDNJS" /></a></p>
+<p>Inspired by <a href="http://medium.com">Medium</a>, Reading Time is a simple, lightweight jQuery plugin used to display an estimated time to read some text.</p>
+<p><a href="http://michael-lynch.github.io/reading-time/" target="_blank">See a demo</a></p>
+<p><a href="http://michael-lynch.github.io/reading-time/remote.html" target="_blank">See a demo using a remote file</a></p>
+<p><a href="http://michael-lynch.github.io/reading-time/remote-multiple.html" target="_blank">See a demo using multiple remote files</a></p>
+<h2>Instructions</h2>
+<p>Include jQuery and the plugin in the head or footer of your page.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
+
+&lt;script src="/js/plugins/readingtime.js"&gt;&lt;/script&gt;</code></pre>
+<p>Create an element with the class of 'eta' where the estimated reading time will display.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;article&gt;
+    &lt;div class="eta"&gt;&lt;/div&gt;
+&lt;/article&gt;</code></pre>
+<p>Optionally you can also create an element with whatever class or ID you want to display the total word count.</p>
+<p><em>The word count will only be displayed if you set the wordCountTarget parameter when initiating the plugin (see below).</em></p>
+<pre class="prettyprint linenums lang-language"><code>&lt;article&gt;
+    &lt;div class="eta"&gt;&lt;/div&gt;
+    &lt;div class="word-count"&gt;&lt;/div&gt;
+&lt;/article&gt;</code></pre>
+<p>Initialize the plugin targeting the class, ID or element that contains the text in which you want to estimate the reading time of.</p>
+<pre class="prettyprint linenums lang-language"><code>$('article').readingTime();</code></pre>
+<h4>Options</h4>
+<ol>
+
+<li>
+readingTimeAsNumber: boolean
+<br />If you want to take reading time as integer, you can use this (default: 'false').
+</li>
+
+<li>
+readingTimeTarget: "id / class / element"
+<br />A string that defines the ID, class or element that will store the estimated reading time (default: 'eta').
+</li>
+
+<li>wordCountTarget: "id / class / element"
+<br />A string that defines the ID, class or element that will store the total word count (default: '').
+</li>
+
+<li>remotePath: "path"
+<br />A string that indicates the path to the remote file (default: null).
+</li>
+
+<li>remoteTarget: "id / class / element"
+<br />A string that defines the ID, class or element in the remote file that contains the text in which you want to estimate the reading time of (default: null).
+</li>
+
+<li>wordsPerMinute: integer
+<br />An integer that defines the words per minute at which to calculate the estimated reading time (default: 270).
+</li>
+
+<li>round: boolean
+<br />A boolean value that indicates whether or not the estimated reading time should be rounded to the closest minute (default: true).
+</li>
+
+<li>lang: "en / fr / de / es / nl / sk / cz / ru / zh / kr"
+<br />A two letter string that indicates the language to be used (default: "en").
+</li>
+
+<li>lessThanAMinuteString: string
+<br />A string that changes the default "Less than a minute" copy (default: '').
+</li>
+
+<li>prependTimeString: string
+<br />A string that is prepended before the estimated reading time (default: '').
+</li>
+
+<li>prependWordString: string
+<br />A string that is prepended before the total word count (default: '').
+</li>
+
+<li>success: function(data) {}
+<br />A callback function that runs if the plugin was successful (default: `function()`).
+</li>
+
+<li>error: function(data) {}
+<br />A callback function that runs if the plugin fails (default: `function(message)`).
+</li>
+
+</ol>
+<h5>Example:</h5>
+<pre class="prettyprint linenums lang-language"><code>$(function() {
+
+    $('article').readingTime({
+        readingTimeAsNumber: true,
+        readingTimeTarget: $('.reading-time'),
+        wordsPerMinute: 275,
+        round: false,
+        lang: 'fr',
+        success: function(data) {
+            console.log(data);
+        },
+        error: function(data) {
+            console.log(data.error);
+            $('.reading-time').remove();
+        }
+    });
+});</code></pre>
+<h5>Multiple Articles</h5>
+<p>Often you will have multiple articles or excerpts on a single page, in which case you would want to iterate through each.</p>
+<pre class="prettyprint linenums lang-language"><code>$('article').each(function() {
+
+    let _this = $(this);
+
+    _this.readingTime({
+        readingTimeTarget: _this.find('.reading-time')
+    });
+});</code></pre>
+<h5>Using a Remote File</h5>
+<p>If you want to display the estimated reading time of copy that lives in a remote file, you would initialize the plugin and use the remotePath and remoteTarget options.</p>
+<p>In this case, the plugin would display the amount of text contained in the element with the class of &quot;my-article&quot; in the file called &quot;remote.html.&quot;</p>
+<pre class="prettyprint linenums lang-language"><code>$('article').readingTime({
+    remotePath: 'path/to/remote/file.html',
+    remoteTarget: '.my-article'
+});</code></pre>
+<p><a href="http://michael-lynch.github.io/reading-time/remote.html" target="_blank">See a demo using a remote file</a></p>
+<h5>Using Multiple Remote Files</h5>
+<p>If you want to display the estimated reading time of copy for multiple articles that live in remote files, you would want to iterate through each article on your page and use data attributes to declare the file and target for each article. Be sure to initialize the plugin on the body and use the remotePath and remoteTarget options.</p>
+<p>Here is what your markup might look like <em>(notice the data-file and data-target attributes on each article)</em>:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- first article excerpt --&gt;
+&lt;article data-file="articles/a.html" data-target="article"&gt;
+
+    &lt;h1&gt;Magna Lorem Quam Nullam&lt;/h1&gt;
+
+    &lt;p&gt;By: Mike Lynch&lt;/p&gt;
+
+    &lt;!-- reading time and word count --&gt;
+    &lt;p&gt;&lt;span class="eta"&gt;&lt;/span&gt; (&lt;span class="words"&gt;&lt;/span&gt; words)&lt;/p&gt;
+
+    &lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+
+    &lt;a href="articles/a.html" class="btn"&gt;Read more&lt;/a&gt;
+
+&lt;/article&gt;
+
+&lt;!-- second article excerpt --&gt;
+&lt;article data-file="articles/b.html" data-target="article"&gt;
+
+    &lt;h1&gt;Justo Cursus Inceptos Ipsum&lt;/h1&gt;
+
+    &lt;p&gt;By: Mike Lynch&lt;/p&gt;
+
+    &lt;!-- reading time and word count --&gt;
+    &lt;p&gt;&lt;span class="eta"&gt;&lt;/span&gt; (&lt;span class="words"&gt;&lt;/span&gt; words)&lt;/p&gt;
+
+    &lt;p&gt;Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean
+    lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
+
+    &lt;a href="articles/b.html" class="btn"&gt;Read more&lt;/a&gt;
+
+&lt;/article&gt;
+
+&lt;!-- third article excerpt --&gt;
+&lt;article data-file="articles/c.html" data-target="article"&gt;
+
+    &lt;h1&gt;Sem Vehicula Dapibus Malesuada&lt;/h1&gt;
+
+    &lt;p&gt;By: Mike Lynch&lt;/p&gt;
+
+    &lt;!-- reading time and word count --&gt;
+    &lt;p&gt;&lt;span class="eta"&gt;&lt;/span&gt; (&lt;span class="words"&gt;&lt;/span&gt; words)&lt;/p&gt;
+
+    &lt;p&gt;Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Nullam id dolor id nibh
+    ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
+
+    &lt;a href="articles/c.html" class="btn"&gt;Read more&lt;/a&gt;
+
+&lt;/article&gt;</code></pre>
+<p>Here is what your JS would look like:</p>
+<pre class="prettyprint linenums lang-language"><code>$('article').each(function() {
+
+    let _this = $(this);
+
+    _this.readingTime({
+        readingTimeTarget: _this.find('.eta'),
+        wordCountTarget: _this.find('.words'),
+        remotePath: _this.attr('data-file'),
+        remoteTarget: _this.attr('data-target')
+    });
+});</code></pre>
+<p><a href="http://michael-lynch.github.io/reading-time/remote-multiple.html" target="_blank">See a demo using multiple remote files</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/reading" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>reading</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/time" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>time</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/estimated" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>estimated</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/eta" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>eta</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/1568524?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/michael-lynch" target="_blank" id="ownerName" class="sidebar-link">michael-lynch</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">August 15, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 13, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1568524?v=4" alt="michael-lynch" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/michael-lynch" target="_blank" class="text-decoration-none fw-bold">michael-lynch</a><p class="mb-0 text-muted small">20 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1937003?v=4" alt="jeancarlozapata" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jeancarlozapata" target="_blank" class="text-decoration-none fw-bold">jeancarlozapata</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/289531?v=4" alt="stevelacey" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/stevelacey" target="_blank" class="text-decoration-none fw-bold">stevelacey</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/18425869?v=4" alt="takvol" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/takvol" target="_blank" class="text-decoration-none fw-bold">takvol</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/26497548?v=4" alt="liqianggh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/liqianggh" target="_blank" class="text-decoration-none fw-bold">liqianggh</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/149222?v=4" alt="127001" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/127001" target="_blank" class="text-decoration-none fw-bold">127001</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7100937?v=4" alt="andy00087" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/andy00087" target="_blank" class="text-decoration-none fw-bold">andy00087</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/447059?v=4" alt="extempl" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/extempl" target="_blank" class="text-decoration-none fw-bold">extempl</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11587201?v=4" alt="BlackSkorpio" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/BlackSkorpio" target="_blank" class="text-decoration-none fw-bold">BlackSkorpio</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3389132?v=4" alt="brunoew" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/brunoew" target="_blank" class="text-decoration-none fw-bold">brunoew</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5376378?v=4" alt="whitfin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/whitfin" target="_blank" class="text-decoration-none fw-bold">whitfin</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1746870?v=4" alt="midoalone" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/midoalone" target="_blank" class="text-decoration-none fw-bold">midoalone</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/74809918?v=4" alt="ShanePark" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ShanePark" target="_blank" class="text-decoration-none fw-bold">ShanePark</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/806883?v=4" alt="thierrymichel" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/thierrymichel" target="_blank" class="text-decoration-none fw-bold">thierrymichel</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2955136?v=4" alt="fpshu" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fpshu" target="_blank" class="text-decoration-none fw-bold">fpshu</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/23053428?v=4" alt="kaocy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kaocy" target="_blank" class="text-decoration-none fw-bold">kaocy</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8279974?v=4" alt="dimayakovlev" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dimayakovlev" target="_blank" class="text-decoration-none fw-bold">dimayakovlev</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+12 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
