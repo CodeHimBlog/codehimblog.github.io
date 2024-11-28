@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugin to Scroll the Text Like the Old Traditional Marquee</title>
+    <meta name="description" content="jQuery.Marquee by aamirafridi. jQuery plugin to scroll the text like the old traditional marquee">
+    <meta name="author" content="aamirafridi">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-marquee-by-aamirafridi.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jquery.marquee</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jquery.marquee",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jquery.marquee</h1>
+        <p id="packageDescription" class="text-muted">jQuery plugin to scroll the text like the old traditional marquee</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">962</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.2 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">274</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">35</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/aamirafridi/jQuery.Marquee/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/aamirafridi/jQuery.Marquee" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery-Marquee with CSS3 Support</h1>
+<p><a href="https://snyk.io/test/github/aamirafridi/jquery.marquee?targetFile=package.json"><img src="https://snyk.io/test/github/aamirafridi/jquery.marquee/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" /></a><br />
+<a href="https://www.jsdelivr.com/package/npm/jquery.marquee"><img src="https://data.jsdelivr.com/v1/package/npm/jquery.marquee/badge" alt="" /></a></p>
+<p>A <strong>~2KB MINIFIED + GZIPPED</strong> (minified) jQuery plugin to scroll the text like the old traditional marquee.</p>
+<h2>Install:</h2>
+<ul>
+<li><strong>NPM:</strong> <code>npm install jquery.marquee --save</code></li>
+<li><strong>CDN:</strong> <a href="http://www.jsdelivr.com/#!jquery.marquee">jsdelivr.com</a>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js" type="text
+/javascript"&gt;&lt;/script&gt;</code></pre>
+<ul>
+<li><strong>Bower</strong>: <code>bower install jQuery.Marquee</code></li>
+<li><strong>Download:</strong> <a href="https://github.com/aamirafridi/jQuery.Marquee/archive/master.zip">zip</a></li>
+</ul></li>
+</ul>
+<h2>Links:</h2>
+<ul>
+<li><strong>Demo:</strong> <a href="http://aamirafridi.com/jquery/jquery-marquee-plugin#examples">http://aamirafridi.com/jquery/jquery-marquee-plugin#examples</a></li>
+<li><strong>jsFiddle:</strong> <a href="http://jsfiddle.net/aamir/jc7F3/285/">http://jsfiddle.net/aamir/jc7F3/285/</a> to help you explain any issues you might face.</li>
+</ul>
+<h2>Options:</h2>
+<ul>
+<li><strong>allowCss3Support</strong> Force the usage of jQuery's animate method even if the target browser supports CSS3 animations. Default: <code>true</code></li>
+<li><strong>css3easing</strong> Works when <code>allowCss3Support</code> is set to <code>true</code>. See <a href="http://www.w3.org/TR/2013/WD-css3-transitions-20131119/#transition-timing-function">here</a> for full list. Default: <code>'linear'</code></li>
+<li><strong>easing</strong> Requires the jQuery <a href="http://gsgd.co.uk/sandbox/jquery/easing/">easing</a> plugin. Default: <code>'linear'</code></li>
+<li><strong>delayBeforeStart</strong> Time in milliseconds before the marquee starts animating. Default: <code>1000</code></li>
+<li><strong>direction</strong> Direction towards which the marquee will animate <code>'left' / 'right' / 'up' / 'down'</code>. Default: <code>'left'</code>. Todo: need to change this to <code>ltr/rtl</code> etc</li>
+<li><strong>duplicated</strong> Should the marquee be duplicated to show an effect of continuous flow. Use this only when the text is shorter than the container. Default: <code>false</code></li>
+<li><strong>duration</strong> Duration in milliseconds in which you want your element to travel. Default: <code>5000</code>.</li>
+<li><strong>speed</strong> Speed will override duration. Speed allows you to set a relatively constant marquee speed regardless of the width of the containing element. Speed is measured in pixels per second.</li>
+<li><strong>gap</strong> Gap in pixels between the tickers. Will work only when the <code>duplicated</code> option is set to <code>true</code>. Default: <code>20</code>. Note: <code>20</code> means <code>20px</code> so no need to use <code>'20px'</code> as the value.</li>
+<li><strong>pauseOnHover</strong> Pause the marquee on hover. If the browser supports CSS3 and <code>allowCss3Support</code> is set to <code>true</code> this will be done using CSS3. Otherwise this will be done using the jQuery <a href="https://github.com/tobia/Pause">Pause</a> plugin. Default: <code>false</code>. See demo page for example.</li>
+<li><strong>pauseOnCycle</strong> On cycle, pause the marquee for <code>delayBeforeStart</code> milliseconds.</li>
+<li><strong>startVisible</strong> The marquee will be visible from the start if set to <code>true</code>. Thanks to @nuke-ellington 👍</li>
+</ul>
+<h2>Events:</h2>
+<ul>
+<li><strong>beforeStarting:</strong> Event will be fired on the element before animation starts.</li>
+<li><strong>finished:</strong> Event will be fired on the element after the animation finishes.</li>
+<li><strong>paused:</strong> Event will be fired on the element when the animation is paused.</li>
+<li><strong>resumed:</strong> Event will be fired on the element when the animation is resumed.</li>
+</ul>
+<h2>Methods:</h2>
+<p>These methods can be used like this:</p>
+<ul>
+<li>First initialize marquee with any options <code>var $mq = $('.marquee').marquee();</code></li>
+<li>Then at any time you can call the following methods like this: <code>var $mq.marquee('NAME-OF-METHOD-AS-STRING');</code></li>
+</ul>
+<p>Here is the list of all methods:</p>
+<ul>
+<li><strong>pause</strong>: To pause the marquee at any time.</li>
+<li><strong>resume</strong>: To resume the marquee after being paused previously.</li>
+<li><strong>toggle</strong>: To toggle between pause and resume methods.</li>
+<li><strong>destroy</strong>: To remove the marquee from your element. This method is useful if you are loading/changing the data using Ajax or just another string. You can combine this with the <code>finished</code> event so you can have the marquee show some data and as soon as it finishes showing that, you can destroy it, change the html and then apply the plugin again. See the demo page for details (links provided above).</li>
+</ul>
+<h2>Usage:</h2>
+<h3>Requiring in The Node.js Environment</h3>
+<p>Here's how to import the plugin as a CommonJS module:</p>
+<pre class="prettyprint linenums lang-language"><code>var $ = require("jquery");
+require("jquery.marquee");</code></pre>
+<h3>HTML:</h3>
+<p>Usually you assign the marquee class to the desired element. Then you initialize it with an options hash in your code (see below).</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class='marquee'&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit END.&lt;/div&gt;</code></pre>
+<p>Alternatively you can provide all the options listed above as data attributes:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class='marquee' data-duration='5000' data-gap='10' data-duplicated='true' &gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit END.
+&lt;/div&gt;</code></pre>
+<h3>CSS:</h3>
+<pre class="prettyprint linenums lang-language"><code>.marquee {
+  width: 300px; /* the plugin works for responsive layouts so width is not necessary */
+  overflow: hidden;
+  border:1px solid #ccc;
+}</code></pre>
+<h3>How to Apply Plugin:</h3>
+<pre class="prettyprint linenums lang-language"><code>/**
+ * Example of starting a plugin with options.
+ * I am just passing some of the options in the following example.
+ * you can also start the plugin using $('.marquee').marquee(); with defaults
+*/
+$('.marquee').marquee({
+    //duration in milliseconds of the marquee
+    duration: 15000,
+    //gap in pixels between the tickers
+    gap: 50,
+    //time in milliseconds before the marquee will start animating
+    delayBeforeStart: 0,
+    //'left' or 'right'
+    direction: 'left',
+    //true or false - should the marquee be duplicated to show an effect of continues flow
+    duplicated: true
+});</code></pre>
+<h3>How to Use in a React Component (Class-Based)</h3>
+<pre class="prettyprint linenums lang-language"><code>import React, { Component } from 'react';
+import $ from 'jquery';
+import  'jquery.marquee';
+
+class Marquee extends Component {
+  componentDidMount() {
+    this.$el.marquee({
+      duration: 15000,
+      gap: 50,
+      delayBeforeStart: 0,
+      direction: 'left'
+    });
+  }
+
+  render() {
+    return (
+      &lt;div ref={(el) =&gt; this.$el = $(el)}&gt;
+        I'm using jQuery.Marquee with React!!!!
+      &lt;/div&gt;
+    );
+  }
+}</code></pre>
+<h3>How to Use in a React Component (Functional)</h3>
+<pre class="prettyprint linenums lang-language"><code>import React, { useEffect, useRef } from 'react';
+import $ from 'jquery';
+import  'jquery.marquee';
+
+function Marquee(props) {
+  const el = useRef();
+
+  useEffect(function() {
+    const $el = $(el.current);
+
+    $el.marquee({
+      duration: 5000,
+      gap: 50,
+      delayBeforeStart: 0,
+      direction: 'left'
+    });
+  });
+
+  return (
+    &lt;div ref={el}&gt;
+      I'm using jQuery.Marquee with React!!!!
+    &lt;/div&gt;
+  );
+}</code></pre>
+<h3>How to Use Methods:</h3>
+<pre class="prettyprint linenums lang-language"><code>var $mq = $('.marquee').marquee();
+$('.someLink').click(function(){
+  $mq.marquee('pause/resume/toggle');
+});</code></pre>
+<p>Change content and re-apply the plugin.<br />
+Check demo page for example: <a href="http://aamirafridi.com/jquery/jquery-marquee-plugin#examples">http://aamirafridi.com/jquery/jquery-marquee-plugin#examples</a></p>
+<pre class="prettyprint linenums lang-language"><code>$('.marquee')
+    .bind('finished', function(){
+        //Change text to something else after first loop finishes
+        $(this).marquee('destroy');
+        //Load new content using Ajax and update the marquee container
+        $(this).html('Some new data loaded using ajax')
+            //Apply marquee plugin again
+            .marquee()
+    })
+    .marquee();
+</code></pre>
+<h3>How to Use Events:</h3>
+<p>Check demo page for example: <a href="http://aamirafridi.com/jquery/jquery-marquee-plugin#examples">http://aamirafridi.com/jquery/jquery-marquee-plugin#examples</a></p>
+<pre class="prettyprint linenums lang-language"><code>$('.marquee')
+    .bind('beforeStarting', function () {
+        //code you want to execute before starting the animations
+    })
+    .bind('finished', function () {
+        //code you want to execute before after each animation loop
+    })
+    //Apply plugin
+    .marquee({
+        duration: 2000
+    });</code></pre>
+<hr />
+<h2>Images:</h2>
+<p>If you are using images in marquee, sometimes the plugin cannot calculate accurate widths while images are still loading. You can try this instead of <code>$(document).ready(function(){...})</code></p>
+<pre class="prettyprint linenums lang-language"><code>//if you have images in marquee
+$(window).load(function() {
+    $('.marquee').marquee();
+});</code></pre>
+<hr />
+<h2>Updates:</h2>
+<p><strong>Update (8 Mar 2016):</strong><br />
+Now plugin have new option: <strong>startVisible</strong> The marquee will be visible in the start if set to <code>true</code>. Thanks to @nuke-ellington 👍</p>
+<p><strong>Update (24 Jan 2014):</strong></p>
+<p><strong>Note: people who been asking me how to use this plugin with content being loaded with Ajax, please read notes about this update.</strong></p>
+<ul>
+<li>
+<p>New methods added, so now after you start the plugin using <code>var $mq = $('.marquee').marquee();</code>, then you can pause, resume, toggle(pause, resume) and destroy methods e.g to remove the marquee plugin from your element simply use <code>$mq.marquee('destroy');</code>. Similarly you can use pause the marquee any time using <code>$mq.marquee('pause');</code>.</p>
+</li>
+<li>
+<p>If you want to use use <strong>Ajax</strong> with this plugin i.e you want to change the content after you apply this plugin, please see the examples in demo page (link provided below).</p>
+</li>
+<li>
+<p>Also made some changes so this plugin works with old versions of jQuery. I have tested it with jQuery 1.3.2 but quite sure it should work with some previous versions of jQuery.</p>
+</li>
+</ul>
+<p><strong>PLEASE report any bugs you find.</strong></p>
+<p>For details please check the demos at: <a href="http://aamirafridi.com/jquery/jquery-marquee-plugin#examples">http://aamirafridi.com/jquery/jquery-marquee-plugin#examples</a></p>
+<p><strong>Update (20 Dec 2013):</strong><br />
+Now the plugin will detect if browser supports CSS3 animations than it will animate the element using CSS3 which will perform much better than animating using jQuery.</p>
+<p>The <code>pauseOnHover</code> also works using CSS3. The plugin just prepares the setup and required CSS3 animation CSS.</p>
+<p>Due to some reasons if you want plugin to animate always using jQuery than you need to set <code>allowCss3Support</code> option to <code>false</code>. Also an extra option <code>css3easing</code> is added.</p>
+<p>Check demo page for example: <a href="http://aamirafridi.com/jquery/jquery-marquee-plugin#examples">http://aamirafridi.com/jquery/jquery-marquee-plugin#examples</a></p>
+<p><strong>Update (27 Nov 2013):</strong><br />
+Easing option added. Requires jQuery easing plugin.</p>
+<p><strong>Update (22 Nov 2013):</strong><br />
+Now plugin supports the 'up' and 'down' directions. Please have a look at the example to see how to use.</p>
+<p><strong>Update (21 Aug 2013):</strong><br />
+If you want to hide the marquee for certain devices, try using <code>visibility: hidden</code> with <code>height: 0</code> &amp; <code>position: absolute</code> instead of <code>display: none</code> because jQuery cannot calculate with width etc of hidden elements.<br />
+For more details:</p>
+<ul>
+<li><a href="https://github.com/aamirafridi/jQuery.Marquee/issues/9">https://github.com/aamirafridi/jQuery.Marquee/issues/9</a></li>
+<li><a href="http://stackoverflow.com/questions/1841124/find-the-potential-width-of-a-hidden-element">http://stackoverflow.com/questions/1841124/find-the-potential-width-of-a-hidden-element</a></li>
+</ul>
+<p><strong>Update (22 Feb 2013):</strong><br />
+<code>pauseOnHover</code> option added. Please note that you will need to include jQuery pause plugin: <a href="https://github.com/tobia/Pause">https://github.com/tobia/Pause</a> before the jQuery Marquee plugin.</p>
+<p><strong>Update (20 Feb 2013):</strong></p>
+<ul>
+<li>The plugin is improved to adjust the speed according to the length of the text automatically. For more details read: <a href="https://github.com/aamirafridi/jQuery.Marquee/issues/1">https://github.com/aamirafridi/jQuery.Marquee/issues/1</a></li>
+<li>'duplicated' option added. See the details below in Options section.</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/animation" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>animation</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/css" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>css</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/css3-support" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>css3-support</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/marquee" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>marquee</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/55896?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/aamirafridi" target="_blank" id="ownerName" class="sidebar-link">aamirafridi</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">January 11, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 15, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://aamirafridi.com/jquery/jquery-marquee-plugin" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>uglify-js (^3.12.8)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/55896?v=4" alt="aamirafridi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aamirafridi" target="_blank" class="text-decoration-none fw-bold">aamirafridi</a><p class="mb-0 text-muted small">218 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/14405078?v=4" alt="nuke-ellington" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nuke-ellington" target="_blank" class="text-decoration-none fw-bold">nuke-ellington</a><p class="mb-0 text-muted small">13 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/13278217?v=4" alt="naveed-fida" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/naveed-fida" target="_blank" class="text-decoration-none fw-bold">naveed-fida</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/87761128?v=4" alt="aamir-mns" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aamir-mns" target="_blank" class="text-decoration-none fw-bold">aamir-mns</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1255924?v=4" alt="aliaghdam" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aliaghdam" target="_blank" class="text-decoration-none fw-bold">aliaghdam</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/363904?v=4" alt="odnamrataizem" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/odnamrataizem" target="_blank" class="text-decoration-none fw-bold">odnamrataizem</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/81871?v=4" alt="brendon" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/brendon" target="_blank" class="text-decoration-none fw-bold">brendon</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11504097?v=4" alt="cdelafuente72" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cdelafuente72" target="_blank" class="text-decoration-none fw-bold">cdelafuente72</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6551197?v=4" alt="HueyGeek" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/HueyGeek" target="_blank" class="text-decoration-none fw-bold">HueyGeek</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/695872?v=4" alt="cuth" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cuth" target="_blank" class="text-decoration-none fw-bold">cuth</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/15611832?v=4" alt="LukasDrgon" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LukasDrgon" target="_blank" class="text-decoration-none fw-bold">LukasDrgon</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/855244?v=4" alt="nicolasmn" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nicolasmn" target="_blank" class="text-decoration-none fw-bold">nicolasmn</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/12657403?v=4" alt="Renaud-RSC" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Renaud-RSC" target="_blank" class="text-decoration-none fw-bold">Renaud-RSC</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3455374?v=4" alt="thomasdunn" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/thomasdunn" target="_blank" class="text-decoration-none fw-bold">thomasdunn</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7520815?v=4" alt="chimame" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/chimame" target="_blank" class="text-decoration-none fw-bold">chimame</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/35531794?v=4" alt="greggebura" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/greggebura" target="_blank" class="text-decoration-none fw-bold">greggebura</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1056975?v=4" alt="watermark" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/watermark" target="_blank" class="text-decoration-none fw-bold">watermark</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7723382?v=4" alt="plough" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/plough" target="_blank" class="text-decoration-none fw-bold">plough</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+13 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
