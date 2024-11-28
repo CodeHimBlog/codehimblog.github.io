@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symfony Collection by Ninsuo</title>
+    <meta name="description" content="[NOT MAINTAINED] A jQuery plugin that manages adding, deleting and moving elements from a Symfony form collection">
+    <meta name="author" content="ninsuo">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/symfony-collection-by-ninsuo.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Symfony Collection</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Symfony Collection",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Symfony Collection</h1>
+        <p id="packageDescription" class="text-muted">[NOT MAINTAINED] A jQuery plugin that manages adding, deleting and moving elements from a Symfony form collection</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">444</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.07 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">88</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">54</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/ninsuo/symfony-collection/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/ninsuo/symfony-collection" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>symfony-collection</h1>
+<p>A jQuery plugin that manages adding, deleting and moving elements from a Symfony collection</p>
+<p><img src="http://ocarina.fr/medias/collection.png" alt="sample" /></p>
+<p>This is not really difficult to manage your collections using the <code>data-prototype</code> Symfony provides. But<br />
+after using several times collections, it appeared useful to me to create a jQuery plugin to do this job.</p>
+<p>This is even more true when you need your elements to be moved up and down or added at a specific position: as the<br />
+form will be proceeded using field names, we should swap field contents or field names instead of moving fields themselves to get the job done. That's<br />
+not really friendly in javascript, so this plugin also aims to deal with that.</p>
+<h1>Live demo</h1>
+<p>Demo of this plugin is available live at: <a href="http://symfony-collection.fuz.org">http://symfony-collection.fuz.org</a></p>
+<p>Demo source code is here: <a href="https://github.com/ninsuo/symfony-collection-demo">https://github.com/ninsuo/symfony-collection-demo</a></p>
+<h1>Installation</h1>
+<p>This plugin is a set of 2 files:</p>
+<ul>
+<li>
+<p>the jquery plugin itself, it should be located with your assets</p>
+</li>
+<li>
+<p>a twig form theme that will ease use of it, it should be located in your views</p>
+</li>
+</ul>
+<h2>Installation using Composer</h2>
+<p>To automate the plugin download and installation, edit composer.json and add:</p>
+<pre class="prettyprint linenums lang-language"><code>    "require": {
+        ...
+        "ninsuo/symfony-collection": "dev-master"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            ...
+            "Fuz\\Symfony\\Collection\\ScriptHandler::postInstall"
+        ],
+        "post-update-cmd": [
+            ...
+            "Fuz\\Symfony\\Collection\\ScriptHandler::postUpdate"
+        ]
+    }</code></pre>
+<p>Files will be automatically installed at:</p>
+<ul>
+<li>
+<p>symfony-collection form theme will be installed in <code>app/Resources/views</code></p>
+</li>
+<li>
+<p>symfony-collection jquery plugin will be installed in <code>web/js</code>.</p>
+</li>
+</ul>
+<p>Tips:</p>
+<ul>
+<li>
+<p>Replace <code>dev-master</code> by the current stable version.</p>
+</li>
+<li>
+<p>Put script handlers before Symfony's installAssets if you wish to benefit from your assets optimizations.</p>
+</li>
+<li>
+<p>Add <code>app/Resources/views/jquery.collection.html.twig</code> and <code>web/js/jquery.collection.js</code> to your <code>.gitignore</code></p>
+</li>
+</ul>
+<p>If you prefer to install the plugin manually, you can use:</p>
+<pre class="prettyprint linenums lang-language"><code>composer require ninsuo/symfony-collection</code></pre>
+<p>You'll have to move:</p>
+<ul>
+<li>
+<p><code>vendor/ninsuo/symfony-collection/jquery.collection.js</code> in your assets (for example in <code>web/js</code>)</p>
+</li>
+<li>
+<p><code>vendor/ninsuo/symfony-collection/jquery.collection.html.twig</code> in your views (for example in <code>app/Resources/views</code>)</p>
+</li>
+</ul>
+<h2>Installation using npm</h2>
+<pre class="prettyprint linenums lang-language"><code>npm install ninsuo/symfony-collection</code></pre>
+<p>You'll have to move:</p>
+<ul>
+<li><code>node_modules/symfony-collection/jquery.collection.js</code> in your assets (for example in <code>web/js</code>).</li>
+<li><code>node_modules/symfony-collection/jquery.collection.html.twig</code> wherever you want in your views (for example in <code>app/Resources/views</code>)</li>
+</ul>
+<h2>Installation using Bower</h2>
+<pre class="prettyprint linenums lang-language"><code>bower install ninsuo/symfony-collection</code></pre>
+<p>You'll have to move:</p>
+<ul>
+<li><code>bower_components/symfony-collection/jquery.collection.js</code> in your assets (for example in <code>web/js</code>)</li>
+<li><code>bower_components/symfony-collection/jquery.collection.html.twig</code> in your views (for example in <code>app/Resources/views</code>)</li>
+</ul>
+<h1>Basic usage</h1>
+<h2>A simple collection</h2>
+<p>Your collection type should contain <code>prototype</code>, <code>allow_add</code>, <code>allow_remove</code> options (depending on which buttons<br />
+you require of course). And a class that will be used as a selector to run the collection plugin.</p>
+<pre class="prettyprint linenums lang-language"><code>-&gt;add('myCollection', 'collection',
+   array (
+        // ...
+        'allow_add' =&gt; true,
+        'allow_remove' =&gt; true,
+        'prototype' =&gt; true,
+        'attr' =&gt; array(
+            'class' =&gt; 'my-selector',
+        ),
+))</code></pre>
+<p>Then, render your form after applying the given custom theme:</p>
+<pre class="prettyprint linenums lang-language"><code>     {% form_theme myForm 'jquery.collection.html.twig' %}
+     {{ form(myForm) }}</code></pre>
+<p>Finally, put the following code at the bottom of your page.</p>
+<pre class="prettyprint linenums lang-language"><code>    &lt;script src="{{ asset('js/jquery.js') }}"&gt;&lt;/script&gt;
+    &lt;script src="{{ asset('js/jquery.collection.js') }}"&gt;&lt;/script&gt;
+
+    &lt;script type="text/javascript"&gt;
+        $('.my-selector').collection();
+    &lt;/script&gt;</code></pre>
+<h2>Using a form theme</h2>
+<p>Most of the time, you will need to create a <a href="https://symfony.com/doc/current/form/form_customization.html">form theme</a><br />
+that will help you render your collection and its children in a fancy way.</p>
+<ul>
+<li>in your form type(s), overwrite the <code>getBlockPrefix()</code> method and return a good name.</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>// Fuz/AppBundle/Form/AddressType.php
+
+&lt;?php
+
+namespace Fuz\AppBundle\Form;
+
+use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
+
+class AddressType extends AbstractType
+{
+    // ...
+
+    public function getBlockPrefix()
+    {
+        return 'AddressType';
+    }
+}</code></pre>
+<ul>
+<li>in your form theme, you will just need to use the same name (<code>{% block AddressType_XXX %}</code>). Replace <code>XXX</code> by <code>widget</code>,<br />
+<code>error</code> or <code>row</code> according to what you want to do (read the <a href="https://symfony.com/doc/current/form/form_customization.html">Symfony doc</a><br />
+for more details).</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>{# FuzAppBundle:Advanced:addresses-theme.html.twig #}
+
+{% block AddressType_row %}
+&lt;div class="col-md-3"&gt;
+  {{ form_label(form) }}
+  {{ form_errors(form) }}
+  {{ form_widget(form) }}
+&lt;/div&gt;
+{% endblock %}
+
+{% block AddressType_widget %}
+    {{ form_widget(form) }}
+    &lt;br/&gt;
+    &lt;p class="text-center"&gt;
+        &lt;a href="#" class="collection-up btn btn-default"&gt;&amp;lt;&lt;/a&gt;
+        &lt;a href="#" class="collection-remove btn btn-default"&gt;-&lt;/a&gt;
+        &lt;a href="#" class="collection-add btn btn-default"&gt;+&lt;/a&gt;
+        &lt;a href="#" class="collection-down btn btn-default"&gt;&amp;gt;&lt;/a&gt;
+    &lt;/p&gt;
+{% endblock %}</code></pre>
+<p>Then, use both form themes using:</p>
+<pre class="prettyprint linenums lang-language"><code>     {%
+        form_theme myForm
+            'FuzAppBundle:Advanced:addresses-theme.html.twig'
+            'jquery.collection.html.twig'
+     %}</code></pre>
+<p>There are many examples using form themes in the Advanced menu of the <a href="http://symfony-collection.fuz.org/">demo website</a>,<br />
+don't hesitate to look at them.</p>
+<p>Always put <code>jquery.collection.html.twig</code> form theme below the other you use, to avoid the settings getting overwritten.</p>
+<h2>Using Doctrine, and a position explicitly stored in a field</h2>
+<p>A collection is no more than an array of objects, so by default, this plugin move element positions<br />
+in this array. For example, if you have A, B and C in your collection and move B up, it will contain<br />
+B, A, C.</p>
+<p>But when Doctrine persists your collection, it will keep existing entities, and<br />
+simply update their content. For example, if you have a collection containing A, B, C<br />
+with ids 1, 2 and 3, you will end up with a collection containing B, A, C, but still<br />
+ids 1, 2 and 3.</p>
+<p>In most cases, that's not a problem. But, if you have other relations attached to each of your<br />
+collection elements, you should never unlink id and value. You'll use a position field on your<br />
+database table, and it will manage the position.</p>
+<p>Something like:</p>
+<pre class="prettyprint linenums lang-language"><code>    /**
+     * @ORM\Column(name="position", type="integer")
+     */
+    private $position;</code></pre>
+<p>This plugin supports this case; you need to create a <code>position</code> field in your form (with hidden type),<br />
+mapped to your entity, and give it a class that will serve as a selector:</p>
+<pre class="prettyprint linenums lang-language"><code>        $builder-&gt;add('position', HiddenType::class, [
+            'attr' =&gt; [
+                'class' =&gt; 'my-position',
+            ],
+        ]);</code></pre>
+<p>Then, use the <code>position_field_selector</code> option to provide it to the plugin:</p>
+<pre class="prettyprint linenums lang-language"><code>    $('.my-selector').collection({
+        position_field_selector: '.my-position'
+    });</code></pre>
+<h2>Several collections on the same page</h2>
+<p>If you wish to create several collections on the same page, you'll need to change the collection prefix<br />
+in order for the plugin to trigger the right actions for the right collection.</p>
+<p>For example:</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collectionA').collection({
+        'prefix': 'first-collection'
+     });
+
+     $('.collectionB').collection({
+        'prefix': 'second-collection'
+     });</code></pre>
+<p>Then if you want to edit those collections form theme, you'll need to replace<br />
+<code>collection-add</code> by <code>first-collection-add</code> on your add buttons for example.</p>
+<pre class="prettyprint linenums lang-language"><code>   &lt;a href="#" class="first-collection-add btn btn-default"&gt;
+       &lt;span class="glyphicon glyphicon-plus-sign"&gt;&lt;/span&gt;
+   &lt;/a&gt;</code></pre>
+<p>See <a href="https://symfony-collection.fuz.org/symfony3/form-with-several-collections">this sample</a> for a working example.</p>
+<h1>Options</h1>
+<p><strong>Customize rendered links</strong> (<a href="http://symfony-collection.fuz.org/symfony3/options/customButtons">demo</a>)</p>
+<p>You can customize displayed links by setting <code>up</code>, <code>down</code>, <code>add</code>, <code>remove</code> and <code>duplicate</code> options.</p>
+<p>Default values are:</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+         up: '&lt;a href="#"&gt;&amp;#x25B2;&lt;/a&gt;',
+         down: '&lt;a href="#"&gt;&amp;#x25BC;&lt;/a&gt;',
+         add: '&lt;a href="#"&gt;[ + ]&lt;/a&gt;',
+         remove: '&lt;a href="#"&gt;[ - ]&lt;/a&gt;',
+         duplicate: '&lt;a href="#"&gt;[ # ]&lt;/a&gt;'
+     });</code></pre>
+<p>You can also use the following classes:</p>
+<ul>
+<li><code>collection-add</code> for an add button</li>
+<li><code>collection-remove</code> for a remove button</li>
+<li><code>collection-up</code> for a move up button</li>
+<li><code>collection-down</code> for a move down button</li>
+<li><code>collection-duplicate</code> for a duplicate button</li>
+</ul>
+<p>And:</p>
+<ul>
+<li><code>collection-action</code> for any of the above action</li>
+<li><code>collection-action-disabled</code> same, but when a button is disabled (no &quot;up&quot; at the top, etc.)</li>
+</ul>
+<p>Note that <code>collection</code> prefix can be changed using the <code>prefix</code> option.</p>
+<p><strong>Disable links</strong> (<a href="http://symfony-collection.fuz.org/symfony3/options/enableButtons">demo</a>)</p>
+<p>You can disable some buttons by using <code>allow_up</code>, <code>allow_down</code>, <code>allow_add</code>, <code>allow_remove</code><br />
+and <code>allow_duplicate</code> options. By default, all buttons except <code>duplicate</code> are enabled.</p>
+<p>For example, if you do not want your elements to be moved up and down, use:</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+         allow_up: false,
+         allow_down: false
+     });</code></pre>
+<p>If you are using the given form theme, <code>allow_add</code>, <code>allow_remove</code> and <code>allow_duplicate</code> are automatically<br />
+set following your form type configuration.</p>
+<p><strong>Set minimum and maximum of elements in the collection</strong> (<a href="http://symfony-collection.fuz.org/symfony3/options/numberCollectionElements">demo</a>)</p>
+<p>You can set the minimum of elements allowed in the collection by using the <code>min</code> option. By default, it is disabled (set to 0).</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+         min: 0
+     });</code></pre>
+<p>You can set the maximum of elements allowed in the collection by using the <code>max</code> option. By default, it is set to 100.</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+         max: 100
+     });</code></pre>
+<p>You can initialize your collection with a minimum of elements created (even if they do not exist on the data object) (<a href="http://symfony-collection.fuz.org/symfony3/options/givenMinimumElements">demo</a>).</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+         init_with_n_elements: 3
+     });</code></pre>
+<p><strong>Only one add button at the bottom</strong> (<a href="http://symfony-collection.fuz.org/symfony3/options/addButtonAtTheBottom">demo</a>)</p>
+<p>If you prefer having only one <code>add</code> button at the bottom of the collection instead of one add button per collection element, use the <code>add_at_the_end</code> option:</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+         add_at_the_end: true
+     });</code></pre>
+<p><strong>Customise add button location</strong> (<a href="http://symfony-collection.fuz.org/symfony3/options/buttons-custom-location">demo</a>)</p>
+<p>If you want to set a specific location for your add button (not close to each collection element, nor at the bottom of the collection),<br />
+you can use the <code>custom_add_location</code> option.</p>
+<p>JS:</p>
+<pre class="prettyprint linenums lang-language"><code>        $('.collectionA').collection({
+            custom_add_location: true
+        });</code></pre>
+<p>HTML:</p>
+<pre class="prettyprint linenums lang-language"><code>        &lt;button
+            data-collection="collectionA"
+            class="collection-action collection-add btn btn-success"
+        &gt;Add element to collection&lt;/button&gt;</code></pre>
+<p><strong>Hide useless buttons</strong> (<a href="http://symfony-collection.fuz.org/symfony3/options/hideMoveUpDown">demo</a>)</p>
+<p>By default, <code>move up</code> button is hidden on the first item, and <code>move down</code> button on the last one. You can make them appear<br />
+anyway by setting <code>hide_useless_buttons</code> to <code>false</code>. This can be useful if you want to beautify them using CSS, for example.</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+         hide_useless_buttons: true
+     });</code></pre>
+<p><strong>Events</strong> (<a href="http://symfony-collection.fuz.org/symfony3/options/eventCallbacks">demo</a>)</p>
+<p>There are <code>before_*</code> and <code>after_*</code> options that let you put callbacks before and after adding, deleting or moving<br />
+elements in the collection.</p>
+<ul>
+<li>
+<p><code>before_up</code>, <code>before_down</code>, <code>before_add</code> and <code>before_remove</code> are called before modifying the collection.<br />
+The modification will be cancelled if the callback you gave returned <code>false</code>, and will proceed if it returned <code>true</code><br />
+or <code>undefined</code>.</p>
+</li>
+<li>
+<p><code>after_up</code>, <code>after_down</code>, <code>after_add</code> and <code>after_remove</code> are called after modifying the collection.<br />
+The modification will be reverted if the callback you gave returned <code>false</code>.</p>
+</li>
+<li>
+<p><code>before_init</code> and <code>after_init</code> are called when a collection is initialized. No return value is expected.</p>
+</li>
+</ul>
+<p>Callback functions receive two arguments:</p>
+<ul>
+<li>
+<p><code>collection</code> references the div that contains your whole collection (the symfony2 field)</p>
+</li>
+<li>
+<p><code>element</code> is the element in the collection that have been added (or moved/deleted)</p>
+</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+         after_add: function(collection, element) {
+            // automatic backup or whatever
+            return true;
+         }
+     });</code></pre>
+<p><strong>Using the plugin without form theme</strong> (<a href="http://symfony-collection.fuz.org/symfony3/options/withoutFormTheme">demo</a>)</p>
+<p>The form theme aims to reduce the number of options required when activating the plugin. This is really useful<br />
+when you are dealing with collections of form collections. But you can still do it manually if you want, using the<br />
+following equivalents:</p>
+<pre class="prettyprint linenums lang-language"><code>    $('.my-selector').collection({
+        prototype_name: '{{ myForm.myCollection.vars.prototype.vars.name }}',
+        allow_add: false,
+        allow_remove: false,
+        name_prefix:  '{{ myForm.myCollection.vars.full_name }}'
+    });</code></pre>
+<p>Note that only <code>name_prefix</code> option is mandatory, all other ones have default values.</p>
+<p><strong>Fade in &amp; Fade out support</strong> (<a href="http://symfony-collection.fuz.org/symfony3/options/fadeInFadeOut">demo</a>)</p>
+<p>By default, when adding or removing an element, <code>fade</code> animation will make element movements smoother.<br />
+You can still disable this option by using <code>fade_in</code> and <code>fade_out</code> options.</p>
+<pre class="prettyprint linenums lang-language"><code>    $('.my-selector').collection({
+        fade_in: true,
+        fade_out: true
+    });</code></pre>
+<p><strong>Drag &amp; drop support</strong> (<a href="http://symfony-collection.fuz.org/symfony3/options/dragAndDrop">demo</a>)</p>
+<p>If you are using Jquery UI and have the <code>sortable</code> component available in your application, the <code>drag_drop</code> option is<br />
+automatically enabled and let you change your element positions using drag &amp; drop. You can disable this behaviour by explicitly<br />
+setting <code>drag_drop</code> option to false.</p>
+<p>If required, you can customize <code>sortable</code> by overloading options given to <code>jQuery.ui.sortable</code> using the <code>drag_drop_options</code> option.</p>
+<p>By default, your collection is initialized with the following options:</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+         drag_drop: true,
+         drag_drop_options: {
+            placeholder: 'ui-state-highlight'
+         }
+     });</code></pre>
+<p>Note that you should not overload <code>start</code> and <code>update</code> callbacks as they are used by this plugin, see<br />
+<code>drag_drop_start</code> and <code>drag_drop_update</code> options in advanced usage below for more details.</p>
+<p><strong>Change the children selector</strong></p>
+<p>By default, Symfony writes each element of a collection in a div below the collection itself. So<br />
+this plugin considers <code>&gt; div</code> as a default value to get collection elements. But, you may need<br />
+to display each element of your collection in a table, so you can change this value.</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+        elements_selector: '&gt; div'
+     });</code></pre>
+<p>You may use <code>&gt; tr</code>, <code>thead &gt; tr</code> or more specifically <code>tr.item</code> or just <code>.item</code> if you set <code>class="item"</code> at the top<br />
+of your item's form theme. The goal is to reference each item in the collection whatever the markup.</p>
+<p><strong>Change the parent selector</strong></p>
+<p>To be able to add elements to the collection, this plugin should be aware of the dom object that will contain them.</p>
+<p>By default, your collection elements will be located just below your collection, for example:</p>
+<pre class="prettyprint linenums lang-language"><code>    &lt;div id="collection"&gt;
+       &lt;div id="child_0"&gt;(...)&lt;/div&gt;
+       &lt;div id="child_1"&gt;(...)&lt;/div&gt;
+       &lt;div id="child_2"&gt;(...)&lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+<p>But you may need to put elements deeper in the dom, for example when you put elements in a table:</p>
+<pre class="prettyprint linenums lang-language"><code>    &lt;table id="collection"&gt;
+        &lt;tbody&gt;
+            &lt;tr id="child_0"&gt;(...)&lt;/tr&gt;
+            &lt;tr id="child_1"&gt;(...)&lt;/tr&gt;
+            &lt;tr id="child_2"&gt;(...)&lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;</code></pre>
+<p>In that example, a parent selector should be <code>table.collection tbody</code>.</p>
+<p>Note that you can use <code>%id%</code> inside <code>elements_parent_selector</code>, it will be automatically replaced by the<br />
+collection's id. This is particularly useful when you're dealing with nested collections.</p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+        // ...
+        children: [{
+            // ...
+            elements_parent_selector: '%id% tbody'
+        }]
+     });</code></pre>
+<p>Default value:</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+        elements_parent_selector: '%id%' // will be the collection itself
+     });</code></pre>
+<p><strong>Do not change field names</strong></p>
+<p>Symfony uses field names to order the collection, not the position of each element on the dom.<br />
+So by default, if you delete an element in the middle, all following elements will have their<br />
+index decreased of 1 (<code>field[3]</code> will become <code>field[2]</code> and so on) and if you add some elements<br />
+in the middle, all subsequent elements will see their index increase to leave the space for the<br />
+new one.</p>
+<p>With this implementation, you're sure to keep the right positions when clicking &quot;move up&quot; and<br />
+&quot;move down&quot; for example. But in some situations, you may not want to overwrite indexes,<br />
+most probably to maintain Doctrine relationships.</p>
+<p>Set the <code>preserve_names</code> option to <code>true</code> to never touch field names. But be aware that this<br />
+option will disable <code>allow_up</code>, <code>allow_down</code>, <code>drag_drop</code> options and will enforce<br />
+<code>add_at_the_end</code> to true.</p>
+<p>Default value:</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+        preserve_names: false
+     });</code></pre>
+<p><strong>Changing the action container tag</strong></p>
+<p>By default, without form theme, all actions are put inside a <code>&lt;div&gt;</code>. You<br />
+can overwrite this by setting the <code>action_container_tag</code> option, for<br />
+example if you want to put actions in a <code>&lt;td&gt;</code> instead.</p>
+<p>Default value:</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+        action_container_tag: 'div'
+     });</code></pre>
+<h1>Advanced usage</h1>
+<p><strong>Changing action's positions</strong> (<a href="http://symfony-collection.fuz.org/symfony3/advanced/customFormTheme">demo</a>)</p>
+<p>By default :</p>
+<ul>
+<li><code>add</code>, <code>move up</code>, <code>move down</code> and <code>remove</code> are located in this order below each collection's element</li>
+<li><code>add</code> button can be located at the bottom of the collection using <code>add_at_the_bottom</code> option</li>
+</ul>
+<p>You can change those button's positions by creating them manually anywhere in your form theme.</p>
+<p>You can use any custom clickable element as soon has it has one action class:</p>
+<ul>
+<li><code>collection-add</code> for an <code>add</code> button</li>
+<li><code>collection-remove</code> for a <code>remove</code> button</li>
+<li><code>collection-up</code> for a <code>move up</code> button</li>
+<li><code>collection-down</code> for a <code>move down</code> button</li>
+</ul>
+<p><em>Warning</em>: <code>collection</code> is taken from the <code>prefix</code> option: if you change the plugin's prefix, you should change this class too.</p>
+<p>Example:</p>
+<p>If we have a collection of text fields and want to display actions at the right side of each value instead of below,<br />
+we will use something like this:</p>
+<pre class="prettyprint linenums lang-language"><code>{% block MyType_label %}{% endblock %}
+{% block MyType_errors %}{% endblock %}
+
+{% block MyType_widget %}
+
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-8"&gt;
+            {{ form_widget(form.value) }}
+        &lt;/div&gt;
+        &lt;div class="col-md-2"&gt;
+            &lt;a href="#" class="collection-up btn btn-default"&gt;Move up&lt;/a&gt;
+            &lt;a href="#" class="collection-down btn btn-default"&gt;Move Down&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-2"&gt;
+            &lt;a href="#" class="collection-remove btn btn-default"&gt;Remove&lt;/a&gt;
+            &lt;a href="#" class="collection-add btn btn-default"&gt;Add&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+{% endblock %}</code></pre>
+<p><em>Note</em> : do not forget to set the <code>add</code> option when enabling the plugin, because if your collection is emptied,<br />
+the plugin will generate an <code>add</code> button based on the plugin's configuration.</p>
+<p><em>Tip</em>: when <code>add</code> buttons are put inside the collection's elements, a new element is created next to the clicked<br />
+element instead of at the end of the collection.</p>
+<p><strong>Advanced drag &amp; drop support</strong> (<a href="http://symfony-collection.fuz.org/symfony3/options/dragAndDrop">demo</a>)</p>
+<p>If you need to listen for <code>start</code> and/or <code>update</code> events from <code>jQuery.ui.sortable</code> in your collection,<br />
+you should not overload the <code>start</code> and <code>update</code> options in <code>drag_drop_options</code>, but use the built-in<br />
+<code>drag_drop_start</code> and <code>drag_drop_update</code> options instead:</p>
+<pre class="prettyprint linenums lang-language"><code>     $('.collection').collection({
+         drag_drop_start: function (event, ui, elements, element) {
+            // ...
+         },
+         drag_drop_update: function (event, ui, elements, element) {
+            // ...
+         }
+     });</code></pre>
+<p>Notes:</p>
+<ul>
+<li><code>event</code> and <code>ui</code> come from <code>jQuery.ui.sortable</code> <code>start</code> callback.</li>
+<li><code>elements</code> contains all elements from the impacted collection</li>
+<li><code>element</code> is the moved element in the collection</li>
+<li>If your callback returns false, the position change will be cancelled/reverted.</li>
+</ul>
+<p><strong>Collection of collections</strong> (<a href="http://symfony-collection.fuz.org/symfony3/advanced/collectionOfCollections">demo</a>)</p>
+<p>This plugin has the ability to manage a collection of form collections, but to avoid collisions, you should:</p>
+<p>In your form type:</p>
+<ul>
+<li>set a distinct <code>prototype_name</code> option and selector class for each of your collections</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>    -&gt;add('collections', 'collection',
+       array (
+            'type' =&gt; 'collection',
+            'label' =&gt; 'Add, move, remove collections',
+            'options' =&gt; array (
+                    'type' =&gt; 'text',
+                    'label' =&gt; 'Add, move, remove values',
+                    'options' =&gt; array (
+                            'label' =&gt; 'Value',
+                    ),
+                    'allow_add' =&gt; true,
+                    'allow_remove' =&gt; true,
+                    'prototype' =&gt; true,
+                    'prototype_name' =&gt; '__children_name__',
+                    'attr' =&gt; array (
+                            'class' =&gt; "child-collection",
+                    ),
+            ),
+            'allow_add' =&gt; true,
+            'allow_remove' =&gt; true,
+            'prototype' =&gt; true,
+            'prototype_name' =&gt; '__parent_name__',
+            'attr' =&gt; array (
+                    'class' =&gt; "parent-collection",
+            ),
+    ))</code></pre>
+<p>In the plugin options:</p>
+<ul>
+<li>
+<p>use a distinct collection prefix, so clicking <code>add</code> button on a collection will add an item to the right collection</p>
+</li>
+<li>
+<p>define children's selector in the <code>selector</code> attribute of <code>children</code> option (must select the root node of your children collections)</p>
+</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>     $('.parent-collection').collection({
+         prefix: 'parent',
+         children: [{
+             selector: '.child-collection',
+             prefix: 'child'
+             // ...
+         }]
+     });</code></pre>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/collection" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>collection</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/form-theme" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>form-theme</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/symfony" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>symfony</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/symfony-collection" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>symfony-collection</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/4152132?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/ninsuo" target="_blank" id="ownerName" class="sidebar-link">ninsuo</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">February 21, 2015</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">August 23, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://symfony-collection.fuz.org/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.7)</li><li>jquery-ui (&gt;=1.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4152132?v=4" alt="ninsuo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ninsuo" target="_blank" class="text-decoration-none fw-bold">ninsuo</a><p class="mb-0 text-muted small">261 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/539462?v=4" alt="enumag" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/enumag" target="_blank" class="text-decoration-none fw-bold">enumag</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2953145?v=4" alt="kl3sk" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kl3sk" target="_blank" class="text-decoration-none fw-bold">kl3sk</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2213999?v=4" alt="atallahade" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/atallahade" target="_blank" class="text-decoration-none fw-bold">atallahade</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3862362?v=4" alt="cblgh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cblgh" target="_blank" class="text-decoration-none fw-bold">cblgh</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2071331?v=4" alt="alexislefebvre" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/alexislefebvre" target="_blank" class="text-decoration-none fw-bold">alexislefebvre</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1463938?v=4" alt="blackbourna" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/blackbourna" target="_blank" class="text-decoration-none fw-bold">blackbourna</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/802209?v=4" alt="BenoitDuffez" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/BenoitDuffez" target="_blank" class="text-decoration-none fw-bold">BenoitDuffez</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/980674?v=4" alt="dkop" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dkop" target="_blank" class="text-decoration-none fw-bold">dkop</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1684954?v=4" alt="Develle" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Develle" target="_blank" class="text-decoration-none fw-bold">Develle</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8007308?v=4" alt="lolmx" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lolmx" target="_blank" class="text-decoration-none fw-bold">lolmx</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2051658?v=4" alt="leroy0211" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/leroy0211" target="_blank" class="text-decoration-none fw-bold">leroy0211</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3809439?v=4" alt="MrSpoocy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/MrSpoocy" target="_blank" class="text-decoration-none fw-bold">MrSpoocy</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/288535?v=4" alt="hason" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hason" target="_blank" class="text-decoration-none fw-bold">hason</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8344688?v=4" alt="revelt" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/revelt" target="_blank" class="text-decoration-none fw-bold">revelt</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8574828?v=4" alt="jeffhinshaw" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jeffhinshaw" target="_blank" class="text-decoration-none fw-bold">jeffhinshaw</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/525888?v=4" alt="makm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/makm" target="_blank" class="text-decoration-none fw-bold">makm</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/900769?v=4" alt="maryo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/maryo" target="_blank" class="text-decoration-none fw-bold">maryo</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6015579?v=4" alt="smcjones" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/smcjones" target="_blank" class="text-decoration-none fw-bold">smcjones</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+14 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
