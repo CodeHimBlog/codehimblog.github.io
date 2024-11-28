@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Awesome jQuery Step Wizard Plugin</title>
+    <meta name="description" content="jquery-smartwizard by techlab. The awesome jQuery step wizard plugin">
+    <meta name="author" content="techlab">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-smartwizard-by-techlab.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Smartwizard</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Smartwizard",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Smartwizard</h1>
+        <p id="packageDescription" class="text-muted">The awesome jQuery step wizard plugin</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">780</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.16 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">245</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">22</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/techlab/jquery-smartwizard/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/techlab/jquery-smartwizard" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery Smart Wizard v6</h1>
+<h3>The awesome step wizard plugin for jQuery</h3>
+<p><a href="https://travis-ci.org/techlab/jquery-smartwizard"><img src="https://travis-ci.org/techlab/jquery-smartwizard.svg?branch=master" alt="Build Status" /></a><br />
+<a href="https://www.npmjs.com/package/smartwizard"><img src="https://badge.fury.io/js/smartwizard.svg" alt="npm version" /></a><br />
+<a href="https://www.jsdelivr.com/package/npm/smartwizard"><img src="https://data.jsdelivr.com/v1/package/npm/smartwizard/badge?style=rounded" alt="jsDelivr Hits" /></a><br />
+<a href="https://www.npmjs.com/package/smartwizard"><img src="https://badgen.net/npm/dm/smartwizard?icon=npm" alt="Npm Downloadsl" /></a><br />
+<a href="https://raw.githubusercontent.com/techlab/jquery-smartwizard/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license" /></a><br />
+<a href="https://github.com/techlab/jquery-smartwizard"><img src="https://badgen.net/badge/icon/jquery-smartwizard?icon=github&amp;label=&amp;color=0da4d3" alt="GitHub Repo" /></a><br />
+<a href="https://github.com/sponsors/techlab"><img src="https://img.shields.io/badge/Sponsor-techlab-blue.svg?logo=github" alt="GitHub Sponsor" /></a><br />
+<a href="https://www.paypal.me/dipuraj"><img src="https://img.shields.io/badge/PayPal-dipuraj-blue.svg" alt="Donate on Paypal" /></a></p>
+<p><strong>jQuery Smart Wizard</strong> is an accessible step wizard plugin for jQuery. Provides a neat, usable and stylish user interface for your forms, checkout screen, registration process, etc. Easy to implement, Bootstrap compatiblity, customizable toolbars, themes and colors, events and Ajax support are few of the features.</p>
+<ul>
+<li><a href="https://techlaboratory.net/jquery-smartwizard">Homepage</a></li>
+<li><a href="https://techlaboratory.net/jquery-smartwizard#documentation">Documentation</a></li>
+<li><a href="https://techlaboratory.net/jquery-smartwizard#demo">Demos</a></li>
+<li><a href="https://stackoverflow.com/questions/tagged/smart-wizard">StackOverflow Q&amp;A</a></li>
+<li><a href="https://github.com/techlab/jquery-smartwizard/issues">GitHub Issues</a></li>
+</ul>
+<h2>Demos</h2>
+<ul>
+<li><a href="https://techlaboratory.net/projects/demo/jquery-smart-wizard/v6">Basic Example</a></li>
+<li><a href="https://techlaboratory.net/projects/demo/jquery-smart-wizard/v6/validation">Form Validation Example</a></li>
+<li><a href="https://techlaboratory.net/projects/demo/jquery-smart-wizard/v6/ajax">Ajax Content Example</a></li>
+<li><a href="https://techlaboratory.net/projects/demo/jquery-smart-wizard/v6/multiple">Multiple Wizard Example</a></li>
+<li><a href="https://techlaboratory.net/projects/demo/jquery-smart-wizard/v6/bootstrap-modal">Bootstrap Modal Example</a></li>
+<li><a href="https://techlaboratory.net/projects/demo/jquery-smart-wizard/v6/rtl">RTL (Right-to-left Language) Example</a></li>
+</ul>
+<h2>Screenshots</h2>
+<p><img src="https://techlaboratory.net/assets/media/jquery-smart-wizard/v6/gif/sw-6-validation.gif" alt="Smart Wizard Demo" />  </p>
+<p><img src="https://techlaboratory.net/assets/media/jquery-smart-wizard/v6/gif/sw-6-basic-green.gif" alt="Smart Wizard Demo" />   </p>
+<p><img src="https://techlaboratory.net/assets/media/jquery-smart-wizard/v6/sw-6-arrows-dark.png" alt="Smart Wizard Arrows Dark" />   </p>
+<p><img src="https://techlaboratory.net/assets/media/jquery-smart-wizard/v6/sw-6-round-lite-blue.png" alt="Smart Wizard Round" /> </p>
+<p><img src="https://techlaboratory.net/assets/media/jquery-smart-wizard/v6/sw-6-dots-red.png" alt="Smart Wizard Dots" /></p>
+<h2>Requirements</h2>
+<ul>
+<li><a href="https://jquery.com/">jQuery</a></li>
+</ul>
+<h2>Installation</h2>
+<h3><a href="https://www.npmjs.com/package/smartwizard">NPM</a></h3>
+<pre><code>npm install smartwizard</code></pre>
+<h3><a href="https://yarn.pm/smartwizard">Yarn</a></h3>
+<pre><code>yarn add smartwizard</code></pre>
+<h3><a href="https://www.jsdelivr.com/package/npm/smartwizard">CDN - jsDelivr</a></h3>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- CSS --&gt;
+&lt;link href="https://cdn.jsdelivr.net/npm/smartwizard@6/dist/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" /&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/smartwizard@6/dist/js/jquery.smartWizard.min.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
+<h3><a href="https://unpkg.com/browse/smartwizard/">CDN - UNPKG</a></h3>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- CSS --&gt;
+&lt;link href="https://unpkg.com/smartwizard@6/dist/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" /&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script src="https://unpkg.com/smartwizard@6/dist/js/jquery.smartWizard.min.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
+<h3>Common JS/Webpack</h3>
+<pre class="prettyprint linenums lang-language"><code>var $ = require( "jquery" );
+require( "smartwizard/dist/css/smart_wizard_all.css");
+const smartWizard = require("smartwizard");
+
+$(function() {
+    $('#smartwizard').smartWizard();
+});</code></pre>
+<h3>ES6/Babel</h3>
+<pre class="prettyprint linenums lang-language"><code>import $ from "jquery";
+import "smartwizard/dist/css/smart_wizard_all.css";
+import smartWizard from 'smartwizard';
+
+$(function() {
+    $('#smartwizard').smartWizard();
+});</code></pre>
+<h4>Note: you may have to install the required dependencies</h4>
+<pre class="prettyprint linenums lang-language"><code>npm i jquery
+npm i smartwizard
+
+// If you are using Webpack, install
+npm i webpack webpack-cli style-loader css-loader --save-dev</code></pre>
+<h3>Download</h3>
+<h4><a href="https://github.com/techlab/jquery-smartwizard/archive/master.zip">Download from GitHub</a></h4>
+<h2>Features</h2>
+<ul>
+<li>Easy to implement and minimal HTML required</li>
+<li>Supports all modern browsers</li>
+<li>Responsive CSS design</li>
+<li>Bootstrap compatible</li>
+<li>Cool themes included and can be easly customize</li>
+<li>Easy color cusomization using CSS variables</li>
+<li>Built-in transition animations (none|fade|slideHorizontal|slideVertical|slideSwing|css)</li>
+<li>Transition animations can be added easly by extending</li>
+<li>CSS Animations support for transition animations (Supports <a href="https://animate.style/">Animate.css</a>)</li>
+<li>Form validation support</li>
+<li>RTL(Right-to-left language) support</li>
+<li>Accessible controls</li>
+<li>External controls support</li>
+<li>Easy ajax content integration</li>
+<li>Keyboard navigation</li>
+<li>Auto content height adjustment</li>
+<li>Customizable toolbar and option to provide extra HTML</li>
+<li>Buit-in progressbar</li>
+<li>Buit-in loader</li>
+<li>Buit-in events</li>
+<li>UMD (Universal Module Definition) support</li>
+<li>Compatible with all jQuery versions (jQuery 1.11.1+, jQuery 3.6+, and jQuery Slim)</li>
+</ul>
+<h2>Usage</h2>
+<p>Include SmartWizard CSS</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link href="https://cdn.jsdelivr.net/npm/smartwizard@6/dist/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" /&gt;</code></pre>
+<p>Include HTML (<em>This is the basic HTML markup for the Smart Wizard. You can customize it by adding your on steps content</em>).</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- SmartWizard html --&gt;
+&lt;div id="smartwizard"&gt;
+    &lt;ul class="nav"&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#step-1"&gt;
+            &lt;div class="num"&gt;1&lt;/div&gt;
+            Step Title
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#step-2"&gt;
+            &lt;span class="num"&gt;2&lt;/span&gt;
+            Step Title
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#step-3"&gt;
+            &lt;span class="num"&gt;3&lt;/span&gt;
+            Step Title
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link " href="#step-4"&gt;
+            &lt;span class="num"&gt;4&lt;/span&gt;
+            Step Title
+          &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class="tab-content"&gt;
+        &lt;div id="step-1" class="tab-pane" role="tabpanel" aria-labelledby="step-1"&gt;
+            Step content
+        &lt;/div&gt;
+        &lt;div id="step-2" class="tab-pane" role="tabpanel" aria-labelledby="step-2"&gt;
+            Step content
+        &lt;/div&gt;
+        &lt;div id="step-3" class="tab-pane" role="tabpanel" aria-labelledby="step-3"&gt;
+            Step content
+        &lt;/div&gt;
+        &lt;div id="step-4" class="tab-pane" role="tabpanel" aria-labelledby="step-4"&gt;
+            Step content
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Include optional progressbar HTML --&gt;
+    &lt;div class="progress"&gt;
+      &lt;div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>Include jQuery (<em>ignore this if you have already included on the page</em>).  </p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;</code></pre>
+<p>Include SmartWizard plugin JavaScript</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="https://cdn.jsdelivr.net/npm/smartwizard@6/dist/js/jquery.smartWizard.min.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
+<p>Initialize the SmartWizard</p>
+<pre class="prettyprint linenums lang-language"><code>$(function() {
+    $('#smartwizard').smartWizard();
+});</code></pre>
+<p>That's it!   </p>
+<p>Please see the detailed <a href="https://techlaboratory.net/jquery-smartwizard#documentation">documentation</a> for implementation and usage.  </p>
+<h5>All options</h5>
+<pre class="prettyprint linenums lang-language"><code>$('#smartwizard').smartWizard({
+  selected: 0, // Initial selected step, 0 = first step
+  theme: 'basic', // theme for the wizard, related css need to include for other than basic theme
+  justified: true, // Nav menu justification. true/false
+  autoAdjustHeight: true, // Automatically adjust content height
+  backButtonSupport: true, // Enable the back button support
+  enableUrlHash: true, // Enable selection of the step based on url hash
+  transition: {
+      animation: 'none', // Animation effect on navigation, none|fade|slideHorizontal|slideVertical|slideSwing|css(Animation CSS class also need to specify)
+      speed: '400', // Animation speed. Not used if animation is 'css'
+      easing: '', // Animation easing. Not supported without a jQuery easing plugin. Not used if animation is 'css'
+      prefixCss: '', // Only used if animation is 'css'. Animation CSS prefix
+      fwdShowCss: '', // Only used if animation is 'css'. Step show Animation CSS on forward direction
+      fwdHideCss: '', // Only used if animation is 'css'. Step hide Animation CSS on forward direction
+      bckShowCss: '', // Only used if animation is 'css'. Step show Animation CSS on backward direction
+      bckHideCss: '', // Only used if animation is 'css'. Step hide Animation CSS on backward direction
+  },
+  toolbar: {
+      position: 'bottom', // none|top|bottom|both
+      showNextButton: true, // show/hide a Next button
+      showPreviousButton: true, // show/hide a Previous button
+      extraHtml: '' // Extra html to show on toolbar
+  },
+  anchor: {
+      enableNavigation: true, // Enable/Disable anchor navigation 
+      enableNavigationAlways: false, // Activates all anchors clickable always
+      enableDoneState: true, // Add done state on visited steps
+      markPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
+      unDoneOnBackNavigation: false, // While navigate back, done state will be cleared
+      enableDoneStateNavigation: true // Enable/Disable the done state navigation
+  },
+  keyboard: {
+      keyNavigation: true, // Enable/Disable keyboard navigation(left and right keys are used if enabled)
+      keyLeft: [37], // Left key code
+      keyRight: [39] // Right key code
+  },
+  lang: { // Language variables for button
+      next: 'Next',
+      previous: 'Previous'
+  },
+  disabledSteps: [], // Array Steps disabled
+  errorSteps: [], // Array Steps error
+  warningSteps: [], // Array Steps warning
+  hiddenSteps: [], // Hidden steps
+  getContent: null // Callback function for content loading
+});</code></pre>
+<h2>License</h2>
+<p><a href="https://github.com/techlab/jquery-smartwizard/blob/master/LICENSE">MIT License</a></p>
+<h2>Contribute</h2>
+<p>If you like the project please support with your contribution.</p>
+<p><a href="https://github.com/sponsors/techlab">GitHub Sponsor</a><br />
+<a href="https://www.paypal.me/dipuraj">Donate on Paypal</a></p>
+<p>Happy Coding :heart:</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h1>CHANGELOG</h1>
+<h2>v6.0.6</h2>
+<ul>
+<li><strong>Fixed:</strong> History back on step1 not working <a href="https://github.com/techlab/jquery-smartwizard/issues/152">https://github.com/techlab/jquery-smartwizard/issues/152</a></li>
+</ul>
+<h2>v6.0.5</h2>
+<ul>
+<li><strong>Fixed:</strong> unDoneOnBackNavigation not working <a href="https://github.com/techlab/jquery-smartwizard/issues/146">https://github.com/techlab/jquery-smartwizard/issues/146</a></li>
+</ul>
+<h2>v6.0.4</h2>
+<ul>
+<li><strong>Changed:</strong> Code optimizations</li>
+</ul>
+<h2>v6.0.3</h2>
+<ul>
+<li><strong>Fixed:</strong> Navigation not properly maintained when navigate fast</li>
+<li><strong>Changed:</strong> Code optimizations</li>
+</ul>
+<h2>v6.0.1</h2>
+<ul>
+<li>
+<p><strong>Added:</strong> Support for jQuery Slim version</p>
+</li>
+<li>
+<p><strong>Added:</strong> Public function <code>fixHeight</code>. See <a href="http://techlaboratory.net/jquery-smartwizard#func-fixheight">http://techlaboratory.net/jquery-smartwizard#func-fixheight</a></p>
+</li>
+<li>
+<p><strong>Added:</strong> Public function <code>setState</code>. See <a href="http://techlaboratory.net/jquery-smartwizard#func-setstate">http://techlaboratory.net/jquery-smartwizard#func-setstate</a> <a href="https://github.com/techlab/jquery-smartwizard/issues/131">https://github.com/techlab/jquery-smartwizard/issues/131</a></p>
+</li>
+<li>
+<p><strong>Added:</strong> Public function <code>unsetState</code>. See <a href="http://techlaboratory.net/jquery-smartwizard#func-unsetstate">http://techlaboratory.net/jquery-smartwizard#func-unsetstate</a></p>
+</li>
+<li>
+<p><strong>Added:</strong> Public function <code>getStepInfo</code> to get step index and total steps. See <a href="http://techlaboratory.net/jquery-smartwizard#func-getstepinfo">http://techlaboratory.net/jquery-smartwizard#func-getstepinfo</a></p>
+</li>
+<li>
+<p><strong>Added:</strong> <code>goToStep</code> function with force parameter. See <a href="http://techlaboratory.net/jquery-smartwizard#func-gotostep">http://techlaboratory.net/jquery-smartwizard#func-gotostep</a></p>
+</li>
+<li>
+<p><strong>Added:</strong> Built-in progressbar</p>
+</li>
+<li>
+<p><strong>Added:</strong> New themes, Square and Round</p>
+</li>
+<li>
+<p><strong>Added:</strong> Dots and Square these can have progressbar on navigation by adding <code>nav-progress</code> CSS Class.</p>
+</li>
+<li>
+<p><strong>Added:</strong> Colors are changable dynamically using CSS variables.</p>
+</li>
+<li>
+<p><strong>Added:</strong> Bootstrap 5 support</p>
+</li>
+<li>
+<p><strong>Added:</strong> Num(badge) class support on all themes</p>
+</li>
+<li>
+<p><strong>Added:</strong> RTL (Right-to-left language) support <a href="https://github.com/techlab/jquery-smartwizard/issues/72">https://github.com/techlab/jquery-smartwizard/issues/72</a></p>
+</li>
+<li>
+<p><strong>Added:</strong> <code>initialized</code> event . See <a href="http://techlaboratory.net/jquery-smartwizard#event-initialized">http://techlaboratory.net/jquery-smartwizard#event-initialized</a> <a href="https://github.com/techlab/jquery-smartwizard/issues/118">https://github.com/techlab/jquery-smartwizard/issues/118</a></p>
+</li>
+<li>
+<p><strong>Added:</strong> Move CSS class names to options</p>
+</li>
+<li>
+<p><strong>Added:</strong> Transition animations can be extended</p>
+</li>
+<li>
+<p><strong>Added:</strong> CSS Animations support on transition animations. Supports <a href="https://animate.style/">Animate.css</a></p>
+</li>
+<li>
+<p><strong>Changed:</strong> JavaScript and CSS code is rewritten  </p>
+</li>
+<li>
+<p><strong>Changed:</strong> Imporoved all CSS themes</p>
+</li>
+<li>
+<p><strong>Changed:</strong> Made most of the options can changed with <code>setOptions</code> function</p>
+</li>
+<li>
+<p><strong>Changed:</strong> Rewritten option names and properties with minimal and meaningful names</p>
+</li>
+<li>
+<p><strong>Changed:</strong> Improved transition animations</p>
+</li>
+<li>
+<p><strong>Fixed:</strong> Reset doesn't clear the existing steps of the error state. <a href="https://github.com/techlab/jquery-smartwizard/issues/134">https://github.com/techlab/jquery-smartwizard/issues/134</a></p>
+</li>
+<li>
+<p><strong>Fixed:</strong> <code>goToStep</code> method fails to recognize the correct step <a href="https://github.com/techlab/jquery-smartwizard/issues/133">https://github.com/techlab/jquery-smartwizard/issues/133</a></p>
+</li>
+<li>
+<p><strong>Fixed:</strong> URL Navigation to check if step visited. <a href="https://github.com/techlab/jquery-smartwizard/issues/140">https://github.com/techlab/jquery-smartwizard/issues/140</a></p>
+</li>
+<li>
+<p><strong>Fixed:</strong> Fixed and also added <code>fixHeight</code> public function to refresh content height. <a href="https://github.com/techlab/jquery-smartwizard/issues/142">https://github.com/techlab/jquery-smartwizard/issues/142</a> <a href="https://github.com/techlab/jquery-smartwizard/issues/116">https://github.com/techlab/jquery-smartwizard/issues/116</a> <a href="https://github.com/techlab/jquery-smartwizard/issues/88">https://github.com/techlab/jquery-smartwizard/issues/88</a> <a href="https://github.com/techlab/jquery-smartwizard/issues/114">https://github.com/techlab/jquery-smartwizard/issues/114</a> <a href="https://github.com/techlab/jquery-smartwizard/issues/101">https://github.com/techlab/jquery-smartwizard/issues/101</a></p>
+</li>
+<li>
+<p><strong>Fixed:</strong> CSS Files are empty <a href="https://github.com/techlab/jquery-smartwizard/issues/113">https://github.com/techlab/jquery-smartwizard/issues/113</a> </p>
+</li>
+<li>
+<p><strong>Fixed:</strong> stepNumber is incorrect on showStep event when no transition <a href="https://github.com/techlab/jquery-smartwizard/issues/112">https://github.com/techlab/jquery-smartwizard/issues/112</a></p>
+</li>
+<li>
+<p><strong>Fixed:</strong> showStep showing Null instead of index 0 on initializing <a href="https://github.com/techlab/jquery-smartwizard/issues/109">https://github.com/techlab/jquery-smartwizard/issues/109</a>  </p>
+</li>
+<li>
+<p><strong>Fixed:</strong> showStep's stepIndex contains previous index <a href="https://github.com/techlab/jquery-smartwizard/issues/103">https://github.com/techlab/jquery-smartwizard/issues/103</a>  </p>
+</li>
+<li>
+<p><strong>Fixed:</strong> Content not showing when used inside a Bootrap 4 modal <a href="https://github.com/techlab/jquery-smartwizard/issues/98">https://github.com/techlab/jquery-smartwizard/issues/98</a></p>
+</li>
+<li>
+<p><strong>Fixed:</strong> Other fixes <a href="https://github.com/techlab/jquery-smartwizard/issues/111">https://github.com/techlab/jquery-smartwizard/issues/111</a> <a href="https://github.com/techlab/jquery-smartwizard/issues/107">https://github.com/techlab/jquery-smartwizard/issues/107</a> <a href="https://github.com/techlab/jquery-smartwizard/issues/86">https://github.com/techlab/jquery-smartwizard/issues/86</a></p>
+</li>
+<li>
+<p><strong>Removed:</strong> <code>this.options.toolbar.buttonPosition</code> is removed</p>
+</li>
+<li>
+<p><strong>Removed:</strong> <code>cycleNavigation</code> is removed</p>
+</li>
+<li>
+<p><strong>Removed:</strong> Dark mode is removed. Added CSS variable support to change any colors. See example for dark colors.</p>
+</li>
+</ul>
+<h2>v5.1.1</h2>
+<ul>
+<li><strong>Added:</strong> Accessibility</li>
+<li><strong>Added:</strong> Dark Mode support for all themes</li>
+<li><strong>Added:</strong>  New theme &quot;Progress&quot;</li>
+<li><strong>Added:</strong> leaveStep event has new parameter =&gt; nextStepIndex</li>
+<li><strong>Added:</strong> UMD (<a href="https://github.com/umdjs/umd">Universal Module Definition</a>) support </li>
+<li><strong>Changed:</strong> <code>leaveStep</code> event has new parameter =&gt; <code>nextStepIndex</code></li>
+<li><strong>Fixed:</strong> <code>stepDirection</code> on <code>leaveStep</code> event</li>
+<li><strong>Fixed:</strong> Incorrect stepDirection on leaveStep event (#91)</li>
+</ul>
+<h2>v5.0.0</h2>
+<p><strong>All new jQuery SmartWizard v5</strong></p>
+<ul>
+<li><strong>Added:</strong> External Ajax content support via Promise</li>
+<li><strong>Added:</strong> New navigation animations</li>
+<li><strong>Added:</strong> New themes</li>
+<li><strong>Added:</strong> New public functions</li>
+<li><strong>Added:</strong> New content loading event</li>
+<li><strong>Added:</strong> Standalone CSS with Bootstrap compatibility</li>
+<li><strong>Changed:</strong> Complete rewrite of JavaScript and CSS</li>
+<li><strong>Changed:</strong> CSS to SCSS</li>
+<li><strong>Changed:</strong> Updated all build packages</li>
+</ul>
+<h2>v4.4.1</h2>
+<ul>
+<li><strong>Added:</strong> Two new public functions, <code>goToStep</code> and <code>hiddenSteps</code>.</li>
+<li><strong>Changed:</strong> Build system packages updated to latest available.</li>
+</ul>
+<h2>v4.3.1</h2>
+<ul>
+<li><strong>Added:</strong> Bootstrap 4 support added</li>
+<li><strong>Added:</strong> Yarn package manager added</li>
+<li><strong>Added:</strong> Ajax loader UI updated</li>
+<li><strong>Fixed:</strong> Fixes and improvements</li>
+</ul>
+<h2>v4.2.2</h2>
+<ul>
+<li><strong>Added:</strong> Example for multiple wizard in a page</li>
+<li><strong>Fixed:</strong> Auto height adjust when content height change after step is shown</li>
+</ul>
+<h2>v4.2.1</h2>
+<ul>
+<li><strong>Added:</strong> Gulp automation tasks</li>
+<li><strong>Added:</strong> Validation and bundling</li>
+<li><strong>Added:</strong> Test file</li>
+<li><strong>Changed:</strong> Repository structure with <code>src</code>, <code>dist</code>, <code>test</code></li>
+</ul>
+<h2>v4.1.7</h2>
+<ul>
+<li><strong>Updated:</strong> Themes (dots and circles)</li>
+<li><strong>Updated:</strong> Examples pages</li>
+</ul>
+<h2>v4.1.5</h2>
+<ul>
+<li><strong>Updated:</strong> Updated to v4.1.5</li>
+<li><strong>Added:</strong> New option <code>contentCache</code></li>
+<li><strong>Added:</strong> On or Off caching of step contents on ajax calls, if false content is fetched always from ajax url</li>
+<li><strong>Added:</strong> New option <code>ajaxSettings</code></li>
+<li><strong>Added:</strong> Extra settings for step ajax content calls</li>
+</ul>
+<h2>v4.1.2</h2>
+<p><strong><em>Patch version</em></strong></p>
+<ul>
+<li><strong>Changed:</strong> Option <code>markAllPreviousStepsAsDone</code> is enabled for <code>selected</code> option </li>
+<li><strong>Changed:</strong> While reset, set hash is now controllable using <code>showStepURLhash</code> option</li>
+</ul>
+<h2>v4.1.1</h2>
+<ul>
+<li><strong>Added:</strong> New options <code>showStepURLhash</code>, <code>removeDoneStepOnNavigateBack</code>, <code>markAllPreviousStepsAsDone</code>, <code>hiddenSteps</code></li>
+<li><strong>Added:</strong> New parameter on <code>showStep</code> event, name: <code>stepPosition</code> values: <code>first</code>, <code>final</code>, <code>middle</code></li>
+<li><strong>Added:</strong> New public method, <code>stepState</code> to Dynamically disable/enable hide/show steps</li>
+<li><strong>Added:</strong> Compatible with latest jQuery versions (jQuery 1.9+, jQuery 2+, jQuery 3+)</li>
+<li><strong>Changed:</strong> Option <code>toolbarExtraButtons</code> now accepts elements as jQuery objects</li>
+<li><strong>Changed:</strong> Code optimized</li>
+<li><strong>Fixed:</strong> General bugs</li>
+</ul>
+<h2>v4.0.5</h2>
+<ul>
+<li><strong>Added:</strong> Get direction navigaion on <code>leaveStep</code> and <code>showStep</code> events</li>
+<li><strong>Added:</strong> New Events <code>beginReset</code>, <code>endReset</code>, <code>themeChanged</code></li>
+<li><strong>Updated:</strong> Example pages</li>
+</ul>
+<h2>v4.0.1</h2>
+<ul>
+<li><strong>Changed:</strong> Completely rewritten the code from scratch</li>
+<li><strong>Added:</strong> Bootstrap support</li>
+<li><strong>Added:</strong> Theme support</li>
+<li><strong>Added:</strong> Customizable toolbar</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/ajax-support" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>ajax-support</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/bootstrap" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>bootstrap</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/bootstrap-support" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>bootstrap-support</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/hacktoberfest" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>hacktoberfest</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-smart-wizard" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-smart-wizard</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-wizard-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-wizard-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jsdelivr" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jsdelivr</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/step-wizard" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>step-wizard</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/wizard" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>wizard</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/511092?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/techlab" target="_blank" id="ownerName" class="sidebar-link">techlab</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">February 9, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 25, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Other</span>
+    </div>
+	        <a href="http://techlaboratory.net/jquery-smartwizard" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>@babel/core (^7.18.5)</li><li>@babel/preset-env (^7.18.2)</li><li>autoprefixer (^10.4.7)</li><li>browser-sync (^2.27.10)</li><li>del (^6.1.1)</li><li>gulp (^4.0.2)</li><li>gulp-babel (^8.0.0)</li><li>gulp-clean-css (^4.3.0)</li><li>gulp-cssbeautify (^3.0.1)</li><li>gulp-dart-sass (^1.0.2)</li><li>gulp-jasmine (^4.0.0)</li><li>gulp-jshint (^2.1.0)</li><li>gulp-postcss (^9.0.1)</li><li>gulp-rename (^2.0.0)</li><li>gulp-sass (^5.1.0)</li><li>gulp-uglify (^3.0.2)</li><li>jasmine-core (^4.2.0)</li><li>jasmine-jquery (^2.1.1)</li><li>jshint (^2.13.4)</li><li>karma (^6.4.0)</li><li>karma-chrome-launcher (^3.1.1)</li><li>karma-jasmine (^5.1.0)</li><li>karma-jasmine-jquery (^0.1.1)</li><li>karma-spec-reporter (0.0.34)</li><li>sass (^1.53.0)</li><li>uglify-save-license (^0.4.1)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/511092?v=4" alt="techlab" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/techlab" target="_blank" class="text-decoration-none fw-bold">techlab</a><p class="mb-0 text-muted small">72 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/8293543?v=4" alt="rabrowne85" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rabrowne85" target="_blank" class="text-decoration-none fw-bold">rabrowne85</a><p class="mb-0 text-muted small">23 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2120577?v=4" alt="fabriciobegalli" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fabriciobegalli" target="_blank" class="text-decoration-none fw-bold">fabriciobegalli</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5919809?v=4" alt="simkojacint" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/simkojacint" target="_blank" class="text-decoration-none fw-bold">simkojacint</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/7114259?v=4" alt="nafplann" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nafplann" target="_blank" class="text-decoration-none fw-bold">nafplann</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6707401?v=4" alt="AnushkaKRajasingha" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/AnushkaKRajasingha" target="_blank" class="text-decoration-none fw-bold">AnushkaKRajasingha</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9203851?v=4" alt="felipealvesprestes" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/felipealvesprestes" target="_blank" class="text-decoration-none fw-bold">felipealvesprestes</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/113989?v=4" alt="mul14" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mul14" target="_blank" class="text-decoration-none fw-bold">mul14</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/16200219?v=4" alt="pierlon" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pierlon" target="_blank" class="text-decoration-none fw-bold">pierlon</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/221931?v=4" alt="robertobermejo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/robertobermejo" target="_blank" class="text-decoration-none fw-bold">robertobermejo</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/584860?v=4" alt="naiquevin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/naiquevin" target="_blank" class="text-decoration-none fw-bold">naiquevin</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/28592052?v=4" alt="mjl321" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mjl321" target="_blank" class="text-decoration-none fw-bold">mjl321</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/40906364?v=4" alt="sfulham" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sfulham" target="_blank" class="text-decoration-none fw-bold">sfulham</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+8 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
