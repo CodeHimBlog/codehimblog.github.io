@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gritter by Robinbrouwer</title>
+    <meta name="description" content="This Ruby on Rails gem allows you to easily add Growl-like notifications to your application using a jQuery plugin called &#039;gritter&#039;.">
+    <meta name="author" content="RobinBrouwer">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/gritter-by-robinbrouwer.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Gritter</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Gritter",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Gritter</h1>
+        <p id="packageDescription" class="text-muted">This Ruby on Rails gem allows you to easily add Growl-like notifications to your application using a jQuery plugin called &#039;gritter&#039;.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">566</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.5 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">92</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">17</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/RobinBrouwer/gritter/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/RobinBrouwer/gritter" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>gritter</h1>
+<pre><code>version 1.2.0
+Robin Brouwer</code></pre>
+<p>This Ruby on Rails gem allows you to easily add Growl-like notifications to your application using a jQuery plugin called 'gritter'. <a href="http://boedesign.com/demos/gritter/">Check out the demo for this plugin</a>.</p>
+<h2>Note</h2>
+<p>Are you using Rails 3.0 or lower? Check out <a href="https://github.com/RobinBrouwer/gritter/tree/old">the 'old' branch on Github</a>. Want support for IE6?<br />
+Also check out that branch, because the newer version of gritter inside this gem dropped support for it.</p>
+<h2>Installation</h2>
+<p>You can use this gem by putting the following inside your Gemfile:</p>
+<pre><code>gem "gritter", "1.2.0"</code></pre>
+<p>Now generate the locale for gritter:</p>
+<pre><code>rails g gritter:locale</code></pre>
+<p>Add the following to <code>/app/assets/javascripts/application.js</code>:</p>
+<pre><code>//= require gritter</code></pre>
+<p>And the following to <code>/app/assets/stylesheets/application.css</code>:</p>
+<pre><code>*= require gritter</code></pre>
+<p>And that's it!</p>
+<h2>Changes</h2>
+<p>Version 1.2.0 changes (02/08/2015):</p>
+<pre><code>- Added Rails 4 support.
+- Added on_click support.</code></pre>
+<p>Version 1.1.0 changes (31/01/2013):</p>
+<pre><code>- All gflash messages can also be stored in the Rails flash messages (optional).
+- Added i18n interpolation for gflash messages.
+- Added default values for the gflash messages.
+- Fixed several other issues.</code></pre>
+<p>Version 1.0.3 changes (26/01/2013):</p>
+<pre><code>- :nodom_wrap added by indykish</code></pre>
+<p>Version 1.0.2 changes (03/09/2012):</p>
+<pre><code>- Merged pull request #22 (namespaced controllers gflash fix).</code></pre>
+<p>Version 1.0.1 changes (23/01/2012):</p>
+<pre><code>- Fixed gflash(:js =&gt; true) in Ruby 1.9.2 and 1.9.3.</code></pre>
+<p>Version 1.0.0 changes (17/11/2011):</p>
+<pre><code>- Gritter now only works in Rails 3.1. You should check out the 'old' branch for other Rails versions.
+- Removed everything that isn't needed for Rails 3.1.
+- Added new version for the gritter jQuery plugin (1.7.1).
+- Added position option for your gritter messages.
+- Locale isn't automatically generated. You need to use the gritter:locale generator.
+- Adding locale-based gflash messages got a bit easier.
+- You can now use a :gflash option inside the redirect_to method.
+- Using SCSS image_path instead of ERB image_path inside the CSS.
+- Added CSS3 support for gritter.
+- Refactored some parts of the gem.
+- Changed the README quite a bit.</code></pre>
+<h2>Usage</h2>
+<p>There are several helpers you can use with gritter. All of them print out Javascript code without script-tags.</p>
+<pre class="prettyprint linenums lang-language"><code>add_gritter
+remove_gritter
+extend_gritter</code></pre>
+<p>To add the script-tags we added another function called <code>js</code>. It allows you to easily add script-tags around your javascript.<br />
+It can be used in combination with gritter, but also other Javascript you want to run.</p>
+<p>The most popular feature of this gem is <code>gflash</code>. This replaces the regular flash messages in Rails and<br />
+automatically puts these in gritter boxes. Read further to learn more about gflash.</p>
+<h3>add_gritter</h3>
+<p>The <code>add_gritter</code> helper allows you to add a gritter notification to your application.<br />
+It outputs Javascript directly into your template. It works like this inside a <code>js.erb</code> file:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;%= add_gritter("This is a notification just for you!") %&gt;</code></pre>
+<p>The <code>add_gritter</code> helper allows you to easily set the text for the notification.<br />
+When you want to change the title, just pass the <code>:title</code> argument to the helper:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;%= add_gritter("This is a notification just for you!", :title =&gt; "Please pay attention!") %&gt;</code></pre>
+<p>There are many more arguments you can pass to the helper:</p>
+<pre class="prettyprint linenums lang-language"><code>:title =&gt; "This is a title"            # =&gt; Allows you to set the title for the notification.
+:image =&gt; "/images/rails.png"          # =&gt; Allows you to add an image to the notification.
+:sticky =&gt; true                        # =&gt; Allows you to make the notification sticky.
+:time =&gt; 4000                          # =&gt; Allows you to set the time when the notification disappears (in ms).
+:class_name =&gt; "gritter"               # =&gt; Allows you to set a different classname.
+:before_open =&gt; "alert('Opening!');"   # =&gt; Execute javascript before opening.
+:after_open =&gt; "alert('Opened!');"     # =&gt; Execute javascript after opening.
+:on_click =&gt; "alert('Clicked!');"      # =&gt; Execute javascript on click (close button click is ignored).
+:before_close =&gt; "alert('Closing!');"  # =&gt; Execute javascript before closing.
+:after_close =&gt; "alert('Closed!');"    # =&gt; Execute javascript after closing.
+:nodom_wrap  =&gt; true                   # =&gt; Removes the DOM wrap on the produced JQuery code. Default, this argument
+                                       #    is false or not present, hence you always get a DOM wrap.</code></pre>
+<p>The <code>:image</code> argument also allows you to easily set five different images:</p>
+<pre class="prettyprint linenums lang-language"><code>:success
+:warning
+:notice
+:error
+:progress</code></pre>
+<p>It works like this in combination with flash[:notice] and the <code>js</code> helper:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;%= js add_gritter(flash[:notice], :image =&gt; :notice, :title =&gt; "Pay attention!", :sticky =&gt; true) %&gt;</code></pre>
+<p>The js helper is almost the same as the javascript_tag helper. The difference is that you can pass several scripts at once.<br />
+You don't need to pass these scripts as an Array. The helper also adds a linebreak (\n) after each script.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;%= js add_gritter("See my notification"), add_gritter("Another one") %&gt;</code></pre>
+<p>It puts all the scripts inside a single script-tag.</p>
+<p>And that's it! You just added Growl-like notifications to your Rails application.<br />
+It's great for all kinds of notifications, including the flash notifications you want to show to your users.</p>
+<h3>remove_gritter</h3>
+<p>The <code>remove_gritter</code> helper removes all gritter notifications from the screen. You can use it inside a <code>js.erb</code> file:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;%= remove_gritter %&gt;</code></pre>
+<p>You can pass two extra arguments to this helper.</p>
+<pre class="prettyprint linenums lang-language"><code>:before_close =&gt; "alert('Closing!');"  # =&gt; Execute javascript before closing.
+:after_close =&gt; "alert('Closed!');"    # =&gt; Execute javascript after closing.</code></pre>
+<p>You can also use the <code>js</code> helper to add script-tags around this helper.</p>
+<h3>extend_gritter</h3>
+<p>The <code>extend_gritter</code> helper allows you to set the default gritter options.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;%= extend_gritter :time =&gt; 1000 %&gt;</code></pre>
+<p>These are the options you can pass to <code>extend_gritter</code>:</p>
+<pre class="prettyprint linenums lang-language"><code>:fade_in_speed =&gt; "medium"            # =&gt; Allows you to set the fade-in-speed. Can be String or Integer (in ms).
+:fade_out_speed =&gt; 1000               # =&gt; Allows you to set the fade-out-speed. Can be String or Integer (in ms).
+:time =&gt; 8000                         # =&gt; Allows you to set the time the notification stays. Must be an Integer (in ms).
+:position =&gt; :bottom_left             # =&gt; Allows you to set the position for all gritter messages.</code></pre>
+<p>The :fade_in_speed and :fade_out_speed options accept the following Strings:</p>
+<pre class="prettyprint linenums lang-language"><code>"slow"
+"medium"
+"fast"</code></pre>
+<p>The :position option accepts four different Symbols:</p>
+<pre class="prettyprint linenums lang-language"><code>:top_left
+:top_right      # Default
+:bottom_left
+:bottom_right</code></pre>
+<p>You can also use the <code>js</code> helper , add_gritter(&quot;Another one&quot;) to add script-tags around this helper.</p>
+<h3>gflash</h3>
+<p>The <code>gflash</code> helper is a different kind of <code>flash[:notice]</code> message. It uses the <code>add_gritter</code> helper and the default images used in this gem.<br />
+It saves the messages in <code>session[:gflash]</code>. It can also save the messages inside the default Rails flash messages (<code>flash</code> and <code>flash.now</code>).<br />
+To do this, you have to add the following to an initializer: <code>Gritter.rails_flash_fallback = true</code>.</p>
+<p>Add the following inside your controller action:</p>
+<pre class="prettyprint linenums lang-language"><code>def create
+  @product = Product.new(product_params)
+  if @product.save
+    gflash :success =&gt; "The product has been created successfully!"
+    redirect_to(@product)
+  else
+    gflash :now, :error =&gt; "Something went wrong."
+    render("new")
+  end
+end</code></pre>
+<p>You can add <code>:now</code> to add the flash message to <code>flash.now</code> as well.</p>
+<p>Now you can add the following to your layout view inside the body-tag:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;%= gflash %&gt;</code></pre>
+<p>The flash-message will be shown with 'success.png' as the image and 'Success' as the title when the product is saved.<br />
+To change the title you can add the following to the <code>gflash</code> helper inside the layout:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;%= gflash :success =&gt; "It has been successful!" %&gt;</code></pre>
+<p>Now the default title will be overwritten. You can also use gflash inside <code>js.erb</code> files:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;%= gflash :js =&gt; true %&gt;</code></pre>
+<p>The :success key isn't the only option supported by gflash. You can use the following gflash options:</p>
+<pre class="prettyprint linenums lang-language"><code>:success
+:warning
+:notice
+:error
+:progress</code></pre>
+<p>Each uses the corresponding image and title. You can also add multiple gritter notifications at once:</p>
+<pre class="prettyprint linenums lang-language"><code>def create
+  gflash :success =&gt; "The product has been created successfully!", :notice =&gt; "This product doesn't have a category."
+end</code></pre>
+<p>Besides passing the exact text inside the controller, gflash also supports locales (both for messages and titles).<br />
+You can generate <code>gflash.en.yml</code> by using the following command: <code>rails g gritter:locale</code>.<br />
+Here you can set the locales for all your gflash messages and the titles. It works like this:</p>
+<pre><code>en:
+  gflash:
+    titles:
+      notice: "Custom notice title"
+      success: "Success"
+      warning: "Warning"
+      error: "Error"
+      progress: "Progress"
+    products: # =&gt; Controller name
+      create: # =&gt; Action name
+        notice: "Custom notice message"case</code></pre>
+<p>It's also possible to add default gflash messages.</p>
+<pre><code>en:
+  gflash:
+    defaults:
+      success: "This is a notification"
+      error: "Something went wrong"
+      create:
+        success: "Successfully created!"
+        error: "Something went wrong. Please take a look at the form to see what went wrong."</code></pre>
+<p>Now you can do the following inside your Controller:</p>
+<pre class="prettyprint linenums lang-language"><code>def create
+  gflash :notice =&gt; true
+end</code></pre>
+<p>The locales for the <code>:notice</code> title and message will now be used. You can still pass a <code>String</code> to override a locale.<br />
+Since gritter version 1.0 you can also do the following to add the gritter messages:</p>
+<pre class="prettyprint linenums lang-language"><code>def create
+  gflash :notice, :success, :error
+end</code></pre>
+<p>No need to pass <code>true</code> to each key.</p>
+<p>You can change the default time, sticky and class_name options for each gritter message.<br />
+This is done inside the Controller and works like this:</p>
+<pre class="prettyprint linenums lang-language"><code>gflash :success =&gt; { :time =&gt; 2000, :class_name =&gt; "my_class", :sticky =&gt; true }
+gflash :success =&gt; { :value =&gt; true, :time =&gt; 2000, :class_name =&gt; "my_class", :sticky =&gt; true }
+gflash :error =&gt; { :value =&gt; "Custom error", :time =&gt; 3000, :class_name =&gt; "my_error_class", :sticky =&gt; false }</code></pre>
+<p>When you don't pass a <code>:value</code> it uses the locale. Same goes for when you pass <code>true</code> to <code>:value</code>. When you give <code>:value</code> a String, that String will be used to display the message. Here's another example:</p>
+<pre class="prettyprint linenums lang-language"><code>def create
+  @user = User.new(params[:user])
+  if @user.save
+    gflash :success =&gt; { :value =&gt; "Account has been created!", :time =&gt; 5000 },
+           :notice =&gt; { :value =&gt; "You have received an e-mail notification.", :sticky =&gt; true }
+    redirect_to :root
+  else
+    gflash :error =&gt; { :value =&gt; "Something went wrong.", :time =&gt; 4000 },
+           :warning =&gt; { :value =&gt; "Some fields weren't filled in correctly.", :time =&gt; 7000 }
+    render :new
+  end
+end</code></pre>
+<p>You can also use gflash directly inside the <code>redirect_to</code> method.</p>
+<pre class="prettyprint linenums lang-language"><code>def create
+  redirect_to @post, :gflash =&gt; [:notice, :success]
+end
+
+def destroy
+  redirect_to :posts, :gflash =&gt; { :warning =&gt; "You just deleted something important." }
+end
+
+def logged_in?
+  redirect_to :login, :gflash =&gt; { :error =&gt; { :value =&gt; "You are not logged in!", :sticky =&gt; true } }
+end</code></pre>
+<p>You can use i18n interpolation like this:</p>
+<pre class="prettyprint linenums lang-language"><code>redirect_to :root, :flash =&gt; { :success =&gt; true, :locals =&gt; { :name =&gt; @user.name, :email =&gt; @user.email } }
+gflash :success, :info, :locals =&gt; { :name =&gt; @user.name, :email =&gt; @user.email }
+gflash :success, :info =&gt; { :locals =&gt; { :name =&gt; @user.name, :email =&gt; @user.email } }</code></pre>
+<p>Inside <code>gflash.en.yml</code> you can do the following:</p>
+<pre class="prettyprint linenums lang-language"><code>success: "Welcome, %{name}."
+info: "Your e-mail address has been changed to: %{email}."</code></pre>
+<p>And that's how you add gflash to your Rails application!</p>
+<h3>Using <code>nodom_wrap</code> to change the jQuery code produced</h3>
+<h5>Default (when nodom_wrap is not present)</h5>
+<p>The <code>add_gritter</code> helper produces JQuery code as shown below.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;%= add_gritter(:success, "See my notification") %&gt;</code></pre>
+<pre class="prettyprint linenums lang-language"><code>jQuery(function() { 
+  jQuery.gritter.add({ image: '/assets/success.png', title: 'Success', text: 'See my notification' });
+});</code></pre>
+<h5>nodom_wrap</h5>
+<p>If you don't want to wrap <code>jQuery.gritter.add({</code> inside a <code>jQuery(function()</code> then include the argument <code>:nodom_wrap</code></p>
+<p>The modified <code>add_gritter</code> helper with <code>nodom_wrap</code> looks like this:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;%= add_gritter(:success, "See my notification", :nodom_wrap =&gt; true )%&gt;</code></pre>
+<p>With <code>:nodom_wrap</code> included, the following JQuery code will be produced.</p>
+<pre class="prettyprint linenums lang-language"><code>jQuery.gritter.add({
+  image: '/assets/success.png',
+  title: 'Success',
+  text: 'The product has been created successfully!'
+}); </code></pre>
+<p>The argument can be included in <code>gflash</code> helper as well.</p>
+<pre class="prettyprint linenums lang-language"><code>gflash :nodom_wrap =&gt; true</code></pre>
+<h2>Copyright</h2>
+<p>Copyright (C) 2010 Robin Brouwer</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of<br />
+this software and associated documentation files (the &quot;Software&quot;), to deal in<br />
+the Software without restriction, including without limitation the rights to<br />
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies<br />
+of the Software, and to permit persons to whom the Software is furnished to do<br />
+so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all<br />
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br />
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br />
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br />
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br />
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br />
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE<br />
+SOFTWARE.</p>
+<h2>Special Thanks</h2>
+<p>We'd like to express our gratitude to the following people:</p>
+<p>Many thanks to Jordan Boesch, creator of the AWESOME jQuery plugin gritter.<br />
+<a href="http://boedesign.com/blog/2009/07/11/growl-for-jquery-gritter/">http://boedesign.com/blog/2009/07/11/growl-for-jquery-gritter/</a></p>
+<p>Also special thanks to Liam McKay for creating the awesome icons!<br />
+<a href="http://wefunction.com/2008/07/function-free-icon-set/">http://wefunction.com/2008/07/function-free-icon-set/</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/395830?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/RobinBrouwer" target="_blank" id="ownerName" class="sidebar-link">RobinBrouwer</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 15, 2010</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 18, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="http://rubygems.org/gems/gritter" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/395830?v=4" alt="RobinBrouwer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/RobinBrouwer" target="_blank" class="text-decoration-none fw-bold">RobinBrouwer</a><p class="mb-0 text-muted small">16 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/426230?v=4" alt="mikdiet" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mikdiet" target="_blank" class="text-decoration-none fw-bold">mikdiet</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/123756?v=4" alt="burgua" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/burgua" target="_blank" class="text-decoration-none fw-bold">burgua</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/237128?v=4" alt="finist" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/finist" target="_blank" class="text-decoration-none fw-bold">finist</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/328428?v=4" alt="vinniefranco" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vinniefranco" target="_blank" class="text-decoration-none fw-bold">vinniefranco</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/248779?v=4" alt="linuxonrails" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/linuxonrails" target="_blank" class="text-decoration-none fw-bold">linuxonrails</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+1 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
