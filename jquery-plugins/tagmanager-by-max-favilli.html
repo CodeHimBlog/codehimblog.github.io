@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A jQuery Plugin (working Nicely with Twitter Bootstrap)</title>
+    <meta name="description" content="tagmanager by max-favilli. A jQuery plugin (working nicely with twitter bootstrap)">
+    <meta name="author" content="max-favilli">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/tagmanager-by-max-favilli.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Tagmanager</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tagmanager",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Tagmanager</h1>
+        <p id="packageDescription" class="text-muted">A jQuery plugin (working nicely with twitter bootstrap)</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">770</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.21 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">236</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">71</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/max-favilli/tagmanager/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/max-favilli/tagmanager" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1><a href="http://welldonethings.com/tags/manager/v3">Tags Manager v3.0.2</a></h1>
+<p>A jQuery plugin to create tag input fields, which works nicely with <a href="http://twitter.github.io/typeahead.js/">Twitter Typeahead.js</a> and <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a></p>
+<h2><a href="http://welldonethings.com/tags/manager/v3">Demo and Documentation</a></h2>
+<p>See a demo and read all the documentation at <a href="http://welldonethings.com/tags/manager/v3">http://welldonethings.com/tags/manager/v3</a>.</p>
+<p>The documentation is automatically synced from Github, so if you'd like to make a correction please modify <code>/docs/docs.html</code> and raise a pull request.</p>
+<h2>Quick Start</h2>
+<p>Clone the repo, <code>git clone https://github.com/max-favilli/tagmanager.git</code>, or <a href="https://github.com/max-favilli/tagmanager/zipball/master">download the latest release</a>.</p>
+<h2>Reporting Issues</h2>
+<ul>
+<li>Please report issues on <a href="https://github.com/max-favilli/tagmanager/issues">our Github Issue Tracker</a>.</li>
+<li>In your report, please provide a <a href="http://jsfiddle.net">jsfiddle</a> (preferred), gist, or pasted HTML/JS with steps to <strong>reproduce</strong> the issue.</li>
+<li>Before reporting:
+<ul>
+<li>Make sure you are using the latest master JS and CSS.</li>
+<li>Check the <a href="http://welldonethings.com/tags/manager/v3">documentation</a> and existing open issues.</li>
+</ul></li>
+<li>Issues which we are unable to reproduce or without activity after a few weeks will be closed.</li>
+<li>Pull requests, documentation requests, and enhancement ideas are welcome.</li>
+</ul>
+<h2>Package Management Tools</h2>
+<p>We include the required files to use third-party package management tools in our repo. We rely on the community to help<br />
+maintain these files, as the authors of this plugin do not use these tools. If you notice any issue with these or would like<br />
+to add support for a new package manager, please raise a Pull Request.</p>
+<ul>
+<li>Nuget: PM&gt; Install-Package Bootstrap-tagmanager</li>
+<li>Bower</li>
+<li>Composer (PHP)</li>
+<li>package.json (node.js)</li>
+<li>TypeScript</li>
+</ul>
+<h2>Authors</h2>
+<p><strong>Max Favilli</strong></p>
+<ul>
+<li><a href="http://maxfavilli.com">http://maxfavilli.com</a></li>
+<li><a href="http://twitter.com/maxfavilli">http://twitter.com/maxfavilli</a></li>
+<li><a href="http://github.com/max-favilli">http://github.com/max-favilli</a></li>
+</ul>
+<p><strong>Johnny Shields</strong> (v 2.4.0+)</p>
+<ul>
+<li><a href="http://github.com/johnnyshields">http://github.com/johnnyshields</a></li>
+</ul>
+<h2>Special Thanks</h2>
+<p>The initial development of Tags Manager was funded by (now defunct) <a href="http://www.logmymoney.com">LogMyMoney.com</a>, a simple online personal finance tool.</p>
+<h2>Copyright and License</h2>
+<p>Copyright 2012 MaxFavilli.com</p>
+<p>Licensed under the Mozilla Public License, Version 2.0<br />
+You may not use this work except in compliance with the License.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h2>3.0.1 - 2013-12-12</h2>
+<ul>
+<li>Issue #180: Add 'tags' method to retrieve tags (LukeL99)</li>
+<li>Issue #169: Fix 'AjaxPushAllTags' option (mpseidel)</li>
+<li>Issue #153: Correct documentation related to hiddenTagListId (fogs)</li>
+<li>Issue #178: Fix 'OnlyTagList' option (sebet)</li>
+<li>Issue #176: Add bower.json for Bower support (noirbizarre)</li>
+<li>Issue #168: Constructor should not return undefined (aurbano)</li>
+<li>Issue #163: Add new event tm:duplicated when there is a duplicated tag (aurbano)</li>
+<li>Use jQuery.map() instead of native JS map() (apperception)</li>
+<li>Add composer.json for PHP projects (fogs)</li>
+<li>Fix various issues related to jQuery refactor (dave0783)</li>
+</ul>
+<h2>3.0.0 - 2013-08-22</h2>
+<ul>
+<li>Refactor tagmanager.js to confirm to jQuery plugin standards (dave0783)</li>
+<li>Add jQuery event hooks (dave0783)</li>
+<li>Add support for Twitter Typeahead.js</li>
+<li>Drop support for Twitter Bootstrap v2 Typeahead (which is abandoned since Bootstrap v3)</li>
+<li>Refactor tagmanager.js to confirm to jQuery plugin standards (dave0783)</li>
+<li>Rename all files from &quot;bootstrap-tagmanager&quot; to &quot;tagmanager&quot;</li>
+</ul>
+<h2>2.4.3 - 2012-12-12</h2>
+<ul>
+<li><strong>FINAL RELEASE</strong> on 2.x branch. 2.x code is now in deep freeze.</li>
+<li>Issue #185: Sort out versioning for Bower (joelleibow)</li>
+<li>Issue #148: Run library through js-lint (uxtx)</li>
+<li>Issue #147: Correct issue with AJAX method GET (was being coerced to POST) (brearley)</li>
+<li>Issue #143: Do not suppress tab key if the field is currently empty (pangwa)</li>
+<li>Issue #142: Fix popover bug (martinbuezas)</li>
+<li>Persist options state when calling tagManager actions (popTag, pushTag, etc.) (dincho)</li>
+<li>Use $.map instead of native .map (danmusk)</li>
+</ul>
+<h2>2.4.2 - 2012-07-15</h2>
+<ul>
+<li>Issue #132: Escape tags for display instead of emitting it as raw HTML (chkwok)</li>
+<li>Issue #125: Fixed AjaxPushAllTags (henryoswald)</li>
+<li>Issue #125: Fix typeaheadSource check if object or function in pushTag (zkwentz)</li>
+<li>Issue #127: Replace array.indexOf with $.inArray to support IE8 (Leonidaz)</li>
+<li>Issue #126: Fix for onlyTagList true when pushing tag (zkwentz)</li>
+<li>Issue #118: Fix problem with onlyTagList when using typeaheadAjaxSource (stalinb87)</li>
+<li>Issue #110: re-add onlyTagList feature which was accidentally deleted (johnnyshields)</li>
+<li>Wrap jQuery in a no-conflict wrapper; use <code>$</code> instead of <code>jQuery</code> consistently (johnnyshields)</li>
+<li>Issue #94: 'pushTag' method does not call validator if configured (johnnyshields)</li>
+</ul>
+<h2>2.4.1 - 2012-05-04</h2>
+<ul>
+<li>Feature: Added API parameter 'AjaxPushParameters', which enables a custom payload on AJAX push requests (kingofthejungle)</li>
+<li>Feature: Added support for 'prefilled' parameter as a function (cliffordwhansen)</li>
+<li>Feature: Added API parameter 'typeaheadAjaxMethod' as &quot;GET&quot; or &quot;POST&quot; (default &quot;POST&quot;) for retrieving typeahead values via AJAX (santoshs)</li>
+<li>Feature: Auto-detect whether delimiters codes should be handled as keys or chars, and use appropriate event callback, i.e. keydown for keys, keypress for chars (johnnyshields)</li>
+<li>Feature: Use the first ASCII (non-key) delimiter code as the base delimiter for string storage (johnnyshields)</li>
+<li>Refactor: Move event initializer for AjaxPushAllTags into same place as other event initializers, and removed isInitialized variable (johnnyshields)</li>
+<li>Refactor: Cleanup trimTag() method and apply it consistently to pushTag() (johnnyshields)</li>
+<li>Fix: Correct typo of delimeters -&gt; delimiters in Typrescript definition (johnnyshields)</li>
+<li>Fix: Clean whitespace around tags when calling pushTag() (quocvu)</li>
+<li>Fix: Version 2.4.0 was erronously requiring that the tag input have class attribute specified (johnnyshields)</li>
+<li>Fix: jQuery.browser method is no longer supported as of jQuery 1.9, so using native JS method (johnnyshields)</li>
+<li>Deprecations: Mark parameters preventSubmitOnEnter, isClearInputOnEsc, deleteTagsOnBackspace as deprecated, as they will be hardcoded to their default values in v3.0 (johnnyshields)</li>
+</ul>
+<h2>2.4.0</h2>
+<ul>
+<li>Feature: Use Bootstrap semantic colors in LESS and CSS (johnnyshields)</li>
+<li>Feature: Added auto-prefill from hidden field if a hiddenTagListId option is set (johnnyshields)</li>
+<li>Feature: Interpolate tag class from the input control class (johnnyshields)</li>
+<li>Feature: API parameter 'typeaheadDelegate' should always pass-through to the Bootstrap typehead instance (johnnyshields)</li>
+<li>Feature: (#53) Add new API parameter 'AjaxPushAllTags', which enables a mode to sync the entire tag state via AJAX (rather than incrementally) each time a tag is added/deleted. (sumegizoltan)</li>
+<li>Feature: Add new API parameter 'onlyTagList' which constrains the input to only options within the typeaheadSource (rishijain)</li>
+<li>Feature: Add Typescript definitition (sumegizoltan)</li>
+<li>Fix: TM initialization before the DOM tree (kenshin)</li>
+<li>Fix: Correct spelling API parameter delimeter -&gt; delimiter. Old spelling still works (johnnyshields)</li>
+<li>Fix: Prevent double-initialization of TagManager (johnnyshields)</li>
+<li>Fix: (#11) Fix selection from Typeahead list in Firefox (sumegizoltan)</li>
+<li>Fix: (#51) Fix name selector by adding quotes (sumegizoltan)</li>
+<li>Fix: (#49, #50) Fix typeahead overrides when typeahead is not used (sumegizoltan)</li>
+<li>Admin: Added docs.html and docs.css which are pulled by welldonethings.com every 5 minutes (max-favilli)</li>
+<li>Admin: Add package.json (max-favilli)</li>
+<li>Admin: Add CHANGELOG.md (johnnyshields)</li>
+<li>Sync: Regenerate CSS from LESS</li>
+</ul>
+<h2>2.3.0 and prior</h2>
+<p>Refer to GitHub commit history: <a href="https://github.com/max-favilli/tagmanager/commits/master">https://github.com/max-favilli/tagmanager/commits/master</a></p>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/tags" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>tags</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/manager" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>manager</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/input" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>input</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/form" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>form</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/1472899?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/max-favilli" target="_blank" id="ownerName" class="sidebar-link">max-favilli</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">May 5, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">August 17, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Mozilla Public License 2.0</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (1)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1472899?v=4" alt="max-favilli" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/max-favilli" target="_blank" class="text-decoration-none fw-bold">max-favilli</a><p class="mb-0 text-muted small">78 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/27655?v=4" alt="johnnyshields" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/johnnyshields" target="_blank" class="text-decoration-none fw-bold">johnnyshields</a><p class="mb-0 text-muted small">65 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/57563804?v=4" alt="sumegizoltan73" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sumegizoltan73" target="_blank" class="text-decoration-none fw-bold">sumegizoltan73</a><p class="mb-0 text-muted small">11 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2255040?v=4" alt="hmvs" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hmvs" target="_blank" class="text-decoration-none fw-bold">hmvs</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/444047?v=4" alt="BryanRice800" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/BryanRice800" target="_blank" class="text-decoration-none fw-bold">BryanRice800</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/225563?v=4" alt="ajeliuc" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ajeliuc" target="_blank" class="text-decoration-none fw-bold">ajeliuc</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1066160?v=4" alt="hhaidar" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hhaidar" target="_blank" class="text-decoration-none fw-bold">hhaidar</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/209153?v=4" alt="michalsvec" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/michalsvec" target="_blank" class="text-decoration-none fw-bold">michalsvec</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4832?v=4" alt="zkwentz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zkwentz" target="_blank" class="text-decoration-none fw-bold">zkwentz</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5322982?v=4" alt="totymedli" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/totymedli" target="_blank" class="text-decoration-none fw-bold">totymedli</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2734563?v=4" alt="fogs" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fogs" target="_blank" class="text-decoration-none fw-bold">fogs</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/138606?v=4" alt="matsu911" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/matsu911" target="_blank" class="text-decoration-none fw-bold">matsu911</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/74743?v=4" alt="coffeeaddict" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/coffeeaddict" target="_blank" class="text-decoration-none fw-bold">coffeeaddict</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1764971?v=4" alt="Dric" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Dric" target="_blank" class="text-decoration-none fw-bold">Dric</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/66110?v=4" alt="DoppioJP" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/DoppioJP" target="_blank" class="text-decoration-none fw-bold">DoppioJP</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5871371?v=4" alt="sveracarrasco" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sveracarrasco" target="_blank" class="text-decoration-none fw-bold">sveracarrasco</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1641461?v=4" alt="intuxicated" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/intuxicated" target="_blank" class="text-decoration-none fw-bold">intuxicated</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5708311?v=4" alt="apperception" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apperception" target="_blank" class="text-decoration-none fw-bold">apperception</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2002591?v=4" alt="Yohn" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Yohn" target="_blank" class="text-decoration-none fw-bold">Yohn</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/531949?v=4" alt="keshin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/keshin" target="_blank" class="text-decoration-none fw-bold">keshin</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/436912?v=4" alt="troex" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/troex" target="_blank" class="text-decoration-none fw-bold">troex</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2779135?v=4" alt="stalinb87" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/stalinb87" target="_blank" class="text-decoration-none fw-bold">stalinb87</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/144370?v=4" alt="santoshs" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/santoshs" target="_blank" class="text-decoration-none fw-bold">santoshs</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/82220?v=4" alt="auxbuss" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/auxbuss" target="_blank" class="text-decoration-none fw-bold">auxbuss</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/138888?v=4" alt="LukeL99" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LukeL99" target="_blank" class="text-decoration-none fw-bold">LukeL99</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/329182?v=4" alt="Leonidaz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Leonidaz" target="_blank" class="text-decoration-none fw-bold">Leonidaz</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/343366?v=4" alt="henryoswald" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/henryoswald" target="_blank" class="text-decoration-none fw-bold">henryoswald</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/123312?v=4" alt="glendel" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/glendel" target="_blank" class="text-decoration-none fw-bold">glendel</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/78481?v=4" alt="cliffordwhansen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cliffordwhansen" target="_blank" class="text-decoration-none fw-bold">cliffordwhansen</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2281170?v=4" alt="chkwok" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/chkwok" target="_blank" class="text-decoration-none fw-bold">chkwok</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
