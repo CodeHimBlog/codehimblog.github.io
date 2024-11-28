@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js HTML Editor by Haixing Hu</title>
+    <meta name="description" content="A Vue.js component implementing the HTML editor with the jQuery summernote plugin.">
+    <meta name="author" content="Haixing-Hu">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/vue-html-editor-by-haixing-hu.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Vue.js HTML Editor</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Vue.js HTML Editor",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Vue.js HTML Editor</h1>
+        <p id="packageDescription" class="text-muted">A Vue.js component implementing the HTML editor with the jQuery summernote plugin.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">388</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.52 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">106</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">16</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/Haixing-Hu/vue-html-editor/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/Haixing-Hu/vue-html-editor" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>vue-html-editor</h1>
+<p><a href="https://circleci.com/gh/Haixing-Hu/vue-html-editor/tree/master"><img src="https://circleci.com/gh/Haixing-Hu/vue-html-editor/tree/master.svg?style=shield" alt="Build Status" /></a><br />
+<a href="https://coveralls.io/github/Haixing-Hu/vue-html-editor?branch=master"><img src="https://coveralls.io/repos/Haixing-Hu/vue-html-editor/badge.svg?branch=master&amp;service=github" alt="Coverage Status" /></a><br />
+<a href="https://www.bithound.io/github/Haixing-Hu/vue-html-editor"><img src="https://www.bithound.io/github/Haixing-Hu/vue-html-editor/badges/score.svg" alt="bitHound Score" /></a><br />
+<a href="https://david-dm.org/Haixing-Hu/vue-html-editor"><img src="https://david-dm.org/Haixing-Hu/vue-html-editor.svg" alt="Dependency Status" /></a><br />
+<a href="https://david-dm.org/Haixing-Hu/vue-html-editor#info=devDependencies"><img src="https://david-dm.org/Haixing-Hu/vue-html-editor/dev-status.svg" alt="devDependency Status" /></a></p>
+<p>A Vue.js component implementing the HTML editor with the <a href="https://github.com/summernote/summernote">jQuery summernote plugin</a>.</p>
+<h1>Demo</h1>
+<p>The demo page is <a href="http://haixing-hu.github.io/vue-html-editor/demo.html">HERE</a>.</p>
+<p><img src="screenshot.png" alt="Screenshot" /></p>
+<h1>Requirements</h1>
+<ul>
+<li><a href="https://github.com/yyx990803/vue">Vue.js</a> <code>^1.0.24</code></li>
+<li><a href="https://github.com/summernote/summernote">Summernote</a> <code>^0.8.1</code></li>
+</ul>
+<h1>Instllation</h1>
+<h2>npm</h2>
+<pre class="prettyprint linenums lang-language"><code>$ npm install vue-html-editor</code></pre>
+<h2>bower</h2>
+<pre class="prettyprint linenums lang-language"><code>$ bower install vue-html-editor</code></pre>
+<h1>Usage</h1>
+<p>The HTML snippets are as follows:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="container" id="app"&gt;
+  &lt;vue-html-editor name="html-editor" :model.sync="text"&gt;&lt;/vue-html-editor&gt;
+  &lt;div style="margin-top:40px"&gt;
+    &lt;div&gt; The HTML contents are as follows:&lt;/div&gt;
+    &lt;hr&gt;
+    &lt;div &gt;{{{text}}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>The Javascript snippets are as follows:</p>
+<pre class="prettyprint linenums lang-language"><code>var Vue = require("vue");
+
+var vm = new Vue({
+  el: "#app",
+  components: {
+    "vue-html-editor": require("vue-html-editor")
+  },
+  data: {
+    text: "Hello World!"
+  }
+});</code></pre>
+<h1>Component Properties</h1>
+<h2><code>model</code></h2>
+<p>The model bind to the control, which must be a two way binding variable.</p>
+<p>Note that the value of model could be set to <code>null</code>, and in that case the<br />
+text content of the editor will be set to an empty string. While, if the text<br />
+content of the editor is set to empty, the value of the model will be set to<br />
+<code>null</code> instead of an empty string.</p>
+<h2><code>language</code></h2>
+<p>The optional code of language used by the summernote plugin. Default value is <code>'en-US'</code>.<br />
+Note that the language code passed to this property must be a language code together<br />
+with a country code. This limitation is due to names of the i18n localizaiton files<br />
+of the summernote plugin.</p>
+<h2><code>height</code></h2>
+<p>The optional height of the HTML editor, in pixels. Default value is 160.</p>
+<h2><code>minHeight</code></h2>
+<p>The optional minimum height of the HTML editor, in pixels. Default value is 160.</p>
+<h2><code>maxHeight</code></h2>
+<p>The optional maximum height of the HTML editor, in pixels. Default value is 800.</p>
+<h2><code>name</code></h2>
+<p>The optional name of the textarea control.</p>
+<h2><code>toolbar</code></h2>
+<p>The optional configuration of toolbar of the HTML editor. This value will be<br />
+passed to the constructor of the summernote directly. Default value is as<br />
+follows</p>
+<pre><code>[
+  ["font", ["bold", "italic", "underline", "clear"]],
+  ["fontsize", ["fontsize"]],
+  ["para", ["ul", "ol", "paragraph"]],
+  ["color", ["color"]],
+  ["insert", ["link", "picture", "hr"]]
+]</code></pre>
+<h1>API</h1>
+<h2><code>control</code></h2>
+<p>This property is a reference to the JQuery selection of the base texearea<br />
+control. It could be used to call the APIs of summernote. For example,<br />
+<code>editor.control.code(val)</code> will set the HTML content of the editor to the<br />
+specified value, where <code>editor</code> is the reference to the <code>vue-html-editor</code><br />
+component.</p>
+<h1>Contributing</h1>
+<ul>
+<li>Fork it !</li>
+<li>Create your top branch from <code>dev</code>: <code>git branch my-new-topic origin/dev</code></li>
+<li>Commit your changes: <code>git commit -am 'Add some topic'</code></li>
+<li>Push to the branch: <code>git push origin my-new-topic</code></li>
+<li>Submit a pull request to <code>dev</code> branch of <code>Haixing-Hu/vue-html-editor</code> repository !</li>
+</ul>
+<h1>Building and Testing</h1>
+<p>First you should install all depended NPM packages. The NPM packages are used<br />
+for building and testing this package.</p>
+<pre class="prettyprint linenums lang-language"><code>$ npm install</code></pre>
+<p>Then install all depended bower packages. The bower packages are depended by<br />
+this packages.</p>
+<pre class="prettyprint linenums lang-language"><code>$ bower install</code></pre>
+<p>Now you can build the project.</p>
+<pre class="prettyprint linenums lang-language"><code>$ gulp build</code></pre>
+<p>The following command will test the project.</p>
+<pre class="prettyprint linenums lang-language"><code>$ gulp test</code></pre>
+<p>The following command will perform the test and generate a coverage report.</p>
+<pre class="prettyprint linenums lang-language"><code>$ gulp test:coverage</code></pre>
+<p>The following command will perform the test, generate a coverage report, and<br />
+upload the coverage report to <a href="https://coveralls.io/">coveralls.io</a>.</p>
+<pre class="prettyprint linenums lang-language"><code>$ gulp test:coveralls</code></pre>
+<p>You can also run <code>bower install</code> and <code>gulp build</code> together with the following<br />
+command:</p>
+<pre class="prettyprint linenums lang-language"><code>npm run build</code></pre>
+<p>Or run <code>bower install</code> and <code>gulp test:coveralls</code> together with the following<br />
+command:</p>
+<pre class="prettyprint linenums lang-language"><code>npm run test</code></pre>
+<h1>License</h1>
+<p><a href="http://opensource.org/licenses/MIT">The MIT License</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/802093?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/Haixing-Hu" target="_blank" id="ownerName" class="sidebar-link">Haixing-Hu</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 4, 2015</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">August 12, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://haixing-hu.github.io/vue-html-editor/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>bower (^1.7.9)</li><li>bower-update-all (^0.1.2)</li><li>del (^2.2.0)</li><li>run-sequence (^1.2.1)</li><li>bower-webpack-plugin (^0.1.9)</li><li>gulp (^3.9.1)</li><li>gulp-util (^3.0.7)</li><li>webpack (^1.13.1)</li><li>mocha (^2.5.3)</li><li>karma (^0.13.22)</li><li>karma-chrome-launcher (^1.0.1)</li><li>karma-safari-launcher (^1.0.0)</li><li>karma-firefox-launcher (^1.0.0)</li><li>karma-phantomjs-launcher (^1.0.0)</li><li>karma-sauce-launcher (^1.0.0)</li><li>karma-mocha (^1.0.1)</li><li>karma-mocha-reporter (^2.0.4)</li><li>karma-coverage (^1.0.0)</li><li>karma-coveralls (^1.1.2)</li><li>karma-sourcemap-loader (^0.3.7)</li><li>karma-webpack (^1.7.0)</li><li>phantomjs-prebuilt (^2.1.7)</li><li>istanbul (^0.4.3)</li><li>istanbul-instrumenter-loader (^0.2.0)</li><li>vue (^1.0.24)</li><li>vue-loader (^8.5.2)</li><li>vue-html-loader (^1.2.2)</li><li>vue-style-loader (^1.0.0)</li><li>vue-hot-reload-api (^1.2.0)</li><li>raw-loader (^0.5.1)</li><li>html-loader (^0.4.3)</li><li>css-loader (^0.23.1)</li><li>file-loader (^0.8.5)</li><li>babel-loader (^6.2.4)</li><li>babel-core (^6.8.0)</li><li>babel-plugin-transform-runtime (^6.8.0)</li><li>babel-runtime (^6.0.0)</li><li>babel-preset-es2015 (^6.6.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/802093?v=4" alt="Haixing-Hu" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Haixing-Hu" target="_blank" class="text-decoration-none fw-bold">Haixing-Hu</a><p class="mb-0 text-muted small">19 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
