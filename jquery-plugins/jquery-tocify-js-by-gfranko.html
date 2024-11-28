@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery.tocify.js by Gfranko</title>
+    <meta name="description" content="A jQuery Table of Contents plugin that can be themed with Twitter Bootstrap or jQueryUI.">
+    <meta name="author" content="gfranko">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-tocify-js-by-gfranko.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jquery.tocify.js</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jquery.tocify.js",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jquery.tocify.js</h1>
+        <p id="packageDescription" class="text-muted">A jQuery Table of Contents plugin that can be themed with Twitter Bootstrap or jQueryUI.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">926</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.74 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">216</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">45</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/gfranko/jquery.tocify.js/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/gfranko/jquery.tocify.js" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h2>jquery.tocify.js - jQuery Table of Contents</h2>
+<p>Note: I haven't had time to maintain this repository for the last few years, so if anyone would like a particular fix just send me a tip via Paypal (gfranko5@yahoo.com) and I'll look into it</p>
+<p>A jQuery plugin that dynamically generates a table of contents. Tocify can be optionally styled with <strong>Twitter Bootstrap</strong> or <strong>jQueryUI Themeroller</strong>, and optionally animated with jQuery show/hide effects. Tocify also optionally provides support for <strong>smooth scrolling</strong>, <strong>scroll highlighting</strong>, <strong>scroll page extending</strong>, and <strong>forward and back button support</strong>.</p>
+<p><a href="http://gregfranko.com/jquery.tocify.js/">Homepage</a></p>
+<p><a href="http://gregfranko.com/jquery.tocify.js/docs/jquery.tocify.html">Annotated Source Code</a></p>
+<p><strong>Notable Features</strong></p>
+<ul>
+<li>
+<p>Themeable with <strong>Twitter Bootstrap</strong> or <strong>jQueryUI Themeroller</strong></p>
+</li>
+<li>
+<p>Supports dynamic scroll and click <strong>jQuery show/hide effects</strong></p>
+</li>
+<li>
+<p>Supports forward and back button support</p>
+</li>
+<li>
+<p>Supports <strong>smooth scrolling</strong> animations</p>
+</li>
+<li>
+<p>Supports dynamic <strong>scroll highlighting</strong></p>
+</li>
+<li>
+<p>Supports a <strong>page extender</strong> option to make sure a page is big enough to scroll to all table of content items</p>
+</li>
+<li>
+<p>Passes <strong>jsHint</strong> with no errors</p>
+</li>
+</ul>
+<h2>Requirements</h2>
+<p>jQuery 1.7.2+</p>
+<p>jQueryUI Widget Factory 1.8.21+</p>
+<h2>Browser Support</h2>
+<p>IE7+, Firefox 4+, Chrome, Safari 4+, and Opera 11+</p>
+<h2>Unit Tests</h2>
+<p>All unit tests are written using the Jasmine Framework (Work in Progress)</p>
+<h2>Contributing</h2>
+<p>Take care to maintain the existing coding style. Add Jasmine unit tests for any new or changed functionality. Lint and test your code using <a href="https://github.com/cowboy/grunt">grunt</a>.</p>
+<p>If you plan to contribute to <code>Tocify</code> in the future, keep in mind that you should make sure your code passes the Grunt checks.  If you are on Windows (like me) remember you need to run the grunt command using <code>grunt.cmd</code>.  Also, if you have trouble getting the Jasmine Unit Tests to work with PhantomJS 1.5 (the current release), install PhantomJS 1.3.</p>
+<p>After you have verified your code, send a pull request to the <code>Tocify</code> dev branch.  After you send a pull request, you will hear back from me shortly after I review your code.</p>
+<p>You'll find source code in the &quot;src&quot; subdirectory!</p>
+<h2>Forking</h2>
+<p>If you find that you need a feature that Tocify does not currently support, either let me know via the Tocify issue tracker, or fork Tocify on Github and easily extend it to create your own widget!</p>
+<h3>Contributors</h3>
+<ul>
+<li>
+<p><a href="https://github.com/gfranko">Greg Franko</a></p>
+</li>
+<li>
+<p><a href="https://github.com/matryer">Mat Ryer, Stretchr</a></p>
+</li>
+</ul>
+<h2>Change Log</h2>
+<p><code>1.9.0</code> - October 1, 2013</p>
+<ul>
+<li>Fixed hash/history bug that threw a JavaScript error when the hash did not match an element on the page</li>
+<li>Fixed bug that affected TOC items which contained special characters <a href="https://github.com/gfranko/jquery.tocify.js/issues/45">#45</a></li>
+<li>Only register scroll event handlers if necessary <a href="https://github.com/gfranko/jquery.tocify.js/issues/44">#44</a></li>
+<li>Improved the <strong>scrollHistory</strong> option <a href="https://github.com/gfranko/jquery.tocify.js/issues/42">#42</a></li>
+</ul>
+<p><code>1.8.0</code> - September 16, 2013</p>
+<ul>
+<li>Added the <strong>scrollHistory</strong> option <a href="https://github.com/gfranko/jquery.tocify.js/issues/41">#41</a></li>
+<li>Fixed a non-linear nesting bug <a href="https://github.com/gfranko/jquery.tocify.js/issues/40">#40</a></li>
+</ul>
+<p><code>1.7.0</code> - August 13, 2013</p>
+<ul>
+<li>Improved the CSS class naming convention and implementation</li>
+<li>Improved the CSS handling if no TOC items are found</li>
+</ul>
+<p><code>1.6.0</code> - July 24, 2013</p>
+<ul>
+<li>Updated the <strong>scrollTo</strong>  option to accept a function <a href="https://github.com/gfranko/jquery.tocify.js/issues/33">#33</a></li>
+<li>Improved scroll highlighting accuracy <a href="https://github.com/gfranko/jquery.tocify.js/issues/33">#33</a> <a href="https://github.com/gfranko/jquery.tocify.js/issues/34">#34</a> Special thanks to <a href="https://github.com/andrekampert">Andre Kampert</a> for this improvement</li>
+</ul>
+<p><code>1.5.0</code> - July 5, 2013</p>
+<ul>
+<li>Added <strong>ignoreSelector</strong>  option<a href="https://github.com/gfranko/jquery.tocify.js/issues/27">#27</a></li>
+<li>Removed the bootstrap docs.css class names <a href="https://github.com/gfranko/jquery.tocify.js/issues/30">#30</a></li>
+<li>Fixed a bug when there is only one selector <a href="https://github.com/gfranko/jquery.tocify.js/issues/31">#31</a></li>
+</ul>
+<p><code>1.4.0</code> - April 6, 2013</p>
+<p>**Special thanks to <a href="https://github.com/joaquincasares">Joaquin Casares</a> for helping with this release</p>
+<ul>
+<li>Fixed colon-spaced hashes <a href="https://github.com/gfranko/jquery.tocify.js/pull/22">#22</a></li>
+<li>Created solution for long menu's on smaller screens <a href="https://github.com/gfranko/jquery.tocify.js/issues/19">#19</a></li>
+<li>Fixed scroll jump bug with <strong>extendPage</strong> option <a href="https://github.com/gfranko/jquery.tocify.js/issues/20">#20</a></li>
+<li>Added the <strong>highlightDefault</strong> option <a href="https://github.com/gfranko/jquery.tocify.js/issues/21">#21</a></li>
+<li>Fixed a TOC item nesting bug <a href="https://github.com/gfranko/jquery.tocify.js/issues/23">#23</a></li>
+</ul>
+<p><code>1.3.0</code> - February 23, 2013</p>
+<p>**Special thanks to <a href="https://github.com/matryer">Mat Ryer</a> for helping with this release</p>
+<ul>
+<li>Added the <strong>hashGenerator</strong> option</li>
+<li>Fixed the pageload scroll bug <a href="https://github.com/gfranko/jquery.tocify.js/issues/15">#15</a></li>
+</ul>
+<p><code>1.2.0</code> - December 31, 2012</p>
+<ul>
+<li>Multiple bug fixes: <a href="https://github.com/gfranko/jquery.tocify.js/issues/8">#8</a>, <a href="https://github.com/gfranko/jquery.tocify.js/issues/9">#9</a>, <a href="https://github.com/gfranko/jquery.tocify.js/issues/11">#11</a>, <a href="https://github.com/gfranko/jquery.tocify.js/issues/12">#12</a></li>
+</ul>
+<p><code>1.1.0</code> - November 19, 2012</p>
+<ul>
+<li>
+<p><strong>BREAKING CHANGE</strong> : Removed the History.js logic.  All history logic is now using a hash bang instead of the HTML5 pushstate API.</p>
+</li>
+<li>
+<p>Added the <strong>history</strong> option</p>
+</li>
+</ul>
+<p><code>1.0.0</code> - October 7, 2012</p>
+<ul>
+<li>Fixed scrolling show/hide bug with this <a href="https://github.com/gfranko/jquery.tocify.js/issues/6">page structure</a></li>
+</ul>
+<p><code>0.9.0</code> - October 3, 2012</p>
+<ul>
+<li>Fixed another nested element show/hide bug</li>
+</ul>
+<p><code>0.8.0</code> - September 26, 2012</p>
+<ul>
+<li>Numerous bug fixes (<a href="https://github.com/gfranko/jquery.tocify.js/issues/4">nested page structure bug</a>, unique naming bug, show/hide bugs)</li>
+</ul>
+<p><code>0.7.0</code> - September 24, 2012</p>
+<ul>
+<li>Fixed a nested element show/hide bug</li>
+</ul>
+<p><code>0.6.0</code> - August 22, 2012</p>
+<ul>
+<li>
+<p>Nested subheader element bug fixes</p>
+</li>
+<li>
+<p>Greatly improved showing/hiding deeply nested subheader elements</p>
+</li>
+</ul>
+<p><code>0.5.0</code> - August 21, 2012</p>
+<ul>
+<li>Added support for Twitter Bootstrap Theming</li>
+<li>Added the <strong>theme</strong> and <strong>extendPageOffset</strong> options.</li>
+<li>Removed the <strong>jqueryUI</strong> option <em>BREAKING CHANGE</em></li>
+<li>Updated demo page to show off new Twitter Bootstrap theming</li>
+</ul>
+<p><code>0.4.0</code> - August 19, 2012</p>
+<ul>
+<li>Added the <strong>setOption</strong> and <strong>setOptions</strong> methods</li>
+<li>Upgraded the CSS file</li>
+<li>Updated demo page</li>
+</ul>
+<p><code>0.3.0</code> - August 15, 2012</p>
+<ul>
+<li>Added the <strong>showAndHide</strong> option.</li>
+<li>Bug fixes for when the jQuery history.js plugin is not used</li>
+<li>Upgraded the CSS file (removed unneccessary styles, etc.)</li>
+<li>Upgraded to jQueryUI 1.8.23.</li>
+<li>Upgraded to jQuery 1.8.0.</li>
+<li>Upgraded demo page</li>
+</ul>
+<p><code>0.2.0</code> - July 16, 2012</p>
+<ul>
+<li>Added the <strong>scrollTo</strong> option.  Upgraded to jQueryUI 1.8.21.</li>
+<li>Multiple bug fixes.</li>
+<li>Upgraded the project page (included in the demos folder) to use Twitter Bootstrap.</li>
+<li>I will soon move the demo page into it's own separate project to create a boilerplate for documenting open source projects.</li>
+</ul>
+<p><code>0.1.0</code> - July 12, 2012</p>
+<ul>
+<li>Initial Tocify release.  Added annotated source code and documentation</li>
+</ul>
+<h2>License</h2>
+<p>Copyright (c) 2012 Greg Franko<br />
+Licensed under the MIT license.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/jQuery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jQuery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jQueryUI" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jQueryUI</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/Twitter%20Bootstrap" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>Twitter Bootstrap</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/Table%20of%20Contents%20Plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>Table of Contents Plugin</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/595663?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/gfranko" target="_blank" id="ownerName" class="sidebar-link">gfranko</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">June 13, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 15, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://gregfranko.com/jquery.tocify.js/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (~0.4.1)</li><li>grunt-contrib-uglify (~0.2.0)</li><li>grunt-contrib-jshint (~0.3.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/595663?v=4" alt="gfranko" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gfranko" target="_blank" class="text-decoration-none fw-bold">gfranko</a><p class="mb-0 text-muted small">93 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/29744?v=4" alt="kevinoconnor7" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kevinoconnor7" target="_blank" class="text-decoration-none fw-bold">kevinoconnor7</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/6477?v=4" alt="frohoff" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/frohoff" target="_blank" class="text-decoration-none fw-bold">frohoff</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/545666?v=4" alt="joaquincasares" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/joaquincasares" target="_blank" class="text-decoration-none fw-bold">joaquincasares</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1976330?v=4" alt="lord" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lord" target="_blank" class="text-decoration-none fw-bold">lord</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3078885?v=4" alt="fefrei" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fefrei" target="_blank" class="text-decoration-none fw-bold">fefrei</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/248779?v=4" alt="linuxonrails" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/linuxonrails" target="_blank" class="text-decoration-none fw-bold">linuxonrails</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1404606?v=4" alt="nickl-" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nickl-" target="_blank" class="text-decoration-none fw-bold">nickl-</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+3 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
