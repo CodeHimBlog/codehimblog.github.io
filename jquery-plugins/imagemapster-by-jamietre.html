@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugin for Enhancing HTML Image Maps</title>
+    <meta name="description" content="ImageMapster by jamietre. jQuery plugin for enhancing HTML Image maps">
+    <meta name="author" content="jamietre">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/imagemapster-by-jamietre.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Imagemapster</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Imagemapster",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Imagemapster</h1>
+        <p id="packageDescription" class="text-muted">jQuery plugin for enhancing HTML Image maps</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">819</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">9.93 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">331</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">23</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/jamietre/ImageMapster/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/jamietre/ImageMapster" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>ImageMapster: A jQuery Plugin to make image maps useful</h1>
+<p><a href="LICENSE"><img src="https://img.shields.io/github/license/jamietre/ImageMapster" alt="license" /></a><br />
+<a href="https://GitHub.com/jamietre/ImageMapster/releases/"><img src="https://img.shields.io/github/v/release/jamietre/imagemapster?sort=semver&amp;label=stable" alt="gh stable" /></a><br />
+<a href="https://GitHub.com/jamietre/ImageMapster/releases/"><img src="https://img.shields.io/github/v/release/jamietre/imagemapster?include_prereleases&amp;sort=semver&amp;label=latest" alt="gh latest" /></a><br />
+<a href="https://www.npmjs.com/package/imagemapster"><img src="https://img.shields.io/npm/dm/imagemapster?label=npm" alt="npm downloads" /></a><br />
+<a href="https://www.jsdelivr.com/package/npm/imagemapster"><img src="https://data.jsdelivr.com/v1/package/npm/imagemapster/badge?style=rounded" alt="jsDelivr downloads" /></a><br />
+<a href="https://cdnjs.com/libraries/imagemapster"><img src="https://img.shields.io/cdnjs/v/imagemapster.svg?color=orange" alt="cdnjs version" /></a><br />
+<a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" alt="code style: prettier" /></a><br />
+<a href="https://github.com/jamietre/ImageMapster/actions/workflows/gh-pages-deploy.yml"><img src="https://github.com/jamietre/ImageMapster/actions/workflows/gh-pages-deploy.yml/badge.svg" alt="Deploy to GitHub Pages" /></a></p>
+<p>ImageMapster activates the areas in HTML image maps so you can highlight and select them. It has lots of other features for manual control, tooltips, resizing, and more. It is designed to be compatible with every common platform, and is tested with Internet Explorer 6-10, Firefox 3.0+, Safari, Opera, and Chrome. It works on mobile devices and doesn't use Flash.</p>
+<h2>Documentation</h2>
+<p>See the <a href="https://jamietre.github.io/ImageMapster">ImageMapster website</a> for full documentation including <a href="https://jamietre.github.io/ImageMapster/overview/getting-started/">how to get started</a>, <a href="https://jamietre.github.io/ImageMapster/overview/demos/">demos</a>, and <a href="https://jamietre.github.io/ImageMapster/resources/live-examples/">live examples</a>.</p>
+<h2>Release Information</h2>
+<p>See the <a href="CHANGELOG.md">change log</a> for details on the release history and roadmap.</p>
+<h2>Support</h2>
+<p>See the <a href="SUPPORT.md">support page</a> for details on how to obtain support.</p>
+<h2>Contributing</h2>
+<p>See the <a href="CONTRIBUTING.md">contributing guidelines</a> for details on how to contribute.</p>
+<h2>Development</h2>
+<p>The below covers the ImageMapster jQuery plugin. For information on how to develop the ImageMapster website, see its <a href="site/README.md">README</a>.</p>
+<p>You can simultaneously make changes to both the plugin and the website by running <code>npm run dev</code> in both the plugin (<code>./</code>) and site (<code>./site</code>) directories. Any changes made to the plugin will be reflected in the site as it is <a href="./site/src/components/demos/core/scripts.astro#L20">imported directly</a> from the build output.</p>
+<h3>Build</h3>
+<p>The source code is broken into several modules to make management easier and to make it possible to create feature-targeted builds. ImageMapster is built using grunt and can be invoked as follows:</p>
+<ol>
+<li>Clone the repo</li>
+<li>Install NPM dependencies - <code>npm install</code></li>
+<li>Generate a Build:
+<ul>
+<li>Debug Build (uncompressed) - <code>npm run build</code></li>
+<li>Release Build (uncompressed/compressed/sourcemap) - <code>npm run dist</code></li>
+</ul></li>
+</ol>
+<h3>Dev</h3>
+<ol>
+<li>Clone the repo</li>
+<li>Install NPM dependencies - <code>npm install</code></li>
+<li>Run the dev task - <code>npm run dev</code></li>
+</ol>
+<h3>Tests</h3>
+<ol>
+<li>Clone the repo</li>
+<li>Install NPM dependencies - <code>npm install</code></li>
+<li>Run the test task - <code>npm run test</code></li>
+</ol>
+<blockquote>
+<p>ℹ️ <strong>Note</strong></p>
+<p>By default, tests will run using the latest version of jQuery. The library to use when running tests can be changed via the dropdown.</p>
+</blockquote>
+<p><img src="testrunnerlibrary.png" alt="Test Runner Library" /></p>
+<h3>Examples</h3>
+<ol>
+<li>Clone the repo</li>
+<li>Install NPM dependencies - <code>npm install</code></li>
+<li>Run the example task - <code>npm run example</code></li>
+</ol>
+<blockquote>
+<p>ℹ️ <strong>Note</strong></p>
+<p>By default, examples will run using jQuery. To run examples using Zepto, modify the examples HTML file (e.g., <a href="./examples/usa.html">USA</a>) as follows, commenting out references to jQuery scripts and uncommenting references to zepto scripts.</p>
+</blockquote>
+<pre class="prettyprint linenums lang-language"><code>...
+
++ &lt;!--
+  &lt;script type="text/javascript" src="redist/jquery.3.7.1.min.js"&gt;&lt;/script&gt;
+  &lt;script
+    type="text/javascript"
+    src="../dist/jquery.imagemapster.js"
+  &gt;&lt;/script&gt;
++ --&gt;
+- &lt;!-- &lt;script type="text/javascript" src="redist/zepto.1.2.0.min.js"&gt;&lt;/script&gt;
++ &lt;script type="text/javascript" src="redist/zepto.1.2.0.min.js"&gt;&lt;/script&gt;
+  &lt;script
+    type="text/javascript"
+    src="../dist/jquery.imagemapster.zepto.js"
+- &gt;&lt;/script&gt; --&gt;
++ &gt;&lt;/script&gt;
+
+...</code></pre>
+<h3>Docs</h3>
+<blockquote>
+<p>ℹ️ <strong>Note</strong></p>
+<p>The docs have not been maintained and therefore are not under version control.</p>
+</blockquote>
+<ol>
+<li>Clone the repo</li>
+<li>Install NPM dependencies - <code>npm install</code></li>
+<li>Run the doc task - <code>npm run doc</code></li>
+</ol>
+<h2>License</h2>
+<p>Copyright © 2011-24 <a href="https://github.com/jamietre">James Treworgy</a>. Licensed under the <a href="LICENSE">MIT License</a>.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h1>Changelog</h1>
+<h2>Roadmap</h2>
+<ul>
+<li>Return promises from asynchronous events rather than requiring callbacks like &quot;onConfigured&quot;</li>
+<li>Return a non-jQuery object exposing the imagemapster API to simplify coding against it</li>
+<li>Detect input device actively to determine when highlight effect should be enabled</li>
+<li>Rewrite in ES6/Typescript</li>
+<li>Update to modern build system (e.g. rollup/weback/etc.)</li>
+<li>Create React component</li>
+<li>Migrate to modern testframework</li>
+<li>Zoom to Area</li>
+<li>Make callback data structures consistent</li>
+</ul>
+<h2>Version 1.8.0 - 2024.05.01</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/420">Issue 420</a> 🐞 Forgotten console.log in v1.7.0</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/421">Issue 421</a> 🐞 resizing map when map not visible causes <code>Failed to execute 'drawImage' on 'CanvasRenderingContext2D'</code> exception</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/422">Issue 422</a> 🐞 exception <code>TypeError: Cannot read properties of null (reading '5')</code> encountered after unbind</li>
+</ul>
+<h2>Version 1.7.0 - 2024.04.29</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/138">Issue 138</a> 📘 Docs incorrectly state that highlighting will be disabled when staticState option is specified</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/228">Issue 228</a> 📘 onClick event will not fire if <code>clickNavigate</code> is set to <code>true</code></li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/322">Issue 322</a> 📘 Migrate website to github</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/382">Issue 382</a> 📘 rebind docs are not correct regarding preserving selected state</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/408">Issue 408</a> 🐞 navigate example pages are unresponsive</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/410">Issue 410</a> 🐞 grunt docco task failing with Fatal error: marked is not a function</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/412">Issue 412</a> ✨ Improve ability to run tests with all supported libraries &amp; versions</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/414">Issue 414</a> 🐞 configTimeout not respected for value specified</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/415">Issue 415</a> ✨ Add ESM support</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/418">Issue 418</a> 🐞 fadeDuration specified in area options is not honored for tooltips</li>
+</ul>
+<h2>Version 1.6.0 - 2024.03.12</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/394">Issue 394</a> [TouchScreen only] Weird highlight glitch when touch on the other area beside the map.</li>
+</ul>
+<h2>Version 1.5.4 - 2021.02.20</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/83">Issue 83</a> Fix boundlist sync with selected state</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/377">Issue 377</a> onConfigured not called after rebind</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/378">Issue 378</a> drawn areas do not match selected state after rebind</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/380">Issue 380</a> onGetList not called when isSelectable !== true</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/381">Issue 381</a> tests not waiting for onConfigured before continuing</li>
+</ul>
+<h2>Version 1.5.3 - 2021.02.14</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/374">Issue 374</a> Uncaught RangeError: Maximum call stack size exceeded when includeKeys has circular reference</li>
+</ul>
+<h2>Version 1.5.2 - 2021.02.14</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/137">Issue 137</a> area href empty or not specified</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/170">Issue 170</a> Tooltips/Highlight/Select incorrect when AREA <code>shape</code> attribute is missing or its value is non-conforming/empty</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/364">Issue 364</a> <code>Uncaught (in promise) undefined</code> when mouseoutDelay -1</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/365">Issue 365</a> Visual 'selection' cannot be removed via API when <code>staticState === true</code></li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/366">Issue 366</a> area w/ <code>staticState === false</code> that has been selected via API becomes unselected when clicking another area</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/367">Issue 367</a> <code>select</code>/<code>set</code> options not applied or not applied correctly</li>
+</ul>
+<h2>Version 1.5.1 - 2021.01.30</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/362">Issue 362</a> Apply width/height to hidden elements on <code>resize</code> when <code>duration</code> specified</li>
+</ul>
+<h2>Version 1.5.0 - 2021.01.29</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/357">Issue 357</a> AltImages become visible after <code>resize</code> when duration is specified</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/359">Issue 359</a> Add autoresize feature</li>
+</ul>
+<h2>Version 1.5.0-beta.1 - 2021.01.26</h2>
+<ul>
+<li>Applied <code>next</code> tag to NPM v1.5.0-beta.1 and re-applied <code>latest</code> tag to NPM v1.4.0</li>
+</ul>
+<h2>Version 1.5.0-beta.0 - 2021.01.26</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/352">Issue 352</a> Fix inconsistency of navigation href via onClick vs. clickNavigate</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/353">Issue 353</a> Add <code>navigateMode</code> configuration option to improve AREA element href &amp; target support</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/356">Issue 356</a> Add tooltip close support for <code>image-click</code> event</li>
+</ul>
+<h2>Version 1.4.0 - 2021.01.24</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/344">Issue 344</a> Fix exception on tooltip api when options is jQuery object</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/345">Issue 345</a> Fix tooltip options not applied via api call</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/347">Issue 347</a> Add default tooltip options and tooltip function support</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/348">Issue 348</a> Fix generic tooltips to respect tooltip options</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/349">Issue 349</a> Fix tooltips do not close on unbind</li>
+</ul>
+<h2>Version 1.3.2 - 2021.01.21</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/324">Issue 324</a> Improve project health</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/325">Issue 325</a> Add badges &amp; CDN info to readme</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/327">Issue 327</a> Add linter &amp; format files</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/328">Issue 328</a> Fix tracking internal map_cache on unbind</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/330">Issue 330</a> Fix shapes example rectangle responds to mouseevents</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/332">Issue 332</a> Fix programmatic area highlight to single area at a time</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/333">Issue 333</a> Fix USA example area highlight &amp; select</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/336">Issue 336</a> Fix undefined handler for AREA mousedown event</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/338">Issue 338</a> Fix event listener issues</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/339">Issue 339</a> Fix Zepto support</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/341">Issue 341</a> Update readme regarding Promise polyfill requirement for ES5 browsers</li>
+</ul>
+<h2>Version 1.3.1 - 2021.01.10</h2>
+<ul>
+<li>Publish to NPM</li>
+</ul>
+<h2>Version 1.3.0 - 2021.01.10</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/273">Issue 273</a> Add NPM support</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/318">Issue 318</a> Update to conform with jQuery 3.5.1 (latest release)</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/319">Issue 319</a> Fix Passive Event Listeners for touchstart/touchend</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/320">Issue 320</a> Support UMD and improve build system</li>
+</ul>
+<h2>Version 1.2.14 - 2021.01.06</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/148">Issue 148</a> Enable mouseover events when touchscreen found</li>
+<li><a href="https://github.com/jamietre/ImageMapster/pull/248">PR 248</a> Add touchstart/touchend support</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/284">Issue 284</a> Fix size not a function as of jQuery 3.0</li>
+<li><a href="https://github.com/jamietre/ImageMapster/pull/263">PR 263</a> Fix EDGE issue when no map data found</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/311">Issue 311</a> Update /dist with latest code</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/312">Issue 312</a> Fix tests</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/313">Issue 313</a> Fix events not be cleared</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/314">Issue 314</a> Eliminate when.js dependency from distribution</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/316">Issue 316</a> Fix AltImage</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/317">Issue 317</a> Fix USA Example</li>
+</ul>
+<h2>Version 1.2.13</h2>
+<ul>
+<li>Fix problem with mouseoutdelay=01</li>
+</ul>
+<h2>Version 1.2.12</h2>
+<ul>
+<li>Fix issue with $.inArray on IE8</li>
+<li>Fix problem with boundList when using &quot;set&quot; to toggle a multiple areas at once (from 1.2.11 issue - not quite fixed)</li>
+</ul>
+<h2>Version 1.2.11</h2>
+<ul>
+<li>Fix problem de-selecting boundlist when using &quot;set&quot; to toggle</li>
+</ul>
+<h2>Version 1.2.10</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/114">Issue 120</a> 1.2.9 broke IE9</li>
+</ul>
+<h2>Version 1.2.9</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/114">Issue 114</a> Fix jQuery 1.9 compatibility problem</li>
+</ul>
+<h2>Version 1.2.8</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/108">Issue 108</a> Opacity of tooltip container not preserved</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/107">Issue 107</a> mouseoutDelay broken</li>
+</ul>
+<h2>Version 1.2.7</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/95">Issue 95</a> SingleSelect broken in 1.2.6.099</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/87">Issue 87</a> Resize callback not working</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/84">Issue 84</a> Mouseover events not completely suppressed on mobile</li>
+<li>Tooltip enhancements: tooltips can be called against arbitrary elements.</li>
+<li>AltImage enhancements: see below</li>
+</ul>
+<h3>tooltip-enhancements branch</h3>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/72">Issue 72</a>: <code>scaleMap</code> not working propery when using bootstrap (css on <code>body</code> causing incorrect evaluation of native image size)</li>
+<li>Enhanced tooltip API to allow creating arbitrary tool tips bound to any area, or at an arbitrary position.</li>
+</ul>
+<h3>altimage-enhancements branch</h3>
+<ul>
+<li>Add <code>altImages</code> option that accepts an option defining aliases to alternate images. The name of each property is an alias that can be specified as a valid <code>altImage</code> option value elsewhere</li>
+</ul>
+<p>Example use of this option:</p>
+<pre class="prettyprint linenums lang-language"><code>var config = {
+  altImages: {
+    roadmap: 'images/usamap-roads.png',
+    elevation: 'images/uasmap-elevation.png'
+  }
+};</code></pre>
+<p>then:</p>
+<pre class="prettyprint linenums lang-language"><code>$('img').mapster('set', true, 'AZ', {
+  altImage: 'roadmap'
+});</code></pre>
+<p>The aliases can also be used in the initial configuration options, both globally and for specific areas.</p>
+<h2>Version 1.2.6 - 2012.07.13</h2>
+<p>Bug Fixes:</p>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/69">Issue #69</a> <code>fill</code> setting not being honored sometimes in IE6-8</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/68">Issue #68</a> Accept <code>areas</code> array with dangling commas</li>
+</ul>
+<h2>Version 1.2.5 - 2012.06.19</h2>
+<p>Bug fixes:</p>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/59">Issue #59</a>, <a href="https://github.com/jamietre/ImageMapster/issues/55">Issue #55</a> Opacity/fade effects not working right in IE8</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/58">Issue #58</a> Resize not changing CSS for the <code>div</code> contiainer around the image elements</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/53">Issue #53</a> Not working in Google Chrome with Adblock plugin</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/44">Issue #44</a> Incorrect opacity with altImage</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/36">Issue #36</a> Resize firing callback before resize is finished</li>
+<li>Rebind not cleaning up resources properly</li>
+<li>Offset 1 pixel strokes by 0.5 px to prevent the fuzzies</li>
+<li>Ignore UI events during resize - can cause problems if highlights are activated during an effect</li>
+</ul>
+<p>Features:</p>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/52">Issue #52</a> Add &quot;clickNavigate&quot; feature to allow basic image map functionality</li>
+<li>Add &quot;highlight&quot; option to programatically set/unset the highlight effect (as if a user just moused over an area vs. clicked)</li>
+<li>Detect touchscreen devices and disable &quot;mouseover&quot;</li>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/11">Issue #11</a> Detect excanvas automatically and force into IE mode if present</li>
+</ul>
+<p>Notes</p>
+<ul>
+<li>refactor into modular architecture</li>
+<li>tighten up tooltip code a little</li>
+<li>Removed &quot;attrmatches&quot; jQuery selector exetnsion, recoded as a function, removed from tests</li>
+<li>Queue all methods (highlight, data, tooltip) so configuration delays don't cause problems</li>
+<li>Unbind &quot;load&quot; event explicitly from images added.</li>
+<li>Add dynamic images to DOM instead of loading through Javascript</li>
+<li>Ignore missing keys on some operations to increase stability with bad data</li>
+<li>Trim results of string splits so spaces don't cause problems</li>
+<li>Yet more tweaking of image loading detection</li>
+<li>Refactor &quot;graphics&quot; into an object and instantiate for each instance. &quot;load&quot; callbacks were changing event order, resulting in the single instance getting wires crossed. Isolated<br />
+each map instance completely, problem solved.</li>
+<li>Fix canvases re-ordered after first selection making effect sometimes inconsistent</li>
+<li>Fix resize bug when area groups are used</li>
+</ul>
+<h2>Version 1.2.4 - 2011.09.27</h2>
+<ul>
+<li><a href="https://github.com/jamietre/ImageMapster/issues/14">Issue #14</a> Resize bug in IE &lt;9 fixed</li>
+</ul>
+<h2>Version 1.2.3</h2>
+<ul>
+<li>Resize with multiple images affecting other images - fixed</li>
+</ul>
+<h2>Version 1.2.2 - 2011.09.22</h2>
+<ul>
+<li>masks not working in Firefox 6.0 only. behavior of context.globalCompositeOperation='source-out' and<br />
+save/restore somehow changed in ff6. updated code to not depend (possibly) on idiosyncracies of chrome<br />
+and ie9. honestly not sure why it worked before as it appears I may have been doing something wrong,<br />
+but the code is more explicit now and it works across all browsers.</li>
+</ul>
+<h2>Version 1.2.1</h2>
+<ul>
+<li>Click callback &quot;this&quot; is not set - fixed</li>
+<li>Replace u.isFunction with $.isFunction to save a few bytes</li>
+</ul>
+<h2>Version 1.2</h2>
+<ul>
+<li>fixed fader problem for old IE (again, really this time)</li>
+<li>allow selecting includeKeys areas from staticState areas</li>
+<li>test browser features for filter vs. opacity</li>
+<li>&quot;resize&quot; option</li>
+<li>improve startup speed by eliminating need for setTimeout callback</li>
+<li>address startup bug when images aren't loaded and there are lots of images</li>
+<li>fixed exception when &quot;set&quot; with no data for key</li>
+<li>bug when multiple images bound on same page * another IE tweak: blur() on mouseover/click to remove browser-rendered border around area</li>
+<li>force &quot;border=0&quot; on image to ensure consistent display across bind/unbind in IE</li>
+<li>Fixed broken &quot;onMouseover&quot; option, added tests for onMouseover/onMouseout.</li>
+<li>many performance improvements, tests, refactoring some old inefficient code.</li>
+<li>fix css flickering when debinding/rebinding in HTML5 browsers</li>
+<li>add &quot;scaleMap&quot; option to automatically resize image maps when a bound image is resized dynamically. Enabled by default if an image is displayed at a size other than its native size.</li>
+</ul>
+<h2>Version 1.1.3</h2>
+<ul>
+<li>revised &quot;highlight&quot; method API (previously undocumented). Added tests &amp; documented.</li>
+<li>added a generic prototype for parsing method data to improve consistency &amp; stability</li>
+<li>added tests for tooltip external &amp; event bound invocation</li>
+<li>added invoking tooltip from area, e.g. $('some-area').mapster('tooltip')</li>
+<li>added invoking tooltip from key, e.g. .mapster('tooltip',key);</li>
+<li>Bug fix for get_options, showToolTip (related)</li>
+<li>Bug fix - area id 0 on VML rendereding deselection causes all selections to disappear (introduced in beta 2)</li>
+<li>Changed &quot;get&quot; to return true &quot;selected&quot; state and not &quot;isSelected()&quot; which includes staticState items in selected.</li>
+<li>Bug fix - stroke sometimes rendered improperly when using render-specific options</li>
+<li>change onClick handler to BEFORE action, permit canceling of action by returning false</li>
+<li>refactor into mostly OO design - functional design was getting unwieldy.</li>
+<li>fix bugs related to cascading of &quot;staticState&quot; options</li>
+<li>add &quot;snapshot&quot; option</li>
+<li>check for existing wrapper, skip if it already exists</li>
+<li>remove map data when unbinding+preserveState -- it should act as if not there</li>
+<li>IE performance improvements (optimizing rendering code a little bit)</li>
+</ul>
+<h2>Version 1.1.2 - 2011.06-15</h2>
+<ul>
+<li>minor bugfix release</li>
+</ul>
+<h2>Version 1.1.1 - 2011.06.03</h2>
+<ul>
+<li>Performance improvement: cache area groups on map binding to eliminate need for attribute selector</li>
+<li>Significant enhancement to permit complex area grouping and area exclusions (masks):
+<ul>
+<li>added: mapKey can contain multiple keys, allowing an area to be a member of multiple groups</li>
+<li>added: &quot;noHrefIsMask&quot; option to determine &quot;nohref&quot; attribute treatment</li>
+<li>added: &quot;isMask&quot; option (area-specific)</li>
+<li>added: &quot;includeKeys&quot; option (area-specific)</li>
+</ul></li>
+<li>added: 'highlight' method to enable highlighting of areas from code</li>
+<li>bufgix: fading didn't work in IE6-7, some Operas. Should work in all browsers except IE8 now.</li>
+<li>bugfix: ignore areas with no mapkey when it is provided</li>
+<li>bugfix: not binding properly when no mapkey provided</li>
+</ul>
+<h2>Version 1.1</h2>
+<ul>
+<li>added: per-action options (highlight, select)</li>
+<li>fixed some memory leaks</li>
+<li>minor performance improvements</li>
+<li>cleanup in VML mode</li>
+<li>fix IE9 canvas support (fader problem)</li>
+<li>fix flickering on fades when moving quickly</li>
+<li>add altImage options</li>
+<li>added onConfigured callback</li>
+<li>fixed problems with cleanup (not removing wrap)</li>
+<li>added failure timeout for configure</li>
+</ul>
+<h2>Version 1.0.10 - 2011.05.12</h2>
+<ul>
+<li>ignore errors when binding mapster to invalid elements</li>
+<li>minor performance improvements</li>
+<li>fixed command queue problem (broke in 1.0.9) for commands issued after bind, but before image is ready</li>
+<li>enhanced tests</li>
+</ul>
+<h2>Version 1.0.9 - 2011.05.10</h2>
+<ul>
+<li>added &quot;unbind&quot; option to remove mapster from an image</li>
+<li>add 'options' option</li>
+<li>add 'rebind' option</li>
+<li>add isDeselectable option</li>
+<li>handle exceptions better (when acting on unbound images)</li>
+<li>add 'get' method to retrieve selections</li>
+<li>add unbind options</li>
+<li>clear command queue after processing</li>
+</ul>
+<h2>Version 1.0.8 - 2011.05.05</h2>
+<ul>
+<li>Handle problem when &quot;img.complete&quot; is not true at config time and &quot;set&quot; commands are issued after initial config call but before config is complete. Queue any &quot;set&quot; commands and process them after the timer callback.</li>
+<li>Pass listTarget to onClick callback even when !isSelectable (previously passed null)</li>
+<li>Pass ref to toolTip element on callback</li>
+<li>Don't show tooltip again if the one for an area is already displayed</li>
+<li>Add singleSelect option - clears any other selected item when a new item is selected</li>
+</ul>
+<h2>Version 1.0.6 - 2011.04.27</h2>
+<ul>
+<li>Problem when not using mapKey</li>
+<li>staticState=false not working</li>
+</ul>
+<h2>Version 1.0.5 - 2011.04.26</h2>
+<ul>
+<li>Corrected jquery attribute selector (not using quote marks)</li>
+<li>added area persistence behavior options</li>
+<li>tooltips not working in Firefox - bug in area data management. Deprecated use of jquery.data for passing area-specific options, added &quot;areas&quot; option to replace</li>
+<li>fixed &quot;showToolTip&quot; default property name (was showToolTips) - should have had no effect</li>
+</ul>
+<h2>Version 1.0.4 - 2011.04.20</h2>
+<ul>
+<li>allow using jQuery object for toolTip text</li>
+<li>happy earth day</li>
+</ul>
+<h2>Version 1.0.3</h2>
+<ul>
+<li>missing preventDefault on click (post refactor issue)</li>
+</ul>
+<h2>Version 1.0.2</h2>
+<ul>
+<li>fixed tooltip in IE6</li>
+</ul>
+<h2>Version 1.0.0 - 2011.04.19 - <strong>first official release</strong></h2>
+<ul>
+<li>refactored from remaining old to use a clean namespace</li>
+<li>added simple mouseover dialog</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/imagemapster" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>imagemapster</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/activate" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>activate</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/area" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>area</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/html" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>html</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/maps" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>maps</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/map" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>map</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/image" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>image</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/imagemap" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>imagemap</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/image%20map" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>image map</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/canvas" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>canvas</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/highlight" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>highlight</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/select" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>select</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/resize" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>resize</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/tooltip" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>tooltip</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/573056?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/jamietre" target="_blank" id="ownerName" class="sidebar-link">jamietre</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">April 21, 2011</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 20, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://jamietre.github.io/ImageMapster/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>docco-next (^0.9.14)</li><li>eslint (^8.57.0)</li><li>eslint-config-jquery (^3.0.2)</li><li>eslint-config-prettier (^9.1.0)</li><li>eslint-plugin-astro (^1.1.1)</li><li>eslint-plugin-html (^8.1.1)</li><li>eslint-plugin-jsonc (^2.15.1)</li><li>eslint-plugin-markdown (^4.0.1)</li><li>eslint-plugin-mdx (^3.1.5)</li><li>eslint-plugin-react (^7.34.1)</li><li>eslint-plugin-yml (^1.14.0)</li><li>grunt (^1.6.1)</li><li>grunt-bump (^0.8.0)</li><li>grunt-contrib-clean (^2.0.1)</li><li>grunt-contrib-concat (^2.1.0)</li><li>grunt-contrib-connect (^4.0.0)</li><li>grunt-contrib-uglify (^5.2.2)</li><li>grunt-contrib-watch (^1.1.0)</li><li>grunt-env (^1.0.1)</li><li>grunt-eslint (^24.3.0)</li><li>grunt-shell (^4.0.0)</li><li>grunt-umd (^3.0.0)</li><li>jit-grunt (^0.10.0)</li><li>prettier (^3.2.5)</li><li>prettier-plugin-astro (^0.13.0)</li><li>remark (^15.0.1)</li><li>remark-cli (^12.0.1)</li><li>remark-frontmatter (^5.0.0)</li><li>remark-gfm (^4.0.0)</li><li>remark-lint-no-dead-urls (^1.1.0)</li><li>remark-preset-lint-consistent (^6.0.0)</li><li>remark-preset-lint-markdown-style-guide (^6.0.0)</li><li>remark-preset-lint-recommended (^7.0.0)</li><li>remark-preset-prettier (^2.0.1)</li><li>remark-validate-links (^13.0.1)</li><li>typescript (^5.4.5)</li><li>typescript-eslint (^7.8.0)</li></ul><h5 class="sidebar-title">Peer Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.7.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4323995?v=4" alt="techfg" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/techfg" target="_blank" class="text-decoration-none fw-bold">techfg</a><p class="mb-0 text-muted small">185 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/573056?v=4" alt="jamietre" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jamietre" target="_blank" class="text-decoration-none fw-bold">jamietre</a><p class="mb-0 text-muted small">185 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1706470?v=4" alt="markitosgv" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/markitosgv" target="_blank" class="text-decoration-none fw-bold">markitosgv</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1868071?v=4" alt="Yeine" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Yeine" target="_blank" class="text-decoration-none fw-bold">Yeine</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/18206894?v=4" alt="adityamenon-exp" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/adityamenon-exp" target="_blank" class="text-decoration-none fw-bold">adityamenon-exp</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4539453?v=4" alt="javivf" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/javivf" target="_blank" class="text-decoration-none fw-bold">javivf</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/14522744?v=4" alt="orthographic-pedant" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/orthographic-pedant" target="_blank" class="text-decoration-none fw-bold">orthographic-pedant</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+2 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
