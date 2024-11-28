@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugin for Adding Web Signature Functionality</title>
+    <meta name="description" content="jSignature by brinley. jQuery plugin for adding web signature functionality">
+    <meta name="author" content="brinley">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jsignature-by-brinley.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jsignature</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jsignature",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jsignature</h1>
+        <p id="packageDescription" class="text-muted">jQuery plugin for adding web signature functionality</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">697</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.19 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">529</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">61</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/brinley/jSignature/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/brinley/jSignature" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jSignature</h1>
+<p>jSignature is a jQuery plugin which simplifies creation of a signature capture field in the browser window, allowing a user to draw a signature using mouse, pen, or finger.</p>
+<p>jSignature captures signature as vector outlines of the strokes. Although jSignature can export great bitmap (PNG) too, extraction of highly scalable stroke movement coordinates (aka vector image) of the signature allows much greater flexibility of signature rendering.</p>
+<p>A extra effort (through smoothing and pressure simulation) is made to make the strokes look pretty on the screen while these are drawn by the signor.</p>
+<p>All major desktop, tablet and phone browsers are supported. HTML5 Canvas element is used by default. We fall back on Flash-based Canvas element emulator (FlashCanvas) when actual Canvas is not supported by the browser (Internet Explorer v.8 and lower).</p>
+<p>Real-time jSignature renders only the device-appropriate &quot;prettiest&quot; approximation of what we capture. Capture of data is always same - we capture as many movement coordinates as possible. Rendering of strokes differs per browser's capabilities, efficiency of the device, screen size.</p>
+<p>This degrading and enhancing of screen representation of the captured signature is done on purpose to insure that rendering does not impead on the responsiveness of capture.<br />
+For example, on slow rendering devices (Android Browser, FlashCanvas-based Canvas emulation) smoothing is kicked up a notch to compensate for large gaps in captured stroke coordinates - a result of inefficiency of capture device. In all cases, customer shold be pleased by responsiveness and beauty of the drawing.</p>
+<p>jSignature makes it easy to pluck itself into an existing styled site. jSignature automatically detects the colors used on the wrapping element (text color = pen color, background = background) and auto-picks a pleasing middle-shade for 'decor' (signature line). jSignature adapts well to fixed and variable width web page designs, and various size screens (phones, tablets, computer screens) and automatically rescales the drawing area and signature when parent element changes size.</p>
+<p>See <a href="http://brinley.github.io/jSignature/" title="Signature Capture Demos">demos here</a>.</p>
+<h2>Adding jSignature to your page</h2>
+<p>Look into <code>libs</code> folder in the source tree. Pick 3 files from there:</p>
+<ol>
+<li>
+<p>jSignature.min<em>.js (The '</em>' means you have choice. You can pick regular jQuery-centric build or a special jQuery.NoConflict build.)</p>
+</li>
+<li>
+<p>flashcanvas.js</p>
+</li>
+<li>
+<p>flashcanvas.swf</p>
+</li>
+</ol>
+<p>jSignature depends on (more or less recent) <strong>jQuery</strong></p>
+<p>If you do <strong>NOT</strong> intend to support <strong>IE 7 and 8</strong> you don't need to download the FlashCanvas files. </p>
+<p>Note that FlashCanvas is a cohesive group of two files, <code>flashcanvas.swf</code> and <code>flashcanvas.js</code>, both of which <strong>must</strong> be located together in the same folder. Do <strong>not</strong> host them from separate folders as <code>flashcanvas.js</code> looks for <code>flashcanvas.swf</code> in the same folder it was served from. Do <strong>not</strong> rename <code>flashcanvas.js</code> to anything else as it looks for itself in the DOM by that name to figure out where to load <code>flashcanvas.swf</code> from.</p>
+<p>jSignature itself has three distinct pieces of code rolled into one minified deployable:</p>
+<ol>
+<li>Code that prepares a Canvas element.<br />
+It includes detection of browser features, maximizing a canvas within the confines of a div, setting up emulated Canvas using Flashcanvas, when needed.</li>
+<li>Code that handles actual signature capture + data import / export API.<br />
+It attaches and listens to movement event handlers, stores stroke data inside data structure, handles API calls.</li>
+<li>Plugins that help you get the signature data in convenient for you format, like raw data coordinates, image, compressed url-compatible string, SVG.</li>
+</ol>
+<p>If you are certain that your audience will be limited to a specific browser engine (you deploy through an embedded browser widget, using something like PhoneGap) you can roll up your sleeves and yank out the part #1. If you know you will need only one export / import plugin, remove the plugins you don't need from the minified deployable.</p>
+<p>More custom data export/import plugins can be loaded separately without reminifying the main deployable. But, minifying is fun and easy to do. Just take a look at <code>wscript.py</code> file and change a few lines to include / exclude some parts.</p>
+<p>For the &quot;generic&quot; deployment scenario (which includes support of old IE) add this to your page:</p>
+<pre><code>&lt;!-- this, preferably, goes inside head element: --&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;script type="text/javascript" src="path/to/flashcanvas.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+
+&lt;div id="signature"&gt;&lt;/div&gt;
+
+&lt;!-- you load jquery somewhere before jSignature ... --&gt;
+&lt;script src="path/to/jSignature.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    $(document).ready(function() {
+        $("#signature").jSignature()
+    })
+&lt;/script&gt;</code></pre>
+<p>Explained:</p>
+<ul>
+<li>The <code>[if lt IE 9]</code> part loads Flashcanvas library for IE less than 9. (Flashcanvas is supported <strong>only on IE</strong>, so, there is no point doing feature detection.)</li>
+<li>We mark a <code>div</code> inside which the canvas element will be created. Any ID or other jQuery selector will do.</li>
+<li>We load jSignature plugin.</li>
+<li>Lastly, the script invokes the signature widget within the specified DIV.</li>
+</ul>
+<h2>API</h2>
+<p>The following method becomes exposed on top of jQuery objects: <code>.jSignature(String command, *args)</code></p>
+<p>Arguments vary per <code>command</code>. When provided, <code>command</code> is expected to be a string with a command for jSignature. Commands supported at this time:</p>
+<ul>
+<li><code>init</code> is the default, assumed action. <code>init</code> takes one argument - a settings Object. You can omit the command and just pass the settings object in upon init. Returns (in a traditional jQuery chainable way) jQuery object ref to the element onto which the plugin was applied.</li>
+<li><code>reset</code> just clears the signature pad, data store (and puts back signature line and other decor). Returns (in a traditional jQuery chainable way) jQuery object ref to the element onto which the plugin was applied.</li>
+<li><code>clear</code> alias of reset for legacy purposes.</li>
+<li><code>destroy</code> destroy the instance.</li>
+<li><code>getData</code> takes an argument - the name of the data format. Returns a data object appropriate for the data format.</li>
+<li><code>setData</code> takes two arguments - data object, data format name. When data object is a string formatted in data-url pattern you don't need to specify the data dormat name. The data format name (mime) will be implied from the data-url prefix. See example below for that. Returns (in a traditional jQuery chainable way) jQuery object ref to the element onto which the plugin was applied.</li>
+<li><code>importData</code> alias of setData for legacy purposes.</li>
+<li><code>listPlugins</code> takes an argument - a string denoting the category (Only <code>export</code>, <code>import</code> supported at this time) of plugins to list. Returns an array of strings. </li>
+<li><code>disable</code> makes the canvas read-only and disable the jSignature buttons </li>
+<li><code>enable</code> makes the canvas read-only and enable the jSignature buttons</li>
+<li><code>isModified</code> returns a boolean true if the jSignature was modified, false otherwise.</li>
+<li><code>getSettings</code> returns the configurable settings of the jSignature instance. </li>
+<li><code>updateSetting</code> takes three arguments - setting name, new value, boolean value if the change should affect current signature or future strokes. This allows you to update certain settings like lineWidth or line color and with the third argument you can make the change apply to the existing strokes. At present, updating change to existing strokes only works with a few settings like color. Returns the updated value.</li>
+</ul>
+<p>Usage examples:</p>
+<pre><code>var $sigdiv = $("#signature")
+$sigdiv.jSignature() // inits the jSignature widget.
+// after some doodling...
+$sigdiv.jSignature("reset") // clears the canvas and rerenders the decor on it.
+
+// Getting signature as SVG and rendering the SVG within the browser. 
+// (!!! inline SVG rendering from IMG element does not work in all browsers !!!)
+// this export plugin returns an array of [mimetype, base64-encoded string of SVG of the signature strokes]
+var datapair = $sigdiv.jSignature("getData", "svgbase64") 
+var i = new Image()
+i.src = "data:" + datapair[0] + "," + datapair[1] 
+$(i).appendTo($("#someelement")) // append the image (SVG) to DOM.
+
+// Getting signature as "base30" data pair
+// array of [mimetype, string of jSignature's custom Base30-compressed format]
+datapair = $sigdiv.jSignature("getData","base30") 
+// reimporting the data into jSignature.
+// import plugins understand data-url-formatted strings like "data:mime;encoding,data"
+$sigdiv.jSignature("setData", "data:" + datapair.join(",")) </code></pre>
+<p>See tests and index.html for more examples.</p>
+<h2>Data Import / Export (and Plugins)</h2>
+<p>The following plugins (data formats) are part of mainline jSignature minified distributable:</p>
+<ul>
+<li><code>default</code> (EXPORT ONLY) (BITMAP) data format is compatible with output format jSignature produced in earlier versions when <code>getData</code> was called without arguments. &quot;Default&quot; is now invoked (obviously) by default whenever you <code>$obj.jSignature("getData")</code> The data format is that produced natively by Canvas - data-url-formatted, base64 encoded (likely PNG) bitmap data that looks like this: <code>data:image/png;base64,i1234lkj123;k4;l1j34l1kj3j...</code><br />
+This export call returns a single data-url-formatted string.</li>
+<li><code>native</code> (EXPORT AND IMPORT) (VECTOR) data format is custom representation of drawing strokes as an array of objects with props <code>.x</code>, <code>.y</code>, each of which is an array. This JavaScript objects structure is the actual data structure where each of the drawing strokes is stored in jSignature. The structure is designed specifically for speed and efficiency of <strong>collecting</strong> strokes data points. (Although it is a bit counter-intuitive, octopus-looking structure, it (a) allows to pile up two-axis coordinates fast without a need to create a Point objects for each data point and (b) provides for very easy loop-based processing of data.)<br />
+Although you could JSONify that, pass it around, parse, render from this, it may not be the most efficient way to store data, as internal format may change in other major versions of jSignature. I recommend looking at <code>base30</code> format as a direct, but compact equivalent to &quot;native&quot;-as-JSON.<br />
+What this data is good for is running stats (size, position of signature on the canvas) and editing strokes (allowing for &quot;undo last stroke,&quot; for example).</li>
+<li><code>base30</code> (alias <code>image/jSignature;base30</code>) (EXPORT AND IMPORT) (VECTOR) data format is a Base64-spirited compression format tuned for absurd compactness and native url-compatibility. It is &quot;native&quot; data structure compressed into a compact string representation of all vectors.<br />
+Code examples (.Net, PHP, Ruby) detailing decompression of this format into render-able form (SVG, language-native coordinate arrays) are provided in the <code>extras</code> folder.<br />
+One of possible ways of communicating the data to the server is JSONP, which has a practical URL length limit (imposed by IE, of course) of no more than 2000+ characters. This compression format is natively URL-compatible without a need for re-encoding, yet will fit into 2000 characters for most non-complex signatures.</li>
+<li><code>svg</code> (alias <code>image/svg+xml</code>) (EXPORT ONLY) (VECTOR)  data format produces the signature as an SVG image (SVG XML text). All strokes are denoised and smoothed.<br />
+This format is a good medium between &quot;easy to view&quot; and &quot;hightly scalable.&quot; Viewing SVGs is natively supported in majority of today's browsers and, yet, this format can be infinitely scaled and enhanced for print. Data is textual, allowing for easy storage and transfer.<br />
+The call to <code>jSignature("getData","svg")</code> returns an array of form <code>["image/svg+xml","svg xml here"]</code>. </li>
+<li><code>svgbase64</code> (alias <code>image/svg+xml;base64</code>) (EXPORT ONLY) (VECTOR)  This is same as &quot;svg&quot; plugin, but the SVG XML text is compressed using base64 encoding. Although many browsers now have built-in base64 encoder ( <code>btoa()</code> ), some, like Internet Explorer do not. This plugin has its own (short and efficient) copy of software-based base64 encoder which is invoked on the browsers lacking <code>btoa()</code>.<br />
+The call to <code>jSignature("getData","svgbase64")</code> returns an array of form <code>["image/svg+xml;base64","base64-encoded svg xml here"]</code>. This two-member array is rather easy to turn into data-url-formatted string (<code>"data:" + data.join(",")</code>) or turn into args and pass to server as form values.</li>
+<li><code>image</code> (EXPORT ONLY) (BITMAP) data format is essentially same as &quot;default&quot; above, but parsed apart so that mimetype and data are separate objects in an array structure similar to that produced by &quot;svg&quot; export. Example (shortened) <code>["image/png;base64","i123i412i341jijalsdfjijl234123i..."]</code>. Because image export filter depends on (somewhat flaky) browser support and picks up needless data, recommend using this only for demonstration and during development. </li>
+</ul>
+<h2>Choosing the export / storage format.</h2>
+<p>I know you are tempted to want &quot;images&quot; from jSignature, but, please, control yourself, and stay away. Instead, contemplate capturing &quot;base30&quot; or &quot;svg&quot; data and enhance + render that in postproduction, server-side.</p>
+<p>If you export &quot;bitmap&quot;, the image will retain actual drawing colors, size, defects, and, to top it off, may not work on all browsers. </p>
+<ul>
+<li>The decor (signature line) will be on the image. if jSignature was styled with dark background + light pen color that`s exactly what you will get on the image - dark background, light drawings covering grey signature line. This image becomes virtually useless for print. The matter is worse if your background is same intensity as pen (red on blue, for example) in which case when printed black-and-white the image becomes just a dark grey rectangle. If you ever change page colors, captured image now starts to wear those colors. </li>
+<li>Androids 1.6 -2.2 (2.3?) dont support canvas.getDataURL method well - the cornerstone of <code>bitmap</code> export functionality. </li>
+<li>Small screens (mobiles) produce tiny, ugly bitmaps.</li>
+<li>Bitmap exported by canvas is GARGANTUAN in size compared to vector because it retains all the mid-shaded and background pixels.</li>
+</ul>
+<p>If you want to force yourself to use only Black on top of White signature capture web page style forever, DO use bitmap export. If you want to have your database admin scream at you because backup of database with all that bitmap data takes more than a day, DO use bitmap export. If you want your sales / business dept to scream at you because your signature capture format cannot be easily integrated into their new carefully-styled, wizbang product / service, DO use bitmap export. If you want to explain why siganture format export you chose does not work on all target platforms, DO use bitmap export. If you want to take the easy route now, and make the the IT person that will come in after you are fired do the difficult task of applying ImageMagic wisardry upon a mess of colored pixels you decided to collect, DO use bitmap export format.</p>
+<p>If the use of the captured signature has anything to do with &quot;business&quot; or &quot;printing&quot; or &quot;multiple presentation venues&quot; use the Vector formats like &quot;base30&quot; or &quot;svg&quot; data and enhance + render that in postproduction. Decompression and sample, rudimentary rendering code (.Net, PHP as of Feb 2012) can be found in &quot;extras&quot; folder. You would use these as core that provides loop-able coordinate data arrays for your own rendering logic.</p>
+<h2>Events</h2>
+<p>The dom element upon which jSignature was initialized emits 'change' event immediately after a stroke is done being added to the storage. (In other words, when user is done drawing each stroke. If user draws 3 strokes, this event is emitted 3 times, after each stroke is done.)</p>
+<p>Here is how you would bind to that event:</p>
+<pre><code>$("#signature").bind('change', function(e){ /* 'e.target' will refer to div with "#signature" */ })</code></pre>
+<p>Event is emitted asynchronously through a &quot;thread&quot; ( <code>setTimeout(..., 3)</code> ) so you don't need to wrap your event handler into &quot;thread&quot; of any kind, as jSignature widget will go on and will not be waiting for you to be done with your custom event handler logic.</p>
+<h2>License, Copyright</h2>
+<p><a href="http:www.opensource.org/licenses/mit-license.php">MIT License</a></p>
+<p>See source header for full and most current Copyright attributions.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/jSignature" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jSignature</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/signature" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>signature</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jQuery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jQuery</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/18975?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/brinley" target="_blank" id="ownerName" class="sidebar-link">brinley</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">November 13, 2010</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 22, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="http://www.unbolt.net/jSignature" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/18975?v=4" alt="brinley" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/brinley" target="_blank" class="text-decoration-none fw-bold">brinley</a><p class="mb-0 text-muted small">53 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/426404?v=4" alt="zspitzer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zspitzer" target="_blank" class="text-decoration-none fw-bold">zspitzer</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4038413?v=4" alt="rburgstaler" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rburgstaler" target="_blank" class="text-decoration-none fw-bold">rburgstaler</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/186611?v=4" alt="dvdotsenko" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dvdotsenko" target="_blank" class="text-decoration-none fw-bold">dvdotsenko</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/43471?v=4" alt="rogerz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rogerz" target="_blank" class="text-decoration-none fw-bold">rogerz</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1010384?v=4" alt="bassrock" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bassrock" target="_blank" class="text-decoration-none fw-bold">bassrock</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/551882?v=4" alt="kxhitiz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kxhitiz" target="_blank" class="text-decoration-none fw-bold">kxhitiz</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/84830906?v=4" alt="bwetherall" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bwetherall" target="_blank" class="text-decoration-none fw-bold">bwetherall</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5544150?v=4" alt="n8maninger" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/n8maninger" target="_blank" class="text-decoration-none fw-bold">n8maninger</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1218946?v=4" alt="mochja" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mochja" target="_blank" class="text-decoration-none fw-bold">mochja</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/159967?v=4" alt="mgedmin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mgedmin" target="_blank" class="text-decoration-none fw-bold">mgedmin</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2235489?v=4" alt="funkyOne" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/funkyOne" target="_blank" class="text-decoration-none fw-bold">funkyOne</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1103581?v=4" alt="gaspowers" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gaspowers" target="_blank" class="text-decoration-none fw-bold">gaspowers</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/623463?v=4" alt="krazyjakee" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/krazyjakee" target="_blank" class="text-decoration-none fw-bold">krazyjakee</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3329959?v=4" alt="martin-sweeny" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/martin-sweeny" target="_blank" class="text-decoration-none fw-bold">martin-sweeny</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/426473?v=4" alt="osharper" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/osharper" target="_blank" class="text-decoration-none fw-bold">osharper</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3265649?v=4" alt="tomyam1" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tomyam1" target="_blank" class="text-decoration-none fw-bold">tomyam1</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6090747?v=4" alt="liyahui" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/liyahui" target="_blank" class="text-decoration-none fw-bold">liyahui</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2234140?v=4" alt="zevero" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zevero" target="_blank" class="text-decoration-none fw-bold">zevero</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+14 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
