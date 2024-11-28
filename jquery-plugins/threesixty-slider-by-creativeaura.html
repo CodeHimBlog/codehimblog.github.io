@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 360 Image Slider Plugin</title>
+    <meta name="description" content="threesixty-slider by creativeaura. jQuery 360 image slider plugin">
+    <meta name="author" content="creativeaura">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/threesixty-slider-by-creativeaura.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Threesixty Slider</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Threesixty Slider",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Threesixty Slider</h1>
+        <p id="packageDescription" class="text-muted">jQuery 360 image slider plugin</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">854</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">30.06 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">233</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">43</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/creativeaura/threesixty-slider/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/creativeaura/threesixty-slider" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Hello All, I am not maintaining this plugin anymore.</h1>
+<p><img src="https://raw.github.com/creativeaura/threesixty-slider/master/assets/360.png" alt="Three Sixty Image slider plugin" /></p>
+<h1>Three Sixty Image slider plugin v2.0.5</h1>
+<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/creativeaura/threesixty-slider/trend.png" alt="Bitdeli Badge" /></a><br />
+<a href="https://travis-ci.org/creativeaura/threesixty-slider"><img src="https://travis-ci.org/creativeaura/threesixty-slider.svg?branch=master" alt="Build Status" /></a><br />
+<a href="https://gitter.im/creativeaura/threesixty-slider?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter" /></a></p>
+<p>This is a jQuery plugin to create 360 degree product image slider. The plugin is full customizable with number of options provided. The plugin have the power to display images in any angle 360 degrees. This feature can be used successfully in many use cases e.g. on an e-commerce site to help customers look products in detail, from any angle they desire.</p>
+<p><strong>Features</strong></p>
+<ul>
+<li>Smooth Animation</li>
+<li>Plenty of option parameters for customization</li>
+<li>Api interaction</li>
+<li>Simple mouse interaction</li>
+<li>Custom behavior tweaking</li>
+<li>Support for touch devices</li>
+<li>Easy to integrate</li>
+<li>No flash</li>
+<li>Plugin integration</li>
+</ul>
+<h2>Plugins</h2>
+<ul>
+<li><a href="https://drupal.org/sandbox/coderider/2274229">Drupal module</a> by <a href="https://drupal.org/u/coderider">Rashid Abdullah</a></li>
+</ul>
+<h2>Installation</h2>
+<p>Git</p>
+<pre><code>git clone https://github.com/creativeaura/threesixty-slider.git</code></pre>
+<p>Or install using bower</p>
+<pre><code>bower install threesixty-slider</code></pre>
+<h2>Example 1</h2>
+<h3>Javascript</h3>
+<pre><code>window.onload = init;
+
+var product;
+function init(){
+
+    product1 = $('.product1').ThreeSixty({
+        totalFrames: 72, // Total no. of image you have for 360 slider
+        endFrame: 72, // end frame for the auto spin animation
+        currentFrame: 1, // This the start frame for auto spin
+        imgList: '.threesixty_images', // selector for image list
+        progress: '.spinner', // selector to show the loading progress
+        imagePath:'assets/product1/', // path of the image assets
+        filePrefix: 'ipod-', // file prefix if any
+        ext: '.jpg', // extention for the assets
+        height: 265,
+        width: 400,
+        navigation: true,
+        disableSpin: true // Default false
+    });
+
+}</code></pre>
+<h3>HTML Snippet</h3>
+<pre><code>&lt;div class="threesixty product1"&gt;
+    &lt;div class="spinner"&gt;
+        &lt;span&gt;0%&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;ol class="threesixty_images"&gt;&lt;/ol&gt;
+&lt;/div&gt;</code></pre>
+<p>Here we are initializing an image slider for product 1. The ThreeSixty class constructor require a config object with properties like totalFrame, endFrame and currentFrame</p>
+<h2>Documentation</h2>
+<h5>Methods</h5>
+<p>Public methods to control the slider after initialization.</p>
+<table>
+  <tr>
+    <th>Method Name</th><th>Description</th>
+  </tr>
+  <tr>
+    <td>.play()</td><td>Function to trigger the auto rotation of the slider</td>
+  </tr>
+  <tr>
+    <td>.stop()</td><td>Function to stop the auto play</td>
+  </tr>
+  <tr>
+    <td>.next()</td><td>Function to move the slider to next frame</td>
+  </tr>
+  <tr>
+    <td>.previous()</td><td>Function to move the slider to previous frame</td>
+  </tr>
+ <tr>
+    <td>.gotoAndPlay()</td><td>Use this function if you want the slider spin to a particular frame with animation.</td>
+  </tr>
+</table>
+<h5>Config</h5>
+<p>Here are the list of config value you can pass in while you initilize your 360 slider.</p>
+<table>
+  <tr>
+    <th>Config</th><th>Default value</th><th>Type</th><th>Description</th>
+  </tr>
+  <tr>
+    <td>totalFrames</td><td>180</td><td>Number</td><td>Set total number for frames used in the 360 rotation</td>
+  </tr>
+  <tr>
+    <td>currentFrame</td><td>1</td><td>Number</td><td>Set the starting from of the auto spin on initilize</td>
+  </tr>
+<tr>
+    <td>endFrame</td><td>180</td><td>Number</td><td>Set the frame where you want the auto spin to stop</td>
+  </tr>
+<tr>
+    <td>framerate</td><td>60</td><td>Number</td><td>Framerate for the spin animation</td>
+  </tr>
+<tr>
+    <td>filePrefix</td><td>''</td><td>String</td><td>file prefiex for the assets if you assets name is nike_boot_1.png then filePrefix will be nike_boot_</td>
+  </tr>
+<tr>
+    <td>ext</td><td>png</td><td>String</td><td>File extension for all the assets</td>
+  </tr>
+<tr>
+    <td>height</td><td>300</td><td>Number</td><td>Height you want to set for the three sixty container</td>
+  </tr>
+
+<tr>
+    <td>width</td><td>300</td><td>Number</td><td>Width you want to set for the three sixty container</td>
+  </tr>
+<tr>
+    <td>style</td><td>{}</td><td>Object</td><td>Object container styles for the preloader similar to jQuery.css({})</td>
+  </tr>
+<tr>
+    <td>navigation</td><td>true</td><td>Boolean</td><td>Set false if you don't want default navigation controls</td>
+  </tr>
+<tr>
+    <td>autoplayDirection</td><td>1</td><td>Number</td><td>Control the direction of the spin depending on your assets. You can use 1 or -1</td>
+  </tr>
+<tr>
+    <td>drag</td><td>true</td><td>Boolean</td><td>Set false if you want to disable mouse and touch events on the slider.</td>
+  </tr>
+  <tr>
+    <td>disableSpin</td><td>false</td><td>Boolean</td><td>Will disable the initial spin on load</td>
+  </tr>
+  <tr>
+    <td>zeroPadding</td><td>false</td><td>Boolean</td><td>true will add 0 padding for file names 1 - 9</td>
+  </tr>
+  <tr>
+    <td>responsive</td><td>false</td><td>Boolean</td><td>Enable responsive width for 360</td>
+  </tr>
+  <tr>
+      <td>onReady</td><td>function() {}</td><td>Function</td><td>Callback triggers once all images are loaded and ready to render on the screen</td>
+    </tr>
+   <tr>
+    <td>playSpeed</td><td>100</td><td>Number</td><td>Value to control the speed (in milliseconds) of play button rotation</td>
+  </tr>
+  <tr>
+    <td>zeroBased</td><td>false</td><td>Boolean</td><td>Zero based for image filenames starting at 0</td>
+  </tr>
+</table>
+<h2>Demo</h2>
+<ul>
+<li><a href="http://360slider.com/default_control.html">Example 1 Default Settings</a></li>
+<li><a href="http://360slider.com/custom_controls.html">Example 2 Custom controls</a></li>
+<li><a href="http://360slider.com/responsive.html">Responsive</a></li>
+<li><a href="http://360slider.com/plugins.html">With Plugins</a></li>
+<li><a href="http://360slider.com/full_page_scrolling.html">Fullscreen</a></li>
+</ul>
+<h2>Browsers Supported</h2>
+<p><img src="https://raw.github.com/creativeaura/threesixty-slider/master/assets/browser_logos-64.png" alt="Browsers Supported" /></p>
+<p>This plugin is supported in all browsers including our beloved IE 6</p>
+<h2>Support</h2>
+<p>For support and question please contact at <a href="mailto:gaurav@jassal.me">gaurav@jassal.me</a> or follow at <a href="http://twitter.com/gauravjassal">@gauravjassal</a></p>
+<h2>LICENSE</h2>
+<p>Copyright 2013 Gaurav Jassal</p>
+<p>Released under the MIT and GPL Licenses.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h2>2.0.5 (Jan 6th, 2015)</h2>
+<ul>
+<li>Fixed typo for AppCongif . <a href="https://github.com/creativeaura/threesixty-slider/issues/59">Issue #59</a></li>
+</ul>
+<h2>2.0.4 (Jan 5th, 2015)</h2>
+<ul>
+<li>Fixed typo for AppCongif . <a href="https://github.com/creativeaura/threesixty-slider/issues/59">Issue #59</a></li>
+</ul>
+<h2>2.0.3 (Jan 5th, 2015)</h2>
+<ul>
+<li>Get the last frame correctly . <a href="https://github.com/creativeaura/threesixty-slider/issues/60">Issue #60</a></li>
+</ul>
+<h2>2.0.2 (Jan 1th, 2015)</h2>
+<ul>
+<li>Feature - pass animation speed in play function. <a href="https://github.com/creativeaura/threesixty-slider/issues/53">Issue #53</a></li>
+</ul>
+<h2>2.0.1 (Jan 1th, 2015)</h2>
+<ul>
+<li>Removed console log from a function</li>
+</ul>
+<h2>2.0.0 (Jan 1th, 2015)</h2>
+<ul>
+<li>Feature - Option add to control the speed of the play rotation. <a href="https://github.com/creativeaura/threesixty-slider/issues/53">Issue #53</a></li>
+<li>container dependency removed from css now . <a href="https://github.com/creativeaura/threesixty-slider/issues/51">Issue #51</a></li>
+<li>recalculate height on resize if responsive true . <a href="https://github.com/creativeaura/threesixty-slider/issues/34">Issue #34</a></li>
+</ul>
+<h2>1.0.9 (May 12th, 2014)</h2>
+<ul>
+<li>BUG - base.browser.isIE returns TRUE on non IE browser <a href="https://github.com/creativeaura/threesixty-slider/issues/43">Issue #43</a></li>
+<li>Feature - Trigger &quot;ready&quot; event  <a href="https://github.com/creativeaura/threesixty-slider/issues/42">Issue #42</a></li>
+</ul>
+<h2>1.0.8 (April 3rd, 2014)</h2>
+<ul>
+<li>Missing drag flag added to disable drag and swipe events <a href="https://github.com/creativeaura/threesixty-slider/issues/40">Issue #40</a></li>
+</ul>
+<h2>1.0.7 (November 26, 2013)</h2>
+<ul>
+<li>Bug fixes and Bug fixes and minor enhancements</li>
+</ul>
+<h2>1.0.6-vml (November 20, 2013)</h2>
+<p>VML<br />
+Shane Daniel &amp; Josh Robison</p>
+<ul>
+<li>allow for zero padding more than one digit</li>
+<li>smoother gotoAndPlay solution for infinite cycle</li>
+<li><strong><em>disableWrap</em></strong> option was added for non-true-360 framesets</li>
+</ul>
+<h2>1.0.6 (Aug 17, 2013)</h2>
+<ul>
+<li>minor ie issue fixed</li>
+</ul>
+<h2>1.0.5 (July 18, 2013)</h2>
+<ul>
+<li><strong><em>$.brower.msie</em></strong> issue fixed and plugin is now compatible with latest version for jQuery <a href="https://github.com/creativeaura/threesixty-slider/issues/26">Issue #26</a></li>
+<li>Code linting added grunt-jshint</li>
+</ul>
+<h2>1.0.4 (July 18, 2013)</h2>
+<ul>
+<li>Fullscreen plugin added</li>
+</ul>
+<h2>1.0.3 (July 18, 2013)</h2>
+<ul>
+<li>New demos added and website also updated <a href="http://360slider.com">http:360slider</a></li>
+<li>folder structure changed and removed all unwanted files.</li>
+<li>Optional zero padding for filename 1 - 9 <a href="https://github.com/creativeaura/threesixty-slider/issues/27">Issue #27</a><br />
+zeroPadding: false // If you change it to true it will use zero padding for file names</li>
+<li><strong><em>$.brower.msie</em></strong> issue fixed and plugin is now compatible with latest version for jQuery <a href="https://github.com/creativeaura/threesixty-slider/issues/26">Issue #26</a><br />
+&quot;Uncaught TypeError: Cannot read property 'msie' of undefined&quot; // fixed</li>
+<li>Build script is now using GruntJS tasks</li>
+<li><em>different animation length in .previous() and .next()</em> fixed <a href="https://github.com/creativeaura/threesixty-slider/issues/23">Issue #23</a></li>
+<li><em>PNG Images with &quot;disableSpin: true&quot;</em> <strong>fixed</strong> <a href="https://github.com/creativeaura/threesixty-slider/issues/19">Issue #19</a></li>
+<li>Responsive demo added <a href="https://github.com/creativeaura/threesixty-slider/issues/2">Issue #2</a></li>
+</ul>
+<h2>1.0.2 (June 20, 2013)</h2>
+<ul>
+<li><strong><em>disbaleSpin</em></strong> flag was adding <em>current-image</em> in first and third image and that caused issue with transparent .png image.</li>
+</ul>
+<h2>1.0.1 (June 03, 2013)</h2>
+<ul>
+<li><strong><em>disableSpin</em></strong> flag added</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/62062?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/creativeaura" target="_blank" id="ownerName" class="sidebar-link">creativeaura</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">December 18, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">July 3, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="http://creativeaura.github.io/threesixty-slider" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>bower (^1.3.12)</li><li>grunt (~0.4.1)</li><li>grunt-bump (0.0.11)</li><li>grunt-contrib-copy (~0.5.0)</li><li>grunt-contrib-jshint (~0.6.2)</li><li>grunt-contrib-less (~0.6.4)</li><li>grunt-contrib-qunit (~0.5.2)</li><li>grunt-contrib-uglify (~0.2.2)</li><li>grunt-contrib-watch (~0.4.4)</li><li>grunt-usemin (~2.1.1)</li><li>load-grunt-tasks (~0.2.0)</li><li>qunitjs (~1.14.0)</li><li>time-grunt (~0.1.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/62062?v=4" alt="creativeaura" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/creativeaura" target="_blank" class="text-decoration-none fw-bold">creativeaura</a><p class="mb-0 text-muted small">99 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/135388?v=4" alt="simshanith" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/simshanith" target="_blank" class="text-decoration-none fw-bold">simshanith</a><p class="mb-0 text-muted small">18 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4903226?v=4" alt="gjassal-aimia" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gjassal-aimia" target="_blank" class="text-decoration-none fw-bold">gjassal-aimia</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5239080?v=4" alt="olsonkr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/olsonkr" target="_blank" class="text-decoration-none fw-bold">olsonkr</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/536912?v=4" alt="bitstorm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bitstorm" target="_blank" class="text-decoration-none fw-bold">bitstorm</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/849866?v=4" alt="arthuryeti" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/arthuryeti" target="_blank" class="text-decoration-none fw-bold">arthuryeti</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5119280?v=4" alt="Igloczek" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Igloczek" target="_blank" class="text-decoration-none fw-bold">Igloczek</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3092978?v=4" alt="bitdeli-chef" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bitdeli-chef" target="_blank" class="text-decoration-none fw-bold">bitdeli-chef</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6912981?v=4" alt="waffle-iron" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/waffle-iron" target="_blank" class="text-decoration-none fw-bold">waffle-iron</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2330660?v=4" alt="TakeshiOnishi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/TakeshiOnishi" target="_blank" class="text-decoration-none fw-bold">TakeshiOnishi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1205451?v=4" alt="rivol" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rivol" target="_blank" class="text-decoration-none fw-bold">rivol</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+6 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
