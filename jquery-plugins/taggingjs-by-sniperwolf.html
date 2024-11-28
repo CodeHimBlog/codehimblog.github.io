@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugin to Tagging Like a Charm!</title>
+    <meta name="description" content="taggingJS by sniperwolf. jQuery plugin to tagging like a charm!">
+    <meta name="author" content="sniperwolf">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/taggingjs-by-sniperwolf.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Taggingjs</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Taggingjs",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Taggingjs</h1>
+        <p id="packageDescription" class="text-muted">jQuery plugin to tagging like a charm!</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">933</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.62 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">151</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">27</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/sniperwolf/taggingJS/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/sniperwolf/taggingJS" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>taggingJS</h1>
+<p><a href="https://travis-ci.org/sniperwolf/taggingJS"><img src="https://travis-ci.org/sniperwolf/taggingJS.svg?branch=master" alt="Build Status" /></a></p>
+<h2>jQuery plugin to tagging like a charm!</h2>
+<p><strong>taggingJS</strong> is a jQuery plugin to create an high customizable front-end tag system.<br />
+It is like <code>5 kb</code> and <a href="#browser-support">support major browsers</a> in the world!</p>
+<p>Actual version is <a href="https://github.com/sniperwolf/taggingJS/releases/tag/v1.3.3"><code>1.3.3</code></a>.</p>
+<p><img src="example/example_img.png" alt="Example Image" /></p>
+<h2>Getting Started</h2>
+<p>You can find a working example in <a href="http://codepen.io/sniperwolf/pen/geFxq/">Codepen.io</a><br />
+or in the project's <a href="http://sniperwolf.github.io/taggingJS/">GitHub page</a>.</p>
+<h3>Simplest</h3>
+<ol>
+<li>
+<p><strong>Download</strong> the <code>tagging.min.js</code> file from this repository;</p>
+</li>
+<li>
+<p><strong>Include</strong> <code>&lt;script src="path/to/tagging.min.js"&gt;&lt;/script&gt;</code> to the bottom of<br />
+your page;</p>
+</li>
+<li>
+<p><em>Optional</em> - Include the basic CSS tag style<br />
+<code>&lt;link href="tag-basic-style.css" rel="stylesheet"&gt;</code> to the <code>&lt;head&gt;</code> of<br />
+your page;</p>
+</li>
+<li>
+<p><strong>Add</strong> to your page something like<br />
+<code>&lt;div data-tags-input-name="tag" id="tagBox"&gt;preexisting-tag&lt;/div&gt;</code>;</p>
+</li>
+<li>
+<p><strong>Add</strong> to your main JavaScript file <code>$("#tagBox").tagging();</code>;</p>
+</li>
+</ol>
+<p>The <code>data-tags-input-name="tag"</code> is the <code>name</code> attribute used by each input<br />
+inside the <code>tagBox</code>.</p>
+<h3>Manipulate tags with methods</h3>
+<p>Here there are some <strong>common pattern</strong> to manipulate tags inside the tag box:</p>
+<p><strong>N.B.</strong>: <code>$tag_box</code> is the tag box object. To get it:</p>
+<pre class="prettyprint linenums lang-language"><code>var t, $tag_box;
+
+// We call taggingJS init on all "#tag" divs
+t = $( "#tag" ).tagging();
+
+// This is the $tag_box object of the first captured div
+$tag_box = t[0];</code></pre>
+<h4>Get all tags (object)</h4>
+<pre class="prettyprint linenums lang-language"><code>// To get all tags inside tag box as an array of String
+$tag_box.tagging( "getTags" );
+&gt;&gt;&gt; ["preexisting-tag", "another-tag"]
+
+// To get all tags inside tag box as an array of jQuery Object
+$tag_box.tagging( "getTagsObj" );
+&gt;&gt;&gt; [x.fn.x.init[1], x.fn.x.init[1]]</code></pre>
+<h4>Add new tags</h4>
+<pre class="prettyprint linenums lang-language"><code>// To add a tag with "A new tag added via JS" as text
+$tag_box.tagging( "add", "A new tag added via JS" );
+&gt;&gt;&gt; true
+
+// To add two tag, one with "tag 1" and the other with "tag 2" as text
+$tag_box.tagging( "add", ["tag 1", "tag 2"] );
+&gt;&gt;&gt; ["tag 1", "tag 2"]</code></pre>
+<h4>Remove a tag</h4>
+<pre class="prettyprint linenums lang-language"><code>// To remove a tag with text "A new tag added via JS" as text
+$tag_box.tagging( "remove", "A new tag added via JS" );
+&gt;&gt;&gt; $_obj
+
+// To remove two tag, one with "tag 1" and the other with "tag 2" as text
+$tag_box.tagging( "remove", ["tag 1", "tag 2"] );
+&gt;&gt;&gt; [$_obj]
+
+// Suppose that $tag is the jQuerify object of a tag inside the tag box, you can also do
+$tag_box.tagging( "remove", $tag] );
+&gt;&gt;&gt; $_obj</code></pre>
+<h4>Remove all tags</h4>
+<pre class="prettyprint linenums lang-language"><code>// To remove all tags
+$tag_box.tagging( "removeAll" );
+
+// or
+$tag_box.tagging( "reset" );</code></pre>
+<h4>Get Special Keys</h4>
+<pre class="prettyprint linenums lang-language"><code>// To get special Keys without distinctions
+$tag_box.tagging( "getSpecialKeys" );
+&gt;&gt;&gt; Object {comma: 188, enter: 13, spacebar: 32, del: 46, backspace: 8}
+
+// To get special Keys with distinctions
+$tag_box.tagging( "getSpecialKeysD" );
+&gt;&gt;&gt; Object {add: Object, remove: Object}</code></pre>
+<h4>Add or Remove a Special Key</h4>
+<pre class="prettyprint linenums lang-language"><code>// To add the "left arrow" as a special key to add a new tag
+$tag_box.tagging( "addSpecialKeys", [ "add", { left_arrow: 37 } ] );
+
+// To add the "right arrow" as a special key to remove a tag
+$tag_box.tagging( "addSpecialKeys", [ "remove", { right_arrow: 39 } ] );
+
+// To remove the "right arrow" as a special key
+$tag_box.tagging( "removeSpecialKeys", ["remove", 39] );</code></pre>
+<h4>Disable taggingJS</h4>
+<pre class="prettyprint linenums lang-language"><code>// To disable taggingJS
+$tag_box.tagging( "destroy" );</code></pre>
+<h4>Empty the <code>type_zone</code></h4>
+<pre class="prettyprint linenums lang-language"><code>// To disable taggingJS
+$tag_box.tagging( "emptyInput" );</code></pre>
+<h4>Get or Set the value of <code>type_zone</code></h4>
+<pre class="prettyprint linenums lang-language"><code>// To set "value" as value of the input
+$tag_box.tagging( "valInput", "value" );
+
+// To get the value of the input
+$tag_box.tagging( "valInput" );</code></pre>
+<h4>Trigger Focus event the <code>type_zone</code></h4>
+<pre class="prettyprint linenums lang-language"><code>// To Trigger Focus event the input
+$tag_box.tagging( "focusInput" );</code></pre>
+<h4>Detect when a Tag is Added or Removed</h4>
+<pre class="prettyprint linenums lang-language"><code>// Execute callback when a tag is added
+$tag_box.on( "add:after", function ( el, text, tagging ) {
+  console.log( "Added tag: ", text );
+});
+
+// Execute callback when a tag is removed
+$tag_box.on( "remove:after", function ( el, text, tagging ) {
+  console.log( "Removed tag: ", text );
+});</code></pre>
+<p>Please, see all <a href="#available-methods">Available Methods</a>.</p>
+<h3>Customize</h3>
+<p>There are <strong>several ways</strong> to customize the default behavior of taggingJS:</p>
+<ol>
+<li>
+<p>Use a JavaScript <code>custom_options</code> object to customize the global taggingJS behavior<br />
+(see <a href="#first-way---global-object">First Way</a>);</p>
+</li>
+<li>
+<p>Use <code>data</code> attributes in the <code>tagBox</code> HTML Markup<br />
+(see <a href="#second-way---data-attributes">Second Way</a>);</p>
+</li>
+<li>
+<p>Use a combination of the first two way<br />
+(see <a href="#third-way---mixed-way">Third Way</a>);</p>
+</li>
+</ol>
+<p><strong>N.B.</strong>: Be careful! <code>data</code> attributes have an higher priority than the <code>custom_options</code> object,<br />
+because each <code>data</code> attribute overwrite the global behavior.<br />
+In other words, the global settings work for all tags box captured, unless in<br />
+these are specified <code>data</code> attributes (<em>which may change the behavior</em>).</p>
+<h4>First Way - Global Object</h4>
+<ol>
+<li>
+<p><strong>Create a custom options</strong> <code>object</code>, like this <code>my_custom_options</code> (see <a href="#available-options">Available Options</a>):</p>
+<pre class="prettyprint linenums lang-language"><code>var my_custom_options = {
+    "no-duplicate": true,
+    "no-duplicate-callback": window.alert,
+    "no-duplicate-text": "Duplicate tags",
+    "type-zone-class": "type-zone",
+    "tag-box-class": "tagging",
+    "forbidden-chars": [",", ".", "_", "?"]
+};</code></pre>
+</li>
+<li>
+<p><strong>Create a tag box</strong> (or multiple tag box) like this:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div id="tagBox"&gt;preexisting-tag&lt;/div&gt;</code></pre>
+</li>
+<li>
+<p><strong>Add</strong> to your main JavaScript file:</p>
+<pre class="prettyprint linenums lang-language"><code>$("#tagBox").tagging( my_custom_options );</code></pre>
+</li>
+</ol>
+<p>In this way, we customize the <strong>global behavior</strong> of taggingJS for<br />
+<strong>all tag box</strong> caught with selector.</p>
+<h4>Second Way - Data Attributes</h4>
+<ol>
+<li>
+<p><strong>Create a tag box</strong> with some <code>data</code> attributes, like this (see <a href="#available-options">Available Options</a>):</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div
+    data-no-duplicate="true"
+    data-pre-tags-separator="\n"
+    data-no-duplicate-text="Duplicate tags"
+    data-type-zone-class="type-zone"
+    data-tag-box-class="tagging"
+    data-edit-on-delete="true"
+id="tagBox"&gt;preexisting-tag&lt;/div&gt;</code></pre>
+</li>
+<li>
+<p><strong>Add</strong> to your main JavaScript file:</p>
+<pre class="prettyprint linenums lang-language"><code>$("#tagBox").tagging();</code></pre>
+</li>
+</ol>
+<p><strong>N.B.</strong>: Use data method with <code>no-duplicate-callback</code> and <code>forbidden-chars</code><br />
+can cause some problems. Avoid it.</p>
+<h4>Third Way - Mixed Way</h4>
+<p>In this way, we <strong>mix</strong> data attributes and options object to customize taggingJS behavior for each tag box.</p>
+<ol>
+<li>
+<p><strong>Create a tag box</strong> with some <code>data</code> attributes, like this:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="tag-box"
+    data-no-duplicate="true"
+    data-tags-input-name="tag"
+id="tagBox1"&gt;preexisting-tag&lt;/div&gt;</code></pre>
+</li>
+<li>
+<p><strong>Create <em>another</em> tag box</strong> with no <code>data</code> attributes:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div id="tagBox1" class="tag-box"&gt;preexisting-tag&lt;/div&gt;</code></pre>
+</li>
+<li>
+<p><strong>Create a custom options</strong> <code>object</code>, like this <code>my_custom_options</code> (see <a href="#available-options">Available Options</a>):</p>
+<pre class="prettyprint linenums lang-language"><code>var my_custom_options = {
+    "no-duplicate": false,
+    "tags-input-name": "taggone",
+    "edit-on-delete": false,
+};</code></pre>
+</li>
+<li>
+<p><strong>Add</strong> to your main JavaScript file</p>
+<pre class="prettyprint linenums lang-language"><code>$(".tag-box").tagging( my_custom_options );</code></pre>
+</li>
+</ol>
+<p>Now you may see that:</p>
+<ul>
+<li>
+<p>The <code>#tagBox1</code> has a behavior that overwrite some <code>my_custom_options</code> options:</p>
+<ul>
+<li>Does not accept duplicate tag (<em>for the respective <code>data</code> attribute</em>);</li>
+<li>For each tag, it has <code>tag</code> as input name (<em>for the respective <code>data</code> attribute</em>);</li>
+<li>On delete, the tag is completely removed (<em>for the <code>my_custom_options</code></em>);</li>
+</ul>
+</li>
+<li>
+<p>The <code>#tagBox2</code> has a behavior dictated only by <code>my_custom_options</code>:</p>
+<ul>
+<li>Accept duplicate tag (<em>for the <code>my_custom_options</code></em>);</li>
+<li>For each tag, it has <code>tag</code> as input name (<em>for the <code>my_custom_options</code></em>);</li>
+<li>On delete, the tag is completely removed (<em>for the <code>my_custom_options</code></em>);</li>
+</ul>
+</li>
+</ul>
+<h2>Available Options</h2>
+<p>Below there are the <strong>available options to customize taggingJS</strong> with <code>type</code>,<br />
+a little description and the default value:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>case-sensitive</strong></td>
+<td><code>Boolean</code></td>
+<td><code>false</code></td>
+<td>If <code>false</code>, all text is treated like lowercase.</td>
+</tr>
+<tr>
+<td><strong>close-char</strong></td>
+<td><code>String</code></td>
+<td><code>"&amp;times;"</code></td>
+<td>Single Tag close character.</td>
+</tr>
+<tr>
+<td><strong>close-class</strong></td>
+<td><code>String</code></td>
+<td><code>"tag-i"</code></td>
+<td>Single Tag close class.</td>
+</tr>
+<tr>
+<td><strong>edit-on-delete</strong></td>
+<td><code>Boolean</code></td>
+<td><code>true</code></td>
+<td><code>true</code> to edit tag that has just been removed from tag box.</td>
+</tr>
+<tr>
+<td><strong>forbidden-chars</strong></td>
+<td><code>Array</code></td>
+<td><code>["," , ".", "_", "?"]</code></td>
+<td>Array of forbidden characters.</td>
+</tr>
+<tr>
+<td><strong>forbidden-chars-callback</strong></td>
+<td><code>Function</code></td>
+<td><code>window.alert</code></td>
+<td>Function to call when is detected a forbidden character.</td>
+</tr>
+<tr>
+<td><strong>forbidden-chars-text</strong></td>
+<td><code>String</code></td>
+<td><code>"Forbidden character:"</code></td>
+<td>Basic text passed to <code>forbidden-chars-callback</code>.</td>
+</tr>
+<tr>
+<td><strong>forbidden-words</strong></td>
+<td><code>Array</code></td>
+<td><code>[]</code></td>
+<td>Array of forbidden words.</td>
+</tr>
+<tr>
+<td><strong>forbidden-words-callback</strong></td>
+<td><code>Function</code></td>
+<td><code>window.alert</code></td>
+<td>Function to call when is detected a forbidden words.</td>
+</tr>
+<tr>
+<td><strong>forbidden-words-text</strong></td>
+<td><code>String</code></td>
+<td><code>"Forbidden word:"</code></td>
+<td>Basic text passed to <code>forbidden-words-callback</code>.</td>
+</tr>
+<tr>
+<td><strong>no-backspace</strong></td>
+<td><code>Boolean</code></td>
+<td><code>false</code></td>
+<td>Backspace key remove last tag by default, <code>true</code> to avoid that.</td>
+</tr>
+<tr>
+<td><strong>no-comma</strong></td>
+<td><code>Boolean</code></td>
+<td><code>false</code></td>
+<td>Comma <code>","</code> key add a new tag by default, <code>true</code> to avoid that.</td>
+</tr>
+<tr>
+<td><strong>no-del</strong></td>
+<td><code>Boolean</code></td>
+<td><code>false</code></td>
+<td>Del key remove last tag by default, <code>true</code> to avoid that.</td>
+</tr>
+<tr>
+<td><strong>no-duplicate</strong></td>
+<td><code>Boolean</code></td>
+<td><code>true</code></td>
+<td>If <code>true</code>, there will be no duplicate tag's name in the tag box.</td>
+</tr>
+<tr>
+<td><strong>no-duplicate-callback</strong></td>
+<td><code>Function</code></td>
+<td><code>window.alert</code></td>
+<td>Function to call when is detected a duplicate tag.</td>
+</tr>
+<tr>
+<td><strong>no-duplicate-text</strong></td>
+<td><code>String</code></td>
+<td><code>"Duplicate tag:"</code></td>
+<td>Basic text passed to <code>no-duplicate-callback</code>.</td>
+</tr>
+<tr>
+<td><strong>no-enter</strong></td>
+<td><code>Boolean</code></td>
+<td><code>false</code></td>
+<td>Enter key add a new tag by default, <code>true</code> to avoid that.</td>
+</tr>
+<tr>
+<td><strong>no-spacebar</strong></td>
+<td><code>Boolean</code></td>
+<td><code>false</code></td>
+<td>Spacebar key add a new tag by default. <code>true</code> to avoid that.</td>
+</tr>
+<tr>
+<td><strong>pre-tags-separator</strong></td>
+<td><code>String</code></td>
+<td><code>", "</code></td>
+<td>This is used to <code>split</code> the initial text and add <code>preexistint-tag</code>. By default, you must put new tags using a comma and a space (<code>", "</code>).</td>
+</tr>
+<tr>
+<td><strong>tag-box-class</strong></td>
+<td><code>String</code></td>
+<td><code>"tagging"</code></td>
+<td>Class of the tag box.</td>
+</tr>
+<tr>
+<td><strong>tag-box-editable-class</strong></td>
+<td><code>String</code></td>
+<td><code>"editable"</code></td>
+<td>Class of the tag box when editable, used together with tags-limit option for css targeting.</td>
+</tr>
+<tr>
+<td><strong>tag-char</strong></td>
+<td><code>String</code></td>
+<td><code>"#"</code></td>
+<td>Single Tag char.</td>
+</tr>
+<tr>
+<td><strong>tag-class</strong></td>
+<td><code>String</code></td>
+<td><code>"tag"</code></td>
+<td>Single Tag class.</td>
+</tr>
+<tr>
+<td><strong>tag-on-blur</strong></td>
+<td><code>Boolean</code></td>
+<td><code>true</code></td>
+<td>If <code>true</code>, clicking away from the <code>$type_zone</code> will add a new tag.</td>
+</tr>
+<tr>
+<td><strong>tags-input-name</strong></td>
+<td><code>String</code></td>
+<td><code>"tag"</code></td>
+<td>Name to use as <code>name=""</code> in single tags' input. By default, all tags being passed as array like <code>tag[]</code>.</td>
+</tr>
+<tr>
+<td><strong>tags-limit</strong></td>
+<td><code>Integer</code></td>
+<td><code>0</code></td>
+<td>Limit the number of tags that can be added, zero for no limit.</td>
+</tr>
+<tr>
+<td><strong>type-zone-class</strong></td>
+<td><code>String</code></td>
+<td><code>"type-zone"</code></td>
+<td>Class of the type-zone.</td>
+</tr>
+</tbody>
+</table>
+<h2>Available Methods</h2>
+<p>Below there are the <strong>available methods of taggingJS</strong> with a<br />
+little description, the argument that it can take and the return <code>type</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+<th>Argument</th>
+<th>Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>add( <code>text</code> or <code>[text]</code> )</strong></td>
+<td>Add a new tag.</td>
+<td>A <code>String</code> (or an <code>Array</code> of <code>String</code>) to add as tag, if <code>null</code> we get the content of tag box <code>type_zone</code>.</td>
+<td><code>Boolean</code> or <code>Funtion</code></td>
+</tr>
+<tr>
+<td><strong>add:after( <code>function</code> )</strong></td>
+<td>Execute the function after add a Tag.</td>
+<td>Depends on the <code>function</code> used as callback.</td>
+<td><code>Generic</code></td>
+</tr>
+<tr>
+<td><strong>addSpecialKeys( <code>[ "type", obj ]</code> )</strong></td>
+<td>Add a special keys to add or remove a tag.</td>
+<td><code>Array</code> - Where <code>"type"</code> is <code>"add"</code> or <code>"remove"</code>, <code>obj</code> is like <code>{ key_name: key_code }</code> (it can be also an <code>Array</code> of <code>obj</code>).</td>
+<td>A <code>String</code> for error or <code>Object</code>  Actually <code>"type"_key</code> (<code>add_key</code> or <code>remove_key</code>).</td>
+</tr>
+<tr>
+<td><strong>destroy()</strong></td>
+<td>Remove <code>type_zone</code>, all tags and other things.</td>
+<td><code>void</code></td>
+<td><code>Boolean</code></td>
+</tr>
+<tr>
+<td><strong>emptyInput()</strong></td>
+<td>Empty tag box's <code>type_zone</code>.</td>
+<td><code>void</code></td>
+<td><code>$_obj</code> - The jQuerified <code>type_zone</code> itself.</td>
+</tr>
+<tr>
+<td><strong>focusInput()</strong></td>
+<td>Trigger focus on tag box's <code>type_zone</code>.</td>
+<td><code>void</code></td>
+<td><code>$_obj</code> - The jQuerified <code>type_zone</code> itself.</td>
+</tr>
+<tr>
+<td><strong>getDataOptions()</strong></td>
+<td>Get Data attributes custom options.</td>
+<td><code>void</code></td>
+<td><code>Object</code> - tag box data attributes custom options.</td>
+</tr>
+<tr>
+<td><strong>getSpecialKeys()</strong></td>
+<td>Return all special keys inside an object (without distinction)</td>
+<td><code>void</code></td>
+<td><code>Object</code> - All tags as member of strings.</td>
+</tr>
+<tr>
+<td><strong>getSpecialKeysD()</strong></td>
+<td>Return all special keys inside an object (with distinction)</td>
+<td><code>void</code></td>
+<td>An <code>Object</code> with an <code>add</code> and <code>remove</code> properties.</td>
+</tr>
+<tr>
+<td><strong>getTagsObj()</strong></td>
+<td>Return all tags as object</td>
+<td><code>void</code></td>
+<td><code>Array</code> - All tags as member of objects.</td>
+</tr>
+<tr>
+<td><strong>init()</strong></td>
+<td>Init method to bootstrap all things</td>
+<td><code>void</code></td>
+<td><code>$_obj</code> - The jQuerify tag box.</td>
+</tr>
+<tr>
+<td><strong>refresh( <code>text</code> )</strong></td>
+<td>Remove and insert all tag</td>
+<td>A <code>String</code> with all tags separated by <code>pre-tags-separator</code> option value (if <code>null</code>, we call <code>getTags</code> method)</td>
+<td><code>Boolean</code></td>
+</tr>
+<tr>
+<td><strong>remove( <code>text</code> or <code>$_obj</code> )</strong></td>
+<td>Remove last tag or the specified ones in tag box's <code>type_zone</code>.</td>
+<td>A <code>String</code> or <code>$_obj</code> (or an <code>Array</code> of them) of the tag to remove.</td>
+<td>A <code>String</code> with error message  or <code>$_obj</code> of the removed tag.</td>
+</tr>
+<tr>
+<td><strong>remove:after( <code>function</code> )</strong></td>
+<td>Execute the function after remove a Tag.</td>
+<td>Depends on the <code>function</code> used as callback.</td>
+<td><code>Generic</code></td>
+</tr>
+<tr>
+<td><strong>removeAll()</strong></td>
+<td>Alias of reset</td>
+<td><code>void</code></td>
+<td><code>Array</code> - All removed tags.</td>
+</tr>
+<tr>
+<td><strong>removeSpecialKeys( <code>[ "type", obj ]</code> )</strong></td>
+<td>Remove a special key .</td>
+<td><code>Array</code> - Where <code>"type"</code> is <code>"add"</code> or <code>"remove"</code>, <code>obj</code> is like <code>{ key_name: key_code }</code> (it can be also an <code>Array</code> of <code>obj</code>).</td>
+<td><code>Object</code> -  Actually <code>"type"_key</code> (<code>add_key</code> or <code>remove_key</code>).</td>
+</tr>
+<tr>
+<td><strong>reset()</strong></td>
+<td>Remove all tags from tag box's <code>type_zone</code></td>
+<td><code>void</code></td>
+<td><code>Array</code> - All removed tags.</td>
+</tr>
+<tr>
+<td><strong>valInput( <code>text</code> )</strong></td>
+<td>Get or set the tag box <code>type_zone</code>'s value</td>
+<td>A <code>String</code> to put as tag box <code>type_zone</code>'s value.</td>
+<td>The value <code>String</code> or <code>$_obj</code> of tag box's <code>type_zone</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>You can find example <a href="#manipulate-tags">here</a>.</p>
+<h2>Contribute</h2>
+<h3>Set Up nodeJS and Grunt</h3>
+<ol>
+<li>
+<p>Fork the repository;</p>
+</li>
+<li>
+<p>Open a shell in project's directory;</p>
+</li>
+<li>
+<p>Type <code>npm install</code> (make sure you have installed <a href="http://nodejs.org">nodeJS</a>);</p>
+</li>
+<li>
+<p>Type <code>grunt</code> to execute the default script (without minification),<br />
+<code>grunt dist</code> to also minify the script (make sure you have installed <a href="http://gruntjs.com">Grunt</a>).</p>
+</li>
+</ol>
+<h3>JavaScript Style Guide</h3>
+<p>I follow the <a href="https://contribute.jquery.org/style-guide/js/">jQuery's JavaScript style guide</a>,<br />
+please follow it you too :D</p>
+<p>Also take a look to <a href="https://github.com/rwaldron/idiomatic.js/">IdiomaticJS</a><br />
+(<strong>Principles of Writing Consistent, Idiomatic JavaScript</strong>).</p>
+<h2>Requirements</h2>
+<ul>
+<li><strong>jQuery</strong> (<code>1.5.X</code> or more, also <code>2.X</code> works);</li>
+</ul>
+<h2>Browser Support</h2>
+<p>Supports all major browsers in the world (<code>IE 6+</code>, <code>Mozilla Firefox 1+</code>,<br />
+<code>Google Chrome 1+</code>, <code>Safari 5.1+</code>).</p>
+<h2>License</h2>
+<p>(C) Fabrizio Fallico 2014, released under the <a href="LICENSE.md">MIT license</a>.</p>
+<h2>Changelog (v1.3.X)</h2>
+<h3>1.3.3 - [Oct 24, 2014]</h3>
+<ul>
+<li>Now you can add tags clicking away from the <code>$type_zone</code> (see <a href="#available-options">Available Options</a>).</li>
+<li>Fix <a href="https://github.com/sniperwolf/taggingJS/issues/22">#22</a>, Fix <a href="https://github.com/sniperwolf/taggingJS/issues/24">#24</a>, Fix <a href="https://github.com/sniperwolf/taggingJS/issues/26">#26</a>, Fix <a href="https://github.com/sniperwolf/taggingJS/issues/28">#28</a> issues.</li>
+</ul>
+<h3>1.3.1 - [Apr 28, 2014]</h3>
+<ul>
+<li>Radically changed the architecture of the plugin. Now we are more flexible to changes and pull requests.</li>
+<li>Added basic methods.</li>
+<li>Now you can add (and remove) custom special keys to add or remove tags (see <a href="#available-methods">Available Methods</a>).</li>
+<li>Fix <a href="https://github.com/sniperwolf/taggingJS/issues/6">#6</a>, <a href="https://github.com/sniperwolf/taggingJS/issues/8">#8</a>, <a href="https://github.com/sniperwolf/taggingJS/issues/16">#16</a>, <a href="https://github.com/sniperwolf/taggingJS/issues/17">#17</a>, <a href="https://github.com/sniperwolf/taggingJS/issues/19">#19</a> issues.</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/741938?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/sniperwolf" target="_blank" id="ownerName" class="sidebar-link">sniperwolf</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">March 22, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 27, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://sniperwolf.github.io/taggingJS/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (~0.4.2)</li><li>grunt-cli (~0.1.13)</li><li>grunt-contrib-uglify (~0.3.2)</li><li>grunt-contrib-jshint (~0.8.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/741938?v=4" alt="sniperwolf" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sniperwolf" target="_blank" class="text-decoration-none fw-bold">sniperwolf</a><p class="mb-0 text-muted small">74 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2807643?v=4" alt="mattsommer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mattsommer" target="_blank" class="text-decoration-none fw-bold">mattsommer</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2694949?v=4" alt="MHM5000" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/MHM5000" target="_blank" class="text-decoration-none fw-bold">MHM5000</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/7346545?v=4" alt="nicolaignoto" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nicolaignoto" target="_blank" class="text-decoration-none fw-bold">nicolaignoto</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/776488?v=4" alt="Padam87" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Padam87" target="_blank" class="text-decoration-none fw-bold">Padam87</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/19854148?v=4" alt="asmyshlyaev177" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/asmyshlyaev177" target="_blank" class="text-decoration-none fw-bold">asmyshlyaev177</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4214840?v=4" alt="harzzn" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/harzzn" target="_blank" class="text-decoration-none fw-bold">harzzn</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1366014?v=4" alt="jpaugh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jpaugh" target="_blank" class="text-decoration-none fw-bold">jpaugh</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1432812?v=4" alt="skotchio" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/skotchio" target="_blank" class="text-decoration-none fw-bold">skotchio</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/79077493?v=4" alt="MF-ds" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/MF-ds" target="_blank" class="text-decoration-none fw-bold">MF-ds</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+5 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
