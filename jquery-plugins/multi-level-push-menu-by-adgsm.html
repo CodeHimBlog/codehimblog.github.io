@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilevelpushmenu jQuery Plugin Implementation</title>
+    <meta name="description" content="multi-level-push-menu by adgsm. MultiLevelPushMenu jQuery Plugin implementation">
+    <meta name="author" content="adgsm">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/multi-level-push-menu-by-adgsm.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Multi Level Push Menu</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Multi Level Push Menu",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Multi Level Push Menu</h1>
+        <p id="packageDescription" class="text-muted">MultiLevelPushMenu jQuery Plugin implementation</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">804</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">18.01 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">212</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">70</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/adgsm/multi-level-push-menu/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/adgsm/multi-level-push-menu" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Multi-level-push-menu</h1>
+<p>by Momcilo Dzunic</p>
+<p>This jQuery plugin is inspired by <a href="http://tympanus.net/codrops/2013/08/13/multi-level-push-menu/">Codrops</a> MultiLevelPushMenu but unlike it not relaying on CSS 3D Transforms and therefore functional in older browsers too (i.e. IE 8).</p>
+<h3>Documentation, examples and code samples <a href="http://multi-level-push-menu.dzunic.net">http://multi-level-push-menu.dzunic.net</a></h3>
+<p><img src="http://multi-level-push-menu.dzunic.net/img/menu.png" alt="" /></p>
+<h3>Features</h3>
+<ul>
+<li>Multi-level menu support</li>
+<li>Endless nesting of navigation elements</li>
+<li>Expand/Collapse navigation with a left/right swipe gesture</li>
+<li>Push/Slide DOM elements of choice</li>
+<li>Left-to-right and Right-to-left sliding directions</li>
+<li>Flexible, simple markup</li>
+<li>JS Array input, if markup is not present</li>
+<li>A number of exposed Options, Methods and Events</li>
+<li>Cross-browser compatibility (IE8+, Chrome, Midori, Firefox, Safari, Opera, Android Browser, iOS Safari)</li>
+</ul>
+<h3>Usage</h3>
+<h4>Include the CSS</h4>
+<p>multilevelpushmenu.css can be modified to fit website design</p>
+<p>FontAwesome (icons)</p>
+<pre><code>&lt;link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css"&gt;</code></pre>
+<p>Font I like (use any other you like)</p>
+<pre><code>&lt;link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'&gt;</code></pre>
+<p>Multi-Level-Push-Menu</p>
+<pre><code>&lt;link rel="stylesheet" href="multilevelpushmenu.css" /&gt;</code></pre>
+<h4>Include the JS</h4>
+<p>jQuery</p>
+<pre><code>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;</code></pre>
+<p>Modernizr (needed for IE8)</p>
+<pre><code>&lt;script type="text/javascript" src="//oss.maxcdn.com/libs/modernizr/2.6.2/modernizr.min.js"&gt;&lt;/script&gt;</code></pre>
+<p>Multi-Level-Push-Menu</p>
+<pre><code>&lt;script src="jquery.multilevelpushmenu.min.js"&gt;&lt;/script&gt;</code></pre>
+<h4>Menu Markup</h4>
+<pre><code>&lt;div id="menu"&gt;
+  &lt;nav&gt;
+    &lt;h2&gt;&lt;i class="fa fa-reorder"&gt;&lt;/i&gt;All Categories&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;a href="#"&gt;&lt;i class="fa fa-laptop"&gt;&lt;/i&gt;Devices&lt;/a&gt;
+            &lt;h2&gt;&lt;i class="fa fa-laptop"&gt;&lt;/i&gt;Devices&lt;/h2&gt;
+            &lt;ul&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;&lt;i class="fa fa-phone"&gt;&lt;/i&gt;Mobile Phones&lt;/a&gt;
+                    &lt;h2&gt;&lt;i class="fa fa-phone"&gt;&lt;/i&gt;Mobile Phones&lt;/h2&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;Super Smart Phone&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;Thin Magic Mobile&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;Performance Crusher&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;Futuristic Experience&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;&lt;i class="fa fa-desktop"&gt;&lt;/i&gt;Televisions&lt;/a&gt;
+                    &lt;h2&gt;&lt;i class="fa fa-desktop"&gt;&lt;/i&gt;Televisions&lt;/h2&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;Flat Super Screen&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;Gigantic LED&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;Power Eater&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;3D Experience&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;Classic Comfort&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;&lt;i class="fa fa-camera-retro"&gt;&lt;/i&gt;Cameras&lt;/a&gt;
+                    &lt;h2&gt;&lt;i class="fa fa-camera-retro"&gt;&lt;/i&gt;Cameras&lt;/h2&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;Smart Shot&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;Power Shooter&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;Easy Photo Maker&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;Super Pixel&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href="#"&gt;&lt;i class="fa fa-book"&gt;&lt;/i&gt;Magazines&lt;/a&gt;
+            &lt;h2&gt;&lt;i class="fa fa-book"&gt;&lt;/i&gt;Magazines&lt;/h2&gt;
+            &lt;ul&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;National Geographics&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;The Spectator&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;Rambler&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;Physics World&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;The New Scientist&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href="#"&gt;&lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;Store&lt;/a&gt;
+            &lt;h2&gt;&lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;Store&lt;/h2&gt;
+            &lt;ul&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;&lt;i class="fa fa-tags"&gt;&lt;/i&gt;Clothes&lt;/a&gt;
+                    &lt;h2&gt;&lt;i class="fa fa-tags"&gt;&lt;/i&gt;Clothes&lt;/h2&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;&lt;i class="fa fa-female"&gt;&lt;/i&gt;Women's Clothing&lt;/a&gt;
+                            &lt;h2&gt;&lt;i class="fa fa-female"&gt;&lt;/i&gt;Women's Clothing&lt;/h2&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;
+                                    &lt;a href="#"&gt;Tops&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;a href="#"&gt;Dresses&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;a href="#"&gt;Trousers&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;a href="#"&gt;Shoes&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;a href="#"&gt;Sale&lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href="#"&gt;&lt;i class="fa fa-male"&gt;&lt;/i&gt;Men's Clothing&lt;/a&gt;
+                            &lt;h2&gt;&lt;i class="fa fa-male"&gt;&lt;/i&gt;Men's Clothing&lt;/h2&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;
+                                    &lt;a href="#"&gt;Shirts&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;a href="#"&gt;Trousers&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;a href="#"&gt;Shoes&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;a href="#"&gt;Sale&lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;Jewelry&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;Music&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#"&gt;Grocery&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href="#"&gt;Collections&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href="#"&gt;Credits&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;</code></pre>
+<h4>Menu JS Array</h4>
+<p>You can supply JS Array instead of above HTML markup.</p>
+<pre><code>&lt;script&gt;
+var arrMenu = [
+  {
+    title: 'All Categories',
+    id: 'menuID',
+    icon: 'fa fa-reorder',
+    items: [
+      {
+        name: 'Devices',
+        id: 'itemID',
+        icon: 'fa fa-laptop',
+        link: '#',
+        items: [
+          {
+            title: 'Devices',
+            icon: 'fa fa-laptop',
+            items: [
+              {
+                name: 'Mobile Phones',
+                icon: 'fa fa-phone',
+                link: '#',
+                items: [
+                  {
+                    title: 'Mobile Phones',
+                    icon: 'fa fa-phone',
+                    link: '#',
+                    items: [
+                      {
+                        name: 'Super Smart Phone',
+                        link: '#'
+                      },
+                      {
+                        name: 'Thin Magic Mobile',
+                        link: '#'
+                      },
+                      {
+                        name: 'Performance Crusher',
+                        link: '#'
+                      },
+                      {
+                        name: 'Futuristic Experience',
+                        link: '#'
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                name: 'Televisions',
+                icon: 'fa fa-desktop',
+                link: '#',
+                items: [
+                  {
+                    title: 'Televisions',
+                    icon: 'fa fa-desktop',
+                    link: '#',
+                    items: [
+                      {
+                        name: 'Flat Super Screen',
+                        link: '#'
+                      },
+                      {
+                        name: 'Gigantic LED',
+                        link: '#'
+                      },
+                      {
+                        name: 'Power Eater',
+                        link: '#'
+                      },
+                      {
+                        name: '3D Experience',
+                        link: '#'
+                      },
+                      {
+                        name: 'Classic Comfort',
+                        link: '#'
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                name: 'Cameras',
+                icon: 'fa fa-camera-retro',
+                link: '#',
+                items: [
+                  {
+                    title: 'Cameras',
+                    icon: 'fa fa-camera-retro',
+                    link: '#',
+                    items: [
+                      {
+                        name: 'Smart Shot',
+                        link: '#'
+                      },
+                      {
+                        name: 'Power Shooter',
+                        link: '#'
+                      },
+                      {
+                        name: 'Easy Photo Maker',
+                        link: '#'
+                      },
+                      {
+                        name: 'Super Pixel',
+                        link: '#'
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Magazines',
+        icon: 'fa fa-book',
+        link: '#',
+        items: [
+          {
+            title: 'Magazines',
+            icon: 'fa fa-book',
+            items: [
+              {
+                name: 'National Geographics',
+                link: '#'
+              },
+              {
+                name: 'Scientific American',
+                link: '#'
+              },
+              {
+                name: 'The Spectator',
+                link: '#'
+              },
+              {
+                name: 'Rambler',
+                link: '#'
+              },
+              {
+                name: 'Physics World',
+                link: '#'
+              },
+              {
+                name: 'The New Scientist',
+                link: '#'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Store',
+        icon: 'fa fa-shopping-cart',
+        link: '#',
+        items: [
+          {
+            title: 'Store',
+            icon: 'fa fa-shopping-cart',
+            items: [
+              {
+                name: 'Clothes',
+                icon: 'fa fa-tags',
+                link: '#',
+                items: [
+                  {
+                    title: 'Clothes',
+                    icon: 'fa fa-tags',
+                    items: [
+                      {
+                        name: 'Women\'s Clothing',
+                        icon: 'fa fa-female',
+                        link: '#',
+                        items: [
+                          {
+                            title: 'Women\'s Clothing',
+                            icon: 'fa fa-female',
+                            items: [
+                              {
+                                name: 'Tops',
+                                link: '#'
+                              },
+                              {
+                                name: 'Dresses',
+                                link: '#'
+                              },
+                              {
+                                name: 'Trousers',
+                                link: '#'
+                              },
+                              {
+                                name: 'Shoes',
+                                link: '#'
+                              },
+                              {
+                                name: 'Sale',
+                                link: '#'
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        name: 'Men\'s Clothing',
+                        icon: 'fa fa-male',
+                        link: '#',
+                        items: [
+                          {
+                            title: 'Men\'s Clothing',
+                            icon: 'fa fa-male',
+                            items: [
+                              {
+                                name: 'Shirts',
+                                link: '#'
+                              },
+                              {
+                                name: 'Trousers',
+                                link: '#'
+                              },
+                              {
+                                name: 'Shoes',
+                                link: '#'
+                              },
+                              {
+                                name: 'Sale',
+                                link: '#'
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                name: 'Jewelry',
+                link: '#'
+              },
+              {
+                name: 'Music',
+                link: '#'
+              },
+              {
+                name: 'Grocery',
+                link: '#'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Collections',
+        link: '#'
+      },
+      {
+        name: 'Credits',
+        link: '#'
+      }
+    ]
+  }
+];
+&lt;/script&gt;</code></pre>
+<h4>Initialize</h4>
+<p>When HTML markup is present.</p>
+<pre><code>    &lt;script&gt;
+    $(document).ready(function(){
+            $('#menu').multilevelpushmenu();
+        });
+    &lt;/script&gt;</code></pre>
+<p>When menu items are provided as JS Array.</p>
+<pre><code>  &lt;script&gt;
+    $(document).ready(function(){
+      $('#menu').multilevelpushmenu({
+        menu: arrMenu
+      });
+    });
+  &lt;/script&gt;  </code></pre>
+<p>Full list of options is provided below.</p>
+<h3>Options</h3>
+<pre><code>container: $( '#menu' ),                                   // Holding container.
+containersToPush: [ $( '#content1' ), $( '#content2' ) ],  // Array of objects to push/slide together with menu.
+collapsed: false,                                          // Initialize menu in collapsed/expanded mode
+menuID: 'multilevelpushmenu',                              // ID of &lt;nav&gt; element.
+wrapperClass: 'multilevelpushmenu_wrapper',                // Wrapper CSS class.
+menuInactiveClass: 'multilevelpushmenu_inactive',          // CSS class for inactive wrappers.
+menu: arrMenu,                                             // JS array of menu items (if markup not provided).
+menuWidth: 0,                                              // Wrapper width (integer, '%', 'px', 'em').
+menuHeight: 0,                                             // Menu height (integer, '%', 'px', 'em').
+backText: 'Back',                                          // Text for 'Back' menu item.
+backItemClass: 'backItemClass',                            // CSS class for back menu item.
+backItemIcon: 'fa fa-angle-right',                         // FontAvesome icon used for back menu item.
+groupIcon: 'fa fa-angle-left',                             // FontAvesome icon used for menu items contaning sub-items.
+mode: 'overlap',                                           // Menu sliding mode: overlap/cover.
+overlapWidth: 40,                                          // Width in px of menu wrappers overlap
+preventItemClick: true,                                    // set to false if you do not need event callback functionality per item click
+preventGroupItemClick: true,                               // set to false if you do not need event callback functionality per group item click
+direction: 'ltr',                                          // set to 'rtl' for reverse sliding direction
+fullCollapse: false,                                       // set to true to fully hide base level holder when collapsed
+swipe: 'both'                                              // or 'touchscreen', or 'desktop', or 'none'. everything else is concidered as 'none'</code></pre>
+<h4>Using swipe on desktops</h4>
+<p>If you will use swiping menus on desktops, mousedown bubble will be canceled and therefore any DOM object placed within menu item won't get focus when clicked.<br />
+To overcome this you can use originally triggered event returned as onItemClick's first argument. Below is an example showing how to set focus on input element, <a href="http://jsfiddle.net/5rjg9/1/">http://jsfiddle.net/5rjg9/1/</a></p>
+<pre><code>$(document).ready(function () {
+    $('#menu').multilevelpushmenu({
+        onItemClick: function () {
+            var e = arguments[0];
+            if ($(e.target).prop('tagName').toLowerCase() == 'input') {
+                $(e.target).focus();
+                $(e.target).val('focused');
+                $(e.target).unbind('blur');
+                $(e.target).blur(function(){
+                    $(e.target).val('blured');
+                });
+            }
+        }
+    });
+});</code></pre>
+<p>or,</p>
+<p><a href="http://jsfiddle.net/c5EA4/6/">http://jsfiddle.net/c5EA4/6/</a></p>
+<pre><code>$(document).ready(function () {
+    $('#menu').multilevelpushmenu({
+        onMenuSwipe: function () {
+            var e = arguments[0];
+            if ($(e.target).prop('tagName').toLowerCase() == 'input') return false;
+        }
+    });
+});</code></pre>
+<p>Alternatively, you can set swipe option to 'touchscreen' and allow swiping menus only on touch-screen enabled devices.</p>
+<p>Full list of exposed metdods is provided below.</p>
+<h3>Methods</h3>
+<pre><code>/**
+ * Initialize menu
+ */
+$('#menu').multilevelpushmenu();
+// or
+$('#menu').multilevelpushmenu('init');
+
+/**
+ * Collapse menu
+ */
+// Full collapse
+$('#menu').multilevelpushmenu('collapse');
+
+// Collapse menu down to level 1 (0 level represent root level expanded)
+$('#menu').multilevelpushmenu('collapse', 1);
+
+// Collapse menu down to the level of $menuLevelObject
+$('#menu').multilevelpushmenu('collapse', $menuLevelObject);
+
+// Collapse menu down to the level of menu level object with title 'Devices' (not really recommended since there could be many menu level objects with the same title; in such cases collasing will be unsuccessful)
+$('#menu').multilevelpushmenu('collapse', 'Devices');
+
+/**
+ * Expand menu
+ */
+// Menu expand from fully collapsed mode to level 0
+$('#menu').multilevelpushmenu('expand');
+
+// Expand menu up to the $menuLevelObject
+$('#menu').multilevelpushmenu('expand', $menuLevelObject);
+
+// Expand menu up to the menu level object with title 'Devices' (not recommended since there could be many menu level objects with the same title; in such cases expanding will be unsuccessful)
+$('#menu').multilevelpushmenu('expand', 'Devices');
+
+/**
+ * Menu Expanded?
+ * Check if menu level object is already expanded (returns true/false)
+ */
+$('#menu').multilevelpushmenu('menuexpanded', $menuLevelObject);
+
+/**
+ * Active (last expanded) menu level
+ * Returns active menu level object, or false if menu is fully collapsed
+ */
+$('#menu').multilevelpushmenu('activemenu');
+
+/**
+ * Find menu level(s) by title
+ * Provides collection of menu level objects matching provided menu title, or false if there is no match
+ */
+$('#menu').multilevelpushmenu('findmenusbytitle', 'Devices');
+$('#menu').multilevelpushmenu('findmenusbytitle', /devices/i);
+
+/**
+ * Find menu item(s) by name
+ * Provides collection of menu item objects matching provided name, or false if there is no match
+ */
+$( '#menu' ).multilevelpushmenu( 'finditemsbyname' , 'Devices' );
+$( '#menu' ).multilevelpushmenu( 'finditemsbyname' , /devices/i );
+
+/**
+ * Find path to root of selected menu level object
+ * Provides chain collection of menu level objects (root menu level object to given menu level object), or false in case of error
+ */
+$('#menu').multilevelpushmenu('pathtoroot', $menuLevelObject);
+
+/**
+ * Find shared path or path differences of two given menu level objects
+ * Provides collection of shared menu level objects of two menu level objects if bool parameter is set to true, or collection of menu level objects representing differences if bool is false; or false if there is no match
+ */
+$('#menu').multilevelpushmenu('comparepaths', $menuLevelObject1, $menuLevelObject2, bool);
+
+// Shared path collection
+$('#menu').multilevelpushmenu('comparepaths', $menuLevelObject1, $menuLevelObject2, true);
+
+// Differences collection
+$('#menu').multilevelpushmenu('comparepaths', $menuLevelObject1, $menuLevelObject2, false);
+
+/**
+ * Get or Set plug-in options
+ * Get (if third parameter is not set) or Set selected plug-in option
+ */
+// Get
+$('#menu').multilevelpushmenu('option', 'mode');
+
+// Set
+$('#menu').multilevelpushmenu('option', 'mode', 'cover');
+
+/**
+ * Add/Remove menu item(s) with sub-menus
+ *
+ */
+// Add
+$('#menu').multilevelpushmenu( 'additems' , itemsArray , $addToMenu , position );
+
+// Remove
+$('#menu').multilevelpushmenu( 'removeitems' , items );
+
+/**
+ * Redraw menus
+ *
+ */
+$('#menu').multilevelpushmenu( 'redraw' );
+
+/**
+ * Visible menus
+ *
+ */
+$('#menu').multilevelpushmenu( 'visiblemenus' );
+
+/**
+ * Hidden menus
+ *
+ */
+$('#menu').multilevelpushmenu( 'hiddenmenus' );
+
+/**
+ * Propagate event to underneath layer
+ *
+ */
+ $( '#menu' ).multilevelpushmenu( 'propagateevent' , $( '#menu' ) , 'mousedown' );</code></pre>
+<h4>Responsive menu example</h4>
+<pre><code>$( '#menu' ).multilevelpushmenu({
+    menuWidth: '20%',
+    menuHeight: '100%'
+});
+$( window ).resize(function() {
+    $( '#menu' ).multilevelpushmenu( 'redraw' );
+});</code></pre>
+<p>Full list of events/callbacks is provided below.</p>
+<h3>Events/Callbacks</h3>
+<pre><code>onCollapseMenuStart               // Menu collapse started
+onCollapseMenuEnd                 // Menu collapse ended
+onExpandMenuStart                 // Menu expand started
+onExpandMenuEnd                   // Menu expand ended
+onGroupItemClick                  // Click/touchstart menu item containing sub-items
+onItemClick                       // Click/touchstart menu item which doesn't contain sub-items
+onTitleItemClick                  // Title icon click/touchstart
+onBackItemClick                   // Back item click/touchstart
+onMenuReady                       // Menu created and ready for use
+onMenuSwipe                       // Menu swipe initiated</code></pre>
+<p>Provided argument for onMenuReady, onCollapseMenuStart, onCollapseMenuEnd, onExpandMenuStart and onExpandMenuEnd callbacks is current options object.</p>
+<p>For onMenuSwipe, onTitleItemClick and onBackItemClick callbacks provided arguments are respecively event object, menu level holder object and plug-in options object.</p>
+<p>For onGroupItemClick and onItemClick callbacks provided arguments are respecively event object, menu level object, clicked item object and plug-in options object.</p>
+<h4>An event callback example</h4>
+<p>Each event triggers a callback; An example using onItemClick event callback functionality.</p>
+<pre><code>$( '#menu' ).multilevelpushmenu({
+    onItemClick: function() {
+        // First argument is original event object
+        var event = arguments[0],
+            // Second argument is menu level object containing clicked item (&lt;div&gt; element)
+            $menuLevelHolder = arguments[1],
+            // Third argument is clicked item (&lt;li&gt; element)
+            $item = arguments[2],
+            // Fourth argument is instance settings/options object
+            options = arguments[3];
+
+        // You can do some cool stuff here before
+        // redirecting to href location
+        // like logging the event or even
+        // adding some parameters to href, etc...
+
+        // Anchor href
+        var itemHref = $item.find( 'a:first' ).attr( 'href' );
+        // Redirecting the page
+        location.href = itemHref;
+    }
+});</code></pre>
+<h3>Browser Support / tested</h3>
+<ul>
+<li>Chrome</li>
+<li>Midori</li>
+<li>Firefox</li>
+<li>Safari</li>
+<li>IE8+</li>
+<li>Opera 12.16</li>
+<li>Android Browser 4.1.2</li>
+<li>iOS Safari 7.0.1</li>
+</ul>
+<h3>License</h3>
+<p>Licensed under the MIT license.<br />
+<a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/5786211?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/adgsm" target="_blank" id="ownerName" class="sidebar-link">adgsm</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">November 3, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">August 25, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="http://multi-level-push-menu.dzunic.net" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.10)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (^0.4.5)</li><li>grunt-contrib-cssmin (^0.14.0)</li><li>grunt-contrib-uglify (^0.11.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5786211?v=4" alt="adgsm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/adgsm" target="_blank" class="text-decoration-none fw-bold">adgsm</a><p class="mb-0 text-muted small">46 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4377685?v=4" alt="danielgp" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/danielgp" target="_blank" class="text-decoration-none fw-bold">danielgp</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1423683?v=4" alt="straydogstudio" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/straydogstudio" target="_blank" class="text-decoration-none fw-bold">straydogstudio</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1769893?v=4" alt="SergeyBarskiy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/SergeyBarskiy" target="_blank" class="text-decoration-none fw-bold">SergeyBarskiy</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/13161793?v=4" alt="bohdyone" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bohdyone" target="_blank" class="text-decoration-none fw-bold">bohdyone</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/253170?v=4" alt="climaa" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/climaa" target="_blank" class="text-decoration-none fw-bold">climaa</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11069099?v=4" alt="oknuutti" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/oknuutti" target="_blank" class="text-decoration-none fw-bold">oknuutti</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/12744731?v=4" alt="SimonTod" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/SimonTod" target="_blank" class="text-decoration-none fw-bold">SimonTod</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3884577?v=4" alt="jonmunson" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jonmunson" target="_blank" class="text-decoration-none fw-bold">jonmunson</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+4 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
