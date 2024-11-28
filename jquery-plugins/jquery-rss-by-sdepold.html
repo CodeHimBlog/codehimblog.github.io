@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Easy to Use Rss Plugin for jQuery with Templating.</title>
+    <meta name="description" content="jquery-rss by sdepold. An easy-to-use rss plugin for jquery with templating.">
+    <meta name="author" content="sdepold">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-rss-by-sdepold.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Rss</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Rss",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Rss</h1>
+        <p id="packageDescription" class="text-muted">An easy-to-use rss plugin for jquery with templating.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">452</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">5.51 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">143</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">54</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/sdepold/jquery-rss/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/sdepold/jquery-rss" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jquery.rss <a href="https://travis-ci.org/sdepold/jquery-rss"><img src="https://travis-ci.org/sdepold/jquery-rss.svg?branch=master" alt="Build Status" /></a></h1>
+<p>This plugin can be used to read a RSS feed and transform it into a custom piece of HTML.</p>
+<h2>Alternatives</h2>
+<p>A vanilla JavaScript version of this library can be found here: <a href="https://github.com/sdepold/vanilla-rss">Vanilla RSS</a>.<br />
+This plugin uses <a href="https://github.com/sdepold/feedr">Feedr</a>, a backend server that parses and converts RSS feeds into its JSON representation. The server was built as a drop-in replacement for Google's former Feed API.</p>
+<h2>Support</h2>
+<p>Since version 3.4.0 of jquery.rss, users have the chance to support funding future developments and<br />
+covering the costs for the hosting of jquery.rss' respective server side companion app <a href="https://github.com/sdepold/feedr">feedr</a>.</p>
+<p>Every once in a while supporters will get affiliate links instead of one of the feed's entries.</p>
+<p>If you are not interested in supporting the authors of the plugin, then you can easily opt-out of it by setting the respective<br />
+<code>support</code> option. See below for further details.</p>
+<p>Thanks in advance!</p>
+<h2>Installation</h2>
+<p>Through npm:</p>
+<pre><code>$ npm install jquery
+$ npm install jquery-rss
+
+const $ = require('jquery');
+require('jquery-rss'); // This will add the plugin to the jQuery namespace</code></pre>
+<p>Through cdnjs:</p>
+<pre><code>&lt;script src="http://code.jquery.com/jquery-1.11.0.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-rss/3.3.0/jquery.rss.min.js"&gt;&lt;/script&gt;</code></pre>
+<h2>Setup</h2>
+<pre class="prettyprint linenums lang-language"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;jquery.rss example&lt;/title&gt;
+    &lt;script src="lib/jquery-1.6.4.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"&gt;&lt;/script&gt;
+    &lt;script src="dist/jquery.rss.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+      jQuery(function($) {
+        $("#rss-feeds").rss("http://feeds.feedburner.com/premiumpixels");
+      });
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="rss-feeds"&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>Demo link for above code: <a href="http://embed.plnkr.co/WQRoCYLld162uplnz1rc/preview">http://embed.plnkr.co/WQRoCYLld162uplnz1rc/preview</a></p>
+<p>Note: Moment.js is <em>optional</em>. If you include it, jquery.rss will use it to format dates.<br />
+If you do not want to include Moment.js, you may opt for providing your own date formatting function, or for not formatting dates at all.</p>
+<h2>Options</h2>
+<pre class="prettyprint linenums lang-language"><code>$("#rss-feeds").rss(
+  // You can either provide a single feed URL or a list of URLs (via an array)
+  "http://feeds.feedburner.com/premiumpixels",
+  {
+    // how many entries do you want?
+    // default: 4
+    // valid values: any integer
+    limit: 10,
+
+    // want to offset results being displayed?
+    // default: false
+    // valid values: any integer
+    offsetStart: false, // offset start point
+    offsetEnd: false, // offset end point
+
+    // will request the API via https
+    // default: false
+    // valid values: false, true
+    ssl: true,
+
+    // which server should be requested for feed parsing
+    // the server implementation is here: https://github.com/sdepold/feedr
+    // default: feedrapp.info
+    // valid values: any string
+    host: "my-own-feedr-instance.com",
+
+    // option to seldomly render ads
+    // ads help covering the costs for the feedrapp server hosting and future improvements
+    // default: true
+    // valid values: false, true
+    support: false,
+
+    // outer template for the html transformation
+    // default: "&lt;ul&gt;{entries}&lt;/ul&gt;"
+    // valid values: any string
+    layoutTemplate: "&lt;div class='feed-container'&gt;{entries}&lt;/div&gt;",
+
+    // inner template for each entry
+    // default: '&lt;li&gt;&lt;a href="{url}"&gt;[{author}@{date}] {title}&lt;/a&gt;&lt;br/&gt;{shortBodyPlain}&lt;/li&gt;'
+    // valid values: any string
+    entryTemplate: "&lt;p&gt;{title}&lt;/p&gt;",
+
+    // additional token definition for in-template-usage
+    // default: {}
+    // valid values: any object/hash
+    tokens: {
+      foo: "bar",
+      bar: function(entry, tokens) {
+        return entry.title;
+      }
+    },
+
+    // formats the date with moment.js (optional)
+    // default: 'dddd MMM Do'
+    // valid values: see http://momentjs.com/docs/#/displaying/
+    dateFormat: "MMMM Do, YYYY",
+
+    // localizes the date with moment.js (optional)
+    // default: 'en'
+    dateLocale: "de",
+
+    // Defines the format which is used for the feed.
+    // Default: null (utf8)
+    // valid values: https://github.com/ashtuchkin/iconv-lite/wiki/Supported-Encodings
+    encoding: "ISO-8859-1",
+
+    // Defined the order of the feed's entries.
+    // Default: undefined (keeps the order of the original feed)
+    // valid values: All entry properties; title, link, content, contentSnippet, publishedDate, categories, author, thumbnail
+    // Order can be reversed by prefixing a dash (-)
+    order: "-publishedDate",
+
+    // formats the date in whatever manner you choose. (optional)
+    // this function should return your formatted date.
+    // this is useful if you want to format dates without moment.js.
+    // if you don't use moment.js and don't define a dateFormatFunction, the dates will
+    // not be formatted; they will appear exactly as the RSS feed gives them to you.
+    dateFormatFunction: function(date) {},
+
+    // a callback, which gets triggered when an error occurs
+    // default: function() { throw new Error("jQuery RSS: url don't link to RSS-Feed") }
+    error: function() {},
+
+    // a callback, which gets triggered when everything was loaded successfully
+    // this is an alternative to the next parameter (callback function)
+    // default: function(){}
+    success: function() {},
+
+    // a callback, which gets triggered once data was received but before the rendering.
+    // this can be useful when you need to remove a spinner or something similar
+    onData: function() {}
+  },
+
+  // callback function
+  // called after feeds are successfully loaded and after animations are done
+  function callback() {}
+);</code></pre>
+<h3>Note about the host option</h3>
+<p>Since version 3.0.0 the plugin is no longer using the Google Feed API but a drop-in replacement called <a href="https://feedrapp.info">feedr</a>. That server is currently running on Heroku and might have some downtimes, interruptions or unexpected issues. While I will try to keep those problems as rare as possible, it can totally happen from time to time. I might move the service to some other provide or even improve the infrastructure.</p>
+<p>If you don't want to rely on the <a href="http://feedrapp.info">provided server</a> and instead run your own version, you can just download feedr, install the dependencies and run it. As written above, you can specify the host which is used to parse the feeds with the <code>host</code> option.</p>
+<h2>Templating</h2>
+<p>As seen in the options, you can specify a template in order to transform the json objects into HTML. In order to that, you can either define the outer template (which describes the html around the entries) or the entry template (which describes the html of an entry).</p>
+<p>The basic format of those templates are:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- layoutTemplate: --&gt;
+"&lt;outer-html&gt;{entries}&lt;/outer-html&gt;"
+
+&lt;!-- entryTemplate: --&gt;
+"&lt;any-html&gt;{token1}{token2}&lt;/any-html&gt;"</code></pre>
+<p>So, let's say you have specified a limit of 2, using the upper pseudo html. This will result in the following:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;outer-html&gt;
+  &lt;any-html&gt;{token1}{token2}&lt;/any-html&gt;
+  &lt;any-html&gt;{token1}{token2}&lt;/any-html&gt;
+&lt;/outer-html&gt;</code></pre>
+<p>There are some predefined tokens:</p>
+<ul>
+<li>url: the url to the post</li>
+<li>author: the author of the post</li>
+<li>date: the publishing date</li>
+<li>title: the title of the post</li>
+<li>body: the complete content of the post</li>
+<li>shortBody: the shortened content of the post</li>
+<li>bodyPlain: the complete content of the post without html</li>
+<li>shortBodyPlain: the shortened content of the post without html</li>
+<li>teaserImage: the first image in the post's body</li>
+<li>teaserImageUrl: the url of the first image in the post's body</li>
+<li>index: the index of the current entry</li>
+<li>totalEntries: the total count of the entries</li>
+<li>feed: contains high level information of the feed (e.g. title of the website)</li>
+</ul>
+<p>You can also define custom tokens using the <code>tokens</code> option:</p>
+<pre class="prettyprint linenums lang-language"><code>$("#foo").rss(url, {
+  entryTemplate: "{dynamic}, {static}, {re-use}",
+  tokens: {
+    dynamic: function(entry, tokens) {
+      return "dynamic-stuff: " + entry.title;
+    },
+    "re-use": function(entry, tokens) {
+      return encodeURIComponent(tokens.teaserImageUrl);
+    },
+    static: "static"
+  }
+});</code></pre>
+<p>Please make sure to NOT define infinite loops. The following example is really BAD:</p>
+<pre class="prettyprint linenums lang-language"><code>$('#foo').rss(url, {
+  entryTemplate: "{loop}",
+  tokens: {
+    whoops: function(entry, tokens) { return tokens.loop() }
+    loop: function(entry, tokens) { return tokens.whoops() }
+  }
+})</code></pre>
+<p>Here is a real-world example:</p>
+<pre class="prettyprint linenums lang-language"><code>$("#foo").rss(url, {
+  layoutTemplate: "&lt;table&gt;&lt;tr&gt;&lt;th&gt;Title&lt;/th&gt;&lt;/tr&gt;{entries}&lt;/table&gt;",
+  entryTemplate: "&lt;tr&gt;&lt;td&gt;{title}&lt;/td&gt;&lt;/tr&gt;"
+});</code></pre>
+<h2>Filtering</h2>
+<p>The plugin also allows you to filter specific entries in order to only print them:</p>
+<pre class="prettyprint linenums lang-language"><code>$("#foo").rss(url, {
+  limit: 100,
+  filterLimit: 10,
+  filter: function(entry, tokens) {
+    return tokens.title.indexOf("my filter") &gt; -1;
+  }
+});</code></pre>
+<p>This will request 100 entries via the Feed API and renders the first 10 matching entries.</p>
+<h2>Testing</h2>
+<p>The test suite is using BusterJS. In order to successfully run the tests you will need <a href="http://phantomjs.org/">phantomjs</a>.<br />
+If that is installed you only have to run <code>npm test</code>.</p>
+<h2>Authors/Contributors</h2>
+<ul>
+<li>Sascha Depold (<a href="http://twitter.com/sdepold">Twitter</a> | <a href="http://github.com/sdepold">Github</a> | <a href="http://depold.com">Website</a>)</li>
+<li>Steffen Schröder (<a href="http://twitter.com/ChaosSteffen">Twitter</a> | <a href="http://github.com/ChaosSteffen">Github</a> | <a href="http://schroeder-blog.de">Website</a>)</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h2>Change Log</h2>
+<p>All notable changes to this project will be documented in this file.</p>
+<h2>4.3.0</h2>
+<h3>Changed</h3>
+<ul>
+<li>Add support for sorting of entries (through vanilla-rss 1.4.0)</li>
+</ul>
+<h2>4.2.0</h2>
+<h3>Changed</h3>
+<ul>
+<li>Add support for multiple feed URLs (through vanilla-rss 1.3.0)</li>
+</ul>
+<h2>4.1.0</h2>
+<h3>Changed</h3>
+<ul>
+<li>Add support for custom feed encoding</li>
+</ul>
+<h2>4.0.0</h2>
+<h3>Changed</h3>
+<ul>
+<li>Replace business logic with <a href="https://github.com/sdepold/vanilla-rss">Vanilla RSS</a>
+<h3>Removed</h3></li>
+<li>Support for effects (check the effects example for an alternative approach)</li>
+</ul>
+<h2>v3.2.1</h2>
+<h3>Fixed</h3>
+<ul>
+<li>Rendering of layoutTemplate <code>{entries}</code></li>
+</ul>
+<h2>v3.2.0</h2>
+<h3>Added</h3>
+<ul>
+<li>Possibility to specify the date locale via moment.js</li>
+</ul>
+<h2>v3.1.0</h2>
+<h3>Changed</h3>
+<ul>
+<li>Re-added support for SSL</li>
+</ul>
+<h2>v3.0.1</h2>
+<h3>Changed</h3>
+<ul>
+<li>Use www.feedrapp.info instead of feedrapp.info</li>
+</ul>
+<h2>v3.0.0</h2>
+<h3>Changed</h3>
+<ul>
+<li>Replace Google Feed API with <a href="https://github.com/sdepold/feedr">feedr</a></li>
+</ul>
+<h2>v2.0.0</h2>
+<h3>Changed</h3>
+<ul>
+<li>moment.js is now optional</li>
+<li>Please note that the format of dates might change when moment.js is available and no <code>dateFormat</code> option is specified. In that scenario all dates will be transformed to the format <code>dddd MMM Do</code>.</li>
+</ul>
+<h2>v1.5.1</h2>
+<h3>Fixed</h3>
+<ul>
+<li>moment.js deprecation warning</li>
+</ul>
+<h2>v1.5.0</h2>
+<h3>Added</h3>
+<ul>
+<li><code>onData</code> callback which gets triggered after receiving the data but before the rendering.</li>
+</ul>
+<h2>v1.4.0</h2>
+<h3>Added</h3>
+<ul>
+<li>Pass the feeds meta data to the tokens object.</li>
+</ul>
+<h2>v1.3.0</h2>
+<h3>Added</h3>
+<ul>
+<li>Error and success callback. (thanks to eliten00b)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>forEach loop. (thanks to aegisrunestone)</li>
+</ul>
+<h2>v1.2.0</h2>
+<h3>Added</h3>
+<ul>
+<li>Possibility to define effects for the appearance of entries</li>
+</ul>
+<h2>v1.1.0</h2>
+<h3>Added</h3>
+<ul>
+<li>XSS protection</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Switched to busterjs for tests</li>
+<li>Implemented tests for XSS protection</li>
+</ul>
+<h2>v1.0.0</h2>
+<h3>Changed</h3>
+<ul>
+<li>Complete test coverage with mocha</li>
+</ul>
+<h2>v0.4.0</h2>
+<h3>Added</h3>
+<ul>
+<li>Possibility to define the output method of google request</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Separate layout template from entry template (thanks to ChaosSteffen)</li>
+</ul>
+<h2>v0.3.0</h2>
+<h3>Added</h3>
+<ul>
+<li>Callback, which is triggered after rendering of all entries (thanks to cm0s)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Evaluate token map before passing it to custom token functions</li>
+<li>Moved minified version into <code>dist</code> folder (thanks to markrambow)</li>
+</ul>
+<h2>v0.2.2</h2>
+<h3>Fixed</h3>
+<ul>
+<li>Array#indexOf IE bug</li>
+</ul>
+<h2>v0.2.1</h2>
+<h3>Fixed</h3>
+<ul>
+<li>Catch failures while extracting images</li>
+</ul>
+<h2>v0.2.0</h2>
+<h3>Added</h3>
+<ul>
+<li>The tokens <code>index</code> and <code>totalEntries</code></li>
+<li>Preparation for jasmine tests</li>
+</ul>
+<h2>v0.1.1</h2>
+<h3>Added</h3>
+<ul>
+<li>Entry filtering</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/atom" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>atom</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/feed" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>feed</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/rss" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>rss</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/79163?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/sdepold" target="_blank" id="ownerName" class="sidebar-link">sdepold</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 19, 2011</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 5, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>vanilla-rss (^1.4.0)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>chai (^4.2.0)</li><li>eslint (^6.4.0)</li><li>jquery (^3.4.0)</li><li>jsdom (^15.1.1)</li><li>mocha (^6.2.0)</li><li>moment (^2.14.1)</li><li>node-fetch (^2.6.0)</li><li>node-static (^0.7.11)</li><li>rollup (^1.23.1)</li><li>rollup-plugin-node-resolve (^5.2.0)</li><li>rollup-plugin-terser (^5.1.2)</li><li>sinon (^7.5.0)</li><li>watch (^1.0.2)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/79163?v=4" alt="sdepold" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sdepold" target="_blank" class="text-decoration-none fw-bold">sdepold</a><p class="mb-0 text-muted small">220 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/14790466?v=4" alt="greenkeeperio-bot" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/greenkeeperio-bot" target="_blank" class="text-decoration-none fw-bold">greenkeeperio-bot</a><p class="mb-0 text-muted small">17 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2497511?v=4" alt="rdallaire" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rdallaire" target="_blank" class="text-decoration-none fw-bold">rdallaire</a><p class="mb-0 text-muted small">14 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/18716?v=4" alt="ChaosSteffen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ChaosSteffen" target="_blank" class="text-decoration-none fw-bold">ChaosSteffen</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4721200?v=4" alt="ivavictoria" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ivavictoria" target="_blank" class="text-decoration-none fw-bold">ivavictoria</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1175070?v=4" alt="eliten00b" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/eliten00b" target="_blank" class="text-decoration-none fw-bold">eliten00b</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7709297?v=4" alt="abhijeetbhanjadeo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/abhijeetbhanjadeo" target="_blank" class="text-decoration-none fw-bold">abhijeetbhanjadeo</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/222849?v=4" alt="brockpetrie" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/brockpetrie" target="_blank" class="text-decoration-none fw-bold">brockpetrie</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/30298?v=4" alt="leto" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/leto" target="_blank" class="text-decoration-none fw-bold">leto</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1501167?v=4" alt="jhfrench" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jhfrench" target="_blank" class="text-decoration-none fw-bold">jhfrench</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1236247?v=4" alt="cm0s" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cm0s" target="_blank" class="text-decoration-none fw-bold">cm0s</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/331626?v=4" alt="firecentaur" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/firecentaur" target="_blank" class="text-decoration-none fw-bold">firecentaur</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/234437?v=4" alt="sdemjanenko" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sdemjanenko" target="_blank" class="text-decoration-none fw-bold">sdemjanenko</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3029254?v=4" alt="ytyukhnin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ytyukhnin" target="_blank" class="text-decoration-none fw-bold">ytyukhnin</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+10 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
