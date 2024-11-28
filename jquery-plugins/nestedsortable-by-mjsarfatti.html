@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestedsortable by Mjsarfatti</title>
+    <meta name="description" content="A jQuery plugin that extends Sortable UI functionalities to nested lists.">
+    <meta name="author" content="mjsarfatti">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/nestedsortable-by-mjsarfatti.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Nestedsortable</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Nestedsortable",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Nestedsortable</h1>
+        <p id="packageDescription" class="text-muted">A jQuery plugin that extends Sortable UI functionalities to nested lists.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">882</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.6 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">531</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">29</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/mjsarfatti/nestedSortable/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/mjsarfatti/nestedSortable" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>29 July 2014</h1>
+<p><strong>nestedSortable is currently maintained at <a href="https://github.com/ilikenwf/nestedSortable">ilikenwf/nestedSortable</a>. Please <a href="https://github.com/ilikenwf/nestedSortable">go there</a>.</strong></p>
+<p><strong><del>DEVELOPER NEEDED</del></strong><br />
+<strong><del>I'm sorry to say that I am not able to keep the pace developing this project anymore. I know how much nestedSortable is important for web applications, and I still can't understand why it's not part of jQuery-UI. I also think the base of the plugin is very strong, and deserves much more attention and involvement. If anybody is willing to take this project, please say so <a href="https://github.com/mjsarfatti/nestedSortable/issues/95">here</a>.</del></strong><br />
+<strong><del>Thank you.</del></strong></p>
+<h1>nestedSortable jQuery plugin</h1>
+<p><em>nestedSortable</em> is a jQuery plugin that extends jQuery Sortable UI functionalities to nested lists.<br />
+<em>Note:</em> <strong>Version 2.0</strong> <em>is published in branch '2.0alpha' and is ready for testing! At the moment it has only been tested in Firefox and Chrome, if you work with IE feel free to give it a shot and let me know if something goes wrong.</em></p>
+<h2>Features</h2>
+<ul>
+<li>Designed to work seamlessly with the <a href="http://articles.sitepoint.com/article/hierarchical-data-database" title="A Sitepoint tutorial on PHP, MYSQL and nested sets">nested</a> <a href="http://en.wikipedia.org/wiki/Nested_set_model" title="Wikipedia article on nested sets">set</a> model (have a look at the <code>toArray</code> method)</li>
+<li>Items can be sorted in their own list, moved across the tree, or nested under other items.</li>
+<li>Sublists are created and deleted on the fly</li>
+<li>All jQuery Sortable options, events and methods are available</li>
+<li>It is possible to define elements that will not accept a new nested item/list and a maximum depth for nested items</li>
+<li>The root level can be protected</li>
+</ul>
+<h2>Usage</h2>
+<pre><code>&lt;ol class="sortable"&gt;
+    &lt;li&gt;&lt;div&gt;Some content&lt;/div&gt;&lt;/li&gt;
+    &lt;li&gt;
+        &lt;div&gt;Some content&lt;/div&gt;
+        &lt;ol&gt;
+            &lt;li&gt;&lt;div&gt;Some sub-item content&lt;/div&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;div&gt;Some sub-item content&lt;/div&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;div&gt;Some content&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+<pre><code>    $(document).ready(function(){
+
+        $('.sortable').nestedSortable({
+            handle: 'div',
+            items: 'li',
+            toleranceElement: '&gt; div'
+        });
+
+    });</code></pre>
+<p>Please note: every <code>&lt;li&gt;</code> must have either one or two direct children, the first one being a container element (such as <code>&lt;div&gt;</code> in the above example), and the (optional) second one being the nested list. The container element has to be set as the 'toleranceElement' in the options, and this, or one of its children, as the 'handle'.</p>
+<p>Also, the default list type is <code>&lt;ol&gt;</code>.</p>
+<h2>Custom Options</h2>
+<dl>
+    <dt>tabSize</dt>
+    <dd>How far right or left (in pixels) the item has to travel in order to be nested or to be sent outside its current list. Default: <b>20</b></dd>
+    <dt>disableNesting</dt>
+    <dd>The class name of the items that will not accept nested lists. Default: <b>ui-nestedSortable-no-nesting</b></dd>
+    <dt>errorClass</dt>
+    <dd>The class given to the placeholder in case of error. Default: <b>ui-nestedSortable-error</b></dd>
+    <dt>listType</dt>
+    <dd>The list type used (ordered or unordered). Default: <b>ol</b></dd>
+    <dt>maxLevels</dt>
+    <dd>The maximum depth of nested items the list can accept. If set to '0' the levels are unlimited. Default: <b>0</b></dd>
+    <dt>protectRoot</dt>
+    <dd>Wether to protect the root level (i.e. root items can be sorted but not nested, sub-items cannot become root items). Default: <b>false</b></dd>
+    <dt>rootID</dt>
+    <dd>The id given to the root element (set this to whatever suits your data structure). Default: <b>null</b></dd>
+    <dt>rtl</dt>
+    <dd>Set this to true if you have a right-to-left page. Default: <b>false</b></dd>
+    <dt>isAllowed (function)</dt>
+    <dd>You can specify a custom function to verify if a drop location is allowed. Default: <b>function(item, parent) { return true; }</b></dd>
+</dl>
+<h2>Custom Methods</h2>
+<dl>
+    <dt>serialize</dt>
+    <dd>Serializes the nested list into a string like <b>setName[item1Id]=parentId&setName[item2Id]=parentId</b>, reading from each item's id formatted as 'setName_itemId' (where itemId is a number).
+    It accepts the same options as the original Sortable method (<b>key</b>, <b>attribute</b> and <b>expression</b>).</dd>
+    <dt>toArray</dt>
+    <dd>Builds an array where each element is in the form:
+<pre>setName[n] =>
+{
+    'item_id': itemId,
+    'parent_id': parentId,
+    'depth': depth,
+    'left': left,
+    'right': right,
+}
+</pre>
+    It accepts the same options as the original Sortable method (<b>attribute</b> and <b>expression</b>) plus the custom <b>startDepthCount</b>, that sets the starting depth number (default is <b>0</b>).</dd>
+    <dt>toHierarchy</dt>
+    <dd>Builds a hierarchical object in the form:
+<pre>'0' ...
+    'id' => itemId
+'1' ...
+    'id' => itemId
+    'children' ...
+        '0' ...
+            'id' => itemId
+        '1' ...
+            'id' => itemId
+'2' ...
+    'id' => itemId
+</pre>
+    Similarly to <code>toArray</code>, it accepts <b>attribute</b> and <b>expression</b> options.</dd>
+</dl>
+<h2>Known Bugs</h2>
+<p><em>nestedSortable</em> doesn't work properly with connected draggables, because of the way Draggable simulates Sortable <code>mouseStart</code> and <code>mouseStop</code> events. This bug might or might not be fixed some time in the future (it's not specific to this plugin).</p>
+<h2>Requirements</h2>
+<p>jQuery 1.4+<br />
+jQuery UI Sortable 1.8+</p>
+<h2>Browser Compatibility</h2>
+<p>Tested with: IE 6/7/8, Firefox 3.6/4, Chrome, Safari 3</p>
+<h2>License</h2>
+<p>This work is licensed under the MIT License.</p>
+<p>This work is <em>pizzaware</em>. If it saved your life, or you just feel good at heart, please consider offering me a pizza. This can be done in two ways: (1) follow <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=RSJEW3N9PRMYY&amp;lc=IT&amp;item_name=Manuele%20Sarfatti&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted">this link</a> to donate through paypal; (2) send me cash via traditional mail to my home address in Italy. Is the second method legal? It is in Italy if you use Posta assicurata. You should check with your local laws if you live elsewhere.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/736316?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/mjsarfatti" target="_blank" id="ownerName" class="sidebar-link">mjsarfatti</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">April 26, 2011</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 5, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="http://mjsarfatti.com/sandbox/nestedSortable" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/736316?v=4" alt="mjsarfatti" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mjsarfatti" target="_blank" class="text-decoration-none fw-bold">mjsarfatti</a><p class="mb-0 text-muted small">35 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/95647?v=4" alt="Bananattack" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Bananattack" target="_blank" class="text-decoration-none fw-bold">Bananattack</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1636354?v=4" alt="levacic" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/levacic" target="_blank" class="text-decoration-none fw-bold">levacic</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1541093?v=4" alt="vcarel" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vcarel" target="_blank" class="text-decoration-none fw-bold">vcarel</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
