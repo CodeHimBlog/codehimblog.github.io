@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Pad by Thread Pond</title>
+    <meta name="description" content="A jQuery plugin for assisting in the creation of an HTML5 canvas based signature pad. Records the drawn signature in JSON for later regeneration.">
+    <meta name="author" content="thread-pond">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/signature-pad-by-thread-pond.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Signature Pad</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Signature Pad",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Signature Pad</h1>
+        <p id="packageDescription" class="text-muted">A jQuery plugin for assisting in the creation of an HTML5 canvas based signature pad. Records the drawn signature in JSON for later regeneration.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">731</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.89 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">290</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">64</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/thread-pond/signature-pad/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/thread-pond/signature-pad" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Signature Pad</h1>
+<p>SignaturePad: A jQuery plugin for assisting in the creation of an HTML5 canvas based signature pad. Records the drawn signature in JSON for later regeneration.</p>
+<p>• Dependencies: FlashCanvas/1.5, json2.js, jQuery/1.3.2+</p>
+<hr />
+<h2>Quick Start</h2>
+<ol>
+<li>Include <code>jquery.signaturepad.css</code>, <code>flashcanvas.js</code>, <code>jquery.js</code>, <code>jquery.signaturepad.js</code>, <code>json2.js</code> in your HTML file</li>
+<li>Create the HTML, <a href="examples/accept-signature.html">following the example</a></li>
+<li><code>$('.sigPad').signaturePad();</code></li>
+<li>Remember that <a href="documentation.md#options">most things are configurable</a></li>
+</ol>
+<h2>Complete Documentation</h2>
+<h4><a href="documentation.md">☛ Signature Pad Documentation</a></h4>
+<h2>Examples</h2>
+<ul>
+<li><a href="examples/accept-signature.html">Accepting a Signature</a></li>
+<li><a href="examples/require-drawn-signature.html">Requiring a Drawn Signature</a></li>
+<li><a href="examples/regenerate-signature.html">Regenerating a Signature</a></li>
+<li><a href="examples/accept-multiple-signatures.html">Accepting Multiple Signatures</a></li>
+</ul>
+<h2>Demos</h2>
+<ul>
+<li><a href="https://thread-pond.github.io/signature-pad/examples/accept-signature.html">Accepting a Signature</a></li>
+<li><a href="https://thread-pond.github.io/signature-pad/examples/require-drawn-signature.html">Requiring a Drawn Signature</a></li>
+<li><a href="https://thread-pond.github.io/signature-pad/examples/regenerate-signature.html">Regenerating a Signature</a></li>
+</ul>
+<h2>Converting to an Image</h2>
+<h4><a href="documentation.md#converting-to-an-image">☛ Converting to an image</a></h4>
+<hr />
+<h2>License</h2>
+<p>© 2014, Thomas J Bradley, <a href="mailto:hey@thomasjbradley.ca">hey@thomasjbradley.ca</a></p>
+<p>Signature Pad is licensed under the <a href="LICENSE">New BSD license</a>.</p>
+<p>All dependencies: jQuery, json2.js, and FlashCanvas retain their own licenses.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h1>Changelog</h1>
+<p><strong>2.5.2 (Dec. 22, 2014)</strong></p>
+<ul>
+<li>Merged <a href="https://github.com/thread-pond/signature-pad/issues/124">Pull Request #124</a> to fix a missing semi-colon at the end.</li>
+</ul>
+<p><strong>2.5.1 (Apr. 15, 2014)</strong></p>
+<ul>
+<li>Fixed a bug in IE 8 related to <code>trim()</code>, <a href="https://github.com/thread-pond/signature-pad/issues/113">Issue #113</a></li>
+</ul>
+<p><strong>2.5.0 (Oct. 16, 2013)</strong></p>
+<ul>
+<li>Added an API to retrieve the version programmatically, <a href="https://github.com/thread-pond/signature-pad/issues/96">Issue #96</a></li>
+</ul>
+<p><strong>2.4.2 (Sep. 25, 2013)</strong></p>
+<ul>
+<li>Fixed a bug where onDrawEnd wasn’t firing properly on touch devices, <a href="https://github.com/thread-pond/signature-pad/issues/92">Issue #92</a></li>
+<li>Changed a CSS selector for better Windows 8 support, <a href="https://github.com/thread-pond/signature-pad/issues/91">Issue #91</a></li>
+<li>Fixed a bug where right clicking would cause a dot to be drawn, <a href="https://github.com/thread-pond/signature-pad/issues/80">Issue #80</a></li>
+</ul>
+<p><strong>2.4.1 (Jul. 26, 2013)</strong></p>
+<ul>
+<li>Fixed a bug where onDrawEnd was firing too often and at incorrect times, <a href="https://github.com/thread-pond/signature-pad/issues/84">Issue #84</a></li>
+</ul>
+<p><strong>2.4.0 (Jul. 16, 2013)</strong></p>
+<ul>
+<li>Added Grunt.js as the build tool</li>
+<li>Added an <code>onDraw</code> callback; <a href="https://github.com/thread-pond/signature-pad/pull/60">Pull Request #60</a></li>
+<li>Added an <code>onDrawEnd</code> callback; <a href="https://github.com/thread-pond/signature-pad/pull/70">Pull Request #70</a></li>
+<li>Added a new full window example; <a href="https://github.com/thread-pond/signature-pad/pull/49">Pull Request #49</a></li>
+<li>Updated the examples to be more modern; <a href="https://github.com/thread-pond/signature-pad/pull/49">Pull Request #49</a></li>
+<li>Improved the signature handling when leaving the <code>&lt;canvas&gt;</code>; <a href="https://github.com/thread-pond/signature-pad/issues/38">Issue #38</a></li>
+<li>Fixed some event and touch related bugs for: IE/10 with <a href="https://github.com/thread-pond/signature-pad/pull/49">Pull Request #49</a>; Android/4 with <a href="https://github.com/thread-pond/signature-pad/issues/78">Issue #78</a>; more browsers with <a href="https://github.com/thread-pond/signature-pad/issues/38">Issue #38</a></li>
+<li>Fixed the typed signature scaling bug <a href="https://github.com/thread-pond/signature-pad/issues/54">Issue #54</a></li>
+<li>Fixed up the .jshintrc file</li>
+</ul>
+<p><strong>2.3.0 (Jun. 12, 2012)</strong></p>
+<ul>
+<li>Added the ability to get the API by re-executing signature pad on the element; <a href="https://github.com/thread-pond/signature-pad/issues/23">Issue #23</a> and many more</li>
+<li>Added a function to allow updating of options later on</li>
+<li>Performance fix: if options.output is falsey the JSON will not be calculated; <a href="https://github.com/thread-pond/signature-pad/issues/15">Issue #15</a></li>
+<li>Removes focus from input on initialization to close any open keyboards</li>
+<li>Fixed <a href="https://github.com/thread-pond/signature-pad/issues/25">Issue #25</a></li>
+<li>Opened up the <code>validateForm()</code> function to allow for inclusion in other form validation code</li>
+</ul>
+<p><strong>2.2.0 (Feb. 26, 2012)</strong></p>
+<ul>
+<li>Updated the custom cursor to be more browser compatible. Doesn’t work in IE &lt; 8 because FlashCanvas overwrites the cursor. Thanks to: <a href="http://www.useragentman.com/blog/2011/12/21/cross-browser-css-cursor-images-in-depth/">http://www.useragentman.com/blog/2011/12/21/cross-browser-css-cursor-images-in-depth/</a></li>
+<li>Updated CSS: fixed some glaring vendor prefix bugs, neutralized the colours, and updated the fonts</li>
+</ul>
+<p><strong>2.1.2 (Feb. 21, 2012)</strong></p>
+<ul>
+<li>Bug fix: added <code>clearRect()</code> code to allow transparent backgrounds on the canvas—<a href="https://github.com/thread-pond/signature-pad/issues/18">Issue #18</a></li>
+</ul>
+<p><strong>2.1.1 (Sep. 30, 2011)</strong></p>
+<ul>
+<li>Removed some extra, un-needed arguments from the <code>onBeforeValidate</code> and <code>onFormError</code> callbacks</li>
+</ul>
+<p><strong>2.1.0 (Sep. 29, 2011)</strong></p>
+<ul>
+<li>Added Firefox Mobile support</li>
+<li>Added callbacks for validation: <code>onBeforeValidate</code>, <code>onFormError</code>—<a href="https://github.com/thread-pond/signature-pad/issues/7">Issue #7</a></li>
+<li>Changed <code>getSignatureImage()</code> to use a shadow canvas and render the signature without the line</li>
+<li>Cleaned up event creation and removal</li>
+<li>Fixed a bug with Playbook and other non-iOS Webkit browsers; caused by a bug fix for iOS browsers—<a href="https://github.com/thread-pond/signature-pad/issues/8">Issue #8</a></li>
+<li>Can now pass arguments to <code>getSignatureImage()</code>, which will be forwarded to <code>toDataURL()</code>—<a href="https://github.com/thread-pond/signature-pad/issues/9">Issue #9</a></li>
+<li>Fixed <a href="https://github.com/thread-pond/signature-pad/issues/10">Issue #10</a></li>
+</ul>
+<p><strong>2.0.4 (May 12, 2011)</strong></p>
+<ul>
+<li>Fixed a bug with <code>defaultAction: drawIt</code>: the <code>.typeItDesc</code> was initially being displayed when it shouldn’t</li>
+</ul>
+<p><strong>2.0.3 (May 10, 2011)</strong></p>
+<ul>
+<li>Fixed a bug with <code>bgColour</code>: the colour was not being honoured when clearing the canvas</li>
+</ul>
+<p><strong>2.0.2 (Apr. 7, 2011)</strong></p>
+<ul>
+<li>Added an unintentional missing feature: when clicking on the pad, a dot is now drawn</li>
+</ul>
+<p><strong>2.0.1 (Apr. 7, 2011)</strong></p>
+<ul>
+<li>Fixed a bug in <code>regenerate()</code> related to the <code>penCap</code></li>
+</ul>
+<p><strong>2.0.0 (Feb. 25, 2011)</strong></p>
+<ul>
+<li>Switched to FlashCanvas instead of ExplorerCanvas (more reliable, less hacks needed, actively being developed)</li>
+<li><code>.getSignatureImage()</code> now works cross-browser thanks to FlashCanvas</li>
+<li>Fixed <a href="https://github.com/thread-pond/signature-pad/issues/2">Issue #2</a></li>
+</ul>
+<p><strong>1.5.1 (Feb. 23, 2011)</strong></p>
+<ul>
+<li>Added an option/fixed a bug: the pen would be jagged if thicker than 4 pixels</li>
+<li>Fixed a bug: if the pen left the canvas it would continue to draw</li>
+<li>Switch to proper JSDoc</li>
+<li>Cleanup and removal of extraneous semi-colons</li>
+</ul>
+<p><strong>1.5.0 (Dec. 3, 2010)</strong></p>
+<ul>
+<li>Added an option to disable field validation</li>
+<li>Cleaned up some code</li>
+</ul>
+<p><strong>1.4.0 (Nov. 30, 2010)</strong></p>
+<ul>
+<li>Regenerate method now repopulates the output so signature can be appended</li>
+<li>Removed some extra debug code that got missed</li>
+</ul>
+<p><strong>1.3.2 (Oct. 31, 2010)</strong></p>
+<ul>
+<li>Fixed a bug on iPhone created by the fix in v1.3.1: if signature pad was at the top iPhone may scroll upwards</li>
+</ul>
+<p><strong>1.3.1 (Oct. 30, 2010)</strong></p>
+<ul>
+<li>Fixed a bug on iPad when zoomed in: the signature would draw in the wrong location</li>
+</ul>
+<p><strong>1.3.0 (Aug. 29, 2010)</strong></p>
+<ul>
+<li>Added <code>getSignatureImage()</code> method that calls <code>toDataURL()</code> on the canvas</li>
+</ul>
+<p><strong>1.2.2 (Aug. 29, 2010)</strong></p>
+<ul>
+<li>Fixed an offset bug</li>
+</ul>
+<p><strong>1.2.1 (Jun. 7, 2010)</strong></p>
+<ul>
+<li>Added namespaces to all event bindings</li>
+</ul>
+<p><strong>1.2.0 (May 28, 2010)</strong></p>
+<ul>
+<li>Added touch device support</li>
+</ul>
+<p><strong>1.1.3 (May 28, 2010)</strong></p>
+<ul>
+<li>Fixed bug in validation if multiple signature pads were used in jQuery 1.4.2</li>
+</ul>
+<p><strong>1.1.2 (May 26, 2010)</strong></p>
+<ul>
+<li>Fixed an XSS-like bug, where entering a <code>&lt;script&gt;</code> or an <code>&lt;iframe&gt;</code> element into the name field would cause the code to be executed &lt; and &gt; are now converted to entities</li>
+</ul>
+<p><strong>1.1.1 (Jan. 26, 2010)</strong></p>
+<ul>
+<li>Fixed a bug in IE 8, where IE 8 would not regenerate signatures; required a new version of ExplorerCanvas (r71 from svn trunk) IE6 still requires older release r3 to work</li>
+</ul>
+<p><strong>1.1.0 (Jan. 4, 2010)</strong></p>
+<ul>
+<li>Added option to require and validate a drawn signature</li>
+<li>Added option to default to drawIt mode</li>
+<li>Fixed a bug where pressing validate multiple times would remove name input</li>
+</ul>
+<p><strong>1.0.1 (Dec. 3, 2009)</strong></p>
+<ul>
+<li>Fixed <code>@font-face</code> support for Google Chrome by adding SVG fonts</li>
+<li>Fixed future <code>@font-face</code> support by adding WOFF font</li>
+</ul>
+<p><strong>1.0.0 (Nov. 30, 2009)</strong></p>
+<ul>
+<li>Initial Release</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/signatures" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>signatures</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/canvas" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>canvas</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/signature-pad" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>signature-pad</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/19274965?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/thread-pond" target="_blank" id="ownerName" class="sidebar-link">thread-pond</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">January 13, 2010</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 6, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">BSD 3-Clause &quot;New&quot; or &quot;Revised&quot; License</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (^1.0.4)</li><li>grunt-contrib-jshint (^2.1.0)</li><li>grunt-contrib-uglify (^4.0.1)</li><li>grunt-text-replace (^0.4.0)</li><li>matchdep (~0.1.2)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/105192?v=4" alt="thomasjbradley" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/thomasjbradley" target="_blank" class="text-decoration-none fw-bold">thomasjbradley</a><p class="mb-0 text-muted small">190 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/479816?v=4" alt="jokeyrhyme" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jokeyrhyme" target="_blank" class="text-decoration-none fw-bold">jokeyrhyme</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/80543?v=4" alt="mockdeep" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mockdeep" target="_blank" class="text-decoration-none fw-bold">mockdeep</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/21284790?v=4" alt="hassaanalansary" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hassaanalansary" target="_blank" class="text-decoration-none fw-bold">hassaanalansary</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/46893616?v=4" alt="cmcgee-mac" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cmcgee-mac" target="_blank" class="text-decoration-none fw-bold">cmcgee-mac</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/231867?v=4" alt="cbschuld" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cbschuld" target="_blank" class="text-decoration-none fw-bold">cbschuld</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/86152?v=4" alt="dancrew32" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dancrew32" target="_blank" class="text-decoration-none fw-bold">dancrew32</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/408512?v=4" alt="thejbsmith" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/thejbsmith" target="_blank" class="text-decoration-none fw-bold">thejbsmith</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6964029?v=4" alt="JLRishe" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/JLRishe" target="_blank" class="text-decoration-none fw-bold">JLRishe</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1801349?v=4" alt="guswatkins" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/guswatkins" target="_blank" class="text-decoration-none fw-bold">guswatkins</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1884912?v=4" alt="lajarre" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lajarre" target="_blank" class="text-decoration-none fw-bold">lajarre</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+7 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
