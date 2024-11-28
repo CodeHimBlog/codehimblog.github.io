@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A jQuery Plugin for Creating Pretty, Dynamic Quizzes.</title>
+    <meta name="description" content="SlickQuiz by jewlofthelotus. A jQuery plugin for creating pretty, dynamic quizzes.">
+    <meta name="author" content="jewlofthelotus">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/slickquiz-by-jewlofthelotus.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Slickquiz</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Slickquiz",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Slickquiz</h1>
+        <p id="packageDescription" class="text-muted">A jQuery plugin for creating pretty, dynamic quizzes.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">401</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.28 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">244</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">38</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/jewlofthelotus/SlickQuiz/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/jewlofthelotus/SlickQuiz" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <p>A jQuery plugin for creating pretty, dynamic quizzes.</p>
+<h2>Demo And Usage</h2>
+<p>See <code>index.html</code> for demo and suggested HTML structure (the element class names are the important part).</p>
+<p>See <code>js/slickQuiz-config.js</code> to set up your quiz copy and questions.</p>
+<p>To initialize your quiz:</p>
+<pre><code>$(function () {
+    $('#slickQuiz').slickQuiz({
+        // options
+    });
+});</code></pre>
+<h2>Available Options</h2>
+<p><strong><code>json</code></strong> (JSON Object) - your quiz JSON, pass this instead of setting quizJSON outside of the plugin (see js/slickQuiz-config.js)</p>
+<h4>Text Options</h4>
+<p><strong><code>checkAnswerText</code></strong> (String) <em>Default: 'Check My Answer!';</em> - the text to use on the check answer button</p>
+<p><strong><code>nextQuestionText</code></strong> (String) <em>Default: 'Next &raquo;';</em> - the text to use on the next question button</p>
+<p><strong><code>completeQuizText</code></strong> (String) <em>Default: '';</em> - the text to use for the last button the user will click before getting results; if left null / blank (default) - <code>nextQuestionText</code> will be used. Example: &quot;Get Your Results!&quot;</p>
+<p><strong><code>backButtonText</code></strong> (String) <em>Default: '';</em> - the text to use on the back button; if left null / blank (default) - no back button will be displayed</p>
+<p><strong><code>tryAgainText</code></strong> (String) <em>Default: '';</em> - the text to use on the try again button; if left null / blank - no try again button will be displayed</p>
+<p><strong><code>preventUnansweredText</code></strong> (String) <em>Defaut: 'You must select at least one answer.';</em> - the text to display if a user submits a blank answer while <code>preventUnanswered</code> is enabled</p>
+<p><strong><code>questionCountText</code></strong> (String) <em>Defaut: 'Question %current of %total';</em> - if <code>displayQuestionCount</code> is enabled, this will format that text using the string provided. <code>%current</code> and <code>%total</code> are placeholders that will output the appropriate values. Note: <code>displayQuestionCount</code> may eventually be deprecated in favor of this option</p>
+<p><strong><code>questionTemplateText</code></strong> (String) <em>Defaut:  '%count. %text';</em> - if <code>displayQuestionNumber</code> is enabled, this will format that question number and question using the string provided. <code>%count</code> and <code>%text</code> are placeholders that will output the appropriate values. Note: <code>displayQuestionNumber</code> may eventually be deprecated in favor of this option</p>
+<p><strong><code>scoreTemplateText</code></strong> (String) <em>Defaut: '%score / %total';</em> - the format of the final score text. <code>%score</code> and <code>%total</code> are placeholders that will output the appropriate values</p>
+<p><strong><code>nameTemplateText</code></strong> (String) <em>Defaut:  '&lt;span&gt;Quiz: &lt;/span&gt;%name';</em> - the format of the quiz name; <code>%name</code> is a placeholder that will output the quiz name. Note: the &quot;Quiz&quot; span in the default value is used to enhance accessibility, it will not display on the screen.</p>
+<h4>Functionality Options</h4>
+<p><strong><code>skipStartButton</code></strong> (Boolean) <em>Default: false;</em> - whether or not to skip the quiz &quot;start&quot; button</p>
+<p><strong><code>numberOfQuestions</code></strong> (Integer) <em>Default: null;</em> - the number of questions to load from the question set in the JSON object, defaults to null (all questions); Note: If you set this to an integer, you'll probably also want to set <code>randomSortQuestions</code> to <strong>true</strong> to ensure that you get a mixed set of questions each page load.</p>
+<p><strong><code>randomSortQuestions</code></strong> (Boolean) <em>Default: false;</em> - whether or not to randomly sort questions ONLY</p>
+<p><strong><code>randomSortAnswers</code></strong> (Boolean) <em>Default: false;</em> - whether or not to randomly sort answers ONLY</p>
+<p><strong><code>preventUnanswered</code></strong> (Boolean) <em>Default: false;</em> - prevents submitting a question with zero answers</p>
+<p><strong><code>perQuestionResponseMessaging</code></strong> (Boolean) <em>Default: true;</em> - Displays correct / incorrect response messages after each question is submitted.</p>
+<p><strong><code>perQuestionResponseAnswers</code></strong> (Boolean) <em>Default: false;</em> - Keeps the answer options in display after the question is submitted. Note: this should be used in tandem with <code>perQuestionResponseMessaging</code></p>
+<p><strong><code>completionResponseMessaging</code></strong> (Boolean) <em>Default: false;</em> - Displays all questions and answers with correct or incorrect response messages when the quiz is completed.</p>
+<p><strong><code>displayQuestionCount</code></strong> (Boolean) <em>Default: true;</em> - whether or not to display the number of questions and which question the user is on, for example &quot;Question 3 of 10&quot;. Note: this may eventually be deprecated in favor of <code>questionCountText</code></p>
+<p><strong><code>displayQuestionNumber</code></strong> (Boolean) <em>Default: true;</em> - whether or not to display the number of the question along side the question itself, for example, the &quot;1.&quot; in &quot;1. What is the first letter of the alphabet?&quot; Note: this may eventually be deprecated in favor of <code>questionTemplateText</code></p>
+<p><strong><code>disableScore</code></strong> (Boolean) <em>Default: false;</em> - Removes the score from the final results display. Eliminates the need for an element with class <code>quizScore</code> in the markup.</p>
+<p><strong><code>disableRanking</code></strong> (Boolean) <em>Default: false;</em> - Removes the ranking leve from the final results display. Eliminates the need for an element with class <code>quizLevel</code> in the markup, as well as the need for JSON values for <code>level1</code> through <code>level5</code>.</p>
+<p><strong><code>scoreAsPercentage</code></strong> (Boolean) <em>Default: false;</em> - Returns the score as a percentage rather than the number of correct responses. If enabled, you'll also want to adjust <code>scoreTemplateText</code> to something like <em>'%score'</em></p>
+<h4>Question Options</h4>
+<p><em>See &quot;Base Config Options&quot; below for examples</em></p>
+<p><strong><code>select_any</code></strong> (Boolean) <em>Optional</em>  - Use if there is more than one true answer and when submitting any single true answer should be considered correct.  (Select ANY that apply vs. Select ALL that apply)</p>
+<p><strong><code>force_checkbox</code></strong> (Boolean) <em>Optional</em> - Set this to <code>true</code> if you want to render checkboxes instead of radios even if the question only has one true answer.</p>
+<h4>Event Options</h4>
+<p><strong><code>events.onStartQuiz</code></strong> (function) <em>Default: empty;</em> - a function to be executed once the quiz has started.</p>
+<p><strong><code>events.onCompleteQuiz</code></strong> (function) <em>Default: empty;</em> - a function to be executed the quiz has completed; the function will be passed two arguments in an object: <code>options.questionCount</code>, <code>options.score</code></p>
+<h4>Animation Callback Options</h4>
+<p><strong><code>animationCallbacks.setupQuiz</code></strong> (function) <em>Default: empty;</em> - a function to be executed once all jQuery animations have completed in the <code>setupQuiz</code> method</p>
+<p><strong><code>animationCallbacks.startQuiz</code></strong> (function) <em>Default: empty;</em> - a function to be executed once all jQuery animations have completed in the <code>startQuiz</code> method; note that <code>events.onStartQuiz()</code> would execute before this callback method due to durations of jQuery animations</p>
+<p><strong><code>animationCallbacks.resetQuiz</code></strong> (function) <em>Default: empty;</em> - a function to be executed once all jQuery animations have completed in the <code>resetQuiz</code> method</p>
+<p><strong><code>animationCallbacks.checkAnswer</code></strong> (function) <em>Default: empty;</em> - a function to be executed once all jQuery animations have completed in the <code>checkAnswer</code> method</p>
+<p><strong><code>animationCallbacks.nextQuestion</code></strong> (function) <em>Default: empty;</em> - a function to be executed once all jQuery animations have completed in the <code>nextQuestion</code> method</p>
+<p><strong><code>animationCallbacks.backToQuestion</code></strong> (function) <em>Default: empty;</em> - a function to be executed once all jQuery animations have completed in the <code>backToQuestion</code> method</p>
+<p><strong><code>animationCallbacks.completeQuiz</code></strong> (function) <em>Default: empty;</em> - a function to be executed once all jQuery animations have completed in the <code>completeQuiz</code> method; note that <code>events.onCompleteQuiz()</code> would execute before this callback method due to durations of jQuery animations</p>
+<h4>Deprecated Options</h4>
+<p><strong><code>disableNext</code></strong> - Prevents submitting a question with zero answers. You should now use <code>preventUnanswered</code> instead.</p>
+<p><strong><code>disableResponseMessaging</code></strong> - Hides all correct / incorrect response messages. You should now use <code>perQuestionResponseMessaging</code> and <code>completionResponseMessaging</code> instead.</p>
+<p><strong><code>randomSort</code></strong> - Randomly sort all questions AND their answers. You should now use <code>randomSortQuestions</code> and <code>randomSortAnswers</code> instead.</p>
+<h2>Advanced Usage</h2>
+<p>Want to manage your quizzes in a content management system?</p>
+<p>Simply translate your CMS quiz data into a JSON object formatted like <code>quizJSON</code> in <code>js/slickQuiz-config.js</code>.<br />
+Then assign it as the <code>quizJSON</code> variable instead of loading <code>js/slickQuiz-config.js</code>.</p>
+<p>Alternatively, you can pass the JSON right into the plugin using the <code>json</code> option (useful if you are placing multiple quizzes on a page):</p>
+<pre><code>$(function () {
+    $('#slickQuiz').slickQuiz({json: {YOUR_JSON_HERE}});
+});</code></pre>
+<h2>Base HTML Structure</h2>
+<p>The slickQuiz ID and class names are what are important here:</p>
+<pre><code>&lt;body id="slickQuiz"&gt;
+    &lt;h1 class="quizName"&gt;&lt;/h1&gt;
+    &lt;div class="quizArea"&gt;
+        &lt;div class="quizHeader"&gt;
+            &lt;a class="startQuiz" href=""&gt;Get Started!&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="quizResults"&gt;
+        &lt;h3 class="quizScore"&gt;You Scored: &lt;span&gt;&lt;/span&gt;&lt;/h3&gt;
+        &lt;h3 class="quizLevel"&gt;&lt;strong&gt;Ranking:&lt;/strong&gt; &lt;span&gt;&lt;/span&gt;&lt;/h3&gt;
+        &lt;div class="quizResultsCopy"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+<h2>Base Config Options</h2>
+<p>See <code>js/slickQuiz-config.js</code></p>
+<pre><code>var quizJSON = {
+    "info": {
+        "name":    "The Quiz Header",
+        "main":    "The Quiz Description Text",
+        "results": "The Quiz Results Copy",
+        "level1":  "The highest ranking",
+        "level2":  "The almost highest ranking",
+        "level3":  "The middle ranking",
+        "level4":  "The almost lowest ranking",
+        "level5":  "The lowest ranking"
+    },
+    "questions": [
+        {
+            "q": "The Question?",
+            "a": [
+                {"option": "an incorrect answer",       "correct": false},
+                {"option": "a correct answer",          "correct": true},
+                {"option": "another correct answer",    "correct": true}
+            ],
+            "correct": "The Correct Response Message",
+            "incorrect": "The Incorrect Response Message",
+            "select_any": false, // optional, see "Question Options" above
+            "force_checkbox": false // optional, see "Question Options" above
+        }
+    ]
+}</code></pre>
+<h2>Adding HTML to Questions and Answers</h2>
+<p>Standard HTML elements like images, videos embeds, headers, paragraphs, etc., can be used within text values like <code>q</code> and <code>a</code> options.</p>
+<pre><code>"q": "The Question? &lt;img src='path/to/image.png' /&gt;",
+"a": [
+    {"option": "an &lt;b&gt;incorrect&lt;/b&gt; answer", "correct": false},
+    {"option": "a &lt;b&gt;correct&lt;/b&gt; answer",    "correct": true},
+]</code></pre>
+<p>Created by <a href="http://juliecameron.com">Julie Cameron</a> while previously employed at <a href="http://quickenloans.com">Quicken Loans</a>, Detroit, MI</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/57887?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/jewlofthelotus" target="_blank" id="ownerName" class="sidebar-link">jewlofthelotus</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">April 23, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">August 30, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://jewlofthelotus.github.com/SlickQuiz" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/57887?v=4" alt="jewlofthelotus" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jewlofthelotus" target="_blank" class="text-decoration-none fw-bold">jewlofthelotus</a><p class="mb-0 text-muted small">121 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1664965?v=4" alt="cxelegance" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cxelegance" target="_blank" class="text-decoration-none fw-bold">cxelegance</a><p class="mb-0 text-muted small">8 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/182101?v=4" alt="danjordan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/danjordan" target="_blank" class="text-decoration-none fw-bold">danjordan</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1143013?v=4" alt="Aybee" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Aybee" target="_blank" class="text-decoration-none fw-bold">Aybee</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/131235?v=4" alt="nfreear" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nfreear" target="_blank" class="text-decoration-none fw-bold">nfreear</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/49697684?v=4" alt="tom-novologic" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tom-novologic" target="_blank" class="text-decoration-none fw-bold">tom-novologic</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1194257?v=4" alt="apierr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apierr" target="_blank" class="text-decoration-none fw-bold">apierr</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/128240?v=4" alt="georgeh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/georgeh" target="_blank" class="text-decoration-none fw-bold">georgeh</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5665457?v=4" alt="joejansen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/joejansen" target="_blank" class="text-decoration-none fw-bold">joejansen</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/131460?v=4" alt="solecism" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/solecism" target="_blank" class="text-decoration-none fw-bold">solecism</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+5 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
