@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazyload by Jieyou</title>
+    <meta name="description" content="一个jQuery或zepto的图片延迟加载插件。An jQuery | zepto plugin for lazy loading images. ">
+    <meta name="author" content="jieyou">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/lazyload-by-jieyou.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Lazyload</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Lazyload",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Lazyload</h1>
+        <p id="packageDescription" class="text-muted">一个jQuery或zepto的图片延迟加载插件。An jQuery | zepto plugin for lazy loading images. </p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">715</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.17 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">318</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">4</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/jieyou/lazyload/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/jieyou/lazyload" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <p>h1. 中文</p>
+<p>&quot;for English please click&quot;:#english</p>
+<p>h2. 基于jQuery或Zepto的图片延迟加载插件</p>
+<p>该插件在较长的页面中延迟加载图片。视窗外的图片会延迟加载，直到它们由于用户滚动而出现到视窗中。可以将它看做图像预加载技术的反向运用。</p>
+<p>在包含很多大图片且较长页面中使用延迟加载，能使页面载入更快。浏览器在只加载可见区域的图片后就达到绪状态。在某些情况下，它也能帮助减少服务器端的负载。</p>
+<p>图片延迟加载的灵感来自于Matt Mlinac的 &quot;YUI ImageLoader&quot;:<a href="http://developer.yahoo.com/yui/imageloader/">http://developer.yahoo.com/yui/imageloader/</a> 技术。</p>
+<p>这个项目由 &quot;tuupola/jquery_lazyload&quot;:<a href="https://github.com/tuupola/jquery_lazyload">https://github.com/tuupola/jquery_lazyload</a> fork而来，并加入了如下功能：</p>
+<ul>
+<li>修改了许多细节来提升性能;</li>
+<li>加入了对IE6/7的支持;</li>
+<li>可以在图片加载之前再根据需求动态修改图片的url;</li>
+<li>可以基于 &quot;Zepto&quot;:<a href="https://github.com/madrobby/zepto">https://github.com/madrobby/zepto</a> 使用，而不是只能基于jQuery;</li>
+<li><code>vertical_only</code> 、 <code>no_fake_img_loader</code> 、<code>check_appear_throttle_time</code> 等额外的选项。</li>
+</ul>
+<p>h2. 如何使用?</p>
+<p>h3. Basic</p>
+<p>图片延迟加载插件基于jQuery或Zepto，在你HTML代码的尾部引入他们：</p>
+<pre><script src="jQuery.js"></script>
+<!-- 或 <script src="zepto.js"> -->
+<script src="lazyload.min.js"></script></pre>
+<p>或者用 Bower (<a href="http://bower.io/">http://bower.io/</a>) 安装：</p>
+<pre>
+bower install jieyou_lazyload
+</pre>
+<p>你必须改写你的HTML代码。真实图像的URL必须被放入到<code>data-original</code>属性中。给所有需要延迟加载图片一个特殊的class是一个好主意。这样你就可以很容易地控制哪些图片会被插件绑定到。请注意，你的图片应该有宽度和高度属性，或者通过CSS来控制图片的宽度和高度，或者通过某些手段来确保它有正确的宽度和宽度。</p>
+<pre>
+    <!-- 直接赋予图片宽高 -->
+    <img class="lazy" data-original="img/example.jpg" width="640" height="480">
+
+    <!-- 或：通过css赋予图片宽高 -->
+    <style>
+        .lazy{width:640px;height:480px;}
+    </style>
+    <img class="lazy" data-original="img/example.jpg">
+
+    <!-- 或：自适应宽度的图片样式（常用于移动端） -->
+    <style>
+        .lazy{width:100%;height:0;padding-top:75%;background-size:100%;}
+        /* 假设高宽比为 480:640，即75%，并使用背景图的方式将图片铺在padding-top区域内
+        （padding的百分比是宽度的百分比而不是高度的，即使是padding-top|padding-bottom） */
+    </style>
+    <div class="lazy" data-original="img/example.jpg"><div>
+    <!-- 请参阅examples/enabled_image_full_width.html -->
+</pre>
+<p>然后你在你的代码中加入:</p>
+<pre>$(".lazy").lazyload();</pre>
+<p>这会使得所有class为lazy的元素被延迟加载</p>
+<p>h3. 高级</p>
+<p>h4. 在AJAX加载的内容中使用</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+$("#container").one("click", function() {
+    $("#container").load("images.html", function(response, status, xhr) {
+        $("img.lazy").lazyload();
+    });              
+});
+</pre>
+<p>请参阅 <code>enabled_ajax.html</code></p>
+<p>h4. 与css背景图一起使用</p>
+<pre><div class="lazy" data-original="img/bmw_m1_hood.jpg" style="background-image: url('img/grey.gif'); width: 765px; height: 574px;"></div></pre>
+<pre>
+$("div.lazy").lazyload();
+// 或加入某些效果
+$("div.lazy").lazyload({
+    effect : "fadeIn"
+});
+</pre>
+<p>请参阅 <code>enabled_background.html</code></p>
+<p>h4. 图片在某个容器中滚动</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+#container {
+    height: 600px;
+    overflow: scroll;
+}
+</pre>
+<pre>
+$("img.lazy").lazyload({         
+    effect : "fadeIn",
+    container: $("#container")
+});
+</pre>
+<p>请参阅 <code>enabled_container.html</code></p>
+<p>h4. 在<code>scrollstop</code>(或其他自定义事件)时判断是否应该加载图片</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+<script src="jquery.scrollstop.js" type="text/javascript"></script>
+</pre>
+<pre>
+$("img.lazy").lazyload({
+  event: "scrollstop"
+});
+</pre>
+<p>请参阅 <code>enabled_gazillion.php</code></p>
+<p>h4. 图片在某个容器中的水平方向滚动</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+#container {
+    width: 800px;
+    overflow: scroll;
+}
+#inner_container {
+    width: 4750px;
+}
+</pre>
+<pre>
+$("img.lazy").lazyload({
+    container: $("#container")
+});
+</pre>
+<p>请参阅 <code>enabled_wide_container.html</code></p>
+<p>h4. 加入fadeIn效果</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+$("img.lazy").lazyload({
+    effect : "fadeIn"
+});
+</pre>
+<p>请参阅 <code>enabled_fadein.html</code></p>
+<p>h4. 在5秒延迟后加载图片</p>
+<pre><img class="lazy" src="img/grey.gif" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+$(function() {          
+    $("img.lazy").lazyload({
+        event : "sporty"
+    });
+});
+
+$(window).bind("load", function() { 
+    var timeout = setTimeout(function() {
+        $("img.lazy").trigger("sporty")
+    }, 5000);
+});
+</pre>
+<p>请参阅 <code>enabled_timeout.html</code></p>
+<p>h4. 在水平方向很宽的页面中使用</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+$("img.lazy").lazyload();
+</pre>
+<p>请参阅 <code>enabled_wide.html</code></p>
+<p>h4. 在只能在竖直方向滚动的页面中使用</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+$("img.lazy").lazyload({
+    vertical_only: true
+});
+</pre>
+<p>请参阅 <code>enabled_vertical_only.html</code></p>
+<p>h4. 重写图片的原始url</p>
+<p>某些情况下，你需要对图片的原始url做一些处理</p>
+<pre><img class="lazy" data-original="img/bmw_m1_hood.jpg" width="765" height="574"></pre>
+<pre>
+$("img.lazy").lazyload({
+    url_rewriter_fn:function($element,originalSrcInAttr){
+        // this -> image element
+        if(originalSrcInAttr == 'img/bmw_m1_hood.jpg'){ // in the example, we changed the first image's url to another
+            return 'img/bmw_m1_hood_rewritten.jpg'
+        }
+        return originalSrcInAttr
+    }
+})
+// 回调函数中，`this`指向出现的图片元素的节点，参数第一项为当前元素的jQuery|Zepto对象，第二项为当前元素的图片的原始url
+</pre>
+<p>h4. 不使用假图片预加载</p>
+<p>默认情况下，我们在加载图片时，会先创建一个 Image 对象（fake image）将远端的图片加载到本地，再更改真正需要此图片的元素的 src 或 background-image 属性。这样用户看上去图片不是被缓慢加载出来的，而是在立即展现，或能添加诸如 fadeIn 类的效果。</p>
+<p>但是如果图片是从某个接口动态返回的，而不是实际的一个静态文件，上述机制在某些情况下可能导致图片被加载两次（创建的Image对象会加载一次，实际DOM树中的元素设置 src 或 background-image 时又会加载一次），此时你可以将 no_fake_img_loader 参数设置为true，这样不会有 fake image 的机制，从而规避这种问题。</p>
+<p>请注意 &quot;与srcset属性一起使用&quot;:#%E4%B8%8Esrcset%E5%B1%9E%E6%80%A7%E4%B8%80%E8%B5%B7%E4%BD%BF%E7%94%A8 时，则一定会开启“不使用假图片预加载”，而无论你设置的no_fake_img_loader的值是true还是false。</p>
+<pre><img class="lazy" data-original="img/bmw_m1_hood.jpg" width="765" height="574"></pre>
+<pre>
+$("img.lazy").lazyload({
+    no_fake_img_loader:true
+})
+</pre>
+<p>请参阅 <code>enabled_no_fake_img_loader.html</code></p>
+<p>h4. 与AMD模块加载器（如requirejs）一起使用</p>
+<pre><img class="lazy" data-original="img/bmw_m1_hood.jpg" width="765" height="574"></pre>
+<pre>
+require(['jquery','../lazyload'],function($){
+  $(".lazy").lazyload()
+})
+</pre>
+<p>请参阅 <code>enabled_amd.html</code></p>
+<p>h4. 与srcset属性一起使用</p>
+<p>更多详情请见 <code>enabled_srcset.html</code></p>
+<pre><img class="lazy" data-original="img/bmw_m1_hood.jpg" data-original-srcset="img/bmw_m1_hood.jpg 765w" sizes="765px" width="765" height="574"></pre>
+<pre>
+$("img.lazy").lazyload()
+</pre>
+<p>请参阅 <code>enabled_srcset.html</code></p>
+<p>h4. options对象</p>
+<p>你可以将options对象当做<code>lazyload</code>方法的第一个参数来使用。</p>
+<pre>
+var options = {
+    // 默认情况下，图像会在出现在屏幕上时被加载。如果你想的图像更早地加载，可以使用threshold参数。设置threshold为200，将导致图像在它离视窗边缘还有200px时开始加载。
+    threshold          : 0, // default: 0. 另一个例子: 200
+
+    // 在页面滚动后，该插件将所有未加载的图像循环一遍。并在循环检查图像是否在视窗中。默认情况下，发现第一个位于视窗外的图片时，循环停止。这是基于以下的假设：页面上图像的顺序与它们在HTML代码中的顺序是一致的。然而对于某些布局，这可能是错误的。你可以通过设置failure_limit参数来控制循环终止的行为（failure_limit参数的数值为最多允许多少张图片被检查出位于视窗外后停止检查循环中剩余未检查的图片），当你将它设置为一个比较大的数值，显著多余总的图片数量（如9999）时，则可以认为会检测到每一张图片。
+    failure_limit      : 0, // default: 0. 另一个例子: 10
+
+    // 指定触发什么事件时，开始加载真实的图片。你可以使用jQuery中已有的事件，如click或mouseover。你也可以使用自定义的事件如sporty或foobar。当事件是`scroll`或类似事件类型时，还需要检查图像是否已出现在视窗中。
+    event              : 'scroll', // default: 'scroll'. 另一个例子: 'click'
+
+    // 默认情况下插件在等待图片完全加载后调用show()。你可以使用想要的任何效果。下面的代码使用了fadeIn效果。你可以在demo页面中查看该效果。
+    effect             : 'show', // default: 'show'. 另一个例子: 'fadein'
+
+    // 上述效果（`effect`）函数的参数数组。举两个例子，如果`effect`参数设置为`show`且`effect_params`参数设置为[400]，将会调用`$element.show(400)`，即在400ms后显示图片；如果`effect`参数设置为`fadein`且`effect_params`参数设置为[400,completeFunction]，将会调用`fadein(400,completeFunction)`，即在400ms内渐入显示图片，并在渐入动画完成时调用`completeFunction`。
+    effect_params      : null, // default: undefined. 另一个例子: [400].
+
+    // 你可以将改插件运用在某个容器内，如一个有滚动条的div。只需要传递容器的jQuery对象。我们有在纵向和横向滚动的容器中使用插件的两个demo。
+    container          : window, // default: 'show'. 另一个例子: $('#container')
+
+    // 默认情况下，图片的真实url被设置在`data-original`属性内，你可以通过修改下面这个值来改变这个属性名（如`url`，这样插件将在`data-url`属性中查找图片的真实地址）注意下面这个值是不用包含`data-`头的。
+    data_attribute     : 'original', // default: 'original'. 另一个例子: 'url'
+
+    // 当你将图片懒加载技术与`srcset`一起使用时，你不能将`srcset`的值直接写在`srcset`内，否则会导致图片立即加载。默认情况下，你应该写在属性`data-original-srcset`内，这样lazyload插件会帮你在合适的时候将它的赋值到`srcset`上。你可以通过修改下面这个值来改变这个属性名。注意下面这个值是不用包含`data-`头的。
+    data_srcset_attribute     : 'original-srcset', // default: 'original-srcset'. 另一个例子: 'o-srcset'
+
+    // 当图片在视窗中出现时回调。`this`指向出现的图片元素的节点，参数第一项为当前元素的jQuery|Zepto对象，第二项为尚未出现的图片的数量，第三项为配置参数对象。
+    appear             : function(){}, // default: `the emptyFunc`. 另一个例子: function($elements, elements_left, options){}
+
+    // 当图片加载完毕时回调。`this`指向出现的图片元素的节点，参数第一项为当前元素的jQuery|Zepto对象，第二项为尚未出现的图片的数量，第三项为配置参数对象。
+    load               : function(){}, // default: `the emptyFunc`. 另一个例子: function($elements, elements_left, options){}
+
+    // 在大多数情况下，页面只能纵向滚动。此时，只需要检查图片的竖直位置是否出现在视图中即可。如果这样做能提高性能。你可以在只能纵向滚动的页面中将`vertical_only`参数设置为true
+    vertical_only      : false, // default: false. 另一个例子: true
+
+    // 默认情况下，lazyload会在`window`的`scroll`、`resize`事件被触发时，检查图片是否已经出现在视窗中，但用户一次缩放屏幕通常可能连续触发多次resize事件；除了iOS以外的设备，用户一次滚屏也可能触发多次scroll事件，这造成了性能上的浪费。你可以通过这个参数设置两次检查之间最少的间隔时间，用来提高性能。当设置为0时，则每次触发`scroll`、`resize`事件时都会检测
+    check_appear_throttle_time            : 300, // default: 300. 另一个例子: 0
+
+    // 重写图片的原始url。回调函数中，`this`指向出现的图片元素的节点，参数第一项为当前元素的jQuery|Zepto对象，第二项为当前元素的图片的原始url
+    url_rewriter_fn             : function(){},  // default: `the emptyFunc`. 另一个例子: function($element,originalSrcInAttr){}
+
+    // 不使用假图片预加载（详见上面“高级”中的“不使用假图片预加载”）
+    no_fake_img_loader          : false, // default: false. 另一个例子: true
+
+    // 如果一个img元素没有指定src属性，我们使用这个placeholder，在真正的图片被加载之前，此img会呈现这个占位图。
+    placeholder_data_img : 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC',
+
+    // IE6/7 的 placeholder。这是我当时在百度时的cdn地址，建议改为你服务器上的任一张灰色或白色的1*1的小图
+    placeholder_real_img : 'http://webmap3.map.bdimg.com/yyfm/lazyload/0.0.1/img/placeholder.png'
+}
+
+$("img.lazy").lazyload(options);
+</pre>
+<p>h4. 移除skip_invisible属性</p>
+<p>由于display:none时，jQuery/Zepto中的<code>$(selector).offset().top/left</code>属性始终为0( &quot;链接&quot;:<a href="http://bugs.jquery.com/ticket/3037">http://bugs.jquery.com/ticket/3037</a> )，因此该属性为false并且图片一开始display:none时，由于无法得到该标签距离文档顶部的实际像素数，图片在一开始就会被加载上来，违背了lazyload的初衷。因此该版本中删掉了该属性。lazyload不会去管display:none的图片，可能会出现当将display:none改变为其它值，图片仍然没有被加载的情况，但是只要滑动滚轮触发scroll或event中设定的事件，图片还是可以被加载出来的，examples中的remove_invisible.html展示了这一场景</p>
+<p>h2. License</p>
+<p>所有代码遵循 &quot;MIT License&quot;:<a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a>. 所有图片license是 &quot;Creative Commons Attribution 3.0 Unported License&quot;:<a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">http://creativecommons.org/licenses/by/3.0/deed.en_US</a> 。也就是说你可以自由地做任何你想做的事情。只是不能在代码中移除我的名字。</p>
+<p>h1. English</p>
+<p>&quot;查看中文文档请点击&quot;:#%E4%B8%AD%E6%96%87</p>
+<p>h2. Lazy Load Plugin for jQuery | Zepto</p>
+<p>Lazy Load delays loading of images in long web pages. Images outside of viewport wont be loaded before user scrolls to them. This is opposite of image preloading.</p>
+<p>Using Lazy Load on long web pages containing many large images makes the page load faster. Browser will be in ready state after loading visible images. In some cases it can also help to reduce server load.</p>
+<p>Lazy Load is inspired by &quot;YUI ImageLoader&quot;:<a href="http://developer.yahoo.com/yui/imageloader/">http://developer.yahoo.com/yui/imageloader/</a> Utility by Matt Mlinac.</p>
+<p>This project is forked from &quot;tuupola/jquery_lazyload&quot;:<a href="https://github.com/tuupola/jquery_lazyload">https://github.com/tuupola/jquery_lazyload</a> and add features below:</p>
+<ul>
+<li>Modified many details to improve performance;</li>
+<li>IE6/7 supported;</li>
+<li>Can dynamically modify the image's url on demand before image loaded;</li>
+<li>Available with &quot;Zepto&quot;:<a href="https://github.com/madrobby/zepto">https://github.com/madrobby/zepto</a> ;</li>
+<li><code>vertical_only</code> \ <code>minimum_interval</code> \ <code>use_minimum_interval_in_ios</code> \ <code>no_fake_img_loader</code> options.</li>
+</ul>
+<p>h2. Current Users</p>
+<ul>
+<li>&quot;百度地图&quot;:<a href="http://map.baidu.com/">http://map.baidu.com/</a></li>
+<li>&quot;百度团购&quot;:<a href="http://tuan.baidu.com/">http://tuan.baidu.com/</a></li>
+<li>+You</li>
+</ul>
+<p>h2. How to Use?</p>
+<p>h3. Basic</p>
+<p>Lazy Load depends on jQuery or Zepto. Include them in end of your HTML code:</p>
+<pre><script src="jquery.js"></script>
+<!-- or <script src="zepto.js"> -->
+<script src="lazyload.min.js"></script></pre>
+<p>You can use our cdn server:</p>
+<pre><script src="http://webmap2.map.bdimg.com/yyfm/jQuery_1.x/1.10.2/js/jQuery_1.x.min.js"></script>
+<!-- or <script src="http://webmap2.map.bdimg.com/yyfm/zepto_default/1.1.2/js/zepto_default.min.js"></script> -->
+<script src="http://webmap3.map.bdimg.com/yyfm/lazyload/1.0.0/js/lazyload.min.js"></script></pre>
+<p>You must alter your HTML code. URL of the real image must be put into data-original attribute. It is good idea to give Lazy Loaded image a specific class. This way you can easily control which images plugin is binded to. Note that you should have width and height attributes in your image tag, or  gives the width and height via CSS.</p>
+<pre>
+    <!-- gives image's width and height directly -->
+    <img class="lazy" data-original="img/example.jpg" width="640" height="480">
+
+    <!-- or : gives the width and height via CSS -->
+    <style>
+        .lazy{width:640px;height:480px;}
+    </style>
+    <img class="lazy" data-original="img/example.jpg">
+
+    <!-- or : image with self-adaptive width (commonly used in the mobile) -->
+    <style>
+        .lazy{width:100%;height:0;padding-top:75%;background-size:100%;}
+        /* Assuming that the aspect ratio of 480:640, i.e. 75%,
+        and use the image as a background image plated in `padding-top` area 
+         (The percentage is the percentage of the width of the padding 
+        instead of the height even is `padding-top` or `padding-bottom`) */
+    </style>
+    <div class="lazy" data-original="img/example.jpg"><div>
+    <!-- see : examples/enabled_image_full_width.html -->
+</pre>
+<p>then in your code do:</p>
+<pre>$(".lazy").lazyload();</pre>
+<p>This causes all elements of class lazy to be lazy loaded. </p>
+<p>h3. Advanced</p>
+<p>h4. With AJAX loaded content</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+$("#container").one("click", function() {
+    $("#container").load("images.html", function(response, status, xhr) {
+        $("img.lazy").lazyload();
+    });              
+});
+</pre>
+<p>See <code>enabled_ajax.html</code></p>
+<p>h4. With css background images</p>
+<pre><div class="lazy" data-original="img/bmw_m1_hood.jpg" style="background-image: url('img/grey.gif'); width: 765px; height: 574px;"></div></pre>
+<pre>
+$("div.lazy").lazyload();
+// Or add some effect
+$("div.lazy").lazyload({
+    effect : "fadeIn"
+});
+</pre>
+<p>See <code>enabled_background.html</code></p>
+<p>h4. Scrolling in a container</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+#container {
+    height: 600px;
+    overflow: scroll;
+}
+</pre>
+<pre>
+$("img.lazy").lazyload({         
+    effect : "fadeIn",
+    container: $("#container")
+});
+</pre>
+<p>See <code>enabled_container.html</code></p>
+<p>h4. Load when <code>scrollstop</code> (or other custom event)</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+<script src="jquery.scrollstop.js" type="text/javascript"></script>
+</pre>
+<pre>
+$("img.lazy").lazyload({
+  event: "scrollstop"
+});
+</pre>
+<p>See <code>enabled_gazillion.php</code></p>
+<p>h4. Scrolling in a horizontal container</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+#container {
+    width: 800px;
+    overflow: scroll;
+}
+#inner_container {
+    width: 4750px;
+}
+</pre>
+<pre>
+$("img.lazy").lazyload({
+    container: $("#container")
+});
+</pre>
+<p>See <code>enabled_wide_container.html</code></p>
+<p>h4. With fadeIn effect</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+$("img.lazy").lazyload({
+    effect : "fadeIn"
+});
+</pre>
+<p>See <code>enabled_fadein.html</code></p>
+<p>h4. Load images after <code>five second</code> delay</p>
+<pre><img class="lazy" src="img/grey.gif" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+$(function() {          
+    $("img.lazy").lazyload({
+        event : "sporty"
+    });
+});
+
+$(window).bind("load", function() { 
+    var timeout = setTimeout(function() {
+        $("img.lazy").trigger("sporty")
+    }, 5000);
+});
+</pre>
+<p>See <code>enabled_timeout.html</code></p>
+<p>h4. Using in (horizontal) wide page</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+$("img.lazy").lazyload();
+</pre>
+<p>See <code>enabled_wide.html</code></p>
+<p>h4. Using in page which can only scroll vertically</p>
+<pre><img class="lazy" data-original="img/example.jpg" width="765" height="574"></pre>
+<pre>
+$("img.lazy").lazyload({
+    vertical_only: true
+});
+</pre>
+<p>See <code>enabled_vertical_only.html</code></p>
+<p>h4. rewrite image's original url</p>
+<p>Sometimes, you need do something with the original url</p>
+<pre><img class="lazy" data-original="img/bmw_m1_hood.jpg" width="765" height="574"></pre>
+<pre>
+$("img.lazy").lazyload({
+    url_rewriter_fn:function($element,originalSrcInAttr){
+        // this -> image element
+        if(originalSrcInAttr == 'img/bmw_m1_hood.jpg'){ // in the example, we changed the first image's url to another
+            return 'img/bmw_m1_hood_rewritten.jpg'
+        }
+        return originalSrcInAttr
+    }
+})
+// the arguments for callback function
+//      `this` : currect image element node
+//      1st: currect element's jQuery|Zepto objcet
+//      2nd: currect element's original image src
+</pre>
+<p>see <code>enabled_url_rewriter_fn.html</code></p>
+<p>h4. Without fake image preload mechanism</p>
+<p>By default, when loading a image, we firtst create a Image object ( fake image ) which used to download the remote image to local, and then modify the <code>src</code> or <code>background-image</code> attribute to the real element which need the image. By doing this, the users feel like the images showing immediately or can use some dynamic effect such as <code>fadeIn</code> , rather than a slowly downloading.</p>
+<p>But if the image is returned by a dynamic interferce instead of a static file, the mechanism above may cause the image being loaded twice ( fake image object once, when setting the attribute <code>src</code> or <code>background-image</code> of the real element once more ), when this occurs, you can set the <code>no_fake_img_loader</code> parameter <code>true</code>, without the <code>fake image</code> mechanism to avoid this problem.</p>
+<p>Note that if use the <code>srcset</code> attribute, will enabled no_fake_img_loader, regardless of the value of this option is true or false.</p>
+<pre><img class="lazy" data-original="img/bmw_m1_hood.jpg" width="765" height="574"></pre>
+<pre>
+$("img.lazy").lazyload({
+    no_fake_img_loader:true
+})
+</pre>
+<p>see <code>enabled_no_fake_img_loader.html</code></p>
+<p>h4. with AMD loader (such as <code>requirejs</code>)</p>
+<pre><img class="lazy" data-original="img/bmw_m1_hood.jpg" width="765" height="574"></pre>
+<pre>
+require(['jquery','../lazyload'],function($){
+  $(".lazy").lazyload()
+})
+</pre>
+<p>see <code>enabled_amd.html</code></p>
+<p>h4. with <code>srcset</code> attribute</p>
+<p>more details on <code>enabled_srcset.html</code></p>
+<pre><img class="lazy" data-original="img/bmw_m1_hood.jpg" data-original-srcset="img/bmw_m1_hood.jpg 765w" sizes="765px" width="765" height="574"></pre>
+<pre>
+$("img.lazy").lazyload()
+</pre>
+<p>see <code>enabled_srcset.html</code></p>
+<p>h4. The options object</p>
+<p>You can use the options object as the first argument in the <code>lazyload</code> method.</p>
+<pre>
+var options = {
+    // By default images are loaded when they appear on the screen. If you want images to load earlier use threshold parameter. Setting threshold to 200 causes image to load 200 pixels before it appears on viewport.
+    threshold          : 0, // default: 0. Another example: 200
+
+    // After scrolling page plugin loops though unloaded images. Loop checks if image has become visible. By default loop is stopped when first image outside viewport is found. This is based on following assumption. Order of images on page is same as order of images in HTML code. With some layouts assumption this might be wrong. You can control loading behaviour with failure_limit setting, if you set it to a relatively large value, significantly more than the total number of images (such as 9999), it is considered that checks each images.
+    failure_limit      : 0, // default: 0. Another example: 10
+
+    // Specified an event, when it triggers, start loading the real images. You can use jQuery event such as click or mouseover. You can also use custom events such as sporty or foobar. if the event is `scroll` or a similar type, it also need to check if the image has appeared in the viewport. Default is to wait until user scrolls down and image appears on the viewport.
+    event              : 'scroll', // default: 'scroll'. Another example: 'click'
+
+    // By default plugin waits for image to fully load and calls show(). You can use any effect you want. Following code uses fadeIn effect. Check how it works at effect demo page.
+    effect             : 'show', // default: 'show'. Another example: 'fadein'
+
+    // the arguments array of `effect` function. For two examples, if `effect` is set to `show` and `effect_params` is set to [400], it will call `$element.show(400)` to show the image after 400ms; if `effect` is set to `fadein` and `effect_params` is set to [400,completeFunction], it will call `$element.fadein(400,completeFunction)` to fadeIn the image in 400ms and call the `completeFunction` when the animation is complete.
+    effect_params      : null, // default: undefined. Another example: [400].
+
+    // You can also use plugin for images inside scrolling container, such as div with scrollbar. Just pass the container as jQuery object. There is a demo for horizontal and vertical container.
+    container          : window, // default: 'show'. Another example: $('#container')
+
+    // By default images's original url set in `data-original` attribute, you can change it to Another attribute (such as `url`,so it will find the original url in `data-url` attribute). You can modify the following option's values to change the attribute name. Note that this value is not include `data-` prefix.
+    data_attribute     : 'original', // default: 'original'. Another example: 'url'
+
+    // when use with `srcset` attribute ，you can not directly write the value of` srcset` in `srcset` attribute，otherwise it will cause the image immediately loaded。By default, you can write in the attribute `data-original-srcset` , so the lazyload plugin will help you at the right time it is assigned to the` srcset` attribute . You can modify the following option's values to change the attribute name. Note that this value is not include `data-` prefix.
+    data_srcset_attribute     : 'original-srcset', // default: 'original-srcset'. Another example: 'o-srcset'
+
+    // Call when one image is appear to the viewport. The arguments for callback function: `this` : currect image element node, 1st: currect element's jQuery|Zepto objcet, 2nd: count of elements not appear yet, 3rd: the options.
+    appear             : function(){}, // default: `the emptyFunc`. Another example: function(elements_left, options){}
+
+    // Call when one image is load. The arguments for callback function: `this` : currect image element node, 1st: currect element's jQuery|Zepto objcet, 2nd: count of elements not appear yet, 3rd: the options.
+    load               : function(){}, // default: `the emptyFunc`. Another example: function(elements_left, options){}
+
+    // In most situations, page can only scroll vertically.At this time, only check images's vertical position will improve performance.You can only set vertical_only to true when page can only scroll vertically.
+    vertical_only      : false, // default: false. Another example: true
+
+    // By default, lazyload will check whether the image has appeared in the viewport when `window`'s `scroll` or `resize` event is triggered, but once a user continuous zoom screens may usually triggered several times `resize` event; in addition to the iOS device, a user may also trigger several times `scroll` event once a scroll screen, which resulted in the waste of a performance. set the minimum interval between checks. When set to `0`, it will check in every scroll\resize event.
+    check_appear_throttle_time            : 300, // default: 300. Another example: 0
+
+    // rewrite image's original url. the arguments for callback function: `this` : currect image element node, 1st: currect element's jQuery|Zepto objcet, 2nd: currect element's original image src
+    url_rewriter_fn             : function(){},  // default: `the emptyFunc`. Another example: function($element,originalSrcInAttr){}
+
+    // Without fake image preload mechanism（See details above）
+    no_fake_img_loader          : false, // default: false. Another example: true
+
+    // If element is an img and no src attribute given, use placeholder. Before the real image is loaded, this will show this img placeholder.
+    placeholder_data_img : 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC',
+
+    // Placeholder for IE6/7. This is Baidu's cdn addresses, I recommend that you change the url to your server ,on either a gray or white small 1 * 1 png.
+    placeholder_real_img : 'http://ditu.baidu.cn/yyfm/lazyload/0.0.1/img/placeholder.png'
+}
+
+$("img.lazy").lazyload(options);
+</pre>
+<p>h4. The removal of skip_invisible attribute</p>
+<p><code>$(selector).offset().top/left</code> are always zero( &quot;link&quot;:<a href="http://bugs.jquery.com/ticket/3037">http://bugs.jquery.com/ticket/3037</a> ) when <code>display:none</code> is set. As we can't get real offset of the element, the picture is always loaded when we set both <code>display:none</code> and 'skip_invisible = false'. It go against the intention of lazyload, so we decide to remove this attribute from options. lazyload will ignore pictures with display attribute set to none. Lazyload will not be triggered when display attribute is changed(i.e. remove_invisible.html). It may cause some trouble sometimes but scrolling your mouse will definately help!</p>
+<p>h2. License</p>
+<p>All code licensed under the &quot;MIT License&quot;:<a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a>. All images licensed under &quot;Creative Commons Attribution 3.0 Unported License&quot;:<a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">http://creativecommons.org/licenses/by/3.0/deed.en_US</a>. In other words you are basically free to do whatever you want. Just don't remove my name from the source.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/1785607?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/jieyou" target="_blank" id="ownerName" class="sidebar-link">jieyou</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">May 30, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 6, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1785607?v=4" alt="jieyou" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jieyou" target="_blank" class="text-decoration-none fw-bold">jieyou</a><p class="mb-0 text-muted small">25 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/9876893?v=4" alt="cnzh2992" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cnzh2992" target="_blank" class="text-decoration-none fw-bold">cnzh2992</a><p class="mb-0 text-muted small">4 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
