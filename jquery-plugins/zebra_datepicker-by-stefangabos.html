@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zebra_datepicker by Stefangabos</title>
+    <meta name="description" content="A super-lightweight, highly configurable, cross-browser date time picker jQuery plugin">
+    <meta name="author" content="stefangabos">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/zebra_datepicker-by-stefangabos.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Zebra_datepicker</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Zebra_datepicker",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Zebra_datepicker</h1>
+        <p id="packageDescription" class="text-muted">A super-lightweight, highly configurable, cross-browser date time picker jQuery plugin</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">398</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">2.34 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">183</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">7</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/stefangabos/Zebra_Datepicker/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/stefangabos/Zebra_Datepicker" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <img src="https://raw.githubusercontent.com/stefangabos/zebrajs/master/docs/images/logo.png" alt="zebrajs" align="right">
+<h1>Zebra Datepicker &nbsp;<a href="https://twitter.com/intent/tweet?text=A+super-lightweight,+highly+configurable,+cross-browser+date/time+picker+jQuery+plugin&amp;url=https://github.com/stefangabos/Zebra_Datepicker&amp;via=stefangabos&amp;hashtags=jquery,datepicker,timepicker,calendar,javascript"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social" alt="Tweet" /></a></h1>
+<p><em>A super-lightweight, highly configurable, cross-browser date time picker jQuery plugin</em></p>
+<p><a href="https://www.npmjs.com/package/zebra_datepicker"><img src="https://img.shields.io/npm/v/zebra_datepicker.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/zebra_datepicker"><img src="https://img.shields.io/npm/dt/zebra_datepicker.svg" alt="Total" /></a> <a href="https://www.npmjs.com/package/zebra_datepicker"><img src="https://img.shields.io/npm/dm/zebra_datepicker.svg" alt="Monthly" /></a> <a href="https://www.jsdelivr.com/package/npm/zebra_datepicker"><img src="https://data.jsdelivr.com/v1/package/npm/zebra_datepicker/badge?style=rounded" alt="JSDelivr" /></a> <a href="https://github.com/stefangabos/Zebra_Datepicker/blob/master/LICENSE.md"><img src="https://img.shields.io/npm/l/zebra_datepicker.svg" alt="License" /></a></p>
+<p>Enhance your forms with the powerful and highly-configurable Zebra Datepicker date time picker jQuery plugin. This date time picker adds an intuitive calendar interface for selecting dates and times, complete with a convenient month and year jump feature. The selected date will be formatted and entered into the input field according to your specified options. Simply attach the plugin to your input fields and let the calendar icon do the rest.</p>
+<h2>Features</h2>
+<ul>
+<li>it is small – it weighs around 30KB minified (9.1KB gzipped) offering the best ratio of features per used bytes</li>
+<li>it is both a date picker as well as a time picker</li>
+<li>it's cross-browser – works in every major browser; works also in Internet Explorer 6 (as long as you are using a version of the date picker that is less than 2.0.0)!</li>
+<li>has a default color scheme that blends-in well with almost any design, and it's easily customizable through the well-organized CSS file; two additional themes are included, one of them being for use with <a href="https://getbootstrap.com/">Twitter Bootstrap</a></li>
+<li>offers an intuitive interface allowing for easy navigation through months and years</li>
+<li>offers an intuitive mechanism for disabling dates and date ranges using a syntax similar to cron's syntax</li>
+<li>supports defining of custom weekend days for countries that don't have the weekend on Saturday and Sunday</li>
+<li>supports most of date formats you can think of, borrowing the syntax of PHP's date function</li>
+<li>supports all sorts of combinations for starting and ending dates</li>
+<li>date pickers can be &quot;paired&quot; – where one or more date pickers will use the value of another date picker as starting date</li>
+<li>supports internationalization</li>
+<li>supports RTL languages</li>
+<li>works by automatically attaching a small calendar icon to the indicated input fields which displays the attached date picker when clicked.</li>
+<li>it's compatible with AMD and CommonJS</li>
+</ul>
+<p><a href="https://stefangabos.github.io/Zebra_Datepicker/"><img src="https://raw.github.com/stefangabos/Zebra_Datepicker/master/examples/themes.png" alt="Themes" /></a></p>
+<h2>🎂 Support the development of this project</h2>
+<p>Your support is greatly appreciated and it keeps me motivated continue working on open source projects. If you enjoy this project please star it by clicking on the star button at the top of the page. If you're feeling generous, you can also buy me a coffee through PayPal or become a sponsor.<br />
+<strong>Thank you for your support!</strong> 🎉<br />
+<br><br></p>
+<p><a href="https://github.com/stefangabos/Zebra_Datepicker"><img src="https://img.shields.io/github/stars/stefangabos/zebra_datepicker?color=green&label=star%20it%20on%20GitHub" width="132" height="20" alt="Star it on GitHub"></a> <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=QTQH936BQDE7A"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate" /></a> <a href="https://github.com/sponsors/stefangabos"><img src="https://img.shields.io/badge/-Sponsor-fafbfc?logo=GitHub%20Sponsors"></a></p>
+<h2>Demo</h2>
+<p>See the <a href="https://stefangabos.github.io/Zebra_Datepicker/">demos</a></p>
+<h2>Requirements</h2>
+<p>Zebra Datepicker has no dependencies other than jQuery 1.7.0+ and requires that the page you are using the plugin on to have a strict doctype like:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;!doctype html&gt;</code></pre>
+<h2>Installation</h2>
+<p>Zebra Datepicker is available as a <a href="https://www.npmjs.com/package/zebra_datepicker">npm package</a>. To install it use:</p>
+<pre class="prettyprint linenums lang-language"><code># the "--save" argument adds the plugin as a dependency in packages.json
+npm install zebra_datepicker --save</code></pre>
+<h2>How to use</h2>
+<p>First, load jQuery from a CDN and provide a fallback to a local source like:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="https://code.jquery.com/jquery-3.5.0.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;window.jQuery || document.write('&lt;script src="path/to/jquery-3.5.0.js"&gt;&lt;\/script&gt;')&lt;/script&gt;</code></pre>
+<p>Load the Zebra Datepicker jQuery plugin:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="path/to/zebra_datepicker.min.js"&gt;&lt;/script&gt;</code></pre>
+<p>Alternatively, you can load Zebra Datepicker from <a href="https://www.jsdelivr.com/package/npm/zebra_datepicker">JSDelivr CDN</a> like this:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- for the most recent version, not recommended in production --&gt;
+&lt;script
+  src="https://cdn.jsdelivr.net/npm/zebra_datepicker@latest/dist/zebra_datepicker.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- for a specific version --&gt;
+&lt;script
+  src="https://cdn.jsdelivr.net/npm/zebra_datepicker@1.9.13/dist/zebra_datepicker.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- replacing "min" with "src" will serve you the non-compressed version --&gt;</code></pre>
+<p>Load the style sheet file from a local source</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link rel="stylesheet" href="path/to/theme/zebra_datepicker.min.css"&gt;</code></pre>
+<p>...or from <a href="https://www.jsdelivr.com/package/npm/zebra_datepicker">JSDelivr CDN</a></p>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- for the most recent version of the "default" theme --&gt;
+&lt;link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/zebra_datepicker@latest/dist/css/default/zebra_datepicker.min.css"&gt;
+
+&lt;!-- for the most recent version of the "bootstrap" theme --&gt;
+&lt;link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/zebra_datepicker@latest/dist/css/bootstrap/zebra_datepicker.min.css"&gt;
+
+&lt;!-- replacing "min" with "src" will serve you the non-compressed version --&gt;</code></pre>
+<blockquote>
+<p>Zebra Datepicker is also available on <a href="https://cdnjs.com/libraries/Zebra_datepicker">cdnjs</a>, one of the most famous free and public web front-end CDN services</p>
+</blockquote>
+<p>Now, within the DOM-ready event, attach the Zebra Datepicker plugin to a <code>&lt;input type="text"&gt;</code> control.</p>
+<pre class="prettyprint linenums lang-language"><code>$(document).ready(function() {
+
+    // assuming the controls you want to attach the plugin to
+    // have the "datepicker" class set
+    $('input.datepicker').Zebra_DatePicker();
+
+});</code></pre>
+<p>This will attach a calendar and to the specified element(s). Clicking the icon, will make the date picker visible.</p>
+<p>To get a reference to the instance of Zebra DatePicker attached to an element do:</p>
+<pre class="prettyprint linenums lang-language"><code>var datepicker = $('selector').data('Zebra_DatePicker');</code></pre>
+<h2>Configuration options</h2>
+<h2>Properties</h2>
+<blockquote>
+<p>All parameters are optional.</p>
+</blockquote>
+<p><em>Note that any of the properties below may also be set via data attributes. To do this you have prefix the name of the property you want to set with <code>data-zdp_</code>. One important thing to remember is that if the value of the property is an array you’ll have to use double quotes inside the square brackets and therefore single quotes around the attribute. See <a href="https://stefangabos.github.io/Zebra_Datepicker/#data-attributes">example</a>.</em></p>
+<p>&lt;table width&quot;100%&quot;&gt;</p>
+<thead>
+    <tr>
+        <th>Property</th>
+        <th>Type</th>
+        <th>Default</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+<pre><code>&lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="always_visible"&gt;&lt;/a&gt;&lt;strong&gt;always_visible&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Should the date picker be always visible?&lt;br&gt;
+        Setting this property to a jQuery element will result in the date picker being always visible, the indicated element acting as the date picker's container;&lt;br&gt;&lt;br&gt;
+        Setting this property to boolean &lt;code&gt;true&lt;/code&gt; will result in the date picker not closing when selecting a date but only when the user clicks outside the date picker.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="container"&gt;&lt;/a&gt;&lt;strong&gt;container&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;jQuery&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;$('body')&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        By default, the date picker is injected into the document's &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; element; use this property to tell the library to inject the date picker into a custom element - useful when you want the date picker to open at a specific position.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="container"&gt;&lt;/a&gt;&lt;strong&gt;current_date&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        By default, the current date (the value of &lt;em&gt;Today&lt;/em&gt;) is taken from the system where the date picker is run on.&lt;br&gt;Set this to a date in the format of &lt;code&gt;YYYY-MM-DD&lt;/code&gt; to use a different date.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="custom_classes"&gt;&lt;/a&gt;&lt;strong&gt;custom_classes&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;Array&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Dates that should have custom classes applied to them.&lt;br&gt;
+        An object in the form of&lt;br&gt;&lt;br&gt;
+        &lt;code&gt;{&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;'myclass1': [dates_to_apply_the_custom_class_to],&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;'myclass2': [dates_to_apply_the_custom_class_to]&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;}&lt;/code&gt;&lt;br&gt;&lt;br&gt;
+        ...where &lt;em&gt;dates_to_apply_the_custom_class_to&lt;/em&gt; is an array of dates in the same format as required for the &lt;code&gt;disabled_dates&lt;/code&gt; property.&lt;br&gt;&lt;br&gt;
+        Custom classes will be applied &lt;strong&gt;only in the day picker view&lt;/strong&gt; and not on month/year views! Also note that the class name will have the &lt;em&gt;"_disabled"&lt;/em&gt; suffix added if the day the class is applied to is disabled.&lt;br&gt;&lt;br&gt;
+        In order for the styles in your custom classes to be applied, make sure you are using the following syntax:&lt;br&gt;&lt;br&gt;
+        &lt;code&gt;.Zebra_DatePicker .dp_daypicker td.myclass1 { .. }&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;.Zebra_DatePicker .dp_daypicker td.myclass1_disabled { .. }&lt;/code&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="days"&gt;&lt;/a&gt;&lt;strong&gt;days&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;Array&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Days of the week, Sunday to Saturday.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="days_abbr"&gt;&lt;/a&gt;&lt;strong&gt;days_abbr&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Abbreviated names of days.&lt;br&gt;&lt;br&gt;
+        By default, the abbreviated name of a day consists of the first 2 letters from the day's full name. While this is common for most languages, there are also exceptions for languages like Thai, Loa, Myanmar, etc. where this is not correct. For these cases, specify an array with the abbreviations to be used for the 7 days of the week; leave it &lt;code&gt;false&lt;/code&gt; to use the first 2 letters of a day's name as the abbreviation.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="default_position"&gt;&lt;/a&gt;&lt;strong&gt;default_position&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;string&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;'icon_top_right'&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        The position of the date picker relative to the element it is attached to, or relative to the date picker icon.&lt;br&gt;&lt;br&gt;
+        Possible values are&lt;br&gt;&lt;br&gt;
+        &lt;ul&gt;
+            &lt;li&gt;element_top_right&lt;/li&gt;
+            &lt;li&gt;element_bottom_right&lt;/li&gt;
+            &lt;li&gt;element_top_left&lt;/li&gt;
+            &lt;li&gt;element_bottom_left&lt;/li&gt;
+            &lt;li&gt;icon_top_right&lt;/li&gt;
+            &lt;li&gt;icon_bottom_right&lt;/li&gt;
+            &lt;li&gt;icon_top_left&lt;/li&gt;
+            &lt;li&gt;icon_bottom_left&lt;/li&gt;
+        &lt;/ul&gt;
+        If the icon is disabled, the positioning is done relative to the element!&lt;br&gt;&lt;br&gt;
+        Also note that, regardless of this setting, the date picker's position will be automatically adjusted to always fit in the viewport, if needed.&lt;br&gt;&lt;br&gt;
+        See also the &lt;code&gt;offset&lt;/code&gt; property which also has an effect on the date picker's position.&lt;br&gt;&lt;br&gt;
+        Default is &lt;code&gt;icon_top_right&lt;/code&gt; meaning that the date picker will be positioned at the top right of the icon.&lt;br&gt;&lt;br&gt;
+        &lt;blockquote&gt;Prior to version 2.0.1 the possible values were "above" and "below". For backward compatiblity these values are still valid and translate to "icon_top_right" and "icon_bottom_right" respectively.&lt;/blockquote&gt;&lt;br&gt;&lt;br&gt;
+        &lt;blockquote&gt;This property will be ignored if &lt;code&gt;always_visible&lt;/code&gt; or &lt;code&gt;container&lt;/code&gt; properties are set!&lt;/blockquote&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="direction"&gt;&lt;/a&gt;&lt;strong&gt;direction&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;Direction of the calendar&lt;br&gt;&lt;br&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;code&gt;n&lt;/code&gt; (a positive integer) creates a future-only calendar beginning at n days after the reference date&lt;sup&gt;&lt;a href="#reference_date"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;code&gt;-n&lt;/code&gt; (a negative integer) creates a past-only calendar ending n days before the reference date&lt;/li&gt;
+            &lt;li&gt;&lt;code&gt;0&lt;/code&gt; creates a calendar with no restrictions&lt;/li&gt;
+            &lt;li&gt;boolean &lt;code&gt;true&lt;/code&gt; creates a future-only calendar starting with the reference date&lt;/li&gt;
+            &lt;li&gt;boolean &lt;code&gt;false&lt;/code&gt; for a past-only calendar ending on the reference date&lt;/li&gt;
+        &lt;/ul&gt;
+        You may also set this property to an array with two elements in the following combinations:&lt;br&gt;&lt;br&gt;
+        &lt;ul&gt;
+            &lt;li&gt;first item is boolean &lt;code&gt;true&lt;/code&gt; (calendar starts on the reference date), a &lt;code&gt;positive integer&lt;/code&gt; (calendar starts n days after the reference date), or a &lt;code&gt;valid date&lt;/code&gt; given in the format defined by the &lt;code&gt;format&lt;/code&gt; attribute (calendar starts at the specified date), and the second item is boolean &lt;code&gt;false&lt;/code&gt; (the calendar has no ending date), a &lt;code&gt;positive integer&lt;/code&gt; (calendar ends n days after the starting date), or a &lt;code&gt;valid date&lt;/code&gt; given in the format defined by the &lt;code&gt;format&lt;/code&gt; attribute and which occurs after the starting date (calendar ends at the specified date)&lt;br&gt;&lt;br&gt;&lt;/li&gt;
+            &lt;li&gt;first item is boolean &lt;code&gt;false&lt;/code&gt; (calendar ends on the reference date), a &lt;code&gt;negative integer&lt;/code&gt; (calendar ends n days before the reference date), or a &lt;code&gt;valid date&lt;/code&gt; given in the format defined by the &lt;code&gt;format&lt;/code&gt; attribute (calendar ends at the specified date), and the second item is a &lt;code&gt;positive integer&lt;/code&gt; (calendar ends n days before the ending date), or a &lt;code&gt;valid date&lt;/code&gt; given in the format defined by the &lt;code&gt;format&lt;/code&gt; attribute and which occurs before the starting date (calendar starts at the specified date)&lt;/li&gt;
+        &lt;/ul&gt;
+        Examples:&lt;br&gt;&lt;br&gt;
+        &lt;code&gt;[1, 7]&lt;/code&gt; calendar starts tomorrow and ends seven days after that&lt;br&gt;
+        &lt;code&gt;[true, 7]&lt;/code&gt; calendar starts on the &lt;em&gt;reference date&lt;/em&gt; and ends seven days after that&lt;br&gt;
+        &lt;code&gt;['2013-01-01', false]&lt;/code&gt; calendar starts on January 1st 2013 and has no ending date ("format" is YYYY-MM-DD)&lt;br&gt;
+        &lt;code&gt;[false, '2012-01-01']&lt;/code&gt; calendar ends on the &lt;em&gt;reference date&lt;/em&gt; and starts on January 1st 2012 ("format" is YYYY-MM-DD)&lt;br&gt;&lt;br&gt;
+        &lt;blockquote&gt;Note that &lt;code&gt;disabled_dates&lt;/code&gt; property will still apply!&lt;/blockquote&gt;&lt;br&gt;
+        &lt;blockquote&gt;&lt;a name="reference_date"&gt;&lt;/a&gt;The &lt;code&gt;reference date&lt;/code&gt; is the current date unless the date picker is the &lt;code&gt;pair&lt;/code&gt; of another date picker, case in which the reference date is the date selected in that date picker.&lt;/blockquote&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="disable_time_picker"&gt;&lt;/a&gt;&lt;strong&gt;disable_time_picker&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;boolean&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;By default, setting a format that also involves time (&lt;code&gt;h&lt;/code&gt;, &lt;code&gt;H&lt;/code&gt;, &lt;code&gt;g&lt;/code&gt;, &lt;code&gt;G&lt;/code&gt;, &lt;code&gt;i&lt;/code&gt;, &lt;code&gt;s&lt;/code&gt;, &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;A&lt;/code&gt;) will automatically enable the time picker. If you want to use a format that involves time but you don't want the time picker, set this property to &lt;code&gt;true&lt;/code&gt;.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="disabled_dates"&gt;&lt;/a&gt;&lt;strong&gt;disabled_dates&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;br&gt;&lt;small&gt;no disabled dates&lt;/small&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        An array of disabled dates in the following format: &lt;code&gt;'day month year weekday'&lt;/code&gt; where &lt;em&gt;weekday&lt;/em&gt; is optional and can be &lt;code&gt;0-6&lt;/code&gt; (Saturday to Sunday).&lt;br&gt;&lt;br&gt;
+        The syntax is similar to cron's syntax: the values are separated by spaces and may contain &lt;code&gt;*&lt;/code&gt; (asterisk) &lt;code&gt;-&lt;/code&gt; (dash) and &lt;code&gt;,&lt;/code&gt; (comma) delimiters.&lt;br&gt;&lt;br&gt;
+        Examples:&lt;br&gt;&lt;br&gt;
+        &lt;code&gt;['1 1 2012']&lt;/code&gt; would disable January 1, 2012&lt;br&gt;
+        &lt;code&gt;['* 1 2012']&lt;/code&gt; would disable all days in January 2012&lt;br&gt;
+        &lt;code&gt;['1-10 1 2012']&lt;/code&gt; would disable January 1 through 10 in 2012&lt;br&gt;
+        &lt;code&gt;['1,10 1 2012']&lt;/code&gt; would disable January 1 and 10 in 2012&lt;br&gt;
+        &lt;code&gt;['1-10,20,22,24 1-3 *']&lt;/code&gt; would disable 1 through 10, plus the 22nd and 24th of January through March for every year&lt;br&gt;
+        &lt;code&gt;['* * * 0,6']&lt;/code&gt; would disable all Saturdays and Sundays&lt;br&gt;
+        &lt;code&gt;['01 07 2012', '02 07 2012', '* 08 2012']&lt;/code&gt; would disable 1st and 2nd of July 2012, and all of August of 2012&lt;br&gt;&lt;br&gt;
+        &lt;blockquote&gt;DISABLING ALL DATES AND NOT SPECIFYING AT LEAST ONE ENABLED DATE WILL SEND THE SCRIPT INTO AN INFINITE LOOP SEARCHING FOR AN ENABLED DATE TO DISPLAY!&lt;/blockquote&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="enabled_ampm"&gt;&lt;/a&gt;&lt;strong&gt;enabled_ampm&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;br&gt;&lt;small&gt;both am/pm are selectable&lt;/small&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        An array of selectable am/pm.&lt;br&gt;&lt;br&gt;
+        Allowed values are &lt;code&gt;['am']&lt;/code&gt;, &lt;code&gt;['pm']&lt;/code&gt;, or &lt;code&gt;['am', 'pm']&lt;/code&gt;.&lt;br&gt;&lt;br&gt;
+        &lt;em&gt;Applies only when &lt;code&gt;format&lt;/code&gt; contains &lt;code&gt;A&lt;/code&gt; or &lt;code&gt;a&lt;/code&gt;. Note that even when only one is enabled, &lt;code&gt;onChange()&lt;/code&gt; will still be triggered when clicking the up/down buttons next to AM/PM on the timepicker.&lt;/em&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="enabled_dates"&gt;&lt;/a&gt;&lt;strong&gt;enabled_dates&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;br&gt;&lt;small&gt;all dates enabled&lt;/small&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        An array of enabled dates in the same format as required for &lt;code&gt;disabled_dates&lt;/code&gt; property. To be used together with the &lt;code&gt;disabled_dates&lt;/code&gt; property by first setting the &lt;code&gt;disabled_dates&lt;/code&gt; property to something like &lt;code&gt;[* * * *]&lt;/code&gt; &lt;em&gt;(which will disable everything)&lt;/em&gt; and the setting the &lt;code&gt;enabled_dates&lt;/code&gt; property to, say, &lt;code&gt;[* * * 0,6]&lt;/code&gt; to enable just weekends.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="enabled_hours"&gt;&lt;/a&gt;&lt;strong&gt;enabled_hours&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;br&gt;&lt;small&gt;all hours are selectable&lt;/small&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        An array of selectable hours.&lt;br&gt;&lt;br&gt;
+        &lt;em&gt;Applies only when &lt;code&gt;format&lt;/code&gt; contains one of the following characters: &lt;code&gt;H&lt;/code&gt;, &lt;code&gt;G&lt;/code&gt;, &lt;code&gt;h&lt;/code&gt;, &lt;code&gt;g&lt;/code&gt;. Valid values are between &lt;code&gt;0-24&lt;/code&gt; (not padded with &lt;code&gt;0&lt;/code&gt;!) when &lt;code&gt;format&lt;/code&gt; contains &lt;code&gt;H&lt;/code&gt; or &lt;code&gt;G&lt;/code&gt; characters, and between &lt;code&gt;1-12&lt;/code&gt; (not padded with &lt;code&gt;0&lt;/code&gt;!) when &lt;code&gt;format&lt;/code&gt; contains &lt;code&gt;h&lt;/code&gt; or &lt;code&gt;g&lt;/code&gt; characters.&lt;/em&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="enabled_minutes"&gt;&lt;/a&gt;&lt;strong&gt;enabled_minutes&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;br&gt;&lt;small&gt;all minutes are selectable&lt;/small&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        An array of selectable minutes.&lt;br&gt;&lt;br&gt;
+        &lt;em&gt;Applies only when &lt;code&gt;format&lt;/code&gt; contains the &lt;code&gt;i&lt;/code&gt; character. Valid values are between &lt;code&gt;0-59&lt;/code&gt; (not padded with &lt;code&gt;0&lt;/code&gt;!)
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="enabled_seconds"&gt;&lt;/a&gt;&lt;strong&gt;enabled_seconds&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;br&gt;&lt;small&gt;all seconds are selectable&lt;/small&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        An array of selectable seconds.&lt;br&gt;&lt;br&gt;
+        &lt;em&gt;Applies only when &lt;code&gt;format&lt;/code&gt; contains the &lt;code&gt;s&lt;/code&gt; character. Valid values are between &lt;code&gt;0-59&lt;/code&gt; (not padded with &lt;code&gt;0&lt;/code&gt;!)
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="first_day_of_week"&gt;&lt;/a&gt;&lt;strong&gt;fast_navigation&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;boolean&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Allows users to quickly navigate through months and years by clicking on the date picker's top label.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="first_day_of_week"&gt;&lt;/a&gt;&lt;strong&gt;first_day_of_week&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;integer&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;1&lt;/code&gt;&lt;br&gt;&lt;small&gt;Monday&lt;/small&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Week's starting day.&lt;br&gt;
+        Valid values are &lt;code&gt;0&lt;/code&gt; to &lt;code&gt;6&lt;/code&gt;, Sunday to Saturday.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="format"&gt;&lt;/a&gt;&lt;strong&gt;format&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;string&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;'Y-m-d'&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Format of the returned date.&lt;br&gt;&lt;br&gt;
+        Accepts the following characters for date formatting: &lt;code&gt;d&lt;/code&gt;, &lt;code&gt;D&lt;/code&gt;, &lt;code&gt;j&lt;/code&gt;, &lt;code&gt;l&lt;/code&gt;, &lt;code&gt;N&lt;/code&gt;, &lt;code&gt;w&lt;/code&gt;, &lt;code&gt;S&lt;/code&gt;, &lt;code&gt;F&lt;/code&gt;, &lt;code&gt;m&lt;/code&gt;, &lt;code&gt;M&lt;/code&gt;, &lt;code&gt;n&lt;/code&gt;, &lt;code&gt;Y&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt;, &lt;code&gt;h&lt;/code&gt;, &lt;code&gt;H&lt;/code&gt;, &lt;code&gt;g&lt;/code&gt;, &lt;code&gt;G&lt;/code&gt;, &lt;code&gt;i&lt;/code&gt;, &lt;code&gt;s&lt;/code&gt;, &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;A&lt;/code&gt;, borrowing the syntax from PHP's &lt;a href="http://php.net/manual/en/function.date.php"&gt;date&lt;/a&gt; function.&lt;br&gt;&lt;br&gt;
+        If &lt;code&gt;format&lt;/code&gt; property contains time-related characters (&lt;code&gt;g&lt;/code&gt;, &lt;code&gt;G&lt;/code&gt;, &lt;code&gt;h&lt;/code&gt;, &lt;code&gt;H&lt;/code&gt;, &lt;code&gt;i&lt;/code&gt;, &lt;code&gt;s&lt;/code&gt;, &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;A&lt;/code&gt;), the time picker will be automatically enabled.&lt;br&gt;&lt;br&gt;&lt;blockquote&gt;If you want to use a format that involves time but you don't want the time picker, set the &lt;code&gt;disable_time_picker&lt;/code&gt; property to true.&lt;/blockquote&gt;
+        Note that when setting a date format without days (&lt;code&gt;d&lt;/code&gt;, &lt;code&gt;j&lt;/code&gt;), the users will be able to select only years and months, and when setting a format without months and days (&lt;code&gt;F&lt;/code&gt;, &lt;code&gt;m&lt;/code&gt;, &lt;code&gt;M&lt;/code&gt;, &lt;code&gt;n&lt;/code&gt;, &lt;code&gt;t&lt;/code&gt;, &lt;code&gt;d&lt;/code&gt;, &lt;code&gt;j&lt;/code&gt;), the users will be able to select only years. Similarly, setting a format that contains only time-related characters, will result in users being able to only select time.&lt;br&gt;&lt;br&gt;&lt;blockquote&gt;Setting a time format containing &lt;code&gt;a&lt;/code&gt; or &lt;code&gt;A&lt;/code&gt; (12-hour format) but using &lt;code&gt;H&lt;/code&gt; or &lt;code&gt;G&lt;/code&gt; as the hour's format will result in the hour's format being automatically changed to &lt;code&gt;h&lt;/code&gt; or &lt;code&gt;g&lt;/code&gt;, respectively.&lt;/blockquote&gt;
+        Also note that the value of the &lt;code&gt;view&lt;/code&gt; property may be overridden if it is the case (i.e. a value of &lt;code&gt;days&lt;/code&gt; for the &lt;code&gt;view&lt;/code&gt; property makes no sense if the date format doesn't allow the selection of days).
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="header_captions"&gt;&lt;/a&gt;&lt;strong&gt;header_captions&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;object&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        &lt;code&gt;&lt;small&gt;header_captions: {&lt;/small&gt;&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;&lt;small&gt;days: 'F, Y',&lt;/small&gt;&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;&lt;small&gt;months: 'Y',&lt;/small&gt;&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;&lt;small&gt;years: 'Y1 - Y2'&lt;/small&gt;&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;&lt;small&gt;}&lt;/small&gt;&lt;/code&gt;
+        &lt;/small&gt;
+    &lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Captions in the date picker's header, for the 3 applicable views: &lt;code&gt;days&lt;/code&gt;, &lt;code&gt;months&lt;/code&gt;, &lt;code&gt;years&lt;/code&gt;&lt;br&gt;&lt;br&gt;
+        For each of the 3 views the following special characters may be used borrowing from PHP's &lt;a href="http://php.net/manual/en/function.date.php"&gt;date&lt;/a&gt; function's syntax: &lt;code&gt;m&lt;/code&gt;, &lt;code&gt;n&lt;/code&gt;, &lt;code&gt;F&lt;/code&gt;, &lt;code&gt;M&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt; and &lt;code&gt;Y&lt;/code&gt;; any of these will be replaced at runtime with the appropriate date fragment, depending on the currently viewed date.&lt;br&gt;&lt;br&gt;Two more special characters are also available &lt;code&gt;Y1&lt;/code&gt; and &lt;code&gt;Y2&lt;/code&gt; (upper case representing years with 4 digits, lowercase representing years with 2 digits) which represent &lt;code&gt;currently selected year - 7&lt;/code&gt; and &lt;code&gt;currently selected year + 4&lt;/code&gt; and which are used only in the &lt;code&gt;years&lt;/code&gt; view.&lt;br&gt;&lt;br&gt;
+        Even though any of these special characters may be used in any of the 3 views, you should use &lt;code&gt;m&lt;/code&gt;, &lt;code&gt;n&lt;/code&gt;, &lt;code&gt;F&lt;/code&gt;, &lt;code&gt;M&lt;/code&gt; for the &lt;code&gt;days&lt;/code&gt; view and &lt;code&gt;y&lt;/code&gt;, &lt;code&gt;Y&lt;/code&gt;, &lt;code&gt;Y1&lt;/code&gt;, &lt;code&gt;Y2&lt;/code&gt;, &lt;code&gt;y1&lt;/code&gt;, &lt;code&gt;y2&lt;/code&gt; for the &lt;code&gt;months&lt;/code&gt; and &lt;code&gt;years&lt;/code&gt; view or you may get unexpected results!&lt;br&gt;&lt;br&gt;
+        Text and HTML can also be used, and will be rendered as it is, as in the example below (the library is smart enough to not replace special characters when used in words or HTML tags):&lt;br&gt;&lt;br&gt;
+        &lt;code&gt;header_captions: {&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;days:     'Departure:&amp;lt;br&amp;gt;F, Y',&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;months:   'Departure:&amp;lt;br&amp;gt;Y',&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;years:    'Departure:&amp;lt;br&amp;gt;Y1 - Y2'&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;}&lt;/code&gt;&lt;br&gt;&lt;br&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="icon_margin"&gt;&lt;/a&gt;&lt;strong&gt;icon_margin&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        The left and right white-space around the icon&lt;br&gt;&lt;br&gt;
+        If the &lt;code&gt;inside&lt;/code&gt; property is set to &lt;code&gt;true&lt;/code&gt; then the target element's padding will be altered so that the element's left or right padding (depending on the value of &lt;code&gt;icon_position&lt;/code&gt;) will be &lt;code&gt;2 x icon_margin&lt;/code&gt; plus the icon's width.&lt;br&gt;&lt;br&gt;
+        If the &lt;code&gt;inside&lt;/code&gt; property is set to &lt;code&gt;false&lt;/code&gt;, then this will be the distance between the element and the icon.&lt;br&gt;&lt;br&gt;
+        Leave it to &lt;code&gt;false&lt;/code&gt; to use the element's existing padding
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="icon_position"&gt;&lt;/a&gt;&lt;strong&gt;icon_position&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;string&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;'right'&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Icon's position.&lt;br&gt;
+        Accepted values are &lt;code&gt;left&lt;/code&gt; and &lt;code&gt;right&lt;/code&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="inside"&gt;&lt;/a&gt;&lt;strong&gt;inside&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;boolean&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Should the icon for opening the date picker be inside the element?&lt;br&gt;&lt;br&gt;
+        If set to &lt;code&gt;false&lt;/code&gt;, the icon will be placed to the right of the parent element, while if set to &lt;code&gt;true&lt;/code&gt; it will be placed to the right of the parent element, but &lt;em&gt;inside&lt;/em&gt; the element itself
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="lang_clear_date"&gt;&lt;/a&gt;&lt;strong&gt;lang_clear_date&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;string&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;'Clear'&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        the caption for the &lt;em&gt;Clear&lt;/em&gt; button.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="months"&gt;&lt;/a&gt;&lt;strong&gt;months&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;array&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Month names
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="months_abbr"&gt;&lt;/a&gt;&lt;strong&gt;months_abbr&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Abbreviated names of months.&lt;br&gt;&lt;br&gt;
+        By default, the abbreviated name of a month consists of the first 3 letters from the month's full name. While this is common for most languages, there are also exceptions for languages like Thai, Loa, Myanmar, etc. where this is not correct. For these cases, specify an array with the abbreviations to be used for the months of the year; leave it &lt;code&gt;false&lt;/code&gt; to use the first 3 letters of a month's name as the abbreviation.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="navigation"&gt;&lt;/a&gt;&lt;strong&gt;navigation&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;Array&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;navigation: ['&amp;amp;#9664;', '&amp;amp;#9654;', '&amp;amp;#9650;', '&amp;amp;#9660;']&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        HTML to be used for the previous/next and up/down buttons, in that order.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="offset"&gt;&lt;/a&gt;&lt;strong&gt;offset&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;array&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;[5, -5]&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        The offset, in pixels (x, y), to shift the date picker's position after it was positioned according to the value of the &lt;code&gt;default_position&lt;/code&gt; property.&lt;br&gt;&lt;br&gt;
+        For optimal results, if &lt;code&gt;default_position&lt;/code&gt; property contains the word &lt;strong&gt;"above"&lt;/strong&gt;, the value of &lt;code&gt;y&lt;/code&gt; should negative, and positive otherwise.&lt;br&gt;&lt;br&gt;
+        Also, if &lt;code&gt;default_position&lt;/code&gt; property contains the word &lt;strong&gt;"right"&lt;/strong&gt;, the value of &lt;code&gt;x&lt;/code&gt; should be positive, and negative otherwise.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="open_icon_only"&gt;&lt;/a&gt;&lt;strong&gt;open_icon_only&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;boolean&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        When set to &lt;code&gt;true&lt;/code&gt;, the date picker will show only when users click on the associated icon, and not also when clicking the associated element.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="open_on_focus"&gt;&lt;/a&gt;&lt;strong&gt;open_on_focus&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;boolean&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Set this property to &lt;code&gt;true&lt;/code&gt; if you want the date picker to be shown when the parent element (if &lt;code&gt;open_icon_only&lt;/code&gt; is not set to &lt;code&gt;false&lt;/code&gt;) or the associated calendar icon (if &lt;code&gt;show_icon&lt;/code&gt; is not set to &lt;code&gt;false&lt;/code&gt;) receive focus.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="pair"&gt;&lt;/a&gt;&lt;strong&gt;pair&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;object&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;br&gt;&lt;small&gt;not paired with another date picker&lt;/small&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        If set as one or more jQuery elements with Zebra Datepicker attached, those particular date pickers will use the current date picker's value as starting date&lt;br&gt;&lt;br&gt;
+        Note that the rules set in the &lt;code&gt;direction&lt;/code&gt; property will still apply but the reference date will not be the current system date but the value selected in the current date picker.&lt;br&gt;&lt;br&gt;
+        &lt;blockquote&gt;Use this property only on the date picker containing the "starting date" and not also on the one with the "ending date", or the &lt;code&gt;direction&lt;/code&gt; property of the second date picker will not work as expected!&lt;blockquote&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="readonly_element"&gt;&lt;/a&gt;&lt;strong&gt;readonly_element&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;boolean&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Should the element the calendar is attached to, be read-only?&lt;br&gt;&lt;br&gt;
+        If set to &lt;code&gt;true&lt;/code&gt;, a date can be set only through the date picker and cannot be entered manually.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="rtl"&gt;&lt;/a&gt;&lt;strong&gt;rtl&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;boolean&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Whether text should be drawn from right to left.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="select_other_months"&gt;&lt;/a&gt;&lt;strong&gt;select_other_months&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;boolean&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Should days from previous and/or next month be selectable when visible?&lt;br&gt;&lt;br&gt;
+        Note that if the value of this property is set to &lt;code&gt;true&lt;/code&gt;, the value of &lt;code&gt;show_other_months&lt;/code&gt; will be considered &lt;code&gt;true&lt;/code&gt; regardless of the actual value!
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="show_clear_date"&gt;&lt;/a&gt;&lt;strong&gt;show_clear_date&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Should the &lt;em&gt;Clear date&lt;/em&gt; button be visible?&lt;br&gt;&lt;br&gt;
+        Accepted values are:&lt;br&gt;&lt;br&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;code&gt;0&lt;/code&gt; - the button for clearing a previously selected date is shown only if a previously selected date already exists; this means that if there's no date selected, this button will not be visible; once the user picked a date and opens the date picker again, this time the button will be visible.&lt;/li&gt;
+            &lt;li&gt;&lt;code&gt;true&lt;/code&gt; will make the button visible all the time&lt;/li&gt;
+            &lt;li&gt;&lt;code&gt;false&lt;/code&gt; will disable the button&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="show_icon"&gt;&lt;/a&gt;&lt;strong&gt;show_icon&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;Pick a date&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Should a calendar icon be added to the elements the plugin is attached to?&lt;br&gt;&lt;br&gt;
+        Set this property's value to boolean &lt;code&gt;false&lt;/code&gt; if you don't want the calendar icon.&lt;br&gt;&lt;br&gt;
+        Note that the text is not visible by default since &lt;code&gt;text-indentation&lt;/code&gt; is set to a big negative value in the CSS, so you might want to change that in case you want to make the text visible.&lt;br&gt;&lt;br&gt;
+        When &lt;strong&gt;not&lt;/strong&gt; set to boolean &lt;code&gt;false&lt;/code&gt; the plugin will attach a calendar icon to the elements the plugin is attached to.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="show_other_months"&gt;&lt;/a&gt;&lt;strong&gt;show_other_months&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;boolean&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Should days from previous and/or next month be visible?
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="show_select_today"&gt;&lt;/a&gt;&lt;strong&gt;show_select_today&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;'Today'&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Should the &lt;em&gt;Today&lt;/em&gt; button be visible?&lt;br&gt;&lt;br&gt;
+        Setting this property to anything but a boolean &lt;code&gt;false&lt;/code&gt; will enable the button and will use the property's value as caption for the button. Setting it to &lt;code&gt;false&lt;/code&gt; will disable the button.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="show_week_number"&gt;&lt;/a&gt;&lt;strong&gt;show_week_number&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Should the ISO 8601 week number be displayed?&lt;br&gt;&lt;br&gt;
+        Anything other than &lt;code&gt;false&lt;/code&gt; will enable this feature, and use the given value as column title. For example, &lt;code&gt;show_week_number: 'Wk'&lt;/code&gt; would enable this feature and have &lt;em&gt;Wk&lt;/em&gt; as the column's title.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="start_date"&gt;&lt;/a&gt;&lt;strong&gt;start_date&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;mixed&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        A default date to start the date picker with&lt;br&gt;&lt;br&gt;
+        Must be specified in the format defined by the &lt;code&gt;format&lt;/code&gt; property, or as a JavaScript Date object&lt;br&gt;&lt;br&gt;
+        If you have a date format that contains time and you need to set a default time but the date should be the current date, here's one way of doing it:&lt;br&gt;&lt;br&gt;
+        Prior to version &lt;code&gt;1.9.11&lt;/code&gt;:&lt;br&gt;&lt;br&gt;
+        &lt;code&gt;var date = new Date(); // have this somewhere&lt;/code&gt;&lt;br&gt;&lt;br&gt;
+        &lt;code&gt;// set the start_date property like&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;start_date: date.getFullYear() + '-' +&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;&amp;nbsp;&amp;nbsp;(date.getMonth() + 1 &lt; 10 ? '0' : '') +&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;&amp;nbsp;&amp;nbsp;(date.getMonth() + 1) + '-' +&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;&amp;nbsp;&amp;nbsp;(date.getDate() &lt; 10 ? '0' : date.getDate()) +&lt;/code&gt;&lt;br&gt;
+        &lt;code&gt;&amp;nbsp;&amp;nbsp;' 12:00'&lt;/code&gt;&lt;br&gt;&lt;br&gt;
+        Starting with version &lt;code&gt;1.9.11&lt;/code&gt;:&lt;br&gt;&lt;br&gt;
+        &lt;code&gt;start_date: new Date()&lt;/code&gt;&lt;br&gt;&lt;br&gt;
+        &lt;blockquote&gt;Note that this value is used only if there is no value in the field the date picker is attached to!&lt;/blockquote&gt;
+        &lt;blockquote&gt;The property's value can be a JavaScript Date object since version 1.9.11&lt;/blockquote&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="strict"&gt;&lt;/a&gt;&lt;strong&gt;strict&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;boolean&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Should default values, in the input field the date picker is attached to, be deleted if they are not valid according to &lt;code&gt;direction&lt;/code&gt; and/or &lt;code&gt;disabled_dates&lt;/code&gt;?
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="view"&gt;&lt;/a&gt;&lt;strong&gt;view&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;string&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;'days'&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        How should the date picker start:&lt;br&gt;&lt;br&gt;
+        Valid values are &lt;code&gt;days&lt;/code&gt;, &lt;code&gt;months&lt;/code&gt;, &lt;code&gt;years&lt;/code&gt; and &lt;code&gt;time&lt;/code&gt;.&lt;br&gt;&lt;br&gt;
+        Note that the date picker is always cycling &lt;code&gt;days -&gt; months -&gt; years&lt;/code&gt; when clicking in the date picker's header, and &lt;code&gt;years -&gt; months -&gt; days&lt;/code&gt; when selecting dates (skipping the views that are missing because of the date's format)&lt;br&gt;&lt;br&gt;
+        The value of the &lt;code&gt;view&lt;/code&gt; property may be overridden if the date's format requires so! (i.e. &lt;code&gt;days&lt;/code&gt; for the &lt;code&gt;view&lt;/code&gt; property makes no sense if the date format doesn't allow the selection of days)
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="weekend_days"&gt;&lt;/a&gt;&lt;strong&gt;weekend_days&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;Array&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;[0, 6]&lt;/code&gt;&lt;br&gt;&lt;small&gt;Saturday and Sunday&lt;/small&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Days of the week that are considered &lt;em&gt;weekend days&lt;/em&gt;&lt;br&gt;
+        Valid values are &lt;code&gt;0&lt;/code&gt; to &lt;code&gt;6&lt;/code&gt;, Sunday to Saturday.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td valign="top"&gt;&lt;a name="zero_pad"&gt;&lt;/a&gt;&lt;strong&gt;zero_pad&lt;/strong&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;em&gt;boolean&lt;/em&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+    &lt;td valign="top"&gt;
+        Should day numbers &lt; 10 be padded with zero?&lt;br&gt;
+        When set to &lt;code&gt;true&lt;/code&gt;, day numbers &lt; 10 will be prefixed with &lt;code&gt;0&lt;/code&gt;.
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;</code></pre>
+<p></table></p>
+<h2>Events</h2>
+<h4><code>onChange</code></h4>
+<p>Callback to be executed whenever the user changes the view (days/months/years/time), as well as when the user navigates by clicking on the <code>next/previous</code> icons in any of the views;</p>
+<p>The callback function receives 2 arguments</p>
+<ul>
+<li>the current view (<code>days</code>, <code>months</code>, <code>years</code> or <code>time</code>)</li>
+<li>an array containing the <em>active</em> elements (not disabled) from the view, as jQuery elements, allowing for easy customization and interaction with particular cells in the date picker's view</li>
+</ul>
+<p>The <code>this</code> keyword inside the callback function refers to the element the date picker is attached to, as a jQuery object.<br><br />
+To get the plugin's properties do <code>properties = this.data('Zebra_DatePicker')</code>.</p>
+<p>For simplifying searching for particular dates, each element gets a <code>date</code> data attribute whose format depends on the value of the <code>view</code> argument as follows:</p>
+<ul>
+<li><code>YYYY-MM-DD</code> for elements in the <code>days</code> view</li>
+<li><code>YYYY-MM</code> for elements in the <code>months</code> view</li>
+<li><code>YYYY</code> for elements in the <code>years</code> view</li>
+</ul>
+<blockquote>
+<p>Note that this data attribute is not also set for elements in the <code>time</code> view.</p>
+</blockquote>
+<p>Here's how we could highlight the 24<sup>th</sup> day of each month of each year:</p>
+<pre class="prettyprint linenums lang-language"><code>$('selector').Zebra_DatePicker({
+
+    //  execute a function whenever the user changes the view
+    //  (days/months/years), as well as when the user
+    //  navigates by clicking on the "next"/"previous" icons
+    //  in any of the views
+    onChange: function(view, elements) {
+
+        //  on the "days" view...
+        if (view === 'days') {
+
+            //  iterate through the active elements in the view
+            elements.each(function() {
+
+                //  to simplify searching for particular dates,
+                //  each element gets a "date" data attribute which
+                //  is the form of:
+                //  - YYYY-MM-DD for elements in the "days" view
+                //  - YYYY-MM for elements in the "months" view
+                //  - YYYY for elements in the "years" view
+
+                //  so, because we're on a "days" view,
+                //  let's find the 24th day using a regular
+                //  expression (notice that this will apply to
+                //  every 24th day of every month of every year)
+                if ($(this).data('date').match(/\-24$/))
+
+                    // and highlight it!
+                    $(this).css({
+                        backgroundColor:    '#C40000',
+                        color:              '#FFF'
+                    });
+
+            });
+
+        }
+
+    }
+
+});</code></pre>
+<h4><code>onClear</code></h4>
+<p>Callback function to be executed when the user clicks the <em>Clear</em> button.</p>
+<p>The callback function takes no arguments. The <code>this</code> keyword inside the callback function refers to the element the date picker is attached to, as a jQuery object.<br><br />
+To get the plugin's properties do <code>properties = this.data('Zebra_DatePicker')</code>.</p>
+<h4><code>onClose</code></h4>
+<p>Callback function to be executed when the date picker is closed.</p>
+<p>The callback function takes no arguments. The <code>this</code> keyword inside the callback function refers to the element the date picker is attached to, as a jQuery object.<br><br />
+To get the plugin's properties do <code>properties = this.data('Zebra_DatePicker')</code>.</p>
+<h4><code>onOpen</code></h4>
+<p>Callback function to be executed when the date picker is shown.</p>
+<p>The callback function takes no arguments. The <code>this</code> keyword inside the callback function refers to the element the date picker is attached to, as a jQuery object.<br><br />
+To get the plugin's properties do <code>properties = this.data('Zebra_DatePicker')</code>.</p>
+<h4><code>onSelect</code></h4>
+<p>Callback function to be executed when a date is selected.</p>
+<p>The callback function takes 3 arguments:</p>
+<ul>
+<li>the date in the format specified by the <code>format</code> attribute</li>
+<li>the date in <code>YYYY-MM-DD</code> format and additionally hours, minutes and seconds if time picker is enabled</li>
+<li>the date as a JavaScript Date object</li>
+</ul>
+<p><code>this</code> inside the callback function refers to the element the date picker is attached to, as a jQuery object.<br><br />
+To get the plugin's properties do <code>properties = this.data('Zebra_DatePicker')</code>.</p>
+<h2>Methods</h2>
+<p>First, get a reference to the plugin like</p>
+<pre class="prettyprint linenums lang-language"><code>var datepicker = $('selector').data('Zebra_DatePicker');</code></pre>
+<p>Then call a method like</p>
+<pre class="prettyprint linenums lang-language"><code>datepicker.update();</code></pre>
+<h4><code>clear_date()</code></h4>
+<p>Clears the selected date (if any)</p>
+<h4><code>destroy()</code></h4>
+<p>Removes the plugin from an element</p>
+<h4><code>set_date(date)</code></h4>
+<p>Sets the value of the element the date picker is attached to, to the specified date;</p>
+<p>The date must be in the format defined by the <code>format</code> property <strong>or</strong> a JavaScript <code>Date</code> object.</p>
+<p>The date will not be set if it is disabled (either because of <code>disabled_dates</code> or because of <code>direction</code> properties)</p>
+<blockquote>The method's argument can be a JavaScript <code>Date</code> object since version <code>1.9.11</code></blockquote>
+<h4><code>show()</code></h4>
+<p>Shows the date picker (unless the <code>always_visible</code> property is set to <code>true</code>)</p>
+<h4><code>hide()</code></h4>
+<p>Hides the date picker (unless the <code>always_visible</code> property is set to <code>true</code>)</p>
+<h4><code>update([options])</code></h4>
+<p>Updates configuration options at run-time, and recalculates date picker's icon position relative to the parent element. You should call this method whenever you show/hide/reposition the parent element, or alter the parent element's dimensions.</p>
+<p>The method accepts an optional argument - an object with configuration options to update:</p>
+<pre class="prettyprint linenums lang-language"><code>var datepicker = $('selector').data('Zebra_DatePicker');
+datepicker.update({
+    direction: 1
+});</code></pre>
+<p>If you just want to update the icon's position, simply call the method without any arguments:</p>
+<pre class="prettyprint linenums lang-language"><code>var datepicker = $('selector').data('Zebra_DatePicker');
+datepicker.update();</code></pre>
+<h2>Global options</h2>
+<p>If you have multiple date pickers that share common options you can set these options like this:</p>
+<pre class="prettyprint linenums lang-language"><code>// this needs to be called only once and does
+// not have to be called from within a "ready" block!
+$.fn.Zebra_DatePicker.defaults = {
+    // any valid options
+}</code></pre>
+<p>Any options set like this will be applied to <strong>all</strong> the newly created date picker. Obviously, options set at the creation of any new date picker would overwrite the respective defaults.</p>
+<h2>Sponsors</h2>
+<p>Cross browser/device testing is done with</p>
+<p><a href="https://www.browserstack.com/"><img src="https://github.com/stefangabos/Zebra_Dialog/raw/master/examples/browserstack.png" alt="BrowserStack" /></a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h2>version 2.2.0 (November 01, 2024)</h2>
+<ul>
+<li>fixed <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/192">#192</a> where in Firefox the date picker was not usable if it was open by clicking on the input field and not on the icon; thanks to <a href="https://github.com/mccabeservant">mccabeservant</a> for reporting this!</li>
+<li>minor visual improvements on mobile devices</li>
+<li>minor (non-visible) updates to the CSS files because of how the latest SASS works</li>
+</ul>
+<h2>version 2.1.0 (May 11, 2024)</h2>
+<ul>
+<li>the <code>default_position</code> property now takes more options; the previous valid values are still going to work for backward compatibility; this is a response to an <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/41">older issue</a></li>
+<li>fixed an issue where the plugin could run in an infinite loop in a configuration where no selectable dates were available; this fixes <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/41">#53</a></li>
+</ul>
+<h2>version 2.0.0 (September 28, 2023)</h2>
+<ul>
+<li>this version removes some legacy code and makes it incompatible with Internet Explorer version 6, 7 and 8</li>
+<li>removed code that is deprecated in newer versions of jQuery; this fixes <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/178">#178</a>. thanks to <a href="https://github.com/stefankiv">Roman Stefankiv</a> for bringing this up to me!</li>
+<li>a reference to the actual datepicker DOM element is now available in the plugin's properties</li>
+<li>fixed <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/19">#19</a> which was affecting functionality in responsive layouts and mostly when the date picker was initialized on elements that were hidden at the time of attaching the plugin to them. the fix comes from <a href="https://github.com/imranzahid01">Imran Zahid</a> - thank you!</li>
+</ul>
+<h2>version 1.9.19 (April 06, 2022)</h2>
+<ul>
+<li>the library will now allow days/months both with and without leading zeros for <code>d</code>, <code>j</code>, <code>m</code> and <code>n</code>; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/173">#173</a></li>
+<li>updated how the <code>show_icon</code> property works so that it can now be used to set the text that appears in the icon (<code>button</code> element); see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/182">#182</a></li>
+<li>fixed a minor issue with the HTML markup; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/185">#185</a></li>
+</ul>
+<h2>version 1.9.18 (December 31, 2020)</h2>
+<ul>
+<li>fixed bug where certain scenarios involving <code>disabled_dates</code> and <code>enabled_dates</code> would send the script into an infinite loop; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/171">#171</a></li>
+</ul>
+<h2>version 1.9.17 (December 23, 2020)</h2>
+<ul>
+<li>added <code>enabled_ampm</code> option; see <a href="https://github.com/stefangabos/Zebra_Datepicker/pull/170">#170</a>; thanks <a href="https://github.com/betheymc">Beth McIntosh</a>!</li>
+<li>fixed bug where updating <code>container</code> was not working - see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/166">#166</a>; thanks <a href="https://github.com/betheymc">Beth McIntosh</a>!</li>
+<li>case of am/pm in the time picker now respects date format (will be <code>AM/PM</code> if <code>A</code> is used, and <code>am/pm</code> if <code>a</code> is used)</li>
+</ul>
+<h2>version 1.9.16 (October 14, 2020)</h2>
+<ul>
+<li>fixed <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/161">#161</a> where abbreviations of days and months were incorrectly handled unless these were exactly the first 3 letters of full days/month names; thanks <a href="https://github.com/nathangreaves">nathangreaves</a>!</li>
+</ul>
+<h2>version 1.9.15 (June 17, 2020)</h2>
+<ul>
+<li>added SASS files to the <code>dist</code> folder; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/157">#157</a></li>
+</ul>
+<h2>version 1.9.14 (April 27, 2020)</h2>
+<ul>
+<li>fixed <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/152">#152</a> where time was not selected if left to default</li>
+<li>applied correct fix from <a href="https://github.com/sebipopa">@sebipopa</a> for <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/145">#145</a></li>
+</ul>
+<h2>version 1.9.13 (September 26, 2019)</h2>
+<ul>
+<li>the <code>onChange</code> event is now also triggered when switching to the <code>time</code> view</li>
+<li>fixed <a href="https://github.com/stefangabos/Zebra_Datepicker/pull/132">#132</a> where English ordinal suffixes for 11th, 12th, and 13th where incorrectly shown as 11st, 12nd, and 13rd. - thanks <a href="https://github.com/panzerchris">@panzerchris</a>!</li>
+<li>fixed <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/148">#148</a> where specifying <code>enabled_hours</code>, <code>enabled_minutes</code> and <code>enabled_seconds</code> as strings rather than integers would break the time picker</li>
+<li>calling the <code>update</code> method now repaints the date picker</li>
+<li>merged pull request <a href="https://github.com/stefangabos/Zebra_Datepicker/pull/135">#135</a> which allows time intervals to change while mouse button is being pressed - thanks <a href="https://github.com/sebipopa">@sebipopa</a>!</li>
+<li>merged pull request <a href="https://github.com/stefangabos/Zebra_Datepicker/pull/139">#139</a> which fixes a bug where, when having the year selector as the only available pane, the selected date would incorrectly be set to February instead of January - thanks <a href="https://github.com/duckboy81">@duckboy81</a>!</li>
+</ul>
+<h2>version 1.9.12 (October 27, 2018)</h2>
+<ul>
+<li>added support for RTL languages, fixing <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/126">#126</a> - thanks <a href="https://github.com/Abdox3">@Abdox3</a>!</li>
+<li>fixed <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/124">#124</a> where, when resizing the window, the <code>onClose</code> event would fire multiple times - thanks <a href="https://github.com/kouts">@kouts</a>!</li>
+<li>merged pull request <a href="https://github.com/stefangabos/Zebra_Datepicker/pull/125">#125</a> by <a href="https://github.com/mckey">mckey</a> fixing a bug when dynamically changing enabled/disabled dates</li>
+<li>the hour in the time picker now respects the given format regarding the leading zeroes</li>
+<li>added a new property called <code>fast_navigation</code> which, when set to <code>false</code>, disables the default behavior that allows the users to quickly navigate through months and years by clicking on the date picker's top label; this answers <a href="https://github.com/lesliecdubs">@Leslie Cohn-Wein</a>'s <strong>two and a half year old request</strong> <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/126">#66</a>! thank you and sorry it took so long! better later than never :)</li>
+<li>added a new property called <code>current_date</code> which, when set to a date in the format of <code>YYYY-MM-DD</code> overrides the value of <em>Today</em>; this answers <a href="https://github.com/JeffBorges">@Jefferson Borges</a>'s <strong>two and a half year old request</strong> <a href="https://github.com/stefangabos/Zebra_Datepicker/pull/74">#74</a>! thank you and sorry it took so long!</li>
+<li>fixed a bug where when having <code>a</code> or <code>A</code> the time's format <em>(indicating a 12-hour time)</em> but the hour's format is <code>H</code> or <code>G</code> <em>(indicating a 24-hour time)</em>, time picking was not working correctly; these will now be automatically replaced with <code>h</code> and <code>g</code> respectively</li>
+<li>adjusted font size for the time picker and fixed spacing issues when having a time format with hours, minutes, seconds <em>and</em> am/pm</li>
+</ul>
+<h2>version 1.9.11 (August 10, 2018)</h2>
+<ul>
+<li>fixed <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/112">#112</a> - thanks <a href="https://github.com/AnthonyHache">@AnthonyHache</a>!</li>
+<li>fixed <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/122">#122</a> and now <code>start_date</code> and <code>set_date</code> methods accepts their argument also as a JavaScript <code>Date</code> object; thanks <a href="https://github.com/alexanderKikhaev">alexanderKikhaev</a>!</li>
+<li>fixed positioning of <code>AM/PM</code> when using 12-hour time format</li>
+<li>CSS is now minified even more by using <a href="https://github.com/jakubpawlowicz/clean-css">clean-css</a></li>
+<li>updated examples page</li>
+</ul>
+<h2>version 1.9.9 (July 06, 2018)</h2>
+<ul>
+<li>global defaults can now be set; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/110">#110</a> and <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/94">#94</a></li>
+<li>setting the <code>readonly_element</code> property to <code>FALSE</code> will now unset the <code>readonly</code> attribute from the element, if present; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/109">#109</a></li>
+<li>fixed a bug where on pages with multiple time pickers, selecting a time on one would select the time on all other time pickers that are empty; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/115">#115</a> and thank you <a href="https://github.com/michealharrington">michealharrington</a>!</li>
+<li>added a new <code>disable_time_picker</code> property for explicitly disabling the time picker even if format includes time-related characters; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/118">#118</a></li>
+<li>fixed an issue on Android devices; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/116">#116</a></li>
+<li>allow accented chars in weekday name; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/120">#120</a></li>
+<li>added version number as a public property - useful to find out the version number even if all you have is the minified source code; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/96">#96</a></li>
+</ul>
+<h2>version 1.9.8 (April 08, 2018)</h2>
+<ul>
+<li>fixed some issues because of which the date picker was not working in IE6, 7 &amp; 8</li>
+<li>fixed an issue where on iOS and Microsoft Edge the <code>next</code> and <code>previous</code> buttons in the header were rendered as emoji characters; see <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/11844964/">https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/11844964/</a></li>
+<li>fixed some issues with the icon's positioning if the target element was explicitly positioned and/or it had margins; the icon's position now depends on the element's padding but can also be set via the newly added <code>icon_margin</code>property</li>
+<li>for touch-enabled devices, when <code>readonly_element</code> is set to FALSE, wait for the virtual keyboard to appear before positioning the date picker; previously the date picker was being closed on this event</li>
+<li>the date picker is not closing anymore when the screen is dragged (on touch devices)</li>
+<li>fixed <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/112">#112</a></li>
+<li>fixed <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/104">#104</a></li>
+<li>fixed issue with the <code>onSelect</code> event being triggered multiple times if the time picker was enabled and not returning time when it should</li>
+<li>improved user experience in examples</li>
+<li>some documentation updates</li>
+</ul>
+<h2>version 1.9.7 (December 03, 2017)</h2>
+<ul>
+<li>the date picker now also works as a time picker by setting time-related parts in the <code>format</code> property</li>
+<li>the date picker can now also be shown when the parent element and/or the associated icon is focused by setting the newly add <code>open_on_focus</code> property to <code>TRUE</code>; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/80">#80</a></li>
+<li>fixed a bug where clearing a date would not return focus to the parent element</li>
+<li>fixed memory leaks, see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/81">#81</a>, thanks to <a href="https://github.com/sszabolcs">@sszabolcs</a></li>
+<li>fixed value of &quot;today&quot; being cached; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/83">#83</a>, thanks to <a href="https://github.com/CJDennis">@CJDennis</a></li>
+<li>fixed possible issues by adding more randomness for each date picker's internally used ID; see <a href="https://github.com/stefangabos/Zebra_Datepicker/issues/84">#84</a></li>
+<li>rewrote the SCSS for all the 3 themes and improved theming by introducing variables</li>
+<li>all the themes are now using a single sprite image instead of multiple images</li>
+<li>source code updates and tweaks because of which the plugin is now compatible with jQuery 1.7.0+ (previously it was compatible with jQuery 1.5.2+)</li>
+<li>improved user experience in examples</li>
+<li>some documentation updates</li>
+</ul>
+<h2>version 1.9.6 (June 24, 2017)</h2>
+<ul>
+<li>performance improvements and source code tweaks</li>
+<li>new folder structure</li>
+<li>the home of the library is now exclusively on GitHub</li>
+<li>files required in the build process are not included anymore when installing via npm nor when downloading from GitHub</li>
+</ul>
+<h2>version 1.9.5 (May 13, 2016)</h2>
+<ul>
+<li>fixed a bug when parent elements were having the &quot;display&quot; property set to &quot;block</li>
+<li>fixed a bug with updating a dependent picker; thanks <strong>anli-xsigns</strong></li>
+<li>added verification if custom class is defined or not, and added extra checks before traversing it; also if mootools is also present, it modifies arrays prototypes so they are not handled well with normal jquery methods if null; thanks <strong>anli-xsigns</strong></li>
+<li>fixed some memory leaks when destroying the plugin; thanks to <strong>Constantin Teodorescu</strong> for reporting</li>
+<li>fixed a bug with custom classes not working anymore; thanks to <strong>Sune Westphalen</strong></li>
+<li>optimized images size</li>
+</ul>
+<h2>version 1.9.4 (January 25, 2016)</h2>
+<ul>
+<li>images now have their own folder instead of being mixed with the stylesheets; thanks to <strong>Maxime Pasquier</strong></li>
+<li>icon position can now be also set to the left of the element; thanks to <strong>Jennifer</strong> for suggesting</li>
+<li>added possibility to easily apply custom classes to date ranges - see the newly added <em>custom_classes</em> property; thanks to <strong>Märt Tibar</strong> for suggesting</li>
+<li>the library is now also available as a <a href="https://www.npmjs.com/package/zebra_datepicker">npm package</a></li>
+<li>fixed a bug that made impossible to install the library via <a href="http://bower.io/">Bower</a></li>
+</ul>
+<h2>version 1.9.3 (January 11, 2016)</h2>
+<ul>
+<li>when the &quot;value&quot; attribute of the element is set, use that instead of &quot;start_date&quot;; thanks <strong>Vojtěch Biberle</strong></li>
+<li>fixed a bug where &quot;header_navigation&quot;, &quot;lang_clear_date&quot; and &quot;show_select_today&quot; properties could not be updated via the &quot;update&quot; method; thanks <strong>André Fiedler</strong></li>
+<li>fixed a bug where the paired date picker was not updated when users would manually enter a date in the first date picker; thanks <strong>Toby</strong> for reporting</li>
+<li>icon position is now updated when changing orientation on mobile devices; thanks to <strong>chenghong</strong> for suggesting</li>
+<li>added &quot;clear_date&quot; and &quot;set_date&quot; public methods; thanks <strong>Jason Davis</strong> for suggesting</li>
+<li>added new &quot;open_icon_only&quot; property which, when set to TRUE, will result in the date picker showing <em>only</em> when users click on the associated icon, and not on element focus</li>
+<li>dates prior to year 1000 are now disabled as this library cannot handle years below 1000</li>
+<li>better comnonjs-support; thanks <strong>Stefan Schult</strong></li>
+</ul>
+<h2>version 1.9.2 (April 30, 2015)</h2>
+<ul>
+<li>fixed bug with the &quot;views&quot; property which was not working anymore since the previous release; thanks to <strong>DJM75</strong> for reporting!</li>
+</ul>
+<h2>version 1.9.1 (April 13, 2015)</h2>
+<ul>
+<li>fixed an issue where having more date pickers on a page and destroying one of the date pickers would remove the event handlers for all date pickers on the page; thanks to <strong>lpproulx</strong> for reporting</li>
+<li>date pickers can now also be injected in custom elements; previously date picker were always injected in the <body> element; very useful if you want the date picker to always open at a specific position; thanks to <strong>Daniel Ivan</strong> for suggesting</li>
+<li>the library is now compatible with AMD and CommonJS; thanks to <strong>Andrzej Duś</strong></li>
+<li>added a new &quot;onClose&quot; event; thanks to <strong>W. van Kuipers</strong></li>
+<li>added touchstart event for closing the date picker on a touchevent enabled browsers; thanks <strong>W. van Kuipers</strong></li>
+<li>increased zIndex value to 1200, making the date picker usable with Twitter Bootstrap's modals; thanks to <strong>Kiswono Prayogo</strong></li>
+<li>better fix for the issues in Firefox, solved in previous release, which made transitions to not work anymore; thanks to <strong>René Jackowski</strong></li>
+</ul>
+<h2>version 1.9.0 (November 14, 2014)</h2>
+<ul>
+<li>added some CSS attributes for the main table, in order to override defaults set by some frameworks; thanks to <strong>Paul Morganthall</strong> for suggesting;</li>
+<li>added a new &quot;default_position&quot; property, useful for setting whether the date picker should, by default, appear above or below the element it is attached to;</li>
+<li>fixed an issue in latest versions of Firefox in which, even though the date picker is absolutely positioned, it takes up space in the layout; thanks to <strong>Joost</strong> for noticing;</li>
+<li>fixed a bug with paired date pickers where the second date picker's range was not depending on the first date picker's date <em>unless</em> a date in the first date picker was manually selected, and thus ignoring any default values; thanks to <strong>Pascal Lindelauf</strong>;</li>
+<li>fixed a bug with highlighting months where in &quot;months&quot; view, if current date was higher than the number of days in February, the month would not be highlighted; thanks to <strong>Mark Tuor</strong>;</li>
+<li>fixed a bug with where if a text box a date picker is attached to would be disabled at run-time, the date picker's calendar icon would remain &quot;enabled&quot; after calling the &quot;update&quot; method; thanks to <strong>Frans</strong> for reporting;</li>
+<li>datepicker visibility is now controlled from CSS;</li>
+<li>fixed an issue because of which the library was not compatible with jQuery 1.5.2+ (as stated) but required jQuery 1.7+ instead; thanks to <strong>Martin Gaedeke</strong> for spotting it and to <strong>Prakhar Birla</strong> for the fix;</li>
+</ul>
+<h2>version 1.8.9 (May 20, 2014)</h2>
+<ul>
+<li>added a new &quot;header_captions&quot; property, useful for customizing captions in the datepicker's header, for the 3 possible views: days, months, years; thanks to <strong>Lodewyk</strong> and <strong>Ram</strong> for suggesting;</li>
+<li>added a new &quot;onOpen&quot; event for executing callback functions when the date picker is shown;</li>
+<li>users can now always use the next/previous buttons; thanks to <strong>Mozart</strong> for suggesting;</li>
+<li>the &quot;this&quot; keyword in callbacks now correctly refer to the element the datepicker is attached to; thanks to <strong>syahman</strong> for reporting;</li>
+<li>when having a date formats without year, the &quot;years&quot; view will not be visible anymore; thanks to <strong>MarkG</strong>;</li>
+<li>the &quot;onSelect&quot; callback takes an extra argument - the ISO 8601 week number of the selected date;</li>
+<li>fixed a bug when having non ASCII characters in month names; thanks to <strong>straightdog</strong> and <strong>Muhobrc</strong> for reporting, and to <strong>D-ominik</strong> for providing a fix;</li>
+<li>fixed an issue with the &quot;pair&quot; attribute which, when given as a data attribute, would cause a JavaScript error; thanks to <strong>Domenico Giambra</strong>;</li>
+<li>fixed a bug with the iFrame shim in IE6 which was not working as expected and &quot;selects&quot; elements where shown above the date picker; thanks to <strong>chenghong</strong> for reporting;</li>
+<li>fixed a minor bug where the date picker would close for any key press not just for the ESC key; thanks to <strong>nacho</strong> for reporting;</li>
+<li>fixed a minor bug where, when looking at the &quot;months&quot; view, the selected month would always be highlighted even if the user would switch years; thanks to <strong>Yoyee Zhu</strong> for reporting;</li>
+<li>updated jQuery version in the examples folder to 1.11.1;</li>
+</ul>
+<h2>version 1.8.8 (December 09, 2013)</h2>
+<ul>
+<li>added integration with <a href="http://gruntjs.com/">Grunt</a></li>
+<li>the library is now available as a <a href="http://bower.io/">Bower</a> package</li>
+</ul>
+<h2>version 1.8.7 (November 28, 2013)</h2>
+<ul>
+<li>added a new &quot;header_navigation&quot; property allowing custom HTML for the next/previous months buttons; thanks to <strong>norlin</strong>;</li>
+<li>fixed a minor bug with paired date pickers;</li>
+<li>minor performance tweaks;</li>
+</ul>
+<h2>version 1.8.6 (October 05, 2013)</h2>
+<ul>
+<li>added a new &quot;strict&quot; property which controls whether default values, in the input field the date picker is attached to, should be deleted if they are not valid according to &quot;direction&quot; and/or &quot;disabled_dates&quot;, and which is set to FALSE by default; previously the plugin was always removing such dates; thanks <strong>Morten</strong>;</li>
+<li>fixed a bug width selectable dates of other months than the current one having an incorrect class attached to them;  thanks to <strong>Khoomei</strong> for spotting this!</li>
+<li>fixed a bug where when clearing dates of always-visible datepickers, the class indicating the &quot;selected&quot; state of cells was not being removed;</li>
+<li>removed some old code that was used back when the calendar icon was absolutely positioned and because of which the calendar icon was invisible if the parent element was placed in a parent element with &quot;display: none&quot;; thanks to <strong>Michael Residori</strong>;</li>
+<li>updated jQuery version used in examples to 1.10.2;</li>
+</ul>
+<h2>version 1.8.5 (September 21, 2013)</h2>
+<ul>
+<li>properties can now be set via data attributes; thanks to <strong>Yuriy Silvestrov</strong> who suggested this a long time ago;</li>
+<li>fixed a bug where if the &quot;show_icon&quot; property was set to FALSE an open date picker would not close upon window resize and therefore it would remain in an incorrect position if the parent element was to change position during the process; thanks <strong>Marco</strong>;</li>
+</ul>
+<h2>version 1.8.4 (August 11, 2013)</h2>
+<ul>
+<li>added a &quot;destroy&quot; method; thanks <strong>TeckniX</strong>;</li>
+<li>date picker now disappears upon window resize; previously it would remain in the same position upon window resize, even though the parent element could be repositioned in the process; thanks <strong>hanneslinder</strong>;</li>
+<li>fixed a position bug that appearing in newer versions of Firefox where Firefox sets the &quot;display&quot; property of &lt;input&gt; elements to &quot;inline&quot; instead of &quot;inline-block&quot; as do the other browsers; thanks to <strong>discotizer</strong>;</li>
+</ul>
+<h2>version 1.8.3 (August 04, 2013)</h2>
+<ul>
+<li>fixed a bug where the plugin would freeze for certain combinations of disabled/enabled dates; thanks <strong>Yogesh</strong>;</li>
+<li>fixed a bug where having two paired date picker with &quot;direction&quot; set to FALSE, the second date picker will not obey this rule once a date is selected in the first date picker; thanks <strong>Shane M</strong>;</li>
+<li>fixed a bug where when having paired date pickers, the &quot;Today&quot; button was sometimes available although it shouldn't have been; thanks <strong>Matt</strong>;</li>
+<li>fixed some indenting issues and the scope of some variables; thanks <strong>W. van Kuipers</strong>;</li>
+<li>fixed a few minor issues reported by JSFiddle's JSHint;</li>
+<li>minor update of source code regarding optimal usage of jQuery for creating the wrapper around the parent element;</li>
+</ul>
+<h2>version 1.8.2 (July 02, 2013)</h2>
+<ul>
+<li>fixed a bug where the calendar icon was in fact taking up space in page; due to this I completely changed the way the calendar icon is placed and hopefully I didn't brake it completely :)</li>
+<li>the date picker's &quot;update&quot; method is now automatically called upon page resize and thus taking care of the case when the date picker is attached to an element part of a fluid design</li>
+</ul>
+<h2>version 1.8.1 (June 29, 2013)</h2>
+<ul>
+<li>fixed a small bug where setting the &quot;show_other_months&quot; property to FALSE and having a full empty row of cells would result in the cells having the wrong height</li>
+</ul>
+<h2>version 1.8.0 (June 28, 2013)</h2>
+<ul>
+<li>fixed a bug where deciding whether the &quot;next&quot; and &quot;previous&quot; buttons should be shown, the script was not always working as expected; thanks <strong>jojo</strong>;</li>
+<li>fixed a bug where the date picker was not working in IE8 and below; thanks <strong>sascha</strong> and <strong>Souli</strong> for reporting;</li>
+<li>fixed a bug in the &quot;metallic&quot; theme;</li>
+<li>added a new property called &quot;show_select_today&quot; which when set to TRUE allows for quick selection of the current date; thanks <strong>Matt Coady</strong>; read more in the see the <a href="http://stefangabos.ro/jquery/zebra-datepicker/#configuration">documentation</a>;</li>
+<li>changed the name of the &quot;always_show_clear&quot; property to &quot;show_clear_date&quot; and it now can be true, false or 0 (zero), instead of just true or false; see the <a href="http://stefangabos.ro/jquery/zebra-datepicker/#configuration">documentation</a>;</li>
+<li>changed the caption of the &quot;clear date&quot; button from &quot;Clear&quot; to &quot;Clear date&quot;;</li>
+<li>minor optimizations in the code;</li>
+</ul>
+<h2>version 1.7.7 (May 26, 2013)</h2>
+<ul>
+<li>fixed a bug where setting the &quot;direction&quot; property was not working as expected when having the &quot;format&quot; set to just years or months and &quot;direction&quot; was set to an array of 2 integers; like [2011-2013] when &quot;format&quot; was set to &quot;Y&quot;; thanks <strong>Kai</strong>;</li>
+<li>fixed a bug where sometimes the date picker was appearing too far to the right relative to the icon; thanks <strong>Mark</strong>;</li>
+</ul>
+<h2>version 1.7.5 (May 06, 2013)</h2>
+<ul>
+<li>additional fixes related to the buggy positioning of the date picker's icon when the date picker in scenarios involving different CSS resets and frameworks;</li>
+<li>fixed a bug affecting some more rarely used date formats; thanks <strong>MSP</strong></li>
+</ul>
+<h2>version 1.7.4 (May 05, 2013)</h2>
+<ul>
+<li>fixed a bug where the date picker was broken if the page was having the &quot;box-sizing&quot; CSS property set to &quot;border-box&quot;, which is the default for most of the CSS frameworks; read more at <a href="http://paulirish.com/2012/box-sizing-border-box-ftw/">http://paulirish.com/2012/box-sizing-border-box-ftw</a>;</li>
+<li>fixed a few bugs related to the positioning of the icon when the date picker was used together with different CSS frameworks and resets;</li>
+</ul>
+<h2>version 1.7.3 (May 03, 2013)</h2>
+<ul>
+<li>fixed a bug where having in the &quot;disabled_dates&quot; property a rule like ['<em> </em> <em> </em>'] (to disable all dates), and then, in the &quot;enabled_dates&quot; property having rules that enable only dates in the future, would send the script in an infinite loop; thanks <strong>Miguel Avila</strong>;</li>
+<li>fixed a bug where if a default value did not have days, months and years but only fragments (like, &quot;Feb&quot; or &quot;February&quot; when format was set to &quot;F&quot; or &quot;M&quot; respectively) the current date was used as default date instead; thanks <strong>to MSP</strong>;</li>
+<li>fixed a bug where, when searching for the first selectable date the library would sometimes fail and incorrectly show the month <em>after</em> the first selectable month;</li>
+<li>fixed a bug that was introduced in the previous version that could break the script if ranges were used in the &quot;disabled_dates&quot; or &quot;enabled_dates&quot; properties;</li>
+<li>fixed an issue where if the only the &quot;months&quot; view was visible, the user could still use the &quot;next&quot; and &quot;previous&quot; buttons to change years; thanks <strong>MSP</strong></li>
+</ul>
+<h2>version 1.7.1 (April 26, 2013)</h2>
+<ul>
+<li>fixed a bug where, when the &quot;select_other_months&quot; property was set to TRUE, days selected from outside the current month would be wrong; thanks <strong>MSP</strong>;</li>
+<li>fixed an issue where the value of the &quot;select_other_months&quot; property was set to TRUE instead of FALSE as per documentation;</li>
+</ul>
+<h2>version 1.7.0 (April 22, 2013)</h2>
+<ul>
+<li>fixed an issue where after selecting a date, the focus would go to nowhere and you'd have to start tab-ing from the top of the page; now the focus goes to the element the date picker is attached to;</li>
+<li>fixed an issue where when setting a format like 'F', 'm', 'M' or 'n' (so, months only), users had to also pick a day; thanks <strong>John</strong>;</li>
+<li>fixed a bug where in IE7 &amp; 6 the &quot;Clear&quot; button was alternatively visible/invisible for each change of year/month;</li>
+<li>added a new configuration option: &quot;enabled_dates&quot; which the reverse of the &quot;disabled_dates&quot; property, and which must be used together with the &quot;disabled_dates&quot; property; thanks to <strong>Sascha</strong>, <strong>Pranav Goswami</strong> and to all the others that suggested this;</li>
+<li>the calendar icon is not absolutely positioned anymore, and thus fixing all the issues that it was causing; thanks to all the people who kept insisting :)</li>
+<li>the &quot;zero_pad&quot; property is now FALSE by default;</li>
+<li>added 2 new configuration options: &quot;show_other_months&quot; which specified whether days belonging to other than the month being displayed should be shown, and &quot;select_other_months&quot; which specifies whether belonging to other than the month being displayed should be selectable; thanks to <strong>Josh</strong>;</li>
+<li>changed the &amp;laquo;, &amp;raquo; and &amp;nbsp; HTML entities to their numerical equivalents bacause they were apparently causing troubles in strict XHTML documents; thanks <strong>Martin Luter</strong>;</li>
+<li>optimized a bit the datepicker's stylesheets (also changed their names, so watch out when you're upgrading!); also, added a new stylesheet for use with <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>;</li>
+<li>added in the documentation the fact that if month names are used with the &quot;direction&quot; property, these must be in English and not the values in the &quot;months_abbr&quot; property; thanks to <strong>Manfred</strong>;</li>
+<li>the plugin is now available on <a href="https://github.com/stefangabos/Zebra_Datepicker">GitHub</a>!</li>
+</ul>
+<h2>version 1.6.7 (January 28, 2013)</h2>
+<ul>
+<li>fixed an issue due to which the plugin was not working with jQuery 1.9.0;</li>
+</ul>
+<h2>version 1.6.6 (January 15, 2013)</h2>
+<ul>
+<li>fixed a bug where the first selectable date was not computed if the &quot;direction&quot; property was a negative number; thanks to <strong>Bastian Flinspach</strong>;</li>
+</ul>
+<h2>version 1.6.5 (January 12, 2013)</h2>
+<ul>
+<li>fixed an issue where, for paired date pickers, only a single date picker could be set using the &quot;pair&quot; property; now any number of date pickers can be set, using a selector; thanks to <strong>Morten</strong></li>
+</ul>
+<h2>version 1.6.4 (January 08, 2013)</h2>
+<ul>
+<li>fixed an error where using &quot;D&quot; in date's format would crash the script; thanks <strong>James</strong></li>
+</ul>
+<h2>version 1.6.3 (January 02, 2013)</h2>
+<ul>
+<li>fixed a bug where when using paired date pickers and the second date picker would not have the &quot;direction&quot; property set to something different than &quot;0&quot;, the second date picker's selectable dates would not get updated according to the values in the first date picker; thanks to <strong>Martijn</strong></li>
+<li>fixed some bugs in the alternate CSS;</li>
+</ul>
+<h2>version 1.6.2 (December 13, 2012)</h2>
+<ul>
+<li>fixed a bug in example 7; thanks <strong>Morten</strong></li>
+<li>fixed a bug where the <em>zero_pad</em> configuration option was being applied only to the days of the current month and not also to the few, non-seletable, days of the next month; thanks <strong>Morten</strong></li>
+</ul>
+<h2>version 1.6.1 (November 03, 2012)</h2>
+<ul>
+<li>fixed a bug where using &quot;M&quot; (abbreviated month names) or &quot;D&quot; abbreviated day names in date format would result in the library returning the first three letters from months/days fullnames rather than the values given to the &quot;months_abbr&quot; and &quot;days_abbr&quot; properties; thanks to <strong>mansoft</strong>;</li>
+<li>added a new property: &quot;show_icon&quot; which when set to FALSE will disable the adding of the calendar icon to the elements the plugin is attached to; thanks to <strong>maliang47</strong>;</li>
+<li>the date picker's position is now computed relative to the calendar icon's top-right corner (instead of top-left corner as it was previously), unless the calendar icon is hidden when the position is calculated relative to the element's top-right corner; so, remember to adjust the &quot;offset&quot; property when updating the plugin!;</li>
+<li>the date picker will now open when clicking on the element the plugin is attached to regardless of the fact that the element is read only or not; thanks to <strong>Nicky</strong>;</li>
+</ul>
+<h2>version 1.6 (October 28, 2012)</h2>
+<ul>
+<li>fixed a bug where the algorithm for calculating the ISO 8601 week number was not working correctly; thanks to <strong>Christian</strong>;</li>
+<li>fixed a bug where if using the same starting and ending date for the &quot;direction&quot; configuration option, the date picker would behave as if there were no restrictions; thanks to <strong>Sachin</strong>;</li>
+<li>fixed a bug where when the system was set to a time zone where daylight saving time would occur at midnight, selecting the particular date where the daylight saving time was applied would result in the plugin returning the previous day; thanks to <strong>Arvy</strong>!</li>
+<li>a new &quot;onClear&quot; event is now available; a function attached to this event will be executed when a date is cleared; thanks to <strong>Alan</strong> for suggesting;</li>
+<li>added a new configuration option: &quot;zero_pad&quot;; setting it to FALSE will prevent the script from prefixing day numbers &lt; 10 with zeroes (so, it will be &quot;1&quot; instead of &quot;01&quot;); thanks to <strong>Nicky</strong> for suggesting;</li>
+<li>added 2 new configuration options: &quot;days_abbr&quot; and &quot;months_abbrs&quot; for specifying custom abbreviations for days and month names (useful for languages where the abbreviation is not as simple as the first 2 or 3 letters); thanks to <strong>RATI</strong>!;</li>
+<li>the functions attached to the onSelect and onChange events will now receive an extra argument being a reference to the element the date picker is attached to, as a jQuery object;</li>
+</ul>
+<h2>version 1.5 (September 30, 2012)</h2>
+<ul>
+<li>a new &quot;onChange&quot; event is now triggered whenever the user changes the view (days/months/years), as well as when the user navigates by clicking on the &quot;next&quot;/&quot;previous&quot; icons in any of the views; the callback function called by this event takes two arguments - the view (days/months/years) and the &quot;active&quot; elements (not disabled) in that view, as jQuery elements allowing for easy customization and interaction with particular cells in the date picker's view; read more about this in the <a href="http://stefangabos.ro/jquery/zebra-datepicker/#configuration">configuration</a> section; thanks to <strong>Russell</strong> for suggesting;</li>
+<li>fixed two bugs introduced in the previous version that made the icon to be incorrectly positioned in Internet Explorer 6, 7 &amp; 8 and also made the library trigger a warning message in these browsers;</li>
+<li>fixed a bug where setting the &quot;disabled_dates&quot; attribute to something else other than an array, would trigger an error in Internet Explorer 6 &amp; 7; thanks to <strong>myapi</strong></li>
+</ul>
+<h2>version 1.4.2 (September 22, 2012)</h2>
+<ul>
+<li>fixed a bug where the icon would not be placed correctly if the element the plugin is attached to had margins;</li>
+<li>fixed some small bugs in the CSS and in the JavaScript code;</li>
+<li>calling the &quot;update&quot; method will now also recalculate the parent element's position and place the icon accordingly; use it when you show/hide/reposition the parent element or you alter the parent element's dimensions;</li>
+</ul>
+<h2>version 1.4.1 (July 29, 2012)</h2>
+<ul>
+<li>fixed a bug where, when two date pickers are paired, the second date picker's starting date was using the first date picker's date as starting date <em>only</em> after a date was selected in the first date picker and not also when the first date picker already had a default date; thanks to <strong>j-Walker</strong></li>
+<li>fixed an issue where the current system date was not highlighted if it was disabled; thanks to <strong>Kevin Twitchell</strong></li>
+<li>the week number is now shown according to the <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> standard; thanks to <strong>David Moros</strong> for the heads up;</li>
+</ul>
+<h2>version 1.4 (July 08, 2012)</h2>
+<ul>
+<li>fixed a bug where the date picker's icon was not centered vertically relative to the parent element;</li>
+<li>added the possibility to select only years and months or just years; this behavior will be automatically triggered when setting an appropriate format - something like &quot;Y-m&quot; will allow users to select only years/months, while something like &quot;Y&quot; will allow users to only select years;</li>
+<li>if the element the plugin is attached to is disabled, the icon for opening the date picker will be greyed out and the user will not be able to open the date picker; thanks <strong>Todd</strong></li>
+<li>all sorts of imaginable combinations regarding starting and ending dates can now be set - look for the &quot;direction&quot; property in the configuration options for more information;</li>
+<li>two date picker's can now be &quot;paired&quot; so that one date picker's will use the value in the other as starting date; see the &quot;pair&quot; attribute;</li>
+<li>a callback function can now be set to be executed when the user selects a date; look for the &quot;onSelect&quot; property in the configuration options for more information;</li>
+</ul>
+<h2>version 1.3.2 (April 20, 2012)</h2>
+<ul>
+<li>included a second stylesheet for users who don't like the looks of the default one; thanks to <strong>daniel</strong> for reminding me about it;</li>
+<li>fixed icon position when inside the element on Opera; thanks <strong>Daniel</strong>;</li>
+<li>fixed a bug introduced in the last version that made disabling dates using , (commas) and - (dashes) impossible; thanks <strong>Denis</strong>;</li>
+</ul>
+<h2>version 1.3.1 (April 07, 2012)</h2>
+<ul>
+<li>fixed a bug where, starting with jQuery 1.7, the plugin was not working properly in IE6 &amp; IE7; thanks to <strong>Warren Taylor</strong>;</li>
+<li>fixed a bug where the &quot;Clear&quot; button broke the date picker's layout in IE6 &amp; IE7; thanks to <strong>Warren Taylor</strong>;</li>
+</ul>
+<h2>version 1.3 (April 02, 2012)</h2>
+<ul>
+<li>added a new property called &quot;start_date&quot; that can be used to specify a default starting date for the date picker, without having to set this value as the default value in the field the date picker is attached to; thanks to <strong>Phill</strong>;</li>
+<li>the date picker will now feature a button for clearing a previously selected date; this means that if the input the date picker is attached to is empty, and the user selects a date for the first time, this button will not be visible; once the user picked a date and opens the date picker again, this time the button will be visible; this button can be made permanently visible by setting the newly added &quot;always_show_clear&quot; property to TRUE; the caption of the button can be set through the newly added &quot;lang_clear_date&quot; property; thanks to <strong>Marc</strong>;</li>
+<li>the date picker can now be kept visible all the time by setting the newly added &quot;always_visible&quot; property to a jQuery element that will act as the date picker's container; thanks to <strong>red</strong> for suggesting this, and to everybody else for insisting :)</li>
+<li>fixed a bug where if the calendar icon didn't have any parents with &quot;position: relative&quot;, it would appear at the very top of the page; thanks to <strong>Primoz</strong> and <strong>nzn</strong>;</li>
+<li>fixed a bug where pre-selected years and months were not highlighted if the date format didn't have days, months and years, but was something particular like &quot;Y-m&quot; or just &quot;Y&quot;;</li>
+<li>fixed a bug where January was never highlighted in the month picker;</li>
+</ul>
+<h2>version 1.2 (February 05, 2012)</h2>
+<ul>
+<li>the icon for opening the datepicker is now, by default, <em>inside</em> the parent element rather than to its right; the old behaviour can still be achieved by setting the newly added &quot;inside&quot; property to FALSE;</li>
+<li>fixed a bug where the default view, as defined in the settings, was correctly used only the first time; subsequent clicks would open the datepicker in the &quot;day picker&quot; view, regardless of how it was set;</li>
+<li>fixed a bug where the currently selected years and months were not highlighted in the datepicker; only the current system year and month were highlighted previously;</li>
+<li>fixed a bug where, if a range of selectable dates was given, users could still navigate to years/months outside the given range (although no dates could be selected from these years/months as they were disabled);</li>
+</ul>
+<h2>version 1.1.2 (September 11, 2011)</h2>
+<ul>
+<li>fixed a bug where unavailable months and years could also be clicked and thus sending the user to a month with no selectable dates;</li>
+</ul>
+<h2>version 1.1.1 (August 29, 2011)</h2>
+<ul>
+<li>fixed a bug regarding event delegation that would crash the script in certain scenarios; thanks to <strong>Sebi Popa</strong> for spotting it!</li>
+</ul>
+<h2>version 1.1 (August 24, 2011)</h2>
+<ul>
+<li>fixed a bug where trying to re-initialize the date picker would attach an extra calendar icon and an extra date picker to the element; thanks to <strong>Murat</strong> for reporting;</li>
+<li>the &quot;direction&quot; property was enhanced and now can also be an array where the first value indicates the starting date and the direction of calendar, and the second value is the number of selectable days; thanks to <strong>FranckM</strong> for suggesting;</li>
+<li>week numbers can now also be shown using the <em>show_week_number</em> property (thanks to <strong>Jorgen</strong> for suggesting);</li>
+<li>if the <em>readonly_element</em> property is set to true (default), the date picker is also shown when the user clicks the input field; thanks to <strong>Tomek</strong> for suggesting;</li>
+<li>pressing the ESC key will now close the date picker;</li>
+<li>examples are now also available in the downloadable package;</li>
+</ul>
+<h2>version 1.0, bugfix (May 27, 2011)</h2>
+<ul>
+<li>a bug was fixed that prevented the script from using the date in the text box as default date</li>
+</ul>
+<h2>version 1.0 (May 26, 2011)</h2>
+<ul>
+<li>initial release</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/calendar" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>calendar</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/cross-browser" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>cross-browser</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/date" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>date</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/datepicker" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>datepicker</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/datetime" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>datetime</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/datetime-picker" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>datetime-picker</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/picker-jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>picker-jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/pickers" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>pickers</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/timepicker" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>timepicker</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/zebra-datepicker" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>zebra-datepicker</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/741165?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/stefangabos" target="_blank" id="ownerName" class="sidebar-link">stefangabos</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">April 22, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 27, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Other</span>
+    </div>
+	        <a href="https://stefangabos.github.io/Zebra_Datepicker/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (^1.5.3)</li><li>grunt-cli (^1.5.0)</li><li>grunt-contrib-copy (*)</li><li>grunt-contrib-cssmin (^5.0.0)</li><li>grunt-contrib-jshint (^3.2.0)</li><li>grunt-contrib-uglify (^5.2.2)</li><li>grunt-contrib-watch (*)</li><li>grunt-eslint (^25.0.0)</li><li>grunt-includes (*)</li><li>grunt-newer (*)</li><li>grunt-notify (*)</li><li>grunt-sass-modern (^3.3.0)</li><li>grunt-string-replace (^1.3.3)</li><li>sass (^1.81.0)</li><li>time-grunt (^2.0.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/741165?v=4" alt="stefangabos" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/stefangabos" target="_blank" class="text-decoration-none fw-bold">stefangabos</a><p class="mb-0 text-muted small">598 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">8 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/8227996?v=4" alt="anli-xsigns" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/anli-xsigns" target="_blank" class="text-decoration-none fw-bold">anli-xsigns</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/39339051?v=4" alt="betheymc" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/betheymc" target="_blank" class="text-decoration-none fw-bold">betheymc</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/6906225?v=4" alt="tonprince" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tonprince" target="_blank" class="text-decoration-none fw-bold">tonprince</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3149876?v=4" alt="ARehmanMahi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ARehmanMahi" target="_blank" class="text-decoration-none fw-bold">ARehmanMahi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7239518?v=4" alt="panzerchris" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/panzerchris" target="_blank" class="text-decoration-none fw-bold">panzerchris</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6303296?v=4" alt="maxime-pasquier" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/maxime-pasquier" target="_blank" class="text-decoration-none fw-bold">maxime-pasquier</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/692651?v=4" alt="sebipopa" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sebipopa" target="_blank" class="text-decoration-none fw-bold">sebipopa</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/528942?v=4" alt="vojtabiberle" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vojtabiberle" target="_blank" class="text-decoration-none fw-bold">vojtabiberle</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2209290?v=4" alt="duckboy81" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/duckboy81" target="_blank" class="text-decoration-none fw-bold">duckboy81</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1488339?v=4" alt="mckey" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mckey" target="_blank" class="text-decoration-none fw-bold">mckey</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/370803?v=4" alt="norlin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/norlin" target="_blank" class="text-decoration-none fw-bold">norlin</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+8 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
