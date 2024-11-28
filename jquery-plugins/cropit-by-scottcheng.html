@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A &quot;customizable Crop and Zoom&quot; jQuery Plugin.</title>
+    <meta name="description" content="cropit by scottcheng. A &quot;customizable crop and zoom&quot; jQuery plugin.">
+    <meta name="author" content="scottcheng">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/cropit-by-scottcheng.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Cropit</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cropit",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Cropit</h1>
+        <p id="packageDescription" class="text-muted">A &quot;customizable crop and zoom&quot; jQuery plugin.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">875</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">21.28 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">304</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">145</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/scottcheng/cropit/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/scottcheng/cropit" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>cropit</h1>
+<p><a href="https://cdnjs.com/libraries/cropit"><img src="https://img.shields.io/cdnjs/v/cropit.svg" alt="CDNJS" /></a><br />
+<a href="https://www.jsdelivr.com/package/npm/cropit"><img src="https://data.jsdelivr.com/v1/package/npm/cropit/badge?style=rounded" alt="jsDelivr Hits" /></a></p>
+<p>Customizable crop and zoom.</p>
+<p>See demos and docs <a href="http://scottcheng.github.io/cropit/">here</a>.</p>
+<p>Built on top of <a href="https://github.com/yufeiliu/simple_image_uploader">Yufei Liu's Image Editor</a>.</p>
+<h2>Installation</h2>
+<pre class="prettyprint linenums lang-language"><code># Install cropit with bower
+$ bower install cropit
+
+# or with npm
+$ npm install cropit</code></pre>
+<h2>Migrating to v0.5</h2>
+<p>v0.5 <a href="https://github.com/scottcheng/cropit/blob/master/CHANGELOG.md#user-content-050-february-27-2016">introduced</a> rotation feature and improved performance, as well as a breaking changes in markup structure and class names.</p>
+<p>Markup in v0.4:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="image-editor"&gt;
+  &lt;!-- .cropit-image-preview-container is needed for background image to work --&gt;
+  &lt;div class="cropit-image-preview-container"&gt;
+    &lt;div class="cropit-image-preview"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- Other stuff --&gt;
+&lt;/div&gt;</code></pre>
+<p>New markup in v0.5:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="image-editor"&gt;
+  &lt;div class="cropit-preview"&gt;&lt;/div&gt;
+  &lt;!-- Other stuff --&gt;
+&lt;/div&gt;</code></pre>
+<p>Note that <code>.cropit-image-preview-container</code> element is no longer needed, and all you need is a <code>.cropit-preview</code> (previously <code>.cropit-image-preview</code>) whether or not you want image background that goes beyond the preview area. New markup structure (after cropit is initialized) is as follows:</p>
+<pre class="prettyprint linenums lang-language"><code>.cropit-preview
+  .cropit-preview-background-container
+    img.cropit-preview-background
+  .cropit-preview-image-container
+    img.cropit-preview-image</code></pre>
+<p>Note the class name changes:</p>
+<pre><code>.cropit-image-preview              =&gt; .cropit-preview
+.cropit-image-background-container =&gt; .cropit-preview-background-container
+.cropit-image-background           =&gt; .cropit-preview-background</code></pre>
+<p>Make sure to update class names in your selectors.</p>
+<h2>Development</h2>
+<ul>
+<li>Build: <code>webpack</code>
+<ul>
+<li>Watch for changes and rebuild: <code>webpack -w</code></li>
+</ul></li>
+<li>Test: <code>npm test</code>
+<ul>
+<li>Test specific file: <code>jest &lt;filename&gt;</code></li>
+</ul></li>
+<li>Lint: <code>npm run jshint -s</code></li>
+</ul>
+<h2>License</h2>
+<p>MIT</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h2>0.5.1 (February 27, 2016)</h2>
+<h3>Bug fixes</h3>
+<ul>
+<li>Fixed wrong image offset when rotation is negative.</li>
+<li>Fixed bug where image background can be dragged and moved.</li>
+</ul>
+<h2>0.5.0 (February 27, 2016)</h2>
+<h3>Migration guide</h3>
+<p>Markup in v0.4:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="image-editor"&gt;
+  &lt;!-- .cropit-image-preview-container is needed for background image to work --&gt;
+  &lt;div class="cropit-image-preview-container"&gt;
+    &lt;div class="cropit-image-preview"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- Other stuff --&gt;
+&lt;/div&gt;</code></pre>
+<p>New markup in v0.5:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="image-editor"&gt;
+  &lt;div class="cropit-preview"&gt;&lt;/div&gt;
+  &lt;!-- Other stuff --&gt;
+&lt;/div&gt;</code></pre>
+<p>Note that <code>.cropit-image-preview-container</code> element is no longer needed, and all you need is a <code>.cropit-preview</code> (previously <code>.cropit-image-preview</code>) whether or not you want image background that goes beyond the preview area. New markup structure (after cropit is initialized) is as follows:</p>
+<pre class="prettyprint linenums lang-language"><code>.cropit-preview
+  .cropit-preview-background-container
+    img.cropit-preview-background
+  .cropit-preview-image-container
+    img.cropit-preview-image</code></pre>
+<p>Note the class name changes:</p>
+<pre><code>.cropit-image-preview              =&gt; .cropit-preview
+.cropit-image-background-container =&gt; .cropit-preview-background-container
+.cropit-image-background           =&gt; .cropit-preview-background</code></pre>
+<p>Make sure to update class names in your selectors.</p>
+<h3>Breaking changes</h3>
+<ul>
+<li>Markup structure and class name changes. See migration guide above for details.</li>
+</ul>
+<h3>New features</h3>
+<ul>
+<li>Added rotation APIs <code>rotateCW</code> and <code>rotateCCW</code>, which rotates the image by 90 degrees clockwise/counterclockwise. If, after rotated by 90 degrees, the dimension of the image no longer meets the requirements, it would be rotated by 180 degrees.</li>
+<li>Render image using CSS transformation, which drastically improved performance.</li>
+</ul>
+<h3>Bug fixes</h3>
+<ul>
+<li>Now remote images are loaded through AJAX and rendered as data URI strings, which addresses CORS issues. <code>allowCrossOrigin</code> option is no longer necessary and therefore removed.</li>
+</ul>
+<h2>0.4.5 (September 27, 2015)</h2>
+<h3>Bug fixes</h3>
+<ul>
+<li>Fixed an issue where cropit exports blank images on Safari. Removed progressive resizing, which may degrade cropped image quality. For high quality resizing, using a server-side tool is recommended.</li>
+</ul>
+<h2>0.4.4 (September 12, 2015)</h2>
+<h3>New features</h3>
+<ul>
+<li>Added getters and setters for <code>initialZoom</code>, <code>exportZoom</code>, <code>minZoom</code> and <code>maxZoom</code></li>
+<li>Added <code>onOffsetChange</code> and <code>onZoomChange</code> callback</li>
+<li>onFileChange now passes back the event object</li>
+</ul>
+<h3>Bug fixes</h3>
+<ul>
+<li>Fixed bug where <code>image-loaded</code> class is removed if a small image is loaded and rejected</li>
+</ul>
+<h2>0.4.1 (August 2, 2015)</h2>
+<h3>Bug fixes</h3>
+<ul>
+<li>Fixed crossOrigin preventing image from loading in Safari and Firefox.</li>
+</ul>
+<h2>0.4.0 (July 7, 2015)</h2>
+<h3>New features</h3>
+<ul>
+<li>Added option to allow small image to be either zoomed down its original size or stretch to fill/fit container</li>
+</ul>
+<h3>Breaking changes</h3>
+<ul>
+<li>Replaced <code>rejectSmallImage</code> option with <code>smallImage</code>. <code>rejectSmallImage: true</code> is now <code>smallImage: 'reject'</code>, and <code>rejectSmallImage: false</code> is now <code>smallImage: 'allow'</code>.</li>
+</ul>
+<h2>0.3.2 (July 3, 2015)</h2>
+<h3>New features</h3>
+<ul>
+<li>Added back <code>allowCrossOrigin</code> option</li>
+</ul>
+<h2>0.3.1 (June 30, 2015)</h2>
+<h3>Bug fixes</h3>
+<ul>
+<li>Fixed jQuery import in AMD and CommonJS.</li>
+</ul>
+<h2>0.3.0 (June 21, 2015)</h2>
+<h3>New features</h3>
+<ul>
+<li>Center image when uploaded</li>
+<li>Added <code>maxZoom</code>, <code>minZoom</code>, <code>initialZoom</code> options</li>
+<li>Added <code>rejectSmallImage</code> option
+<ul>
+<li>By default if image is smaller than preview, it won't be loaded and the old image would be preserved</li>
+</ul></li>
+<li>Added <code>onFileReaderError</code> callback</li>
+</ul>
+<h3>Breaking changes</h3>
+<ul>
+<li>Removed <code>allowCrossOrigin</code> option</li>
+</ul>
+<h3>Development</h3>
+<ul>
+<li>Major refactor -- rewrote in ES6! No more CoffeeScript.</li>
+<li>Now build with Webpack and removed Grunt</li>
+</ul>
+<h2>0.2.0 (December 16, 2014)</h2>
+<h3>New features</h3>
+<ul>
+<li>Added drag &amp; drop support via <code>allowDragNDrop</code> option, default to true</li>
+<li>Added free move support via <code>freeMove</code> option, default to false</li>
+<li>Added CommonJS support</li>
+</ul>
+<h3>Breaking changes</h3>
+<ul>
+<li>Renamed option <code>freeImageMove</code> -&gt; <code>freeMove</code></li>
+</ul>
+<h2>0.1.9 (October 19, 2014)</h2>
+<h3>New features</h3>
+<ul>
+<li>Added touch support</li>
+<li>Added disable and reenable APIs</li>
+<li>Support varying backgroung image border size</li>
+<li>Added white background in jpeg format exports</li>
+</ul>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/crop" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>crop</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/zoom" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>zoom</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/image%20editor" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>image editor</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/1612169?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/scottcheng" target="_blank" id="ownerName" class="sidebar-link">scottcheng</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">July 7, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 3, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://scottcheng.github.io/cropit/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.9)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>babel-core (~5.5.8)</li><li>babel-jest (~5.3.0)</li><li>babel-loader (~5.1.4)</li><li>jest-cli (^0.8.2)</li><li>jshint-stylish (~2.0.0)</li><li>lodash (~3.9.3)</li><li>node-libs-browser (~0.5.2)</li><li>pica (^1.0.7)</li><li>webpack (~1.9.11)</li><li>webpack-dev-server (~1.9.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/798009?v=4" alt="anoopelias" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/anoopelias" target="_blank" class="text-decoration-none fw-bold">anoopelias</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1093790?v=4" alt="an1lam" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/an1lam" target="_blank" class="text-decoration-none fw-bold">an1lam</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1308419?v=4" alt="tomByrer" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tomByrer" target="_blank" class="text-decoration-none fw-bold">tomByrer</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/840412?v=4" alt="javiermarinros" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/javiermarinros" target="_blank" class="text-decoration-none fw-bold">javiermarinros</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/15611832?v=4" alt="LukasDrgon" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/LukasDrgon" target="_blank" class="text-decoration-none fw-bold">LukasDrgon</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2387872?v=4" alt="giolvani" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/giolvani" target="_blank" class="text-decoration-none fw-bold">giolvani</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/23053428?v=4" alt="kaocy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kaocy" target="_blank" class="text-decoration-none fw-bold">kaocy</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+2 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
