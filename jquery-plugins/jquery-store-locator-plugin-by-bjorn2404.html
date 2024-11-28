@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Store Locator Plugin Using Google Maps Api Version 3</title>
+    <meta name="description" content="jQuery-Store-Locator-Plugin by bjorn2404. A store locator plugin using Google Maps API version 3">
+    <meta name="author" content="bjorn2404">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-store-locator-plugin-by-bjorn2404.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Store Locator Plugin</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Store Locator Plugin",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Store Locator Plugin</h1>
+        <p id="packageDescription" class="text-muted">A store locator plugin using Google Maps API version 3</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">495</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">2.16 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">235</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">57</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/bjorn2404/jQuery-Store-Locator-Plugin/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/bjorn2404/jQuery-Store-Locator-Plugin" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1><a href="http://www.bjornblog.com/web/jquery-store-locator-plugin">jQuery Google Maps Store Locator Plugin</a></h1>
+<h3>The files you're looking for are in the dist/ directory</h3>
+<h3><a href="http://www.bjornblog.com/web/jquery-store-locator-plugin">Please see my blog for more information and examples</a>.</h3>
+<p>This jQuery plugin takes advantage of Google Maps API version 3 to create an easy to implement store locator. No<br />
+back-end programming is required, you just need to feed it KML, XML, or JSON data with all the location information.<br />
+How you create the data file is up to you. I originally created this for a company that didn’t have many locations, so I<br />
+just used a static XML file. You will need to geocode your locations beforehand or use a geocoding API service if<br />
+you want to try to do it on the fly. The reason for this is that all free geocoding APIs have strict limits that would<br />
+easily be exceeded. In the end, you're much better off storing the coordinates versus having to look them up for each<br />
+location on each request.</p>
+<p>A note on the distance calculation: this plugin currently uses a distance function that I found on the blog of<br />
+<a href="http://pietschsoft.com/post/2008/02/01/Calculate-Distance-Between-Geocodes-in-C-and-JavaScript.aspx">Chris Pietschmann</a>.<br />
+Google Maps API version 3 does include a distance calculation service<br />
+(<a href="http://code.google.com/apis/maps/documentation/distancematrix/">Google Distance Matrix API</a>) but I decided not to use<br />
+it because of the current request limits, which seem somewhat low. For v2 I also tried experimenting with the Directions API to request distances but also found the limits to be too restrictive. So, the distance calculation is “as the crow flies” instead of a<br />
+road distance calculation. However, if you use the inline directions option that does provide the distance that's returned via the directions request.</p>
+<p>Last, it’s very important to note that the plugin requires the Handlebars template engine. This separates the markup of the<br />
+infowindows and location list elements so that they can easily be restructured. Handlebars pretty slick, will read<br />
+Mustache templates, and the built-in helpers really come in handy. Depending on what your data source is, 2 of the<br />
+4 total templates will be used (KML vs XML or JSON) and there are options to set the paths of each template if you don’t<br />
+want them in the default location. If you’re developing something for mobile devices the templates can be pre-compiled<br />
+for even faster loading.</p>
+<h3>WordPress version</h3>
+<p><a href="https://cardinalwp.com/">Cardinal Locator - WordPress store locator plugin</a> is now available, which uses this jQuery plugin<br />
+as a base and all of the settings can be set via a settings page in the WP dashboard. It also integrates with core<br />
+WordPress features such as custom post types for location data and custom taxonomies for location categorization and<br />
+filtering.</p>
+<h2>Changelog</h2>
+<h3>Version 3.4.0</h3>
+<ul>
+<li>Added support for new Map ID with mapSettingsID setting. Please refer to <a href="https://developers.google.com/maps/documentation/get-map-id">Use Map IDs</a> and <a href="https://developers.google.com/maps/documentation/javascript/examples/map-id-style">Map ID with Styling</a> in the Google API docs.</li>
+<li>Added support for new <a href="https://developers.google.com/maps/documentation/javascript/advanced-markers/overview">Advanced Markers</a> while maintaining support for the deprecated (not yet discontinued) marker functionality. mapSettingsID setting needs to be set and marker library needs to be included - see previous item.</li>
+<li>Fixed bugs with pagination.</li>
+<li>Fixed new &quot;Google Maps JavaScript API has been loaded directly without loading=async&quot; notice.</li>
+<li>Improved pagination accessibility and functionality.</li>
+<li>Updated jQuery in example files to v3.7.1</li>
+</ul>
+<h3>Version 3.3.0</h3>
+<ul>
+<li>Updated max distance functionality to make distance changes apply dynamically vs. having to manually click button.</li>
+</ul>
+<h3>Version 3.2.1</h3>
+<ul>
+<li>Swapped old maps.google.com API domain to maps.googleapis.com in all example files.</li>
+</ul>
+<h3>Version 3.2.0</h3>
+<ul>
+<li>Added new Google Maps lazy load setting and example file - see new lazyLoadMap and apiKey settings.</li>
+</ul>
+<h3>Version 3.1.14</h3>
+<ul>
+<li>Added label tags to radio button markup in categories example file.</li>
+<li>Fix - reverted removal of zoom reset to 0 after taxonomy filtering due to introduction of new issue.</li>
+<li>Fixed comment typos.</li>
+</ul>
+<h3>Version 3.1.13</h3>
+<ul>
+<li>Fixed additional disable filtering functionality related to select options and radio buttons by globally tracking the disabled values.</li>
+<li>Removed zoom reset to zero on taxonomy filtering to keep searched location in view.</li>
+<li>Updated maybeDisableFilterOptions to run when full map start or default location settings are enabled.</li>
+</ul>
+<h3>Version 3.1.12</h3>
+<ul>
+<li>Added automatic reset functionality that fires when address input field value is removed (changed to blank).</li>
+<li>Fixed additional issues with new disable filtering functionality with select fields, radio buttons, and updated address input value.</li>
+<li>Fixed markerClusterer library usage of deprecated Google Maps addDomListener. Props <a href="https://github.com/marcohanke">@marcohanke</a> via <a href="https://github.com/bjorn2404/jQuery-Store-Locator-Plugin/pull/294/">#294</a></li>
+<li>Updated jQuery version in example files.</li>
+<li>Updated query string functionality to fill in address and name search with query string values in search form.</li>
+</ul>
+<h3>Version 3.1.11</h3>
+<ul>
+<li>Fixed issue with new disable filtering functionality with radio buttons.</li>
+<li>Fixed issue with reset button where all locations were duplicated - introduced in v3.0.1. Reported in <a href="https://github.com/bjorn2404/jQuery-Store-Locator-Plugin/issues/293">https://github.com/bjorn2404/jQuery-Store-Locator-Plugin/issues/293</a>.</li>
+<li>Updated functionality to reset disabled form filters when Reset button is clicked.</li>
+</ul>
+<h3>Version 3.1.10</h3>
+<ul>
+<li>Added map marker accessibility.</li>
+<li>Deprecated bounceMarker setting due to Google Charts API deprecation and poor animation results with Google marker labels.</li>
+<li>Fixed issue with new disable filtering functionality when location objet property is missing.</li>
+<li>Fixed marker labels not working with previous technique. Swapped to google.maps.Marker label parameter.</li>
+<li>Updated package devDependencies.</li>
+</ul>
+<h3>Version 3.1.9</h3>
+<ul>
+<li>Added functionality to disable input and option fields that don't have matching values in the current location set after filtering when inclusive filtering is used (default).</li>
+<li>Extended nameAttribute settings so multiple attributes can be searched. Separate attribute names with commas.</li>
+<li>Fixed location set length scenario when fullMapStart is enabled and taxFilters is reset and name search and origin are empty.</li>
+<li>Show empty result message if no locations with default sorting.</li>
+<li>Temporary fix for missing Google Maps callback parameter console error - the parameter requirement was not previously enforced on the API side.</li>
+<li>Updated deprecated google.maps.event.addDomListener usage with window.addEventListener.</li>
+</ul>
+<h3>Version 3.1.8</h3>
+<ul>
+<li>Added coordinate range check to exclude locations with invalid latitude and longitude values.</li>
+</ul>
+<h3>Version 3.1.7</h3>
+<ul>
+<li>Fixed empty name search value not clearing previous value.</li>
+<li>Fixed openNearest setting not working in combination with querystringParams setting.</li>
+<li>Fixed openNearest setting not opening correct location with custom sorting (sortBy) enabled.</li>
+</ul>
+<h3>Version 3.1.6</h3>
+<ul>
+<li>Added extra check to make sure mapping doesn't fire twice when defaultLoc is enabled and fullMapStart is also enabled.<br />
+fullMapStart is not needed when defaultLoc is enabled and this is just a preventative to avoid user errors.</li>
+<li>Fixed centering issue on initial search with maxDistance enabled introduced with fitBounds updates in last update. </li>
+</ul>
+<h3>Version 3.1.5</h3>
+<ul>
+<li>Added Google Maps object as a parameter for <a href="callbacks/callback-markerclick.md">callbackMarkerClick</a> callback.</li>
+<li>Added a zoom listener after fitBounds is used to prevent high zoom levels after name search and taxonomy filtering.</li>
+<li>Improved zooming when maxDistance setting is enabled taking advantage of the fitBounds method.</li>
+</ul>
+<h3>Version 3.1.4</h3>
+<ul>
+<li>Fixed name search filter value not clearing if form input is cleared.</li>
+</ul>
+<h3>Version 3.1.3</h3>
+<ul>
+<li>Fixed empty name search field value overriding filter results.</li>
+<li>Fixed groups of filters not applying together.</li>
+<li>Fixed potential error from occurring if fullMapStartListLimit is set, and the number of locations is less than the limit.</li>
+<li>Updated bundled Handlebars to v4.7.7 that addresses a <a href="https://github.com/advisories/GHSA-f2jv-r9rf-7988">critical vulnerability</a>.</li>
+<li>Updated jQuery version in example files to v3.6.0.</li>
+</ul>
+<h3>Version 3.1.2</h3>
+<ul>
+<li>Fixed name search issue introduced in v3.1.1. Reverted to previous matching pattern only for name searches and still using the new patter for taxonomy matching.</li>
+</ul>
+<h3>Version 3.1.1</h3>
+<ul>
+<li>Enhanced filtering regular expression to better account for exact matches vs. substrings.</li>
+<li>Fixed multi-category selection filtering issue introduced in last version 3.1.0.</li>
+<li>Updated bundled Handlebars to v4.7.6.</li>
+<li>Updated node modules.</li>
+</ul>
+<h3>Version 3.1.0</h3>
+<ul>
+<li>Added featuredDistance setting to restrict featured locations by a specified distance (number value should be used).</li>
+<li>Updated bundled version of Handlebars to v4.5.1 due to security issue.</li>
+<li>Updated taxonomy filtering REGEX and string replacements for international character support.</li>
+</ul>
+<h3>Version 3.0.1</h3>
+<ul>
+<li>Added custom order handling to tie into previously added custom sorting. Set order to asc or desc.</li>
+<li>Added functionality to fill in search input with determined address when using autoGeocode or geocodeID settings.</li>
+<li>Added Google Map object as parameter to callbackBeforeSend, callbackListClick, callbackModalReady, and callbackFilters callbacks.</li>
+<li>Changed parseJSON to native JSON.parse due to deprecation in rawData processing function.</li>
+<li>Fixed issue with mapReload (triggered with optional reset button) where storeLimit wasn't reset.</li>
+<li>Updated sort-example.html example with order select field.</li>
+</ul>
+<h3>Version 3.0.0</h3>
+<p>Version 3 has a breaking change with the dataLocation and dataType settings switching the default from XML to JSON.</p>
+<ul>
+<li>Added ajaxData to allow custom data to be sent with the AJAX request. The setting accepts an object.</li>
+<li>Added altDistanceNoResult setting to display no results message vs. all locations when closest location is further than distanceAlert setting.</li>
+<li>Added callbackAutoGeoSuccess callback that fires after the geolocation API returns a successful result.</li>
+<li>Added callbackFormVals callback that fires after the form values have been processed from the form.</li>
+<li>Added callbackGeocodeRestrictions callback that allows the componentRestrictions object to be overridden.</li>
+<li>Added callbackNearestLoc callback that fires when the nearest location is triggered with the openNearest setting.</li>
+<li>Added callbackSorting callback that fires when when a new sorting method is selected.</li>
+<li>Added component filtering for geocoding to better restrict by area.</li>
+<li>Added length unit (distance miles/kilometers) front-end swap functionality, setting and example file.</li>
+<li>Added mappingObject, originPoint, data, and page parameters to callbackSuccess callback.</li>
+<li>Added new front-end sorting functionality, settings, and example file.</li>
+<li>Added location data object as parameter of callbackDirectionsRequest callback.</li>
+<li>Added openNearest setting to open/select the nearest location after searching.</li>
+<li>Fixed issue with featuredLocations setting where featured locations at far distances would trigger distance alert.</li>
+<li>Fixed issue with filtering values containing ampersands, which would not display any results - updated filtering regex.</li>
+<li>Fixed issue where HTML5 Geolocation was skipped when using the fullMapStartBlank setting.</li>
+<li>Fixed issue with pagination page numbers displaying after no results via PR from <a href="https://github.com/heldr88">heldr88</a></li>
+<li>Fixed issue with taxonomy filtering and autoGeocode setting where HTML Geocoding API would run on every filter change.</li>
+<li>Removed Less from the project as it is no longer needed with the Bootstrap update.</li>
+<li>Swapped the default location data type to be JSON instead of XML.</li>
+<li>Updated Bootstrap example file to make use of Bootstrap 4.</li>
+<li>Updated taxonomy filtering so pagination is reset to first page after selecting a filter.</li>
+</ul>
+<h3>Version 2.7.4</h3>
+<ul>
+<li>Fixed error when filtering with query strings where filter values with spaces wouldn't work.</li>
+<li>Updated processForm method so submitting the map removes focus from any of the form input/select fields instead of just the address input.</li>
+<li>Updated filterData string replace methods to match string replace method in filters setup.</li>
+</ul>
+<h3>Version 2.7.3</h3>
+<ul>
+<li>Added ability to indicate multiple query string parameter values (for checkboxes) with a comma separated list value.</li>
+<li>Added autoCompleteDisableListener setting to disable the listener that immediately triggers a search when an auto complete location option is selected.</li>
+<li>Added blur to primary location input field after form submission to hide mobile keyboards.</li>
+<li>Added check to exclusive filtering to make sure filter values are not undefined before proceeding with the regular expression.</li>
+<li>Added functionality to automatically select/check filters on load from query string parameter values.</li>
+<li>Added location details object to callbackListClick and callbackMarkerClick objects.</li>
+<li>Fixed broken dragSearch functionality that was introduced after map scope pull request was merged.</li>
+<li>Fixed Handlebars targeting issue triggered by placing an unordered list within the location list template.</li>
+<li>Fixed issue with fullMapStart where conditional was checking if isNaN was true when it should have been false on fullMapStartListLimit setting.</li>
+<li>Updated callbackListClick documentation to include second market object parameter.</li>
+<li>Updated zooming to prevent fitBounds from being used when query string parameters are in use and the location has been set with bh-sl-address.</li>
+</ul>
+<h3>Version 2.7.2</h3>
+<ul>
+<li>Added <a href="callbacks/callback-region.md">callbackRegion</a> callback, which allows region to be set before being sent to the Google Maps Geocoding API.</li>
+<li>Fixed incorrect origin marker parameter order after code restructure.</li>
+<li>Fixed <a href="https://github.com/bjorn2404/jQuery-Store-Locator-Plugin/issues/160">issue</a> where searching by name after searching by address, without a new address, didn't reset the origin.</li>
+<li>Merged pull-request from <a href="https://github.com/ollea">ollea</a> that adds &quot;getMap&quot; function that returns a google.maps.Map instance.</li>
+</ul>
+<h3>Version 2.7.1</h3>
+<ul>
+<li>Hotfix to prevent potential error with updated filterData method if the category of a location is undefined.</li>
+</ul>
+<h3>Version 2.7.0</h3>
+<ul>
+<li>Added <a href="callbacks.md">callback documentation</a>.</li>
+<li>Added callbackCreateMarker for custom marker overrides.</li>
+<li>Added <a href="https://github.com/googlemaps/js-info-bubble">InfoBubble</a> support and example file.</li>
+<li>Added location results total count if HTML element with &quot;bh-sl-total-results&quot; class exists.</li>
+<li>Added checks to replace non-ASCII characters when filtering.</li>
+<li>Added reset functionality that can be triggered via a button that has the CSS class &quot;bh-sl-reset&quot;.</li>
+<li>Added query string parameter filter check so that results can be filtered with URL query strings.</li>
+<li>Fixed issue with maxDistance and querystringParams settings combination.</li>
+<li>Moved some functionality from processData into new separate methods.</li>
+<li>Removed non-standard $1 RegExp property in processData method.</li>
+</ul>
+<h3>Version 2.6.2</h3>
+<ul>
+<li>Added callbackMapSet callback that fires after the map has been set up.</li>
+<li>Fixed issue where locations without attributes set could get the attribute values from prior locations.</li>
+<li>Fixed issue where pagination total number of pages was based on the full location set total instead of the storeLimit setting.</li>
+<li>Removed form markup from initial query string example index file as it's not needed until the submission page.</li>
+</ul>
+<h3>Version 2.6.1</h3>
+<ul>
+<li>Added additional error handling when the plugin checks the closest location.</li>
+<li>Added listener for autoComplete change so that the search processes when a new place is selected.</li>
+<li>Fixed <a href="https://github.com/bjorn2404/jQuery-Store-Locator-Plugin/issues/127">issue with new boundary search</a> AJAX params after a full address search was made.</li>
+<li>Merged in pull request from <a href="https://github.com/noclat">noclat</a> that added autoCompleteOptions setting.</li>
+</ul>
+<h3>Version 2.6.0</h3>
+<ul>
+<li>Added bounds and formatted address info from geocoding API to AJAX data parameters.</li>
+<li>Added Marker Clusterer library support, setting and example file.</li>
+<li>Added disableAlphaMarkers setting to completely disable displaying markers and location list indicators with alpha characters.</li>
+<li>Fixed issue with combination of autoGeocode and originMarker settings.</li>
+<li>Merged in pull request from <a href="https://github.com/drcomix">drcomix</a> that fixed zoom issue with dragSearch setting.</li>
+<li>Switched included remote scripts in example files to https.</li>
+<li>Updated jQuery references to the latest version.</li>
+</ul>
+<h3>Version 2.5.3</h3>
+<ul>
+<li>Removed check from createMarker method that removed spaces from categories - created issues with categories that have spaces.</li>
+<li>Re-worked handling of no results.</li>
+<li>Updated createMarker method to ensure custom category marker images are converted to integers if strings are passed for dimensions.</li>
+<li>Updated autoGeocode and default location functionality so that max distance is applied on initial load.</li>
+</ul>
+<h3>Version 2.5.2</h3>
+<ul>
+<li>Fixed pagination bubbling issue.</li>
+<li>Fixed pagination issues with autoGeocode and dragSearch combinations.</li>
+</ul>
+<h3>Version 2.5.1</h3>
+<ul>
+<li>Fixed issues with visibleMarkersList and location list background colors and selection.</li>
+</ul>
+<h3>Version 2.5.0</h3>
+<ul>
+<li>Added new dragSearch setting which performs a new search when the map is dragged when enabled.</li>
+<li>Added new geocodeID setting so that the HTML geocoding API can be triggered by a button instead of firing automatically.</li>
+<li>Fixed issues with no results where clicking the marker would display data from the previous result and clicking the location list item would throw an error.</li>
+<li>Merged in pull request from <a href="https://github.com/hawkmeister">hawkmeister</a> with update to bower.json file with main property.</li>
+<li>Merged in pull request from <a href="https://github.com/hyperTwitch">hyperTwitch</a> with fixes for using fullMapStartListLimit in combination with a different store limit.</li>
+<li>Updated jQuery references to the latest version.</li>
+</ul>
+<h3>Version 2.4.2</h3>
+<ul>
+<li>Fixed issue with new full map start location list limit where clicking on a marker that didn't have a list item<br />
+displayed caused an error.</li>
+<li>Fixed issue with settings combination of inline directions and default location.</li>
+<li>Reverted change to new list limit so that it's always applied with full map start enabled.</li>
+</ul>
+<h3>Version 2.4.1</h3>
+<ul>
+<li>Changed new full map start list limit so that it's only applied on the initial load.</li>
+<li>Fixed issue with new autocomplete setting where search was firing twice.</li>
+</ul>
+<h3>Version 2.4.0</h3>
+<ul>
+<li>Added new selected marker image options to highlight clicked marker.</li>
+<li>Added Google Places autocomplete option and example file.</li>
+<li>Added full map start location list limit setting.</li>
+</ul>
+<h3>Version 2.3.3</h3>
+<ul>
+<li>Removed code that temporarily hid the map and results, when there are no results, in favor of just displaying the no<br />
+results message and empty map.</li>
+</ul>
+<h3>Version 2.3.2</h3>
+<ul>
+<li>Tweaked list label width styling.</li>
+</ul>
+<h3>Version 2.3.1</h3>
+<ul>
+<li>Added preventative styling to inline directions panel table.</li>
+<li>Switched to unitless line-heights.</li>
+</ul>
+<h3>Version 2.3.0</h3>
+<ul>
+<li>Added fullMapStartBlank option to show a blank map without any locations initially. Set this setting to an integer,<br />
+which will be applied as the initial Google Maps zoom value and will then fall back to the mapSettings zoom level after<br />
+a search is performed.</li>
+<li>Added fullMapStartBlank example file.</li>
+<li>Fixed filters select field styling inconsistency.</li>
+<li>Moved pagination container within map container div in pagination example to avoid confusion when combined with modal option.</li>
+<li>Reworked styling so that all HTML example files are responsive by default.</li>
+<li>Updated map-container ID in all example files with bh-sl prefix.</li>
+</ul>
+<h3>Version 2.2.2</h3>
+<ul>
+<li>Added preventative styling to avoid table conflicts with directions panel.</li>
+<li>Fixed clearMarkers issue with inline directions enabled.</li>
+</ul>
+<h3>Version 2.2.1</h3>
+<ul>
+<li>Updated preventative styling to be more specific to the map container and added max-height img rule.</li>
+</ul>
+<h3>Version 2.2.0</h3>
+<ul>
+<li>Added check for Google Maps API.</li>
+<li>Added Grunt Handlebars task for compiling Handlebars templates from src directory - will add more compatibility in future release.</li>
+<li>Added preventative styling to avoid conflicts with CSS frameworks and resets.</li>
+<li>Default design refresh.</li>
+<li>Fixed bug with inline directions panel that occurred after multiple address submissions.</li>
+<li>Removed sensor parameter from Google Maps API URL as it's no longer needed.</li>
+<li>Switched the default plugin styling from LESS to SASS.</li>
+<li>Updated included Handlebars to v4.0.5.</li>
+</ul>
+<h3>Version 2.1.0</h3>
+<p>Includes contributions from from <a href="https://github.com/GiancarloGomez">Giancarlo Gomez</a>.</p>
+<ul>
+<li>Added ability to pass in array object as dataRaw.</li>
+<li>Added writeDebug console.log helper function for debugging.</li>
+<li>Added sessionStorage option to store user's location when autoGeocode in enabled to prevent multiple lookups per session.</li>
+<li>Fixed bug with inline directions panel that occurred after multiple address submissions.</li>
+<li>Updated processForm method form field variables with empty string fallback values.</li>
+</ul>
+<h3>Version 2.0.9</h3>
+<ul>
+<li>Fixed issue when using catMarkers setting and not setting a location's category resulted in an error.</li>
+</ul>
+<h3>Version 2.0.8</h3>
+<ul>
+<li>Changed infowindow and location list templates so that the comma is added if the city is available.</li>
+<li>Fixed issue with inline directions where &quot;null&quot; was prepended to the destination address.</li>
+<li>Fixed close directions bug where close icon couldn't be clicked more than two times.</li>
+<li>Fixed bug where form wasn't overriding query string parameters.</li>
+<li>Updated processForm method to accept max distance query string parameter.</li>
+<li>Updated processForm method to use existing origin data if it's present and matches to avoid unnecessary geocode<br />
+requests.</li>
+<li>Updated max distance check to less than or equal to the selected distance vs. just less than.</li>
+<li>Updated regionID description in options.md for clarity.</li>
+<li>Updated formEventHandler method to prevent ASP.net form submission on keydown instead of keyup.</li>
+<li>Updated mapSettings description in options.md to highlight that zoom can be set to 0 for automatic centering and zooming.</li>
+</ul>
+<h3>Version 2.0.7</h3>
+<ul>
+<li>Fixed bug where reverse geocoding wasn't passing the origin to the templates (autogeocode and default location),<br />
+causing incorrect direction links.</li>
+<li>Updated location list directions link to use https.</li>
+</ul>
+<h3>Version 2.0.6</h3>
+<ul>
+<li>Added the option to filter data exclusively rather than inclusively with the exclusiveFiltering setting.</li>
+<li>Added callbackFilters that fires when a filter is changed and returns the filter values if needed.</li>
+<li>Added dataRaw option to use raw KML, XML or JSON data instead of the AJAX call.</li>
+<li>Added basic raw data example rawdata-example.php file.</li>
+<li>Added visibleMarkersList option that updates the location list to only display data from the markers that are curently<br />
+displayed on the map.</li>
+<li>Changed the distance error functionality so that the map centers and zooms automatically and all locations are<br />
+displayed on the map.</li>
+<li>Fixed issue with fullMapStart and inlineDirections setting combination.</li>
+<li>Fixed issue with global olat and olng variables not being set with autoGeocode setting enabled.</li>
+<li>Fixed issue with maxDistance and autoGeocode setting combination.</li>
+</ul>
+<h3>Version 2.0.5</h3>
+<ul>
+<li>Fixed typo with originMarker setup.</li>
+<li>Made the originMarkerDim setting optional when setting a custom origin marker image - defaults to 32px by 32px.</li>
+<li>Removed geocodeErrorAlert language option and switched error alerts to custom exceptions so users aren't shown<br />
+multiple alerts.</li>
+<li>Fixed bug with inline directions where close icon wasn't being removed on page reload.</li>
+<li>Added callbackListClick that fires when a list element is clicked.</li>
+<li>Added callbackMarkerClick that fires when a map marker is clicked.</li>
+</ul>
+<h3>Version 2.0.4</h3>
+<ul>
+<li>Fixed bug with maxDistance and pagination setting combination. The last page of of the pagination results was set to<br />
+use the locationsPerPage setting instead of the remaining number, which could have resulted in the plugin trying to<br />
+load undefined locations.</li>
+<li>Fixed bugs with googleGeocode and reverseGoogleGeocode methods in which references to &quot;this&quot; were undefined.</li>
+</ul>
+<h3>Version 2.0.3</h3>
+<ul>
+<li>Fixed bug with maxDistance setting - updated locationsSetup method so that the locationset array uses array.push<br />
+instead of incrementing via a passed in parameter, which was causing undefined array elements and causing errors.</li>
+<li>Removed testing line from maxdistance-example.html that was left in.</li>
+</ul>
+<h3>Version 2.0.2</h3>
+<ul>
+<li>Updated the Handlebars.compile calls when using the inline template options to include the ID hash so that it's<br />
+consistent with the other ID settings.</li>
+<li>Fixed incorrect callback call in the modalClose method - callbackModalOpen to callbackModalClose.</li>
+<li>Added callbackModalReady that fires when the the content of the modal is generated.</li>
+<li>Fixed markerImg setting - previously threw error if markerDim wasn't set.</li>
+</ul>
+<h3>Version 2.0.1</h3>
+<ul>
+<li>Quick fix to remove a dupicate copyright notice in dist/ file. Copyright was removed from src/jquery.storelocator.js<br />
+file to prevent duplication with the Grunt Banner task.</li>
+</ul>
+<h3>Version 2.0.0</h3>
+<p>Version 2 is a complete rewrite of the plugin based on the &quot;basic&quot; plugin pattern of the<br />
+<a href="http://jqueryboilerplate.com/">jQuery Boilerplate</a>. The overall file structure has changed, several of the <a href="options.md">plugin<br />
+settings</a> have changed and all of the CSS is now prefixed to avoid potential collisions. In other words,<br />
+you're not going to be able to simply replace the main plugin file to upgrade to the latest version. I've been working<br />
+on this update off and on for the past six months, so a lot has changed. I've also added many new features based on the most common requests I've received. The following list doesn't cover everything that's new but all of the important items to note:</p>
+<ul>
+<li><a href="http://gruntjs.com/">Grunt</a> is now utilized to minify and compile the plugin and CSS. You only need to worry about running this if you're doing extensive modifications or are interested in submitting a pull request.</li>
+<li>Plugin file structure and programming pattern have been reworked to follow the <a href="https://github.com/jquery-boilerplate/jquery-patterns/blob/master/patterns/jquery.basic.plugin-boilerplate.js">basic jQuery Boilerplate pattern</a></li>
+<li>Many of the methods are public and can be called as needed</li>
+<li>Google Maps settings are now exposed as a setting. Instead of trying to modify the plugin to make Google Maps settings changes simply use the mapSettings option to override.</li>
+<li>Added inline directions option</li>
+<li>Added multi-group live filtering via regex for quick category, etc. filtering.</li>
+<li>Added option to search locations by name</li>
+<li>Added option to set custom markers by category</li>
+<li>Added option for paginating results</li>
+<li>Added responsive Bootstrap example</li>
+<li>Added region biasing setting to handle region/country select field</li>
+<li>Added coordinates and address (user input) to primary AJAX GET request for better back-end integration</li>
+<li>Added option to check for query string parameters</li>
+</ul>
+<h3>Version 1.4.9</h3>
+<p>More contributions from <a href="https://github.com/ollea">Mathieu Boillat</a> and <a href="https://github.com/JimmyRittenborg">Jimmy Rittenborg</a> in addition to a few style updates:</p>
+<ul>
+<li>Store the map object into the jQuery object in order to retrieve it by calling $object.data('map').</li>
+<li>Possibility to add custom variables in locations</li>
+<li>If 'distance' variable is set in location, do not calculate it</li>
+<li>Enabling the new Google Maps [<a href="https://developers.google.com/maps/documentation/javascript/basics#VisualRefresh](visual">https://developers.google.com/maps/documentation/javascript/basics#VisualRefresh](visual</a> refresh)</li>
+<li>Replaced submit image button image with button tag and CSS3</li>
+<li>Overrode new infowindow Roboto font for consistent style</li>
+<li>Removed icon shadows because they are no longer work in the upcoming version of Google Maps: see [<a href="https://developers.google.com/maps/documentation/javascript/basics#VisualRefresh](Changes">https://developers.google.com/maps/documentation/javascript/basics#VisualRefresh](Changes</a> in the visual refresh section)</li>
+<li>Changed &quot;locname&quot; to &quot;name&quot; for each location in the JSON file to match other location data types and to avoid renaming</li>
+<li>Simplified some parts of the code</li>
+</ul>
+<h3>Version 1.4.8</h3>
+<p>This update is made up of contributions from <a href="https://github.com/ollea">Mathieu Boillat</a> and <a href="https://github.com/JimmyRittenborg">Jimmy Rittenborg</a>:</p>
+<ul>
+<li>Added the possibility to set the 'storeLimit' option to -1, which means unlimited</li>
+<li>Added the possibility to set the 'distanceAlert' option to -1, which means disable distance alert</li>
+<li>Added little checks to only format 'web' variable when it is not null otherwise javascript would gives an error</li>
+<li>Possibility to add custom variables in locations</li>
+<li>If 'distance' variable is set in location, do not calculate it</li>
+<li>Simplified some parts of the code</li>
+<li>If noForm is true, only simulate the submit when the field is actually in focus</li>
+</ul>
+<h3>Version 1.4.7</h3>
+<p>Added ability to feature locations so that they always show at the top of the location list. To use, set the featuredLocations option to true and add featured=&quot;true&quot; to featured locations in your XML or JSON locations data.</p>
+<h3>Version 1.4.6</h3>
+<p>Fixed a bug where infowindows wouldn't open if the map div was changed.</p>
+<h3>Version 1.4.5</h3>
+<p>A minor update that includes the latest versions of jQuery and Handlebars, two new location variables and some clean-up. </p>
+<ul>
+<li>Added email and country variables for locations</li>
+<li>Updated included Handlebars version to v1.0.0</li>
+<li>Updated jQuery call to v1.10.1</li>
+<li>Some bracket clean-up</li>
+</ul>
+<h3>Version 1.4.4</h3>
+<p>This update includes a bug fix for form re-submissions that was most apparent with the maximum distance example. It also includes a new jsonpCallback setting that was submitted by quayzar.</p>
+<ul>
+<li>Moved markers array declaration up to line 115</li>
+<li>Added a reset function that resets both the locationset and markers array and resets the list click event handler</li>
+<li>Includes quayzar's jsonpCallback callback</li>
+</ul>
+<h3>Version 1.4.3</h3>
+<p>A minor update with some clean up and additional language options.</p>
+<p><strong>Additions:</strong></p>
+<ul>
+<li>Added several options for messaging so they can be easily translated into other languages</li>
+<li>Added event namespacing</li>
+<li>Added category to location variables</li>
+</ul>
+<p><strong>Fixes:</strong></p>
+<ul>
+<li>The distance error would only display &quot;miles&quot; in the alert. It will now show miles or kilometers depending on what the lengthUnit option is set to. </li>
+</ul>
+<h3>Version 1.4.2</h3>
+<p>This is another minor patch with a few important fixes and one addition. The plugin has also been submitted to the official <a href="http://plugins.jquery.com/">jQuery plugin registry</a>, which is finally back online.</p>
+<p><strong>Additions:</strong></p>
+<ul>
+<li>Added a &quot;loading&quot; option, which displays a loading gif next to the search button if set to true</li>
+<li>Added missing modal window callback functions</li>
+</ul>
+<p><strong>Fixes:</strong></p>
+<ul>
+<li>The locationset array wasn't being reset on re-submission, which was a more obvious problem when trying to use the maxDistance option. Accidentally removed in 1.4.1.</li>
+<li>When using the fullMapStart option the map wouldn't center and zoom on closest points after form submission</li>
+<li>Using the fullMapStart and maxDistance options together would cause errors</li>
+<li>Wrapped template loading and the rest of the script in separate functions to ensure that the template files are loaded before the rest of the script runs</li>
+<li>Changed all modal window DIVs to use options for full customization. I thought about having a third template for the modal but it seems like overkill.</li>
+<li>Updated the jQuery version in all the example files to 1.9.1 and switched the source to use the Media Temple CDN version because Google is taking too long to update their version. </li>
+</ul>
+<p>Note that if you try to use the minified version of jQuery 1.9.0 the plugin will error out in Internet Explorer due to the bug described in <a href="http://bugs.jquery.com/ticket/13315">ticket 13315</a>.</p>
+<h3>Version 1.4.1</h3>
+<p>This is a minor patch to switch array declarations to a <a href="http://jsperf.com/new-array-vs-vs-array">faster method</a>, fix line 682 to target with the loc-list setting instead of the div ID, and remove<br />
+a duplicate locationset declaration on line 328. </p>
+<h3>Version 1.4</h3>
+<p>This is a large update that has many updates and improvements. It’s very important to note that the plugin now requires the <a href="http://handlebarsjs.com">Handlebars</a> template engine. I made this change so that the data that’s displayed in the location list and the infowindows can be easily customized. I also wanted to separate the bulk of the layout additions from the main plugin file. Handlebars pretty slick, will read Mustache templates, and the built-in helpers can really come in handy. Depending on what your data source is, 2 of the 4 total templates will be used (KML vs XML or JSON) and there are options to set the paths of each template if you don’t want them in the default location. If you’re developing something for mobile devices the templates can be pre-compiled for even faster loading. Additionally, I’d also like to note that it probably makes more sense to use KML now as the data source over the other options but I’m definitely leaving XML and JSON support in. XML is still the default datatype but I may switch it to KML in the future.</p>
+<h4>New features:</h4>
+<p><strong>Kilometers option</strong><br />
+This was a no-brainer. You could make the change without too much trouble before but I thought I’d make it easier for the rest of the world.</p>
+<p><strong>Origin marker option</strong><br />
+If you’d like to show the origin point, the originMarker option should be set to true. The default color is blue but you can also change that with the originpinColor option. I’m actually not positive how many colors Google has available but I know red, green and blue work - I would just try the color you want to see if it works.</p>
+<p><strong>KML support</strong><br />
+Another obvious add-on. If you’d like to use this plugin with more customized data this would be the method I’d recommend because the templates are simplified to just name and description. So, you could put anything in the descriptions and not have to worry about line by line formatting. This method also allows you to create a map with Google “My Maps” and export the KML for use with this plugin. </p>
+<p><strong>Better JSONP support and 5 callbacks</strong><br />
+Thanks to “Blackout” for passing these additions on. It should make working with JSONP easier and the callbacks should be helpful for anyone wanting to hook in add some more advanced customization. </p>
+<p><strong>ASP.net WebForms support</strong><br />
+If you’re woking with ASP.net WebForms, including form tags is obviously going to cause some problems. If you’re in this situation simply set the new noForm option to true and make sure the formContainerDiv setting matches your template.</p>
+<p><strong>Maximum distance option</strong><br />
+You can now easily add a distance dropdown with any options that you’d like. I’ve specifically added a new HTML file as an example. </p>
+<p><strong>Location limit now supports any number</strong><br />
+This plugin was previously limited to only display a maximum of 26 locations at one time (based on the English alphabet). You can now set the limit to whatever you’d like and if there are more than 26 it will switch to just show dot markers with numbers in the location list.</p>
+<p><strong>Open with a full map of all locations</strong><br />
+I had several requests asking how to accomplish this so I’ve added it as an option. There’s a new fullMapStart option that if set to true, will immediately display a map with all locations and the zoom will automatically fit all the markers and center.</p>
+<p><strong>Reciprocal focus</strong><br />
+“JO” was particularly interested in adding this to the plugin and I finally got around to it. To accomplish reciprocal focus I add an ID to each marker and then add that same ID to each list element in the location list taking advantage of <a href="http://ejohn.org/blog/html-5-data-attributes">HTML5’s new data- attributes</a>. I also added some jQuery to make the location list scroll to the correct position when its marker is clicked on the map. </p>
+<p><strong>Notes:</strong></p>
+<p>A few option names have changed, so be sure to take note of the changes before updating your files - especially people using JSON data.</p>
+<p>I've included a basic <a href="http://lesscss.org">LESS</a> stylesheet without variables that can be used in place of the main map.css stylesheet. If you want to use it make any changes you want and compile it or include it in your main LESS file.</p>
+<p>I’m somewhat concerned about the markers for future versions. Google has deprecated the Image Charts API, which is annoying (they always seem to deprecate the best things), but these should still continue to work for a long time. With that said though, my opinion of the look of Google’s markers is that they’re quite ugly. I was working on adding a new custom markers that could be controlled with CSS via the <a href="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/richmarker/examples/richmarker.html">Rich Marker utility</a> but I was unable to get that to work with the marker animations. I was also looking into using <a href="http://mapicons.nicolasmollet.com">Nicolas Mollet’s custom marker icons</a>, which look very nice compared to Google’s, but that project is apparently under maintenance until further notice. If you have suggestions on this concern I’d be interested in hearing them.</p>
+<h3>Version 1.3.3</h3>
+<p>Forgot to remove one of the UTF-8 encoding lines in the Geocoder function. </p>
+<h3>Version 1.3.2</h3>
+<p>Only a few special characters were working with the previous fix. Removed special encoding and all seem to be working now.</p>
+<h3>Version 1.3.1</h3>
+<p>Replaced .serialize with .val on line 169 and added the line directly below, which encodes the string in UTF-8. This should solve special character issues with international addresses. </p>
+<h3>Version 1.3</h3>
+<p>Added directions links to left column location list and HTML5 geolocation API option. Also did a little cleanup.</p>
+<h3>Version 1.2</h3>
+<p>Added JSON compatibility, distance to location list, and an option for a default location. Also updated jQuery calls to the latest version (1.7.2) and removed an unnecessary line in the process form input function.</p>
+<h3>Version 1.1.3</h3>
+<p>Serlialize was targeting any form on the page instead of the specific formID. Thanks to Scott for pointing it out.</p>
+<h3>Version 1.1.2</h3>
+<p>Changed it so that the processing stops if the user input is blank.</p>
+<h3>Version 1.1.1</h3>
+<p>Added a modal window option. Set slideMap to false and modalWindow to true to use it. Also started using the new <a href="http://blog.jquery.com/2011/11/03/jquery-1-7-released/">jQuery .on() event api</a> - make sure you're using jQuery v1.7+ or this won't work.</p>
+<h3>Version 1.0.1</h3>
+<p>Left a couple of console.logs in my code, which was causing IE to hang.</p>
+<h3>Version 1.0</h3>
+<p>This is my first jQuery plugin and the first time I’ve published anything on Github. Let me know if I can improve something or if I’m making some kind of mistake. </p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/google-maps" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>google-maps</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/maps" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>maps</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/303829?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/bjorn2404" target="_blank" id="ownerName" class="sidebar-link">bjorn2404</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">March 11, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 13, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>handlebars (&gt;=4.7.7)</li><li>jquery (^3.6.3)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (~1.6.1)</li><li>grunt-banner (~0.6.0)</li><li>grunt-contrib-clean (^2.0.1)</li><li>grunt-contrib-concat (~2.1.0)</li><li>grunt-contrib-cssmin (~4.0.0)</li><li>grunt-contrib-handlebars (^3.0.0)</li><li>grunt-contrib-jshint (~3.2.0)</li><li>grunt-contrib-qunit (~7.0.0)</li><li>grunt-contrib-sass (^2.0.0)</li><li>grunt-contrib-uglify (~5.2.2)</li><li>grunt-contrib-watch (~1.1.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/303829?v=4" alt="bjorn2404" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bjorn2404" target="_blank" class="text-decoration-none fw-bold">bjorn2404</a><p class="mb-0 text-muted small">379 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4981939?v=4" alt="ollea" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ollea" target="_blank" class="text-decoration-none fw-bold">ollea</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/393774?v=4" alt="JimmyRittenborg" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/JimmyRittenborg" target="_blank" class="text-decoration-none fw-bold">JimmyRittenborg</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/152279?v=4" alt="GiancarloGomez" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/GiancarloGomez" target="_blank" class="text-decoration-none fw-bold">GiancarloGomez</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1156664?v=4" alt="quayzar" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/quayzar" target="_blank" class="text-decoration-none fw-bold">quayzar</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5876001?v=4" alt="hyperTwitch" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hyperTwitch" target="_blank" class="text-decoration-none fw-bold">hyperTwitch</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/129234?v=4" alt="collinanderson" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/collinanderson" target="_blank" class="text-decoration-none fw-bold">collinanderson</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8288971?v=4" alt="drcomix" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/drcomix" target="_blank" class="text-decoration-none fw-bold">drcomix</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2425981?v=4" alt="marcohanke" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/marcohanke" target="_blank" class="text-decoration-none fw-bold">marcohanke</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3905501?v=4" alt="bryant1410" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bryant1410" target="_blank" class="text-decoration-none fw-bold">bryant1410</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/10708276?v=4" alt="k1mmm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/k1mmm" target="_blank" class="text-decoration-none fw-bold">k1mmm</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/12926772?v=4" alt="heldr88" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/heldr88" target="_blank" class="text-decoration-none fw-bold">heldr88</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1834312?v=4" alt="noclat" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/noclat" target="_blank" class="text-decoration-none fw-bold">noclat</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+8 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
