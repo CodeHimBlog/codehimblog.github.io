@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photoset Grid by Stylehatch</title>
+    <meta name="description" content="A simple jQuery plugin to arrange images into a flexible grid, based on Tumblr&#039;s photoset feature.">
+    <meta name="author" content="stylehatch">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/photoset-grid-by-stylehatch.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Photoset Grid</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Photoset Grid",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Photoset Grid</h1>
+        <p id="packageDescription" class="text-muted">A simple jQuery plugin to arrange images into a flexible grid, based on Tumblr&#039;s photoset feature.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">629</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">5.29 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">100</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">1</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/stylehatch/photoset-grid/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/stylehatch/photoset-grid" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Photoset Grid</h1>
+<p>A simple jQuery plugin to arrange images into a flexible grid, based on Tumblr's photoset feature. Originally the plugin was created for our <a href="http://stylehatch.co">Style Hatch</a> Tumblr themes as a way to use the photoset grid in responsive layouts, but we have since expanded it for use outside of the themes.</p>
+<h2>Demo</h2>
+<p>View the <a href="http://stylehatch.github.com/photoset-grid">photoset grid Github page</a> for all the examples or jump straight to the following demos:</p>
+<ul>
+<li><a href="http://stylehatch.github.com/photoset-grid#demo-basic-usage">Basic usage</a></li>
+<li><a href="http://stylehatch.github.com/photoset-grid#demo-custom-options">Custom options</a></li>
+<li><a href="http://stylehatch.github.com/photoset-grid#demo-lightbox">Adding a lightbox viewer</a></li>
+<li><a href="http://stylehatch.github.com/photoset-grid#demo-tumblr">Using photoset grid in a Tumblr theme</a></li>
+</ul>
+<h2>Usage</h2>
+<p>Apply the photo set grid layout to a selected <code>div</code> containing images for the grid.</p>
+<p>The only markup requirement is a <code>data-layout</code> attribute on the selected <code>div</code>. <code>data-layout</code> should contain a string of numbers representing the number of columns for each row.</p>
+<p>If all of the images in a photoset set both a height and a width, the layout of the grid is triggered immediately before all of the images load. Otherwise <a href="https://github.com/desandro/imagesloaded">imagesLoaded</a> is used to wait for all of the images to load in.</p>
+<p><strong>Understanding data-layout:</strong></p>
+<ul>
+<li><code>data-layout="2331"</code> 1st row has 2 images, 2nd row has 3 images, 3rd row has 3 images, and 4th row has 1 image. Total of 9 images.</li>
+<li><code>data-layout="13"</code> 1st row has 1 image and 2nd row has 3 images.</li>
+</ul>
+<h4>Basic Usage</h4>
+<p>Simply call <code>photosetGrid();</code> on a div with the <code>data-layout</code> specified and a number of images inside.</p>
+<h5>HTML:</h5>
+<pre><code>&lt;div class="photoset-grid" data-layout="13"&gt;
+    &lt;img src="image1.jpg"&gt;
+    &lt;img src="image2.jpg"&gt;
+    &lt;img src="image3.jpg"&gt;
+    &lt;img src="image4.jpg"&gt;
+&lt;/div&gt;</code></pre>
+<h5>Javascript:</h5>
+<pre><code>$('.photoset-grid').photosetGrid();</code></pre>
+<h4>Custom Options</h4>
+<p>Beyond the basic usage, you can set a number of optional arguments including callback functions that are useful for adding a lightbox for high resolution images.</p>
+<p><strong>arguments</strong></p>
+<ul>
+<li><code>width</code> - <code>string</code> Change the width that the photo set grid will be rendered at. Default: <code>100%</code> <em>automatically fits its container for responsive layouts</em></li>
+<li><code>layout</code> - <code>string</code> Manually set a string of numbers to specify the number of images each row contains. Default: <code>null</code> <em>generates a stacked layout of one image per row</em></li>
+<li><code>gutter</code> - <code>string</code> Set the pixel width between the columns and rows. Default: <code>0px</code></li>
+<li><code>highresLinks</code> - <code>boolean</code> Set to <code>true</code> to automatically swap out the default image <code>src</code> with the <code>data-highres</code> attribute once the image is wider than <code>lowresWidth</code>. This will also wrap each image with an <code>a</code> vs. <code>div</code> element. Default: <code>false</code></li>
+<li><code>lowresWidth</code> - <code>number</code> Sets the width where the default image is swapped out for the high resolution image. Default: <code>500</code></li>
+<li><code>rel</code> - <code>string</code> This optional setting useful for lightbox viewers applies a common <code>rel</code> attribute to the anchor tags wrapping the images.</li>
+<li><code>borderActive</code> - <code>boolean</code> This optional setting is used to wrap each image with a border. Default: <code>false</code></li>
+<li><code>borderWidth</code> - <code>string</code> Define the width of the border wrapping each image. Default: <code>'5px'</code></li>
+<li><code>borderColor</code> - <code>string</code> Defines the color used for the border wrapping each image. Default: <code>'#000000'</code></li>
+<li><code>borderRadius</code> - <code>string</code> Defines the border radius of the border wrapping each image. Default: <code>'0'</code></li>
+<li><code>borderRemoveDouble</code> - <code>boolean</code> If the gutter is set to 0px (or not specified) then this option can be used to remove double borders that would occur between each row/cell. Default: <code>false</code></li>
+<li><code>onInit</code> - <code>function</code> Define a function to be called when the plugin is initialized.</li>
+<li><code>onComplete</code> - <code>function</code> Define a function to be called when the plugin has completed the grid layout.</li>
+</ul>
+<h5>HTML:</h5>
+<pre><code>&lt;div class="photoset-grid" style="visibility: hidden;"&gt;
+    &lt;img src="image1.jpg" data-highres="highres-image1.jpg"&gt;
+    &lt;img src="image2.jpg" data-highres="highres-image2.jpg"&gt;
+    &lt;img src="image3.jpg" data-highres="highres-image3.jpg"&gt;
+    &lt;img src="image4.jpg" data-highres="highres-image4.jpg"&gt;
+    &lt;img src="image5.jpg" data-highres="highres-image5.jpg"&gt;
+    &lt;img src="image6.jpg" data-highres="highres-image6.jpg"&gt;
+    &lt;img src="image7.jpg" data-highres="highres-image7.jpg"&gt;
+&lt;/div&gt;</code></pre>
+<h5>Javascript:</h5>
+<pre><code>$('.photoset-grid').photosetGrid({
+    layout: '232',
+    width: '100%',
+    gutter: '5px',
+    highresLinks: true,
+    lowresWidth: 300,
+    rel: 'gallery-01',
+    borderActive: true,
+    borderWidth: '3px',
+    borderColor: '#000000',
+    borderRadius: '3px',
+    borderRemoveDouble: false,
+
+    onInit: function(){},
+    onComplete: function(){
+
+        $('.photoset-grid').css({
+            'visibility': 'visible'
+        });
+
+    }
+});</code></pre>
+<h2>Installation</h2>
+<p><strong>Bower package manager</strong></p>
+<p>You can easily install photoset-grid as a <a href="https://github.com/twitter/bower">Bower</a> package by running:</p>
+<pre><code>$ bower install photoset-grid</code></pre>
+<h2>Credits</h2>
+<ul>
+<li><a href="http://github.com/jonathanmoore">Jonathan Moore</a> - <em><a href="http://twitter.com/moore">@moore</a> | <a href="http://jonathanmoore.com">jonathanmoore.com</a></em></li>
+<li><a href="http://muke.me">Mikey Wills</a> - <em><a href="https://twitter.com/mukealicious">@mukealicious</a> | <a href="http://muke.me">muke.me</a></em></li>
+<li><em>Additional</em>
+<ul>
+<li><a href="https://github.com/Darsain">Thomas Sardyha</a> &amp; <a href="https://github.com/desandro/">David DeSandro</a> - <a href="https://github.com/desandro/imagesloaded">desandro/imagesloaded</a></li>
+<li><a href="https://github.com/louisremi/">Louis-Rémi Babé</a> - <a href="https://github.com/louisremi/jquery-smartresize">louisremi/jquery-smartresize</a></li>
+</ul></li>
+</ul>
+<h3>MIT License</h3>
+<p>Copyright (c) 2013 Style Hatch, Inc</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy<br />
+of this software and associated documentation files (the &quot;Software&quot;), to deal<br />
+in the Software without restriction, including without limitation the rights<br />
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br />
+copies of the Software, and to permit persons to whom the Software is<br />
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in<br />
+all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br />
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br />
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br />
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br />
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br />
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br />
+THE SOFTWARE.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/1657363?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/stylehatch" target="_blank" id="ownerName" class="sidebar-link">stylehatch</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">February 19, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 4, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="http://stylehatch.github.com/photoset-grid/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (~0.4.2)</li><li>grunt-contrib-jshint (~0.7.2)</li><li>grunt-contrib-uglify (~0.2.6)</li><li>grunt-contrib-watch (~0.5.3)</li><li>grunt-contrib-connect (~0.5.0)</li><li>grunt-contrib-sass (~0.6.0)</li><li>grunt-notify (latest)</li><li>grunt-contrib-concat (latest)</li><li>grunt-open (latest)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/454095?v=4" alt="jonathanmoore" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jonathanmoore" target="_blank" class="text-decoration-none fw-bold">jonathanmoore</a><p class="mb-0 text-muted small">87 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1085841?v=4" alt="mukealicious" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mukealicious" target="_blank" class="text-decoration-none fw-bold">mukealicious</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2154764?v=4" alt="South-Paw" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/South-Paw" target="_blank" class="text-decoration-none fw-bold">South-Paw</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1625498?v=4" alt="BrockleyJohn" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/BrockleyJohn" target="_blank" class="text-decoration-none fw-bold">BrockleyJohn</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1986068?v=4" alt="wyne" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/wyne" target="_blank" class="text-decoration-none fw-bold">wyne</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/543850?v=4" alt="samjohnduke" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/samjohnduke" target="_blank" class="text-decoration-none fw-bold">samjohnduke</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1170288?v=4" alt="jayaregalinada" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jayaregalinada" target="_blank" class="text-decoration-none fw-bold">jayaregalinada</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+2 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
