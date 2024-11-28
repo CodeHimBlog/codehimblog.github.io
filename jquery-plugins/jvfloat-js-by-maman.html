@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jvfloat.js by Maman</title>
+    <meta name="description" content="jQuery / Zepto plugin to emulate Matt D. Smith&#039;s floating placeholder text">
+    <meta name="author" content="maman">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jvfloat-js-by-maman.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jvfloat.js</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jvfloat.js",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jvfloat.js</h1>
+        <p id="packageDescription" class="text-muted">jQuery / Zepto plugin to emulate Matt D. Smith&#039;s floating placeholder text</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">660</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.31 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">51</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">8</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/maman/JVFloat.js/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/maman/JVFloat.js" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>JVFloat.js - <a href="http://bootsnipp.com/iframe/OvV">Demo</a></h1>
+<p><a href="https://gitter.im/maman/JVFloat.js?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/maman/JVFloat.js" /></a><br />
+<a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/maman/jvfloat.js/trend.png" alt="Bitdeli Badge" /></a>  </p>
+<p>jQuery and Zepto plugin to emulate the behavior of <a href="https://github.com/jverdi/JVFloatLabeledTextField">JVFloatLabeledTextField</a> which based on the concept from <a href="http://dribbble.com/shots/1254439--GIF-Mobile-Form-Interaction?list=users">Matt D. Smith</a>.<br />
+Read more on <a href="http://blog.mahardi.me/2013/10/14/jvfloatjs---the-experiment-with-form-accessbility-and-ux-in-html5/">The Blog post</a></p>
+<p>Please note that JVFloat has very basic styles, and only provide the logic of the implementation. view <a href="https://github.com/maman/JVFloat.js/blob/master/jvfloat.css">jvfloat.css</a> to see the styles used in the default theme. happy hacking! :thumbsup:</p>
+<h1>Docs</h1>
+<p>Before you begins, make sure you have included <a href="http://jquery.com">jQuery</a> or <a href="http://zeptojs.com">Zepto.js</a> on your page.</p>
+<h2>Installation</h2>
+<p>JVFloat consist of two parts, <code>jvfloat.js</code> and <code>jvfloat.css</code>. the minified version of the script also avalaible on <code>jvfloat.min.js</code>. to use JVFloat.js on your page, include JVFloat <em>after</em> you load jQuery or Zeptojs, for example:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;head&gt;
+    ....
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+    &lt;link rel="stylesheet" href="css/jvfloat.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    ....
+    &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script src="js/jvfloat.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre>
+<p>I strongly advise you to modify the default CSS file to reflect your current page, as the default CSS only consists the essential element that makes the placeholder showing and hiding animations. Please read the full CSS documentations avalaible below before you make any edit to the CSS file.  </p>
+<p>Now JVFloat is installable via <a href="http://bower.io">Bower</a>: <code>bower install JVFloat</code></p>
+<h2>Initialization</h2>
+<p>JVFloat can be initialized by calling <code>jvFloat()</code> functions, for example:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script&gt;
+    $('.testBox').jvFloat();
+&lt;/script&gt;</code></pre>
+<p>by default, JVFloat.js won't process <code>submit</code> buttons, and automatically exclude it from being transformed.</p>
+<h2>CSS Documentation</h2>
+<h3><code>.jvFloat</code></h3>
+<p>this section performs styling on the <code>div.jvFloat</code> wrapper around the <code>input</code> generated by the script.<br />
+<strong>Rules that you mustn't remove</strong>: <code>position: relative;</code></p>
+<h3><code>.jvFloat .placeHolder</code></h3>
+<p>this section performs styling on the <code>span.placeHolder</code> element inside <code>div.jvFloat</code>, where the copy of <code>input</code> placeholder text was stored. it's hidden by default.<br />
+<strong>Rules that you mustn't remove</strong>: <code>position: absolute;</code>, <code>display: none;</code>, <code>visibility: hidden;</code>, <code>opacity: 0;</code></p>
+<h3><code>.jvFloat .placeHolder.required</code></h3>
+<p>the styling of the <code>required</code> placeholder. The default color is simply <code>red</code>.</p>
+<h3><code>.jvFloat .placeHolder.active</code></h3>
+<p>the active state of the aftermentioned section. its job are to display the hidden <code>span.placeHolder</code> when users is typing on the <code>input</code>.<br />
+<strong>Rules that you mustn't remove</strong>: <code>display: block;</code>, <code>visibility: visible;</code>, <code>opacity: 1</code></p>
+<h2>Another Notes on CSS</h2>
+<p>JVFloat uses CSS3 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">Transform</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition">Transitions</a> to perform the animations by default. Browsers that doesn't support those will simply doesn't show anything when user typing on the <code>input</code> elements. to fix that, enable/uncomment the <code>legacy</code> rules on the default CSS file, and comment out the <code>CSS3</code> rules.</p>
+<h1>TODO</h1>
+<ul>
+<li><del>Better CSS Animations</del> <em>need your suggestion on this one, btw</em></li>
+<li>Better plugin code</li>
+<li><del>Write better docs</del></li>
+</ul>
+<h1>Changelog</h1>
+<ul>
+<li>23/07/2015 - Merged wiredep and label fixes from @ahmadalfy. bump version.</li>
+<li>15/04/2014 - Release first stable version of JVFloat.js . add ability to redefine CSS on multiline <code>textarea</code>, thanks to @Jackobyte for the pull request. Also now JVFloat has a grunt-based build system.</li>
+<li>31/01/2014 - JVFloat now uses actual <code>&lt;label&gt;</code> elements to improve accessbility. thanks to @MrSnowflake for the pull request</li>
+<li>21/12/2013 - Code refactoring. thanks to @eskimoblood for the pull request</li>
+<li>11/08/2013 - Add animation when user switch to another form element, thanks to @gabceb for the pull request.</li>
+<li>10/23/2013 - Fix the bug where JVFloat process all <code>input</code> elements, including <code>submit</code>, fix the animations &mdash; it's noticeably smoother! &mdash;, add support for <code>required</code> inputs, and I'm adding more detailed documentations.</li>
+<li>10/12/2013 - First Commit</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/491458?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/maman" target="_blank" id="ownerName" class="sidebar-link">maman</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 11, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">September 11, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://blog.mahardi.me/2013/10/14/jvfloatjs---the-experiment-with-form-accessbility-and-ux-in-html5/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (^0.4.5)</li><li>grunt-bump (0.0.15)</li><li>grunt-contrib-jshint (^0.10.0)</li><li>grunt-contrib-uglify (^0.4.0)</li><li>grunt-contrib-watch (^0.6.1)</li><li>grunt-notify (^0.3.0)</li><li>load-grunt-tasks (^0.4.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/491458?v=4" alt="maman" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/maman" target="_blank" class="text-decoration-none fw-bold">maman</a><p class="mb-0 text-muted small">34 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1516860?v=4" alt="MrSnowflake" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/MrSnowflake" target="_blank" class="text-decoration-none fw-bold">MrSnowflake</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/87611?v=4" alt="ahmadalfy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ahmadalfy" target="_blank" class="text-decoration-none fw-bold">ahmadalfy</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1928603?v=4" alt="BenBish" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/BenBish" target="_blank" class="text-decoration-none fw-bold">BenBish</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/11007152?v=4" alt="Jackobyte" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Jackobyte" target="_blank" class="text-decoration-none fw-bold">Jackobyte</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2044291?v=4" alt="roryprimrose" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/roryprimrose" target="_blank" class="text-decoration-none fw-bold">roryprimrose</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/470852?v=4" alt="gabceb" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gabceb" target="_blank" class="text-decoration-none fw-bold">gabceb</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/8518239?v=4" alt="gitter-badger" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gitter-badger" target="_blank" class="text-decoration-none fw-bold">gitter-badger</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+3 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
