@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Form Validator by Victorjonsson</title>
+    <meta name="description" content="[DISCONTINUED] jQuery plugin that makes it easy to validate user input while keeping your  HTML markup clean from javascript code.">
+    <meta name="author" content="victorjonsson">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-form-validator-by-victorjonsson.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Form Validator</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Form Validator",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Form Validator</h1>
+        <p id="packageDescription" class="text-muted">[DISCONTINUED] jQuery plugin that makes it easy to validate user input while keeping your  HTML markup clean from javascript code.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">972</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">2.17 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">474</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">235</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/victorjonsson/jQuery-Form-Validator/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/victorjonsson/jQuery-Form-Validator" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery Form Validator [DISCONTINUED]</h1>
+<p><em>Validation framework that let's you configure, rather than code, your validation logic.</em></p>
+<p>I started writing this plugin back in 2009 and it has given me much joy over the years. But all good things must come to an end and now it's time for this plugin to pull in its oars and go down with history.</p>
+<p><strong>This plugin is no longer being developed!</strong> It supports jQuery v. 1.8 &gt;= 2.2.4. No pull requests will become merged in but feel free to fork and do whatever you like!</p>
+<p><a href="https://travis-ci.org/victorjonsson/jQuery-Form-Validator/builds/"><img src="https://travis-ci.org/victorjonsson/jQuery-Form-Validator.svg" alt="Travis" /></a></p>
+<p><a href="https://www.npmjs.com/package/jquery-form-validator"><img src="https://badge.fury.io/js/jquery-form-validator.svg" alt="npm version" /></a></p>
+<p><em>Usage example</em></p>
+<pre class="prettyprint linenums lang-language"><code>&lt;form action="" method="POST"&gt;
+  &lt;p&gt;
+    Name (4 characters minimum):
+    &lt;input name="user" data-validation="length" data-validation-length="min4" /&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    Birthdate (yyyy-mm-dd):
+    &lt;input name="birth" data-validation="birthdate" /&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    Website:
+    &lt;input name="website" data-validation="url" /&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;input type="submit" /&gt;
+  &lt;/p&gt;
+&lt;/form&gt;
+&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/form-validator/jquery.form-validator.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    $.validate({
+        modules : 'date, security'
+    });
+&lt;/script&gt;</code></pre>
+<h3>Support for HTML5</h3>
+<p>This plugin can serve as a fallback solution for the validation attributes in the HTML5 spec. With the html5 module you can use the following native features:</p>
+<p><strong>Attributes</strong>: require, pattern, maxlength, min, max, placeholder</p>
+<p><strong>Input types</strong>: url, date, time, email, number</p>
+<p><strong>Elements</strong>: Use the element <code>datalist</code> to create input suggestions</p>
+<h3>Default validators and features (no module needed)</h3>
+<ul>
+<li><strong>url</strong></li>
+<li><strong>email</strong></li>
+<li><strong>domain</strong> — <em>domain.com</em></li>
+<li><strong>number</strong> — <em>float/negative/positive/range/step</em></li>
+<li><strong>date</strong> — <em>yyyy-mm-dd (format can be customized, more information below)</em></li>
+<li><strong>alphanumeric</strong> — <em>with support for defining additional characters</em></li>
+<li><strong>length</strong> — <em>min/max/range</em></li>
+<li><strong>required</strong> — <em>no validation except that a value has to be given</em></li>
+<li><strong>custom</strong> — <em>Validate value against regexp</em></li>
+<li><strong>checkboxgroup</strong> — <em>ensure at least 1 checkbox in group has been selected</em></li>
+<li>Show help information automatically when input is focused</li>
+<li>Validate given values immediately when input looses focus.</li>
+<li>Make validation optional by adding attribute data-validation-optional=&quot;true&quot; to the element. This means<br />
+that the validation defined in data-validation only will take place in case a value is given.</li>
+<li>Make validation dependent on another input of type checkbox being checked by adding attribute<br />
+data-validation-if-checked=&quot;name of checkbox input&quot;</li>
+<li>Create input suggestions with ease, no jquery-ui needed</li>
+<li>to apply multiple validators to an input element, separate the validator names using a space (ex: required email)</li>
+</ul>
+<p>Read the documentation for the default features at <a href="#default-validators">#default-validators</a></p>
+<h3>Module: security</h3>
+<ul>
+<li><strong>spamcheck</strong></li>
+<li><strong>confirmation</strong></li>
+<li><strong>creditcard</strong></li>
+<li><strong>CVV</strong></li>
+<li><strong>strength</strong> — <em>Validate the strength of a password</em></li>
+<li><strong>server</strong> — <em>Validate value of input on server side</em></li>
+<li><strong>letternumeric</strong> — <em>Validate that the input value consists out of only letters and/or numbers</em></li>
+<li><strong>recaptcha</strong> - <em>Validate Google <a href="https://www.google.com/recaptcha/intro/index.html">reCaptcha 2</a></em></li>
+</ul>
+<p>Read the documentation for the security module at <a href="#security-validators">#security-validators</a></p>
+<h3>Module: date</h3>
+<ul>
+<li><strong>time</strong> — <em>hh:mm</em></li>
+<li><strong>birthdate</strong> — <em>yyyy-mm-dd, not allowing dates in the future or dates that's older than 122 years (format can be customized, more information below)</em></li>
+</ul>
+<p>Read the documentation for the date module at <a href="#date-validators">#date-validators</a></p>
+<h3>Module: location</h3>
+<ul>
+<li><strong>country</strong></li>
+<li><strong>federatestate</strong></li>
+<li><strong>longlat</strong></li>
+<li>Suggest countries (english only)</li>
+<li>Suggest states in the US</li>
+</ul>
+<p>Read the documentation for the location module at <a href="/#location-validators">#location-validators</a></p>
+<h3>Module: file</h3>
+<ul>
+<li><strong>mime</strong></li>
+<li><strong>extension</strong></li>
+<li><strong>size</strong> (file size)</li>
+<li><strong>dimension</strong> (size dimension and ratio)</li>
+</ul>
+<p>Read the documentation for the file module at <a href="#file-validators">#file-validators</a></p>
+<h3>Module: logic</h3>
+<ul>
+<li><strong>Dependent validation</strong></li>
+<li><strong>Require &quot;one-of&quot;</strong></li>
+</ul>
+<p>Read the documentation for this module at <a href="#logic">/#logic</a></p>
+<h3>Module: sepa</h3>
+<ul>
+<li><strong>IBAN</strong></li>
+<li><strong>BIC</strong></li>
+<li><strong>Sepa</strong></li>
+</ul>
+<p>Read the documentation for this module at <a href="http://www.formvalidator.net/#sepa">http://formvalidator.net/#sepa</a></p>
+<h3>Module: sweden</h3>
+<ul>
+<li><strong>swemob</strong> — <em>validate that the value is a swedish mobile telephone number</em></li>
+<li><strong>swesec</strong> — <em>validate swedish social security number</em></li>
+<li><strong>county</strong> - <em>validate that the value is an existing county in Sweden</em></li>
+<li><strong>municipality</strong> - <em>validate that the value is an existing municipality in Sweden</em></li>
+<li>Suggest county</li>
+<li>Suggest municipality</li>
+</ul>
+<p>Read the documentation for the Swedish module at <a href="http://www.formvalidator.net/#country-specific-validators_sweden">http://formvalidator.net/#sweden-validators</a></p>
+<h3>Module: uk</h3>
+<ul>
+<li><strong>ukvatnumber</strong></li>
+<li><strong>uknin</strong></li>
+<li><strong>ukutr</strong></li>
+</ul>
+<p>Read the documentation for the UK module at <a href="http://www.formvalidator.net/#country-specific-validators_uk">http://formvalidator.net/#uk-validators</a></p>
+<h3>Module: brazil</h3>
+<ul>
+<li><strong>brphone</strong> — <em>Validate a brazilian telephone number</em></li>
+<li><strong>cep</strong></li>
+<li><strong>cpf</strong></li>
+</ul>
+<h3>Module: poland</h3>
+<ul>
+<li><strong>plpesel</strong> - <em>validate polish personal identity number (in Polish identity cards)</em></li>
+<li><strong>plnip</strong> - <em>validate polish VAT identification number</em></li>
+<li><strong>plregon</strong> - <em>validate polish bussiness identity number</em></li>
+</ul>
+<h3>Module: color</h3>
+<ul>
+<li><strong>hex</strong> - <em>validate hex color format</em></li>
+<li><strong>rgb</strong> - <em>validate rgb color format</em></li>
+<li><strong>rgba</strong> - <em>validate rgba color format</em></li>
+<li><strong>hsl</strong> - <em>validate hsl color format</em></li>
+<li><strong>hsla</strong> - <em>validate hsla color format</em></li>
+</ul>
+<h3>Module: sanitation</h3>
+<ul>
+<li><strong>trim</strong></li>
+<li><strong>trimLeft</strong></li>
+<li><strong>trimRight</strong></li>
+<li><strong>upper</strong>  — Convert all letters to upper case</li>
+<li><strong>lower</strong>  — Convert all letters to lower case</li>
+<li><strong>capitalize</strong>  — Convert the first letter in all words to upper case</li>
+<li><strong>insertRight</strong>  — Declare a text that should be inserted at the end of the value, attribute data-sanitize-insert-right</li>
+<li><strong>insertLeft</strong>  — Declare a text that should be inserted at the beginning of the value, attribute data-sanitize-insert-left</li>
+<li><strong>escape</strong>  — Convert &lt; &gt; &amp; ' &quot; to html entities</li>
+<li><strong>strip</strong>  — Comma separated list with words that gets automatically removed</li>
+<li><strong>numberFormat</strong>  — Declare the attribute data-sanitize-number-format with any of the formats described on <a href="http://numeraljs.com/">http://numeraljs.com/</a>. Note that this rule requires that numeral.js is included in the page</li>
+</ul>
+<p>Read the documentation for the sanitation module at <a href="http://formvalidator.net/#data-sanitation">http://formvalidator.net/#data-sanitation</a></p>
+<h2>Writing a custom validator</h2>
+<p>You can use the function <code>$.formUtils.addValidator()</code> to add your own validation function. Here's an example of a validator<br />
+that checks if the input contains an even number.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;form action="" method="POST"&gt;
+    &lt;p&gt;
+        &lt;input type="text" data-validation="even" /&gt;
+    &lt;/p&gt;
+    ...
+&lt;/form&gt;
+&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/form-validator/jquery.form-validator.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+
+    // Add validator
+    $.formUtils.addValidator({
+        name : 'even',
+        validatorFunction : function(value, $el, config, language, $form) {
+            return parseInt(value, 10) % 2 === 0;
+        },
+        errorMessage : 'You have to answer an even number',
+        errorMessageKey: 'badEvenNumber'
+    });
+
+    // Initiate form validation
+    $.validate();
+
+&lt;/script&gt;</code></pre>
+<h3>Required properties passed into $.formUtils.addValidator</h3>
+<p><em>name</em> - The name of the validator, which is used in the validation attribute of the input element.</p>
+<p><em>validatorFunction</em> - Callback function that validates the input. Should return a boolean telling if the value is considered valid or not.</p>
+<p><em>errorMessageKey</em> - Name of language property that is used in case the value of the input is invalid.</p>
+<p><em>errorMessage</em> - An alternative error message that is used if errorMessageKey is left with an empty value or isn't defined<br />
+in the language object. Note that you also can use <a href="http://formvalidator.net/#localization">inline error messages</a> in your form.</p>
+<p>The validation function takes these five arguments:</p>
+<ul>
+<li>value — the value of the input thats being validated</li>
+<li>$el — jQuery object referring to the input element being validated</li>
+<li>config — Object containing the configuration of this form validation</li>
+<li>language — Object with error dialogs</li>
+<li>$form — jQuery object referring to the form element being validated</li>
+</ul>
+<h2>Creating a custom module</h2>
+<p>A &quot;module&quot; is basically a javascript file containing one or more calls to <a href="#writing-a-custom-validator">$.formUtils.addValidator()</a>.<br />
+The module file must be placed in the same directory as <code>jquery.form-validator.min.js</code> if you want it to load automatically via the setup function.</p>
+<p>You can use the method <code>$.formUtils.loadModules</code> if you want to load the module from a custom path.</p>
+<pre class="prettyprint linenums lang-language"><code>$.formUtils.loadModules('customModule otherCustomModule', 'js/validation-modules/');
+$.validate({
+   modules: 'security, date'
+});</code></pre>
+<p>The first argument of <code>$.formUtils.loadModules</code> is a comma separated string with names of module files, without<br />
+file extension.</p>
+<p>The second argument is the path where the module files are located. This argument is optional, if not given<br />
+the module files has to be located in the same directory as the core modules shipped together with this jquery plugin<br />
+(js/form-validator/)</p>
+<h2>Show help information</h2>
+<p>It is possible to display help information for each input. The information will fade in when input is focused and fade out when input looses focus.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;form action="" id="my_form"&gt;
+    &lt;p&gt;
+      &lt;strong&gt;Why not:&lt;/strong&gt;
+      &lt;textarea name="why" data-validation-help="Please give us some more information" data-validation="required"&gt;&lt;/textarea&gt;
+    &lt;/p&gt;
+    ...</code></pre>
+<h2>Fully customizable</h2>
+<p>Read about how to customize this plugin over at <a href="http://formvalidator.net/#configuration">http://formvalidator.net/#configuration</a></p>
+<h3>Validate On Event</h3>
+<p>You can cause an element to be validated upon the firing of an event, by attaching an attribute to the form input element named <code>data-validation-event="click"</code>. When the configuration settings have <code>validateOnEvent : true</code>, the click event will trigger the onBlur validaton for that element. Possible use case: Checkboxes. Instead of waiting for the checkbox to lose focus (blur) and waiting for a validation to occurr, you can specify that elements validation should occur as soon as that checkbox element is clicked.</p>
+<h2>Localization</h2>
+<p>This plugin comes with translations for English, Polish,<br />
+Romanian,<br />
+Danish,<br />
+Norwegian,<br />
+Dutch,<br />
+Czech,<br />
+Catalan,<br />
+Russian,<br />
+Italian,<br />
+French,<br />
+German,<br />
+Swedish and<br />
+Portuguese. You can also choose to override the error<br />
+dialogs yourself. Here you can read more about <a href="http://formvalidator.net/#localization">localization</a></p>
+<h1>Default validators</h1>
+<h3>Answer length (required)</h3>
+<pre><code>&lt;!-- Require an answer (can be applied to all types of inputs and select elements) --&gt;
+&lt;input type="text" data-validation="required"&gt;
+&lt;input type="checkbox" name="agreement" data-validation="required"&gt;
+&lt;select name="answer" data-validation="required"&gt;
+  &lt;option value=""&gt; - - Answer - - &lt;/option&gt;
+  &lt;option&gt;Yes&lt;/option&gt;
+  &lt;option&gt;No&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;!-- Max 100 characters --&gt;
+&lt;input type="text" data-validation="length" data-validation-length="max100"&gt;
+
+&lt;!-- Minimum 20 characters --&gt;
+&lt;input type="text" data-validation="length" data-validation-length="min20"&gt;
+
+&lt;!-- No less than 50 characters and no more than 200 characters --&gt;
+&lt;input type="text" data-validation="length" data-validation-length="50-200"&gt;
+
+&lt;!-- Require that atleast 2 options gets choosen --&gt;
+&lt;select multiple="multiple" size="5" data-validation="length" data-validation-length="min2"&gt;
+  &lt;option&gt;A&lt;/option&gt;
+  &lt;option&gt;B&lt;/option&gt;
+  &lt;option&gt;C&lt;/option&gt;
+  &lt;option&gt;D&lt;/option&gt;
+  &lt;option&gt;E&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+<p>This plugin also supports the attributes &quot;required&quot; and &quot;maxlength&quot; by using the Html5 module.</p>
+<h3>Numbers</h3>
+<pre><code>&lt;!-- Any numerical value --&gt;
+&lt;input type="text" data-validation="number"&gt;
+
+&lt;!-- Only allowing float values --&gt;
+&lt;input type="text" data-validation="number" data-validation-allowing="float"&gt;
+
+&lt;!-- Allowing float values and negative values --&gt;
+&lt;input type="text" data-validation="number" data-validation-allowing="float,negative"&gt;
+
+&lt;!-- Validate float number with comma separated decimals --&gt;
+&lt;input type="text" data-validation="number" data-validation-allowing="float" 
+         data-validation-decimal-separator=","&gt;
+
+&lt;!-- Only allowing numbers from 1 to 100 --&gt;
+&lt;input type="text" data-validation="number" data-validation-allowing="range[1;100]"&gt;
+
+&lt;!-- Only allowing numbers from -50 to 30 --&gt;
+&lt;input type="text" data-validation="number" data-validation-allowing="range[-50;30],negative"&gt;
+
+&lt;!-- Only allowing numbers from 0.05 to 0.5 --&gt;
+&lt;input type="text" data-validation="number" data-validation-allowing="range[0.05;0.5],float"&gt;
+You can also define the decimal separator when initializing the validation.
+
+&lt;p&gt;
+    &lt;strong&gt;Average points&lt;/strong&gt;&lt;br&gt;
+    &lt;input type="text" data-validation="number" data-validation-allowing="float"&gt;
+  &lt;/p&gt;
+  ....
+&lt;/form&gt;
+&lt;script&gt;
+  $.validate({
+    decimalSeparator : ','
+  });
+&lt;/script&gt;</code></pre>
+<p>Inputs of type &quot;number&quot; will also become validated by loading the html5 module.</p>
+<h3>E-mail</h3>
+<pre><code>&lt;input type="text" data-validation="email"&gt;</code></pre>
+<p>Inputs of type &quot;email&quot; will also become validated by loading the html5 module.</p>
+<h3>URL:s</h3>
+<pre><code>&lt;input type="text" data-validation="url"&gt;</code></pre>
+<p>Inputs of type &quot;url&quot; will also become validated by loading the html5 module.</p>
+<h3>Date</h3>
+<pre><code>&lt;!-- Validate date formatted yyyy-mm-dd --&gt;
+&lt;input type="text" data-validation="date"&gt;
+
+&lt;!-- Validate date formatted yyyy-mm-dd but dont require leading zeros --&gt;
+&lt;input type="text" data-validation="date" data-validation-require-leading-zero="false"&gt;
+
+&lt;!-- Validate date formatted dd/mm/yyyy --&gt;
+&lt;input type="text" data-validation="date" data-validation-format="dd/mm/yyyy"&gt;</code></pre>
+<p>See the date module for further validators.</p>
+<h3>Alphanumeric</h3>
+<pre><code>&lt;!-- This input requires an answer that contains only letters a-z and/or numbers --&gt;
+&lt;input type="text" data-validation="alphanumeric"&gt;
+
+&lt;!-- This input requires the same as the one above but it also allows hyphen and underscore --&gt;
+&lt;input type="text" data-validation="alphanumeric" data-validation-allowing="-_"&gt;</code></pre>
+<p>If you want to allow any kind of letters (not only A-Z) you're looking for the letternumeric validator.</p>
+<h3>Checkboxes Group</h3>
+<p>Validate qty of checkboxes in a group (same name) have been checked, using min, max or range. Only the first checkbox element in the group needs to have the validation attributes added.</p>
+<pre><code>&lt;!-- Require checkboxes in this group, min1 --&gt;
+&lt;input type="checkbox" name="newsletters[]" data-validation="checkbox_group" data-validation-qty="min1"&gt;
+&lt;!-- Require checkboxes in this group, max3 --&gt;
+&lt;input type="checkbox" name="newsletters[]" data-validation="checkbox_group" data-validation-qty="max3"&gt;
+&lt;!-- Require checkboxes in this group, min1, max4 --&gt;
+&lt;input type="checkbox" name="newsletters[]" data-validation="checkbox_group" data-validation-qty="1-4"&gt;
+If your checkboxes group is generated by a server-side script and you don't want to add the validation attributes to each input element, you can use this javascript snippet before calling the validatorLoad() function
+
+&lt;!-- Add validation attributes to first input element in
+ checkboxes group, before loading validator --&gt;
+&lt;script&gt;
+$("[name='newsletters[]']:eq(0)")
+  .valAttr('','validate_checkbox_group')
+  .valAttr('qty','1-2')
+  .valAttr('error-msg','chose 1, max 2');
+&lt;/script&gt;
+Regexp
+&lt;!-- This input would only allow lowercase letters a-z --&gt;
+&lt;input type="text" data-validation="custom" data-validation-regexp="^([a-z]+)$"&gt;</code></pre>
+<p>This plugin also supports the attribute &quot;pattern&quot; by using the Html5 module.</p>
+<h3>Character count down</h3>
+<pre><code>&lt;p&gt;
+    History (&lt;span id="maxlength"&gt;50&lt;/span&gt; characters left)
+    &lt;textarea rows="3" id="area"&gt;&lt;/textarea&gt;
+  &lt;/p&gt;
+&lt;script&gt;
+  $('#area').restrictLength($('#maxlength'));
+&lt;/script&gt;</code></pre>
+<h3>Make validation optional</h3>
+<pre><code>&lt;!-- This input will only be validated if a value is given --&gt;
+&lt;input type="text" data-validation="url" data-validation-optional="true"&gt;</code></pre>
+<p>You can also use the logic module if you want the validation of an input depend on another input having a value.</p>
+<h3>Display help text</h3>
+<p>It is possible to display help information beside each input. The text will fade in when the input gets focus on and fade out when the input looses focus. The container for the help text will have the class form-help. If you don't want this feature you can read the setup guide on how to disable it.</p>
+<pre><code>&lt;form action="" id="some-form"&gt;
+    &lt;p&gt;
+      &lt;strong&gt;Why not?&lt;/strong&gt;
+      &lt;input name="why" data-validation-help="Please give us some more information"&gt;
+    &lt;/p&gt;
+    ...
+  &lt;/form&gt;</code></pre>
+<h3>Validate inputs when blurred</h3>
+<p>By default each input will become validated immediately when the input looses focus. If you don't want this feature you can read the setup guide on how to disable it.</p>
+<h3>Input suggestions</h3>
+<p>There are two ways you can give suggestions to the user while the user types.</p>
+<p>1) Using attribute data-suggestions</p>
+<pre><code>&lt;p&gt;
+    What's your favorite color?
+    &lt;input name="color" data-suggestions="White, Green, Blue, Black, Brown"&gt;
+  &lt;/p&gt;
+  ...
+&lt;/form&gt;</code></pre>
+<p>2) Using $.formUtils.suggest()</p>
+<pre><code>&lt;script&gt;
+  var largeArray = [];
+  largeArray.push('Something');
+  largeArray.push('Something else');
+  ...
+
+  $.formUtils.suggest( $('#the-input'), largeArray );
+&lt;/script&gt;</code></pre>
+<p>This plugin also supports the data-list element by using the Html5 module.</p>
+<p>Ignoring characters<br />
+You can tell any validator to ignore certain characters by using the attribute data-validation-ignore (comma separated list).</p>
+<pre><code>&lt;p&gt;
+  How much do you want to donate?
+  &lt;!-- Make it optional to end the amount with a dollar-sign --&gt;
+  &lt;input name="color" data-validation="number" data-validation-ignore="$"&gt;
+&lt;/p&gt;</code></pre>
+<h2>Security validators&lt;</h2>
+<h3>Password confirmation</h3>
+<p>This validator can be used to validate that the values of two inputs are the same. The first input should have a name suffixed with <em>_confirmation</em> and the second should have the same name but without the suffix.</p>
+<pre><code>&lt;p&gt;
+    Password (at least 8 characters)
+    &lt;input name="pass_confirmation" data-validation="length" data-validation-length="min8"&gt;
+
+    Confirm password
+    &lt;input name="pass" data-validation="confirmation"&gt;
+&lt;/p&gt;</code></pre>
+<pre><code>&lt;p&gt;
+    E-mail
+    &lt;input name="user-email" data-validation="email" /&gt;
+
+    Repeat e-mail
+    &lt;input name="repeat" data-validation="confirmation" data-validation-confirm="user-email" /&gt;
+&lt;/p&gt;</code></pre>
+<h3>Password strength</h3>
+<p>Use this validator to make sure that your user has a strong enough password. Set attribute <code>data-validation-strength</code> to 1, 2 or 3 depending on how strong password you require.</p>
+<p>If you want the strength of the password to be displayed while the user types you call <code>displayPasswordStrength()</code> in the end of the form.</p>
+<pre><code>&lt;form action=""&gt;
+    &lt;p&gt;
+        &lt;strong&gt;Password:&lt;/strong&gt;
+        &lt;input name="pass" type="password" break=""
+                data-validation="strength" break="" data-validation-strength="2"&gt;
+    &lt;/p&gt;
+    ...
+&lt;/form&gt;
+
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+$.validate({
+    modules : 'security',
+    onModulesLoaded : function() {
+        var optionalConfig = {
+            fontSize: '12pt',
+            padding: '4px',
+            bad : 'Very bad',
+            weak : 'Weak',
+            good : 'Good',
+            strong : 'Strong'
+        };
+
+        $('input[name="pass"]').displayPasswordStrength(optionalConfig);
+    }
+});
+&lt;/script&gt;</code></pre>
+<h3>Server side validation</h3>
+<p>By using this validator you can validate the value given by the user on the server before the form gets submitted. The validation function will send a POST request to the URL declared in <code>data-validation-url</code>. The argument posted to the URL will have the same name as the input being validated.</p>
+<p>The form will get the class <em>validating-server-side</em> while the server is being requested.</p>
+<p>The response from the validation script must be a JSON formatted object, containing the properties &quot;valid&quot; and &quot;message&quot;.</p>
+<pre><code>{
+    "valid" : true|false,
+    "message" : "String with text that should be displayed as error message"
+}</code></pre>
+<h4>Form</h4>
+<pre><code>&lt;form action=""&gt;
+    &lt;p&gt;
+        &lt;strong&gt;User name:&lt;/strong&gt;
+        &lt;input name="user" data-validation="server" data-validation-url="/validate-input.php"&gt;
+    &lt;/p&gt;
+    ...
+&lt;/form&gt;</code></pre>
+<h4>/validate-input.php</h4>
+<pre><code>&lt;?php
+$response = array(
+    'valid' =&gt; false,
+    'message' =&gt; 'Post argument "user" is missing.'
+);
+
+if( isset($_POST['user']) ) {
+    $userRepo = new UserRepository( DataStorage::instance() );
+    $user = $userRepo-&gt;loadUser( $_POST['user'] );
+
+    if( $user ) {
+        // User name is registered on another account
+        $response = array('valid' =&gt; false, 'message' =&gt; 'This user name is already registered.');
+    } else {
+        // User name is available
+        $response = array('valid' =&gt; true);
+    }
+}
+echo json_encode($response);</code></pre>
+<p><strong>Modifying the server request</strong></p>
+<p>The parameter containing the input value, sent to the server, will by default have the same name as the input. You can however set your own parameter name by using the attribute <code>data-validation-param-name</code>. You can also send along other parameters to the server by using the attribute <code>data-validation-req-params</code>.</p>
+<pre><code>&lt;?php
+  $json = json_encode(array('user'=&gt;$user-&gt;get('ID')));
+?&gt;
+&lt;p&gt;
+  &lt;strong&gt;E-mail:&lt;/strong&gt;
+  &lt;input type="email" name="check-email" data-validation="server"
+              data-validation-url="/validate-form-input.php"
+              data-validation-param-name="email"
+              data-validation-req-params="&lt;?php echo $json ?&gt;" /&gt;
+&lt;/p&gt;</code></pre>
+<h3>Credit card validation</h3>
+<p>This validator makes it possible to validate any of the credit cards VISA, Mastercard, Diners club, Maestro, CJB, Discover and American express</p>
+<pre><code>&lt;-- Accept credit card number from Visa, Mastercard and American Express --&gt;
+&lt;p&gt;
+    Credit card number
+    &lt;input data-validation="creditcard" data-validation-allowing="visa, mastercard, amex" /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    Security code (cvv)
+    &lt;input name="cvv" data-validation="cvv" /&gt;
+&lt;/p&gt;</code></pre>
+<p>You can also let the user choose a credit card and programmatically change the allowed credit card on the input of the card number.</p>
+<pre><code>&lt;p&gt;
+    Credit card
+    &lt;select name="credit-card" id="credit-card"&gt;
+        &lt;option value="visa"&gt;VISA&lt;/option&gt;
+        &lt;option value="mastercard"&gt;Mastercard&lt;/option&gt;
+        &lt;option value="amex"&gt;American express&lt;/option&gt;
+        &lt;option value="diners_club"&gt;Diners club&lt;/option&gt;
+        &lt;option value="discover"&gt;Discover&lt;/option&gt;
+        &lt;option value="cjb"&gt;CJB&lt;/option&gt;
+        &lt;option value="maestro"&gt;Maestro&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    Credit card number
+    &lt;input name="creditcard_num" data-validation="creditcard" data-validation-allowing="visa" /&gt;
+&lt;/p&gt;
+...
+&lt;/div&gt;
+&lt;script&gt;
+$.validate({
+    modules : 'security',
+    onModulesLoaded : function() {
+        // Bind card type to card number validator
+        $('#credit-card').on('change', function() {
+            var card = $(this).val();
+            $('input[name="creditcard_num"]').attr('data-validation-allowing', card);
+        });
+    }
+});
+&lt;/script&gt;</code></pre>
+<h3>Simple captcha</h3>
+<pre><code>&lt;?php
+session_start();
+if( isset($_POST['captcha']) &amp;&amp; isset($_SESSION['captcha'])) {
+    if( $_POST['captcha'] != ($_SESSION['captcha'][0]+$_SESSION['captcha'][1]) ) {
+        die('Invalid captcha answer');  // client does not have javascript enabled
+    }
+    // process form data
+    ...
+}
+$_SESSION['captcha'] = array( mt_rand(0,9), mt_rand(1, 9) );
+?&gt;
+&lt;form action=""&gt;
+    &lt;p&gt;
+        What is the sum of &lt;?=$_SESSION['captcha'][0]?&gt; + &lt;?=$_SESSION['captcha'][1]?&gt;?
+        (security question)
+        &lt;input name="captcha" data-validation="spamcheck"
+                    data-validation-captcha="&lt;?=( $_SESSION['capthca'][0] + $_SESSION['captcha'][1] )?&gt;"/&gt;
+    &lt;/p&gt;
+    &lt;p&gt;&lt;input type="submit" /&gt;&lt;/p&gt;
+&lt;/form&gt;</code></pre>
+<h3>Google reCAPTCHA</h3>
+<p>Use this validator if wanting to integrate the Google service reCAPTCHA.</p>
+<pre><code>&lt;p&gt;
+    &lt;input  data-validation="recaptcha" data-validation-recaptcha-sitekey="[RECAPTCHA_SITEKEY]"&gt;
+&lt;/p&gt;</code></pre>
+<p>You can also use the setup function to configure the recaptcha service.</p>
+<pre><code>$.validate({
+    reCaptchaSiteKey: '...',
+    reCaptchaTheme: 'light'
+});</code></pre>
+<h3>Letters and numbers</h3>
+<p>By using the validator <code>letternumeric</code> you can validate that given input value only contains letters and/or numbers. This validator allows any type of character in contrast to the <a href="#default-validators_alphanumeric">alphanumeric</a> validator, which only allows letters A-Z.</p>
+<pre><code>&lt;!-- This input requires an answer that contains only letters and/or numbers --&gt;
+&lt;input type="text" data-validation="letternumeric"&gt;
+
+&lt;!-- This input requires the same as the one above but it also allows hyphen and underscore --&gt;
+&lt;input type="text" data-validation="alphanumeric" data-validation-allowing="-_"&gt;</code></pre>
+<h2>Date validators</h2>
+<h3>Birthdate</h3>
+<p>This validator is the same as the default <a href="#default-validators_dates">date validator</a> except that it only allows past dates and dates that is not older than 120 years.</p>
+<pre><code>&lt;!-- Validate birth date formatted yyyy-mm-dd --&gt;
+&lt;input type="text" data-validation="birthdate"&gt;
+
+&lt;!-- Validate birthdate formatted yyyy-mm-dd but dont require leading zeros --&gt;
+&lt;input type="text" data-validation="birthdate" data-validation-require-leading-zero="false"&gt;
+
+&lt;!-- Validate birth date formatted dd/mm/yyyy --&gt;
+&lt;input type="text" data-validation="birthdate" data-validation-format="dd/mm/yyyy"&gt;</code></pre>
+<h2>Time</h2>
+<pre><code>&lt;!-- Validate time formatted HH:mm --&gt;
+&lt;input type="text" data-validation="time"&gt;</code></pre>
+<h2>Location validators</h2>
+<h3>Country</h3>
+<pre><code>&lt;!-- Validate country (english only) --&gt;
+&lt;input type="text" data-validation="country"/&gt;</code></pre>
+<h3>State (US)</h3>
+<pre><code>&lt;!-- Validate US state --&gt;
+&lt;input type="text" data-validation="federatestate"/&gt;</code></pre>
+<h3>Longitude and Latitude</h3>
+<pre><code>&lt;!-- Validate longitude and latitude (eg 40.714623,-74.006605) --&gt;
+&lt;input type="text" data-validation="longlat"/&gt;</code></pre>
+<h3>Suggest country/state</h3>
+<p>By using this function you'll make it easier for your visitor to input a country or state.</p>
+<pre><code>    &lt;form action=""&gt;
+        ...
+        &lt;p&gt;
+            &lt;strong&gt;Which country are you from?&lt;/strong&gt;
+            &lt;input name="user_country" data-validation="country"/&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;strong&gt;Which state do you live in?&lt;/strong&gt;
+            &lt;input name="user_home_state" data-validation="federatestate"/&gt;
+        &lt;/p&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+$.validate({
+    modules : 'location',
+    onModulesLoaded : function() {
+        $('input[name="user_country"]').suggestCountry();
+        $('input[name="user_home_state"]').suggestState();
+    }
+});
+&lt;/script&gt;</code></pre>
+<h2>File validators</h2>
+<h3>File size</h3>
+<p>This validation is only supported by Internet Explorer 10, Mozilla FireFox v &gt;= 3.6 and any of the later versions of webkit based browsers.</p>
+<pre><code>&lt;!-- Validate that file isn't larger than 512 kilo bytes --&gt;
+&lt;input type="file" data-validation="size" data-validation-max-size="512kb" /&gt;
+
+&lt;!-- Validate that file isn't larger than 3 mega bytes --&gt;
+&lt;input type="file" data-validation="size" data-validation-max-size="3M" /&gt;</code></pre>
+<h3>File type</h3>
+<p>This validation will fall back on checking the file extension in older browsers. In modern browsers the validation will check that any of the extensions in <code>data-validation-allowing</code> exists in the mime type declaration of the file. This means that <code>data-validation-allowing=&quot;pdf&quot;</code> will work in both modern browsers (checking against &quot;application/pdf&quot;) and older browsers (checking the file extension &quot;.pdf&quot;).</p>
+<pre><code>&lt;!-- Validate that file is an image of type JPG, GIF or PNG and not larger than 2 mega bytes --&gt;
+&lt;input type="file" data-validation="mime size" break0="" data-validation-allowing="jpg, png, gif" break=""
+       data-validation-max-size="2M" /&gt;
+
+&lt;!-- Validate that a file is given and that it has .txt as extension --&gt;
+&lt;input type="file" data-validation="required extension" data-validation-allowing="txt" /&gt;</code></pre>
+<p>Validating multiple files (with separate error messages depending on failed validation):</p>
+<pre><code>&lt;input type="file" multiple="multiple" name="images"
+    data-validation="length mime size"
+    data-validation-length="min2"
+    data-validation-allowing="jpg, png, gif"
+    data-validation-max-size="512kb"
+    data-validation-error-msg-size="You can not upload images larger than 512kb"
+    data-validation-error-msg-mime="You can only upload images"
+    data-validation-error-msg-length="You have to upload at least two images"
+    /&gt;</code></pre>
+<h3>Image dimension and ratio</h3>
+<p>Use the validator <code>dimension</code> to check the dimension of an image (jpg, gif or png).</p>
+<pre><code>&lt;!-- Validate that the image is no smaller than 100x100px --&gt;
+&lt;input data-validation="dimension mime" data-validation-allowing="jpg" break="" data-validation-dimension="min100" /&gt;
+
+&lt;!-- Validate that the image is no smaller than 300x500 px (width/height) --&gt;
+&lt;input data-validation="dimension mime" data-validation-allowing="jpg" break="" data-validation-dimension="min300x500" /&gt;
+
+&lt;!-- Validate that the image is no larger than 500x1000 px --&gt;
+&lt;input data-validation="dimension mime" data-validation-allowing="jpg" break="" data-validation-dimension="max500x1000" /&gt;
+
+&lt;!-- Validate that the image is no smaller than 100x100 px and no larger than 800x800 --&gt;
+&lt;input data-validation="dimension mime" data-validation-allowing="jpg" break="" data-validation-dimension="100-800" /&gt;
+
+&lt;!-- Validate that the image is no smaller than 200x400 px and no larger than 600x1200 --&gt;
+&lt;input data-validation="dimension mime" data-validation-allowing="jpg" break="" data-validation-dimension="200x400-600x1200" /&gt;</code></pre>
+<p>Use the attribute <code>data-validation-ratio</code> to validate that the uploaded image has a certain ratio</p>
+<pre><code>&lt;!-- Validate that only square images gets uploaded --&gt;
+&lt;input data-validation="ratio mime" data-validation-allowing="jpg, png, gif" break="" data-validation-dimension="min100" data-validation-ratio="1:1" /&gt;
+
+&lt;!-- Validate that only somewhat square images gets uploaded --&gt;
+&lt;input data-validation="ratio mime" data-validation-allowing="jpg" break="" data-validation-dimension="min100" data-validation-ratio="8:10-12:10" /&gt;</code></pre>
+<h2>Logic</h2>
+<h3>Validators depending on each other</h3>
+<p>Use the attributes <code>data-validation-depends-on</code> to configure that an input is optional as long as another input is left without an answer.</p>
+<pre><code>&lt;!-- Require e-mail only if checkbox is checked --&gt;
+&lt;p&gt;
+    &lt;strong&gt;Contact me:&lt;/strong&gt;
+    &lt;input name="do-contact" type="checkbox" value="1" /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;strong&gt;E-mail:&lt;/strong&gt;
+    &lt;input
+           type="text"
+           data-validation="email"
+           data-validation-depends-on="do-contact"
+    /&gt;
+&lt;/p&gt;</code></pre>
+<pre><code>&lt;!-- Require a state to be given if the user comes from either USA or Canada --&gt;
+&lt;p&gt;
+    &lt;strong&gt;Country:&lt;/strong&gt;
+    &lt;input
+           type="text"
+           name="country"
+           id="country-input"
+           data-validation="country"
+    /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;strong&gt;State:&lt;/strong&gt;
+    &lt;input type="text"
+           name="state" break=""
+           data-validation="required" break1=""
+           data-validation-depends-on="country" break2=""
+           data-validation-depends-on-value="usa, canada"
+    /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+...
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+$.validate({
+    modules : 'location, logic',
+    onModulesLoaded : function() {
+        $('#country-input').suggestCountry();
+    }
+});
+&lt;/script&gt;</code></pre>
+<h3>Require only one out of several inputs</h3>
+<p>Use the attribute <code>data-validation-optional-if-answered</code> to tell the validator that only one, out of a group of inputs, requires an answer.</p>
+<pre><code>&lt;p&gt;
+    &lt;strong&gt;Home phone number:&lt;/strong&gt;
+    &lt;input name="home-phone"
+           data-validation="number" break=""
+            data-validation-optional-if-answered="cell-phone, work-phone" /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;strong&gt;Cell phone number:&lt;/strong&gt;
+    &lt;input name="cell-phone"
+           data-validation="number" break=""
+            data-validation-optional-if-answered="home-phone, work-phone" /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;strong&gt;Work phone number:&lt;/strong&gt;
+    &lt;input name="work-phone"
+           data-validation="number" break=""
+            data-validation-optional-if-answered="home-phone, cell-phone" /&gt;
+&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+<h2>Changelog</h2>
+<h4>2.3.19</h4>
+<ul>
+<li>New translations (Polish, Romanian, Danish, Norwegian, Dutch, Czech, Russian, Italian)</li>
+<li>Several improvements made to already existing translations</li>
+<li>&quot;Validation help&quot; no longer puts constraints on input names</li>
+<li>Improved confirmation validation</li>
+<li>Config parameter <code>errorMessagePosition</code> is now only used to point out where error message should be placed. New configuration parameters is introduced that handles custom positioning of error messages <a href="https://github.com/victorjonsson/jQuery-Form-Validator/issues/226#issuecomment-191233456">#226</a></li>
+<li>Now possible to add <code>data-validation-ignore</code> to filter out certain characters before validation</li>
+<li>New sanitation method <code>strip</code> that removes defined characters</li>
+<li>Now possible to declare attributes not prefixed with data-validation in jsconf module</li>
+<li>All inputs gets sanitized on page load when using sanitation module</li>
+<li>Allow dates to omit leading zero using <code>data-validation-require-leading-zero="false"</code></li>
+<li>Module toggleDisabled now acts on value change, not only mouse click</li>
+<li><code>data-validation-if-checked</code> now deprecated, use <code>data-validation-depends-on</code> instead <a href="https://github.com/victorjonsson/jQuery-Form-Validator/issues/153">#153</a></li>
+<li>Event <code>beforeValidation</code> now gets value, language and configuration as arguments and can be used to prevent validation of the input.</li>
+<li>Security module now has a <code>recaptcha</code> validator that uses Google reCaptcha 2</li>
+<li>The plugin is installable using npm (also possible to require validation modules when using browserify)</li>
+<li>Polish validation module</li>
+<li>Brazilian validation module</li>
+<li>UK validation module now also have validators <code>uknin</code> <code>ukutr</code></li>
+<li>Sepa-module that makes it possible to validate sepa, iban and bic.</li>
+<li>New module named &quot;logic&quot; containing the features <code>data-validation-depends-on</code> and <code>data-validation-optional-if-answered</code></li>
+</ul>
+<h4>2.2.8</h4>
+<ul>
+<li>The plugin is now again possible to install via bower.</li>
+<li>Portoguese language pack and validators</li>
+<li>New module used for data-sanitiation</li>
+<li>E-mail addresses now validated in accordance to rfc 6531</li>
+<li>Now possible to use $.fn.validate to programmatically validate inputs</li>
+<li>Hidden inputs won't get validated by default (can be overriden using option validateHiddenInputs)</li>
+</ul>
+<h4>2.2.43</h4>
+<ul>
+<li>Fixed min/max parse error in HTML5 module</li>
+<li>Now also supports Twitter bootstraps horizontal forms</li>
+<li>This plugin now also distributes a default CSS theme including success/fail icons (used on formvalidator.net)</li>
+<li>Email validation now won't fail if email begins with a number</li>
+<li>This plugin now comes with error dialogs translated to English, French, German, Spanish and English.</li>
+<li>New validator <code>letternumeric</code>. Validates that input consists out of any type of letter (not only alphanumeric) and/or numbers</li>
+<li>You can now validate image dimension and ratio</li>
+<li>... and a bunch of other smaller bug fixes and improvements.</li>
+</ul>
+<h4>2.2.0</h4>
+<ul>
+<li>Now possible to define an error message for each validation rule on a certain input (issue #113)</li>
+<li>This plugin now serves as a html5 fallback. You can now use the native attributes to declare which type<br />
+of validation that should be applied.</li>
+<li>Use a template for error messages when having errorMessagePosition set to top</li>
+<li>Added validation of credit card number and CVV to the security module</li>
+<li>Event onElementValidate added</li>
+<li>Use the attribute data-validation-confirm to declare which input that should be confirmed when using validation=confirmation (issue #112)</li>
+<li>Validation &quot;required&quot; now supports inputs of type radio</li>
+<li>$.validateForm is now deprecated, use $.isValid instead</li>
+<li>Possible to check if form is valid programmatically without showing error messages</li>
+<li>Select elements can now be validated server-side</li>
+<li>Cleaned up dialog messages</li>
+<li>Various IE8 fixes</li>
+<li>Possible to send along parameters to the server when using server side validation</li>
+<li>Now possible to set your own parameter name when using server side validation</li>
+<li>Improved/simplified URL validation</li>
+<li>... and a whole lot more small improvements</li>
+</ul>
+<h4>2.1.47</h4>
+<ul>
+<li>Incorrect error-styling when using datepicker or suggestions is now fixed</li>
+<li>Incorrect error-styling of select elements is now fixed</li>
+<li>Deprecated function $.validationSetup is now removed, use $.validate() instead</li>
+<li>You can now return an array with errors using the event <code>onValidate</code></li>
+<li>You can now declare an element where all error messages should be placed (config.errorMessagePosition)</li>
+</ul>
+<h4>2.1.36</h4>
+<ul>
+<li>Now possible to use the native reset() function to clear error messages and error styling of the input elements</li>
+</ul>
+<h4>2.1.34</h4>
+<ul>
+<li>General improvements and bug fixes</li>
+<li>Added events &quot;beforeValidation&quot; and &quot;validation&quot; (see <a href="http://formvalidator.net/#configuration_callbacks">http://formvalidator.net/#configuration_callbacks</a> for more info)</li>
+</ul>
+<h4>2.1.27</h4>
+<ul>
+<li>E-mail validation support .eu top domain</li>
+<li>Improvements in server validation</li>
+<li>Now possible to re-initiate the validation. This makes it possible to dynamically change the form and then call $.validate() again to refresh the validation (issue #59)</li>
+<li>Number validation now supports range</li>
+</ul>
+<h4>2.1.15</h4>
+<ul>
+<li>E-mail addresses can now contain + symbol</li>
+<li>Correction of the US states in validation &quot;federatestate&quot;</li>
+<li>Fixed bug in server validation</li>
+</ul>
+<h4>2.1.09</h4>
+<ul>
+<li>File validation now support multiple files</li>
+<li>Length validation can now be used to validate the number of uploaded files using a file input that supports multiple files</li>
+<li>Validation classes is no longer applied on inputs that for some reason shouldn't become validated</li>
+</ul>
+<h4>2.1.08</h4>
+<ul>
+<li>Now possible to configure the decimal separator when validating float values. Use either the<br />
+attribute <em>data-validation-decimal-separator</em> or the property <em>decimalSeparator</em> when<br />
+calling $.validate()</li>
+<li>$.validationSetup is renamed to $.validate. You will still be able to initiate the validation by calling<br />
+the $.validationSetup but it's considered deprecated.</li>
+</ul>
+<h4>2.1.06</h4>
+<ul>
+<li>Modules can now be loaded from remote websites</li>
+</ul>
+<h4>2.1.05</h4>
+<ul>
+<li>Fixed language bug (issue #43 on github)</li>
+<li>Validation on server side is now triggered by the blur event</li>
+<li>Now using class names that's compliant with twitter bootstrap 3.x</li>
+</ul>
+<h4>2.1</h4>
+<ul>
+<li>Code refactoring and some functions renamed</li>
+<li>Validator &quot;checkbox_group&quot; added</li>
+</ul>
+<h4>2.0.7</h4>
+<ul>
+<li>Now possible to validate file size, extension and mime type (using the file module)</li>
+</ul>
+<h4>2.0</h4>
+<ul>
+<li>[min|max]_length is removed (now merged with length validation).</li>
+<li>The number, int and float validation is merged together, all three variants is now validated by the number validation.</li>
+<li>Phone validation is moved to &quot;sweden&quot; module and renamed to swephone.</li>
+<li>The attribute to be used when defining the regular expression for custom validations is now moved to its own attribute (data-validation-regexp)</li>
+<li>Length validation now looks at attribute data-validation-length (eg. min5, max200, 3-12).</li>
+<li>The validation rule no longer needs to be prefixed with &quot;validate_&quot; (it's still possible to use the prefix but it's considered deprecated).</li>
+<li>Some validation functions is moved to modules (see the function reference over at <a href="http://formvalidator.net">http://formvalidator.net</a>).</li>
+<li>Added function $.validationSetup() to reduce the amount of code that has to be written when initiating the form validation.</li>
+</ul>
+<h2>Credits</h2>
+<p><a href="http://www.formvalidator.net/#credits">http://www.formvalidator.net/#credits</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/form" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>form</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/validator" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>validator</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/429182?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/victorjonsson" target="_blank" id="ownerName" class="sidebar-link">victorjonsson</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">November 13, 2010</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 15, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (2.2.4)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (~0.4.5)</li><li>grunt-cli (~0.1.13)</li><li>grunt-contrib-clean (~1.0.0)</li><li>grunt-contrib-concat (^0.5.1)</li><li>grunt-contrib-connect (^0.11.2)</li><li>grunt-contrib-copy (~1.0.0)</li><li>grunt-contrib-cssmin (~0.14.0)</li><li>grunt-contrib-jshint (~1.0.0)</li><li>grunt-contrib-qunit (^0.7.0)</li><li>grunt-contrib-uglify (~0.11.1)</li><li>grunt-contrib-watch (^0.6.1)</li><li>grunt-umd (~2.4.0)</li><li>numeral (~1.5.3)</li><li>qunitjs (^1.20.0)</li><li>jquery (2.2.4)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/429182?v=4" alt="victorjonsson" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/victorjonsson" target="_blank" class="text-decoration-none fw-bold">victorjonsson</a><p class="mb-0 text-muted small">491 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/206041?v=4" alt="stevewasiura" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/stevewasiura" target="_blank" class="text-decoration-none fw-bold">stevewasiura</a><p class="mb-0 text-muted small">22 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/8905863?v=4" alt="ray-print" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ray-print" target="_blank" class="text-decoration-none fw-bold">ray-print</a><p class="mb-0 text-muted small">20 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/17490251?v=4" alt="FuzzyBS" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/FuzzyBS" target="_blank" class="text-decoration-none fw-bold">FuzzyBS</a><p class="mb-0 text-muted small">16 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/828020?v=4" alt="simivar" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/simivar" target="_blank" class="text-decoration-none fw-bold">simivar</a><p class="mb-0 text-muted small">15 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5119280?v=4" alt="Igloczek" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Igloczek" target="_blank" class="text-decoration-none fw-bold">Igloczek</a><p class="mb-0 text-muted small">13 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9607633?v=4" alt="jonuriarte" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jonuriarte" target="_blank" class="text-decoration-none fw-bold">jonuriarte</a><p class="mb-0 text-muted small">10 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3227719?v=4" alt="michaelthuren" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/michaelthuren" target="_blank" class="text-decoration-none fw-bold">michaelthuren</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/12240588?v=4" alt="erfanatp" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/erfanatp" target="_blank" class="text-decoration-none fw-bold">erfanatp</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4602123?v=4" alt="nick-hoang" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nick-hoang" target="_blank" class="text-decoration-none fw-bold">nick-hoang</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/134032?v=4" alt="seryl" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/seryl" target="_blank" class="text-decoration-none fw-bold">seryl</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/243427?v=4" alt="etcho" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/etcho" target="_blank" class="text-decoration-none fw-bold">etcho</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/358353?v=4" alt="eleazan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/eleazan" target="_blank" class="text-decoration-none fw-bold">eleazan</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6103412?v=4" alt="nicolabavaro" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nicolabavaro" target="_blank" class="text-decoration-none fw-bold">nicolabavaro</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1523671?v=4" alt="manlao" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/manlao" target="_blank" class="text-decoration-none fw-bold">manlao</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6879685?v=4" alt="hslee87" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hslee87" target="_blank" class="text-decoration-none fw-bold">hslee87</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/30390733?v=4" alt="aswindasfog" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aswindasfog" target="_blank" class="text-decoration-none fw-bold">aswindasfog</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/130963?v=4" alt="lagden" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lagden" target="_blank" class="text-decoration-none fw-bold">lagden</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2531428?v=4" alt="Repkit" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Repkit" target="_blank" class="text-decoration-none fw-bold">Repkit</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1995321?v=4" alt="JoshKoberstein" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/JoshKoberstein" target="_blank" class="text-decoration-none fw-bold">JoshKoberstein</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1554017?v=4" alt="robamaton" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/robamaton" target="_blank" class="text-decoration-none fw-bold">robamaton</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2496524?v=4" alt="HuotMedia" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/HuotMedia" target="_blank" class="text-decoration-none fw-bold">HuotMedia</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4732915?v=4" alt="cuducos" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cuducos" target="_blank" class="text-decoration-none fw-bold">cuducos</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2311811?v=4" alt="denizcdemirci" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/denizcdemirci" target="_blank" class="text-decoration-none fw-bold">denizcdemirci</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7410981?v=4" alt="DarthCharles" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/DarthCharles" target="_blank" class="text-decoration-none fw-bold">DarthCharles</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4909591?v=4" alt="BrianRosamilia" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/BrianRosamilia" target="_blank" class="text-decoration-none fw-bold">BrianRosamilia</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/16267156?v=4" alt="rvalitov" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rvalitov" target="_blank" class="text-decoration-none fw-bold">rvalitov</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3787937?v=4" alt="ReneMuetti" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ReneMuetti" target="_blank" class="text-decoration-none fw-bold">ReneMuetti</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/16494616?v=4" alt="alphamyd" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/alphamyd" target="_blank" class="text-decoration-none fw-bold">alphamyd</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3317286?v=4" alt="S0L4R1S" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/S0L4R1S" target="_blank" class="text-decoration-none fw-bold">S0L4R1S</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+25 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
