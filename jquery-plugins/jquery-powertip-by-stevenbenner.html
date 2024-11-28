@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> :speech_balloon: a jQuery Plugin That Creates Hover Tooltips.</title>
+    <meta name="description" content="jquery-powertip by stevenbenner.  :speech_balloon: A jQuery plugin that creates hover tooltips.">
+    <meta name="author" content="stevenbenner">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-powertip-by-stevenbenner.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Powertip</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Powertip",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Powertip</h1>
+        <p id="packageDescription" class="text-muted"> :speech_balloon: A jQuery plugin that creates hover tooltips.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">820</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.05 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">137</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">37</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/stevenbenner/jquery-powertip/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/stevenbenner/jquery-powertip" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>PowerTip</h1>
+<p>PowerTip is a jQuery tooltip plugin with some advanced features like <strong>hover intent testing</strong>, <strong>tooltip queueing</strong>, and <strong>support for complex data</strong>.</p>
+<p>This software is licensed under the <a href="LICENSE.txt">MIT license</a>.</p>
+<p><a href="https://github.com/stevenbenner/jquery-powertip/releases"><img src="https://img.shields.io/github/release/stevenbenner/jquery-powertip.svg?style=flat-square" alt="Release Version" /></a> <a href="https://www.npmjs.com/package/jquery-powertip"><img src="https://img.shields.io/npm/v/jquery-powertip.svg?style=flat-square" alt="NPM Version" /></a> <a href="https://github.com/stevenbenner/jquery-powertip/actions/workflows/run-tests.yml"><img src="https://img.shields.io/github/actions/workflow/status/stevenbenner/jquery-powertip/run-tests.yml?style=flat-square" alt="Test Status" /></a></p>
+<h2>Getting Started</h2>
+<ul>
+<li>Download the latest stable release from the <a href="https://stevenbenner.github.io/jquery-powertip/">PowerTip web site</a> or install <a href="https://www.npmjs.com/package/jquery-powertip">jquery-powertip</a> from npm.</li>
+<li>Add the JavaScript and CSS file references to your web site.</li>
+<li>Add a title or data-powertip attribute to the elements you want to show tooltips for.</li>
+<li>Run the <code>powerTip()</code> method on those elements.</li>
+</ul>
+<h2>Documentation</h2>
+<p>You can find the documentation for the <strong>latest release version</strong> on the <a href="https://stevenbenner.github.io/jquery-powertip/">PowerTip web site</a>. You will find the documentation for the <strong>latest in-development version</strong> in the <a href="https://github.com/stevenbenner/jquery-powertip/tree/master/doc">doc folder</a> in the GitHub repository.</p>
+<h2>Reporting Bugs</h2>
+<p>For bug reports, questions, feature requests, or other suggestions the best way to contact me is to <a href="https://github.com/stevenbenner/jquery-powertip/issues/new">create an issue</a> on GitHub.</p>
+<h2>Contributor Guide</h2>
+<p>Make PowerTip better! Join the <a href="https://github.com/stevenbenner/jquery-powertip/graphs/contributors">league of awesome</a> today by submitting a patch! The best way to submit patches is to <a href="https://github.com/stevenbenner/jquery-powertip/fork">fork this project</a> on GitHub and submit a pull request. But if you are unwilling or unable to use GitHub I will accept patches in any way you can get them to me (JSFiddle, pastebin, text file, whatever).</p>
+<h3>Style Guide</h3>
+<p>These are general guidelines, not rules. I won't refuse a pull request just because it isn't the style that I use.</p>
+<ul>
+<li>Style guide: In general, follow the <a href="https://google.github.io/styleguide/javascriptguide.xml">Google JavaScript Style Guide</a>.</li>
+<li>Line wrap: Soft-wrap at 80 characters (go further if wrapping makes code less readable).</li>
+<li>Indentation: Use tabs for indentation.</li>
+<li>JSDoc comments: Use <a href="https://github.com/google/closure-compiler/wiki/Annotating-JavaScript-for-the-Closure-Compiler">closure compiler annotations</a>.</li>
+<li>Method chaining: Avoid long chained method statements, two or three max.</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/tooltips" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>tooltips</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/141884?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/stevenbenner" target="_blank" id="ownerName" class="sidebar-link">stevenbenner</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">July 8, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 26, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://stevenbenner.github.io/jquery-powertip/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (1.7 - 4)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>@stevenbenner/eslint-config (~3.0)</li><li>grunt (~1.6)</li><li>grunt-browserify (~6.0)</li><li>grunt-contrib-clean (~2.0)</li><li>grunt-contrib-compress (~2.0)</li><li>grunt-contrib-concat (~2.1)</li><li>grunt-contrib-copy (~1.0)</li><li>grunt-contrib-csslint (~2.0)</li><li>grunt-contrib-cssmin (~5.0)</li><li>grunt-contrib-qunit (~8.0)</li><li>grunt-contrib-uglify (~5.2)</li><li>grunt-eslint (~24.3)</li><li>grunt-indent (~1.0)</li><li>grunt-jsonlint (~2.1)</li><li>grunt-shell (~4.0)</li><li>jit-grunt (~0.10)</li><li>qunit (~2.20)</li><li>time-grunt (~2.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/141884?v=4" alt="stevenbenner" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/stevenbenner" target="_blank" class="text-decoration-none fw-bold">stevenbenner</a><p class="mb-0 text-muted small">982 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1239439?v=4" alt="mdarens" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mdarens" target="_blank" class="text-decoration-none fw-bold">mdarens</a><p class="mb-0 text-muted small">9 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/94782?v=4" alt="ixti" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ixti" target="_blank" class="text-decoration-none fw-bold">ixti</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/814402?v=4" alt="benweier" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/benweier" target="_blank" class="text-decoration-none fw-bold">benweier</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/297450?v=4" alt="breity" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/breity" target="_blank" class="text-decoration-none fw-bold">breity</a><p class="mb-0 text-muted small">5 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/764988?v=4" alt="dylanjha" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dylanjha" target="_blank" class="text-decoration-none fw-bold">dylanjha</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/26336?v=4" alt="tony" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tony" target="_blank" class="text-decoration-none fw-bold">tony</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1979887?v=4" alt="evinism" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/evinism" target="_blank" class="text-decoration-none fw-bold">evinism</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/322750?v=4" alt="mkai" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mkai" target="_blank" class="text-decoration-none fw-bold">mkai</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6052580?v=4" alt="NPException" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/NPException" target="_blank" class="text-decoration-none fw-bold">NPException</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/47107?v=4" alt="stefanocudini" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/stefanocudini" target="_blank" class="text-decoration-none fw-bold">stefanocudini</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2720049?v=4" alt="steelywing" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/steelywing" target="_blank" class="text-decoration-none fw-bold">steelywing</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2414608?v=4" alt="arpan29" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/arpan29" target="_blank" class="text-decoration-none fw-bold">arpan29</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/634032?v=4" alt="erthalion" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/erthalion" target="_blank" class="text-decoration-none fw-bold">erthalion</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+9 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
