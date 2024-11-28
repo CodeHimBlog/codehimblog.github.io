@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Library for Collecting Form Data</title>
+    <meta name="description" content="form2js by maxatwork. Javascript library for collecting form data">
+    <meta name="author" content="maxatwork">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/form2js-by-maxatwork.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Form2js</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Form2js",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Form2js</h1>
+        <p id="packageDescription" class="text-muted">Javascript library for collecting form data</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">640</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.6 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">137</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">52</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/maxatwork/form2js/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/maxatwork/form2js" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h2>form2js</h2>
+<p>Convenient way to collect <strong>structured</strong> form data into JavaScript object.<br />
+<a href="http://form2js.googlecode.com/hg/example/test.html">Example</a>.<br />
+Because everything is better with jQuery, jQuery plugin added, check out jquery.toObject.js.<br />
+If you have any questions/suggestions, find out something weird or illogical - feel free to post an issue.</p>
+<p><strong>Warning!</strong> form2object.js and form2object function renamed to form2js.js and form2js respectively.<br />
+Old names are in v1.0 tag.</p>
+<h1>Details</h1>
+<p>This is <strong>not</strong> a serialization library.<br />
+Library used in example for JSON serialization is <a href="http://www.json.org/js.html">http://www.json.org/js.html</a><br />
+Structure of resulting object defined by <em>name</em> attribute of form fields.<br />
+See examples below.<br />
+All this library does is collect form data and put it in a javascript object.<br />
+Obviously you can get a JSON/XML/etc string by serializing it, but that's not its only purpose.</p>
+<h1>Usage</h1>
+<pre class="prettyprint linenums lang-language"><code>form2js(rootNode, delimiter, skipEmpty, nodeCallback, useIdIfEmptyName)</code></pre>
+<p>Values of all inputs under the <em>rootNode</em> will be collected into one object.<br />
+skipping empty inputs if <em>skipEmpty</em> not false.</p>
+<h3>Objects/nested objects</h3>
+<p>Structure of resulting object defined in <em>name</em> attributes of form fields (or <em>id</em> if <em>name</em> is empty and <em>useIdIfEmptyName</em> parameter set to <em>true</em>).<br />
+<em>delimiter</em> is &quot;.&quot; (dot) by default, but can be changed.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;input type="text" name="person.name.first" value="John" /&gt;
+&lt;input type="text" name="person.name.last" value="Doe" /&gt;</code></pre>
+<p>becomes</p>
+<pre class="prettyprint linenums lang-language"><code>{
+  "person": {
+    "name": {
+      "first": "John",
+      "last": "Doe"
+    }
+  }
+}</code></pre>
+<h3>Arrays</h3>
+<p>Several fields with the same name with brackets defines array of values.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;label&gt;&lt;input type="checkbox" name="person.favFood[]" value="steak" checked="checked" /&gt; Steak&lt;/label&gt;
+&lt;label&gt;&lt;input type="checkbox" name="person.favFood[]" value="pizza"/&gt; Pizza&lt;/label&gt;
+&lt;label&gt;&lt;input type="checkbox" name="person.favFood[]" value="chicken" checked="checked" /&gt; Chicken&lt;/label&gt;</code></pre>
+<p>becomes</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    "person": {
+        "favFood": [ "steak", "chicken" ]
+    }
+}</code></pre>
+<h3>Arrays of objects/nested objects</h3>
+<p>Same index means same item in resulting array.<br />
+Index doesn't specify order (order of appearance in document will be used).</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;dl&gt;
+    &lt;dt&gt;Give us your five friends' names and emails&lt;/dt&gt;
+    &lt;dd&gt;
+        &lt;label&gt;Email &lt;input type="text" name="person.friends[0].email" value="agent.smith@example.com" /&gt;&lt;/label&gt;
+        &lt;label&gt;Name &lt;input type="text" name="person.friends[0].name" value="Smith Agent"/&gt;&lt;/label&gt;
+    &lt;/dd&gt;
+    &lt;dd&gt;
+        &lt;label&gt;Email &lt;input type="text" name="person.friends[1].email" value="n3o@example.com" /&gt;&lt;/label&gt;
+        &lt;label&gt;Name &lt;input type="text" name="person.friends[1].name" value="Thomas A. Anderson" /&gt;&lt;/label&gt;
+    &lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+<p>becomes</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    "person" :
+    {
+        "friends" : [
+            { "email" : "agent.smith@example.com", "name" : "Smith Agent" },
+            { "email" : "n3o@example.com", "name" : "Thomas A. Anderson" }
+        ]
+    }
+}</code></pre>
+<h3>Rails-style notation</h3>
+<p>If array index starts with [a-zA-Z_], it will be treated as field of object.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;dl&gt;
+    &lt;dt&gt;Rails-style test&lt;/dt&gt;
+    &lt;dd&gt;
+        &lt;label&gt;rails[field1][foo]&lt;input type="text" name="rails[field1][foo]" value="baz" /&gt;&lt;/label&gt;
+        &lt;label&gt;rails[field1][bar]&lt;input type="text" name="rails[field1][bar]" value="qux" /&gt;&lt;/label&gt;
+    &lt;/dd&gt;
+    &lt;dd&gt;
+        &lt;label&gt;rails[field2][foo]&lt;input type="text" name="rails[field2][foo]" value="baz" /&gt;&lt;/label&gt;
+        &lt;label&gt;rails[field2][bar]&lt;input type="text" name="rails[field2][bar]" value="qux" /&gt;&lt;/label&gt;
+    &lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+<p>will give us:</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    "rails": {
+        "field1": {
+            "foo": "baz",
+            "bar": "qux"
+        },
+        "field2": {
+            "foo": "baz",
+            "bar": "qux"
+        }
+    }
+}</code></pre>
+<h3>Custom fields</h3>
+<p>You can implement custom nodeCallback function (passed as 4th parameter to <code>form2object()</code>) to extract custom data:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;dl id="dateTest"&gt;
+&lt;dt&gt;Date of birth:&lt;/dt&gt;
+&lt;dd data-name="person.dateOfBirth" class="datefield"&gt;
+    &lt;select name="person.dateOfBirth.month"&gt;
+        &lt;option value="01"&gt;January&lt;/option&gt;
+        &lt;option value="02"&gt;February&lt;/option&gt;
+        &lt;option value="03"&gt;March&lt;/option&gt;
+        &lt;option value="04"&gt;April&lt;/option&gt;
+        &lt;option value="05"&gt;May&lt;/option&gt;
+        &lt;option value="06"&gt;June&lt;/option&gt;
+        &lt;option value="07"&gt;July&lt;/option&gt;
+        &lt;option value="08"&gt;August&lt;/option&gt;
+        &lt;option value="09"&gt;September&lt;/option&gt;
+        &lt;option value="10"&gt;October&lt;/option&gt;
+        &lt;option value="11"&gt;November&lt;/option&gt;
+        &lt;option value="12"&gt;December&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;input type="text" name="person.dateOfBirth.day" value="1" /&gt;
+    &lt;input type="text" name="person.dateOfBirth.year" value="2011" /&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;script type="text/javascript"&gt;
+    function processDate(node)
+    {
+        var dataName = node.getAttribute ? node.getAttribute('data-name') : '',
+            dayNode,
+            monthNode,
+            yearNode,
+            day,
+            year,
+            month;
+
+        if (dataName &amp;&amp; dataName != '' &amp;&amp; node.className == 'datefield')
+        {
+            dayNode = node.querySelector('input[name="'+dataName + '.day"]');
+            monthNode = node.querySelector('select[name="'+dataName + '.month"]');
+            yearNode = node.querySelector('input[name="'+dataName + '.year"]');
+
+            day = dayNode.value;
+            year = yearNode.value;
+            month = monthNode.value;
+
+            return { name: dataName, value:  year + '-' + month + '-' + day};
+        }
+
+        return false;
+    }
+
+    var formData = form2object('dateTest', '.', true, processDate);
+&lt;/script&gt;</code></pre>
+<p>using <code>processDate()</code> callback <code>formData</code> will contain</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    "person": {
+        "dateOfBirth": "2011-01-12"
+    }
+}</code></pre>
+<h1>Why not <code>.serializeArray()</code>?</h1>
+<p>JQuery's <code>.serializeArray()</code> works a bit different.<br />
+It makes this structure from markup in &quot;Arrays of objects/nested objects&quot; example:</p>
+<pre class="prettyprint linenums lang-language"><code>[
+    { "person.friends[0].email" : "agent.smith@example.com" },
+    { "person.friends[0].name" : "Smith Agent" },
+    { "person.friends[1].email" : "n3o@example.com" },
+    { "person.friends[1].name" : "Thomas A. Anderson" }
+]</code></pre>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/form" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>form</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/forms" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>forms</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/html" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>html</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/397263?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/maxatwork" target="_blank" id="ownerName" class="sidebar-link">maxatwork</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">September 13, 2010</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">September 19, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://maxatwork.github.com/form2js/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/397263?v=4" alt="maxatwork" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/maxatwork" target="_blank" class="text-decoration-none fw-bold">maxatwork</a><p class="mb-0 text-muted small">22 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/480640?v=4" alt="alejandroiglesias" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/alejandroiglesias" target="_blank" class="text-decoration-none fw-bold">alejandroiglesias</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/525181?v=4" alt="danlo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/danlo" target="_blank" class="text-decoration-none fw-bold">danlo</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1870208?v=4" alt="emilgpa" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/emilgpa" target="_blank" class="text-decoration-none fw-bold">emilgpa</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/165486?v=4" alt="Fedott" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Fedott" target="_blank" class="text-decoration-none fw-bold">Fedott</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/320623?v=4" alt="FrancoB411" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/FrancoB411" target="_blank" class="text-decoration-none fw-bold">FrancoB411</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/85355?v=4" alt="lookfirst" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lookfirst" target="_blank" class="text-decoration-none fw-bold">lookfirst</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/612224?v=4" alt="kaiju" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kaiju" target="_blank" class="text-decoration-none fw-bold">kaiju</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/329182?v=4" alt="Leonidaz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Leonidaz" target="_blank" class="text-decoration-none fw-bold">Leonidaz</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/116610?v=4" alt="petski" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/petski" target="_blank" class="text-decoration-none fw-bold">petski</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/139083?v=4" alt="danielalexiuc" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/danielalexiuc" target="_blank" class="text-decoration-none fw-bold">danielalexiuc</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/272981?v=4" alt="johnwlockwood" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/johnwlockwood" target="_blank" class="text-decoration-none fw-bold">johnwlockwood</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/334881?v=4" alt="mcasimir" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mcasimir" target="_blank" class="text-decoration-none fw-bold">mcasimir</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+8 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
