@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jqcloud by Lucaong</title>
+    <meta name="description" content="jQuery plugin for drawing neat word clouds that actually look like clouds">
+    <meta name="author" content="lucaong">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jqcloud-by-lucaong.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jqcloud</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jqcloud",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jqcloud</h1>
+        <p id="packageDescription" class="text-muted">jQuery plugin for drawing neat word clouds that actually look like clouds</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">647</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.21 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">293</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">35</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/lucaong/jQCloud/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/lucaong/jQCloud" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQCloud: beautiful word clouds with jQuery</h1>
+<p><a href="https://cdnjs.com/libraries/jqcloud"><img src="https://img.shields.io/cdnjs/v/jqcloud.svg" alt="CDNJS version" /></a></p>
+<p>jQCloud is a jQuery plugin that builds neat and pure HTML + CSS word clouds and tag clouds that are actually shaped like a cloud (otherwise, why would we call them 'word clouds'?).</p>
+<p>You can see a demo here: <a href="http://www.lucaongaro.eu/demos/jqcloud/">http://www.lucaongaro.eu/demos/jqcloud/</a></p>
+<h2>Installation</h2>
+<p>Installing jQCloud is extremely simple:</p>
+<ol>
+<li>Make sure to import jQuery in your project.</li>
+<li>Download the jQCloud files. Place <a href="https://raw.github.com/lucaong/jQCloud/master/jqcloud/jqcloud-1.0.4.js">jqcloud-1.0.4.js</a> (or the minified version <a href="https://raw.github.com/lucaong/jQCloud/master/jqcloud/jqcloud-1.0.4.min.js">jqcloud-1.0.4.min.js</a>) and <a href="https://raw.github.com/lucaong/jQCloud/master/jqcloud/jqcloud.css">jqcloud.css</a> somewhere in your project and import both of them in your HTML code.</li>
+</ol>
+<p>You can easily substitute jqcloud.css with a custom CSS stylesheet following the guidelines explained later.</p>
+<h3>Rails gem</h3>
+<p>Using Ruby on Rails? There's a gem for it! Check out archit's <a href="https://github.com/archit/jqcloud-rails">jqcloud-rails</a>.</p>
+<h2>Usage</h2>
+<p>Drawing a cloud is as simple as selecting the container element with <code>jQuery</code> and then calling the <code>jQCloud(wordsArray)</code> method on it.</p>
+<p>Here is more detailed example:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;jQCloud Example&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="jqcloud.css" /&gt;
+    &lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="jqcloud-1.0.4.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+      /*!
+       * Create an array of word objects, each representing a word in the cloud
+       */
+      var word_array = [
+          {text: "Lorem", weight: 15},
+          {text: "Ipsum", weight: 9, link: "http://jquery.com/"},
+          {text: "Dolor", weight: 6, html: {title: "I can haz any html attribute"}},
+          {text: "Sit", weight: 7},
+          {text: "Amet", weight: 5}
+          // ...as many words as you want
+      ];
+
+      $(function() {
+        // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
+        $("#example").jQCloud(word_array);
+      });
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- You should explicitly specify the dimensions of the container element --&gt;
+    &lt;div id="example" style="width: 550px; height: 350px;"&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h3>Gotcha</h3>
+<p>The container element must be visible and have non-zero dimensions when you call the <code>jQCloud</code> method on it.</p>
+<h3>Word Options</h3>
+<p>For each word object in your word array, you need to specify the following mandatory attributes:</p>
+<ul>
+<li><strong>text</strong> (string): the word(s) text</li>
+<li><strong>weight</strong> (number): a number (integer or float) defining the relative importance of the word (such as the number of occurrencies, etc.). The range of values is arbitrary, and they will be linearly mapped to a discrete scale from 1 to 10.</li>
+</ul>
+<p>You can also specify the following options for each word:</p>
+<ul>
+<li><strong>html</strong> (object): an object specifying html attributes to be set on the word (e.g.: <code>{class: "customclass", title: "A title"}</code>). Any attribute can be set, except from &quot;id&quot;, which is set by jQCloud.</li>
+<li><strong>link</strong> (string or object): if specified, the word will be wrapped in a HTML link (<code>&lt;a&gt;</code> tag). If <code>link</code> is a string, it is expected to be the URL to which the link will point, and will be used as the link's <code>href</code> attribute. Alternatively, <code>link</code> can be an object specifying html attributes for the <code>&lt;a&gt;</code> tag, like <code>{href: "http://myurl.com", title: "A link"}</code></li>
+<li><strong>afterWordRender</strong> (function): a function to be called after this word is rendered. Within the function, <code>this</code> refers to the jQuery object for the <code>&lt;span&gt;</code> containing the word.</li>
+<li><strong>handlers</strong> (object): an object specifying event handlers that will bind to the word (e.g.: <code>{click: function() { alert("it works!"); } }</code>)</li>
+</ul>
+<h3>Cloud Options:</h3>
+<p>jQCloud accepts an object containing configurations for the whole cloud as the second argument:</p>
+<pre class="prettyprint linenums lang-language"><code>$("#example").jQCloud(word_list, {
+  width: 300,
+  height: 200
+});</code></pre>
+<p>All cloud-wide configurations are optional, and the full list of available options is the following:</p>
+<ul>
+<li><strong>width</strong> (number): The width of the word cloud container element. Defaults to the original width.</li>
+<li><strong>height</strong> (number): The height of the word cloud container element. Defaults to the original height.</li>
+<li><strong>center</strong> (object): The x and y coordinates of the center of the word cloud, relative to the container element (e.g.: {x: 300, y: 150}). Defaults to the center of the container element.</li>
+<li><strong>afterCloudRender</strong> (function): A callback function to be called after the whole cloud is fully rendered.</li>
+<li><strong>delayedMode</strong> (boolean): If true, words are rendered one after another with a tiny delay between each one. This prevents freezing of the browser when there are many words to be rendered. If false, the cloud will be rendered in one single shot. By default, delayedMode is true when there are more than 50 words.</li>
+<li><strong>shape</strong> (string): the shape of the cloud. By default it is elliptic, but it can be set to <code>"rectangular"</code> to draw a rectangular-shaped cloud.</li>
+<li><strong>removeOverflowing</strong> (boolean): If true, it removes words that would overflow the container. Defaults to true.</li>
+</ul>
+<h2>Custom CSS guidelines</h2>
+<p>The word cloud produced by jQCloud is made of pure HTML, so you can style it using CSS. When you call <code>$("#example").jQCloud(...)</code>, the containing element is given a CSS class of &quot;jqcloud&quot;, allowing for easy CSS targeting. The included CSS file <code>jqcloud.css</code> is intended as an example and as a base on which to develop your own custom style, defining dimensions and appearance of words in the cloud. When writing your custom CSS, just follow these guidelines:</p>
+<ul>
+<li>Always specify the dimensions of the container element (div.jqcloud in jqcloud.css).</li>
+<li>The CSS attribute 'position' of the container element must be explicitly declared and different from 'static' (if it is 'static', jQCloud overwrites it to 'relative').</li>
+<li>Specifying the style of the words (color, font, dimension, etc.) is super easy: words are wrapped in <code>&lt;span&gt;</code> tags with ten levels of importance corresponding to the following classes (in descending order of importance): w10, w9, w8, w7, w6, w5, w4, w3, w2, w1. </li>
+</ul>
+<h2>v1.0 and backward compatibility</h2>
+<p>Please note that version 1.0 is a redesign of the API that does not maintain backward compatibility. Version 1.0 simplifies the API while enabling more control, but pay attention because simply upgrading jQCloud from 0.x to 1.0 in an existing project would probably break it.</p>
+<h3>Changes from v0.2 to v1.0</h3>
+<p>This is a quick list of what changed in the new 1.0 API:</p>
+<ul>
+<li>in the word object, you can now specify any html attribute for the word <span> using the <code>html</code> option (e.g.: <code>{title: "A Title", "class": "custom-class", data-custom: "custom data attribute"}</code>). Since this allows for more flexibility, <code>title</code>, <code>customClass</code> and <code>dataAttributes</code> options are superfluous and dropped in v1.0.</li>
+<li>the <code>url</code> option was renamed <code>link</code> in v1.0, and can now be a URL string or an object. In the latter case, any html attribute for the <code>&lt;a&gt;</code> tag can be specified (e.g.: <code>{href: "http://myurl.com", title: "A Title"}</code>).</li>
+<li>the cloud options <code>randomClasses</code> and <code>nofollow</code> are dropped in v1.0. They were indended for purposes which are better achieved using the new <code>html</code> and <code>link</code> word options.</li>
+<li><code>width</code> and <code>height</code> cloud options now set the width and height of the cloud container element, other than determining the aspect ratio of the cloud.</li>
+<li>the <code>callback</code> options for the whole cloud is now called <code>afterCloudRender</code>, and the <code>callback</code> option for each word is now called <code>afterWordRender</code>.</li>
+</ul>
+<h2>Examples</h2>
+<p>Just have a look at the examples directory provided in the project or see a <a href="http://www.lucaongaro.eu/demos/jqcloud/">demo here</a>.</p>
+<h2>Gallery</h2>
+<p>Some creative examples of jQCloud use are:</p>
+<ul>
+<li><a href="http://www.geekgrade.com/">http://www.geekgrade.com/</a> uses jQCloud for its &quot;Top Geeks Twitter Trends&quot; feature</li>
+<li><a href="https://chrome.google.com/webstore/detail/tag-cloud-generator/alhnlhbhnklajhmccemipdbaifocepab?authuser=0">Google Docs Tag Cloud Generator</a> is a Google Docs plugin that generates clouds from your documents</li>
+<li><a href="http://www.politickerusa.com/trends/">http://www.politickerusa.com/trends/</a> uses jQCloud to show trends in US politicians' tweets.</li>
+<li><a href="http://www.turtledome.com/noisy/">http://www.turtledome.com/noisy/</a> shows you which of the people you follow on Twitter tweets the most.</li>
+</ul>
+<p>If you happen to use jQCloud in your projects, you can make me know (just contact me on <a href="http://www.lucaongaro.eu">my website</a>): I'd be happy to add a link in the 'gallery', so that other people can take inspiration from it.</p>
+<h2>Contribute</h2>
+<p>Contributes are welcome! To setup your build environment, make sure you have Ruby installed, as well as the <code>rake</code> and <code>erb</code> gems. Then, to build jQCloud, run:</p>
+<pre><code>rake build</code></pre>
+<p>The newly-built distribution files will be put in the <code>jqcloud</code> subdirectory.</p>
+<p>If you make changes to the JavaScript source, to the README, to examples or to tests, make them to .erb files in the <code>src</code> subdirectory: changes will be reflected in the distribution files as soon as you build jQCloud. Also, if you send me a pull request, please don't change the version.txt file.</p>
+<h2>Changelog</h2>
+<p>1.0.4 Add option to remove overflowing words (thanks to <a href="https://github.com/drewB">drewB</a>)</p>
+<p>1.0.3 Fix bug when providing a context to jQuery</p>
+<p>1.0.2 Relative font sizes and easier to customize CSS (kudos to <a href="https://github.com/daniel-toman">daniel-toman</a>)</p>
+<p>1.0.1 Option to turn off URL encoding for links (thanks to <a href="https://github.com/bboughton">bboughton</a>)</p>
+<p>1.0.0 API redesign (warning: this is a major update, and background compatibility is not maintained)</p>
+<p>0.2.10 Fix bug occurring when the container element has no id</p>
+<p>0.2.9 Add dataAttributes option (thanks again to <a href="https://github.com/cham">cham</a>) and fix bug when weights are all equal (thanks to <a href="https://github.com/Grepsy">Grepsy</a>)</p>
+<p>0.2.8 Add possibility to specify custom classes for words with the custom_class attribute (thanks to <a href="https://github.com/cham">cham</a>)</p>
+<p>0.2.7 Add possibility to draw rectangular-shaped clouds (an idea by <a href="https://github.com/nithin2e">nithin2e</a>)</p>
+<p>0.2.6 Fix bug with handlers, add nofollow option (thanks to <a href="https://github.com/strobotta">strobotta</a>) and word callbacks.</p>
+<p>0.2.5 Add possibility to bind event handlers to words (thanks to <a href="https://github.com/astintzing">astintzing</a>)</p>
+<p>0.2.4 Option randomClasses can be an array of classes among which a random class is selected for each word</p>
+<p>0.2.3 Add option randomClasses, allowing for random CSS styling (inspired by issue about vertical words opened by <a href="https://github.com/tttp">tttp</a>)</p>
+<p>0.2.2 CSS improvements (as suggested by <a href="https://github.com/NomikOS">NomikOS</a>)</p>
+<p>0.2.1 Optimization and performance improvements (making 0.2.1 around 25% faster than 0.2.0)</p>
+<p>0.2.0 Add configuration options, passed as the second argument of jQCloud (include ideas proposed by <a href="https://github.com/mindscratch">mindscratch</a> and <a href="https://github.com/aaaa0441">aaaa0441</a>)</p>
+<p>0.1.8 Fix bug in the algorithm causing sometimes unbalanced layouts (thanks to <a href="https://github.com/isamochernov">isamochernov</a>)</p>
+<p>0.1.7 Remove duplicated <code>&lt;/span&gt;</code> when word has an URL (thanks to <a href="https://github.com/rbrancher">rbrancher</a>)</p>
+<p>0.1.6 JavaScript-friendly URL encode 'url' option; Typecast 'weight' option to float (thanks to <a href="https://github.com/nudesign">nudesign</a>)</p>
+<p>0.1.5 Apply CSS style to a &quot;jqcloud&quot; class, automatically added (previously an id was used. Again, thanks to <a href="https://github.com/seanahrens">seanahrens</a>)</p>
+<p>0.1.4 Fix bug with multiple clouds on the same page (kudos to <a href="https://github.com/seanahrens">seanahrens</a>)</p>
+<p>0.1.3 Added possibility to pass a callback function and to specify a custom HTML title attribute for each word in the cloud</p>
+<p>0.1.0 -&gt; 0.1.2 I just started this tiny project, only minor improvements and optimization happened</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/225441?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/lucaong" target="_blank" id="ownerName" class="sidebar-link">lucaong</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">February 1, 2011</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 17, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/225441?v=4" alt="lucaong" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lucaong" target="_blank" class="text-decoration-none fw-bold">lucaong</a><p class="mb-0 text-muted small">104 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/383616?v=4" alt="Grepsy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Grepsy" target="_blank" class="text-decoration-none fw-bold">Grepsy</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/57606?v=4" alt="anirvan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/anirvan" target="_blank" class="text-decoration-none fw-bold">anirvan</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/109729?v=4" alt="seanahrens" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/seanahrens" target="_blank" class="text-decoration-none fw-bold">seanahrens</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/964931?v=4" alt="astintzing" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/astintzing" target="_blank" class="text-decoration-none fw-bold">astintzing</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/771359?v=4" alt="bboughton" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bboughton" target="_blank" class="text-decoration-none fw-bold">bboughton</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/13430892?v=4" alt="extend1994" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/extend1994" target="_blank" class="text-decoration-none fw-bold">extend1994</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/423810?v=4" alt="cham" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cham" target="_blank" class="text-decoration-none fw-bold">cham</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/393354?v=4" alt="rbrancher" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/rbrancher" target="_blank" class="text-decoration-none fw-bold">rbrancher</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+4 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
