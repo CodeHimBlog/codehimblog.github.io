@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Field Labels jQuery Plugin by Dcneiner</title>
+    <meta name="description" content="This is a simple plugin that turns properly formatted HTML forms into forms with in-field label support. Labels fade when the field is focussed and disappear wh...">
+    <meta name="author" content="dcneiner">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/in-field-labels-jquery-plugin-by-dcneiner.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">In Field Labels jQuery Plugin</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "In Field Labels jQuery Plugin",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">In Field Labels jQuery Plugin</h1>
+        <p id="packageDescription" class="text-muted">This is a simple plugin that turns properly formatted HTML forms into forms with in-field label support. Labels fade when the field is focussed and disappear when text entry begins. Clearing a field and leaving brings back the label.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">403</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.3 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">93</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">0</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/dcneiner/In-Field-Labels-jQuery-Plugin/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/dcneiner/In-Field-Labels-jQuery-Plugin" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <p>h1. In-Field Labels jQuery Plugin</p>
+<p><em>Version:</em> 0.1.5</p>
+<p><em>License:</em> &quot;Same as jQuery (Dual GPL + MIT)&quot;:<a href="http://docs.jquery.com/License">http://docs.jquery.com/License</a></p>
+<p><em>Author:</em> &quot;Doug Neiner&quot;:<a href="http://pixelgraphics.us/company">http://pixelgraphics.us/company</a></p>
+<p><em>Size:</em> Under 1KB Minified and gzipped</p>
+<p>h2. Overview</p>
+<p>This is a simple plugin that turns properly formatted HTML forms into forms with in-field label support. Labels fade when the field is focussed and disappear when text entry begins. Clearing a field and leaving brings back the label.</p>
+<p>h2. Browser Support</p>
+<p>IE6+, WebKit Browsers (Safari, Chrome), Firefox 2+</p>
+<p>&#42; IE6 requires a background-color be set on the label to match the background of the field.</p>
+<p>h2. Known Issues</p>
+<p><del>Browser Auto-Complete can cause problems in hiding the labels. Less of an issue for Login Boxes, but much more of an issue with comment forms.</del> (Fixed thanks to @zawaideh!)</p>
+<p>There may still me a few cases where you will still have an issue with overlapping labels and autocompleted fields. In these cases, you can turn on polling by passing <code>pollDuration</code> with a number larger than 0. If you want to turn polling on globally for your usage, change the default: <code>$.InFieldLabels.defaultOptions.pollDuration = 300</code>. (Thanks to @fakeartist for the basis for this feature!)</p>
+<p>h2. Use</p>
+<p>h3. HTML</p>
+<pre>
+<p>
+  <label for="field_id">Label Text</label><br />
+  <input type="text" name="field_id" value="" id="field_id" placeholder="">
+</p>
+</pre>
+<p>h3. CSS</p>
+<p>More CSS is needed to position the label nicely over the input or text area element, but since it all depends on how you have styled those elements, only the bare-bones are listed here. Keep in mind any block element can surround the label and input field. <code>&lt;p&gt;</code> is used as an example.</p>
+<pre>
+form p { position: relative }
+form p br { display: none }
+label  { position: absolute; top: 0; left:0; cursor: text }
+</pre>
+<p>h3. Javascript</p>
+<pre>
+$(document).ready(function(){
+  $("label").inFieldLabels();
+});
+</pre>
+<p>h2. Options</p>
+<p>Options can be passed along with the method or set ahead of time for all inFieldLabel controls.</p>
+<p>To set them ahead of time, use the following syntax:</p>
+<pre>$.inFieldLabels.defaultOptions.optionName = "";</pre>
+<p>To pass them at call time, use the following syntax:</p>
+<pre>$("label").inFieldLabels({ optionName:value });</pre>
+<p><em><code>fadeOpacity:</code> Value between 0.1 and 1.0.</em><br />
+When a field is focussed, its label is animated to this opacity. Defaults to <code>0.5</code></p>
+<p><em><code>fadeDuration:</code> Time in milliseconds</em><br />
+When an animation occurs, it uses this setting to determine duration. Defaults to <code>300</code></p>
+<p><em><code>pollDuration:</code> Time in milliseconds or <code>0</code> to disable polling</em><br />
+If set to a number greater than zero, the code will check the value of the field at the specified interval until content is detected in this field. Once content is detected or entered, the polling stops for this field.</p>
+<p>*<code>className:</code> A class to be applied to each label that is enhanced. Set to <code>false</code> or <code>""</code> and a class will not be set. Defaults to <code>false</code></p>
+<p><em><code>enabledInputTypes:</code> Array of input types to allow</em><br />
+It is not normally desireable for <code>checkbox</code> and <code>radio</code> input types to have their labels fade out. This allows you to control which input types are allowed. Defaults to: <code>[ &quot;text&quot;, &quot;search&quot;, &quot;tel&quot;, &quot;url&quot;, &quot;email&quot;, &quot;password&quot;, &quot;textarea&quot; ]</code></p>
+<p>h2. Paste Support via &quot;esumerfd&quot;:<a href="http://github.com/esumerfd">http://github.com/esumerfd</a></p>
+<p>The in-field-label is implemented as a label presented over the top of the text field (or under, depending on the CSS used). The label tag does not support a paste operation, but the input element does. Depending on your CSS definitions there may be a few pixels around the edge of the label that will allow the paste context menu option to appear, or the entire label may be below the input also allowing the context menu. When the paste event is used, this plugin captures it and clears out the label. <em>(Note: this only works in browsers that fire a paste event.)</em></p>
+<p>Note that the implementation just clears the label blindly. No check is made for text field contents. There are two reasons for this:</p>
+<ul>
+<li>
+<p>When the paste event fires the data has not be entered into the text field value yet so any comparison with empty will fail anyway.</p>
+</li>
+<li>
+<p>The worst case senario would be the pasting of a single space to the text field. There is no way to copy/cut an empty string so all a user can do is paste a single space which should remove the label anyway.</p>
+</li>
+</ul>
+<p>h2. Changelog</p>
+<p><em>Version 0.1.5</em></p>
+<ul>
+<li>Added <code>bower.json</code> <em>Special thanks to &quot;Stephen Way (@stephenway)&quot;(<a href="https://github.com/stephenway">https://github.com/stephenway</a>) for contributing this file.</em></li>
+<li>Fixed issue where label could still be selected even with opacity set to 0.0. <em>Special thanks to &quot;Eric Kelly (@clearbucketLabs)&quot;:<a href="https://github.com/clearbucketLabs">https://github.com/clearbucketLabs</a> for contributing this fix.</em></li>
+</ul>
+<p><em>Version 0.1.4</em></p>
+<ul>
+<li>Add support for a class name to be applied to enhanced label elements. Off by default to not break existing implementations should a existing class name be in use. <em>Special thanks to &quot;Benjamin S. Leveritt (@bensleveritt)&quot;:<a href="https://github.com/bensleveritt">https://github.com/bensleveritt</a> for contributing this addition.</em></li>
+</ul>
+<p><em>Version 0.1.3</em></p>
+<ul>
+<li>Added support for polling (to aid in pesky autocomplete overlap issues). <em>Special thanks to &quot;@fakeartist&quot;:<a href="https://github.com/fakeartist">https://github.com/fakeartist</a> for contributing the basis of this solution.</em></li>
+<li>Added support for <code>enabledInputTypes</code> and optimized field filtering. <em>Special thanks to &quot;Daniel Abernathy (dabernathy89)&quot;:<a href="https://github.com/dabernathy89">https://github.com/dabernathy89</a> for contributing this improvement.</em></li>
+<li>Fixes to problems with autocomplete on first document load and while inputting data <em>Special thanks to &quot;Zaid (zawaideh)&quot;:<a href="https://github.com/zawaideh">https://github.com/zawaideh</a> for contributing this improvement</em></li>
+<li>Added (anvil):<a href="http://anviljs.com">http://anviljs.com</a> build system</li>
+<li>Switched to uglify for minification (Via anvil.uglify)</li>
+<li>Added documentation about hiding the <tt>&lt;br&gt;</tt> shown in the examples</li>
+<li>Fixed issue on id's that have special characters in them</li>
+<li>Added <tt>number</tt> to the default list of input fields allowed</li>
+<li>Added a show call to the else statement when the plugin spins up that allows the labels to start hidden <em>Note: (Though the developer should only hide them when JS is enabled)</em></li>
+</ul>
+<p><em>Version 0.1.2</em></p>
+<ul>
+<li>Added support for a <tt>paste</tt> event. <em>Special thanks to &quot;Ed Sumerfield (esumerfd)&quot;:<a href="http://github.com/esumerfd">http://github.com/esumerfd</a> for contributing this improvement.</em></li>
+</ul>
+<p><em>Version 0.1.1</em></p>
+<ul>
+<li>Added support for HTML5 text fields: <tt>search</tt>, <tt>tel</tt>, <tt>url</tt>, <tt>email</tt>. <em>Special thanks to <a href="http://github.com/holizz">Tom Adams (holizz)</a> for contributing this improvement.</em></li>
+</ul>
+<p><em>Version 0.1</em></p>
+<ul>
+<li>Initial Release</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/106974?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/dcneiner" target="_blank" id="ownerName" class="sidebar-link">dcneiner</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">August 5, 2009</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 26, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="http://fuelyourcoding.com/scripts/infield/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/106974?v=4" alt="dcneiner" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dcneiner" target="_blank" class="text-decoration-none fw-bold">dcneiner</a><p class="mb-0 text-muted small">27 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/471696?v=4" alt="zawaideh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zawaideh" target="_blank" class="text-decoration-none fw-bold">zawaideh</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2709404?v=4" alt="dabernathy89" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dabernathy89" target="_blank" class="text-decoration-none fw-bold">dabernathy89</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/390779?v=4" alt="bensleveritt" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bensleveritt" target="_blank" class="text-decoration-none fw-bold">bensleveritt</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/30708?v=4" alt="esumerfd" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/esumerfd" target="_blank" class="text-decoration-none fw-bold">esumerfd</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/38894?v=4" alt="stephenway" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/stephenway" target="_blank" class="text-decoration-none fw-bold">stephenway</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9224?v=4" alt="holizz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/holizz" target="_blank" class="text-decoration-none fw-bold">holizz</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1084233?v=4" alt="clearbucketLabs" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/clearbucketLabs" target="_blank" class="text-decoration-none fw-bold">clearbucketLabs</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/925062?v=4" alt="jancborchardt" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jancborchardt" target="_blank" class="text-decoration-none fw-bold">jancborchardt</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/441011?v=4" alt="mischah" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mischah" target="_blank" class="text-decoration-none fw-bold">mischah</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/418064?v=4" alt="brunob" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/brunob" target="_blank" class="text-decoration-none fw-bold">brunob</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+6 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
