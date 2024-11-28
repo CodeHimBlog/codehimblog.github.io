@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[unmaintained] Responsive Lazy Loading Plugin for jQuery</title>
+    <meta name="description" content="BttrLazyLoading by shprink. [Unmaintained] Responsive Lazy Loading plugin for JQuery">
+    <meta name="author" content="shprink">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/bttrlazyloading-by-shprink.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Bttrlazyloading</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Bttrlazyloading",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Bttrlazyloading</h1>
+        <p id="packageDescription" class="text-muted">[Unmaintained] Responsive Lazy Loading plugin for JQuery</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">414</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.91 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">70</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">13</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/shprink/BttrLazyLoading/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/shprink/BttrLazyLoading" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>BttrLazyLoading.js</h1>
+<p>BttrLazyLoading is a Jquery plugin that allows your web application to defer image loading until images are scrolled to but not only! BttrLazyLoading also allows you to have different version of an image for 4 differents screen sizes: phones (&lt;768px), tablets (≥768px), desktops (≥992px) and large Desktops (≥1200px).</p>
+<p><a href="http://bttrlazyloading.julienrenaux.fr/">Demo and Documentation</a></p>
+<h2>Installation</h2>
+<p>BttrLazyLoading depends on jQuery (meaning jQuery must be included before the plugin files) and <a href="https://github.com/daneden/animate.css">Animate.css</a> (optional) for animations.</p>
+<pre><code>&lt;script src="jquery.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="bttrlazyloading.min.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="animate.min.css" /&gt;
+&lt;script src="jquery.bttrlazyloading.min.js"&gt;&lt;/script&gt;</code></pre>
+<h2>API</h2>
+<h3>Options</h3>
+<ul>
+<li>delay: Adds delay to the image loading time.</li>
+<li>threshold: By default images are loaded when they appear on the screen. If you want images to load earlier use threshold parameter. Setting threshold to 200 causes image to load 200 pixels before it appears on viewport.</li>
+<li>animation: Adds an animation when the image loads. Animations available: <a href="http://daneden.github.io/animate.css/">See list</a></li>
+<li>event: Defines the event that will be use to trigger the image loading/updating.</li>
+<li>placeholder: Base 64 image that is used when the image loads.</li>
+<li>container: You can also use this plugin for images inside scrolling container, such as div with scrollbar. By default the container is the window.</li>
+<li>retina: Enable a better quality on Retina screens. BttrLazyLoading uses a naming convention @2x to display retina's images. BttrLazyLoading will therefore seek for &quot;yourImage@2x.gif&quot; on retina' screens instead of &quot;yourImage.gif&quot;</li>
+<li>triggermanually: Whether or not to trigger the first image load manually.</li>
+<li>updatemanually: Whether or not to trigger the image update (needed when the window resizes for example) manually.</li>
+<li>backgroundcolor: The background color of your images that are not loaded yet.</li>
+<li>xs: Image Object for Mobile</li>
+<li>sm: Image Object for Tablet</li>
+<li>md: Image Object for Desktop</li>
+<li>lg: Image Object for Large Desktop</li>
+</ul>
+<h3>Events</h3>
+<ul>
+<li>bttrlazyloading.beforeLoad: This event is triggered just before the &quot;bttrlazyloading.load&quot; event.</li>
+<li>bttrlazyloading.load: This event is triggered when the image loading is triggered.</li>
+<li>bttrlazyloading.afterLoad: This event is triggered just after the &quot;bttrlazyloading.load&quot; event.</li>
+<li>bttrlazyloading.error: This event is triggered when none of the images (xs, sm, md and lg) exist. The classic &quot;error&quot; event could therefore be triggered up to 8 times (4 times for a normal screen and 8 times for a retina screen) while &quot;bttrlazyloading.error&quot; will be triggered only once.</li>
+</ul>
+<h2>Examples</h2>
+<h3>Set options on instanciation</h3>
+<h4>Via data attributes</h4>
+<pre><code>&lt;img id="yourImageId" class="bttrlazyloading"
+    data-bttrlazyloading-xs-src="img/768x200.gif"
+    data-bttrlazyloading-sm-src="img/345x250.gif"
+    data-bttrlazyloading-md-src="img/455x350.gif"
+    data-bttrlazyloading-lg-src="img/360x300.gif"
+    data-bttrlazyloading-animation="rotatedIn"
+    data-bttrlazyloading-retina="true"
+    data-bttrlazyloading-delay="2000"
+    data-bttrlazyloading-event="mouseover"
+    data-bttrlazyloading-container="document.body"
+    data-bttrlazyloading-threshold="500"
+/&gt;</code></pre>
+<p>For a perfect experience 'width' and 'height' are necessary (The plugin cannot know the dimensions of your images before they load.).</p>
+<pre><code>&lt;img id="test" class="bttrlazyloading"
+    data-bttrlazyloading-xs-src="img/768x200.gif"
+    data-bttrlazyloading-xs-width="768"
+    data-bttrlazyloading-xs-height="200"
+    data-bttrlazyloading-sm-src="img/345x250.gif"
+    data-bttrlazyloading-sm-width="345"
+    data-bttrlazyloading-sm-height="250"
+    data-bttrlazyloading-md-src="img/455x350.gif"
+    data-bttrlazyloading-md-width="455"
+    data-bttrlazyloading-md-height="350"
+    data-bttrlazyloading-lg-src="img/360x300.gif"
+    data-bttrlazyloading-lg-width="360"
+    data-bttrlazyloading-lg-height="300"
+/&gt;</code></pre>
+<p>or</p>
+<pre><code>&lt;img id="yourImageId" class="bttrlazyloading"
+    data-bttrlazyloading-xs='{"src": "img/720x200.gif", "width" : 720,  "height" : 200}'
+    data-bttrlazyloading-sm='{"src": "img/360x200.gif", "width" : 360,  "height" : 200}'
+    data-bttrlazyloading-md='{"src": "img/470x200.gif", "width" : 470,  "height" : 200}'
+    data-bttrlazyloading-lg='{"src": "img/570x200.gif", "width" : 570,  "height" : 200}'
+/&gt;</code></pre>
+<p>Only one image size needed! BttrLazyLoading always try to load the biggest version of the image available. Therefore the following example will work on every screen too.</p>
+<pre><code>&lt;img id="yourImageId" class="bttrlazyloading"
+    data-bttrlazyloading-md-src="img/455x350.gif"
+/&gt;</code></pre>
+<h4>Via the instantiation</h4>
+<pre><code>$("#yourImageId").bttrlazyloading({
+    xs: {
+        src: "img/720x200.gif",
+        width: 720,
+        height: 200
+    },
+    sm: {
+        src: "img/360x200.gif",
+        width: 360,
+        height: 200
+    },
+    md: {
+        src: "img/470x200.gif",
+        width: 470,
+        height: 200
+    },
+    lg: {
+        src: "img/570x200.gif",
+        width: 570,
+        height: 200
+    },
+    retina: true,
+    animation: 'fadeInUp',
+    delay: 1000,
+    event: 'click',
+    container: 'document.body',
+    threshold: 666,
+    placeholder: 'test'
+})</code></pre>
+<h2>Common problems</h2>
+<h3>HTML5 Doctype</h3>
+<p>The HTML5 doctype is require to work correctly.</p>
+<p><code>&lt;!DOCTYPE html&gt;</code></p>
+<p><a href="http://www.w3schools.com/tags/tag_doctype.asp">More information</a></p>
+<h2>Support</h2>
+<p><a href="https://flattr.com/submit/auto?user_id=shprink&amp;url=https%3A%2F%2Fgithub.com%2Fshprink%2FBttrLazyLoading"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr BttrLazyLoading" /></a></p>
+<h2>Contribute!</h2>
+<h3>Issues</h3>
+<p>Every issue created should have a Codepen to demonstrate the problem.</p>
+<p>You can use this Codepen boilerplate: <a href="http://codepen.io/shprink/pen/MYbQGR">http://codepen.io/shprink/pen/MYbQGR</a></p>
+<h3>Installation</h3>
+<h4>Prerequisites</h4>
+<ul>
+<li><a href="http://julienrenaux.fr/2013/05/16/how-to-install-node-js-coffeescript-less-and-uglify-js-on-ubuntu/">Node JS</a></li>
+<li><a href="http://julienrenaux.fr/2013/09/12/bower/">Bower</a></li>
+<li>CoffeeScript (Global installation, <code>$ sudo npm install -g coffee-script</code>, is optional but convenient in the build step)</li>
+</ul>
+<h4>Clone the repository</h4>
+<p><code>$ git clone https://github.com/shprink/BttrLazyLoading</code></p>
+<h4>Install dependencies</h4>
+<pre><code>$ cd BttrLazyLoading
+$ npm install</code></pre>
+<h3>Build</h3>
+<p>Compiles and minifies BttrLazyLoading.coffee and bttrlazyloading.css.</p>
+<pre><code>gulp</code></pre>
+<p>If CoffeeScript isn't globally installed, use <code>node_modules/.bin/cake build</code></p>
+<h3>Develop</h3>
+<p>Builds CoffeeScript and CSS, and runs linting and build steps if any changes occur to important files. This allows you to rerun the tests immidiately after you've changed the CoffeeScript, without having to lint and recompile. Of course, any changes that breaks the CoffeeScript will be prompted on the command line.</p>
+<pre><code>gulp watch (coming)</code></pre>
+<h3>Issues</h3>
+<p>For any issue a running codepen demonstrating the problem is required. You can fork this one: <a href="http://codepen.io/shprink/pen/JoeGPq">http://codepen.io/shprink/pen/JoeGPq</a></p>
+<h3>Run tests</h3>
+<p>Open test/index.html</p>
+<p>You are now good to go ;)</p>
+<h3>Browser Compatibility</h3>
+<p>IE9+<br />
+BttrLazyLoading relies on array.indexOf which was not introduced until IE9. There is a poly fill for this function available here however, it does not help with IE8 support completely.</p>
+<h3>Contributors</h3>
+<ul>
+<li><a href="https://github.com/shprink">Julien Renaux</a></li>
+<li><a href="https://github.com/thelinmichael">Michael Thelin</a></li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/lazy-loading" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>lazy-loading</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/responsive" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>responsive</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/multi-serving" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>multi-serving</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/image" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>image</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/images" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>images</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/1388706?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/shprink" target="_blank" id="ownerName" class="sidebar-link">shprink</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 5, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">May 7, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://bttrlazyloading.julienrenaux.fr/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>gulp (^3.6.2)</li><li>gulp-coffee (^1.4.3)</li><li>gulp-coffeelint (^0.3.3)</li><li>gulp-header (^1.0.2)</li><li>gulp-minify-css (^0.3.4)</li><li>gulp-rename (^1.2.0)</li><li>gulp-replace (^0.5.0)</li><li>gulp-uglify (^0.3.0)</li><li>gulp-util (^2.2.14)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1388706?v=4" alt="shprink" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/shprink" target="_blank" class="text-decoration-none fw-bold">shprink</a><p class="mb-0 text-muted small">142 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/714409?v=4" alt="thelinmichael" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/thelinmichael" target="_blank" class="text-decoration-none fw-bold">thelinmichael</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1912168?v=4" alt="cranesandcaff" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cranesandcaff" target="_blank" class="text-decoration-none fw-bold">cranesandcaff</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3092978?v=4" alt="bitdeli-chef" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bitdeli-chef" target="_blank" class="text-decoration-none fw-bold">bitdeli-chef</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
