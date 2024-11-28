@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Maskmoney by Plentz</title>
+    <meta name="description" content="jQuery plugin to mask data entry in the input text in the form of money (currency).">
+    <meta name="author" content="plentz">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-maskmoney-by-plentz.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Maskmoney</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Maskmoney",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Maskmoney</h1>
+        <p id="packageDescription" class="text-muted">jQuery plugin to mask data entry in the input text in the form of money (currency).</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">962</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.27 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">506</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">87</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/plentz/jquery-maskmoney/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/plentz/jquery-maskmoney" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery maskMoney <a href="https://travis-ci.org/plentz/jquery-maskmoney"><img src="https://travis-ci.org/plentz/jquery-maskmoney.png" alt="Build Status" /></a></h1>
+<p>Just a simple way to create masks to your currency form fields with <a href="http://jquery.com/">jQuery</a>.</p>
+<hr />
+<h3>Download</h3>
+<p>To get the latest(minified) version, <a href="https://cdn.rawgit.com/plentz/jquery-maskmoney/master/dist/jquery.maskMoney.min.js">click here</a>.</p>
+<p>You can also use <a href="http://cdnjs.com/">CloudFlare's cdnjs</a>. Just choose the version you want to use <a href="http://cdnjs.com/libraries/jquery-maskmoney/">here</a>.</p>
+<hr />
+<h3>Show Time!</h3>
+<p>To view a complete demonstration of it's features and usage, access our <a href="https://plentz.github.io/jquery-maskmoney/">examples page</a>!</p>
+<hr />
+<h3>Usage:</h3>
+<pre class="prettyprint linenums lang-language"><code>&lt;head&gt;
+  &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script src="dist/jquery.maskMoney.min.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;input type="text" id="currency" /&gt;
+&lt;/body&gt;
+&lt;script&gt;
+  $(function() {
+    $('#currency').maskMoney();
+  })
+&lt;/script&gt;</code></pre>
+<hr />
+<h3>Options:</h3>
+<p>The options that you can set are:</p>
+<ul>
+<li><code>prefix</code>: the prefix to be displayed before(aha!) the value entered by the user(example: &quot;US$ 1234.23&quot;). default: ''</li>
+<li><code>suffix</code>: the suffix to be displayed after the value entered by the user(example: &quot;1234.23 €&quot;). default: ''</li>
+<li><code>affixesStay</code>: set if the prefix and suffix will stay in the field's value after the user exits the field. default: true</li>
+<li><code>thousands</code>: the thousands separator. default: ','</li>
+<li><code>decimal</code>: the decimal separator. default: '.'</li>
+<li><code>precision</code>: how many decimal places are allowed. default: 2</li>
+<li><code>allowZero</code>: use this setting to prevent users from inputing zero. default: false</li>
+<li><code>allowNegative</code>: use this setting to prevent users from inputing negative values. default: false</li>
+<li><code>formatOnBlur</code>: delay formatting of text field until focus leaves the field. default: false</li>
+<li><code>reverse</code>: by default, <code>maskMoney</code> applies keystrokes from right to left. use this setting to apply keystrokes from left to right. </li>
+<li><code>selectAllOnFocus</code>: select all text in the input when the element fires the focus event. default :false</li>
+<li><code>allowEmpty</code>: allow empty input values, so that when you delete the number it doesn't reset to 0.00.  default: false</li>
+</ul>
+<p><strong>IMPORTANT</strong>: if you try to bind maskMoney to a read only field, nothing will happen, since we ignore completely read only fields. So, if you have a read only field, try to bind maskMoney to it, it will not work. Even if you change the field removing the readonly property, you will need to re-bind maskMoney to make it work.</p>
+<hr />
+<h3>Bonus!</h3>
+<p>We have 3 bonus methods that can be useful to you:</p>
+<ul>
+<li><code>.maskMoney('destroy')</code> removes maskMoney from an element.</li>
+<li><code>.maskMoney('mask')</code> apply the mask to your input. This method can work as a setter as well, if you pass a value to it, like this <code>.maskMoney('mask', 1999.99)</code></li>
+<li><code>.maskMoney('unmasked')</code> return a float value (ex.: 'R$ 1.234,56' =&gt; 1234.56). PS: If you have only one input field, you should use this way <code>.maskMoney('unmasked')[0]</code>, since it will always return an array.</li>
+</ul>
+<p>You can also configure maskMoney options using the data-* API instead of passing it as a hash in the <code>.maskMoney</code> method call. To use it, simply set the options using <code>data-&lt;option&gt;</code>, like this:</p>
+<pre class="prettyprint linenums lang-language"><code>    &lt;input type="text" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal="," /&gt;</code></pre>
+<p>And when you bind maskMoney to that field, we will read those options. <strong>ATTENTION</strong>: for settings that isn't entirely lowercase, you will need to use dashes instead of capital letters. For example, to set <code>allowZero</code>, you will need to add a attribute called <code>data-allow-zero</code>.</p>
+<hr />
+<h3>Tests:</h3>
+<p>To run our test suite, just clone the repo and open <code>test/index.html</code>. If you want to run it using nodejs, clone the repo and run:</p>
+<pre><code>npm install
+bower install
+grunt test</code></pre>
+<hr />
+<h3>Contributors:</h3>
+<ul>
+<li><a href="http://github.com/aureliosaraiva">Aurélio Saraiva</a></li>
+<li><a href="http://raulpereira.com">Raul Pereira da Silva</a></li>
+<li><a href="http://plentz.org">Diego Plentz</a></li>
+<li><a href="http://github.com/otaviomedeiros">Otávio Ribeiro Medeiros</a></li>
+<li><a href="http://github.com/xtream">Víctor Cruz</a></li>
+<li><a href="http://github.com/synapsestudios">Synapse Studios</a></li>
+<li><a href="http://blog.guilhermegarnier.com/">Guilherme Garnier</a></li>
+<li><a href="http://github.com/pbalduino">Plínio Balduino</a></li>
+<li><a href="https://github.com/luiscoms">Luis Fernando Gomes</a></li>
+<li><a href="http://www.gmoore.net/">Gary Moore</a></li>
+<li><a href="https://github.com/loureirorg">Daniel Loureiro</a></li>
+<li><a href="http://twitter.com/tafs7/">Thiago Silva</a></li>
+<li><a href="https://github.com/guilhermehn">Guilherme Nagatomo</a></li>
+<li><a href="https://github.com/abduncan">Andrew Duncan</a></li>
+</ul>
+<hr />
+<h3>License:</h3>
+<p><strong>jQuery-maskMoney</strong> is released under the MIT license.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/4867?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/plentz" target="_blank" id="ownerName" class="sidebar-link">plentz</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 30, 2009</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 16, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://plentz.github.io/jquery-maskmoney/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (latest)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>amdefine (latest)</li><li>grunt (latest)</li><li>grunt-cli (latest)</li><li>grunt-contrib-concat (latest)</li><li>grunt-contrib-jshint (latest)</li><li>grunt-contrib-qunit (latest)</li><li>grunt-contrib-uglify (latest)</li><li>grunt-contrib-watch (latest)</li><li>grunt-jquerymanifest (latest)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/100226?v=4" alt="bobeagan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bobeagan" target="_blank" class="text-decoration-none fw-bold">bobeagan</a><p class="mb-0 text-muted small">29 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/118861?v=4" alt="aureliosaraiva" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aureliosaraiva" target="_blank" class="text-decoration-none fw-bold">aureliosaraiva</a><p class="mb-0 text-muted small">23 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2165269?v=4" alt="abduncan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/abduncan" target="_blank" class="text-decoration-none fw-bold">abduncan</a><p class="mb-0 text-muted small">11 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/32979?v=4" alt="pbalduino" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pbalduino" target="_blank" class="text-decoration-none fw-bold">pbalduino</a><p class="mb-0 text-muted small">8 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2125182?v=4" alt="yooontheearth" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/yooontheearth" target="_blank" class="text-decoration-none fw-bold">yooontheearth</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1202064?v=4" alt="gaetani" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gaetani" target="_blank" class="text-decoration-none fw-bold">gaetani</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1844447?v=4" alt="danielrohers" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/danielrohers" target="_blank" class="text-decoration-none fw-bold">danielrohers</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1005135?v=4" alt="jzywien" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jzywien" target="_blank" class="text-decoration-none fw-bold">jzywien</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/227997?v=4" alt="victor-cruz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/victor-cruz" target="_blank" class="text-decoration-none fw-bold">victor-cruz</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1220606?v=4" alt="kelvah" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kelvah" target="_blank" class="text-decoration-none fw-bold">kelvah</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/116234?v=4" alt="wbotelhos" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/wbotelhos" target="_blank" class="text-decoration-none fw-bold">wbotelhos</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/78399?v=4" alt="gmoore" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gmoore" target="_blank" class="text-decoration-none fw-bold">gmoore</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/371973?v=4" alt="loureirorg" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/loureirorg" target="_blank" class="text-decoration-none fw-bold">loureirorg</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1441720?v=4" alt="erikhenrique" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/erikhenrique" target="_blank" class="text-decoration-none fw-bold">erikhenrique</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/835857?v=4" alt="FagnerMartinsBrack" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/FagnerMartinsBrack" target="_blank" class="text-decoration-none fw-bold">FagnerMartinsBrack</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/19874?v=4" alt="jch" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jch" target="_blank" class="text-decoration-none fw-bold">jch</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1143192?v=4" alt="JulianeAlbuquerque" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/JulianeAlbuquerque" target="_blank" class="text-decoration-none fw-bold">JulianeAlbuquerque</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/16159850?v=4" alt="juniorgarcia" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/juniorgarcia" target="_blank" class="text-decoration-none fw-bold">juniorgarcia</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/30023919?v=4" alt="RogerioMorais" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/RogerioMorais" target="_blank" class="text-decoration-none fw-bold">RogerioMorais</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/130415?v=4" alt="shaneog" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/shaneog" target="_blank" class="text-decoration-none fw-bold">shaneog</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/11811344?v=4" alt="elfalem" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/elfalem" target="_blank" class="text-decoration-none fw-bold">elfalem</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/397989?v=4" alt="fjsj" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fjsj" target="_blank" class="text-decoration-none fw-bold">fjsj</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+17 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
