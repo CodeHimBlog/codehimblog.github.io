@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tabs by Jellekralt</title>
+    <meta name="description" content="Responsive Tabs is a jQuery plugin that provides responsive tab functionality. The tabs transform to an accordion when it reaches a CSS breakpoint. You can use ...">
+    <meta name="author" content="jellekralt">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/responsive-tabs-by-jellekralt.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Responsive Tabs</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Responsive Tabs",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Responsive Tabs</h1>
+        <p id="packageDescription" class="text-muted">Responsive Tabs is a jQuery plugin that provides responsive tab functionality. The tabs transform to an accordion when it reaches a CSS breakpoint. You can use this plugin as a solution for displaying tabs elegantly on desktop, tablet and mobile.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">533</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.36 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">227</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">23</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/jellekralt/Responsive-Tabs/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/jellekralt/Responsive-Tabs" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery Responsive Tabs</h1>
+<p>This jQuery plugin provides responsive tab functionality. The tabs transform to an accordion when it reaches a CSS breakpoint.<br />
+Check out a demo at <a href="http://jellekralt.github.io/Responsive-Tabs/">http://jellekralt.github.io/Responsive-Tabs/</a></p>
+<h1>Features</h1>
+<ul>
+<li>Tabs transform to accordion based on breakpoint</li>
+<li>Uses javascript / jQuery for the technical tab switching (class based)</li>
+<li>Uses CSS for the desktop/tablet/mobile view</li>
+<li>Has callback events for the tab events</li>
+<li>Tabs can be opened with URL hashes</li>
+<li>Tabs can auto rotate</li>
+<li>Tabs can be collapsed (optional)</li>
+<li>Tabs can start collapsed based on the view (optional)</li>
+<li>Tabs can be disabled</li>
+<li>The tabs are controllable with API methods</li>
+<li>Cross browser compatibility (IE7+, Chrome, Firefox, Safari and Opera)</li>
+<li>Multiple device support (Web, Tablet, Mobile, etc)</li>
+</ul>
+<h1>How to use</h1>
+<ul>
+<li>
+<p>Requires jQuery (minimaly jQuery 1.7.0)</p>
+</li>
+<li>
+<p>Include jquery.responsiveTabs.js</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="js/jquery.responsiveTabs.js"&gt;&lt;/script&gt;</code></pre>
+</li>
+<li>
+<p>Include responsive-tabs.css for the basic Tabs to Accordion switching</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link type="text/css" rel="stylesheet" href="css/responsive-tabs.css" /&gt;</code></pre>
+</li>
+<li>
+<p>Include style.css for a basic tab/accordion theme</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link type="text/css" rel="stylesheet" href="css/style.css" /&gt;</code></pre>
+</li>
+<li>
+<p>Use this HTML markup:</p>
+</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>&lt;div id="responsiveTabsDemo"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#tab-1"&gt; .... &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#tab-2"&gt; .... &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#tab-3"&gt; .... &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div id="tab-1"&gt; ....... &lt;/div&gt;
+    &lt;div id="tab-2"&gt; ....... &lt;/div&gt;
+    &lt;div id="tab-3"&gt; ....... &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<ul>
+<li>Use this jQuery function to enable responsive tabs on the selected element:</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>$('#responsiveTabsDemo').responsiveTabs({
+    startCollapsed: 'accordion'
+});</code></pre>
+<h1>Get</h1>
+<h3>Bower</h3>
+<pre><code>bower install responsive-tabs</code></pre>
+<h3>NPM</h3>
+<pre><code>npm install responsive-tabs</code></pre>
+<h3>CDN</h3>
+<p>Responsive Tabs is available on <a href="http://www.jsdelivr.com/">jsDelivr</a></p>
+<pre><code>http://www.jsdelivr.com/#!jquery.responsive-tabs</code></pre>
+<h1>API</h1>
+<p>The following options are available:</p>
+<h3>Collapsible</h3>
+<p>If set to 'true' the panels are collapsible. The values 'tabs' and 'accordion' can be used to make the panels collapsible in a specific view/state. If a tab is active and you select it again, the panel will collapse.</p>
+<pre class="prettyprint linenums lang-language"><code>collapsible: false // The panels are not collapsible
+collapsible: true // The panels are collapsible
+collapsible: 'tabs' // The panels are only collapsible if the view is currently tab based
+collapsible: 'accordion' // The panels are only collapsible if the view is currently accordion based</code></pre>
+<h3>Start collapsed</h3>
+<p>This option defines if the first panel on load starts collapsed or not. With the values 'tabs' and 'accordion' you can specify in which view the tabs are supposed to start collapsed.</p>
+<pre class="prettyprint linenums lang-language"><code>startCollapsed: false // Do not collapse on start
+startCollapsed: true // Start with the panels collapsed
+startCollapsed: 'tabs' // Start with the panels collapsed if the view is currently tab based
+startCollapsed: 'accordion' // Start with the panels collapsed if the view is currently accordion based</code></pre>
+<h3>Disabled tabs</h3>
+<p>An array with zero based integers that define the tabs that should be disabled</p>
+<pre class="prettyprint linenums lang-language"><code>disabled: [0,2] // Disables the first and third tab</code></pre>
+<h3>Active tab</h3>
+<p>An 0 based integer that defines the initial opened tab on load.</p>
+<pre class="prettyprint linenums lang-language"><code>active: 1 // Opens the second tab on load</code></pre>
+<h3>Accordion Tab HTML element</h3>
+<p>A single HTML element template in which the accordion tab will be wrapped.</p>
+<pre class="prettyprint linenums lang-language"><code>accordionTabElement: '&lt;div&gt;&lt;/div&gt;'</code></pre>
+<h3>Set hash</h3>
+<p>A boolean that can be used to enable and disable the setting of a reference to the selected tab in the URL hash. If set to 'true', the selecting of a new tab will set the reference to that tab in the URL hash.</p>
+<pre class="prettyprint linenums lang-language"><code>setHash: true</code></pre>
+<h3>Rotate</h3>
+<p>This option can be used to auto rotate the tabs. The tabs will stop rotating when a tab is selected.</p>
+<pre class="prettyprint linenums lang-language"><code>rotate: false, // The tabs won't auto rotate
+rotate: true, // The tabs will auto rotate from the start</code></pre>
+<h3>Event</h3>
+<p>This option can be used to specify the event that activates a tab. For instance: 'mouseover'. Defaults to 'click'</p>
+<pre class="prettyprint linenums lang-language"><code>event: 'click' // (default) The tabs will activate on click
+event: 'mouseover' // The tabs will activate on mouseover
+etc...</code></pre>
+<h3>Animation</h3>
+<p>This option enables the animation of the panels. By default the panels will just show and hide, this option can be used to make the panels slide up and down and fade in and out.</p>
+<pre class="prettyprint linenums lang-language"><code>animation: 'fade', // The panels will fade in and out
+animation: 'slide', // The panels will slide up and down</code></pre>
+<p>You can enable / disable the queueing of the animation by setting the <code>animationQueue</code> option.</p>
+<pre class="prettyprint linenums lang-language"><code>animationQueue: false, // (default) disables the queueing of the animations. With this option on, all animations happen at the same time
+animationQueue: true, // enables the queueing of the animations. With this option on, animations wait for each other
+animationQueue: 'tabs', // enables the queueing of the animations for the tabs state only
+animationQueue: 'accordion', // enables the queueing of the animations for the accordion state only</code></pre>
+<p>You can set the speed of the animation by setting the <code>duration</code> option.</p>
+<pre class="prettyprint linenums lang-language"><code>duration: 500, // (default) Sets the animation duration to 500</code></pre>
+<h3>Scroll to Accordion panel</h3>
+<p>This options can be used to enable automatic scrolling to the accordion panel that has been opened</p>
+<pre class="prettyprint linenums lang-language"><code>scrollToAccordion: false, // (default) disables the auto scrolling to the accordion panel
+scrollToAccordion: true, // enables the auto scrolling to the accordion panel</code></pre>
+<h3>Scroll to Accordion panel on load</h3>
+<p>This option can be used to disabling the scrolling to an accordion panel on load</p>
+<pre class="prettyprint linenums lang-language"><code>scrollToAccordionOnLoad: true, // (default) enables scrolling to accordion on load
+scrollToAccordionOnLoad: false, // disables scrolling to accordion on load</code></pre>
+<p>You can define an offset in pixels for the scroll to accordion panel by setting the <code>scrollToAccordionOffset</code> option.</p>
+<pre class="prettyprint linenums lang-language"><code>scrollToAccordionOffset: false, // (default) disables the auto scrolling to the accordion panel
+scrollToAccordionOffset: true, // enables the auto scrolling to the accordion panel</code></pre>
+<h3>Navigation container</h3>
+<p>This option can be used to select a different container element for the navigation <code>&lt;ul&gt;</code>.</p>
+<pre class="prettyprint linenums lang-language"><code>navigationContainer: '.some-css-selector'</code></pre>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="some-css-selector"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Tab&lt;/li&gt;
+        ...
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+<h2>Callbacks</h2>
+<h3>Click</h3>
+<p>This callback is called after a tab is clicked, regardless of whether it's disabled</p>
+<p><strong>Arguments</strong></p>
+<ul>
+<li>event: Clicked event</li>
+<li>tab: Clicked tab object</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>click: function(event, tab){},</code></pre>
+<h3>Activate</h3>
+<p>This callback is called after a tab is selected</p>
+<p><strong>Arguments</strong></p>
+<ul>
+<li>event: Activate event</li>
+<li>tab: Activated tab object</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>activate: function(event, tab){},</code></pre>
+<h3>Deactivate</h3>
+<p>This callback is called after a tab is deactivated</p>
+<p><strong>Arguments</strong></p>
+<ul>
+<li>event: Deactivate event</li>
+<li>tab: Deactivated tab object</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>deactivate: function(event, tab){},</code></pre>
+<h3>Load</h3>
+<p>This callback is called after the plugin has been loaded</p>
+<p><strong>Arguments</strong></p>
+<ul>
+<li>event: Load event</li>
+<li>tab: First tab object</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>load: function(event, firstTab){},</code></pre>
+<h3>Activate State</h3>
+<p>This callback is called after the plugin switches from state (Tab view / Accordion view)</p>
+<pre class="prettyprint linenums lang-language"><code>activateState: function(){}</code></pre>
+<h2>Methods</h2>
+<p>The following methods are available:</p>
+<h3>Activate</h3>
+<p>This method activates/opens a tab by using a zero based tab reference</p>
+<pre class="prettyprint linenums lang-language"><code>$('#responsiveTabsDemo').responsiveTabs('activate', 1); // This would open the second tab</code></pre>
+<h3>Deactivate</h3>
+<p>This method deactivates/closes a tab by using a zero based tab reference</p>
+<pre class="prettyprint linenums lang-language"><code>$('#responsiveTabsDemo').responsiveTabs('deactivate', 1); // This would close the second tab</code></pre>
+<h3>Enable</h3>
+<p>This method enables a tab by using a zero based tab reference</p>
+<pre class="prettyprint linenums lang-language"><code>$('#responsiveTabsDemo').responsiveTabs('enable', 1); // This would enable the second tab</code></pre>
+<h3>Disable</h3>
+<p>This method deactivates/closes a tab by using a zero based tab reference</p>
+<pre class="prettyprint linenums lang-language"><code>$('#responsiveTabsDemo').responsiveTabs('disable', 1); // This would disable the second tab</code></pre>
+<h3>startRotation</h3>
+<p>This method start the rotation of the tabs. You can use the first argument to define the speed.</p>
+<pre class="prettyprint linenums lang-language"><code>$('#responsiveTabsDemo').responsiveTabs('startRotation', 1000); // This would open the second tab</code></pre>
+<h2>Events</h2>
+<p>The following events are emitted on the element the tabs are initialised on (the container):</p>
+<h3>tabs-load</h3>
+<p>This event is triggered when the tabs plugin has finished loading</p>
+<p><strong>Passed variables</strong></p>
+<ul>
+<li>event</li>
+</ul>
+<h3>tabs-activate</h3>
+<p>This event is triggered when a tab is activated</p>
+<p><strong>Passed variables</strong></p>
+<ul>
+<li>event</li>
+<li>Activated tab object</li>
+</ul>
+<h3>tabs-deactivate</h3>
+<p>This event is triggered when a tab is deactivated</p>
+<p><strong>Passed variables</strong></p>
+<ul>
+<li>event</li>
+<li>Deactivated tab object</li>
+</ul>
+<h3>tabs-activate-state</h3>
+<p>This event is triggered when the state of the plugin changes</p>
+<p><strong>Passed variables</strong></p>
+<ul>
+<li>event</li>
+<li>State object
+<ul>
+<li>Old state</li>
+<li>New state</li>
+</ul></li>
+</ul>
+<h1>Credits</h1>
+<p>The idea for this plugin is based on 'Easy Responsive Tabs to Accordion' by samsono (github.com/samsono)</p>
+<p><a href="https://github.com/samsono/Easy-Responsive-Tabs-to-Accordion">https://github.com/samsono/Easy-Responsive-Tabs-to-Accordion</a></p>
+<h1>Support</h1>
+<p>If you have any questions, problems or suggestions, feel free to submit a ticket!<br />
+Also, pull requests with improvements, new features or other great stuff are always very welcome.</p>
+<h1>Licence</h1>
+<p>MIT: <a href="http://jellekralt.mit-license.org/">http://jellekralt.mit-license.org/</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/accordion" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>accordion</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/accordion-tab" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>accordion-tab</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/responsive" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>responsive</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/tabs" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>tabs</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/214558?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/jellekralt" target="_blank" id="ownerName" class="sidebar-link">jellekralt</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">July 28, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 22, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://jellekralt.github.io/Responsive-Tabs/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.7.2 &lt;3.0.0)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>browser-sync (^2.8.0)</li><li>connect-modrewrite (^0.8.1)</li><li>gulp (^3.9.0)</li><li>gulp-bump (^1.0.0)</li><li>gulp-header (^1.7.1)</li><li>gulp-jshint (^1.11.2)</li><li>gulp-rename (^1.2.2)</li><li>gulp-uglify (^1.2.0)</li><li>node-qunit-phantomjs (^1.2.1)</li><li>qunitjs (^2.0.1)</li><li>run-sequence (^1.1.5)</li><li>yargs (^3.31.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/214558?v=4" alt="jellekralt" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jellekralt" target="_blank" class="text-decoration-none fw-bold">jellekralt</a><p class="mb-0 text-muted small">163 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/95854?v=4" alt="dandehavilland" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dandehavilland" target="_blank" class="text-decoration-none fw-bold">dandehavilland</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1322638?v=4" alt="Dobby89" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Dobby89" target="_blank" class="text-decoration-none fw-bold">Dobby89</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/7440418?v=4" alt="Furex" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Furex" target="_blank" class="text-decoration-none fw-bold">Furex</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/18329?v=4" alt="timkelty" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/timkelty" target="_blank" class="text-decoration-none fw-bold">timkelty</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1742957?v=4" alt="herrschuessler" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/herrschuessler" target="_blank" class="text-decoration-none fw-bold">herrschuessler</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2027711?v=4" alt="raddevon" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/raddevon" target="_blank" class="text-decoration-none fw-bold">raddevon</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3485?v=4" alt="kswedberg" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kswedberg" target="_blank" class="text-decoration-none fw-bold">kswedberg</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5268591?v=4" alt="falconwhite" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/falconwhite" target="_blank" class="text-decoration-none fw-bold">falconwhite</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5826310?v=4" alt="orelvisvr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/orelvisvr" target="_blank" class="text-decoration-none fw-bold">orelvisvr</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/539459?v=4" alt="wenom64" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/wenom64" target="_blank" class="text-decoration-none fw-bold">wenom64</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+6 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
