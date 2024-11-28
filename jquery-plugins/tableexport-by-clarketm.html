@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableexport by Clarketm</title>
+    <meta name="description" content="The simple, easy-to-implement library to export HTML tables to xlsx, xls, csv, and txt files.">
+    <meta name="author" content="clarketm">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/tableexport-by-clarketm.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Tableexport</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tableexport",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Tableexport</h1>
+        <p id="packageDescription" class="text-muted">The simple, easy-to-implement library to export HTML tables to xlsx, xls, csv, and txt files.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">888</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">3.5 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">289</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">106</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/clarketm/TableExport/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/clarketm/TableExport" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <p><a href="https://tableexport.travismclarke.com"><img src="/Hero.png" alt="TableExport" /></a></p>
+<!-- # [TableExport](https://tableexport.travismclarke.com) -->
+<!-- The simple, easy-to-implement library to export HTML tables to `xlsx`, `xls`, `csv`, and `txt` files. -->
+<p><a href="https://www.npmjs.com/package/tableexport"><img src="https://img.shields.io/npm/v/tableexport.svg" alt="NPM release" /></a><br />
+<a href="https://travis-ci.org/clarketm/TableExport"><img src="https://travis-ci.org/clarketm/TableExport.svg?branch=master" alt="Build Status" /></a><br />
+[<img src="https://img.shields.io/npm/dt/tableexport.svg" alt="Downloads" />]()<br />
+[<img src="https://img.shields.io/npm/l/tableexport.svg" alt="License" />]()</p>
+<h2>Docs</h2>
+<ul>
+<li><a href="MIGRATING_v3_to_v4.md">Migrating from <strong>3.x</strong> to <strong>4.x</strong>?</a></li>
+<li><a href="MIGRATING_v4_to_v5.md">Migrating from <strong>4.x</strong> to <strong>5.x</strong>?</a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/"><code>v3</code> docs</a> and <a href="https://github.com/clarketm/TableExport/tree/3.x.x#getting-started">README</a>:</li>
+<li><a href="https://tableexport.travismclarke.com/READMEv4.html"><code>v4</code> docs</a> and <a href="https://github.com/clarketm/TableExport/tree/4.x.x#getting-started">README</a>:</li>
+<li><a href="https://tableexport.travismclarke.com/"><code>v5</code> docs</a> and <a href="#getting-started">README</a> (below):</li>
+</ul>
+<h2>Getting Started</h2>
+<h3>Install manually using <code>&lt;script&gt;</code> tags</h3>
+<p>To use this library, include the <a href="https://github.com/clarketm/FileSaver.js/">FileSaver.js</a> library, and <a href="https://tableexport.travismclarke.com">TableExport</a> library before the closing <code>&lt;body&gt;</code> tag of your HTML document:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="FileSaver.js"&gt;&lt;/script&gt;
+...
+&lt;script src="tableexport.js"&gt;&lt;/script&gt;</code></pre>
+<h3>Install with Bower</h3>
+<pre class="prettyprint linenums lang-language"><code>$ bower install tableexport.js</code></pre>
+<h3>Install with npm</h3>
+<pre class="prettyprint linenums lang-language"><code>$ npm install tableexport</code></pre>
+<h3>CDN</h3>
+<h4><a href="https://unpkg.com/#/">unpkg</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;">uncompressed</th>
+<th style="text-align: center;">compressed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>CSS</strong></td>
+<td style="text-align: center;"><a href="https://unpkg.com/tableexport/dist/css/tableexport.css">🔗</a></td>
+<td style="text-align: center;"><a href="https://unpkg.com/tableexport/dist/css/tableexport.min.css">🔗</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>JS</strong></td>
+<td style="text-align: center;"><a href="https://unpkg.com/tableexport/dist/js/tableexport.js">🔗</a></td>
+<td style="text-align: center;"><a href="https://unpkg.com/tableexport/dist/js/tableexport.min.js">🔗</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Images</strong></td>
+<td style="text-align: center;">&mdash;</td>
+<td style="text-align: center;"><a href="https://unpkg.com/tableexport/dist/img/xlsx.svg">🔗<sup>xlsx</sup></a><a href="https://unpkg.com/tableexport/dist/img/xls.svg">🔗<sup>xls</sup></a><a href="https://unpkg.com/tableexport/dist/img/csv.svg">🔗<sup>csv</sup></a><a href="https://unpkg.com/tableexport/dist/img/txt.svg">🔗<sup>txt</sup></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Dependencies</h3>
+<h4>Required:</h4>
+<ul>
+<li><a href="https://github.com/clarketm/FileSaver.js/">FileSaver.js</a></li>
+</ul>
+<h4>Optional:</h4>
+<ul>
+<li><a href="https://jquery.com">jQuery</a> (1.2.1 or higher)</li>
+<li><a href="http://getbootstrap.com/getting-started/#download">Bootstrap</a> (3.1.0 or higher)</li>
+</ul>
+<h4>Add-Ons:</h4>
+<p>In order to provide <strong>Office Open XML SpreadsheetML Format ( <code>.xlsx</code> )</strong> support, you must include the following third-party library in your project before both <a href="https://github.com/clarketm/FileSaver.js/">FileSaver.js</a> and <a href="https://tableexport.travismclarke.com">TableExport</a>.</p>
+<ul>
+<li><a href="https://github.com/SheetJS/js-xlsx">xlsx.core.js</a> by <em>SheetJS</em></li>
+</ul>
+<blockquote>
+<p>Including <code>xlsx.core.js</code> is <strong>NOT</strong> necessary if installing with <a href="#install-with-bower"><code>Bower</code></a> or <a href="#install-with-npm"><code>npm</code></a></p>
+</blockquote>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="xlsx.core.js"&gt;&lt;/script&gt;
+&lt;script src="FileSaver.js"&gt;&lt;/script&gt;
+...
+&lt;script src="tableexport.js"&gt;&lt;/script&gt;</code></pre>
+<h4>Older Browsers:</h4>
+<p>To support legacy browsers ( <strong>Chrome</strong> &lt; 20, <strong>Firefox</strong> &lt; 13, <strong>Opera</strong> &lt; 12.10, <strong>IE</strong> &lt; 10, <strong>Safari</strong> &lt; 6 ) include the <a href="https://github.com/clarketm/Blob.js/">Blob.js</a> polyfill before the <a href="https://github.com/clarketm/FileSaver.js/">FileSaver.js</a> script.</p>
+<ul>
+<li><a href="https://github.com/clarketm/Blob.js">Blob.js</a> by <em>eligrey</em> (forked by <em>clarketm</em>)</li>
+</ul>
+<blockquote>
+<p>Including <code>Blob.js</code> is <strong>NOT</strong> necessary if installing with <a href="#install-with-bower"><code>Bower</code></a> or <a href="#install-with-npm"><code>npm</code></a></p>
+</blockquote>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="Blob.js"&gt;&lt;/script&gt;
+&lt;script src="FileSaver.js"&gt;&lt;/script&gt;
+...
+&lt;script src="tableexport.js"&gt;&lt;/script&gt;</code></pre>
+<h2>Usage</h2>
+<h3>JavaScript</h3>
+<p>To use this library, simple call the <a href="https://tableexport.travismclarke.com"><code>TableExport</code></a> constructor:</p>
+<pre class="prettyprint linenums lang-language"><code>new TableExport(document.getElementsByTagName("table"));
+
+// OR simply
+
+TableExport(document.getElementsByTagName("table"));
+
+// OR using jQuery
+
+$("table").tableExport();</code></pre>
+<p>Additional properties can be passed-in to customize the look and feel of your tables, buttons, and exported data.</p>
+<p>Notice that by default, TableExport will create export buttons for three different filetypes <em><code>xls</code>, <code>csv</code>, <code>txt</code></em>. You can choose which buttons to generate by setting the <code>formats</code> property to the filetype(s) of your choice.</p>
+<pre class="prettyprint linenums lang-language"><code>/* Defaults */
+TableExport(document.getElementsByTagName("table"), {
+  headers: true,                      // (Boolean), display table headers (th or td elements) in the &lt;thead&gt;, (default: true)
+  footers: true,                      // (Boolean), display table footers (th or td elements) in the &lt;tfoot&gt;, (default: false)
+  formats: ["xlsx", "csv", "txt"],    // (String[]), filetype(s) for the export, (default: ['xlsx', 'csv', 'txt'])
+  filename: "id",                     // (id, String), filename for the downloaded file, (default: 'id')
+  bootstrap: false,                   // (Boolean), style buttons using bootstrap, (default: true)
+  exportButtons: true,                // (Boolean), automatically generate the built-in export buttons for each of the specified formats (default: true)
+  position: "bottom",                 // (top, bottom), position of the caption element relative to table, (default: 'bottom')
+  ignoreRows: null,                   // (Number, Number[]), row indices to exclude from the exported file(s) (default: null)
+  ignoreCols: null,                   // (Number, Number[]), column indices to exclude from the exported file(s) (default: null)
+  trimWhitespace: true,               // (Boolean), remove all leading/trailing newlines, spaces, and tabs from cell text in the exported file(s) (default: false)
+  RTL: false,                         // (Boolean), set direction of the worksheet to right-to-left (default: false)
+  sheetname: "id"                     // (id, String), sheet name for the exported spreadsheet, (default: 'id')
+});</code></pre>
+<blockquote>
+<p><strong>Note:</strong> to use the <code>xlsx</code> filetype, you must include <a href="https://github.com/SheetJS/js-xlsx/blob/master/dist/xlsx.core.min.js">js-xlsx</a>; reference the <a href="#add-ons"><code>Add-Ons</code></a> section.</p>
+</blockquote>
+<h3>Properties</h3>
+<ul>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/headers_footers.html"><code>headers</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/headers_footers.html"><code>footers</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/formats-xlsx-xls-csv-txt.html"><code>formats</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/filename.html"><code>filename</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/bootstrap.html"><code>bootstrap</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/exportButtons.html"><code>exportButtons</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/position.html"><code>position</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/ignore-row-cols-cells.html"><code>ignoreRows</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/ignore-row-cols-cells.html"><code>ignoreCols</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/whitespace.html"><code>trimWhitespace</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/right-to-left.html"><code>RTL</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/sheetname.html"><code>sheetname</code></a></li>
+</ul>
+<h3>Methods</h3>
+<p>TableExport supports additional methods (<strong>getExportData</strong>, <strong>update</strong>, <strong>reset</strong> and <strong>remove</strong>) to control the <a href="https://tableexport.travismclarke.com"><code>TableExport</code></a> instance after creation.</p>
+<pre class="prettyprint linenums lang-language"><code>/* First, call the `TableExport` constructor and save the return instance to a variable */
+var table = TableExport(document.getElementById("export-buttons-table"));</code></pre>
+<h4><a href="https://tableexport.v3.travismclarke.com/examples/exportButtons.html"><code>getExportData</code></a></h4>
+<pre class="prettyprint linenums lang-language"><code>/* get export data */
+var exportData = table.getExportData(); // useful for creating custom export buttons, i.e. when (exportButtons: false)
+
+/*****************
+ ** exportData ***
+ *****************
+{
+    "export-buttons-table": {
+        xls: {
+            data: "...",
+            fileExtension: ".xls",
+            filename: "export-buttons-table",
+            mimeType: "application/vnd.ms-excel"
+        },
+        ...
+    }
+};
+*/</code></pre>
+<h4><a href="https://tableexport.v3.travismclarke.com/examples/exportButtons.html"><code>export2file</code></a></h4>
+<pre class="prettyprint linenums lang-language"><code>/* convert export data to a file for download */
+var exportData = table.getExportData(); 
+var xlsxData = exportData.table.xlsx; // Replace with the kind of file you want from the exportData
+table.export2file(xlsxData.data, xlsxData.mimeType, xlsxData.filename, xlsxData.fileExtension, xlsxData.merges, xlsxData.RTL, xlsxData.sheetname)</code></pre>
+<h4><a href="https://tableexport.v3.travismclarke.com/examples/exportButtons.html"><code>getFileSize</code></a></h4>
+<pre class="prettyprint linenums lang-language"><code>var tableId = "export-buttons-table";
+var XLS = table.CONSTANTS.FORMAT.XLS;
+
+/* get export data (see `getExportData` above) */
+var exportDataXLS = table.getExportData()[tableId][XLS];
+
+/* get file size (bytes) */
+var bytesXLS = table.getFileSize(exportDataXLS.data, exportDataXLS.fileExtension);
+
+/**********************************
+ ** bytesXLS (file size in bytes)
+ **********************************
+352
+*/</code></pre>
+<h4><a href="https://tableexport.v3.travismclarke.com/examples/update_reset_remove.html"><code>update</code></a></h4>
+<pre class="prettyprint linenums lang-language"><code>/* update */
+table.update({
+  filename: "newFile" // pass in a new set of properties
+});</code></pre>
+<h4><a href="https://tableexport.v3.travismclarke.com/examples/update_reset_remove.html"><code>reset</code></a></h4>
+<pre class="prettyprint linenums lang-language"><code>/* reset */
+table.reset(); // useful for a dynamically altered table</code></pre>
+<h4><a href="https://tableexport.v3.travismclarke.com/examples/update_reset_remove.html"><code>remove</code></a></h4>
+<pre class="prettyprint linenums lang-language"><code>/* remove */
+table.remove(); // removes caption and buttons</code></pre>
+<h3>Settings</h3>
+<p>Below are some of the popular configurable settings to customize the functionality of the library.</p>
+<h4><a href="https://tableexport.v3.travismclarke.com/examples/ignore-row-cols-cells.html"><code>ignoreCSS</code></a></h4>
+<pre class="prettyprint linenums lang-language"><code>/**
+ * CSS selector or selector[] to exclude/remove cells (&lt;td&gt; or &lt;th&gt;) from the exported file(s).
+ * @type {selector|selector[]}
+ * @memberof TableExport.prototype
+ */
+
+// selector
+TableExport.prototype.ignoreCSS = ".tableexport-ignore";
+
+// selector[]
+TableExport.prototype.ignoreCSS = [".tableexport-ignore", ".other-ignore-class"];
+
+// OR using jQuery
+
+// selector
+$.fn.tableExport.ignoreCSS = ".tableexport-ignore";
+
+// selector[]
+$.fn.tableExport.ignoreCSS = [".tableexport-ignore", ".other-ignore-class"];</code></pre>
+<h4><a href="https://tableexport.v3.travismclarke.com/examples/ignore-row-cols-cells.html"><code>emptyCSS</code></a></h4>
+<pre class="prettyprint linenums lang-language"><code>/**
+ * CSS selector or selector[] to replace cells (&lt;td&gt; or &lt;th&gt;) with an empty string in the exported file(s).
+ * @type {selector|selector[]}
+ * @memberof TableExport.prototype
+ */
+
+// selector
+TableExport.prototype.emptyCSS = ".tableexport-empty";
+
+// selector[]
+TableExport.prototype.emptyCSS = [".tableexport-empty", ".other-empty-class"];
+
+// OR using jQuery
+
+// selector
+$.fn.tableExport.emptyCSS = ".tableexport-empty";
+
+// selector[]
+$.fn.tableExport.emptyCSS = [".tableexport-empty", ".other-empty-class"];</code></pre>
+<pre class="prettyprint linenums lang-language"><code>/* default charset encoding (UTF-8) */
+TableExport.prototype.charset = "charset=utf-8";
+
+/* default `filename` property if "id" attribute is unset */
+TableExport.prototype.defaultFilename = "myDownload";
+
+/* default class to style buttons when not using Bootstrap or the built-in export buttons, i.e. when (`bootstrap: false` &amp; `exportButtons: true`)  */
+TableExport.prototype.defaultButton = "button-default";
+
+/* Bootstrap classes used to style and position the export button, i.e. when (`bootstrap: true` &amp; `exportButtons: true`) */
+TableExport.prototype.bootstrapConfig = ["btn", "btn-default", "btn-toolbar"];
+
+/* row delimeter used in all filetypes */
+TableExport.prototype.rowDel = "\r\n";</code></pre>
+<pre class="prettyprint linenums lang-language"><code>/**
+ * Format-specific configuration (default class, content, mimeType, etc.)
+ * @memberof TableExport.prototype
+ */
+formatConfig: {
+    /**
+     * XLSX (Open XML spreadsheet) file extension configuration
+     * @memberof TableExport.prototype
+     */
+    xlsx: {
+        defaultClass: 'xlsx',
+        buttonContent: 'Export to xlsx',
+        mimeType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+        fileExtension: '.xlsx'
+    },
+    xlsm: {
+        defaultClass: 'xlsm',
+        buttonContent: 'Export to xlsm',
+        mimeType: 'application/vnd.ms-excel.sheet.macroEnabled.main+xml',
+        fileExtension: '.xlsm'
+    },
+    xlsb: {
+        defaultClass: 'xlsb',
+        buttonContent: 'Export to xlsb',
+        mimeType: 'application/vnd.ms-excel.sheet.binary.macroEnabled.main',
+        fileExtension: '.xlsb'
+    },
+    /**
+     * XLS (Binary spreadsheet) file extension configuration
+     * @memberof TableExport.prototype
+     */
+    xls: {
+        defaultClass: 'xls',
+        buttonContent: 'Export to xls',
+        separator: '\t',
+        mimeType: 'application/vnd.ms-excel',
+        fileExtension: '.xls',
+        enforceStrictRFC4180: false
+    },
+    /**
+     * CSV (Comma Separated Values) file extension configuration
+     * @memberof TableExport.prototype
+     */
+    csv: {
+        defaultClass: 'csv',
+        buttonContent: 'Export to csv',
+        separator: ',',
+        mimeType: 'text/csv',
+        fileExtension: '.csv',
+        enforceStrictRFC4180: true
+    },
+    /**
+     * TXT (Plain Text) file extension configuration
+     * @memberof TableExport.prototype
+     */
+    txt: {
+        defaultClass: 'txt',
+        buttonContent: 'Export to txt',
+        separator: '  ',
+        mimeType: 'text/plain',
+        fileExtension: '.txt',
+        enforceStrictRFC4180: true
+    }
+},
+
+//////////////////////////////////////////
+// Configuration override example
+//////////////////////////////////////////
+
+/* Change the CSV (Comma Separated Values) `mimeType` to "application/csv" */
+TableExport.prototype.formatConfig.xlsx.mimeType = "application/csv"
+</code></pre>
+<h3>CSS</h3>
+<p><a href="https://tableexport.travismclarke.com">TableExport</a> packages with customized <a href="http://getbootstrap.com/getting-started/#download">Bootstrap</a> CSS stylesheets to deliver enhanced table and button styling. These styles can be <em>enabled</em> by initializing with the <code>bootstrap</code> property set to <code>true</code>.</p>
+<pre class="prettyprint linenums lang-language"><code>TableExport(document.getElementsByTagName("table"), {
+  bootstrap: true
+});</code></pre>
+<p>When used alongside Bootstrap, there are four custom classes <strong><code>.xlsx</code>, <code>.xls</code>, <code>.csv</code>, <code>.txt</code></strong> providing button styling for each of the exportable filetypes.</p>
+<h3>Browser Support</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;">Chrome</th>
+<th style="text-align: center;">Firefox</th>
+<th style="text-align: center;">IE</th>
+<th style="text-align: center;">Opera</th>
+<th style="text-align: center;">Safari</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Android</strong></td>
+<td style="text-align: center;">&#10003;</td>
+<td style="text-align: center;">&#10003;</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">&#10003;</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>iOS</strong></td>
+<td style="text-align: center;">&#10003;</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">&#10003;</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Mac OSX</strong></td>
+<td style="text-align: center;">&#10003;</td>
+<td style="text-align: center;">&#10003;</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">&#10003;</td>
+<td style="text-align: center;">&#10003;</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Windows</strong></td>
+<td style="text-align: center;">&#10003;</td>
+<td style="text-align: center;">&#10003;</td>
+<td style="text-align: center;">&#10003;</td>
+<td style="text-align: center;">&#10003;</td>
+<td style="text-align: center;">&#10003;</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>A full list of <a href="https://github.com/clarketm/FileSaver.js#supported-browsers">browser support</a> can be found in the <a href="https://github.com/clarketm/FileSaver.js">FileSaver.js</a> README. Some <a href="https://github.com/clarketm/FileSaver.js#supported-browsers">legacy browsers</a> may require an additional third-party dependency: <a href="https://github.com/clarketm/Blob.js/">Blob.js</a></p>
+</blockquote>
+<h3>Examples</h3>
+<h4>Customizing Properties</h4>
+<ul>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/headers_footers.html"><code>headers</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/headers_footers.html"><code>footers</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/formats-xlsx-xls-csv-txt.html"><code>formats</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/filename.html"><code>filename</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/bootstrap.html"><code>bootstrap</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/exportButtons.html"><code>exportButtons</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/position.html"><code>position</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/ignore-row-cols-cells.html"><code>ignoreRows</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/ignore-row-cols-cells.html"><code>ignoreCols</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/whitespace.html"><code>trimWhitespace</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/right-to-left.html"><code>RTL</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/sheetname.html"><code>sheetname</code></a></li>
+</ul>
+<h4>Customizing Settings</h4>
+<ul>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/ignore-row-cols-cells.html"><code>ignoreCSS</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/ignore-row-cols-cells.html"><code>emptyCSS</code></a></li>
+</ul>
+<h4>Miscellaneous</h4>
+<ul>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/rowspan-colspan.html"><code>rowspan</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/rowspan-colspan.html"><code>colspan</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/cell-data-types.html"><code>cell data types</code></a> (<code>string</code>, <code>number</code>, <code>boolean</code>, <code>date</code>)</li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/unicode-emoji.html"><code>emoji</code></a></li>
+<li><a href="https://tableexport.v3.travismclarke.com/examples/arabic-language.html"><code>Arabic</code></a></li>
+</ul>
+<h4>Skeletons</h4>
+<ul>
+<li><a href="https://github.com/clarketm/tableexport_requirejs_app">TableExport + RequireJS</a> skeleton.</li>
+<li><a href="https://github.com/clarketm/tableexport_flask_app">TableExport + Flask</a> skeleton.</li>
+<li><a href="https://github.com/clarketm/tableexport_webpack-v1_app">TableExport + Webpack 1</a> skeleton.</li>
+<li><a href="https://github.com/clarketm/tableexport_angular4_webpack2_app">TableExport + Angular 4 + Webpack 2</a> skeleton.</li>
+</ul>
+<h3>License</h3>
+<p><a href="https://tableexport.travismclarke.com">TableExport</a> is licensed under the terms of the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache-2.0</a> License</p>
+<h3>Going Forward</h3>
+<h4>TODOs</h4>
+<ul>
+<li>[x] Update JSDocs and TypScript definition file.</li>
+<li>[x] Fix bug with <strong>CSV</strong> and <strong>TXT</strong> <code>ignoreRows</code> and <code>ignoreCols</code> (rows/cols rendered as empty strings rather than being <em>removed</em>).</li>
+<li>[x] Reimplement and test the <code>update</code>, <code>reset</code>, and <code>remove</code> <strong>TableExport</strong> prototype properties without requiring jQuery.</li>
+<li>[x] Make jQuery as <em>peer dependency</em> and ensure proper <strong>TableExport</strong> rendering in browser, AMD, and CommonJS environments.</li>
+<li>[x] Force jQuery to be an optionally loaded module.</li>
+<li>[x] Use the enhanced <a href="https://github.com/SheetJS/js-xlsx#supported-output-formats">SheetJS</a> <code>xls</code>, <code>csv</code>, and <code>txt</code> formats (exposed via <code>enforceStrictRFC4180</code> prototype property).</li>
+<li>[x] Allow <code>ignoreCSS</code> and <code>emptyCSS</code> to work with any <code>selector|selector[]</code> instead of solely a single CSS class.</li>
+<li>[x] Ensure (via testing) full consistency and backwards-compatibility for jQuery.</li>
+<li>[ ] Add <strong>Export as PDF</strong> support.</li>
+</ul>
+<h3>Credits</h3>
+<p>Special thanks the the following contributors:</p>
+<ul>
+<li><a href="https://github.com/SheetJS">SheetJS</a> - js-xlsx</li>
+<li><a href="https://github.com/eligrey">Eli Grey</a> - FileSaver.js &amp; Blob.js</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/blob" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>blob</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/bootstrap" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>bootstrap</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/csv" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>csv</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/demo" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>demo</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/excel" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>excel</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/export" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>export</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/filesaver" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>filesaver</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/filetype" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>filetype</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/flask" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>flask</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/html-table" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>html-table</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/localstorage" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>localstorage</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/requirejs" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>requirejs</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/tableexport" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>tableexport</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/txt" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>txt</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/xls" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>xls</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/xlsx" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>xlsx</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/9957358?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/clarketm" target="_blank" id="ownerName" class="sidebar-link">clarketm</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">August 27, 2015</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 15, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Apache License 2.0</span>
+    </div>
+	        <a href="https://tableexport.travismclarke.com/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>blobjs (^1.1.1)</li><li>file-saverjs (^1.3.6)</li><li>xlsx (^0.14.0)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>del (^3.0.0)</li><li>gulp (^3.9.1)</li><li>gulp-bump (^3.1.1)</li><li>gulp-clean-css (^4.0.0)</li><li>gulp-rename (^1.2.2)</li><li>gulp-replace (^1.0.0)</li><li>gulp-uglify (^3.0.1)</li><li>jasmine (^3.3.0)</li><li>prettier (^1.15.2)</li></ul><h5 class="sidebar-title">Peer Dependencies</h5><ul class="dependencies-list"><li>bootstrap (&gt;= 3 &lt; 4)</li><li>jquery (&gt;= 1.1.2)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/9957358?v=4" alt="clarketm" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/clarketm" target="_blank" class="text-decoration-none fw-bold">clarketm</a><p class="mb-0 text-muted small">397 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3691490?v=4" alt="PeterDaveHello" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/PeterDaveHello" target="_blank" class="text-decoration-none fw-bold">PeterDaveHello</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/7520095?v=4" alt="pierresh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pierresh" target="_blank" class="text-decoration-none fw-bold">pierresh</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/6202008?v=4" alt="jrejaud" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jrejaud" target="_blank" class="text-decoration-none fw-bold">jrejaud</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
