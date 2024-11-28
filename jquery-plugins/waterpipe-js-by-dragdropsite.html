@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterpipe.js by Dragdropsite</title>
+    <meta name="description" content="waterpipe.js is a jQuery plugin for smoky backgrounds generation (HTML5 Canvas)">
+    <meta name="author" content="dragdropsite">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/waterpipe-js-by-dragdropsite.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Waterpipe.js</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Waterpipe.js",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Waterpipe.js</h1>
+        <p id="packageDescription" class="text-muted">waterpipe.js is a jQuery plugin for smoky backgrounds generation (HTML5 Canvas)</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">419</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.04 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">165</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">4</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/dragdropsite/waterpipe.js/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/dragdropsite/waterpipe.js" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>waterpipe.js - smoky backgrounds generator (HTML5 Canvas)</h1>
+<p>waterpipe.js is a jQuery plugin for smoky backgrounds developed by <a href="http://www.dragdropsite.com">dragdropsite.com</a></p>
+<p><img src="https://raw.github.com/dragdropsite/waterpipe.js/master/img/screenshot.jpg" alt="alt tag" /></p>
+<h2>Examples</h2>
+<p>Here are some examples generated using waterpipe.js plugin. </p>
+<p><img src="https://raw.github.com/dragdropsite/waterpipe.js/master/img/samples/sample-1.jpg" alt="alt tag" /><br />
+<img src="https://raw.github.com/dragdropsite/waterpipe.js/master/img/samples/sample-2.jpg" alt="alt tag" /><br />
+<img src="https://raw.github.com/dragdropsite/waterpipe.js/master/img/samples/sample-3.jpg" alt="alt tag" /><br />
+<img src="https://raw.github.com/dragdropsite/waterpipe.js/master/img/samples/sample-4.jpg" alt="alt tag" /><br />
+<img src="https://raw.github.com/dragdropsite/waterpipe.js/master/img/samples/sample-5.jpg" alt="alt tag" /><br />
+<img src="https://raw.github.com/dragdropsite/waterpipe.js/master/img/samples/sample-6.jpg" alt="alt tag" /><br />
+<img src="https://raw.github.com/dragdropsite/waterpipe.js/master/img/samples/sample-7.jpg" alt="alt tag" /><br />
+<img src="https://raw.github.com/dragdropsite/waterpipe.js/master/img/samples/sample-8.jpg" alt="alt tag" /><br />
+<img src="https://raw.github.com/dragdropsite/waterpipe.js/master/img/samples/sample-9.jpg" alt="alt tag" /><br />
+<img src="https://raw.github.com/dragdropsite/waterpipe.js/master/img/samples/sample-10.jpg" alt="alt tag" /><br />
+<img src="https://raw.github.com/dragdropsite/waterpipe.js/master/img/samples/sample-11.jpg" alt="alt tag" /><br />
+<img src="https://raw.github.com/dragdropsite/waterpipe.js/master/img/samples/sample-12.jpg" alt="alt tag" /></p>
+<h2>Usage</h2>
+<p><strong>1. Include jQuery and waterpipe.js</strong></p>
+<pre><code>&lt;script src="lib/jquery-1.11.0.min.js"&gt;&lt;/script&gt;
+&lt;script src="waterpipe.js"&gt;&lt;/script&gt;</code></pre>
+<p><strong>2. Create wrapper with canvas element inside</strong></p>
+<pre><code>&lt;div id="wavybg-wrapper" style="width: 100%; height: 100%;"&gt; 
+    &lt;canvas&gt;Your browser does not support HTML5 canvas.&lt;/canvas&gt;
+&lt;/div&gt;</code></pre>
+<p><strong>3. Initialize with</strong></p>
+<pre><code>var smokyBG = $('#wavybg-wrapper').waterpipe({
+    //Default values
+    gradientStart: '#000000',
+    gradientEnd: '#222222',
+    smokeOpacity: 0.1,
+    numCircles: 1,
+    maxMaxRad: 'auto',
+    minMaxRad: 'auto',
+    minRadFactor: 0,
+    iterations: 8,
+    drawsPerFrame: 10,
+    lineWidth: 2,
+    speed: 1,
+    bgColorInner: "#ffffff",
+    bgColorOuter: "#666666"
+});</code></pre>
+<h2>Options</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gradientStart</td>
+<td>string</td>
+<td>'#000000'</td>
+<td>Gradient start color in hex format.</td>
+</tr>
+<tr>
+<td>gradientEnd</td>
+<td>string</td>
+<td>'#222222'</td>
+<td>Gradient end color in hex format.</td>
+</tr>
+<tr>
+<td>smokeOpacity</td>
+<td>number</td>
+<td>0.1</td>
+<td>Smoke opacity 0 to 1.</td>
+</tr>
+<tr>
+<td>numCircles</td>
+<td>int</td>
+<td>1</td>
+<td>Number of circles (smokes).</td>
+</tr>
+<tr>
+<td>maxMaxRad</td>
+<td>int or 'auto'</td>
+<td>'auto'</td>
+<td>Could be used to change circle radius size</td>
+</tr>
+<tr>
+<td>minMaxRad</td>
+<td>int or 'auto'</td>
+<td>'auto'</td>
+<td>Could be used to change circle radius size</td>
+</tr>
+<tr>
+<td>minRadFactor</td>
+<td>int</td>
+<td>0</td>
+<td>It's a factor representing the size of the smallest radius with respect to the largest possible. Integer from 0 to 1.</td>
+</tr>
+<tr>
+<td>iterations</td>
+<td>int</td>
+<td>8</td>
+<td>The number of subdividing steps to take when creating a single fractal curve. Can use more, but anything over 10 (thus 1024 points) is overkill for a moderately sized canvas.</td>
+</tr>
+<tr>
+<td>drawsPerFrame</td>
+<td>int</td>
+<td>10</td>
+<td>Number of curves to draw on every tick of the timer</td>
+</tr>
+<tr>
+<td>lineWidth</td>
+<td>number</td>
+<td>2</td>
+<td>Line width</td>
+</tr>
+<tr>
+<td>speed</td>
+<td>int</td>
+<td>1</td>
+<td>Drawing speed (tick of timer in ms)</td>
+</tr>
+<tr>
+<td>bgColorInner</td>
+<td>string</td>
+<td>'#ffffff'</td>
+<td>Background outer color in hex format</td>
+</tr>
+<tr>
+<td>bgColorOuter</td>
+<td>string</td>
+<td>'#666666'</td>
+<td>Background inner color in hex format</td>
+</tr>
+</tbody>
+</table>
+<h2>Methods</h2>
+<p>The following code could be used to call a method: <code>smokyBG.data('waterpipe').generate();</code>Please make sure variable smokyBG exists</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Arguments</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>generate</td>
+<td></td>
+<td>Generates background canvas</td>
+</tr>
+<tr>
+<td>setOption</td>
+<td>optionName,</td>
+<td>Set a new value to an option. Please check the above table for possible option names and values</td>
+</tr>
+<tr>
+<td></td>
+<td>optionValue</td>
+<td></td>
+</tr>
+<tr>
+<td>download</td>
+<td>width: int,</td>
+<td>Download size in pixels</td>
+</tr>
+<tr>
+<td></td>
+<td>height: int</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>Demo</h2>
+<p>Please check the demo to generate and download your own smoky backgrounds: <a href="http://dragdropsite.github.io/waterpipe.js">http://dragdropsite.github.io/waterpipe.js</a></p>
+<h2>Credits</h2>
+<p><a href="http://rectangleworld.com/blog/">rectangleworld.com</a> - big part of code has been taken from the examples provided on this blog</p>
+<h2>License</h2>
+<p>Licensed under MIT license</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/5413010?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/dragdropsite" target="_blank" id="ownerName" class="sidebar-link">dragdropsite</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">May 11, 2014</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">August 21, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://dragdropsite.github.io/waterpipe.js" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3905501?v=4" alt="bryant1410" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bryant1410" target="_blank" class="text-decoration-none fw-bold">bryant1410</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2248823?v=4" alt="aslauris" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/aslauris" target="_blank" class="text-decoration-none fw-bold">aslauris</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
