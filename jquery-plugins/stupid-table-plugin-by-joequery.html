@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Stupidly Small and Simple jQuery Table Sorter Plugin</title>
+    <meta name="description" content="Stupid-Table-Plugin by joequery. A stupidly small and simple jQuery table sorter plugin">
+    <meta name="author" content="joequery">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/stupid-table-plugin-by-joequery.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Stupid Table Plugin</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Stupid Table Plugin",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Stupid Table Plugin</h1>
+        <p id="packageDescription" class="text-muted">A stupidly small and simple jQuery table sorter plugin</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">710</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.31 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">176</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">22</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/joequery/Stupid-Table-Plugin/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/joequery/Stupid-Table-Plugin" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>Stupid jQuery Table Sort</h1>
+<p>This is a stupid jQuery table sorting plugin. Nothing fancy, nothing really<br />
+impressive. Overall, stupidly simple. Requires jQuery 1.7 or newer.</p>
+<p>[View the demo here][0]</p>
+<p>See the examples directory.</p>
+<h2>Installation via [npm][2]</h2>
+<pre><code>$ npm i stupid-table-plugin</code></pre>
+<h2>Installation via Bower</h2>
+<pre><code>$ bower install jquery-stupid-table</code></pre>
+<h2>Example Usage</h2>
+<p>The JS:</p>
+<pre><code>$("table").stupidtable();</code></pre>
+<p>The HTML:</p>
+<pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th data-sort="int"&gt;int&lt;/th&gt;
+      &lt;th data-sort="float"&gt;float&lt;/th&gt;
+      &lt;th data-sort="string"&gt;string&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;15&lt;/td&gt;
+      &lt;td&gt;-.18&lt;/td&gt;
+      &lt;td&gt;banana&lt;/td&gt;
+    &lt;/tr&gt;
+    ...
+    ...
+    ...</code></pre>
+<p>The thead and tbody tags must be used.</p>
+<p>Add a <code>data-sort</code> attribute of &quot;DATATYPE&quot; to the th elements to make them sortable<br />
+by that data type. If you don't want that column to be sortable, just omit the<br />
+<code>data-sort</code> attribute.</p>
+<h2>Predefined data types</h2>
+<p>Our aim is to keep this plugin as lightweight as possible. Consequently, the<br />
+only predefined datatypes that you can pass to the th elements are</p>
+<ul>
+<li><code>int</code></li>
+<li><code>float</code></li>
+<li><code>string</code> (case-sensitive)</li>
+<li><code>string-ins</code> (case-insensitive)</li>
+</ul>
+<p>These data types will be sufficient for many simple tables. However, if you need<br />
+different data types for sorting, you can easily create your own!</p>
+<h2>Data with multiple representations/predefined order</h2>
+<p>Stupid Table lets you sort a column by computer friendly values while displaying<br />
+human friendly values via the <code>data-sort-value</code> attribute on a td element. For<br />
+example, to sort timestamps (computer friendly) but display pretty formated<br />
+dates (human friendly)</p>
+<pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th data-sort="string"&gt;Name&lt;/th&gt;
+      &lt;th data-sort="int"&gt;Birthday&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Joe McCullough&lt;/td&gt;
+      &lt;td data-sort-value="672537600"&gt;April 25, 1991&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Clint Dempsey&lt;/td&gt;
+      &lt;td data-sort-value="416016000"&gt;March 9, 1983&lt;/td&gt;
+    &lt;/tr&gt;
+    ...
+    ...
+    ...</code></pre>
+<p>In this example, Stupid Table will sort the Birthday column by the timestamps<br />
+provided in the <code>data-sort-value</code> attributes of the corresponding tds. Since<br />
+timestamps are integers, and that's what we're sorting the column by, we specify<br />
+the Birthday column as an <code>int</code> column in the <code>data-sort</code> value of the column<br />
+header.</p>
+<h2>Default sorting direction</h2>
+<p>By default, columns will sort ascending. You can specify a column to sort &quot;asc&quot;<br />
+or &quot;desc&quot; first.</p>
+<pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th data-sort="float" data-sort-default="desc"&gt;float&lt;/th&gt;
+        ...
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+&lt;/table&gt;</code></pre>
+<h2>Sorting a column on load</h2>
+<p>If you want a specific column to be sorted immediately after<br />
+<code>$table.stupidtable()</code> is called, you can provide a <code>data-sort-onload=yes</code><br />
+attribute.</p>
+<pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th data-sort="float" data-sort-onload=yes&gt;float&lt;/th&gt;
+        ...
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+&lt;/table&gt;</code></pre>
+<h2>Multicolumn sorting</h2>
+<p>A multicolumn sort allows you to define secondary columns to sort by in the<br />
+event of a tie with two elements in the sorted column. See <a href="https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html">examples/multicolumn-sort.html</a>.<br />
+Specify a comma-separated list of th identifiers in a <code>data-sort-multicolumn</code><br />
+attribute on a <code>&lt;th&gt;</code> element. An identifier can be an integer (which represents<br />
+the index of the th element of the multicolumn target) or a string (which<br />
+represents the id of the th element of the multicolumn target).</p>
+<table>
+    <thead>
+      <tr>
+        <th id="int-column" data-sort="int" data-sort-multicolumn="1,string-column">int</th>
+        <th id="float-column" data-sort="float" data-sort-multicolumn="string-column,int-column">float</th>
+        <th id="string-column" data-sort="string" data-sort-multicolumn="1,0">string</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>10.0</td>
+        <td>a</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>10.0</td>
+        <td>a</td>
+      </tr>
+
+Sorting a column programatically
+--------------------------------
+
+After you have called `$("#mytable").stupidtable()`, if you wish to sort a
+column without requiring the user to click on it, select the column th and call
+
+    var $table = $("#mytable").stupidtable();
+    var $th_to_sort = $table.find("thead th").eq(0);
+    $th_to_sort.stupidsort();
+
+    // You can also force a direction.
+    $th_to_sort.stupidsort('asc');
+    $th_to_sort.stupidsort('desc');
+
+Updating a table cell's value
+-----------------------------
+
+If you wish for Stupid Table to respond to changes in the table cell values, you
+must explicitely inform Stupid Table to update its cache with the new values. If
+you update the table display/sort values without using this mechanism, your
+newly updated table **will not sort correctly!**
+
+    /*
+     * Suppose $age_td is some td in a table under a column specified as an int
+     * column. stupidtable() must already be called for this table.
+     */
+    $age_td.updateSortVal(23);
+
+Note that this only changes the internal sort value (whether you specified a
+`data-sort-value` or not). Use the standard jQuery `.text()` / `.html()` methods
+if you wish to change the display values.
+
+Callbacks
+---------
+
+To execute a callback function after a table column has been sorted, you can
+bind on `aftertablesort`.
+
+    var table = $("table").stupidtable();
+    table.bind('aftertablesort', function (event, data) {
+        // data.column - the index of the column sorted after a click
+        // data.direction - the sorting direction (either asc or desc)
+        // data.$th - the th element (in jQuery wrapper)
+        // $(this) - this table object
+
+        console.log("The sorting direction: " + data.direction);
+        console.log("The column index: " + data.column);
+    });
+
+Similarly, to execute a callback before a table column has been sorted, you can
+bind on `beforetablesort`.
+
+See the complex_example.html file.
+
+Creating your own data types
+----------------------------
+
+Sometimes you don't have control over the HTML produced by the backend. In the
+event you need to sort complex data without a `data-sort-value` attribute, you
+can create your own data type. Creating your own data type for sorting purposes
+is easy as long as you are comfortable using custom functions for sorting.
+Consult [Mozilla's Docs][1] if you're not.
+
+Let's create an alphanum datatype for a User ID that takes strings in the form
+"D10", "A40", and sorts the column based on the numbers in the string.
+
+    <thead>
+      <tr>
+        <th data-sort="string">Name</th>
+        <th data-sort="int">Age</th>
+        <th data-sort="alphanum">UserID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Joseph McCullough</td>
+        <td>20</td>
+        <td>D10</td>
+      </tr>
+      <tr>
+        <td>Justin Edwards</td>
+        <td>29</td>
+        <td>A40</td>
+      </tr>
+      ...
+      ...
+      ...
+
+Now we need to specify how the **alphanum** type will be sorted. To do that,
+we do the following:
+
+    $("table").stupidtable({
+      "alphanum":function(a,b){
+
+        var pattern = "^[A-Z](\\d+)$";
+        var re = new RegExp(pattern);
+
+        var aNum = re.exec(a).slice(1);
+        var bNum = re.exec(b).slice(1);
+
+        return parseInt(aNum,10) - parseInt(bNum,10);
+      }
+    });
+
+This extracts the integers from the cell and compares them in the style
+that sort functions use.
+
+StupidTable Settings
+--------------------
+
+As of 1.1.0 settings have been introduced. Settings are defined like so:
+
+    var $table = $("#mytable");
+    $table.stupidtable_settings({
+        // Settings for this table specified here
+    });
+    $table.stupidtable();
+
+Listed below are the available settings.
+
+### will_manually_build_table
+
+(Introduced in verison 1.1.1)
+
+Options:
+
+* `true`
+* `false` (default)
+
+By default, every time a column is sorted, stupidtable reads the DOM to extract
+all the values from the table. For tables that will not change or for very large
+tables, this behavior may be suboptimal.  To modify this behavior, set the
+`will_manually_build_table` setting to `true`. However, you will be responsible
+for informing stupidtable that the table has been modified by calling
+`$table.stupidtable_build()`.
+
+    var $table = $("#mytable");
+    $table.stupidtable_settings({
+        will_manually_build_table: true
+    });
+    $table.stupidtable();
+
+    // Make some modification to the table, such as deleting a row
+    ...
+    ...
+
+    // Since will_manually_build_table is true, we must build the table in order
+    // for future sorts to properly handle our modifications.
+    $table.stupidtable_build();
+
+### should_redraw
+
+(Introduced in verison 1.1.0)
+
+The `should_redraw` setting allows you to specify a function that determines
+whether or not the table should be redrawn after it has been internally sorted.
+
+The `should_redraw` function takes a `sort_info` object as an argument. The
+object keys available are:
+
+*  `column` - An array representing the sorted column. Each element of the array is of the form `[sort_val, $tr, index]`
+*  `sort_dir` - `"asc"` or `"desc"`
+*  `$th` - The jquery object of the `<th>` element that was clicked
+*  `th_index` - The index of the `<th>` element that was cliked
+*  `$table` - The jquery object of the `<table>` that contains the `<th>` that was clicked
+*  `datatype` - The datatype of the column
+*  `compare_fn` - The sort/compare function associated with the `<th>` clicked.
+
+**Example**: If you want to prevent stupidtable from redrawing the table if the
+column sorted has all identical values, you would do the following:
+
+    var $table = $("#mytable");
+    $table.stupidtable_settings({
+        should_redraw: function(sort_info){
+          var sorted_column = sort_info.column;
+          var first_val = sorted_column[0];
+          var last_val = sorted_column[sorted_column.length - 1][0];
+
+          // If first and last element of the sorted column are the same, we
+          // can assume all elements are the same.
+          return sort_info.compare_fn(first_val, last_val) !== 0;
+        }
+    });
+    $table.stupidtable();
+
+License
+-------
+
+The Stupid jQuery Plugin is licensed under the MIT license. See the LICENSE
+file for full details.
+
+Tests
+-----
+
+Visit `tests/test.html` in your browser to run the QUnit tests.
+
+[0]: http://joequery.github.io/Stupid-Table-Plugin/
+[1]: https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort
+[2]: https://www.npmjs.com/package/stupid-table-plugin
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              <h2>v1.1.3 (Released 10/12/2017)</h2>
+<p>Added npm support</p>
+<h2>v1.1.2 (Released 07/11/2017)</h2>
+<p>Added multicolumn sort capabilities. See <a href="https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html">examples/multicolumn-sort.html</a>.</p>
+<h2>v1.1.1 (Released 07/02/2017)</h2>
+<p>Updated internal representation of tables.<br />
+Added <code>will_manually_build_table</code> setting.</p>
+<h2>v1.1.0 (Released 06/28/2017)</h2>
+<p>We are introducing an implementation of settings for StupidTable. The first<br />
+setting is <code>should_redraw</code>. This setting allows you to specify a function that<br />
+can conditionally prevent the table from redrawing after a sort.</p>
+<h2>v1.0.7 (Released 06/25/2017)</h2>
+<p>A <code>&lt;th&gt;</code> element can now be provided with a <code>data-sort-onload=yes</code> attribute.<br />
+Once <code>$table.stupidtable()</code> is called the table will immediately be sorted by<br />
+the column with the <code>data-sort-onload=yes</code> attribute if one is found.<br />
+Resolves <a href="https://github.com/joequery/Stupid-Table-Plugin/issues/180">Issue #180</a> and <a href="https://github.com/joequery/Stupid-Table-Plugin/issues/126">Issue #126</a>.</p>
+<h2>v1.0.6 (Released 06/24/2017)</h2>
+<p>Fixed <a href="https://github.com/joequery/Stupid-Table-Plugin/issues/183">Issue #183</a><br />
+that prevented consecutive calls to <code>$th.stupidsort()</code> from running when the<br />
+same sort direction was specified.</p>
+<h2>v1.0.5 (Released 06/10/2017)</h2>
+<p>before/aftertablesort callbacks can access the column header element via <code>data.$th</code>.</p>
+<h2>v1.0.4 (Released 06/10/2017)</h2>
+<p>Force a stable sort to circumvent <a href="https://stackoverflow.com/questions/3026281/array-sort-sorting-stability-in-different-browsers">unstable sorting implementations</a>.</p>
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/sort" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>sort</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/503584?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/joequery" target="_blank" id="ownerName" class="sidebar-link">joequery</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">April 12, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 6, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>eslint (4.18.2)</li><li>minify (^3.0.5)</li></ul><h5 class="sidebar-title">Peer Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;= 1.7.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/503584?v=4" alt="joequery" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/joequery" target="_blank" class="text-decoration-none fw-bold">joequery</a><p class="mb-0 text-muted small">166 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/207887?v=4" alt="svivian" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/svivian" target="_blank" class="text-decoration-none fw-bold">svivian</a><p class="mb-0 text-muted small">31 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4731?v=4" alt="reefdog" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/reefdog" target="_blank" class="text-decoration-none fw-bold">reefdog</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/502942?v=4" alt="JoyceBabu" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/JoyceBabu" target="_blank" class="text-decoration-none fw-bold">JoyceBabu</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/738533?v=4" alt="0xadri" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/0xadri" target="_blank" class="text-decoration-none fw-bold">0xadri</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1448194?v=4" alt="jedwards1211" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jedwards1211" target="_blank" class="text-decoration-none fw-bold">jedwards1211</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/28941195?v=4" alt="el2iot2" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/el2iot2" target="_blank" class="text-decoration-none fw-bold">el2iot2</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2131013?v=4" alt="jacobzed" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jacobzed" target="_blank" class="text-decoration-none fw-bold">jacobzed</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/35999757?v=4" alt="arinjaka" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/arinjaka" target="_blank" class="text-decoration-none fw-bold">arinjaka</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5383823?v=4" alt="Dylan-Chapman" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Dylan-Chapman" target="_blank" class="text-decoration-none fw-bold">Dylan-Chapman</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/17456?v=4" alt="ffuentes" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ffuentes" target="_blank" class="text-decoration-none fw-bold">ffuentes</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/584352?v=4" alt="glogiotatidis" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/glogiotatidis" target="_blank" class="text-decoration-none fw-bold">glogiotatidis</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/97612?v=4" alt="philfreo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/philfreo" target="_blank" class="text-decoration-none fw-bold">philfreo</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+8 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
