@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugin That Allows You to Draw a Flow Chart.</title>
+    <meta name="description" content="jquery.flowchart by sdrdis. JQuery plugin that allows you to draw a flow chart.">
+    <meta name="author" content="sdrdis">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-flowchart-by-sdrdis.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jquery.flowchart</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jquery.flowchart",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jquery.flowchart</h1>
+        <p id="packageDescription" class="text-muted">JQuery plugin that allows you to draw a flow chart.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">508</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.15 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">149</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">78</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/sdrdis/jquery.flowchart/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/sdrdis/jquery.flowchart" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jquery.flowchart</h1>
+<p>Javascript jQuery plugin that allows you to draw a flow chart. Take a look at the demo:<br />
+<a href="http://sebastien.drouyer.com/jquery.flowchart-demo/">http://sebastien.drouyer.com/jquery.flowchart-demo/</a></p>
+<h2>Description</h2>
+<p>jquery.flowchart.js is an open source javascript jQuery ui plugin that allows you to draw and edit a flow chart.</p>
+<p>Here are the main functionalities provided so far:</p>
+<ul>
+<li>Draw boxes (called operators) and connections between them.</li>
+<li>Methods are provided so that the end-user can edit the flow chart by adding / moving / removing operators, creating / removing connections between them.</li>
+<li>The developper can save / load the flowchart.</li>
+<li>Operators and links can be customized using CSS and the plugin parameters.</li>
+<li>Some methods allow you to add advanced functionalities, such as a panzoom view or adding operators using drag and drop. Take a look at the <a href="http://sebastien.drouyer.com/jquery.flowchart-demo/#advanced">advanced demo</a>.</li>
+</ul>
+<h2>Context</h2>
+<p>This project is part of a bigger one, <a href="https://github.com/ultide/ultide">UltIDE</a> which allows you to have a complete interface managing a flowchart and custom properties. Though it is still WIP, you are welcome to give it a try and contribute. A screenshot is shown below.</p>
+<p><img src="https://ultide.github.io/ultide-documentation/images/screenshot.png?version=2" alt="UltIDE Screenshot" /></p>
+<h2>License</h2>
+<p>jquery.flowchart.js is under <a href="https://github.com/sdrdis/jquery.flowchart/blob/master/MIT-LICENSE.txt">MIT license</a>.</p>
+<h2>Authors</h2>
+<ul>
+<li><a href="http://sebastien.drouyer.com">Sebastien Drouyer</a> - alias <a href="https://twitter.com/sdrdis">@sdrdis</a> - for this jquery ui plugin</li>
+</ul>
+<h2>Contributors</h2>
+<ul>
+<li>Simone Gasparini - alias <a href="https://github.com/simmyg89">@simmyg89</a> - for bug fixes and code formatting.</li>
+<li>Guijin Ding - alias <a href="https://github.com/dingguijin">@dingguijin</a> - for bug fixes.</li>
+<li>M. Fatih Marabaoğlu - alias <a href="https://github.com/MFatihMAR">@MFatihMAR</a> - for adding the uncontained parameter and improving the grid system.</li>
+<li>Peter Vavro - alias <a href="https://github.com/petervavro">@petervavro</a> - for adding mouse events.</li>
+<li>Mike Branham - alias <a href="https://github.com/Mike-Branham">@Mike-Branham</a> - for bug fixes in the demo page.</li>
+<li><a href="https://github.com/zhangbg">@zhangbg</a> - for compatibility with IE9, IE10 and IE11.</li>
+<li><a href="https://github.com/elvaron">@elvaron</a> - for bug fixes and adding the getLinksFrom and getLinksTo methods.</li>
+<li>Ziyi Wang - alias <a href="https://github.com/ziyiwang">@ziyiwang</a> - for bug fixes.</li>
+<li><a href="https://github.com/dogbull">@dogbull</a> - for adding the getDataRef method.</li>
+<li>Yaroslav Zenin - alias <a href="https://github.com/yaroslav-zenin">@yaroslav-zenin</a> - for big fixes.</li>
+<li><a href="https://github.com/lflfm">@lflfm</a> - for bug fixes and new demo page.</li>
+<li><a href="https://github.com/neoera">@neoera</a> - for adding multiple sub connector with array support.</li>
+<li>Dima Shemendiuk - alias <a href="https://github.com/dshemendiuk">@dshemendiuk</a> - for adding vertical flowchart support and access to operators's body.</li>
+<li>Ernani Azevedo - alias <a href="https://github.com/ernaniaz">@ernaniaz</a> - for adding the possibility to decide for each connector if there can be a single link and multiple links and for making the integration of features from the community much easier.</li>
+</ul>
+<h2>Documentation</h2>
+<h3>Demo:</h3>
+<p><a href="http://sebastien.drouyer.com/jquery.flowchart-demo/">http://sebastien.drouyer.com/jquery.flowchart-demo/</a></p>
+<h3>Terminology:</h3>
+<p><img src="http://sebastien.drouyer.com/jquery.flowchart-demo/images/terminology.png" alt="Terminology" /></p>
+<h3>Options:</h3>
+<ul>
+<li>
+<p><strong>canUserEditLinks (default: true):</strong> Can the user add links by clicking on connectors. Note that links can be removed during the process if <code>multipleLinksOnInput</code>of <code>multipleLinksOnOutput</code>are set to false.</p>
+</li>
+<li>
+<p><strong>canUserMoveOperators (default: true):</strong> Can the user move operators using drag and drop.</p>
+</li>
+<li>
+<p><strong>data (default: <code>{}</code>):</strong> Initialization data defining the flow chart operators and links between them.</p>
+<ul>
+<li>
+<p><strong>operators:</strong> Hash defining the operators in your flow chart. The keys define the operators ID and the value define each operator's information as follow:</p>
+</li>
+<li>
+<p><strong>top (in px)</strong></p>
+</li>
+<li>
+<p><strong>left (in px)</strong></p>
+</li>
+<li>
+<p><strong>type</strong>: (optional) The type of the operator. See <code>data.operatorTypes</code>.</p>
+</li>
+<li>
+<p><strong>properties:</strong></p>
+<ul>
+<li><strong>title</strong></li>
+<li><strong>body</strong></li>
+<li><strong>uncontained:</strong> (optional, default: <code>false</code>) If <code>true</code>, the operator can be moved outside the container.</li>
+<li><strong>class:</strong> css classes added to the operator DOM object. If undefined, default value is the same as <code>defaultOperatorClass</code>.</li>
+<li><strong>inputs:</strong> Hash defining the box's input connectors. The keys define the connectors ID and the values define each connector's information as follow:</li>
+<li><strong>label</strong>: Label of the connector. If the connector is <strong>multiple</strong>, '(:i)' is replaced by the subconnector ID.</li>
+<li><strong>multipleLinks</strong>: (optional) If <code>true</code>, allow multiple links to this connector.</li>
+<li><strong>multiple</strong>: (optional) If <code>true</code>, whenever a link is created on the connector, another connector (called subconnector) is created. See the <a href="http://sebastien.drouyer.com/jquery.flowchart-demo/#multiple">multiple connectors demo</a>.</li>
+<li><strong>outputs:</strong> Hash defining the box's output connectors. Same structure as <code>inputs</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>links:</strong> Hash defining the links between your operators in your flow chart. The keys define the link ID and the value define each link's information as follow:</p>
+</li>
+<li>
+<p><strong>fromOperator:</strong> ID of the operator the link comes from.</p>
+</li>
+<li>
+<p><strong>fromConnector:</strong> ID of the connector the link comes from.</p>
+</li>
+<li>
+<p><strong>fromSubConnector:</strong> (optional) If it is a multiple connector, which subconnector is it.</p>
+</li>
+<li>
+<p><strong>toOperator:</strong> ID of the operator the link goes to.</p>
+</li>
+<li>
+<p><strong>toConnector:</strong> ID of the connector the link goes to.</p>
+</li>
+<li>
+<p><strong>toSubConnector:</strong> (optional) If it is a multiple connector, which subconnector is it.</p>
+</li>
+<li>
+<p><strong>color:</strong> Color of the link. If undefined, default value is the same as <code>defaultLinkColor</code>.</p>
+</li>
+<li>
+<p><strong>operatorTypes:</strong> (optional) Hash allowing you to define common operator types in order to not repeat the properties key. Key define the operator's type ID and the value define the properties (same structure as <code>data.operators.properties</code>).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>verticalConnection (default: false):</strong> Allows to build vertical-connected flowcharts. <strong>WARNING:</strong> When using vertical connectors, avoid using multiple connectors, because it will break layout.</p>
+</li>
+<li>
+<p><strong>distanceFromArrow (default: 3):</strong> Distance between the output connector and the link.</p>
+</li>
+<li>
+<p><strong>defaultLinkColor (default: '#3366ff'):</strong> Default color of links.</p>
+</li>
+<li>
+<p><strong>defaultSelectedLinkColor (default: 'black'):</strong> Default color of links when selected.</p>
+</li>
+<li>
+<p><strong>defaultOperatorClass (default: 'flowchart-default-operator'):</strong> Default class of the operator DOM element. </p>
+</li>
+<li>
+<p><strong>linkWidth (default: 11):</strong> Width of the links.</p>
+</li>
+<li>
+<p><strong>grid (default: 20):</strong> Grid of the operators when moved. If its value is set to 0, the grid is disabled.</p>
+</li>
+<li>
+<p><strong>multipleLinksOnInput (default: false):</strong> Allows multiple links on the same input connector.</p>
+</li>
+<li>
+<p><strong>multipleLinksOnOutput (default: false):</strong> Allows multiple links on the same output connector.</p>
+</li>
+<li>
+<p><strong>linkVerticalDecal (default: 0):</strong> Allows to vertical decal the links (in case you override the CSS and links are not aligned with their connectors anymore).</p>
+</li>
+<li>
+<p><strong>onOperatorSelect (default: function returning true):</strong> Callback method. Called when an operator is selected. It should return a boolean. Returning <code>false</code> cancels the selection. Parameters are:</p>
+<ul>
+<li><strong>operatorId:</strong> ID of the operator.</li>
+</ul>
+</li>
+<li>
+<p><strong>onOperatorUnselect (default: function returning true):</strong> Callback method. Called when an operator is unselected. It should return a boolean. Returning <code>false</code> cancels the unselection.</p>
+</li>
+<li>
+<p><strong>onOperatorMouseOver (default: function returning true):</strong> Callback method. Called when the mouse pointer enters an operator. It should return a boolean. Returning <code>false</code> cancels the selection. Parameters are:</p>
+<ul>
+<li><strong>operatorId:</strong> ID of the operator.</li>
+</ul>
+</li>
+<li>
+<p><strong>onOperatorMouseOut (default: function returning true):</strong> Callback method. Called when the mouse pointer leaves an operator. It should return a boolean. Returning <code>false</code> cancels the unselection.</p>
+</li>
+<li>
+<p><strong>onLinkSelect (default: function returning true):</strong> Callback method. Called when a link is selected. It should return a boolean. Returning <code>false</code> cancels the selection. Parameters are:</p>
+<ul>
+<li><strong>linkId:</strong> ID of the link.</li>
+</ul>
+</li>
+<li>
+<p><strong>onLinkUnselect (default: function returning true):</strong> Callback method. Called when a link is unselected. It should return a boolean. Returning <code>false</code> cancels the unselection.</p>
+</li>
+<li>
+<p><strong>onOperatorCreate (default: function returning true):</strong> Callback method. Called when an operator is created. It should return a boolean. Returning <code>false</code> cancels the creation. Parameters are:</p>
+<ul>
+<li><strong>operatorId:</strong> ID of the operator.</li>
+<li><strong>operatorData:</strong> Data of the operator.</li>
+<li><strong>fullElement:</strong> Hash containing DOM elements of the operator. It contains:</li>
+<li><strong>operator:</strong> the DOM element of the whole operator.</li>
+<li><strong>title:</strong> the DOM element of the operator's title.</li>
+<li><strong>connectorArrows:</strong> the DOM element of the connectors' arrows.</li>
+<li><strong>connectorSmallArrows:</strong> the DOM element of the connectors' small arrows.</li>
+</ul>
+</li>
+<li>
+<p><strong>onOperatorDelete (default: function returning true):</strong> Callback method. Called when an operator is deleted. It should return a boolean. Returning <code>false</code> cancels the deletion. Parameters are:</p>
+<ul>
+<li><strong>operatorId:</strong> ID of the operator.</li>
+</ul>
+</li>
+<li>
+<p><strong>onLinkCreate (default: function returning true):</strong> Callback method. Called when a link is created. It should return a boolean. Returning <code>false</code> cancels the creation. Parameters are:</p>
+<ul>
+<li><strong>linkId:</strong> ID of the link.</li>
+<li><strong>linkData:</strong> Data of the link.</li>
+</ul>
+</li>
+<li>
+<p><strong>onLinkDelete (default: function returning true):</strong> Callback method. Called when a link is deleted. It should return a boolean. Returning <code>false</code> cancels the deletion. Parameters are:</p>
+<ul>
+<li><strong>linkId:</strong> ID of the link.</li>
+<li><strong>forced:</strong> The link deletion can not be cancelled since it happens during an operator deletion.</li>
+</ul>
+</li>
+<li>
+<p><strong>onOperatorMoved (default: function):</strong> Callback method. Called when an operator is moved. Parameters are:</p>
+<ul>
+<li><strong>operatorId:</strong> ID of the operator.</li>
+<li><strong>position:</strong> New position of the operator.</li>
+</ul>
+</li>
+<li>
+<p><strong>onAfterChange (default: function):</strong> Callback method. Called after changes have been done (operator creation for instance). Parameters are:</p>
+<ul>
+<li><strong>changeType:</strong> What change did occur. Can be one of these strings:</li>
+<li>operator_create</li>
+<li>link_create</li>
+<li>operator_delete</li>
+<li>link_delete</li>
+<li>operator_moved</li>
+<li>operator_title_change</li>
+<li>operator_body_change</li>
+<li>operator_data_change</li>
+<li>link_change_main_color</li>
+</ul>
+</li>
+</ul>
+<h3>Events</h3>
+<p>All callbacks (options with a name that begins with &quot;on&quot;) have their event counterpart. For instance, the callback<br />
+<code>onOperatorSelect(operatorId)</code> has an equivalent event that can be handled using<br />
+<code>$(flowchartEl).on('operatorSelect', function(el, operatorId, returnHash) { /* your code here */ })</code>, where<br />
+<code>flowchartEl</code> is the DOM element of the flowchart.</p>
+<p>If <code>onOperatorSelect</code> doesn't return <code>false</code>, the event <code>operatorSelect</code> is triggered, and the final return value<br />
+will be <code>returnHash['result']</code>. The behaviour is similar for all callbacks.</p>
+<h3>Functions</h3>
+<h4>Operators:</h4>
+<ul>
+<li>
+<p><strong>createOperator(operatorId, operatorData):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId</strong></li>
+<li><strong>operatorData:</strong> Same as in <code>data.operators</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>addOperator(operatorData):</strong></p>
+<ul>
+<li><strong>Description:</strong> Same as <code>createOperator</code>, but automatically sets the operator's ID.</li>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorData:</strong> Same as in <code>data.operators</code>.</li>
+<li><strong>Return:</strong> The operator's ID.</li>
+</ul>
+</li>
+<li>
+<p><strong>deleteOperator(operatorId):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>getSelectedOperatorId():</strong></p>
+<ul>
+<li><strong>Return:</strong> The operator ID if one is selected, <code>null</code> otherwise.</li>
+</ul>
+</li>
+<li>
+<p><strong>selectOperator(operatorId):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>unselectOperator():</strong></p>
+</li>
+<li>
+<p><strong>addClassOperator(operatorId, className):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId</strong></li>
+<li><strong>className</strong>: Class name to add.</li>
+</ul>
+</li>
+<li>
+<p><strong>removeClassOperator(operatorId, className):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId</strong></li>
+<li><strong>className</strong>: Class name to remove.</li>
+</ul>
+</li>
+<li>
+<p><strong>removeClassOperators(className):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>className</strong>: Remove class name from all operators.</li>
+</ul>
+</li>
+<li>
+<p><strong>setOperatorTitle(operatorId, title):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId</strong></li>
+<li><strong>title:</strong> The operator's new title to be set.</li>
+</ul>
+</li>
+<li>
+<p><strong>setOperatorBody(operatorId, body):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId</strong></li>
+<li><strong>body:</strong> The operator's new body html to be set.</li>
+</ul>
+</li>
+<li>
+<p><strong>getOperatorTitle(operatorId):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId</strong></li>
+<li><strong>Return:</strong> The operator's title.</li>
+</ul>
+</li>
+<li>
+<p><strong>getOperatorBody(operatorId):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId</strong></li>
+<li><strong>Return:</strong> The operator's body.</li>
+</ul>
+</li>
+<li>
+<p><strong>doesOperatorExists(operatorId):</strong></p>
+<ul>
+<li><strong>Description:</strong> This method checks whether or not an operator with id equal to <code>operatorId</code> exists.</li>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>setOperatorData(operatorId, operatorData):</strong></p>
+<ul>
+<li><strong>Description:</strong> This method replaces the operator's data. Note that if new connectors are renamed / removed, the flowchart can remove links.</li>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId</strong></li>
+<li><strong>operatorData</strong>: Same as in <code>data.operators</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>getOperatorData(operatorId):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId</strong></li>
+<li><strong>Return:</strong> The operator's data. Same as in <code>data.operators</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>getConnectorPosition(operatorId, connectorId):</strong> </p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId</strong></li>
+<li><strong>connectorId</strong></li>
+<li><strong>Return:</strong> The connector's position relative to the container.</li>
+</ul>
+</li>
+<li>
+<p><strong>getOperatorCompleteData(operatorData):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorData:</strong> The operator's data. Same as in <code>data.operators</code>.</li>
+<li><strong>Return:</strong> Completes the operator's data with default values if some keys are not defined (like <code>class</code> for instance).</li>
+</ul>
+</li>
+<li>
+<p><strong>getOperatorElement(operatorData):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorData:</strong> The operator's data. Same as in <code>data.operators</code>.</li>
+<li><strong>Return:</strong> The operator's DOM element (jquery). The element is not added in the container. It can be used to preview the operator or showing it during a drag and drop operation.</li>
+</ul>
+</li>
+<li>
+<p><strong>getLinksFrom(operatorId):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId:</strong> The operator's Id.</li>
+<li><strong>Return:</strong> Array with all links from the provided operator.</li>
+</ul>
+</li>
+<li>
+<p><strong>getLinksTo(operatorId):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorId:</strong> The operator's Id.</li>
+<li><strong>Return:</strong> Array with all links to the provided operator.</li>
+</ul>
+</li>
+<li>
+<p><strong>getOperatorFullProperties(operatorData):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>operatorData:</strong> The operator's data. Same as in <code>data.operators</code>.</li>
+<li><strong>Return:</strong> If not operator type is defined, the <code>property</code> key. Otherwise, the <code>property</code> key extended with the operator's type properties.</li>
+</ul>
+</li>
+</ul>
+<h4>Links:</h4>
+<ul>
+<li>
+<p><strong>createLink(linkId, linkData):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>linkId</strong></li>
+<li><strong>linkData:</strong> Same as in <code>data.links</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>addLink(linkData):</strong></p>
+<ul>
+<li><strong>Description:</strong> Same as <code>createLinks</code>, but automatically sets the link's ID.</li>
+<li><strong>Parameters:</strong></li>
+<li><strong>linkData:</strong> Same as in <code>data.links</code>.</li>
+<li><strong>Return:</strong> The link's ID.</li>
+</ul>
+</li>
+<li>
+<p><strong>deleteLink(linkId):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>linkId</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>getSelectedLinkId():</strong> </p>
+<ul>
+<li><strong>Return:</strong> The link ID if one is selected, <code>null</code> otherwise.</li>
+</ul>
+</li>
+<li>
+<p><strong>selectLink(linkId):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>linkId</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>unselectLink()</strong></p>
+</li>
+<li>
+<p><strong>setLinkMainColor(linkId, color):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>linkId</strong></li>
+<li><strong>color</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>getLinkMainColor(linkId):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>linkId</strong></li>
+<li><strong>Returns:</strong> The link's color.</li>
+</ul>
+</li>
+<li>
+<p><strong>colorizeLink(linkId, color):</strong></p>
+<ul>
+<li><strong>Description:</strong> Sets the link a temporary color contrary to <code>setLinkMainColor</code>. It can be used to temporarly highlight a link for instance.</li>
+<li><strong>Parameters:</strong></li>
+<li><strong>linkId</strong></li>
+<li><strong>color</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>uncolorizeLink(linkId):</strong></p>
+<ul>
+<li><strong>Description:</strong> Sets the link color back to its main color.</li>
+<li><strong>Parameters:</strong></li>
+<li><strong>linkId</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>redrawLinksLayer():</strong></p>
+<ul>
+<li><strong>Description:</strong> Redraws all the links.</li>
+</ul>
+</li>
+</ul>
+<h4>Misc:</h4>
+<ul>
+<li>
+<p><strong>getData():</strong></p>
+<ul>
+<li><strong>Return:</strong> The flow chart's data. Same structure as the <code>data</code> option.</li>
+</ul>
+</li>
+<li>
+<p><strong>setData(data):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>data:</strong> Same structure as the <code>data</code> option.</li>
+</ul>
+</li>
+<li>
+<p><strong>getDataRef():</strong></p>
+<ul>
+<li><strong>Return:</strong> The internal system flow chart's data.</li>
+</ul>
+</li>
+<li>
+<p><strong>setPositionRatio(positionRatio):</strong></p>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li><strong>positionRatio:</strong> The ratio between the mouse position and the position of the DOM elements. Used when drag and dropping the operators. You should use it if you zoom the container. See the <a href="http://sebastien.drouyer.com/jquery.flowchart-demo/#advanced">advanced demo</a>.</li>
+</ul>
+</li>
+<li>
+<p><strong>getPositionRatio():</strong></p>
+<ul>
+<li><strong>Return:</strong> The position ratio.</li>
+</ul>
+</li>
+<li>
+<p><strong>deleteSelected():</strong></p>
+<ul>
+<li><strong>Description:</strong> Deletes the link or operator selected.</li>
+</ul>
+</li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/flowchart" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>flowchart</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/svg" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>svg</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/1104414?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/sdrdis" target="_blank" id="ownerName" class="sidebar-link">sdrdis</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">March 19, 2016</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 22, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Other</span>
+    </div>
+	        <a href="http://sebastien.drouyer.com/jquery.flowchart-demo/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;=1.10)</li><li>jquery-ui (&gt;=1.11)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1104414?v=4" alt="sdrdis" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sdrdis" target="_blank" class="text-decoration-none fw-bold">sdrdis</a><p class="mb-0 text-muted small">64 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1548784?v=4" alt="ernaniaz" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ernaniaz" target="_blank" class="text-decoration-none fw-bold">ernaniaz</a><p class="mb-0 text-muted small">22 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1137917?v=4" alt="dingguijin" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dingguijin" target="_blank" class="text-decoration-none fw-bold">dingguijin</a><p class="mb-0 text-muted small">2 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
