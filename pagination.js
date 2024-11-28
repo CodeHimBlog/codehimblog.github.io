@@ -52,5 +52,5 @@ request.onreadystatechange = function() {
     console.error('Error fetching sitemap.xml');
   }
 };
-request.open('GET', 'sitemap.xml', true); // Replace with your sitemap file
+request.open('GET', 'jquery-plugins.xml', true); // Replace with your sitemap file
 request.send();
