@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectpage by Terryz</title>
+    <meta name="description" content="A simple style and powerful selector, including ajax remote data, autocomplete, pagination, tags, i18n and  keyboard navigation features">
+    <meta name="author" content="TerryZ">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/selectpage-by-terryz.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Selectpage</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Selectpage",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Selectpage</h1>
+        <p id="packageDescription" class="text-muted">A simple style and powerful selector, including ajax remote data, autocomplete, pagination, tags, i18n and  keyboard navigation features</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">738</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.64 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">194</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">28</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/TerryZ/SelectPage/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/TerryZ/SelectPage" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <p><a href="https://terryz.github.io/selectpage/" target="_blank"></p>
+<img src="https://terryz.github.io/image/SelectPage1.png" alt="SelectPage" align="right" valign="top" >
+<p></a></p>
+<h1>SelectPage</h1>
+<p>A simple style and powerful selection jQuery plugin, including ajax remote data, autocomplete, pagination, tags, i18n and keyboard navigation features</p>
+<p>
+  <a href="https://travis-ci.org/TerryZ/SelectPage"><img src="https://travis-ci.org/TerryZ/SelectPage.svg?branch=master"></a>
+  <a href="https://www.npmjs.com/package/selectpage"><img src="https://img.shields.io/npm/v/selectpage.svg"></a>
+  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2FTerryZ%2FSelectPage?ref=badge_shield"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2FTerryZ%2FSelectPage.svg?type=shield"></a>    
+  <a href="https://www.npmjs.com/package/selectpage"><img src="https://img.shields.io/npm/dy/selectpage.svg"></a>
+  <a href="https://mit-license.org/"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg"></a>
+  <a href="https://www.npmjs.com/package/selectpage"><img src="https://img.shields.io/badge/language-javascript%20%2F%20jquery-blue.svg"></a>
+  <a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu" /></a>
+</p>
+<p><br><br><br></p>
+<!--
+<br><br><br><br><br>
+<p align="center">
+  <a href="https://terryz.github.io/selectpage/" target="_blank">
+    <img src="https://terryz.github.io/image/logo/SelectPage.png" alt="SelectPage" >
+  </a>
+</p>
+<br><br>
+<p align="center">
+A simple style and powerful selection jQuery plugin, <br>including ajax remote data, autocomplete, pagination, tags, i18n and keyboard navigation features
+</p>
+<p align="center">
+    <a href="https://travis-ci.org/TerryZ/SelectPage"><img src="https://travis-ci.org/TerryZ/SelectPage.svg?branch=master"></a>
+    <a href="https://www.npmjs.com/package/selectpage"><img src="https://img.shields.io/npm/v/selectpage.svg"></a>
+    <a href="https://app.fossa.io/projects/git%2Bgithub.com%2FTerryZ%2FSelectPage?ref=badge_shield"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2FTerryZ%2FSelectPage.svg?type=shield"></a>    
+    <a href="https://www.npmjs.com/package/selectpage"><img src="https://img.shields.io/npm/dy/selectpage.svg"></a>
+    <a href="https://mit-license.org/"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg"></a>
+    <a href="https://www.npmjs.com/package/selectpage"><img src="https://img.shields.io/badge/language-javascript%20%2F%20jquery-blue.svg"></a>
+</p>
+<br><br><br><br><br><br>
+-->
+<h2>Examples and Documentation</h2>
+<p>Explorer on</p>
+<ul>
+<li><a href="https://TerryZ.github.io/selectpage">English site</a>（translation unfinished）</li>
+<li><a href="https://terryz.gitee.io/selectpage">国内站点</a></li>
+</ul>
+<p><a href="README-CN.md">简体中文文档</a></p>
+<p>The Vuejs version: <a href="https://github.com/TerryZ/v-selectpage">v-selectpage</a></p>
+<p><img src="https://terryz.github.io/image/logo/SelectPage.png" alt="SelectPage" /></p>
+<h2>Features</h2>
+<ul>
+<li>a jQuery(1.x) plugin</li>
+<li>highly customized</li>
+<li>compatible with no UI framework of the program, but it is recommended to use at least normalize.css</li>
+<li>quick search item by input autocomplete</li>
+<li>use keybord to quick navigate</li>
+<li>multiple select by tag form</li>
+<li>screen edges handle</li>
+<li>custom content render</li>
+<li>i18n supports, provide 6 languages</li>
+<li>server side data supports</li>
+</ul>
+<h2>Browsers support</h2>
+<table>
+<thead>
+<tr>
+<th><a href="http://godban.github.io/browsers-support-badges/"><img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" /></a></br>IE / Edge</th>
+<th><a href="http://godban.github.io/browsers-support-badges/"><img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" /></a></br>Firefox</th>
+<th><a href="http://godban.github.io/browsers-support-badges/"><img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" /></a></br>Chrome</th>
+<th><a href="http://godban.github.io/browsers-support-badges/"><img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" /></a></br>Safari</th>
+<th><a href="http://godban.github.io/browsers-support-badges/"><img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" /></a></br>Opera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IE8, IE9, IE10, IE11, Edge</td>
+<td>Firefox 18+</td>
+<td>Chrome 49+</td>
+<td>Safari 10+</td>
+<td>Opera 36+</td>
+</tr>
+</tbody>
+</table>
+<h2>Plugin Preview</h2>
+<p>Multiple Selection with Tags form</p>
+<p><img src="https://terryz.github.io/image/SelectPage1.png" alt="SelectPage1" /></p>
+<p>Regular select mode ( single selection )</p>
+<p><img src="https://terryz.github.io/image/SelectPage.png" alt="SelectPage" /></p>
+<p>List only ( pagination bar close, disable typing to quick search, select only )</p>
+<p><img src="https://terryz.github.io/image/SelectPageList.png" alt="SelectPageList" /></p>
+<h2>Installation</h2>
+<p>Download SelectPage plugin zip file by last release, or <a href="https://github.com/TerryZ/SelectPage/archive/master.zip">click me</a> to download SelectPage  </p>
+<p>or use <strong>NPM</strong></p>
+<pre class="prettyprint linenums lang-language"><code>npm install selectpage</code></pre>
+<p><a href="https://nodei.co/npm/selectpage/"><img src="https://nodei.co/npm/selectpage.png"></a></p>
+<h2>Usage</h2>
+<p>As you can see in the <a href="https://terryz.github.io/selectpage/demo.html">Demo Page</a>, you will need to include:</p>
+<ul>
+<li><a href="http://jquery.com">jQuery library</a> (1.10.2+), untest on jquery2.x &amp; 3.x</li>
+<li>The JavaScript file <code>selectpage.js</code> (or its minified version <code>selectpage.min.js</code>)</li>
+<li>The css file <code>selectpage.css</code></li>
+</ul>
+<h3>Including files</h3>
+<pre class="prettyprint linenums lang-language"><code>&lt;!-- jQuery library --&gt;
+&lt;script type="text/javascript" src="jquery.min.js" &gt;&lt;/script&gt;
+
+&lt;link rel="stylesheet" href="selectpage.css" type="text/css"&gt;
+&lt;script type="text/javascript" src="selectpage.js" &gt;&lt;/script&gt;</code></pre>
+<h3>HTML input element set</h3>
+<p>the SelectPage plugin just need put a input tag in the page</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;input type="text" id="selectpage" &gt;</code></pre>
+<h3>Javascript init plugin</h3>
+<pre class="prettyprint linenums lang-language"><code>// defined a array (the server side returned data format was same like that)
+// Array[{Object},{...}]
+var data = [
+  {id: 1, name: 'Chicago Bulls', desc: '芝加哥公牛' },
+  {id: 2, name: 'Cleveland Cavaliers', desc: '克里夫兰骑士' },
+  {id: 3, name: 'Detroit Pistons', desc: '底特律活塞' },
+  {id: 4, name: 'Indiana Pacers', desc: '印第安纳步行者' }
+]
+// init SelectPage
+$('#selectpage').selectPage({
+  showField : 'desc',
+  keyField : 'id',
+  data : data
+})</code></pre>
+<h2>Stargazers over time</h2>
+<p><a href="https://starcharts.herokuapp.com/TerryZ/SelectPage"><img src="https://starcharts.herokuapp.com/TerryZ/SelectPage.svg" alt="Stargazers over time" /></a></p>
+<h2>Options</h2>
+<p>The plugin initialize options</p>
+<h3>data</h3>
+<ul>
+<li>type: <code>string | object</code></li>
+<li>default: <code>undefined</code></li>
+</ul>
+<p>data source (string：ajax search URL | object：JSON format array)</p>
+<pre class="prettyprint linenums lang-language"><code>// serverside request url address
+$('#selectpage').selectPage({
+  data: 'https://some-site/some-route'
+})
+
+// JSON format array
+var data = [{a:1,b:2,c:3},{...}]
+$('#selectpage').selectPage({
+  data: data
+})</code></pre>
+<h3>lang</h3>
+<ul>
+<li>type: <code>string</code></li>
+<li>default: <code>'cn'</code></li>
+</ul>
+<p>plugin language</p>
+<table>
+<thead>
+<tr>
+<th>code</th>
+<th>language</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cn</td>
+<td>chinese</td>
+</tr>
+<tr>
+<td>en</td>
+<td>english</td>
+</tr>
+<tr>
+<td>de</td>
+<td>german</td>
+</tr>
+<tr>
+<td>es</td>
+<td>spanish</td>
+</tr>
+<tr>
+<td>ja</td>
+<td>japanse</td>
+</tr>
+<tr>
+<td>pt-br</td>
+<td>Brazilian Portuguese</td>
+</tr>
+</tbody>
+</table>
+<h3>multiple</h3>
+<ul>
+<li>type: <code>boolean</code></li>
+<li>default: <code>false</code></li>
+</ul>
+<p>whether it is multi-select mode（use tags mode）</p>
+<h3>pagination</h3>
+<ul>
+<li>type: <code>boolean</code></li>
+<li>default: <code>true</code></li>
+</ul>
+<p>paging or not</p>
+<h3>listSize</h3>
+<ul>
+<li>type: <code>number</code></li>
+<li>default: <code>10</code></li>
+</ul>
+<p>the list shows the number of items, and the other items are displayed in a scroll bar,it only work on <code>pagination : false</code></p>
+<h3>multipleControlbar</h3>
+<ul>
+<li>type: <code>boolean</code></li>
+<li>default: <code>true</code></li>
+</ul>
+<p>whether to enable the multi-select mode control button area,only work on <code>multiple: true</code></p>
+<h3>maxSelectLimit</h3>
+<ul>
+<li>type: <code>number</code></li>
+<li>default: <code>0</code></li>
+</ul>
+<p>maximum number of selections in multi-select mode，0 is unlimited</p>
+<h3>selectToCloseList</h3>
+<ul>
+<li>type: <code>boolean</code></li>
+<li>default: <code>true</code></li>
+</ul>
+<p>is close list after item select,it only work on <code>multiple:true</code></p>
+<h3>initRecord</h3>
+<ul>
+<li>type: <code>string</code></li>
+<li>default: <code>undefined</code></li>
+</ul>
+<p>the initial value of the plugin, The value will match the option.keyField field, and if it matches, it will be automatically selected and highlighted</p>
+<h3>dbTable</h3>
+<ul>
+<li>type: <code>string</code></li>
+<li>default: <code>'tbl'</code></li>
+</ul>
+<p>use this parameter to set the corresponding data table name in server side(ajax) mode</p>
+<h3>keyField</h3>
+<ul>
+<li>type: <code>string</code></li>
+<li>default: <code>'id'</code></li>
+</ul>
+<p>value field, usually the contents of the field will be automatically saved in the hidden domain</p>
+<h3>showField</h3>
+<ul>
+<li>type: <code>string</code></li>
+<li>default: <code>'name'</code></li>
+</ul>
+<p>the result is used to display the name of the attribute</p>
+<h3>searchField</h3>
+<ul>
+<li>type: <code>string</code></li>
+<li>default: <code>undefined</code></li>
+</ul>
+<p>query field, set server side query field when data source is server side mode, if not set default use of option.showField</p>
+<h3>andOr</h3>
+<ul>
+<li>type: <code>string</code></li>
+<li>default: <code>'AND'</code></li>
+</ul>
+<p>multiple keywords search type ('AND' or 'OR')</p>
+<h3>orderBy</h3>
+<ul>
+<li>type: <code>string[]</code></li>
+<li>default: <code>undefined</code></li>
+</ul>
+<p>result data sort type, default use showField specified field</p>
+<pre class="prettyprint linenums lang-language"><code>$('#selectpage').selectPage({
+  ...
+  orderBy : ['id desc'] // use id field sort desc
+})</code></pre>
+<h3>pageSize</h3>
+<ul>
+<li>type: <code>number</code></li>
+<li>default: <code>10</code></li>
+</ul>
+<p>the number of records per page</p>
+<h3>params</h3>
+<ul>
+<li>type: <code>function (): object</code>
+<ul>
+<li>return <code>object</code></li>
+</ul></li>
+<li>default: <code>undefined</code></li>
+</ul>
+<p>send request params for server side data source(ajax)</p>
+<pre class="prettyprint linenums lang-language"><code>$('#selectpage').selectPage({
+  ...
+  params : function() {
+    return {
+      name: 'aa',
+      sex: 1
+    }
+  }
+})</code></pre>
+<h3>formatItem</h3>
+<ul>
+<li>type: <code>function (data: object): string</code>
+<ul>
+<li>data <code>object</code> row data object format</li>
+<li>return <code>string</code></li>
+</ul></li>
+<li>default: <code>undefined</code></li>
+</ul>
+<p>list item display content formatting</p>
+<pre class="prettyprint linenums lang-language"><code>$('#selectpage').selectPage({
+  ...
+  formatItem : function(data) {
+    return data.a + '(' + data.b + ')'
+  }
+})</code></pre>
+<h3>focusDropList</h3>
+<ul>
+<li>type: <code>boolean</code></li>
+<li>default: <code>true</code></li>
+</ul>
+<p>when input box get focus,drop the list</p>
+<h3>autoSelectFirst</h3>
+<ul>
+<li>type: <code>boolean</code></li>
+<li>default: <code>true</code></li>
+</ul>
+<p>whether to automatically select the first item in the list (enter the keyword query mode, use the mouse directly does not trigger)</p>
+<h3>autoFillResult</h3>
+<ul>
+<li>type: <code>boolean</code></li>
+<li>default: <code>true</code></li>
+</ul>
+<p>whether to automatically fill the content, if the list item is highlighted, in the focus away from the control, automatically set the item for the selected content</p>
+<h3>noResultClean</h3>
+<ul>
+<li>type: <code>boolean</code></li>
+<li>default: <code>true</code></li>
+</ul>
+<p>enter the keyword to query and no item match,when focus leave plugin,whether to clear enter keywords</p>
+<h3>selectOnly</h3>
+<ul>
+<li>type: <code>boolean</code></li>
+<li>default: <code>false</code></li>
+</ul>
+<p>select only mode,the input box can not enter any word</p>
+<h3>inputDelay</h3>
+<ul>
+<li>type: <code>number</code></li>
+<li>default: <code>0.5(second)</code></li>
+</ul>
+<p>enter the keyword query delay, work on server side(ajax) mode</p>
+<h3>eSelect</h3>
+<ul>
+<li>type: <code>function (data: object|object[]): void</code>
+<ul>
+<li>data <code>object | array</code> selected row or rows data(json)</li>
+</ul></li>
+<li>default: <code>undefined</code></li>
+</ul>
+<p>item selected callback</p>
+<pre class="prettyprint linenums lang-language"><code>$('#selectpage').selectPage({
+  ...
+  eSelect : function(data) {
+    console.log(data)
+  }
+})</code></pre>
+<h3>eOpen</h3>
+<ul>
+<li>type: <code>function (self: object): void</code>
+<ul>
+<li>self <code>object</code> plugin inner object</li>
+</ul></li>
+<li>default: <code>undefined</code></li>
+</ul>
+<p>before show up result list callback</p>
+<pre class="prettyprint linenums lang-language"><code>$('#selectpage').selectPage({
+  ...
+  eOpen : function(self) {
+    console.log(self)
+  }
+})</code></pre>
+<h3>eAjaxSuccess</h3>
+<ul>
+<li>type: <code>function (data: object): object</code>
+<ul>
+<li>data <code>object</code> server side return data(json)</li>
+<li>return <code>object</code> convert to SelectPage required data format</li>
+</ul></li>
+<li>default: <code>undefined</code></li>
+</ul>
+<p>in server side mode, this is the callback function when request success, the role of the callback is used to custom processing of the return data</p>
+<p>server side return data for example</p>
+<pre class="prettyprint linenums lang-language"><code>{
+  "values": {
+    "gridResult": {
+      "pageSize": 10,
+      "pageNumber": 1,
+      "totalRow": 11,
+      "totalPage": 2,
+      "listData": [
+        { "name": "name1", "id": "1" },
+        { "name": "name2", "id": "2" },
+        { ... }
+      ]
+    }
+  }
+}</code></pre>
+<p><code>eAjaxSuccess</code> required data format</p>
+<pre class="prettyprint linenums lang-language"><code>{
+  list: object[],  // rows data
+  totalRow: number // total record count number
+}</code></pre>
+<p>then <code>eAjaxSuccess</code> code for example below</p>
+<pre class="prettyprint linenums lang-language"><code>$('#selectpage').selectPage({
+  ...
+  data: 'https://some-site/some-route',
+  eAjaxSuccess : function(data) {
+    var dataNode = data.values.gridResult
+    return {
+      list : dataNode.listData,
+      totalRow : dataNode.totalRow
+    }
+  }
+})</code></pre>
+<h3>eTagRemove</h3>
+<ul>
+<li>type: <code>function (tags: object[]): void</code>
+<ul>
+<li>tags <code>object[]</code> removed tags raw data</li>
+</ul></li>
+<li>default: <code>undefined</code></li>
+</ul>
+<p>this callback function is used to close tag, when <code>multiple : true</code></p>
+<pre class="prettyprint linenums lang-language"><code>$('#selectpage').selectPage({
+  ...
+  eTagRemove : function(tags) {
+    console.log(tags)
+  }
+})</code></pre>
+<h2>API</h2>
+<h3>selectPageClear</h3>
+<ul>
+<li><code>selectPageClear(): void</code></li>
+</ul>
+<p>clear all select items</p>
+<pre class="prettyprint linenums lang-language"><code>$('#selectpage').selectPageClear()</code></pre>
+<h3>selectPageRefresh</h3>
+<ul>
+<li><code>selectPageRefresh(): void</code></li>
+</ul>
+<p>refresh plugin selected items info</p>
+<pre class="prettyprint linenums lang-language"><code>$('#selectpage').val(20) // modify selected by id used javascript
+$('#selectpage').selectPageRefresh() // refresh selection item info</code></pre>
+<h3>selectPageData</h3>
+<ul>
+<li><code>selectPageData(data: object): void</code>
+<ul>
+<li>data <code>array</code> new data, the data format is same to plugin data source</li>
+</ul></li>
+</ul>
+<p>change plugin data source,only work on json data source mode</p>
+<pre class="prettyprint linenums lang-language"><code>var newdata = [
+  { a: 1, b: 11, c: 111 },
+  { a: 2, b: 22, c: 222 },
+  { ... }
+]
+$('#selectpage').selectPageData(newdata)</code></pre>
+<h3>selectPageDisabled</h3>
+<ul>
+<li><code>selectPageDisabled(status?: boolean): void|boolean</code>
+<ul>
+<li>status <code>boolean(optional)</code> set disabled stauts. <code>true</code> to disabled, <code>false</code> to enabled</li>
+<li>return <code>boolean(optional)</code> plugin disabled status</li>
+</ul></li>
+</ul>
+<p>get plugin disabled status or set plugin status to <code>disabled</code> / <code>enabled</code></p>
+<pre class="prettyprint linenums lang-language"><code>// get plugin disabled stuats
+if($('#selectpage').selectPageDisabled()) {
+  // set plugin to enabled
+  $('#selectpage').selectPageDisabled(false)
+}</code></pre>
+<h3>selectPageText</h3>
+<ul>
+<li><code>selectPageText(): string</code>
+<ul>
+<li>return <code>string</code> selected items string content</li>
+</ul></li>
+</ul>
+<p>get plugin selected items text</p>
+<pre class="prettyprint linenums lang-language"><code>alert($('#selectpage').selectPageText())</code></pre>
+<h3>selectPageSelectedData</h3>
+<ul>
+<li><code>selectPageSelectedData(): object[]</code>
+<ul>
+<li>return <code>object[]</code> selected items raw datas</li>
+</ul></li>
+</ul>
+<p>get selected items raw data</p>
+<pre class="prettyprint linenums lang-language"><code>console.log($('#selectpage').selectPageSelectedData())</code></pre>
+<h2>License</h2>
+<p><a href="https://app.fossa.io/projects/git%2Bgithub.com%2FTerryZ%2FSelectPage?ref=badge_large"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2FTerryZ%2FSelectPage.svg?type=large" alt="FOSSA Status" /></a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/ajax-search" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>ajax-search</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/autocomplete" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>autocomplete</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/javascript" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>javascript</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/keyboard" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>keyboard</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/pagination" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>pagination</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/select-multiple" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>select-multiple</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/selection" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>selection</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/selectpage" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>selectpage</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/tagsinput" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>tagsinput</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/854406?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/TerryZ" target="_blank" id="ownerName" class="sidebar-link">TerryZ</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">May 26, 2017</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 8, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://terryz.github.io/selectpage" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>prettier (^2.5.1)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/854406?v=4" alt="TerryZ" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/TerryZ" target="_blank" class="text-decoration-none fw-bold">TerryZ</a><p class="mb-0 text-muted small">240 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/29791463?v=4" alt="fossabot" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fossabot" target="_blank" class="text-decoration-none fw-bold">fossabot</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
