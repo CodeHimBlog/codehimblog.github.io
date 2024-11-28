@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery.fileapi by Rubaxa</title>
+    <meta name="description" content="jQuery.FileAPI — jquery plugin for FileAPI (multiupload, image upload, crop, resize and etc.)">
+    <meta name="author" content="RubaXa">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-fileapi-by-rubaxa.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jquery.fileapi</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jquery.fileapi",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jquery.fileapi</h1>
+        <p id="packageDescription" class="text-muted">jQuery.FileAPI — jquery plugin for FileAPI (multiupload, image upload, crop, resize and etc.)</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">853</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.63 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">194</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">11</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/RubaXa/jquery.fileapi/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/RubaXa/jquery.fileapi" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h3>WARNING: This plugin is not maintained</h3>
+<p>If you have a desire to continue to develop and support, email me, with pleasure I will give access to the repository.</p>
+<hr />
+<h3>ВНИМАНИЕ: Этот плагин больше не поддерживается</h3>
+<p>Если у вас есть желание продолжить разработку и поддержку, напишите мне, с удовольствием предоставлю весь необходимый доступ.</p>
+<hr />
+<h1>$.fn.fileapi</h1>
+<p>jQuery plugin for <a href="https://github.com/mailru/FileAPI/">FileAPI</a> (multiupload, image upload, crop, resize and etc.)</p>
+<h2>Install</h2>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    window.FileAPI = {
+          debug: false // debug mode
+        , staticPath: '/js/jquery.fileapi/FileAPI/' // path to *.swf
+    };
+&lt;/script&gt;
+&lt;script src="/js/jquery.fileapi/FileAPI/FileAPI.min.js"&gt;&lt;/script&gt;
+&lt;script src="/js/jquery.fileapi/FileAPI/FileAPI.exif.js"&gt;&lt;/script&gt;
+&lt;script src="/js/jquery.fileapi/jquery.fileapi.min.js"&gt;&lt;/script&gt;</code></pre>
+<hr />
+<h2>Example</h2>
+<pre class="prettyprint linenums lang-language"><code>&lt;div id="uploader"&gt;
+    &lt;div class="js-fileapi-wrapper"&gt;
+        &lt;input type="file" name="files[]" /&gt;
+    &lt;/div&gt;
+    &lt;div data-fileapi="active.show" class="progress"&gt;
+        &lt;div data-fileapi="progress" class="progress__bar"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    jQuery(function ($){
+        $('#uploader').fileapi({
+            url: './ctrl.php',
+            autoUpload: true,
+            accept: 'image/*',
+            multiple: true,
+            maxSize: FileAPI.MB*10 // max file size
+        });
+    });
+&lt;/script&gt;</code></pre>
+<hr />
+<h2>Options</h2>
+<h3>url<code>:String</code></h3>
+<p>URL to which the request is sent.<br/><br />
+If <code>undefined</code> or empty, it is set to the action property of the file upload form if available.</p>
+<h3>autoUpload<code>:Boolean</code></h3>
+<p>To enable automatic uploads, set this option to <code>true</code>.</p>
+<h3>data<code>:Object</code></h3>
+<p>Additional form data to be sent along with the file uploads can be set using this option.</p>
+<h3>headers<code>:Object</code></h3>
+<p>Additional request headers.</p>
+<h3>multiple<code>:Boolean</code></h3>
+<p>It specifies that multiple files can be selected at once, default <code>true</code>.</p>
+<h3>accept<code>:String</code></h3>
+<p>If the value of the type attribute is file, this attribute indicates the types of files that the server accepts;<br />
+otherwise it is ignored. The value must be a comma-separated list of unique content type specifiers: <code>image/*</code>, <code>audio/*</code>, <code>video/*</code>, etc.</p>
+<h3>duplicate<code>:Boolean</code></h3>
+<p>The ability to upload duplicates, default <code>false</code>.</p>
+<h3>paramName<code>:String</code></h3>
+<p>The parameter name for the file form data (the request argument name).<br/><br />
+If <code>undefined</code> or empty, the name property of the file input field is used, or <code>files[]</code> if the file input name property is also empty.</p>
+<h3>dataType<code>:String</code></h3>
+<p>The type of data that is expected back from the server, default <code>json</code>.</p>
+<h3>chunkSize<code>:Number</code></h3>
+<p>Chunk size in bytes, eg: <code>.5 * FileAPI.MB</code>.</p>
+<h3>chunkUploadRetry<code>:Number</code></h3>
+<p>Number of retries during upload chunks.</p>
+<h3>maxSize<code>:Number</code></h3>
+<p>The maximum allowed file size in bytes, by default unlimited.</p>
+<h3>maxFiles<code>:Number</code></h3>
+<p>This option limits the number of files that are allowed to be uploaded using this plugin.</p>
+<h3>imageSize<code>:Object</code></h3>
+<p>Allowable size of uploaded images, eg: <code>{ minWidth: 320, minHeight: 240, maxWidth: 3840, maxHeight: 2160 }</code>.</p>
+<h3>sortFn<code>:Function</code></h3>
+<p>Sort function of selected files.</p>
+<h3>filterFn<code>:Function</code></h3>
+<p>Filter function of selected files, eg: <code>function (file, info){ return /^image/.test(file.type) &amp;&amp; info.width &gt; 320 }</code>.</p>
+<h3>imageTransform<code>:Object</code></h3>
+<p>Rules of changes the original image on the client (see <a href="https://github.com/mailru/FileAPI#imagetransformobject">details</a>).</p>
+<pre class="prettyprint linenums lang-language"><code>imageTransform: {
+    // resize by max side
+    maxWidth: 800,
+    maxHeight: 600
+}</code></pre>
+<h3>imageOriginal<code>:Boolean</code></h3>
+<p>Sent to the server the original image or not, if defined imageTransform option.</p>
+<h3>elements<code>:Object</code></h3>
+<pre class="prettyprint linenums lang-language"><code>// Default options
+elements: {
+    // Controls
+    ctrl: {
+        upload: '[data-fileapi="ctrl.upload"]',
+        reset: '[data-fileapi="ctrl.reset"]',
+        abort: '[data-fileapi="ctrl.abort"]'
+    },
+    // Display element depending on files
+    empty: {
+        show: '[data-fileapi="empty.show"]',
+        hide: '[data-fileapi="empty.hide"]'
+    },
+    // Display element depending on queue state
+    emptyQueue: {
+        show: '[data-fileapi="emptyQueue.show"]',
+        hide: '[data-fileapi="emptyQueue.hide"]'
+    },
+    // Display element depending on upload state
+    active: {
+        show: '[data-fileapi="active.show"]',
+        hide: '[data-fileapi="active.hide"]'
+    },
+    // Preview file (single upload)
+    preview: {
+        el: 0, // css selector
+        width: 0,
+        height: 0,
+        keepAspectRatio: false // optional: false to stretch cropped image to preview area, true scale image proportionally
+    },
+    // Total size of queue
+    size: '[data-fileapi="size"]',
+    // Selected file name
+    name: '[data-fileapi="name"]',
+    // Progress bar total
+    progress: '[data-fileapi="progress"]',
+    // Filelist options
+    file: {
+        // Template
+        tpl: '[data-fileapi="file.tpl"]',
+        // Progress bar
+        progress: '[data-fileapi="file.progress"]',
+        // Display element depending on upload state
+        active: {
+            show: '[data-fileapi="active.show"]',
+            hide: '[data-fileapi="active.hide"]'
+        },
+        // Preview file or icon
+        preview: {
+            el: 0, // css selector
+            get: 0, // eg: function($el, file){ $el.append('&lt;i class="icon icon_'+file.name.split('.').pop()+'"&gt;&lt;/i&gt;'); }
+            width: 0,
+            height: 0,
+            keepAspectRatio: false // optional: false to stretch cropped image to preview area, true scale image proportionally
+        }
+    },
+    // Drag and drop
+    dnd: {
+        // DropZone: selector or element
+        el: '[data-fileapi="dnd"]',
+        // Hover class
+        hover: 'dnd_hover'
+    }
+}</code></pre>
+<hr />
+<h2>Events</h2>
+<h3>onSelect<code>:Function</code>(evt<code>:$.Event</code>, data<code>:FilesObject</code>)</h3>
+<p>Retrieve file List, takes two arguments.</p>
+<pre class="prettyprint linenums lang-language"><code>$('...').fileapi({
+    onSelect: function (evt, data){
+        data.all; // All files
+        data.files; // Correct files
+        if( data.other.length ){
+            // errors
+            var errors = data.other[0].errors;
+            if( errors ){
+                errors.maxSize; // File size exceeds the maximum size `@see maxSize`
+                errors.maxFiles; // Number of files selected exceeds the maximum `@see maxFiles`
+                errors.minWidth; // Width of the image is smaller than the specified `@see imageSize`
+                errors.minHeight;
+                errors.maxWidth; // Width of the image greater than the specified `@see imageSize`
+                errors.maxHeight;
+            }
+        }
+    }
+});</code></pre>
+<h3>onBeforeUpload<code>:Function</code>(evt<code>:$.Event</code>, uiEvt<code>:Object</code>)</h3>
+<p>Before start uploading.</p>
+<pre class="prettyprint linenums lang-language"><code>function (evt, uiEvt){
+    var files = uiEvt.files;
+    var widget = uiEvt.widget;
+    if (files.length &gt; 1000) {
+       return false; // prevent uploading
+    }
+}</code></pre>
+<h3>onUpload<code>:Function</code>(evt<code>:$.Event</code>, uiEvt<code>:Object</code>)</h3>
+<p>Start uploading.</p>
+<pre class="prettyprint linenums lang-language"><code>function (evt, uiEvt){
+    // Base properties
+    var file = uiEvt.file;
+    var files = uiEvt.files;
+    var widget = uiEvt.widget;
+    var xhr = uiEvt.xhr;
+}</code></pre>
+<h3>onFilePrepare<code>:Function</code>(evt<code>:$.Event</code>, uiEvt<code>:Object</code>)</h3>
+<p>Preparation of data before uploading.</p>
+<pre class="prettyprint linenums lang-language"><code>function (evt, uiEvt){
+    var file = uiEvt.file;
+    uiEvt.options.data.fileType = file.type;
+}</code></pre>
+<h3>onFileUpload<code>:Function</code>(evt<code>:$.Event</code>, uiEvt<code>:Object</code>)</h3>
+<p>Start upload the same file.</p>
+<h3>onProgress<code>:Function</code>(evt<code>:$.Event</code>, uiEvt<code>:Object</code>)</h3>
+<p>Common uploading progress.</p>
+<pre class="prettyprint linenums lang-language"><code>function (evt, uiEvt){
+    var part = uiEvt.loaded / uiEvt.total;
+}</code></pre>
+<h3>onFileProgress<code>:Function</code>(evt<code>:$.Event</code>, uiEvt<code>:Object</code>)</h3>
+<p>Progress upload the same file.</p>
+<pre class="prettyprint linenums lang-language"><code>function (evt, uiEvt){
+    var file = uiEvt.file;
+    var part = uiEvt.loaded / uiEvt.total;
+}</code></pre>
+<h3>onComplete<code>:Function</code>(evt<code>:$.Event</code>, uiEvt<code>:Object</code>)</h3>
+<p>Completion of the entire uploading.</p>
+<h3>onFileComplete<code>:Function</code>(evt<code>:$.Event</code>, uiEvt<code>:Object</code>)</h3>
+<p>Completion of uploading the file.</p>
+<pre class="prettyprint linenums lang-language"><code>function (evt, uiEvt){
+    var error = uiEvt.error;
+    var result = uiEvt.result; // server response
+}</code></pre>
+<h3>onDrop<code>:Function</code>(evt<code>:$.Event</code>, data<code>:FilesObject</code>)</h3>
+<p>Retrieve file List, takes two arguments.</p>
+<h3>onDropHover<code>:Function</code>(evt<code>:$.Event</code>, uiEvt<code>:Object</code>)</h3>
+<pre class="prettyprint linenums lang-language"><code>$('#box').fileapi({
+    onDropHover: function (evt, uiEvt){
+        $(this).toggleClass('dnd_hover', uiEvt.state);
+    }
+});</code></pre>
+<h3>onFileRemove(evt<code>:$.Event</code>, file<code>:File</code>)</h3>
+<p>Removing a file from the queue</p>
+<pre class="prettyprint linenums lang-language"><code>function (evt, file){
+    if( !confirm('Remove "'+file.name+'"?') ){
+        return false;
+    }
+}</code></pre>
+<h3>onFileRemoveCompleted(evt<code>:$.Event</code>, file<code>:File</code>)</h3>
+<p>Removing a file from the queue</p>
+<pre class="prettyprint linenums lang-language"><code>function (evt, file){
+    // Send ajax-request
+    $.post('/remove-ctrl.php', { uid: FileAPI.uid(file) });
+}</code></pre>
+<h2>Cropper</h2>
+<p>Based on <a href="http://deepliquid.com/content/Jcrop.html">Jсrop</a>.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;window.FileAPI = { /* options */ };&lt;/script&gt;
+&lt;script src="/js/jquery.fileapi/FileAPI/FileAPI.min.js"&gt;&lt;/script&gt;
+&lt;script src="/js/jquery.fileapi/jquery.fileapi.min.js"&gt;&lt;/script&gt;
+&lt;script src="/js/jquery.fileapi/jcrop/jquery.Jcrop.min.js"&gt;&lt;/script&gt;
+&lt;link href="/js/jquery.fileapi/jcrop/jquery.Jcrop.min.css" rel="stylesheet" type="text/css"/&gt;</code></pre>
+<p>Usage:</p>
+<pre class="prettyprint linenums lang-language"><code>$('#userpic').fileapi({
+    url: '...',
+    accept: 'image/*',
+    onSelect: function (imageFile){
+        $('#userpic-upload-btn')
+            .unbind('.fileapi')
+            .bind('click.fileapi', function (){
+                $('#userpic').fileapi('upload');
+            })
+        ;
+
+        $('#image-preview').cropper({
+              file: imageFile
+            , bgColor: '#fff'
+            , maxSize: [320, 240] // viewport max size
+            , minSize: [100, 100] // crop min size
+            , aspectRatio: 1      // optional, aspect ratio: 0 - disable, &gt;0 - fixed, remove this option: autocalculation from minSize
+            , onSelect: function (coords){
+                $('#userpic').fileapi('crop', imageFile, coords);
+            }
+        });
+    }
+});</code></pre>
+<hr />
+<h2>Customization</h2>
+<pre class="prettyprint linenums lang-language"><code>$('#upload').fileapi({
+    multiple: true,
+
+    // Restores the list of files uploaded earlier *** IE &lt; 9 — NOT SUPPORTED ***
+    files: [{
+        src: "http://path/to/filename.png",
+        type: "image/png",
+        name: "filename.png",
+        size: 31409,
+        data: { id: 999, token: "..." }
+    }],
+
+    // Remove a file from the upload queue
+    onFileRemove: function (evt, file){
+        if( !confirm("Are you sure?") ){
+            // Cancel remove
+            evt.preventDefault();
+        }
+    },
+
+    onFileComplete: function (evt, uiEvt){
+        var file = uiEvt.file;
+        var json = uiEvt.result;
+
+        file.data = {
+            id: json.id,
+            token: json.token
+        };
+    },
+
+    onFileRemoveCompleted: function (evt, file){
+        evt.preventDefault();
+
+        file.$el
+            .attr('disabled', true)
+            .addClass('my_disabled')
+        ;
+
+        new ModalConfirm('Delete "'+file.name+'"?')
+            .then(function (){
+                $.post('/api/remove', file.data);
+
+                $('#upload').fileapi("remove", file);
+                // or so
+                evt.widget.remove(file);
+            }, function (){
+                file.$el
+                    .attr('disabled', false)
+                    .removeClass('my_disabled')
+                ;
+            })
+        ;
+    }
+
+})</code></pre>
+<hr />
+<h2>Using with Bootstrap</h2>
+<p>You can use this uploader with Bootstrap framework without writing much additional CSS. Just add the following CSS to your page to hide the browser's &quot;browse&quot; button:</p>
+<pre class="prettyprint linenums lang-language"><code>#id-of-uploader .btn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+#id-of-uploader .btn input {
+    top: -10px;
+    right: -40px;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    font-size: 50px;
+}</code></pre>
+<hr />
+<h2>MIT LICENSE</h2>
+<p>Copyright 2013 Lebedev Konstantin <a href="mailto:ibnRubaXa@gmail.com">ibnRubaXa@gmail.com</a><br />
+<a href="http://rubaxa.github.io/jquery.fileapi/">http://rubaxa.github.io/jquery.fileapi/</a></p>
+<p>Permission is hereby granted, free of charge, to any person obtaining<br />
+a copy of this software and associated documentation files (the<br />
+&quot;Software&quot;), to deal in the Software without restriction, including<br />
+without limitation the rights to use, copy, modify, merge, publish,<br />
+distribute, sublicense, and/or sell copies of the Software, and to<br />
+permit persons to whom the Software is furnished to do so, subject to<br />
+the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be<br />
+included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,<br />
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF<br />
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND<br />
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE<br />
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION<br />
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION<br />
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+<hr />
+<h2>Changelog</h2>
+<h3>0.4.6</h3>
+<ul>
+<li>FileAPI up to 2.0.9</li>
+<li>
+<h1>12: <code>onRemoveCompleted</code> -&gt; <code>onFileRemoveCompleted</code></h1>
+</li>
+<li>
+<h1>100: fixed <code>maxSize</code> option</h1>
+</li>
+</ul>
+<h3>0.4.5</h3>
+<ul>
+<li>
+<h1>95: fixed <code>rotate</code> method</h1>
+</li>
+<li>
+<h1>94: fixed <code>redraw</code> method</h1>
+</li>
+</ul>
+<h3>0.4.4</h3>
+<ul>
+<li>
+<h1>93: <code>files</code> option and userpic</h1>
+</li>
+<li>
+<h1>90: fixed rotate + imageAutoOrientation</h1>
+</li>
+</ul>
+<h3>0.4.3</h3>
+<ul>
+<li>
+<h1>84: fixed modal.js</h1>
+</li>
+<li>
+<h1>82: clear(all: true)</h1>
+</li>
+<li>
+<h1>61: always parse result (dataType === 'json')</h1>
+</li>
+</ul>
+<h3>0.4.2</h3>
+<ul>
+<li>
+<h1>73: git -&gt; gif (fixed typo)</h1>
+</li>
+</ul>
+<h3>0.4.1</h3>
+<ul>
+<li>
+<h1>67: <code>resize</code> method</h1>
+</li>
+<li>
+<h1>63: <code>remove</code> method</h1>
+</li>
+<li>
+<ul>
+<li>console.log</li>
+</ul>
+</li>
+<li><code>modal</code> close</li>
+</ul>
+<h3>0.4.0</h3>
+<ul>
+<li>
+<h1>57: + <code>onBeforeUpload</code> event</h1>
+</li>
+<li>support <code>disabled</code> dom-attribute</li>
+<li>
+<h1>34: fixed <code>imageTransform</code></h1>
+</li>
+<li>
+<ul>
+<li>FileAPI v2.0.3</li>
+</ul>
+</li>
+<li>
+<h1>35: + <code>imageOriginal</code> option</h1>
+</li>
+</ul>
+<h3>0.3.1</h3>
+<ul>
+<li>fixed <code>crop</code> method</li>
+<li>
+<ul>
+<li><code>onFilePrepare</code> event</li>
+</ul>
+</li>
+</ul>
+<h3>0.3.0</h3>
+<ul>
+<li>
+<ul>
+<li>QUnit tests</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><code>onFileRemove</code> and <code>onRemoveCompleted</code> events</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><code>abort(text)</code> method</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><code>remove(file)</code> method</li>
+</ul>
+</li>
+<li>fixed <code>serialize()</code> method</li>
+</ul>
+<h3>0.2.0</h3>
+<ul>
+<li>enhancement <code>ui event</code> in onSelect</li>
+<li>
+<ul>
+<li><code>maxFiles</code> option support</li>
+</ul>
+</li>
+<li>fixed <code>onFileUpload</code> &amp; <code>onFileProgress</code> events</li>
+<li>
+<ul>
+<li>
+<h1>9: Preview with aspect ratio keeping support (optional)</h1>
+</li>
+</ul>
+</li>
+</ul>
+<h3>0.1.4</h3>
+<ul>
+<li>
+<ul>
+<li><code>headers:Object</code></li>
+</ul>
+</li>
+<li>
+<ul>
+<li><code>queue()</code>; * <code>clear()</code>;</li>
+</ul>
+</li>
+<li><code>clearOnComplete: false</code></li>
+<li>
+<ul>
+<li><code>resetOnSelect</code> -&gt; <code>clearOnSelect</code></li>
+</ul>
+</li>
+</ul>
+<h3>0.1.1</h3>
+<ul>
+<li>
+<ul>
+<li><code>resetOnSelect</code> option, default <code>!multiple</code></li>
+</ul>
+</li>
+<li>fix $.fn.cropper reinit</li>
+</ul>
+<h3>0.1.0</h3>
+<ul>
+<li>Inital commit</li>
+</ul>
+<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/RubaXa/jquery.fileapi/trend.png" alt="Bitdeli Badge" /></a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/FileAPI" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>FileAPI</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/upload" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>upload</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/multiupload" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>multiupload</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/file" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>file</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/html5" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>html5</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/chunked" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>chunked</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>plugin</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/1109562?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/RubaXa" target="_blank" id="ownerName" class="sidebar-link">RubaXa</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">July 15, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">August 23, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="http://rubaxa.github.io/jquery.fileapi/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (~0.4.0)</li><li>grunt-version (*)</li><li>grunt-contrib-jshint (~0.2.0)</li><li>grunt-contrib-uglify (*)</li><li>eventemitter2 (~0.4.9)</li><li>semver (~1.0.14)</li><li>temporary (~0.0.4)</li><li>phantomjs (latest)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1109562?v=4" alt="RubaXa" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/RubaXa" target="_blank" class="text-decoration-none fw-bold">RubaXa</a><p class="mb-0 text-muted small">143 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/4208498?v=4" alt="Singrana" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Singrana" target="_blank" class="text-decoration-none fw-bold">Singrana</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/973643?v=4" alt="termi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/termi" target="_blank" class="text-decoration-none fw-bold">termi</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1100134?v=4" alt="korzhyk" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/korzhyk" target="_blank" class="text-decoration-none fw-bold">korzhyk</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3713584?v=4" alt="kztime" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kztime" target="_blank" class="text-decoration-none fw-bold">kztime</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/585833?v=4" alt="msurguy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/msurguy" target="_blank" class="text-decoration-none fw-bold">msurguy</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3092978?v=4" alt="bitdeli-chef" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bitdeli-chef" target="_blank" class="text-decoration-none fw-bold">bitdeli-chef</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3691490?v=4" alt="PeterDaveHello" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/PeterDaveHello" target="_blank" class="text-decoration-none fw-bold">PeterDaveHello</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/309113?v=4" alt="Rosseyn" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Rosseyn" target="_blank" class="text-decoration-none fw-bold">Rosseyn</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1769193?v=4" alt="feedbee" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/feedbee" target="_blank" class="text-decoration-none fw-bold">feedbee</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/72144390?v=4" alt="utkr98jais" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/utkr98jais" target="_blank" class="text-decoration-none fw-bold">utkr98jais</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+6 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
