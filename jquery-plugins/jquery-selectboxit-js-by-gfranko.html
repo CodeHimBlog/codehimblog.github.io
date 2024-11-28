@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A jQuery Select Box Plugin for Mobile, Tablet, and Desktop</title>
+    <meta name="description" content="jquery.selectBoxIt.js by gfranko. A jQuery Select Box Plugin for Mobile, Tablet, and Desktop">
+    <meta name="author" content="gfranko">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-selectboxit-js-by-gfranko.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Jquery.selectboxit.js</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jquery.selectboxit.js",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Jquery.selectboxit.js</h1>
+        <p id="packageDescription" class="text-muted">A jQuery Select Box Plugin for Mobile, Tablet, and Desktop</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">852</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">4.28 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">301</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">113</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/gfranko/jquery.selectBoxIt.js/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/gfranko/jquery.selectBoxIt.js" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h2>jquery.selectBoxIt.js - jQuery Select Box Plugin</h2>
+<p><em>Note:</em> I haven't had time to maintain this repository for the last few years, so if anyone would like a particular fix just send me a tip via Paypal (gfranko5@yahoo.com) and I'll look into it</p>
+<p><a href="https://travis-ci.org/gfranko/jquery.selectBoxIt.js"><img src="https://travis-ci.org/gfranko/jquery.selectBoxIt.js.png?branch=master" alt="Build Status" /></a></p>
+<p>A jQuery plugin that progressively enhances an HTML Select Box into a single option dropdown list.  The dropdown list can be optionally styled with <strong>Twitter Bootstrap</strong>, <strong>jQueryUI ThemeRoller</strong>, or <strong>jQuery Mobile</strong>, optionally animated with <strong>jQueryUI show/hide effects</strong>, and works on Desktop, Tablet, and Mobile browsers.</p>
+<p><a href="http://gregfranko.com/jquery.selectBoxIt.js/">Homepage</a></p>
+<p><a href="http://www.gregfranko.com/jquery.selectBoxIt.js/docs/jQuery.selectBoxIt.html">Annotated Source Code</a></p>
+<p><strong>Notable Features</strong></p>
+<ul>
+<li>
+<p>Styleable with Twitter Bootstrap, jQueryUI Themeroller, and jQuery Mobile</p>
+</li>
+<li>
+<p>Supports Desktop, Tablet, and Mobile browsers</p>
+</li>
+<li>
+<p>Supports all jQuery and jQueryUI show/hide effects (optional)</p>
+</li>
+<li>
+<p>Supports all Twitter Bootstrap (Glyphicons) and jQueryUI/custom icons</p>
+</li>
+<li>
+<p>Includes ARIA (Accessible Rich Internet Applications) support</p>
+</li>
+<li>
+<p>Full keyboard search and navigation support</p>
+</li>
+<li>
+<p>An event API triggered on the original select box element that calls the plugin</p>
+</li>
+<li>
+<p>A method API providing methods to interact with the dropdown list (i.e. Search, Open, Disable, Set Options).</p>
+</li>
+<li>
+<p>Passes jsHint with no errors</p>
+</li>
+<li>
+<p>Selected, Disabled, and Optgroup Support</p>
+</li>
+<li>
+<p>Easily extendable to allow developers to create new widgets</p>
+</li>
+</ul>
+<h2>Requirements</h2>
+<p>jQuery 1.8.3+ (It is always recommended to use the latest version of jQuery)</p>
+<p>jQueryUI Widget Factory 1.10.0+ (It is always recommended to use the latest version of the jQueryUI Widget Factory)</p>
+<h2>Desktop Browser Support</h2>
+<p>IE8+, Firefox 4+, Chrome, Safari 4+, Opera 11+ (Other browsers may work, but I did not test on them)</p>
+<p><strong>Note:</strong> The CSS3 <code>background-size</code> property is used for the icon images, which is only supported in IE9+</p>
+<h2>Mobile/Tablet Browser Support</h2>
+<p>iOs 3+, Android 2.1+ (Other browsers may work, but I did not test on them)</p>
+<h2>Unit Tests</h2>
+<p>All unit tests are written using the Jasmine Framework</p>
+<h2>Contributing</h2>
+<p>Take care to maintain the existing coding style. Add Jasmine unit tests for any new or changed functionality. Lint and test your code using <a href="https://github.com/cowboy/grunt">grunt</a>.</p>
+<p>If you plan to contribute to <code>SelectBoxIt</code> in the future, keep in mind that you should make sure your code passes the Grunt checks.</p>
+<p>To set up the SelectBoxIt grunt/node.js dependencies, first make sure you have <a href="http://phantomjs.org/">PhantomJS</a> installed, which is a headless browser. Unfortunately PhantomJS cannot be installed automatically.</p>
+<p>Next, navigate to within the <strong>jquery.selectBoxIt.js</strong> folder and type `npm install' (this should install grunt and a few other node.js libraries).</p>
+<p>Next, type <code>grunt</code></p>
+<p><strong>Note:</strong> If you are on Windows, remember you need to run the grunt command using <code>grunt.cmd</code>.  Also, if you have trouble getting the Jasmine Unit Tests to work with PhantomJS 1.5 (the current release), install PhantomJS 1.3.</p>
+<p>After you have verified your code, send a pull request to the <code>SelectBoxIt</code> dev branch.  After you send a pull request, you will hear back from me shortly after I review your code.</p>
+<p>You'll find source code in the &quot;src&quot; subdirectory!</p>
+<h2>Forking</h2>
+<p>If you find that you need a feature that SelectBoxIt does not currently support, either let me know via the SelectBoxIt issue tracker, or fork SelectBoxIt on Github and easily extend SelectBoxIt to create your own widget!</p>
+<p><strong>Contributors</strong></p>
+<p>Greg Franko - <a href="https://github.com/gfranko">@gfranko</a></p>
+<p>Thomas von Deyen - <a href="https://github.com/tvdeyen">@tvdeyen</a></p>
+<p>Ron 'coyote' Lussier - <a href="https://github.com/ronlussier">@lenscraft</a></p>
+<h2>License</h2>
+<p>Copyright (c) 2013 Greg Franko<br />
+Licensed under the MIT license.</p>
+<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/gfranko/jquery.selectBoxIt.js/trend.png" alt="Bitdeli Badge" /></a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/jQuery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jQuery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jQueryUI" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jQueryUI</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/Select%20Box%20Plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>Select Box Plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/Twitter%20Bootstrap" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>Twitter Bootstrap</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/Twitter%20Bootstrap%20Select%20Box" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>Twitter Bootstrap Select Box</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/595663?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/gfranko" target="_blank" id="ownerName" class="sidebar-link">gfranko</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">March 23, 2012</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 24, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="http://www.selectboxit.com" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>express (3.x)</li><li>grunt (~0.4.1)</li><li>grunt-contrib-concat (~0.2.0)</li><li>grunt-contrib-uglify (~0.2.0)</li><li>grunt-contrib-jshint (~0.3.0)</li><li>grunt-contrib-jasmine (~0.4.2)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/595663?v=4" alt="gfranko" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gfranko" target="_blank" class="text-decoration-none fw-bold">gfranko</a><p class="mb-0 text-muted small">433 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2997615?v=4" alt="ronlussier" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ronlussier" target="_blank" class="text-decoration-none fw-bold">ronlussier</a><p class="mb-0 text-muted small">8 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/486876?v=4" alt="guilhem" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/guilhem" target="_blank" class="text-decoration-none fw-bold">guilhem</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3092978?v=4" alt="bitdeli-chef" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bitdeli-chef" target="_blank" class="text-decoration-none fw-bold">bitdeli-chef</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/239858?v=4" alt="ProCynic" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ProCynic" target="_blank" class="text-decoration-none fw-bold">ProCynic</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2238381?v=4" alt="mako-taco" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mako-taco" target="_blank" class="text-decoration-none fw-bold">mako-taco</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3015252?v=4" alt="vamonte" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/vamonte" target="_blank" class="text-decoration-none fw-bold">vamonte</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1920926?v=4" alt="dharapvj" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/dharapvj" target="_blank" class="text-decoration-none fw-bold">dharapvj</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+3 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
