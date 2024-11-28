@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Picker Plugin for jQuery</title>
+    <meta name="description" content="emojionearea by mervick. Emoji Picker Plugin for jQuery">
+    <meta name="author" content="mervick">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/emojionearea-by-mervick.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Emojionearea</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Emojionearea",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Emojionearea</h1>
+        <p id="packageDescription" class="text-muted">Emoji Picker Plugin for jQuery</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">953</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">1.16 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">257</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">114</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/mervick/emojionearea/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/mervick/emojionearea" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <p><a href="https://stand-with-ukraine.pp.ua/"><img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct.svg" alt="Stand With Ukraine" /></a></p>
+<h1>EmojioneArea</h1>
+<p>EmojioneArea is a small jQuery plugin that allows you to transform any html element into simple WYSIWYG editor with<br />
+ability to use Emojione icons.<br />
+The end result is a secure text/plain in which the image icons will be replaced with their Unicode analogues.  </p>
+<h3>Preview version 3.x</h3>
+<p><img src="http://mervick.github.io/emojionearea/images/v3.png" alt="EmojioneArea version 3.0.0" /></p>
+<p><a href="https://jsfiddle.net/1v03Lqnu/">See the Live Demo here</a></p>
+<p><a href="https://github.com/mervick/emojionearea/tree/v2.1.x">Version 2.1.x</a></p>
+<h2>Installation</h2>
+<p>The preferred way to install is via <a href="http://bower.io/">bower</a>, <a href="https://www.npmjs.com/">npm</a> or <a href="https://getcomposer.org/">composer</a>.</p>
+<pre class="prettyprint linenums lang-language"><code>bower install emojionearea#^3.0.0
+# or
+npm install emojionearea@^3.0.0
+# or
+composer require mervick/emojionearea ^3.0.0</code></pre>
+<h2>Usage</h2>
+<p>Add the following lines to the <code>head</code>:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link rel="stylesheet" href="file/to/path/css/emojionearea.min.css"&gt;
+&lt;script type="text/javascript" src="file/to/path/js/emojionearea.min.js"&gt;&lt;/script&gt;</code></pre>
+<p>Simple usage:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;textarea id="example1"&gt;&lt;/textarea&gt;
+&lt;script type="text/javascript"&gt;
+  $(document).ready(function() {
+    $("#example1").emojioneArea();
+  });
+&lt;/script&gt;</code></pre>
+<p>EmojioneArea uses awesome <a href="https://github.com/emojione/emojione">Emojione</a> emojis.<br />
+So when <code>emojionearea.js</code> loads, it's require to <code>emojione.js</code> loaded too, but if it not loaded in the page then EmojioneArea loads it from CDN.<br />
+For avoiding this behavior you can add <code>emojione.js</code> and <code>emojione.css</code> into your page.</p>
+<h3>Customize emojione version</h3>
+<p>By changing value below you can change emojione version which will be loaded from CDN</p>
+<pre class="prettyprint linenums lang-language"><code>window.emojioneVersion = "3.1.2";</code></pre>
+<h2>Options</h2>
+<h4><code>standalone</code></h4>
+<p>Standalone mode</p>
+<p><strong>type</strong>: <code>boolean</code><br />
+<strong>default</strong>: <code>false</code>  </p>
+<p>Example:  </p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    standalone: true
+});</code></pre>
+<p>Preview:  </p>
+<p><img src="http://mervick.github.io/emojionearea/images/standalone_v3.png" alt="EmojiOneArea - Standalone mode" /></p>
+<h4><code>emojiPlaceholder</code></h4>
+<p>The placeholder (default emoji) of the button in the standalone mode.<br />
+Works only with standalone mode</p>
+<p><strong>type</strong>: <code>string</code><br />
+<strong>default</strong>: <code>':smiley:'</code><br />
+<strong>accepts values</strong>: [any emojione shortname]</p>
+<p>Example:  </p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    emojiPlaceholder: ":smile_cat:"
+});</code></pre>
+<h4><code>placeholder</code></h4>
+<p>The placeholder of the editor</p>
+<p><strong>type</strong>: <code>string</code><br />
+<strong>default</strong>: [uses placeholder attribute from the source input]  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    placeholder: "Type something here"
+});</code></pre>
+<h4><code>search</code></h4>
+<p>Whether is enabled search emojis in the picker</p>
+<p><strong>type</strong>: <code>boolean</code><br />
+<strong>default</strong>: <code>true</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    search: false
+});</code></pre>
+<h4><code>searchPlaceholder</code></h4>
+<p>The search placeholder</p>
+<p><strong>type</strong>: <code>string</code><br />
+<strong>default</strong>: <code>'SEARCH'</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    searchPlaceholder: "Search"
+});</code></pre>
+<h4><code>useInternalCDN</code></h4>
+<p>Whether to use the loading mechanism to load EmojiOne from CDN</p>
+<p><strong>type</strong>: <code>boolean</code><br />
+<strong>default</strong>: <code>true</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    useInternalCDN: true
+});</code></pre>
+<h4><code>buttonTitle</code></h4>
+<p>The title of the emoji button (hint on the hover)</p>
+<p><strong>type</strong>: <code>string</code><br />
+<strong>default</strong>: <code>"Use the TAB key to insert emoji faster"</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    buttonTitle: "Use the TAB key to insert emoji faster"
+});</code></pre>
+<h4><code>recentEmojis</code></h4>
+<p>Whether to show recently selected emojis in the picker</p>
+<p><strong>type</strong>: <code>boolean</code><br />
+<strong>default</strong>: <code>true</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    recentEmojis: false
+});</code></pre>
+<h4><code>pickerPosition</code></h4>
+<p>The position of the emojis picker in the relation to the editor</p>
+<p><strong>type</strong>: <code>string</code><br />
+<strong>default</strong>: <code>'top'</code><br />
+<strong>accepts values</strong>: <code>'top' | 'right' | 'bottom'</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    pickerPosition: "bottom"
+});</code></pre>
+<h4><code>filtersPosition</code></h4>
+<p>The position of the filters header in the emojis picker </p>
+<p><strong>type</strong>: <code>string</code><br />
+<strong>default</strong>: <code>'top'</code><br />
+<strong>accepts values</strong>: <code>'top' | 'bottom'</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    filtersPosition: "bottom"
+});</code></pre>
+<p><img src="http://mervick.github.io/emojionearea/images/filters-position-bottom.png?1" alt="EmojiOneArea - searchPosition bottom" /></p>
+<h4><code>searchPosition</code></h4>
+<p>The search panel position if <code>search</code> option enabled</p>
+<p><strong>type</strong> <code>string</code><br />
+<strong>default</strong>: <code>top</code><br />
+<strong>accepts</strong>: <code>'top' | 'bottom'</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    searchPosition: "bottom"
+});</code></pre>
+<p><img src="http://mervick.github.io/emojionearea/images/search-position-bottom.png?!" alt="EmojiOneArea - searchPosition bottom" /></p>
+<h4><code>hidePickerOnBlur</code></h4>
+<p>Whether to hide picker when blur event triggers</p>
+<p><strong>type</strong>: <code>boolean</code><br />
+<strong>default</strong>: <code>true</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    hidePickerOnBlur: false
+});</code></pre>
+<h4><code>container</code></h4>
+<p>The container of the plugin.  </p>
+<p>By default, emojionearea container created directly under the source.<br />
+In this option you can specify custom <code>jQuery|selector</code> container.</p>
+<p><strong>type</strong>: <code>jQuery|selector</code><br />
+<strong>default</strong>: <code>null</code>  </p>
+<p>Examples:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;input type="text" id="emojionearea1" /&gt;
+&lt;input type="text" id="emojionearea2" /&gt;
+&lt;!-- ... --&gt;
+&lt;div id="container1"&gt;&lt;/div&gt; &lt;!-- #emojionearea2 plugin will use this container --&gt;
+&lt;div id="container2"&gt;&lt;/div&gt; &lt;!-- #emojionearea1 plugin will use this container --&gt;
+&lt;script&gt;
+    $("#emojionearea1").emojioneArea({
+        container: "#container2" // by selector
+    });
+    $("#emojionearea2").emojioneArea({
+        container: $("#container1") // by jQuery object
+    });
+&lt;/script&gt;</code></pre>
+<h4><code>tones</code></h4>
+<p>Whether to show the skin tone buttons in the emoji picker</p>
+<p><strong>type</strong>: <code>boolean</code><br />
+<strong>default</strong>: <code>true</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    tones: false
+});</code></pre>
+<h4><code>tonesStyle</code></h4>
+<p>The style of the skin tones selector</p>
+<p><strong>type</strong>: <code>string</code><br />
+<strong>default</strong>: <code>'bullet'</code><br />
+<strong>accepts values</strong>: <code>'bullet' | 'radio' | 'square' | 'checkbox'</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    tonesStyle: 'checkbox'
+});</code></pre>
+<h4><code>shortnames</code></h4>
+<p>By default EmojioneArea parses only utf8 emojis (e.g. <code>😀😊😍🤑😜🤓</code>) from the value of the input source.<br />
+This option enables to parse also the shortnames (e.g. <code>:smile:</code>, <code>:smiley:</code>, <code>:cat:</code>, etc).<br />
+Also affects the work of the method <code>setText()</code>.  </p>
+<p>Note. Affects only to how it parse emojis.<br />
+To change how it saves emojis use <code>saveEmojisAs</code> option (see below).</p>
+<p><strong>type</strong>: <code>boolean</code><br />
+<strong>default</strong>: <code>false</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    shortnames: true
+});</code></pre>
+<h4><code>saveEmojisAs</code></h4>
+<p>The processor type of the how emojionearea saves icons to the source, also affects on the method <code>getText()</code></p>
+<p><strong>type</strong>: <code>string</code><br />
+<strong>default</strong>: <code>'unicode'</code><br />
+<strong>accepts values</strong>: <code>'unicode' | 'shortname' | 'image'</code>  </p>
+<ul>
+<li>unicode - saves emojis as utf8 text (e.g. <code>😀😊😍🤑😜🤓</code>);</li>
+<li>shortname - save emojis as shortnames (e.g. <code>:smile:</code>, <code>:smiley:</code>, <code>:cat:</code>, etc);</li>
+<li>image - save emojis as html images, example: 
+<pre class="prettyprint linenums lang-language"><code>&lt;img alt="😀" class="emojioneemoji" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f600.png"&gt;</code></pre></li>
+</ul>
+<h4><code>hideSource</code></h4>
+<p>Whether to hide source input after render the plugin</p>
+<p><strong>type</strong>: <code>boolean</code><br />
+<strong>default</strong>: <code>true</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    hideSource: false
+});</code></pre>
+<h4><code>inline</code></h4>
+<p>Inline mode<br />
+Whether to use plugin editor as inline input  </p>
+<p><strong>type</strong>: <code>boolean|null</code><br />
+<strong>default</strong>: <code>null</code><br />
+<strong>accepts values</strong>: <code>null | true | false</code>  </p>
+<ul>
+<li><code>null</code> - auto detect, if input is textarea then <code>false</code>, when it is <code>input[type=text]</code> then <code>true</code></li>
+</ul>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    inline: true
+});</code></pre>
+<p>Preview:  </p>
+<p><img src="http://mervick.github.io/emojionearea/images/inline.png?" alt="EmojioneArea - inline mode" /></p>
+<h4><code>shortcuts</code></h4>
+<p>Whether to attach shortcuts events</p>
+<p><strong>type</strong>: <code>boolean</code><br />
+<strong>default</strong>: <code>true</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    shortcuts: false
+});</code></pre>
+<h4><code>autocomplete</code></h4>
+<p>Whether to add the emojis short names autocomplete functional </p>
+<p><strong>type</strong>: <code>boolean</code><br />
+<strong>default</strong>: <code>true</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    autocomplete: false
+});</code></pre>
+<h4><code>autocompleteTones</code></h4>
+<p>Whether to show skin emojis in the autocomplete dropdown</p>
+<p><strong>type</strong>: <code>boolean</code><br />
+<strong>default</strong>: <code>false</code>  </p>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    autocompleteTones: true
+});</code></pre>
+<h4><code>textcomplete</code></h4>
+<p>The settings of the autocomplete dropdown </p>
+<p><strong>type</strong>: <code>object</code><br />
+<strong>default</strong>: </p>
+<pre class="prettyprint linenums lang-language"><code>{
+    maxCount  : 15,
+    placement : null
+}</code></pre>
+<p>where</p>
+<ul>
+<li><code>maxCount</code> - max count of items in the dropdown</li>
+<li><code>placement</code> - the placement of the dropdown (<code>null | "top" | "absleft" | "absright"</code>)</li>
+</ul>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    textcomplete: {
+        maxCount  : 20,
+        placement : 'absleft'
+    }
+});</code></pre>
+<h4><code>attributes</code></h4>
+<p>The html attributes of the editor (contenteditable) of the plugin </p>
+<p><strong>type</strong>: <code>object</code><br />
+<strong>default</strong>: </p>
+<pre class="prettyprint linenums lang-language"><code>{
+    dir            : "ltr",
+    spellcheck     : false,
+    autocomplete   : "off",
+    autocorrect    : "off",
+    autocapitalize : "off",
+}</code></pre>
+<p>where</p>
+<ul>
+<li><code>dir</code>           - direction <a href="http://www.w3schools.com/tags/att_global_dir.asp">http://www.w3schools.com/tags/att_global_dir.asp</a></li>
+<li><code>spellcheck</code>    - spellcheck <a href="http://www.w3schools.com/tags/att_global_spellcheck.asp">http://www.w3schools.com/tags/att_global_spellcheck.asp</a></li>
+<li><code>autocomplete</code>  - autocomplete <a href="http://www.w3schools.com/tags/att_input_autocomplete.asp">http://www.w3schools.com/tags/att_input_autocomplete.asp</a></li>
+<li><code>autocorrect</code>   - autocorrect <a href="https://davidwalsh.name/disable-autocorrect">https://davidwalsh.name/disable-autocorrect</a></li>
+<li><code>autocapitalize</code>- autocapitalize <a href="http://www.w3schools.com/tags/att_input_autocomplete.asp">http://www.w3schools.com/tags/att_input_autocomplete.asp</a></li>
+</ul>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    attributes: {
+        spellcheck : true,
+        autocomplete   : "on",
+    }
+});</code></pre>
+<h4><code>filters</code></h4>
+<p>The filters (tabs) in the emojis picker</p>
+<p><strong>type</strong>: <code>object</code><br />
+<strong>default</strong>: [the full default filters you can find here <a href="https://github.com/mervick/emojionearea/blob/master/src/function/getDefaultOptions.js#L55">here</a>]</p>
+<pre class="prettyprint linenums lang-language"><code>{
+    tones: { // this tab is hidden, and used for list tones emojis
+        title: "Diversity",
+        emoji: "[...]", // list of the emojis, see source code
+    },
+    recent: {
+        icon: "clock3",
+        title: "Recent",
+    },
+    smileys_people: {
+        icon: "yum",
+        title: "Smileys &amp; People",
+        emoji: "[...]", // list of the emojis, see source code
+    },
+    animals_nature: {
+        icon: "hamster",
+        title: "Animals &amp; Nature",
+        emoji: "[...]", // list of the emojis, see source code
+    },
+    food_drink: {
+        icon: "pizza",
+        title: "Food &amp; Drink",
+        emoji: "[...]", // list of the emojis, see source code
+    },
+    activity: {
+        icon: "basketball",
+        title: "Activity",
+        emoji: "[...]", // list of the emojis, see source code
+    },
+    travel_places: {
+        icon: "rocket",
+        title: "Travel &amp; Places",
+        emoji: "[...]", // list of the emojis, see source code
+    },
+    objects: {
+        icon: "bulb",
+        title: "Objects",
+        emoji: "[...]", // list of the emojis, see source code
+    },
+    symbols: {
+        icon: "heartpulse",
+        title: "Symbols",
+        emoji: "[...]", // list of the emojis, see source code
+    },
+    flags: {
+        icon: "flag_gb",
+        title: "Flags",
+        emoji: "[...]", // list of the emojis, see source code
+    },
+}
+</code></pre>
+<p>Example:</p>
+<pre class="prettyprint linenums lang-language"><code>$(".emojionearea").emojioneArea({
+    filters: {
+        recent : false, // disable recent
+        smileys_people: {
+            icon: 'cat' // change smileys_people filter icon to "cat"
+        },
+        animals_nature: {
+            title: 'Animals' // change animals_nature filter title to "Animals"
+        },
+        food_drink: {
+            emoji: "smiley smile cat" // change emojis of the filter food_drink
+        },
+        objects: false, // disable objects filter
+        symbols: false, // disable symbols filter
+        flags : false // disable flags filter
+    }
+});
+</code></pre>
+<h2>Methods</h2>
+<p><strong>List of methods</strong></p>
+<h4><code>.on(events, handler)</code></h4>
+<p>Attach handler for event(s)</p>
+<ul>
+<li>
+<p>param <strong>events</strong><br />
+Type: <code>String</code><br />
+One or more space-separated event types</p>
+</li>
+<li>
+<p>param <strong>handler</strong><br />
+Type: <code>Function(jQuery Element, Event eventObject [, any extraParameter ] [, ...])</code><br />
+A function to execute when the event is triggered</p>
+</li>
+<li>
+<p>returns <code>EmojioneArea</code> instance</p>
+</li>
+</ul>
+<h4><code>.off(events[, handler])</code></h4>
+<p>Remove previously attached handler (if handler is specified) or all handlers of specified event(s)</p>
+<ul>
+<li>
+<p>param <strong>events</strong><br />
+Type: <code>String</code><br />
+One or more space-separated event types</p>
+</li>
+<li>
+<p>param <strong>handler</strong> [optional]<br />
+Type: <code>Function(jQuery Element, Event eventObject [, any extraParameter ] [, ... ])</code><br />
+A handler function previously attached for the event(s) by <code>.on</code> method</p>
+</li>
+<li>
+<p>returns <code>EmojioneArea</code> instance</p>
+</li>
+</ul>
+<h4><code>.trigger(events[, ... ])</code></h4>
+<p>Trigger event(s)</p>
+<ul>
+<li>
+<p>param <strong>events</strong><br />
+Type: <code>String</code><br />
+One or more space-separated event types</p>
+</li>
+<li>
+<p>params <strong>[, ...]</strong> [optional]<br />
+Type: <code>any</code><br />
+Extra parameters</p>
+</li>
+<li>
+<p>returns <code>Boolean</code> the result of all called handlers</p>
+</li>
+</ul>
+<h4><code>.setText(str)</code></h4>
+<p>Set emojionearea text</p>
+<ul>
+<li>
+<p>param <strong>str</strong><br />
+Type: <code>String</code><br />
+Set text</p>
+</li>
+<li>
+<p>returns <code>EmojioneArea</code> instance</p>
+</li>
+</ul>
+<h4><code>.getText()</code></h4>
+<p>Get text of emojionearea, there is no any html, just vanilla text</p>
+<ul>
+<li>returns <code>String</code></li>
+</ul>
+<h4><code>.showPicker()</code></h4>
+<p>Show picker area</p>
+<ul>
+<li>returns <code>EmojioneArea</code> instance</li>
+</ul>
+<h4><code>.hidePicker()</code></h4>
+<p>Hide picker area</p>
+<ul>
+<li>returns <code>EmojioneArea</code> instance</li>
+</ul>
+<h4><code>.enable()</code></h4>
+<p>Enable emojionearea input area</p>
+<ul>
+<li>returns <code>EmojioneArea</code> instance</li>
+</ul>
+<h4><code>.disable()</code></h4>
+<p>Disable emojionearea input area</p>
+<ul>
+<li>returns <code>EmojioneArea</code> instance</li>
+</ul>
+<h4><code>.setFocus()</code></h4>
+<p>Focus on emojionearea input area</p>
+<ul>
+<li>returns <code>EmojioneArea</code> instance</li>
+</ul>
+<h3>Methods Usage</h3>
+<p>How to use methods, example:</p>
+<pre class="prettyprint linenums lang-language"><code>  var el = $("selector").emojioneArea();
+  el[0].emojioneArea.on("emojibtn.click", function(btn, event) {
+    console.log(btn.html());
+  });
+
+  // OR
+  $("selector2").emojioneArea();
+  $("selector2")[0].emojioneArea.getText();
+
+  // OR
+  $("selector3").emojioneArea();
+  $("selector3").data("emojioneArea").showPicker();</code></pre>
+<h2>Events</h2>
+<p><strong>List of built-in events:</strong></p>
+<h4><code>ready</code> or <code>onLoad</code></h4>
+<p>triggers when emojionearea is initialized<br />
+Handler type: <code>Function</code> (no params)</p>
+<h4><code>click</code></h4>
+<p>triggers when user clicks on emojionearea input or picker<br />
+Handler type: <code>Function (editor: jQuery, event: Event)</code>  </p>
+<ul>
+<li>param {jQuery} <strong>editor</strong> - EmojioneArea input  </li>
+<li>param {Event} <strong>event</strong> - jQuery Event object</li>
+</ul>
+<h4><code>mousedown</code></h4>
+<p>triggers on <code>mousedown</code> of emojionearea input or picker<br />
+Handler type: <code>Function (editor: jQuery, event: Event)</code>  </p>
+<ul>
+<li>param {jQuery} <strong>editor</strong> - EmojioneArea input  </li>
+<li>param {Event} <strong>event</strong> - jQuery Event object</li>
+</ul>
+<h4><code>mouseup</code></h4>
+<p>triggers on <code>mouseup</code> of emojionearea input or picker<br />
+Handler type: <code>Function (editor: jQuery, event: Event)</code>  </p>
+<ul>
+<li>param {jQuery} <strong>editor</strong> - EmojioneArea input  </li>
+<li>param {Event} <strong>event</strong> - jQuery Event object</li>
+</ul>
+<h4><code>keyup</code></h4>
+<p>triggers on <code>keyup</code> of emojionearea input or picker<br />
+Handler type: <code>Function (editor: jQuery, event: Event)</code>  </p>
+<ul>
+<li>param {jQuery} <strong>editor</strong> - EmojioneArea input  </li>
+<li>param {Event} <strong>event</strong> - jQuery Event object</li>
+</ul>
+<h4><code>keypress</code></h4>
+<p>triggers on <code>keypress</code> of emojionearea input or picker<br />
+Handler type: <code>Function (editor: jQuery, event: Event)</code>  </p>
+<ul>
+<li>param {jQuery} <strong>editor</strong> - EmojioneArea input  </li>
+<li>param {Event} <strong>event</strong> - jQuery Event object</li>
+</ul>
+<h4><code>focus</code></h4>
+<p>triggers on <code>focus</code> of emojionearea input<br />
+Handler type: <code>Function (editor: jQuery, event: Event)</code>  </p>
+<ul>
+<li>param {jQuery} <strong>editor</strong> - EmojioneArea input  </li>
+<li>param {Event} <strong>event</strong> - jQuery Event object</li>
+</ul>
+<h4><code>blur</code></h4>
+<p>triggers on <code>blur</code> of emojionearea input<br />
+Handler type: <code>Function (editor: jQuery, event: Event)</code>  </p>
+<ul>
+<li>param {jQuery} <strong>editor</strong> - EmojioneArea input  </li>
+<li>param {Event} <strong>event</strong> - jQuery Event object</li>
+</ul>
+<h4><code>paste</code></h4>
+<p>triggers when user has pasted content to input area<br />
+Handler type: <code>Function (editor: jQuery, text: String, html: String)</code></p>
+<ul>
+<li>param {jQuery} <strong>editor</strong> - EmojioneArea input  </li>
+<li>param {String} <strong>text</strong> - pasted vanilla text</li>
+<li>param {String} <strong>html</strong> - pasted html content</li>
+</ul>
+<h4><code>resize</code></h4>
+<p>triggers when input area has resized<br />
+Handler type: <code>Function</code> (no params)</p>
+<h4><code>change</code></h4>
+<p>triggers when input area has changed<br />
+Handler type: <code>Function</code> (no params)</p>
+<h4><code>emojibtn.click</code></h4>
+<p>triggers when user clicks on emoji button at the picker area<br />
+Handler type: <code>Function (emojibtn: jQuery)</code></p>
+<ul>
+<li>param {jQuery} <strong>emojibtn</strong> - emoji button that user has clicked </li>
+</ul>
+<h4><code>button.click</code></h4>
+<p>triggers when user clicks on show/hide button<br />
+Handler type: <code>Function (button: jQuery)</code></p>
+<ul>
+<li>param {jQuery} <strong>button</strong> - show/hide button</li>
+</ul>
+<h4><code>tone.click</code></h4>
+<p>triggers when user clicks on tone filter button<br />
+Handler type: <code>Function (button: jQuery)</code></p>
+<ul>
+<li>param {jQuery} <strong>button</strong> - tone button that user has clicked</li>
+</ul>
+<h4><code>picker.show</code></h4>
+<p>triggers on show picker<br />
+Handler type: <code>Function (picker: jQuery)</code></p>
+<ul>
+<li>param {jQuery} <strong>picker</strong> - picker area</li>
+</ul>
+<h4><code>picker.hide</code></h4>
+<p>triggers when picker has been hidden<br />
+Handler type: <code>Function (picker: jQuery)</code></p>
+<ul>
+<li>param {jQuery} <strong>picker</strong> - picker area</li>
+</ul>
+<h4><code>picker.mousedown</code></h4>
+<p>triggers on <code>mousedown</code> of emojionearea picker area<br />
+Handler type: <code>Function (picker: jQuery)</code></p>
+<ul>
+<li>param {jQuery} <strong>picker</strong> - picker area</li>
+</ul>
+<h4><code>picker.mouseup</code></h4>
+<p>triggers on <code>mouseup</code> of emojionearea picker area<br />
+Handler type: <code>Function (picker: jQuery)</code></p>
+<ul>
+<li>param {jQuery} <strong>picker</strong> - picker area</li>
+</ul>
+<h4><code>picker.click</code></h4>
+<p>triggers on <code>click</code> of emojionearea picker area<br />
+Handler type: <code>Function (picker: jQuery)</code></p>
+<ul>
+<li>param {jQuery} <strong>picker</strong> - picker area</li>
+</ul>
+<h4><code>picker.keydown</code></h4>
+<p>triggers on <code>keydown</code> of emojionearea picker area<br />
+Handler type: <code>Function (picker: jQuery)</code></p>
+<ul>
+<li>param {jQuery} <strong>picker</strong> - picker area</li>
+</ul>
+<h4><code>picker.keypress</code></h4>
+<p>triggers on <code>keypress</code> of emojionearea picker area<br />
+Handler type: <code>Function (picker: jQuery)</code></p>
+<ul>
+<li>param {jQuery} <strong>picker</strong> - picker area</li>
+</ul>
+<h4><code>search.focus</code></h4>
+<p>triggers on <code>focus</code> of picker search area<br />
+Handler type: <code>Function</code> (no params)</p>
+<h4><code>search.keypress</code></h4>
+<p>triggers when user press key on picker search area<br />
+Handler type: <code>Function</code> (no params)</p>
+<h3>Events Usage</h3>
+<p>There are 2 ways to set events, directly in options via options <code>events</code>.<br />
+Note: For events with <code>.</code> (dot) you can set event name with <code>_</code>(dash) instead of <code>.</code> (dot) here.</p>
+<p>Example, set events in the options:</p>
+<pre class="prettyprint linenums lang-language"><code>$("selector").emojioneArea({
+  events: {
+    paste: function (editor, event) {
+      console.log('event:paste');
+    },
+    change: function (editor, event) {
+      console.log('event:change');
+    },
+    emojibtn_click: function (button, event) {
+      console.log('event:emojibtn.click, emoji=' + button.children().data("name"));
+    }
+  }
+});</code></pre>
+<p>Also you can manage events via <code>.on()</code>, <code>.off()</code> and <code>.trigger()</code> methods</p>
+<p>Example: </p>
+<pre class="prettyprint linenums lang-language"><code>  var el = $("selector").emojioneArea();
+
+  // attach event handler
+  el[0].emojioneArea.on("emojibtn.click", function(button, event) {
+    console.log('event:emojibtn.click, emoji=' + button.children().data("name"));
+  });
+  // unset all handlers attached to event
+  el[0].emojioneArea.off("emojibtn.click");
+
+  // like in jQuery you can specify few events separated by space
+  el[0].emojioneArea.off("focus blur");
+
+  // set &amp; unset custom handler
+  var eventHandler1 = function(button, event) {
+    console.log('event1');
+  };
+  var eventHandler2 = function(button, event) {
+    console.log('event2');
+  };
+  // attach event handlers
+  el[0].emojioneArea.on("click", eventHandler1);
+  el[0].emojioneArea.on("click", eventHandler2);
+  // unset eventHandler1
+  el[0].emojioneArea.off("click", eventHandler1);</code></pre>
+<h2>Building</h2>
+<p>Building EmojiOneArea requires grunt, compass, and sass to be available</p>
+<p>For making changes and build project (scss/js):</p>
+<pre><code>npm update
+npm run build</code></pre>
+<p>PRs welcome!!!</p>
+<h2>FAQ / Troubleshooting</h2>
+<h4>EmojiOne icons are appearing larger than expected</h4>
+<p>Most likely caused by including some scripts in the wrong order (or perhaps not at all!)<br />
+Include jQuery, then EmojiOne, then EmojiOneArea scripts</p>
+<h4>Can I use EmojiOneArea to just display Emoji icons in a div?</h4>
+<p>EmojiOneArea is intended to be a text editor which supports EmojiOne.<br />
+If you just want to display Emoji icons, the EmojiOne library already provides everything you need.</p>
+<h4>Can I add extra buttons into EmojiOneArea, alongside the existing emoji picker icon?</h4>
+<p>This is not fully supported, but you could respond to the jQuery onLoad event which EmojiOneArea fires once its initialised, and insert your buttons into the DOM at this point<br />
+see <a href="https://github.com/mervick/emojionearea/issues/152">https://github.com/mervick/emojionearea/issues/152</a></p>
+<h4>Firefox is not positioning the input caret correctly in EmojiOneArea</h4>
+<p>This appears to be a long standing FireFox bug, apparently related to contenteditable, the placeholder attribute, and the pseudo :before or :after classes<br />
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1020973">https://bugzilla.mozilla.org/show_bug.cgi?id=1020973</a></p>
+<p>There are various workarounds such as changing placeholder, or adding some padding<br />
+See <a href="https://github.com/mervick/emojionearea/issues/86">https://github.com/mervick/emojionearea/issues/86</a></p>
+<h4>Can I modify the position of EmojiOneArea picker?</h4>
+<p>You can use the <code>pickerPosition</code> option which provides basic control of where the picker appears, in relation to the source input.<br />
+For more control, you could apply translate CSS to the picker</p>
+<h2>Known Issues</h2>
+<h4>Internet Explorer focus issues</h4>
+<p>IE 11 causes EmojiOneArea to hide (and trigger blur event) when the emoji picker scrollbar is clicked<br />
+There is no current fix for this, although there are a few crude workarounds<br />
+See <a href="https://github.com/mervick/emojionearea/issues/127">https://github.com/mervick/emojionearea/issues/127</a></p>
+<h4>EmojiOneArea positioning</h4>
+<p>There are known issues with positioning the EmojiOneArea picker.<br />
+It does not currently ensure the picker is entirely visible on small screen devices, or positioned properly when it is invoked from the bottom of a page (it could be clipped)<br />
+See <a href="https://github.com/mervick/emojionearea/issues/131">https://github.com/mervick/emojionearea/issues/131</a></p>
+<h4>Browser loads the textcomplete.js from CDN, everytime an EmojiOneArea is instantiated</h4>
+<p>You can avoid this by explicitly including the textcomplete script into your document.<br />
+If it already exists, EmojiOneArea will use the preloaded script instead of attempting to load it from CDN for each instance<br />
+You can also avoid this by disabling autocomplete entirely by setting the autocomplete option to false</p>
+<h2>Requirements</h2>
+<ul>
+<li><a href="https://jquery.com/">jQuery</a> &gt;= 1.8.2</li>
+</ul>
+<h2>License</h2>
+<p>EmojiOneArea is released under the MIT license.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/emoji" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>emoji</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/emojione" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>emojione</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/picker" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>picker</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/emojionearea" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>emojionearea</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/2429298?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/mervick" target="_blank" id="ownerName" class="sidebar-link">mervick</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">September 12, 2015</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 14, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://jsfiddle.net/mervick/1v03Lqnu/765/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Dependencies</h5><ul class="dependencies-list"><li>emojione (&gt;=2.0.1)</li><li>jquery (&gt;=1.8.3)</li><li>jquery-textcomplete (&gt;=1.3.4)</li></ul><h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (^1.3.0)</li><li>grunt-cli (^0.1.13)</li><li>grunt-contrib-cssmin (^1.0.1)</li><li>grunt-contrib-sass (^1.0.0)</li><li>grunt-contrib-uglify (^1.0.0)</li><li>grunt-contrib-watch (^1.0.0)</li><li>requirejs (^2.1.22)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2429298?v=4" alt="mervick" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mervick" target="_blank" class="text-decoration-none fw-bold">mervick</a><p class="mb-0 text-muted small">336 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/421266?v=4" alt="carpii" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/carpii" target="_blank" class="text-decoration-none fw-bold">carpii</a><p class="mb-0 text-muted small">15 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/7000348?v=4" alt="klasjersevi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/klasjersevi" target="_blank" class="text-decoration-none fw-bold">klasjersevi</a><p class="mb-0 text-muted small">13 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/8058570?v=4" alt="lacerdev" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lacerdev" target="_blank" class="text-decoration-none fw-bold">lacerdev</a><p class="mb-0 text-muted small">9 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/3215478?v=4" alt="MerlinMason" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/MerlinMason" target="_blank" class="text-decoration-none fw-bold">MerlinMason</a><p class="mb-0 text-muted small">7 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1238485?v=4" alt="pederjohnsen" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pederjohnsen" target="_blank" class="text-decoration-none fw-bold">pederjohnsen</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/577459?v=4" alt="Invader444" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Invader444" target="_blank" class="text-decoration-none fw-bold">Invader444</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2256000?v=4" alt="ksullivan" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ksullivan" target="_blank" class="text-decoration-none fw-bold">ksullivan</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/13167?v=4" alt="elomarns" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/elomarns" target="_blank" class="text-decoration-none fw-bold">elomarns</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2752101?v=4" alt="got2be" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/got2be" target="_blank" class="text-decoration-none fw-bold">got2be</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5263184?v=4" alt="Vasiliy-Bondarenko" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Vasiliy-Bondarenko" target="_blank" class="text-decoration-none fw-bold">Vasiliy-Bondarenko</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/3891597?v=4" alt="allanbrault" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/allanbrault" target="_blank" class="text-decoration-none fw-bold">allanbrault</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/15159487?v=4" alt="ohenepee" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ohenepee" target="_blank" class="text-decoration-none fw-bold">ohenepee</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+8 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
