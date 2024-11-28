@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A jQuery Plugin for Replacing &lt;select&gt; Elements.</title>
+    <meta name="description" content="jquery-selectBox by marcj. A jQuery plugin for replacing &lt;select&gt; elements.">
+    <meta name="author" content="marcj">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-selectbox-by-marcj.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Selectbox</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Selectbox",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Selectbox</h1>
+        <p id="packageDescription" class="text-muted">A jQuery plugin for replacing &lt;select&gt; elements.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">549</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.65 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">212</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">50</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/marcj/jquery-selectBox/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/marcj/jquery-selectBox" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery selectBox: A styleable replacement for SELECT elements</h1>
+<p><em>Licensed under the MIT license: <a href="http://opensource.org/licenses/MIT">http://opensource.org/licenses/MIT</a></em></p>
+<h2>Features</h2>
+<ul>
+<li>Supports OPTGROUPS</li>
+<li>Supports standard dropdown controls</li>
+<li>Supports multi-select controls (i.e. multiple=&quot;multiple&quot;)</li>
+<li>Supports inline controls (i.e. size=&quot;5&quot;)</li>
+<li>Fully accessible via keyboard</li>
+<li>Shift + click (or shift + enter) to select a range of options in multi-select controls</li>
+<li>Type to search when the control has focus</li>
+<li>Auto-height based on the size attribute (to use, omit the height property in your CSS!)</li>
+<li>Tested in IE7-IE9, Firefox 3-4, recent WebKit browsers, and Opera</li>
+</ul>
+<h2>Usage</h2>
+<p>Download the latest version: <a href="https://github.com/marcj/jquery-selectBox/releases">https://github.com/marcj/jquery-selectBox/releases</a></p>
+<p>Link to the JS file:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="jquery.selectbox.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
+<p>Add the CSS file (or append contents to your own stylesheet):</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link href="jquery.selectbox.css" rel="stylesheet" type="text/css" /&gt;</code></pre>
+<p>To initialize:</p>
+<pre class="prettyprint linenums lang-language"><code>// default
+$('select').selectBox();
+
+// or with custom settings
+$('select').selectBox({
+    mobile: true,
+    menuSpeed: 'fast'
+});</code></pre>
+<h2>Settings</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th style="text-align: center;">Default</th>
+<th style="text-align: right;">Values</th>
+<th style="text-align: right;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mobile</td>
+<td style="text-align: center;"><code>false</code></td>
+<td style="text-align: right;">Boolean</td>
+<td style="text-align: right;">Disables the widget for mobile devices</td>
+</tr>
+<tr>
+<td>menuTransition</td>
+<td style="text-align: center;"><code>default</code></td>
+<td style="text-align: right;"><code>default</code>, <code>slide</code>, <code>fade</code></td>
+<td style="text-align: right;">The show/hide transition for dropdown menus</td>
+</tr>
+<tr>
+<td>menuSpeed</td>
+<td style="text-align: center;"><code>normal</code></td>
+<td style="text-align: right;"><code>slow</code>, <code>normal</code>, <code>fast</code></td>
+<td style="text-align: right;">The show/hide transition speed</td>
+</tr>
+<tr>
+<td>loopOptions</td>
+<td style="text-align: center;"><code>false</code></td>
+<td style="text-align: right;">Boolean</td>
+<td style="text-align: right;">Flag to allow arrow keys to loop through options</td>
+</tr>
+<tr>
+<td>topPositionCorrelation</td>
+<td style="text-align: center;"><code>0</code></td>
+<td style="text-align: right;">Integer</td>
+<td style="text-align: right;">Will be plused to top position if droplist will be show at the top</td>
+</tr>
+<tr>
+<td>bottomPositionCorrelation</td>
+<td style="text-align: center;"><code>0</code></td>
+<td style="text-align: right;">Integer</td>
+<td style="text-align: right;">Will be substracted from top position if droplist will be shown at the bottom</td>
+</tr>
+<tr>
+<td>hideOnWindowScroll</td>
+<td style="text-align: center;"><code>true</code></td>
+<td style="text-align: right;">Boolean</td>
+<td style="text-align: right;">If false then showed droplist will not hide itself on window scroll event</td>
+</tr>
+<tr>
+<td>keepInViewport</td>
+<td style="text-align: center;"><code>true</code></td>
+<td style="text-align: right;">Boolean</td>
+<td style="text-align: right;">If set to false, the droplist will be always open towards the bottom</td>
+</tr>
+</tbody>
+</table>
+<p>To specify settings after the init, use this syntax:</p>
+<pre class="prettyprint linenums lang-language"><code>$('select').selectBox('settings', {settingName: value, ... });</code></pre>
+<h2>Methods</h2>
+<p>To call a method use this syntax:</p>
+<pre class="prettyprint linenums lang-language"><code>$('select').selectBox('methodName', [option]);</code></pre>
+<h3>Available methods</h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>create</td>
+<td>Creates the control (default)</td>
+</tr>
+<tr>
+<td>destroy</td>
+<td>Destroys the selectBox control and reverts back to the original form control</td>
+</tr>
+<tr>
+<td>disable</td>
+<td>Disables the control (i.e. disabled=&quot;disabled&quot;)</td>
+</tr>
+<tr>
+<td>enable</td>
+<td>Enables the control</td>
+</tr>
+<tr>
+<td>value</td>
+<td>If passed with a value, sets the control to that value; otherwise returns the current value</td>
+</tr>
+<tr>
+<td>options</td>
+<td>If passed either a string of HTML or a JSON object, replaces the existing options; otherwise Returns the options container element as a jQuery object</td>
+</tr>
+<tr>
+<td>control</td>
+<td>Returns the selectBox control element (an anchor tag) for working with directly</td>
+</tr>
+<tr>
+<td>refresh</td>
+<td>Updates the selectBox control's options based on the original controls options</td>
+</tr>
+<tr>
+<td>instance</td>
+<td>Returns the SelectBox instance, where you have more methods available (only in v1.2.0-dev</td>
+</tr>
+<tr>
+<td>available) as in the <code>SelectBox</code> class below.</td>
+</tr>
+</tbody>
+</table>
+<h2>API <code>SelectBox</code></h2>
+<p>You can instantiate the selectBox also through a classic OOP way:</p>
+<pre class="prettyprint linenums lang-language"><code>var selectBox = new SelectBox($('#mySelectBox'), settings = {});
+selectBox.showMenu();</code></pre>
+<p>The public methods are:</p>
+<pre class="prettyprint linenums lang-language"><code>refresh()
+destroy()
+disable()
+enable()
+
+getLabelClass()
+getLabelText()
+getSelectElement()
+getOptions(String type = 'inline'|'dropdown')
+
+hideMenus()
+showMenu()
+
+setLabel()
+setOptions(Object options)
+setValue(String value)
+
+removeHover(HTMLElement li)
+addHover(HTMLElement li)
+
+disableSelection(HTMLElement selector)
+generateOptions(jQuery self, jQuery options)
+handleKeyDown(event)
+handleKeyPress(event)
+init(options)
+keepOptionInView(jQuery li, Boolean center)
+refresh()
+removeHover(HTMLElement li)
+selectOption(HTMLElement li, event)</code></pre>
+<h2>Events</h2>
+<p>Events are fired on the original select element. You can bind events like this:</p>
+<pre class="prettyprint linenums lang-language"><code>$('select').selectBox().change(function () {
+    alert($(this).val());
+});</code></pre>
+<h3>Available events</h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>focus</td>
+<td>Fired when the control gains focus</td>
+</tr>
+<tr>
+<td>blur</td>
+<td>Fired when the control loses focus</td>
+</tr>
+<tr>
+<td>change</td>
+<td>Fired when the value of a control changes</td>
+</tr>
+<tr>
+<td>beforeopen</td>
+<td>Fired before a dropdown menu opens (cancelable)</td>
+</tr>
+<tr>
+<td>open</td>
+<td>Fired after a dropdown menu opens (not cancelable)</td>
+</tr>
+<tr>
+<td>beforeclose</td>
+<td>Fired before a dropdown menu closes (cancelable)</td>
+</tr>
+<tr>
+<td>close</td>
+<td>Fired after a dropdown menu closes (not cancelable)</td>
+</tr>
+</tbody>
+</table>
+<h3>Known Issues</h3>
+<ul>
+<li>The blur and focus callbacks are not very reliable in IE7. The change callback works fine.</li>
+</ul>
+<h2>Credits</h2>
+<p>Original plugin by Cory LaViska of A Beautiful Site, LLC. (<a href="http://www.abeautifulsite.net/">http://www.abeautifulsite.net/</a>)</p>
+<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/marcj/jquery-selectbox/trend.png" alt="Bitdeli Badge" /></a></p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/select" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>select</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jQuery%20select" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jQuery select</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/selectBox" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>selectBox</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jQuery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jQuery</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/450980?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/marcj" target="_blank" id="ownerName" class="sidebar-link">marcj</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">April 14, 2011</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 24, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="http://marcj.github.io/jquery-selectBox/" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/55639?v=4" alt="claviska" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/claviska" target="_blank" class="text-decoration-none fw-bold">claviska</a><p class="mb-0 text-muted small">42 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/450980?v=4" alt="marcj" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/marcj" target="_blank" class="text-decoration-none fw-bold">marcj</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/617989?v=4" alt="renaudleo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/renaudleo" target="_blank" class="text-decoration-none fw-bold">renaudleo</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1104923?v=4" alt="bogdanRada" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bogdanRada" target="_blank" class="text-decoration-none fw-bold">bogdanRada</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2012726?v=4" alt="pavelhoral" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/pavelhoral" target="_blank" class="text-decoration-none fw-bold">pavelhoral</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/282230?v=4" alt="wojtekzozlak" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/wojtekzozlak" target="_blank" class="text-decoration-none fw-bold">wojtekzozlak</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4066101?v=4" alt="eliotik" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/eliotik" target="_blank" class="text-decoration-none fw-bold">eliotik</a><p class="mb-0 text-muted small">3 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/506129?v=4" alt="hkdobrev" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hkdobrev" target="_blank" class="text-decoration-none fw-bold">hkdobrev</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1315387?v=4" alt="Bastlynn" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Bastlynn" target="_blank" class="text-decoration-none fw-bold">Bastlynn</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/575792?v=4" alt="merkuriy" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/merkuriy" target="_blank" class="text-decoration-none fw-bold">merkuriy</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/495635?v=4" alt="cngarrison" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cngarrison" target="_blank" class="text-decoration-none fw-bold">cngarrison</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/237319?v=4" alt="Flyingmana" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Flyingmana" target="_blank" class="text-decoration-none fw-bold">Flyingmana</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/72918?v=4" alt="didip" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/didip" target="_blank" class="text-decoration-none fw-bold">didip</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1379179?v=4" alt="Zeneixe" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Zeneixe" target="_blank" class="text-decoration-none fw-bold">Zeneixe</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/614727?v=4" alt="linko" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/linko" target="_blank" class="text-decoration-none fw-bold">linko</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/246143?v=4" alt="xjamundx" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/xjamundx" target="_blank" class="text-decoration-none fw-bold">xjamundx</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/471667?v=4" alt="jarednorman" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jarednorman" target="_blank" class="text-decoration-none fw-bold">jarednorman</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1279761?v=4" alt="majestic2k" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/majestic2k" target="_blank" class="text-decoration-none fw-bold">majestic2k</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/5487711?v=4" alt="gyduxa" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/gyduxa" target="_blank" class="text-decoration-none fw-bold">gyduxa</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4441828?v=4" alt="jls2933" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jls2933" target="_blank" class="text-decoration-none fw-bold">jls2933</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4819263?v=4" alt="lukelalo" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/lukelalo" target="_blank" class="text-decoration-none fw-bold">lukelalo</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7893?v=4" alt="tomlion" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/tomlion" target="_blank" class="text-decoration-none fw-bold">tomlion</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7667056?v=4" alt="zhaiyb" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zhaiyb" target="_blank" class="text-decoration-none fw-bold">zhaiyb</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+18 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
