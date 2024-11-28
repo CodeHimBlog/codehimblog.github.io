@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Seat Charts by Mateuszmarkowski</title>
+    <meta name="description" content="jQuery Seat Charts Plugin">
+    <meta name="author" content="mateuszmarkowski">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-seat-charts-by-mateuszmarkowski.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Seat Charts</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Seat Charts",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Seat Charts</h1>
+        <p id="packageDescription" class="text-muted">jQuery Seat Charts Plugin</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">597</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.05 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">208</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">22</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/mateuszmarkowski/jQuery-Seat-Charts/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/mateuszmarkowski/jQuery-Seat-Charts" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery Seat Charts</h1>
+<h3>jQuery Seat Charts (JSC) is a full-blown seat map library. It will generate an accessible map, legend, handle mouse &amp; keyboard events and finally give you powerful selectors to control your map.</h3>
+<p><a href="http://jsc.mm-lamp.com/">Simple demo map</a></p>
+<h2>Example:</h2>
+<p>Basic setup:</p>
+<pre><code>$(document).ready(function() {
+
+    var sc = $('#seat-map').seatCharts({
+        map: [
+            'aaaaaaaaaaaa',
+            'aaaaaaaaaaaa',
+            'bbbbbbbbbb__',
+            'bbbbbbbbbb__',
+            'bbbbbbbbbbbb',
+            'cccccccccccc'
+        ],
+        seats: {
+            a: {
+                price   : 99.99,
+                classes : 'front-seat' //your custom CSS class
+            }
+
+        },
+        click: function () {
+            if (this.status() == 'available') {
+                //do some stuff, i.e. add to the cart
+                return 'selected';
+            } else if (this.status() == 'selected') {
+                //seat has been vacated
+                return 'available';
+            } else if (this.status() == 'unavailable') {
+                //seat has been already booked
+                return 'unavailable';
+            } else {
+                return this.style();
+            }
+        }
+    });
+
+    //Make all available 'c' seats unavailable
+    sc.find('c.available').status('unavailable');
+
+    /*
+    Get seats with ids 2_6, 1_7 (more on ids later on),
+    put them in a jQuery set and change some css
+    */
+    sc.get(['2_6', '1_7']).node().css({
+        color: '#ffcfcf'
+    });
+
+    console.log('Seat 1_2 costs ' + sc.get('1_2').data().price + ' and is currently ' + sc.status('1_2'));
+
+});</code></pre>
+<h2>Basics:</h2>
+<p>Building maps is fairly easy with jQuery Seat Charts, you can literally pass an array of strings which represents succeeding rows. Let's take a look at a theatre example:</p>
+<pre><code>//Seat map definition
+[
+    'aaaaaa__DDDDD',
+    'aaaaaa__aaaaa',
+    'aaaaaa__aaaaa',
+    'bbbbbb__bbbbb',
+    'bbbbbb__bbbbb',
+    'bbbbbb__bbbbb',
+    'ccccccccccccc'
+]</code></pre>
+<p>Each single character represents a different type of seat and you have a freedom of choosing anyone but underscore <strong>_</strong>. Underscore is used to indicate that there shouldn't be any seat at a certain place. In our example I chose <strong>a</strong> seats to be the closest to the screen, <strong>D</strong> meant for disabled and <strong>b</strong> and <strong>c</strong> as just plain seats. I also built a corridor in the middle of our theatre, so people can conviniently reach their seats.</p>
+<p>Your chosen characters can carry a hash of data which is a great way to pass crucial seat details such as price or a description that you want to show on hover.</p>
+<pre><code>seats: {
+    a: {
+        price       : 24.55,
+        description : 'Fair priced seat!'
+    }
+}</code></pre>
+<p>Once you build your map and define seats, you can start implementing the booking magic.</p>
+<h2>Booking Magic</h2>
+<p>JSC combines keyboard and mouse events to offer a unified API. There're three types of events which JSC can produce:</p>
+<ul>
+<li><strong>click</strong>: click or spacebar</li>
+<li><strong>focus</strong>: mouse or arrows</li>
+<li><strong>blur</strong>: mouse or arrows</li>
+</ul>
+<p>All three events have their default handlers but you're more than likely to overwrite at least one of them. JSC flexible API let you choose where you want to specify your handlers. You can define global click handlers like in the <em>Basic setup</em> example at the very beginning or you can implement separate handlers for each <em>character</em>:</p>
+<pre><code>a: {
+    click    : function () {
+        //This will only be applied to a seats
+    },
+    price    : 34.99,
+    category : 'VIP Seats'
+}</code></pre>
+<p>Each event handler is fired in <em>seat</em> context which gives you an easy access (using <em>this</em> variable) to its properties, DOM node and data which you may have specified during the setup:</p>
+<pre><code>click: function () {
+    if (this.status() == 'available') {
+        //seat's available and can be taken!
+
+        //let's retrieve the data, so we can add the seat to our cart
+        var price    = this.data().price,
+            category = this.data().category;
+
+        //jQuery element access example
+        this.node().css({
+            'font-size' : '25px'
+        });
+
+        //return new seat status
+        return 'selected';
+    }
+    //…
+}</code></pre>
+<p><strong>Please note</strong>: event handler should return new status of a seat depending on what happended. If user clicks on a seat and the seat's <em>available</em>, <em>selected</em> status should be returned. If user clicks on a <em>selected</em> seat, it most likely should become <em>available</em> again. Full status reference:</p>
+<ul>
+<li><strong>available</strong>: seat which can be taken</li>
+<li><strong>unavailable</strong>: seat which cannot be taken</li>
+<li><strong>selected</strong>: seat which has been taken by current user</li>
+</ul>
+<p>Since JSC also works with <em>focus/blur</em> events, it features a special status called <em>focused</em> which actually doesn't apply to seat status but rather to the way it's displayed. If you use <em>.status</em> method on a focused seat, you will get its real status. To get an idea of this, please take a look at how events are handled by default:</p>
+<pre><code>click   : function() {
+
+    if (this.status() == 'available') {
+        return 'selected';
+    } else if (this.status() == 'selected') {
+        return 'available';
+    } else {
+        /*
+        If we don't want to change the status (i.e. seat's unavailable) we ought to return this.style(). this.style() is a reference to seat's special status which means that it can be focused as well. You shouldn't return this.status() here
+        */
+        return this.style();
+    }
+
+},
+focus  : function() {
+
+    if (this.status() == 'available') {
+        //if seat's available, it can be focused
+        return 'focused';
+    } else  {
+        //otherwise nothing changes
+        return this.style();
+    }
+},
+blur   : function() {
+    //The only place where you should return actual seat status
+    return this.status();
+},</code></pre>
+<hr />
+<p>Your site's popular and people fight for your tickets? Don't forget to update your map with new bookings live!</p>
+<pre><code>//sc will contain a reference to the map
+var sc = $('#sc-container').seatCharts({
+    //... 
+});
+
+setInterval(function() {
+    $.ajax({
+        type     : 'get',
+        url      : '/bookings/get/100',
+        dataType : 'json',
+        success  : function(response) {
+            //iterate through all bookings for our event 
+            $.each(response.bookings, function(index, booking) {
+                //find seat by id and set its status to unavailable
+                sc.status(booking.seat_id, 'unavailable');
+            });
+        }
+    });
+}, 10000); //every 10 seconds</code></pre>
+<h2>Options</h2>
+<p>Required params are marked with *</p>
+<h3>animate</h3>
+<p>Bool, enables animated status switches.</p>
+<p><strong>Please note</strong>: <em>animate</em> uses <em>switchClass</em> method of <a href="http://jqueryui.com/">jQuery UI</a>, so if you want to use <em>animate</em>, you need to include jQuery UI in the page.</p>
+<h3>blur</h3>
+<p>Blur handler. Fired when seat loses focus due to mouse move or arrow hit. You most likely don't want to overwrite this one.</p>
+<pre><code>//default handler
+blur   : function() {
+    return this.status();
+},</code></pre>
+<h3>click</h3>
+<p>Click handler. Fired when user clicks on a seat or hits spacebar on a focused seat. You're most likely to overwrite this one based off this example:</p>
+<pre><code>click   : function() {
+
+    if (this.status() == 'available') {
+        //do some custom stuff
+        console.log(this.data());
+
+        return 'selected';
+    } else if (this.status() == 'selected') {
+        //do some custom stuff
+
+        return 'available';
+    } else {
+        //i.e. alert that the seat's not available
+
+        return this.style();
+    }
+
+},</code></pre>
+<h3>focus</h3>
+<p>Focus handler. Fired when seat receives focus. You most likely don't want to overwrite this one.</p>
+<pre><code>//default handler
+focus  : function() {
+
+    if (this.status() == 'available') {
+        return 'focused';
+    } else  {
+        return this.style();
+    }
+},</code></pre>
+<h3>legend</h3>
+<p>JSC is able to create an UL element with a map legend based on your seat types and custom CSS. If you want JSC to generate a legend for you, you will just need to pass some basic information:</p>
+<h5>node</h5>
+<p>jQuery reference to a DIV element where legend should be rendered. If it's missing, JSC will create a DIV container itself.</p>
+<pre><code>node : $('#my-legend-container')</code></pre>
+<h5>items</h5>
+<p>An array of legend item details. Each array element should be a three-element array: [ <em>character, status, description</em> ]</p>
+<pre><code>legend : {
+    node  : $('#my-legend-container'),
+    items : [
+        [ v, 'available',   'VIP seats!' ],
+        [ e, 'available',   'Economy seats'],
+        [ e, 'unavailable', 'Unavailable economy seats' ]
+    ]
+}</code></pre>
+<h3>map*</h3>
+<p>An array of strings that represents your map:</p>
+<pre><code>[
+    'aaa___aaa',
+    'aaaa_aaaa',
+    'aaaa_aaaa'
+]</code></pre>
+<p>Underscore is used as a spacer between seats.</p>
+<p><strong>Please note</strong>: number of columns must be equal in each row.</p>
+<p><strong>New</strong>: You can now override label and ID per character. This is optional and can be applied to any number of seats:</p>
+<pre><code>[
+    'a[ID,LABEL]a[ID2,LABEL2]a___a[JUST_ID1]aa',
+    'aaaa_aaaa[,JUST_LABEL1]',
+    'aaaa_aaaa'
+]</code></pre>
+<p>ID and/or label should be specified after the letter and enclosed in square brackets. ID should go first, optionally followed by custom label. If you just want to specify label without overriding ID, leave ID empty: a[,Just Label]</p>
+<p>ID may contain letters, numbers and underscores. Label can contain the same groups of characters as well as spaces.</p>
+<h3>naming</h3>
+<p>You can specify your own column and row labels as well as functions for generating seat ids and labels. </p>
+<p><strong>columns</strong></p>
+<p>An array of column names, <em>columns.length</em> must equal the actual number of columns:</p>
+<pre><code>columns: ['A', 'B', 'C', 'D', 'E']</code></pre>
+<p>If you don't define your own columns, succeeding numbers starting from 1 will be used.</p>
+<p><strong>getId</strong></p>
+<p>Callback which may accept the following parameters: <em>character</em>, <em>row</em>, <em>column</em>, where <em>row</em> and <em>column</em> are names either specified by you using <em>columns</em> and <em>rows</em> arrays or by default JSC settings. This function should return an id based off passed arguments. Default getId function:</p>
+<pre><code>getId  : function(character, row, column) {
+    return row + '_' + column;
+}</code></pre>
+<p>Returned id is not only used as an internal identifier but also as a DOM id.</p>
+<p><strong>getLabel</strong></p>
+<p>Callback which may accept the following parameters: <em>character</em>, <em>row</em>, <em>column</em>, where <em>row</em> and <em>column</em> are names either specified by you using <em>columns</em> and <em>rows</em> arrays or by default JSC settings. This function should return a seat label based off passed arguments. Default getLabel function:</p>
+<pre><code>getLabel : function (character, row, column) {
+    return column;
+}</code></pre>
+<p>Labels will be displayed over seats, so if you don't want any labels, just return an empty string.</p>
+<p>Sometimes it can be really hard to generate labels you want with getLabel, so now it's possible to specify custom labels per each seat. Please take a look at the map section.</p>
+<p><strong>left</strong></p>
+<p>Bool, defaults to true. If true, JSC will display an additional column on the left of the map with row names as specified by you using <em>rows</em> array or by default JSC settings</p>
+<p><strong>rows</strong></p>
+<p>An array of row names, <em>rows</em> length must equal the actual number of rows:</p>
+<pre><code>rows: ['I', 'II', 'III', 'IV', 'V']</code></pre>
+<p>If you don't define your own rows, succeeding numbers starting from 1 will be used.</p>
+<p><strong>top</strong></p>
+<p>Bool, defaults to true. If true, JSC will display an additional row on the top of the map with column names as specified by you using <em>columns</em> array or by default JSC settings</p>
+<h3>seats</h3>
+<p>A hash of seat options, seat <em>characters</em> should be used as keys. You can pass the following params:</p>
+<p><strong>blur</strong></p>
+<p>Blur event which should be applied only to seats of a particular <em>character</em>.</p>
+<p><strong>classes</strong></p>
+<p>Custom CSS classes which should be applied to seats. Either an array or a string, JSC doesn't care:</p>
+<pre><code>classes : 'seat-red seat-big'
+//equals
+classes : ['seat-red', 'seat-big']</code></pre>
+<p><strong>click</strong></p>
+<p>Custom click handler.</p>
+<p><strong>focus</strong></p>
+<p>Custom focus handler.</p>
+<h2>Selectors</h2>
+<p>JSC offers you two flexible selector methods that are chainable and return <em>set</em> of seats:</p>
+<h3>.get( ids )</h3>
+<p>You can pass either one id or an array of ids:</p>
+<pre><code>sc.get('2_3'); //get 2_3 seat
+sc.get(['2_3', '2_4']); //get 2_3 and 2_4 seats</code></pre>
+<h3>.find( mixed )</h3>
+<p>Find method lets you search using <em>character</em>, seat status, combination of both (separated with a dot) or a regexp:</p>
+<pre><code>sc.find('a'); //find all a seats
+sc.find('unavailable'); //find all unavailable seats
+sc.find('a.available'); //find all available a seats
+sc.find(/^1_[0-9]+/); //find all seats in the first row</code></pre>
+<h4>.get and .find chained together:</h4>
+<pre><code>sc.get(['1_2', '1_3', '1_4']).find('available'); //find available seats within specified seat ids</code></pre>
+<p>Both methods return either one seat or a set of seats which share similiar methods:</p>
+<h2>Set Methods</h2>
+<h3>.status( ids, status )</h3>
+<p>Update status for a seat set with given ids. <em>ids</em> variable may contain a single id or a an array of ids.</p>
+<pre><code>sc.status('2_15', 'unvailable'); //set status for one seat
+sc.status(['2_15', '2_10'], 'unvailable'); //set status for two seats</code></pre>
+<h3>.status( status )</h3>
+<p>Update status for all seats in the current set.</p>
+<pre><code>sc.find('unavailable').status('available'); //make all unvailable seats available</code></pre>
+<h3>.node( )</h3>
+<p>Returns a jQuery set of seat node references.</p>
+<pre><code>sc.find('unavailable').node().fadeOut('fast'); //make all unavailable seats disappear</code></pre>
+<h3>.each( callback )</h3>
+<p>Iterates through a seat set, callback will be fired in the context of each element. Callback may accept seat id as an argument.</p>
+<pre><code>sc.find('a.unavailable').each(function(seatId) {
+    console.log(this.data()); //display seat data
+}); </code></pre>
+<p>You can break the loop returning <em>false</em>.</p>
+<h2>Seat Methods</h2>
+<h3>.status( [status] )</h3>
+<p>If <em>status</em> argument is set, it will be used as a new seat status, otherwise current status will be returned.</p>
+<h3>.node( )</h3>
+<p>Returns a reference to jQuery element.</p>
+<h3>.data( )</h3>
+<p>Returns a reference to seat data.</p>
+<h3>.char( )</h3>
+<p>Returns seat <em>character</em>.</p>
+<h2>Styling</h2>
+<p>JSC uses a few CSS classes that are pretty self explanatory:</p>
+<h3>.seatCharts-container</h3>
+<p>DIV container where seat chart's rendered.</p>
+<h3>.seatCharts-row</h3>
+<p>DIV element which serves as a row. You're most likely to edit its height.</p>
+<h3>.seatCharts-cell</h3>
+<p>This class is applied to both seats and spacers ( _ ).</p>
+<h3>.seatCharts-seat</h3>
+<p>Applied to all seats regardless of character.</p>
+<h3>.seatCharts-space</h3>
+<p>Applied to spacers.</p>
+<h3>.seatCharts-seat.selected</h3>
+<p><em>Selected</em> seats.</p>
+<h3>.seatCharts-seat.focused</h3>
+<p><em>Focused</em> seats.</p>
+<h3>.seatCharts-seat.available</h3>
+<p><em>Available</em> seats.</p>
+<h3>.seatCharts-seat.unavailable</h3>
+<p><em>Unavailable</em> seats.</p>
+<p><strong>Please note:</strong> if you need each of your seat type (indicated by character) look differently, this is the easiest way:</p>
+<p>CSS:<br />
+.seatCharts-seat.selected.vip {<br />
+background-color: #ff4fff;<br />
+}</p>
+<pre><code>.seatCharts-seat.focused.vip {
+    background-color: #ccffcc;
+}
+
+//…
+
+.seatCharts-seat.selected.economy {
+    background-color: #000fff;
+}
+
+//…</code></pre>
+<p>JavaScript:</p>
+<pre><code>var sc = $.seatCharts({
+    seats: {
+        v: {
+            classes: 'vip',
+            price  : 300
+        },
+        e: {
+            classes: 'economy',
+            price  : 50
+        }
+    }
+    //…
+});</code></pre>
+<h3>.seatCharts-legendList</h3>
+<p>UL element which holds the legend.</p>
+<h3>.seatCharts-legendItem</h3>
+<p>LI element of the legend.</p>
+<h2>FAQ</h2>
+<h4>What licence is jQuery Seat Charts released under?</h4>
+<p>jQuery Seat Charts is released under <a href="http://choosealicense.com/licenses/mit/">MIT license</a>.</p>
+<h4>How is JSC accessible?</h4>
+<p>JSC implements <a href="www.w3.org/WAI/intro/aria">WAI-ARIA</a> standard meaning that people using solely keyboards will share the same experience as mouse-users. You can easily check it yourself navigating with arrows and hitting spacebar instead of mouse click.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/5392286?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/mateuszmarkowski" target="_blank" id="ownerName" class="sidebar-link">mateuszmarkowski</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">November 7, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 15, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <li>No dependencies!</li>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/5392286?v=4" alt="mateuszmarkowski" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mateuszmarkowski" target="_blank" class="text-decoration-none fw-bold">mateuszmarkowski</a><p class="mb-0 text-muted small">53 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/6396748?v=4" alt="jerviscui" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/jerviscui" target="_blank" class="text-decoration-none fw-bold">jerviscui</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2414938?v=4" alt="thegithub" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/thegithub" target="_blank" class="text-decoration-none fw-bold">thegithub</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/9511903?v=4" alt="sergejkaravajnij" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/sergejkaravajnij" target="_blank" class="text-decoration-none fw-bold">sergejkaravajnij</a><p class="mb-0 text-muted small">1 contributions</p></div></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
