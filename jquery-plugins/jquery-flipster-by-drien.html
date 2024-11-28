@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive, Css3, Touch Enabled jQuery Coverflow Plugin.</title>
+    <meta name="description" content="jquery-flipster by drien. Responsive, CSS3, touch-enabled jQuery Coverflow plugin.">
+    <meta name="author" content="drien">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-flipster-by-drien.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Flipster</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Flipster",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Flipster</h1>
+        <p id="packageDescription" class="text-muted">Responsive, CSS3, touch-enabled jQuery Coverflow plugin.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">718</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.61 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">287</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">1</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/drien/jquery-flipster/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/drien/jquery-flipster" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery.Flipster</h1>
+<p><strong>2024 Update: I no longer use jQuery and this library won't be getting any new feature development, but it still works! If it's useful to you that's great! Feel free to submit issues if you encounter major bugs. I'm declaring issue bankruptcy as of January 2024 for a clean slate.</strong></p>
+<p>Flipster is a CSS3 3D transform-based jQuery plugin built to replicate the familiar 'cover flow' effect, but also supports a variety of styles. Not only is it gorgeous to look at, Flipster is also:</p>
+<ul>
+<li><strong>Responsive</strong>: From desktop to mobile, Flipster automatically centers and scales to fit the area provided.</li>
+<li><strong>Lightweight</strong>: Javascript and CSS combined are only 5kb gzipped (13kb uncompressed). Only dependency is jQuery.</li>
+<li><strong>Touch/Scrollwheel/Trackpad/Keyboard Friendly</strong> Swipe on touch devices, scroll via trackpad or mousewheel, and use your arrow keys to fly through items!</li>
+<li><strong>Flexible:</strong> Flip an image gallery or any HTML content. Links and dynamic content work great!</li>
+<li><strong>Customizable:</strong> Four built in styles (coverflow, carousel, wheel and flat) with plenty of options to configure Flipster the way you want.</li>
+</ul>
+<p>Live demo: <a href="http://brokensquare.com/Code/jquery-flipster/demo/">http://brokensquare.com/Code/jquery-flipster/demo/</a></p>
+<h2>Browser Support</h2>
+<ul>
+<li>[x] Chrome (latest)</li>
+<li>[x] Safari &amp; iOS Safari (latest)</li>
+<li>[x] Firefox (latest)</li>
+<li>[x] IE 10+ full support</li>
+<li>[x] IE 8-9 limited support</li>
+</ul>
+<h2>Installation</h2>
+<p>Include the relevant files from /dist/ in your project, or:</p>
+<p><code>npm install jquery.flipster</code></p>
+<h2>Basic Usage</h2>
+<p><strong>Step 1</strong>: Include Flipster's CSS, typically in the <code>&lt;head&gt;</code>:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;link rel="stylesheet" href="css/flipster.min.css"&gt;</code></pre>
+<p><em>Tip: Use the un-minified <code>flipster.css</code> or the LESS files in the <code>src/less</code> folder to make your own Flipster styles!</em></p>
+<p><strong>Step 2</strong>: Set up your content:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="my-flipster"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;img src="" /&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;Plain ol' &lt;abbr&gt;HTML&lt;/abbr&gt;!&lt;/p&gt;&lt;/li&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+<p><em>Tip: Set the <code>itemContainer</code> and <code>itemSelector</code> options to fit your markup. Flipster only requires an outer container and inner container; you aren't restricted to <code>&lt;div&gt;</code>, <code>&lt;ul&gt;</code>, and <code>&lt;li&gt;</code>s. </em></p>
+<p><strong>Step 3</strong>: Include Flipster's Javascript after jQuery (ideally at the bottom of the page before the <code>&lt;/body&gt;</code> tag) and initialize Flipster on your element:</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;script src="/js/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="/js/jquery.flipster.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    $('.my-flipster').flipster();
+&lt;/script&gt;</code></pre>
+<p><strong>Step 4</strong>: Start flippin'!</p>
+<h2>Options</h2>
+<p>Configure your options when first initializing Flipster. Default values and descriptions are shown below.</p>
+<pre class="prettyprint linenums lang-language"><code>$('.my-flipster').flipster({
+    itemContainer: 'ul',
+    // [string|object]
+    // Selector for the container of the flippin' items.
+
+    itemSelector: 'li',
+    // [string|object]
+    // Selector for children of `itemContainer` to flip
+
+    start: 'center',
+    // ['center'|number]
+    // Zero based index of the starting item, or use 'center' to start in the middle
+
+    fadeIn: 400,
+    // [milliseconds]
+    // Speed of the fade in animation after items have been setup
+
+    loop: false,
+    // [true|false]
+    // Loop around when the start or end is reached
+
+    autoplay: false,
+    // [false|milliseconds]
+    // If a positive number, Flipster will automatically advance to next item after that number of milliseconds
+
+    pauseOnHover: true,
+    // [true|false]
+    // If true, autoplay advancement will pause when Flipster is hovered
+
+    style: 'coverflow',
+    // [coverflow|carousel|flat|...]
+    // Adds a class (e.g. flipster--coverflow) to the flipster element to switch between display styles
+    // Create your own theme in CSS and use this setting to have Flipster add the custom class
+
+    spacing: -0.6,
+    // [number]
+    // Space between items relative to each item's width. 0 for no spacing, negative values to overlap
+
+    click: true,
+    // [true|false]
+    // Clicking an item switches to that item
+
+    keyboard: true,
+    // [true|false]
+    // Enable left/right arrow navigation
+
+    scrollwheel: true,
+    // [true|false]
+    // Enable mousewheel/trackpad navigation; up/left = previous, down/right = next
+
+    touch: true,
+    // [true|false]
+    // Enable swipe navigation for touch devices
+
+    nav: false,
+    // [true|false|'before'|'after']
+    // If not false, Flipster will build an unordered list of the items
+    // Values true or 'before' will insert the navigation before the items, 'after' will append the navigation after the items
+
+    buttons: false,
+    // [true|false|'custom']
+    // If true, Flipster will insert Previous / Next buttons with SVG arrows
+    // If 'custom', Flipster will not insert the arrows and will instead use the values of `buttonPrev` and `buttonNext`
+
+    buttonPrev: 'Previous',
+    // [text|html]
+    // Changes the text for the Previous button
+
+    buttonNext: 'Next',
+    // [text|html]
+    // Changes the text for the Next button
+
+    onItemSwitch: false
+    // [function]
+    // Callback function when items are switched
+    // Arguments received: [currentItem, previousItem]
+});</code></pre>
+<h2>Methods</h2>
+<p>Once an element has been initialized with Flipster, you can call methods to control it:</p>
+<pre class="prettyprint linenums lang-language"><code>var myFlipster = $('.my-flipster').flipster(); // It's best to store the element as a variable for easy reference.
+
+myFlipster.flipster('next'); // Next item
+myFlipster.flipster('prev'); // Previous item
+myFlipster.flipster('jump', 0); // Jump to a specific index
+myFlipster.flipster('jump', $('.my-item')); // Jump to a specific item
+myFlipster.flipster('play'); // Resume autoplay
+myFlipster.flipster('play', 5000); // Set autoplay duration
+myFlipster.flipster('pause'); // Pause the autoplay until next jump
+myFlipster.flipster('stop'); // Stop the autoplay entirely
+myFlipster.flipster('index'); // If items are added or removed, you can tell Flipster to reindex</code></pre>
+<h2>Navigation</h2>
+<p>Set <code>nav: true</code> in the options and Flipster can build an unordered list of links to each item to let users jump around.</p>
+<p>The navigation list will use each item's <code>data-flip-title</code> attribute as the text. If an item does not have a <code>data-flip-title</code>, Flipster will try to grab the <code>title</code> attribute, or will default to the item's index.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="my-flipster"&gt;
+    &lt;ul&gt;
+        &lt;li data-flip-title="Item 1 Title"&gt;...&lt;/li&gt;
+        &lt;li data-flip-title="Item 2 Title"&gt;...&lt;/li&gt;
+        ...
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+<h2>Categories</h2>
+<p>Include <code>data-flip-category</code> attributes on your items, and the navigation list will group items into categories, allowing for basic filtering and quicker navigation.</p>
+<pre class="prettyprint linenums lang-language"><code>&lt;div class="my-flipster"&gt;
+    &lt;ul&gt;
+        &lt;li data-flip-title="Item 1 Title" data-flip-category="Category 1"&gt;...&lt;/li&gt;
+        &lt;li data-flip-title="Item 2 Title" data-flip-category="Category 1"&gt;...&lt;/li&gt;
+        &lt;li data-flip-title="Item 3 Title" data-flip-category="Category 2"&gt;...&lt;/li&gt;
+        &lt;li data-flip-title="Item 4 Title" data-flip-category="Category 2"&gt;...&lt;/li&gt;
+        &lt;li data-flip-title="Item 5 Title"&gt;...&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+<h2>Contributing</h2>
+<p>If you run into a problem or have an idea, <a href="https://github.com/drien/jquery-flipster/issues">make an issue</a> on Github.</p>
+<p>See room for improvement? Don't be shy! Fork this repo and I'll be happy to merge pull requests provided they keep Flipster lightweight, simple, and free of dependencies beyond jQuery. Make sure that you run <a href="http://gruntjs.com"><code>grunt</code></a> to generate minified files for distribution before making a pull request!</p>
+<h2>Version History</h2>
+<ul>
+<li>
+<p>1.1.6 - Jan 17 2024</p>
+<ul>
+<li>Update npm dependencies and rebuild dist files</li>
+</ul>
+</li>
+<li>
+<p>1.1.5 - Oct 17 2020</p>
+<ul>
+<li>Fix issue with event handling in latest browsers, thanks to @marcodafonseca and @Peadey</li>
+</ul>
+</li>
+<li>
+<p>1.1.3 - Nov 10 2017</p>
+<ul>
+<li>Improvements to touch swiping on mobile devices, thanks to @fjmusick</li>
+</ul>
+</li>
+<li>
+<p>1.1.2 - Mar 3 2016</p>
+<ul>
+<li>Bower &amp; package.json fixes</li>
+</ul>
+</li>
+<li>
+<p>1.1.1 - Mar 3 2016</p>
+<ul>
+<li>Fix for maximum callstack errors when not visible. #74 #79</li>
+</ul>
+</li>
+<li>
+<p>1.1.0 - Mar 3 2016</p>
+<ul>
+<li><code>stop</code> method added for issues like #75</li>
+</ul>
+</li>
+<li>
+<p>1.0.1 - Nov 1 2015</p>
+<ul>
+<li>Fixed issue #63 where the active nav class was added to all nav items.</li>
+</ul>
+</li>
+<li>
+<p>1.0.0 - Oct 23 2015</p>
+<ul>
+<li>Special thanks to <a href="http://twitter.com/shshaw">@shshaw</a></a> for major additions leading to version 1.0!</li>
+<li>Massive rewrite for performance optimization and simplification</li>
+<li><em>Some option names have changed</em>; be sure to check the documentation to update your code</li>
+<li>Better scrollwheel, keyboard and touch events</li>
+<li><a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM syntax</a> for all Flipster classes</li>
+<li>Added <code>autoplay</code> option to automatically advance through items; <code>pauseOnHover</code> option will prevent items from switching automatically while hovered</li>
+<li>Added <code>fadeIn</code> option for controlling duration of fade-in animation after Flipster has been setup</li>
+</ul>
+</li>
+<li>
+<p>0.3.4 - July 23 2014</p>
+<ul>
+<li>Some additional options available</li>
+<li>Cleaned up code and normalized whitespace</li>
+<li>Added Grunt support for minifying css and js for distribution</li>
+</ul>
+</li>
+<li>
+<p>0.3.2 - February 4 2014</p>
+<ul>
+<li>Added public access for <code>jump</code> method and functionality for exposing other methods. (Thanks @JoeWagner!)</li>
+<li>A number of bug fixes.</li>
+</ul>
+</li>
+<li>
+<p>0.3.1 - July 18 2013</p>
+<ul>
+<li>Better demos ( See <a href="http://brokensquare.com/Code/jquery-Flipster/demo/">http://brokensquare.com/Code/jquery-Flipster/demo/</a> )</li>
+</ul>
+</li>
+<li>
+<p>0.3.0 - July 17 2013</p>
+<ul>
+<li>@shshaw forked from @drien's <a href="https://github.com/drien/jquery-Flipster">jQuery.Flipster</a></li>
+<li>Added new Carousel style! Shows 5 items at a time in a looping carousel</li>
+<li>Added <code>itemContainer</code>, <code>itemSelector</code>, <code>style</code>, and <code>start</code> options for basic configuration</li>
+<li>Added <code>enableKeyboard</code>, <code>enableMousewheel</code>, and <code>enableTouch</code> options to enable/disable features</li>
+<li>Added <code>enableNav</code> and <code>enableNavButtons</code> options to insert controls into the container</li>
+<li>Added <code>onItemSwitch</code> callback</li>
+</ul>
+</li>
+<li>
+<p>0.2.1 - July 11 2013</p>
+<ul>
+<li>Fixed bug where all keyboard input was being suppressed.</li>
+</ul>
+</li>
+<li>
+<p>0.2.0 - June 27 2013</p>
+<ul>
+<li>Added automatic height adjustment for the container element, which used to just overflow.</li>
+<li>A few minor code improvements.</li>
+<li>Added minified versions of the js and css files.</li>
+</ul>
+</li>
+<li>
+<p>0.1.3 - March 25 2013</p>
+<ul>
+<li>Strong men also cry, strong men also cry.</li>
+</ul>
+</li>
+<li>
+<p>0.1.0 - March 25 2013</p>
+<ul>
+<li>Improvements in fallbacks for old version of IE and basic fixes to make it actually work.</li>
+</ul>
+</li>
+<li>
+<p>0.0.0 - March 22 2013</p>
+<ul>
+<li>LIFE ON THE BLEEDING EDGE BABY</li>
+</ul>
+</li>
+</ul>
+<h2>License</h2>
+<p>The MIT License (MIT)</p>
+<p>Copyright (c) 2013-2024 Adrien Delessert</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy<br />
+of this software and associated documentation files (the &quot;Software&quot;), to deal<br />
+in the Software without restriction, including without limitation the rights<br />
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br />
+copies of the Software, and to permit persons to whom the Software is<br />
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in<br />
+all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br />
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br />
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br />
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br />
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br />
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br />
+THE SOFTWARE.</p>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/coverflow" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>coverflow</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/2391118?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/drien" target="_blank" id="ownerName" class="sidebar-link">drien</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">March 22, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">November 6, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="#" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (^1.6.1)</li><li>grunt-contrib-less (~2.0.0)</li><li>grunt-contrib-uglify (^4.0.1)</li><li>grunt-contrib-watch (~1.1.0)</li><li>less-plugin-autoprefix (^1.4.1)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/2391118?v=4" alt="drien" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/drien" target="_blank" class="text-decoration-none fw-bold">drien</a><p class="mb-0 text-muted small">74 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/777155?v=4" alt="shshaw" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/shshaw" target="_blank" class="text-decoration-none fw-bold">shshaw</a><p class="mb-0 text-muted small">67 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/260039?v=4" alt="nikrowell" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/nikrowell" target="_blank" class="text-decoration-none fw-bold">nikrowell</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1279978?v=4" alt="cody1213" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/cody1213" target="_blank" class="text-decoration-none fw-bold">cody1213</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/1500995?v=4" alt="joewagner" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/joewagner" target="_blank" class="text-decoration-none fw-bold">joewagner</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9136446?v=4" alt="KrzysztofMoskalik" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/KrzysztofMoskalik" target="_blank" class="text-decoration-none fw-bold">KrzysztofMoskalik</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/600699?v=4" alt="titaniumlou" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/titaniumlou" target="_blank" class="text-decoration-none fw-bold">titaniumlou</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/153108?v=4" alt="marcioos" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/marcioos" target="_blank" class="text-decoration-none fw-bold">marcioos</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7070154?v=4" alt="marcodafonseca" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/marcodafonseca" target="_blank" class="text-decoration-none fw-bold">marcodafonseca</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2269626?v=4" alt="racinggrinner" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/racinggrinner" target="_blank" class="text-decoration-none fw-bold">racinggrinner</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/in/29110?v=4" alt="dependabot[bot]" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/apps/dependabot" target="_blank" class="text-decoration-none fw-bold">dependabot[bot]</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/17259715?v=4" alt="fjmusick" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/fjmusick" target="_blank" class="text-decoration-none fw-bold">fjmusick</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+7 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
