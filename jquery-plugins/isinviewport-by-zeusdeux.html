@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isinviewport by Zeusdeux</title>
+    <meta name="description" content="An ultra-light jQuery plugin that tells you if an element is in the viewport but with a twist.">
+    <meta name="author" content="zeusdeux">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/isinviewport-by-zeusdeux.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Isinviewport</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Isinviewport",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">Isinviewport</h1>
+        <p id="packageDescription" class="text-muted">An ultra-light jQuery plugin that tells you if an element is in the viewport but with a twist.</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">654</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.31 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">157</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">2</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/zeusdeux/isInViewport/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/zeusdeux/isInViewport" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>isInViewport.js</h1>
+<p><a href="https://travis-ci.org/zeusdeux/isInViewport"><img src="https://travis-ci.org/zeusdeux/isInViewport.svg?branch=master" alt="Build Status" /></a><br />
+<a href="https://cdnjs.com/libraries/is-in-viewport"><img src="https://img.shields.io/cdnjs/v/is-in-viewport.svg" alt="CDNJS" /></a></p>
+<p>An ultra-light jQuery plugin that tells you if the element is in the viewport, but with a twist.</p>
+<p>Did you say <a href="http://www.isinviewport.mudit.xyz">demo</a> (inclusive of tests)?</p>
+<p>For a more performant alternative, please take a look at <a href="https://github.com/zeusdeux/observe-element-in-viewport">observe-element-in-viewport</a> which uses the new <code>IntersectionObserver</code> API. Please keep in mind that you might have to ship a <a href="https://github.com/w3c/IntersectionObserver/tree/master/polyfill">polyfill</a> for <code>IntersectionObserver</code> depending on the browsers you support.</p>
+<p><strong>Note</strong>: If you need this in a React application, please use the <a href="https://github.com/zeusdeux/use-is-in-viewport">use-is-in-viewport hook</a>.</p>
+<h2>Installation</h2>
+<h4>Using in a module</h4>
+<pre class="prettyprint linenums lang-language"><code>npm install --save is-in-viewport</code></pre>
+<p>You can then <code>require('is-in-viewport')</code> or <code>import 'is-in-viewport'</code> in your code.<br />
+It will automagically work with the bundler of your choice. If it breaks, please feel free to open an issue.</p>
+<p>Example usage in an ES6/ES2015 module is shown <a href="./examples/es6-example/">in the <code>examples/es6-example</code></a> folder.</p>
+<p><strong>Note</strong>: <code>isInViewport</code> is a side-effecting module. It imports <code>jquery</code> that you have installed and attaches itself on it.<br />
+As a consequence, <code>isInViewport</code> requires <code>jquery</code> to be installed as a peer dependency.<br />
+Your bundling will fail if <code>jquery</code> isn't installed as <a href="./src/index.js#L1"><code>is-in-viewport</code> <code>import</code>s <code>jquery</code></a>.</p>
+<h4>Using directly in a script tag</h4>
+<ul>
+<li>Get the release that you want from <a href="https://github.com/zeusdeux/isInViewport/releases">releases/tags</a> (or <code>bower install isInViewport</code> or <code>npm install --save is-in-viewport</code>)</li>
+<li>Copy/link either <code>isInViewport.js</code> or <code>isInViewport.min.js</code> and the respective sourcemap from the <code>lib</code> folder to your folder containing your scripts</li>
+<li>Add it after you include <code>jQuery</code></li>
+<li>You're ready to go!</li>
+</ul>
+<h2>Usage</h2>
+<p><a name="bu"/></p>
+<h4>Basic usage</h4>
+<pre class="prettyprint linenums lang-language"><code>$( 'selector:in-viewport' )</code></pre>
+<p>When used as a selector it returns all the elements that match. Since it returns the element(s) it can <em>thus be chained</em> with other jQuery methods. It can also be used with jquery's <code>.is</code>.</p>
+<h6>Example:</h6>
+<pre class="prettyprint linenums lang-language"><code>$( 'div:in-viewport' ).css( 'background-color', 'red' );
+// same as
+var $div = $( 'div' );
+if ( $div.is( ':in-viewport' ) ) {
+  $div.css( 'background-color', 'red' );
+}</code></pre>
+<p>Both of the above will set the <code>background-color</code> as <code>red</code> for all <code>div</code>s that are in the viewport.</p>
+<h4>Advanced usage</h4>
+<h5>Using <code>in-viewport</code> pseudo-selector</h5>
+<pre class="prettyprint linenums lang-language"><code>$( 'selector:in-viewport( tolerance[, viewport selector] )' )</code></pre>
+<p>This returns all the elements that are in the viewport while taking into account the <code>tolerance</code> criterion.</p>
+<p>Since it returns the element(s) it can <em>thus be chained</em> with other jQuery methods.</p>
+<p>When a viewport selector is specified, it uses that to calculate if the element is in <em>that</em> viewport or not.</p>
+<p>When a viewport selector is <em>not</em> specified, it defaults to <em>window</em> as the viewport.</p>
+<p>The viewport selector is any valid jQuery selector.</p>
+<h6>Defaults:</h6>
+<ul>
+<li><code>tolerance</code> defaults to <code>0</code></li>
+<li><code>viewport</code> defaults to <code>window</code></li>
+</ul>
+<h6>Example:</h6>
+<pre class="prettyprint linenums lang-language"><code>//example 1
+//the height of tolerance region is 100px from top of viewport
+$( 'div:in-viewport( 100 )' ).css( 'background-color', 'red' );
+
+//example 2
+//the height of tolerance region is (viewport.height - 100px) from top of viewport
+$( 'div:in-viewport( -100 )' ).css( 'background-color', 'green' );
+
+//example 3
+$('#viewport &gt; div.box:in-viewport( 100, #viewport )').css( 'background-color', 'blue' )
+                                                      .text( 'in viewport' );</code></pre>
+<p><strong>Example 1</strong> will set the <code>background-color</code> as <code>red</code> for all <code>divs</code> that are in the viewport with a <code>tolerance</code> of <code>100px</code>.</p>
+<p><strong>Example 2</strong> will set the <code>background-color</code> as <code>green</code> for all <code>divs</code> that are in the viewport with a <code>tolerance</code> of <code>viewport height - 100px</code>. This lets the user conveniently provide a <code>tolerance</code> value closer to the viewport height without having to call <code>$(viewport).height()</code> all the time.</p>
+<p><strong>Example 3</strong> will set the <code>background-color</code> as <code>blue</code> and <code>text</code> as <code>in viewport</code> for all <code>divs</code> that are in the custom viewport given by <code>#viewport</code> and with a <code>tolerance</code> of <code>100px</code>.</p>
+<p>With the advanced usage it becomes very easy to build things like menus with items that get auto-highlighted based on which section you are on, transition effects when an element comes into the viewport, etc.</p>
+<p>See the examples in the <code>examples</code> directory for more clarity.</p>
+<h6>Note:</h6>
+<ul>
+<li>When <code>tolerance</code> is <code>0</code> or <code>undefined</code> it is actually <em>equal to</em> <code>tolerance: $(viewport).height()</code> and <em>not</em> <code>0</code>.</li>
+</ul>
+<p>This makes it easier for developers to have the whole <code>viewport</code> available to them as a valid <code>viewport</code>.</p>
+<h5>Using exposed <code>isInViewport</code> function</h5>
+<pre class="prettyprint linenums lang-language"><code>$( 'selector' ).isInViewport({ tolerance: tolerance, viewport: viewport })</code></pre>
+<p>This returns all the elements that are in the viewport while taking into account the <code>tolerance</code> criterion.</p>
+<p>Since it returns the element(s) it can <em>thus be chained</em> with other jQuery methods.</p>
+<p>When a viewport is specified, it uses that to calculate if the element is in <em>that</em> viewport or not.</p>
+<p>When a viewport is <em>not</em> specified, it defaults to <em>window</em> as the viewport.</p>
+<p><strong>The viewport is a valid DOM element or jQuery wrapped DOM element, NOT a selector string.</strong></p>
+<h6>Defaults:</h6>
+<ul>
+<li><code>tolerance</code> defaults to <code>0</code></li>
+<li><code>viewport</code> defaults to <code>window</code></li>
+</ul>
+<h6>Example:</h6>
+<pre class="prettyprint linenums lang-language"><code>//example 1
+//the height of tolerance region is 100px from top of viewport
+$( 'div' ).isInViewport({ tolerance: 100 }).css( 'background-color', 'red' );
+
+//example 2
+//the height of tolerance region is (viewport.height - 100px) from top of viewport
+$( 'div' ).isInViewport({ tolerance: -100 }).css( 'background-color', 'green' );
+
+//example 3
+var $viewport = $('#viewport');
+
+$viewport
+  .find('div.box')
+  .isInViewport({ tolerance: 100, viewport: $viewport })
+  .css( 'background-color', 'blue' )
+  .text( 'in viewport' );</code></pre>
+<h2>Support</h2>
+<p><strong>Chrome, Firefox 3.5+, IE9+, Safari 5+, Opera 10.5+</strong></p>
+<h2>Note</h2>
+<ul>
+<li><code>:in-viewport</code> selector <em>does</em> support chaining.</li>
+</ul>
+<h2>Changelog</h2>
+<p><code>3.0.3</code></p>
+<ul>
+<li>Use <code>jQuery.expr.pseudos</code> when found since <code>jQuery.expr[':']</code> is deprecated</li>
+</ul>
+<p><code>3.0.2</code></p>
+<ul>
+<li>Support new rollup properties and get rid of removed rollups properties (<code>moduleId</code>, <code>moduleName</code>, etc)</li>
+</ul>
+<p><code>3.0.1</code></p>
+<ul>
+<li>Fix jQuery no conflict mode issue (#39)</li>
+</ul>
+<p><code>3.0.0</code></p>
+<ul>
+<li>Remove the deprecated <code>$(el).do</code> method</li>
+<li>Remove support for browsers &lt; { IE9, Safari 5, Opera 10.5, Firefox 3.5 }</li>
+<li>Add support for modules and bundlers. You can now <code>import 'is-in-viewport'</code>/<code>require('is-in-viewport')</code> in your project (yay!)</li>
+<li>Add properly functioning sourcemaps for easier debugging</li>
+</ul>
+<p><code>2.4.2</code></p>
+<ul>
+<li>Remove <code>postInstall</code> script which was breaking builds</li>
+</ul>
+<p><code>2.4.1</code></p>
+<ul>
+<li>Undo <code>2.4.0</code> as <code>is-in-viewport</code> already exists on bower and isn't owned by me</li>
+</ul>
+<p><code>2.4.0</code></p>
+<ul>
+<li>Update <code>bower.json</code> to comply with new validations</li>
+<li>Rename package on bower to match with that on npm i.e., <code>is-in-viewport</code></li>
+</ul>
+<p><code>2.3.1</code></p>
+<ul>
+<li>Remove unnecessary boolean coercion</li>
+</ul>
+<p><code>2.3.0</code></p>
+<ul>
+<li>
+<p>Re-exposed <code>isInViewport</code> with saner semantics. You can now pass options as JS objects to <code>isInViewport</code> and hence can now do things like:</p>
+<pre class="prettyprint linenums lang-language"><code>var $viewport = $(&lt;viewport selector&gt;);
+
+$viewport
+.find(&lt;selector for elements&gt;)
+.isInViewport({ tolerance: 100, viewport: $viewport }) // &lt;- passing the viewport jQuery object in directly
+.css(color: 'red');</code></pre>
+</li>
+<li>Deprecated <code>do</code> in favour of <code>run</code></li>
+<li>When available, <code>isInViewport</code> now uses <code>Sizzle.selectors.createPseudo</code></li>
+</ul>
+<p><code>2.2.5</code></p>
+<ul>
+<li>Updated readme to point to new demo. Mostly a bump for npm to pickup the new readme.</li>
+</ul>
+<p><code>2.2.4</code></p>
+<ul>
+<li>Pulled <a href="https://github.com/zeusdeux/isInViewport/pull/15">#15</a>(fixes horizontal viewport check)</li>
+</ul>
+<p><code>2.2.3</code></p>
+<ul>
+<li>Allow use as CommonJS -&gt; <a href="https://github.com/zeusdeux/isInViewport/pull/19">#19</a></li>
+<li>Fixed gruntfile. It now generates proper filenames during build.</li>
+</ul>
+<p><code>2.2.2</code></p>
+<ul>
+<li>Published to <code>npm</code></li>
+<li>Updated install instructions to include <code>npm</code></li>
+</ul>
+<p><code>2.2.1</code></p>
+<ul>
+<li>Pulled in a few bugfixes</li>
+<li>Fixed ie8 bugs</li>
+</ul>
+<p><code>2.2.0</code></p>
+<ul>
+<li>Aliased the <code>.do</code> method with <code>.run</code> since <code>do</code> is a reserved word and errors out when used as a property in IE. To be on the safer side, use <code>.run</code> to chain any arbitrary function or an array of functions.</li>
+</ul>
+<p><code>2.1.0</code></p>
+<ul>
+<li>Added a <code>.do</code> method that lets the user chain any arbitrary function or an array of functions. Example:</li>
+</ul>
+<pre class="prettyprint linenums lang-language"><code>//usage 1: pass a function
+$( 'div:in-viewport' )
+  .do(function(){
+    console.log( this ); //will log the current jQuery element object it's being called on
+  })
+  .css( 'background-color', 'red' );
+
+//usage 2: pass an array of functions
+var fnArray = [
+                function(){ console.log("Fn 1: %o", this); },
+                function(){ console.log("Fn 2: %o", this); }
+                //or say another function that maybe adds
+                //elements to be tracked when in viewport
+              ];
+$( 'div:in-viewport' ).do(fnArray);</code></pre>
+<p><code>2.0.0</code></p>
+<ul>
+<li>Added support for negative <code>tolerance</code> values that are now relative to the <code>viewport</code> height</li>
+<li>Added support for custom viewport selector (see <a href="#advanced-usage">Advanced usage</a>)</li>
+<li>Added support for checking if an element is in viewport both horizontally and vertically. (checks both now)</li>
+<li>Removed support for the old usage syntax in favour of the <code>:in-viewport</code> selector i.e.,
+<pre class="prettyprint linenums lang-language"><code>
+//removed
+$( selector ).isInViewport( {"tolerance" :100, "debug": true} )</code></pre></li>
+</ul>
+<p>//current usage<br />
+$( 'selector:in-viewport( 100 )' )</p>
+<pre><code>
+- Removed the `debug` option because, lets be honest, no one really used it.
+- Removed the weird code that handled *end of page* condition in the core. It's the user's
+prerogative to do what he/she wants when their page is scrolled to *end of page*.
+
+`1.1.1`
+
+- Added `bower` support.
+
+`1.1.0`
+
+- Added support for `:in-viewport` selector as per [joeframbach's](http://www.reddit.com/user/joeframbach) suggestion.</code></pre>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   <a href="https://codehimblog.github.io/tag/jquery" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/jquery-plugin" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>jquery-plugin</span>
+                            </div>
+                         </a><a href="https://codehimblog.github.io/tag/viewport" class="text-decoration-none">
+                            <div class="d-inline-flex align-items-center bg-light border rounded-pill px-3 py-1 me-2 mb-2">
+                                <i class="bi bi-tag-fill me-2"></i>
+                                <span>viewport</span>
+                            </div>
+                         </a>
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/635512?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/zeusdeux" target="_blank" id="ownerName" class="sidebar-link">zeusdeux</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">September 24, 2013</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 13, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">MIT License</span>
+    </div>
+	        <a href="https://isinviewport.mudit.xyz" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>del (^2.2.2)</li><li>eslint (^3.17.1)</li><li>eslint-config-standard (^7.0.1)</li><li>eslint-plugin-promise (^3.5.0)</li><li>eslint-plugin-standard (^2.1.1)</li><li>gulp (^3.9.1)</li><li>gulp-buble (^0.8.0)</li><li>gulp-cli (^1.2.2)</li><li>gulp-concat (^2.6.1)</li><li>gulp-eslint (^3.0.1)</li><li>gulp-mocha-phantomjs (^0.12.1)</li><li>gulp-rename (^1.2.2)</li><li>gulp-sourcemaps (^2.4.1)</li><li>gulp-uglify (^2.1.0)</li><li>mocha (^3.2.0)</li><li>pump (^1.0.2)</li><li>rollup-plugin-buble (^0.15.0)</li><li>rollup-stream (^1.19.0)</li><li>should (^11.2.1)</li><li>vinyl-buffer (^1.0.0)</li><li>vinyl-source-stream (^1.1.0)</li></ul><h5 class="sidebar-title">Peer Dependencies</h5><ul class="dependencies-list"><li>jquery (&gt;1.7.0)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/635512?v=4" alt="zeusdeux" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/zeusdeux" target="_blank" class="text-decoration-none fw-bold">zeusdeux</a><p class="mb-0 text-muted small">213 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/188038?v=4" alt="joscha" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/joscha" target="_blank" class="text-decoration-none fw-bold">joscha</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/7327050?v=4" alt="CupOfTea696" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/CupOfTea696" target="_blank" class="text-decoration-none fw-bold">CupOfTea696</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/117472?v=4" alt="Westie" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Westie" target="_blank" class="text-decoration-none fw-bold">Westie</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/137844?v=4" alt="bashmish" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bashmish" target="_blank" class="text-decoration-none fw-bold">bashmish</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/4703477?v=4" alt="npafundi" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/npafundi" target="_blank" class="text-decoration-none fw-bold">npafundi</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/2052615?v=4" alt="omidgharib" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/omidgharib" target="_blank" class="text-decoration-none fw-bold">omidgharib</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/7146670?v=4" alt="ninze" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ninze" target="_blank" class="text-decoration-none fw-bold">ninze</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/9946823?v=4" alt="kennynaoh" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/kennynaoh" target="_blank" class="text-decoration-none fw-bold">kennynaoh</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+4 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
