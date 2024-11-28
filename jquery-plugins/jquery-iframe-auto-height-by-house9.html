@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugin to Set the Height of an Iframe to Its Contents Height</title>
+    <meta name="description" content="jquery-iframe-auto-height by house9. jQuery plugin to set the height of an iframe to its contents height">
+    <meta name="author" content="house9">
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codehimblog.github.io/jquery-plugins/jquery-iframe-auto-height-by-house9.html">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://codehimblog.github.io">
+        <i class="bi bi-box-seam me-2"></i>CodehimBlog
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/projects/"><i class="bi bi-box me-1"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/about.html"><i class="bi bi-book me-1"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codehimblog.github.io/contact.html"><i class="bi bi-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-4 breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/">Home</a></li>
+      <li class="breadcrumb-item"><a href="https://codehimblog.github.io/jquery-plugins/">jQuery Plugins</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jQuery Iframe Auto Height</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Schema Markup for Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codehimblog.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "jQuery Plugins",
+      "item": "https://codehimblog.github.io/jquery-plugins/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "jQuery Iframe Auto Height",
+      "item": "https://codehimblog.github.io/projects/{{packageSlug}}"
+    }
+  ]
+}
+</script>
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Main Details -->
+      <main class="col-md-8 site-main p-0">
+		  <article>
+        <!-- Project Name & Description -->
+        <h1 id="packageName">jQuery Iframe Auto Height</h1>
+        <p id="packageDescription" class="text-muted">jQuery plugin to set the height of an iframe to its contents height</p>
+			  
+
+
+<!-- Statistics -->
+<div class="stat-row d-flex justify-content-around align-items-center text-center mb-2">
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-star-fill text-warning mb-2"></i>
+    <div>
+      <span id="stargazersCount" class="stat-value">453</span>
+      <p class="stat-label mb-0">Stars</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-box-arrow-in-down mb-2"></i>
+    <div>
+      <span id="repoSize" class="stat-value">0.88 MB</span>
+      <p class="stat-label mb-0">Size</p>
+    </div>
+  </div>
+  
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-arrow-repeat text-secondary mb-2"></i>
+    <div>
+      <span id="forksCount" class="stat-value">211</span>
+      <p class="stat-label mb-0">Forks</p>
+    </div>
+  </div>
+
+  <div class="stat-box d-flex align-items-center flex-column-mobile">
+    <i class="bi bi-exclamation-circle text-danger mb-2"></i>
+    <div>
+      <span id="openIssuesCount" class="stat-value">6</span>
+      <p class="stat-label mb-0">Open Issues</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="ad-unit ad-apt">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog APT -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="4990741913"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			  </div>
+
+<div class="row mb-4">
+  <!-- Tabs (Left) -->
+  <div class="col-12 col-md-6 d-flex justify-content-start mb-3 mb-md-0">
+    <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="button" role="tab" aria-controls="installation" aria-selected="true">
+          <i class="bi bi-file-earmark-text"></i> Readme
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="changelog-tab" data-bs-toggle="tab" data-bs-target="#changelog" type="button" role="tab" aria-controls="changelog" aria-selected="false">
+          <i class="bi bi-journal-text me-2"></i> Changelog
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Action Buttons (Right) -->
+  <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+    <a href="https://github.com/house9/jquery-iframe-auto-height/archive/refs/heads/master.zip" class="btn btn-primary me-2 action-btn" id="downloadBtn">
+      <i class="bi bi-cloud-download me-2"></i>Download ZIP
+    </a>
+    <a href="https://github.com/house9/jquery-iframe-auto-height" target="_blank" class="btn btn-outline-secondary action-btn" id="githubBtn">
+      <i class="bi bi-github me-2"></i>Fork on GitHub
+    </a>
+  </div>
+</div>
+        <div class="tab-content mt-3" id="infoTabsContent">
+          <div class="tab-pane fade show active" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+            <h1>jQuery iframe auto height plugin</h1>
+<h2>Alternatives:</h2>
+<p>You may want to consider one of these alternative solutions for your iframe resizing needs?</p>
+<ul>
+<li>Iframe-resizer
+<ul>
+<li><a href="http://davidjbradshaw.github.io/iframe-resizer/">http://davidjbradshaw.github.io/iframe-resizer/</a></li>
+<li>jQuery pluggin for cross domain sizing iframes to content with support for window resizing</li>
+</ul></li>
+<li>easyXDM
+<ul>
+<li><a href="http://easyxdm.net/wp/2010/03/17/resize-iframe-based-on-content/">http://easyxdm.net/wp/2010/03/17/resize-iframe-based-on-content/</a></li>
+<li>Resize iframe based on content</li>
+</ul></li>
+<li>jQuery resize plugin
+<ul>
+<li><a href="http://benalman.com/projects/jquery-resize-plugin/">http://benalman.com/projects/jquery-resize-plugin/</a></li>
+</ul></li>
+</ul>
+<h1>ATTENTION</h1>
+<p>This plugin will NOT work if the iframe contains a page from another domain, use one of the alternate libraries above if you need cross domain resize.</p>
+<h2>Installation</h2>
+<pre><code>$ npm install --save-dev jquery-iframe-auto-height</code></pre>
+<ul>
+<li>There is no longer a NuGet package, please use bower for all javascript packaging needs.</li>
+</ul>
+<p>You will find versions before 2.0.0 in the release directory,<br />
+all newer versions are handled using bower and the packaged file is in the <a href="https://github.com/house9/jquery-iframe-auto-height/blob/master/dist/">dist</a> directory.</p>
+<h3>Notes</h3>
+<ul>
+<li>jQuery 1.9.0 and up: you must add the $.browser plugin feature
+<ul>
+<li><a href="https://raw.github.com/house9/jquery-iframe-auto-height/master/vendor/jquery.browser.js">https://raw.github.com/house9/jquery-iframe-auto-height/master/vendor/jquery.browser.js</a></li>
+<li>download and include after the jquery plugin and before the iframe plugin</li>
+<li>this file is also included in the bower main section</li>
+</ul></li>
+</ul>
+<h2>Usage</h2>
+<ul>
+<li>
+<p>include jquery in your page</p>
+</li>
+<li>
+<p>include the latest version using bower or the grab the current file from the <code>dist</code> directory</p>
+</li>
+<li>
+<p>use the variable jQuery or its alias $ and pass a selector that matches one or more iframes</p>
+</li>
+<li>
+<p><code>jQuery('iframe').iframeAutoHeight();</code></p>
+<ul>
+<li>will resize all iframes on the page</li>
+</ul>
+</li>
+<li>
+<p><code>$('iframe.photo').iframeAutoHeight();</code></p>
+<ul>
+<li>will resize only iframes with the css class photo</li>
+</ul>
+</li>
+<li>
+<p>code can be called from within <code>$(document).ready</code> or after iframes are declared in markup</p>
+</li>
+</ul>
+<pre><code>&lt;!-- with document ready, most likely in the html head --&gt;
+&lt;script&gt;
+  $(document).ready(function () {
+    $('iframe').iframeAutoHeight({debug: true});
+  });
+&lt;/script&gt;
+
+&lt;!-- inline, after the iframe --&gt;
+&lt;iframe src="my_iframe.html" class="auto-height" scrolling="no" frameborder="0"&gt;&lt;/iframe&gt;
+&lt;script&gt;
+  $('iframe.auto-height').iframeAutoHeight({minHeight: 240});
+&lt;/script&gt;</code></pre>
+<h2>Documentation</h2>
+<h3>Options</h3>
+<ul>
+<li>callback: function
+<ul>
+<li>Default empty function</li>
+<li>Optionally define a callback function (in this case inline) that will do something with the callbackObject.newFrameHeight value. This can for instance be used with easyXDM to alert another domain that the frame has changed height.</li>
+<li>Example: <code>$('iframe').iframeAutoHeight({callback: function(callbackObject) { alert(callbackObject.newFrameHeight);} });</code></li>
+<li>you can also access the current iframe jquery wrapper object use the <code>this</code> keyword</li>
+<li>for example: <code>callback: function(callbackObject) { alert(callbackObject.newFrameHeight + " and the iframe href is:" + $(this).attr('src')); }</code></li>
+</ul></li>
+<li>debug: boolean
+<ul>
+<li>Default is false</li>
+<li>Will log some internal information to the console, if available</li>
+<li>Example: <code>$('iframe').iframeAutoHeight({debug: true})</code></li>
+</ul></li>
+<li>heightOffset: integer
+<ul>
+<li>Default is 0</li>
+<li>Unit is pixels</li>
+<li>Optionally add some buffer to the bottom</li>
+<li>Example: <code>$('iframe').iframeAutoHeight({heightOffset: 20});</code></li>
+</ul></li>
+<li>minHeight: integer
+<ul>
+<li>Default is 0</li>
+<li>Unit is pixels</li>
+<li>Sets the iframe height to this value if the calculated value is less</li>
+<li>Example: <code>$('iframe').iframeAutoHeight({minHeight: 200});</code></li>
+</ul></li>
+<li>animate: boolean
+<ul>
+<li>Default is false</li>
+<li>Uses <a href="http://api.jquery.com/animate/">jquery animate</a> with duration of 500 when resizing the iframe</li>
+<li>Example: <code>$('iframe').iframeAutoHeight({animate: true});</code></li>
+</ul></li>
+<li>resetToMinHeight: boolean
+<ul>
+<li>Default is false</li>
+<li>hard set the iframe height to the minHeight before re-sizing</li>
+</ul></li>
+<li>triggerFunctions: Array of functions
+<ul>
+<li>Default is an empty array</li>
+<li>Optionally define 1 or more functions that will have access to the resize method</li>
+<li>can be used to resize the iframe from external events such as click or window resize - see examples below</li>
+</ul></li>
+<li>heightCalculationOverrides: Array of 2 element arrays
+<ul>
+<li>Default is an empty array</li>
+<li>Optionally re-define the height calculation method(s)</li>
+<li>override the default implementation or just override specific browsers</li>
+<li>Example: <code>$('iframe').iframeAutoHeight({strategyOverrides: [{ browser: 'mozilla', calculation: function () { return 2000; }}]);</code></li>
+<li>The <code>browser</code> key should be one of 'webkit', 'mozilla', 'msie', 'opera' or 'default', see <a href="http://api.jquery.com/jQuery.browser/">http://api.jquery.com/jQuery.browser/</a></li>
+<li>The <code>calculation</code> key should be a function, usually with the signature <code>(iframe, $iframeBody, options, browser)</code></li>
+<li>see more examples below</li>
+</ul></li>
+</ul>
+<h3>Examples:</h3>
+<h4>triggerFunctions</h4>
+<pre><code>// fire iframe resize when window is resized
+var windowResizeFunction = function (resizeFunction, iframe) {
+  $(window).resize(function () {
+    console.debug("window resized - firing resizeHeight on iframe");
+    resizeFunction(iframe);
+  });
+};
+
+// fire iframe resize when a link is clicked
+var clickFunction = function (resizeFunction, iframe) {
+  $('a').click(function () {
+    $(iframe).contents().find('body').html(''); // clear content of iframe
+    console.debug("link clicked - firing resizeHeight on iframe");
+    resizeFunction(iframe);
+  });
+};
+
+$('iframe').iframeAutoHeight({
+  debug: true,
+  triggerFunctions: [
+    windowResizeFunction,
+    clickFunction
+  ]
+});
+</code></pre>
+<h4>heightCalculationOverrides</h4>
+<pre><code>// override all browser calculations using default
+$('iframe').iframeAutoHeight({
+  debug: true,
+  heightCalculationOverrides: [{
+    browser: 'default',
+    calculation: function (iframe, $iframeBody, options, browser) {
+      return 1000;
+    }
+  }]
+});
+
+// mozilla seems to be problematic for some
+// this is the usual work around, but it breaks demo pages so not used in plugin
+$('iframe').iframeAutoHeight({
+  debug: true,
+  heightCalculationOverrides: [{
+    browser: 'mozilla',
+    calculation: function (iframe, $iframeBody, options, browser) {
+      // since the jquery browser is passed in you can also check specific versions if desired
+      return iframe.contentDocument.documentElement.scrollHeight + options.heightOffset;
+    }
+  }]
+});</code></pre>
+<h2>Plugin development</h2>
+<ul>
+<li>fork the repo</li>
+<li>create a new branch</li>
+<li>run <code>grunt watch</code></li>
+<li>modify the file <code>src/jquery-iframe-auto-height.js</code> as needed
+<ul>
+<li>grunt will auto compile it to the dist directory</li>
+</ul></li>
+<li>view your changes in the browser
+<ul>
+<li>run <code>python -m SimpleHTTPServer 8000</code> or another web server</li>
+<li>open in a browser - <code>http://localhost:8000/demo/</code></li>
+</ul></li>
+<li>verify all pages still function properly in as many browers as possible</li>
+<li>Add your name to the CONTRIBUTORS.md file
+<ul>
+<li>alphabetical order</li>
+</ul></li>
+<li>submit a Pull Request (PR)
+<ul>
+<li>include a list of OS / browser / version that the changes were tested in as part of the PR</li>
+</ul></li>
+</ul>
+<h2>License</h2>
+<ul>
+<li><a href="http://unlicense.org">The Unlicense</a> (aka: public domain)</li>
+</ul>
+<h2>Changelog:</h2>
+<p>2.0.0 / 2015-06-28</p>
+<ul>
+<li>Changes entire repo directory structure
+<ul>
+<li>Use grunt for building and packaging code</li>
+<li>Remove rails demo, use static html instead</li>
+<li>Include jquery.browser.js in bower main</li>
+</ul></li>
+<li>Add chrome to strategyKeys array</li>
+<li>use <code>window.parent</code> instead of <code>window.top.document</code></li>
+</ul>
+<p>1.9.5 / 2014-05-17</p>
+<ul>
+<li>Update the way that the initial resize happens
+<ul>
+<li>load event may never trigger if content is already loaded</li>
+</ul></li>
+</ul>
+<p>1.9.4 / 2014-05-14</p>
+<ul>
+<li>maxHeight option</li>
+</ul>
+<p>1.9.3 / 2013-06-01</p>
+<ul>
+<li>the url was bad - doh!</li>
+</ul>
+<p>1.9.2 / 2013-06-01</p>
+<ul>
+<li>update url for jquery browser plugin, original repo was removed from github</li>
+<li>jslint fixes</li>
+</ul>
+<p>1.9.1 / 2013-02-02</p>
+<ul>
+<li>Add js alert warning if using jquery 1.9 and up, <code>$.browser</code> is needed</li>
+</ul>
+<p>1.9.0 / 2012-11-11</p>
+<ul>
+<li>use the <code>$.browser.webkit</code> in-place of <code>$.browser.safari</code>, requires jquery 1.4 and up</li>
+</ul>
+<p>1.8.0 / 2012-09-22</p>
+<ul>
+<li>new option - resetToMinHeight</li>
+<li>new option - triggerFunctions</li>
+<li>new option - heightCalculationOverrides</li>
+</ul>
+<p>1.7.1 / 2012-06-02</p>
+<ul>
+<li>webkit browsers, don't set iframe.style.height to 0px on initial page load</li>
+</ul>
+<p>1.7.0 / 2012-06-02</p>
+<ul>
+<li>adds the animate option</li>
+</ul>
+<p>1.6.0 / 2012-01-07</p>
+<ul>
+<li>callback function invoking now allows access to the iframe in the callback</li>
+</ul>
+<p>1.5.0 / 2011-08-18</p>
+<ul>
+<li>add minHeight option, refactoring height calculation</li>
+</ul>
+<p>1.4.0 / 2011-07-25</p>
+<ul>
+<li>add debug option, small refactoring and minified version</li>
+</ul>
+<p>1.3.0 / 2011-07-17</p>
+<ul>
+<li>fix issue on Webkit (Google Chrome &amp; Safari) when tall iframe links to short iframe</li>
+</ul>
+<p>1.2.0 / 2011-07-08</p>
+<ul>
+<li>If the iframe document is read in quirks mode, fixed a problem with IE not applying the correct height.</li>
+</ul>
+<p>1.1.0 / 2011-05-29</p>
+<ul>
+<li>added the ability to pass in a callback function</li>
+</ul>
+<p>1.0.0 / 2010-10-22 / Initial release</p>
+<ul>
+<li>converted code to plugin</li>
+<li>match on specified selector instead of all iframes on page</li>
+</ul>
+<h2>TODO List</h2>
+<ul>
+<li>Manual testing and documention of supported browser versions</li>
+<li>Add specs to take screenshots
+<ul>
+<li>Sauce Labs?</li>
+</ul></li>
+<li>Add instructions for defect reporting
+<ul>
+<li>code samples, screenshots, etc...</li>
+</ul></li>
+</ul>
+<h2>Props</h2>
+<p>Original code by NATHAN SMITH; see <a href="http://sonspring.com/journal/jquery-iframe-sizing">http://sonspring.com/journal/jquery-iframe-sizing</a></p>
+<ul>
+<li>see also <a href="https://github.com/house9/jquery-iframe-auto-height/blob/master/CONTRIBUTORS.md">CONTRIBUTORS.md</a></li>
+</ul>
+          </div>
+
+          <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+            <ul id="changelogList">
+              No changelog available.
+            </ul>
+          </div>
+
+        </div>
+			  
+ <div class="tags mb-2 mt-2">
+   
+</div>
+			  
+			  </article>
+
+		  
+      </main>
+		    <!-- Sidebar -->
+      <aside class="col-md-4 p-0">
+		 <div class="sidebar">
+  <!-- Owner Section -->
+  <div class="sidebar-item mb-4">
+<div class="ad-unit">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="8929986923"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+    <div class="d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/52154?v=4" alt="Owner Avatar" class="rounded-circle me-2 owner-avatar">
+      <a href="https://github.com/house9" target="_blank" id="ownerName" class="sidebar-link">house9</a>
+    </div>
+  </div>
+
+  <!-- Metadata Section -->
+  <div class="sidebar-item mb-2">
+    <div class="metadata-item d-flex align-items-center">
+      <i class="bi bi-calendar me-2"></i>
+      <strong>Created At:</strong>
+      <span id="createdAt" class="ms-1">October 22, 2010</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-pencil-square me-2"></i>
+      <strong>Last Updated:</strong>
+      <span id="updatedAt" class="ms-1">October 25, 2024</span>
+    </div>
+    <div class="metadata-item d-flex align-items-center mt-2">
+     <i class="bi bi-file-earmark-code me-2"></i>
+      <strong>Language:</strong>
+      <span id="language" class="ms-1">JavaScript</span>
+    </div>
+	  
+	      <div class="metadata-item d-flex align-items-center mt-2">
+      <i class="bi bi-shield-check"></i>
+      <strong>License:</strong>
+      <span id="license" class="ms-1">Unknown</span>
+    </div>
+	        <a href="https://github.com/house9/jquery-iframe-auto-height" target="_blank" class="btn btn-outline-dark btn-sm" id="homepageBtn">
+            <i class="bi bi-house-door me-2"></i>Visit Homepage
+          </a>
+ 
+  </div>
+			 
+			   <div class="sidebar-item mb-2">
+              <h5 class="sidebar-title">Development Dependencies</h5><ul class="dependencies-list"><li>grunt (^0.4.5)</li><li>grunt-contrib-concat (^0.4.0)</li><li>grunt-contrib-jshint (^0.10.0)</li><li>grunt-contrib-uglify (^0.5.0)</li><li>grunt-contrib-watch (^0.6.1)</li><li>grunt-contrib-clean (^0.5.0)</li><li>grunt-jscs (^1.1.0)</li><li>grunt-lintspaces (^0.5.1)</li><li>jit-grunt (^0.7.0)</li><li>jshint-stylish (^0.2.0)</li><li>load-grunt-config (^0.10.0)</li><li>grunt-umd (^2.3.0)</li><li>time-grunt (^0.3.2)</li><li>grunt-conventional-changelog (^1.1.0)</li><li>grunt-groc (^0.4.5)</li></ul>
+			 </div>
+			 
+			 	   <div class="sidebar-item">
+    <h5 class="sidebar-title">Contributors</h5>
+            <ul class="p-0" id="contributorsList">
+              <ul class="list-group list-group-flush" id="contributorsList"><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/52154?v=4" alt="house9" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/house9" target="_blank" class="text-decoration-none fw-bold">house9</a><p class="mb-0 text-muted small">115 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/585091?v=4" alt="Atrejoe" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Atrejoe" target="_blank" class="text-decoration-none fw-bold">Atrejoe</a><p class="mb-0 text-muted small">6 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/981556?v=4" alt="Mmjavellana" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/Mmjavellana" target="_blank" class="text-decoration-none fw-bold">Mmjavellana</a><p class="mb-0 text-muted small">4 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/984648?v=4" alt="ChristineP2" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ChristineP2" target="_blank" class="text-decoration-none fw-bold">ChristineP2</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item"><img src="https://avatars.githubusercontent.com/u/816400?v=4" alt="ErynManela" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/ErynManela" target="_blank" class="text-decoration-none fw-bold">ErynManela</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1621782?v=4" alt="mindmelting" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/mindmelting" target="_blank" class="text-decoration-none fw-bold">mindmelting</a><p class="mb-0 text-muted small">2 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/17831967?v=4" alt="brunobatista" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/brunobatista" target="_blank" class="text-decoration-none fw-bold">brunobatista</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/829152?v=4" alt="hideki-a" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/hideki-a" target="_blank" class="text-decoration-none fw-bold">hideki-a</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/165477?v=4" alt="bsingr" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/bsingr" target="_blank" class="text-decoration-none fw-bold">bsingr</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/313894?v=4" alt="SLaks" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/SLaks" target="_blank" class="text-decoration-none fw-bold">SLaks</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/1238788?v=4" alt="adamjgray" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/adamjgray" target="_blank" class="text-decoration-none fw-bold">adamjgray</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item d-flex align-items-center contributor-item d-none"><img src="https://avatars.githubusercontent.com/u/6346282?v=4" alt="genesos" class="rounded-circle me-3" style="width: 40px; height: 40px;"><div><a href="https://github.com/genesos" target="_blank" class="text-decoration-none fw-bold">genesos</a><p class="mb-0 text-muted small">1 contributions</p></div></li><li class="list-group-item text-center"><a href="#" id="toggleContributors" class="d-block">+7 more Contributors</a></li></ul>
+            </ul>
+			 
+			 </div>
+			 
+			 <div class="ad-unit">
+				 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7089100907045419"
+     crossorigin="anonymous"></script>
+<!-- CodehimBlog Skyscrapper -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7469565592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			 </div>
+			 
+</div>
+      </aside>
+    </div>
+  </div>
+	<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 page-footer">
+  <div class="container">
+    <p class="mb-2">© 2024 CodehimBlog - Powered by GitHub</p>
+    <nav>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a href="/privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <span class="text-white">|</span>
+        </li>
+        <li class="list-inline-item">
+          <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG2ZX76XGT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FG2ZX76XGT');
+</script>
+</body>
+</html>
