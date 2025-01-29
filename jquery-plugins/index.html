@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse a list of free jQuery plugins to use in your projects. Find the latest jQuery plugins with direct links.">
+    <meta name="description" content="Browse a list of free jQuery plugins to use in your web projects. Find the latest jQuery plugins with direct links and last update dates.">
     <title>jQuery Plugins List</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 20px;
         }
@@ -17,8 +17,8 @@
             margin: auto;
             background: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
             text-align: center;
@@ -29,15 +29,15 @@
             padding: 0;
         }
         li {
-            background: #fff;
-            margin: 10px 0;
-            padding: 12px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s ease-in-out;
         }
         li:hover {
-            transform: translateY(-3px);
+            transform: translateY(-4px);
         }
         a {
             text-decoration: none;
@@ -47,6 +47,18 @@
         }
         a:hover {
             text-decoration: underline;
+        }
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .meta-info span {
+            background: #eef1f7;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -62,6 +74,14 @@
             const sitemapUrl = "https://codehimblog.github.io/sitemap_jquery.xml";
             const postsContainer = document.getElementById("posts");
 
+            // Function to format branding names properly
+            function formatTitleCase(text) {
+                const specialWords = ["jQuery", "HTML", "CSS", "Bootstrap", "JavaScript", "React", "Vue", "Angular"]; // Known brand names
+                return text.split("-").map(word => {
+                    return specialWords.includes(word) ? word : word.charAt(0).toUpperCase() + word.slice(1);
+                }).join(" ");
+            }
+
             fetch(sitemapUrl)
                 .then(response => response.text())
                 .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
@@ -71,14 +91,15 @@
 
                     for (let url of urls) {
                         let loc = url.getElementsByTagName("loc")[0].textContent;
+                        let lastmod = url.getElementsByTagName("lastmod")[0]?.textContent || "Unknown Date";
 
-                        // Extract the title after "/jquery-plugins/" and before ".html"
+                        // Extract the plugin title and author
                         let match = loc.match(/\/jquery-plugins\/(.+?)\.html/);
                         if (match) {
-                            let title = match[1]
-                                .split("-") // Split by dashes
-                                .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Convert to title case
-                                .join(" ");
+                            let rawTitle = match[1];
+                            let title = formatTitleCase(rawTitle.replace(/-by-.+$/, "")); // Remove author from title
+                            let authorMatch = rawTitle.match(/-by-(.+)$/);
+                            let author = authorMatch ? formatTitleCase(authorMatch[1]) : "Unknown";
 
                             // Create list item with link
                             let li = document.createElement("li");
@@ -86,8 +107,13 @@
                             a.href = loc;
                             a.textContent = title;
                             a.target = "_blank"; // Open link in new tab
-                            
+
+                            let metaDiv = document.createElement("div");
+                            metaDiv.className = "meta-info";
+                            metaDiv.innerHTML = `<span>🗓️ ${lastmod}</span> <span>👤 ${author}</span>`;
+
                             li.appendChild(a);
+                            li.appendChild(metaDiv);
                             ul.appendChild(li);
                         }
                     }
