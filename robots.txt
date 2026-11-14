@@ -1,4 +1,8 @@
+# Codehimblog – https://codehimblog.github.io/
 User-agent: *
-Disallow: 
-Disallow: /admin/
+Allow: /
+Disallow: /tools/
+Disallow: /content/
+Disallow: /docs/
+
 Sitemap: https://codehimblog.github.io/sitemap.xml

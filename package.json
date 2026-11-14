@@ -1,0 +1,10 @@
+{
+  "name": "codehimblog",
+  "private": true,
+  "description": "Codehimblog – Free & Open-Source Software for Windows (static site for GitHub Pages)",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

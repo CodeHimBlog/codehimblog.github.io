@@ -1,0 +1,204 @@
+/*! Codehimblog – site.js (vanilla JavaScript, no dependencies).
+   Progressive enhancement only: every page is usable without JavaScript. */
+(function () {
+  'use strict';
+
+  /* ---------------- Mobile navigation ---------------- */
+  var toggle = document.querySelector('.nav-toggle');
+  var panel = document.getElementById('mobile-nav');
+  if (toggle && panel) {
+    toggle.hidden = false;
+    var openIcon = toggle.querySelector('.nav-open-icon');
+    var closeIcon = toggle.querySelector('.nav-close-icon');
+    var setOpen = function (open) {
+      panel.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (openIcon) openIcon.hidden = open;
+      if (closeIcon) closeIcon.hidden = !open;
+    };
+    toggle.addEventListener('click', function () {
+      setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+    window.matchMedia('(min-width: 1024px)').addEventListener('change', function (mq) {
+      if (mq.matches) setOpen(false);
+    });
+  }
+
+  /* ---------------- Shared helpers ---------------- */
+  function norm(s) {
+    return String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '');
+  }
+  function tokens(q) {
+    return norm(q).split(/[^a-z0-9+#.]+/).filter(Boolean);
+  }
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  /* ---------------- Catalogue filters (/software/) ---------------- */
+  var filterForm = document.getElementById('catalogue-filters');
+  var catalogue = document.getElementById('catalogue-grid');
+  if (filterForm && catalogue) {
+    filterForm.hidden = false;
+    var cards = Array.prototype.slice.call(catalogue.querySelectorAll('article[data-slug]'));
+    var fq = document.getElementById('f-q');
+    var fos = document.getElementById('f-os');
+    var fcat = document.getElementById('f-cat');
+    var flic = document.getElementById('f-license');
+    var ftype = document.getElementById('f-type');
+    var count = document.getElementById('f-count');
+    var empty = document.getElementById('catalogue-empty');
+    var has = function (attr, value) { return !value || (' ' + attr + ' ').indexOf(' ' + value + ' ') !== -1; };
+    var apply = function () {
+      var t = tokens(fq.value);
+      var shown = 0;
+      cards.forEach(function (card) {
+        var text = norm(card.textContent + ' ' + (card.getAttribute('data-kw') || ''));
+        var ok = has(card.getAttribute('data-os'), fos.value) &&
+          has(card.getAttribute('data-cats'), fcat.value) &&
+          has(card.getAttribute('data-license'), flic.value) &&
+          has(card.getAttribute('data-types'), ftype.value) &&
+          t.every(function (w) { return text.indexOf(w) !== -1; });
+        card.hidden = !ok;
+        if (ok) shown++;
+      });
+      count.textContent = 'Showing ' + shown + ' of ' + cards.length + ' applications';
+      empty.hidden = shown !== 0;
+    };
+    filterForm.addEventListener('input', apply);
+    filterForm.addEventListener('change', apply);
+    filterForm.addEventListener('submit', function (e) { e.preventDefault(); });
+    filterForm.addEventListener('reset', function () { setTimeout(apply, 0); });
+    var resetBtn = document.querySelector('[data-reset-filters]');
+    if (resetBtn) resetBtn.addEventListener('click', function () { filterForm.reset(); });
+    apply();
+  }
+
+  /* ---------------- Search page (/search/) ---------------- */
+  var searchForm = document.getElementById('search-page-form');
+  var results = document.getElementById('search-results');
+  if (searchForm && results) {
+    var status = document.getElementById('search-status');
+    var fields = {
+      q: document.getElementById('search-q'),
+      os: document.getElementById('search-os'),
+      category: document.getElementById('search-cat'),
+      license: document.getElementById('search-license'),
+      type: document.getElementById('search-type')
+    };
+    var params = new URLSearchParams(location.search);
+    Object.keys(fields).forEach(function (k) {
+      if (params.get(k)) fields[k].value = params.get(k);
+    });
+
+    var CHECK = '<svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>';
+    var HELP = '<svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>';
+    var badge = function (text, tone, ic) {
+      var tones = {
+        blue: 'bg-blue-50 text-blue-700 border-blue-200',
+        green: 'bg-green-50 text-green-800 border-green-200',
+        slate: 'bg-slate-100 text-slate-700 border-slate-200'
+      };
+      return '<span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium ' + tones[tone] + '">' + (ic || '') + esc(text) + '</span>';
+    };
+
+    Promise.all(['/data/software.json', '/data/categories.json', '/data/os.json'].map(function (u) {
+      return fetch(u).then(function (r) { if (!r.ok) throw new Error(u); return r.json(); });
+    })).then(function (data) {
+      var software = data[0];
+      var cats = {};
+      data[1].forEach(function (c) { cats[c.slug] = c; });
+      var osList = data[2];
+      var verifiedOs = function (s) {
+        return osList.filter(function (o) {
+          var e = s.supported_operating_systems[o.slug];
+          return e && e.status === 'supported' && e.verified === true;
+        });
+      };
+
+      var score = function (s, words) {
+        if (!words.length) return 1;
+        var name = norm(s.name);
+        var kw = norm(s.keywords.join(' '));
+        var cat = norm(s.categories.map(function (c) { return cats[c] ? cats[c].name : c; }).join(' '));
+        var summary = norm(s.summary);
+        var desc = norm(s.description.join(' ') + ' ' + s.features.join(' '));
+        var total = 0;
+        for (var i = 0; i < words.length; i++) {
+          var w = words[i];
+          var p = 0;
+          if (name === w) p += 30;
+          else if (name.indexOf(w) === 0) p += 15;
+          else if (name.indexOf(w) !== -1) p += 10;
+          if (kw.indexOf(w) !== -1) p += 6;
+          if (cat.indexOf(w) !== -1) p += 4;
+          if (summary.indexOf(w) !== -1) p += 3;
+          if (desc.indexOf(w) !== -1) p += 1;
+          if (!p) return 0;
+          total += p;
+        }
+        return total;
+      };
+
+      var card = function (s) {
+        var c = cats[s.category];
+        var v = verifiedOs(s);
+        var osHtml = v.length
+          ? v.map(function (o) { return badge(o.short, 'green', CHECK); }).join('')
+          : badge('Windows support: see details', 'slate', HELP);
+        return '<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md">' +
+          '<div class="flex items-start gap-3">' +
+          '<span class="app-icon h-11 w-11 text-base" style="--app-color:' + esc(s.icon.color) + '" role="img" aria-label="' + esc(s.name) + ' icon (letter placeholder)">' + esc(s.icon.text) + '</span>' +
+          '<div class="min-w-0"><h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/' + esc(s.slug) + '/" class="stretched-link">' + esc(s.name) + '</a></h2>' +
+          '<p class="text-xs text-slate-500">' + esc(c ? c.name : '') + '</p></div></div>' +
+          '<p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">' + esc(s.summary) + '</p>' +
+          '<div class="mt-auto flex flex-wrap gap-1.5 pt-4">' + (s.is_open_source ? badge('Open source', 'blue') : '') + osHtml + '</div>' +
+          '</article>';
+      };
+
+      var run = function () {
+        var words = tokens(fields.q.value);
+        var os = fields.os.value, cat = fields.category.value, lic = fields.license.value, type = fields.type.value;
+        var list = software.map(function (s) { return { s: s, score: score(s, words) }; })
+          .filter(function (r) {
+            var s = r.s;
+            if (!r.score) return false;
+            if (os && !verifiedOs(s).some(function (o) { return o.slug === os; })) return false;
+            if (cat && s.categories.indexOf(cat) === -1) return false;
+            if (lic && s.license_family !== lic) return false;
+            if (type && !s.download_assets.some(function (a) { return a.kind === type; })) return false;
+            return true;
+          })
+          .sort(function (a, b) { return b.score - a.score || a.s.name.localeCompare(b.s.name); });
+
+        results.innerHTML = list.map(function (r) { return card(r.s); }).join('');
+        var q = fields.q.value.trim();
+        if (list.length) {
+          status.textContent = list.length + (list.length === 1 ? ' application' : ' applications') + (q ? ' found for “' + q + '”' : ' match your filters');
+        } else {
+          status.innerHTML = 'No applications found' + (q ? ' for “' + esc(q) + '”' : '') + '. Try fewer words, or <a href="/software/" class="font-semibold text-blue-700 hover:underline">browse all software</a>.';
+        }
+        var next = new URLSearchParams();
+        Object.keys(fields).forEach(function (k) { if (fields[k].value) next.set(k, fields[k].value); });
+        var qs = next.toString();
+        history.replaceState(null, '', location.pathname + (qs ? '?' + qs : ''));
+      };
+
+      searchForm.addEventListener('submit', function (e) { e.preventDefault(); run(); });
+      searchForm.addEventListener('change', run);
+      var timer;
+      fields.q.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(run, 150); });
+      run();
+    }).catch(function () {
+      status.innerHTML = 'Search is unavailable right now. <a href="/software/" class="font-semibold text-blue-700 hover:underline">Browse all software</a> instead.';
+    });
+  }
+})();

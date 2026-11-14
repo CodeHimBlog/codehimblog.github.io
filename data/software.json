@@ -1,0 +1,414 @@
+[
+  {
+    "id": "7-zip",
+    "name": "7-Zip",
+    "slug": "7-zip",
+    "summary": "A free, open-source file archiver for Windows with its own high-compression 7z format and support for many common archive types.",
+    "description": [
+      "7-Zip is a long-running file archiver for Windows. It creates and extracts archives in its own 7z format, which is designed for a high compression ratio, and it also works with widely used formats such as ZIP, TAR and GZIP.",
+      "It adds commands to the Windows Explorer context menu, includes a simple file manager, and offers a command-line version for scripts and automation. 7z and ZIP archives can be protected with AES-256 encryption.",
+      "The official website publishes separate installers for 64-bit (x64), 32-bit (x86) and ARM64 Windows, plus alternative MSI packages for managed deployment."
+    ],
+    "icon": { "type": "letter", "text": "7z", "color": "#334155" },
+    "category": "system-utilities",
+    "categories": ["system-utilities"],
+    "keywords": ["zip", "unzip", "archive", "compression", "7z", "rar", "extract", "file archiver"],
+    "software_type": "Desktop application",
+    "is_free": true,
+    "is_open_source": true,
+    "license": "GNU LGPL (most code), with additional terms for parts of the code",
+    "license_short": "LGPL",
+    "license_family": "copyleft",
+    "license_url": "https://www.7-zip.org/license.txt",
+    "license_verified": true,
+    "official_website": "https://www.7-zip.org/",
+    "download_page": "https://www.7-zip.org/download.html",
+    "repository_url": "https://github.com/ip7z/7zip",
+    "supported_operating_systems": {
+      "windows-11": { "status": "supported", "verified": true, "source": "https://www.7-zip.org/", "note": "The official website states that 7-Zip works in Windows 11." },
+      "windows-10": { "status": "supported", "verified": true, "source": "https://www.7-zip.org/", "note": "The official website states that 7-Zip works in Windows 10." },
+      "windows-8-1": { "status": "unknown", "verified": false, "source": "https://www.7-zip.org/", "note": "The official website lists Windows 8 but does not name Windows 8.1 separately." },
+      "windows-8": { "status": "supported", "verified": true, "source": "https://www.7-zip.org/", "note": "The official website states that 7-Zip works in Windows 8." },
+      "windows-7": { "status": "supported", "verified": true, "source": "https://www.7-zip.org/", "note": "The official website states that 7-Zip works in Windows 7." }
+    },
+    "supported_architectures": ["x64", "x86", "ARM64"],
+    "architectures_verified": true,
+    "latest_version": "26.06",
+    "release_date": "2026-11-06",
+    "version_verified": true,
+    "release_url": "https://www.7-zip.org/download.html",
+    "download_assets": [
+      { "label": "Installer for 64-bit Windows", "format": "EXE installer", "kind": "installer", "architecture": "x64", "url": "https://www.7-zip.org/download.html", "filename": null, "size": null, "sha256": null, "verified": true, "note": "Recommended by the project over the MSI package." },
+      { "label": "Installer for 32-bit Windows", "format": "EXE installer", "kind": "installer", "architecture": "x86", "url": "https://www.7-zip.org/download.html", "filename": null, "size": null, "sha256": null, "verified": true, "note": "" },
+      { "label": "Installer for ARM64 Windows", "format": "EXE installer", "kind": "installer", "architecture": "ARM64", "url": "https://www.7-zip.org/download.html", "filename": null, "size": null, "sha256": null, "verified": true, "note": "" },
+      { "label": "Alternative MSI installer (64-bit)", "format": "MSI installer", "kind": "installer", "architecture": "x64", "url": "https://www.7-zip.org/download.html", "filename": null, "size": null, "sha256": null, "verified": true, "note": "Useful for managed or scripted deployment." },
+      { "label": "Alternative MSI installer (32-bit)", "format": "MSI installer", "kind": "installer", "architecture": "x86", "url": "https://www.7-zip.org/download.html", "filename": null, "size": null, "sha256": null, "verified": true, "note": "" },
+      { "label": "7-Zip Extra (standalone console version, 7z DLL, Far Manager plugin)", "format": "7z archive", "kind": "portable", "architecture": "x86 / x64", "url": "https://www.7-zip.org/download.html", "filename": null, "size": null, "sha256": null, "verified": true, "note": "Command-line components, not the full desktop application." },
+      { "label": "Source code", "format": "Source code archive", "kind": "source", "architecture": "Any", "url": "https://www.7-zip.org/download.html", "filename": null, "size": null, "sha256": null, "verified": true, "note": "For developers. Not an installer." }
+    ],
+    "checksums_published": false,
+    "screenshots": [],
+    "features": [
+      "Creates and extracts 7z archives with a high compression ratio",
+      "Works with common formats such as ZIP, TAR, GZIP, BZIP2 and XZ",
+      "AES-256 encryption for 7z and ZIP archives",
+      "Self-extracting archives in 7z format",
+      "Windows Explorer context-menu integration",
+      "Built-in file manager",
+      "Command-line version for scripts and automation"
+    ],
+    "requirements": [
+      "Choose the installer that matches your Windows architecture: x64 (most modern PCs), x86 (32-bit Windows) or ARM64."
+    ],
+    "installation_instructions": [
+      "Open the official 7-Zip download page.",
+      "Download the EXE installer that matches your Windows architecture. Most modern PCs use the 64-bit (x64) build.",
+      "Run the installer and choose an installation folder.",
+      "Right-click a file or archive in File Explorer to use the 7-Zip menu, or open the 7-Zip File Manager from the Start menu."
+    ],
+    "changelog": { "url": "https://www.7-zip.org/history.txt", "entries": [] },
+    "related_software": ["notepad-plus-plus", "keepassxc", "sharex"],
+    "featured": true,
+    "date_added": "2026-11-14",
+    "seo_title": "7-Zip for Windows – Free Open-Source File Archiver",
+    "meta_description": "7-Zip is a free, open-source file archiver for Windows. See supported Windows versions, download formats (EXE, MSI, ARM64) and the official download page.",
+    "canonical_url": "https://codehimblog.github.io/software/7-zip/",
+    "og_image": null,
+    "last_verified_at": "2026-11-14",
+    "verification_status": "verified",
+    "verification_notes": [
+      "Version 26.06 (2026-11-06), Windows support statement and download formats checked on 7-zip.org on 2026-11-14.",
+      "Confirm that https://github.com/ip7z/7zip is still the repository linked from 7-zip.org.",
+      "File names, sizes and checksums are intentionally not listed."
+    ]
+  },
+  {
+    "id": "keepassxc",
+    "name": "KeePassXC",
+    "slug": "keepassxc",
+    "summary": "A free, open-source password manager that keeps your passwords in an encrypted database file you control.",
+    "description": [
+      "KeePassXC is a community-developed, cross-platform password manager. It stores passwords, notes and other credentials in a single encrypted database file that stays on your device or in a storage location you choose, rather than in a vendor's cloud account.",
+      "It uses the KDBX database format, so databases can also be opened by other KeePass-compatible applications. Features include a password and passphrase generator, Auto-Type for filling in login forms, and optional browser integration through the KeePassXC-Browser extension.",
+      "On Windows, the official download page offers installers and portable ZIP packages for x64 and ARM64 PCs running Windows 10 or 11. A separate legacy installer for Windows 7, 8 and 8.1 is tied to an older release that is no longer supported."
+    ],
+    "icon": { "type": "letter", "text": "K", "color": "#15803D" },
+    "category": "security",
+    "categories": ["security"],
+    "keywords": ["password manager", "passwords", "keepass", "kdbx", "encryption", "auto-type", "totp", "offline password manager"],
+    "software_type": "Desktop application",
+    "is_free": true,
+    "is_open_source": true,
+    "license": "GNU GPL version 2 or version 3",
+    "license_short": "GPL-2.0 / GPL-3.0",
+    "license_family": "copyleft",
+    "license_url": "https://github.com/keepassxreboot/keepassxc",
+    "license_verified": false,
+    "official_website": "https://keepassxc.org/",
+    "download_page": "https://keepassxc.org/download/",
+    "repository_url": "https://github.com/keepassxreboot/keepassxc",
+    "supported_operating_systems": {
+      "windows-11": { "status": "supported", "verified": true, "source": "https://keepassxc.org/download/", "note": "Official installers and portable ZIPs are labelled for Windows 10 / 11." },
+      "windows-10": { "status": "supported", "verified": true, "source": "https://keepassxc.org/download/", "note": "Official installers and portable ZIPs are labelled for Windows 10 / 11." },
+      "windows-8-1": { "status": "legacy", "verified": true, "legacy_version": "2.7.12", "source": "https://keepassxc.org/download/", "note": "Only a legacy installer (version 2.7.12) is offered. The project says it is no longer supported after 2.7.12." },
+      "windows-8": { "status": "legacy", "verified": true, "legacy_version": "2.7.12", "source": "https://keepassxc.org/download/", "note": "Only a legacy installer (version 2.7.12) is offered. The project says it is no longer supported after 2.7.12." },
+      "windows-7": { "status": "legacy", "verified": true, "legacy_version": "2.7.12", "source": "https://keepassxc.org/download/", "note": "Only a legacy installer (version 2.7.12) is offered. The project says it is no longer supported after 2.7.12." }
+    },
+    "supported_architectures": ["x64", "ARM64"],
+    "architectures_verified": true,
+    "latest_version": "2.8.0",
+    "release_date": null,
+    "version_verified": true,
+    "release_url": "https://github.com/keepassxreboot/keepassxc/releases",
+    "download_assets": [
+      { "label": "Installer (x64, Windows 10 / 11)", "format": "MSI installer", "kind": "installer", "architecture": "x64", "url": "https://keepassxc.org/download/", "filename": null, "size": null, "sha256": null, "verified": true, "note": "Requires the Microsoft Visual C++ (MSVC) Redistributable, according to the official download page." },
+      { "label": "Installer (ARM64, Windows 10 / 11)", "format": "MSI installer", "kind": "installer", "architecture": "ARM64", "url": "https://keepassxc.org/download/", "filename": null, "size": null, "sha256": null, "verified": true, "note": "" },
+      { "label": "Portable ZIP (x64, Windows 10 / 11)", "format": "Portable ZIP", "kind": "portable", "architecture": "x64", "url": "https://keepassxc.org/download/", "filename": null, "size": null, "sha256": null, "verified": true, "note": "Requires the MSVC Redistributable, according to the official download page." },
+      { "label": "Portable ZIP (ARM64, Windows 10 / 11)", "format": "Portable ZIP", "kind": "portable", "architecture": "ARM64", "url": "https://keepassxc.org/download/", "filename": null, "size": null, "sha256": null, "verified": true, "note": "" },
+      { "label": "Legacy installer (x64, Windows 7 / 8 / 8.1) – version 2.7.12", "format": "MSI installer", "kind": "installer", "architecture": "x64", "url": "https://keepassxc.org/download/", "filename": null, "size": null, "sha256": null, "verified": true, "note": "Older release. The project states that the legacy installer is no longer supported after 2.7.12." },
+      { "label": "Source code", "format": "Source code archive", "kind": "source", "architecture": "Any", "url": "https://keepassxc.org/download/", "filename": null, "size": null, "sha256": null, "verified": true, "note": "For developers. Not an installer." }
+    ],
+    "checksums_published": true,
+    "checksums_note": "The official download page publishes a PGP signature and a SHA-256 digest for the current Windows installers and portable ZIPs.",
+    "screenshots": [],
+    "features": [
+      "Encrypted password database stored in a file you control",
+      "KDBX format compatible with other KeePass-family apps",
+      "Password and passphrase generator",
+      "Auto-Type to fill in login forms",
+      "Browser integration via the KeePassXC-Browser extension",
+      "Time-based one-time passwords (TOTP)",
+      "YubiKey challenge-response support",
+      "SSH agent integration"
+    ],
+    "requirements": [
+      "Windows 10 or Windows 11 for the current release (x64 or ARM64).",
+      "The Microsoft Visual C++ (MSVC) Redistributable is listed as a requirement for the x64 installer and portable ZIP on the official download page."
+    ],
+    "installation_instructions": [
+      "Open the official KeePassXC download page.",
+      "Choose the installer or portable ZIP for your architecture (x64 for most PCs, ARM64 for Windows on Arm devices).",
+      "Optionally verify the download using the published SHA-256 digest or PGP signature.",
+      "Run the installer, or extract the portable ZIP to a folder you control.",
+      "Create a new database and choose a strong master password you will not forget. KeePassXC cannot recover a lost master password."
+    ],
+    "changelog": { "url": "https://github.com/keepassxreboot/keepassxc/releases", "entries": [] },
+    "related_software": ["7-zip", "notepad-plus-plus"],
+    "featured": true,
+    "date_added": "2026-11-14",
+    "seo_title": "KeePassXC for Windows – Free Open-Source Password Manager",
+    "meta_description": "KeePassXC is a free, open-source password manager for Windows 10 and 11. Check download options (MSI, portable ZIP, ARM64), legacy Windows 7 notes and official links.",
+    "canonical_url": "https://codehimblog.github.io/software/keepassxc/",
+    "og_image": null,
+    "last_verified_at": "2026-11-14",
+    "verification_status": "verified",
+    "verification_notes": [
+      "Version 2.8.0, Windows 10/11 labels, ARM64 builds and the 2.7.12 legacy installer note checked on keepassxc.org/download on 2026-11-14.",
+      "Release date for 2.8.0 was not confirmed and is not shown.",
+      "Confirm the license wording (GPL-2.0 or GPL-3.0) in the repository's COPYING/LICENSE file."
+    ]
+  },
+  {
+    "id": "obs-studio",
+    "name": "OBS Studio",
+    "slug": "obs-studio",
+    "summary": "Free and open-source software for screen recording and live streaming, built around scenes, sources and an audio mixer.",
+    "description": [
+      "OBS Studio (Open Broadcaster Software) is used to record video and to stream live to supported platforms. You build scenes from sources such as screen and window capture, webcams, images, browser sources and audio inputs, then switch between them while recording or streaming.",
+      "It includes an audio mixer with per-source filters, a studio mode for previewing scenes before they go live, configurable hotkeys and support for third-party plugins. Hardware-accelerated encoding is available on supported graphics cards.",
+      "Recording and streaming are demanding tasks, so check the official release notes and your graphics driver version before upgrading."
+    ],
+    "icon": { "type": "letter", "text": "O", "color": "#1E293B" },
+    "category": "audio-video",
+    "categories": ["audio-video"],
+    "keywords": ["screen recorder", "streaming", "live stream", "video recording", "obs", "game capture", "twitch", "youtube"],
+    "software_type": "Desktop application",
+    "is_free": true,
+    "is_open_source": true,
+    "license": "GNU GPL version 2 or later",
+    "license_short": "GPL-2.0-or-later",
+    "license_family": "copyleft",
+    "license_url": "https://github.com/obsproject/obs-studio",
+    "license_verified": false,
+    "official_website": "https://obsproject.com/",
+    "download_page": "https://obsproject.com/download",
+    "repository_url": "https://github.com/obsproject/obs-studio",
+    "supported_operating_systems": {
+      "windows-11": { "status": "reported", "verified": false, "source": "https://obsproject.com/download", "note": "Reported as supported. Confirm on the official download page." },
+      "windows-10": { "status": "reported", "verified": false, "source": "https://obsproject.com/download", "note": "Reported as supported (64-bit). Confirm on the official download page." },
+      "windows-8-1": { "status": "unknown", "verified": false, "source": null, "note": "Not confirmed for the current release." },
+      "windows-8": { "status": "unknown", "verified": false, "source": null, "note": "Not confirmed for the current release." },
+      "windows-7": { "status": "unknown", "verified": false, "source": null, "note": "Not confirmed for the current release." }
+    },
+    "supported_architectures": ["x64", "ARM64"],
+    "architectures_verified": false,
+    "latest_version": null,
+    "release_date": null,
+    "version_verified": false,
+    "release_url": "https://github.com/obsproject/obs-studio/releases",
+    "download_assets": [
+      { "label": "Windows installer (x64)", "format": "EXE installer", "kind": "installer", "architecture": "x64", "url": "https://obsproject.com/download", "filename": null, "size": null, "sha256": null, "verified": false, "note": "" },
+      { "label": "Windows ZIP package (x64)", "format": "Portable ZIP", "kind": "portable", "architecture": "x64", "url": "https://github.com/obsproject/obs-studio/releases", "filename": null, "size": null, "sha256": null, "verified": false, "note": "Check the release notes for how the ZIP build differs from the installer." },
+      { "label": "Windows ZIP package (ARM64)", "format": "Portable ZIP", "kind": "portable", "architecture": "ARM64", "url": "https://github.com/obsproject/obs-studio/releases", "filename": null, "size": null, "sha256": null, "verified": false, "note": "" },
+      { "label": "Source code", "format": "Source code archive", "kind": "source", "architecture": "Any", "url": "https://github.com/obsproject/obs-studio/releases", "filename": null, "size": null, "sha256": null, "verified": false, "note": "GitHub-generated source archives. Not an installer." }
+    ],
+    "checksums_published": false,
+    "screenshots": [],
+    "features": [
+      "Scene-based recording and streaming",
+      "Screen, window, game and webcam capture sources",
+      "Audio mixer with per-source filters",
+      "Studio mode to preview scenes before switching",
+      "Configurable hotkeys",
+      "Plugin and script support",
+      "Hardware-accelerated encoding on supported GPUs"
+    ],
+    "requirements": [
+      "Supported Windows versions and hardware requirements change between releases. Check the official download page and release notes."
+    ],
+    "installation_instructions": [
+      "Open the official OBS Studio download page.",
+      "Download the Windows installer, or the ZIP package from the official GitHub releases page if you prefer it.",
+      "Update your graphics driver before the first launch if you plan to use hardware encoding.",
+      "Run the installer and follow the setup steps.",
+      "On first launch, use the Auto-Configuration Wizard or set your recording and streaming options manually."
+    ],
+    "changelog": { "url": "https://github.com/obsproject/obs-studio/releases", "entries": [] },
+    "related_software": ["sharex", "7-zip"],
+    "featured": true,
+    "date_added": "2026-11-14",
+    "seo_title": "OBS Studio for Windows – Free Screen Recording & Streaming",
+    "meta_description": "OBS Studio is free, open-source screen recording and live streaming software. See features, download formats and official sources for Windows.",
+    "canonical_url": "https://codehimblog.github.io/software/obs-studio/",
+    "og_image": null,
+    "last_verified_at": null,
+    "verification_status": "partial",
+    "verification_notes": [
+      "Official pages (obsproject.com, GitHub releases) could not be opened during preparation. Windows 10/11 support is reported by secondary sources only.",
+      "Verify the latest stable version, release date, supported Windows versions and asset list on obsproject.com/download and the GitHub releases page.",
+      "Confirm the license (GPL-2.0-or-later) in the repository's COPYING file."
+    ]
+  },
+  {
+    "id": "sharex",
+    "name": "ShareX",
+    "slug": "sharex",
+    "summary": "A free, open-source screen capture, screen recording and file-sharing tool for Windows with configurable after-capture workflows.",
+    "description": [
+      "ShareX captures your screen in many ways: a selected region, a window, the full screen or a scrolling page. It can also record the screen as a video or animated GIF.",
+      "After each capture, ShareX can run a sequence of actions that you configure, such as annotating the image, copying it to the clipboard, saving it, or uploading it to one of many supported services. It also includes extra tools like a colour picker, screen ruler and text recognition (OCR).",
+      "Because ShareX is highly configurable, it suits both quick everyday screenshots and repeatable documentation workflows."
+    ],
+    "icon": { "type": "letter", "text": "S", "color": "#2563EB" },
+    "category": "graphics",
+    "categories": ["graphics", "audio-video"],
+    "keywords": ["screenshot", "screen capture", "screen recorder", "gif recorder", "ocr", "annotation", "snipping tool alternative", "upload"],
+    "software_type": "Desktop application",
+    "is_free": true,
+    "is_open_source": true,
+    "license": "GNU GPL version 3",
+    "license_short": "GPL-3.0",
+    "license_family": "copyleft",
+    "license_url": "https://github.com/ShareX/ShareX",
+    "license_verified": false,
+    "official_website": "https://getsharex.com/",
+    "download_page": "https://getsharex.com/",
+    "repository_url": "https://github.com/ShareX/ShareX",
+    "supported_operating_systems": {
+      "windows-11": { "status": "reported", "verified": false, "source": "https://getsharex.com/", "note": "Reported as supported. Confirm on the official website or release notes." },
+      "windows-10": { "status": "reported", "verified": false, "source": "https://getsharex.com/", "note": "Reported as supported (64-bit). Confirm on the official website or release notes." },
+      "windows-8-1": { "status": "unknown", "verified": false, "source": null, "note": "Not confirmed for the current release." },
+      "windows-8": { "status": "unknown", "verified": false, "source": null, "note": "Not confirmed for the current release." },
+      "windows-7": { "status": "unknown", "verified": false, "source": null, "note": "Not confirmed for the current release." }
+    },
+    "supported_architectures": ["x64"],
+    "architectures_verified": false,
+    "latest_version": null,
+    "release_date": null,
+    "version_verified": false,
+    "release_url": "https://github.com/ShareX/ShareX/releases",
+    "download_assets": [
+      { "label": "Setup installer (x64)", "format": "EXE installer", "kind": "installer", "architecture": "x64", "url": "https://github.com/ShareX/ShareX/releases", "filename": null, "size": null, "sha256": null, "verified": false, "note": "" },
+      { "label": "Portable ZIP (x64)", "format": "Portable ZIP", "kind": "portable", "architecture": "x64", "url": "https://github.com/ShareX/ShareX/releases", "filename": null, "size": null, "sha256": null, "verified": false, "note": "" },
+      { "label": "Source code", "format": "Source code archive", "kind": "source", "architecture": "Any", "url": "https://github.com/ShareX/ShareX/releases", "filename": null, "size": null, "sha256": null, "verified": false, "note": "GitHub-generated source archives. Not an installer." }
+    ],
+    "checksums_published": false,
+    "screenshots": [],
+    "features": [
+      "Region, window, full-screen and scrolling capture",
+      "Screen recording to video or animated GIF",
+      "Image editor for annotation",
+      "Configurable after-capture and after-upload tasks",
+      "Uploads to many supported destinations",
+      "Text recognition (OCR)",
+      "Colour picker, screen ruler and other tools",
+      "Custom hotkeys for every capture mode"
+    ],
+    "requirements": [
+      "Supported Windows versions and runtime requirements can change between releases. Check the official release notes."
+    ],
+    "installation_instructions": [
+      "Open the official ShareX website or the GitHub releases page.",
+      "Choose the setup installer, or the portable ZIP if you do not want to install it.",
+      "Check that the release is a stable release and not a pre-release, unless you want to test new features.",
+      "Run the installer, then set your capture hotkeys and after-capture tasks in the main window."
+    ],
+    "changelog": { "url": "https://getsharex.com/changelog", "entries": [] },
+    "related_software": ["obs-studio", "7-zip"],
+    "featured": false,
+    "date_added": "2026-11-14",
+    "seo_title": "ShareX for Windows – Free Open-Source Screen Capture Tool",
+    "meta_description": "ShareX is a free, open-source screenshot and screen recording tool for Windows. See features, download formats and official download sources.",
+    "canonical_url": "https://codehimblog.github.io/software/sharex/",
+    "og_image": null,
+    "last_verified_at": null,
+    "verification_status": "partial",
+    "verification_notes": [
+      "Sources disagreed about the current stable release during preparation (a 22.x series appeared alongside an earlier 'Latest' release). The version is intentionally not shown.",
+      "Verify the latest stable version, Windows requirements and asset list on getsharex.com and the GitHub releases page.",
+      "Confirm the license (GPL-3.0) in the repository."
+    ]
+  },
+  {
+    "id": "notepad-plus-plus",
+    "name": "Notepad++",
+    "slug": "notepad-plus-plus",
+    "summary": "A free, open-source source code and text editor for Windows with syntax highlighting, tabs, powerful search and plugin support.",
+    "description": [
+      "Notepad++ is a lightweight source code and text editor built specifically for Windows. It opens many files in tabs, highlights syntax for a wide range of programming and markup languages, and can fold code blocks to make long files easier to read.",
+      "Its search tools support regular expressions and searching across files in a folder. You can record macros for repetitive edits, split the window into two views, and extend the editor with plugins installed through the built-in Plugins Admin.",
+      "The project publishes installers and portable packages for several Windows architectures on its official downloads page."
+    ],
+    "icon": { "type": "letter", "text": "N", "color": "#16A34A" },
+    "category": "developer-tools",
+    "categories": ["developer-tools"],
+    "keywords": ["text editor", "code editor", "notepad", "syntax highlighting", "regex", "programming", "notepad plus plus"],
+    "software_type": "Desktop application",
+    "is_free": true,
+    "is_open_source": true,
+    "license": "GNU GPL version 3",
+    "license_short": "GPL-3.0",
+    "license_family": "copyleft",
+    "license_url": "https://github.com/notepad-plus-plus/notepad-plus-plus",
+    "license_verified": false,
+    "official_website": "https://notepad-plus-plus.org/",
+    "download_page": "https://notepad-plus-plus.org/downloads/",
+    "repository_url": "https://github.com/notepad-plus-plus/notepad-plus-plus",
+    "supported_operating_systems": {
+      "windows-11": { "status": "reported", "verified": false, "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/SUPPORTED_SYSTEM.md", "note": "Listed as supported in the project's SUPPORTED_SYSTEM.md (seen via a copy). Confirm in the official repository." },
+      "windows-10": { "status": "reported", "verified": false, "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/SUPPORTED_SYSTEM.md", "note": "Listed as supported in the project's SUPPORTED_SYSTEM.md (seen via a copy). Confirm in the official repository." },
+      "windows-8-1": { "status": "reported", "verified": false, "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/SUPPORTED_SYSTEM.md", "note": "Listed as supported in the project's SUPPORTED_SYSTEM.md (seen via a copy). Confirm in the official repository." },
+      "windows-8": { "status": "runs_unsupported", "verified": false, "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/SUPPORTED_SYSTEM.md", "note": "Listed as able to run the current version but not supported by the team. Confirm in the official repository." },
+      "windows-7": { "status": "runs_unsupported", "verified": false, "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/SUPPORTED_SYSTEM.md", "note": "Listed as able to run the current version but not supported by the team. Confirm in the official repository." }
+    },
+    "supported_architectures": ["x64", "x86", "ARM64"],
+    "architectures_verified": false,
+    "latest_version": null,
+    "release_date": null,
+    "version_verified": false,
+    "release_url": "https://notepad-plus-plus.org/downloads/",
+    "download_assets": [
+      { "label": "Installer (x64)", "format": "EXE installer", "kind": "installer", "architecture": "x64", "url": "https://notepad-plus-plus.org/downloads/", "filename": null, "size": null, "sha256": null, "verified": false, "note": "" },
+      { "label": "Installer (x86)", "format": "EXE installer", "kind": "installer", "architecture": "x86", "url": "https://notepad-plus-plus.org/downloads/", "filename": null, "size": null, "sha256": null, "verified": false, "note": "" },
+      { "label": "Installer (ARM64)", "format": "EXE installer", "kind": "installer", "architecture": "ARM64", "url": "https://notepad-plus-plus.org/downloads/", "filename": null, "size": null, "sha256": null, "verified": false, "note": "" },
+      { "label": "Portable package", "format": "Portable ZIP / 7z", "kind": "portable", "architecture": "x64 / x86 / ARM64", "url": "https://notepad-plus-plus.org/downloads/", "filename": null, "size": null, "sha256": null, "verified": false, "note": "Check the downloads page for the exact packages offered for each release." },
+      { "label": "Source code", "format": "Source code archive", "kind": "source", "architecture": "Any", "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases", "filename": null, "size": null, "sha256": null, "verified": false, "note": "For developers. Not an installer." }
+    ],
+    "checksums_published": false,
+    "screenshots": [],
+    "features": [
+      "Syntax highlighting and code folding for many languages",
+      "Tabbed interface for editing many files at once",
+      "Search and replace with regular expressions",
+      "Find in Files across a folder",
+      "Macro recording and playback",
+      "Split view to compare or edit two documents",
+      "Plugins installed through the built-in Plugins Admin",
+      "Auto-completion for words and functions"
+    ],
+    "requirements": [
+      "Choose the build that matches your Windows architecture (x64, x86 or ARM64)."
+    ],
+    "installation_instructions": [
+      "Open the official Notepad++ downloads page and select the newest release.",
+      "Download the installer for your architecture, or a portable package if you do not want to install it.",
+      "Download only from notepad-plus-plus.org or the official GitHub repository.",
+      "Run the installer and choose the components you want, such as the context-menu entry."
+    ],
+    "changelog": { "url": "https://notepad-plus-plus.org/downloads/", "entries": [] },
+    "related_software": ["7-zip", "keepassxc"],
+    "featured": false,
+    "date_added": "2026-11-14",
+    "seo_title": "Notepad++ for Windows – Free Open-Source Code & Text Editor",
+    "meta_description": "Notepad++ is a free, open-source code and text editor for Windows. See features, Windows compatibility notes, download formats and official sources.",
+    "canonical_url": "https://codehimblog.github.io/software/notepad-plus-plus/",
+    "og_image": null,
+    "last_verified_at": null,
+    "verification_status": "partial",
+    "verification_notes": [
+      "Official pages could not be opened during preparation. Several 8.9.x releases were reported in 2026; the current version is intentionally not shown.",
+      "Verify SUPPORTED_SYSTEM.md in the official repository for Windows 7/8/8.1 status.",
+      "Verify the download packages offered (installer, MSI, portable ZIP/7z) and the license (GPL-3.0)."
+    ]
+  }
+]
