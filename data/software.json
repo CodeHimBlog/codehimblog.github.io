@@ -179,6 +179,120 @@
         "verification_status": "verified"
     },
     {
+        "id": "aerozoom",
+        "name": "AeroZoom",
+        "slug": "aerozoom",
+        "summary": "Keyboard‑free screen magnifier for Windows that lets you zoom with the mouse wheel or pinch gestures and provides a panel for presentation‑style controls.",
+        "description": [
+            "AeroZoom is a small utility that adds mouse‑only zooming to the built‑in Windows Magnifier. It is aimed at people who give presentations, teach, run webinars, need assistance with visual impairments, or simply want a macOS‑like zoom experience without using the keyboard.",
+            "The program is written in AutoHotkey and works on Windows. It can run as a portable executable or be installed for the current user or all users. An optional silent installer is available for enterprise deployment. AeroZoom replaces keyboard shortcuts with mouse button combinations, allowing you to zoom in, zoom out, reset zoom, and open a control panel using only the mouse. The control panel lets you adjust zoom rate, switch between preset profiles (Home, School, Work, etc.), and customize additional actions such as drawing on screen or taking screenshots. It is useful for presentations, teaching, video calls, gaming, and home‑theater PC setups, and it also helps users with visual disabilities."
+        ],
+        "icon": {
+            "text": "A",
+            "color": "#0F766E"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v2.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/wandersick/aerozoom#license",
+        "official_website": "https://tech.wandersick.com/p/aerozoom-for-windows-7-magnifier.html",
+        "download_page": "https://github.com/wandersick/aerozoom/releases/tag/4.0.2",
+        "repository_url": "https://github.com/wandersick/aerozoom",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "4.0.2",
+        "release_date": "2017-10-24",
+        "release_url": "https://github.com/wandersick/aerozoom/releases/tag/4.0.2",
+        "primary_download": {
+            "url": "https://github.com/wandersick/aerozoom/releases/download/4.0.2/AeroZoom_v4.0.0.7_beta_2_silent_installer.exe",
+            "filename": "AeroZoom_v4.0.0.7_beta_2_silent_installer.exe",
+            "size": 2784768,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "AeroZoom_v4.0.0.7_beta_2.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/wandersick/aerozoom/releases/download/4.0.2/AeroZoom_v4.0.0.7_beta_2.zip",
+                "size": 1790908,
+                "sha256": null
+            },
+            {
+                "label": "AeroZoom_v4.0.0.7_beta_2.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/wandersick/aerozoom/releases/download/4.0.2/AeroZoom_v4.0.0.7_beta_2.exe",
+                "size": 1870883,
+                "sha256": null
+            },
+            {
+                "label": "AeroZoom_v4.0.0.7_beta_2_silent_installer.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/wandersick/aerozoom/releases/download/4.0.2/AeroZoom_v4.0.0.7_beta_2_silent_installer.exe",
+                "size": 2784768,
+                "sha256": null
+            }
+        ],
+        "features": [
+            "Zoom in and out with mouse wheel or pinch gestures without using the keyboard",
+            "Reset zoom or open the AeroZoom control panel with simple mouse button combos",
+            "Customizable mouse bindings for common presentation shortcuts",
+            "Adjustable zoom granularity with a slider on the control panel",
+            "Multiple preset profiles for different use cases (Home, Work, Gaming, etc.)",
+            "Portable version runs directly without installation",
+            "Optional installer for per‑user or all‑users setup",
+            "Silent installer available for automated deployment"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the GitHub releases page and download the latest EXE or portable ZIP.",
+            "If you downloaded the installer, run the EXE and follow the prompts to install for the current user or all users.",
+            "If you downloaded the portable ZIP, extract it to a folder.",
+            "Launch AeroZoom.exe from the installation folder or the extracted folder.",
+            "Use the mouse button combinations to start zooming or open the control panel."
+        ],
+        "related_software": [],
+        "seo_title": "AeroZoom Free Download for Windows",
+        "meta_description": "Download AeroZoom free for Windows. Keyboard‑free screen magnifier for Windows that lets you zoom with the mouse wheel or pinch gestures and provides a panel f…",
+        "canonical_url": "https://codehimblog.github.io/software/aerozoom/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "af-media-bar",
         "name": "AF Media Bar",
         "slug": "af-media-bar",
