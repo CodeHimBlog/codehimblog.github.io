@@ -1075,6 +1075,138 @@
         "verification_status": "verified"
     },
     {
+        "id": "moonlight-qt",
+        "name": "Moonlight Qt",
+        "slug": "moonlight-qt",
+        "summary": "Moonlight Qt is an open‑source client that lets you stream games and desktop sessions from a PC with NVIDIA GameStream or Sunshine to your Windows computer.",
+        "description": [
+            "Moonlight Qt provides a graphical interface for connecting to a host PC that runs NVIDIA GameStream or the Sunshine server. It receives the video stream, decodes it, and sends your input back to the host, allowing you to play games or use the remote desktop as if you were sitting in front of the host machine.",
+            "Moonlight Qt is part of the Moonlight project, which offers cross‑platform clients for NVIDIA GameStream. The Windows version is built with Qt and supports hardware‑accelerated video decoding, multiple audio and video codecs, HDR, surround sound, gamepad input, and keyboard shortcuts. It works with both the official NVIDIA GameStream service and the open‑source Sunshine server, making it possible to stream from any compatible PC. The client can run as an installed program or as a portable ZIP, so it can be used on computers where you cannot install software. It also supports multitouch, force‑feedback gamepads, and direct mouse control for remote desktop use."
+        ],
+        "icon": {
+            "text": "M",
+            "color": "#1D4ED8"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/moonlight-stream/moonlight-qt#license",
+        "official_website": null,
+        "download_page": "https://github.com/moonlight-stream/moonlight-qt/releases/tag/v6.2.0",
+        "repository_url": "https://github.com/moonlight-stream/moonlight-qt",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "6.2.0",
+        "release_date": "2026-10-04",
+        "release_url": "https://github.com/moonlight-stream/moonlight-qt/releases/tag/v6.2.0",
+        "primary_download": {
+            "url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.2.0/MoonlightSetup-6.2.0.exe",
+            "filename": "MoonlightSetup-6.2.0.exe",
+            "size": 55920336,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Moonlight-SteamLink-6.2.0.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.2.0/Moonlight-SteamLink-6.2.0.zip",
+                "size": 14236736,
+                "sha256": "a7bf0e566412ed12b53ee780f27479c172254f5818be4c09a22d077e9e13f409"
+            },
+            {
+                "label": "MoonlightSetup-6.2.0.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.2.0/MoonlightSetup-6.2.0.exe",
+                "size": 55920336,
+                "sha256": "ee2a1b56ec83010f4f8a275bb71892a7dc7a3bc874dfaebe706b74d5d10831bd"
+            },
+            {
+                "label": "MoonlightPortable-arm64-6.2.0.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.2.0/MoonlightPortable-arm64-6.2.0.zip",
+                "size": 34294086,
+                "sha256": "8f7f24fc0bc54871c01484387c3e480d6f21c599a86632b14dc65a8439182c6a"
+            },
+            {
+                "label": "MoonlightPortable-x64-6.2.0.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.2.0/MoonlightPortable-x64-6.2.0.zip",
+                "size": 37242232,
+                "sha256": "6f91d268b41ed5ca8066d9d7578dc403b8db190991ff48f00b1700465f8f7ebf"
+            },
+            {
+                "label": "MoonlightSrc-6.2.0.tar.gz",
+                "format": "Source code archive",
+                "kind": "source",
+                "architecture": null,
+                "url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.2.0/MoonlightSrc-6.2.0.tar.gz",
+                "size": 2059493,
+                "sha256": "217afac54e4f8734f3d97b32cb8c8b46b677e87f25b77c945343dd06f359e189"
+            }
+        ],
+        "features": [
+            "Hardware‑accelerated video decoding",
+            "Supports H.264, HEVC and AV1 codecs",
+            "HDR streaming support",
+            "7.1 surround‑sound audio",
+            "Gamepad support with force feedback and motion controls",
+            "Multitouch input for up to 10 points",
+            "Keyboard shortcut passthrough (e.g., Alt+Tab)",
+            "Portable ZIP version for use without installation",
+            "Works with NVIDIA GameStream and Sunshine servers"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page and download the Windows installer (EXE) or the portable ZIP for your architecture.",
+            "If you downloaded the EXE, run it and follow the on‑screen prompts to install.",
+            "If you downloaded the ZIP, extract it to a folder of your choice.",
+            "Launch Moonlight Qt from the Start menu (installed) or from the extracted folder (portable)."
+        ],
+        "related_software": [],
+        "seo_title": "Moonlight Qt Free Download for Windows",
+        "meta_description": "Download Moonlight Qt free for Windows. Moonlight Qt is an open‑source client that lets you stream games and desktop sessions from a PC with NVIDIA GameStream…",
+        "canonical_url": "https://codehimblog.github.io/software/moonlight-qt/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "notepad-plus-plus",
         "name": "Notepad++",
         "slug": "notepad-plus-plus",
@@ -1800,6 +1932,119 @@
         "seo_title": "TizuMark Free Download for Windows",
         "meta_description": "Download TizuMark free for Windows. A lightweight Markdown editor for Windows with live preview, outline navigation, KaTeX and Mermaid support.",
         "canonical_url": "https://codehimblog.github.io/software/tizumark-markdown-editor/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "traydio",
+        "name": "Traydio",
+        "slug": "traydio",
+        "summary": "A tiny, simple, elegant internet radio player that lives in the Windows tray.",
+        "description": [
+            "Traydio is a lightweight internet radio player for Windows. It stays in the system tray and lets you stream stations with a clean, modern interface.",
+            "Traydio (formerly Trdo) is an open‑source radio player built with .NET 10, WinUI 3 and the Windows App SDK. It focuses on simplicity: the app runs from the tray, shows now‑playing information, and lets you organize stations in groups. The interface follows Fluent Design and adapts to Windows themes. It uses LibVLCSharp and NAudio for playback and supports features such as station search, Sonos speaker integration, proxy usage and low memory consumption. The project is released under the MIT license, so anyone can use, modify or redistribute the software."
+        ],
+        "icon": {
+            "text": "T",
+            "color": "#BE123C"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/TheJoeFin/Traydio#license",
+        "official_website": "https://trdo.net/",
+        "download_page": "https://github.com/TheJoeFin/Traydio/releases/tag/v2.2.5",
+        "repository_url": "https://github.com/TheJoeFin/Traydio",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.2.5",
+        "release_date": "2026-11-14",
+        "release_url": "https://github.com/TheJoeFin/Traydio/releases/tag/v2.2.5",
+        "primary_download": {
+            "url": "https://github.com/TheJoeFin/Traydio/releases/download/v2.2.5/Microsoft.WindowsAppRuntime.2_2.6.5.0_x64.msix",
+            "filename": "Microsoft.WindowsAppRuntime.2_2.6.5.0_x64.msix",
+            "size": 50210887,
+            "architecture": "x64",
+            "format": "MSIX / AppX package"
+        },
+        "download_assets": [
+            {
+                "label": "Microsoft.WindowsAppRuntime.2_2.6.5.0_arm64.msix",
+                "format": "MSIX / AppX package",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/TheJoeFin/Traydio/releases/download/v2.2.5/Microsoft.WindowsAppRuntime.2_2.6.5.0_arm64.msix",
+                "size": 49535733,
+                "sha256": "d5ad8b645fe7dd96d5737908165733d2df1884081e6389885894c81ce9a682e4"
+            },
+            {
+                "label": "Microsoft.WindowsAppRuntime.2_2.6.5.0_x64.msix",
+                "format": "MSIX / AppX package",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/TheJoeFin/Traydio/releases/download/v2.2.5/Microsoft.WindowsAppRuntime.2_2.6.5.0_x64.msix",
+                "size": 50210887,
+                "sha256": "a0b8a226c0c993843f5bb6936037d4970e6e5b8e31c0e6f98497d8dd421a4709"
+            },
+            {
+                "label": "Trdo_2.2.5.msixbundle",
+                "format": "MSIX / AppX package",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/TheJoeFin/Traydio/releases/download/v2.2.5/Trdo_2.2.5.msixbundle",
+                "size": 126618771,
+                "sha256": "a3fe92eedadc953e9e37e48af79eac711fe3e7c8f4551e6d3f9552be588494b9"
+            }
+        ],
+        "features": [
+            "Stream internet radio stations from around the world",
+            "Modern Fluent Design UI that lives in the system tray",
+            "Save, organize and sort favorite stations with groups and dividers",
+            "Now‑playing information and metadata display",
+            "Support for Windows themes and high‑quality audio playback",
+            "Sonos speaker integration and system proxy support",
+            "Customizable settings and searchable station list"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page on GitHub and download the appropriate MSIX/MSIX bundle file.",
+            "Run the downloaded MSIX/MSIX bundle to install Traydio.",
+            "After installation, launch Traydio from the Start menu or click its icon in the system tray.",
+            "Add your favorite radio stations using the \"Add Station\" dialog.",
+            "Enjoy listening to internet radio directly from the tray."
+        ],
+        "related_software": [],
+        "seo_title": "Traydio Free Download for Windows",
+        "meta_description": "Download Traydio free for Windows. A tiny, simple, elegant internet radio player that lives in the Windows tray.",
+        "canonical_url": "https://codehimblog.github.io/software/traydio/",
         "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
