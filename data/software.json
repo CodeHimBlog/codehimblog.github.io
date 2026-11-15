@@ -3546,6 +3546,103 @@
         "verification_status": "partial"
     },
     {
+        "id": "universal-intel-chipset-updater",
+        "name": "Universal Intel Chipset Updater",
+        "slug": "universal-intel-chipset-updater",
+        "summary": "A security‑focused tool that automatically detects Intel hardware and installs the latest official chipset INF files safely.",
+        "description": [
+            "Universal Intel Chipset Updater simplifies keeping Intel chipset drivers up to date. It scans the system, finds the correct INF files from Intel, and installs them with verification and a system restore point for safety. It is aimed at users who want a reliable, automated way to keep their chipset drivers current without handling large driver packages manually.",
+            "The program targets Windows users who need to maintain Intel chipset drivers. It replaces the traditional, bulky Intel Chipset Device Software with a lightweight solution that only installs the necessary INF files. The updater verifies each download with SHA‑256 and Intel Authenticode signatures, creates a system restore point before making changes, and runs with minimal user interaction. It is useful for both home users and IT professionals who manage multiple PCs and want a consistent, secure update process."
+        ],
+        "icon": {
+            "text": "U",
+            "color": "#1D4ED8"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater#license",
+        "official_website": "https://github.com/FirstEver-eu/Universal-Intel-Chipset-Updater",
+        "download_page": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.09.0019",
+        "repository_url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2026.09.0019",
+        "release_date": "2026-09-09",
+        "release_url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.09.0019",
+        "primary_download": {
+            "url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/download/v2026.09.0019/ChipsetUpdater-2026.09.0019-Win10-Win11.exe",
+            "filename": "ChipsetUpdater-2026.09.0019-Win10-Win11.exe",
+            "size": 768232,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "ChipsetUpdater-2026.09.0019-Win10-Win11.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/download/v2026.09.0019/ChipsetUpdater-2026.09.0019-Win10-Win11.exe",
+                "size": 768232,
+                "sha256": "aeae09615231a274da7e0f6a6cc880e30e74f471f9faa70d3ec02f3aa3f81f32"
+            }
+        ],
+        "features": [
+            "Automatically detects Intel chipset hardware",
+            "Downloads the latest official INF files from Intel",
+            "Verifies downloads with SHA‑256 and Authenticode signatures",
+            "Creates a system restore point before installation",
+            "Runs silently with optional progress UI",
+            "Requires only PowerShell 5.0+ and .NET Framework 4.7.2+"
+        ],
+        "requirements": [
+            "PowerShell 5.0 or later",
+            ".NET Framework 4.7.2 or later"
+        ],
+        "installation_instructions": [
+            "Open the release page on GitHub and download the EXE installer.",
+            "Run the downloaded file and follow the prompts.",
+            "The updater will scan the system, download needed INF files, and install them.",
+            "After installation, a confirmation screen is shown.",
+            "Launch the program again from the Start menu to check for future updates."
+        ],
+        "related_software": [],
+        "seo_title": "Universal Intel Chipset Updater Free Download for Windows",
+        "meta_description": "Download Universal Intel Chipset Updater free for Windows. A security‑focused tool that automatically detects Intel hardware and installs the latest official c…",
+        "canonical_url": "https://codehimblog.github.io/software/universal-intel-chipset-updater/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "usque-app",
         "name": "Usque",
         "slug": "usque-app",
@@ -3885,6 +3982,109 @@
         "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
+    },
+    {
+        "id": "winutil-cn",
+        "name": "WinUtil CN",
+        "slug": "winutil-cn",
+        "summary": "A Chinese-language tool for managing installed software and performing system maintenance tasks on Windows, including package installation, system tweaks, update settings, and Windows image creation.",
+        "description": [
+            "It is aimed at users who prefer a Chinese UI for routine system maintenance.",
+            "The program scans the system for installed applications, lets you filter and search by name, purpose or package ID, and then perform batch install, upgrade or removal through the chosen package manager. System optimization offers predefined basic, standard and advanced tweak sets that can be applied or rolled back using recorded registry and service settings. A dedicated page opens built‑in Windows management tools and shortcuts. The Windows Update page shows options to restore, delay or disable updates. All actions are previewed, confirmed and logged, with the ability to retry failed items. The UI follows a dark or light theme with consistent highlight colors and supports keyboard shortcuts for navigation and help."
+        ],
+        "icon": {
+            "text": "W",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/yasewang1337-svg/winutil-cn#license",
+        "official_website": "https://yasewang1337-svg.github.io/winutil-cn/",
+        "download_page": "https://github.com/yasewang1337-svg/winutil-cn/releases/tag/cn-2026.10.13-40",
+        "repository_url": "https://github.com/yasewang1337-svg/winutil-cn",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/yasewang1337-svg/winutil-cn#readme",
+                "note": "Stated in the project README: “Windows 11”"
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": null,
+        "release_date": null,
+        "release_url": "https://github.com/yasewang1337-svg/winutil-cn/releases/tag/cn-2026.10.13-40",
+        "primary_download": {
+            "url": "https://github.com/yasewang1337-svg/winutil-cn/releases/download/cn-2026.10.13-40/WinUtil-CN.exe",
+            "filename": "WinUtil-CN.exe",
+            "size": 874496,
+            "architecture": null,
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "WinUtil-CN.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/yasewang1337-svg/winutil-cn/releases/download/cn-2026.10.13-40/WinUtil-CN.exe",
+                "size": 874496,
+                "sha256": "24c1e957f439b147e665530330e1ca96fa3b23adae94a9620560352f758aad5e"
+            }
+        ],
+        "features": [
+            "Detects installed software and allows filtering by result or custom list",
+            "Searches by name, purpose or package ID and previews actions",
+            "Installs, upgrades or uninstalls packages via WinGet or Chocolatey with per‑item retry",
+            "Applies system optimization sets and can restore registry and service configurations from history",
+            "Opens Windows management tools and shortcuts from a single interface",
+            "Shows and adjusts Windows Update restore, delay and disable options",
+            "Exports and imports software selection and settings history",
+            "Provides detailed logs and status for each operation",
+            "Supports dark and light themes with consistent UI cues"
+        ],
+        "requirements": [
+            "Windows 11",
+            "PowerShell 5.1 (or PowerShell 7) installed",
+            "Internet connection for package manager operations and ISO download"
+        ],
+        "installation_instructions": [
+            "Download WinUtil-CN.exe from the official GitHub release page.",
+            "Double‑click the EXE and accept the administrator prompt.",
+            "The program starts; choose a function from the home screen and follow the on‑screen prompts.",
+            "For command‑line use, download winutil-cn.ps1, verify its SHA256 hash, then run it in an elevated PowerShell session.",
+            "No additional installation steps are required; the application runs directly."
+        ],
+        "related_software": [],
+        "seo_title": "WinUtil CN Free Download for Windows 11",
+        "meta_description": "Download WinUtil CN free for Windows 11. A Chinese-language tool for managing installed software and performing system maintenance tasks on Windows, including…",
+        "canonical_url": "https://codehimblog.github.io/software/winutil-cn/",
+        "date_added": "2026-11-15",
+        "last_verified_at": "2026-11-15",
+        "verification_status": "verified"
     },
     {
         "id": "yengi",
