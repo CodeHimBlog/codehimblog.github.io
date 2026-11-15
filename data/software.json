@@ -718,6 +718,113 @@
         "verification_status": "partial"
     },
     {
+        "id": "deskx-wallpaper-engine",
+        "name": "DeskX Wallpaper Engine",
+        "slug": "deskx-wallpaper-engine",
+        "summary": "A lightweight Windows utility that lets you set images, GIFs, videos, or HTML pages as live wallpapers and adds draggable interactive widgets with multi‑monitor support.",
+        "description": [
+            "DeskX Wallpaper Engine replaces the static desktop background with dynamic media and provides a modular widget overlay. It runs behind desktop icons using the Win32 WorkerW technique, so icons and the taskbar remain visible. Widgets can be placed in three Z‑order layers, are draggable, and can show clocks, weather, calendars, and more, with separate settings for each monitor.",
+            "The program is built with Electron and bundles its own Chromium and Node.js runtime, so no external dependencies are required. It supports static images, animated GIFs, a wide range of video formats, and full HTML pages, allowing CSS animations, WebGL, and JavaScript to run as wallpapers. Multi‑monitor configurations are fully supported: you can use the same wallpaper on all screens, assign different wallpapers per monitor, or span a single image across the whole virtual desktop. The widget system offers a 3‑layer Z‑order (below apps, above taskbar, topmost) and includes click‑through areas so the desktop remains usable. The portable ZIP version runs without installation, while the installer sets up shortcuts and automatic updates."
+        ],
+        "icon": {
+            "text": "D",
+            "color": "#BE123C"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/Felix-au/DeskX-Wallpaper-Engine#license",
+        "official_website": null,
+        "download_page": "https://github.com/Felix-au/DeskX-Wallpaper-Engine/releases/tag/3.0.0",
+        "repository_url": "https://github.com/Felix-au/DeskX-Wallpaper-Engine",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Felix-au/DeskX-Wallpaper-Engine#readme",
+                "note": "Stated in the project README: “Windows 10/11 (x64)”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "3.0.0",
+        "release_date": "2026-07-28",
+        "release_url": "https://github.com/Felix-au/DeskX-Wallpaper-Engine/releases/tag/3.0.0",
+        "primary_download": {
+            "url": "https://github.com/Felix-au/DeskX-Wallpaper-Engine/releases/download/3.0.0/DeskX-Setup.exe",
+            "filename": "DeskX-Setup.exe",
+            "size": 123356672,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "DeskX-Setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/Felix-au/DeskX-Wallpaper-Engine/releases/download/3.0.0/DeskX-Setup.exe",
+                "size": 123356672,
+                "sha256": "6af0519b7e26d21f51257ff9fe90600392f7f890ee90afd692f9a81f67cf576d"
+            },
+            {
+                "label": "DeskX-win32-x64-3.0.0.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/Felix-au/DeskX-Wallpaper-Engine/releases/download/3.0.0/DeskX-win32-x64-3.0.0.zip",
+                "size": 127646572,
+                "sha256": "1c03df6c7b55917a23631e6a8c42dbb8ce0a8b0075b27369e49a71f364100cf7"
+            }
+        ],
+        "features": [
+            "Dynamic wallpapers: images, GIFs, videos, and interactive HTML pages",
+            "Full multi‑monitor support with per‑monitor or spanning modes",
+            "Three‑layer widget overlay (below apps, above taskbar, topmost)",
+            "Draggable, live widgets such as clocks, weather, and calendars",
+            "Click‑through transparent areas to keep desktop icons usable",
+            "Standalone installer and portable ZIP options",
+            "No external runtimes required; bundles Chromium and Node.js",
+            "Sound control and looping for video wallpapers"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the release page and download either DeskX-Setup.exe or DeskX-win32-x64.zip.",
+            "If you downloaded the EXE, run it and follow the on‑screen prompts to install.",
+            "If you downloaded the ZIP, extract its contents to a folder.",
+            "Launch DeskX from the Start menu shortcut (installer) or by double‑clicking DeskX.exe in the extracted folder.",
+            "Configure your wallpaper and widgets through the application’s interface."
+        ],
+        "related_software": [],
+        "seo_title": "DeskX Wallpaper Engine Free Download for Windows 10",
+        "meta_description": "Download DeskX Wallpaper Engine free for Windows 10. A lightweight Windows utility that lets you set images, GIFs, videos, or HTML pages as live wallpapers and…",
+        "canonical_url": "https://codehimblog.github.io/software/deskx-wallpaper-engine/",
+        "date_added": "2026-11-15",
+        "last_verified_at": "2026-11-15",
+        "verification_status": "verified"
+    },
+    {
         "id": "electerm",
         "name": "electerm",
         "slug": "electerm",
@@ -2466,6 +2573,111 @@
         "seo_title": "Moonlight Qt Free Download for Windows",
         "meta_description": "Download Moonlight Qt free for Windows. Moonlight Qt is an open‑source client that lets you stream games and desktop sessions from a PC with NVIDIA GameStream…",
         "canonical_url": "https://codehimblog.github.io/software/moonlight-qt/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "mouse-point-viewer",
+        "name": "Mouse Point Viewer",
+        "slug": "mouse-point-viewer",
+        "summary": "A desktop application that displays mouse coordinates relative to any window visible on the screen.",
+        "description": [
+            "Mouse Point Viewer shows the X and Y position of the mouse pointer for the window that is currently under the cursor. It updates in real time so you can see exactly where the pointer is inside any application window.",
+            "The program runs in the background and adds a small overlay that reports the mouse coordinates relative to the active window. It works with any standard Windows window and can be useful for developers, designers, or anyone who needs precise pointer location information. The interface is simple, showing the coordinates and allowing you to copy them if needed. The application is built with .NET and uses the Windows Forms framework."
+        ],
+        "icon": {
+            "text": "M",
+            "color": "#1D4ED8"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/ElektroStudios/Mouse-Point-Viewer#license",
+        "official_website": null,
+        "download_page": "https://github.com/ElektroStudios/Mouse-Point-Viewer/releases/tag/v1.4.1",
+        "repository_url": "https://github.com/ElektroStudios/Mouse-Point-Viewer",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.4.1",
+        "release_date": "2026-11-09",
+        "release_url": "https://github.com/ElektroStudios/Mouse-Point-Viewer/releases/tag/v1.4.1",
+        "primary_download": {
+            "url": "https://github.com/ElektroStudios/Mouse-Point-Viewer/releases/download/v1.4.1/Mouse.Point.Viewer.1.4.1-SETUP.exe",
+            "filename": "Mouse.Point.Viewer.1.4.1-SETUP.exe",
+            "size": 2681515,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Mouse.Point.Viewer.v1.4.1.AnyCPU.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/ElektroStudios/Mouse-Point-Viewer/releases/download/v1.4.1/Mouse.Point.Viewer.v1.4.1.AnyCPU.zip",
+                "size": 98676,
+                "sha256": "2d850b360020b2b78ed1b91be8fdd979a8fffb20cc86439db14f5f3ab351a849"
+            },
+            {
+                "label": "Mouse.Point.Viewer.1.4.1-SETUP.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/ElektroStudios/Mouse-Point-Viewer/releases/download/v1.4.1/Mouse.Point.Viewer.1.4.1-SETUP.exe",
+                "size": 2681515,
+                "sha256": "72d83ef659bcb8a99a9c684db8db6e274112ec9a563465429a19fba7cd988613"
+            }
+        ],
+        "features": [
+            "Shows real‑time X and Y coordinates of the mouse relative to the active window.",
+            "Works with any visible window on the screen.",
+            "Small overlay that can be positioned as needed.",
+            "Option to copy coordinates to the clipboard.",
+            "Light and dark theme support.",
+            "Simple installer for quick setup.",
+            "Portable mode available via ZIP extraction.",
+            "No additional runtime required beyond standard Windows components."
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page on GitHub and download the Mouse.Point.Viewer-SETUP.exe file.",
+            "Run the downloaded installer and follow the on‑screen prompts.",
+            "After installation, launch Mouse Point Viewer from the Start menu or desktop shortcut.",
+            "The overlay will appear and start showing mouse coordinates.",
+            "Use the menu to copy coordinates or change the theme if desired."
+        ],
+        "related_software": [],
+        "seo_title": "Mouse Point Viewer Free Download for Windows",
+        "meta_description": "Download Mouse Point Viewer free for Windows. A desktop application that displays mouse coordinates relative to any window visible on the screen.",
+        "canonical_url": "https://codehimblog.github.io/software/mouse-point-viewer/",
         "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
