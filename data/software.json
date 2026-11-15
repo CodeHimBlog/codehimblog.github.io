@@ -2738,6 +2738,100 @@
         "verification_status": "verified"
     },
     {
+        "id": "handwriting-ocr-scriptreader",
+        "name": "ScriptReader",
+        "slug": "handwriting-ocr-scriptreader",
+        "summary": "ScriptReader converts scanned handwritten JPEG images into formatted RTF documents and removes handwritten typos automatically.",
+        "description": [
+            "ScriptReader is a Windows tool that reads handwritten notes from scanned JPEG files and produces rich‑text files with proper formatting. It is aimed at anyone who keeps handwritten notebooks and wants a digital copy without manual typing.",
+            "The program uses a deep‑learning model built with Fastai and OpenCV to segment characters and recognise handwriting. It works best with pages printed from the accompanying notebook templates that contain a dot grid for automatic alignment. Scanned images should be 300 dpi and oriented correctly. The OCR engine filters out the square‑dot grid cells that indicate mistakes, so the resulting RTF text is clean. Users can print their own notebook pages or use the provided templates, train the model on their own handwriting, and then convert the scanned pages to editable documents."
+        ],
+        "icon": {
+            "text": "H",
+            "color": "#1D4ED8"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU Affero General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/LPBeaulieu/Handwriting-OCR-ScriptReader#license",
+        "official_website": null,
+        "download_page": "https://github.com/LPBeaulieu/Handwriting-OCR-ScriptReader/releases/tag/v1.1.4",
+        "repository_url": "https://github.com/LPBeaulieu/Handwriting-OCR-ScriptReader",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.1.4",
+        "release_date": "2026-07-30",
+        "release_url": "https://github.com/LPBeaulieu/Handwriting-OCR-ScriptReader/releases/tag/v1.1.4",
+        "primary_download": null,
+        "download_assets": [
+            {
+                "label": "ScriptReader_Win10_x86_64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/LPBeaulieu/Handwriting-OCR-ScriptReader/releases/download/v1.1.4/ScriptReader_Win10_x86_64.zip",
+                "size": 773751050,
+                "sha256": "138f3b01857980c7c50109c32f72e85e4f8de337872ae7a2eb55862ead4d91b7"
+            }
+        ],
+        "features": [
+            "Converts JPEG scans of handwritten pages to RTF files",
+            "Preserves formatting such as bold, italics, underline and strikethrough",
+            "Automatically removes typographical errors marked by dot‑grid squares",
+            "Supports duplex scanning for faster processing",
+            "Works with custom‑trained handwriting models",
+            "Provides printable notebook templates with alignment dots",
+            "No installation required; runs from a portable ZIP"
+        ],
+        "requirements": [
+            "Windows operating system",
+            "Portable ZIP file (no additional installer)",
+            "Scanned images in JPEG format at 300 dpi",
+            "Optional: Python environment with Fastai, OpenCV and glob2 if rebuilding the model (not needed for using the pre‑built version)"
+        ],
+        "installation_instructions": [
+            "Download the ScriptReader_Win10_x86_64.zip from the official GitHub release.",
+            "Extract the ZIP to a folder of your choice.",
+            "Open the extracted folder and double‑click ScriptReader.exe to start the program.",
+            "Use the interface to load a JPEG image and choose an output location for the RTF file.",
+            "The generated RTF can be opened with any word processor."
+        ],
+        "related_software": [],
+        "seo_title": "ScriptReader Free Download for Windows",
+        "meta_description": "Download ScriptReader free for Windows. ScriptReader converts scanned handwritten JPEG images into formatted RTF documents and removes handwritten typos automa…",
+        "canonical_url": "https://codehimblog.github.io/software/handwriting-ocr-scriptreader/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "sharex",
         "name": "ShareX",
         "slug": "sharex",
@@ -2866,6 +2960,109 @@
         "meta_description": "ShareX is a free, open-source screenshot and screen recording tool for Windows. See features, download formats and official download sources.",
         "canonical_url": "https://codehimblog.github.io/software/sharex/",
         "date_added": "2026-11-14",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "starluxe",
+        "name": "StarLuxe",
+        "slug": "starluxe",
+        "summary": "A launcher that helps apply ReShade shaders to selected games.",
+        "description": [
+            "StarLuxe is a Windows program that simplifies installing and managing ReShade shaders for games. It provides a graphical interface to select a game, download preset packs, and launch the game with ReShade applied.",
+            "StarLuxe acts as a front‑end for ReShade, allowing users to choose a game, pick or download shader preset packs, and start the game with those shaders active. It includes support for custom themes, preset packs hosted on GitHub, and a simple start button. The tool is built with Python and packaged as an executable, so it runs directly on Windows without needing additional software. Users should be aware that using ReShade can be against some game policies and may lead to bans, so it should be used at their own risk."
+        ],
+        "icon": {
+            "text": "S",
+            "color": "#15803D"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/Dimitri-Matheus/StarLuxe#license",
+        "official_website": "https://gamebanana.com/tools/20450",
+        "download_page": "https://github.com/Dimitri-Matheus/StarLuxe/releases/tag/v1.0.98-beta",
+        "repository_url": "https://github.com/Dimitri-Matheus/StarLuxe",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.0.98-beta",
+        "release_date": "2026-10-20",
+        "release_url": "https://github.com/Dimitri-Matheus/StarLuxe/releases/tag/v1.0.98-beta",
+        "primary_download": {
+            "url": "https://github.com/Dimitri-Matheus/StarLuxe/releases/download/v1.0.98-beta/StarLuxe-Installer-v1.0.98.exe",
+            "filename": "StarLuxe-Installer-v1.0.98.exe",
+            "size": 21053738,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "StarLuxe-Portable-v1.0.98.rar",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/Dimitri-Matheus/StarLuxe/releases/download/v1.0.98-beta/StarLuxe-Portable-v1.0.98.rar",
+                "size": 25335578,
+                "sha256": "4af3de00ddd3dbc3b5c9bc611b42b7be99e57d5db05cdfa1db2da4e5ef4aaa46"
+            },
+            {
+                "label": "StarLuxe-Installer-v1.0.98.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/Dimitri-Matheus/StarLuxe/releases/download/v1.0.98-beta/StarLuxe-Installer-v1.0.98.exe",
+                "size": 21053738,
+                "sha256": "a362f1c59a11ca571b3d91123509ccacd8c6f2e1e5e440a062db90a53f405edd"
+            }
+        ],
+        "features": [
+            "Launcher interface for applying ReShade to chosen games",
+            "Ability to download and use preset packs from GitHub",
+            "Support for custom GUI themes",
+            "One‑click start button to launch the game with shaders",
+            "Portable and installer versions available",
+            "Displays warnings about antivirus false positives and potential game bans"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download the installer file from the latest GitHub release.",
+            "Run the downloaded .exe file and follow the on‑screen prompts.",
+            "After installation, launch StarLuxe from the Start menu or desktop shortcut.",
+            "In the program, select the game you want to enhance and press Start.",
+            "Optionally, download preset packs or apply a custom theme from the settings."
+        ],
+        "related_software": [],
+        "seo_title": "StarLuxe Free Download for Windows",
+        "meta_description": "Download StarLuxe free for Windows. A launcher that helps apply ReShade shaders to selected games.",
+        "canonical_url": "https://codehimblog.github.io/software/starluxe/",
+        "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
     },
