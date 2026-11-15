@@ -679,6 +679,229 @@
         "verification_status": "verified"
     },
     {
+        "id": "fk-desktop",
+        "name": "Fk Desktop",
+        "slug": "fk-desktop",
+        "summary": "Fk Desktop is a Pomodoro timer that follows the original technique closely, offering a classic desktop UI, keyboard shortcuts and advanced settings for power users.",
+        "description": [
+            "Fk Desktop provides a simple, focused Pomodoro timer for users who want to work in timed intervals. It runs as a native desktop application without heavy frameworks, and includes features like full‑screen break notifications, customizable task categories, and several productivity presets.",
+            "Flowkeeper (Fk Desktop) implements the Pomodoro Technique as described in Francesco Cirillo's book. The interface is designed for desktop use, avoiding Electron and relying on Qt 6.11 for a lightweight experience. Users can control the timer with keyboard shortcuts, configure advanced settings, and choose from multiple themes such as Very Dark and Very Light. Recent updates added full‑screen rest notifications, a knocking sound for upcoming breaks, configurable task groups, presets for methods like the Eisenhower Matrix, a mute button in focus mode, and the ability to undo task completion. The application also shows system information in the About tab to aid troubleshooting. It is open‑source under GPL‑3.0, allowing free use, modification, and distribution."
+        ],
+        "icon": {
+            "text": "F",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/flowkeeper-org/fk-desktop#license",
+        "official_website": "https://flowkeeper.org/",
+        "download_page": "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v1.1.0",
+        "repository_url": "https://github.com/flowkeeper-org/fk-desktop",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.1.0",
+        "release_date": "2026-08-14",
+        "release_url": "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v1.1.0",
+        "primary_download": {
+            "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-11-arm-pyinstaller-installer.exe",
+            "filename": "flowkeeper-1.1.0-windows-11-arm-pyinstaller-installer.exe",
+            "size": 49349856,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "flowkeeper-1.1.0-windows-11-arm-pyinstaller-installer.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-11-arm-pyinstaller-installer.exe",
+                "size": 49349856,
+                "sha256": "c65079ff75ccfedfb93837ad9dedf0173ededcbcb2fdb03c92a3052e948d8565"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-11-arm-pyinstaller-portable.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-11-arm-pyinstaller-portable.exe",
+                "size": 61864672,
+                "sha256": "1b371fb22b1cec7fc791712686661a3aecae707722b3a8547b14f4dedf34c777"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-2022-nuitka-installer.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-2022-nuitka-installer.exe",
+                "size": 44186168,
+                "sha256": "ad99dbbcb62573b281cfe3d33dc5ff33e45a18124b68b1fc428c4b5efce49ca1"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-2022-pyinstaller-installer.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-2022-pyinstaller-installer.exe",
+                "size": 61260448,
+                "sha256": "cc3ee741264d13ed622875d9542360dfe253ead0af0fa32de5ee1a61478f3ebb"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-2022-pyinstaller-portable.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-2022-pyinstaller-portable.exe",
+                "size": 77415888,
+                "sha256": "357433fa2d951da9944844ab494f36172373b0ede721c82a4245da3f5e758b46"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-2025-nuitka-installer.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-2025-nuitka-installer.exe",
+                "size": 44156992,
+                "sha256": "294c2f91f289b56e9e4396cddcb31797eb1e22e453c37e99f0496ce64e9f5570"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-2025-pyinstaller-installer.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-2025-pyinstaller-installer.exe",
+                "size": 61260392,
+                "sha256": "f0e5f4c92bc786b0fd3e4b5e2e196c138f3ff075817c94818efea2697ce6afc0"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-2025-pyinstaller-portable.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-2025-pyinstaller-portable.exe",
+                "size": 77416072,
+                "sha256": "71d4d60f4cb9f71ddfdf41fc7e822e0a5cdb12ebcba5722c655621c0fc0e0116"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-2022-nuitka-portable.exe",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-2022-nuitka-portable.exe",
+                "size": 42894336,
+                "sha256": "9ec995f007cb858c8cd4c0709ff9ccec3cccbcb0c51d84b8d9b9a0cb76f93d64"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-2025-nuitka-portable.exe",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-2025-nuitka-portable.exe",
+                "size": 43014144,
+                "sha256": "db16a33b0a4469d289f694d3da610229c6979fcb3793a1a37866ad3dc46cbc39"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-11-arm-pyinstaller-standalone.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-11-arm-pyinstaller-standalone.zip",
+                "size": 61684873,
+                "sha256": "30992ff9aefae4f254a63c0e9d2414eda5c0d2d4aeb1617c585f5ebc9b93b4e4"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-2022-nuitka-standalone.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-2022-nuitka-standalone.zip",
+                "size": 56537903,
+                "sha256": "c9609fa54d7a6ddf420fbfa6be006401a8f98be2df29c9cf2c02ec479538cb9d"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-2022-pyinstaller-standalone.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-2022-pyinstaller-standalone.zip",
+                "size": 77386206,
+                "sha256": "27e327b5a782070cc3dff67c547e8acfd1fd9a7fbb5f408326d2bfbf2aa0b6f2"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-2025-nuitka-standalone.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-2025-nuitka-standalone.zip",
+                "size": 56480764,
+                "sha256": "d98e6f7b4b42b022d1e882fd8b007d44d4fbcbb9ae3f4f19d999bf491993f5fe"
+            },
+            {
+                "label": "flowkeeper-1.1.0-windows-2025-pyinstaller-standalone.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/flowkeeper-org/fk-desktop/releases/download/v1.1.0/flowkeeper-1.1.0-windows-2025-pyinstaller-standalone.zip",
+                "size": 77387355,
+                "sha256": "6b1bf26a64207206b4a7da7612e7fbf80407b5214ee44083fb39257c0862b63e"
+            }
+        ],
+        "features": [
+            "Classic desktop UI without Electron",
+            "Keyboard shortcuts for start, pause and task management",
+            "Full‑screen break notifications and optional knocking sound",
+            "Configurable task categories and groups",
+            "Presets for popular productivity methods (e.g., Eisenhower Matrix)",
+            "Multiple themes including Very Dark and Very Light",
+            "Mute button in focus mode",
+            "Undo task completion with Ctrl+P",
+            "System info tab for easy issue reporting"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the GitHub release page linked on this page.",
+            "Download the installer (EXE) or portable ZIP that matches your system.",
+            "If you downloaded an installer, run the .exe file and follow the prompts.",
+            "If you downloaded a portable ZIP, extract it to a folder.",
+            "Launch Flowkeeper by double‑clicking the Flowkeeper executable."
+        ],
+        "related_software": [],
+        "seo_title": "Fk Desktop Free Download for Windows",
+        "meta_description": "Download Fk Desktop free for Windows. Fk Desktop is a Pomodoro timer that follows the original technique closely, offering a classic desktop UI, keyboard short…",
+        "canonical_url": "https://codehimblog.github.io/software/fk-desktop/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "headroom-desktop",
         "name": "Headroom Desktop",
         "slug": "headroom-desktop",
@@ -1586,6 +1809,116 @@
         "date_added": "2026-11-14",
         "last_verified_at": null,
         "verification_status": "partial"
+    },
+    {
+        "id": "quiesce",
+        "name": "Quiesce",
+        "slug": "quiesce",
+        "summary": "Quiesce safely cleans Windows temporary files, system logs, update caches, and optimizes system memory without heavy installers or background processes.",
+        "description": [
+            "Quiesce is a lightweight system cleaner and RAM optimizer that runs from a single executable. It provides a terminal menu with customizable cleaning steps to free disk space and improve performance.",
+            "Quiesce offers a fast, no‑install solution for keeping a Windows PC tidy. It can delete temporary files, user temp files, prefetch data, error reports, delivery‑optimization cache, Windows Update cache, log files, installer leftovers, DNS cache, and can free unused RAM. Optional steps include emptying the Recycle Bin and performing a deep Windows Disk Cleanup. Settings are saved and can be edited in the menu. The tool runs with administrator rights only when needed and restores any paused services after cleaning. It supports English and Spanish and can be extended to other languages. Updates are handled by the program itself, which verifies download checksums before installing."
+        ],
+        "icon": {
+            "text": "Q",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/SibtainOcn/Quiesce#license",
+        "official_website": "https://sibtainocn.github.io/Quiesce/",
+        "download_page": "https://github.com/SibtainOcn/Quiesce/releases/tag/v2.5.2",
+        "repository_url": "https://github.com/SibtainOcn/Quiesce",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/SibtainOcn/Quiesce#readme",
+                "note": "Stated in the project README: “Windows 10 or 11.”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.5.2",
+        "release_date": "2026-10-23",
+        "release_url": "https://github.com/SibtainOcn/Quiesce/releases/tag/v2.5.2",
+        "primary_download": {
+            "url": "https://github.com/SibtainOcn/Quiesce/releases/download/v2.5.2/qc-64bit.exe",
+            "filename": "qc-64bit.exe",
+            "size": 9698304,
+            "architecture": null,
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "qc-32bit.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x86",
+                "url": "https://github.com/SibtainOcn/Quiesce/releases/download/v2.5.2/qc-32bit.exe",
+                "size": 9394688,
+                "sha256": "46aa7d6bb0304aacec0928706a10bf2b69e0b7df2c5e10c528afe996a4829dfc"
+            },
+            {
+                "label": "qc-64bit.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/SibtainOcn/Quiesce/releases/download/v2.5.2/qc-64bit.exe",
+                "size": 9698304,
+                "sha256": "5242cc5225f14a661f402a8a7410f73b838dfa3cc3f763cab3443a3a744f4adb"
+            }
+        ],
+        "features": [
+            "Removes Windows and user temporary files",
+            "Clears prefetch, error reports, and Windows Update caches",
+            "Empties DNS cache and frees unused RAM",
+            "Optional Recycle Bin emptying and deep disk cleanup",
+            "Saves custom settings for future runs",
+            "Runs from a single portable executable",
+            "Updates itself and verifies SHA‑256 checksums",
+            "Supports English and Spanish interfaces"
+        ],
+        "requirements": [
+            "Windows 10 or 11",
+            "Administrator rights are required for cleaning operations"
+        ],
+        "installation_instructions": [
+            "Go to the GitHub releases page and download qc-64bit.exe (or qc-32bit.exe for 32‑bit systems).",
+            "Run the downloaded .exe file.",
+            "Follow the prompts to install Quiesce (no admin rights needed for installation).",
+            "Open any terminal and type \"qc\" to launch the menu.",
+            "Use the menu or command‑line options to run cleaning steps."
+        ],
+        "related_software": [],
+        "seo_title": "Quiesce Free Download for Windows 10",
+        "meta_description": "Download Quiesce free for Windows 10. Quiesce safely cleans Windows temporary files, system logs, update caches, and optimizes system memory without heavy inst…",
+        "canonical_url": "https://codehimblog.github.io/software/quiesce/",
+        "date_added": "2026-11-15",
+        "last_verified_at": "2026-11-15",
+        "verification_status": "verified"
     },
     {
         "id": "sakura",
