@@ -179,6 +179,248 @@
         "verification_status": "verified"
     },
     {
+        "id": "af-media-bar",
+        "name": "AF Media Bar",
+        "slug": "af-media-bar",
+        "summary": "A taskbar media controller that shows media information, lyrics and playback controls directly on the desktop.",
+        "description": [
+            "AF Media Bar adds a media control bar to the Windows taskbar. It reads the current system media session and displays track info, lyrics, playback buttons and device switching in a convenient panel.",
+            "AF Media Bar is a lightweight utility for Windows desktops. It extracts information from the system media session, so any media player that integrates with Windows can be controlled. The bar shows the current track title, artist, album art and optional lyrics. Users can play, pause, skip tracks, adjust volume and switch output devices without opening the player. The interface can be customized, supports multiple languages and offers both an installer and a portable version. Settings are stored in the user’s local app data and can be edited manually. The program runs without telemetry, ads or account requirements, though it can check for updates and fetch online lyrics when enabled. It includes the required .NET runtime and uses Microsoft Edge WebView2 for rendering."
+        ],
+        "icon": {
+            "text": "A",
+            "color": "#7C3AED"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/Fervent-Tempo/AF-Media-Bar#license",
+        "official_website": null,
+        "download_page": "https://github.com/Fervent-Tempo/AF-Media-Bar/releases/tag/v1.7.1",
+        "repository_url": "https://github.com/Fervent-Tempo/AF-Media-Bar",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.7.1",
+        "release_date": "2026-11-12",
+        "release_url": "https://github.com/Fervent-Tempo/AF-Media-Bar/releases/tag/v1.7.1",
+        "primary_download": {
+            "url": "https://github.com/Fervent-Tempo/AF-Media-Bar/releases/download/v1.7.1/AFMediaBar-Setup-v1.7.1-win-x64.exe",
+            "filename": "AFMediaBar-Setup-v1.7.1-win-x64.exe",
+            "size": 113070050,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "AFMediaBar-Setup-v1.7.1-win-x64.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/Fervent-Tempo/AF-Media-Bar/releases/download/v1.7.1/AFMediaBar-Setup-v1.7.1-win-x64.exe",
+                "size": 113070050,
+                "sha256": "1cd02c9136248cbe7901c770cbba854a9c41e08837fb01e0166424d1cb261ff5"
+            },
+            {
+                "label": "AFMediaBar-v1.7.1-win-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/Fervent-Tempo/AF-Media-Bar/releases/download/v1.7.1/AFMediaBar-v1.7.1-win-x64.zip",
+                "size": 113902622,
+                "sha256": "d90bfe8f46164d478f6ac712c85aab4398155e3c048cac390614c264dcc16f3c"
+            }
+        ],
+        "features": [
+            "Shows current track title, artist and album art",
+            "Displays lyrics from online sources or local files",
+            "Playback controls: play, pause, next, previous, volume",
+            "Switches audio output devices directly from the bar",
+            "Customizable appearance with light/dark themes",
+            "Supports multiple interface languages",
+            "Installer and portable ZIP versions available",
+            "Stores settings in %LOCALAPPDATA%\\AFMediaBar\\settings.json",
+            "Checks for updates and can download them automatically",
+            "No telemetry, ads or account system"
+        ],
+        "requirements": [
+            "Microsoft Edge WebView2 Runtime (Evergreen) installed",
+            ".NET runtime included in the package"
+        ],
+        "installation_instructions": [
+            "Go to the GitHub Releases page linked on this page.",
+            "Download the installer (AFMediaBar-Setup-…-win-x64.exe) or the portable ZIP (AFMediaBar-…-win-x64.zip).",
+            "For the installer, run the EXE and follow the setup wizard.",
+            "For the portable version, extract the ZIP to a writable folder.",
+            "Start the program by launching AFMediaBar.exe (or from the Start menu after installation)."
+        ],
+        "related_software": [],
+        "seo_title": "AF Media Bar Free Download for Windows",
+        "meta_description": "Download AF Media Bar free for Windows. A taskbar media controller that shows media information, lyrics and playback controls directly on the desktop.",
+        "canonical_url": "https://codehimblog.github.io/software/af-media-bar/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "bleachbit",
+        "name": "BleachBit",
+        "slug": "bleachbit",
+        "summary": "BleachBit is a system cleaner that removes unnecessary files to free disk space and protect privacy.",
+        "description": [
+            "BleachBit scans your computer for temporary files, caches, logs and other junk that can be safely deleted. It lets you preview what will be removed and then delete it, helping to keep the system tidy and protect personal information.",
+            "BleachBit works on Windows and Linux. It offers a graphical interface where you can select which types of data to clean, such as web browser caches, system logs, temporary files, and more. You can run it as a portable program without installing, or use the installer for a standard setup. The program includes many built‑in cleaners and also supports custom cleaner definitions. It provides options for secure file deletion to make recovered data difficult. The interface allows you to preview files before deletion and to configure preferences for automatic cleaning tasks."
+        ],
+        "icon": {
+            "text": "B",
+            "color": "#BE123C"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/bleachbit/bleachbit#license",
+        "official_website": "https://www.bleachbit.org",
+        "download_page": "https://github.com/bleachbit/bleachbit/releases/tag/v6.0.6",
+        "repository_url": "https://github.com/bleachbit/bleachbit",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "6.0.6",
+        "release_date": "2026-10-22",
+        "release_url": "https://github.com/bleachbit/bleachbit/releases/tag/v6.0.6",
+        "primary_download": {
+            "url": "https://github.com/bleachbit/bleachbit/releases/download/v6.0.6/BleachBit-6.0.6-setup-English.exe",
+            "filename": "BleachBit-6.0.6-setup-English.exe",
+            "size": 14515616,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "BleachBit-6.0.6-setup.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/bleachbit/bleachbit/releases/download/v6.0.6/BleachBit-6.0.6-setup.zip",
+                "size": 15094028,
+                "sha256": "f5f380e3a3eb10a736d33333c14ebed2525640ffc597c67dd3608d8baff850ac"
+            },
+            {
+                "label": "bleachbit-6.0.6.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/bleachbit/bleachbit/releases/download/v6.0.6/bleachbit-6.0.6.tar.gz",
+                "size": 2492659,
+                "sha256": "258d82a8b6b6b86c59526b64524cbe5920d3131d35f20c603cb4969abddcab55"
+            },
+            {
+                "label": "BleachBit-6.0.6-setup-English.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/bleachbit/bleachbit/releases/download/v6.0.6/BleachBit-6.0.6-setup-English.exe",
+                "size": 14515616,
+                "sha256": "434f087df0d93feb1b4aadada75d8ce7c05cef4718f2f5504bf953a529494835"
+            },
+            {
+                "label": "BleachBit-6.0.6-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/bleachbit/bleachbit/releases/download/v6.0.6/BleachBit-6.0.6-setup.exe",
+                "size": 15140856,
+                "sha256": "a8d27535cdc53e89c21090eabca6026d32c4d385863f8dfc6fc8814bda7881c4"
+            },
+            {
+                "label": "BleachBit-6.0.6-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/bleachbit/bleachbit/releases/download/v6.0.6/BleachBit-6.0.6-portable.zip",
+                "size": 20402357,
+                "sha256": "285a53c01f95cf859250c1b612f27c2ff1247c5af53eb8e8c6744b374f1ed19e"
+            }
+        ],
+        "features": [
+            "Scans and removes temporary files, caches, and logs",
+            "Supports cleaning for many web browsers and applications",
+            "Preview mode shows files that will be deleted",
+            "Secure deletion overwrites files to protect privacy",
+            "Portable ZIP version requires no installation",
+            "Multilingual interface with many translations",
+            "Custom cleaner definitions can be added",
+            "Runs on Windows and Linux"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the official GitHub release page and download the installer (EXE) or the portable ZIP.",
+            "If you downloaded the EXE, run the file and follow the setup wizard.",
+            "If you downloaded the portable ZIP, extract it to a folder of your choice.",
+            "Start BleachBit by launching BleachBit.exe from the installation folder or the extracted folder.",
+            "Configure the cleaners you want and run a scan."
+        ],
+        "related_software": [],
+        "seo_title": "BleachBit Free Download for Windows",
+        "meta_description": "Download BleachBit free for Windows. BleachBit is a system cleaner that removes unnecessary files to free disk space and protect privacy.",
+        "canonical_url": "https://codehimblog.github.io/software/bleachbit/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "keepassxc",
         "name": "KeePassXC",
         "slug": "keepassxc",
@@ -420,61 +662,133 @@
             "x86",
             "ARM64"
         ],
-        "latest_version": null,
-        "release_date": null,
-        "release_url": "https://notepad-plus-plus.org/downloads/",
+        "latest_version": "8.9.9.1",
+        "release_date": "2026-11-12",
+        "release_url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/tag/v8.9.9.1",
         "primary_download": {
-            "url": "https://notepad-plus-plus.org/downloads/",
-            "filename": "Installer (x64)",
-            "size": null,
+            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.Installer.x64.exe",
+            "filename": "npp.8.9.9.1.Installer.x64.exe",
+            "size": 7048536,
             "architecture": "x64",
             "format": "EXE installer"
         },
         "download_assets": [
             {
-                "label": "Installer (ARM64)",
+                "label": "npp.8.9.9.1.Installer.arm64.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": "ARM64",
-                "url": "https://notepad-plus-plus.org/downloads/",
-                "size": null,
-                "sha256": null
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.Installer.arm64.exe",
+                "size": 6717024,
+                "sha256": "e5ac20348d83693a2816f4ed8e4a3118d5759f258af07c8cec525d1e0cc026e9"
             },
             {
-                "label": "Installer (x64)",
+                "label": "npp.8.9.9.1.Installer.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.Installer.exe",
+                "size": 6897152,
+                "sha256": "8f6f564e628d35f20fdf0f38fa827f843c29b834c2e16f5e70091acac259df95"
+            },
+            {
+                "label": "npp.8.9.9.1.Installer.x64.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://notepad-plus-plus.org/downloads/",
-                "size": null,
-                "sha256": null
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.Installer.x64.exe",
+                "size": 7048536,
+                "sha256": "ce3267f5c4e7e42f847e00f4b20234da6150647203033cdde34a69593efc3152"
             },
             {
-                "label": "Installer (x86)",
-                "format": "EXE installer",
+                "label": "npp.8.9.9.1.Installer.x64.msi",
+                "format": "MSI installer",
                 "kind": "installer",
-                "architecture": "x86",
-                "url": "https://notepad-plus-plus.org/downloads/",
-                "size": null,
-                "sha256": null
+                "architecture": "x64",
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.Installer.x64.msi",
+                "size": 7933952,
+                "sha256": "e3b0607a092ce2604fbdac027db2c94915995e8e568ebd226f8c5493c2f61a80"
             },
             {
-                "label": "Portable package",
+                "label": "npp.8.9.9.1.portable.7z",
                 "format": "Portable archive",
                 "kind": "portable",
-                "architecture": "x64 / x86 / ARM6",
-                "url": "https://notepad-plus-plus.org/downloads/",
-                "size": null,
-                "sha256": null
+                "architecture": null,
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.portable.7z",
+                "size": 5896430,
+                "sha256": "83202b830253c9011b3e89a9bafd0675eba19dd569165ef98b9ac1d699b06c83"
             },
             {
-                "label": "Source code",
-                "format": "Source code archive",
-                "kind": "source",
-                "architecture": "Any",
-                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases",
-                "size": null,
-                "sha256": null
+                "label": "npp.8.9.9.1.portable.arm64.7z",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.portable.arm64.7z",
+                "size": 5859127,
+                "sha256": "b21a8c3fe11c6b4e098b60cc4890eef50c213d70b7bceda25ce988ac5f0efaf7"
+            },
+            {
+                "label": "npp.8.9.9.1.portable.minimalist.7z",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.portable.minimalist.7z",
+                "size": 3870783,
+                "sha256": "1baebaf490fc226a06fe51fabaa6b54b9c2dce4395d40e26c352c6d4d6d27ae7"
+            },
+            {
+                "label": "npp.8.9.9.1.portable.minimalist.arm64.7z",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.portable.minimalist.arm64.7z",
+                "size": 3883478,
+                "sha256": "00d4128068209d10f92d039a14188d3cbd1448f6af4f748ede9ba7acc5db7924"
+            },
+            {
+                "label": "npp.8.9.9.1.portable.minimalist.x64.7z",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.portable.minimalist.x64.7z",
+                "size": 4089162,
+                "sha256": "3a3afa949ff6a78dbcc3c52eeec71d97579a6ecc5876363ef5d8ef94a7f100e6"
+            },
+            {
+                "label": "npp.8.9.9.1.portable.x64.7z",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.portable.x64.7z",
+                "size": 6167878,
+                "sha256": "bb3d02ffac604dda3cac890a5ac470e2844235b46498c75e1bf78c3f55bc0818"
+            },
+            {
+                "label": "npp.8.9.9.1.portable.arm64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.portable.arm64.zip",
+                "size": 8211882,
+                "sha256": "de0c5d1f15ccbdeac05421e1c282cb3d7e2da97bac674efa576d8ace04a5f20b"
+            },
+            {
+                "label": "npp.8.9.9.1.portable.x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.portable.x64.zip",
+                "size": 8369720,
+                "sha256": "cbcefa34677e10fe6dd19802f7d6b3b9860cd6de62afeaae7680e09c51b47779"
+            },
+            {
+                "label": "npp.8.9.9.1.portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9.1/npp.8.9.9.1.portable.zip",
+                "size": 7937849,
+                "sha256": "7b48fceec762e80c2bc781a59739403f7af8b6136ed0ffc369a2680c535ab78a"
             }
         ],
         "features": [
@@ -579,52 +893,52 @@
             "x64",
             "ARM64"
         ],
-        "latest_version": null,
-        "release_date": null,
-        "release_url": "https://github.com/obsproject/obs-studio/releases",
+        "latest_version": "33.0.1",
+        "release_date": "2026-10-29",
+        "release_url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.1",
         "primary_download": {
-            "url": "https://obsproject.com/download",
-            "filename": "Windows installer (x64)",
-            "size": null,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-x64-Installer.exe",
+            "filename": "OBS-Studio-33.0.1-Windows-x64-Installer.exe",
+            "size": 186662440,
             "architecture": "x64",
             "format": "EXE installer"
         },
         "download_assets": [
             {
-                "label": "Windows installer (x64)",
+                "label": "OBS-Studio-33.0.1-Windows-x64-Installer.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://obsproject.com/download",
-                "size": null,
-                "sha256": null
+                "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-x64-Installer.exe",
+                "size": 186662440,
+                "sha256": "37ecde4d9a28e8aeeb07623c8469b5d558eb264e02ccf435bb859891c401758b"
             },
             {
-                "label": "Windows ZIP package (ARM64)",
+                "label": "OBS-Studio-33.0.1-Windows-arm64.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": "ARM64",
-                "url": "https://github.com/obsproject/obs-studio/releases",
-                "size": null,
-                "sha256": null
+                "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-arm64.zip",
+                "size": 200182561,
+                "sha256": "5bee731f6a9ce843ac670b4ccf048a54cdccb8b06acb3fd1c7928b9705f11100"
             },
             {
-                "label": "Windows ZIP package (x64)",
+                "label": "OBS-Studio-33.0.1-Windows-x64.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": "x64",
-                "url": "https://github.com/obsproject/obs-studio/releases",
-                "size": null,
-                "sha256": null
+                "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-x64.zip",
+                "size": 223786669,
+                "sha256": "0d9436451c2d772b33428e3fdae9776f071895c335de17283176306fb72651d3"
             },
             {
-                "label": "Source code",
+                "label": "OBS-Studio-33.0.1-Sources.tar.gz",
                 "format": "Source code archive",
                 "kind": "source",
-                "architecture": "Any",
-                "url": "https://github.com/obsproject/obs-studio/releases",
-                "size": null,
-                "sha256": null
+                "architecture": null,
+                "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Sources.tar.gz",
+                "size": 16719400,
+                "sha256": "c8d3a8f69a0f17970ac0a8f2a2462f1bc4dacd324f6da0c4b408d442d4798913"
             }
         ],
         "features": [
@@ -729,43 +1043,34 @@
         "supported_architectures": [
             "x64"
         ],
-        "latest_version": null,
-        "release_date": null,
-        "release_url": "https://github.com/ShareX/ShareX/releases",
+        "latest_version": "22.4.0",
+        "release_date": "2026-11-08",
+        "release_url": "https://github.com/ShareX/ShareX/releases/tag/v22.4.0",
         "primary_download": {
-            "url": "https://github.com/ShareX/ShareX/releases",
-            "filename": "Setup installer (x64)",
-            "size": null,
+            "url": "https://github.com/ShareX/ShareX/releases/download/v22.4.0/ShareX-22.4.0-setup-x64.exe",
+            "filename": "ShareX-22.4.0-setup-x64.exe",
+            "size": 145391368,
             "architecture": "x64",
             "format": "EXE installer"
         },
         "download_assets": [
             {
-                "label": "Setup installer (x64)",
+                "label": "ShareX-22.4.0-setup-x64.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://github.com/ShareX/ShareX/releases",
-                "size": null,
-                "sha256": null
+                "url": "https://github.com/ShareX/ShareX/releases/download/v22.4.0/ShareX-22.4.0-setup-x64.exe",
+                "size": 145391368,
+                "sha256": "5fac6ee58600976586d706f164b0f8a992fff7679bf2724a1f678c4a63894a8e"
             },
             {
-                "label": "Portable ZIP (x64)",
+                "label": "ShareX-22.4.0-portable-x64.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": "x64",
-                "url": "https://github.com/ShareX/ShareX/releases",
-                "size": null,
-                "sha256": null
-            },
-            {
-                "label": "Source code",
-                "format": "Source code archive",
-                "kind": "source",
-                "architecture": "Any",
-                "url": "https://github.com/ShareX/ShareX/releases",
-                "size": null,
-                "sha256": null
+                "url": "https://github.com/ShareX/ShareX/releases/download/v22.4.0/ShareX-22.4.0-portable-x64.zip",
+                "size": 209735803,
+                "sha256": "c321ed353a6c6ae32093927f97c22e0f0627628ce6fa47ed366bcefd05936c7b"
             }
         ],
         "features": [
