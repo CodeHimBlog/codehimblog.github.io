@@ -902,6 +902,130 @@
         "verification_status": "partial"
     },
     {
+        "id": "hardwarevisualizer",
+        "name": "HardwareVisualizer",
+        "slug": "hardwarevisualizer",
+        "summary": "A cross‑platform hardware monitor with real‑time metrics, local history, and customizable dashboards.",
+        "description": [
+            "HardwareVisualizer is a desktop program that shows live information about your computer’s CPU, GPU, memory, disks and other components. It also keeps a history so you can review performance over days or months and lets you arrange the data in custom dashboards.",
+            "The application combines three main parts: a live performance view that updates in real time, a system specifications sheet that lists the hardware present in the machine, and an Insights section that analyses the stored history to highlight trends and potential issues. Users can create their own dashboards, choose which sensors to display, and change the background image. The installer can optionally set up the PawnIO service to provide additional sensor data such as CPU power and motherboard temperatures. The program runs on Windows, Linux and macOS, but the Windows version is provided as an MSI or EXE installer and can also be installed via the Windows Package Manager (winget)."
+        ],
+        "icon": {
+            "text": "H",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/shm11C3/HardwareVisualizer#license",
+        "official_website": "https://hardviz.com/",
+        "download_page": "https://github.com/shm11C3/HardwareVisualizer/releases/tag/v1.11.3",
+        "repository_url": "https://github.com/shm11C3/HardwareVisualizer",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.11.3",
+        "release_date": "2026-11-01",
+        "release_url": "https://github.com/shm11C3/HardwareVisualizer/releases/tag/v1.11.3",
+        "primary_download": {
+            "url": "https://github.com/shm11C3/HardwareVisualizer/releases/download/v1.11.3/HardwareVisualizer_1.11.3_x64-setup.exe",
+            "filename": "HardwareVisualizer_1.11.3_x64-setup.exe",
+            "size": 11434128,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "HardwareVisualizer_1.11.3_aarch64.app.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "ARM64",
+                "url": "https://github.com/shm11C3/HardwareVisualizer/releases/download/v1.11.3/HardwareVisualizer_1.11.3_aarch64.app.tar.gz",
+                "size": 15553959,
+                "sha256": "a2ea8a683f346c1785353a36ebb8726636cc3c05237b4aa9c48a73e67305be4b"
+            },
+            {
+                "label": "HardwareVisualizer_1.11.3_x64.app.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "x64",
+                "url": "https://github.com/shm11C3/HardwareVisualizer/releases/download/v1.11.3/HardwareVisualizer_1.11.3_x64.app.tar.gz",
+                "size": 17136104,
+                "sha256": "533c83bdce81838ebee6fbcfc53e497790b77c4ebbe3c6ab1702750f3f59236c"
+            },
+            {
+                "label": "HardwareVisualizer_1.11.3_x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/shm11C3/HardwareVisualizer/releases/download/v1.11.3/HardwareVisualizer_1.11.3_x64-setup.exe",
+                "size": 11434128,
+                "sha256": "af0be64fc2108822edd9eb3887ce8e6fa2c2341818b0b5f3019dfdc33cdbb4e1"
+            },
+            {
+                "label": "HardwareVisualizer_1.11.3_x64_en-US.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/shm11C3/HardwareVisualizer/releases/download/v1.11.3/HardwareVisualizer_1.11.3_x64_en-US.msi",
+                "size": 15761408,
+                "sha256": "25bc1d6ac65158a70952c5876aa9c86d358d38fc5b08329248edf12f60924428"
+            }
+        ],
+        "features": [
+            "Real‑time monitoring of CPU, GPU, memory, disks and other sensors",
+            "Historical logging of hardware metrics over days and months",
+            "Customizable dashboards with user‑chosen widgets and backgrounds",
+            "System specifications sheet that lists all detected hardware",
+            "Insights view that analyses trends and highlights potential problems",
+            "Optional integration with PawnIO for extended sensor support",
+            "Cross‑platform binaries (Windows, Linux, macOS)",
+            "Installation via MSI, EXE or winget",
+            "Portable mode available by extracting the ZIP archive",
+            "Automatic updates through GitHub releases"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download the MSI or EXE file from the Assets section of the latest GitHub release",
+            "Run the downloaded installer and follow the on‑screen wizard",
+            "Optionally enable the PawnIO component during installation",
+            "Finish the setup and launch HardwareVisualizer from the Start menu or desktop shortcut"
+        ],
+        "related_software": [],
+        "seo_title": "HardwareVisualizer Free Download for Windows",
+        "meta_description": "Download HardwareVisualizer free for Windows. A cross‑platform hardware monitor with real‑time metrics, local history, and customizable dashboards.",
+        "canonical_url": "https://codehimblog.github.io/software/hardwarevisualizer/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "headroom-desktop",
         "name": "Headroom Desktop",
         "slug": "headroom-desktop",
