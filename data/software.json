@@ -289,6 +289,102 @@
         "verification_status": "partial"
     },
     {
+        "id": "astraeus",
+        "name": "Astraeus",
+        "slug": "astraeus",
+        "summary": "A native Windows dashboard that slides out from the edge of the screen, providing quick access to media, system controls and widgets.",
+        "description": [
+            "Astraeus adds a thin strip to the top (or side) of your screen. When you hover the mouse or press Win+Alt+A, a panel expands with a media player, quick toggles, system stats and other tools. It disappears when not in use, using almost no resources.",
+            "Astraeus is a lightweight, native Windows utility written in C++20 using Direct2D and DirectComposition. It does not require any runtime, installer or web view. The panel can appear from the top edge by default, or be moved to the left or right side. It hides automatically when you move the cursor away, when a fullscreen app runs, or when you press the hotkey again. The utility includes a media player with album art, visualizer, fullscreen lyrics, quick toggles for Wi‑Fi, Bluetooth, volume, brightness and more. Themes adapt to dark, light, glass or custom colors, and can even pull palettes from your wallpaper or album art. The program is designed to stay idle when closed, returning GPU usage to the system within seconds."
+        ],
+        "icon": {
+            "text": "A",
+            "color": "#7C3AED"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/Icetist/Astraeus#license",
+        "official_website": "https://icetist.github.io/Astraeus/",
+        "download_page": "https://github.com/Icetist/Astraeus/releases/tag/v2.6.6",
+        "repository_url": "https://github.com/Icetist/Astraeus",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.6.6",
+        "release_date": "2026-11-13",
+        "release_url": "https://github.com/Icetist/Astraeus/releases/tag/v2.6.6",
+        "primary_download": {
+            "url": "https://github.com/Icetist/Astraeus/releases/download/v2.6.6/Astraeus.exe",
+            "filename": "Astraeus.exe",
+            "size": 4153856,
+            "architecture": null,
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "Astraeus.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/Icetist/Astraeus/releases/download/v2.6.6/Astraeus.exe",
+                "size": 4153856,
+                "sha256": "4ee537c17e727df8dd04b469afbfdf12f798f9c18d9bb9de819d3a082c72397a"
+            }
+        ],
+        "features": [
+            "Media player with album art, visualizer and fullscreen lyrics.",
+            "Quick toggles for Wi‑Fi, Bluetooth, volume, brightness and other system controls.",
+            "Small pill‑style widget that shows current media while other apps are fullscreen.",
+            "Multiple color themes, including automatic palette extraction from wallpaper.",
+            "Very low resource usage; no rendering or GPU usage when the panel is hidden.",
+            "Hotkey (Win+Alt+A) to open or close the dashboard.",
+            "Supports multiple monitors with optional spread of fullscreen player.",
+            "Built as a single native executable, no installer or additional runtime required."
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the release page and click the Astraeus.exe download button.",
+            "Save the file to a convenient location.",
+            "If Windows SmartScreen warns, click \"More info\" then \"Run anyway\".",
+            "Double‑click Astraeus.exe to start the program.",
+            "Use the hotkey Win+Alt+A or hover the screen edge to open the dashboard."
+        ],
+        "related_software": [],
+        "seo_title": "Astraeus Free Download for Windows",
+        "meta_description": "Download Astraeus free for Windows. A native Windows dashboard that slides out from the edge of the screen, providing quick access to media, system controls an…",
+        "canonical_url": "https://codehimblog.github.io/software/astraeus/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "autorunmanager",
         "name": "AutoRunManager",
         "slug": "autorunmanager",
@@ -513,6 +609,110 @@
         "seo_title": "BleachBit Free Download for Windows",
         "meta_description": "Download BleachBit free for Windows. BleachBit is a system cleaner that removes unnecessary files to free disk space and protect privacy.",
         "canonical_url": "https://codehimblog.github.io/software/bleachbit/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "desktop-bubble-chat",
+        "name": "Desktop Bubble Chat",
+        "slug": "desktop-bubble-chat",
+        "summary": "Floating chat head application that lets you run multiple messenger accounts in lightweight, movable windows on your desktop.",
+        "description": [
+            "Desktop Bubble Chat provides a chat‑head style interface similar to mobile messaging apps. Each chat appears as a small, draggable bubble that stays on top of other windows, allowing quick access to conversations without opening full messenger windows.",
+            "The program creates independent chat heads for various messenger services, each running in its own sandboxed webview. It is built with a Rust core for low memory usage and uses hardware acceleration for smooth animations. The application works on multiple platforms, but Windows users can download an installer or MSI package from the official GitHub release page. After installation, the chat heads appear on the desktop and can be moved, docked to screen edges, or hidden with a single click. The software is open source under the MIT license, so you may inspect, modify, or redistribute the code."
+        ],
+        "icon": {
+            "text": "D",
+            "color": "#334155"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/Lelequyngocquy/desktop-bubble-chat#license",
+        "official_website": null,
+        "download_page": "https://github.com/Lelequyngocquy/desktop-bubble-chat/releases/tag/v1.0.5",
+        "repository_url": "https://github.com/Lelequyngocquy/desktop-bubble-chat",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.0.5",
+        "release_date": "2026-11-12",
+        "release_url": "https://github.com/Lelequyngocquy/desktop-bubble-chat/releases/tag/v1.0.5",
+        "primary_download": {
+            "url": "https://github.com/Lelequyngocquy/desktop-bubble-chat/releases/download/v1.0.5/DesktopBubbleChat_1.0.5_x64-setup.exe",
+            "filename": "DesktopBubbleChat_1.0.5_x64-setup.exe",
+            "size": 3384380,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "DesktopBubbleChat_1.0.5_x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/Lelequyngocquy/desktop-bubble-chat/releases/download/v1.0.5/DesktopBubbleChat_1.0.5_x64-setup.exe",
+                "size": 3384380,
+                "sha256": "7e4241d5c06927fb2f2090564e1526bf572c6572527648c51c15236016906d1f"
+            },
+            {
+                "label": "DesktopBubbleChat_1.0.5_x64_en-US.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/Lelequyngocquy/desktop-bubble-chat/releases/download/v1.0.5/DesktopBubbleChat_1.0.5_x64_en-US.msi",
+                "size": 4644864,
+                "sha256": "3931b100d70ac6ea4162def932b130ebd7e4144a14097188a446eb6dc6154c1b"
+            }
+        ],
+        "features": [
+            "Floating chat heads that stay on top of other windows",
+            "Supports multiple messenger accounts simultaneously",
+            "Low memory usage with automatic RAM trimming",
+            "Hardware‑accelerated vector avatars and smooth physics animations",
+            "Edge docking and click‑through interaction",
+            "Portable and installer versions available",
+            "Open source and extensible via plugins"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page on GitHub.",
+            "Download the Windows installer (DesktopBubbleChat_1.0.5_x64-setup.exe) or the MSI file.",
+            "Run the downloaded file and follow the on‑screen prompts to install.",
+            "After installation, launch Desktop Bubble Chat from the Start menu or desktop shortcut.",
+            "The chat heads will appear; you can add messenger accounts from the app’s menu."
+        ],
+        "related_software": [],
+        "seo_title": "Desktop Bubble Chat Free Download for Windows",
+        "meta_description": "Download Desktop Bubble Chat free for Windows. Floating chat head application that lets you run multiple messenger accounts in lightweight, movable windows on…",
+        "canonical_url": "https://codehimblog.github.io/software/desktop-bubble-chat/",
         "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
