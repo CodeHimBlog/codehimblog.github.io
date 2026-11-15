@@ -3361,5 +3361,110 @@
         "date_added": "2026-11-15",
         "last_verified_at": "2026-11-15",
         "verification_status": "verified"
+    },
+    {
+        "id": "winappmigrator",
+        "name": "WinAppMigrator",
+        "slug": "winappmigrator",
+        "summary": "Creates a single installer from an already installed Windows program, allowing you to move it to another PC even when the original installer is missing.",
+        "description": [
+            "WinAppMigrator lets you capture the files, registry entries, services, and runtimes of an installed Windows application and package them into a portable installer. It works from a running PC, a pulled‑out drive, a disk image, or over the network, making it easy to migrate software to a new machine.",
+            "The tool scans the selected application on the source system, gathers all components needed for it to run, and builds a self‑contained .exe (or an .exe plus data file if the package is larger than the Windows executable size limit). It can operate on apps from Windows 7, Vista, 8, 8.1 and later, and creates installers that run on newer Windows versions. The generated installer shows a preview of the changes it will make, verifies file hashes during installation, and can roll back if something fails. Runtimes such as Visual C++ and .NET are embedded when needed, so the target PC does not need an internet connection to install them. A small client on the source PC allows secure, encrypted transfer of the app data over the network."
+        ],
+        "icon": {
+            "text": "W",
+            "color": "#7C3AED"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/RandyNorthrup/WinAppMigrator#license",
+        "official_website": "https://randynorthrup.github.io/WinAppMigrator/",
+        "download_page": "https://github.com/RandyNorthrup/WinAppMigrator/releases/tag/v0.6.1",
+        "repository_url": "https://github.com/RandyNorthrup/WinAppMigrator",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.6.1",
+        "release_date": "2026-11-11",
+        "release_url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/tag/v0.6.1",
+        "primary_download": {
+            "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.6.1/WinAppMigrator-v0.6.1.exe",
+            "filename": "WinAppMigrator-v0.6.1.exe",
+            "size": 32371568,
+            "architecture": null,
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "WinAppMigrator-v0.6.1.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.6.1/WinAppMigrator-v0.6.1.exe",
+                "size": 32371568,
+                "sha256": "028d7a9b6ac5d5f31fb3bc190ec82fd777a00bfe4761eeb3f95d3210f01c03d4"
+            },
+            {
+                "label": "WinAppMigrator-v0.6.1-windows-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.6.1/WinAppMigrator-v0.6.1-windows-x64.zip",
+                "size": 13825318,
+                "sha256": "ff624f78b3a5cbdc656bae985c6b0bb9340bfb4c5719179bec88154e2d758bc8"
+            }
+        ],
+        "features": [
+            "Captures files, registry entries, services, drivers, scheduled tasks and shortcuts",
+            "Builds a single portable .exe installer (or .exe plus data file if needed)",
+            "Works from a live PC, a pulled‑out drive, a VHD/VHDX image, or over the network",
+            "Includes required Visual C++ and .NET runtimes automatically",
+            "Shows a preview of what will be installed and its size before building",
+            "Verifies package integrity with SHA‑256 hashes during install",
+            "Can undo the installation from the Settings screen",
+            "Handles apps from Windows 7, Vista, 8, 8.1 and later"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the GitHub releases page and download either the installer .exe or the portable ZIP.",
+            "If you downloaded the .exe, run it and follow the prompts to install WinAppMigrator.",
+            "If you downloaded the ZIP, extract it to a folder and run WinAppMigrator.exe.",
+            "Launch WinAppMigrator from the Start menu or the extracted folder.",
+            "Choose the source application and follow the on‑screen steps to create the installer."
+        ],
+        "related_software": [],
+        "seo_title": "WinAppMigrator Free Download for Windows",
+        "meta_description": "Download WinAppMigrator free for Windows. Creates a single installer from an already installed Windows program, allowing you to move it to another PC even when…",
+        "canonical_url": "https://codehimblog.github.io/software/winappmigrator/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
     }
 ]
