@@ -3466,5 +3466,214 @@
         "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
+    },
+    {
+        "id": "yengi",
+        "name": "Yengi",
+        "slug": "yengi",
+        "summary": "Yengi is a free, open‑source Windows AI integrated development environment that lets you work with local and cloud large language models, run autonomous tool loops, and use live copilots for Blender and Unity.",
+        "description": [
+            "Yengi provides a desktop IDE where developers can interact with AI models, have the system plan tasks, call tools, modify code, verify builds and automatically fix errors. It also includes specialised pipelines that generate 3D assets or Unity scripts directly inside the respective applications.",
+            "The program is built on .NET 10 LTS and runs only on Windows. It supports local LLMs such as Ollama, Qwen, DeepSeek as well as cloud APIs. The autonomous agent loop follows a Plan → Tool Call → Code Mutation → Verification → Auto‑Fix cycle, allowing the IDE to automatically edit files, run builds, and repair failures. For 3D work, Yengi offers a two‑stage pipeline that first creates a detailed blueprint and then generates Blender Python or Unity C# code, with optional real‑time viewport vision using multimodal models. The IDE includes a workspace with settings to enable or disable these features, and it can connect to image generation services with diagnostic tools for connection testing."
+        ],
+        "icon": {
+            "text": "Y",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU Affero General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/mdaiWorks/yengi#license",
+        "official_website": "https://youtu.be/l0tdhvCmwNI",
+        "download_page": "https://github.com/mdaiWorks/yengi/releases/tag/v2.0.3",
+        "repository_url": "https://github.com/mdaiWorks/yengi",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.0.3",
+        "release_date": "2026-11-05",
+        "release_url": "https://github.com/mdaiWorks/yengi/releases/tag/v2.0.3",
+        "primary_download": {
+            "url": "https://github.com/mdaiWorks/yengi/releases/download/v2.0.3/Yengi_Setup_v2.0.3.exe",
+            "filename": "Yengi_Setup_v2.0.3.exe",
+            "size": 59819498,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Yengi_Setup_v2.0.3.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/mdaiWorks/yengi/releases/download/v2.0.3/Yengi_Setup_v2.0.3.exe",
+                "size": 59819498,
+                "sha256": "9eddd16f3655739996d02ec520edbda0efd5949817bdc36925b4e64f46758f7e"
+            }
+        ],
+        "features": [
+            "Integrates local and cloud AI models in one IDE",
+            "Autonomous agent loop that plans, executes tools, edits code and self‑heals",
+            "Live Blender and Unity copilots with two‑stage asset generation pipeline",
+            "Vision capability to analyse Blender viewport snapshots",
+            "Built on .NET 10 LTS for modern Windows environments",
+            "Diagnostic connection testing for image generation services",
+            "Supports multiple programming languages and build verification",
+            "Portable installer with optional settings for tool toggles"
+        ],
+        "requirements": [
+            "Windows operating system",
+            ".NET 10 LTS runtime installed",
+            "Access to local LLM servers or internet for cloud APIs if used"
+        ],
+        "installation_instructions": [
+            "Download the Yengi_Setup.exe file from the official GitHub release page.",
+            "Run the installer and follow the on‑screen prompts.",
+            "After installation, launch Yengi from the Start menu or desktop shortcut.",
+            "Configure your preferred AI models and tools in the workspace settings.",
+            "Start a new project and begin using the AI‑assisted IDE features."
+        ],
+        "related_software": [],
+        "seo_title": "Yengi Free Download for Windows",
+        "meta_description": "Download Yengi free for Windows. Yengi is a free, open‑source Windows AI integrated development environment that lets you work with local and cloud large langu…",
+        "canonical_url": "https://codehimblog.github.io/software/yengi/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "youboard",
+        "name": "YouBoard",
+        "slug": "youboard",
+        "summary": "YouBoard is a local clipboard history manager that records text, images, files and URLs, stores them encrypted on the computer, and offers AI processing, desktop widget, phone transfer and optional cloud sync.",
+        "description": [
+            "YouBoard lets you automatically keep a history of everything you copy. The records are saved locally with encryption, so no data is sent to the cloud unless you enable optional sync. It provides a small always‑on‑top widget, keyboard shortcuts, and integration with the Windows clipboard shortcut Win+V.",
+            "YouBoard is a lightweight clipboard manager for Windows. It captures four types of content—text, images, files and URLs—and shows them in a searchable list. You can pin, tag, favorite, sort, export or roll back to a previous snapshot. An integrated AI feature can summarize, translate, rewrite or extract key information from any selected entry. A desktop widget displays the current clipboard and the most recent items without stealing focus. The program can replace the default Win+V clipboard history window, and it offers a phone transfer mode that works over the same Wi‑Fi network. Optional cloud sync uses GitHub Gist or WebDAV with end‑to‑end encryption. A secure “vault” lets you store private items that are encrypted separately and excluded from history and sync. The UI supports dark, light and custom skins, and the whole application runs in about 5 MB of background memory. Both an installer and a portable single‑file EXE are provided."
+        ],
+        "icon": {
+            "text": "Y",
+            "color": "#BE123C"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/cloudxys/YouBoard#license",
+        "official_website": null,
+        "download_page": "https://github.com/cloudxys/YouBoard/releases/tag/v3.3.8",
+        "repository_url": "https://github.com/cloudxys/YouBoard",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "3.3.8",
+        "release_date": "2026-11-06",
+        "release_url": "https://github.com/cloudxys/YouBoard/releases/tag/v3.3.8",
+        "primary_download": {
+            "url": "https://github.com/cloudxys/YouBoard/releases/download/v3.3.8/YouBoard_Setup_v3.3.8.exe",
+            "filename": "YouBoard_Setup_v3.3.8.exe",
+            "size": 38360265,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "YouBoard.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/cloudxys/YouBoard/releases/download/v3.3.8/YouBoard.exe",
+                "size": 35558285,
+                "sha256": "73b48eadc330afad0f8d09ac29f9ce91a83cb63ba302cb2d4214681bb196493a"
+            },
+            {
+                "label": "YouBoard_Setup_v3.3.8.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/cloudxys/YouBoard/releases/download/v3.3.8/YouBoard_Setup_v3.3.8.exe",
+                "size": 38360265,
+                "sha256": "fb9140eb04d4b2f3e191a44bc17c6acaec290e5998c0161c9035f8974a884e6a"
+            }
+        ],
+        "features": [
+            "Records text, images, files and URLs automatically",
+            "Searchable list with pin, tag, favorite and sort options",
+            "AI processing for summarizing, translating, rewriting and extracting information",
+            "Desktop widget that shows recent items without stealing focus",
+            "Optional Win+V replacement to open YouBoard with a shortcut",
+            "Phone transfer over Wi‑Fi for viewing and sending clipboard items",
+            "Cloud sync via GitHub Gist or WebDAV with end‑to‑end encryption",
+            "Secure vault for private items with separate encryption",
+            "Dark, light and custom skins with background blur",
+            "Portable single‑file EXE and installer version"
+        ],
+        "requirements": [
+            "No additional runtime required; all dependencies are bundled"
+        ],
+        "installation_instructions": [
+            "Open the Releases page on GitHub.",
+            "Download YouBoard_Setup_v3.3.8.exe for the installer or YouBoard.exe for the portable version.",
+            "Run the installer and follow the prompts, or double‑click the portable EXE to start.",
+            "After installation, launch YouBoard from the Start menu or by double‑clicking the shortcut.",
+            "Configure shortcuts and settings as needed within the application."
+        ],
+        "related_software": [],
+        "seo_title": "YouBoard Free Download for Windows",
+        "meta_description": "Download YouBoard free for Windows. YouBoard is a local clipboard history manager that records text, images, files and URLs, stores them encrypted on the compu…",
+        "canonical_url": "https://codehimblog.github.io/software/youboard/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
     }
 ]
