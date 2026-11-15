@@ -421,6 +421,166 @@
         "verification_status": "partial"
     },
     {
+        "id": "electerm",
+        "name": "electerm",
+        "slug": "electerm",
+        "summary": "Free and open‑source client for terminal, SSH, SFTP, FTP, Telnet, serial port, RDP, VNC and Spice connections.",
+        "description": [
+            "electerm provides a graphical interface that lets you connect to remote systems using many protocols. It runs on Windows and supports both x64 and ARM64 installers.",
+            "electerm is a multi‑protocol client that combines terminal, file transfer and remote desktop capabilities in one program. It can open SSH, SFTP, FTP, Telnet, serial‑port, RDP, VNC and Spice sessions. The UI is built with Electron, so it works consistently across platforms. The Windows version is available as an installer for x64 and ARM64 architectures, as well as an MSIX package. It is open‑source under the MIT license, meaning anyone can use, modify and redistribute the software."
+        ],
+        "icon": {
+            "text": "E",
+            "color": "#7C3AED"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/electerm/electerm#license",
+        "official_website": "https://electerm.org",
+        "download_page": "https://github.com/electerm/electerm/releases/tag/v5.10.0",
+        "repository_url": "https://github.com/electerm/electerm",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/electerm/electerm#readme",
+                "note": "Stated in the project README: “Windows 7”"
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "5.10.0",
+        "release_date": "2026-11-10",
+        "release_url": "https://github.com/electerm/electerm/releases/tag/v5.10.0",
+        "primary_download": {
+            "url": "https://github.com/electerm/electerm/releases/download/v5.10.0/electerm-5.10.0-win-x64-installer.exe",
+            "filename": "electerm-5.10.0-win-x64-installer.exe",
+            "size": 120172861,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "electerm-5.10.0-win-arm64.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "ARM64",
+                "url": "https://github.com/electerm/electerm/releases/download/v5.10.0/electerm-5.10.0-win-arm64.tar.gz",
+                "size": 150549343,
+                "sha256": "191cafa965d51cb307eddfcf086f3bd9c986c5b5df1ca16199ec002b221e150a"
+            },
+            {
+                "label": "electerm-5.10.0-win-x64-loose.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "x64",
+                "url": "https://github.com/electerm/electerm/releases/download/v5.10.0/electerm-5.10.0-win-x64-loose.tar.gz",
+                "size": 152568122,
+                "sha256": "a39d503c1121e22f5debb269b55cd9ae62942ba5be2ab2cf9a9034e12fdf1e4e"
+            },
+            {
+                "label": "electerm-5.10.0-win-x64-portable.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "x64",
+                "url": "https://github.com/electerm/electerm/releases/download/v5.10.0/electerm-5.10.0-win-x64-portable.tar.gz",
+                "size": 152586602,
+                "sha256": "42ad9468180729ef2dd5b82381496fb26d895fd1caddb1443db9db841593d902"
+            },
+            {
+                "label": "electerm-5.10.0-win-x64.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "x64",
+                "url": "https://github.com/electerm/electerm/releases/download/v5.10.0/electerm-5.10.0-win-x64.tar.gz",
+                "size": 152586401,
+                "sha256": "92caf565823a9a26b8e337da93a24765d5509398388dd00701b7db5977d20ba7"
+            },
+            {
+                "label": "electerm-5.10.0-win7.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/electerm/electerm/releases/download/v5.10.0/electerm-5.10.0-win7.tar.gz",
+                "size": 98347313,
+                "sha256": "92ab0b47958cce925c1ede55306c5bc24315113dbeac6d3e0dd3acad6fb90415"
+            },
+            {
+                "label": "electerm-5.10.0-win-arm64-installer.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/electerm/electerm/releases/download/v5.10.0/electerm-5.10.0-win-arm64-installer.exe",
+                "size": 114420008,
+                "sha256": "1e3a7b6e1b4d2c175b915a8131369fe0a2c0bd8ebd2a6ee057caab7cbd39d188"
+            },
+            {
+                "label": "electerm-5.10.0-win-x64-installer.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/electerm/electerm/releases/download/v5.10.0/electerm-5.10.0-win-x64-installer.exe",
+                "size": 120172861,
+                "sha256": "a3e8f222663dd86cfafc21f0e3b0bc277ec4ed0b6202d5a08fa6047d51c06c78"
+            },
+            {
+                "label": "electerm-5.10.0-win-x64.appx",
+                "format": "MSIX / AppX package",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/electerm/electerm/releases/download/v5.10.0/electerm-5.10.0-win-x64.appx",
+                "size": 176528929,
+                "sha256": "74048a47943c7baa168f40aeb3a86d954c1907f430cbe7c934e404380c8ffc4d"
+            }
+        ],
+        "features": [
+            "Connect via SSH, SFTP, FTP, Telnet, serial port, RDP, VNC and Spice",
+            "Supports multiple sessions in tabs",
+            "Built‑in file manager for remote file operations",
+            "Customizable themes and layout",
+            "Portable and installer versions for x64 and ARM64",
+            "Integrated AI assistance for commands",
+            "Widget marketplace for extending functionality"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page on GitHub.",
+            "Download the installer matching your CPU (x64 or ARM64) or the MSIX package.",
+            "Run the downloaded .exe installer or install the .appx package.",
+            "Follow the on‑screen prompts to complete installation.",
+            "Launch electerm from the Start menu or desktop shortcut."
+        ],
+        "related_software": [],
+        "seo_title": "electerm Free Download for Windows 7",
+        "meta_description": "Download electerm free for Windows 7. Free and open‑source client for terminal, SSH, SFTP, FTP, Telnet, serial port, RDP, VNC and Spice connections.",
+        "canonical_url": "https://codehimblog.github.io/software/electerm/",
+        "date_added": "2026-11-15",
+        "last_verified_at": "2026-11-15",
+        "verification_status": "verified"
+    },
+    {
         "id": "ffmpeg-gui-editor-windows",
         "name": "FFmpeg GUI Editor Windows",
         "slug": "ffmpeg-gui-editor-windows",
@@ -1640,6 +1800,130 @@
         "seo_title": "TizuMark Free Download for Windows",
         "meta_description": "Download TizuMark free for Windows. A lightweight Markdown editor for Windows with live preview, outline navigation, KaTeX and Mermaid support.",
         "canonical_url": "https://codehimblog.github.io/software/tizumark-markdown-editor/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "usque-app",
+        "name": "Usque",
+        "slug": "usque-app",
+        "summary": "An unofficial client for Cloudflare WARP services that provides system VPN, SOCKS5 and HTTP proxy with advanced routing, chain proxy, and profile management.",
+        "description": [
+            "Usque lets Windows users connect to Cloudflare WARP and other proxy services. It creates a system‑wide VPN (TUN) and offers local SOCKS5 and HTTP proxies that share the same connection. Users can define routing rules, chain through other VPNs or proxies, and save common setups as profiles.",
+            "Usque is built with a native Flutter interface and a Rust MASQUE engine. It supports system VPN, SOCKS5 and HTTP proxy on the same WARP connection, and can chain that connection through OpenVPN, WireGuard, Proton VPN, VPN Gate, or other HTTP/SOCKS5 proxies. Routing rules let you direct, reject, or proxy traffic by domain or IP range, and you can enable encrypted DNS (DoH/DoT). Profiles (called Scenes) store a combination of account, exit, and network settings, making it easy to switch between different network configurations. The app integrates into the Windows tray, respects system credential stores, and does not collect analytics. It is available in 21 languages with light and dark themes."
+        ],
+        "icon": {
+            "text": "U",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/GeorgeXie2333/usque-app#license",
+        "official_website": "https://github.com/GeorgeXie2333/usque-app/wiki",
+        "download_page": "https://github.com/GeorgeXie2333/usque-app/releases/tag/v0.3.4",
+        "repository_url": "https://github.com/GeorgeXie2333/usque-app",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.3.4",
+        "release_date": "2026-11-06",
+        "release_url": "https://github.com/GeorgeXie2333/usque-app/releases/tag/v0.3.4",
+        "primary_download": {
+            "url": "https://github.com/GeorgeXie2333/usque-app/releases/download/v0.3.4/usque-v0.3.4-windows-x64-v2.msi",
+            "filename": "usque-v0.3.4-windows-x64-v2.msi",
+            "size": 25550848,
+            "architecture": "x64",
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "usque-v0.3.4-windows-arm64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/GeorgeXie2333/usque-app/releases/download/v0.3.4/usque-v0.3.4-windows-arm64.exe",
+                "size": 24808888,
+                "sha256": "6286ce2395fc62aa7914d039d16420fc3b2b7d5a1df3690f734b2020f674ab0f"
+            },
+            {
+                "label": "usque-v0.3.4-windows-x64-v2.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/GeorgeXie2333/usque-app/releases/download/v0.3.4/usque-v0.3.4-windows-x64-v2.exe",
+                "size": 26592440,
+                "sha256": "b3be0ebd7c7ae6bbe24e9a49e5014a694d35f903e75346b8a0183eac30742bc4"
+            },
+            {
+                "label": "usque-v0.3.4-windows-arm64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/GeorgeXie2333/usque-app/releases/download/v0.3.4/usque-v0.3.4-windows-arm64.msi",
+                "size": 23805952,
+                "sha256": "63eb9d4c0c66d059444ad13cb2e14a79e44cf1c1d441b854dfcbeb364b3a386a"
+            },
+            {
+                "label": "usque-v0.3.4-windows-x64-v2.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/GeorgeXie2333/usque-app/releases/download/v0.3.4/usque-v0.3.4-windows-x64-v2.msi",
+                "size": 25550848,
+                "sha256": "82cc91be45185d76d549690fca8c7845764a700214756a12ad5da7c82e3cdfd3"
+            }
+        ],
+        "features": [
+            "System VPN (TUN) using Cloudflare WARP",
+            "Local SOCKS5 and HTTP proxy sharing the same connection",
+            "Chain proxy support for OpenVPN, WireGuard, Proton VPN, VPN Gate, HTTP and SOCKS5",
+            "Custom routing rules for domains and CIDR blocks, including ad‑blocking and country‑based routing",
+            "Encrypted DNS with DoH and DoT options",
+            "Profiles (Scenes) to save and switch complete network setups",
+            "Network diagnostics with latency and packet‑loss monitoring",
+            "Windows tray integration and dark/light themes",
+            "No analytics, uses system credential store for privacy"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the official GitHub releases page and download the Windows installer (MSI) or portable EXE for your architecture.",
+            "Run the MSI installer and follow the prompts, or double‑click the EXE to start the portable version.",
+            "After installation, launch Usque from the Start menu or desktop shortcut.",
+            "Sign in or configure your WARP account and set up any desired profiles.",
+            "Use the tray icon to connect, disconnect, or switch profiles."
+        ],
+        "related_software": [],
+        "seo_title": "Usque Free Download for Windows",
+        "meta_description": "Download Usque free for Windows. An unofficial client for Cloudflare WARP services that provides system VPN, SOCKS5 and HTTP proxy with advanced routing, chain…",
+        "canonical_url": "https://codehimblog.github.io/software/usque-app/",
         "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
