@@ -421,6 +421,104 @@
         "verification_status": "partial"
     },
     {
+        "id": "ffmpeg-gui-editor-windows",
+        "name": "FFmpeg GUI Editor Windows",
+        "slug": "ffmpeg-gui-editor-windows",
+        "summary": "A lightweight portable graphical front‑end for FFmpeg that lets Windows users trim, crop, compress, convert and edit videos without using the command line.",
+        "description": [
+            "FFmpeg GUI Editor Windows provides a ready‑to‑use executable that runs directly from a folder. It bundles the FFmpeg engine behind a simple interface, so users can perform common video tasks without installing anything or configuring paths.",
+            "The program is designed for people who need quick video editing on Windows but do not want to learn FFmpeg commands. It supports six interface languages and works with a wide range of video and audio formats. All operations are performed locally; the tool does not add watermarks or require an internet connection. It is open‑source and distributed under the GPL‑3.0 license."
+        ],
+        "icon": {
+            "text": "F",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows#license",
+        "official_website": null,
+        "download_page": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows/releases/tag/1.6.5",
+        "repository_url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows#readme",
+                "note": "Stated in the project README: “Windows 10 / Windows 11 (64-bit)”"
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows#readme",
+                "note": "Stated in the project README: “Windows 10 / Windows 11 (64-bit)”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.6.5",
+        "release_date": "2026-11-13",
+        "release_url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows/releases/tag/1.6.5",
+        "primary_download": null,
+        "download_assets": [
+            {
+                "label": "FFmpeg-GUI-Editor-Windows.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows/releases/download/1.6.5/FFmpeg-GUI-Editor-Windows.zip",
+                "size": 4820487,
+                "sha256": "9395369d6f5161b712db521768641c7f29cabf7f46e5e4592024a9b64ac533ee"
+            }
+        ],
+        "features": [
+            "Lossless video trimming with frame‑level precision",
+            "Crop tool with manual selection and automatic black‑bar removal",
+            "Video compression and resizing for common resolutions",
+            "Conversion between many video and audio formats",
+            "Rotate, flip, and adjust playback speed or frame rate",
+            "Audio volume boost, mute, or removal",
+            "Duplicate frame detection and removal",
+            "Chroma key (green screen) removal",
+            "Batch processing script generation",
+            "Subtitle editor with visual timeline"
+        ],
+        "requirements": [
+            "Windows 10 / Windows 11 (64-bit)"
+        ],
+        "installation_instructions": [
+            "Open the release page on GitHub.",
+            "Download both FFmpeg-GUI-Editor.exe and libvlc.dll.",
+            "Place the two files in the same folder.",
+            "Double‑click FFmpeg-GUI-Editor.exe to start the program.",
+            "Use the interface to load and edit video files."
+        ],
+        "related_software": [],
+        "seo_title": "FFmpeg GUI Editor Windows Free Download for Windows 11 and 10",
+        "meta_description": "Download FFmpeg GUI Editor Windows free for Windows 11 and 10. A lightweight portable graphical front‑end for FFmpeg that lets Windows users trim, crop, compre…",
+        "canonical_url": "https://codehimblog.github.io/software/ffmpeg-gui-editor-windows/",
+        "date_added": "2026-11-15",
+        "last_verified_at": "2026-11-15",
+        "verification_status": "verified"
+    },
+    {
         "id": "headroom-desktop",
         "name": "Headroom Desktop",
         "slug": "headroom-desktop",
@@ -1071,6 +1169,107 @@
         "date_added": "2026-11-14",
         "last_verified_at": null,
         "verification_status": "partial"
+    },
+    {
+        "id": "sakura",
+        "name": "Sakura Editor",
+        "slug": "sakura",
+        "summary": "A free, open‑source text editor for Windows with support for many file encodings and customizable features.",
+        "description": [
+            "Sakura Editor is a lightweight text editor designed for Windows. It offers basic editing functions, syntax highlighting, macro support and a simple interface, making it suitable for programmers, writers and anyone who needs to edit plain text files.",
+            "Sakura Editor is written in C++ and distributed under the Zlib license. The program runs as a portable application; no installation is required if you use the ZIP version. It includes features such as line numbering, search and replace, Unicode and various code page support, and the ability to run external tools. The project provides both a portable ZIP and an installer package for 32‑bit systems. Development is active on GitHub, and security advisories are handled through the repository's security page."
+        ],
+        "icon": {
+            "text": "S",
+            "color": "#15803D"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "zlib License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/sakura-editor/sakura#license",
+        "official_website": "https://sakura-editor.github.io/",
+        "download_page": "https://github.com/sakura-editor/sakura/releases/tag/v2.4.3",
+        "repository_url": "https://github.com/sakura-editor/sakura",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/sakura-editor/sakura#readme",
+                "note": "Stated in the project README: “動作環境をWindows 10以降に変更（Windows 7/8.1のサポートを終了）”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.4.3",
+        "release_date": "2026-08-08",
+        "release_url": "https://github.com/sakura-editor/sakura/releases/tag/v2.4.3",
+        "primary_download": null,
+        "download_assets": [
+            {
+                "label": "sakura-tag-v2.4.3-build2916-fe1a4a281-Win32-Release-Exe.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x86",
+                "url": "https://github.com/sakura-editor/sakura/releases/download/v2.4.3/sakura-tag-v2.4.3-build2916-fe1a4a281-Win32-Release-Exe.zip",
+                "size": 3513182,
+                "sha256": "9973140125159c1615cb1841af2ecf700a87aa3f45c3414b87a0e8c6c864700c"
+            },
+            {
+                "label": "sakura-tag-v2.4.3-build2916-fe1a4a281-Win32-Release-Installer.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x86",
+                "url": "https://github.com/sakura-editor/sakura/releases/download/v2.4.3/sakura-tag-v2.4.3-build2916-fe1a4a281-Win32-Release-Installer.zip",
+                "size": 6388224,
+                "sha256": "abdbfcd349c47885c1db6911c83d73cf9057acc1fabd1f4e4e4da84c79752f03"
+            }
+        ],
+        "features": [
+            "Supports multiple encodings including UTF‑8, UTF‑16 and legacy code pages",
+            "Line numbering and column display",
+            "Search and replace with regular expressions",
+            "Syntax highlighting for many programming languages",
+            "Macro recording and execution",
+            "Ability to launch external tools or scripts",
+            "Customizable fonts and colors",
+            "Portable version that runs without installation"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the GitHub release page and download the portable ZIP file.",
+            "Extract the ZIP to a folder of your choice.",
+            "Double‑click sakura.exe to start the editor.",
+            "(Optional) Run the installer ZIP if you prefer a standard installation.",
+            "Create a shortcut to sakura.exe for easy access."
+        ],
+        "related_software": [],
+        "seo_title": "Sakura Editor Free Download for Windows 10",
+        "meta_description": "Download Sakura Editor free for Windows 10. A free, open‑source text editor for Windows with support for many file encodings and customizable features.",
+        "canonical_url": "https://codehimblog.github.io/software/sakura/",
+        "date_added": "2026-11-15",
+        "last_verified_at": "2026-11-15",
+        "verification_status": "verified"
     },
     {
         "id": "sharex",
