@@ -1549,6 +1549,105 @@
         "verification_status": "partial"
     },
     {
+        "id": "jenv",
+        "name": "Jenv",
+        "slug": "jenv",
+        "summary": "Jenv is a command‑line tool that lets you manage multiple Java versions on your computer, allowing easy switching, adding, and removal of JDK installations.",
+        "description": [
+            "Jenv helps developers and anyone who works with Java to keep several JDK versions installed and switch between them quickly. It works on Windows and other platforms, but this listing is for the Windows version.",
+            "Jenv is a lightweight command‑line utility written in Go. It scans your system for installed Java Development Kits, creates symbolic links or registry entries so that the selected JDK becomes active, and updates environment variables accordingly. The tool stores its configuration once, so the chosen Java version is applied to all new console windows without further changes. It includes a modern colored output, help documentation, and supports both light and dark terminal themes. Jenv is open‑source and free under the Apache‑2.0 license."
+        ],
+        "icon": {
+            "text": "J",
+            "color": "#15803D"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/WhyWhatHow/jenv#license",
+        "official_website": "https://whywhathow.github.io/jenv/",
+        "download_page": "https://github.com/WhyWhatHow/jenv/releases/tag/v0.6.9",
+        "repository_url": "https://github.com/WhyWhatHow/jenv",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.6.9",
+        "release_date": "2025-11-29",
+        "release_url": "https://github.com/WhyWhatHow/jenv/releases/tag/v0.6.9",
+        "primary_download": null,
+        "download_assets": [
+            {
+                "label": "jenv-0.6.9-windows-aarch_64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/WhyWhatHow/jenv/releases/download/v0.6.9/jenv-0.6.9-windows-aarch_64.zip",
+                "size": 3832373,
+                "sha256": "fd45430ca617e7b9e74f4772e4e46fcd0c3206130c8f59222118500f64ab1090"
+            },
+            {
+                "label": "jenv-0.6.9-windows-x86_64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/WhyWhatHow/jenv/releases/download/v0.6.9/jenv-0.6.9-windows-x86_64.zip",
+                "size": 4127540,
+                "sha256": "8a7a8e365d332ea050a4037caf17bff758f86928fefd31b4333298669fd25841"
+            }
+        ],
+        "features": [
+            "Manage multiple JDK installations on a single system",
+            "Switch active Java version instantly via symbolic links or registry updates",
+            "Fast JDK scanning with concurrent processing (hundreds of milliseconds)",
+            "Automatic detection of Java installations across common directories",
+            "Command‑line interface with colored output and help commands",
+            "Supports Windows, Linux and macOS",
+            "Handles environment variables with minimal UAC prompts on Windows",
+            "Provides progress tracking and detailed scanning statistics"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page and download the appropriate Windows ZIP file (x64 or aarch64).",
+            "Extract the ZIP to a folder of your choice.",
+            "Open a command prompt in that folder.",
+            "Run \"jenv.exe\" with the desired command, for example \"jenv list\" to see installed JDKs.",
+            "Follow the on‑screen instructions to add or switch Java versions."
+        ],
+        "related_software": [],
+        "seo_title": "Jenv Free Download for Windows",
+        "meta_description": "Download Jenv free for Windows. Jenv is a command‑line tool that lets you manage multiple Java versions on your computer, allowing easy switching, adding, and…",
+        "canonical_url": "https://codehimblog.github.io/software/jenv/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "keepassxc",
         "name": "KeePassXC",
         "slug": "keepassxc",
@@ -1717,6 +1816,130 @@
         "date_added": "2026-11-14",
         "last_verified_at": "2026-11-14",
         "verification_status": "verified"
+    },
+    {
+        "id": "lap",
+        "name": "Lap",
+        "slug": "lap",
+        "summary": "An offline-first photo manager for large local libraries",
+        "description": [
+            "Lap is a free, open‑source desktop photo manager that works locally on your computer. It lets you browse, organize and search large personal photo collections without uploading anything to the cloud.",
+            "Lap focuses on privacy and performance. Your pictures stay on your own disk and the program works directly with the folders you already use. It provides a folder‑first workflow, so you can import, export, move, copy or delete files while keeping the original structure. The built‑in AI tools run locally and can search by text, visual similarity, faces or tags in many languages. Lap is designed to handle libraries with hundreds of thousands of images, offering smooth browsing, smart albums, duplicate cleanup, culling tools and a four‑pane comparison viewer. The software is released under the GPL‑3.0 license, meaning you can use, modify and share it freely."
+        ],
+        "icon": {
+            "text": "L",
+            "color": "#7C3AED"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/julyx10/lap#license",
+        "official_website": "https://julyx10.github.io/lap/",
+        "download_page": "https://github.com/julyx10/lap/releases/tag/v0.3.3",
+        "repository_url": "https://github.com/julyx10/lap",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.3.3",
+        "release_date": "2026-10-12",
+        "release_url": "https://github.com/julyx10/lap/releases/tag/v0.3.3",
+        "primary_download": {
+            "url": "https://github.com/julyx10/lap/releases/download/v0.3.3/Lap_0.3.3_x64_en-US.msi",
+            "filename": "Lap_0.3.3_x64_en-US.msi",
+            "size": 228179968,
+            "architecture": "x64",
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "Lap_aarch64.app.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "ARM64",
+                "url": "https://github.com/julyx10/lap/releases/download/v0.3.3/Lap_aarch64.app.tar.gz",
+                "size": 202665696,
+                "sha256": "dd24bbecab99e7fa26726bde72c804bab02e2586565c0d15a15ffc6f6df4881c"
+            },
+            {
+                "label": "Lap_x86_64.app.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "x64",
+                "url": "https://github.com/julyx10/lap/releases/download/v0.3.3/Lap_x86_64.app.tar.gz",
+                "size": 181256844,
+                "sha256": "4351f1a4ab3a6e0268f24f010e1ba9d5e9f8201941915495b94ce56ad913fca6"
+            },
+            {
+                "label": "Lap_0.3.3_arm64_en-US.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/julyx10/lap/releases/download/v0.3.3/Lap_0.3.3_arm64_en-US.msi",
+                "size": 259612672,
+                "sha256": "2ccda04b292cf3af11c449ac326ccfd5901277362624d73b968fdfa77f51dc11"
+            },
+            {
+                "label": "Lap_0.3.3_x64_en-US.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/julyx10/lap/releases/download/v0.3.3/Lap_0.3.3_x64_en-US.msi",
+                "size": 228179968,
+                "sha256": "eb2f8981387f4cc224216da60df1202c12d57599a24b5b1cdba21900ce13be0a"
+            }
+        ],
+        "features": [
+            "Browse libraries by date, folder, location, camera, lens, tags, ratings and faces",
+            "Folder‑first workflow with drag‑and‑drop, copy‑paste and filesystem sync",
+            "Local AI search for text prompts, visual similarity, face clustering and multilingual tags",
+            "Smart Albums that save rule‑based views with custom grouping and sorting",
+            "Import with automatic date‑based folder organization and duplicate skipping",
+            "Collections and tags for bulk organization without moving files",
+            "Duplicate cleanup with space‑reclaim summaries and bulk removal",
+            "Culling and four‑pane image comparison tools",
+            "Photo collage creation with multiple layout options"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the latest release page on GitHub.",
+            "Download the MSI file that matches your system architecture (x64 or ARM64).",
+            "Run the MSI installer and follow the prompts.",
+            "After installation, launch Lap from the Start menu or desktop shortcut.",
+            "Add your photo folders to start managing your collection."
+        ],
+        "related_software": [],
+        "seo_title": "Lap Free Download for Windows",
+        "meta_description": "Download Lap free for Windows. An offline-first photo manager for large local libraries",
+        "canonical_url": "https://codehimblog.github.io/software/lap/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
     },
     {
         "id": "libreget",
