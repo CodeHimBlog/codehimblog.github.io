@@ -1203,5 +1203,233 @@
         "date_added": "2026-11-14",
         "last_verified_at": null,
         "verification_status": "partial"
+    },
+    {
+        "id": "tizumark-markdown-editor",
+        "name": "TizuMark",
+        "slug": "tizumark-markdown-editor",
+        "summary": "A lightweight Markdown editor for Windows with live preview, outline navigation, KaTeX and Mermaid support.",
+        "description": [
+            "TizuMark is a free, open‑source Markdown editor built with Rust and Tauri. It provides a fast, low‑memory experience and lets you write and preview documents in real time.",
+            "The program offers a WYSIWYG live preview so the formatted view is shown while you type. You can split the window horizontally or vertically to see source and preview side by side, and an automatic outline lets you jump to any heading. Mathematical formulas are rendered with KaTeX and diagrams can be created with Mermaid. Images can be pasted directly, and the editor can export to HTML, PNG, PDF and Word DOCX while keeping the current theme. Keyboard shortcuts are fully customizable, multiple tabs and workspaces are supported, and the interface is available in Chinese, English and Spanish."
+        ],
+        "icon": {
+            "text": "T",
+            "color": "#B45309"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/tizuio/TizuMark-Markdown-Editor#license",
+        "official_website": "https://github.com/tizuio/TizuMark/releases",
+        "download_page": "https://github.com/tizuio/TizuMark-Markdown-Editor/releases/tag/v1.2.5",
+        "repository_url": "https://github.com/tizuio/TizuMark-Markdown-Editor",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.2.5",
+        "release_date": "2026-11-01",
+        "release_url": "https://github.com/tizuio/TizuMark-Markdown-Editor/releases/tag/v1.2.5",
+        "primary_download": {
+            "url": "https://github.com/tizuio/TizuMark-Markdown-Editor/releases/download/v1.2.5/TizuMark_1.2.5_x64-setup.exe",
+            "filename": "TizuMark_1.2.5_x64-setup.exe",
+            "size": 10356934,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "TizuMark_1.2.5_x64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/tizuio/TizuMark-Markdown-Editor/releases/download/v1.2.5/TizuMark_1.2.5_x64.exe",
+                "size": 25495552,
+                "sha256": "66a7d4a541e1155c73867ced36c6c868b22f68b7b70a900462d90c2403c00432"
+            },
+            {
+                "label": "TizuMark_1.2.5_x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/tizuio/TizuMark-Markdown-Editor/releases/download/v1.2.5/TizuMark_1.2.5_x64-setup.exe",
+                "size": 10356934,
+                "sha256": "868306f10c62af9449482cae5d33cbc8a24d098d723b5bed56878241fd6da50e"
+            },
+            {
+                "label": "TizuMark_1.2.5_x64_en-US.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/tizuio/TizuMark-Markdown-Editor/releases/download/v1.2.5/TizuMark_1.2.5_x64_en-US.msi",
+                "size": 12480512,
+                "sha256": "e2113a2614d1bd7fcbf9934b93c03773c18035706f8e1f7bcae307419d7ee9cc"
+            }
+        ],
+        "features": [
+            "Real‑time WYSIWYG preview with cursor‑focused source editing",
+            "Horizontal or vertical split view with synchronized scrolling",
+            "Automatic outline navigation for quick heading jumps",
+            "Built‑in KaTeX support for math formulas",
+            "Built‑in Mermaid support for flowcharts and diagrams",
+            "Drag‑and‑drop or paste images directly into documents",
+            "Export to HTML, PNG, PDF and DOCX preserving theme",
+            "Fully customizable keyboard shortcuts",
+            "Multiple tabs and workspace folders",
+            "Light, dark and system theme switching"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the official GitHub release page and download the installer you prefer (setup .exe, MSI or portable .exe).",
+            "If you chose the installer, double‑click the file and follow the setup wizard.",
+            "For the portable version, double‑click the .exe to run it directly.",
+            "After installation, launch TizuMark from the Start menu or the shortcut created.",
+            "Open or create a .md file to start editing."
+        ],
+        "related_software": [],
+        "seo_title": "TizuMark Free Download for Windows",
+        "meta_description": "Download TizuMark free for Windows. A lightweight Markdown editor for Windows with live preview, outline navigation, KaTeX and Mermaid support.",
+        "canonical_url": "https://codehimblog.github.io/software/tizumark-markdown-editor/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "warpinator-windows",
+        "name": "Warpinator Windows",
+        "slug": "warpinator-windows",
+        "summary": "An unofficial implementation of Warpinator for Windows.",
+        "description": [
+            "Warpinator Windows lets you share files and small text messages between Windows, Linux and Android computers on the same network. It is a community‑made version of the Linux Mint tool, aimed at users who need simple local file transfers without cloud services.",
+            "The program recreates the basic functionality of the original Warpinator tool: you can browse nearby devices, send files or folders, and receive incoming transfers. It works on Windows 7 and newer, and includes a portable ZIP version for users who prefer not to install anything. The interface shows a list of discovered peers, a transfer queue, and recent transfer history. The project is open source under GPL‑3.0 and is maintained by volunteers. It also warns users about fake websites that try to distribute malicious copies.",
+            "The software is built with .NET and can be installed via the provided EXE installer or run directly from the portable ZIP. A winget package is also available for automatic installation.",
+            "The latest update adds the ability to send and receive short text messages, improves folder handling, and fixes several UI and security issues."
+        ],
+        "icon": {
+            "text": "W",
+            "color": "#334155"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/slowscript/warpinator-windows#license",
+        "official_website": null,
+        "download_page": "https://github.com/slowscript/warpinator-windows/releases/tag/v1.1",
+        "repository_url": "https://github.com/slowscript/warpinator-windows",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/slowscript/warpinator-windows#readme",
+                "note": "Stated in the project README: “Windows 7 and newer”"
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.1",
+        "release_date": "2025-12-29",
+        "release_url": "https://github.com/slowscript/warpinator-windows/releases/tag/v1.1",
+        "primary_download": {
+            "url": "https://github.com/slowscript/warpinator-windows/releases/download/v1.1/warpinator-setup_1.1.exe",
+            "filename": "warpinator-setup_1.1.exe",
+            "size": 11828801,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "warpinator-setup_1.1.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/slowscript/warpinator-windows/releases/download/v1.1/warpinator-setup_1.1.exe",
+                "size": 11828801,
+                "sha256": "548fffaf8cee9c893f2b4382f68ff84facc50e6db1196b4193ff21ba3742f1f5"
+            },
+            {
+                "label": "warpinator-windows_1.1.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/slowscript/warpinator-windows/releases/download/v1.1/warpinator-windows_1.1.zip",
+                "size": 13515788,
+                "sha256": "15cf1d66c1f593a3ca3a7b7fdff861deb14a1576ae0d53f3f1b06aa2e4f73fd4"
+            }
+        ],
+        "features": [
+            "Share files and folders between Windows, Linux and Android devices on the same network",
+            "Send and receive short text messages",
+            "Portable ZIP version that runs without installation",
+            "Automatic discovery of nearby devices",
+            "Transfer queue with progress indicators",
+            "Recent transfers list for quick access",
+            "Rescans network after sleep or resume",
+            "Does not store remote certificates on disk",
+            "Simple installer for quick setup",
+            "Open source under GPL‑3.0"
+        ],
+        "requirements": [
+            "Requires .NET runtime 4.7.2 or later"
+        ],
+        "installation_instructions": [
+            "Go to the Releases page and download the EXE installer or the portable ZIP.",
+            "For the installer, run the downloaded .exe and follow the prompts.",
+            "For the portable version, extract the ZIP to a folder of your choice.",
+            "Launch Warpinator Windows from the Start menu (installer) or by running Warpinator.exe in the extracted folder (portable)."
+        ],
+        "related_software": [],
+        "seo_title": "Warpinator Windows Free Download for Windows 7",
+        "meta_description": "Download Warpinator Windows free for Windows 7. An unofficial implementation of Warpinator for Windows.",
+        "canonical_url": "https://codehimblog.github.io/software/warpinator-windows/",
+        "date_added": "2026-11-15",
+        "last_verified_at": "2026-11-15",
+        "verification_status": "verified"
     }
 ]
