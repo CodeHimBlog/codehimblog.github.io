@@ -30,6 +30,14 @@
         "os": []
     },
     {
+        "slug": "autorunmanager",
+        "name": "AutoRunManager",
+        "summary": "A utility that lets you view, add, remove, backup and restore programs that run automatically when Windows starts.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": []
+    },
+    {
         "slug": "bleachbit",
         "name": "BleachBit",
         "summary": "BleachBit is a system cleaner that removes unnecessary files to free disk space and protect privacy.",
@@ -321,6 +329,14 @@
         "slug": "winappmigrator",
         "name": "WinAppMigrator",
         "summary": "Creates a single installer from an already installed Windows program, allowing you to move it to another PC even when the original installer is missing.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": []
+    },
+    {
+        "slug": "windbg-mcp",
+        "name": "windbg-mcp",
+        "summary": "A server that exposes WinDbg/DbgEng debugging capabilities to AI agents via standard input/output or HTTP.",
         "category": "system-utilities",
         "keywords": [],
         "os": []

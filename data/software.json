@@ -289,6 +289,103 @@
         "verification_status": "partial"
     },
     {
+        "id": "autorunmanager",
+        "name": "AutoRunManager",
+        "slug": "autorunmanager",
+        "summary": "A utility that lets you view, add, remove, backup and restore programs that run automatically when Windows starts.",
+        "description": [
+            "AutoRunManager provides a simple interface for managing startup entries stored in the Windows Registry. It is aimed at users who want to control which programs launch at system start, and to keep a backup of their startup configuration.",
+            "AutoRunManager interacts directly with the Windows Registry to list all programs set to run at startup. You can add new entries, delete existing ones, and enable or disable them. The tool also offers backup and restore functions for the startup configuration, storing logs of all actions in a text file under your Documents folder. It is a command‑line program that runs from an executable file and requires administrative privileges to modify the registry."
+        ],
+        "icon": {
+            "text": "A",
+            "color": "#1D4ED8"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/Free-Utilities-for-Windows/AutoRunManager#license",
+        "official_website": null,
+        "download_page": "https://github.com/Free-Utilities-for-Windows/AutoRunManager/releases/tag/v1.1.0",
+        "repository_url": "https://github.com/Free-Utilities-for-Windows/AutoRunManager",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.1.0",
+        "release_date": "2026-04-04",
+        "release_url": "https://github.com/Free-Utilities-for-Windows/AutoRunManager/releases/tag/v1.1.0",
+        "primary_download": {
+            "url": "https://github.com/Free-Utilities-for-Windows/AutoRunManager/releases/download/v1.1.0/AutoRunManager.exe",
+            "filename": "AutoRunManager.exe",
+            "size": 67933982,
+            "architecture": null,
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "AutoRunManager.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/Free-Utilities-for-Windows/AutoRunManager/releases/download/v1.1.0/AutoRunManager.exe",
+                "size": 67933982,
+                "sha256": "3814e4fe79cad0ebb43c10da020b9af66cf0be63671ab237feb99225da45e0d7"
+            }
+        ],
+        "features": [
+            "List all current startup programs",
+            "Add a new program to the startup list",
+            "Remove an existing startup program",
+            "Enable or disable a startup entry",
+            "Backup the current startup configuration",
+            "Restore a previously saved startup configuration",
+            "Clean up all startup entries at once",
+            "Log all actions and errors to timestamped files in My Documents\\AutoRunManager"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download AutoRunManager.exe from the official GitHub release page.",
+            "Save the file to a convenient location.",
+            "Open a command prompt with administrator rights.",
+            "Navigate to the folder containing AutoRunManager.exe.",
+            "Run the program by typing \"AutoRunManager.exe\" and pressing Enter.",
+            "Follow the on‑screen commands to manage startup programs."
+        ],
+        "related_software": [],
+        "seo_title": "AutoRunManager Free Download for Windows",
+        "meta_description": "Download AutoRunManager free for Windows. A utility that lets you view, add, remove, backup and restore programs that run automatically when Windows starts.",
+        "canonical_url": "https://codehimblog.github.io/software/autorunmanager/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "bleachbit",
         "name": "BleachBit",
         "slug": "bleachbit",
@@ -4103,6 +4200,100 @@
         "seo_title": "WinAppMigrator Free Download for Windows",
         "meta_description": "Download WinAppMigrator free for Windows. Creates a single installer from an already installed Windows program, allowing you to move it to another PC even when…",
         "canonical_url": "https://codehimblog.github.io/software/winappmigrator/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "windbg-mcp",
+        "name": "windbg-mcp",
+        "slug": "windbg-mcp",
+        "summary": "A server that exposes WinDbg/DbgEng debugging capabilities to AI agents via standard input/output or HTTP.",
+        "description": [
+            "windbg-mcp runs a Model Context Protocol (MCP) server on a Windows machine and forwards WinDbg/DbgEng commands to AI tools. It can control live user‑mode, kernel‑mode, crash‑dump and Time‑Travel Debugging sessions, and can be accessed locally or over the network.",
+            "The tool acts as a bridge between the powerful Windows debugging engine (WinDbg/DbgEng) and AI agents such as Claude Code, Cursor, or other MCP clients. It supports communication through stdio for local use or via an HTTP listener for remote clients. The server can attach to running processes, kernel debugging sessions, crash dumps, and even perform Time‑Travel Debugging. Advanced features include reading Secure Kernel state from Hyper‑V checkpoints and controlling virtual processors in disposable VBS VMs using built‑in h3probe providers. The driver source is included, but building, signing and installing the driver is the operator's responsibility. The package is distributed as a portable ZIP for x64 Windows and runs with elevated privileges when needed."
+        ],
+        "icon": {
+            "text": "W",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/glslang/windbg-mcp#license",
+        "official_website": null,
+        "download_page": "https://github.com/glslang/windbg-mcp/releases/tag/v0.24.0",
+        "repository_url": "https://github.com/glslang/windbg-mcp",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.24.0",
+        "release_date": "2026-11-05",
+        "release_url": "https://github.com/glslang/windbg-mcp/releases/tag/v0.24.0",
+        "primary_download": null,
+        "download_assets": [
+            {
+                "label": "windbg-mcp-v0.24.0-windows-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/glslang/windbg-mcp/releases/download/v0.24.0/windbg-mcp-v0.24.0-windows-x64.zip",
+                "size": 12708638,
+                "sha256": "f6150397f7bc07a6d5fbd773adde3ec4b78639378abb5edec17be7201b1d3f34"
+            }
+        ],
+        "features": [
+            "Exposes WinDbg/DbgEng to AI agents via MCP",
+            "Supports stdio and HTTP communication",
+            "Can debug user‑mode, kernel‑mode, crash dumps, and Time‑Travel Debugging sessions",
+            "Provides Secure Kernel access from Hyper‑V checkpoints",
+            "Includes built‑in h3probe driver providers for VBS VM control",
+            "Portable ZIP distribution, no installer required",
+            "Runs as a service with Administrator privileges when needed"
+        ],
+        "requirements": [
+            "Windows x64 platform",
+            "Administrator rights for kernel‑mode debugging and driver installation",
+            "WinDbg engine files installed on the host machine",
+            ".NET runtime for certain debugging extensions (if used)"
+        ],
+        "installation_instructions": [
+            "Download the windbg-mcp‑windows‑x64.zip from the official GitHub release page.",
+            "Extract the ZIP to a folder of your choice.",
+            "Open a command prompt in that folder.",
+            "Run the executable with desired options (e.g., \"windbg-mcp --listen\" to start the HTTP server).",
+            "Use an MCP client to connect to the server."
+        ],
+        "related_software": [],
+        "seo_title": "windbg-mcp Free Download for Windows",
+        "meta_description": "Download windbg-mcp free for Windows. A server that exposes WinDbg/DbgEng debugging capabilities to AI agents via standard input/output or HTTP.",
+        "canonical_url": "https://codehimblog.github.io/software/windbg-mcp/",
         "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
