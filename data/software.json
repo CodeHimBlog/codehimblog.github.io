@@ -1298,6 +1298,158 @@
         "verification_status": "verified"
     },
     {
+        "id": "libreget",
+        "name": "LibreGet",
+        "slug": "libreget",
+        "summary": "LibreGet is a free open‑source download manager and media toolbox for Windows that can download files from courses, YouTube, social sites and many other services, then transcribe, convert and organise the saved content.",
+        "description": [
+            "LibreGet provides a graphical interface for downloading videos, audio, documents and torrents from a large number of online sources. It also includes tools for subtitle handling, media conversion, transcription and simple study‑card creation, all in one desktop program.",
+            "LibreGet is built with Tauri, Rust and Svelte and runs as a native Windows application. Users paste a link or magnet/torrent file into the main window and choose the desired format or quality. The program supports high‑resolution video (up to 4K), audio‑only extraction, subtitle download, and batch operations for multiple links. Additional tools let you convert media, compress images, repair PDFs, create e‑book files, generate flashcards for spaced‑repetition learning, and even run a small server for AI‑agent integration. The software is free, open source under GPL‑3.0, contains no ads or telemetry, and keeps all downloaded files on the local computer."
+        ],
+        "icon": {
+            "text": "L",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/OpenSelena/libreget#license",
+        "official_website": "https://t.me/OpenSelena",
+        "download_page": "https://github.com/OpenSelena/libreget/releases/tag/v0.16.6",
+        "repository_url": "https://github.com/OpenSelena/libreget",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.16.6",
+        "release_date": "2026-11-13",
+        "release_url": "https://github.com/OpenSelena/libreget/releases/tag/v0.16.6",
+        "primary_download": {
+            "url": "https://github.com/OpenSelena/libreget/releases/download/v0.16.6/OmniGet_0.16.6_x64-setup.exe",
+            "filename": "OmniGet_0.16.6_x64-setup.exe",
+            "size": 35873452,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "OmniGet_0.16.6_aarch64.app.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "ARM64",
+                "url": "https://github.com/OpenSelena/libreget/releases/download/v0.16.6/OmniGet_0.16.6_aarch64.app.tar.gz",
+                "size": 43975077,
+                "sha256": "e0b597028ff5fc15af118130306e302e7a9a983b8de8c75f2e8a2393275ee95f"
+            },
+            {
+                "label": "OmniGet_0.16.6_x64.app.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "x64",
+                "url": "https://github.com/OpenSelena/libreget/releases/download/v0.16.6/OmniGet_0.16.6_x64.app.tar.gz",
+                "size": 45219876,
+                "sha256": "56f6b6efc9feed600a439baaeea96d5dc810d967e902644eca03652cf8c535f9"
+            },
+            {
+                "label": "omniget-chrome-extension-v0.16.6.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/OpenSelena/libreget/releases/download/v0.16.6/omniget-chrome-extension-v0.16.6.zip",
+                "size": 502087,
+                "sha256": "ea0f35dba60cfb61b633726d790dfc8cc14c0c1639e1b940faa7c82d2e64f5e4"
+            },
+            {
+                "label": "OmniGet_0.16.6_x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/OpenSelena/libreget/releases/download/v0.16.6/OmniGet_0.16.6_x64-setup.exe",
+                "size": 35873452,
+                "sha256": "bdf7e09ca65fd25f2efd8ec37686c36b48b15b6e75cc815977237abad3bf8177"
+            },
+            {
+                "label": "OmniGet_0.16.6_x64_en-US.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/OpenSelena/libreget/releases/download/v0.16.6/OmniGet_0.16.6_x64_en-US.msi",
+                "size": 46291128,
+                "sha256": "3a3e95727ff224d39fb6deaf715b1974e23ab6e2ead1a52e3308b178fd0b2cc2"
+            },
+            {
+                "label": "omniget_0.16.6_x64-portable.exe",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/OpenSelena/libreget/releases/download/v0.16.6/omniget_0.16.6_x64-portable.exe",
+                "size": 106276352,
+                "sha256": "5db562c2532a19161424444fdc2e2822eff4fe8f9f9f087135cf08dd00fd2241"
+            },
+            {
+                "label": "omniget-cli-0.16.6-x86_64-pc-windows-msvc.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/OpenSelena/libreget/releases/download/v0.16.6/omniget-cli-0.16.6-x86_64-pc-windows-msvc.zip",
+                "size": 6427530,
+                "sha256": "5f69f7f2de2dd5fee01ce242c95ab83f545282b50b6b277cf546efddee30dddc"
+            }
+        ],
+        "features": [
+            "Download videos, audio, documents and torrents from over 1,800 sites",
+            "Choose video quality up to 4K or audio‑only mode",
+            "Batch download multiple links at once",
+            "Built‑in subtitle download and conversion",
+            "Media conversion tools (video, audio, image, PDF)",
+            "Transcription and text‑to‑speech features",
+            "Create flashcards and spaced‑repetition decks",
+            "No account, ads or telemetry",
+            "Portable and installer versions available",
+            "Open‑source under GPL‑3.0"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the official GitHub release page and download the Windows installer (EXE or MSI) or the portable ZIP.",
+            "Run the installer and follow the prompts, or extract the portable ZIP to a folder.",
+            "Launch LibreGet from the Start menu or the extracted folder.",
+            "Paste a URL or open a .torrent file to start downloading.",
+            "Use the built‑in tools to convert or manage the downloaded files."
+        ],
+        "related_software": [],
+        "seo_title": "LibreGet Free Download for Windows",
+        "meta_description": "Download LibreGet free for Windows. LibreGet is a free open‑source download manager and media toolbox for Windows that can download files from courses, YouTube…",
+        "canonical_url": "https://codehimblog.github.io/software/libreget/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "moonlight-qt",
         "name": "Moonlight Qt",
         "slug": "moonlight-qt",
@@ -1425,6 +1577,110 @@
         "seo_title": "Moonlight Qt Free Download for Windows",
         "meta_description": "Download Moonlight Qt free for Windows. Moonlight Qt is an open‑source client that lets you stream games and desktop sessions from a PC with NVIDIA GameStream…",
         "canonical_url": "https://codehimblog.github.io/software/moonlight-qt/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "mynotes",
+        "name": "MyNotes",
+        "slug": "mynotes",
+        "summary": "A simple notes and reminders application for Windows built with WinUI 3.",
+        "description": [
+            "MyNotes lets you create, organize, and view text notes and set reminder alerts. It runs in the background with a tray icon and uses Windows notifications to remind you of tasks.",
+            "MyNotes is a lightweight notes and reminders program designed for everyday use. The interface follows modern WinUI 3 design and supports a tray icon for quick access. Notes are stored in a local SQLite database, providing reliable data handling. Reminders can trigger notifications with optional alarm sounds, and you can open the related note directly from the notification. Settings let you choose language, time format, alarm behavior, notification priority, and how long deleted items are kept before permanent removal."
+        ],
+        "icon": {
+            "text": "M",
+            "color": "#0F766E"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/Erencrypt/MyNotes#license",
+        "official_website": null,
+        "download_page": "https://github.com/Erencrypt/MyNotes/releases/tag/v2.1.0",
+        "repository_url": "https://github.com/Erencrypt/MyNotes",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.1.0",
+        "release_date": "2026-11-07",
+        "release_url": "https://github.com/Erencrypt/MyNotes/releases/tag/v2.1.0",
+        "primary_download": {
+            "url": "https://github.com/Erencrypt/MyNotes/releases/download/v2.1.0/Erencrypt.MyNotes-win-Setup.exe",
+            "filename": "Erencrypt.MyNotes-win-Setup.exe",
+            "size": 116179611,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Erencrypt.MyNotes-win-Setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/Erencrypt/MyNotes/releases/download/v2.1.0/Erencrypt.MyNotes-win-Setup.exe",
+                "size": 116179611,
+                "sha256": "e12bee2e2f85660f87d78ccff471888eded9ba0be70ba38578d5ffea72721b8d"
+            },
+            {
+                "label": "Erencrypt.MyNotes-win-Portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/Erencrypt/MyNotes/releases/download/v2.1.0/Erencrypt.MyNotes-win-Portable.zip",
+                "size": 108648222,
+                "sha256": "06303c58c41d341c532dd715d63fcb12e78ba0eb40d211cdbedd51186f651a40"
+            }
+        ],
+        "features": [
+            "Create, edit, and delete text notes",
+            "Set reminders with optional alarm sounds",
+            "Notification button to open the linked note",
+            "Tray icon for quick access and background operation",
+            "Language selection (English and Turkish)",
+            "12‑hour or 24‑hour time format",
+            "Configurable notification priority",
+            "Trash retention settings with customizable periods"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download the installer EXE or the portable ZIP from the official GitHub release page.",
+            "If you chose the EXE, run it and follow the setup wizard.",
+            "If you chose the ZIP, extract its contents to a folder.",
+            "Start MyNotes by double‑clicking MyNotes.exe (or the shortcut created by the installer)."
+        ],
+        "related_software": [],
+        "seo_title": "MyNotes Free Download for Windows",
+        "meta_description": "Download MyNotes free for Windows. A simple notes and reminders application for Windows built with WinUI 3.",
+        "canonical_url": "https://codehimblog.github.io/software/mynotes/",
         "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
