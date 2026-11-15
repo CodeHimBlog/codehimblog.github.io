@@ -1450,6 +1450,129 @@
         "verification_status": "partial"
     },
     {
+        "id": "luciddesk",
+        "name": "LucidDesk",
+        "slug": "luciddesk",
+        "summary": "LucidDesk is a free, open‑source tool that lets you organize desktop icons into panels, create folder panels, search files with Everything, and preview files with PowerToys Peek.",
+        "description": [
+            "LucidDesk helps you keep your Windows desktop tidy by grouping icons into customizable panels. You can add folder panels to browse frequently used directories, search the whole system, and preview files without leaving the desktop. The program works with an optional command‑line interface and external agents for automation.",
+            "LucidDesk provides a panel‑based workspace on the desktop. Each panel can hold shortcuts, files, or a view of a folder. Panels can be moved, resized, and arranged automatically or manually. You can switch between icon and list views, change themes, and set panels to collapse, lock, or stay on top. The built‑in search integrates with the Everything utility, and pressing space on a selected file shows a preview if PowerToys Peek or QuickLook is installed. Settings and layout can be backed up and restored, and a CLI with JSON output allows scripts or agents to manage panels and backups. The program does not move original files; removing icons from a panel returns them to the desktop."
+        ],
+        "icon": {
+            "text": "L",
+            "color": "#0F766E"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/Yuch3nE/luciddesk#license",
+        "official_website": "https://luciddesk.bbkingdom365.com",
+        "download_page": "https://github.com/Yuch3nE/luciddesk/releases/tag/v0.25.3",
+        "repository_url": "https://github.com/Yuch3nE/luciddesk",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Yuch3nE/luciddesk#readme",
+                "note": "Stated in the project README: “Windows 11 x64”"
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Yuch3nE/luciddesk#readme",
+                "note": "Stated in the project README: “Windows 10 1809+”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.25.3",
+        "release_date": "2026-10-31",
+        "release_url": "https://github.com/Yuch3nE/luciddesk/releases/tag/v0.25.3",
+        "primary_download": {
+            "url": "https://github.com/Yuch3nE/luciddesk/releases/download/v0.25.3/LucidDesk-0.25.3-windows-x64-setup.exe",
+            "filename": "LucidDesk-0.25.3-windows-x64-setup.exe",
+            "size": 6142373,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "LucidDesk-0.25.3-windows-x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/Yuch3nE/luciddesk/releases/download/v0.25.3/LucidDesk-0.25.3-windows-x64-setup.exe",
+                "size": 6142373,
+                "sha256": "a62fdd6e479a1a8f903cf010216e96aa0e2bf92ce306bf1f6d8a6d61cfca870f"
+            },
+            {
+                "label": "LucidDesk-0.25.3-3601b0a-windows-x64-20261031-143144-774.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/Yuch3nE/luciddesk/releases/download/v0.25.3/LucidDesk-0.25.3-3601b0a-windows-x64-20261031-143144-774.zip",
+                "size": 4424318,
+                "sha256": "8172ef9295332d1ac9b99e72eb4c706da82786396527a62d80dfa46aeeb4b61c"
+            },
+            {
+                "label": "LucidDesk-0.25.3-windows-x64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/Yuch3nE/luciddesk/releases/download/v0.25.3/LucidDesk-0.25.3-windows-x64-portable.zip",
+                "size": 4423463,
+                "sha256": "a4582bc982a0bb5eadd28bee269b7ae38b4e6060ca4f1c3b5468d5d855b0415a"
+            }
+        ],
+        "features": [
+            "Organize desktop icons into movable and resizable panels",
+            "Create folder panels that browse and refresh real directories",
+            "Integrate with Everything for fast file search",
+            "Preview files with Space using PowerToys Peek or QuickLook",
+            "Customize themes, fonts, corner radius, and panel behavior",
+            "Backup and restore layout and settings",
+            "Command‑line interface for scripting and agent automation",
+            "Automatic or manual backup options",
+            "Support for multiple languages and high‑DPI displays"
+        ],
+        "requirements": [
+            "Windows 10 1809+ (x64)",
+            "Optional: Everything for search",
+            "Optional: PowerToys Peek or QuickLook for file preview"
+        ],
+        "installation_instructions": [
+            "Download the installer or portable ZIP from the GitHub release page.",
+            "Run the *.exe installer or extract the ZIP to a folder.",
+            "Launch LucidDesk by double‑clicking luciddesk.exe.",
+            "Use the tray icon to create a new panel and start adding icons.",
+            "Adjust settings through the tray menu as needed."
+        ],
+        "related_software": [],
+        "seo_title": "LucidDesk Free Download for Windows 11 and 10",
+        "meta_description": "Download LucidDesk free for Windows 11 and 10. LucidDesk is a free, open‑source tool that lets you organize desktop icons into panels, create folder panels, se…",
+        "canonical_url": "https://codehimblog.github.io/software/luciddesk/",
+        "date_added": "2026-11-15",
+        "last_verified_at": "2026-11-15",
+        "verification_status": "verified"
+    },
+    {
         "id": "moonlight-qt",
         "name": "Moonlight Qt",
         "slug": "moonlight-qt",
@@ -2521,6 +2644,149 @@
         "meta_description": "ShareX is a free, open-source screenshot and screen recording tool for Windows. See features, download formats and official download sources.",
         "canonical_url": "https://codehimblog.github.io/software/sharex/",
         "date_added": "2026-11-14",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "sucrose",
+        "name": "Sucrose",
+        "slug": "sucrose",
+        "summary": "Sucrose is an open‑source wallpaper engine that lets you run interactive, media‑responsive wallpapers on your desktop.",
+        "description": [
+            "Sucrose provides a way to personalize your desktop with animated and interactive wallpapers. It supports light and dark themes, multiple monitors, and any screen resolution. Users can create their own wallpapers or download them from the built‑in store.",
+            "The program lets you design wallpapers that react to audio, system status, or web content using its Audio API, System API, and embedded web view based on CefSharp. You can use any website as a wallpaper, and the engine includes support for video and GIF wallpapers via VLC. It optimizes CPU and GPU usage, automatically pauses wallpapers when a fullscreen application or game is running, and offers a power‑saving mode that pauses wallpapers on battery power. Wallpapers can be shared with friends or the Sucrose community through the Sucrose Store. The software is completely free and open‑source under the GPL‑3.0 license."
+        ],
+        "icon": {
+            "text": "S",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/Taiizor/Sucrose#license",
+        "official_website": "https://sucrose.dev",
+        "download_page": "https://github.com/Taiizor/Sucrose/releases/tag/v26.7.5.0",
+        "repository_url": "https://github.com/Taiizor/Sucrose",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "26.7.5.0",
+        "release_date": "2026-07-05",
+        "release_url": "https://github.com/Taiizor/Sucrose/releases/tag/v26.7.5.0",
+        "primary_download": {
+            "url": "https://github.com/Taiizor/Sucrose/releases/download/v26.7.5.0/Sucrose_Bundle_.NET_Framework_4.8_x64_26.7.5.0.exe",
+            "filename": "Sucrose_Bundle_.NET_Framework_4.8_x64_26.7.5.0.exe",
+            "size": 342611384,
+            "architecture": "x64",
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "Sucrose_Bundle_.NET_Framework_4.8_ARM64_26.7.5.0.7z",
+                "format": "7z archive",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/Taiizor/Sucrose/releases/download/v26.7.5.0/Sucrose_Bundle_.NET_Framework_4.8_ARM64_26.7.5.0.7z",
+                "size": 297857443,
+                "sha256": "99d05739774183f352e4e67323b63b438a51c591dbdbd1a604adddeaf274f7aa"
+            },
+            {
+                "label": "Sucrose_Bundle_.NET_Framework_4.8_x64_26.7.5.0.7z",
+                "format": "7z archive",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/Taiizor/Sucrose/releases/download/v26.7.5.0/Sucrose_Bundle_.NET_Framework_4.8_x64_26.7.5.0.7z",
+                "size": 327513047,
+                "sha256": "f36804548b0062be6845b4852287f4d872d59e7100303d040cf4eb4e9b2403e7"
+            },
+            {
+                "label": "Sucrose_Bundle_.NET_Framework_4.8_x86_26.7.5.0.7z",
+                "format": "7z archive",
+                "kind": "portable",
+                "architecture": "x86",
+                "url": "https://github.com/Taiizor/Sucrose/releases/download/v26.7.5.0/Sucrose_Bundle_.NET_Framework_4.8_x86_26.7.5.0.7z",
+                "size": 305995424,
+                "sha256": "bc50a05f09c327f087a42dcda04aa180efb3403c037128060ddfee1a2899b6cc"
+            },
+            {
+                "label": "Sucrose_Bundle_.NET_Framework_4.8_ARM64_26.7.5.0.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/Taiizor/Sucrose/releases/download/v26.7.5.0/Sucrose_Bundle_.NET_Framework_4.8_ARM64_26.7.5.0.exe",
+                "size": 312701368,
+                "sha256": "79ea9b36c018e906b1133774665b217c302ce3bf58e1308973444497575e4f0f"
+            },
+            {
+                "label": "Sucrose_Bundle_.NET_Framework_4.8_x64_26.7.5.0.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/Taiizor/Sucrose/releases/download/v26.7.5.0/Sucrose_Bundle_.NET_Framework_4.8_x64_26.7.5.0.exe",
+                "size": 342611384,
+                "sha256": "3ee62580ded7840e68e6314b1fc47433122c913d6f0c047de7c40cad7dfd048c"
+            },
+            {
+                "label": "Sucrose_Bundle_.NET_Framework_4.8_x86_26.7.5.0.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x86",
+                "url": "https://github.com/Taiizor/Sucrose/releases/download/v26.7.5.0/Sucrose_Bundle_.NET_Framework_4.8_x86_26.7.5.0.exe",
+                "size": 320339896,
+                "sha256": "f80d173345f9e110d318d30186e388ffa09beb0f2edfdd49ff3d389316ce3dec"
+            }
+        ],
+        "features": [
+            "Supports interactive wallpapers that respond to audio and system events",
+            "Allows use of any website as a wallpaper via embedded WebView",
+            "Includes video and GIF support through VLC integration",
+            "Optimizes CPU/GPU usage and pauses when fullscreen apps run",
+            "Power‑saving mode pauses wallpapers on battery power",
+            "Light and dark theme options",
+            "Multi‑monitor and any resolution support",
+            "Built‑in store for downloading and sharing user‑created wallpapers"
+        ],
+        "requirements": [
+            "Requires .NET Framework 4.8 installed"
+        ],
+        "installation_instructions": [
+            "Go to the GitHub releases page and download the appropriate .exe or .7z file for your system architecture.",
+            "If you downloaded a .exe, run it and follow the installer prompts.",
+            "If you downloaded a .7z archive, extract it to a folder of your choice.",
+            "Launch Sucrose from the Start menu or the extracted folder.",
+            "Open the application and start adding or creating wallpapers."
+        ],
+        "related_software": [],
+        "seo_title": "Sucrose Free Download for Windows",
+        "meta_description": "Download Sucrose free for Windows. Sucrose is an open‑source wallpaper engine that lets you run interactive, media‑responsive wallpapers on your desktop.",
+        "canonical_url": "https://codehimblog.github.io/software/sucrose/",
+        "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
     },
