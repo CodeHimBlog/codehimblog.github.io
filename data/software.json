@@ -1573,6 +1573,128 @@
         "verification_status": "verified"
     },
     {
+        "id": "mdns-browser",
+        "name": "mDNS-Browser",
+        "slug": "mdns-browser",
+        "summary": "A graphical tool for browsing services advertised via mDNS on the local network.",
+        "description": [
+            "mDNS-Browser lets you see and explore devices and services that announce themselves with multicast DNS. It shows the service type, host name, IP addresses and any additional records in a simple window.",
+            "The program is written in Rust with a Tauri backend and a SvelteKit frontend. It runs on Windows and other platforms. When started it scans the local network for mDNS announcements and displays them in a list. Selecting a service shows detailed information such as all resolved IP addresses, TXT records and sub‑types. The UI includes a force‑directed graph view for visualising relationships between services. It also provides a log file and optional developer tools for troubleshooting."
+        ],
+        "icon": {
+            "text": "M",
+            "color": "#1D4ED8"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/hrzlgnm/mdns-browser#license",
+        "official_website": null,
+        "download_page": "https://github.com/hrzlgnm/mdns-browser/releases/tag/v2.9.11",
+        "repository_url": "https://github.com/hrzlgnm/mdns-browser",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.9.11",
+        "release_date": "2026-11-10",
+        "release_url": "https://github.com/hrzlgnm/mdns-browser/releases/tag/v2.9.11",
+        "primary_download": {
+            "url": "https://github.com/hrzlgnm/mdns-browser/releases/download/v2.9.11/mdns-browser_2.9.11_x64-setup.exe",
+            "filename": "mdns-browser_2.9.11_x64-setup.exe",
+            "size": 2420312,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "mdns-browser_2.9.11_universal.app.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/hrzlgnm/mdns-browser/releases/download/v2.9.11/mdns-browser_2.9.11_universal.app.tar.gz",
+                "size": 6319718,
+                "sha256": "f87037715799ea5539812ab147a8aa02649a706922a55b8d5ad968e468a2b173"
+            },
+            {
+                "label": "mdns-browser_windows_x64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/hrzlgnm/mdns-browser/releases/download/v2.9.11/mdns-browser_windows_x64.exe",
+                "size": 5568000,
+                "sha256": "379ee8e9e4bb5983fc66003a7c8003eadc9ab540841d42072b4ab08bd15e9327"
+            },
+            {
+                "label": "mdns-browser_2.9.11_x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/hrzlgnm/mdns-browser/releases/download/v2.9.11/mdns-browser_2.9.11_x64-setup.exe",
+                "size": 2420312,
+                "sha256": "7da63b53183b240a2173c7b60ef5f746d25d9e599647f547a974cc4032f642b7"
+            },
+            {
+                "label": "mdns-browser_2.9.11_x64_en-US.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/hrzlgnm/mdns-browser/releases/download/v2.9.11/mdns-browser_2.9.11_x64_en-US.msi",
+                "size": 3133440,
+                "sha256": "e4faf04e5b8b62f069c5e996d1c847cdbac5ac91d23635b83947f87f81ee6c96"
+            }
+        ],
+        "features": [
+            "Scans and lists all mDNS services on the local network",
+            "Shows detailed information for each service, including multiple IPs, sub‑types and TXT records",
+            "Visual graph view to see service relationships",
+            "Option to enable logging to a file for diagnostics",
+            "Ability to open developer tools at startup for advanced debugging",
+            "Checks for updates on Windows",
+            "Portable executable and installer packages available"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the GitHub releases page and download the Windows installer (mdns-browser_2.9.11_x64-setup.exe) or the portable EXE (mdns-browser_windows_x64.exe).",
+            "Run the installer and follow the prompts, or double‑click the portable EXE to start the program.",
+            "After installation, launch mDNS-Browser from the Start menu or by double‑clicking the shortcut.",
+            "The application will automatically begin scanning for mDNS services.",
+            "Use the interface to explore discovered services."
+        ],
+        "related_software": [],
+        "seo_title": "mDNS-Browser Free Download for Windows",
+        "meta_description": "Download mDNS-Browser free for Windows. A graphical tool for browsing services advertised via mDNS on the local network.",
+        "canonical_url": "https://codehimblog.github.io/software/mdns-browser/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "moonlight-qt",
         "name": "Moonlight Qt",
         "slug": "moonlight-qt",
@@ -2186,6 +2308,106 @@
         "meta_description": "OBS Studio is free, open-source screen recording and live streaming software. See features, download formats and official sources for Windows.",
         "canonical_url": "https://codehimblog.github.io/software/obs-studio/",
         "date_added": "2026-11-14",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "pymusicplayer",
+        "name": "PyMusicPlayer",
+        "slug": "pymusicplayer",
+        "summary": "A Windows music player with audio analysis, waveform seek bar, and support for many audio formats and internet radio.",
+        "description": [
+            "PyMusicPlayer is a desktop music player for Windows built with wxPython and the BASS audio library. It plays a wide range of audio files, streams internet radio, and provides detailed audio analysis such as tempo, key, and loudness. The player shows waveforms as a seek bar and offers tools for editing tags and cover images.",
+            "The player supports common formats like MP3, WAV, OGG, FLAC, AAC, and more, using optional BASS add‑ons for additional codecs. Users can drag files, folders, or playlists onto the interface, and the program will analyze each track in the background, storing results in an SQLite cache. Analysis includes tempo, musical key, loudness, highlights, and beat grids, which can be used for smart playback modes such as playing only the highlight or a short edit of each song.",
+            "Waveforms are displayed both as the main seek bar and as a zoomed view that follows playback, allowing precise scrubbing. The interface includes a sidebar with sections for playlists, library, radio stations, and folders, plus searchable and filterable lists. Tag editing and cover image tools let users modify metadata, fetch information from online services, and edit images directly.",
+            "Additional features include pitch and tempo control, automatic mastering with VST support, various audio meters and visualizers, customizable keyboard shortcuts, always‑on‑top mode, and the ability to register the player as the default handler for audio file types."
+        ],
+        "icon": {
+            "text": "P",
+            "color": "#B45309"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/peppy0510/PyMusicPlayer#license",
+        "official_website": null,
+        "download_page": "https://github.com/peppy0510/PyMusicPlayer/releases/tag/v1.7.0",
+        "repository_url": "https://github.com/peppy0510/PyMusicPlayer",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.7.0",
+        "release_date": "2026-11-11",
+        "release_url": "https://github.com/peppy0510/PyMusicPlayer/releases/tag/v1.7.0",
+        "primary_download": {
+            "url": "https://github.com/peppy0510/PyMusicPlayer/releases/download/v1.7.0/PyMusicPlayer-1.7.0-Setup.exe",
+            "filename": "PyMusicPlayer-1.7.0-Setup.exe",
+            "size": 191195930,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "PyMusicPlayer-1.7.0-Setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/peppy0510/PyMusicPlayer/releases/download/v1.7.0/PyMusicPlayer-1.7.0-Setup.exe",
+                "size": 191195930,
+                "sha256": "4e345d27edda7cc5d0b5acd599cb7317b345d5e75b7c035dd9ec1dbaa1c6226c"
+            }
+        ],
+        "features": [
+            "Plays many audio formats including MP3, WAV, OGG, FLAC, AAC and more",
+            "Streams internet radio via HTTP, HTTPS and HLS",
+            "Shows full‑song waveform as seek bar with zoomed view for precise scrubbing",
+            "Analyzes tracks in background for tempo, key, loudness, highlights and beat grid",
+            "Stores analysis in SQLite cache to avoid re‑analysis of unchanged files",
+            "Playback modes: highlight only, short edit, loop, skip silence",
+            "Pitch and tempo control with optional key lock",
+            "Automatic mastering with VST plugin and visual meters",
+            "Tag and cover image editor with online lookup from Discogs and Last.fm",
+            "Customizable keyboard shortcuts and always‑on‑top option"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download PyMusicPlayer-Setup.exe from the official GitHub release page.",
+            "Run the installer and follow the on‑screen prompts.",
+            "After installation, launch PyMusicPlayer from the Start menu or desktop shortcut.",
+            "(Optional) Register the player as the default program for audio files in Windows Settings.",
+            "Open music files or drag them onto the player to start listening."
+        ],
+        "related_software": [],
+        "seo_title": "PyMusicPlayer Free Download for Windows",
+        "meta_description": "Download PyMusicPlayer free for Windows. A Windows music player with audio analysis, waveform seek bar, and support for many audio formats and internet radio.",
+        "canonical_url": "https://codehimblog.github.io/software/pymusicplayer/",
+        "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
     },
