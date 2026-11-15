@@ -1,37 +1,32 @@
 [
-  {
-    "slug": "windows-11",
-    "name": "Windows 11",
-    "short": "Win 11",
-    "landing_page": true,
-    "intro": "Free and open-source applications whose official project sources state support for Windows 11 in the current release."
-  },
-  {
-    "slug": "windows-10",
-    "name": "Windows 10",
-    "short": "Win 10",
-    "landing_page": true,
-    "intro": "Free and open-source applications whose official project sources state support for Windows 10 in the current release."
-  },
-  {
-    "slug": "windows-8-1",
-    "name": "Windows 8.1",
-    "short": "Win 8.1",
-    "landing_page": false,
-    "intro": ""
-  },
-  {
-    "slug": "windows-8",
-    "name": "Windows 8",
-    "short": "Win 8",
-    "landing_page": false,
-    "intro": ""
-  },
-  {
-    "slug": "windows-7",
-    "name": "Windows 7",
-    "short": "Win 7",
-    "landing_page": true,
-    "intro": "Free and open-source applications whose official project sources state that the current release works on Windows 7. Many modern applications no longer support Windows 7, so this list is intentionally short."
-  }
+    {
+        "slug": "windows-11",
+        "name": "Windows 11",
+        "short": "Win 11",
+        "landing_page": true
+    },
+    {
+        "slug": "windows-10",
+        "name": "Windows 10",
+        "short": "Win 10",
+        "landing_page": true
+    },
+    {
+        "slug": "windows-8-1",
+        "name": "Windows 8.1",
+        "short": "Win 8.1",
+        "landing_page": false
+    },
+    {
+        "slug": "windows-8",
+        "name": "Windows 8",
+        "short": "Win 8",
+        "landing_page": false
+    },
+    {
+        "slug": "windows-7",
+        "name": "Windows 7",
+        "short": "Win 7",
+        "landing_page": true
+    }
 ]

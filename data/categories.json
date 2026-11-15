@@ -1,57 +1,44 @@
 [
-  {
-    "slug": "security",
-    "name": "Security & Privacy",
-    "icon": "shield",
-    "short": "Password managers, encryption and privacy tools.",
-    "description": "Password managers, privacy tools, encryption utilities and other security-focused software for Windows.",
-    "intro": "Security software deserves extra care. Download it only from the project's official website or repository, check the publisher signature where one is provided, and read the project's own security guidance before you trust it with sensitive data.",
-    "schema_category": "SecurityApplication",
-    "seo_title": "Free & Open-Source Security and Privacy Software for Windows",
-    "meta_description": "Browse free and open-source Windows security and privacy software, including password managers, with official download sources and compatibility notes."
-  },
-  {
-    "slug": "graphics",
-    "name": "Graphics & Screenshots",
-    "icon": "image",
-    "short": "Screen capture, image editing and drawing tools.",
-    "description": "Image editors, screenshot utilities, drawing tools and other graphics applications for Windows.",
-    "intro": "Graphics tools range from quick screen-capture utilities to full image editors. Each listing links to the official project so you can check the current release and system requirements before installing.",
-    "schema_category": "DesignApplication",
-    "seo_title": "Free & Open-Source Graphics and Screenshot Software for Windows",
-    "meta_description": "Find free and open-source Windows graphics and screenshot tools. Compare features, check Windows compatibility and visit official download pages."
-  },
-  {
-    "slug": "audio-video",
-    "name": "Audio & Video",
-    "icon": "film",
-    "short": "Recorders, streaming tools and media software.",
-    "description": "Media players, audio tools, video editors, screen recorders and streaming applications for Windows.",
-    "intro": "Audio and video software often has specific hardware and driver requirements. Check each project's official requirements and release notes, especially for recording and streaming tools that rely on your graphics card.",
-    "schema_category": "MultimediaApplication",
-    "seo_title": "Free & Open-Source Audio and Video Software for Windows",
-    "meta_description": "Discover free and open-source audio and video software for Windows, including recording and streaming tools, with official download links."
-  },
-  {
-    "slug": "system-utilities",
-    "name": "System Utilities",
-    "icon": "wrench",
-    "short": "File archivers and tools to manage Windows.",
-    "description": "File archivers and practical tools for managing, monitoring and maintaining Windows systems.",
-    "intro": "System utilities often integrate with Windows Explorer or run with elevated permissions. Install them from official sources and choose the build that matches your Windows architecture (x64, x86 or ARM64).",
-    "schema_category": "UtilitiesApplication",
-    "seo_title": "Free & Open-Source System Utilities for Windows",
-    "meta_description": "Browse free and open-source Windows system utilities such as file archivers. Check supported Windows versions and find official downloads."
-  },
-  {
-    "slug": "developer-tools",
-    "name": "Developer Tools",
-    "icon": "code",
-    "short": "Code editors and development utilities.",
-    "description": "Code and text editors, terminals, version-control tools and other utilities for software development on Windows.",
-    "intro": "Developer tools are updated frequently. Use the official release page to confirm the newest version, and prefer the project's own installer or portable package over third-party mirrors.",
-    "schema_category": "DeveloperApplication",
-    "seo_title": "Free & Open-Source Developer Tools for Windows",
-    "meta_description": "Explore free and open-source developer tools for Windows, including code editors, with official download sources and compatibility information."
-  }
+    {
+        "slug": "security",
+        "name": "Security & Privacy",
+        "icon": "shield",
+        "short": "Password managers, encryption and privacy tools.",
+        "description": "Password managers, privacy tools, encryption utilities and other security-focused software for Windows."
+    },
+    {
+        "slug": "graphics",
+        "name": "Graphics & Image Editing",
+        "icon": "image",
+        "short": "Screen capture, image editing and drawing tools.",
+        "description": "Image editors, screenshot utilities, drawing tools and other graphics applications for Windows."
+    },
+    {
+        "slug": "audio-video",
+        "name": "Audio & Video",
+        "icon": "film",
+        "short": "Recorders, streaming tools and media software.",
+        "description": "Media players, audio tools, video editors, screen recorders and streaming applications for Windows."
+    },
+    {
+        "slug": "file-management",
+        "name": "File Management",
+        "icon": "folder-archive",
+        "short": "File archivers, file managers and search tools.",
+        "description": "File archivers, file managers, synchronisation and search tools for Windows."
+    },
+    {
+        "slug": "system-utilities",
+        "name": "System Utilities",
+        "icon": "wrench",
+        "short": "Tools to manage and maintain Windows.",
+        "description": "Practical tools for managing, monitoring and maintaining Windows systems."
+    },
+    {
+        "slug": "developer-tools",
+        "name": "Developer Tools",
+        "icon": "code",
+        "short": "Code editors and development utilities.",
+        "description": "Code and text editors, terminals, version-control tools and other utilities for software development on Windows."
+    }
 ]
