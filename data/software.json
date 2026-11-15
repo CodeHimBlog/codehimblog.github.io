@@ -620,6 +620,131 @@
         "verification_status": "verified"
     },
     {
+        "id": "installerclean",
+        "name": "InstallerClean",
+        "slug": "installerclean",
+        "summary": "Open source tool to safely clean orphaned Windows Installer files and reclaim disk space.",
+        "description": [
+            "InstallerClean scans the hidden C:\\Windows\\Installer folder, identifies files that are no longer needed by any installed program, and lets you delete or move them to free up space.",
+            "The program focuses on a single task: cleaning up leftover installer files that accumulate as you install and update software. It reads the Windows Installer database and registry to determine which files are still required. After a quick scan it shows a list of unneeded files, their sizes, and offers options to delete them or move them elsewhere. It works as a graphical application and also provides a command‑line tool for scripting. The tool is open source, free, and distributed as an installer, a portable executable, a slim version, and a separate CLI binary."
+        ],
+        "icon": {
+            "text": "I",
+            "color": "#0F766E"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/no-faff/InstallerClean#license",
+        "official_website": null,
+        "download_page": "https://github.com/no-faff/InstallerClean/releases/tag/v3.7.0",
+        "repository_url": "https://github.com/no-faff/InstallerClean",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "3.7.0",
+        "release_date": "2026-11-04",
+        "release_url": "https://github.com/no-faff/InstallerClean/releases/tag/v3.7.0",
+        "primary_download": {
+            "url": "https://github.com/no-faff/InstallerClean/releases/download/v3.7.0/InstallerClean-3.7.0-setup.exe",
+            "filename": "InstallerClean-3.7.0-setup.exe",
+            "size": 97933070,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "InstallerClean-3.7.0-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/no-faff/InstallerClean/releases/download/v3.7.0/InstallerClean-3.7.0-setup.exe",
+                "size": 97933070,
+                "sha256": "bf035ff190738488bdb34f00e70d0daa0c6520e187b6790f0e414897f419a2cc"
+            },
+            {
+                "label": "installerclean-cli.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/no-faff/InstallerClean/releases/download/v3.7.0/installerclean-cli.exe",
+                "size": 39009519,
+                "sha256": "7cc0ac9a96553e0546e38e8ee9fb14022579ffadd688dc5b4b9eae05bfae32d4"
+            },
+            {
+                "label": "InstallerClean-portable.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/no-faff/InstallerClean/releases/download/v3.7.0/InstallerClean-portable.exe",
+                "size": 67550288,
+                "sha256": "fb4b42288d59154064ad0c47f8eb93ebd11a90d8352ca999f7f76dcf9f0eaf9c"
+            },
+            {
+                "label": "InstallerClean-slim.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/no-faff/InstallerClean/releases/download/v3.7.0/InstallerClean-slim.exe",
+                "size": 6374629,
+                "sha256": "7074cb3386f3af28af69c41940467727be2e5c8adb6fa525ce32756549be1b22"
+            }
+        ],
+        "features": [
+            "Scans C:\\Windows\\Installer for unneeded files",
+            "Shows detailed information about each file",
+            "Allows deletion or relocation of safe files",
+            "Provides both graphical UI and command‑line interface",
+            "Portable version runs without installation",
+            "Uses Windows Installer database to ensure safety",
+            "Generates a report of reclaimed space",
+            "Supports multiple languages in the UI"
+        ],
+        "requirements": [
+            ".NET 10 runtime must be installed on the system"
+        ],
+        "installation_instructions": [
+            "Open the release page on GitHub and download the desired file (installer, portable, or CLI).",
+            "For the installer, run the .exe and follow the on‑screen prompts.",
+            "For the portable version, extract the .exe to a folder and double‑click to start.",
+            "For the CLI, run the .exe from a command prompt.",
+            "Follow the program’s instructions to scan and clean the Installer folder."
+        ],
+        "related_software": [],
+        "seo_title": "InstallerClean Free Download for Windows",
+        "meta_description": "Download InstallerClean free for Windows. Open source tool to safely clean orphaned Windows Installer files and reclaim disk space.",
+        "canonical_url": "https://codehimblog.github.io/software/installerclean/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "keepassxc",
         "name": "KeePassXC",
         "slug": "keepassxc",
