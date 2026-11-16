@@ -3653,6 +3653,102 @@
         "verification_status": "partial"
     },
     {
+        "id": "meowsic",
+        "name": "Meowsic",
+        "slug": "meowsic",
+        "summary": "Meowsic is a modern music player for Windows that supports many audio formats and offers playlist and lyric features.",
+        "description": [
+            "Meowsic provides a clean interface for playing music on Windows. It handles large libraries, lets you organise playlists, and shows synchronized lyrics while you listen.",
+            "Meowsic is an open‑source music player built with Rust, Tauri, TypeScript and React. It is designed to be fast even with very large collections and offers a range of tools for managing and enjoying your music. The player includes a mini mode for compact control, drag‑and‑drop playlist editing, metadata search, lyric display, and the ability to import or export your library data. It aims to be a simple yet powerful alternative to other desktop music players."
+        ],
+        "icon": {
+            "text": "M",
+            "color": "#15803D"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/CyanFroste/meowsic#license",
+        "official_website": null,
+        "download_page": "https://github.com/CyanFroste/meowsic/releases/tag/v2.4.0",
+        "repository_url": "https://github.com/CyanFroste/meowsic",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.4.0",
+        "release_date": "2026-07-19",
+        "release_url": "https://github.com/CyanFroste/meowsic/releases/tag/v2.4.0",
+        "primary_download": {
+            "url": "https://github.com/CyanFroste/meowsic/releases/download/v2.4.0/meowsic_2.4.0_x64-setup.exe",
+            "filename": "meowsic_2.4.0_x64-setup.exe",
+            "size": 10422358,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "meowsic_2.4.0_x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/CyanFroste/meowsic/releases/download/v2.4.0/meowsic_2.4.0_x64-setup.exe",
+                "size": 10422358,
+                "sha256": "f7d03a2b28b4c9f3bac8d517a876043988b9910f2843b5c5579b69e56c751e29"
+            }
+        ],
+        "features": [
+            "Plays most major audio formats",
+            "Handles large libraries with high performance",
+            "Drag‑and‑drop playlist management",
+            "Metadata‑based search",
+            "Mini player for compact control",
+            "Synchronized lyrics viewer",
+            "Custom rules for tracks",
+            "Export and import library data"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the GitHub releases page and download the meowsic_2.4.0_x64-setup.exe file.",
+            "Run the downloaded installer.",
+            "Follow the on‑screen prompts to complete installation.",
+            "After installation, launch Meowsic from the Start menu or desktop shortcut.",
+            "Add your music folders and start listening."
+        ],
+        "related_software": [],
+        "seo_title": "Meowsic Free Download for Windows",
+        "meta_description": "Download Meowsic free for Windows. Meowsic is a modern music player for Windows that supports many audio formats and offers playlist and lyric features.",
+        "canonical_url": "https://codehimblog.github.io/software/meowsic/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "metrolist",
         "name": "Metrolist",
         "slug": "metrolist",
@@ -7129,6 +7225,112 @@
         "date_added": "2026-11-15",
         "last_verified_at": "2026-11-15",
         "verification_status": "verified"
+    },
+    {
+        "id": "waveflow",
+        "name": "WaveFlow",
+        "slug": "waveflow",
+        "summary": "WaveFlow is a local‑first music player that organizes and plays the audio files you already own, with high‑resolution playback, word‑synced lyrics and customizable skins.",
+        "description": [
+            "WaveFlow lets you manage a personal music library on your computer without any subscription or online account. It scans folders, builds a library with album, artist and genre information, and plays files through a real‑time audio engine that supports Hi‑Res and gapless playback. The player also shows synchronized lyrics, supports plugins, and offers several visual skins.",
+            "WaveFlow is a desktop music player for Windows, macOS and Linux. It reads your music collection, enriches metadata with tempo, key and loudness information, and can fetch missing tags from MusicBrainz. Playback supports high‑resolution audio, DSD over DoP, and multi‑channel output. The AutoMix feature cross‑fades tracks beat‑matched. Lyrics are displayed word‑by‑word with optional romanisation and translations, useful for karaoke. The interface includes six skins, animated album covers, and a canvas visualizer. Additional features include smart playlists, daily mixes, podcast support, WebDAV/SMB shares, DLNA and MPD servers, and statistics. Plugins can be installed from an integrated store, extending functionality while keeping the core app sandboxed."
+        ],
+        "icon": {
+            "text": "W",
+            "color": "#334155"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/InstaZDLL/WaveFlow#license",
+        "official_website": "https://waveflow.app",
+        "download_page": "https://github.com/InstaZDLL/WaveFlow/releases/tag/v2.1.0",
+        "repository_url": "https://github.com/InstaZDLL/WaveFlow",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.1.0",
+        "release_date": "2026-11-14",
+        "release_url": "https://github.com/InstaZDLL/WaveFlow/releases/tag/v2.1.0",
+        "primary_download": {
+            "url": "https://github.com/InstaZDLL/WaveFlow/releases/download/v2.1.0/WaveFlow_2.1.0_windows-x86_64-setup.exe",
+            "filename": "WaveFlow_2.1.0_windows-x86_64-setup.exe",
+            "size": 24311600,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "WaveFlow_2.1.0_windows-x86_64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/InstaZDLL/WaveFlow/releases/download/v2.1.0/WaveFlow_2.1.0_windows-x86_64-setup.exe",
+                "size": 24311600,
+                "sha256": "837dd5cc1ed838326ab793e3a4cfb1ce80819b16c053befa8fb54565739c3142"
+            },
+            {
+                "label": "WaveFlow_2.1.0_windows-x86_64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/InstaZDLL/WaveFlow/releases/download/v2.1.0/WaveFlow_2.1.0_windows-x86_64.msi",
+                "size": 34791424,
+                "sha256": "f9c23a1be7b97d35cdf8c8ce9a86df27d4425a475003144bd1546a6493c99ce1"
+            }
+        ],
+        "features": [
+            "Scans folders and builds a library organised by album, artist and genre",
+            "Hi‑Res, gapless and bit‑perfect audio playback with DSD over DoP support",
+            "AutoMix cross‑fade that aligns beats between tracks",
+            "Word‑synced lyrics with romanisation and translations",
+            "Smart playlists, daily mixes and podcast integration",
+            "Six customizable skins with animated covers and canvas visualizer",
+            "Tag workshop with undo support and automatic metadata enrichment",
+            "Support for WebDAV, SMB shares, DLNA and MPD servers",
+            "Plugin system with one‑click installation from a curated store"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page on GitHub and download the Windows installer (EXE or MSI).",
+            "Run the downloaded installer and follow the on‑screen prompts.",
+            "When installation finishes, launch WaveFlow from the Start menu or desktop shortcut.",
+            "The first run will scan your music folders and build the library.",
+            "Start playing your collection from the main interface."
+        ],
+        "related_software": [],
+        "seo_title": "WaveFlow Free Download for Windows",
+        "meta_description": "Download WaveFlow free for Windows. WaveFlow is a local‑first music player that organizes and plays the audio files you already own, with high‑resolution playb…",
+        "canonical_url": "https://codehimblog.github.io/software/waveflow/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
     },
     {
         "id": "weftcut",
