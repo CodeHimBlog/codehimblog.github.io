@@ -156,7 +156,8 @@
           : badge('Windows support: see details', 'slate', HELP);
         return '<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md">' +
           '<div class="flex items-start gap-3">' +
-          '<span class="app-icon h-11 w-11 text-base" style="--app-color:' + esc(s.icon.color) + '" role="img" aria-label="' + esc(s.name) + ' icon (letter placeholder)">' + esc(s.icon.text) + '</span>' +
+          (s.icon.logo ? '<img src="' + esc(s.icon.logo) + '" width="44" height="44" alt="' + esc(s.name) + ' logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">'
+            : '<span class="app-icon h-11 w-11 text-base" style="--app-color:' + esc(s.icon.color) + '" role="img" aria-label="' + esc(s.name) + ' icon (letter placeholder)">' + esc(s.icon.text) + '</span>') +
           '<div class="min-w-0"><h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/' + esc(s.slug) + '/" class="stretched-link">' + esc(s.name) + '</a></h2>' +
           '<p class="text-xs text-slate-500">' + esc(c ? c.name : '') + '</p></div></div>' +
           '<p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">' + esc(s.summary) + '</p>' +
