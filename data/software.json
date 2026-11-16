@@ -626,6 +626,131 @@
         "verification_status": "partial"
     },
     {
+        "id": "aurora",
+        "name": "Aurora",
+        "slug": "aurora",
+        "summary": "Aurora is a free, open‑source music player for Windows that plays local files and streams from many services such as Navidrome, Jellyfin, Plex, YouTube Music, SoundCloud and Spotify.",
+        "description": [
+            "Aurora provides a single library that merges music from your own files, network servers and popular streaming platforms. It includes a high‑quality audio engine with equalizer, effects and support for bit‑perfect output to DACs.",
+            "The program is aimed at users who want a versatile music player without ads or tracking. It can connect to self‑hosted servers like Navidrome, Subsonic, Jellyfin and Plex, as well as cloud services including YouTube Music, SoundCloud, Spotify and Apple Music. The built‑in 64‑bit DSP offers graphic and parametric EQ, a 16‑stage effects rack, headphone and speaker corrections, and WASAPI output for high‑fidelity playback. Aurora also shows word‑by‑word lyrics, AI‑generated playlists, offline download support, podcasts, internet radio and detailed listening statistics, all stored locally."
+        ],
+        "icon": {
+            "text": "A",
+            "color": "#1D4ED8"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/nessli420/aurora#license",
+        "official_website": "https://auroraplayer.lol",
+        "download_page": "https://github.com/nessli420/aurora/releases/tag/V3.4.0",
+        "repository_url": "https://github.com/nessli420/aurora",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "3.4.0",
+        "release_date": "2026-11-15",
+        "release_url": "https://github.com/nessli420/aurora/releases/tag/V3.4.0",
+        "primary_download": {
+            "url": "https://github.com/nessli420/aurora/releases/download/V3.4.0/Aurora-3.4.0.msi",
+            "filename": "Aurora-3.4.0.msi",
+            "size": 211465863,
+            "architecture": null,
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "aurora-deb.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/nessli420/aurora/releases/download/V3.4.0/aurora-deb.zip",
+                "size": 194308020,
+                "sha256": "811b149640cbc9422de6cbf186479e452fe8a2c250c25127568c2d0980731d3f"
+            },
+            {
+                "label": "aurora-rpm.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/nessli420/aurora/releases/download/V3.4.0/aurora-rpm.zip",
+                "size": 197567541,
+                "sha256": "0fbeb639b03e98445130f04e2b397ec3f12d6fd8929fcc685e2ac00ecd531960"
+            },
+            {
+                "label": "Aurora-3.4.0.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/nessli420/aurora/releases/download/V3.4.0/Aurora-3.4.0.exe",
+                "size": 212410368,
+                "sha256": "ee6d6f357663b224de065d07ed53817f2bf1898705e9d1f28b21966429f6c0b7"
+            },
+            {
+                "label": "Aurora-3.4.0.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/nessli420/aurora/releases/download/V3.4.0/Aurora-3.4.0.msi",
+                "size": 211465863,
+                "sha256": "73796df5de8c083b9593e009a810fb0b4467ee68257fee8f2f733ff46649ab71"
+            }
+        ],
+        "features": [
+            "Play local files and stream from many services in one library",
+            "64‑bit audio engine with graphic and parametric EQ",
+            "16‑stage effects rack including dynamics, reverb and crossfeed",
+            "Measured headphone and speaker corrections for accurate sound",
+            "Bit‑perfect USB DAC output up to 384 kHz and native DSD support",
+            "Word‑by‑word synchronized lyrics",
+            "AI DJ and AI‑generated playlists running on the device",
+            "Offline download mode, podcasts and internet radio",
+            "Detailed listening statistics and heatmap",
+            "Multiple interface styles and tablet‑optimized layouts"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the official GitHub release page and download the Aurora‑*.exe or Aurora‑*.msi file.",
+            "Run the downloaded installer (or double‑click the EXE for a portable version).",
+            "Follow the on‑screen prompts to complete installation.",
+            "After installation, launch Aurora from the Start menu or desktop shortcut.",
+            "Configure your music sources and start listening."
+        ],
+        "related_software": [],
+        "seo_title": "Aurora Free Download for Windows",
+        "meta_description": "Download Aurora free for Windows. Aurora is a free, open‑source music player for Windows that plays local files and streams from many services such as Navidrom…",
+        "canonical_url": "https://codehimblog.github.io/software/aurora/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "autorunmanager",
         "name": "AutoRunManager",
         "slug": "autorunmanager",
@@ -6596,6 +6721,102 @@
         "date_added": "2026-11-15",
         "last_verified_at": "2026-11-15",
         "verification_status": "verified"
+    },
+    {
+        "id": "weftcut",
+        "name": "WeftCut",
+        "slug": "weftcut",
+        "summary": "Free, open-source AI‑driven video editor that lets an AI agent control the timeline just like a human user.",
+        "description": [
+            "WeftCut is a video editing program that can be driven by an AI agent through a local MCP server. It works like a normal non‑linear editor, but external AI tools can issue editing commands in real time.",
+            "WeftCut provides a full‑featured non‑linear editing interface with timeline, keyframes, effects, captions, audio mixing and hardware‑accelerated export. All editing actions are exposed through a local MCP server, allowing any AI client such as Codex or Claude to control the editor. The AI does not run inside the app; the installer does not include model weights and optional speech or vision engines can be downloaded separately. Every edit made by an agent is recorded in the undo history, and sessions can be locked per agent to avoid accidental interference. An Agent view shows a compact preview, activity log, tacks and change diff, letting users review and audit the AI’s work before returning to the full editor."
+        ],
+        "icon": {
+            "text": "W",
+            "color": "#7C3AED"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/WeftCut/WeftCut#license",
+        "official_website": "https://weftcut.com",
+        "download_page": "https://github.com/WeftCut/WeftCut/releases/tag/v0.7.1",
+        "repository_url": "https://github.com/WeftCut/WeftCut",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.7.1",
+        "release_date": "2026-11-11",
+        "release_url": "https://github.com/WeftCut/WeftCut/releases/tag/v0.7.1",
+        "primary_download": {
+            "url": "https://github.com/WeftCut/WeftCut/releases/download/v0.7.1/WeftCut-win-x64.exe",
+            "filename": "WeftCut-win-x64.exe",
+            "size": 257230195,
+            "architecture": "x64",
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "WeftCut-win-x64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/WeftCut/WeftCut/releases/download/v0.7.1/WeftCut-win-x64.exe",
+                "size": 257230195,
+                "sha256": "748e2558a8880d0e92f2e2c33cf4e826810800c64cb1e6f8a3c1832371dfd4df"
+            }
+        ],
+        "features": [
+            "Full non‑linear video editing interface",
+            "AI agents can control the timeline via a local MCP server",
+            "All editing tools (place, trim, split, keyframe, effects, captions, audio mix) are available to both humans and agents",
+            "Undo history records every agent action and supports checkpoints",
+            "Multi‑agent sessions with lockable undo to prevent conflicts",
+            "Agent view with activity log, tacks and change diff for review",
+            "Hardware‑accelerated export",
+            "Self‑updating Windows installer"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the releases page on GitHub and download WeftCut‑win‑x64.exe.",
+            "Run the downloaded EXE to install the program.",
+            "After installation, open WeftCut from the Start menu.",
+            "(Optional) Open the settings panel to copy the prompt for connecting your AI client.",
+            "Start editing videos manually or let an AI agent drive the editor."
+        ],
+        "related_software": [],
+        "seo_title": "WeftCut Free Download for Windows",
+        "meta_description": "Download WeftCut free for Windows. Free, open-source AI‑driven video editor that lets an AI agent control the timeline just like a human user.",
+        "canonical_url": "https://codehimblog.github.io/software/weftcut/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
     },
     {
         "id": "winappmigrator",
