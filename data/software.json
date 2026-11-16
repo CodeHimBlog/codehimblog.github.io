@@ -1547,6 +1547,105 @@
         "verification_status": "partial"
     },
     {
+        "id": "formatix",
+        "name": "Formatix Image Converter",
+        "slug": "formatix",
+        "summary": "A fast, lightweight, offline batch image converter and resizer for Windows that supports many formats and offers quality control.",
+        "description": [
+            "Formatix Image Converter lets you convert, resize, and optimise large numbers of images without an internet connection. It runs as a single portable executable, so you can use it on any Windows computer without installation.",
+            "The program supports input formats such as AVIF, WEBP, JPEG, PNG, BMP, TIFF, ICO, HEIF/HEIC, and SVG. You can export to eight output formats, adjust compression quality, set target file sizes, and apply smart cropping. The interface includes dark and light themes, drag‑and‑drop, and multilingual support. All processing happens locally, with no ads or telemetry, and the tool can generate Windows icon packs and compare original and processed images side by side."
+        ],
+        "icon": {
+            "text": "F",
+            "color": "#0F766E"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/cyber-anderson/Formatix#license",
+        "official_website": "https://github.com/cyber-anderson/Formatix/releases",
+        "download_page": "https://github.com/cyber-anderson/Formatix/releases/tag/v1.17.4",
+        "repository_url": "https://github.com/cyber-anderson/Formatix",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.17.4",
+        "release_date": "2026-09-25",
+        "release_url": "https://github.com/cyber-anderson/Formatix/releases/tag/v1.17.4",
+        "primary_download": {
+            "url": "https://github.com/cyber-anderson/Formatix/releases/download/v1.17.4/formatix-image-converter-v1.17.4.exe",
+            "filename": "formatix-image-converter-v1.17.4.exe",
+            "size": 25432447,
+            "architecture": null,
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "formatix-image-converter-v1.17.4.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/cyber-anderson/Formatix/releases/download/v1.17.4/formatix-image-converter-v1.17.4.exe",
+                "size": 25432447,
+                "sha256": "0807b7be7dc00cac8732cbf76e178faed53de23bef8f7a66d21c02d9f5f1bd4f"
+            }
+        ],
+        "features": [
+            "Batch conversion, resizing and optimisation of hundreds of images at once",
+            "Supports 8 output formats including AVIF, WEBP, JPEG, HEIC/HEIF, PNG, BMP, TIFF, ICO",
+            "Multi‑threaded processing for fast performance",
+            "Five resize modes with smart crop and proportional scaling",
+            "Adjustable quality settings and target file size option",
+            "Drag & drop file/folder addition",
+            "Automatic cache to skip already processed files",
+            "Light and dark UI themes with multilingual interface",
+            "Portable single‑exe, no installation required"
+        ],
+        "requirements": [
+            "Operating System: Windows (pre‑compiled .exe)",
+            "Python 3.10+ and libraries Pillow, pillow‑heif, tkinterdnd2, resvg‑py only needed if running from source"
+        ],
+        "installation_instructions": [
+            "Open the Releases page on GitHub.",
+            "2.",
+            "Run the downloaded .exe (no installation needed).",
+            "The program starts automatically; you can begin adding images for conversion."
+        ],
+        "related_software": [],
+        "seo_title": "Formatix Image Converter Free Download for Windows",
+        "meta_description": "Download Formatix Image Converter free for Windows. A fast, lightweight, offline batch image converter and resizer for Windows that supports many formats and o…",
+        "canonical_url": "https://codehimblog.github.io/software/formatix/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "hardwarevisualizer",
         "name": "HardwareVisualizer",
         "slug": "hardwarevisualizer",
@@ -3139,6 +3238,103 @@
         "verification_status": "partial"
     },
     {
+        "id": "mousex-absolute-mouse-control",
+        "name": "MouseX Absolute Mouse Control",
+        "slug": "mousex-absolute-mouse-control",
+        "summary": "A lightweight Windows utility that lets you remap mouse buttons, scroll wheels and extra buttons to keyboard shortcuts, chords and repeating macros, with per‑application profiles.",
+        "description": [
+            "MouseX runs in the background and intercepts mouse events at the system level. It replaces the original mouse action with simulated keyboard input, allowing you to create custom shortcuts, rapid key repeats, or complex key chords. Profiles can be tied to specific applications and the program can start automatically with Windows.",
+            "MouseX is built with Java and JavaFX and uses a low‑level Win32 hook via JNA to capture mouse messages. It blocks the original mouse event when a mapping is active and sends virtual key events using the Windows keybd_event API. The utility monitors the foreground window and switches to the matching profile automatically, or falls back to a default profile. All mappings are stored in a JSON file, making them easy to edit or share. The program minimizes to the system tray and can be set to launch on login through the registry. It is designed to be small, offline‑only and free of telemetry."
+        ],
+        "icon": {
+            "text": "M",
+            "color": "#0F766E"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/Felix-au/MouseX-Absolute-Mouse-Control#license",
+        "official_website": null,
+        "download_page": "https://github.com/Felix-au/MouseX-Absolute-Mouse-Control/releases/tag/v1.0.0",
+        "repository_url": "https://github.com/Felix-au/MouseX-Absolute-Mouse-Control",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.0.0",
+        "release_date": "2026-05-24",
+        "release_url": "https://github.com/Felix-au/MouseX-Absolute-Mouse-Control/releases/tag/v1.0.0",
+        "primary_download": {
+            "url": "https://github.com/Felix-au/MouseX-Absolute-Mouse-Control/releases/download/v1.0.0/MouseX.exe",
+            "filename": "MouseX.exe",
+            "size": 13388056,
+            "architecture": null,
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "MouseX.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/Felix-au/MouseX-Absolute-Mouse-Control/releases/download/v1.0.0/MouseX.exe",
+                "size": 13388056,
+                "sha256": "9407d75926afcb6c892f9c4eec3408503e47e3f409cb89f2890ea604d6963123"
+            }
+        ],
+        "features": [
+            "Remap up to seven mouse actions (left, right, middle, back, forward, wheel up, wheel down)",
+            "Assign up to three keyboard keys per mouse action",
+            "Create simultaneous key chords or sequential key presses",
+            "Configure repeat‑while‑held, toggle repeat, and custom interval timers (10 ms‑1000 ms)",
+            "Application‑specific profiles that switch automatically based on the active window",
+            "Simple JSON file for saving and loading all mappings",
+            "System‑tray icon with quick access and option to start minimized",
+            "Automatic startup via Windows registry integration",
+            "Blocks original mouse events when a mapping is active to prevent unwanted behavior"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page on GitHub and download MouseX.exe.",
+            "Run the downloaded EXE file.",
+            "Follow the installer prompts or, if it is a portable version, extract the file to a folder.",
+            "Launch MouseX from the Start menu or the extracted folder.",
+            "Use the tray icon to open the configuration window and create your mappings."
+        ],
+        "related_software": [],
+        "seo_title": "MouseX Absolute Mouse Control Free Download for Windows",
+        "meta_description": "Download MouseX Absolute Mouse Control free for Windows. A lightweight Windows utility that lets you remap mouse buttons, scroll wheels and extra buttons to ke…",
+        "canonical_url": "https://codehimblog.github.io/software/mousex-absolute-mouse-control/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "mynotes",
         "name": "MyNotes",
         "slug": "mynotes",
@@ -3622,6 +3818,110 @@
         "date_added": "2026-11-14",
         "last_verified_at": null,
         "verification_status": "partial"
+    },
+    {
+        "id": "photoslide",
+        "name": "PhotoSlide",
+        "slug": "photoslide",
+        "summary": "PhotoSlide is a simple photo management and editing program with a modern JavaFX interface, aimed at users who need basic organization and light editing without a subscription model.",
+        "description": [
+            "PhotoSlide provides a lightweight way to view, organize, and edit photos. It supports many image formats, including RAW files, and offers features such as tagging, full‑text search, and multithreaded processing. The program is built with JavaFX and runs on Windows.",
+            "PhotoSlide recreates the functionality of Lightzone and Lightroom with a modern, reactive user interface. It focuses on photo management rather than being a full‑blown editor. Users can import images from local drives or network storage, add keywords and tags, edit metadata, and perform basic edits like rotate and crop. The software includes multithreaded loading, full‑text search using an H2 database, and support for GPS data and printing. It is open‑source and free under the GPL‑3.0 license."
+        ],
+        "icon": {
+            "text": "P",
+            "color": "#7C3AED"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/lanthale/PhotoSlide#license",
+        "official_website": null,
+        "download_page": "https://github.com/lanthale/PhotoSlide/releases/tag/v2.1.3",
+        "repository_url": "https://github.com/lanthale/PhotoSlide",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/lanthale/PhotoSlide#readme",
+                "note": "Stated in the project README: “Windows 10 or later”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.1.3",
+        "release_date": "2026-11-13",
+        "release_url": "https://github.com/lanthale/PhotoSlide/releases/tag/v2.1.3",
+        "primary_download": {
+            "url": "https://github.com/lanthale/PhotoSlide/releases/download/v2.1.3/Photoslide-2.1.3.msi",
+            "filename": "Photoslide-2.1.3.msi",
+            "size": 201094447,
+            "architecture": null,
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "Photoslide-2.1.3.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/lanthale/PhotoSlide/releases/download/v2.1.3/Photoslide-2.1.3.msi",
+                "size": 201094447,
+                "sha256": "844415548c26db2c19fe131b5e228922cd49cc4b3c04bc48db7bf781f022c073"
+            }
+        ],
+        "features": [
+            "View and edit JPG, TIFF, PNG, PSD, WEBP, HEIF, DNG and RAW files",
+            "Basic lossless edits such as rotate, crop and rating",
+            "Add and edit keywords, tags and all metadata (IPTC, XMP, etc.)",
+            "Full‑text search of image metadata with automatic database creation",
+            "Multithreaded image loading and processing for faster performance",
+            "Drag‑and‑drop and copy/paste between collections",
+            "Stack photos and manage multiple collections, including network drives",
+            "Export edited images to common formats",
+            "GPS information display on an OSM map",
+            "Automatic update checking"
+        ],
+        "requirements": [
+            "Windows 10 or later",
+            "4 GB RAM (16 GB recommended for RAW processing)",
+            "Minimal disk space (application ~240 MB, user data ~200 MB)"
+        ],
+        "installation_instructions": [
+            "Open the release page on GitHub and download the Photoslide‑2.1.3.msi file.",
+            "Run the MSI installer.",
+            "If Windows Defender warns, choose \"More info\" then \"Run anyway\".",
+            "After installation, launch PhotoSlide from the Start menu or desktop shortcut.",
+            "Follow any on‑screen prompts to complete first‑time setup."
+        ],
+        "related_software": [],
+        "seo_title": "PhotoSlide Free Download for Windows 10",
+        "meta_description": "Download PhotoSlide free for Windows 10. PhotoSlide is a simple photo management and editing program with a modern JavaFX interface, aimed at users who need ba…",
+        "canonical_url": "https://codehimblog.github.io/software/photoslide/",
+        "date_added": "2026-11-15",
+        "last_verified_at": "2026-11-16",
+        "verification_status": "verified"
     },
     {
         "id": "pymusicplayer",
