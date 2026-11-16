@@ -848,6 +848,96 @@
         "verification_status": "partial"
     },
     {
+        "id": "autosubsync",
+        "name": "AutoSubSync",
+        "slug": "autosubsync",
+        "summary": "Automatic subtitle synchronization tool.",
+        "description": [
+            "AutoSubSync is a desktop program that aligns subtitle files with video or audio tracks. It can work automatically using built‑in algorithms or let you fine‑tune timings manually. Just drag and drop your media and subtitle files and the tool does the rest.",
+            "The application combines several open‑source subtitle sync engines such as ffsubsync, autosubsync, alass and LAPSE. It supports a wide range of video, audio and subtitle formats, and can process single files or batches. Users can choose automatic synchronization, manual adjustment, or a combination of both. The interface is split into tabs for automatic, manual and batch modes, making it easy to see progress and results. All processing happens locally; no internet connection is required unless you choose to check for updates of the bundled LAPSE component."
+        ],
+        "icon": {
+            "text": "A",
+            "color": "#1D4ED8"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/denizsafak/AutoSubSync#license",
+        "official_website": "https://pypi.org/project/assy/",
+        "download_page": "https://github.com/denizsafak/AutoSubSync/releases/tag/v6.6",
+        "repository_url": "https://github.com/denizsafak/AutoSubSync",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "6.6",
+        "release_date": "2026-11-12",
+        "release_url": "https://github.com/denizsafak/AutoSubSync/releases/tag/v6.6",
+        "primary_download": null,
+        "download_assets": [
+            {
+                "label": "AutoSubSync-windows-amd64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/denizsafak/AutoSubSync/releases/download/v6.6/AutoSubSync-windows-amd64.zip",
+                "size": 153256230,
+                "sha256": "dea67829ff1f04395cc703e23797ed9dac638bd8e60b01bafe850023ea92e5f7"
+            }
+        ],
+        "features": [
+            "Automatic synchronization using multiple subtitle engines",
+            "Manual timing adjustment with a visual editor",
+            "Batch mode for processing many files at once",
+            "Supports video, audio and many subtitle formats",
+            "Drag‑and‑drop file loading",
+            "Updates LAPSE component automatically when needed",
+            "Portable ZIP distribution, no installation required",
+            "Works on Windows, Linux and macOS"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download AutoSubSync-windows-amd64.zip from the official GitHub release page.",
+            "Extract the ZIP file to a folder of your choice.",
+            "Double‑click AutoSubSync.exe to launch the program.",
+            "Drag and drop your video/audio and subtitle files into the window.",
+            "Use the Automatic or Manual tabs to sync subtitles."
+        ],
+        "related_software": [],
+        "seo_title": "AutoSubSync Free Download for Windows",
+        "meta_description": "Download AutoSubSync free for Windows. Automatic subtitle synchronization tool.",
+        "canonical_url": "https://codehimblog.github.io/software/autosubsync/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "bleachbit",
         "name": "BleachBit",
         "slug": "bleachbit",
@@ -2376,6 +2466,111 @@
         "meta_description": "Download InstallerClean free for Windows. Open source tool to safely clean orphaned Windows Installer files and reclaim disk space.",
         "canonical_url": "https://codehimblog.github.io/software/installerclean/",
         "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "iptvnator",
+        "name": "IPTVnator",
+        "slug": "iptvnator",
+        "summary": "A free, open‑source IPTV player that lets you watch live TV, movies and series from M3U/M3U8 playlists, Xtream Codes or Stalker portals.",
+        "description": [
+            "IPTVnator is a cross‑platform IPTV player for Windows. It reads local or remote playlists and provides live TV, video‑on‑demand and a simple interface for managing favorites and watch history.",
+            "The program supports M3U and M3U8 playlists, Xtream Codes accounts and Stalker/Ministra portals. It shows channel groups, a searchable guide and allows you to mark favorites. Movies and series are displayed with posters, seasons and resume positions, and you can add TMDB metadata if you have an API key. Playback can use the built‑in player or external players such as MPV or VLC. The app includes a download manager for offline viewing, light and dark themes, keyboard shortcuts and a command palette. A self‑hosted PWA server can be started from the desktop app to share sources with other devices on the same network."
+        ],
+        "icon": {
+            "text": "I",
+            "color": "#334155"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/4gray/iptvnator#license",
+        "official_website": "https://4gray.github.io/iptvnator/",
+        "download_page": "https://github.com/4gray/iptvnator/releases/tag/v0.25.0",
+        "repository_url": "https://github.com/4gray/iptvnator",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.25.0",
+        "release_date": "2026-11-08",
+        "release_url": "https://github.com/4gray/iptvnator/releases/tag/v0.25.0",
+        "primary_download": {
+            "url": "https://github.com/4gray/iptvnator/releases/download/v0.25.0/iptvnator-0.25.0-windows-x64-setup.exe",
+            "filename": "iptvnator-0.25.0-windows-x64-setup.exe",
+            "size": 224623361,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "iptvnator-0.25.0-windows-x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/4gray/iptvnator/releases/download/v0.25.0/iptvnator-0.25.0-windows-x64-setup.exe",
+                "size": 224623361,
+                "sha256": "893e3fe7e38e756dbe6910672a1a5612d9116efd0055d9dba6a5643af48d7cea"
+            },
+            {
+                "label": "linux-frame-copy-runtime-sources.tar.xz",
+                "format": "Source code archive",
+                "kind": "source",
+                "architecture": null,
+                "url": "https://github.com/4gray/iptvnator/releases/download/v0.25.0/linux-frame-copy-runtime-sources.tar.xz",
+                "size": 104714316,
+                "sha256": "c2a75acd632f27abe32f964179379d3cac9ec1b27021defc79fe4e7e21a471bc"
+            }
+        ],
+        "features": [
+            "Supports local and remote M3U/M3U8 playlists, Xtream Codes and Stalker portals",
+            "Live TV with channel groups, search, favorites and programme guide",
+            "Movies and series with posters, seasons, watch history and resume",
+            "Built‑in player plus optional external MPV/VLC playback",
+            "Download manager for offline watching of movies and episodes",
+            "Light and dark themes with 21 language options",
+            "Keyboard shortcuts and command palette for quick navigation",
+            "Self‑hosted PWA server to share libraries across devices"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download the Windows installer from the official GitHub release page.",
+            "Run the downloaded .exe file and follow the installation wizard.",
+            "After installation, launch IPTVnator from the Start menu or desktop shortcut.",
+            "Add your M3U/M3U8 playlist or Xtream account in the Settings screen.",
+            "Start watching live TV or video on demand."
+        ],
+        "related_software": [],
+        "seo_title": "IPTVnator Free Download for Windows",
+        "meta_description": "Download IPTVnator free for Windows. A free, open‑source IPTV player that lets you watch live TV, movies and series from M3U/M3U8 playlists, Xtream Codes or St…",
+        "canonical_url": "https://codehimblog.github.io/software/iptvnator/",
+        "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
     },
