@@ -4784,6 +4784,115 @@
         "verification_status": "partial"
     },
     {
+        "id": "skrin",
+        "name": "Skrin",
+        "slug": "skrin",
+        "summary": "A free, open‑source local media library and video player that organizes movies and TV shows on your computer or NAS without a server or account.",
+        "description": [
+            "Skrin provides a Netflix‑style interface for the video files you already own. It scans your disks or network shares, shows posters and details, and plays the media with high‑quality video and audio support.",
+            "Skrin is designed for users who keep their movies and TV shows as files on local storage, external drives, or network shares. The program does not run a server, does not modify your media files, and stores no data online unless you choose to connect services like SIMKL or Trakt. It uses mpv for playback on Windows and Linux, and the native Android player on Android TV. The interface shows posters, backdrops, cast information, and badges that indicate resolution, HDR, Dolby Vision, audio format, and aspect ratio. It remembers your progress, can skip intros and credits using community databases, and can fetch subtitles from OpenSubtitles. All settings are local, and the library is kept on your device, making it suitable for offline use.",
+            "The player supports 4K HDR, Dolby Vision, and Atmos/DTS:X audio passthrough, and it can query your display and audio equipment to select the best output. It provides detailed playback statistics, such as refresh rate and scaler information, when you press the \"i\" key. Skrin does not perform any upscaling, frame interpolation, or quality presets; it presents the content exactly as encoded.",
+            "Installation is straightforward via an installer or a portable ZIP, and the program can be uninstalled from the system settings without leaving residual files. Updates are manual and optional, ensuring you stay in control of changes.",
+            "Overall, Skrin offers a simple, privacy‑focused way to browse and watch your personal media collection with a modern, TV‑friendly UI."
+        ],
+        "icon": {
+            "text": "S",
+            "color": "#0F766E"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/basswaves/skrin#license",
+        "official_website": "https://basswaves.github.io/skrin/",
+        "download_page": "https://github.com/basswaves/skrin/releases/tag/v0.18.0",
+        "repository_url": "https://github.com/basswaves/skrin",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.18.0",
+        "release_date": "2026-11-15",
+        "release_url": "https://github.com/basswaves/skrin/releases/tag/v0.18.0",
+        "primary_download": {
+            "url": "https://github.com/basswaves/skrin/releases/download/v0.18.0/skrin-windows-x64-setup.exe",
+            "filename": "skrin-windows-x64-setup.exe",
+            "size": 39826334,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "skrin-windows-x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/basswaves/skrin/releases/download/v0.18.0/skrin-windows-x64-setup.exe",
+                "size": 39826334,
+                "sha256": "d0383c746185ec8cce2c61ed97904da72d163bcf54ec8dae534dea26becdd24a"
+            },
+            {
+                "label": "skrin-windows-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/basswaves/skrin/releases/download/v0.18.0/skrin-windows-x64.zip",
+                "size": 54748386,
+                "sha256": "e89923686a990b9e0725308ad4634dd82d44cd13cb5aae687ca6b7cac5d5d974"
+            }
+        ],
+        "features": [
+            "Organizes local movies and TV shows with posters, backdrops, and metadata",
+            "Plays 4K HDR, Dolby Vision, and Atmos/DTS:X audio without transcoding",
+            "Queries display and audio equipment to match refresh rate and sound format",
+            "Remembers watch progress and can skip intros, recaps, and credits",
+            "Fetches subtitles automatically and can search OpenSubtitles",
+            "Works with NAS, USB drives, and local disks without moving or renaming files",
+            "No server or background services; everything runs locally",
+            "Optional integration with SIMKL and Trakt for scrobbling",
+            "Portable ZIP version available for use without installation",
+            "Detailed playback statistics available with a single key press"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the official GitHub release page and download the Windows installer (skrin-windows-x64-setup.exe) or the portable ZIP (skrin-windows-x64.zip).",
+            "If you downloaded the installer, run the .exe file and follow the prompts to install for your user account.",
+            "If you downloaded the ZIP, extract its contents to a folder of your choice.",
+            "Start Skrin from the Start menu (installer) or by running Skrin.exe from the extracted folder (portable)."
+        ],
+        "related_software": [],
+        "seo_title": "Skrin Free Download for Windows",
+        "meta_description": "Download Skrin free for Windows. A free, open‑source local media library and video player that organizes movies and TV shows on your computer or NAS without a…",
+        "canonical_url": "https://codehimblog.github.io/software/skrin/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "starluxe",
         "name": "StarLuxe",
         "slug": "starluxe",
@@ -5914,6 +6023,121 @@
         "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
+    },
+    {
+        "id": "vlc-win10smtc",
+        "name": "VLC Win10smtc",
+        "slug": "vlc-win10smtc",
+        "summary": "A plugin that adds Windows System Media Transport Controls integration to VLC Media Player.",
+        "description": [
+            "VLC Win10smtc lets VLC work with the Windows media keys and the system media overlay. When you play a video or music in VLC, the standard Windows controls show the correct title, artwork and playback position, and you can control playback with the keyboard or hardware buttons.",
+            "The plugin is a small DLL that VLC loads as a misc plugin. It communicates with the Windows System Media Transport Controls (SMTC) so that VLC appears as a regular media source to the operating system. It supports VLC 3.0.x and VLC 4.0.0‑dev builds. The plugin must match the architecture of the VLC executable (x86, x64, or ARM64). After installation you enable the feature in VLC's advanced preferences under Interface → Control Interfaces. The plugin is open‑source and released under the GPL‑3.0 license."
+        ],
+        "icon": {
+            "text": "V",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/spmn/vlc-win10smtc#license",
+        "official_website": null,
+        "download_page": "https://github.com/spmn/vlc-win10smtc/releases/tag/v5.0.0",
+        "repository_url": "https://github.com/spmn/vlc-win10smtc",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/spmn/vlc-win10smtc#readme",
+                "note": "Stated in the project README: “Windows 10 Version 1607+ or Windows 11”"
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/spmn/vlc-win10smtc#readme",
+                "note": "Stated in the project README: “Windows 10 Version 1607+ or Windows 11”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "5.0.0",
+        "release_date": "2026-09-08",
+        "release_url": "https://github.com/spmn/vlc-win10smtc/releases/tag/v5.0.0",
+        "primary_download": null,
+        "download_assets": [
+            {
+                "label": "libwin10smtc_plugin_v5.0.0_arm64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/spmn/vlc-win10smtc/releases/download/v5.0.0/libwin10smtc_plugin_v5.0.0_arm64.zip",
+                "size": 1362027,
+                "sha256": "a2d2e6788af7b1a4914f9ce9feb7d9fa2dc1f2c8bf7e60ac88b7232a5b09753a"
+            },
+            {
+                "label": "libwin10smtc_plugin_v5.0.0_x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/spmn/vlc-win10smtc/releases/download/v5.0.0/libwin10smtc_plugin_v5.0.0_x64.zip",
+                "size": 1387478,
+                "sha256": "2de0bc5d560635bb7be4dc7825461dcd8d1afe9fb9d865ea141ff145df163fa6"
+            },
+            {
+                "label": "libwin10smtc_plugin_v5.0.0_x86.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x86",
+                "url": "https://github.com/spmn/vlc-win10smtc/releases/download/v5.0.0/libwin10smtc_plugin_v5.0.0_x86.zip",
+                "size": 1406755,
+                "sha256": "bb183b2c84b90a8e1ca867c7780340562b061dd8c748493b4d9687caab5d4ab4"
+            }
+        ],
+        "features": [
+            "Shows track title, artist and album art in the Windows media overlay",
+            "Updates playback position and progress bar accurately",
+            "Enables hardware media keys (play, pause, next, previous, stop)",
+            "Works with both VLC 3 and VLC 4",
+            "Falls back to VLC's own icon when no album art is available",
+            "Displays correct status only when VLC can perform the action",
+            "Provides error messages if the plugin architecture does not match VLC"
+        ],
+        "requirements": [
+            "VLC 3.0.x or VLC 4.0.0‑dev nightly",
+            "Windows 10 Version 1607+ or Windows 11",
+            "Microsoft Visual C++ Redistributable 2022 matching the VLC architecture"
+        ],
+        "installation_instructions": [
+            "Download the ZIP file that matches your VLC architecture from the GitHub release page.",
+            "Extract the file libwin10smtc_plugin.dll.",
+            "Copy the DLL to \\plugins\\misc.",
+            "Restart VLC.",
+            "Open Advanced Preferences → Interface → Control Interfaces, check \"Windows SMTC integration\" and save."
+        ],
+        "related_software": [],
+        "seo_title": "VLC Win10smtc Free Download for Windows 11 and 10",
+        "meta_description": "Download VLC Win10smtc free for Windows 11 and 10. A plugin that adds Windows System Media Transport Controls integration to VLC Media Player.",
+        "canonical_url": "https://codehimblog.github.io/software/vlc-win10smtc/",
+        "date_added": "2026-11-16",
+        "last_verified_at": "2026-11-16",
+        "verification_status": "verified"
     },
     {
         "id": "voxtype",
