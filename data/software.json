@@ -161,9 +161,9 @@
             "Choose the installer that matches your Windows architecture: x64 (most modern PCs), x86 (32-bit Windows) or ARM64."
         ],
         "installation_instructions": [
-            "Open the official 7-Zip download page.",
-            "Download the EXE installer that matches your Windows architecture. Most modern PCs use the 64-bit (x64) build.",
-            "Run the installer and choose an installation folder.",
+            "Click the \"Download 7-Zip\" button on this page. Your browser saves the installer, usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start 7-Zip from the Start menu or the desktop shortcut.",
             "Right-click a file or archive in File Explorer to use the 7-Zip menu, or open the 7-Zip File Manager from the Start menu."
         ],
         "related_software": [
@@ -279,10 +279,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the GitHub releases page and download the latest EXE or portable ZIP.",
-            "If you downloaded the installer, run the EXE and follow the prompts to install for the current user or all users.",
-            "If you downloaded the portable ZIP, extract it to a folder.",
-            "Launch AeroZoom.exe from the installation folder or the extracted folder.",
+            "Click the \"Download AeroZoom\" button on this page. Your browser saves AeroZoom_v4.0.0.7_beta_2_silent_installer.exe (2.7 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start AeroZoom from the Start menu or the desktop shortcut.",
             "Use the mouse button combinations to start zooming or open the control panel."
         ],
         "related_software": [],
@@ -390,11 +389,10 @@
             ".NET runtime included in the package"
         ],
         "installation_instructions": [
-            "Go to the GitHub Releases page linked on this page.",
-            "Download the installer (AFMediaBar-Setup-…-win-x64.exe) or the portable ZIP (AFMediaBar-…-win-x64.zip).",
-            "For the installer, run the EXE and follow the setup wizard.",
-            "For the portable version, extract the ZIP to a writable folder.",
-            "Start the program by launching AFMediaBar.exe (or from the Start menu after installation)."
+            "Click the \"Download AF Media Bar\" button on this page. Your browser saves AFMediaBar-Setup-v1.7.1-win-x64.exe (107.8 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start AF Media Bar from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [],
         "seo_title": "AF Media Bar Free Download for Windows",
@@ -457,7 +455,13 @@
         "latest_version": "6.4.0",
         "release_date": "2026-10-24",
         "release_url": "https://github.com/open-ani/animeko/releases/tag/v6.4.0",
-        "primary_download": null,
+        "primary_download": {
+            "url": "https://github.com/open-ani/animeko/releases/download/v6.4.0/ani-6.4.0-windows-x86_64.zip",
+            "filename": "ani-6.4.0-windows-x86_64.zip",
+            "size": 319055197,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
         "download_assets": [
             {
                 "label": "ani-6.4.0-windows-aarch64.zip",
@@ -491,9 +495,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the appropriate Windows ZIP (x64 or ARM64) from the official GitHub release page.",
-            "Extract the ZIP to a folder of your choice.",
-            "Run the executable file inside the folder to start Animeko.",
+            "Click the \"Download Animeko\" button on this page. Your browser saves ani-6.4.0-windows-x86_64.zip (304.3 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the Animeko program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
             "Sign in with your Bangumi account to enable cloud sync (optional)."
         ],
         "related_software": [],
@@ -618,9 +622,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the installer (or portable ZIP) from the official GitHub release page.",
-            "Run the EXE installer, which includes the required .NET runtime, or extract the portable ZIP to a folder.",
-            "After installation, launch AppGroup from the Start menu or the extracted folder.",
+            "Click the \"Download AppGroup\" button on this page. Your browser saves AppGroup_v1.6.0.win-x64-Bundled-Setup.exe (43.7 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start AppGroup from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Create a new group, add your apps, and drag the group shortcut onto the taskbar.",
             "Click the taskbar icon to open the popup and launch apps."
         ],
@@ -715,10 +720,11 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the release page and click the Astraeus.exe download button.",
+            "Click the \"Download Astraeus\" button on this page. Your browser saves Astraeus.exe (4.0 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start Astraeus. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\Astraeus) so it is easy to find next time.",
             "Save the file to a convenient location.",
             "If Windows SmartScreen warns, click \"More info\" then \"Run anyway\".",
-            "Double‑click Astraeus.exe to start the program.",
             "Use the hotkey Win+Alt+A or hover the screen edge to open the dashboard."
         ],
         "related_software": [],
@@ -841,10 +847,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the official GitHub release page and download the Aurora‑*.exe or Aurora‑*.msi file.",
-            "Run the downloaded installer (or double‑click the EXE for a portable version).",
-            "Follow the on‑screen prompts to complete installation.",
-            "After installation, launch Aurora from the Start menu or desktop shortcut.",
+            "Click the \"Download Aurora\" button on this page. Your browser saves Aurora-3.4.0.msi (201.7 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start Aurora from the Start menu.",
             "Configure your music sources and start listening."
         ],
         "related_software": [],
@@ -948,10 +953,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the appropriate Windows executable (x64 or ARM64) from the official GitHub release page.",
-            "Save the .exe file to a folder of your choice.",
+            "Click the \"Download Auto-Editor\" button on this page. Your browser saves auto-editor-windows-x86_64.exe (43.8 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start Auto-Editor. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\Auto-Editor) so it is easy to find next time.",
             "Open a command prompt in that folder.",
-            "Run the program with the source file and desired options, e.g., `auto-editor video.mp4`.",
             "The edited output will be saved in the same folder unless otherwise specified."
         ],
         "related_software": [],
@@ -1045,12 +1050,11 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download AutoRunManager.exe from the official GitHub release page.",
+            "Click the \"Download AutoRunManager\" button on this page. Your browser saves AutoRunManager.exe (64.8 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start AutoRunManager. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\AutoRunManager) so it is easy to find next time.",
             "Save the file to a convenient location.",
-            "Open a command prompt with administrator rights.",
-            "Navigate to the folder containing AutoRunManager.exe.",
-            "Run the program by typing \"AutoRunManager.exe\" and pressing Enter.",
-            "Follow the on‑screen commands to manage startup programs."
+            "Open a command prompt with administrator rights."
         ],
         "related_software": [],
         "seo_title": "AutoRunManager Free Download for Windows",
@@ -1113,7 +1117,13 @@
         "latest_version": "6.7",
         "release_date": "2026-11-16",
         "release_url": "https://github.com/denizsafak/AutoSubSync/releases/tag/v6.7",
-        "primary_download": null,
+        "primary_download": {
+            "url": "https://github.com/denizsafak/AutoSubSync/releases/download/v6.7/AutoSubSync-windows-amd64.zip",
+            "filename": "AutoSubSync-windows-amd64.zip",
+            "size": 155377144,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
         "download_assets": [
             {
                 "label": "AutoSubSync-windows-amd64.zip",
@@ -1137,9 +1147,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download AutoSubSync-windows-amd64.zip from the official GitHub release page.",
-            "Extract the ZIP file to a folder of your choice.",
-            "Double‑click AutoSubSync.exe to launch the program.",
+            "Click the \"Download AutoSubSync\" button on this page. Your browser saves AutoSubSync-windows-amd64.zip (148.2 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the AutoSubSync program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
             "Drag and drop your video/audio and subtitle files into the window.",
             "Use the Automatic or Manual tabs to sync subtitles."
         ],
@@ -1270,10 +1280,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the official GitHub release page and download the installer (EXE) or the portable ZIP.",
-            "If you downloaded the EXE, run the file and follow the setup wizard.",
-            "If you downloaded the portable ZIP, extract it to a folder of your choice.",
-            "Start BleachBit by launching BleachBit.exe from the installation folder or the extracted folder.",
+            "Click the \"Download BleachBit\" button on this page. Your browser saves BleachBit-6.0.6-setup-English.exe (13.8 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start BleachBit from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Configure the cleaners you want and run a scan."
         ],
         "related_software": [],
@@ -1369,10 +1379,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the windows‑x64‑setup.exe from the official GitHub release page.",
-            "Run the installer and follow the on‑screen prompts.",
+            "Click the \"Download Chromasmith\" button on this page. Your browser saves Chromasmith-1.0.0-windows-x64-setup.exe (1.3 GB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Chromasmith from the Start menu or the desktop shortcut.",
             "If SmartScreen warns, choose “More info” then “Run anyway”.",
-            "After installation, launch Chromasmith from the Start menu or desktop shortcut.",
             "Open or import photos to begin editing."
         ],
         "related_software": [],
@@ -1485,10 +1495,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the GitHub release page and download the installer (ciyue-installer.exe) or the portable ZIP.",
-            "If you downloaded the installer, run the .exe and follow the prompts.",
-            "If you downloaded the ZIP, extract it to a folder.",
-            "Launch Ciyue by double‑clicking the Ciyue.exe file or the shortcut created by the installer.",
+            "Click the \"Download Ciyue\" button on this page. Your browser saves ciyue-installer.exe (18.8 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Ciyue from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Add your dictionary files through the program’s settings menu."
         ],
         "related_software": [],
@@ -1590,10 +1600,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page on GitHub.",
-            "Download the Windows installer (DesktopBubbleChat_1.0.5_x64-setup.exe) or the MSI file.",
-            "Run the downloaded file and follow the on‑screen prompts to install.",
-            "After installation, launch Desktop Bubble Chat from the Start menu or desktop shortcut.",
+            "Click the \"Download Desktop Bubble Chat\" button on this page. Your browser saves DesktopBubbleChat_1.1.0_x64-setup.exe (3.3 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Desktop Bubble Chat from the Start menu or the desktop shortcut.",
             "The chat heads will appear; you can add messenger accounts from the app’s menu."
         ],
         "related_software": [],
@@ -1698,10 +1707,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the release page and download either DeskX-Setup.exe or DeskX-win32-x64.zip.",
-            "If you downloaded the EXE, run it and follow the on‑screen prompts to install.",
-            "If you downloaded the ZIP, extract its contents to a folder.",
-            "Launch DeskX from the Start menu shortcut (installer) or by double‑clicking DeskX.exe in the extracted folder.",
+            "Click the \"Download DeskX Wallpaper Engine\" button on this page. Your browser saves DeskX-Setup.exe (117.6 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start DeskX Wallpaper Engine from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Configure your wallpaper and widgets through the application’s interface."
         ],
         "related_software": [],
@@ -1859,11 +1868,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page on GitHub.",
-            "Download the installer matching your CPU (x64 or ARM64) or the MSIX package.",
-            "Run the downloaded .exe installer or install the .appx package.",
-            "Follow the on‑screen prompts to complete installation.",
-            "Launch electerm from the Start menu or desktop shortcut."
+            "Click the \"Download electerm\" button on this page. Your browser saves electerm-5.11.8-win-x64-installer.exe (114.6 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start electerm from the Start menu or the desktop shortcut."
         ],
         "related_software": [],
         "seo_title": "electerm Free Download for Windows 7",
@@ -1975,10 +1982,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the official GitHub release page.",
-            "Download the Windows installer (EXE) or the portable ZIP for your architecture.",
-            "Run the installer and follow the prompts, or extract the ZIP to a folder.",
-            "Launch FerrumPix from the Start menu or the extracted folder.",
+            "Click the \"Download FerrumPix\" button on this page. Your browser saves FerrumPix-0.9.84-2-win-x64-Setup.exe (120.5 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start FerrumPix from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Start importing or browsing your photo folders."
         ],
         "related_software": [],
@@ -2046,7 +2053,13 @@
         "latest_version": "1.6.5",
         "release_date": "2026-11-13",
         "release_url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows/releases/tag/1.6.5",
-        "primary_download": null,
+        "primary_download": {
+            "url": "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows/releases/download/1.6.5/FFmpeg-GUI-Editor-Windows.zip",
+            "filename": "FFmpeg-GUI-Editor-Windows.zip",
+            "size": 4820487,
+            "architecture": null,
+            "format": "Portable ZIP"
+        },
         "download_assets": [
             {
                 "label": "FFmpeg-GUI-Editor-Windows.zip",
@@ -2074,10 +2087,10 @@
             "Windows 10 / Windows 11 (64-bit)"
         ],
         "installation_instructions": [
-            "Open the release page on GitHub.",
-            "Download both FFmpeg-GUI-Editor.exe and libvlc.dll.",
+            "Click the \"Download FFmpeg GUI Editor Windows\" button on this page. Your browser saves FFmpeg-GUI-Editor-Windows.zip (4.6 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the FFmpeg GUI Editor Windows program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
             "Place the two files in the same folder.",
-            "Double‑click FFmpeg-GUI-Editor.exe to start the program.",
             "Use the interface to load and edit video files."
         ],
         "related_software": [],
@@ -2207,10 +2220,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page on GitHub.",
-            "Download the MSI installer or portable ZIP for your architecture.",
-            "Run the MSI to install, or extract the ZIP to a folder.",
-            "Launch FilmCraft from the Start menu or the extracted folder.",
+            "Click the \"Download FilmCraft\" button on this page. Your browser saves filmcraft-0.20.1-windows-x64.msi (89.1 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start FilmCraft from the Start menu.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Open or create a project to begin editing."
         ],
         "related_software": [],
@@ -2431,11 +2444,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the GitHub release page linked on this page.",
-            "Download the installer (EXE) or portable ZIP that matches your system.",
-            "If you downloaded an installer, run the .exe file and follow the prompts.",
-            "If you downloaded a portable ZIP, extract it to a folder.",
-            "Launch Flowkeeper by double‑clicking the Flowkeeper executable."
+            "Click the \"Download Fk Desktop\" button on this page. Your browser saves flowkeeper-1.1.0-windows-11-arm-pyinstaller-installer.exe (47.1 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Fk Desktop from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [],
         "seo_title": "Fk Desktop Free Download for Windows",
@@ -2538,9 +2550,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page on GitHub and download the EXE installer or MSI package for x64.",
-            "Run the downloaded installer and follow the on‑screen prompts.",
-            "After installation, launch Fly Island from the Start menu or desktop shortcut.",
+            "Click the \"Download Fly Island\" button on this page. Your browser saves fly-island_3.2.4_x64-setup.exe (9.4 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Fly Island from the Start menu or the desktop shortcut.",
             "The island will appear as a thin bar at the top of the screen; click it to expand and access its features."
         ],
         "related_software": [],
@@ -2638,9 +2650,10 @@
             "Python 3.10+ and libraries Pillow, pillow‑heif, tkinterdnd2, resvg‑py only needed if running from source"
         ],
         "installation_instructions": [
-            "Open the Releases page on GitHub.",
+            "Click the \"Download Formatix Image Converter\" button on this page. Your browser saves formatix-image-converter-v1.17.4.exe (24.3 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start Formatix Image Converter. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\Formatix Image Converter) so it is easy to find next time.",
             "2.",
-            "Run the downloaded .exe (no installation needed).",
             "The program starts automatically; you can begin adding images for conversion."
         ],
         "related_software": [],
@@ -2782,10 +2795,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the official GitHub release page and download the installer (x64 or ARM64) or the portable ZIP for your system.",
-            "If you downloaded the installer, run the .exe file and follow the on‑screen prompts.",
-            "If you downloaded the portable ZIP, extract its contents to any folder.",
-            "Launch FramePlayer.exe from the installation folder or the extracted folder.",
+            "Click the \"Download Frame Player\" button on this page. Your browser saves FramePlayer_1.46.1_x64-setup.exe (88.0 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Frame Player from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "The application will start and you can begin adding videos or torrents."
         ],
         "related_software": [],
@@ -2908,10 +2921,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the MSI or EXE file from the Assets section of the latest GitHub release",
-            "Run the downloaded installer and follow the on‑screen wizard",
-            "Optionally enable the PawnIO component during installation",
-            "Finish the setup and launch HardwareVisualizer from the Start menu or desktop shortcut"
+            "Click the \"Download HardwareVisualizer\" button on this page. Your browser saves HardwareVisualizer_1.11.3_x64-setup.exe (10.9 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start HardwareVisualizer from the Start menu or the desktop shortcut.",
+            "Optionally enable the PawnIO component during installation"
         ],
         "related_software": [],
         "seo_title": "HardwareVisualizer Free Download for Windows",
@@ -3009,11 +3022,9 @@
             "Headroom account with an active subscription"
         ],
         "installation_instructions": [
-            "Download Headroom_0.9.62_x64-setup.exe from the official GitHub release page.",
-            "Run the installer and follow the prompts.",
-            "After installation, launch Headroom from the Start menu or system tray.",
-            "Sign in with your Headroom account and complete the setup wizard.",
-            "The app will download its Python runtime on first launch and start optimizing token usage."
+            "Click the \"Download Headroom Desktop\" button on this page. Your browser saves Headroom_0.9.62_x64-setup.exe (9.2 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Headroom Desktop from the Start menu or the desktop shortcut."
         ],
         "related_software": [],
         "seo_title": "Headroom Desktop Free Download for Windows 10",
@@ -3135,11 +3146,9 @@
             ".NET 10 runtime must be installed on the system"
         ],
         "installation_instructions": [
-            "Open the release page on GitHub and download the desired file (installer, portable, or CLI).",
-            "For the installer, run the .exe and follow the on‑screen prompts.",
-            "For the portable version, extract the .exe to a folder and double‑click to start.",
-            "For the CLI, run the .exe from a command prompt.",
-            "Follow the program’s instructions to scan and clean the Installer folder."
+            "Click the \"Download InstallerClean\" button on this page. Your browser saves InstallerClean-3.7.0-setup.exe (93.4 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start InstallerClean from the Start menu or the desktop shortcut."
         ],
         "related_software": [],
         "seo_title": "InstallerClean Free Download for Windows",
@@ -3241,9 +3250,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the Windows installer from the official GitHub release page.",
-            "Run the downloaded .exe file and follow the installation wizard.",
-            "After installation, launch IPTVnator from the Start menu or desktop shortcut.",
+            "Click the \"Download IPTVnator\" button on this page. Your browser saves iptvnator-0.25.0-windows-x64-setup.exe (214.2 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start IPTVnator from the Start menu or the desktop shortcut.",
             "Add your M3U/M3U8 playlist or Xtream account in the Settings screen.",
             "Start watching live TV or video on demand."
         ],
@@ -3308,7 +3317,13 @@
         "latest_version": "0.6.9",
         "release_date": "2025-11-29",
         "release_url": "https://github.com/WhyWhatHow/jenv/releases/tag/v0.6.9",
-        "primary_download": null,
+        "primary_download": {
+            "url": "https://github.com/WhyWhatHow/jenv/releases/download/v0.6.9/jenv-0.6.9-windows-x86_64.zip",
+            "filename": "jenv-0.6.9-windows-x86_64.zip",
+            "size": 4127540,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
         "download_assets": [
             {
                 "label": "jenv-0.6.9-windows-aarch_64.zip",
@@ -3341,11 +3356,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page and download the appropriate Windows ZIP file (x64 or aarch64).",
-            "Extract the ZIP to a folder of your choice.",
-            "Open a command prompt in that folder.",
-            "Run \"jenv.exe\" with the desired command, for example \"jenv list\" to see installed JDKs.",
-            "Follow the on‑screen instructions to add or switch Java versions."
+            "Click the \"Download Jenv\" button on this page. Your browser saves jenv-0.6.9-windows-x86_64.zip (3.9 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the Jenv program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
+            "Open a command prompt in that folder."
         ],
         "related_software": [],
         "seo_title": "Jenv Free Download for Windows",
@@ -3509,10 +3523,10 @@
             "The Microsoft Visual C++ (MSVC) Redistributable is listed as a requirement for the x64 installer and portable ZIP on the official download page."
         ],
         "installation_instructions": [
-            "Open the official KeePassXC download page.",
-            "Choose the installer or portable ZIP for your architecture (x64 for most PCs, ARM64 for Windows on Arm devices).",
-            "Optionally verify the download using the published SHA-256 digest or PGP signature.",
-            "Run the installer, or extract the portable ZIP to a folder you control.",
+            "Click the \"Download KeePassXC\" button on this page. Your browser saves the installer, usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start KeePassXC from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Create a new database and choose a strong master password you will not forget. KeePassXC cannot recover a lost master password."
         ],
         "related_software": [
@@ -3637,10 +3651,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the latest release page on GitHub.",
-            "Download the MSI file that matches your system architecture (x64 or ARM64).",
-            "Run the MSI installer and follow the prompts.",
-            "After installation, launch Lap from the Start menu or desktop shortcut.",
+            "Click the \"Download Lap\" button on this page. Your browser saves Lap_0.3.3_x64_en-US.msi (217.6 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start Lap from the Start menu.",
             "Add your photo folders to start managing your collection."
         ],
         "related_software": [],
@@ -3790,11 +3803,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the official GitHub release page and download the Windows installer (EXE or MSI) or the portable ZIP.",
-            "Run the installer and follow the prompts, or extract the portable ZIP to a folder.",
-            "Launch LibreGet from the Start menu or the extracted folder.",
-            "Paste a URL or open a .torrent file to start downloading.",
-            "Use the built‑in tools to convert or manage the downloaded files."
+            "Click the \"Download LibreGet\" button on this page. Your browser saves OmniGet_0.16.6_x64-setup.exe (34.2 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start LibreGet from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [],
         "seo_title": "LibreGet Free Download for Windows",
@@ -3890,9 +3902,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page on GitHub and download the MSI installer for Windows.",
-            "Run the downloaded MSI file and follow the on‑screen prompts to install LightZone.",
-            "After installation, launch LightZone from the Start menu or desktop shortcut.",
+            "Click the \"Download LightZone\" button on this page. Your browser saves LightZone-5.1.0-20261113T142741-windows-64bit.msi (62.6 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start LightZone from the Start menu.",
             "(Optional) Open your RAW or image files to begin editing."
         ],
         "related_software": [],
@@ -3957,11 +3969,11 @@
         "release_date": "2026-10-28",
         "release_url": "https://github.com/mifi/lossless-cut/releases/tag/v3.70.2",
         "primary_download": {
-            "url": "https://github.com/mifi/lossless-cut/releases/download/v3.70.2/LosslessCut-win-x64-DONT-USE-THIS-FILE.appx",
-            "filename": "LosslessCut-win-x64-DONT-USE-THIS-FILE.appx",
-            "size": 260713415,
+            "url": "https://github.com/mifi/lossless-cut/releases/download/v3.70.2/LosslessCut-win-x64.7z",
+            "filename": "LosslessCut-win-x64.7z",
+            "size": 151717535,
             "architecture": "x64",
-            "format": "MSIX / AppX package"
+            "format": "Portable archive"
         },
         "download_assets": [
             {
@@ -4014,10 +4026,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page and download the Windows portable archive (LosslessCut-win-x64.7z).",
-            "Extract the .7z file to a folder of your choice.",
-            "Inside the folder run LosslessCut.exe to start the program.",
-            "(Optional) Create a shortcut to LosslessCut.exe for easy access."
+            "Click the \"Download LosslessCut\" button on this page. Your browser saves LosslessCut-win-x64.7z (144.7 MB), usually to your Downloads folder.",
+            "Extract the .7z file to a folder of your choice with an archive tool such as 7-Zip (right-click the file, then 7-Zip > Extract to).",
+            "Open that folder and double-click the LosslessCut program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive."
         ],
         "related_software": [],
         "seo_title": "LosslessCut Free Download for Windows",
@@ -4137,9 +4148,10 @@
             "Optional: PowerToys Peek or QuickLook for file preview"
         ],
         "installation_instructions": [
-            "Download the installer or portable ZIP from the GitHub release page.",
-            "Run the *.exe installer or extract the ZIP to a folder.",
-            "Launch LucidDesk by double‑clicking luciddesk.exe.",
+            "Click the \"Download LucidDesk\" button on this page. Your browser saves LucidDesk-0.25.3-windows-x64-setup.exe (5.9 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start LucidDesk from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Use the tray icon to create a new panel and start adding icons.",
             "Adjust settings through the tray menu as needed."
         ],
@@ -4204,7 +4216,13 @@
         "latest_version": "2.21.0",
         "release_date": "2026-11-15",
         "release_url": "https://github.com/Doctordefector/Lyrenne/releases/tag/v2.21.0",
-        "primary_download": null,
+        "primary_download": {
+            "url": "https://github.com/Doctordefector/Lyrenne/releases/download/v2.21.0/Lyrenne-2.21.0-portable.zip",
+            "filename": "Lyrenne-2.21.0-portable.zip",
+            "size": 228547559,
+            "architecture": null,
+            "format": "Portable ZIP"
+        },
         "download_assets": [
             {
                 "label": "Lyrenne-2.21.0-portable.zip",
@@ -4229,9 +4247,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the portable ZIP file from the latest GitHub release.",
-            "Extract the ZIP to any folder that is not synced to a cloud service.",
-            "Run Lyrenne.exe to start the program.",
+            "Click the \"Download Lyrenne\" button on this page. Your browser saves Lyrenne-2.21.0-portable.zip (218.0 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the Lyrenne program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
             "Sign in with your Google account when prompted.",
             "Configure settings such as Game Mode or Stream overlay as desired."
         ],
@@ -4296,7 +4314,13 @@
         "latest_version": "1.3.28",
         "release_date": "2026-10-09",
         "release_url": "https://github.com/sbroenne/mcp-windows/releases/tag/v1.3.28",
-        "primary_download": null,
+        "primary_download": {
+            "url": "https://github.com/sbroenne/mcp-windows/releases/download/v1.3.28/windows-mcp-server-1.3.28-win-x64.zip",
+            "filename": "windows-mcp-server-1.3.28-win-x64.zip",
+            "size": 54186365,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
         "download_assets": [
             {
                 "label": "windows-mcp-server-1.3.28-win-arm64.zip",
@@ -4329,9 +4353,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the Releases page on GitHub and download the ZIP file that matches your CPU (x64 or ARM64).",
-            "Extract the ZIP to a folder of your choice.",
-            "Run the server executable (WindowsMcpServer.exe) to start the service.",
+            "Click the \"Download Mcp Windows\" button on this page. Your browser saves windows-mcp-server-1.3.28-win-x64.zip (51.7 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the Mcp Windows program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
             "Configure your AI client or CLI to connect to the server as described in the documentation.",
             "Use the AI assistant or wincli commands to automate Windows applications."
         ],
@@ -4452,9 +4476,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the GitHub releases page and download the Windows installer (mdns-browser_2.9.11_x64-setup.exe) or the portable EXE (mdns-browser_windows_x64.exe).",
-            "Run the installer and follow the prompts, or double‑click the portable EXE to start the program.",
-            "After installation, launch mDNS-Browser from the Start menu or by double‑clicking the shortcut.",
+            "Click the \"Download mDNS-Browser\" button on this page. Your browser saves mdns-browser_2.9.11_x64-setup.exe (2.3 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start mDNS-Browser from the Start menu or the desktop shortcut.",
             "The application will automatically begin scanning for mDNS services.",
             "Use the interface to explore discovered services."
         ],
@@ -4560,10 +4584,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page on GitHub.",
-            "Download the MSI installer that matches your CPU (x64 or ARM64).",
-            "Run the MSI file and follow the installation wizard.",
-            "After installation, launch Melodia from the Start menu or desktop shortcut.",
+            "Click the \"Download Melodia\" button on this page. Your browser saves melodia-v0.23.0-x86_64.msi (18.0 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start Melodia from the Start menu.",
             "Add your music folders in Settings to start using the player."
         ],
         "related_software": [],
@@ -4657,10 +4680,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the GitHub releases page and download the meowsic_2.4.0_x64-setup.exe file.",
-            "Run the downloaded installer.",
-            "Follow the on‑screen prompts to complete installation.",
-            "After installation, launch Meowsic from the Start menu or desktop shortcut.",
+            "Click the \"Download Meowsic\" button on this page. Your browser saves meowsic_2.4.0_x64-setup.exe (9.9 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Meowsic from the Start menu or the desktop shortcut.",
             "Add your music folders and start listening."
         ],
         "related_software": [],
@@ -4774,10 +4796,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the GitHub releases page and download the Windows installer (.exe) or a portable ZIP.",
-            "If you downloaded the installer, run the .exe file and follow the prompts.",
-            "If you downloaded a ZIP, extract its contents to a folder.",
-            "Launch Metrolist by double‑clicking the Metrolist executable.",
+            "Click the \"Download Metrolist\" button on this page. Your browser saves metrolist-installer-windows-x64-14.0.0.exe (10.1 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Metrolist from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Sign in to YouTube Music if you want a personalised experience, or use it without signing in."
         ],
         "related_software": [],
@@ -4908,10 +4930,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page and download the Windows installer (EXE) or the portable ZIP for your architecture.",
-            "If you downloaded the EXE, run it and follow the on‑screen prompts to install.",
-            "If you downloaded the ZIP, extract it to a folder of your choice.",
-            "Launch Moonlight Qt from the Start menu (installed) or from the extracted folder (portable)."
+            "Click the \"Download Moonlight Qt\" button on this page. Your browser saves MoonlightSetup-6.2.0.exe (53.3 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Moonlight Qt from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [],
         "seo_title": "Moonlight Qt Free Download for Windows",
@@ -5013,9 +5035,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page on GitHub and download the Mouse.Point.Viewer-SETUP.exe file.",
-            "Run the downloaded installer and follow the on‑screen prompts.",
-            "After installation, launch Mouse Point Viewer from the Start menu or desktop shortcut.",
+            "Click the \"Download Mouse Point Viewer\" button on this page. Your browser saves Mouse.Point.Viewer.1.4.1-SETUP.exe (2.6 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Mouse Point Viewer from the Start menu or the desktop shortcut.",
             "The overlay will appear and start showing mouse coordinates.",
             "Use the menu to copy coordinates or change the theme if desired."
         ],
@@ -5111,10 +5133,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page on GitHub and download MouseX.exe.",
-            "Run the downloaded EXE file.",
-            "Follow the installer prompts or, if it is a portable version, extract the file to a folder.",
-            "Launch MouseX from the Start menu or the extracted folder.",
+            "Click the \"Download MouseX Absolute Mouse Control\" button on this page. Your browser saves MouseX.exe (12.8 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start MouseX Absolute Mouse Control. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\MouseX Absolute Mouse Control) so it is easy to find next time.",
             "Use the tray icon to open the configuration window and create your mappings."
         ],
         "related_software": [],
@@ -5217,10 +5238,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the installer EXE or the portable ZIP from the official GitHub release page.",
-            "If you chose the EXE, run it and follow the setup wizard.",
-            "If you chose the ZIP, extract its contents to a folder.",
-            "Start MyNotes by double‑clicking MyNotes.exe (or the shortcut created by the installer)."
+            "Click the \"Download MyNotes\" button on this page. Your browser saves Erencrypt.MyNotes-win-Setup.exe (110.8 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start MyNotes from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [],
         "seo_title": "MyNotes Free Download for Windows",
@@ -5321,10 +5342,9 @@
             "Windows 10 (1809 or later) or Windows 11, on x64 or ARM64"
         ],
         "installation_instructions": [
-            "Go to the GitHub release page and download the Nagi.msixbundle file.",
-            "Double‑click the downloaded file to start the MSIX installer.",
-            "Follow the on‑screen prompts to install Nagi.",
-            "After installation, launch Nagi from the Start menu.",
+            "Click the \"Download Nagi\" button on this page. Your browser saves Nagi.msixbundle (182.6 MB), usually to your Downloads folder.",
+            "Open the downloaded file and click \"Install\" in the window that appears.",
+            "Start Nagi from the Start menu.",
             "On first run, point Nagi to the folders that contain your music."
         ],
         "related_software": [],
@@ -5551,10 +5571,10 @@
             "Choose the build that matches your Windows architecture (x64, x86 or ARM64)."
         ],
         "installation_instructions": [
-            "Open the official Notepad++ downloads page and select the newest release.",
-            "Download the installer for your architecture, or a portable package if you do not want to install it.",
-            "Download only from notepad-plus-plus.org or the official GitHub repository.",
-            "Run the installer and choose the components you want, such as the context-menu entry."
+            "Click the \"Download Notepad++\" button on this page. Your browser saves npp.8.9.9.1.Installer.x64.exe (6.7 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Notepad++ from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [
             "7-zip",
@@ -5701,10 +5721,11 @@
             "Supported Windows versions and hardware requirements change between releases. Check the official download page and release notes."
         ],
         "installation_instructions": [
-            "Open the official OBS Studio download page.",
-            "Download the Windows installer, or the ZIP package from the official GitHub releases page if you prefer it.",
+            "Click the \"Download OBS Studio\" button on this page. Your browser saves OBS-Studio-33.0.1-Windows-x64-Installer.exe (178.0 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start OBS Studio from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Update your graphics driver before the first launch if you plan to use hardware encoding.",
-            "Run the installer and follow the setup steps.",
             "On first launch, use the Auto-Configuration Wizard or set your recording and streaming options manually."
         ],
         "related_software": [
@@ -5771,7 +5792,13 @@
         "latest_version": "26.11.0",
         "release_date": "2026-11-01",
         "release_url": "https://github.com/vegidio/open-photo-ai/releases/tag/26.11.0",
-        "primary_download": null,
+        "primary_download": {
+            "url": "https://github.com/vegidio/open-photo-ai/releases/download/26.11.0/opai-cli_windows_x64.zip",
+            "filename": "opai-cli_windows_x64.zip",
+            "size": 15109096,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
         "download_assets": [
             {
                 "label": "opai-cli_windows_arm64.zip",
@@ -5823,10 +5850,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the GitHub releases page and download the appropriate ZIP file for your system (x64 or ARM64).",
-            "Extract the ZIP to a folder of your choice.",
-            "Run the executable (opai-cli.exe for command line or opai-gui.exe for the graphical interface).",
-            "Follow any on‑screen prompts to let the program download the AI model files.",
+            "Click the \"Download Open Photo AI\" button on this page. Your browser saves opai-cli_windows_x64.zip (14.4 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the Open Photo AI program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
             "Start using the application to edit your photos."
         ],
         "related_software": [],
@@ -5924,10 +5950,9 @@
             "Internet connection for initial download of headless Chromium"
         ],
         "installation_instructions": [
-            "Download OpenFilm-Setup-x64.exe from the official GitHub release page.",
-            "Run the installer and follow the prompts.",
-            "After installation, launch OpenFilm Studio from the Start menu or desktop shortcut.",
-            "The first run will download a headless Chromium runtime.",
+            "Click the \"Download OpenFilm\" button on this page. Your browser saves OpenFilm-Setup-x64.exe (299.1 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start OpenFilm from the Start menu or the desktop shortcut.",
             "Use the built‑in chat or command line to ask an AI agent to create a film, then edit it in Studio."
         ],
         "related_software": [],
@@ -6057,10 +6082,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the appropriate MSI installer or portable ZIP from the GitHub release page",
-            "If using the MSI, run the installer and follow the prompts",
-            "If using the portable ZIP, extract it to a folder of your choice",
-            "Launch PhotoCraft from the Start menu (MSI) or by double‑clicking the executable in the extracted folder (portable)"
+            "Click the \"Download PhotoCraft\" button on this page. Your browser saves photocraft-0.23.1-windows-x64.msi (112.9 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start PhotoCraft from the Start menu.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [],
         "seo_title": "PhotoCraft Free Download for Windows",
@@ -6161,11 +6186,10 @@
             "Minimal disk space (application ~240 MB, user data ~200 MB)"
         ],
         "installation_instructions": [
-            "Open the release page on GitHub and download the Photoslide‑2.1.3.msi file.",
-            "Run the MSI installer.",
-            "If Windows Defender warns, choose \"More info\" then \"Run anyway\".",
-            "After installation, launch PhotoSlide from the Start menu or desktop shortcut.",
-            "Follow any on‑screen prompts to complete first‑time setup."
+            "Click the \"Download PhotoSlide\" button on this page. Your browser saves Photoslide-2.2.1.msi (598.1 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start PhotoSlide from the Start menu.",
+            "If Windows Defender warns, choose \"More info\" then \"Run anyway\"."
         ],
         "related_software": [],
         "seo_title": "PhotoSlide Free Download for Windows 10",
@@ -6269,10 +6293,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the installer EXE or the portable ZIP from the official GitHub release page.",
-            "If you chose the installer, run the EXE and follow the setup wizard.",
-            "If you chose the portable ZIP, extract its contents to a folder.",
-            "Launch Polyphone by double‑clicking the Polyphone.exe file.",
+            "Click the \"Download Polyphone\" button on this page. Your browser saves Polyphone_2.6.0-windows_x64-installer.exe (20.0 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Polyphone from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Start creating or editing soundfonts."
         ],
         "related_software": [],
@@ -6370,9 +6394,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download PyMusicPlayer-Setup.exe from the official GitHub release page.",
-            "Run the installer and follow the on‑screen prompts.",
-            "After installation, launch PyMusicPlayer from the Start menu or desktop shortcut.",
+            "Click the \"Download PyMusicPlayer\" button on this page. Your browser saves PyMusicPlayer-1.7.0-Setup.exe (182.3 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start PyMusicPlayer from the Start menu or the desktop shortcut.",
             "(Optional) Register the player as the default program for audio files in Windows Settings.",
             "Open music files or drag them onto the player to start listening."
         ],
@@ -6481,9 +6505,9 @@
             "Administrator rights are required for cleaning operations"
         ],
         "installation_instructions": [
-            "Go to the GitHub releases page and download qc-64bit.exe (or qc-32bit.exe for 32‑bit systems).",
-            "Run the downloaded .exe file.",
-            "Follow the prompts to install Quiesce (no admin rights needed for installation).",
+            "Click the \"Download Quiesce\" button on this page. Your browser saves qc-64bit.exe (9.2 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start Quiesce. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\Quiesce) so it is easy to find next time.",
             "Open any terminal and type \"qc\" to launch the menu.",
             "Use the menu or command‑line options to run cleaning steps."
         ],
@@ -6623,10 +6647,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the GitHub releases page linked from this listing.",
-            "Download the installer (EXE) or portable ZIP for your CPU architecture.",
-            "Run the installer and follow the prompts, or extract the ZIP to a folder.",
-            "Launch RAWmakase from the Start menu or the extracted folder.",
+            "Click the \"Download RAWmakase\" button on this page. Your browser saves rawmakase-v0.5.0-x86_64-pc-windows-msvc-setup.exe (25.4 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start RAWmakase from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "(Optional) Import a Lightroom catalog or your own presets via the Preferences menu."
         ],
         "related_software": [],
@@ -6719,10 +6743,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page on GitHub and download riff‑0.7.6‑win‑x64.exe.",
-            "Run the downloaded EXE file.",
-            "Follow the installer prompts to install Riff.",
-            "After installation, launch Riff from the Start menu or desktop shortcut.",
+            "Click the \"Download Riff\" button on this page. Your browser saves riff-0.7.6-win-x64.exe (102.9 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start Riff. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\Riff) so it is easy to find next time.",
             "Sign in to online services if desired, or add local files to start listening."
         ],
         "related_software": [],
@@ -6906,11 +6929,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the GitHub release page and download the Windows installer (EXE or MSI) or the portable ZIP.",
-            "If you chose the installer, run the .exe or .msi and follow the setup wizard.",
-            "If you chose the portable ZIP, extract it to a folder.",
-            "Launch Rigby2D by double‑clicking Rigby2D.exe (or the portable executable).",
-            "Follow the on‑screen prompts to start a new project or open an existing one."
+            "Click the \"Download Rigby2D\" button on this page. Your browser saves Rigby2D_0.5.1_x64-setup.exe (14.7 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Rigby2D from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [],
         "seo_title": "Rigby2D Free Download for Windows",
@@ -7030,10 +7052,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the official GitHub release page and download the Windows installer or portable ZIP.",
-            "If you downloaded the installer, run the .exe file and follow the prompts.",
-            "If you downloaded the portable ZIP, extract it to a folder.",
-            "Launch Rubylight by double‑clicking Rubylight.exe (or the shortcut created by the installer)."
+            "Click the \"Download Rubylight\" button on this page. Your browser saves rubylight-nvidia-setup-4.6.0.exe (51.5 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Rubylight from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [],
         "seo_title": "Rubylight Free Download for Windows",
@@ -7098,7 +7120,13 @@
         "latest_version": "2.4.3",
         "release_date": "2026-08-08",
         "release_url": "https://github.com/sakura-editor/sakura/releases/tag/v2.4.3",
-        "primary_download": null,
+        "primary_download": {
+            "url": "https://github.com/sakura-editor/sakura/releases/download/v2.4.3/sakura-tag-v2.4.3-build2916-fe1a4a281-Win32-Release-Exe.zip",
+            "filename": "sakura-tag-v2.4.3-build2916-fe1a4a281-Win32-Release-Exe.zip",
+            "size": 3513182,
+            "architecture": "x86",
+            "format": "Portable ZIP"
+        },
         "download_assets": [
             {
                 "label": "sakura-tag-v2.4.3-build2916-fe1a4a281-Win32-Release-Exe.zip",
@@ -7131,11 +7159,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the GitHub release page and download the portable ZIP file.",
-            "Extract the ZIP to a folder of your choice.",
-            "Double‑click sakura.exe to start the editor.",
-            "(Optional) Run the installer ZIP if you prefer a standard installation.",
-            "Create a shortcut to sakura.exe for easy access."
+            "Click the \"Download Sakura Editor\" button on this page. Your browser saves sakura-tag-v2.4.3-build2916-fe1a4a281-Win32-Release-Exe.zip (3.4 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the Sakura Editor program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive."
         ],
         "related_software": [],
         "seo_title": "Sakura Editor Free Download for Windows 10",
@@ -7241,10 +7267,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the Screenbox_0.24.0.0_neutral.msixbundle file from the official GitHub release page.",
-            "Open the downloaded MSIX bundle to install the app.",
-            "Follow the on‑screen prompts to complete installation.",
-            "Launch Screenbox from the Start menu after installation."
+            "Click the \"Download Screenbox\" button on this page. Your browser saves Screenbox_0.24.0.0_neutral.msixbundle (150.1 MB), usually to your Downloads folder.",
+            "Open the downloaded file and click \"Install\" in the window that appears.",
+            "Start Screenbox from the Start menu."
         ],
         "related_software": [],
         "seo_title": "Screenbox Free Download for Windows 11 and 10",
@@ -7356,10 +7381,10 @@
             "No separate .NET runtime required"
         ],
         "installation_instructions": [
-            "Download the EXE installer or Portable ZIP from the release page.",
-            "If using the installer, run the .exe and follow the prompts.",
-            "If using the portable version, extract the ZIP to a folder.",
-            "Launch ScreenRecorder.exe from the installation folder or extracted directory.",
+            "Click the \"Download ScreenRecorder\" button on this page. Your browser saves ScreenRecorder_Setup_v2.1.0.exe (124.4 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start ScreenRecorder from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Adjust settings as needed and start recording."
         ],
         "related_software": [],
@@ -7474,11 +7499,10 @@
             "Internet connection for the first model download"
         ],
         "installation_instructions": [
-            "Open the Releases page on GitHub.",
-            "Download ScribeSetup.exe (installer) or Scribe.exe (portable).",
-            "Run the installer and follow the prompts, or extract the portable EXE to a folder.",
-            "Launch Scribe from the Start menu shortcut or by double‑clicking the EXE.",
-            "On first launch, allow the program to download the language model."
+            "Click the \"Download Scribe\" button on this page. Your browser saves ScribeSetup.exe (89.2 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Scribe from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [],
         "seo_title": "Scribe Free Download for Windows",
@@ -7541,7 +7565,13 @@
         "latest_version": "1.1.4",
         "release_date": "2026-07-30",
         "release_url": "https://github.com/LPBeaulieu/Handwriting-OCR-ScriptReader/releases/tag/v1.1.4",
-        "primary_download": null,
+        "primary_download": {
+            "url": "https://github.com/LPBeaulieu/Handwriting-OCR-ScriptReader/releases/download/v1.1.4/ScriptReader_Win10_x86_64.zip",
+            "filename": "ScriptReader_Win10_x86_64.zip",
+            "size": 773751050,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
         "download_assets": [
             {
                 "label": "ScriptReader_Win10_x86_64.zip",
@@ -7569,9 +7599,9 @@
             "Optional: Python environment with Fastai, OpenCV and glob2 if rebuilding the model (not needed for using the pre‑built version)"
         ],
         "installation_instructions": [
-            "Download the ScriptReader_Win10_x86_64.zip from the official GitHub release.",
-            "Extract the ZIP to a folder of your choice.",
-            "Open the extracted folder and double‑click ScriptReader.exe to start the program.",
+            "Click the \"Download ScriptReader\" button on this page. Your browser saves ScriptReader_Win10_x86_64.zip (737.9 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the ScriptReader program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
             "Use the interface to load a JPEG image and choose an output location for the RTF file.",
             "The generated RTF can be opened with any word processor."
         ],
@@ -7700,10 +7730,11 @@
             "Supported Windows versions and runtime requirements can change between releases. Check the official release notes."
         ],
         "installation_instructions": [
-            "Open the official ShareX website or the GitHub releases page.",
-            "Choose the setup installer, or the portable ZIP if you do not want to install it.",
-            "Check that the release is a stable release and not a pre-release, unless you want to test new features.",
-            "Run the installer, then set your capture hotkeys and after-capture tasks in the main window."
+            "Click the \"Download ShareX\" button on this page. Your browser saves ShareX-22.4.0-setup-x64.exe (138.7 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start ShareX from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
+            "Check that the release is a stable release and not a pre-release, unless you want to test new features."
         ],
         "related_software": [
             "obs-studio",
@@ -7813,10 +7844,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the official GitHub release page and download the Windows installer (skrin-windows-x64-setup.exe) or the portable ZIP (skrin-windows-x64.zip).",
-            "If you downloaded the installer, run the .exe file and follow the prompts to install for your user account.",
-            "If you downloaded the ZIP, extract its contents to a folder of your choice.",
-            "Start Skrin from the Start menu (installer) or by running Skrin.exe from the extracted folder (portable)."
+            "Click the \"Download Skrin\" button on this page. Your browser saves skrin-windows-x64-setup.exe (38.0 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Skrin from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [],
         "seo_title": "Skrin Free Download for Windows",
@@ -7936,11 +7967,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the GitHub release page linked on this page.",
-            "Download the appropriate Windows file (EXE for installer or ZIP for portable).",
-            "If you downloaded the EXE, run it and follow the installer prompts.",
-            "If you downloaded the ZIP, extract it to a folder.",
-            "Launch Spacewave by double‑clicking the executable or the shortcut created by the installer."
+            "Click the \"Download Spacewave\" button on this page. Your browser saves spacewave-windows-amd64.exe (189.6 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start Spacewave. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\Spacewave) so it is easy to find next time."
         ],
         "related_software": [],
         "seo_title": "Spacewave Free Download for Windows",
@@ -8040,11 +8069,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the installer file from the latest GitHub release.",
-            "Run the downloaded .exe file and follow the on‑screen prompts.",
-            "After installation, launch StarLuxe from the Start menu or desktop shortcut.",
-            "In the program, select the game you want to enhance and press Start.",
-            "Optionally, download preset packs or apply a custom theme from the settings."
+            "Click the \"Download StarLuxe\" button on this page. Your browser saves StarLuxe-Installer-v1.0.98.exe (20.1 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start StarLuxe from the Start menu or the desktop shortcut.",
+            "In the program, select the game you want to enhance and press Start."
         ],
         "related_software": [],
         "seo_title": "StarLuxe Free Download for Windows",
@@ -8184,10 +8212,10 @@
             "Requires .NET Framework 4.8 installed"
         ],
         "installation_instructions": [
-            "Go to the GitHub releases page and download the appropriate .exe or .7z file for your system architecture.",
-            "If you downloaded a .exe, run it and follow the installer prompts.",
-            "If you downloaded a .7z archive, extract it to a folder of your choice.",
-            "Launch Sucrose from the Start menu or the extracted folder.",
+            "Click the \"Download Sucrose\" button on this page. Your browser saves Sucrose_Bundle_.NET_Framework_4.8_x64_26.7.5.0.exe (326.7 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start Sucrose. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\Sucrose) so it is easy to find next time.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Open the application and start adding or creating wallpapers."
         ],
         "related_software": [],
@@ -8292,10 +8320,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the Windows installer (EXE) or the portable 7z archive from the official GitHub release page.",
-            "If using the installer, run the .exe file and follow the on‑screen prompts.",
-            "If using the portable archive, extract the .7z file to a folder of your choice.",
-            "Launch Tauon by double‑clicking the Tauon executable.",
+            "Click the \"Download Tauon\" button on this page. Your browser saves TauonMusicBox-windows-installer.exe (104.8 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Tauon from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Optional: configure media server connections within the application settings."
         ],
         "related_software": [],
@@ -8409,10 +8437,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the official GitHub release page and download the installer you prefer (setup .exe, MSI or portable .exe).",
-            "If you chose the installer, double‑click the file and follow the setup wizard.",
-            "For the portable version, double‑click the .exe to run it directly.",
-            "After installation, launch TizuMark from the Start menu or the shortcut created.",
+            "Click the \"Download TizuMark\" button on this page. Your browser saves TizuMark_1.2.5_x64-setup.exe (9.9 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start TizuMark from the Start menu or the desktop shortcut.",
             "Open or create a .md file to start editing."
         ],
         "related_software": [],
@@ -8517,10 +8544,10 @@
             "Node.js 20+ (required for the CLI version)"
         ],
         "installation_instructions": [
-            "Go to the GitHub release page and download TokenTracker-Setup.exe or TokenTracker-win-x64.zip.",
-            "If you downloaded the installer, run TokenTracker-Setup.exe and follow the prompts.",
-            "If you downloaded the zip, extract it to a folder of your choice.",
-            "Launch Token Tracker from the Start menu (installer) or run TokenTracker.exe in the extracted folder (portable).",
+            "Click the \"Download Token Tracker\" button on this page. Your browser saves TokenTracker-Setup.exe (81.7 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Token Tracker from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "The dashboard will open in your default browser at http://localhost:7680."
         ],
         "related_software": [],
@@ -8585,10 +8612,10 @@
         "release_date": "2026-11-14",
         "release_url": "https://github.com/TheJoeFin/Traydio/releases/tag/v2.2.5",
         "primary_download": {
-            "url": "https://github.com/TheJoeFin/Traydio/releases/download/v2.2.5/Microsoft.WindowsAppRuntime.2_2.6.5.0_x64.msix",
-            "filename": "Microsoft.WindowsAppRuntime.2_2.6.5.0_x64.msix",
-            "size": 50210887,
-            "architecture": "x64",
+            "url": "https://github.com/TheJoeFin/Traydio/releases/download/v2.2.5/Trdo_2.2.5.msixbundle",
+            "filename": "Trdo_2.2.5.msixbundle",
+            "size": 126618771,
+            "architecture": null,
             "format": "MSIX / AppX package"
         },
         "download_assets": [
@@ -8631,11 +8658,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page on GitHub and download the appropriate MSIX/MSIX bundle file.",
-            "Run the downloaded MSIX/MSIX bundle to install Traydio.",
-            "After installation, launch Traydio from the Start menu or click its icon in the system tray.",
-            "Add your favorite radio stations using the \"Add Station\" dialog.",
-            "Enjoy listening to internet radio directly from the tray."
+            "Click the \"Download Traydio\" button on this page. Your browser saves Trdo_2.2.5.msixbundle (120.8 MB), usually to your Downloads folder.",
+            "Open the downloaded file and click \"Install\" in the window that appears.",
+            "Start Traydio from the Start menu.",
+            "Add your favorite radio stations using the \"Add Station\" dialog."
         ],
         "related_software": [],
         "seo_title": "Traydio Free Download for Windows",
@@ -8700,7 +8726,13 @@
         "latest_version": "2.1.3",
         "release_date": "2026-11-09",
         "release_url": "https://github.com/zksbx/TuneFree/releases/tag/v2.1.3",
-        "primary_download": null,
+        "primary_download": {
+            "url": "https://github.com/zksbx/TuneFree/releases/download/v2.1.3/TuneFree-v2.1.3-win64.zip",
+            "filename": "TuneFree-v2.1.3-win64.zip",
+            "size": 64172893,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
         "download_assets": [
             {
                 "label": "TuneFree-v2.1.3-win64.zip",
@@ -8728,11 +8760,10 @@
             "Supports only standard, HQ, and SQ audio quality"
         ],
         "installation_instructions": [
-            "Download the TuneFree‑win64.zip from the official GitHub release.",
-            "Extract the ZIP to a folder.",
-            "Double‑click TuneFree.exe to start the program.",
-            "If SmartScreen blocks it, click “More info” then “Run anyway”.",
-            "Follow the on‑screen steps to select the input folder and start conversion."
+            "Click the \"Download TuneFree\" button on this page. Your browser saves TuneFree-v2.1.3-win64.zip (61.2 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the TuneFree program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
+            "If SmartScreen blocks it, click “More info” then “Run anyway”."
         ],
         "related_software": [],
         "seo_title": "TuneFree Free Download for Windows 10",
@@ -8826,10 +8857,9 @@
             ".NET Framework 4.7.2 or later"
         ],
         "installation_instructions": [
-            "Open the release page on GitHub and download the EXE installer.",
-            "Run the downloaded file and follow the prompts.",
-            "The updater will scan the system, download needed INF files, and install them.",
-            "After installation, a confirmation screen is shown.",
+            "Click the \"Download Universal Intel Chipset Updater\" button on this page. Your browser saves ChipsetUpdater-2026.09.0019-Win10-Win11.exe (750.2 KB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Universal Intel Chipset Updater from the Start menu or the desktop shortcut.",
             "Launch the program again from the Start menu to check for future updates."
         ],
         "related_software": [],
@@ -8928,10 +8958,9 @@
             ".NET Framework 4.7.2 or newer"
         ],
         "installation_instructions": [
-            "Go to the release page and download the .exe file.",
-            "Double‑click the downloaded file to start the self‑extracting installer.",
-            "Follow the on‑screen prompts to allow the program to detect hardware and install drivers.",
-            "After installation, the updater will run automatically or can be launched from the Start menu.",
+            "Click the \"Download Universal Intel Wi-Fi and Bluetooth Drivers Updater\" button on this page. Your browser saves WiFi-BT-Updater-2026.07.0008-Win10-Win11.exe (739.4 KB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start Universal Intel Wi-Fi and Bluetooth Drivers Updater. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\Universal Intel Wi-Fi and Bluetooth Drivers Updater) so it is easy to find next time.",
             "Optionally edit the credits text files to customize the on‑screen messages."
         ],
         "related_software": [],
@@ -9053,9 +9082,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the official GitHub releases page and download the Windows installer (MSI) or portable EXE for your architecture.",
-            "Run the MSI installer and follow the prompts, or double‑click the EXE to start the portable version.",
-            "After installation, launch Usque from the Start menu or desktop shortcut.",
+            "Click the \"Download Usque\" button on this page. Your browser saves usque-v0.3.4-windows-x64-v2.msi (24.4 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start Usque from the Start menu.",
             "Sign in or configure your WARP account and set up any desired profiles.",
             "Use the tray icon to connect, disconnect, or switch profiles."
         ],
@@ -9186,10 +9215,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the official GitHub release page.",
-            "Download the installer (EXE) for your system architecture (x64 or ARM64) or the portable ZIP.",
-            "Run the installer and follow the prompts, or extract the ZIP to a folder.",
-            "Launch VLC Media Player Redesign from the Start menu or the extracted folder.",
+            "Click the \"Download VLC Media Player Redesign\" button on this page. Your browser saves vlc-redesign-0.6.9-win64-setup.exe (62.6 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start VLC Media Player Redesign from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
             "Optionally import existing VLC playlists or settings."
         ],
         "related_software": [],
@@ -9257,7 +9286,13 @@
         "latest_version": "5.0.0",
         "release_date": "2026-09-08",
         "release_url": "https://github.com/spmn/vlc-win10smtc/releases/tag/v5.0.0",
-        "primary_download": null,
+        "primary_download": {
+            "url": "https://github.com/spmn/vlc-win10smtc/releases/download/v5.0.0/libwin10smtc_plugin_v5.0.0_x64.zip",
+            "filename": "libwin10smtc_plugin_v5.0.0_x64.zip",
+            "size": 1387478,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
         "download_assets": [
             {
                 "label": "libwin10smtc_plugin_v5.0.0_arm64.zip",
@@ -9302,8 +9337,9 @@
             "Microsoft Visual C++ Redistributable 2022 matching the VLC architecture"
         ],
         "installation_instructions": [
-            "Download the ZIP file that matches your VLC architecture from the GitHub release page.",
-            "Extract the file libwin10smtc_plugin.dll.",
+            "Click the \"Download VLC Win10smtc\" button on this page. Your browser saves libwin10smtc_plugin_v5.0.0_x64.zip (1.3 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the VLC Win10smtc program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
             "Copy the DLL to \\plugins\\misc.",
             "Restart VLC.",
             "Open Advanced Preferences → Interface → Control Interfaces, check \"Windows SMTC integration\" and save."
@@ -9401,9 +9437,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Download the Windows x64 installer from the latest GitHub release.",
-            "Run the downloaded .exe file and follow the installation wizard.",
-            "After installation, launch VoxType from the Start menu.",
+            "Click the \"Download VoxType\" button on this page. Your browser saves VoxType_0.19.1_x64-setup.exe (5.3 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start VoxType from the Start menu or the desktop shortcut.",
             "Open the settings to add your ASR service credentials.",
             "Use the default shortcut Ctrl+Q (or configure another) to start dictation."
         ],
@@ -9515,10 +9551,10 @@
             "Requires .NET runtime 4.7.2 or later"
         ],
         "installation_instructions": [
-            "Go to the Releases page and download the EXE installer or the portable ZIP.",
-            "For the installer, run the downloaded .exe and follow the prompts.",
-            "For the portable version, extract the ZIP to a folder of your choice.",
-            "Launch Warpinator Windows from the Start menu (installer) or by running Warpinator.exe in the extracted folder (portable)."
+            "Click the \"Download Warpinator Windows\" button on this page. Your browser saves warpinator-setup_1.1.exe (11.3 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Warpinator Windows from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [],
         "seo_title": "Warpinator Windows Free Download for Windows 7",
@@ -9621,8 +9657,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page on GitHub and download the Windows installer (EXE or MSI).",
-            "Run the downloaded installer and follow the on‑screen prompts.",
+            "Click the \"Download WaveFlow\" button on this page. Your browser saves WaveFlow_2.1.0_windows-x86_64-setup.exe (23.2 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start WaveFlow from the Start menu or the desktop shortcut.",
             "When installation finishes, launch WaveFlow from the Start menu or desktop shortcut.",
             "The first run will scan your music folders and build the library.",
             "Start playing your collection from the main interface."
@@ -9718,9 +9755,9 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the releases page on GitHub and download WeftCut‑win‑x64.exe.",
-            "Run the downloaded EXE to install the program.",
-            "After installation, open WeftCut from the Start menu.",
+            "Click the \"Download WeftCut\" button on this page. Your browser saves WeftCut-win-x64.exe (245.3 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start WeftCut. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\WeftCut) so it is easy to find next time.",
             "(Optional) Open the settings panel to copy the prompt for connecting your AI client.",
             "Start editing videos manually or let an AI agent drive the editor."
         ],
@@ -9824,11 +9861,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Go to the GitHub releases page and download either the installer .exe or the portable ZIP.",
-            "If you downloaded the .exe, run it and follow the prompts to install WinAppMigrator.",
-            "If you downloaded the ZIP, extract it to a folder and run WinAppMigrator.exe.",
-            "Launch WinAppMigrator from the Start menu or the extracted folder.",
-            "Choose the source application and follow the on‑screen steps to create the installer."
+            "Click the \"Download WinAppMigrator\" button on this page. Your browser saves WinAppMigrator-v0.7.0.exe (34.4 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start WinAppMigrator. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\WinAppMigrator) so it is easy to find next time.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [],
         "seo_title": "WinAppMigrator Free Download for Windows",
@@ -9891,7 +9927,13 @@
         "latest_version": "0.24.0",
         "release_date": "2026-11-05",
         "release_url": "https://github.com/glslang/windbg-mcp/releases/tag/v0.24.0",
-        "primary_download": null,
+        "primary_download": {
+            "url": "https://github.com/glslang/windbg-mcp/releases/download/v0.24.0/windbg-mcp-v0.24.0-windows-x64.zip",
+            "filename": "windbg-mcp-v0.24.0-windows-x64.zip",
+            "size": 12708638,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
         "download_assets": [
             {
                 "label": "windbg-mcp-v0.24.0-windows-x64.zip",
@@ -9919,10 +9961,10 @@
             ".NET runtime for certain debugging extensions (if used)"
         ],
         "installation_instructions": [
-            "Download the windbg-mcp‑windows‑x64.zip from the official GitHub release page.",
-            "Extract the ZIP to a folder of your choice.",
+            "Click the \"Download windbg-mcp\" button on this page. Your browser saves windbg-mcp-v0.24.0-windows-x64.zip (12.1 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the windbg-mcp program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
             "Open a command prompt in that folder.",
-            "Run the executable with desired options (e.g., \"windbg-mcp --listen\" to start the HTTP server).",
             "Use an MCP client to connect to the server."
         ],
         "related_software": [],
@@ -10070,11 +10112,10 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Open the release page on GitHub.",
-            "Download the EXE file that matches your CPU architecture (e.g., winrar-keygen-x64.exe).",
-            "Save the file to a convenient folder.",
-            "Double‑click the EXE to run the program (no installer needed).",
-            "Follow the on‑screen instructions to generate a rarreg.key file."
+            "Click the \"Download WinRAR Keygen\" button on this page. Your browser saves winrar-keygen-gui-x64-dotnet.exe (5.9 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start WinRAR Keygen. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\WinRAR Keygen) so it is easy to find next time.",
+            "Save the file to a convenient folder."
         ],
         "related_software": [],
         "seo_title": "WinRAR Keygen Free Download for Windows",
@@ -10174,10 +10215,10 @@
             "Internet connection for package manager operations and ISO download"
         ],
         "installation_instructions": [
-            "Download WinUtil-CN.exe from the official GitHub release page.",
+            "Click the \"Download WinUtil CN\" button on this page. Your browser saves WinUtil-CN.exe (854.0 KB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start WinUtil CN. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\WinUtil CN) so it is easy to find next time.",
             "Double‑click the EXE and accept the administrator prompt.",
-            "The program starts; choose a function from the home screen and follow the on‑screen prompts.",
-            "For command‑line use, download winutil-cn.ps1, verify its SHA256 hash, then run it in an elevated PowerShell session.",
             "No additional installation steps are required; the application runs directly."
         ],
         "related_software": [],
@@ -10275,9 +10316,9 @@
             "Access to local LLM servers or internet for cloud APIs if used"
         ],
         "installation_instructions": [
-            "Download the Yengi_Setup.exe file from the official GitHub release page.",
-            "Run the installer and follow the on‑screen prompts.",
-            "After installation, launch Yengi from the Start menu or desktop shortcut.",
+            "Click the \"Download Yengi\" button on this page. Your browser saves Yengi_Setup_v2.0.3.exe (57.0 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Yengi from the Start menu or the desktop shortcut.",
             "Configure your preferred AI models and tools in the workspace settings.",
             "Start a new project and begin using the AI‑assisted IDE features."
         ],
@@ -10385,10 +10426,9 @@
             "No additional runtime required; all dependencies are bundled"
         ],
         "installation_instructions": [
-            "Open the Releases page on GitHub.",
-            "Download YouBoard_Setup_v3.3.8.exe for the installer or YouBoard.exe for the portable version.",
-            "Run the installer and follow the prompts, or double‑click the portable EXE to start.",
-            "After installation, launch YouBoard from the Start menu or by double‑clicking the shortcut.",
+            "Click the \"Download YouBoard\" button on this page. Your browser saves YouBoard_Setup_v3.3.8.exe (36.6 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start YouBoard from the Start menu or the desktop shortcut.",
             "Configure shortcuts and settings as needed within the application."
         ],
         "related_software": [],
