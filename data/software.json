@@ -751,6 +751,112 @@
         "verification_status": "partial"
     },
     {
+        "id": "auto-editor",
+        "name": "Auto-Editor",
+        "slug": "auto-editor",
+        "summary": "A command‑line tool that automatically trims and edits video and audio files based on silence, volume and motion detection.",
+        "description": [
+            "Auto-Editor processes video and audio files without manual cutting. It analyses the track, removes silent or low‑activity sections, and can apply speed changes, margins and other edits automatically. It is aimed at users who want quick, automated editing without learning a full‑featured video editor.",
+            "Auto-Editor is a free, open‑source command‑line application that edits video and audio by analyzing characteristics such as loudness, silence, and motion. The program performs an initial pass to cut out dead space, then applies optional margins, speed ramps, and label‑based edits. It supports exporting the edited timeline to popular editing suites like Adobe Premiere Pro, DaVinci Resolve, Final Cut Pro, Shotcut, Kdenlive, or as individual clips. Users run it by invoking the executable with the source file and desired options. The tool is suitable for creators, podcasters, educators, and anyone who needs to quickly trim long recordings.",
+            "The software is distributed as pre‑built Windows executables for x64 and ARM64 architectures. It requires no installation wizard; the executable can be run directly after download. Documentation and help are available via the `--help` flag or on the official website."
+        ],
+        "icon": {
+            "text": "A",
+            "color": "#15803D"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "The Unlicense",
+        "license_family": "permissive",
+        "license_url": "https://github.com/WyattBlue/auto-editor#license",
+        "official_website": "https://auto-editor.com",
+        "download_page": "https://github.com/WyattBlue/auto-editor/releases/tag/31.9.0",
+        "repository_url": "https://github.com/WyattBlue/auto-editor",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "31.9.0",
+        "release_date": "2026-11-13",
+        "release_url": "https://github.com/WyattBlue/auto-editor/releases/tag/31.9.0",
+        "primary_download": {
+            "url": "https://github.com/WyattBlue/auto-editor/releases/download/31.9.0/auto-editor-windows-x86_64.exe",
+            "filename": "auto-editor-windows-x86_64.exe",
+            "size": 45897392,
+            "architecture": "x64",
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "auto-editor-windows-aarch64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/WyattBlue/auto-editor/releases/download/31.9.0/auto-editor-windows-aarch64.exe",
+                "size": 28350640,
+                "sha256": "c7897079ca0af54336b8c0e5aa60ae38a0eac86a7bed12abc2d6ba2cdc3d1388"
+            },
+            {
+                "label": "auto-editor-windows-x86_64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/WyattBlue/auto-editor/releases/download/31.9.0/auto-editor-windows-x86_64.exe",
+                "size": 45897392,
+                "sha256": "9621511892a92189abe19ac911e34b5e6caf4243259cbd4d18f29c7bef067774"
+            }
+        ],
+        "features": [
+            "Automatically removes silent sections from video and audio files",
+            "Supports cutting based on motion, volume thresholds and custom expressions",
+            "Adds configurable margin padding before and after cuts",
+            "Applies speed ramps and variable speed changes",
+            "Exports edited timelines to Premiere Pro, DaVinci Resolve, Final Cut Pro, Shotcut, Kdenlive, CMX EDL, or as individual clips",
+            "Generates XML files for import into professional editors",
+            "Provides a detailed help list of all options via `auto-editor --help`",
+            "Works as a portable executable; no installation required"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download the appropriate Windows executable (x64 or ARM64) from the official GitHub release page.",
+            "Save the .exe file to a folder of your choice.",
+            "Open a command prompt in that folder.",
+            "Run the program with the source file and desired options, e.g., `auto-editor video.mp4`.",
+            "The edited output will be saved in the same folder unless otherwise specified."
+        ],
+        "related_software": [],
+        "seo_title": "Auto-Editor Free Download for Windows",
+        "meta_description": "Download Auto-Editor free for Windows. A command‑line tool that automatically trims and edits video and audio files based on silence, volume and motion detecti…",
+        "canonical_url": "https://codehimblog.github.io/software/auto-editor/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "autorunmanager",
         "name": "AutoRunManager",
         "slug": "autorunmanager",
@@ -871,7 +977,7 @@
         "license_family": "copyleft",
         "license_url": "https://github.com/denizsafak/AutoSubSync#license",
         "official_website": "https://pypi.org/project/assy/",
-        "download_page": "https://github.com/denizsafak/AutoSubSync/releases/tag/v6.6",
+        "download_page": "https://github.com/denizsafak/AutoSubSync/releases/tag/v6.7",
         "repository_url": "https://github.com/denizsafak/AutoSubSync",
         "supported_operating_systems": {
             "windows-11": {
@@ -896,9 +1002,9 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "6.6",
-        "release_date": "2026-11-12",
-        "release_url": "https://github.com/denizsafak/AutoSubSync/releases/tag/v6.6",
+        "latest_version": "6.7",
+        "release_date": "2026-11-16",
+        "release_url": "https://github.com/denizsafak/AutoSubSync/releases/tag/v6.7",
         "primary_download": null,
         "download_assets": [
             {
@@ -906,9 +1012,9 @@
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": "x64",
-                "url": "https://github.com/denizsafak/AutoSubSync/releases/download/v6.6/AutoSubSync-windows-amd64.zip",
-                "size": 153256230,
-                "sha256": "dea67829ff1f04395cc703e23797ed9dac638bd8e60b01bafe850023ea92e5f7"
+                "url": "https://github.com/denizsafak/AutoSubSync/releases/download/v6.7/AutoSubSync-windows-amd64.zip",
+                "size": 155377144,
+                "sha256": "43c851fc05f33bdc9faf3e3ad56e210a21fdd7c3f31b1e09d74ab17a88b3e5bf"
             }
         ],
         "features": [
@@ -1652,6 +1758,138 @@
         "date_added": "2026-11-15",
         "last_verified_at": "2026-11-15",
         "verification_status": "verified"
+    },
+    {
+        "id": "filmcraft",
+        "name": "FilmCraft",
+        "slug": "filmcraft",
+        "summary": "FilmCraft is a free, open‑source non‑linear video editor built in Rust.",
+        "description": [
+            "FilmCraft provides a professional video‑editing interface with familiar panels, workspaces and shortcuts. It runs on Windows and lets you edit, colour‑grade, add audio and export videos using its own codecs.",
+            "FilmCraft is a modern non‑linear editor written from the ground up in pure Rust. It offers a multi‑track timeline, colour correction tools, audio mixing, titles and effects. The program includes its own implementations of common codecs such as H.264, HEVC, ProRes and AAC, and uses a GPU compositor for linear‑light rendering. All actions are command‑based, allowing precise automation. The editor is available as MSI installers and portable ZIPs for both x64 and ARM64 architectures."
+        ],
+        "icon": {
+            "text": "F",
+            "color": "#0F766E"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/storytold/filmcraft#license",
+        "official_website": "https://getartcraft.com/apps/filmcraft",
+        "download_page": "https://github.com/storytold/filmcraft/releases/tag/v0.20.1",
+        "repository_url": "https://github.com/storytold/filmcraft",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.20.1",
+        "release_date": "2026-11-12",
+        "release_url": "https://github.com/storytold/filmcraft/releases/tag/v0.20.1",
+        "primary_download": {
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.20.1/filmcraft-0.20.1-windows-x64.msi",
+            "filename": "filmcraft-0.20.1-windows-x64.msi",
+            "size": 93388800,
+            "architecture": "x64",
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "filmcraft-web-0.20.1.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/storytold/filmcraft/releases/download/v0.20.1/filmcraft-web-0.20.1.zip",
+                "size": 15630847,
+                "sha256": "1cf3072e3f3b6535fcd024d6f6ab2a16cf7776345d868037dc630de0ad0dbbb8"
+            },
+            {
+                "label": "filmcraft-0.20.1-windows-arm64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/storytold/filmcraft/releases/download/v0.20.1/filmcraft-0.20.1-windows-arm64.msi",
+                "size": 89071616,
+                "sha256": "bf7ff5fea491e3ffd91af251c4b9d916b59c43e860a260561745307c1f4a71da"
+            },
+            {
+                "label": "filmcraft-0.20.1-windows-x64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/storytold/filmcraft/releases/download/v0.20.1/filmcraft-0.20.1-windows-x64.msi",
+                "size": 93388800,
+                "sha256": "165c0f333d995ced16c0b0ebc0b29cc9b7ad358bc812c705659d78e59aa25449"
+            },
+            {
+                "label": "filmcraft-0.20.1-windows-arm64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/storytold/filmcraft/releases/download/v0.20.1/filmcraft-0.20.1-windows-arm64-portable.zip",
+                "size": 109053960,
+                "sha256": "4b20b604d3c2227d052b4b055c78b455ecd404988bdb63c6de1db4e82dfb3806"
+            },
+            {
+                "label": "filmcraft-0.20.1-windows-x64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/storytold/filmcraft/releases/download/v0.20.1/filmcraft-0.20.1-windows-x64-portable.zip",
+                "size": 113447048,
+                "sha256": "bfb00e2089df5f13e6f76aab117a4572a8d005d009c5818989688b140a502710"
+            }
+        ],
+        "features": [
+            "Multi‑track timeline with keyframe editing",
+            "Colour grading and GPU‑accelerated compositing",
+            "Built‑in support for H.264, HEVC, ProRes and AAC codecs",
+            "Audio mixing, ducking and loudness metering",
+            "Title and caption creation tools",
+            "Customizable workspaces and keyboard shortcuts",
+            "Portable version available without installation",
+            "Command‑based actions suitable for automation"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page on GitHub.",
+            "Download the MSI installer or portable ZIP for your architecture.",
+            "Run the MSI to install, or extract the ZIP to a folder.",
+            "Launch FilmCraft from the Start menu or the extracted folder.",
+            "Open or create a project to begin editing."
+        ],
+        "related_software": [],
+        "seo_title": "FilmCraft Free Download for Windows",
+        "meta_description": "Download FilmCraft free for Windows. FilmCraft is a free, open‑source non‑linear video editor built in Rust.",
+        "canonical_url": "https://codehimblog.github.io/software/filmcraft/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
     },
     {
         "id": "fk-desktop",
@@ -4788,6 +5026,137 @@
         "verification_status": "partial"
     },
     {
+        "id": "photocraft",
+        "name": "PhotoCraft",
+        "slug": "photocraft",
+        "summary": "PhotoCraft is an open‑source photo editor written in Rust that aims to provide Photoshop‑like features such as layers, masks, adjustment layers and full PSD support.",
+        "description": [
+            "PhotoCraft offers a native Windows photo editing experience with familiar menus, shortcuts and panels for users of Photoshop. It runs without web runtimes and uses the GPU for fast performance.",
+            "PhotoCraft is a clean‑room reimplementation of Adobe Photoshop built entirely in Rust. It supports layers, masks, adjustment layers, layer styles, text, vectors, brushes and can open, edit and save real Photoshop PSD files. The interface follows the layout and shortcuts that Photoshop users expect, making the transition easy. Under the hood it uses a GPU compositor via wgpu (Metal, Vulkan, DX12, WebGPU) and multithreaded filters for responsive editing. Every UI action is also exposed as a command, allowing control through the CLI, JSON channels or external agents. The project is free, open source and licensed under Apache‑2.0."
+        ],
+        "icon": {
+            "text": "P",
+            "color": "#BE123C"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/storytold/photocraft#license",
+        "official_website": "https://getartcraft.com/apps/photocraft",
+        "download_page": "https://github.com/storytold/photocraft/releases/tag/v0.23.1",
+        "repository_url": "https://github.com/storytold/photocraft",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.23.1",
+        "release_date": "2026-11-12",
+        "release_url": "https://github.com/storytold/photocraft/releases/tag/v0.23.1",
+        "primary_download": {
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.23.1/photocraft-0.23.1-windows-x64.msi",
+            "filename": "photocraft-0.23.1-windows-x64.msi",
+            "size": 118427648,
+            "architecture": "x64",
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "photocraft-web-0.23.1.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/storytold/photocraft/releases/download/v0.23.1/photocraft-web-0.23.1.zip",
+                "size": 16064050,
+                "sha256": "3a498eb517bca6cec89f9c6b1fc6448269a05428c8a3a4637c16817da157f03c"
+            },
+            {
+                "label": "photocraft-0.23.1-windows-arm64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/storytold/photocraft/releases/download/v0.23.1/photocraft-0.23.1-windows-arm64.msi",
+                "size": 111599616,
+                "sha256": "d5fb081eaab54316b224cc1518e6ebace96b711b059828f4b397cc04e530611c"
+            },
+            {
+                "label": "photocraft-0.23.1-windows-x64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/storytold/photocraft/releases/download/v0.23.1/photocraft-0.23.1-windows-x64.msi",
+                "size": 118427648,
+                "sha256": "de757802d8a12a41718ba24248c281d83f3bbecd64c5230f46f10c7f62070671"
+            },
+            {
+                "label": "photocraft-0.23.1-windows-arm64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/storytold/photocraft/releases/download/v0.23.1/photocraft-0.23.1-windows-arm64-portable.zip",
+                "size": 136391920,
+                "sha256": "f02f0e754072836355b4aa8c46496fb0acff18a5fc780084bb4a40a2d9e1ab76"
+            },
+            {
+                "label": "photocraft-0.23.1-windows-x64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/storytold/photocraft/releases/download/v0.23.1/photocraft-0.23.1-windows-x64-portable.zip",
+                "size": 143135209,
+                "sha256": "6317e764ecfa804227c38079311bea489283ab383ef040c81ef2fd6d86bd60b1"
+            }
+        ],
+        "features": [
+            "Familiar Photoshop‑like menus, shortcuts and panels",
+            "GPU‑accelerated compositing with wgpu",
+            "Copy‑on‑write tiles and multithreaded filters for speed",
+            "Full support for opening and saving layered PSD files",
+            "Layers, masks, adjustment layers, layer styles, text and vectors",
+            "Brush engine with customizable brushes",
+            "Agent‑ready: actions can be driven via CLI, JSON or external servers",
+            "Runs as a native Windows application, no Electron or web view"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download the appropriate MSI installer or portable ZIP from the GitHub release page",
+            "If using the MSI, run the installer and follow the prompts",
+            "If using the portable ZIP, extract it to a folder of your choice",
+            "Launch PhotoCraft from the Start menu (MSI) or by double‑clicking the executable in the extracted folder (portable)"
+        ],
+        "related_software": [],
+        "seo_title": "PhotoCraft Free Download for Windows",
+        "meta_description": "Download PhotoCraft free for Windows. PhotoCraft is an open‑source photo editor written in Rust that aims to provide Photoshop‑like features such as layers, ma…",
+        "canonical_url": "https://codehimblog.github.io/software/photocraft/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "photoslide",
         "name": "PhotoSlide",
         "slug": "photoslide",
@@ -4890,6 +5259,113 @@
         "date_added": "2026-11-15",
         "last_verified_at": "2026-11-16",
         "verification_status": "verified"
+    },
+    {
+        "id": "polyphone",
+        "name": "Polyphone",
+        "slug": "polyphone",
+        "summary": "A free and open-source soundfont editor for creating, editing, and playing musical instrument soundfonts.",
+        "description": [
+            "Polyphone is a soundfont editor that lets you design musical instruments from recordings, modify existing soundfonts, and play them with a built-in synthesizer. It runs on Windows and offers both an installer and a portable version.",
+            "Polyphone works with standard soundfont formats (sf2, sf3) and can import/export other instrument formats such as sfz, DLS, and sfArk. You can import audio samples in wav, flac, ogg, mp3, aiff and snd formats, edit them with a waveform view, set loop points, and apply pitch analysis. The program includes graphical editors for key and velocity ranges, envelopes, and modulators, plus a table view for bulk editing. Over 30 automation tools help with tasks like automatic looping, sample positioning, chord creation, and batch processing. A built-in synthesizer with reverb and chorus can be played via virtual keyboard, MIDI keyboard, or computer keyboard, and you can also play MIDI files, record to wav, and output audio through system, JACK, or ASIO. An integrated soundfont explorer lets you browse, filter, and preview soundfonts locally or from an online repository. The interface is translated into 16 languages and supports light, dark, or custom themes."
+        ],
+        "icon": {
+            "text": "P",
+            "color": "#B45309"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/davy7125/polyphone#license",
+        "official_website": "https://www.polyphone.io",
+        "download_page": "https://github.com/davy7125/polyphone/releases/tag/2.6.0",
+        "repository_url": "https://github.com/davy7125/polyphone",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.6.0",
+        "release_date": "2026-05-25",
+        "release_url": "https://github.com/davy7125/polyphone/releases/tag/2.6.0",
+        "primary_download": {
+            "url": "https://github.com/davy7125/polyphone/releases/download/2.6.0/Polyphone_2.6.0-windows_x64-installer.exe",
+            "filename": "Polyphone_2.6.0-windows_x64-installer.exe",
+            "size": 20982176,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Polyphone_2.6.0-windows_x64-installer.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/davy7125/polyphone/releases/download/2.6.0/Polyphone_2.6.0-windows_x64-installer.exe",
+                "size": 20982176,
+                "sha256": "d8a1ca382ff8ea480700161cc5900e4a050a4743e54f80a6b05a27d48309f7e5"
+            },
+            {
+                "label": "Polyphone_2.6.0-windows_x64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/davy7125/polyphone/releases/download/2.6.0/Polyphone_2.6.0-windows_x64-portable.zip",
+                "size": 20587137,
+                "sha256": "55fd6d242cc14d92cc78bfda5c8e40559a7f4184a721801a02d08eb87ffcf3c9"
+            }
+        ],
+        "features": [
+            "Open and save sf2 and sf3 soundfonts, import/export sfz, DLS, sfArk, and GrandOrgue organs",
+            "Import audio samples (wav, flac, ogg, mp3, aiff, snd) and export as wav",
+            "Sample editor with waveform view, loop points, pitch analysis and equalizer",
+            "Graphical editors for key/velocity ranges, envelopes and modulators",
+            "Over 30 automation tools for looping, positioning, chord creation and batch processing",
+            "Built-in synthesizer with reverb, chorus, MIDI and computer keyboard support",
+            "MIDI file player with channel control and wav export",
+            "Soundfont explorer for browsing and previewing local and online soundfonts",
+            "Command‑line utilities for conversion and rendering",
+            "Interface available in 16 languages with light, dark and custom themes"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download the installer EXE or the portable ZIP from the official GitHub release page.",
+            "If you chose the installer, run the EXE and follow the setup wizard.",
+            "If you chose the portable ZIP, extract its contents to a folder.",
+            "Launch Polyphone by double‑clicking the Polyphone.exe file.",
+            "Start creating or editing soundfonts."
+        ],
+        "related_software": [],
+        "seo_title": "Polyphone Free Download for Windows",
+        "meta_description": "Download Polyphone free for Windows. A free and open-source soundfont editor for creating, editing, and playing musical instrument soundfonts.",
+        "canonical_url": "https://codehimblog.github.io/software/polyphone/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
     },
     {
         "id": "pymusicplayer",
@@ -5102,6 +5578,364 @@
         "verification_status": "verified"
     },
     {
+        "id": "rawmakase",
+        "name": "RAWmakase",
+        "slug": "rawmakase",
+        "summary": "A fast, non‑destructive RAW photo editor with Lightroom‑style controls for Windows.",
+        "description": [
+            "RAWmakase lets you edit RAW photos without altering the original files. It offers a set of Lightroom‑like tools for adjusting exposure, color, detail and more, and works with many camera formats. The program runs on Windows as an installer or portable zip.",
+            "RAWmakase is written in Rust and provides a non‑destructive workflow: edits are stored in a catalog and the original images are never changed. It can import Lightroom Classic catalogs, preserving ratings, flags, labels and keywords. The editor supports RAW, JPEG, PNG, TIFF, WebP, AVIF, HEIF/HEIC and JPEG XL output, though some formats are not yet exportable. Rendering uses the GPU via DirectX 12 with a CPU fallback, giving fast previews. Advanced features include spot removal, masks, library management, presets, profiles, keyboard shortcuts, external control via MIDI or scripts, and a command‑line interface. The app can check GitHub for updates and install them automatically for the installer builds."
+        ],
+        "icon": {
+            "text": "R",
+            "color": "#7C3AED"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/pch/rawmakase#license",
+        "official_website": "https://rawmakase.com",
+        "download_page": "https://github.com/pch/rawmakase/releases/tag/v0.5.0",
+        "repository_url": "https://github.com/pch/rawmakase",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.5.0",
+        "release_date": "2026-11-12",
+        "release_url": "https://github.com/pch/rawmakase/releases/tag/v0.5.0",
+        "primary_download": {
+            "url": "https://github.com/pch/rawmakase/releases/download/v0.5.0/rawmakase-v0.5.0-x86_64-pc-windows-msvc-setup.exe",
+            "filename": "rawmakase-v0.5.0-x86_64-pc-windows-msvc-setup.exe",
+            "size": 26644745,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "rawmakase-0.5.0-arch-recipe.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/pch/rawmakase/releases/download/v0.5.0/rawmakase-0.5.0-arch-recipe.tar.gz",
+                "size": 1787,
+                "sha256": "9e29612398073bb568ac63378621bda2ed92e4341f16fef839a23239dcc8b643"
+            },
+            {
+                "label": "rawmakase-v0.5.0-aarch64-pc-windows-msvc-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/pch/rawmakase/releases/download/v0.5.0/rawmakase-v0.5.0-aarch64-pc-windows-msvc-setup.exe",
+                "size": 24144960,
+                "sha256": "722ac6ffc790461d4b4a1fbd4603e3f94bce52236741823a5a163bc004b652b1"
+            },
+            {
+                "label": "rawmakase-v0.5.0-x86_64-pc-windows-msvc-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/pch/rawmakase/releases/download/v0.5.0/rawmakase-v0.5.0-x86_64-pc-windows-msvc-setup.exe",
+                "size": 26644745,
+                "sha256": "70c8a2b793d24e61b529ba022637d2f8be9b00ea490b76153b4e72d89d3bc632"
+            },
+            {
+                "label": "rawmakase-v0.5.0-aarch64-pc-windows-msvc.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/pch/rawmakase/releases/download/v0.5.0/rawmakase-v0.5.0-aarch64-pc-windows-msvc.zip",
+                "size": 35956567,
+                "sha256": "c41a5d9f0987a459097ce699d94d1352a961b98c9b72cb62d3c5946b2313413d"
+            },
+            {
+                "label": "rawmakase-v0.5.0-x86_64-pc-windows-msvc.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/pch/rawmakase/releases/download/v0.5.0/rawmakase-v0.5.0-x86_64-pc-windows-msvc.zip",
+                "size": 38581689,
+                "sha256": "4fc46771a064dcf0de1bf2c01625d1d5539d8ab3d4de2542e77dfd7fb4b10bba"
+            },
+            {
+                "label": "rawmakase-0.5.0-source.tar.gz",
+                "format": "Source code archive",
+                "kind": "source",
+                "architecture": null,
+                "url": "https://github.com/pch/rawmakase/releases/download/v0.5.0/rawmakase-0.5.0-source.tar.gz",
+                "size": 19249172,
+                "sha256": "da86516ab45050db4f6bdc2c1997315464a01b6d9cddf0a5833c60b80b9efb1e"
+            }
+        ],
+        "features": [
+            "Develop tools: white balance, auto tone, exposure, shadows/highlights, clarity, dehaze, curves, HSL, color grading, denoise, sharpening, crop, straighten, lens correction, effects",
+            "Spot removal and experimental masks with heal, clone, brush, gradient and range masks",
+            "Library with SQLite catalogs, folders, ratings, flags, color labels and Lightroom catalog import",
+            "Built‑in presets and support for Lightroom XMP presets, camera profiles and LUTs",
+            "Fast GPU‑accelerated previews using DirectX 12 with CPU fallback",
+            "Command‑line utilities for batch processing and inspection",
+            "Customizable keyboard shortcuts and external control via MIDI or scripts",
+            "Automatic update checks and self‑updating installer builds"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the GitHub releases page linked from this listing.",
+            "Download the installer (EXE) or portable ZIP for your CPU architecture.",
+            "Run the installer and follow the prompts, or extract the ZIP to a folder.",
+            "Launch RAWmakase from the Start menu or the extracted folder.",
+            "(Optional) Import a Lightroom catalog or your own presets via the Preferences menu."
+        ],
+        "related_software": [],
+        "seo_title": "RAWmakase Free Download for Windows",
+        "meta_description": "Download RAWmakase free for Windows. A fast, non‑destructive RAW photo editor with Lightroom‑style controls for Windows.",
+        "canonical_url": "https://codehimblog.github.io/software/rawmakase/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "riff",
+        "name": "Riff",
+        "slug": "riff",
+        "summary": "A free, open-source desktop music player that streams YouTube Music, YouTube, SoundCloud and plays local audio files without ads or accounts.",
+        "description": [
+            "Riff lets you listen to music from online services and your own collection in a single window. It runs on Windows and does not collect any telemetry data.",
+            "Riff is an open-source music player built with Electron and JavaScript. It combines streaming from YouTube Music, YouTube and SoundCloud with support for local files in formats such as FLAC, WAV, MP3, OGG and M4A. The interface follows Material Design 3, offering dynamic colors taken from album art and a responsive layout. All playback information stays on your computer, and the app includes an audio editor with equalizer, pitch and speed controls, as well as hardware‑accelerated visualizers. Playlists can be imported from several other services with a single click. The project is released under the MIT license."
+        ],
+        "icon": {
+            "text": "R",
+            "color": "#0F766E"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/rootscripts/riff#license",
+        "official_website": "https://riff.hs.vc",
+        "download_page": "https://github.com/rootscripts/riff/releases/tag/v0.7.6",
+        "repository_url": "https://github.com/rootscripts/riff",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.7.6",
+        "release_date": "2026-11-14",
+        "release_url": "https://github.com/rootscripts/riff/releases/tag/v0.7.6",
+        "primary_download": {
+            "url": "https://github.com/rootscripts/riff/releases/download/v0.7.6/riff-0.7.6-win-x64.exe",
+            "filename": "riff-0.7.6-win-x64.exe",
+            "size": 107848209,
+            "architecture": "x64",
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "riff-0.7.6-win-x64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/rootscripts/riff/releases/download/v0.7.6/riff-0.7.6-win-x64.exe",
+                "size": 107848209,
+                "sha256": "0c4cd47ebff04b2fa3b386c13634997e006162d85342258f8581dcfaf7ca32df"
+            }
+        ],
+        "features": [
+            "Stream music from YouTube Music, YouTube and SoundCloud without ads or login",
+            "Play local audio files in lossless and common formats",
+            "Built‑in audio editor with equalizer, pitch, speed and effects",
+            "Import public playlists from Spotify, Apple Music, Deezer, YouTube Music and SoundCloud",
+            "Material Design 3 UI with dynamic theming from album artwork",
+            "Hardware‑accelerated WebGL visualizers and karaoke lyrics",
+            "Discord Rich Presence showing current track"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page on GitHub and download riff‑0.7.6‑win‑x64.exe.",
+            "Run the downloaded EXE file.",
+            "Follow the installer prompts to install Riff.",
+            "After installation, launch Riff from the Start menu or desktop shortcut.",
+            "Sign in to online services if desired, or add local files to start listening."
+        ],
+        "related_software": [],
+        "seo_title": "Riff Free Download for Windows",
+        "meta_description": "Download Riff free for Windows. A free, open-source desktop music player that streams YouTube Music, YouTube, SoundCloud and plays local audio files without ad…",
+        "canonical_url": "https://codehimblog.github.io/software/riff/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "rubylight",
+        "name": "Rubylight",
+        "slug": "rubylight",
+        "summary": "Free, open-source game‑streaming host for Windows PCs with AMD Radeon or NVIDIA graphics.",
+        "description": [
+            "Rubylight lets you stream games from your PC to other devices such as TVs, phones, tablets, laptops or web browsers. It works with Moonlight and other Sunshine‑compatible clients and provides per‑game and per‑device settings.",
+            "Rubylight gathers games from all major launchers (Steam, Epic, Battle.net, EA app, Ubisoft Connect, GOG, Xbox, Microsoft Store, Playnite) and presents them with cover art. Each client device receives a virtual display that matches its resolution, refresh rate and HDR capabilities, so the game renders optimally for that screen. The host restores the original monitor configuration after streaming ends or after a crash. Features include moving a running game between devices, dual‑screen mode, browser streaming with H.264/HEVC/AV1, and integration with the Nightjar client for on‑the‑couch control of bitrate and graphics settings."
+        ],
+        "icon": {
+            "text": "R",
+            "color": "#334155"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/RamazanKara/Rubylight#license",
+        "official_website": "https://ramazankara.github.io/Rubylight/",
+        "download_page": "https://github.com/RamazanKara/Rubylight/releases/tag/v4.6.0",
+        "repository_url": "https://github.com/RamazanKara/Rubylight",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "4.6.0",
+        "release_date": "2026-11-15",
+        "release_url": "https://github.com/RamazanKara/Rubylight/releases/tag/v4.6.0",
+        "primary_download": {
+            "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.6.0/rubylight-nvidia-setup-4.6.0.exe",
+            "filename": "rubylight-nvidia-setup-4.6.0.exe",
+            "size": 53966634,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "rubylight-nvidia-component-4.6.0.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.6.0/rubylight-nvidia-component-4.6.0.zip",
+                "size": 16970832,
+                "sha256": "4ab03721f829632f26775be50294c97962c6d6ff8fa39a8e8ae27d47fbc9e1d1"
+            },
+            {
+                "label": "rubylight-nvidia-setup-4.6.0.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.6.0/rubylight-nvidia-setup-4.6.0.exe",
+                "size": 53966634,
+                "sha256": "71bdba759be91bab6a5dde5f82a9cd82ca0cbaa58f2eaa7f4e9a97bd6c0dd2e5"
+            },
+            {
+                "label": "rubylight-setup-4.6.0.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.6.0/rubylight-setup-4.6.0.exe",
+                "size": 53966634,
+                "sha256": "71bdba759be91bab6a5dde5f82a9cd82ca0cbaa58f2eaa7f4e9a97bd6c0dd2e5"
+            },
+            {
+                "label": "rubylight-4.6.0-windows-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.6.0/rubylight-4.6.0-windows-x64.zip",
+                "size": 52277883,
+                "sha256": "e05b7ad91e1785a520abf9b54d5c72f0fcf7dc39e6a5ec091d3eb8f4fd8be530"
+            }
+        ],
+        "features": [
+            "Streams games from a PC to TVs, phones, tablets, laptops or browsers",
+            "Supports AMD Radeon and NVIDIA graphics cards",
+            "Automatically imports libraries from major launchers",
+            "Creates a virtual display sized for each client device",
+            "Allows moving a running game between devices or streaming to multiple devices simultaneously",
+            "Provides per‑game and per‑device encoder and input settings",
+            "Works with Moonlight, Artemis, Nightjar and other Sunshine‑compatible clients",
+            "Restores original monitor configuration after streaming stops"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the official GitHub release page and download the Windows installer or portable ZIP.",
+            "If you downloaded the installer, run the .exe file and follow the prompts.",
+            "If you downloaded the portable ZIP, extract it to a folder.",
+            "Launch Rubylight by double‑clicking Rubylight.exe (or the shortcut created by the installer)."
+        ],
+        "related_software": [],
+        "seo_title": "Rubylight Free Download for Windows",
+        "meta_description": "Download Rubylight free for Windows. Free, open-source game‑streaming host for Windows PCs with AMD Radeon or NVIDIA graphics.",
+        "canonical_url": "https://codehimblog.github.io/software/rubylight/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "sakura",
         "name": "Sakura Editor",
         "slug": "sakura",
@@ -5200,6 +6034,114 @@
         "canonical_url": "https://codehimblog.github.io/software/sakura/",
         "date_added": "2026-11-15",
         "last_verified_at": "2026-11-15",
+        "verification_status": "verified"
+    },
+    {
+        "id": "screenbox",
+        "name": "Screenbox",
+        "slug": "screenbox",
+        "summary": "LibVLC-based media player for the Universal Windows Platform",
+        "description": [
+            "Screenbox is a modern video player for Windows that focuses on performance and ease of use. It uses a clean Fluent design and works on a wide range of devices, including PCs and Xbox consoles.",
+            "Screenbox is built on top of LibVLCSharp and the Universal Windows Platform. It provides a lightweight, fast interface with support for gestures, hotkeys, picture‑in‑picture, and network streaming. The player aims to be simple to use while offering advanced features such as Chromecast support and the ability to save video frames as images."
+        ],
+        "icon": {
+            "text": "S",
+            "color": "#BE123C"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/huynhsontung/Screenbox#license",
+        "official_website": null,
+        "download_page": "https://github.com/huynhsontung/Screenbox/releases/tag/v0.24.0",
+        "repository_url": "https://github.com/huynhsontung/Screenbox",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/huynhsontung/Screenbox#readme",
+                "note": "Stated in the project README: “Screenbox is available on Windows 10 version 1903 and up, Windows 11, and Xbox consoles.”"
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/huynhsontung/Screenbox#readme",
+                "note": "Stated in the project README: “Screenbox is available on Windows 10 version 1903 and up, Windows 11, and Xbox consoles.”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.24.0",
+        "release_date": "2026-10-26",
+        "release_url": "https://github.com/huynhsontung/Screenbox/releases/tag/v0.24.0",
+        "primary_download": {
+            "url": "https://github.com/huynhsontung/Screenbox/releases/download/v0.24.0/Screenbox_0.24.0.0_neutral.msixbundle",
+            "filename": "Screenbox_0.24.0.0_neutral.msixbundle",
+            "size": 157382553,
+            "architecture": null,
+            "format": "MSIX / AppX package"
+        },
+        "download_assets": [
+            {
+                "label": "Screenbox-sideload.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/huynhsontung/Screenbox/releases/download/v0.24.0/Screenbox-sideload.zip",
+                "size": 175112961,
+                "sha256": "bc0ec402830121a3bcc20b00192cc624d0732c3165ca8e240e0b97121ee52bc3"
+            },
+            {
+                "label": "Screenbox_0.24.0.0_neutral.msixbundle",
+                "format": "MSIX / AppX package",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/huynhsontung/Screenbox/releases/download/v0.24.0/Screenbox_0.24.0.0_neutral.msixbundle",
+                "size": 157382553,
+                "sha256": "6d6f03595120d6ee1042e8e7550ee2adfa3c3c6b51becbcbf454db08aee0d5cf"
+            }
+        ],
+        "features": [
+            "Fluent design user interface",
+            "Gesture support for seeking and volume control",
+            "Window resize hotkeys (1‑4)",
+            "YouTube‑style hotkey layout",
+            "Picture‑in‑picture mode",
+            "Save video frame as image",
+            "Chromecast support",
+            "Browse and play media over the network"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download the Screenbox_0.24.0.0_neutral.msixbundle file from the official GitHub release page.",
+            "Open the downloaded MSIX bundle to install the app.",
+            "Follow the on‑screen prompts to complete installation.",
+            "Launch Screenbox from the Start menu after installation."
+        ],
+        "related_software": [],
+        "seo_title": "Screenbox Free Download for Windows 11 and 10",
+        "meta_description": "Download Screenbox free for Windows 11 and 10. LibVLC-based media player for the Universal Windows Platform",
+        "canonical_url": "https://codehimblog.github.io/software/screenbox/",
+        "date_added": "2026-11-16",
+        "last_verified_at": "2026-11-16",
         "verification_status": "verified"
     },
     {
@@ -5770,6 +6712,129 @@
         "verification_status": "partial"
     },
     {
+        "id": "spacewave",
+        "name": "Spacewave",
+        "slug": "spacewave",
+        "summary": "Spacewave is a self‑hosted, browser‑based workspace that runs locally without any server, offering encrypted peer‑to‑peer sync and collaborative spaces for files, notes, apps and more.",
+        "description": [
+            "Spacewave lets you open a private, encrypted workspace directly in your web browser. No account or server is required, and the app works offline. You can invite others to collaborate in real time, and all data is stored where you choose, with end‑to‑end encryption.",
+            "Spacewave provides a local‑first cloud experience. The workspace, called a Space, holds files, notes, applications, device information and workflows. Multiple users can join a Space and work together live. Synchronisation happens peer‑to‑peer over WebRTC, WebSocket, LAN or a relay, so it continues even without internet access. Storage is pluggable: you may keep data on your machine, in the browser, on your own server or any cloud you prefer. The whole stack is built with Go, TypeScript, React and WebAssembly, and it is open source, allowing you to extend it with plugins for databases, chat, terminal access and more."
+        ],
+        "icon": {
+            "text": "S",
+            "color": "#B45309"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/s4wave/spacewave#license",
+        "official_website": "https://spacewave.app",
+        "download_page": "https://github.com/s4wave/spacewave/releases/tag/v0.57.29",
+        "repository_url": "https://github.com/s4wave/spacewave",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.57.29",
+        "release_date": "2026-10-26",
+        "release_url": "https://github.com/s4wave/spacewave/releases/tag/v0.57.29",
+        "primary_download": {
+            "url": "https://github.com/s4wave/spacewave/releases/download/v0.57.29/spacewave-windows-amd64.exe",
+            "filename": "spacewave-windows-amd64.exe",
+            "size": 198837608,
+            "architecture": "x64",
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "spacewave-windows-amd64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/s4wave/spacewave/releases/download/v0.57.29/spacewave-windows-amd64.exe",
+                "size": 198837608,
+                "sha256": "aaacf5c5b8300ac509de836ff89cf1f4c3e976c43b46da231e73d24af158e00a"
+            },
+            {
+                "label": "spacewave-windows-arm64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/s4wave/spacewave/releases/download/v0.57.29/spacewave-windows-arm64.exe",
+                "size": 185438064,
+                "sha256": "dd02c61c82b10cdfbbac9a094f59818d611062a9bf32728e0d54de03b8767c50"
+            },
+            {
+                "label": "spacewave-cli-windows-amd64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/s4wave/spacewave/releases/download/v0.57.29/spacewave-cli-windows-amd64.zip",
+                "size": 83453729,
+                "sha256": "01763fd63381d4f1348026cf981a1bc2deb1c763b9a352762dbf77c1a8db9156"
+            },
+            {
+                "label": "spacewave-cli-windows-arm64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/s4wave/spacewave/releases/download/v0.57.29/spacewave-cli-windows-arm64.zip",
+                "size": 75452560,
+                "sha256": "29f3f1366ff96cc2a212ba5365d73c952f9e131a1293441326b61550f46b9fe2"
+            }
+        ],
+        "features": [
+            "Private, encrypted workspace that runs entirely in the browser",
+            "No account or server required; works offline with one click",
+            "Real‑time multiplayer collaboration within a Space",
+            "Peer‑to‑peer synchronization over various network methods",
+            "Pluggable storage backends for flexible data placement",
+            "End‑to‑end encryption for all data, sync and collaboration",
+            "Plugin ecosystem to add files, notes, chat, terminal and other apps",
+            "Open‑source full stack for developers to build custom plugins"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the GitHub release page linked on this page.",
+            "Download the appropriate Windows file (EXE for installer or ZIP for portable).",
+            "If you downloaded the EXE, run it and follow the installer prompts.",
+            "If you downloaded the ZIP, extract it to a folder.",
+            "Launch Spacewave by double‑clicking the executable or the shortcut created by the installer."
+        ],
+        "related_software": [],
+        "seo_title": "Spacewave Free Download for Windows",
+        "meta_description": "Download Spacewave free for Windows. Spacewave is a self‑hosted, browser‑based workspace that runs locally without any server, offering encrypted peer‑to‑peer…",
+        "canonical_url": "https://codehimblog.github.io/software/spacewave/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "starluxe",
         "name": "StarLuxe",
         "slug": "starluxe",
@@ -6016,6 +7081,113 @@
         "verification_status": "partial"
     },
     {
+        "id": "tauon",
+        "name": "Tauon",
+        "slug": "tauon",
+        "summary": "Tauon is a powerful and streamlined music player for the desktop.",
+        "description": [
+            "Tauon provides a fast, responsive interface for playing local music files and streaming from media servers. It is aimed at users who want a feature‑rich player without unnecessary bloat.",
+            "Tauon is an open‑source music player that supports a wide range of audio formats, including lossless FLAC and classic tracker modules like MOD. It offers automatic theming, visualisations, and integration with Plex, Jellyfin, and Airsonic servers. The UI can be customised with multiple widgets, and the player handles CUE sheets, gapless playback, and archive extraction for one‑click music imports. Shortcuts let you search artist information on Rate Your Music and track lyrics on Genius. The program is available as a Windows installer or a portable archive, and it can also be installed on other platforms via package managers or Flatpak."
+        ],
+        "icon": {
+            "text": "T",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/Taiko2k/Tauon#license",
+        "official_website": "https://tauonmusicbox.rocks",
+        "download_page": "https://github.com/Taiko2k/Tauon/releases/tag/v13.1.1",
+        "repository_url": "https://github.com/Taiko2k/Tauon",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "13.1.1",
+        "release_date": "2026-10-30",
+        "release_url": "https://github.com/Taiko2k/Tauon/releases/tag/v13.1.1",
+        "primary_download": {
+            "url": "https://github.com/Taiko2k/Tauon/releases/download/v13.1.1/TauonMusicBox-windows-installer.exe",
+            "filename": "TauonMusicBox-windows-installer.exe",
+            "size": 109923722,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "TauonMusicBox-windows-installer.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/Taiko2k/Tauon/releases/download/v13.1.1/TauonMusicBox-windows-installer.exe",
+                "size": 109923722,
+                "sha256": "d785fd378a983f1fb8eba02fc4076096f05472903ccd39794df6fc0914d020b2"
+            },
+            {
+                "label": "TauonMusicBox-windows.7z",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/Taiko2k/Tauon/releases/download/v13.1.1/TauonMusicBox-windows.7z",
+                "size": 106365926,
+                "sha256": "e9a2a9919c71266a36ed565b0c0270d5edfb9d12a026438b1a57a637854e1721"
+            }
+        ],
+        "features": [
+            "Fast, comfortable and responsive UI with automatic theming.",
+            "Support for Milkdrop visualisations.",
+            "Gapless playback.",
+            "Drag‑and‑drop file loading.",
+            "Support for common codecs such as FLAC and tracker formats like MOD.",
+            "Seamless CUE sheet handling.",
+            "Streaming from Plex, Jellyfin or Airsonic servers.",
+            "Customisable UI with multiple widgets.",
+            "Shortcuts for searching Rate Your Music and Genius.",
+            "One‑click archive extraction and music import."
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download the Windows installer (EXE) or the portable 7z archive from the official GitHub release page.",
+            "If using the installer, run the .exe file and follow the on‑screen prompts.",
+            "If using the portable archive, extract the .7z file to a folder of your choice.",
+            "Launch Tauon by double‑clicking the Tauon executable.",
+            "Optional: configure media server connections within the application settings."
+        ],
+        "related_software": [],
+        "seo_title": "Tauon Free Download for Windows",
+        "meta_description": "Download Tauon free for Windows. Tauon is a powerful and streamlined music player for the desktop.",
+        "canonical_url": "https://codehimblog.github.io/software/tauon/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "tizumark-markdown-editor",
         "name": "TizuMark",
         "slug": "tizumark-markdown-editor",
@@ -6155,7 +7327,7 @@
         "license_family": "permissive",
         "license_url": "https://github.com/xiufengsun/TokenTracker#license",
         "official_website": "https://www.tokentracker.cc",
-        "download_page": "https://github.com/xiufengsun/TokenTracker/releases/tag/v1.5.21",
+        "download_page": "https://github.com/xiufengsun/TokenTracker/releases/tag/v1.5.22",
         "repository_url": "https://github.com/xiufengsun/TokenTracker",
         "supported_operating_systems": {
             "windows-11": {
@@ -6180,13 +7352,13 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "1.5.21",
-        "release_date": "2026-11-15",
-        "release_url": "https://github.com/xiufengsun/TokenTracker/releases/tag/v1.5.21",
+        "latest_version": "1.5.22",
+        "release_date": "2026-11-16",
+        "release_url": "https://github.com/xiufengsun/TokenTracker/releases/tag/v1.5.22",
         "primary_download": {
-            "url": "https://github.com/xiufengsun/TokenTracker/releases/download/v1.5.21/TokenTracker-Setup.exe",
+            "url": "https://github.com/xiufengsun/TokenTracker/releases/download/v1.5.22/TokenTracker-Setup.exe",
             "filename": "TokenTracker-Setup.exe",
-            "size": 85682746,
+            "size": 85683037,
             "architecture": null,
             "format": "EXE installer"
         },
@@ -6196,18 +7368,18 @@
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": null,
-                "url": "https://github.com/xiufengsun/TokenTracker/releases/download/v1.5.21/TokenTracker-Setup.exe",
-                "size": 85682746,
-                "sha256": "d794636972d57893e5c1f6dec36681e6c7f1c1993de4391f2096524a451cd8a6"
+                "url": "https://github.com/xiufengsun/TokenTracker/releases/download/v1.5.22/TokenTracker-Setup.exe",
+                "size": 85683037,
+                "sha256": "47274e21a3cea08974591b8ccca6d642988c8a0d313bc41f50e1683bd639aab8"
             },
             {
                 "label": "TokenTracker-win-x64.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": "x64",
-                "url": "https://github.com/xiufengsun/TokenTracker/releases/download/v1.5.21/TokenTracker-win-x64.zip",
-                "size": 124929748,
-                "sha256": "1c5103cffb2916727ebc96122bcc80dd27a82f1bfb5a397e4d8b7dee0d1cc58d"
+                "url": "https://github.com/xiufengsun/TokenTracker/releases/download/v1.5.22/TokenTracker-win-x64.zip",
+                "size": 124931276,
+                "sha256": "a136a77e3a0b3d8f668aeaafa5e6f04e51019523e124397165a5e27c4fa746e4"
             }
         ],
         "features": [
@@ -7452,7 +8624,7 @@
         "license_family": "permissive",
         "license_url": "https://github.com/RandyNorthrup/WinAppMigrator#license",
         "official_website": "https://randynorthrup.github.io/WinAppMigrator/",
-        "download_page": "https://github.com/RandyNorthrup/WinAppMigrator/releases/tag/v0.6.2",
+        "download_page": "https://github.com/RandyNorthrup/WinAppMigrator/releases/tag/v0.7.0",
         "repository_url": "https://github.com/RandyNorthrup/WinAppMigrator",
         "supported_operating_systems": {
             "windows-11": {
@@ -7477,34 +8649,34 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "0.6.2",
-        "release_date": "2026-11-15",
-        "release_url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/tag/v0.6.2",
+        "latest_version": "0.7.0",
+        "release_date": "2026-11-16",
+        "release_url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/tag/v0.7.0",
         "primary_download": {
-            "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.6.2/WinAppMigrator-v0.6.2.exe",
-            "filename": "WinAppMigrator-v0.6.2.exe",
-            "size": 32384368,
+            "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.7.0/WinAppMigrator-v0.7.0.exe",
+            "filename": "WinAppMigrator-v0.7.0.exe",
+            "size": 36028272,
             "architecture": null,
             "format": "EXE (type not confirmed)"
         },
         "download_assets": [
             {
-                "label": "WinAppMigrator-v0.6.2.exe",
+                "label": "WinAppMigrator-v0.7.0.exe",
                 "format": "EXE (type not confirmed)",
                 "kind": "installer",
                 "architecture": null,
-                "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.6.2/WinAppMigrator-v0.6.2.exe",
-                "size": 32384368,
-                "sha256": "71fc8205585b959e62aa70b93a7272b937398528aff4c7edc69b0f8c7721f797"
+                "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.7.0/WinAppMigrator-v0.7.0.exe",
+                "size": 36028272,
+                "sha256": "f0c718cda3375092b9c165932d413467037c19adbe932fed2b568cfb301c7d70"
             },
             {
-                "label": "WinAppMigrator-v0.6.2-windows-x64.zip",
+                "label": "WinAppMigrator-v0.7.0-windows-x64.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": "x64",
-                "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.6.2/WinAppMigrator-v0.6.2-windows-x64.zip",
-                "size": 13831548,
-                "sha256": "57c97e154f13a58c562f967c5dcd8669183774aabb01946012bd6a6608ddbca3"
+                "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.7.0/WinAppMigrator-v0.7.0-windows-x64.zip",
+                "size": 16360753,
+                "sha256": "a6d4113404bb1c0bb408c7e66bdb4e17b3d4d3e6ecc5fe9cd7ef292825b4f3d7"
             }
         ],
         "features": [
@@ -7624,6 +8796,156 @@
         "meta_description": "Download windbg-mcp free for Windows. A server that exposes WinDbg/DbgEng debugging capabilities to AI agents via standard input/output or HTTP.",
         "canonical_url": "https://codehimblog.github.io/software/windbg-mcp/",
         "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "winrar-keygen",
+        "name": "WinRAR Keygen",
+        "slug": "winrar-keygen",
+        "summary": "A tool that generates WinRAR license files (rarreg.key) for use with the WinRAR archiver.",
+        "description": [
+            "WinRAR Keygen is a small utility that creates the registration key file required by WinRAR. It can be run from the command line or with a graphical interface. The program is intended for users who need to generate a valid rarreg.key file for their WinRAR installation.",
+            "The repository provides several executable builds for different CPU architectures (x86, x64, ARM64) and both command‑line and GUI versions. The key generator supports various text encodings such as ASCII, ANSI and UTF‑8 without BOM, allowing it to handle license strings in many languages. Two license formats are supported: the plain rarreg.key file, which can be dragged into WinRAR, and the rarkey.rar package, which can be double‑clicked for automatic import. The source code is released under the MIT license, so anyone can view, modify, and redistribute the program. The project includes build instructions for Visual Studio, CMake, and GitHub Actions, but end users only need to download the pre‑built executable from the official release page."
+        ],
+        "icon": {
+            "text": "W",
+            "color": "#BE123C"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/bitcookies/winrar-keygen#license",
+        "official_website": null,
+        "download_page": "https://github.com/bitcookies/winrar-keygen/releases/tag/v4.3.0",
+        "repository_url": "https://github.com/bitcookies/winrar-keygen",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "4.3.0",
+        "release_date": "2026-07-22",
+        "release_url": "https://github.com/bitcookies/winrar-keygen/releases/tag/v4.3.0",
+        "primary_download": {
+            "url": "https://github.com/bitcookies/winrar-keygen/releases/download/v4.3.0/winrar-keygen-gui-x64-dotnet.exe",
+            "filename": "winrar-keygen-gui-x64-dotnet.exe",
+            "size": 6202290,
+            "architecture": "x64",
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "winrar-keygen-arm64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/bitcookies/winrar-keygen/releases/download/v4.3.0/winrar-keygen-arm64.exe",
+                "size": 652800,
+                "sha256": "102e6d150682c5696cbc81be8f50e7a2a4db3e30cf44dbde2a093c7432e8e9ef"
+            },
+            {
+                "label": "winrar-keygen-gui-arm64-dotnet.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/bitcookies/winrar-keygen/releases/download/v4.3.0/winrar-keygen-gui-arm64-dotnet.exe",
+                "size": 6181814,
+                "sha256": "4472f6886558c4a007ac3b1b4edadf6109c2902c079a7e4b8bfbcb8bee750253"
+            },
+            {
+                "label": "winrar-keygen-gui-arm64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/bitcookies/winrar-keygen/releases/download/v4.3.0/winrar-keygen-gui-arm64.exe",
+                "size": 68052356,
+                "sha256": "fb2417bf1bf74f88da844178b2b5ac528b54a1db4f32820b6697ba4ff4f150f8"
+            },
+            {
+                "label": "winrar-keygen-gui-x64-dotnet.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/bitcookies/winrar-keygen/releases/download/v4.3.0/winrar-keygen-gui-x64-dotnet.exe",
+                "size": 6202290,
+                "sha256": "056e1519c701d471e3e5ac411c1ac7e573b8c4676741f031bc2b6bead300fec2"
+            },
+            {
+                "label": "winrar-keygen-gui-x64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/bitcookies/winrar-keygen/releases/download/v4.3.0/winrar-keygen-gui-x64.exe",
+                "size": 72349581,
+                "sha256": "ef73db47862f1a090919cc47a2445095ca0f3a63eab1010a1f9160994f11361b"
+            },
+            {
+                "label": "winrar-keygen-x64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/bitcookies/winrar-keygen/releases/download/v4.3.0/winrar-keygen-x64.exe",
+                "size": 701440,
+                "sha256": "6f97273f0a46d242339f0ca7e4b8af049f0109617d7f88f0e056bd1d5b5ece4c"
+            },
+            {
+                "label": "winrar-keygen-x86.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x86",
+                "url": "https://github.com/bitcookies/winrar-keygen/releases/download/v4.3.0/winrar-keygen-x86.exe",
+                "size": 599040,
+                "sha256": "9b9be01389980dc3a22c995773671364f8823cc5ffab96f9b701a5e6220bbbb2"
+            }
+        ],
+        "features": [
+            "Generates WinRAR registration key files (rarreg.key)",
+            "Supports command‑line and graphical user interface versions",
+            "Available for x86, x64 and ARM64 architectures",
+            "Handles ASCII, ANSI and UTF‑8 (no BOM) encodings",
+            "Can produce both rarreg.key and rarkey.rar formats",
+            "Open‑source under the MIT license",
+            "No installation required for portable EXE files",
+            "Simple drag‑and‑drop or double‑click import into WinRAR"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page on GitHub.",
+            "Download the EXE file that matches your CPU architecture (e.g., winrar-keygen-x64.exe).",
+            "Save the file to a convenient folder.",
+            "Double‑click the EXE to run the program (no installer needed).",
+            "Follow the on‑screen instructions to generate a rarreg.key file."
+        ],
+        "related_software": [],
+        "seo_title": "WinRAR Keygen Free Download for Windows",
+        "meta_description": "Download WinRAR Keygen free for Windows. A tool that generates WinRAR license files (rarreg.key) for use with the WinRAR archiver.",
+        "canonical_url": "https://codehimblog.github.io/software/winrar-keygen/",
+        "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
     },
