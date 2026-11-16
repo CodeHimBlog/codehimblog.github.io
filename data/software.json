@@ -4350,6 +4350,114 @@
         "verification_status": "verified"
     },
     {
+        "id": "scribe",
+        "name": "Scribe",
+        "slug": "scribe",
+        "summary": "Scribe is an offline voice-to-text desktop assistant that lets you dictate, control apps and run custom commands with your voice.",
+        "description": [
+            "Scribe provides real‑time speech transcription and voice command capabilities without sending any audio to the cloud. It runs locally, keeps all data private, and works with many languages through downloadable models.",
+            "Scribe is a Windows program that converts spoken words into text in real time. It uses the Vosk offline speech recognition toolkit, so all processing happens on your computer. You can dictate into any application, launch programs, insert predefined text snippets, and create custom voice commands. The software includes automatic punctuation and capitalization for most supported languages, and you can switch between language models as needed. Settings let you configure hotkeys, choose how transcribed text is inserted (keyboard typing or clipboard), and control startup behavior. Models are downloaded on first use and stored in the user’s local app data folder. Both an installer and a portable executable are provided, and the installer does not require administrator rights."
+        ],
+        "icon": {
+            "text": "S",
+            "color": "#1D4ED8"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/AIgrator/Scribe#license",
+        "official_website": "https://aigrator.github.io/Scribe/",
+        "download_page": "https://github.com/AIgrator/Scribe/releases/tag/v1.5.0",
+        "repository_url": "https://github.com/AIgrator/Scribe",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.5.0",
+        "release_date": "2026-11-14",
+        "release_url": "https://github.com/AIgrator/Scribe/releases/tag/v1.5.0",
+        "primary_download": {
+            "url": "https://github.com/AIgrator/Scribe/releases/download/v1.5.0/ScribeSetup.exe",
+            "filename": "ScribeSetup.exe",
+            "size": 93535814,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Scribe.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/AIgrator/Scribe/releases/download/v1.5.0/Scribe.exe",
+                "size": 97404381,
+                "sha256": "48cfa92ef98e1f25cd75fd2e9a777e72d8d572379b721c1a3b1886de6b95242b"
+            },
+            {
+                "label": "ScribeSetup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/AIgrator/Scribe/releases/download/v1.5.0/ScribeSetup.exe",
+                "size": 93535814,
+                "sha256": "7398a05b241581569ab9679cbdc01fff20c0009cf441eeedbc663165f2017a68"
+            }
+        ],
+        "features": [
+            "Real‑time transcription into any application",
+            "Automatic punctuation and capitalization for 31 languages",
+            "Custom voice commands to launch programs or insert text",
+            "Offline processing ensures privacy",
+            "Low CPU usage with small models",
+            "Multi‑language model download and switching",
+            "Configurable global hotkeys",
+            "Option to start automatically on login",
+            "Flexible input method selection (typing or clipboard)"
+        ],
+        "requirements": [
+            "Internet connection for the first model download"
+        ],
+        "installation_instructions": [
+            "Open the Releases page on GitHub.",
+            "Download ScribeSetup.exe (installer) or Scribe.exe (portable).",
+            "Run the installer and follow the prompts, or extract the portable EXE to a folder.",
+            "Launch Scribe from the Start menu shortcut or by double‑clicking the EXE.",
+            "On first launch, allow the program to download the language model."
+        ],
+        "related_software": [],
+        "seo_title": "Scribe Free Download for Windows",
+        "meta_description": "Download Scribe free for Windows. Scribe is an offline voice-to-text desktop assistant that lets you dictate, control apps and run custom commands with your vo…",
+        "canonical_url": "https://codehimblog.github.io/software/scribe/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "handwriting-ocr-scriptreader",
         "name": "ScriptReader",
         "slug": "handwriting-ocr-scriptreader",
@@ -5158,6 +5266,102 @@
         "verification_status": "partial"
     },
     {
+        "id": "tunefree",
+        "name": "TuneFree",
+        "slug": "tunefree",
+        "summary": "A tool that decrypts QQ Music's encrypted .mflac and .mgg files and converts them to MP3 or FLAC on Windows.",
+        "description": [
+            "TuneFree lets you turn the encrypted music files downloaded from QQ Music into standard audio formats that any player can use. It works by injecting code into the running QQ Music client to decrypt the files, then uses FFmpeg to convert them to MP3 or keep the original FLAC/OGG.",
+            "The program supports batch decryption of .mflac and .mgg files, recursively processing subfolders. After decryption it can output only MP3, only FLAC, or both. It remembers progress so you can stop and resume later. A progress bar shows the current step, and the software checks for updates automatically. All operations are performed locally; no data is uploaded except for optional update checks. The portable ZIP contains a self‑contained executable and a small FFmpeg build. The source code is open under the MIT license, allowing anyone to inspect, modify, and redistribute the software."
+        ],
+        "icon": {
+            "text": "T",
+            "color": "#334155"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/zksbx/TuneFree#license",
+        "official_website": "https://zksbx.github.io/TuneFree/",
+        "download_page": "https://github.com/zksbx/TuneFree/releases/tag/v2.1.3",
+        "repository_url": "https://github.com/zksbx/TuneFree",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/zksbx/TuneFree#readme",
+                "note": "Stated in the project README: “Windows 10 / 11 64 位”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.1.3",
+        "release_date": "2026-11-09",
+        "release_url": "https://github.com/zksbx/TuneFree/releases/tag/v2.1.3",
+        "primary_download": null,
+        "download_assets": [
+            {
+                "label": "TuneFree-v2.1.3-win64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/zksbx/TuneFree/releases/download/v2.1.3/TuneFree-v2.1.3-win64.zip",
+                "size": 64172893,
+                "sha256": "57c3dec35d6b716ea8f59a84a4fc968f0aef6b37fa190e004b1ef3fd1e9567b1"
+            }
+        ],
+        "features": [
+            "Batch decryption of .mflac and .mgg files",
+            "Recursive folder processing",
+            "Choose output: MP3 only, FLAC only, or both",
+            "Resume interrupted conversions",
+            "Real‑time progress bar",
+            "Automatic update check",
+            "No network upload of your music files",
+            "Portable ZIP, no installation required"
+        ],
+        "requirements": [
+            "Windows 10 / 11 64‑bit",
+            "QQ Music client running and logged in",
+            "Supports only standard, HQ, and SQ audio quality"
+        ],
+        "installation_instructions": [
+            "Download the TuneFree‑win64.zip from the official GitHub release.",
+            "Extract the ZIP to a folder.",
+            "Double‑click TuneFree.exe to start the program.",
+            "If SmartScreen blocks it, click “More info” then “Run anyway”.",
+            "Follow the on‑screen steps to select the input folder and start conversion."
+        ],
+        "related_software": [],
+        "seo_title": "TuneFree Free Download for Windows 10",
+        "meta_description": "Download TuneFree free for Windows 10. A tool that decrypts QQ Music's encrypted .mflac and .mgg files and converts them to MP3 or FLAC on Windows.",
+        "canonical_url": "https://codehimblog.github.io/software/tunefree/",
+        "date_added": "2026-11-15",
+        "last_verified_at": "2026-11-16",
+        "verification_status": "verified"
+    },
+    {
         "id": "universal-intel-chipset-updater",
         "name": "Universal Intel Chipset Updater",
         "slug": "universal-intel-chipset-updater",
@@ -5250,6 +5454,107 @@
         "seo_title": "Universal Intel Chipset Updater Free Download for Windows",
         "meta_description": "Download Universal Intel Chipset Updater free for Windows. A security‑focused tool that automatically detects Intel hardware and installs the latest official c…",
         "canonical_url": "https://codehimblog.github.io/software/universal-intel-chipset-updater/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "universal-intel-wifi-bt-updater",
+        "name": "Universal Intel Wi-Fi and Bluetooth Drivers Updater",
+        "slug": "universal-intel-wifi-bt-updater",
+        "summary": "A tool that automatically detects Intel Wi‑Fi and Bluetooth hardware and installs the latest official drivers with security checks.",
+        "description": [
+            "The Universal Intel Wi‑Fi and Bluetooth Drivers Updater helps Windows users keep their Intel wireless adapters up to date. It scans the system, finds the correct driver package, verifies its integrity, and installs it safely.",
+            "This program is aimed at anyone who uses Intel Wi‑Fi or Bluetooth adapters and wants a simple, reliable way to stay current with driver updates. It is especially useful for users who prefer an automated solution rather than manually searching Intel's website. The updater includes safety features such as SHA‑256 verification, Intel Authenticode validation, and automatic creation of a system restore point before installing new drivers. It runs on Windows and requires PowerShell and the .NET Framework.",
+            "The project is open source under the MIT license, meaning the source code can be inspected, modified, and redistributed. The updater is distributed as a self‑extracting executable that contains the PowerShell script and supporting files.",
+            "The tool also offers a customizable credits screen that can be edited via external text files, allowing users to change displayed messages without altering the script."
+        ],
+        "icon": {
+            "text": "U",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/FirstEverTech/Universal-Intel-WiFi-BT-Updater#license",
+        "official_website": "https://github.com/FirstEverTech/Universal-Intel-WiFi-BT-Updater",
+        "download_page": "https://github.com/FirstEverTech/Universal-Intel-WiFi-BT-Updater/releases/tag/v2026.07.0008",
+        "repository_url": "https://github.com/FirstEverTech/Universal-Intel-WiFi-BT-Updater",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2026.07.0008",
+        "release_date": "2026-07-01",
+        "release_url": "https://github.com/FirstEverTech/Universal-Intel-WiFi-BT-Updater/releases/tag/v2026.07.0008",
+        "primary_download": {
+            "url": "https://github.com/FirstEverTech/Universal-Intel-WiFi-BT-Updater/releases/download/v2026.07.0008/WiFi-BT-Updater-2026.07.0008-Win10-Win11.exe",
+            "filename": "WiFi-BT-Updater-2026.07.0008-Win10-Win11.exe",
+            "size": 757152,
+            "architecture": null,
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "WiFi-BT-Updater-2026.07.0008-Win10-Win11.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/FirstEverTech/Universal-Intel-WiFi-BT-Updater/releases/download/v2026.07.0008/WiFi-BT-Updater-2026.07.0008-Win10-Win11.exe",
+                "size": 757152,
+                "sha256": "4fcb208a0db4eba8c43beefa1dea8c6dfa79a53c037ed073fb24560c4d6a3c5d"
+            }
+        ],
+        "features": [
+            "Detects Intel Wi‑Fi and Bluetooth hardware automatically",
+            "Downloads and installs the latest official drivers",
+            "Verifies driver packages with SHA‑256 checksums",
+            "Validates Intel Authenticode signatures",
+            "Creates a system restore point before installation",
+            "Runs via PowerShell with .NET Framework support",
+            "Self‑extracting installer for easy setup",
+            "Customizable credits screen via external text files"
+        ],
+        "requirements": [
+            "PowerShell 5.0 or newer",
+            ".NET Framework 4.7.2 or newer"
+        ],
+        "installation_instructions": [
+            "Go to the release page and download the .exe file.",
+            "Double‑click the downloaded file to start the self‑extracting installer.",
+            "Follow the on‑screen prompts to allow the program to detect hardware and install drivers.",
+            "After installation, the updater will run automatically or can be launched from the Start menu.",
+            "Optionally edit the credits text files to customize the on‑screen messages."
+        ],
+        "related_software": [],
+        "seo_title": "Universal Intel Wi-Fi and Bluetooth Drivers Updater Free Download for…",
+        "meta_description": "Download Universal Intel Wi-Fi and Bluetooth Drivers Updater free for Windows. A tool that automatically detects Intel Wi‑Fi and Bluetooth hardware and install…",
+        "canonical_url": "https://codehimblog.github.io/software/universal-intel-wifi-bt-updater/",
         "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
