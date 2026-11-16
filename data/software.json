@@ -1176,6 +1176,104 @@
         "verification_status": "partial"
     },
     {
+        "id": "chroma-app",
+        "name": "Chromasmith",
+        "slug": "chroma-app",
+        "summary": "Chromasmith is a free offline photo editor that offers film‑style looks, grain, halation, RAW development and basic retouching tools.",
+        "description": [
+            "Chromasmith lets you edit photos on your computer without needing an internet connection or an account. It provides a library, preset film looks, texture effects and export options, all running locally.",
+            "The program is designed for anyone who wants to enhance photos with classic film aesthetics and simple editing controls. It includes 133 calibrated film presets, real grain and halation effects, RAW development, masks, retouching tools, and a local photo library. All processing happens on the device, so no uploads or subscriptions are required. The Windows version installs as a standard desktop application and registers common image file types for easy opening."
+        ],
+        "icon": {
+            "text": "C",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/TareqAmeer/Chroma-App#license",
+        "official_website": "https://tareqameer.github.io/Chroma-App/",
+        "download_page": "https://github.com/TareqAmeer/Chroma-App/releases/tag/v1.2.11",
+        "repository_url": "https://github.com/TareqAmeer/Chroma-App",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/TareqAmeer/Chroma-App#readme",
+                "note": "Stated in the project README: “Windows 10/11, 64-bit.”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.2.11",
+        "release_date": "2026-10-07",
+        "release_url": "https://github.com/TareqAmeer/Chroma-App/releases/tag/v1.2.11",
+        "primary_download": {
+            "url": "https://github.com/TareqAmeer/Chroma-App/releases/download/v1.2.11/Chromasmith-1.0.0-windows-x64-setup.exe",
+            "filename": "Chromasmith-1.0.0-windows-x64-setup.exe",
+            "size": 1394151808,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Chromasmith-1.0.0-windows-x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/TareqAmeer/Chroma-App/releases/download/v1.2.11/Chromasmith-1.0.0-windows-x64-setup.exe",
+                "size": 1394151808,
+                "sha256": "2c249c442e115791fece15a393365b4c6af6844b6f6ed37326a5729ec97c1f04"
+            }
+        ],
+        "features": [
+            "133 calibrated film presets",
+            "Real grain and halation effects",
+            "RAW development and basic retouching",
+            "Local photo library with face and keyword detection",
+            "Texture tools such as sharpen and noise",
+            "Export at full resolution with cropping and framing options",
+            "Handles TIFF, JPEG, PNG, RW2 files directly",
+            "No account or online service required"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download the windows‑x64‑setup.exe from the official GitHub release page.",
+            "Run the installer and follow the on‑screen prompts.",
+            "If SmartScreen warns, choose “More info” then “Run anyway”.",
+            "After installation, launch Chromasmith from the Start menu or desktop shortcut.",
+            "Open or import photos to begin editing."
+        ],
+        "related_software": [],
+        "seo_title": "Chromasmith Free Download for Windows 10",
+        "meta_description": "Download Chromasmith free for Windows 10. Chromasmith is a free offline photo editor that offers film‑style looks, grain, halation, RAW development and basic r…",
+        "canonical_url": "https://codehimblog.github.io/software/chroma-app/",
+        "date_added": "2026-11-16",
+        "last_verified_at": "2026-11-16",
+        "verification_status": "verified"
+    },
+    {
         "id": "ciyue",
         "name": "Ciyue",
         "slug": "ciyue",
@@ -5244,6 +5342,124 @@
         "meta_description": "OBS Studio is free, open-source screen recording and live streaming software. See features, download formats and official sources for Windows.",
         "canonical_url": "https://codehimblog.github.io/software/obs-studio/",
         "date_added": "2026-11-14",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "open-photo-ai",
+        "name": "Open Photo AI",
+        "slug": "open-photo-ai",
+        "summary": "An open source alternative to the popular photo AI editor.",
+        "description": [
+            "Open Photo AI is a free program that uses artificial intelligence to improve photos. It offers features such as noise reduction, face recovery and colorization, and works on both CPU and GPU hardware.",
+            "The software provides AI‑based enhancements for images. It can remove noise, recover facial details, and add color to black‑and‑white pictures. The program automatically downloads and updates the required AI models, storing them in a shared location for easier setup. It runs as a portable application, available for x64 and ARM64 Windows systems, and does not require a traditional installer. The project is open source and licensed under AGPL‑3.0, meaning anyone can use, modify and redistribute it under the same terms."
+        ],
+        "icon": {
+            "text": "O",
+            "color": "#B45309"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU Affero General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/vegidio/open-photo-ai#license",
+        "official_website": null,
+        "download_page": "https://github.com/vegidio/open-photo-ai/releases/tag/26.11.0",
+        "repository_url": "https://github.com/vegidio/open-photo-ai",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "26.11.0",
+        "release_date": "2026-11-01",
+        "release_url": "https://github.com/vegidio/open-photo-ai/releases/tag/26.11.0",
+        "primary_download": null,
+        "download_assets": [
+            {
+                "label": "opai-cli_windows_arm64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/vegidio/open-photo-ai/releases/download/26.11.0/opai-cli_windows_arm64.zip",
+                "size": 12457457,
+                "sha256": "ecfcbc4bec2c5b23423a3b41f46e5c25fae70da690f03b9d4141266404f3fb20"
+            },
+            {
+                "label": "opai-cli_windows_x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/vegidio/open-photo-ai/releases/download/26.11.0/opai-cli_windows_x64.zip",
+                "size": 15109096,
+                "sha256": "0351d52798745099de99441e5a8290e7b1cc4d0dc7c487880b1d01d48a39ccd0"
+            },
+            {
+                "label": "opai-gui_windows_arm64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/vegidio/open-photo-ai/releases/download/26.11.0/opai-gui_windows_arm64.zip",
+                "size": 15174423,
+                "sha256": "d94c5d2b27f8bede1bc436ef31cc24a2d0ed7a51d149bf98e330c1ba084e9c04"
+            },
+            {
+                "label": "opai-gui_windows_x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/vegidio/open-photo-ai/releases/download/26.11.0/opai-gui_windows_x64.zip",
+                "size": 17987524,
+                "sha256": "dfe89e00fc5e04f7becf424bbe70e0b91839e973b17b3a7a265a0aff61f78f5b"
+            }
+        ],
+        "features": [
+            "AI‑powered photo enhancement",
+            "Noise reduction (denoise)",
+            "Face recovery",
+            "Colorization of grayscale images",
+            "Supports CPU and GPU processing",
+            "Automatic model download and updates",
+            "Portable ZIP for x64 and ARM64",
+            "No installer required",
+            "Open source under AGPL‑3.0"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the GitHub releases page and download the appropriate ZIP file for your system (x64 or ARM64).",
+            "Extract the ZIP to a folder of your choice.",
+            "Run the executable (opai-cli.exe for command line or opai-gui.exe for the graphical interface).",
+            "Follow any on‑screen prompts to let the program download the AI model files.",
+            "Start using the application to edit your photos."
+        ],
+        "related_software": [],
+        "seo_title": "Open Photo AI Free Download for Windows",
+        "meta_description": "Download Open Photo AI free for Windows. An open source alternative to the popular photo AI editor.",
+        "canonical_url": "https://codehimblog.github.io/software/open-photo-ai/",
+        "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
     },
