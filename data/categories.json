@@ -7,6 +7,13 @@
         "description": "Password managers, privacy tools, encryption utilities and other security-focused software for Windows."
     },
     {
+        "slug": "internet-browsers",
+        "name": "Internet & Browsers",
+        "icon": "globe",
+        "short": "Web browsers, download managers and online tools.",
+        "description": "Web browsers, download managers, email clients and other internet software for Windows."
+    },
+    {
         "slug": "graphics",
         "name": "Graphics & Image Editing",
         "icon": "image",
@@ -35,10 +42,38 @@
         "description": "Practical tools for managing, monitoring and maintaining Windows systems."
     },
     {
+        "slug": "productivity-office",
+        "name": "Productivity & Office",
+        "icon": "file-text",
+        "short": "Office suites, note-taking and productivity apps.",
+        "description": "Office suites, note-taking apps, PDF tools and other productivity software for Windows."
+    },
+    {
         "slug": "developer-tools",
         "name": "Developer Tools",
         "icon": "code",
         "short": "Code editors and development utilities.",
         "description": "Code and text editors, terminals, version-control tools and other utilities for software development on Windows."
+    },
+    {
+        "slug": "backup-recovery",
+        "name": "Backup & Recovery",
+        "icon": "history",
+        "short": "Backup, sync and data recovery tools.",
+        "description": "Backup, disk imaging, synchronisation and data recovery software for Windows."
+    },
+    {
+        "slug": "games",
+        "name": "Games",
+        "icon": "package",
+        "short": "Free and open-source games for Windows.",
+        "description": "Free and open-source games for Windows, from classic puzzle and strategy games to open-source game engines."
+    },
+    {
+        "slug": "networking-tools",
+        "name": "Networking Tools",
+        "icon": "cpu",
+        "short": "Network diagnostics, remote access and transfer tools.",
+        "description": "Network diagnostics, file transfer, remote access and other networking software for Windows."
     }
 ]

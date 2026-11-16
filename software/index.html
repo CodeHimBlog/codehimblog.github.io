@@ -75,18 +75,18 @@
 <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
 <div class="sm:col-span-2 lg:col-span-1"><label for="f-q" class="block text-xs font-semibold text-slate-600">Name or keyword</label><input id="f-q" type="search" class="search-input mt-1 text-sm" style="padding:.5rem .75rem" placeholder="Filter list"></div>
 <div><label for="f-os" class="block text-xs font-semibold text-slate-600">Windows version</label><select id="f-os" class="select mt-1"><option value="">Any version</option><option value="windows-11">Windows 11 (verified)</option><option value="windows-10">Windows 10 (verified)</option><option value="windows-7">Windows 7 (verified)</option></select></div>
-<div><label for="f-cat" class="block text-xs font-semibold text-slate-600">Category</label><select id="f-cat" class="select mt-1"><option value="">All categories</option><option value="security">Security &amp; Privacy</option><option value="graphics">Graphics &amp; Image Editing</option><option value="audio-video">Audio &amp; Video</option><option value="file-management">File Management</option><option value="system-utilities">System Utilities</option><option value="developer-tools">Developer Tools</option></select></div>
+<div><label for="f-cat" class="block text-xs font-semibold text-slate-600">Category</label><select id="f-cat" class="select mt-1"><option value="">All categories</option><option value="security">Security &amp; Privacy</option><option value="internet-browsers">Internet &amp; Browsers</option><option value="graphics">Graphics &amp; Image Editing</option><option value="audio-video">Audio &amp; Video</option><option value="file-management">File Management</option><option value="system-utilities">System Utilities</option><option value="productivity-office">Productivity &amp; Office</option><option value="developer-tools">Developer Tools</option><option value="backup-recovery">Backup &amp; Recovery</option><option value="games">Games</option><option value="networking-tools">Networking Tools</option></select></div>
 <div><label for="f-license" class="block text-xs font-semibold text-slate-600">License type</label><select id="f-license" class="select mt-1"><option value="">Any license</option><option value="copyleft">Copyleft (GPL, LGPL)</option><option value="permissive">Permissive (MIT, BSD, Apache)</option></select></div>
 <div><label for="f-type" class="block text-xs font-semibold text-slate-600">Package type</label><select id="f-type" class="select mt-1"><option value="">Any package</option><option value="installer">Installer (EXE/MSI)</option><option value="portable">Portable package</option></select></div>
 </div>
 <div class="mt-3 flex items-center justify-between gap-3 text-sm"><p id="f-count" class="text-slate-600" aria-live="polite"></p><button type="reset" class="font-semibold text-blue-700 hover:underline">Clear filters</button></div>
 </form>
-<div id="catalogue-grid"><div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"><article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="7-zip" data-cats="system-utilities file-management" data-os="windows-11 windows-10 windows-8 windows-7" data-license="copyleft" data-types="portable installer source" data-kw="zip unzip archive compression 7z rar extract file archiver">
+<div id="catalogue-grid"><div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"><article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="7-zip" data-cats="file-management" data-os="windows-11 windows-10 windows-8 windows-7" data-license="copyleft" data-types="portable installer source" data-kw="zip unzip archive compression 7z rar extract file archiver">
 <div class="flex items-start gap-3">
 <span class="app-icon h-11 w-11 text-base" style="--app-color:#334155" role="img" aria-label="7-Zip icon (letter placeholder)">7z</span>
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/7-zip/" class="stretched-link">7-Zip</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v26.06</p>
+<p class="text-xs text-slate-500">File Management · v26.06</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A free, open-source file archiver for Windows with its own high-compression 7z format and support for many common archive types.</p>
@@ -107,12 +107,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="af-media-bar" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="af-media-bar" data-cats="audio-video" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/af-media-bar.png?v=2e00cf36" width="44" height="44" alt="AF Media Bar logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/af-media-bar/" class="stretched-link">AF Media Bar</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.7.1</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v1.7.1</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A taskbar media controller that shows media information, lyrics and playback controls directly on the desktop.</p>
@@ -120,12 +120,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="animeko" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="animeko" data-cats="audio-video" data-os="" data-license="copyleft" data-types="portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/animeko.png?v=11b0f908" width="44" height="44" alt="Animeko logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/animeko/" class="stretched-link">Animeko</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v6.4.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v6.4.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Animeko is a free, open‑source desktop app for tracking, streaming and downloading anime episodes with cloud sync, multiple video sources and subtitle support.</p>
@@ -159,12 +159,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="aurora" data-cats="system-utilities" data-os="" data-license="permissive" data-types="other installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="aurora" data-cats="audio-video" data-os="" data-license="permissive" data-types="other installer" data-kw="">
 <div class="flex items-start gap-3">
 <span class="app-icon h-11 w-11 text-base" style="--app-color:#1D4ED8" role="img" aria-label="Aurora icon (letter placeholder)">A</span>
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/aurora/" class="stretched-link">Aurora</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v3.4.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v3.4.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Aurora is a free, open‑source music player for Windows that plays local files and streams from many services such as Navidrome, Jellyfin, Plex, YouTube Music, SoundCloud and Spotify.</p>
@@ -172,12 +172,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="auto-editor" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="auto-editor" data-cats="audio-video" data-os="" data-license="permissive" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <span class="app-icon h-11 w-11 text-base" style="--app-color:#15803D" role="img" aria-label="Auto-Editor icon (letter placeholder)">A</span>
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/auto-editor/" class="stretched-link">Auto-Editor</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v31.9.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v31.9.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A command‑line tool that automatically trims and edits video and audio files based on silence, volume and motion detection.</p>
@@ -198,12 +198,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="autosubsync" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="autosubsync" data-cats="audio-video" data-os="" data-license="copyleft" data-types="portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/autosubsync.png?v=e81155c0" width="44" height="44" alt="AutoSubSync logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/autosubsync/" class="stretched-link">AutoSubSync</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v6.7</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v6.7</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Automatic subtitle synchronization tool.</p>
@@ -224,12 +224,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="chroma-app" data-cats="system-utilities" data-os="windows-10" data-license="copyleft" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="chroma-app" data-cats="graphics" data-os="windows-10" data-license="copyleft" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/chroma-app.png?v=c3c3ca09" width="44" height="44" alt="Chromasmith logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/chroma-app/" class="stretched-link">Chromasmith</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.2.11</p>
+<p class="text-xs text-slate-500">Graphics &amp; Image Editing · v1.2.11</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Chromasmith is a free offline photo editor that offers film‑style looks, grain, halation, RAW development and basic retouching tools.</p>
@@ -237,12 +237,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 10</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="ciyue" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="ciyue" data-cats="productivity-office" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/ciyue.png?v=1c3175cc" width="44" height="44" alt="Ciyue logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/ciyue/" class="stretched-link">Ciyue</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v2.2.0</p>
+<p class="text-xs text-slate-500">Productivity &amp; Office · v2.2.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A cross‑platform dictionary app that can read MDX/MDD, StarDict and ZIM dictionary files.</p>
@@ -250,12 +250,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="desktop-bubble-chat" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="desktop-bubble-chat" data-cats="internet-browsers" data-os="" data-license="permissive" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/desktop-bubble-chat.png?v=d54394e0" width="44" height="44" alt="Desktop Bubble Chat logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/desktop-bubble-chat/" class="stretched-link">Desktop Bubble Chat</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.1.0</p>
+<p class="text-xs text-slate-500">Internet &amp; Browsers · v1.1.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Floating chat head application that lets you run multiple messenger accounts in lightweight, movable windows on your desktop.</p>
@@ -276,12 +276,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 10</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="electerm" data-cats="system-utilities" data-os="windows-7" data-license="permissive" data-types="other installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="electerm" data-cats="developer-tools" data-os="windows-7" data-license="permissive" data-types="other installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/electerm.png?v=6d4d0736" width="44" height="44" alt="electerm logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/electerm/" class="stretched-link">electerm</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v5.11.8</p>
+<p class="text-xs text-slate-500">Developer Tools · v5.11.8</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Free and open‑source client for terminal, SSH, SFTP, FTP, Telnet, serial port, RDP, VNC and Spice connections.</p>
@@ -289,12 +289,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 7</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="ferrumpix" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="ferrumpix" data-cats="graphics" data-os="" data-license="copyleft" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/ferrumpix.png?v=87f47b6e" width="44" height="44" alt="FerrumPix logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/ferrumpix/" class="stretched-link">FerrumPix</a></h2>
-<p class="text-xs text-slate-500">System Utilities</p>
+<p class="text-xs text-slate-500">Graphics &amp; Image Editing</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">FerrumPix is a desktop photo manager and image editor that lets you organize, view, and edit photos on your computer.</p>
@@ -302,12 +302,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="ffmpeg-gui-editor-windows" data-cats="system-utilities" data-os="windows-11 windows-10" data-license="permissive" data-types="portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="ffmpeg-gui-editor-windows" data-cats="audio-video" data-os="windows-11 windows-10" data-license="permissive" data-types="portable" data-kw="">
 <div class="flex items-start gap-3">
 <span class="app-icon h-11 w-11 text-base" style="--app-color:#2563EB" role="img" aria-label="FFmpeg GUI Editor Windows icon (letter placeholder)">F</span>
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/ffmpeg-gui-editor-windows/" class="stretched-link">FFmpeg GUI Editor Windows</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.6.5</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v1.6.5</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A lightweight portable graphical front‑end for FFmpeg that lets Windows users trim, crop, compress, convert and edit videos without using the command line.</p>
@@ -315,12 +315,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 11</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 10</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="filmcraft" data-cats="system-utilities" data-os="" data-license="permissive" data-types="other installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="filmcraft" data-cats="audio-video" data-os="" data-license="permissive" data-types="other installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/filmcraft.png?v=897f0ab4" width="44" height="44" alt="FilmCraft logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/filmcraft/" class="stretched-link">FilmCraft</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.20.1</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v0.20.1</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">FilmCraft is a free, open‑source non‑linear video editor built in Rust.</p>
@@ -328,12 +328,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="fk-desktop" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="fk-desktop" data-cats="productivity-office" data-os="" data-license="copyleft" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/fk-desktop.png?v=64f2a96c" width="44" height="44" alt="Fk Desktop logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/fk-desktop/" class="stretched-link">Fk Desktop</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.1.0</p>
+<p class="text-xs text-slate-500">Productivity &amp; Office · v1.1.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Fk Desktop is a Pomodoro timer that follows the original technique closely, offering a classic desktop UI, keyboard shortcuts and advanced settings for power users.</p>
@@ -354,12 +354,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="formatix" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="formatix" data-cats="graphics" data-os="" data-license="copyleft" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/formatix.png?v=61569c9d" width="44" height="44" alt="Formatix Image Converter logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/formatix/" class="stretched-link">Formatix Image Converter</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.17.4</p>
+<p class="text-xs text-slate-500">Graphics &amp; Image Editing · v1.17.4</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A fast, lightweight, offline batch image converter and resizer for Windows that supports many formats and offers quality control.</p>
@@ -367,12 +367,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="frame-player" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="other installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="frame-player" data-cats="audio-video" data-os="" data-license="copyleft" data-types="other installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/frame-player.png?v=95e7c9f7" width="44" height="44" alt="Frame Player logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/frame-player/" class="stretched-link">Frame Player</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.46.1</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v1.46.1</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A video player for Windows that plays local files, web links, and torrent streams, with support for casting, subtitle search, and synchronized watching with friends.</p>
@@ -393,12 +393,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="headroom-desktop" data-cats="system-utilities" data-os="windows-10" data-license="permissive" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="headroom-desktop" data-cats="developer-tools" data-os="windows-10" data-license="permissive" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/headroom-desktop.png?v=8f7ed1d8" width="44" height="44" alt="Headroom Desktop logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/headroom-desktop/" class="stretched-link">Headroom Desktop</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.9.62</p>
+<p class="text-xs text-slate-500">Developer Tools · v0.9.62</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Headroom Desktop is a tray application that reduces token usage for Claude Code, ChatGPT Codex and similar AI coding tools by about half.</p>
@@ -419,12 +419,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="iptvnator" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer source" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="iptvnator" data-cats="audio-video" data-os="" data-license="permissive" data-types="installer source" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/iptvnator.png?v=5ed30793" width="44" height="44" alt="IPTVnator logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/iptvnator/" class="stretched-link">IPTVnator</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.25.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v0.25.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A free, open‑source IPTV player that lets you watch live TV, movies and series from M3U/M3U8 playlists, Xtream Codes or Stalker portals.</p>
@@ -432,12 +432,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="jenv" data-cats="system-utilities" data-os="" data-license="permissive" data-types="portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="jenv" data-cats="developer-tools" data-os="" data-license="permissive" data-types="portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/jenv.png?v=45b38322" width="44" height="44" alt="Jenv logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/jenv/" class="stretched-link">Jenv</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.6.9</p>
+<p class="text-xs text-slate-500">Developer Tools · v0.6.9</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Jenv is a command‑line tool that lets you manage multiple Java versions on your computer, allowing easy switching, adding, and removal of JDK installations.</p>
@@ -458,12 +458,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Free</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 11</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 10</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="lap" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="other installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="lap" data-cats="graphics" data-os="" data-license="copyleft" data-types="other installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/lap.png?v=5ee30e32" width="44" height="44" alt="Lap logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/lap/" class="stretched-link">Lap</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.3.3</p>
+<p class="text-xs text-slate-500">Graphics &amp; Image Editing · v0.3.3</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">An offline-first photo manager for large local libraries</p>
@@ -471,12 +471,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="libreget" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="other installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="libreget" data-cats="internet-browsers" data-os="" data-license="copyleft" data-types="other installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/libreget.png?v=3068649e" width="44" height="44" alt="LibreGet logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/libreget/" class="stretched-link">LibreGet</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.16.6</p>
+<p class="text-xs text-slate-500">Internet &amp; Browsers · v0.16.6</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">LibreGet is a free open‑source download manager and media toolbox for Windows that can download files from courses, YouTube, social sites and many other services, then transcribe, convert and organise the saved content.</p>
@@ -497,12 +497,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 11</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="lossless-cut" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="lossless-cut" data-cats="audio-video" data-os="" data-license="copyleft" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/lossless-cut.png?v=866af23e" width="44" height="44" alt="LosslessCut logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/lossless-cut/" class="stretched-link">LosslessCut</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v3.70.2</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v3.70.2</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A fast, lossless video and audio editor that trims, cuts, merges and remuxes media without re‑encoding.</p>
@@ -523,12 +523,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 11</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 10</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="lyrenne" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="lyrenne" data-cats="audio-video" data-os="" data-license="copyleft" data-types="portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/lyrenne.png?v=cb0e6d13" width="44" height="44" alt="Lyrenne logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/lyrenne/" class="stretched-link">Lyrenne</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v2.21.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v2.21.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A free, open‑source YouTube Music desktop player for Windows.</p>
@@ -536,12 +536,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="mcp-windows" data-cats="system-utilities" data-os="" data-license="permissive" data-types="portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="mcp-windows" data-cats="developer-tools" data-os="" data-license="permissive" data-types="portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/mcp-windows.png?v=9c00b478" width="44" height="44" alt="Mcp Windows logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/mcp-windows/" class="stretched-link">Mcp Windows</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.3.28</p>
+<p class="text-xs text-slate-500">Developer Tools · v1.3.28</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A server that lets AI agents control Windows applications through UI Automation, enabling clicks, typing, and reading of controls without relying on screen coordinates.</p>
@@ -549,12 +549,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="mdns-browser" data-cats="system-utilities" data-os="" data-license="permissive" data-types="other installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="mdns-browser" data-cats="networking-tools" data-os="" data-license="permissive" data-types="other installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/mdns-browser.png?v=aa21a7f5" width="44" height="44" alt="mDNS-Browser logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/mdns-browser/" class="stretched-link">mDNS-Browser</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v2.9.11</p>
+<p class="text-xs text-slate-500">Networking Tools · v2.9.11</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A graphical tool for browsing services advertised via mDNS on the local network.</p>
@@ -575,12 +575,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="meowsic" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="meowsic" data-cats="audio-video" data-os="" data-license="permissive" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/meowsic.png?v=b31b44e9" width="44" height="44" alt="Meowsic logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/meowsic/" class="stretched-link">Meowsic</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v2.4.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v2.4.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Meowsic is a modern music player for Windows that supports many audio formats and offers playlist and lyric features.</p>
@@ -601,12 +601,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="moonlight-qt" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="other installer portable source" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="moonlight-qt" data-cats="games" data-os="" data-license="copyleft" data-types="other installer portable source" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/moonlight-qt.png?v=9ad42231" width="44" height="44" alt="Moonlight Qt logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/moonlight-qt/" class="stretched-link">Moonlight Qt</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v6.2.0</p>
+<p class="text-xs text-slate-500">Games · v6.2.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Moonlight Qt is an open‑source client that lets you stream games and desktop sessions from a PC with NVIDIA GameStream or Sunshine to your Windows computer.</p>
@@ -640,12 +640,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="mynotes" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="mynotes" data-cats="productivity-office" data-os="" data-license="copyleft" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/mynotes.png?v=1694c508" width="44" height="44" alt="MyNotes logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/mynotes/" class="stretched-link">MyNotes</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v2.1.0</p>
+<p class="text-xs text-slate-500">Productivity &amp; Office · v2.1.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A simple notes and reminders application for Windows built with WinUI 3.</p>
@@ -653,12 +653,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="nagi" data-cats="system-utilities" data-os="windows-11 windows-10" data-license="copyleft" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="nagi" data-cats="audio-video" data-os="windows-11 windows-10" data-license="copyleft" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/nagi.png?v=31c75f1f" width="44" height="44" alt="Nagi logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/nagi/" class="stretched-link">Nagi</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v2.7.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v2.7.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A fast, private music player for your local library on Windows, with Navidrome and Jellyfin streaming</p>
@@ -692,12 +692,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Free</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="open-photo-ai" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="open-photo-ai" data-cats="graphics" data-os="" data-license="copyleft" data-types="portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/open-photo-ai.png?v=539fbc49" width="44" height="44" alt="Open Photo AI logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/open-photo-ai/" class="stretched-link">Open Photo AI</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v26.11.0</p>
+<p class="text-xs text-slate-500">Graphics &amp; Image Editing · v26.11.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">An open source alternative to the popular photo AI editor.</p>
@@ -705,12 +705,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="openfilm" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="openfilm" data-cats="audio-video" data-os="" data-license="permissive" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/openfilm.png?v=fb854cf1" width="44" height="44" alt="OpenFilm logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/openfilm/" class="stretched-link">OpenFilm</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.3.2</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v0.3.2</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">An open‑source AI video agent that lets a coding agent generate videos and provides a local editor to modify the results.</p>
@@ -718,12 +718,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="photocraft" data-cats="system-utilities" data-os="" data-license="permissive" data-types="other installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="photocraft" data-cats="graphics" data-os="" data-license="permissive" data-types="other installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/photocraft.png?v=bafc16e0" width="44" height="44" alt="PhotoCraft logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/photocraft/" class="stretched-link">PhotoCraft</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.23.1</p>
+<p class="text-xs text-slate-500">Graphics &amp; Image Editing · v0.23.1</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">PhotoCraft is an open‑source photo editor written in Rust that aims to provide Photoshop‑like features such as layers, masks, adjustment layers and full PSD support.</p>
@@ -744,12 +744,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 10</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="polyphone" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="polyphone" data-cats="audio-video" data-os="" data-license="copyleft" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/polyphone.png?v=865a772a" width="44" height="44" alt="Polyphone logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/polyphone/" class="stretched-link">Polyphone</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v2.6.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v2.6.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A free and open-source soundfont editor for creating, editing, and playing musical instrument soundfonts.</p>
@@ -757,12 +757,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="pymusicplayer" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="pymusicplayer" data-cats="audio-video" data-os="" data-license="permissive" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/pymusicplayer.png?v=cde96b2e" width="44" height="44" alt="PyMusicPlayer logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/pymusicplayer/" class="stretched-link">PyMusicPlayer</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.7.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v1.7.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A Windows music player with audio analysis, waveform seek bar, and support for many audio formats and internet radio.</p>
@@ -783,12 +783,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 10</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="rawmakase" data-cats="system-utilities" data-os="" data-license="permissive" data-types="other installer portable source" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="rawmakase" data-cats="graphics" data-os="" data-license="permissive" data-types="other installer portable source" data-kw="">
 <div class="flex items-start gap-3">
 <span class="app-icon h-11 w-11 text-base" style="--app-color:#7C3AED" role="img" aria-label="RAWmakase icon (letter placeholder)">R</span>
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/rawmakase/" class="stretched-link">RAWmakase</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.5.0</p>
+<p class="text-xs text-slate-500">Graphics &amp; Image Editing · v0.5.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A fast, non‑destructive RAW photo editor with Lightroom‑style controls for Windows.</p>
@@ -822,12 +822,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="rubylight" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="other installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="rubylight" data-cats="games" data-os="" data-license="copyleft" data-types="other installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/rubylight.png?v=b4ba7673" width="44" height="44" alt="Rubylight logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/rubylight/" class="stretched-link">Rubylight</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v4.6.0</p>
+<p class="text-xs text-slate-500">Games · v4.6.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Free, open-source game‑streaming host for Windows PCs with AMD Radeon or NVIDIA graphics.</p>
@@ -835,12 +835,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="sakura" data-cats="system-utilities" data-os="windows-10" data-license="permissive" data-types="portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="sakura" data-cats="productivity-office" data-os="windows-10" data-license="permissive" data-types="portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/sakura.png?v=2149a6e6" width="44" height="44" alt="Sakura Editor logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/sakura/" class="stretched-link">Sakura Editor</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v2.4.3</p>
+<p class="text-xs text-slate-500">Productivity &amp; Office · v2.4.3</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A free, open‑source text editor for Windows with support for many file encodings and customizable features.</p>
@@ -848,12 +848,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 10</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="screenbox" data-cats="system-utilities" data-os="windows-11 windows-10" data-license="copyleft" data-types="other installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="screenbox" data-cats="audio-video" data-os="windows-11 windows-10" data-license="copyleft" data-types="other installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/screenbox.png?v=0f45f82c" width="44" height="44" alt="Screenbox logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/screenbox/" class="stretched-link">Screenbox</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.24.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v0.24.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">LibVLC-based media player for the Universal Windows Platform</p>
@@ -861,12 +861,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 11</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 10</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="screenrecorder" data-cats="system-utilities" data-os="windows-10" data-license="copyleft" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="screenrecorder" data-cats="audio-video" data-os="windows-10" data-license="copyleft" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <span class="app-icon h-11 w-11 text-base" style="--app-color:#334155" role="img" aria-label="ScreenRecorder icon (letter placeholder)">S</span>
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/screenrecorder/" class="stretched-link">ScreenRecorder</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v2.1.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v2.1.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A simple program that records your screen and audio.</p>
@@ -874,12 +874,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 10</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="scribe" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="scribe" data-cats="productivity-office" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <span class="app-icon h-11 w-11 text-base" style="--app-color:#1D4ED8" role="img" aria-label="Scribe icon (letter placeholder)">S</span>
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/scribe/" class="stretched-link">Scribe</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.6.0</p>
+<p class="text-xs text-slate-500">Productivity &amp; Office · v1.6.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Scribe is an offline voice-to-text desktop assistant that lets you dictate, control apps and run custom commands with your voice.</p>
@@ -887,12 +887,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="handwriting-ocr-scriptreader" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="handwriting-ocr-scriptreader" data-cats="productivity-office" data-os="" data-license="copyleft" data-types="portable" data-kw="">
 <div class="flex items-start gap-3">
 <span class="app-icon h-11 w-11 text-base" style="--app-color:#1D4ED8" role="img" aria-label="ScriptReader icon (letter placeholder)">H</span>
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/handwriting-ocr-scriptreader/" class="stretched-link">ScriptReader</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.1.4</p>
+<p class="text-xs text-slate-500">Productivity &amp; Office · v1.1.4</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">ScriptReader converts scanned handwritten JPEG images into formatted RTF documents and removes handwritten typos automatically.</p>
@@ -913,12 +913,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Free</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="skrin" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="skrin" data-cats="audio-video" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/skrin.png?v=7a29dfb1" width="44" height="44" alt="Skrin logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/skrin/" class="stretched-link">Skrin</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.18.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v0.18.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A free, open‑source local media library and video player that organizes movies and TV shows on your computer or NAS without a server or account.</p>
@@ -926,12 +926,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="spacewave" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="spacewave" data-cats="productivity-office" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/spacewave.png?v=8249826a" width="44" height="44" alt="Spacewave logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/spacewave/" class="stretched-link">Spacewave</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.57.29</p>
+<p class="text-xs text-slate-500">Productivity &amp; Office · v0.57.29</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Spacewave is a self‑hosted, browser‑based workspace that runs locally without any server, offering encrypted peer‑to‑peer sync and collaborative spaces for files, notes, apps and more.</p>
@@ -939,12 +939,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="starluxe" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="other installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="starluxe" data-cats="games" data-os="" data-license="copyleft" data-types="other installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/starluxe.png?v=7e94b18e" width="44" height="44" alt="StarLuxe logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/starluxe/" class="stretched-link">StarLuxe</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.0.98-beta</p>
+<p class="text-xs text-slate-500">Games · v1.0.98-beta</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A launcher that helps apply ReShade shaders to selected games.</p>
@@ -965,12 +965,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="tauon" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="tauon" data-cats="audio-video" data-os="" data-license="copyleft" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/tauon.png?v=28688af8" width="44" height="44" alt="Tauon logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/tauon/" class="stretched-link">Tauon</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v13.1.1</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v13.1.1</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Tauon is a powerful and streamlined music player for the desktop.</p>
@@ -978,12 +978,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="tizumark-markdown-editor" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="tizumark-markdown-editor" data-cats="productivity-office" data-os="" data-license="copyleft" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/tizumark-markdown-editor.png?v=a0e7074d" width="44" height="44" alt="TizuMark logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/tizumark-markdown-editor/" class="stretched-link">TizuMark</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.2.5</p>
+<p class="text-xs text-slate-500">Productivity &amp; Office · v1.2.5</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A lightweight Markdown editor for Windows with live preview, outline navigation, KaTeX and Mermaid support.</p>
@@ -991,12 +991,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="tokentracker" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="tokentracker" data-cats="developer-tools" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/tokentracker.png?v=1bb65fd9" width="44" height="44" alt="Token Tracker logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/tokentracker/" class="stretched-link">Token Tracker</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.5.22</p>
+<p class="text-xs text-slate-500">Developer Tools · v1.5.22</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A local dashboard that tracks token usage and cost for many AI coding tools, with a system‑tray app, desktop pet, widgets and achievement tracking.</p>
@@ -1004,12 +1004,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="traydio" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="traydio" data-cats="audio-video" data-os="" data-license="permissive" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/traydio.png?v=03f782bc" width="44" height="44" alt="Traydio logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/traydio/" class="stretched-link">Traydio</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v2.2.5</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v2.2.5</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A tiny, simple, elegant internet radio player that lives in the Windows tray.</p>
@@ -1017,12 +1017,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="tunefree" data-cats="system-utilities" data-os="windows-10" data-license="permissive" data-types="portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="tunefree" data-cats="audio-video" data-os="windows-10" data-license="permissive" data-types="portable" data-kw="">
 <div class="flex items-start gap-3">
 <span class="app-icon h-11 w-11 text-base" style="--app-color:#334155" role="img" aria-label="TuneFree icon (letter placeholder)">T</span>
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/tunefree/" class="stretched-link">TuneFree</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v2.1.3</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v2.1.3</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A tool that decrypts QQ Music&#039;s encrypted .mflac and .mgg files and converts them to MP3 or FLAC on Windows.</p>
@@ -1056,12 +1056,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="usque-app" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="usque-app" data-cats="networking-tools" data-os="" data-license="permissive" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/usque-app.png?v=d0142dd8" width="44" height="44" alt="Usque logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/usque-app/" class="stretched-link">Usque</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.3.4</p>
+<p class="text-xs text-slate-500">Networking Tools · v0.3.4</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">An unofficial client for Cloudflare WARP services that provides system VPN, SOCKS5 and HTTP proxy with advanced routing, chain proxy, and profile management.</p>
@@ -1082,12 +1082,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="vlc-win10smtc" data-cats="system-utilities" data-os="windows-11 windows-10" data-license="copyleft" data-types="portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="vlc-win10smtc" data-cats="audio-video" data-os="windows-11 windows-10" data-license="copyleft" data-types="portable" data-kw="">
 <div class="flex items-start gap-3">
 <span class="app-icon h-11 w-11 text-base" style="--app-color:#2563EB" role="img" aria-label="VLC Win10smtc icon (letter placeholder)">V</span>
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/vlc-win10smtc/" class="stretched-link">VLC Win10smtc</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v5.0.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v5.0.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A plugin that adds Windows System Media Transport Controls integration to VLC Media Player.</p>
@@ -1095,12 +1095,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 11</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 10</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="voxtype" data-cats="system-utilities" data-os="windows-10" data-license="permissive" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="voxtype" data-cats="productivity-office" data-os="windows-10" data-license="permissive" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/voxtype.png?v=94788157" width="44" height="44" alt="VoxType logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/voxtype/" class="stretched-link">VoxType</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.19.1</p>
+<p class="text-xs text-slate-500">Productivity &amp; Office · v0.19.1</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Privacy‑focused open‑source AI voice typing for Windows.</p>
@@ -1108,12 +1108,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 10</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="warpinator-windows" data-cats="system-utilities" data-os="windows-7" data-license="copyleft" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="warpinator-windows" data-cats="file-management" data-os="windows-7" data-license="copyleft" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/warpinator-windows.png?v=58de581c" width="44" height="44" alt="Warpinator Windows logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/warpinator-windows/" class="stretched-link">Warpinator Windows</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v1.1</p>
+<p class="text-xs text-slate-500">File Management · v1.1</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">An unofficial implementation of Warpinator for Windows.</p>
@@ -1121,12 +1121,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 7</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="waveflow" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="waveflow" data-cats="audio-video" data-os="" data-license="copyleft" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/waveflow.png?v=a6c0ef48" width="44" height="44" alt="WaveFlow logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/waveflow/" class="stretched-link">WaveFlow</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v2.1.0</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v2.1.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">WaveFlow is a local‑first music player that organizes and plays the audio files you already own, with high‑resolution playback, word‑synced lyrics and customizable skins.</p>
@@ -1134,12 +1134,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="weftcut" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="weftcut" data-cats="audio-video" data-os="" data-license="permissive" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/weftcut.png?v=538e31f2" width="44" height="44" alt="WeftCut logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/weftcut/" class="stretched-link">WeftCut</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.7.1</p>
+<p class="text-xs text-slate-500">Audio &amp; Video · v0.7.1</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Free, open-source AI‑driven video editor that lets an AI agent control the timeline just like a human user.</p>
@@ -1147,12 +1147,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="winappmigrator" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="winappmigrator" data-cats="backup-recovery" data-os="" data-license="permissive" data-types="installer portable" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/winappmigrator.png?v=b5c9989e" width="44" height="44" alt="WinAppMigrator logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/winappmigrator/" class="stretched-link">WinAppMigrator</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.7.0</p>
+<p class="text-xs text-slate-500">Backup &amp; Recovery · v0.7.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Creates a single installer from an already installed Windows program, allowing you to move it to another PC even when the original installer is missing.</p>
@@ -1160,12 +1160,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="windbg-mcp" data-cats="system-utilities" data-os="" data-license="permissive" data-types="portable" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="windbg-mcp" data-cats="developer-tools" data-os="" data-license="permissive" data-types="portable" data-kw="">
 <div class="flex items-start gap-3">
 <span class="app-icon h-11 w-11 text-base" style="--app-color:#2563EB" role="img" aria-label="windbg-mcp icon (letter placeholder)">W</span>
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/windbg-mcp/" class="stretched-link">windbg-mcp</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v0.24.0</p>
+<p class="text-xs text-slate-500">Developer Tools · v0.24.0</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">A server that exposes WinDbg/DbgEng debugging capabilities to AI agents via standard input/output or HTTP.</p>
@@ -1199,12 +1199,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-green-50 text-green-800 border-green-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Win 11</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="yengi" data-cats="system-utilities" data-os="" data-license="copyleft" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="yengi" data-cats="developer-tools" data-os="" data-license="copyleft" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/yengi.png?v=e8c61561" width="44" height="44" alt="Yengi logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/yengi/" class="stretched-link">Yengi</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v2.0.3</p>
+<p class="text-xs text-slate-500">Developer Tools · v2.0.3</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">Yengi is a free, open‑source Windows AI integrated development environment that lets you work with local and cloud large language models, run autonomous tool loops, and use live copilots for Blender and Unity.</p>
@@ -1212,12 +1212,12 @@
 <span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border-blue-200">Open source</span><span class="inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border-slate-200"><svg class="icon icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Windows support: see details</span>
 </div>
 </article>
-<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="youboard" data-cats="system-utilities" data-os="" data-license="permissive" data-types="installer" data-kw="">
+<article class="card-link group relative flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md" data-slug="youboard" data-cats="productivity-office" data-os="" data-license="permissive" data-types="installer" data-kw="">
 <div class="flex items-start gap-3">
 <img src="/assets/icons/youboard.png?v=c8bcdc74" width="44" height="44" alt="YouBoard logo" class="h-11 w-11" style="object-fit:contain;flex-shrink:0;border-radius:10px" loading="lazy" decoding="async">
 <div class="min-w-0">
 <h2 class="card-title font-semibold text-slate-900 transition-colors"><a href="/software/youboard/" class="stretched-link">YouBoard</a></h2>
-<p class="text-xs text-slate-500">System Utilities · v3.3.8</p>
+<p class="text-xs text-slate-500">Productivity &amp; Office · v3.3.8</p>
 </div>
 </div>
 <p class="mt-3 text-sm leading-6 text-slate-600 line-clamp-3">YouBoard is a local clipboard history manager that records text, images, files and URLs, stores them encrypted on the computer, and offers AI processing, desktop widget, phone transfer and optional cloud sync.</p>
@@ -1239,7 +1239,7 @@
 <p class="mt-4"><a href="/feed.xml" class="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white"><svg class="icon icon-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg> RSS feed of new listings</a></p>
 </div>
 <div><h2 class="text-sm font-semibold text-white">Software directory</h2><ul class="mt-3 space-y-2 text-sm"><li><a href="/software/" class="text-slate-300 hover:text-white">All software</a></li><li><a href="/windows/" class="text-slate-300 hover:text-white">Windows compatibility</a></li><li><a href="/windows-11/" class="text-slate-300 hover:text-white">Windows 11 software</a></li><li><a href="/windows-10/" class="text-slate-300 hover:text-white">Windows 10 software</a></li><li><a href="/windows-7/" class="text-slate-300 hover:text-white">Windows 7 software</a></li><li><a href="/search/" class="text-slate-300 hover:text-white">Search</a></li></ul></div>
-<div><h2 class="text-sm font-semibold text-white">Categories</h2><ul class="mt-3 space-y-2 text-sm"><li><a href="/categories/security/" class="text-slate-300 hover:text-white">Security &amp; Privacy</a></li><li><a href="/categories/graphics/" class="text-slate-300 hover:text-white">Graphics &amp; Image Editing</a></li><li><a href="/categories/audio-video/" class="text-slate-300 hover:text-white">Audio &amp; Video</a></li><li><a href="/categories/file-management/" class="text-slate-300 hover:text-white">File Management</a></li><li><a href="/categories/system-utilities/" class="text-slate-300 hover:text-white">System Utilities</a></li><li><a href="/categories/developer-tools/" class="text-slate-300 hover:text-white">Developer Tools</a></li><li><a href="/categories/" class="text-slate-300 hover:text-white">All categories</a></li></ul></div>
+<div><h2 class="text-sm font-semibold text-white">Categories</h2><ul class="mt-3 space-y-2 text-sm"><li><a href="/categories/security/" class="text-slate-300 hover:text-white">Security &amp; Privacy</a></li><li><a href="/categories/internet-browsers/" class="text-slate-300 hover:text-white">Internet &amp; Browsers</a></li><li><a href="/categories/graphics/" class="text-slate-300 hover:text-white">Graphics &amp; Image Editing</a></li><li><a href="/categories/audio-video/" class="text-slate-300 hover:text-white">Audio &amp; Video</a></li><li><a href="/categories/file-management/" class="text-slate-300 hover:text-white">File Management</a></li><li><a href="/categories/system-utilities/" class="text-slate-300 hover:text-white">System Utilities</a></li><li><a href="/categories/productivity-office/" class="text-slate-300 hover:text-white">Productivity &amp; Office</a></li><li><a href="/categories/developer-tools/" class="text-slate-300 hover:text-white">Developer Tools</a></li><li><a href="/categories/backup-recovery/" class="text-slate-300 hover:text-white">Backup &amp; Recovery</a></li><li><a href="/categories/games/" class="text-slate-300 hover:text-white">Games</a></li><li><a href="/categories/networking-tools/" class="text-slate-300 hover:text-white">Networking Tools</a></li><li><a href="/categories/" class="text-slate-300 hover:text-white">All categories</a></li></ul></div>
 <div><h2 class="text-sm font-semibold text-white">Information</h2><ul class="mt-3 space-y-2 text-sm"><li><a href="/about/" class="text-slate-300 hover:text-white">About</a></li><li><a href="/editorial-policy/" class="text-slate-300 hover:text-white">Editorial policy</a></li><li><a href="/contact/" class="text-slate-300 hover:text-white">Contact</a></li><li><a href="/privacy-policy/" class="text-slate-300 hover:text-white">Privacy policy</a></li><li><a href="/terms-and-conditions/" class="text-slate-300 hover:text-white">Terms and conditions</a></li><li><a href="/disclaimer/" class="text-slate-300 hover:text-white">Disclaimer</a></li><li><a href="/dmca/" class="text-slate-300 hover:text-white">Copyright &amp; DMCA</a></li></ul></div>
 </div>
 <div class="mt-10 border-t border-slate-700 pt-6 text-xs leading-5 text-slate-400">
