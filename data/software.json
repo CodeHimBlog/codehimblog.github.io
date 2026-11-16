@@ -5684,6 +5684,236 @@
         "verification_status": "partial"
     },
     {
+        "id": "vlc-redesign",
+        "name": "VLC Media Player Redesign",
+        "slug": "vlc-redesign",
+        "summary": "An unofficial build of VLC 4 that keeps the original VLC engine and codecs but replaces the interface with a new design by Juxtopposed.",
+        "description": [
+            "VLC Media Player Redesign provides the same playback capabilities as the official VLC player while offering a completely new visual layout. It is aimed at users who like VLC’s functionality but want a fresh, modern look. The program works on Windows and other platforms, but this listing covers the Windows version.",
+            "The project uses the official VLC 4 core, so all supported video and audio formats, streaming protocols, and subtitle handling remain unchanged. The only difference is the user interface, which has been rebuilt screen by screen according to a design created by the YouTube creator Juxtopposed. The software is free, open‑source and not affiliated with VideoLAN. Installers are provided for both x64 and ARM64 Windows systems, and portable ZIP archives are also available for users who prefer not to run an installer."
+        ],
+        "icon": {
+            "text": "V",
+            "color": "#0F766E"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v2.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/KuchiSofts/vlc-redesign#license",
+        "official_website": "https://kuchisofts.github.io/vlc-redesign/",
+        "download_page": "https://github.com/KuchiSofts/vlc-redesign/releases/tag/v0.6.9",
+        "repository_url": "https://github.com/KuchiSofts/vlc-redesign",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.6.9",
+        "release_date": "2026-11-16",
+        "release_url": "https://github.com/KuchiSofts/vlc-redesign/releases/tag/v0.6.9",
+        "primary_download": {
+            "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.6.9/vlc-redesign-0.6.9-win64-setup.exe",
+            "filename": "vlc-redesign-0.6.9-win64-setup.exe",
+            "size": 65632320,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "vlc-redesign-0.6.9-win64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.6.9/vlc-redesign-0.6.9-win64-setup.exe",
+                "size": 65632320,
+                "sha256": "f1fce27afd686cb83332c751aaf64273664e53682c0e5b3d27f7c35e7ef4d251"
+            },
+            {
+                "label": "vlc-redesign-0.6.9-winarm64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.6.9/vlc-redesign-0.6.9-winarm64-setup.exe",
+                "size": 48729898,
+                "sha256": "b1112639cd5dafe29ec5488b73e31117d69cadce05153b60cc1876e92cfa6dc9"
+            },
+            {
+                "label": "vlc-redesign-0.6.9-win64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.6.9/vlc-redesign-0.6.9-win64.zip",
+                "size": 117867846,
+                "sha256": "ae6d2f2c7ece1b6a674dcaaa8f1b23c0ad10bf3740b5c3fed3f85742fcaa7dd0"
+            },
+            {
+                "label": "vlc-redesign-0.6.9-winarm64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.6.9/vlc-redesign-0.6.9-winarm64.zip",
+                "size": 87055022,
+                "sha256": "e86e589c4b1d28c5fe548a46f711becf5cfd3988782a117b04463f61c9277ef5"
+            },
+            {
+                "label": "vlc-redesign-0.6.9-source.tar.gz",
+                "format": "Source code archive",
+                "kind": "source",
+                "architecture": null,
+                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.6.9/vlc-redesign-0.6.9-source.tar.gz",
+                "size": 127999729,
+                "sha256": "68bf182e627cac3de48e6e78d63aafbc951a09e62f961e376c6829898a27cac4"
+            }
+        ],
+        "features": [
+            "Uses the official VLC 4 engine and codecs",
+            "Completely redesigned user interface",
+            "Supports all formats that VLC 4 supports",
+            "Available as installer or portable ZIP for x64 and ARM64",
+            "Multilingual support (72 languages)",
+            "Open source under GPL‑2.0",
+            "No additional codecs required",
+            "Works with existing VLC playlists and settings"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the official GitHub release page.",
+            "Download the installer (EXE) for your system architecture (x64 or ARM64) or the portable ZIP.",
+            "Run the installer and follow the prompts, or extract the ZIP to a folder.",
+            "Launch VLC Media Player Redesign from the Start menu or the extracted folder.",
+            "Optionally import existing VLC playlists or settings."
+        ],
+        "related_software": [],
+        "seo_title": "VLC Media Player Redesign Free Download for Windows",
+        "meta_description": "Download VLC Media Player Redesign free for Windows. An unofficial build of VLC 4 that keeps the original VLC engine and codecs but replaces the interface with…",
+        "canonical_url": "https://codehimblog.github.io/software/vlc-redesign/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "voxtype",
+        "name": "VoxType",
+        "slug": "voxtype",
+        "summary": "Privacy‑focused open‑source AI voice typing for Windows.",
+        "description": [
+            "VoxType is a free, open‑source desktop application that lets you dictate text into any Windows program. Place the cursor in a text field, press a shortcut, speak, and the recognized words are pasted automatically. It can also send the transcription to a large language model for optional polishing before insertion.",
+            "VoxType provides real‑time speech‑to‑text conversion using cloud ASR services such as Doubao or Alibaba FunASR. The tool shows a floating subtitle while you speak, then inserts the final result into the active window. You can configure hotkeys (default Ctrl+Q), use the right Alt, right Ctrl, or mouse middle button as alternative triggers, and choose whether the output is pasted directly or only copied to the clipboard. Optional LLM polishing can be enabled to improve grammar or style, with several preset modes. The application stores all settings, API keys, and usage statistics locally, giving you full control over privacy. It runs in the background, hides to the system tray, and can start automatically with Windows."
+        ],
+        "icon": {
+            "text": "V",
+            "color": "#0F766E"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/zkwi/VoxType#license",
+        "official_website": "https://github.com/zkwi/VoxType/releases/latest",
+        "download_page": "https://github.com/zkwi/VoxType/releases/tag/v0.19.1",
+        "repository_url": "https://github.com/zkwi/VoxType",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/zkwi/VoxType#readme",
+                "note": "Stated in the project README: “支持 Windows 10 和 11。”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.19.1",
+        "release_date": "2026-11-12",
+        "release_url": "https://github.com/zkwi/VoxType/releases/tag/v0.19.1",
+        "primary_download": {
+            "url": "https://github.com/zkwi/VoxType/releases/download/v0.19.1/VoxType_0.19.1_x64-setup.exe",
+            "filename": "VoxType_0.19.1_x64-setup.exe",
+            "size": 5532558,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "VoxType_0.19.1_x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/zkwi/VoxType/releases/download/v0.19.1/VoxType_0.19.1_x64-setup.exe",
+                "size": 5532558,
+                "sha256": "097c052318be4146d49d87bf20955b81c2d83629b67fd0640fbd413b6e6ce084"
+            }
+        ],
+        "features": [
+            "Real‑time subtitle feedback while speaking",
+            "Multiple trigger options: keyboard shortcut, right Alt, right Ctrl, mouse middle button",
+            "Supports optional LLM polishing of transcriptions",
+            "Customizable hotword and scene dictionaries for better recognition",
+            "Clipboard handling that can paste automatically and restore previous clipboard content",
+            "System‑tray integration with quick access and update checks",
+            "Local storage of configuration, logs, and usage statistics",
+            "Privacy‑focused: credentials stay on the device, only audio and selected context are sent to the chosen cloud service"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download the Windows x64 installer from the latest GitHub release.",
+            "Run the downloaded .exe file and follow the installation wizard.",
+            "After installation, launch VoxType from the Start menu.",
+            "Open the settings to add your ASR service credentials.",
+            "Use the default shortcut Ctrl+Q (or configure another) to start dictation."
+        ],
+        "related_software": [],
+        "seo_title": "VoxType Free Download for Windows 10",
+        "meta_description": "Download VoxType free for Windows 10. Privacy‑focused open‑source AI voice typing for Windows.",
+        "canonical_url": "https://codehimblog.github.io/software/voxtype/",
+        "date_added": "2026-11-15",
+        "last_verified_at": "2026-11-16",
+        "verification_status": "verified"
+    },
+    {
         "id": "warpinator-windows",
         "name": "Warpinator Windows",
         "slug": "warpinator-windows",
