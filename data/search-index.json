@@ -127,6 +127,14 @@
         "os": []
     },
     {
+        "slug": "frame-player",
+        "name": "Frame Player",
+        "summary": "A video player for Windows that plays local files, web links, and torrent streams, with support for casting, subtitle search, and synchronized watching with friends.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": []
+    },
+    {
         "slug": "hardwarevisualizer",
         "name": "HardwareVisualizer",
         "summary": "A cross‑platform hardware monitor with real‑time metrics, local history, and customizable dashboards.",
@@ -270,6 +278,17 @@
         "category": "system-utilities",
         "keywords": [],
         "os": []
+    },
+    {
+        "slug": "nagi",
+        "name": "Nagi",
+        "summary": "A fast, private music player for your local library on Windows, with Navidrome and Jellyfin streaming",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
     },
     {
         "slug": "notepad-plus-plus",

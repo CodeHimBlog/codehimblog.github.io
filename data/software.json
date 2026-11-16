@@ -1646,6 +1646,150 @@
         "verification_status": "partial"
     },
     {
+        "id": "frame-player",
+        "name": "Frame Player",
+        "slug": "frame-player",
+        "summary": "A video player for Windows that plays local files, web links, and torrent streams, with support for casting, subtitle search, and synchronized watching with friends.",
+        "description": [
+            "Frame Player lets you watch videos from many sources in a single window. It can open files on your computer, stream from URLs, or play magnet torrents while they download. The player also supports casting to Chromecast, DLNA TVs, and other devices, and includes a watch‑together mode that synchronises playback with another user.",
+            "The program is built with Tauri 2 and libmpv, so it inherits mpv’s wide format support, hardware acceleration and HDR capabilities. The interface is rendered with HTML over a native video view, giving a modern look while keeping precise frame‑accurate control.",
+            "Key features include: - Play local video files, network streams and torrent magnet links without leaving the app. - Watch together with a friend using a short code; playback position, pauses and seeks stay in sync. - Cast video to Chromecast, DLNA or AirPlay devices without re‑encoding; if needed the file is remuxed quickly. - Chapter navigation and a skip‑intro button help you jump over openings, recaps or credits. - Automatic subtitle search on OpenSubtitles using the file’s hash for exact matches. - Portable ZIP versions are available; just extract and run, settings are stored beside the executable. - Automatic in‑app updates when a new release is published. - Customisable hotkeys and a settings panel for subtitle appearance, video output and more.",
+            "The player is open‑source under the GPL‑3.0 license, meaning anyone can use, study, modify and redistribute the software as long as they keep the same license for derived works."
+        ],
+        "icon": {
+            "text": "F",
+            "color": "#BE123C"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/risenxxx/frame-player#license",
+        "official_website": "https://frameplayer.app",
+        "download_page": "https://github.com/risenxxx/frame-player/releases/tag/v1.46.1",
+        "repository_url": "https://github.com/risenxxx/frame-player",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.46.1",
+        "release_date": "2026-11-15",
+        "release_url": "https://github.com/risenxxx/frame-player/releases/tag/v1.46.1",
+        "primary_download": {
+            "url": "https://github.com/risenxxx/frame-player/releases/download/v1.46.1/FramePlayer_1.46.1_x64-setup.exe",
+            "filename": "FramePlayer_1.46.1_x64-setup.exe",
+            "size": 92300354,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "FramePlayer_1.46.1_arm64.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "ARM64",
+                "url": "https://github.com/risenxxx/frame-player/releases/download/v1.46.1/FramePlayer_1.46.1_arm64.zip",
+                "size": 94814944,
+                "sha256": "8ba6edcef6813b9cb41dc49b45c718d419bb00f1c6821b5eedb9a45771d688e1"
+            },
+            {
+                "label": "FramePlayer_1.46.1_x64.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "x64",
+                "url": "https://github.com/risenxxx/frame-player/releases/download/v1.46.1/FramePlayer_1.46.1_x64.zip",
+                "size": 123853504,
+                "sha256": "b93df54eb4585f6a34c3f20f8db331f2ed5310a16268625171b3fe64af0eacfe"
+            },
+            {
+                "label": "FramePlayer_1.46.1_arm64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/risenxxx/frame-player/releases/download/v1.46.1/FramePlayer_1.46.1_arm64-setup.exe",
+                "size": 66942778,
+                "sha256": "e1935b766adf1696316dd66d91b8677bf0b229016722deff47730f019b28e2b0"
+            },
+            {
+                "label": "FramePlayer_1.46.1_x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/risenxxx/frame-player/releases/download/v1.46.1/FramePlayer_1.46.1_x64-setup.exe",
+                "size": 92300354,
+                "sha256": "b45a9cc5379a195d592f889061857381db93361215e1935fb944dfdc498b6c00"
+            },
+            {
+                "label": "FramePlayer_1.46.1_arm64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/risenxxx/frame-player/releases/download/v1.46.1/FramePlayer_1.46.1_arm64-portable.zip",
+                "size": 94813783,
+                "sha256": "07b6f2337c31df22a6df046a2bd5bc27b17002f89dfcf98d53962485d532b041"
+            },
+            {
+                "label": "FramePlayer_1.46.1_x64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/risenxxx/frame-player/releases/download/v1.46.1/FramePlayer_1.46.1_x64-portable.zip",
+                "size": 123852339,
+                "sha256": "d44e068deb68323f261bf95bd602385e2760581648afa7408454841e36b8ee5f"
+            }
+        ],
+        "features": [
+            "Play local files, URLs and torrent magnet links in one window",
+            "Stream torrents while downloading, with piece‑priority around the playhead",
+            "Watch‑together mode with a six‑character code for synchronized playback",
+            "Cast to Chromecast, DLNA and AirPlay without repacking the file",
+            "Chapter list and skip‑intro button for openings, recaps and credits",
+            "Automatic subtitle search by file hash on OpenSubtitles",
+            "Portable ZIP version that runs without installation",
+            "Automatic update check and in‑app update button",
+            "Customisable hotkeys and subtitle appearance settings"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the official GitHub release page and download the installer (x64 or ARM64) or the portable ZIP for your system.",
+            "If you downloaded the installer, run the .exe file and follow the on‑screen prompts.",
+            "If you downloaded the portable ZIP, extract its contents to any folder.",
+            "Launch FramePlayer.exe from the installation folder or the extracted folder.",
+            "The application will start and you can begin adding videos or torrents."
+        ],
+        "related_software": [],
+        "seo_title": "Frame Player Free Download for Windows",
+        "meta_description": "Download Frame Player free for Windows. A video player for Windows that plays local files, web links, and torrent streams, with support for casting, subtitle s…",
+        "canonical_url": "https://codehimblog.github.io/software/frame-player/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "hardwarevisualizer",
         "name": "HardwareVisualizer",
         "slug": "hardwarevisualizer",
@@ -3528,6 +3672,110 @@
         "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
+    },
+    {
+        "id": "nagi",
+        "name": "Nagi",
+        "slug": "nagi",
+        "summary": "A fast, private music player for your local library on Windows, with Navidrome and Jellyfin streaming",
+        "description": [
+            "Nagi is a lightweight music player that organizes the music files on your computer into a searchable library. It can also stream music from your own Navidrome, OpenSubsonic, or Jellyfin server, keeping everything in one place while staying offline unless you enable online services.",
+            "When you first launch Nagi it asks you to select the folders that contain your music. It scans those folders and builds a library that updates automatically when files change. The player supports many audio formats including MP3, FLAC, AAC, OGG, WAV, AIFF, APE, DSD, M4A, WMA and more. You can create and import playlists, use smart playlists, and mark tracks as favorites without altering the original files. Nagi also offers a range of playback features such as an Up Next queue, listening mixes, sleep timer, equalizer, ReplayGain normalization and speed control. Integration options let you connect to Last.fm, ListenBrainz and Discord Rich Presence. Settings let you customize appearance, audio output, data handling and server connections. All data is stored locally unless you add a Navidrome or Jellyfin server, in which case favorites, play counts and playlists sync with the server."
+        ],
+        "icon": {
+            "text": "N",
+            "color": "#1D4ED8"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/Anthonyy232/Nagi#license",
+        "official_website": "https://anthonyy232.github.io/Nagi/",
+        "download_page": "https://github.com/Anthonyy232/Nagi/releases/tag/2.7.0",
+        "repository_url": "https://github.com/Anthonyy232/Nagi",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Anthonyy232/Nagi#readme",
+                "note": "Stated in the project README: “Windows 10 (1809 or later) or Windows 11, on x64 or ARM64.”"
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Anthonyy232/Nagi#readme",
+                "note": "Stated in the project README: “Windows 10 (1809 or later) or Windows 11, on x64 or ARM64.”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.7.0",
+        "release_date": "2026-11-04",
+        "release_url": "https://github.com/Anthonyy232/Nagi/releases/tag/2.7.0",
+        "primary_download": {
+            "url": "https://github.com/Anthonyy232/Nagi/releases/download/2.7.0/Nagi.msixbundle",
+            "filename": "Nagi.msixbundle",
+            "size": 191474122,
+            "architecture": null,
+            "format": "MSIX / AppX package"
+        },
+        "download_assets": [
+            {
+                "label": "Nagi.msixbundle",
+                "format": "MSIX / AppX package",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/Anthonyy232/Nagi/releases/download/2.7.0/Nagi.msixbundle",
+                "size": 191474122,
+                "sha256": "0eaf5ba5ec209cd57152a3d616e8b524dff3428518b2bd8f5705fe64ff209005"
+            }
+        ],
+        "features": [
+            "Folder‑based library that rescans automatically when files change",
+            "Streams from Navidrome, OpenSubsonic or Jellyfin servers alongside local files",
+            "Supports a wide range of audio formats (MP3, FLAC, AAC, OGG, WAV, AIFF, APE, DSD, M4A, WMA, etc.)",
+            "Create, import and export playlists, including smart playlists",
+            "Favorites and play counts sync with connected music servers",
+            "Up Next pane with reordering, shuffle and repeat",
+            "Listening mixes for variety, rediscovery and unheard tracks",
+            "Sleep timer and speed control without pitch change",
+            "10‑band equalizer with preamp and ReplayGain normalization",
+            "Integration with Last.fm, ListenBrainz and Discord Rich Presence"
+        ],
+        "requirements": [
+            "Windows 10 (1809 or later) or Windows 11, on x64 or ARM64"
+        ],
+        "installation_instructions": [
+            "Go to the GitHub release page and download the Nagi.msixbundle file.",
+            "Double‑click the downloaded file to start the MSIX installer.",
+            "Follow the on‑screen prompts to install Nagi.",
+            "After installation, launch Nagi from the Start menu.",
+            "On first run, point Nagi to the folders that contain your music."
+        ],
+        "related_software": [],
+        "seo_title": "Nagi Free Download for Windows 11 and 10",
+        "meta_description": "Download Nagi free for Windows 11 and 10. A fast, private music player for your local library on Windows, with Navidrome and Jellyfin streaming",
+        "canonical_url": "https://codehimblog.github.io/software/nagi/",
+        "date_added": "2026-11-16",
+        "last_verified_at": "2026-11-16",
+        "verification_status": "verified"
     },
     {
         "id": "notepad-plus-plus",
