@@ -403,6 +403,133 @@
         "verification_status": "partial"
     },
     {
+        "id": "appgroup",
+        "name": "AppGroup",
+        "slug": "appgroup",
+        "summary": "App Group lets you organize, customize, and launch your apps.",
+        "description": [
+            "AppGroup is a free, open‑source taskbar organizer and launcher for Windows. It lets you create groups of applications, pin a single shortcut to the taskbar, and open a popup that shows the apps in that group. The popup follows the Windows design language and works in both light and dark modes.",
+            "AppGroup helps keep a crowded taskbar tidy by allowing you to collect related programs into named groups. You can create a work group, a gaming group, a creative tools group, or any arrangement that fits your workflow. Each group appears as a single shortcut that you can pin to the taskbar or place on the desktop. Clicking the shortcut opens a popup that displays the apps in the group, and you can launch any individual app or use the optional \"Launch All\" button to start every app in the group at once.",
+            "The program is built with WinUI 3 and includes its own .NET 8 runtime in the bundled installers, so no additional frameworks are required. It works with the standard Windows taskbar and does not replace it. Groups can be edited by adding apps via a plus button, dragging from the Start menu, or dragging files onto the group editor. Settings let you toggle features such as alphabetical sorting and where group data is stored in the portable version.",
+            "AppGroup is released under the MIT license, meaning you can use, modify, and share it freely."
+        ],
+        "icon": {
+            "text": "A",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/iandiv/AppGroup#license",
+        "official_website": "https://iandiv.github.io/AppGroup/",
+        "download_page": "https://github.com/iandiv/AppGroup/releases/tag/v1.6.0",
+        "repository_url": "https://github.com/iandiv/AppGroup",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/iandiv/AppGroup#readme",
+                "note": "Stated in the project README: “Platform: Windows 10 | 11”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.6.0",
+        "release_date": "2026-10-26",
+        "release_url": "https://github.com/iandiv/AppGroup/releases/tag/v1.6.0",
+        "primary_download": {
+            "url": "https://github.com/iandiv/AppGroup/releases/download/v1.6.0/AppGroup_v1.6.0.win-x64-Bundled-Setup.exe",
+            "filename": "AppGroup_v1.6.0.win-x64-Bundled-Setup.exe",
+            "size": 45873602,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "AppGroup_v1.6.0.win-x64-Bundled-Setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/iandiv/AppGroup/releases/download/v1.6.0/AppGroup_v1.6.0.win-x64-Bundled-Setup.exe",
+                "size": 45873602,
+                "sha256": "a6cb1a9e88be7350702eeab3c77ae473827e5216aec817611bc0b11387a35845"
+            },
+            {
+                "label": "AppGroup_v1.6.0.win-x64-Setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/iandiv/AppGroup/releases/download/v1.6.0/AppGroup_v1.6.0.win-x64-Setup.exe",
+                "size": 22116507,
+                "sha256": "3388223e02bf595ac417dba011ccd4ab555b5bbcb058bc3f506e0a56e757a5a4"
+            },
+            {
+                "label": "AppGroup_v1.6.0.win-x64-Bundled.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/iandiv/AppGroup/releases/download/v1.6.0/AppGroup_v1.6.0.win-x64-Bundled.zip",
+                "size": 66831625,
+                "sha256": "9a98a8c7101eff049f177e75ff7459421fd7b8458fab5ea4524441c53e0e8685"
+            },
+            {
+                "label": "AppGroup_v1.6.0.win-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/iandiv/AppGroup/releases/download/v1.6.0/AppGroup_v1.6.0.win-x64.zip",
+                "size": 32660565,
+                "sha256": "5b8272f6deed5b14b52192e090a1cd8c244f22b5e4b7849b3ada39582c555bf9"
+            }
+        ],
+        "features": [
+            "Create named groups of applications",
+            "Pin each group as a single taskbar shortcut",
+            "Popup UI matches Windows design, supports light and dark mode",
+            "Launch a single app or all apps in a group at once",
+            "Drag apps from Start menu or file explorer into groups",
+            "Portable version available without installation",
+            "Customizable settings including \"Launch All\" toggle and alphabetical sorting",
+            "Stores groups in AppData by default, with optional portable directory"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Download the installer (or portable ZIP) from the official GitHub release page.",
+            "Run the EXE installer, which includes the required .NET runtime, or extract the portable ZIP to a folder.",
+            "After installation, launch AppGroup from the Start menu or the extracted folder.",
+            "Create a new group, add your apps, and drag the group shortcut onto the taskbar.",
+            "Click the taskbar icon to open the popup and launch apps."
+        ],
+        "related_software": [],
+        "seo_title": "AppGroup Free Download for Windows 10",
+        "meta_description": "Download AppGroup free for Windows 10. App Group lets you organize, customize, and launch your apps.",
+        "canonical_url": "https://codehimblog.github.io/software/appgroup/",
+        "date_added": "2026-11-15",
+        "last_verified_at": "2026-11-16",
+        "verification_status": "verified"
+    },
+    {
         "id": "astraeus",
         "name": "Astraeus",
         "slug": "astraeus",
@@ -2438,6 +2565,105 @@
         "verification_status": "verified"
     },
     {
+        "id": "mcp-windows",
+        "name": "Mcp Windows",
+        "slug": "mcp-windows",
+        "summary": "A server that lets AI agents control Windows applications through UI Automation, enabling clicks, typing, and reading of controls without relying on screen coordinates.",
+        "description": [
+            "Mcp Windows provides a way for AI assistants to interact directly with Windows programs. It uses the Windows UI Automation API to locate buttons, fields, and other controls by name, so tasks like filling forms, reading tables, or saving files can be performed programmatically. The server can be used via the MCP protocol or a command‑line interface, and it works with popular AI tools such as GitHub Copilot, Claude, and Cursor.",
+            "The software runs as a standalone server that exposes automation capabilities to AI agents. It discovers UI elements, performs actions like clicking or typing, and can return the state of controls. Screenshots, mouse, and keyboard actions are also supported for cases where UI information is not available. The server includes its own .NET runtime, so no separate installation is required. It is distributed as portable ZIP files for x64 and ARM64 architectures. The project is open source under the MIT license."
+        ],
+        "icon": {
+            "text": "M",
+            "color": "#7C3AED"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/sbroenne/mcp-windows#license",
+        "official_website": "https://windowsmcpserver.dev/",
+        "download_page": "https://github.com/sbroenne/mcp-windows/releases/tag/v1.3.28",
+        "repository_url": "https://github.com/sbroenne/mcp-windows",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.3.28",
+        "release_date": "2026-10-09",
+        "release_url": "https://github.com/sbroenne/mcp-windows/releases/tag/v1.3.28",
+        "primary_download": null,
+        "download_assets": [
+            {
+                "label": "windows-mcp-server-1.3.28-win-arm64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/sbroenne/mcp-windows/releases/download/v1.3.28/windows-mcp-server-1.3.28-win-arm64.zip",
+                "size": 52269464,
+                "sha256": "6d827dbb41bd59045088345a007a33cc2e2749d48119506bb0ee9d5dbed06a5a"
+            },
+            {
+                "label": "windows-mcp-server-1.3.28-win-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/sbroenne/mcp-windows/releases/download/v1.3.28/windows-mcp-server-1.3.28-win-x64.zip",
+                "size": 54186365,
+                "sha256": "9ca69685222d3c4934680218b4a2b3b7ae5bd0c8d2ce8bc2220925f4bd924fe4"
+            }
+        ],
+        "features": [
+            "Automates Windows UI elements by name using UI Automation API",
+            "Performs clicks, typing, and selection on identified controls",
+            "Reads text, tables, and control states directly",
+            "Supports screenshots, mouse, and keyboard actions when needed",
+            "Provides both MCP protocol and a command‑line interface",
+            "Works with major AI assistants like Copilot, Claude, and Cursor",
+            "Portable ZIP packages for x64 and ARM64 CPUs",
+            "Includes its own .NET runtime, no extra installation required"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the Releases page on GitHub and download the ZIP file that matches your CPU (x64 or ARM64).",
+            "Extract the ZIP to a folder of your choice.",
+            "Run the server executable (WindowsMcpServer.exe) to start the service.",
+            "Configure your AI client or CLI to connect to the server as described in the documentation.",
+            "Use the AI assistant or wincli commands to automate Windows applications."
+        ],
+        "related_software": [],
+        "seo_title": "Mcp Windows Free Download for Windows",
+        "meta_description": "Download Mcp Windows free for Windows. A server that lets AI agents control Windows applications through UI Automation, enabling clicks, typing, and reading of…",
+        "canonical_url": "https://codehimblog.github.io/software/mcp-windows/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "mdns-browser",
         "name": "mDNS-Browser",
         "slug": "mdns-browser",
@@ -2555,6 +2781,122 @@
         "seo_title": "mDNS-Browser Free Download for Windows",
         "meta_description": "Download mDNS-Browser free for Windows. A graphical tool for browsing services advertised via mDNS on the local network.",
         "canonical_url": "https://codehimblog.github.io/software/mdns-browser/",
+        "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "metrolist",
+        "name": "Metrolist",
+        "slug": "metrolist",
+        "summary": "Metrolist is a free, open‑source YouTube Music client that runs on Windows, letting you stream music and videos without ads.",
+        "description": [
+            "Metrolist lets you listen to YouTube Music on your computer. It works with or without signing into a YouTube account and offers a clean Material Design interface. The program is aimed at users who want a desktop music player for YouTube Music and related features such as playlists, lyrics, and casting.",
+            "Metrolist is an open‑source application released under the GPL‑3.0 license. It provides YouTube Music playback, video playback, and a range of extra features like scrobbling to Last.fm and ListenBrainz, Discord Rich Presence, and music recognition. The software is available as an installer (.exe) for x64 systems and as portable ZIP files for various architectures. It is free to use and modify."
+        ],
+        "icon": {
+            "text": "M",
+            "color": "#15803D"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/MetrolistGroup/Metrolist#license",
+        "official_website": "https://metrolist.cc",
+        "download_page": "https://github.com/MetrolistGroup/Metrolist/releases/tag/v14.0.0",
+        "repository_url": "https://github.com/MetrolistGroup/Metrolist",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "14.0.0",
+        "release_date": "2026-11-14",
+        "release_url": "https://github.com/MetrolistGroup/Metrolist/releases/tag/v14.0.0",
+        "primary_download": {
+            "url": "https://github.com/MetrolistGroup/Metrolist/releases/download/v14.0.0/metrolist-installer-windows-x64-14.0.0.exe",
+            "filename": "metrolist-installer-windows-x64-14.0.0.exe",
+            "size": 10581504,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "metrolist-installer-windows-x64-14.0.0.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/MetrolistGroup/Metrolist/releases/download/v14.0.0/metrolist-installer-windows-x64-14.0.0.exe",
+                "size": 10581504,
+                "sha256": "4cf66e827f6513dff8f25a3affa7f09998a346a84c74ad10b615fcd7a877a7ca"
+            },
+            {
+                "label": "metrolist-desktop-windows-arm64-14.0.0.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/MetrolistGroup/Metrolist/releases/download/v14.0.0/metrolist-desktop-windows-arm64-14.0.0.zip",
+                "size": 213014340,
+                "sha256": "917c68e7d951c50a48c971e3281717e691cf5d777802f68832bff58f652c4d7f"
+            },
+            {
+                "label": "Metrolist-Desktop-windows.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/MetrolistGroup/Metrolist/releases/download/v14.0.0/Metrolist-Desktop-windows.zip",
+                "size": 196406623,
+                "sha256": "6bccef6b7a18f726bd51c6404b08a748a29523fb203981a9a4803b02f26113c1"
+            }
+        ],
+        "features": [
+            "Play YouTube Music tracks and videos",
+            "Works with or without a YouTube account",
+            "No advertisements",
+            "Scrobble listening history to Last.fm and ListenBrainz",
+            "Discord Rich Presence integration",
+            "Cast audio to Google Cast, F‑Cast, SONOS and DLNA devices",
+            "Import playlists from many other music services",
+            "Music recognition via Shazam",
+            "Lyrics display with translation and romanisation",
+            "Customisable player themes and fonts"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the GitHub releases page and download the Windows installer (.exe) or a portable ZIP.",
+            "If you downloaded the installer, run the .exe file and follow the prompts.",
+            "If you downloaded a ZIP, extract its contents to a folder.",
+            "Launch Metrolist by double‑clicking the Metrolist executable.",
+            "Sign in to YouTube Music if you want a personalised experience, or use it without signing in."
+        ],
+        "related_software": [],
+        "seo_title": "Metrolist Free Download for Windows",
+        "meta_description": "Download Metrolist free for Windows. Metrolist is a free, open‑source YouTube Music client that runs on Windows, letting you stream music and videos without ad…",
+        "canonical_url": "https://codehimblog.github.io/software/metrolist/",
         "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"

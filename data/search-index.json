@@ -38,6 +38,16 @@
         "os": []
     },
     {
+        "slug": "appgroup",
+        "name": "AppGroup",
+        "summary": "App Group lets you organize, customize, and launch your apps.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-10"
+        ]
+    },
+    {
         "slug": "astraeus",
         "name": "Astraeus",
         "summary": "A native Windows dashboard that slides out from the edge of the screen, providing quick access to media, system controls and widgets.",
@@ -190,10 +200,26 @@
         ]
     },
     {
+        "slug": "mcp-windows",
+        "name": "Mcp Windows",
+        "summary": "A server that lets AI agents control Windows applications through UI Automation, enabling clicks, typing, and reading of controls without relying on screen coordinates.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": []
+    },
+    {
         "slug": "mdns-browser",
         "name": "mDNS-Browser",
         "summary": "A graphical tool for browsing services advertised via mDNS on the local network.",
         "category": "system-utilities",
+        "keywords": [],
+        "os": []
+    },
+    {
+        "slug": "metrolist",
+        "name": "Metrolist",
+        "summary": "Metrolist is a free, open‑source YouTube Music client that runs on Windows, letting you stream music and videos without ads.",
+        "category": "audio-video",
         "keywords": [],
         "os": []
     },
