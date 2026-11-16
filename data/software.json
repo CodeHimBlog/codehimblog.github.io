@@ -1176,6 +1176,121 @@
         "verification_status": "partial"
     },
     {
+        "id": "ciyue",
+        "name": "Ciyue",
+        "slug": "ciyue",
+        "summary": "A cross‑platform dictionary app that can read MDX/MDD, StarDict and ZIM dictionary files.",
+        "description": [
+            "Ciyue lets you open and search many dictionary formats on Windows. It can load several dictionaries at once, offers full‑text search, and includes extra tools such as AI‑assisted explanations and flashcards.",
+            "Ciyue is designed for anyone who needs to look up words from various dictionary collections. It supports popular dictionary file types like MDX/MDD, StarDict and ZIM, allowing you to combine multiple sources in a single search. The interface follows Material You design and can stay on top of other windows for quick lookups. Additional features include AI‑powered translations, chat, spaced‑repetition flashcards, pronunciation playback, and cloud sync of your settings and word lists via WebDAV, S3 or SFTP. The program is open source under the MIT license and is free to use."
+        ],
+        "icon": {
+            "text": "C",
+            "color": "#334155"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/mumu-lhl/Ciyue#license",
+        "official_website": "https://mumulhl.eu.org/Ciyue/",
+        "download_page": "https://github.com/mumu-lhl/Ciyue/releases/tag/v2.2.0",
+        "repository_url": "https://github.com/mumu-lhl/Ciyue",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.2.0",
+        "release_date": "2026-11-11",
+        "release_url": "https://github.com/mumu-lhl/Ciyue/releases/tag/v2.2.0",
+        "primary_download": {
+            "url": "https://github.com/mumu-lhl/Ciyue/releases/download/v2.2.0/ciyue-installer.exe",
+            "filename": "ciyue-installer.exe",
+            "size": 19705695,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "ciyue-installer.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/mumu-lhl/Ciyue/releases/download/v2.2.0/ciyue-installer.exe",
+                "size": 19705695,
+                "sha256": "765c51fef6ffa4cb109e5c494c58e51aa9e18084ce9f6146974e1d9e400d21e4"
+            },
+            {
+                "label": "Ciyue-2.2.0-windows.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/mumu-lhl/Ciyue/releases/download/v2.2.0/Ciyue-2.2.0-windows.zip",
+                "size": 26422542,
+                "sha256": "2936bce1bac6e13c4e6b8c392af2a14db36c774d90ab4e30a8a89ea9dbea7aee"
+            },
+            {
+                "label": "ciyue-windows.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/mumu-lhl/Ciyue/releases/download/v2.2.0/ciyue-windows.zip",
+                "size": 26532524,
+                "sha256": "8841b94b9f871974a0920cd560548ccc60ddb880c64811609cc070d0f0e73cf6"
+            }
+        ],
+        "features": [
+            "Open MDX, MDD, StarDict and ZIM dictionaries",
+            "Search across several dictionaries at once",
+            "Full‑text search inside dictionary entries",
+            "AI translation and word explanation support",
+            "Flashcard system with spaced‑repetition scheduling",
+            "Pronunciation playback using online sources or TTS",
+            "Cloud sync of settings, word book and history",
+            "Floating window for instant look‑up",
+            "Material You visual style"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the GitHub release page and download the installer (ciyue-installer.exe) or the portable ZIP.",
+            "If you downloaded the installer, run the .exe and follow the prompts.",
+            "If you downloaded the ZIP, extract it to a folder.",
+            "Launch Ciyue by double‑clicking the Ciyue.exe file or the shortcut created by the installer.",
+            "Add your dictionary files through the program’s settings menu."
+        ],
+        "related_software": [],
+        "seo_title": "Ciyue Free Download for Windows",
+        "meta_description": "Download Ciyue free for Windows. A cross‑platform dictionary app that can read MDX/MDD, StarDict and ZIM dictionary files.",
+        "canonical_url": "https://codehimblog.github.io/software/ciyue/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "desktop-bubble-chat",
         "name": "Desktop Bubble Chat",
         "slug": "desktop-bubble-chat",
@@ -3887,6 +4002,113 @@
         "meta_description": "Download mDNS-Browser free for Windows. A graphical tool for browsing services advertised via mDNS on the local network.",
         "canonical_url": "https://codehimblog.github.io/software/mdns-browser/",
         "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "melodia",
+        "name": "Melodia",
+        "slug": "melodia",
+        "summary": "A fast, lightweight cross‑platform desktop music player built with Rust and Slint.",
+        "description": [
+            "Melodia is a desktop music player that runs on Windows. It is designed to be quick to start, use little memory, and provide a clean interface for listening to local files, internet radio, and online lyrics.",
+            "Melodia plays audio files with bit‑perfect output and supports gapless playback, cross‑fade, and a 10‑band equalizer. It can read ReplayGain tags and even calculate ReplayGain for files without tags. The player shows timed lyrics from .lrc files, embedded tags, or an optional online lookup, and can display them in many scripts. Users can browse internet radio stations from a built‑in directory or add their own stream URLs. The library scans folders in parallel, watches for changes, and offers full‑text search, smart playlists, and tag editing that writes changes back to the files. A responsive mini‑player appears when the window is shrunk. Integration includes scrobbling to Last.fm and ListenBrainz, Discord Rich Presence, and media control support in the operating system. The UI is provided by Slint, keeping the memory footprint low, and the program is available in sixteen languages without needing a restart."
+        ],
+        "icon": {
+            "text": "M",
+            "color": "#334155"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU Affero General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/KenanSalar/Melodia#license",
+        "official_website": null,
+        "download_page": "https://github.com/KenanSalar/Melodia/releases/tag/v0.23.0",
+        "repository_url": "https://github.com/KenanSalar/Melodia",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.23.0",
+        "release_date": "2026-11-09",
+        "release_url": "https://github.com/KenanSalar/Melodia/releases/tag/v0.23.0",
+        "primary_download": {
+            "url": "https://github.com/KenanSalar/Melodia/releases/download/v0.23.0/melodia-v0.23.0-x86_64.msi",
+            "filename": "melodia-v0.23.0-x86_64.msi",
+            "size": 18878464,
+            "architecture": "x64",
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "melodia-v0.23.0-aarch64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/KenanSalar/Melodia/releases/download/v0.23.0/melodia-v0.23.0-aarch64.msi",
+                "size": 18145280,
+                "sha256": "5bf77f0e9043b432e2225df4b64b5edb19c0b261b0daba4cac72e2e80cc01c2b"
+            },
+            {
+                "label": "melodia-v0.23.0-x86_64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/KenanSalar/Melodia/releases/download/v0.23.0/melodia-v0.23.0-x86_64.msi",
+                "size": 18878464,
+                "sha256": "c036b48f9f2e9a2bd2b61997a41f61ab2f3e9c4ddc4837e2ec2cd179a9a93468"
+            }
+        ],
+        "features": [
+            "Bit‑perfect audio output",
+            "Gapless playback with cross‑fade and 10‑band equalizer",
+            "ReplayGain support and automatic calculation",
+            "Timed lyrics from .lrc files, tags, or online lookup",
+            "Internet radio directory and custom stream URLs",
+            "Parallel library scanning, live folder watching, full‑text search",
+            "Smart playlists and in‑app tag editing",
+            "Responsive mini‑player UI",
+            "Scrobbling to Last.fm and ListenBrainz, Discord Rich Presence, OS media controls",
+            "Sixteen language options without restart"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page on GitHub.",
+            "Download the MSI installer that matches your CPU (x64 or ARM64).",
+            "Run the MSI file and follow the installation wizard.",
+            "After installation, launch Melodia from the Start menu or desktop shortcut.",
+            "Add your music folders in Settings to start using the player."
+        ],
+        "related_software": [],
+        "seo_title": "Melodia Free Download for Windows",
+        "meta_description": "Download Melodia free for Windows. A fast, lightweight cross‑platform desktop music player built with Rust and Slint.",
+        "canonical_url": "https://codehimblog.github.io/software/melodia/",
+        "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
     },
