@@ -2427,6 +2427,111 @@
         "verification_status": "partial"
     },
     {
+        "id": "fly-island",
+        "name": "Fly Island",
+        "slug": "fly-island",
+        "summary": "A lightweight Dynamic Island‑style overlay for Windows that shows instant messages, AI agent status, music controls, clipboard history, file shelf, quick translation and to‑do lists in a collapsible floating panel.",
+        "description": [
+            "Fly Island puts frequently used information and tools on a small always‑on‑top island at the top of the screen. It expands when you need it and collapses back to a compact bar, reducing the need to switch between multiple windows.",
+            "Fly Island is designed for people who spend a lot of time juggling chat apps, email, AI assistants, music, and short notes. It displays new messages from WeChat, QQ and supported IMAP email accounts as cards on the island. AI agents such as Claude Code, Codex and DeepSeek Harness show their session status, quota rings and allow quick approval or denial of actions. The music widget integrates with Windows media sessions, shows cover art, progress and synchronized lyrics, and can manage multiple players. A file shelf lets you drag files onto the island for temporary storage without copying them. Clipboard history records text and images, searchable and sortable, with options to favorite items. A global shortcut opens a translation window that works with several AI translation services. The to‑do list supports tasks, notes, calendar view and optional countdown timers. Appearance can be customized with classic or glass styles, size, opacity, colors and preset themes. Settings are saved locally and the app updates automatically in the background."
+        ],
+        "icon": {
+            "text": "F",
+            "color": "#0F766E"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/flyl1u/fly-island#license",
+        "official_website": "https://island.flyliu.org",
+        "download_page": "https://github.com/flyl1u/fly-island/releases/tag/v3.2.4",
+        "repository_url": "https://github.com/flyl1u/fly-island",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "3.2.4",
+        "release_date": "2026-11-14",
+        "release_url": "https://github.com/flyl1u/fly-island/releases/tag/v3.2.4",
+        "primary_download": {
+            "url": "https://github.com/flyl1u/fly-island/releases/download/v3.2.4/fly-island_3.2.4_x64-setup.exe",
+            "filename": "fly-island_3.2.4_x64-setup.exe",
+            "size": 9866663,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "fly-island_3.2.4_x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/flyl1u/fly-island/releases/download/v3.2.4/fly-island_3.2.4_x64-setup.exe",
+                "size": 9866663,
+                "sha256": "12d9b46dfe15729bad33020fd39bc724b3a71d92690ba9f2d18c79061ed4a6b7"
+            },
+            {
+                "label": "fly-island_3.2.4_x64_en-US.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/flyl1u/fly-island/releases/download/v3.2.4/fly-island_3.2.4_x64_en-US.msi",
+                "size": 12816384,
+                "sha256": "4679947b075aff3e87f60b6406f8f2a9fc406dc3940e494ee1f8b5a9de3cef35"
+            }
+        ],
+        "features": [
+            "Shows WeChat, QQ and email notifications directly on the island",
+            "Displays AI agent sessions, quota rings and lets you approve or reject actions",
+            "Music control with cover art, progress bar and synchronized lyrics for multiple players",
+            "File shelf for temporary drag‑and‑drop storage",
+            "Clipboard history for text and images with search and favorites",
+            "Global quick‑translate shortcut supporting several AI translation services",
+            "To‑do list with tasks, notes, calendar view and optional countdown timers",
+            "Customizable appearance: classic or glass, size, opacity, colors and presets",
+            "Automatic background updates with fallback mirrors"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page on GitHub and download the EXE installer or MSI package for x64.",
+            "Run the downloaded installer and follow the on‑screen prompts.",
+            "After installation, launch Fly Island from the Start menu or desktop shortcut.",
+            "The island will appear as a thin bar at the top of the screen; click it to expand and access its features."
+        ],
+        "related_software": [],
+        "seo_title": "Fly Island Free Download for Windows",
+        "meta_description": "Download Fly Island free for Windows. A lightweight Dynamic Island‑style overlay for Windows that shows instant messages, AI agent status, music controls, clip…",
+        "canonical_url": "https://codehimblog.github.io/software/fly-island/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "formatix",
         "name": "Formatix Image Converter",
         "slug": "formatix",
