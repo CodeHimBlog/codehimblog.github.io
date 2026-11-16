@@ -1351,6 +1351,121 @@
         "verification_status": "verified"
     },
     {
+        "id": "ferrumpix",
+        "name": "FerrumPix",
+        "slug": "ferrumpix",
+        "summary": "FerrumPix is a desktop photo manager and image editor that lets you organize, view, and edit photos on your computer.",
+        "description": [
+            "FerrumPix combines photo organization and editing in one native Windows program. It lets you browse folders, rate and tag images, view them fullscreen, and perform a range of edits without leaving the application.",
+            "FerrumPix is a free and open‑source desktop application for managing and editing photos. It works with local folders and can also connect to self‑hosted Immich or Nextcloud servers for browsing, uploading, and syncing metadata. The program supports many image formats, including RAW, JPEG, PNG, TIFF, and read‑only formats like HEIC and AVIF. Editing features include cropping, resizing, rotation, exposure and colour adjustments, curves, filters, masks, retouching, text, shapes, layers, and non‑destructive RAW development with lens correction for over 1500 lenses. Batch operations let you rename, convert, resize, watermark, apply filters, and edit metadata on multiple files at once. The interface offers fast thumbnail previews, rating, favourites, keywords, saved searches, and map view for geotagged photos. All changes are saved only when you choose to, preserving original files unless you explicitly export them. The software is built with Avalonia UI and .NET, and it runs on Windows in both installer and portable forms."
+        ],
+        "icon": {
+            "text": "F",
+            "color": "#2563EB"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/Bitpainter75/FerrumPix#license",
+        "official_website": "https://ferrumpix.app",
+        "download_page": "https://github.com/Bitpainter75/FerrumPix/releases/tag/latest",
+        "repository_url": "https://github.com/Bitpainter75/FerrumPix",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": null,
+        "release_date": null,
+        "release_url": "https://github.com/Bitpainter75/FerrumPix/releases/tag/latest",
+        "primary_download": {
+            "url": "https://github.com/Bitpainter75/FerrumPix/releases/download/latest/FerrumPix-0.9.84-2-win-x64-Setup.exe",
+            "filename": "FerrumPix-0.9.84-2-win-x64-Setup.exe",
+            "size": 126301264,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "FerrumPix-0.9.84-2-win-x64-Setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/Bitpainter75/FerrumPix/releases/download/latest/FerrumPix-0.9.84-2-win-x64-Setup.exe",
+                "size": 126301264,
+                "sha256": "9f5d11847391bac4d27f0c92c6e87bf66770f39e0a62014c64eb337247def73f"
+            },
+            {
+                "label": "FerrumPix-0.9.84-2-win-arm64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/Bitpainter75/FerrumPix/releases/download/latest/FerrumPix-0.9.84-2-win-arm64.zip",
+                "size": 160875056,
+                "sha256": "60e3352a8692eead564ef7edce69eee916de00b4387cbea87033ad98c055a461"
+            },
+            {
+                "label": "FerrumPix-0.9.84-2-win-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/Bitpainter75/FerrumPix/releases/download/latest/FerrumPix-0.9.84-2-win-x64.zip",
+                "size": 173081194,
+                "sha256": "59b6f099c87bb6faca4e775069f21274da55fb55e2ded902c5eef31c670c818e"
+            }
+        ],
+        "features": [
+            "Browse local photo folders with thumbnails, ratings, favourites, keywords and saved searches.",
+            "View photos and videos fullscreen, compare side by side, and see metadata and histogram.",
+            "Edit images with crop, resize, rotate, exposure, colour, curves, filters, masks, retouching, text, shapes and layers.",
+            "Non‑destructive RAW development with lens correction for over 1500 lenses.",
+            "Batch processing for rename, convert, resize, watermark, filters, metadata and export.",
+            "Support for many formats: JPEG, PNG, WEBP, JPEG XL, TIFF, BMP, GIF, RAW, HEIC/HEIF/AVIF (read‑only) and Photoshop PSD with layers.",
+            "Connect to Immich or Nextcloud servers for browsing, uploading, downloading and metadata sync.",
+            "Map view shows where photos were taken; facial recognition search works locally.",
+            "Portable ZIP version available for use without installation."
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the official GitHub release page.",
+            "Download the Windows installer (EXE) or the portable ZIP for your architecture.",
+            "Run the installer and follow the prompts, or extract the ZIP to a folder.",
+            "Launch FerrumPix from the Start menu or the extracted folder.",
+            "Start importing or browsing your photo folders."
+        ],
+        "related_software": [],
+        "seo_title": "FerrumPix Free Download for Windows",
+        "meta_description": "Download FerrumPix free for Windows. FerrumPix is a desktop photo manager and image editor that lets you organize, view, and edit photos on your computer.",
+        "canonical_url": "https://codehimblog.github.io/software/ferrumpix/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "ffmpeg-gui-editor-windows",
         "name": "FFmpeg GUI Editor Windows",
         "slug": "ffmpeg-gui-editor-windows",
@@ -2808,6 +2923,104 @@
         "date_added": "2026-11-15",
         "last_verified_at": null,
         "verification_status": "partial"
+    },
+    {
+        "id": "lightzone",
+        "name": "LightZone",
+        "slug": "lightzone",
+        "summary": "LightZone is a professional‑level digital darkroom and photo editor that works with RAW files and offers non‑destructive editing tools.",
+        "description": [
+            "LightZone provides a non‑destructive workflow for editing photos. It lets you build a stack of tools that can be rearranged, turned on or off, and removed at any time. The editor works in a 16‑bit linear color space and supports a wide range of RAW formats.",
+            "LightZone is an open‑source photo editing program for Windows, macOS and Linux. It focuses on a tool‑stack approach rather than layers, allowing you to adjust each operation later or apply the same stack to many images. The software includes RAW processing, batch editing, rating, and a variety of style filters. It runs in a 16‑bit linear color space with ProPhoto RGB gamut, giving high‑quality results for professional and hobbyist photographers."
+        ],
+        "icon": {
+            "text": "L",
+            "color": "#334155"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/ktgw0316/LightZone#license",
+        "official_website": null,
+        "download_page": "https://github.com/ktgw0316/LightZone/releases/tag/v5.1.0",
+        "repository_url": "https://github.com/ktgw0316/LightZone",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/ktgw0316/LightZone#readme",
+                "note": "Stated in the project README: “Windows 11 (x64) is supported.”"
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "5.1.0",
+        "release_date": "2026-11-13",
+        "release_url": "https://github.com/ktgw0316/LightZone/releases/tag/v5.1.0",
+        "primary_download": {
+            "url": "https://github.com/ktgw0316/LightZone/releases/download/v5.1.0/LightZone-5.1.0-20261113T142741-windows-64bit.msi",
+            "filename": "LightZone-5.1.0-20261113T142741-windows-64bit.msi",
+            "size": 65647012,
+            "architecture": null,
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "LightZone-5.1.0-20261113T142741-windows-64bit.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/ktgw0316/LightZone/releases/download/v5.1.0/LightZone-5.1.0-20261113T142741-windows-64bit.msi",
+                "size": 65647012,
+                "sha256": "993096e8eda37af5d323f4bf3284bfb71036460e961c8074cd6415c7585a3875"
+            }
+        ],
+        "features": [
+            "Reads RAW files from many camera models and shows metadata",
+            "Non‑destructive tool stack that can be reordered or disabled",
+            "Batch processing to apply the same edits to multiple photos",
+            "Rating system with one to five stars",
+            "Style filters such as Alien Infrared, Skin Glow, and Polarizer",
+            "Tools for relight, sharpen, blur, hue/saturation, color balance, white balance, noise reduction, clone, spot removal, and red‑eye correction",
+            "Crop, rotate, and region editing modes",
+            "Raw tone‑curve modification",
+            "Operates in 16‑bit linear color space with ProPhoto RGB gamut"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Open the release page on GitHub and download the MSI installer for Windows.",
+            "Run the downloaded MSI file and follow the on‑screen prompts to install LightZone.",
+            "After installation, launch LightZone from the Start menu or desktop shortcut.",
+            "(Optional) Open your RAW or image files to begin editing."
+        ],
+        "related_software": [],
+        "seo_title": "LightZone Free Download for Windows 11",
+        "meta_description": "Download LightZone free for Windows 11. LightZone is a professional‑level digital darkroom and photo editor that works with RAW files and offers non‑destructiv…",
+        "canonical_url": "https://codehimblog.github.io/software/lightzone/",
+        "date_added": "2026-11-16",
+        "last_verified_at": "2026-11-16",
+        "verification_status": "verified"
     },
     {
         "id": "luciddesk",
