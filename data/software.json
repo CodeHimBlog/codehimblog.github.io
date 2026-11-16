@@ -5248,6 +5248,106 @@
         "verification_status": "partial"
     },
     {
+        "id": "openfilm",
+        "name": "OpenFilm",
+        "slug": "openfilm",
+        "summary": "An open‑source AI video agent that lets a coding agent generate videos and provides a local editor to modify the results.",
+        "description": [
+            "OpenFilm enables you to ask a coding AI to create a short film, then edit the generated video, audio and visual elements in a browser‑based editor called Studio. It combines code‑driven video generation with a hands‑on editing interface.",
+            "OpenFilm works by having an AI agent write a film as a single HTML file that contains animated web pages, footage, images and sound on tracks styled with CSS. Each shot is defined by a function that can use any web technology such as three.js, WebGL, canvas, SVG, GSAP, video, etc. The Studio editor runs locally in your browser on a Chromium engine, allowing you to move, scale, rotate, recolor, trim, and rearrange any element. You can also add notes, connect external services for voice, music or images, and export the final result as video, GIF, audio stems, subtitles, or project files for other video editors. The desktop app bundles ffmpeg and a headless Chromium, so no additional installation is required beyond the initial download."
+        ],
+        "icon": {
+            "text": "O",
+            "color": "#BE123C"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/openfilm/openfilm#license",
+        "official_website": "https://openfilm.dev",
+        "download_page": "https://github.com/openfilm/openfilm/releases/tag/v0.3.2",
+        "repository_url": "https://github.com/openfilm/openfilm",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.3.2",
+        "release_date": "2026-11-09",
+        "release_url": "https://github.com/openfilm/openfilm/releases/tag/v0.3.2",
+        "primary_download": {
+            "url": "https://github.com/openfilm/openfilm/releases/download/v0.3.2/OpenFilm-Setup-x64.exe",
+            "filename": "OpenFilm-Setup-x64.exe",
+            "size": 313601868,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "OpenFilm-Setup-x64.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/openfilm/openfilm/releases/download/v0.3.2/OpenFilm-Setup-x64.exe",
+                "size": 313601868,
+                "sha256": "5617d03d0a6e13c4616d1890d28f818dd78dc53174e05bfdff0fc153c827e1ba"
+            }
+        ],
+        "features": [
+            "Generate video projects by prompting an AI coding agent",
+            "Single HTML film file that combines animation, audio and video",
+            "Browser‑based Studio editor for full control over layout, timing and styling",
+            "Supports WebGL, three.js, canvas, SVG, CSS, GSAP and more in shots",
+            "Built‑in asset library with free music, sounds, stickers and templates",
+            "Connect external AI services (ElevenLabs, OpenAI, Google, etc.) for voice and music",
+            "Export to MP4, GIF, audio stems, subtitles or project files for professional editors",
+            "Works offline after initial download of Chromium and ffmpeg"
+        ],
+        "requirements": [
+            "Node 22.2 or newer",
+            "ffmpeg installed",
+            "Internet connection for initial download of headless Chromium"
+        ],
+        "installation_instructions": [
+            "Download OpenFilm-Setup-x64.exe from the official GitHub release page.",
+            "Run the installer and follow the prompts.",
+            "After installation, launch OpenFilm Studio from the Start menu or desktop shortcut.",
+            "The first run will download a headless Chromium runtime.",
+            "Use the built‑in chat or command line to ask an AI agent to create a film, then edit it in Studio."
+        ],
+        "related_software": [],
+        "seo_title": "OpenFilm Free Download for Windows",
+        "meta_description": "Download OpenFilm free for Windows. An open‑source AI video agent that lets a coding agent generate videos and provides a local editor to modify the results.",
+        "canonical_url": "https://codehimblog.github.io/software/openfilm/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "photocraft",
         "name": "PhotoCraft",
         "slug": "photocraft",
@@ -6031,6 +6131,192 @@
         "seo_title": "Riff Free Download for Windows",
         "meta_description": "Download Riff free for Windows. A free, open-source desktop music player that streams YouTube Music, YouTube, SoundCloud and plays local audio files without ad…",
         "canonical_url": "https://codehimblog.github.io/software/riff/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "rigby2d",
+        "name": "Rigby2D",
+        "slug": "rigby2d",
+        "summary": "Open‑source 2D skeletal animation editor for creating and exporting animations for games and film.",
+        "description": [
+            "Rigby2D lets you add bones and meshes to 2D artwork, animate it with inverse kinematics, physics, lip‑sync and more, then export the result for use in many game engines. It is aimed at indie developers, animators and hobbyists who need a free tool for skeletal animation.",
+            "The editor runs on Windows and provides a visual interface to rig layered PSD files, create bone hierarchies, attach meshes, and set up animation tracks. You can preview animations, render them to video, and export data in JSON, .skel or engine‑specific formats. Runtime support is built for Godot, Unity, Defold, Cocos Creator, Phaser, PixiJS, JavaScript and native Rust, so the same animation can be used in many pipelines. A built‑in MCP server lets AI assistants interact with the editor. The project is free and open source under the Apache‑2.0 license."
+        ],
+        "icon": {
+            "text": "R",
+            "color": "#7C3AED"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/jaisurya-dev-art/rigby2d#license",
+        "official_website": "https://rigby2d.com",
+        "download_page": "https://github.com/jaisurya-dev-art/rigby2d/releases/tag/v0.5.1",
+        "repository_url": "https://github.com/jaisurya-dev-art/rigby2d",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.5.1",
+        "release_date": "2026-11-11",
+        "release_url": "https://github.com/jaisurya-dev-art/rigby2d/releases/tag/v0.5.1",
+        "primary_download": {
+            "url": "https://github.com/jaisurya-dev-art/rigby2d/releases/download/v0.5.1/Rigby2D_0.5.1_x64-setup.exe",
+            "filename": "Rigby2D_0.5.1_x64-setup.exe",
+            "size": 15461109,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Rigby2D_0.5.1_universal.app.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/jaisurya-dev-art/rigby2d/releases/download/v0.5.1/Rigby2D_0.5.1_universal.app.tar.gz",
+                "size": 35600703,
+                "sha256": "87a10c87a91fadf4fe21b0482417faaadda4f0ade52eeaa04b9e0f3271058d6e"
+            },
+            {
+                "label": "rigby2d-cocos-0.5.1.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/jaisurya-dev-art/rigby2d/releases/download/v0.5.1/rigby2d-cocos-0.5.1.zip",
+                "size": 174315,
+                "sha256": "0a4cb68d5f14e65b0a77f1f33e127175d2164eeb0ce44080b0d2a99425b94405"
+            },
+            {
+                "label": "rigby2d-defold-demo-0.5.1.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/jaisurya-dev-art/rigby2d/releases/download/v0.5.1/rigby2d-defold-demo-0.5.1.zip",
+                "size": 25029978,
+                "sha256": "c5db641307e67256d24dcb87fe053b48fff6daf301beeade7f5737607bde4659"
+            },
+            {
+                "label": "rigby2d-defold.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/jaisurya-dev-art/rigby2d/releases/download/v0.5.1/rigby2d-defold.zip",
+                "size": 15512610,
+                "sha256": "68d8761636304368de7f141892ffb6ed9de3657c58eaa36532981ddc167e93f1"
+            },
+            {
+                "label": "rigby2d-unity-0.5.1.tgz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/jaisurya-dev-art/rigby2d/releases/download/v0.5.1/rigby2d-unity-0.5.1.tgz",
+                "size": 1455650,
+                "sha256": "57ad97dd69a584b635016566ebbd2550f9686f2a7be6237e2e814f87937c0988"
+            },
+            {
+                "label": "Rigby2D_0.5.1_x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/jaisurya-dev-art/rigby2d/releases/download/v0.5.1/Rigby2D_0.5.1_x64-setup.exe",
+                "size": 15461109,
+                "sha256": "ef3df80a28876a6ac487af35207b28f12f8402def25296c976b5125ba8121c25"
+            },
+            {
+                "label": "Rigby2D_0.5.1_x64_en-US.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/jaisurya-dev-art/rigby2d/releases/download/v0.5.1/Rigby2D_0.5.1_x64_en-US.msi",
+                "size": 17469440,
+                "sha256": "84dc52886005364cee627ac472369ee5b11599120b6cec930a0b7dab52b2a8a9"
+            },
+            {
+                "label": "Rigby2D_0.5.1_x64_portable.exe",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/jaisurya-dev-art/rigby2d/releases/download/v0.5.1/Rigby2D_0.5.1_x64_portable.exe",
+                "size": 30186496,
+                "sha256": "5886b2f34502e7fb2b0a2491de456d3da328a1f38939f9876d2faf6dac632760"
+            },
+            {
+                "label": "Rigby2D_x64_portable.exe",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/jaisurya-dev-art/rigby2d/releases/download/v0.5.1/Rigby2D_x64_portable.exe",
+                "size": 30186496,
+                "sha256": "5886b2f34502e7fb2b0a2491de456d3da328a1f38939f9876d2faf6dac632760"
+            },
+            {
+                "label": "rigby2d-godot-addon-0.5.1-windows-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/jaisurya-dev-art/rigby2d/releases/download/v0.5.1/rigby2d-godot-addon-0.5.1-windows-x64.zip",
+                "size": 1229265,
+                "sha256": "6aa2434db9f5a4bd51a0a5fd2b8ab97f25b20ec5842e57052dd63c414e1028ab"
+            },
+            {
+                "label": "rigby2d-godot-demo-0.5.1-windows-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/jaisurya-dev-art/rigby2d/releases/download/v0.5.1/rigby2d-godot-demo-0.5.1-windows-x64.zip",
+                "size": 5817050,
+                "sha256": "d6cf59175f846347b7d2970aa8d0d9cd124853bca8f91852e0bdce06445da7ed"
+            }
+        ],
+        "features": [
+            "Visual 2D skeletal rigging with bones and meshes",
+            "Supports inverse kinematics, physics, and lip‑sync from audio",
+            "Real‑time preview and video rendering",
+            "Export to JSON, .skel and engine‑specific formats",
+            "Runtime addons for Godot, Unity, Defold, Cocos Creator, Phaser, PixiJS, JavaScript and Rust",
+            "Portable and installer versions available",
+            "Built‑in MCP server for AI integration",
+            "Multilingual UI with full Chinese support"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Go to the GitHub release page and download the Windows installer (EXE or MSI) or the portable ZIP.",
+            "If you chose the installer, run the .exe or .msi and follow the setup wizard.",
+            "If you chose the portable ZIP, extract it to a folder.",
+            "Launch Rigby2D by double‑clicking Rigby2D.exe (or the portable executable).",
+            "Follow the on‑screen prompts to start a new project or open an existing one."
+        ],
+        "related_software": [],
+        "seo_title": "Rigby2D Free Download for Windows",
+        "meta_description": "Download Rigby2D free for Windows. Open‑source 2D skeletal animation editor for creating and exporting animations for games and film.",
+        "canonical_url": "https://codehimblog.github.io/software/rigby2d/",
         "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
