@@ -2081,6 +2081,145 @@
         "verification_status": "partial"
     },
     {
+        "id": "deckcraft",
+        "name": "DeckCraft",
+        "slug": "deckcraft",
+        "summary": "DeckCraft is an open‑source presentation creator that lets you design, edit and present slide decks with themes, shapes, media and export options.",
+        "description": [
+            "DeckCraft provides a modern way to build slide presentations on Windows. It supports rich text formatting, drawing tools, media insertion, animations and can open or save Microsoft PowerPoint files. The program is aimed at anyone who needs to create slides for work, school or personal projects.",
+            "DeckCraft lets you create slide decks using a variety of built‑in themes and layouts. You can draw shapes, connect them, and apply fills, gradients, shadows and other effects. Text can be edited directly on the slide with full font, paragraph and bullet controls. Images, tables, charts, audio and video files can be added and edited. The app offers transitions, animations and a presenter view for delivering slides. Finished decks can be saved as .pptx, exported to PDF, PNG, JPEG or animated GIF. An AutoRecover feature protects unsaved work. All commands are accessible through a graphical interface, making it easy for everyday users to design presentations without needing external tools."
+        ],
+        "icon": {
+            "text": "D",
+            "color": "#2563EB",
+            "logo": "/assets/icons/deckcraft.png?v=bafc16e0"
+        },
+        "category": "productivity-office",
+        "categories": [
+            "productivity-office"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/storytold/deckcraft#license",
+        "official_website": "https://getartcraft.com/apps/slidecraft",
+        "download_page": "https://github.com/storytold/deckcraft/releases/tag/v0.18.1",
+        "repository_url": "https://github.com/storytold/deckcraft",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/storytold/deckcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/storytold/deckcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/storytold/deckcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/storytold/deckcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/storytold/deckcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.18.1",
+        "release_date": "2026-11-12",
+        "release_url": "https://github.com/storytold/deckcraft/releases/tag/v0.18.1",
+        "primary_download": {
+            "url": "https://github.com/storytold/deckcraft/releases/download/v0.18.1/deckcraft-0.18.1-windows-x64.msi",
+            "filename": "deckcraft-0.18.1-windows-x64.msi",
+            "size": 82989056,
+            "architecture": "x64",
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "deckcraft-web-0.18.1.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/storytold/deckcraft/releases/download/v0.18.1/deckcraft-web-0.18.1.zip",
+                "size": 11910503,
+                "sha256": "3196e537fcfab538aaa2e88584bc74e29bb584459b916ab584ac22fbafe32db5"
+            },
+            {
+                "label": "deckcraft-0.18.1-windows-arm64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/storytold/deckcraft/releases/download/v0.18.1/deckcraft-0.18.1-windows-arm64.msi",
+                "size": 80003072,
+                "sha256": "550d7ec20042e02e4afde64d1499f40decbbf010fd92463530f1c8fbdc70270f"
+            },
+            {
+                "label": "deckcraft-0.18.1-windows-x64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/storytold/deckcraft/releases/download/v0.18.1/deckcraft-0.18.1-windows-x64.msi",
+                "size": 82989056,
+                "sha256": "a8553fc7400c8087d55ace4e17ad00148646ba970c7a4749e718ca2f77384e13"
+            },
+            {
+                "label": "deckcraft-0.18.1-windows-arm64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/storytold/deckcraft/releases/download/v0.18.1/deckcraft-0.18.1-windows-arm64-portable.zip",
+                "size": 101361385,
+                "sha256": "3ff8bbaf98568d3a5ab2fc932dacf410d0b2c0b0da5fd4d063ed0d42bc40789b"
+            },
+            {
+                "label": "deckcraft-0.18.1-windows-x64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/storytold/deckcraft/releases/download/v0.18.1/deckcraft-0.18.1-windows-x64-portable.zip",
+                "size": 104449748,
+                "sha256": "6df6f60b2182065c427fe4c3fe1b5d74b92706b238c6f35f3f91e5f359042e99"
+            }
+        ],
+        "features": [
+            "Build slide decks with ready‑made themes, layouts and custom slide sizes",
+            "Draw and edit over 150 preset shapes with fills, gradients and shadows",
+            "Insert and format text, pictures, tables, charts, audio and video",
+            "Apply transitions, animations and use presenter view for full‑screen shows",
+            "Open and save Microsoft PowerPoint (.pptx) files and export to PDF, PNG, JPEG or animated GIF"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download DeckCraft\" button on this page. Your browser saves deckcraft-0.18.1-windows-x64.msi (79.1 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start DeckCraft from the Start menu.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "DeckCraft Free Download for Windows 10/11",
+        "meta_description": "Download DeckCraft free for Windows 10/11. DeckCraft is an open‑source presentation creator that lets you design, edit and present slide decks with themes, sha…",
+        "canonical_url": "https://codehimblog.github.io/software/deckcraft/",
+        "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "deepseek-harness-desktop",
         "name": "DeepSeek Harness Desktop",
         "slug": "deepseek-harness-desktop",
