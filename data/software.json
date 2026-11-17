@@ -644,6 +644,137 @@
         "verification_status": "partial"
     },
     {
+        "id": "apkstart",
+        "name": "ApkStart",
+        "slug": "apkstart",
+        "summary": "ApkStart lets you run Android apps on Windows as separate native windows, with one‑click installation from an APK file.",
+        "description": [
+            "ApkStart is a Windows program that downloads and manages an Android runtime, then wraps each APK into its own desktop shortcut. The Android app runs in a real Windows window that can be moved, resized and maximized, just like any other program.",
+            "ApkStart provides a simple way to use Android applications without installing a full Android emulator or using cloud services. After a brief first‑run setup, the tool automatically downloads the required Android system image, ADB tools and hardware‑acceleration components. You can install an app by double‑clicking an APK file or dragging it onto the ApkStart window. Each installed app gets its own desktop and Start‑menu shortcut, and the app runs in an independent window that remembers its size and position. ApkStart also offers runtime management, allowing you to import a pre‑downloaded Android image, switch download sources, and see hardware‑acceleration status. Shared files are synchronized between Windows and the Android environment, and you can back up or export installed apps. Updates are checked online, and the program can be fully uninstalled, cleaning all created files and shortcuts."
+        ],
+        "icon": {
+            "text": "A",
+            "color": "#1D4ED8",
+            "logo": "/assets/icons/apkstart.png?v=94b7ed27"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/yuchen0x1/apkstart#license",
+        "official_website": "https://apkstart.edgeone.dev/",
+        "download_page": "https://github.com/yuchen0x1/apkstart/releases/tag/v0.6.11",
+        "repository_url": "https://github.com/yuchen0x1/apkstart",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/yuchen0x1/apkstart#readme",
+                "note": "Named in the README."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/yuchen0x1/apkstart#readme",
+                "note": "Stated in the project README: “Windows 10/11 x64”"
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/yuchen0x1/apkstart/blob/main/package.json",
+                "note": "Built with Electron 45 (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/yuchen0x1/apkstart#readme",
+                "note": "Named in the README."
+            },
+            "windows-7": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/yuchen0x1/apkstart#readme",
+                "note": "Named in the README."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.6.11",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/yuchen0x1/apkstart/releases/tag/v0.6.11",
+        "primary_download": {
+            "url": "https://github.com/yuchen0x1/apkstart/releases/download/v0.6.11/ApkStart-0.6.11-Setup.exe",
+            "filename": "ApkStart-0.6.11-Setup.exe",
+            "size": 1495931639,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "ApkStart-runtime-v0.6.11.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/yuchen0x1/apkstart/releases/download/v0.6.11/ApkStart-runtime-v0.6.11.zip",
+                "size": 1440720230,
+                "sha256": "a5fd51cc5a732b6f8fc49c41a0f70188ac395b840e2222f6eb713cdac45cb836"
+            },
+            {
+                "label": "ApkStart-0.6.11-Setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/yuchen0x1/apkstart/releases/download/v0.6.11/ApkStart-0.6.11-Setup.exe",
+                "size": 1495931639,
+                "sha256": "8ad63a6260bbbea2c2a09fb27cd06586f8a0dd196944088b2776c8796b228926"
+            },
+            {
+                "label": "ApkStart-v0.6.11-win64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/yuchen0x1/apkstart/releases/download/v0.6.11/ApkStart-v0.6.11-win64-portable.zip",
+                "size": 147880601,
+                "sha256": "df09587547f95fd55981d92f0f2623e25f59ab1162b77fb6226d5dd3aa58df31"
+            }
+        ],
+        "features": [
+            "Install Android apps by double‑clicking or dragging an APK file.",
+            "Each app appears as a separate Windows shortcut with its original icon.",
+            "Apps run in independent Windows that can be resized, maximized or used in full‑screen mode.",
+            "First‑run wizard automatically downloads and sets up the Android runtime.",
+            "Supports ARM‑only apps through built‑in translation on x86_64 runtimes.",
+            "Shared folder synchronizes files between Windows and Android.",
+            "Online update check with automatic download and safe rollback.",
+            "Full uninstall removes all runtimes, data, shortcuts and settings."
+        ],
+        "requirements": [
+            "Windows 10/11 x64.",
+            "4‑core CPU with VT‑x/AMD‑V enabled in BIOS.",
+            "Minimum 8 GB RAM (16 GB recommended).",
+            "At least 8 GB free disk space for the initial runtime.",
+            "Internet connection required for the first runtime download (not needed for the full installer version)."
+        ],
+        "installation_instructions": [
+            "Click the \"Download ApkStart\" button on this page. Your browser saves ApkStart-0.6.11-Setup.exe (1.4 GB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start ApkStart from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
+            "Installed apps appear as shortcuts on the desktop and in the Start menu; double‑click a shortcut to launch the app."
+        ],
+        "related_software": [],
+        "seo_title": "ApkStart Free Download for Windows 7/8/10/11",
+        "meta_description": "Download ApkStart free for Windows 7/8/10/11. ApkStart lets you run Android apps on Windows as separate native windows, with one‑click installation from an APK…",
+        "canonical_url": "https://codehimblog.github.io/software/apkstart/",
+        "date_added": "2026-11-17",
+        "last_verified_at": "2026-11-17",
+        "verification_status": "verified"
+    },
+    {
         "id": "appgroup",
         "name": "AppGroup",
         "slug": "appgroup",
@@ -7891,7 +8022,7 @@
         "license_family": "copyleft",
         "license_url": "https://github.com/sanchomuzax/PicasaPy#license",
         "official_website": "https://github.com/sanchomuzax/PicasaPy/releases",
-        "download_page": "https://github.com/sanchomuzax/PicasaPy/releases/tag/v1.0.135",
+        "download_page": "https://github.com/sanchomuzax/PicasaPy/releases/tag/v1.0.136",
         "repository_url": "https://github.com/sanchomuzax/PicasaPy",
         "supported_operating_systems": {
             "windows-11": {
@@ -7920,52 +8051,52 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "1.0.135",
+        "latest_version": "1.0.136",
         "release_date": "2026-11-17",
-        "release_url": "https://github.com/sanchomuzax/PicasaPy/releases/tag/v1.0.135",
+        "release_url": "https://github.com/sanchomuzax/PicasaPy/releases/tag/v1.0.136",
         "primary_download": {
-            "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.135/PicasaPy-Setup-1.0.135.exe",
-            "filename": "PicasaPy-Setup-1.0.135.exe",
-            "size": 410472075,
+            "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.136/PicasaPy-Setup-1.0.136.exe",
+            "filename": "PicasaPy-Setup-1.0.136.exe",
+            "size": 410492842,
             "architecture": null,
             "format": "EXE installer"
         },
         "download_assets": [
             {
-                "label": "picasapy-1.0.135.tar.gz",
+                "label": "picasapy-1.0.136.tar.gz",
                 "format": "Archive (contents not confirmed)",
                 "kind": "other",
                 "architecture": null,
-                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.135/picasapy-1.0.135.tar.gz",
-                "size": 44369164,
-                "sha256": "26c270e9817a290f7ac882837d9b3cba70084d4529765e3dd6ffd791976206e2"
+                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.136/picasapy-1.0.136.tar.gz",
+                "size": 44369273,
+                "sha256": "3817a67a2271a0748ed123f60703424bbb27f6ead78a53f044ef1a71cf6ee794"
             },
             {
-                "label": "PicasaPy-Setup-1.0.135.exe",
+                "label": "PicasaPy-Setup-1.0.136.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": null,
-                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.135/PicasaPy-Setup-1.0.135.exe",
-                "size": 410472075,
-                "sha256": "24f40e78563cca17411e46455a957907b20d3f14b9fd89e4bb02eaf25b2f5046"
+                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.136/PicasaPy-Setup-1.0.136.exe",
+                "size": 410492842,
+                "sha256": "c367425dfcb136d56bb97c5ee0e95018138fe99a11da797eec4d5f3fd436c0d5"
             },
             {
-                "label": "picasapy-windows-1.0.135.zip",
+                "label": "picasapy-windows-1.0.136.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": null,
-                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.135/picasapy-windows-1.0.135.zip",
-                "size": 44719515,
-                "sha256": "e75a61032fc5cd22ddc3b62fb6871e1d87f7f12bd871fb36904ad59725bfd570"
+                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.136/picasapy-windows-1.0.136.zip",
+                "size": 44719567,
+                "sha256": "6020baab7d58fc613fbb22a6400c099362abcb0b74a7a5afc61b52d3c241453f"
             },
             {
                 "label": "PicasaPy-windows-x64.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": "x64",
-                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.135/PicasaPy-windows-x64.zip",
-                "size": 518669567,
-                "sha256": "99922840d2bb8a6b72f6c552998a8178874b65fe5d1947646f5524073a82b222"
+                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.136/PicasaPy-windows-x64.zip",
+                "size": 518668781,
+                "sha256": "a0757f1a50cdc1cbb4c7dc43cf28eaa75e2722da960c987144881653fb663e4c"
             }
         ],
         "features": [
@@ -7978,7 +8109,7 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Click the \"Download PicasaPy\" button on this page. Your browser saves PicasaPy-Setup-1.0.135.exe (391.5 MB), usually to your Downloads folder.",
+            "Click the \"Download PicasaPy\" button on this page. Your browser saves PicasaPy-Setup-1.0.136.exe (391.5 MB), usually to your Downloads folder.",
             "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
             "When setup finishes, start PicasaPy from the Start menu or the desktop shortcut.",
             "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
@@ -9298,7 +9429,7 @@
         "license_family": "permissive",
         "license_url": "https://github.com/Forward-Future/scarlet#license",
         "official_website": null,
-        "download_page": "https://github.com/Forward-Future/scarlet/releases/tag/v0.1.180",
+        "download_page": "https://github.com/Forward-Future/scarlet/releases/tag/v0.1.189",
         "repository_url": "https://github.com/Forward-Future/scarlet",
         "supported_operating_systems": {
             "windows-11": {
@@ -9333,34 +9464,34 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "0.1.180",
-        "release_date": "2026-11-16",
-        "release_url": "https://github.com/Forward-Future/scarlet/releases/tag/v0.1.180",
+        "latest_version": "0.1.189",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/Forward-Future/scarlet/releases/tag/v0.1.189",
         "primary_download": {
-            "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.180/Scarlet-0.1.180-Windows-x64-Setup.exe",
-            "filename": "Scarlet-0.1.180-Windows-x64-Setup.exe",
-            "size": 161176247,
+            "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.189/Scarlet-0.1.189-Windows-x64-Setup.exe",
+            "filename": "Scarlet-0.1.189-Windows-x64-Setup.exe",
+            "size": 161178529,
             "architecture": "x64",
             "format": "EXE installer"
         },
         "download_assets": [
             {
-                "label": "Scarlet-0.1.180-Windows-x64-Setup.exe",
+                "label": "Scarlet-0.1.189-Windows-x64-Setup.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.180/Scarlet-0.1.180-Windows-x64-Setup.exe",
-                "size": 161176247,
-                "sha256": "c9aeb47bc8ab1c8284bf73f8f6a4b048c7ac6959a3201f5c0f1d39cb5ecb43ae"
+                "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.189/Scarlet-0.1.189-Windows-x64-Setup.exe",
+                "size": 161178529,
+                "sha256": "453b04e83fc4b3fec3a59c2da4cfa9859d4371e5f920e985c3d4bbffbad2d44c"
             },
             {
-                "label": "Scarlet-0.1.180-Windows-x64.msi",
+                "label": "Scarlet-0.1.189-Windows-x64.msi",
                 "format": "MSI installer",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.180/Scarlet-0.1.180-Windows-x64.msi",
-                "size": 230290400,
-                "sha256": "3b62f1817b470d3bcdc2facd51c333dce8db3a65c274be4b6307e924b77ca2c2"
+                "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.189/Scarlet-0.1.189-Windows-x64.msi",
+                "size": 230327264,
+                "sha256": "b1dca0911b41eb9b59457e921bb6072d52ac5d741c2de538c6555af6a3adb630"
             }
         ],
         "features": [
@@ -9378,7 +9509,7 @@
             "FFmpeg (the installer can add it automatically or you can install it via winget)."
         ],
         "installation_instructions": [
-            "Click the \"Download Scarlet\" button on this page. Your browser saves Scarlet-0.1.180-Windows-x64-Setup.exe (153.7 MB), usually to your Downloads folder.",
+            "Click the \"Download Scarlet\" button on this page. Your browser saves Scarlet-0.1.189-Windows-x64-Setup.exe (153.7 MB), usually to your Downloads folder.",
             "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
             "When setup finishes, start Scarlet from the Start menu or the desktop shortcut."
         ],
@@ -12296,7 +12427,7 @@
         "license_family": "permissive",
         "license_url": "https://github.com/WeftCut/WeftCut#license",
         "official_website": "https://weftcut.com",
-        "download_page": "https://github.com/WeftCut/WeftCut/releases/tag/v0.7.1",
+        "download_page": "https://github.com/WeftCut/WeftCut/releases/tag/v0.8.0",
         "repository_url": "https://github.com/WeftCut/WeftCut",
         "supported_operating_systems": {
             "windows-11": {
@@ -12331,13 +12462,13 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "0.7.1",
-        "release_date": "2026-11-11",
-        "release_url": "https://github.com/WeftCut/WeftCut/releases/tag/v0.7.1",
+        "latest_version": "0.8.0",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/WeftCut/WeftCut/releases/tag/v0.8.0",
         "primary_download": {
-            "url": "https://github.com/WeftCut/WeftCut/releases/download/v0.7.1/WeftCut-win-x64.exe",
+            "url": "https://github.com/WeftCut/WeftCut/releases/download/v0.8.0/WeftCut-win-x64.exe",
             "filename": "WeftCut-win-x64.exe",
-            "size": 257230195,
+            "size": 261521336,
             "architecture": "x64",
             "format": "EXE (type not confirmed)"
         },
@@ -12347,9 +12478,9 @@
                 "format": "EXE (type not confirmed)",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://github.com/WeftCut/WeftCut/releases/download/v0.7.1/WeftCut-win-x64.exe",
-                "size": 257230195,
-                "sha256": "748e2558a8880d0e92f2e2c33cf4e826810800c64cb1e6f8a3c1832371dfd4df"
+                "url": "https://github.com/WeftCut/WeftCut/releases/download/v0.8.0/WeftCut-win-x64.exe",
+                "size": 261521336,
+                "sha256": "1179009c1a8005e4f1d117f3991623180ce04b7bbb47a2b8ba6989835bd950b8"
             }
         ],
         "features": [
@@ -12364,7 +12495,7 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Click the \"Download WeftCut\" button on this page. Your browser saves WeftCut-win-x64.exe (245.3 MB), usually to your Downloads folder.",
+            "Click the \"Download WeftCut\" button on this page. Your browser saves WeftCut-win-x64.exe (249.4 MB), usually to your Downloads folder.",
             "Double-click the downloaded file to start WeftCut. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
             "Optional: move the file to a folder of its own (for example Documents\\WeftCut) so it is easy to find next time.",
             "(Optional) Open the settings panel to copy the prompt for connecting your AI client.",
