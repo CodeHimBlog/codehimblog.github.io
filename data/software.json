@@ -1613,6 +1613,128 @@
         "verification_status": "partial"
     },
     {
+        "id": "cutlass",
+        "name": "Cutlass",
+        "slug": "cutlass",
+        "summary": "Cutlass is a free, open‑source video editor that lets you edit footage on a timeline and also offers an AI assistant you can talk to for editing commands.",
+        "description": [
+            "Cutlass provides a modern video editing experience on Windows. You can arrange video, audio and image clips on tracks, add effects, text and transitions, and export the result. An integrated assistant lets you describe edits in plain language, which it then creates on the timeline for you to adjust.",
+            "Cutlass is a timeline‑based video editor that works entirely on your computer. You import video, audio and images, cut and trim clips, arrange them on multiple tracks, and add text, filters, effects and transitions. The editor includes a built‑in AI assistant that accepts natural‑language commands, allowing you to describe the edit you want and have the assistant build it automatically. All processing, including machine‑learning features such as stabilization, noise reduction and automatic caption generation, runs locally, so no footage is uploaded. The program uses its own Rust‑based codecs for common formats like H.264, HEVC, AV1, ProRes, AAC and Opus, and does not rely on external tools like FFmpeg. Cutlass offers a wide range of visual effects, blend modes, keyframe animation, motion paths, color correction tools, and audio controls, making it suitable for both quick social‑media videos and more detailed projects."
+        ],
+        "icon": {
+            "text": "C",
+            "color": "#1D4ED8",
+            "logo": "/assets/icons/cutlass.png?v=720ea837"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/1mrnewton/cutlass#license",
+        "official_website": "https://cutlass.sh",
+        "download_page": "https://github.com/1mrnewton/cutlass/releases/tag/alpha-0.7.0",
+        "repository_url": "https://github.com/1mrnewton/cutlass",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": null,
+        "release_date": null,
+        "release_url": "https://github.com/1mrnewton/cutlass/releases/tag/alpha-0.7.0",
+        "primary_download": {
+            "url": "https://github.com/1mrnewton/cutlass/releases/download/alpha-0.7.0/Cutlass-0.7.0-alpha.0-windows-x86_64-Setup.exe",
+            "filename": "Cutlass-0.7.0-alpha.0-windows-x86_64-Setup.exe",
+            "size": 17511862,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Cutlass-0.7.0-alpha.0-windows-arm64-Setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/1mrnewton/cutlass/releases/download/alpha-0.7.0/Cutlass-0.7.0-alpha.0-windows-arm64-Setup.exe",
+                "size": 16851473,
+                "sha256": "26e8dbe6aa54dc590596ad53750fd815db0b1e78325eed395345d5dd918c16e3"
+            },
+            {
+                "label": "Cutlass-0.7.0-alpha.0-windows-x86_64-Setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/1mrnewton/cutlass/releases/download/alpha-0.7.0/Cutlass-0.7.0-alpha.0-windows-x86_64-Setup.exe",
+                "size": 17511862,
+                "sha256": "4723fc28a1f13abf24c0ec3a2703f1ffc006cc68c3b1845081e7451787fc1c8c"
+            },
+            {
+                "label": "Cutlass-0.7.0-alpha.0-windows-arm64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/1mrnewton/cutlass/releases/download/alpha-0.7.0/Cutlass-0.7.0-alpha.0-windows-arm64.zip",
+                "size": 24351598,
+                "sha256": "3389b793a3d4cc474ba93c9df9352c6043b6dbae8d4ccc0022a2183c662004e0"
+            },
+            {
+                "label": "Cutlass-0.7.0-alpha.0-windows-x86_64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/1mrnewton/cutlass/releases/download/alpha-0.7.0/Cutlass-0.7.0-alpha.0-windows-x86_64.zip",
+                "size": 25793264,
+                "sha256": "ab5eda37082e8563ce8f5a8bb4e33892b91c02cd427d675771f2df69c7f7f642"
+            }
+        ],
+        "features": [
+            "Arrange video, audio and image clips on multiple tracks",
+            "Use the AI assistant to create edits by describing them in plain language",
+            "Apply over 200 visual effects, 180 transitions and 13 blend modes",
+            "Perform color correction with basic adjustments, curves, LUTs and 200 filters",
+            "Add animated text, captions and stickers with customizable fonts and styles",
+            "Use motion tools such as speed curves, keyframe animation, motion paths and motion blur",
+            "Stabilize footage, reduce noise, enhance quality and generate automatic captions locally"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Cutlass\" button on this page. Your browser saves Cutlass-0.7.0-alpha.0-windows-x86_64-Setup.exe (16.7 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Cutlass from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "Cutlass Free Download for Windows",
+        "meta_description": "Download Cutlass free for Windows. Cutlass is a free, open‑source video editor that lets you edit footage on a timeline and also offers an AI assistant you can…",
+        "canonical_url": "https://codehimblog.github.io/software/cutlass/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "desktop-bubble-chat",
         "name": "Desktop Bubble Chat",
         "slug": "desktop-bubble-chat",
@@ -2908,6 +3030,114 @@
         "seo_title": "Frame Player Free Download for Windows",
         "meta_description": "Download Frame Player free for Windows. A video player for Windows that plays local files, web links, and torrent streams, with support for casting, subtitle s…",
         "canonical_url": "https://codehimblog.github.io/software/frame-player/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "greycard",
+        "name": "Greycard",
+        "slug": "greycard",
+        "summary": "A professional raw photo editor with accurate color, for Linux, macOS and Windows.",
+        "description": [
+            "Greycard is a free, open‑source raw photo editor that focuses on accurate colour reproduction and a familiar workflow for photographers. It runs on Windows and lets you edit raw files directly, keep edits in side‑car files, and use advanced features like AI denoising and mask‑based adjustments.",
+            "Greycard provides a Lightroom‑like interface with panels for presets, history, histogram and develop sliders. It can learn the colour look of your camera and apply it as a selectable profile. Masks support absolute white balance and colour mixing, and specialised scopes (parade, waveform, vectorscope) can be limited to masked areas for precise skin‑tone work. AI‑based denoising runs on the raw sensor data and supports many major camera brands. The editor works with side‑car files beside each raw, so your original files stay untouched and the library index makes browsing fast. You can cull shoots using embedded previews, merge brackets into HDR, create panoramas, or stack focus frames, all while keeping edits non‑destructive. Lightroom presets and catalogs can be imported, preserving ratings and collections. The program runs on the GPU via Vulkan when available, falling back to CPU rendering if not. AI mask models are downloaded on first use, and the software does not send any image data over the internet unless you enable update checks."
+        ],
+        "icon": {
+            "text": "G",
+            "color": "#15803D",
+            "logo": null
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/jessolmstead/greycard#license",
+        "official_website": null,
+        "download_page": "https://github.com/jessolmstead/greycard/releases/tag/v0.11.0",
+        "repository_url": "https://github.com/jessolmstead/greycard",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.11.0",
+        "release_date": "2026-11-09",
+        "release_url": "https://github.com/jessolmstead/greycard/releases/tag/v0.11.0",
+        "primary_download": {
+            "url": "https://github.com/jessolmstead/greycard/releases/download/v0.11.0/greycard-0.11.0-x86_64-windows.zip",
+            "filename": "greycard-0.11.0-x86_64-windows.zip",
+            "size": 67392183,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
+        "download_assets": [
+            {
+                "label": "greycard-0.11.0-aarch64-windows.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/jessolmstead/greycard/releases/download/v0.11.0/greycard-0.11.0-aarch64-windows.zip",
+                "size": 46312889,
+                "sha256": "9d4aaa3e99666cd0570313ce68668e49c2af732987c8e0faa8f38cdb350dccca"
+            },
+            {
+                "label": "greycard-0.11.0-x86_64-windows.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/jessolmstead/greycard/releases/download/v0.11.0/greycard-0.11.0-x86_64-windows.zip",
+                "size": 67392183,
+                "sha256": "19b59f8cc23cd326faa2ea52d50049a168d68ed50b36ed460707178b3b970ceb"
+            }
+        ],
+        "features": [
+            "Learn and apply your camera's colour profile for consistent looks",
+            "Advanced masking with white‑balance control and colour mixing",
+            "AI denoising that works on raw sensor data for many camera brands",
+            "Non‑destructive side‑car edits and fast library indexing",
+            "HDR, panorama and focus‑stack merging directly in the editor",
+            "Import Lightroom presets and catalogs, keeping ratings and collections",
+            "GPU‑accelerated demosaic via Vulkan, with CPU fallback",
+            "Local AI mask generation for subjects, skies and people without sending data"
+        ],
+        "requirements": [
+            "A GPU that supports Vulkan is recommended for best performance (CPU fallback works slower)",
+            "Internet connection needed the first time to download AI model runtime (optional thereafter)"
+        ],
+        "installation_instructions": [
+            "Click the \"Download Greycard\" button on this page. Your browser saves greycard-0.11.0-x86_64-windows.zip (64.3 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the Greycard program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
+            "The first launch may show an unsigned‑driver warning; click through to continue"
+        ],
+        "related_software": [],
+        "seo_title": "Greycard Free Download for Windows",
+        "meta_description": "Download Greycard free for Windows. A professional raw photo editor with accurate color, for Linux, macOS and Windows.",
+        "canonical_url": "https://codehimblog.github.io/software/greycard/",
         "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
