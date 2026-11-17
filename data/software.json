@@ -5383,6 +5383,120 @@
         "verification_status": "partial"
     },
     {
+        "id": "meron",
+        "name": "Meron",
+        "slug": "meron",
+        "summary": "A fast and secure email client that offers unified inbox, kanban board and chat views.",
+        "description": [
+            "Meron is an email application for Windows that combines traditional mail handling with modern collaboration views. It lets you read, write and organize messages, use chat‑style conversations, and manage tasks on a kanban board, all in one place.",
+            "Meron provides a unified inbox where you can see all your email accounts together. It offers a kanban view that lets you organize messages as cards on columns, and a chat view for quick, conversation‑style reading. The program supports IMAP and SMTP for email, as well as RSS/Atom feeds and Exchange via DavMail. You can set up accounts easily with OAuth or automatic mailbox discovery. Security features include end‑to‑end OpenPGP encryption, encrypted local storage, and credentials stored in the Windows keyring. Tags sync as IMAP keywords, and you can create rules to automatically tag, move, archive or delete messages. The interface is themeable and available in many languages."
+        ],
+        "icon": {
+            "text": "M",
+            "color": "#B45309",
+            "logo": "/assets/icons/meron.png?v=28584586"
+        },
+        "category": "productivity-office",
+        "categories": [
+            "productivity-office"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU Affero General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/nonbili/meron#license",
+        "official_website": "https://meron.im",
+        "download_page": "https://github.com/nonbili/meron/releases/tag/v0.5.2",
+        "repository_url": "https://github.com/nonbili/meron",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.5.2",
+        "release_date": "2026-11-13",
+        "release_url": "https://github.com/nonbili/meron/releases/tag/v0.5.2",
+        "primary_download": {
+            "url": "https://github.com/nonbili/meron/releases/download/v0.5.2/meron-windows-amd64.exe",
+            "filename": "meron-windows-amd64.exe",
+            "size": 33318582,
+            "architecture": "x64",
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "meron-windows-amd64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/nonbili/meron/releases/download/v0.5.2/meron-windows-amd64.exe",
+                "size": 33318582,
+                "sha256": "39bdca0d84a7cf34c1b97233da7b9f7f7e58878f9237fae974e8854edfd7dbeb"
+            },
+            {
+                "label": "meron-windows-amd64.appx",
+                "format": "MSIX / AppX package",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/nonbili/meron/releases/download/v0.5.2/meron-windows-amd64.appx",
+                "size": 32652409,
+                "sha256": "3cd713a828955cae10d540a9bc880705d6b23af937c6512b7901b419afbead09"
+            },
+            {
+                "label": "meron-windows-amd64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/nonbili/meron/releases/download/v0.5.2/meron-windows-amd64-portable.zip",
+                "size": 30958665,
+                "sha256": "68aa23eaa2a1adf42c630be5e1fe768a49669ffc672b376503352cbe356c59a7"
+            }
+        ],
+        "features": [
+            "Unified inbox with kanban and chat layouts",
+            "Tagging that syncs as IMAP keywords",
+            "Automatic rules for sorting and managing mail",
+            "Supports IMAP/SMTP, RSS/Atom and Exchange via DavMail",
+            "End‑to‑end OpenPGP encryption with automatic key lookup",
+            "Encrypted local storage using the OS keyring",
+            "Easy account setup with OAuth and mailbox discovery",
+            "Customizable themes and multilingual interface"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Meron\" button on this page. Your browser saves meron-windows-amd64.exe (31.8 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start Meron. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\Meron) so it is easy to find next time.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "Meron Free Download for Windows",
+        "meta_description": "Download Meron free for Windows. A fast and secure email client that offers unified inbox, kanban board and chat views.",
+        "canonical_url": "https://codehimblog.github.io/software/meron/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "metrolist",
         "name": "Metrolist",
         "slug": "metrolist",
@@ -5629,6 +5743,121 @@
         "meta_description": "Download Moonlight Qt free for Windows. Moonlight Qt is an open‑source client that lets you stream games and desktop sessions from a PC with NVIDIA GameStream…",
         "canonical_url": "https://codehimblog.github.io/software/moonlight-qt/",
         "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "motionbox",
+        "name": "MotionBox",
+        "slug": "motionbox",
+        "summary": "MotionBox is a video browser that lets you stream, organize and share videos from many online sources in one place.",
+        "description": [
+            "MotionBox provides a single interface for browsing and playing videos from a wide range of services. It groups content in tabs, offers search across sources, and plays videos without ads.",
+            "MotionBox aggregates video content from sites such as YouTube, Vimeo, Twitch, Dailymotion, TikTok, Facebook, SoundCloud and many others. It uses a custom language to fetch videos and presents them in a tabbed browser. The built‑in player is based on VLC, so it can handle most video formats. The program is open source, free to use and runs on Windows as well as other platforms. It aims to give users freedom to discover and share video resources without intrusive advertising."
+        ],
+        "icon": {
+            "text": "M",
+            "color": "#0F766E",
+            "logo": "/assets/icons/motionbox.png?v=bc7c7758"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/omega-gg/MotionBox#license",
+        "official_website": "http://omega.gg/MotionBox",
+        "download_page": "https://github.com/omega-gg/MotionBox/releases/tag/3.0.0-3",
+        "repository_url": "https://github.com/omega-gg/MotionBox",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "3.0.0-3",
+        "release_date": "2026-04-23",
+        "release_url": "https://github.com/omega-gg/MotionBox/releases/tag/3.0.0-3",
+        "primary_download": {
+            "url": "https://github.com/omega-gg/MotionBox/releases/download/3.0.0-3/MotionBox-3.0.0-3-win64-setup.exe",
+            "filename": "MotionBox-3.0.0-3-win64-setup.exe",
+            "size": 92696439,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "MotionBox-3.0.0-3-linux64.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "x64",
+                "url": "https://github.com/omega-gg/MotionBox/releases/download/3.0.0-3/MotionBox-3.0.0-3-linux64.tar.gz",
+                "size": 169412606,
+                "sha256": "4ba19ad9338bf04afebaf60844ab9729e9367914cc3c82edc09609e44d3ac98d"
+            },
+            {
+                "label": "MotionBox-3.0.0-3-win64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/omega-gg/MotionBox/releases/download/3.0.0-3/MotionBox-3.0.0-3-win64-setup.exe",
+                "size": 92696439,
+                "sha256": "3c5a34b0a5cca9870b02781b0a2db2d00ede4dd1bdb5b0ca445e37c076bdbbc9"
+            },
+            {
+                "label": "MotionBox-3.0.0-3-win64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/omega-gg/MotionBox/releases/download/3.0.0-3/MotionBox-3.0.0-3-win64.zip",
+                "size": 87162559,
+                "sha256": "a6238ff4f970f982ae18b2c8caff58b776e58696b24fbdcae33d29068ec44ec3"
+            }
+        ],
+        "features": [
+            "Browse videos from dozens of online platforms in one window",
+            "Search across all supported services simultaneously",
+            "Play videos using the integrated VLC‑based player",
+            "Organize sources into separate tabs for easy navigation",
+            "No advertisements are shown while watching",
+            "Share video links directly from the application"
+        ],
+        "requirements": [
+            "Internet connection to access online video sources",
+            "Minimum of 2 GB RAM recommended for smooth playback"
+        ],
+        "installation_instructions": [
+            "Click the \"Download MotionBox\" button on this page. Your browser saves MotionBox-3.0.0-3-win64-setup.exe (88.4 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start MotionBox from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "MotionBox Free Download for Windows",
+        "meta_description": "Download MotionBox free for Windows. MotionBox is a video browser that lets you stream, organize and share videos from many online sources in one place.",
+        "canonical_url": "https://codehimblog.github.io/software/motionbox/",
+        "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
     },
