@@ -6769,6 +6769,127 @@
         "verification_status": "verified"
     },
     {
+        "id": "picasapy",
+        "name": "PicasaPy",
+        "slug": "picasapy",
+        "summary": "PicasaPy is a free, open‑source photo manager and editor for Windows that works with the same .picasa.ini format as the original Google Picasa.",
+        "description": [
+            "PicasaPy lets you organize, view and edit your photos on Windows. It reads and writes the same folder format used by Google Picasa, so you can switch between the two programs without moving files.",
+            "PicasaPy is built with Python, PySide6 and Qt Quick and provides a modern replacement for Google Picasa. It can scan folders, watch for changes, and let you browse albums, collections, and tags. The viewer supports both images and videos, and you can run slideshows. Editing is non‑destructive, storing changes in .picasa.ini files; you can crop, straighten, remove red eye, retouch, add text, adjust colour and apply effects. The program reads and writes metadata, lets you tag faces and locations, and shows a map for geotags. You can export edited files, create HTML galleries, XMP sidecars, or prepare attachments for email. Additional tools let you build movies from photos, make collages, print contact sheets or split images for posters."
+        ],
+        "icon": {
+            "text": "P",
+            "color": "#2563EB",
+            "logo": "/assets/icons/picasapy.png?v=0ff40817"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/sanchomuzax/PicasaPy#license",
+        "official_website": "https://github.com/sanchomuzax/PicasaPy/releases",
+        "download_page": "https://github.com/sanchomuzax/PicasaPy/releases/tag/v1.0.133",
+        "repository_url": "https://github.com/sanchomuzax/PicasaPy",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.0.133",
+        "release_date": "2026-11-16",
+        "release_url": "https://github.com/sanchomuzax/PicasaPy/releases/tag/v1.0.133",
+        "primary_download": {
+            "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.133/PicasaPy-Setup-1.0.133.exe",
+            "filename": "PicasaPy-Setup-1.0.133.exe",
+            "size": 410403945,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "picasapy-1.0.133.tar.gz",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.133/picasapy-1.0.133.tar.gz",
+                "size": 44336016,
+                "sha256": "97e51e3354161c9214febff6a7064a1d6f4e2e24c7b61644e7ee33a17dd84f20"
+            },
+            {
+                "label": "PicasaPy-Setup-1.0.133.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.133/PicasaPy-Setup-1.0.133.exe",
+                "size": 410403945,
+                "sha256": "81c7d7bd1147b012796a0ca147c18202711d77d95e5adb110b826ab6e34b358d"
+            },
+            {
+                "label": "picasapy-windows-1.0.133.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.133/picasapy-windows-1.0.133.zip",
+                "size": 44686565,
+                "sha256": "e63fa6f90a9bfa234499c6d35a5ddf343af2e661d34994798ae40ed77416537b"
+            },
+            {
+                "label": "PicasaPy-windows-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.133/PicasaPy-windows-x64.zip",
+                "size": 518608402,
+                "sha256": "e09c7a3090e5c12701cc2486a3bc8b7220602eb6d7682149adfdb74ce6806225"
+            }
+        ],
+        "features": [
+            "Scan and watch folders, browse albums, search and filter photos",
+            "View images and videos, navigate with keyboard, run slideshows",
+            "Non‑destructive editing: crop, straighten, red‑eye removal, retouch, text, colour and light adjustments, effects",
+            "Manage metadata, tags, stars, captions, face detection and geotag mapping",
+            "Export edited files, create HTML galleries, XMP sidecars, and email attachments",
+            "Build movies from photos, create collages, print contact sheets or poster‑size splits"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download PicasaPy\" button on this page. Your browser saves PicasaPy-Setup-1.0.133.exe (391.4 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start PicasaPy from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "PicasaPy Free Download for Windows",
+        "meta_description": "Download PicasaPy free for Windows. PicasaPy is a free, open‑source photo manager and editor for Windows that works with the same .picasa.ini format as the ori…",
+        "canonical_url": "https://codehimblog.github.io/software/picasapy/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "polyphone",
         "name": "Polyphone",
         "slug": "polyphone",
@@ -7321,6 +7442,137 @@
         "seo_title": "RAWmakase Free Download for Windows",
         "meta_description": "Download RAWmakase free for Windows. A fast, non‑destructive RAW photo editor with Lightroom‑style controls for Windows.",
         "canonical_url": "https://codehimblog.github.io/software/rawmakase/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "rembrandt",
+        "name": "Rembrandt",
+        "slug": "rembrandt",
+        "summary": "A free photo editor with RAW support, masks and on‑device AI, requiring no account or subscription.",
+        "description": [
+            "Rembrandt is a free, open‑source photo editing program for Windows. It lets you edit photos, work with RAW files, apply AI‑based masks, and use tools like super‑resolution, all without needing to sign up for any service.",
+            "Rembrandt provides a modern editing interface where you can open images, adjust colour and tone with sliders, and use AI prompts to apply effects such as golden hour lighting or lens blur. The program includes a library view for organizing albums, searching, sorting and one‑click deletion. Masks can be created with brushes, gradients, or AI‑generated subject and depth selections. Super‑resolution upscales images 2× or 4× using your GPU. All edits are saved as XMP side‑car files, leaving the original photos untouched. The software runs locally on Windows and does not track usage or require an internet connection for basic editing."
+        ],
+        "icon": {
+            "text": "R",
+            "color": "#0F766E",
+            "logo": "/assets/icons/rembrandt.png?v=294c060b"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/thesnarkitecht/rembrandt#license",
+        "official_website": null,
+        "download_page": "https://github.com/thesnarkitecht/rembrandt/releases/tag/v0.3.36",
+        "repository_url": "https://github.com/thesnarkitecht/rembrandt",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.3.36",
+        "release_date": "2026-11-11",
+        "release_url": "https://github.com/thesnarkitecht/rembrandt/releases/tag/v0.3.36",
+        "primary_download": {
+            "url": "https://github.com/thesnarkitecht/rembrandt/releases/download/v0.3.36/Rembrandt-windows-x64-setup.exe",
+            "filename": "Rembrandt-windows-x64-setup.exe",
+            "size": 111546743,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Rembrandt-windows-arm64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/thesnarkitecht/rembrandt/releases/download/v0.3.36/Rembrandt-windows-arm64-setup.exe",
+                "size": 110752299,
+                "sha256": "cf144f818dffd7e9baec36267ce7c85fc07b809ccbf6c81e8f038e77b6ec5fa0"
+            },
+            {
+                "label": "Rembrandt-windows-x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/thesnarkitecht/rembrandt/releases/download/v0.3.36/Rembrandt-windows-x64-setup.exe",
+                "size": 111546743,
+                "sha256": "0ac6d8dc847ea8e461eaf16ec1e8812e736d092ddc04f62f5d88195f0abf71c6"
+            },
+            {
+                "label": "Rembrandt-windows-x64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/thesnarkitecht/rembrandt/releases/download/v0.3.36/Rembrandt-windows-x64.msi",
+                "size": 113377280,
+                "sha256": "35f62d2f0e202d3dd8970296cee8b5a3bc4b51c84756777b3eff1ce0b5dac4a9"
+            },
+            {
+                "label": "rembrandt-server-windows-aarch64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/thesnarkitecht/rembrandt/releases/download/v0.3.36/rembrandt-server-windows-aarch64.zip",
+                "size": 103776922,
+                "sha256": "4e80f2064d25b4cba12315835f00d05946b4fa18530992ec34061a22a7dc90d9"
+            },
+            {
+                "label": "rembrandt-server-windows-x86_64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/thesnarkitecht/rembrandt/releases/download/v0.3.36/rembrandt-server-windows-x86_64.zip",
+                "size": 103782864,
+                "sha256": "135fd0488439568db860e917ad3b5ca35a11d748ff82ae028a3573d9b7043a42"
+            }
+        ],
+        "features": [
+            "Open and edit RAW photos with colour and tone sliders",
+            "Use AI prompts to apply complex effects quickly",
+            "Create masks with brush, gradient, or AI‑generated subject and depth",
+            "Upscale images with GPU‑accelerated super‑resolution (2× and 4×)",
+            "Organise photos in a library with albums, search, sorting and one‑click delete",
+            "Edits are saved as XMP side‑car files, keeping originals unchanged"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Rembrandt\" button on this page. Your browser saves Rembrandt-windows-x64-setup.exe (106.4 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Rembrandt from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
+            "When first launching, you may need to click “More info → Run anyway” to bypass the unsigned‑application warning."
+        ],
+        "related_software": [],
+        "seo_title": "Rembrandt Free Download for Windows",
+        "meta_description": "Download Rembrandt free for Windows. A free photo editor with RAW support, masks and on‑device AI, requiring no account or subscription.",
+        "canonical_url": "https://codehimblog.github.io/software/rembrandt/",
         "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
