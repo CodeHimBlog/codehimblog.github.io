@@ -299,8 +299,8 @@
             "mouse-point-viewer",
             "astraeus",
             "luciddesk",
-            "winutil-cn",
             "universal-intel-wifi-bt-updater",
+            "winutil-cn",
             "appgroup",
             "deskx-wallpaper-engine",
             "apkstart",
@@ -561,10 +561,10 @@
             "reelterminal",
             "lossless-cut",
             "weftcut",
+            "altered-audio-editor",
             "filmcraft",
             "frame-player",
-            "amber",
-            "openfilm"
+            "amber"
         ],
         "seo_title": "AgentShot Free Download for Windows",
         "meta_description": "Download AgentShot free for Windows. AgentShot is an open‑source AI‑powered video editor that lets you edit footage by speaking commands or pointing at frames,…",
@@ -572,6 +572,142 @@
         "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
+    },
+    {
+        "id": "altered-audio-editor",
+        "name": "Altered Audio Editor",
+        "slug": "altered-audio-editor",
+        "summary": "A free, open‑source multitrack audio editor designed for podcasters and voice‑over work, with tools for recording, editing, mixing and exporting audio projects.",
+        "description": [
+            "Altered Audio Editor lets you record, edit and mix multiple audio tracks in a layout familiar to experienced editors. It includes a waveform editor, voice‑chain effects, multi‑mic tools and export options suitable for podcast production.",
+            "The program provides a multitrack workspace where you can move, trim, split and merge clips, add fades, set volume and pan envelopes, and place markers. A separate waveform editor lets you cut, silence, amplify or apply effects to individual files, with live preview of the Voice Chain. It supports many common audio formats such as WAV, FLAC, MP3, AAC/M4A, Ogg and Opus, and can import recordings from other tools. Visual tools like spectrum and pitch views help you isolate and remove unwanted sounds such as whistles or clicks. The editor works with standard Windows audio drivers and ASIO for low‑latency recording. A built‑in user guide walks you through recording, editing, mixing, automation and exporting, including chapter markers and loudness settings."
+        ],
+        "icon": {
+            "text": "A",
+            "color": "#15803D",
+            "logo": "/assets/icons/altered-audio-editor.png?v=1a082868"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/geekcastradio/altered-audio-editor#license",
+        "official_website": "https://thegcrn.com/altered-editor/",
+        "download_page": "https://github.com/geekcastradio/altered-audio-editor/releases/tag/v0.38.0",
+        "repository_url": "https://github.com/geekcastradio/altered-audio-editor",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/geekcastradio/altered-audio-editor#readme",
+                "note": "Named in the README."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/geekcastradio/altered-audio-editor#readme",
+                "note": "Stated in the project README: “Windows 10 and 11 (64-bit).”"
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/geekcastradio/altered-audio-editor/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/geekcastradio/altered-audio-editor/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/geekcastradio/altered-audio-editor/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.38.0",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/geekcastradio/altered-audio-editor/releases/tag/v0.38.0",
+        "primary_download": {
+            "url": "https://github.com/geekcastradio/altered-audio-editor/releases/download/v0.38.0/Altered-Audio-Editor-v0.38.0-setup.exe",
+            "filename": "Altered-Audio-Editor-v0.38.0-setup.exe",
+            "size": 20871840,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Altered-Audio-Editor-v0.38.0-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/geekcastradio/altered-audio-editor/releases/download/v0.38.0/Altered-Audio-Editor-v0.38.0-setup.exe",
+                "size": 20871840,
+                "sha256": "c95091eeb0a45ce6bf54b13f06baf9adcd3b1cad282ad7968cfee4571338dc21"
+            },
+            {
+                "label": "Altered-Audio-Editor-v0.38.0-x64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/geekcastradio/altered-audio-editor/releases/download/v0.38.0/Altered-Audio-Editor-v0.38.0-x64.msi",
+                "size": 27267072,
+                "sha256": "44ba3286a1a40896e970236dd702abc3cc3965e4bffb4f633a0dd77d6579e994"
+            },
+            {
+                "label": "Altered-Audio-Editor-v0.38.0-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/geekcastradio/altered-audio-editor/releases/download/v0.38.0/Altered-Audio-Editor-v0.38.0-portable.zip",
+                "size": 27746042,
+                "sha256": "832b23484a4dd6088c355ba09af9472b1c09ad439f225e3f67b84910ffef0afc"
+            }
+        ],
+        "features": [
+            "Edit multiple audio tracks with trimming, splitting, fading and cross‑fading.",
+            "Use a waveform editor to cut, silence, amplify or apply effects to single files.",
+            "Remove unwanted noises using spectrum and pitch views with brush or lasso selection.",
+            "Record directly with Windows or ASIO drivers and assign input channels per track.",
+            "Export mixes to common formats like WAV, MP3, FLAC and M4A with optional chapter markers.",
+            "Access a searchable in‑app user guide covering recording, editing, mixing and export.",
+            "Portable version available that runs without installation."
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Altered Audio Editor\" button on this page. Your browser saves Altered-Audio-Editor-v0.38.0-setup.exe (19.9 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Altered Audio Editor from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [
+            "fooyin",
+            "lossless-cut",
+            "nagi",
+            "polyphone",
+            "cutlass",
+            "pymusicplayer",
+            "reelterminal",
+            "auto-editor",
+            "scarlet",
+            "filmcraft",
+            "openfilm",
+            "weftcut"
+        ],
+        "seo_title": "Altered Audio Editor Free Download for Windows 10/11",
+        "meta_description": "Download Altered Audio Editor free for Windows 10/11. A free, open‑source multitrack audio editor designed for podcasters and voice‑over work, with tools for r…",
+        "canonical_url": "https://codehimblog.github.io/software/altered-audio-editor/",
+        "date_added": "2026-11-17",
+        "last_verified_at": "2026-11-17",
+        "verification_status": "verified"
     },
     {
         "id": "amber",
@@ -690,11 +826,11 @@
             "l-mpv",
             "auto-editor",
             "riff",
+            "altered-audio-editor",
             "obs-studio",
             "agentshot",
             "openfilm",
-            "scarlet",
-            "lossless-cut"
+            "scarlet"
         ],
         "seo_title": "Amber Free Download for Windows 10/11",
         "meta_description": "Download Amber free for Windows 10/11. Amber is a free, open-source non-linear video editor that focuses on speed and ease of use, offering GPU‑accelerated ren…",
@@ -1106,8 +1242,8 @@
             "universal-intel-chipset-updater",
             "mousex-absolute-mouse-control",
             "aerozoom",
-            "quiesce",
             "fly-island",
+            "quiesce",
             "deskx-wallpaper-engine",
             "universal-intel-wifi-bt-updater",
             "autorunmanager",
@@ -1335,8 +1471,8 @@
             "ciyue",
             "spacewave",
             "mynotes",
-            "tizumark-markdown-editor",
             "handwriting-ocr-scriptreader",
+            "tizumark-markdown-editor",
             "sakura",
             "voxtype",
             "noobot",
@@ -1602,13 +1738,13 @@
             "reelterminal",
             "scarlet",
             "agentshot",
+            "altered-audio-editor",
             "ffmpeg-gui-editor-windows",
             "lossless-cut",
             "weftcut",
-            "filmcraft",
             "amber",
-            "obs-studio",
-            "nagi"
+            "filmcraft",
+            "obs-studio"
         ],
         "seo_title": "Auto-Editor Free Download for Windows",
         "meta_description": "Download Auto-Editor free for Windows. A command‑line tool that automatically trims and edits video and audio files based on silence, volume and motion detecti…",
@@ -1725,10 +1861,10 @@
             "luciddesk",
             "installerclean",
             "astraeus",
-            "apkstart",
             "appgroup",
             "universal-intel-chipset-updater",
-            "universal-intel-wifi-bt-updater"
+            "universal-intel-wifi-bt-updater",
+            "apkstart"
         ],
         "seo_title": "AutoRunManager Free Download for Windows",
         "meta_description": "Download AutoRunManager free for Windows. A utility that lets you view, add, remove, backup and restore programs that run automatically when Windows starts.",
@@ -1840,8 +1976,8 @@
             "tauon",
             "scarlet",
             "polyphone",
-            "l-mpv",
             "animeko",
+            "l-mpv",
             "auto-editor"
         ],
         "seo_title": "AutoSubSync Free Download for Windows",
@@ -1987,8 +2123,8 @@
             "autorunmanager",
             "fly-island",
             "winutil-cn",
-            "apkstart",
             "hardwarevisualizer",
+            "apkstart",
             "luciddesk",
             "universal-intel-chipset-updater",
             "mouse-point-viewer",
@@ -2106,9 +2242,9 @@
             "picasapy",
             "rembrandt",
             "greycard",
-            "open-photo-ai",
             "lightzone",
             "rawmakase",
+            "open-photo-ai",
             "lightcraft",
             "rigby2d",
             "formatix",
@@ -2389,14 +2525,14 @@
             "reelterminal",
             "weftcut",
             "agentshot",
+            "altered-audio-editor",
             "auto-editor",
             "ffmpeg-gui-editor-windows",
             "amber",
             "openfilm",
             "scarlet",
             "lossless-cut",
-            "pylon-player",
-            "polyphone"
+            "pylon-player"
         ],
         "seo_title": "Cutlass Free Download for Windows",
         "meta_description": "Download Cutlass free for Windows. Cutlass is a free, open‑source video editor that lets you edit footage on a timeline and also offers an AI assistant you can…",
@@ -3245,8 +3381,8 @@
             "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [
-            "servo",
             "mcp-windows",
+            "servo",
             "yengi",
             "deepseek-harness-desktop",
             "windbg-mcp",
@@ -3508,12 +3644,12 @@
             "auto-editor",
             "lossless-cut",
             "pylon-player",
+            "altered-audio-editor",
             "tunefree",
-            "weftcut",
             "phiola",
             "openfilm",
-            "vlc-portable",
-            "scarlet"
+            "weftcut",
+            "vlc-portable"
         ],
         "seo_title": "FFmpeg GUI Editor Windows Free Download for Windows 11 and 10",
         "meta_description": "Download FFmpeg GUI Editor Windows free for Windows 11 and 10. A lightweight portable graphical front‑end for FFmpeg that lets Windows users trim, crop, compre…",
@@ -3661,15 +3797,15 @@
             "cutlass",
             "weftcut",
             "amber",
+            "altered-audio-editor",
             "auto-editor",
             "scarlet",
             "polyphone",
-            "lossless-cut",
             "onlym",
+            "lossless-cut",
             "agentshot",
             "pymusicplayer",
-            "melodia",
-            "ffmpeg-gui-editor-windows"
+            "melodia"
         ],
         "seo_title": "FilmCraft Free Download for Windows",
         "meta_description": "Download FilmCraft free for Windows. FilmCraft is a free, open‑source non‑linear video editor built in Rust.",
@@ -4182,18 +4318,18 @@
             "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [
+            "altered-audio-editor",
             "melodia",
             "nagi",
-            "polyphone",
             "tauon",
             "waveflow",
+            "polyphone",
             "meowsic",
             "pymusicplayer",
             "skrin",
             "waves",
             "phiola",
-            "pylon-player",
-            "riff"
+            "pylon-player"
         ],
         "seo_title": "Fooyin Free Download for Windows",
         "meta_description": "Download Fooyin free for Windows. A customisable music player",
@@ -4309,9 +4445,9 @@
             "rawmakase",
             "picasapy",
             "photosplice",
+            "hycanvas",
             "open-photo-ai",
-            "lightcraft",
-            "rigby2d"
+            "lightcraft"
         ],
         "seo_title": "Formatix Image Converter Free Download for Windows",
         "meta_description": "Download Formatix Image Converter free for Windows. A fast, lightweight, offline batch image converter and resizer for Windows that supports many formats and o…",
@@ -4752,8 +4888,8 @@
             "deskx-wallpaper-engine",
             "universal-intel-chipset-updater",
             "sucrose",
-            "fly-island",
             "winutil-cn",
+            "fly-island",
             "bleachbit",
             "universal-intel-wifi-bt-updater",
             "installerclean",
@@ -4886,6 +5022,120 @@
         "date_added": "2026-11-15",
         "last_verified_at": "2026-11-15",
         "verification_status": "verified"
+    },
+    {
+        "id": "hycanvas",
+        "name": "HyCanvas",
+        "slug": "hycanvas",
+        "summary": "An open‑source Canva‑like editor that runs in the browser and can be self‑hosted.",
+        "description": [
+            "HyCanvas is a web‑based design editor that lets you create social media graphics, posters, presentations, videos, whiteboards, documents and spreadsheets. It offers many ready‑made templates and lets you export your work in common formats without watermarks.",
+            "HyCanvas provides a full‑featured design environment similar to popular online design tools. You can start from over 140 built‑in templates or a blank canvas, edit shapes, text, images, charts and more, and organise your work with layers and a floating toolbar. The editor includes a multi‑track video timeline, a block‑style document editor, and a spreadsheet with formulas. Real‑time collaboration lets multiple users edit together, see each other's cursors, comment, and manage version history. Workspaces support role‑based access, single sign‑on, two‑factor authentication and brand guidelines. AI assistance can generate content using your own API key, while many features work without any key. All designs can be exported as PNG, JPG, PDF, SVG, PPTX, MP4, GIF and other formats, and each project can be saved as a portable .hyc file."
+        ],
+        "icon": {
+            "text": "H",
+            "color": "#1D4ED8",
+            "logo": "/assets/icons/hycanvas.png?v=f9315b40"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU Affero General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/hyscaler/HyCanvas#license",
+        "official_website": "https://hycanvas.com",
+        "download_page": "https://github.com/hyscaler/HyCanvas/releases/tag/v0.3.23",
+        "repository_url": "https://github.com/hyscaler/HyCanvas",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/hyscaler/HyCanvas/releases/tag/v0.3.23",
+                "note": "Current Windows download."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/hyscaler/HyCanvas/releases/tag/v0.3.23",
+                "note": "Current Windows download."
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.3.23",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/hyscaler/HyCanvas/releases/tag/v0.3.23",
+        "primary_download": {
+            "url": "https://github.com/hyscaler/HyCanvas/releases/download/v0.3.23/hycanvas_v0.3.23_windows_amd64.zip",
+            "filename": "hycanvas_v0.3.23_windows_amd64.zip",
+            "size": 60167197,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
+        "download_assets": [
+            {
+                "label": "hycanvas_v0.3.23_windows_amd64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/hyscaler/HyCanvas/releases/download/v0.3.23/hycanvas_v0.3.23_windows_amd64.zip",
+                "size": 60167197,
+                "sha256": "14987da04c8b17f70bf49d05ce3b27a2efe1dfbe59dc00c186cf34904fa60c65"
+            }
+        ],
+        "features": [
+            "Create graphics, presentations, videos, whiteboards, documents and spreadsheets in one web app",
+            "Choose from 140+ templates or start from a blank canvas",
+            "Export designs as PNG, JPG, PDF, SVG, PPTX, MP4, GIF and more without watermarks",
+            "Real‑time co‑editing with presence cursors, comments and version history",
+            "Multi‑track video editing with trims, transitions, keyframes and screen/webcam recording",
+            "AI‑powered content generation using your own provider key or built‑in Assist tools",
+            "Workspace management with roles, single sign‑on, two‑factor authentication and brand kits"
+        ],
+        "requirements": [
+            "Docker must be installed on the computer.",
+            "The application runs a Go binary and a PostgreSQL database inside Docker containers."
+        ],
+        "installation_instructions": [
+            "Click the \"Download HyCanvas\" button on this page. Your browser saves hycanvas_v0.3.23_windows_amd64.zip (57.4 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the HyCanvas program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive."
+        ],
+        "related_software": [
+            "ferrumpix",
+            "pancakeslicer",
+            "photocraft-companion",
+            "photoslide",
+            "sharex",
+            "greycard",
+            "picasapy",
+            "rigby2d",
+            "chroma-app",
+            "photosplice",
+            "open-photo-ai",
+            "procraft"
+        ],
+        "seo_title": "HyCanvas Free Download for Windows 10/11",
+        "meta_description": "Download HyCanvas free for Windows 10/11. An open‑source Canva‑like editor that runs in the browser and can be self‑hosted.",
+        "canonical_url": "https://codehimblog.github.io/software/hycanvas/",
+        "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
     },
     {
         "id": "installerclean",
@@ -5152,9 +5402,9 @@
             "waveflow",
             "animeko",
             "lyrenne",
-            "onlym",
             "meowsic",
-            "nagi"
+            "nagi",
+            "onlym"
         ],
         "seo_title": "IPTVnator Free Download for Windows",
         "meta_description": "Download IPTVnator free for Windows. A free, open‑source IPTV player that lets you watch live TV, movies and series from M3U/M3U8 playlists, Xtream Codes or St…",
@@ -5579,13 +5829,13 @@
         "related_software": [
             "skrin",
             "amber",
-            "pymusicplayer",
             "iptvnator",
+            "pymusicplayer",
             "pylon-player",
             "melodia",
             "reelterminal",
-            "riff",
             "obs-studio",
+            "riff",
             "vlc-portable",
             "fooyin",
             "frame-player"
@@ -6304,18 +6554,18 @@
             "Open that folder and double-click the LosslessCut program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive."
         ],
         "related_software": [
+            "altered-audio-editor",
             "reelterminal",
             "scarlet",
             "weftcut",
             "auto-editor",
             "ffmpeg-gui-editor-windows",
             "agentshot",
-            "openfilm",
             "cutlass",
+            "openfilm",
             "skrin",
-            "meowsic",
             "pylon-player",
-            "obs-studio"
+            "meowsic"
         ],
         "seo_title": "LosslessCut Free Download for Windows",
         "meta_description": "Download LosslessCut free for Windows. A fast, lossless video and audio editor that trims, cuts, merges and remuxes media without re‑encoding.",
@@ -6571,8 +6821,8 @@
             "riff",
             "aurora",
             "af-media-bar",
-            "vlc-win10smtc",
             "waveflow",
+            "vlc-win10smtc",
             "pylon-player",
             "melodia"
         ],
@@ -6701,9 +6951,9 @@
             "lyrenne",
             "riff",
             "waveflow",
+            "altered-audio-editor",
             "screenrecorder",
-            "traydio",
-            "waves"
+            "nagi"
         ],
         "seo_title": "Masterpiece Free Download for Windows 10/11",
         "meta_description": "Download Masterpiece free for Windows 10/11. An open‑source pipe organ sample player that works with Hauptwerk and GrandOrgue sample sets.",
@@ -6807,14 +7057,14 @@
             "deskx-wallpaper-engine",
             "bleachbit",
             "winutil-cn",
-            "quiesce",
             "installerclean",
+            "quiesce",
             "luciddesk",
             "apkstart",
             "sucrose",
             "universal-intel-chipset-updater",
-            "astraeus",
-            "mousex-absolute-mouse-control"
+            "mousex-absolute-mouse-control",
+            "astraeus"
         ],
         "seo_title": "Mayfly Go Free Download for Windows",
         "meta_description": "Download Mayfly Go free for Windows. A web‑based platform that lets you manage servers, databases, caches, search engines, message queues and containers from a…",
@@ -7200,11 +7450,11 @@
             "fooyin",
             "nagi",
             "waveflow",
+            "tauon",
             "meowsic",
             "pymusicplayer",
             "riff",
             "waves",
-            "tauon",
             "aurora",
             "phiola",
             "traydio",
@@ -7591,14 +7841,14 @@
             "nagi",
             "riff",
             "waves",
-            "aurora",
             "frame-player",
+            "aurora",
             "obs-studio",
             "motionbox",
             "waveflow",
             "reelterminal",
             "meowsic",
-            "vlc-rpc"
+            "vlc-portable"
         ],
         "seo_title": "Metrolist Free Download for Windows",
         "meta_description": "Download Metrolist free for Windows. Metrolist is a free, open‑source YouTube Music client that runs on Windows, letting you stream music and videos without ad…",
@@ -7738,6 +7988,7 @@
         ],
         "related_software": [
             "rubylight",
+            "openkumite",
             "starluxe",
             "obs-studio"
         ],
@@ -7996,8 +8247,8 @@
             "deskx-wallpaper-engine",
             "universal-intel-wifi-bt-updater",
             "apkstart",
-            "hardwarevisualizer",
             "bleachbit",
+            "hardwarevisualizer",
             "universal-intel-chipset-updater",
             "luciddesk",
             "appgroup"
@@ -8107,8 +8358,8 @@
             "deskx-wallpaper-engine",
             "autorunmanager",
             "mouse-point-viewer",
-            "astraeus",
             "fly-island",
+            "astraeus",
             "winutil-cn",
             "appgroup",
             "mayfly-go",
@@ -8232,13 +8483,13 @@
         ],
         "related_software": [
             "fk-desktop",
-            "spacewave",
             "aula",
+            "spacewave",
             "voxtype",
             "steamtools",
             "scribe",
-            "youboard",
             "deckcraft",
+            "youboard",
             "tizumark-markdown-editor",
             "ciyue",
             "sakura",
@@ -8354,6 +8605,7 @@
             "On first run, point Nagi to the folders that contain your music."
         ],
         "related_software": [
+            "altered-audio-editor",
             "fooyin",
             "lyrenne",
             "melodia",
@@ -8364,8 +8616,7 @@
             "meowsic",
             "pylon-player",
             "pymusicplayer",
-            "riff",
-            "waves"
+            "riff"
         ],
         "seo_title": "Nagi Free Download for Windows 11 and 10",
         "meta_description": "Download Nagi free for Windows 11 and 10. A fast, private music player for your local library on Windows, with Navidrome and Jellyfin streaming",
@@ -8873,13 +9124,13 @@
             "screenrecorder",
             "metrolist",
             "phiola",
-            "sharex",
             "l-mpv",
+            "sharex",
             "lossless-cut",
             "traydio",
             "animeko",
-            "aurora",
-            "frame-player"
+            "altered-audio-editor",
+            "aurora"
         ],
         "seo_title": "OBS Studio for Windows – Free Screen Recording & Streaming",
         "meta_description": "OBS Studio is free, open-source screen recording and live streaming software. See features, download formats and official sources for Windows.",
@@ -9144,9 +9395,9 @@
             "Start using the application to edit your photos."
         ],
         "related_software": [
-            "chroma-app",
             "lightzone",
             "rawmakase",
+            "chroma-app",
             "photocraft-companion",
             "picasapy",
             "greycard",
@@ -9271,19 +9522,147 @@
             "auto-editor",
             "cutlass",
             "weftcut",
+            "altered-audio-editor",
             "scarlet",
             "lossless-cut",
             "pylon-player",
             "skrin",
             "fooyin",
             "metrolist",
-            "nagi",
-            "onlym"
+            "nagi"
         ],
         "seo_title": "OpenFilm Free Download for Windows",
         "meta_description": "Download OpenFilm free for Windows. An open‑source AI video agent that lets a coding agent generate videos and provides a local editor to modify the results.",
         "canonical_url": "https://codehimblog.github.io/software/openfilm/",
         "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "openkumite",
+        "name": "OpenKumite",
+        "slug": "openkumite",
+        "summary": "OpenKumite is an open‑source 3D fighting game engine that lets you play converted versions of classic games such as Tekken 3, Tekken 2 and Counter‑Strike on Windows.",
+        "description": [
+            "OpenKumite runs natively on Windows and provides local two‑player and online rollback netplay. You supply your own game discs or files, the engine converts them to standard formats, and then you can fight using the converted characters and stages.",
+            "The program does not include any game data; you must provide your own copies of supported games. Using the Game Data screen you select a disc image (ISO, CUE/BIN, CHD, etc.) or a folder for Half‑Life, and the engine converts the data into glTF models, textures, audio and level files. After conversion the game launches with menus, HUD, audio, movies and online rooms. It supports both keyboard/mouse and gamepads, and offers a browser version via WebAssembly. Optional packs such as Tekken 2 fighters or Counter‑Strike arenas can be added later. The engine uses the wgpu graphics API for rendering and includes debug tools and a local web server for the browser build."
+        ],
+        "icon": {
+            "text": "O",
+            "color": "#2563EB",
+            "logo": "/assets/icons/openkumite.png?v=53702545"
+        },
+        "category": "games",
+        "categories": [
+            "games"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/openkumite/openkumite#license",
+        "official_website": "https://openkumiteengine.dev",
+        "download_page": "https://github.com/openkumite/openkumite/releases/tag/v0.4.1",
+        "repository_url": "https://github.com/openkumite/openkumite",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/openkumite/openkumite/releases/tag/v0.4.1",
+                "note": "Named in the release notes."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/openkumite/openkumite/releases/tag/v0.4.1",
+                "note": "Named in the release notes."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/openkumite/openkumite/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/openkumite/openkumite/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/openkumite/openkumite/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.4.1",
+        "release_date": "2026-11-16",
+        "release_url": "https://github.com/openkumite/openkumite/releases/tag/v0.4.1",
+        "primary_download": {
+            "url": "https://github.com/openkumite/openkumite/releases/download/v0.4.1/openkumite-v0.4.1-windows-amd64.zip",
+            "filename": "openkumite-v0.4.1-windows-amd64.zip",
+            "size": 16277925,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
+        "download_assets": [
+            {
+                "label": "openkumite-v0.4.1-web.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/openkumite/openkumite/releases/download/v0.4.1/openkumite-v0.4.1-web.zip",
+                "size": 15440462,
+                "sha256": "bf99da9aa29b8d54f362f9a6921e8220da227469c658d36614423365b79c5a3e"
+            },
+            {
+                "label": "openkumite-v0.4.1-windows-amd64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/openkumite/openkumite/releases/download/v0.4.1/openkumite-v0.4.1-windows-amd64.zip",
+                "size": 16277925,
+                "sha256": "cf759dca5897847aa202951b71bbac493d7a3ef7ef391db6be38883159ec181d"
+            },
+            {
+                "label": "openkumite-v0.4.1-windows-arm64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/openkumite/openkumite/releases/download/v0.4.1/openkumite-v0.4.1-windows-arm64.zip",
+                "size": 15022441,
+                "sha256": "baab845243aff6881c84e7646b6de549355690e37c6e30330e67b48abbc8a019"
+            }
+        ],
+        "features": [
+            "Convert your own copies of classic fighting games and shooters into playable assets",
+            "Play locally with two players on the same computer",
+            "Join online matches with rollback netplay",
+            "Supports keyboard, mouse, touchpad and gamepad input",
+            "Displays original audio, movies and stage backdrops",
+            "Optional extra packs for additional characters and levels",
+            "Runs both as a native Windows application and in a web browser"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download OpenKumite\" button on this page. Your browser saves openkumite-v0.4.1-windows-amd64.zip (15.5 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the OpenKumite program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive."
+        ],
+        "related_software": [
+            "rubylight",
+            "moonlight-qt",
+            "starluxe",
+            "estella",
+            "skrin"
+        ],
+        "seo_title": "OpenKumite Free Download for Windows 10/11",
+        "meta_description": "Download OpenKumite free for Windows 10/11. OpenKumite is an open‑source 3D fighting game engine that lets you play converted versions of classic games such as…",
+        "canonical_url": "https://codehimblog.github.io/software/openkumite/",
+        "date_added": "2026-11-17",
         "last_verified_at": null,
         "verification_status": "partial"
     },
@@ -9427,6 +9806,151 @@
         "verification_status": "partial"
     },
     {
+        "id": "pancakeslicer",
+        "name": "PancakeSlicer",
+        "slug": "pancakeslicer",
+        "summary": "A self‑hostable slicer for non‑planar 3D printing built on the OrcaSlicer engine.",
+        "description": [
+            "PancakeSlicer lets you prepare 3D models for printing, including experimental non‑planar slicing. It can run on a Windows PC as a desktop program or be hosted on a server for shared use across multiple machines and printers.",
+            "The program provides a graphical interface for slicing 3D models into printer‑ready G‑code. It supports a growing list of printer models and can check non‑planar toolpaths against the printer’s head geometry to avoid collisions. Non‑planar slicing is experimental, so users are advised to preview the generated G‑code and use the feature under supervision. PancakeSlicer can be installed locally or run as a self‑hosted service, allowing a single central slicer with shared profiles for a makerspace or home lab. The self‑hosted mode removes the need to sync slicer settings between computers and enables remote access to printers without individual remote‑access setups. The project is open source, free to use, and welcomes contributions and sponsorship."
+        ],
+        "icon": {
+            "text": "P",
+            "color": "#2563EB",
+            "logo": "/assets/icons/pancakeslicer.png?v=9ed9db73"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU Affero General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/ZimengXiong/PancakeSlicer#license",
+        "official_website": "https://pancake.cooking/",
+        "download_page": "https://github.com/ZimengXiong/PancakeSlicer/releases/tag/v0.5.1",
+        "repository_url": "https://github.com/ZimengXiong/PancakeSlicer",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/ZimengXiong/PancakeSlicer/blob/main/desktop/package.json",
+                "note": "Built with Electron 45 (Windows 10 or later)."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/ZimengXiong/PancakeSlicer/blob/main/desktop/package.json",
+                "note": "Built with Electron 45 (Windows 10 or later)."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/ZimengXiong/PancakeSlicer/blob/main/desktop/package.json",
+                "note": "Built with Electron 45 (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/ZimengXiong/PancakeSlicer/blob/main/desktop/package.json",
+                "note": "Built with Electron 45 (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/ZimengXiong/PancakeSlicer/blob/main/desktop/package.json",
+                "note": "Built with Electron 45 (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.5.1",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/ZimengXiong/PancakeSlicer/releases/tag/v0.5.1",
+        "primary_download": {
+            "url": "https://github.com/ZimengXiong/PancakeSlicer/releases/download/v0.5.1/PancakeSlicer-0.5.1-win-x64.exe",
+            "filename": "PancakeSlicer-0.5.1-win-x64.exe",
+            "size": 191883123,
+            "architecture": "x64",
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "PancakeSlicer-0.5.1-win-x64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/ZimengXiong/PancakeSlicer/releases/download/v0.5.1/PancakeSlicer-0.5.1-win-x64.exe",
+                "size": 191883123,
+                "sha256": "ca911a578c50f26c1a3d283aea3dd7739fd8cf882a475f4fd3efcdb75def2681"
+            },
+            {
+                "label": "PancakeSlicer-0.5.1-win-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/ZimengXiong/PancakeSlicer/releases/download/v0.5.1/PancakeSlicer-0.5.1-win-x64.zip",
+                "size": 237297031,
+                "sha256": "255593774871ee69dc2d858c168945190ac5655f8446310f09ad09c2192c4ddd"
+            },
+            {
+                "label": "PancakeSlicer-win-x64-qualification.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/ZimengXiong/PancakeSlicer/releases/download/v0.5.1/PancakeSlicer-win-x64-qualification.zip",
+                "size": 12173143,
+                "sha256": "10de2da1b85b66fe8cb172fa70f2a73f1329409ec77dcc5b4a0843dd8b5b12fc"
+            },
+            {
+                "label": "PancakeSlicer-0.5.1-source.tar.gz",
+                "format": "Source code archive",
+                "kind": "source",
+                "architecture": null,
+                "url": "https://github.com/ZimengXiong/PancakeSlicer/releases/download/v0.5.1/PancakeSlicer-0.5.1-source.tar.gz",
+                "size": 87799657,
+                "sha256": "1200a71abb83818861d952f56d7a85722fefb7707caac2ac39c38ba75f813ae8"
+            }
+        ],
+        "features": [
+            "Slice 3D models into printer‑ready G‑code",
+            "Experimental non‑planar slicing with four different modes",
+            "Built‑in preview to check toolpaths for collisions",
+            "Supports many popular printer brands and models",
+            "Can be run as a desktop app or self‑hosted server for shared use",
+            "Central profile management for multiple users and printers",
+            "Open source and free to modify"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download PancakeSlicer\" button on this page. Your browser saves PancakeSlicer-0.5.1-win-x64.exe (183.0 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start PancakeSlicer. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\PancakeSlicer) so it is easy to find next time.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [
+            "rawmakase",
+            "hycanvas",
+            "solidcraft",
+            "greycard",
+            "lightzone",
+            "photocraft",
+            "sculptforge",
+            "rigby2d",
+            "lightcraft",
+            "open-photo-ai",
+            "procraft",
+            "ferrumpix"
+        ],
+        "seo_title": "PancakeSlicer Free Download for Windows 10/11",
+        "meta_description": "Download PancakeSlicer free for Windows 10/11. A self‑hostable slicer for non‑planar 3D printing built on the OrcaSlicer engine.",
+        "canonical_url": "https://codehimblog.github.io/software/pancakeslicer/",
+        "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "phiola",
         "name": "phiola",
         "slug": "phiola",
@@ -9538,8 +10062,8 @@
             "nagi",
             "waveflow",
             "traydio",
-            "screenrecorder",
             "waves",
+            "screenrecorder",
             "polyphone",
             "obs-studio",
             "meowsic"
@@ -9815,17 +10339,17 @@
         ],
         "related_software": [
             "photocraft",
-            "open-photo-ai",
             "rawmakase",
+            "open-photo-ai",
             "lightzone",
+            "hycanvas",
             "picasapy",
             "greycard",
             "sculptforge",
             "rembrandt",
             "photoslide",
             "procraft",
-            "ferrumpix",
-            "photosplice"
+            "ferrumpix"
         ],
         "seo_title": "PhotoCraft Companion Free Download for Windows 10/11",
         "meta_description": "Download PhotoCraft Companion free for Windows 10/11. An extensible companion for the PhotoCraft graphics editor that adds AI-powered tools, a floating tool pa…",
@@ -10075,8 +10599,8 @@
             "rembrandt",
             "chroma-app",
             "procraft",
-            "photocraft-companion",
-            "open-photo-ai"
+            "hycanvas",
+            "photocraft-companion"
         ],
         "seo_title": "PhotoSplice Free Download for Windows 10",
         "meta_description": "Download PhotoSplice free for Windows 10. A desktop image editor that replicates classic Adobe Photoshop with full PSD/PSB compatibility.",
@@ -10334,9 +10858,10 @@
             "Start creating or editing soundfonts."
         ],
         "related_software": [
-            "fooyin",
+            "altered-audio-editor",
             "masterpiece",
             "nagi",
+            "fooyin",
             "pymusicplayer",
             "agentshot",
             "phiola",
@@ -10344,8 +10869,7 @@
             "riff",
             "filmcraft",
             "waves",
-            "cutlass",
-            "weftcut"
+            "cutlass"
         ],
         "seo_title": "Polyphone Free Download for Windows",
         "meta_description": "Download Polyphone free for Windows. A free and open-source soundfont editor for creating, editing, and playing musical instrument soundfonts.",
@@ -10485,8 +11009,8 @@
             "chroma-app",
             "formatix",
             "rigby2d",
-            "rembrandt",
             "solidcraft",
+            "rembrandt",
             "rawmakase",
             "lightcraft",
             "photosplice"
@@ -10712,14 +11236,14 @@
             "pylon-player",
             "riff",
             "traydio",
+            "altered-audio-editor",
             "aurora",
             "fooyin",
             "lyrenne",
             "melodia",
             "nagi",
             "phiola",
-            "polyphone",
-            "waveflow"
+            "polyphone"
         ],
         "seo_title": "PyMusicPlayer Free Download for Windows",
         "meta_description": "Download PyMusicPlayer free for Windows. A Windows music player with audio analysis, waveform seek bar, and support for many audio formats and internet radio.",
@@ -11013,10 +11537,10 @@
             "lap",
             "lightzone",
             "open-photo-ai",
+            "pancakeslicer",
             "photoslide",
             "picasapy",
-            "rembrandt",
-            "greycard"
+            "rembrandt"
         ],
         "seo_title": "RAWmakase Free Download for Windows",
         "meta_description": "Download RAWmakase free for Windows. A fast, non‑destructive RAW photo editor with Lightroom‑style controls for Windows.",
@@ -11142,6 +11666,7 @@
             "cutlass",
             "openfilm",
             "scarlet",
+            "altered-audio-editor",
             "auto-editor",
             "ffmpeg-gui-editor-windows",
             "lossless-cut",
@@ -11149,7 +11674,6 @@
             "amber",
             "metrolist",
             "frame-player",
-            "polyphone",
             "l-mpv"
         ],
         "seo_title": "ReelTerminal Free Download for Windows 10/11",
@@ -11422,7 +11946,7 @@
             "waveflow",
             "waves",
             "fooyin",
-            "vlc-rpc"
+            "vlc-portable"
         ],
         "seo_title": "Riff Free Download for Windows",
         "meta_description": "Download Riff free for Windows. A free, open-source desktop music player that streams YouTube Music, YouTube, SoundCloud and plays local audio files without ad…",
@@ -11625,13 +12149,13 @@
             "photocraft",
             "procraft",
             "ferrumpix",
+            "hycanvas",
             "solidcraft",
             "lightcraft",
             "lap",
             "photocraft-companion",
-            "picasapy",
-            "photosplice",
-            "rawmakase"
+            "pancakeslicer",
+            "picasapy"
         ],
         "seo_title": "Rigby2D Free Download for Windows",
         "meta_description": "Download Rigby2D free for Windows. Open‑source 2D skeletal animation editor for creating and exporting animations for games and film.",
@@ -11767,6 +12291,7 @@
         ],
         "related_software": [
             "moonlight-qt",
+            "openkumite",
             "starluxe",
             "obs-studio",
             "steamtools"
@@ -12021,12 +12546,12 @@
             "auto-editor",
             "lossless-cut",
             "cutlass",
+            "altered-audio-editor",
             "openfilm",
             "filmcraft",
             "ffmpeg-gui-editor-windows",
-            "amber",
             "autosubsync",
-            "vlc-rpc"
+            "amber"
         ],
         "seo_title": "Scarlet Free Download for Windows",
         "meta_description": "Download Scarlet free for Windows. Scarlet is an open-source AI video editor for macOS, Windows and Linux.",
@@ -12148,8 +12673,8 @@
             "vlc-portable",
             "frame-player",
             "pylon-player",
-            "vlc-redesign",
             "vlc-win10smtc",
+            "vlc-redesign",
             "skrin",
             "af-media-bar",
             "riff",
@@ -12281,16 +12806,16 @@
         "related_software": [
             "obs-studio",
             "phiola",
-            "weftcut",
             "lossless-cut",
+            "weftcut",
             "ffmpeg-gui-editor-windows",
+            "altered-audio-editor",
             "masterpiece",
-            "tunefree",
             "pymusicplayer",
             "vlc-win10smtc",
             "filmcraft",
-            "pylon-player",
-            "screenbox"
+            "tunefree",
+            "pylon-player"
         ],
         "seo_title": "ScreenRecorder Free Download for Windows 10",
         "meta_description": "Download ScreenRecorder free for Windows 10. A simple program that records your screen and audio.",
@@ -12424,8 +12949,8 @@
             "youboard",
             "mynotes",
             "deckcraft",
-            "noobot",
             "spacewave",
+            "noobot",
             "tizumark-markdown-editor",
             "handwriting-ocr-scriptreader",
             "fk-desktop",
@@ -12718,12 +13243,12 @@
             "rembrandt",
             "photocraft",
             "ferrumpix",
+            "pancakeslicer",
             "photoslide",
             "solidcraft",
             "picasapy",
             "lap",
-            "open-photo-ai",
-            "rawmakase"
+            "open-photo-ai"
         ],
         "seo_title": "SculptForge Free Download for Windows 10/11",
         "meta_description": "Download SculptForge free for Windows 10/11. Free, open‑source 3D sculpting software with brushes, symmetry, AI‑generated brushes and export options for game p…",
@@ -12856,8 +13381,8 @@
             "headroom-desktop",
             "jenv",
             "tokentracker",
-            "mayfly-go",
-            "photocraft"
+            "lightcraft",
+            "mayfly-go"
         ],
         "seo_title": "Servo Free Download for Windows",
         "meta_description": "Download Servo free for Windows. Servo is an experimental web browser engine written in Rust that can run web pages and be used for testing web technologies on…",
@@ -12993,6 +13518,7 @@
             "ferrumpix",
             "obs-studio",
             "open-photo-ai",
+            "hycanvas",
             "picasapy",
             "lightcraft",
             "lap",
@@ -13000,8 +13526,7 @@
             "lightzone",
             "greycard",
             "photoslide",
-            "photocraft",
-            "photosplice"
+            "photocraft"
         ],
         "seo_title": "ShareX for Windows – Free Open-Source Screen Capture Tool",
         "meta_description": "ShareX is a free, open-source screenshot and screen recording tool for Windows. See features, download formats and official download sources.",
@@ -13362,6 +13887,7 @@
         "related_software": [
             "photocraft",
             "lightcraft",
+            "pancakeslicer",
             "procraft",
             "rigby2d",
             "rawmakase",
@@ -13370,8 +13896,7 @@
             "sculptforge",
             "greycard",
             "lightzone",
-            "photocraft-companion",
-            "picasapy"
+            "photocraft-companion"
         ],
         "seo_title": "SolidCraft Free Download for Windows 10/11",
         "meta_description": "Download SolidCraft free for Windows 10/11. SolidCraft is an open‑source parametric 3D CAD application written in Rust, allowing you to sketch, constrain, extr…",
@@ -13626,6 +14151,7 @@
         ],
         "related_software": [
             "rubylight",
+            "openkumite",
             "moonlight-qt"
         ],
         "seo_title": "StarLuxe Free Download for Windows",
@@ -14051,8 +14577,8 @@
             "voxtype",
             "deckcraft",
             "aula",
-            "noobot",
             "orcaslicer",
+            "noobot",
             "handwriting-ocr-scriptreader",
             "steamtools",
             "spacewave",
@@ -14315,8 +14841,8 @@
             "Add your favorite radio stations using the \"Add Station\" dialog."
         ],
         "related_software": [
-            "pymusicplayer",
             "iptvnator",
+            "pymusicplayer",
             "phiola",
             "melodia",
             "aurora",
@@ -14326,7 +14852,7 @@
             "waveflow",
             "frame-player",
             "screenbox",
-            "riff"
+            "nagi"
         ],
         "seo_title": "Traydio Free Download for Windows",
         "meta_description": "Download Traydio free for Windows. A tiny, simple, elegant internet radio player that lives in the Windows tray.",
@@ -14442,8 +14968,8 @@
             "waves",
             "vlc-win10smtc",
             "screenrecorder",
-            "phiola",
-            "frame-player"
+            "frame-player",
+            "phiola"
         ],
         "seo_title": "TuneFree Free Download for Windows 10",
         "meta_description": "Download TuneFree free for Windows 10. A tool that decrypts QQ Music's encrypted .mflac and .mgg files and converts them to MP3 or FLAC on Windows.",
@@ -15072,14 +15598,14 @@
             "vlc-portable",
             "vlc-win10smtc",
             "vlc-lyrics-finder",
-            "screenbox",
             "lossless-cut",
+            "screenbox",
             "l-mpv",
             "onlym",
             "vlc-rpc",
             "af-media-bar",
-            "riff",
-            "skrin"
+            "skrin",
+            "waveflow"
         ],
         "seo_title": "VLC Media Player Redesign Free Download for Windows",
         "meta_description": "Download VLC Media Player Redesign free for Windows. An unofficial build of VLC 4 that keeps the original VLC engine and codecs but replaces the interface with…",
@@ -15465,12 +15991,12 @@
         ],
         "related_software": [
             "af-media-bar",
+            "vlc-portable",
             "vlc-lyrics-finder",
             "vlc-win10smtc",
-            "vlc-portable",
             "riff",
-            "metrolist",
             "pylon-player",
+            "metrolist",
             "pymusicplayer",
             "reelterminal",
             "skrin",
@@ -16094,8 +16620,8 @@
             "riff",
             "aurora",
             "phiola",
-            "meowsic",
             "pylon-player",
+            "meowsic",
             "lyrenne"
         ],
         "seo_title": "Waves Free Download for Windows",
@@ -16212,11 +16738,11 @@
             "amber",
             "auto-editor",
             "openfilm",
+            "altered-audio-editor",
             "reelterminal",
             "vlc-win10smtc",
             "agentshot",
-            "waves",
-            "ffmpeg-gui-editor-windows"
+            "waves"
         ],
         "seo_title": "WeftCut Free Download for Windows",
         "meta_description": "Download WeftCut free for Windows. Free, open-source AI‑driven video editor that lets an AI agent control the timeline just like a human user.",
@@ -16336,7 +16862,8 @@
             "jenv",
             "mcp-windows",
             "universal-intel-wifi-bt-updater",
-            "winutil-cn"
+            "winutil-cn",
+            "universal-intel-chipset-updater"
         ],
         "seo_title": "WinAppMigrator Free Download for Windows",
         "meta_description": "Download WinAppMigrator free for Windows. Creates a single installer from an already installed Windows program, allowing you to move it to another PC even when…",
