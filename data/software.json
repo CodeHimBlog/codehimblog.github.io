@@ -51,9 +51,7 @@
             },
             "windows-8-1": {
                 "status": "unknown",
-                "verified": false,
-                "source": "https://www.7-zip.org/",
-                "note": "The official website lists Windows 8 but does not name Windows 8.1 separately."
+                "verified": false
             },
             "windows-8": {
                 "status": "supported",
@@ -6707,22 +6705,16 @@
                 "note": "Current Windows download."
             },
             "windows-8-1": {
-                "status": "reported",
-                "verified": false,
-                "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/SUPPORTED_SYSTEM.md",
-                "note": "Listed as supported in the project's SUPPORTED_SYSTEM.md (seen via a copy). Confirm in the official repository."
+                "status": "unknown",
+                "verified": false
             },
             "windows-8": {
-                "status": "runs_unsupported",
-                "verified": false,
-                "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/SUPPORTED_SYSTEM.md",
-                "note": "Listed as able to run the current version but not supported by the team. Confirm in the official repository."
+                "status": "unknown",
+                "verified": false
             },
             "windows-7": {
-                "status": "runs_unsupported",
-                "verified": false,
-                "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/SUPPORTED_SYSTEM.md",
-                "note": "Listed as able to run the current version but not supported by the team. Confirm in the official repository."
+                "status": "unknown",
+                "verified": false
             }
         },
         "supported_architectures": [
@@ -6928,34 +6920,28 @@
         "repository_url": "https://github.com/obsproject/obs-studio",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "reported",
-                "verified": false,
-                "source": "https://obsproject.com/download",
-                "note": "Reported as supported. Confirm on the official download page."
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.1",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "reported",
-                "verified": false,
-                "source": "https://obsproject.com/download",
-                "note": "Reported as supported (64-bit). Confirm on the official download page."
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/obsproject/obs-studio/releases/tag/33.0.1",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
-                "verified": false,
-                "source": null,
-                "note": "Not confirmed for the current release."
+                "verified": false
             },
             "windows-8": {
                 "status": "unknown",
-                "verified": false,
-                "source": null,
-                "note": "Not confirmed for the current release."
+                "verified": false
             },
             "windows-7": {
                 "status": "unknown",
-                "verified": false,
-                "source": null,
-                "note": "Not confirmed for the current release."
+                "verified": false
             }
         },
         "supported_architectures": [
