@@ -5740,6 +5740,112 @@
         "verification_status": "partial"
     },
     {
+        "id": "onlym",
+        "name": "OnlyM",
+        "slug": "onlym",
+        "summary": "Simple Media Player (audio, video and images) for use in meetings.",
+        "description": [
+            "OnlyM is a lightweight Windows media player built with C# and WPF. It focuses on easy playback of audio, video and image files, making it suitable for presentations, meetings, or everyday media consumption.",
+            "OnlyM provides a straightforward interface for playing a wide range of media formats. It includes optional remote control via a simple HTTP server that can be accessed on the local network or through a Cloudflare tunnel. The remote feature is disabled by default and can be enabled if needed. The player uses FFmpeg and other open‑source libraries to handle various codecs. It is free, open‑source software released under the MIT license."
+        ],
+        "icon": {
+            "text": "O",
+            "color": "#7C3AED",
+            "logo": "/assets/icons/onlym.png?v=093d26bd"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/AntonyCorbett/OnlyM#license",
+        "official_website": null,
+        "download_page": "https://github.com/AntonyCorbett/OnlyM/releases/tag/2.7.0.5",
+        "repository_url": "https://github.com/AntonyCorbett/OnlyM",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.7.0.5",
+        "release_date": "2026-11-12",
+        "release_url": "https://github.com/AntonyCorbett/OnlyM/releases/tag/2.7.0.5",
+        "primary_download": {
+            "url": "https://github.com/AntonyCorbett/OnlyM/releases/download/2.7.0.5/OnlyMSetup.exe",
+            "filename": "OnlyMSetup.exe",
+            "size": 183271561,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "OnlyMSetup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/AntonyCorbett/OnlyM/releases/download/2.7.0.5/OnlyMSetup.exe",
+                "size": 183271561,
+                "sha256": "9f46fc9afa05841eeb15e8d5024be7e7d436aa7bbc3b14c88d9c4b7ea4239d1a"
+            },
+            {
+                "label": "OnlyMPortable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/AntonyCorbett/OnlyM/releases/download/2.7.0.5/OnlyMPortable.zip",
+                "size": 256435917,
+                "sha256": "8a1eb51e5ab94484971d7255b411b41a8db6aea0a7332d20a571cb073bb80043"
+            }
+        ],
+        "features": [
+            "Play audio, video and image files with a simple interface",
+            "Supports common media formats through built‑in FFmpeg libraries",
+            "Optional remote control via a web page, QR code and PIN",
+            "Portable version available for use without installation",
+            "Sends deleted media files to the Recycle Bin",
+            "Minimal system impact, suitable for use during meetings"
+        ],
+        "requirements": [
+            "8 GB RAM",
+            "500 MB free disk space"
+        ],
+        "installation_instructions": [
+            "Click the \"Download OnlyM\" button on this page. Your browser saves OnlyMSetup.exe (174.8 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start OnlyM from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "OnlyM Free Download for Windows",
+        "meta_description": "Download OnlyM free for Windows. Simple Media Player (audio, video and images) for use in meetings.",
+        "canonical_url": "https://codehimblog.github.io/software/onlym/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "open-photo-ai",
         "name": "Open Photo AI",
         "slug": "open-photo-ai",
@@ -7812,6 +7918,117 @@
         "meta_description": "Download ScriptReader free for Windows. ScriptReader converts scanned handwritten JPEG images into formatted RTF documents and removes handwritten typos automa…",
         "canonical_url": "https://codehimblog.github.io/software/handwriting-ocr-scriptreader/",
         "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "servo",
+        "name": "Servo",
+        "slug": "servo",
+        "summary": "Servo is an experimental web browser engine written in Rust that can run web pages and be used for testing web technologies on Windows.",
+        "description": [
+            "Servo provides a lightweight, high‑performance alternative to traditional browser engines. It lets users open web pages, run the Servo tech demo, and experiment with modern web standards without needing a full browser installation.",
+            "Servo is a prototype browser engine created in the Rust programming language. It is designed for developers and enthusiasts who want to explore how web pages are rendered and to test new web features. On Windows, Servo is available as an executable or a portable zip file. When launched, it opens a simple window where you can enter a URL or run the included tech demo that showcases its rendering capabilities. The program runs independently and does not require a separate installation process beyond extracting the files. It is free and open source, licensed under MPL‑2.0."
+        ],
+        "icon": {
+            "text": "S",
+            "color": "#2563EB",
+            "logo": "/assets/icons/servo.png?v=106c6807"
+        },
+        "category": "developer-tools",
+        "categories": [
+            "developer-tools"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Mozilla Public License 2.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/servo/servo#license",
+        "official_website": "https://servo.org",
+        "download_page": "https://github.com/servo/servo/releases/tag/v0.8.0",
+        "repository_url": "https://github.com/servo/servo",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.8.0",
+        "release_date": "2026-11-09",
+        "release_url": "https://github.com/servo/servo/releases/tag/v0.8.0",
+        "primary_download": {
+            "url": "https://github.com/servo/servo/releases/download/v0.8.0/servo-x86_64-windows-msvc.exe",
+            "filename": "servo-x86_64-windows-msvc.exe",
+            "size": 114953107,
+            "architecture": "x64",
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "servo-x86_64-windows-msvc.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/servo/servo/releases/download/v0.8.0/servo-x86_64-windows-msvc.exe",
+                "size": 114953107,
+                "sha256": "971c2c6ba6e3147ec32047d518047f2577bef5ffe91ce43e56def49fb45752a8"
+            },
+            {
+                "label": "servo-x86_64-windows-msvc.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/servo/servo/releases/download/v0.8.0/servo-x86_64-windows-msvc.zip",
+                "size": 103547374,
+                "sha256": "0fca2f4d7e6107304631f7b9031edf0df2c3d88e0570cd19cde2ef90379bee8c"
+            },
+            {
+                "label": "servo-v0.8.0-src-vendored.tar.gz",
+                "format": "Source code archive",
+                "kind": "source",
+                "architecture": null,
+                "url": "https://github.com/servo/servo/releases/download/v0.8.0/servo-v0.8.0-src-vendored.tar.gz",
+                "size": 378061090,
+                "sha256": "7aa75f1cc47e0fc44e381c1968fa66a52ea6855f721d2ebc4a394129e21f3e39"
+            }
+        ],
+        "features": [
+            "Open web pages by entering a URL in the address bar",
+            "Run the built‑in Servo tech demo to see rendering features",
+            "View how modern web standards are handled by the engine",
+            "Test web pages locally without a full browser",
+            "Simple window interface with basic navigation controls"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Servo\" button on this page. Your browser saves servo-x86_64-windows-msvc.exe (109.6 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start Servo. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\Servo) so it is easy to find next time.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "Servo Free Download for Windows",
+        "meta_description": "Download Servo free for Windows. Servo is an experimental web browser engine written in Rust that can run web pages and be used for testing web technologies on…",
+        "canonical_url": "https://codehimblog.github.io/software/servo/",
+        "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
     },
