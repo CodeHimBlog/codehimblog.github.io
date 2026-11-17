@@ -2789,6 +2789,138 @@
         "verification_status": "partial"
     },
     {
+        "id": "fooyin",
+        "name": "Fooyin",
+        "slug": "fooyin",
+        "summary": "A customisable music player",
+        "description": [
+            "Fooyin is a desktop music player that lets you arrange the interface the way you like and supports many audio formats. It offers library management, playlists, and various visual and audio tools.",
+            "Fooyin provides flexible playback for common audio files such as MP3, FLAC, AAC and more, as well as optional support for tracker and VGM formats. You can play files directly from archives, use cue sheets, and enjoy gapless, bit‑perfect playback with visualisations like waveforms and spectrums. The player includes tools for tag editing, metadata lookup via MusicBrainz, artwork handling, and audio conversion to popular formats. Library features include advanced search, ratings, play counts, autoplaylists and multiple view styles. The interface is fully customisable from a blank canvas or preset layouts, with support for lyrics, keyboard shortcuts, and scripting through FooScript. Plugins add extra decoders, DSP effects, and integrations such as MPRIS, desktop notifications and scrobbling to Last.fm or Libre.fm."
+        ],
+        "icon": {
+            "text": "F",
+            "color": "#1D4ED8",
+            "logo": "/assets/icons/fooyin.png?v=8188393a"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/fooyin/fooyin#license",
+        "official_website": "https://fooyin.org",
+        "download_page": "https://github.com/fooyin/fooyin/releases/tag/v0.15.1",
+        "repository_url": "https://github.com/fooyin/fooyin",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.15.1",
+        "release_date": "2026-11-10",
+        "release_url": "https://github.com/fooyin/fooyin/releases/tag/v0.15.1",
+        "primary_download": {
+            "url": "https://github.com/fooyin/fooyin/releases/download/v0.15.1/fooyin-0.15.1-windows-x64.exe",
+            "filename": "fooyin-0.15.1-windows-x64.exe",
+            "size": 66548310,
+            "architecture": "x64",
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "fooyin-0.15.1-windows-arm64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/fooyin/fooyin/releases/download/v0.15.1/fooyin-0.15.1-windows-arm64.exe",
+                "size": 57686017,
+                "sha256": "0d700a0c2992a20580edb53be70a5ae21682f2ff530dd7d9efbca84ee072d38b"
+            },
+            {
+                "label": "fooyin-0.15.1-windows-x64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/fooyin/fooyin/releases/download/v0.15.1/fooyin-0.15.1-windows-x64.exe",
+                "size": 66548310,
+                "sha256": "6ea9d46e8335f53c913ef2c3c6c9ac9b24c4843ffc22e9bd61852c805944d832"
+            },
+            {
+                "label": "fooyin-0.15.1-windows-arm64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/fooyin/fooyin/releases/download/v0.15.1/fooyin-0.15.1-windows-arm64-portable.zip",
+                "size": 78574132,
+                "sha256": "12d1991d67b24f41eb804edb85050c74a2fd5be6bfeae591d19b847222fdacfe"
+            },
+            {
+                "label": "fooyin-0.15.1-windows-x64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/fooyin/fooyin/releases/download/v0.15.1/fooyin-0.15.1-windows-x64-portable.zip",
+                "size": 83077547,
+                "sha256": "b22e8de056a06bd1fa3cedc4809da45b20e0cb4146d96169bc556c0f3dbc53f6"
+            },
+            {
+                "label": "fooyin-sdk-0.15.1-windows-x64-msvc-qt6.12.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/fooyin/fooyin/releases/download/v0.15.1/fooyin-sdk-0.15.1-windows-x64-msvc-qt6.12.zip",
+                "size": 5760670,
+                "sha256": "6ba0d11c2f5bd53c2908e02704ff6e58d89c036689cb8bb6aa9f65524b469805"
+            }
+        ],
+        "features": [
+            "Plays most common audio formats and optional tracker modules",
+            "Supports playback from archives and cue sheets",
+            "Visualisations such as waveform, spectrum and projectM",
+            "Built‑in tag editor, metadata lookup and artwork management",
+            "Audio conversion to WAV, FLAC, MP3, AAC and other formats",
+            "Customisable interface with preset and blank‑canvas layouts",
+            "Library search, ratings, play counts and autoplaylists",
+            "Integration with media keys, desktop notifications and Last.fm scrobbling"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Fooyin\" button on this page. Your browser saves fooyin-0.15.1-windows-x64.exe (63.5 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start Fooyin. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\Fooyin) so it is easy to find next time.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "Fooyin Free Download for Windows",
+        "meta_description": "Download Fooyin free for Windows. A customisable music player",
+        "canonical_url": "https://codehimblog.github.io/software/fooyin/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "formatix",
         "name": "Formatix Image Converter",
         "slug": "formatix",
@@ -6860,6 +6992,111 @@
         "canonical_url": "https://codehimblog.github.io/software/photoslide/",
         "date_added": "2026-11-15",
         "last_verified_at": "2026-11-16",
+        "verification_status": "verified"
+    },
+    {
+        "id": "photosplice",
+        "name": "PhotoSplice",
+        "slug": "photosplice",
+        "summary": "A desktop image editor that replicates classic Adobe Photoshop with full PSD/PSB compatibility.",
+        "description": [
+            "PhotoSplice is a free, open‑source image editor for Windows that aims to feel like Photoshop CS6 while being fast and simple to use. It reads and writes Photoshop files without loss, supports RAW, HDR and PDF, and offers a familiar set of tools and panels.",
+            "PhotoSplice provides a classic Photoshop‑style interface with panels, shortcuts and dialogs that match the older Photoshop workflow. It uses the Rust‑based PhotoCraft engine for speed and GPU optimisation. The program can open, edit and save PSD and PSB files, preserving layers, masks, blending modes, smart filters, text, vector paths and colour profiles, allowing seamless round‑tripping with Adobe Photoshop. In addition to PSD, it can read and write PDF, EXR/HDR and other common image formats, and includes tools for RAW development, lens correction, layer styles, filters and adjustments. The portable ZIP version runs without installation, while the MSI installer integrates with Windows for standard updates and uninstallation."
+        ],
+        "icon": {
+            "text": "P",
+            "color": "#BE123C",
+            "logo": "/assets/icons/photosplice.png?v=19b5aab4"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/eolix/PhotoSplice#license",
+        "official_website": "https://photosplice.com",
+        "download_page": "https://github.com/eolix/PhotoSplice/releases/tag/v0.9.28",
+        "repository_url": "https://github.com/eolix/PhotoSplice",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/eolix/PhotoSplice#readme",
+                "note": "Stated in the project README: “Windows 10+”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.9.28",
+        "release_date": "2026-11-15",
+        "release_url": "https://github.com/eolix/PhotoSplice/releases/tag/v0.9.28",
+        "primary_download": {
+            "url": "https://github.com/eolix/PhotoSplice/releases/download/v0.9.28/photosplice-0.9.28-windows-x64.msi",
+            "filename": "photosplice-0.9.28-windows-x64.msi",
+            "size": 64155648,
+            "architecture": "x64",
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "photosplice-0.9.28-windows-x64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/eolix/PhotoSplice/releases/download/v0.9.28/photosplice-0.9.28-windows-x64.msi",
+                "size": 64155648,
+                "sha256": "1c0a6196b8be7f0c01c502c7385e38cace22b6fd334233734bef43be5c18a62b"
+            },
+            {
+                "label": "photosplice-0.9.28-windows-x64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/eolix/PhotoSplice/releases/download/v0.9.28/photosplice-0.9.28-windows-x64-portable.zip",
+                "size": 91419603,
+                "sha256": "3371d427db73411685a921c1b1d3c96da19a2da422be62b94a7b42bec621161f"
+            }
+        ],
+        "features": [
+            "Open, edit and save Photoshop PSD and PSB files with full layer fidelity",
+            "Familiar Photoshop‑style interface with matching shortcuts and panels",
+            "GPU‑accelerated performance for smooth editing",
+            "Built‑in RAW development, lens correction and HDR tools",
+            "Supports PDF, EXR/HDR and other common image formats",
+            "Portable version available that runs without installation"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download PhotoSplice\" button on this page. Your browser saves photosplice-0.9.28-windows-x64.msi (61.2 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start PhotoSplice from the Start menu.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "PhotoSplice Free Download for Windows 10",
+        "meta_description": "Download PhotoSplice free for Windows 10. A desktop image editor that replicates classic Adobe Photoshop with full PSD/PSB compatibility.",
+        "canonical_url": "https://codehimblog.github.io/software/photosplice/",
+        "date_added": "2026-11-16",
+        "last_verified_at": "2026-11-17",
         "verification_status": "verified"
     },
     {
