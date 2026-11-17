@@ -10356,6 +10356,168 @@
         "verification_status": "partial"
     },
     {
+        "id": "sculptforge",
+        "name": "SculptForge",
+        "slug": "sculptforge",
+        "summary": "Free, open‑source 3D sculpting software with brushes, symmetry, AI‑generated brushes and export options for game pipelines.",
+        "description": [
+            "SculptForge lets you create and edit dense 3D meshes on Windows. It works offline, offers AI‑assisted brush creation, and supports common 3D formats for use in games and animation pipelines.",
+            "SculptForge is a native 3D sculpting program that starts instantly and runs without an internet connection. You can sculpt with familiar brushes, use symmetry tools, and navigate the model as you would in other sculpting apps. The built‑in AI can generate new brushes from text or sketches, and you can export models in formats such as FBX, glTF, OpenUSD, and Blender files. The software includes features for creating level‑of‑detail chains, blend shapes, and sending assets directly to Unreal Engine. It has no telemetry, no account requirement, and the AI features are optional. The Windows installer includes a daily update‑check option that is enabled by default."
+        ],
+        "icon": {
+            "text": "S",
+            "color": "#15803D",
+            "logo": "/assets/icons/sculptforge.png?v=db193365"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/islandmed/SculptForge#license",
+        "official_website": "https://islandmed.github.io/SculptForge/",
+        "download_page": "https://github.com/islandmed/SculptForge/releases/tag/v0.13.6",
+        "repository_url": "https://github.com/islandmed/SculptForge",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/islandmed/SculptForge/releases/tag/v0.13.6",
+                "note": "Named in the release notes."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/islandmed/SculptForge/releases/tag/v0.13.6",
+                "note": "Named in the release notes."
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.13.6",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/islandmed/SculptForge/releases/tag/v0.13.6",
+        "primary_download": {
+            "url": "https://github.com/islandmed/SculptForge/releases/download/v0.13.6/SculptForge-windows-x86_64-setup.exe",
+            "filename": "SculptForge-windows-x86_64-setup.exe",
+            "size": 35183514,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "sculptforge_bridge-1.0.0-legacy.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/islandmed/SculptForge/releases/download/v0.13.6/sculptforge_bridge-1.0.0-legacy.zip",
+                "size": 40390,
+                "sha256": "41fec89c6e5f8f5701013f24775a20f00e034108278fc64844cf8c82c3788350"
+            },
+            {
+                "label": "sculptforge_bridge-1.0.0.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/islandmed/SculptForge/releases/download/v0.13.6/sculptforge_bridge-1.0.0.zip",
+                "size": 40568,
+                "sha256": "039d0a79a6a3fcb9e170bfaf5be10c6dd10a4b0f1ac45a7e2e480b1d5dd71348"
+            },
+            {
+                "label": "sculptforge_bridge.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/islandmed/SculptForge/releases/download/v0.13.6/sculptforge_bridge.zip",
+                "size": 40568,
+                "sha256": "039d0a79a6a3fcb9e170bfaf5be10c6dd10a4b0f1ac45a7e2e480b1d5dd71348"
+            },
+            {
+                "label": "sculptforge_maya.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/islandmed/SculptForge/releases/download/v0.13.6/sculptforge_maya.zip",
+                "size": 17488,
+                "sha256": "791ad78987ec6cc748ab1e0fec098dcc27b4b181fa62788b64ef32e56824fa8f"
+            },
+            {
+                "label": "SculptForge-0.13.6-windows-x86_64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/islandmed/SculptForge/releases/download/v0.13.6/SculptForge-0.13.6-windows-x86_64.exe",
+                "size": 35183514,
+                "sha256": "ea4a195588a9624d0bb0a06add73fbe388cfe0792220c5d9540ddb05a9c77cce"
+            },
+            {
+                "label": "SculptForge-windows-x86_64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/islandmed/SculptForge/releases/download/v0.13.6/SculptForge-windows-x86_64-setup.exe",
+                "size": 35183514,
+                "sha256": "ea4a195588a9624d0bb0a06add73fbe388cfe0792220c5d9540ddb05a9c77cce"
+            },
+            {
+                "label": "SculptForge-0.13.6-windows-x86_64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/islandmed/SculptForge/releases/download/v0.13.6/SculptForge-0.13.6-windows-x86_64.zip",
+                "size": 44436923,
+                "sha256": "354262d4052f057eeddd8fbb6e9ef470d3dc0c0782ce1decc2cffe6266320c1e"
+            },
+            {
+                "label": "SculptForge-windows-x86_64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/islandmed/SculptForge/releases/download/v0.13.6/SculptForge-windows-x86_64-portable.zip",
+                "size": 44436923,
+                "sha256": "354262d4052f057eeddd8fbb6e9ef470d3dc0c0782ce1decc2cffe6266320c1e"
+            }
+        ],
+        "features": [
+            "Sculpt detailed 3D meshes with a variety of brushes and symmetry tools",
+            "Generate custom brushes using built‑in AI from text prompts or sketches",
+            "Export models to FBX, glTF, OpenUSD and Blender for use in other applications",
+            "Create LOD chains and blend shapes for game pipelines",
+            "Send assets directly to Unreal Engine from within the program",
+            "Daily update check is enabled by default and can be managed in Preferences"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download SculptForge\" button on this page. Your browser saves SculptForge-windows-x86_64-setup.exe (33.6 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start SculptForge from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
+            "On first run, a page appears to enable daily update checks (enabled by default)."
+        ],
+        "related_software": [],
+        "seo_title": "SculptForge Free Download for Windows 10/11",
+        "meta_description": "Download SculptForge free for Windows 10/11. Free, open‑source 3D sculpting software with brushes, symmetry, AI‑generated brushes and export options for game p…",
+        "canonical_url": "https://codehimblog.github.io/software/sculptforge/",
+        "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "servo",
         "name": "Servo",
         "slug": "servo",
