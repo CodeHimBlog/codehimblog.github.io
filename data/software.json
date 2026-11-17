@@ -403,6 +403,109 @@
         "verification_status": "partial"
     },
     {
+        "id": "agentshot",
+        "name": "AgentShot",
+        "slug": "agentshot",
+        "summary": "AgentShot is an open‑source AI‑powered video editor that lets you edit footage by speaking commands or pointing at frames, creating new versions for each change.",
+        "description": [
+            "AgentShot lets you edit video by describing what you want or selecting a frame. The AI processes the instructions on your computer and produces a new version of the clip, so you can compare before and after and keep or reject the change.",
+            "AgentShot replaces manual timeline editing with a conversational interface. You load your footage, then give natural‑language commands such as “cut the ums” or “add a lower‑third”. You can also point at a specific frame to indicate where a change should happen. The program runs the AI model locally using your own API key (Claude, Gemini, GPT, etc.), so no video is uploaded to the cloud. Every edit is saved as a separate version, allowing you to review each change and decide whether to keep it. The tool can generate short clips, motion‑graphics, or product demos, and it can export the final cut to popular editors like Premiere, Resolve, or Final Cut for further tweaking."
+        ],
+        "icon": {
+            "text": "A",
+            "color": "#BE123C",
+            "logo": "/assets/icons/agentshot.png?v=81c09b43"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/hormuz-labs/agentshot#license",
+        "official_website": "https://agentshot.si",
+        "download_page": "https://github.com/hormuz-labs/agentshot/releases/tag/v0.4.48",
+        "repository_url": "https://github.com/hormuz-labs/agentshot",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.4.48",
+        "release_date": "2026-11-03",
+        "release_url": "https://github.com/hormuz-labs/agentshot/releases/tag/v0.4.48",
+        "primary_download": {
+            "url": "https://github.com/hormuz-labs/agentshot/releases/download/v0.4.48/AgentShot-0.4.48-windows-x64-Setup.exe",
+            "filename": "AgentShot-0.4.48-windows-x64-Setup.exe",
+            "size": 325315648,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "AgentShot-0.4.48-windows-x64-Setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/hormuz-labs/agentshot/releases/download/v0.4.48/AgentShot-0.4.48-windows-x64-Setup.exe",
+                "size": 325315648,
+                "sha256": "36714c41480454e3bc26f20d6fb2920a3798d569c75455dfdeb91cb63b04dc5b"
+            },
+            {
+                "label": "AgentShot-windows-x64-Setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/hormuz-labs/agentshot/releases/download/v0.4.48/AgentShot-windows-x64-Setup.exe",
+                "size": 325315648,
+                "sha256": "36714c41480454e3bc26f20d6fb2920a3798d569c75455dfdeb91cb63b04dc5b"
+            }
+        ],
+        "features": [
+            "Edit video by speaking natural‑language commands",
+            "Point at a frame to specify exact edit locations",
+            "Each change is saved as a separate version for easy comparison",
+            "Works entirely on your computer; no uploads required",
+            "Supports exporting cuts to Premiere, Resolve, or Final Cut",
+            "Can generate short vertical clips with automatic captions",
+            "Uses your own AI API key for the underlying model"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download AgentShot\" button on this page. Your browser saves AgentShot-0.4.48-windows-x64-Setup.exe (310.2 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start AgentShot from the Start menu or the desktop shortcut."
+        ],
+        "related_software": [],
+        "seo_title": "AgentShot Free Download for Windows",
+        "meta_description": "Download AgentShot free for Windows. AgentShot is an open‑source AI‑powered video editor that lets you edit footage by speaking commands or pointing at frames,…",
+        "canonical_url": "https://codehimblog.github.io/software/agentshot/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "animeko",
         "name": "Animeko",
         "slug": "animeko",
@@ -3813,6 +3916,136 @@
         "meta_description": "Download LibreGet free for Windows. LibreGet is a free open‑source download manager and media toolbox for Windows that can download files from courses, YouTube…",
         "canonical_url": "https://codehimblog.github.io/software/libreget/",
         "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "lightcraft",
+        "name": "LightCraft",
+        "slug": "lightcraft",
+        "summary": "An open-source non‑destructive photo editor written from scratch in pure Rust.",
+        "description": [
+            "LightCraft is a native photo editing and raw‑development application that works on Windows. It lets you edit images without changing the original files, offering a full darkroom experience in a single program.",
+            "LightCraft provides a complete darkroom in one native app. All adjustments are non‑destructive, so your original photos are never altered. The editor uses a scene‑referred, wide‑gamut, 32‑bit float pipeline for high‑quality rendering of highlights, shadows, and colors. Features include exposure, contrast, highlights, shadows, whites, blacks, advanced white‑balance controls, vibrance, saturation, an 8‑band color mixer, and three‑way color‑grading wheels, all computed in a modern perceptual colour space. The program also offers masking tools, preset profiles, and a library for organizing your photos. It is built in pure Rust and runs natively on Windows."
+        ],
+        "icon": {
+            "text": "L",
+            "color": "#B45309",
+            "logo": "/assets/icons/lightcraft.png?v=bafc16e0"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/storytold/lightcraft#license",
+        "official_website": "https://getartcraft.com/apps/lightcraft",
+        "download_page": "https://github.com/storytold/lightcraft/releases/tag/v0.21.1",
+        "repository_url": "https://github.com/storytold/lightcraft",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.21.1",
+        "release_date": "2026-11-12",
+        "release_url": "https://github.com/storytold/lightcraft/releases/tag/v0.21.1",
+        "primary_download": {
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.21.1/lightcraft-0.21.1-windows-x64.msi",
+            "filename": "lightcraft-0.21.1-windows-x64.msi",
+            "size": 99999744,
+            "architecture": "x64",
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "lightcraft-web-0.21.1.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/storytold/lightcraft/releases/download/v0.21.1/lightcraft-web-0.21.1.zip",
+                "size": 74569049,
+                "sha256": "57147383a46eaab3b0cc036acf9443b221450c6a19f5dc303ae165bb9678b8cb"
+            },
+            {
+                "label": "lightcraft-0.21.1-windows-arm64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/storytold/lightcraft/releases/download/v0.21.1/lightcraft-0.21.1-windows-arm64.msi",
+                "size": 95531008,
+                "sha256": "0b5ffa35171b8433af7d9112b2e1be7e87996b8e4222eb10859541f336061459"
+            },
+            {
+                "label": "lightcraft-0.21.1-windows-x64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/storytold/lightcraft/releases/download/v0.21.1/lightcraft-0.21.1-windows-x64.msi",
+                "size": 99999744,
+                "sha256": "16b8f4e12c93120b2db5a5f567798d1d1f33e2f55ddee901f1c8c0f072558a25"
+            },
+            {
+                "label": "lightcraft-0.21.1-windows-arm64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/storytold/lightcraft/releases/download/v0.21.1/lightcraft-0.21.1-windows-arm64-portable.zip",
+                "size": 117844886,
+                "sha256": "ba7af25ccb555f72747c5b52c57518e57c45e846de19267a3633acabc8d5976f"
+            },
+            {
+                "label": "lightcraft-0.21.1-windows-x64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/storytold/lightcraft/releases/download/v0.21.1/lightcraft-0.21.1-windows-x64-portable.zip",
+                "size": 122883614,
+                "sha256": "c2f195a4611bd7a314675c090b71e46e14001a232ba825edd5b6ea0ea7f616da"
+            }
+        ],
+        "features": [
+            "Edit photos without altering the original files (non‑destructive workflow)",
+            "Full raw‑development support with high‑quality colour rendering",
+            "Advanced colour tools: white‑balance, vibrance, saturation, colour mixer and grading wheels",
+            "Masking and local tone‑mapping tools for precise adjustments",
+            "Built‑in library to organise and browse your photo collection",
+            "Fast native performance on Windows"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download LightCraft\" button on this page. Your browser saves lightcraft-0.21.1-windows-x64.msi (95.4 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start LightCraft from the Start menu.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "LightCraft Free Download for Windows",
+        "meta_description": "Download LightCraft free for Windows. An open-source non‑destructive photo editor written from scratch in pure Rust.",
+        "canonical_url": "https://codehimblog.github.io/software/lightcraft/",
+        "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
     },
