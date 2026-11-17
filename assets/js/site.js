@@ -43,45 +43,6 @@
     });
   }
 
-  /* ---------------- Catalogue filters (/software/) ---------------- */
-  var filterForm = document.getElementById('catalogue-filters');
-  var catalogue = document.getElementById('catalogue-grid');
-  if (filterForm && catalogue) {
-    filterForm.hidden = false;
-    var cards = Array.prototype.slice.call(catalogue.querySelectorAll('article[data-slug]'));
-    var fq = document.getElementById('f-q');
-    var fos = document.getElementById('f-os');
-    var fcat = document.getElementById('f-cat');
-    var flic = document.getElementById('f-license');
-    var ftype = document.getElementById('f-type');
-    var count = document.getElementById('f-count');
-    var empty = document.getElementById('catalogue-empty');
-    var has = function (attr, value) { return !value || (' ' + attr + ' ').indexOf(' ' + value + ' ') !== -1; };
-    var apply = function () {
-      var t = tokens(fq.value);
-      var shown = 0;
-      cards.forEach(function (card) {
-        var text = norm(card.textContent + ' ' + (card.getAttribute('data-kw') || ''));
-        var ok = has(card.getAttribute('data-os'), fos.value) &&
-          has(card.getAttribute('data-cats'), fcat.value) &&
-          has(card.getAttribute('data-license'), flic.value) &&
-          has(card.getAttribute('data-types'), ftype.value) &&
-          t.every(function (w) { return text.indexOf(w) !== -1; });
-        card.hidden = !ok;
-        if (ok) shown++;
-      });
-      count.textContent = 'Showing ' + shown + ' of ' + cards.length + ' applications';
-      empty.hidden = shown !== 0;
-    };
-    filterForm.addEventListener('input', apply);
-    filterForm.addEventListener('change', apply);
-    filterForm.addEventListener('submit', function (e) { e.preventDefault(); });
-    filterForm.addEventListener('reset', function () { setTimeout(apply, 0); });
-    var resetBtn = document.querySelector('[data-reset-filters]');
-    if (resetBtn) resetBtn.addEventListener('click', function () { filterForm.reset(); });
-    apply();
-  }
-
   /* ---------------- Search page (/search/) ---------------- */
   var searchForm = document.getElementById('search-page-form');
   var results = document.getElementById('search-results');

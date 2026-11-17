@@ -289,3 +289,14 @@ details[open] .chev{transform:rotate(90deg)}
 .lg\:sticky{position:sticky}
 .lg\:top-24{top:6rem}
 }
+
+/* Pagination */
+.pager{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.5rem;margin-top:2.5rem}
+.pager a,.pager span{display:inline-flex;align-items:center;justify-content:center;gap:.375rem;min-width:2.75rem;height:2.75rem;padding:0 .875rem;border:1px solid #e2e8f0;border-radius:.5rem;background:#fff;font-size:.875rem;font-weight:500;color:#334155;text-decoration:none}
+.pager a:hover{border-color:#93c5fd;color:#1d4ed8}
+.pager a:focus-visible{outline:2px solid #2563eb;outline-offset:2px}
+.pager [aria-current=page]{background:#2563eb;border-color:#2563eb;color:#fff;font-weight:600}
+.pager .pager-off{color:#94a3b8;background:#f8fafc}
+.pager .pager-gap{border:0;background:none;min-width:auto;padding:0 .125rem;color:#94a3b8}
+.pager-note{margin-top:.75rem;text-align:center;font-size:.875rem;color:#64748b}
+@media (max-width:480px){.pager a[rel],.pager .pager-off{flex:1 1 40%}}
