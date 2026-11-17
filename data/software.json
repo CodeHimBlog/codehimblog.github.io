@@ -6308,6 +6308,101 @@
         "verification_status": "partial"
     },
     {
+        "id": "pylon-player",
+        "name": "Pylon Player",
+        "slug": "pylon-player",
+        "summary": "A media player built on VLC that offers a calm interface, music library, subtitle timing tools and visual customizations.",
+        "description": [
+            "Pylon Player is a free, open‑source media player for Windows that uses VLC’s playback engine. It provides a simplified, hover‑only control layout, a music library, subtitle timeline editing, per‑show presets, themes and automatic updates.",
+            "Pylon Player replaces VLC’s default interface with a quieter set of controls that appear only when needed. Because it runs on libVLC, it can play any format that VLC supports, including video, audio, subtitles and network streams. The player adds features such as a music library with playlists, a side panel that slides in for library and settings, visualizations for audio, the ability to skip silence in tracks, and a \"Super Resolution\" mode that keeps black bars when videos do not match the screen size. Users can customize shortcuts, choose visual themes, and use picture‑in‑picture mode that stays on top of other windows. The application checks for updates automatically and restores settings from a backup if the configuration file becomes damaged."
+        ],
+        "icon": {
+            "text": "P",
+            "color": "#2563EB",
+            "logo": "/assets/icons/pylon-player.png?v=e3ebca35"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/nirmaljosephukken/pylon-player#license",
+        "official_website": "https://nirmaljosephukken.github.io/pylon-player/",
+        "download_page": "https://github.com/nirmaljosephukken/pylon-player/releases/tag/v1.7.1",
+        "repository_url": "https://github.com/nirmaljosephukken/pylon-player",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.7.1",
+        "release_date": "2026-11-09",
+        "release_url": "https://github.com/nirmaljosephukken/pylon-player/releases/tag/v1.7.1",
+        "primary_download": {
+            "url": "https://github.com/nirmaljosephukken/pylon-player/releases/download/v1.7.1/Pylon-Setup-1.7.1.exe",
+            "filename": "Pylon-Setup-1.7.1.exe",
+            "size": 22445862,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Pylon-Setup-1.7.1.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/nirmaljosephukken/pylon-player/releases/download/v1.7.1/Pylon-Setup-1.7.1.exe",
+                "size": 22445862,
+                "sha256": "9c4ba38404f7c1d42a862a74502a555fb2a9a4ed168e23933f5ed6cea901c99d"
+            }
+        ],
+        "features": [
+            "Plays all video and audio formats supported by VLC",
+            "Hover‑only controls keep the screen uncluttered",
+            "Music library with playlists and shuffle options",
+            "Subtitle timing view with drag‑to‑sync timeline",
+            "Visualizations for audio playback",
+            "Super Resolution mode preserves aspect‑ratio black bars",
+            "Side panels for library, settings and queue that slide in/out",
+            "Automatic update checks and settings backup"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Pylon Player\" button on this page. Your browser saves Pylon-Setup-1.7.1.exe (21.4 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Pylon Player from the Start menu or the desktop shortcut."
+        ],
+        "related_software": [],
+        "seo_title": "Pylon Player Free Download for Windows",
+        "meta_description": "Download Pylon Player free for Windows. A media player built on VLC that offers a calm interface, music library, subtitle timing tools and visual customization…",
+        "canonical_url": "https://codehimblog.github.io/software/pylon-player/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "pymusicplayer",
         "name": "PyMusicPlayer",
         "slug": "pymusicplayer",
@@ -7170,6 +7265,113 @@
         "date_added": "2026-11-15",
         "last_verified_at": "2026-11-15",
         "verification_status": "verified"
+    },
+    {
+        "id": "scarlet",
+        "name": "Scarlet",
+        "slug": "scarlet",
+        "summary": "Scarlet is an open-source AI video editor for macOS, Windows and Linux.",
+        "description": [
+            "Scarlet lets you edit video by describing changes in natural language or by speaking. It uses an AI assistant to cut pauses, remove repeated phrases, and make other edits while keeping the original footage unchanged. The program is aimed at people who work with interview, podcast or talking‑head videos and want a faster way to create a polished cut.",
+            "The editor works on Windows computers and stores projects locally. You start a new project, import video, audio or image files, and then ask the AI to make changes. Commands can be typed or spoken by holding the V key. The AI analyses the transcript and suggests cuts, which appear on the timeline for you to review, approve, or revise. Only the edited sections are re‑rendered, so you can hear the result in context before accepting it. When you are satisfied, you can export the whole video or a selected range as an MP4 file. An advanced export option also creates a folder with the timeline, a copy of the source footage, subtitle files and a read‑me for importing into professional editors such as DaVinci Resolve, Final Cut Pro or Premiere Pro. Scarlet uses local transcription (CrisperWhisper by default) and can download additional Whisper models on first use. It connects to an external AI provider (Claude Code or Codex) for editing instructions, so an internet connection and a valid subscription are required. Usage data can be disabled in Settings."
+        ],
+        "icon": {
+            "text": "S",
+            "color": "#7C3AED",
+            "logo": "/assets/icons/scarlet.png?v=e18bffe0"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/Forward-Future/scarlet#license",
+        "official_website": null,
+        "download_page": "https://github.com/Forward-Future/scarlet/releases/tag/v0.1.135",
+        "repository_url": "https://github.com/Forward-Future/scarlet",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.1.135",
+        "release_date": "2026-11-16",
+        "release_url": "https://github.com/Forward-Future/scarlet/releases/tag/v0.1.135",
+        "primary_download": {
+            "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.135/Scarlet-0.1.135-Windows-x64-Setup.exe",
+            "filename": "Scarlet-0.1.135-Windows-x64-Setup.exe",
+            "size": 161085429,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Scarlet-0.1.135-Windows-x64-Setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.135/Scarlet-0.1.135-Windows-x64-Setup.exe",
+                "size": 161085429,
+                "sha256": "b08774ae69c9f10f73bf7fd7084e56cef96aa56120de0b3f578a9c8a01294538"
+            },
+            {
+                "label": "Scarlet-0.1.135-Windows-x64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.135/Scarlet-0.1.135-Windows-x64.msi",
+                "size": 230183904,
+                "sha256": "caa312d2a66d396a0706e0dc9829919236d090c3d1f8e5f14c32919298b77e6c"
+            }
+        ],
+        "features": [
+            "Edit video by typing or speaking natural‑language commands.",
+            "Works especially well with dialogue‑heavy recordings such as interviews or podcasts.",
+            "Shows AI‑suggested cuts on the timeline for easy review and approval.",
+            "Re‑renders only the edited sections, allowing quick preview of changes.",
+            "Export to MP4 or use advanced export to create files for professional editing software.",
+            "Local transcription with optional Whisper models; downloads automatically on first use.",
+            "Option to turn off anonymous usage reporting in Settings."
+        ],
+        "requirements": [
+            "Windows x64 system.",
+            "Internet connection for AI editing and model downloads.",
+            "FFmpeg (the installer can add it automatically or you can install it via winget)."
+        ],
+        "installation_instructions": [
+            "Click the \"Download Scarlet\" button on this page. Your browser saves Scarlet-0.1.135-Windows-x64-Setup.exe (153.6 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Scarlet from the Start menu or the desktop shortcut."
+        ],
+        "related_software": [],
+        "seo_title": "Scarlet Free Download for Windows",
+        "meta_description": "Download Scarlet free for Windows. Scarlet is an open-source AI video editor for macOS, Windows and Linux.",
+        "canonical_url": "https://codehimblog.github.io/software/scarlet/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
     },
     {
         "id": "screenbox",
