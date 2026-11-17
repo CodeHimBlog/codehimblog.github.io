@@ -207,24 +207,34 @@
         "repository_url": "https://github.com/wandersick/aerozoom",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/wandersick/aerozoom#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/wandersick/aerozoom#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/wandersick/aerozoom#readme",
+                "note": "Named in the README."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/wandersick/aerozoom#readme",
+                "note": "Named in the README."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/wandersick/aerozoom#readme",
+                "note": "Named in the README."
             }
         },
         "supported_architectures": [],
@@ -321,24 +331,34 @@
         "repository_url": "https://github.com/Fervent-Tempo/AF-Media-Bar",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Fervent-Tempo/AF-Media-Bar#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Fervent-Tempo/AF-Media-Bar#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Fervent-Tempo/AF-Media-Bar/blob/main/src/AFMediaBar.MemoryHelper/AFMediaBar.MemoryHelper.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Fervent-Tempo/AF-Media-Bar/blob/main/src/AFMediaBar.MemoryHelper/AFMediaBar.MemoryHelper.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Fervent-Tempo/AF-Media-Bar/blob/main/src/AFMediaBar.MemoryHelper/AFMediaBar.MemoryHelper.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
             }
         },
         "supported_architectures": [],
@@ -431,24 +451,34 @@
         "repository_url": "https://github.com/hormuz-labs/agentshot",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/hormuz-labs/agentshot/blob/main/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/hormuz-labs/agentshot#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/hormuz-labs/agentshot/blob/main/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/hormuz-labs/agentshot/blob/main/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/hormuz-labs/agentshot/blob/main/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -534,12 +564,16 @@
         "repository_url": "https://github.com/open-ani/animeko",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/open-ani/animeko/releases/tag/v6.4.0",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/open-ani/animeko/releases/tag/v6.4.0",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -642,8 +676,10 @@
         "repository_url": "https://github.com/iandiv/AppGroup",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/iandiv/AppGroup#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
                 "status": "supported",
@@ -652,16 +688,22 @@
                 "note": "Stated in the project README: “Platform: Windows 10 | 11”"
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/iandiv/AppGroup/blob/master/AppGroup/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/iandiv/AppGroup/blob/master/AppGroup/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/iandiv/AppGroup/blob/master/AppGroup/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             }
         },
         "supported_architectures": [],
@@ -769,12 +811,16 @@
         "repository_url": "https://github.com/Icetist/Astraeus",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Icetist/Astraeus#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Icetist/Astraeus#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -867,12 +913,16 @@
         "repository_url": "https://github.com/nessli420/aurora",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/nessli420/aurora#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/nessli420/aurora#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -993,12 +1043,16 @@
         "repository_url": "https://github.com/WyattBlue/auto-editor",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/WyattBlue/auto-editor/releases/tag/31.9.0",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/WyattBlue/auto-editor/releases/tag/31.9.0",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -1099,24 +1153,34 @@
         "repository_url": "https://github.com/Free-Utilities-for-Windows/AutoRunManager",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Free-Utilities-for-Windows/AutoRunManager/blob/main/AutoRunManager/AutoRunManager.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Free-Utilities-for-Windows/AutoRunManager/blob/main/AutoRunManager/AutoRunManager.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Free-Utilities-for-Windows/AutoRunManager/blob/main/AutoRunManager/AutoRunManager.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Free-Utilities-for-Windows/AutoRunManager/blob/main/AutoRunManager/AutoRunManager.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Free-Utilities-for-Windows/AutoRunManager/blob/main/AutoRunManager/AutoRunManager.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
             }
         },
         "supported_architectures": [],
@@ -1196,12 +1260,16 @@
         "repository_url": "https://github.com/denizsafak/AutoSubSync",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/denizsafak/AutoSubSync/releases/tag/v6.7",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/denizsafak/AutoSubSync/releases/tag/v6.7",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -1293,12 +1361,16 @@
         "repository_url": "https://github.com/bleachbit/bleachbit",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/bleachbit/bleachbit/releases/tag/v6.0.6",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/bleachbit/bleachbit/releases/tag/v6.0.6",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -1426,8 +1498,10 @@
         "repository_url": "https://github.com/TareqAmeer/Chroma-App",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/TareqAmeer/Chroma-App#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
                 "status": "supported",
@@ -1436,16 +1510,22 @@
                 "note": "Stated in the project README: “Windows 10/11, 64-bit.”"
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/TareqAmeer/Chroma-App/blob/main/desktop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/TareqAmeer/Chroma-App/blob/main/desktop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/TareqAmeer/Chroma-App/blob/main/desktop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -1525,24 +1605,34 @@
         "repository_url": "https://github.com/mumu-lhl/Ciyue",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/mumu-lhl/Ciyue/blob/main/pubspec.yaml",
+                "note": "Built with Flutter (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/mumu-lhl/Ciyue/releases/tag/v2.2.0",
+                "note": "Named in the release notes."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/mumu-lhl/Ciyue/blob/main/pubspec.yaml",
+                "note": "Built with Flutter (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/mumu-lhl/Ciyue/blob/main/pubspec.yaml",
+                "note": "Built with Flutter (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/mumu-lhl/Ciyue/blob/main/pubspec.yaml",
+                "note": "Built with Flutter (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -1641,24 +1731,34 @@
         "repository_url": "https://github.com/1mrnewton/cutlass",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/1mrnewton/cutlass/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/1mrnewton/cutlass/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/1mrnewton/cutlass/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/1mrnewton/cutlass/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/1mrnewton/cutlass/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -1763,24 +1863,34 @@
         "repository_url": "https://github.com/Lelequyngocquy/desktop-bubble-chat",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Lelequyngocquy/desktop-bubble-chat#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Lelequyngocquy/desktop-bubble-chat#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Lelequyngocquy/desktop-bubble-chat/blob/master/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Lelequyngocquy/desktop-bubble-chat/blob/master/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Lelequyngocquy/desktop-bubble-chat/blob/master/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -1867,8 +1977,10 @@
         "repository_url": "https://github.com/Felix-au/DeskX-Wallpaper-Engine",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Felix-au/DeskX-Wallpaper-Engine/releases/tag/3.0.0",
+                "note": "Named in the release notes."
             },
             "windows-10": {
                 "status": "supported",
@@ -1877,16 +1989,22 @@
                 "note": "Stated in the project README: “Windows 10/11 (x64)”"
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Felix-au/DeskX-Wallpaper-Engine/blob/main/package.json",
+                "note": "Built with Electron 43 (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Felix-au/DeskX-Wallpaper-Engine/blob/main/package.json",
+                "note": "Built with Electron 43 (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Felix-au/DeskX-Wallpaper-Engine/blob/main/package.json",
+                "note": "Built with Electron 43 (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -1975,20 +2093,28 @@
         "repository_url": "https://github.com/electerm/electerm",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/electerm/electerm/blob/master/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/electerm/electerm/blob/master/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/electerm/electerm/blob/master/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/electerm/electerm/blob/master/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-7": {
                 "status": "supported",
@@ -2134,24 +2260,34 @@
         "repository_url": "https://github.com/Bitpainter75/FerrumPix",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Bitpainter75/FerrumPix/blob/main/FerrumPix.vbproj",
+                "note": ".NET 10 needs Windows 10 or later."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Bitpainter75/FerrumPix/blob/main/FerrumPix.vbproj",
+                "note": ".NET 10 needs Windows 10 or later."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Bitpainter75/FerrumPix/blob/main/FerrumPix.vbproj",
+                "note": ".NET 10 needs Windows 10 or later."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Bitpainter75/FerrumPix/blob/main/FerrumPix.vbproj",
+                "note": ".NET 10 needs Windows 10 or later."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Bitpainter75/FerrumPix/blob/main/FerrumPix.vbproj",
+                "note": ".NET 10 needs Windows 10 or later."
             }
         },
         "supported_architectures": [],
@@ -2355,24 +2491,34 @@
         "repository_url": "https://github.com/storytold/filmcraft",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/storytold/filmcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/storytold/filmcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/storytold/filmcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/storytold/filmcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/storytold/filmcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -2488,12 +2634,16 @@
         "repository_url": "https://github.com/flowkeeper-org/fk-desktop",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v1.1.0",
+                "note": "A download is built for this version."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v1.1.0",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -2711,24 +2861,34 @@
         "repository_url": "https://github.com/flyl1u/fly-island",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/flyl1u/fly-island/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/flyl1u/fly-island/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/flyl1u/fly-island/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/flyl1u/fly-island/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/flyl1u/fly-island/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -2817,24 +2977,34 @@
         "repository_url": "https://github.com/fooyin/fooyin",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/fooyin/fooyin/blob/master/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/fooyin/fooyin/blob/master/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/fooyin/fooyin/blob/master/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/fooyin/fooyin/blob/master/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/fooyin/fooyin/blob/master/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -2949,12 +3119,16 @@
         "repository_url": "https://github.com/cyber-anderson/Formatix",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/cyber-anderson/Formatix/releases/tag/v1.17.4",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/cyber-anderson/Formatix/releases/tag/v1.17.4",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -3052,24 +3226,34 @@
         "repository_url": "https://github.com/risenxxx/frame-player",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/risenxxx/frame-player#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/risenxxx/frame-player#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/risenxxx/frame-player/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/risenxxx/frame-player/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/risenxxx/frame-player/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -3195,24 +3379,34 @@
         "repository_url": "https://github.com/jessolmstead/greycard",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/jessolmstead/greycard/blob/master/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/jessolmstead/greycard/blob/master/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/jessolmstead/greycard/blob/master/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/jessolmstead/greycard/blob/master/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/jessolmstead/greycard/blob/master/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -3303,24 +3497,34 @@
         "repository_url": "https://github.com/shm11C3/HardwareVisualizer",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/shm11C3/HardwareVisualizer#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/shm11C3/HardwareVisualizer#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/shm11C3/HardwareVisualizer/blob/develop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/shm11C3/HardwareVisualizer/blob/develop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/shm11C3/HardwareVisualizer/blob/develop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -3428,8 +3632,10 @@
         "repository_url": "https://github.com/gglucass/headroom-desktop",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/gglucass/headroom-desktop#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-10": {
                 "status": "supported",
@@ -3438,16 +3644,22 @@
                 "note": "Stated in the project README: “**Windows:** Windows 10 or later, x64”"
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/gglucass/headroom-desktop#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/gglucass/headroom-desktop#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/gglucass/headroom-desktop#readme",
+                "note": "The README name it as the minimum."
             }
         },
         "supported_architectures": [],
@@ -3528,24 +3740,34 @@
         "repository_url": "https://github.com/no-faff/InstallerClean",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/no-faff/InstallerClean/blob/main/src/InstallerClean.Cli/InstallerClean.Cli.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/no-faff/InstallerClean#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/no-faff/InstallerClean/blob/main/src/InstallerClean.Cli/InstallerClean.Cli.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/no-faff/InstallerClean#readme",
+                "note": "Named in the README."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/no-faff/InstallerClean#readme",
+                "note": "Named in the README."
             }
         },
         "supported_architectures": [],
@@ -3652,24 +3874,34 @@
         "repository_url": "https://github.com/4gray/iptvnator",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/4gray/iptvnator/blob/master/package.json",
+                "note": "Built with Electron 43 (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/4gray/iptvnator/blob/master/package.json",
+                "note": "Built with Electron 43 (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/4gray/iptvnator/blob/master/package.json",
+                "note": "Built with Electron 43 (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/4gray/iptvnator/blob/master/package.json",
+                "note": "Built with Electron 43 (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/4gray/iptvnator/blob/master/package.json",
+                "note": "Built with Electron 43 (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -3758,12 +3990,16 @@
         "repository_url": "https://github.com/WhyWhatHow/jenv",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/WhyWhatHow/jenv#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/WhyWhatHow/jenv#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -4034,24 +4270,34 @@
         "repository_url": "https://github.com/julyx10/lap",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/julyx10/lap#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/julyx10/lap#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/julyx10/lap/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/julyx10/lap/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/julyx10/lap/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -4158,24 +4404,34 @@
         "repository_url": "https://github.com/OpenSelena/libreget",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/OpenSelena/libreget#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/OpenSelena/libreget#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/OpenSelena/libreget/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/OpenSelena/libreget/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/OpenSelena/libreget/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -4310,24 +4566,34 @@
         "repository_url": "https://github.com/storytold/lightcraft",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/storytold/lightcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/storytold/lightcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/storytold/lightcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/storytold/lightcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/storytold/lightcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -4446,8 +4712,10 @@
                 "note": "Stated in the project README: “Windows 11 (x64) is supported.”"
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/ktgw0316/LightZone/releases/tag/v5.1.0",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -4539,24 +4807,34 @@
         "repository_url": "https://github.com/mifi/lossless-cut",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/mifi/lossless-cut/blob/master/package.json",
+                "note": "Built with Electron 45 (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/mifi/lossless-cut/blob/master/package.json",
+                "note": "Built with Electron 45 (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/mifi/lossless-cut#readme",
+                "note": "The README say it is not supported."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/mifi/lossless-cut#readme",
+                "note": "The README say it is not supported."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/mifi/lossless-cut#readme",
+                "note": "The README say it is not supported."
             }
         },
         "supported_architectures": [],
@@ -4674,16 +4952,22 @@
                 "note": "Stated in the project README: “Windows 10 1809+”"
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Yuch3nE/luciddesk/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Yuch3nE/luciddesk/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Yuch3nE/luciddesk/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -4787,12 +5071,16 @@
         "repository_url": "https://github.com/Doctordefector/Lyrenne",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Doctordefector/Lyrenne#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Doctordefector/Lyrenne#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -4885,12 +5173,16 @@
         "repository_url": "https://github.com/dromara/mayfly-go",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/dromara/mayfly-go/releases/tag/v1.12.4",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/dromara/mayfly-go/releases/tag/v1.12.4",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -4979,24 +5271,34 @@
         "repository_url": "https://github.com/sbroenne/mcp-windows",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/sbroenne/mcp-windows/blob/main/src/Sbroenne.WindowsMcp.Cli/Sbroenne.WindowsMcp.Cli.csproj",
+                "note": "Built for Windows 10 or later."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/sbroenne/mcp-windows/blob/main/src/Sbroenne.WindowsMcp.Cli/Sbroenne.WindowsMcp.Cli.csproj",
+                "note": "Built for Windows 10 or later."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/sbroenne/mcp-windows/blob/main/src/Sbroenne.WindowsMcp.Cli/Sbroenne.WindowsMcp.Cli.csproj",
+                "note": "Built for Windows 10 or later."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/sbroenne/mcp-windows/blob/main/src/Sbroenne.WindowsMcp.Cli/Sbroenne.WindowsMcp.Cli.csproj",
+                "note": "Built for Windows 10 or later."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/sbroenne/mcp-windows/blob/main/src/Sbroenne.WindowsMcp.Cli/Sbroenne.WindowsMcp.Cli.csproj",
+                "note": "Built for Windows 10 or later."
             }
         },
         "supported_architectures": [],
@@ -5085,24 +5387,34 @@
         "repository_url": "https://github.com/hrzlgnm/mdns-browser",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/hrzlgnm/mdns-browser/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/hrzlgnm/mdns-browser/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/hrzlgnm/mdns-browser/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/hrzlgnm/mdns-browser/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/hrzlgnm/mdns-browser/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -5208,24 +5520,34 @@
         "repository_url": "https://github.com/KenanSalar/Melodia",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/KenanSalar/Melodia/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/KenanSalar/Melodia/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/KenanSalar/Melodia/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/KenanSalar/Melodia/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/KenanSalar/Melodia/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -5315,24 +5637,34 @@
         "repository_url": "https://github.com/CyanFroste/meowsic",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/CyanFroste/meowsic/blob/master/backend/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/CyanFroste/meowsic/blob/master/backend/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/CyanFroste/meowsic/blob/master/backend/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/CyanFroste/meowsic/blob/master/backend/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/CyanFroste/meowsic/blob/master/backend/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -5411,12 +5743,16 @@
         "repository_url": "https://github.com/nonbili/meron",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/nonbili/meron/releases/tag/v0.5.3",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/nonbili/meron/releases/tag/v0.5.3",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -5525,24 +5861,34 @@
         "repository_url": "https://github.com/MetrolistGroup/Metrolist",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/MetrolistGroup/Metrolist#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/MetrolistGroup/Metrolist#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/MetrolistGroup/Metrolist#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/MetrolistGroup/Metrolist#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/MetrolistGroup/Metrolist#readme",
+                "note": "The README name it as the minimum."
             }
         },
         "supported_architectures": [],
@@ -5642,12 +5988,16 @@
         "repository_url": "https://github.com/moonlight-stream/moonlight-qt",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/moonlight-stream/moonlight-qt/releases/tag/v6.2.0",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/moonlight-stream/moonlight-qt/releases/tag/v6.2.0",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -5775,12 +6125,16 @@
         "repository_url": "https://github.com/omega-gg/MotionBox",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/omega-gg/MotionBox/releases/tag/3.0.0-3",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/omega-gg/MotionBox/releases/tag/3.0.0-3",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -5890,24 +6244,34 @@
         "repository_url": "https://github.com/ElektroStudios/Mouse-Point-Viewer",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/ElektroStudios/Mouse-Point-Viewer/blob/master/Source/Mouse%20Point%20Viewer.Tests/Mouse%20Point%20Viewer.Tests.vbproj",
+                "note": ".NET Framework 4 runs on Windows 7 or later."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/ElektroStudios/Mouse-Point-Viewer/blob/master/Source/Mouse%20Point%20Viewer.Tests/Mouse%20Point%20Viewer.Tests.vbproj",
+                "note": ".NET Framework 4 runs on Windows 7 or later."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/ElektroStudios/Mouse-Point-Viewer/blob/master/Source/Mouse%20Point%20Viewer.Tests/Mouse%20Point%20Viewer.Tests.vbproj",
+                "note": ".NET Framework 4 runs on Windows 7 or later."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/ElektroStudios/Mouse-Point-Viewer/blob/master/Source/Mouse%20Point%20Viewer.Tests/Mouse%20Point%20Viewer.Tests.vbproj",
+                "note": ".NET Framework 4 runs on Windows 7 or later."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/ElektroStudios/Mouse-Point-Viewer/blob/master/Source/Mouse%20Point%20Viewer.Tests/Mouse%20Point%20Viewer.Tests.vbproj",
+                "note": ".NET Framework 4 runs on Windows 7 or later."
             }
         },
         "supported_architectures": [],
@@ -5996,12 +6360,16 @@
         "repository_url": "https://github.com/Felix-au/MouseX-Absolute-Mouse-Control",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Felix-au/MouseX-Absolute-Mouse-Control#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Felix-au/MouseX-Absolute-Mouse-Control#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -6093,24 +6461,34 @@
         "repository_url": "https://github.com/Erencrypt/MyNotes",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Erencrypt/MyNotes/blob/main/MyNotes/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Erencrypt/MyNotes#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Erencrypt/MyNotes/blob/main/MyNotes/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Erencrypt/MyNotes/blob/main/MyNotes/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Erencrypt/MyNotes/blob/main/MyNotes/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             }
         },
         "supported_architectures": [],
@@ -6210,16 +6588,22 @@
                 "note": "Stated in the project README: “Windows 10 (1809 or later) or Windows 11, on x64 or ARM64.”"
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Anthonyy232/Nagi/blob/master/src/Nagi.WinUI/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Anthonyy232/Nagi/blob/master/src/Nagi.WinUI/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Anthonyy232/Nagi/blob/master/src/Nagi.WinUI/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             }
         },
         "supported_architectures": [],
@@ -6311,16 +6695,16 @@
         "repository_url": "https://github.com/notepad-plus-plus/notepad-plus-plus",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "reported",
-                "verified": false,
-                "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/SUPPORTED_SYSTEM.md",
-                "note": "Listed as supported in the project's SUPPORTED_SYSTEM.md (seen via a copy). Confirm in the official repository."
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/tag/v8.9.9.1",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "reported",
-                "verified": false,
-                "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/SUPPORTED_SYSTEM.md",
-                "note": "Listed as supported in the project's SUPPORTED_SYSTEM.md (seen via a copy). Confirm in the official repository."
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/tag/v8.9.9.1",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "reported",
@@ -6686,24 +7070,34 @@
         "repository_url": "https://github.com/AntonyCorbett/OnlyM",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/AntonyCorbett/OnlyM#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/AntonyCorbett/OnlyM#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/AntonyCorbett/OnlyM#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/AntonyCorbett/OnlyM#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/AntonyCorbett/OnlyM#readme",
+                "note": "The README name it as the minimum."
             }
         },
         "supported_architectures": [],
@@ -6792,24 +7186,34 @@
         "repository_url": "https://github.com/vegidio/open-photo-ai",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/vegidio/open-photo-ai#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/vegidio/open-photo-ai#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/vegidio/open-photo-ai#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/vegidio/open-photo-ai#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/vegidio/open-photo-ai#readme",
+                "note": "The README name it as the minimum."
             }
         },
         "supported_architectures": [],
@@ -6916,24 +7320,34 @@
         "repository_url": "https://github.com/openfilm/openfilm",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/openfilm/openfilm/blob/main/apps/desktop/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/openfilm/openfilm/blob/main/apps/desktop/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/openfilm/openfilm/blob/main/apps/desktop/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/openfilm/openfilm/blob/main/apps/desktop/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/openfilm/openfilm/blob/main/apps/desktop/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -7016,12 +7430,16 @@
         "repository_url": "https://github.com/stsaz/phiola",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/stsaz/phiola/releases/tag/v2.15",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/stsaz/phiola/releases/tag/v2.15",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -7124,24 +7542,34 @@
         "repository_url": "https://github.com/storytold/photocraft",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/storytold/photocraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/storytold/photocraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/storytold/photocraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/storytold/photocraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/storytold/photocraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -7256,8 +7684,10 @@
         "repository_url": "https://github.com/lanthale/PhotoSlide",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/lanthale/PhotoSlide#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-10": {
                 "status": "supported",
@@ -7266,16 +7696,22 @@
                 "note": "Stated in the project README: “Windows 10 or later”"
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/lanthale/PhotoSlide#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/lanthale/PhotoSlide#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/lanthale/PhotoSlide#readme",
+                "note": "The README name it as the minimum."
             }
         },
         "supported_architectures": [],
@@ -7360,8 +7796,10 @@
         "repository_url": "https://github.com/eolix/PhotoSplice",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/eolix/PhotoSplice#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-10": {
                 "status": "supported",
@@ -7370,16 +7808,22 @@
                 "note": "Stated in the project README: “Windows 10+”"
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/eolix/PhotoSplice#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/eolix/PhotoSplice#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/eolix/PhotoSplice#readme",
+                "note": "The README name it as the minimum."
             }
         },
         "supported_architectures": [],
@@ -7465,12 +7909,16 @@
         "repository_url": "https://github.com/sanchomuzax/PicasaPy",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/sanchomuzax/PicasaPy/releases/tag/v1.0.135",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/sanchomuzax/PicasaPy/releases/tag/v1.0.135",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -7586,24 +8034,34 @@
         "repository_url": "https://github.com/davy7125/polyphone",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/davy7125/polyphone#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/davy7125/polyphone#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/davy7125/polyphone#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/davy7125/polyphone#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/davy7125/polyphone#readme",
+                "note": "The README name it as the minimum."
             }
         },
         "supported_architectures": [],
@@ -7694,12 +8152,16 @@
         "repository_url": "https://github.com/nirmaljosephukken/pylon-player",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/nirmaljosephukken/pylon-player#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/nirmaljosephukken/pylon-player#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -7791,12 +8253,16 @@
         "repository_url": "https://github.com/peppy0510/PyMusicPlayer",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/peppy0510/PyMusicPlayer/releases/tag/v1.7.0",
+                "note": "Named in the release notes."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/peppy0510/PyMusicPlayer/releases/tag/v1.7.0",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -7890,8 +8356,10 @@
         "repository_url": "https://github.com/SibtainOcn/Quiesce",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/SibtainOcn/Quiesce#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
                 "status": "supported",
@@ -7900,16 +8368,22 @@
                 "note": "Stated in the project README: “Windows 10 or 11.”"
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/SibtainOcn/Quiesce/blob/main/go.mod",
+                "note": "Built with Go 1.23 (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/SibtainOcn/Quiesce/blob/main/go.mod",
+                "note": "Built with Go 1.23 (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/SibtainOcn/Quiesce/blob/main/go.mod",
+                "note": "Built with Go 1.23 (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -8001,24 +8475,34 @@
         "repository_url": "https://github.com/pch/rawmakase",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/pch/rawmakase/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/pch/rawmakase/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/pch/rawmakase/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/pch/rawmakase/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/pch/rawmakase/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -8143,24 +8627,34 @@
         "repository_url": "https://github.com/thesnarkitecht/rembrandt",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/thesnarkitecht/rembrandt/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/thesnarkitecht/rembrandt/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/thesnarkitecht/rembrandt/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/thesnarkitecht/rembrandt/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/thesnarkitecht/rembrandt/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -8274,24 +8768,34 @@
         "repository_url": "https://github.com/rootscripts/riff",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/rootscripts/riff/blob/main/package.json",
+                "note": "Built with Electron 41 (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/rootscripts/riff/blob/main/package.json",
+                "note": "Built with Electron 41 (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/rootscripts/riff/blob/main/package.json",
+                "note": "Built with Electron 41 (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/rootscripts/riff/blob/main/package.json",
+                "note": "Built with Electron 41 (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/rootscripts/riff/blob/main/package.json",
+                "note": "Built with Electron 41 (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -8369,24 +8873,34 @@
         "repository_url": "https://github.com/jaisurya-dev-art/rigby2d",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/jaisurya-dev-art/rigby2d/releases/tag/v0.5.1",
+                "note": "Named in the release notes."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/jaisurya-dev-art/rigby2d/releases/tag/v0.5.1",
+                "note": "Named in the release notes."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/jaisurya-dev-art/rigby2d/blob/develop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/jaisurya-dev-art/rigby2d/blob/develop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/jaisurya-dev-art/rigby2d/blob/develop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -8555,24 +9069,34 @@
         "repository_url": "https://github.com/RamazanKara/Rubylight",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/RamazanKara/Rubylight#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/RamazanKara/Rubylight#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/RamazanKara/Rubylight#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/RamazanKara/Rubylight#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/RamazanKara/Rubylight#readme",
+                "note": "The README name it as the minimum."
             }
         },
         "supported_architectures": [],
@@ -8678,8 +9202,10 @@
         "repository_url": "https://github.com/sakura-editor/sakura",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/sakura-editor/sakura/blob/master/tools/ChmSourceConverter/ChmSourceConverter.Test/ChmSourceConverter.Test.csproj",
+                "note": ".NET Framework 4 runs on Windows 7 or later."
             },
             "windows-10": {
                 "status": "supported",
@@ -8688,16 +9214,22 @@
                 "note": "Stated in the project README: “動作環境をWindows 10以降に変更（Windows 7/8.1のサポートを終了）”"
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/sakura-editor/sakura/releases/tag/v2.4.3",
+                "note": "Named in the release notes."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/sakura-editor/sakura/blob/master/tools/ChmSourceConverter/ChmSourceConverter.Test/ChmSourceConverter.Test.csproj",
+                "note": ".NET Framework 4 runs on Windows 7 or later."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/sakura-editor/sakura/releases/tag/v2.4.3",
+                "note": "Named in the release notes."
             }
         },
         "supported_architectures": [],
@@ -8784,24 +9316,34 @@
         "repository_url": "https://github.com/Forward-Future/scarlet",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Forward-Future/scarlet/blob/main/apps/desktop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Forward-Future/scarlet/blob/main/apps/desktop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Forward-Future/scarlet/blob/main/apps/desktop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Forward-Future/scarlet/blob/main/apps/desktop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Forward-Future/scarlet/blob/main/apps/desktop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -8903,16 +9445,22 @@
                 "note": "Stated in the project README: “Screenbox is available on Windows 10 version 1903 and up, Windows 11, and Xbox consoles.”"
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/huynhsontung/Screenbox/blob/main/Screenbox/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/huynhsontung/Screenbox/blob/main/Screenbox/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/huynhsontung/Screenbox/blob/main/Screenbox/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             }
         },
         "supported_architectures": [],
@@ -8999,8 +9547,10 @@
         "repository_url": "https://github.com/akon47/ScreenRecorder",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/akon47/ScreenRecorder#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-10": {
                 "status": "supported",
@@ -9009,16 +9559,22 @@
                 "note": "Stated in the project README: “Platforms Supported: Windows 10 64bit Version 1903 or newer (Version 2004+ recommended for self-window exclusion)”"
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/akon47/ScreenRecorder#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/akon47/ScreenRecorder#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/akon47/ScreenRecorder#readme",
+                "note": "The README name it as the minimum."
             }
         },
         "supported_architectures": [],
@@ -9115,24 +9671,34 @@
         "repository_url": "https://github.com/AIgrator/Scribe",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/AIgrator/Scribe#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/AIgrator/Scribe#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/AIgrator/Scribe#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/AIgrator/Scribe#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/AIgrator/Scribe#readme",
+                "note": "The README say it is not supported."
             }
         },
         "supported_architectures": [],
@@ -9232,12 +9798,16 @@
         "repository_url": "https://github.com/LPBeaulieu/Handwriting-OCR-ScriptReader",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/LPBeaulieu/Handwriting-OCR-ScriptReader/releases/tag/v1.1.4",
+                "note": "A download is built for this version."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/LPBeaulieu/Handwriting-OCR-ScriptReader/releases/tag/v1.1.4",
+                "note": "A download is built for this version."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -9333,24 +9903,34 @@
         "repository_url": "https://github.com/servo/servo",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/servo/servo#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/servo/servo#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/servo/servo/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/servo/servo/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/servo/servo/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -9455,34 +10035,34 @@
         "repository_url": "https://github.com/ShareX/ShareX",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "reported",
-                "verified": false,
-                "source": "https://getsharex.com/",
-                "note": "Reported as supported. Confirm on the official website or release notes."
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/ShareX/ShareX/blob/develop/ShareX.Avalonia/ShareX.Avalonia.csproj",
+                "note": ".NET 11 needs Windows 10 or later."
             },
             "windows-10": {
-                "status": "reported",
-                "verified": false,
-                "source": "https://getsharex.com/",
-                "note": "Reported as supported (64-bit). Confirm on the official website or release notes."
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/ShareX/ShareX/blob/develop/ShareX.Avalonia/ShareX.Avalonia.csproj",
+                "note": ".NET 11 needs Windows 10 or later."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false,
-                "source": null,
-                "note": "Not confirmed for the current release."
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/ShareX/ShareX/blob/develop/ShareX.Avalonia/ShareX.Avalonia.csproj",
+                "note": ".NET 11 needs Windows 10 or later."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false,
-                "source": null,
-                "note": "Not confirmed for the current release."
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/ShareX/ShareX/blob/develop/ShareX.Avalonia/ShareX.Avalonia.csproj",
+                "note": ".NET 11 needs Windows 10 or later."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false,
-                "source": null,
-                "note": "Not confirmed for the current release."
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/ShareX/ShareX/blob/develop/ShareX.Avalonia/ShareX.Avalonia.csproj",
+                "note": ".NET 11 needs Windows 10 or later."
             }
         },
         "supported_architectures": [
@@ -9581,24 +10161,34 @@
         "repository_url": "https://github.com/basswaves/skrin",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/basswaves/skrin#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/basswaves/skrin/blob/master/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/basswaves/skrin/blob/master/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/basswaves/skrin/blob/master/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/basswaves/skrin/blob/master/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -9688,24 +10278,34 @@
         "repository_url": "https://github.com/s4wave/spacewave",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/s4wave/spacewave/blob/master/package.json",
+                "note": "Built with Electron 45 (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/s4wave/spacewave/blob/master/package.json",
+                "note": "Built with Electron 45 (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/s4wave/spacewave/blob/master/package.json",
+                "note": "Built with Electron 45 (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/s4wave/spacewave/blob/master/package.json",
+                "note": "Built with Electron 45 (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/s4wave/spacewave/blob/master/package.json",
+                "note": "Built with Electron 45 (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -9810,12 +10410,16 @@
         "repository_url": "https://github.com/Dimitri-Matheus/StarLuxe",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Dimitri-Matheus/StarLuxe/releases/tag/v1.0.98-beta",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Dimitri-Matheus/StarLuxe/releases/tag/v1.0.98-beta",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -9913,24 +10517,34 @@
         "repository_url": "https://github.com/Taiizor/Sucrose",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Taiizor/Sucrose/blob/develop/exp/WinUI/Sucrose.Portal/Sucrose.Portal/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Taiizor/Sucrose/blob/develop/exp/WinUI/Sucrose.Portal/Sucrose.Portal/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Taiizor/Sucrose/blob/develop/exp/WinUI/Sucrose.Portal/Sucrose.Portal/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Taiizor/Sucrose/blob/develop/exp/WinUI/Sucrose.Portal/Sucrose.Portal/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Taiizor/Sucrose/blob/develop/exp/WinUI/Sucrose.Portal/Sucrose.Portal/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             }
         },
         "supported_architectures": [],
@@ -10057,12 +10671,16 @@
         "repository_url": "https://github.com/Taiko2k/Tauon",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Taiko2k/Tauon/releases/tag/v13.1.1",
+                "note": "Current Windows download."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Taiko2k/Tauon/releases/tag/v13.1.1",
+                "note": "Current Windows download."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -10073,8 +10691,10 @@
                 "verified": false
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Taiko2k/Tauon/releases/tag/v13.1.1",
+                "note": "A download is built for this version."
             }
         },
         "supported_architectures": [],
@@ -10165,24 +10785,34 @@
         "repository_url": "https://github.com/tizuio/TizuMark-Markdown-Editor",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/tizuio/TizuMark-Markdown-Editor#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/tizuio/TizuMark-Markdown-Editor#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/tizuio/TizuMark-Markdown-Editor/blob/master/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/tizuio/TizuMark-Markdown-Editor/blob/master/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/tizuio/TizuMark-Markdown-Editor/blob/master/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -10281,24 +10911,34 @@
         "repository_url": "https://github.com/xiufengsun/TokenTracker",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/xiufengsun/TokenTracker/blob/main/TokenTrackerWin.Tests/TokenTrackerWin.Tests.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/xiufengsun/TokenTracker/blob/main/TokenTrackerWin.Tests/TokenTrackerWin.Tests.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/xiufengsun/TokenTracker/blob/main/TokenTrackerWin.Tests/TokenTrackerWin.Tests.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/xiufengsun/TokenTracker/blob/main/TokenTrackerWin.Tests/TokenTrackerWin.Tests.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/xiufengsun/TokenTracker/blob/main/TokenTrackerWin.Tests/TokenTrackerWin.Tests.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
             }
         },
         "supported_architectures": [],
@@ -10389,24 +11029,34 @@
         "repository_url": "https://github.com/TheJoeFin/Traydio",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/TheJoeFin/Traydio#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/TheJoeFin/Traydio/blob/main/Trdo/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/TheJoeFin/Traydio/blob/main/Trdo/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/TheJoeFin/Traydio/blob/main/Trdo/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/TheJoeFin/Traydio/blob/main/Trdo/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
             }
         },
         "supported_architectures": [],
@@ -10502,8 +11152,10 @@
         "repository_url": "https://github.com/zksbx/TuneFree",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/zksbx/TuneFree#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
                 "status": "supported",
@@ -10604,12 +11256,16 @@
         "repository_url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -10703,12 +11359,16 @@
         "repository_url": "https://github.com/FirstEverTech/Universal-Intel-WiFi-BT-Updater",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/FirstEverTech/Universal-Intel-WiFi-BT-Updater#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/FirstEverTech/Universal-Intel-WiFi-BT-Updater#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -10802,24 +11462,34 @@
         "repository_url": "https://github.com/GeorgeXie2333/usque-app",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/GeorgeXie2333/usque-app/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/GeorgeXie2333/usque-app/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/GeorgeXie2333/usque-app/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/GeorgeXie2333/usque-app/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/GeorgeXie2333/usque-app/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -10927,24 +11597,34 @@
         "repository_url": "https://github.com/KuchiSofts/vlc-redesign",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/KuchiSofts/vlc-redesign#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/KuchiSofts/vlc-redesign#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/KuchiSofts/vlc-redesign#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/KuchiSofts/vlc-redesign#readme",
+                "note": "Named in the README."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/KuchiSofts/vlc-redesign#readme",
+                "note": "Named in the README."
             }
         },
         "supported_architectures": [],
@@ -11183,8 +11863,10 @@
         "repository_url": "https://github.com/zkwi/VoxType",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/zkwi/VoxType/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-10": {
                 "status": "supported",
@@ -11193,16 +11875,22 @@
                 "note": "Stated in the project README: “支持 Windows 10 和 11。”"
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/zkwi/VoxType/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/zkwi/VoxType/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/zkwi/VoxType/blob/main/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -11284,20 +11972,28 @@
         "repository_url": "https://github.com/slowscript/warpinator-windows",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/slowscript/warpinator-windows#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/slowscript/warpinator-windows#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/slowscript/warpinator-windows#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/slowscript/warpinator-windows#readme",
+                "note": "The README name it as the minimum."
             },
             "windows-7": {
                 "status": "supported",
@@ -11395,24 +12091,34 @@
         "repository_url": "https://github.com/InstaZDLL/WaveFlow",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/InstaZDLL/WaveFlow/blob/main/src-tauri/crates/app/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/InstaZDLL/WaveFlow/blob/main/src-tauri/crates/app/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/InstaZDLL/WaveFlow/blob/main/src-tauri/crates/app/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/InstaZDLL/WaveFlow/blob/main/src-tauri/crates/app/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/InstaZDLL/WaveFlow/blob/main/src-tauri/crates/app/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -11503,24 +12209,34 @@
         "repository_url": "https://github.com/llehouerou/waves",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/llehouerou/waves/blob/main/go.mod",
+                "note": "Built with Go 1.25 (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/llehouerou/waves/blob/main/go.mod",
+                "note": "Built with Go 1.25 (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/llehouerou/waves/blob/main/go.mod",
+                "note": "Built with Go 1.25 (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/llehouerou/waves/blob/main/go.mod",
+                "note": "Built with Go 1.25 (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/llehouerou/waves/blob/main/go.mod",
+                "note": "Built with Go 1.25 (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -11598,24 +12314,34 @@
         "repository_url": "https://github.com/WeftCut/WeftCut",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/WeftCut/WeftCut/blob/main/apps/desktop/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/WeftCut/WeftCut/blob/main/apps/desktop/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/WeftCut/WeftCut/blob/main/apps/desktop/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/WeftCut/WeftCut/blob/main/apps/desktop/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/WeftCut/WeftCut/blob/main/apps/desktop/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -11695,24 +12421,34 @@
         "repository_url": "https://github.com/RandyNorthrup/WinAppMigrator",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/RandyNorthrup/WinAppMigrator/releases/tag/v0.7.1",
+                "note": "Named in the release notes."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/RandyNorthrup/WinAppMigrator#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/RandyNorthrup/WinAppMigrator#readme",
+                "note": "Named in the README."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/RandyNorthrup/WinAppMigrator#readme",
+                "note": "Named in the README."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/RandyNorthrup/WinAppMigrator#readme",
+                "note": "Named in the README."
             }
         },
         "supported_architectures": [],
@@ -11800,24 +12536,34 @@
         "repository_url": "https://github.com/glslang/windbg-mcp",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/glslang/windbg-mcp/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/glslang/windbg-mcp/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/glslang/windbg-mcp/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/glslang/windbg-mcp/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/glslang/windbg-mcp/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
             }
         },
         "supported_architectures": [],
@@ -11901,12 +12647,16 @@
         "repository_url": "https://github.com/bitcookies/winrar-keygen",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/bitcookies/winrar-keygen#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/bitcookies/winrar-keygen#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
                 "status": "unknown",
@@ -12057,20 +12807,28 @@
                 "note": "Stated in the project README: “Windows 11”"
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/yasewang1337-svg/winutil-cn#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/yasewang1337-svg/winutil-cn/blob/main/tools/launcher/WinUtilCN.Launcher.csproj",
+                "note": ".NET Framework 4 runs on Windows 7 or later."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/yasewang1337-svg/winutil-cn/blob/main/tools/launcher/WinUtilCN.Launcher.csproj",
+                "note": ".NET Framework 4 runs on Windows 7 or later."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/yasewang1337-svg/winutil-cn/blob/main/tools/launcher/WinUtilCN.Launcher.csproj",
+                "note": ".NET Framework 4 runs on Windows 7 or later."
             }
         },
         "supported_architectures": [],
@@ -12155,24 +12913,34 @@
         "repository_url": "https://github.com/mdaiWorks/yengi",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/mdaiWorks/yengi/blob/main/BasucuIDE/mdaiAgent.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/mdaiWorks/yengi/blob/main/BasucuIDE/mdaiAgent.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
             },
             "windows-8-1": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/mdaiWorks/yengi/blob/main/BasucuIDE/mdaiAgent.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
             },
             "windows-8": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/mdaiWorks/yengi/blob/main/BasucuIDE/mdaiAgent.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
             },
             "windows-7": {
-                "status": "unknown",
-                "verified": false
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/mdaiWorks/yengi/blob/main/BasucuIDE/mdaiAgent.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
             }
         },
         "supported_architectures": [],
@@ -12256,12 +13024,16 @@
         "repository_url": "https://github.com/cloudxys/YouBoard",
         "supported_operating_systems": {
             "windows-11": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/cloudxys/YouBoard#readme",
+                "note": "Named in the README."
             },
             "windows-10": {
-                "status": "unknown",
-                "verified": false
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/cloudxys/YouBoard#readme",
+                "note": "Named in the README."
             },
             "windows-8-1": {
                 "status": "unknown",
