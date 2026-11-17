@@ -785,7 +785,7 @@
         "license_family": "permissive",
         "license_url": "https://github.com/yuchen0x1/apkstart#license",
         "official_website": "https://apkstart.edgeone.dev/",
-        "download_page": "https://github.com/yuchen0x1/apkstart/releases/tag/v0.6.11",
+        "download_page": "https://github.com/yuchen0x1/apkstart/releases/tag/v0.6.16",
         "repository_url": "https://github.com/yuchen0x1/apkstart",
         "supported_operating_systems": {
             "windows-11": {
@@ -820,43 +820,43 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "0.6.11",
+        "latest_version": "0.6.16",
         "release_date": "2026-11-17",
-        "release_url": "https://github.com/yuchen0x1/apkstart/releases/tag/v0.6.11",
+        "release_url": "https://github.com/yuchen0x1/apkstart/releases/tag/v0.6.16",
         "primary_download": {
-            "url": "https://github.com/yuchen0x1/apkstart/releases/download/v0.6.11/ApkStart-0.6.11-Setup.exe",
-            "filename": "ApkStart-0.6.11-Setup.exe",
-            "size": 1495931639,
+            "url": "https://github.com/yuchen0x1/apkstart/releases/download/v0.6.16/ApkStart-0.6.16-Setup.exe",
+            "filename": "ApkStart-0.6.16-Setup.exe",
+            "size": 1495998971,
             "architecture": null,
             "format": "EXE installer"
         },
         "download_assets": [
             {
-                "label": "ApkStart-runtime-v0.6.11.zip",
+                "label": "ApkStart-runtime-v0.6.16.zip",
                 "format": "Archive (contents not confirmed)",
                 "kind": "other",
                 "architecture": null,
-                "url": "https://github.com/yuchen0x1/apkstart/releases/download/v0.6.11/ApkStart-runtime-v0.6.11.zip",
+                "url": "https://github.com/yuchen0x1/apkstart/releases/download/v0.6.16/ApkStart-runtime-v0.6.16.zip",
                 "size": 1440720230,
-                "sha256": "a5fd51cc5a732b6f8fc49c41a0f70188ac395b840e2222f6eb713cdac45cb836"
+                "sha256": "52522c3bab15ec6ba51ac6bf663486bce44944c7b45d756559691b386378e1f4"
             },
             {
-                "label": "ApkStart-0.6.11-Setup.exe",
+                "label": "ApkStart-0.6.16-Setup.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": null,
-                "url": "https://github.com/yuchen0x1/apkstart/releases/download/v0.6.11/ApkStart-0.6.11-Setup.exe",
-                "size": 1495931639,
-                "sha256": "8ad63a6260bbbea2c2a09fb27cd06586f8a0dd196944088b2776c8796b228926"
+                "url": "https://github.com/yuchen0x1/apkstart/releases/download/v0.6.16/ApkStart-0.6.16-Setup.exe",
+                "size": 1495998971,
+                "sha256": "920002d6c6d0615712cd88f94c72b8445c6164757d85fb4da7677e483c389be4"
             },
             {
-                "label": "ApkStart-v0.6.11-win64-portable.zip",
+                "label": "ApkStart-v0.6.16-win64-portable.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": "x64",
-                "url": "https://github.com/yuchen0x1/apkstart/releases/download/v0.6.11/ApkStart-v0.6.11-win64-portable.zip",
-                "size": 147880601,
-                "sha256": "df09587547f95fd55981d92f0f2623e25f59ab1162b77fb6226d5dd3aa58df31"
+                "url": "https://github.com/yuchen0x1/apkstart/releases/download/v0.6.16/ApkStart-v0.6.16-win64-portable.zip",
+                "size": 147956983,
+                "sha256": "792b2080b8f9ab8ebb16469a9ebf35b6900db6c65370408b1bd7f296c30a993c"
             }
         ],
         "features": [
@@ -877,7 +877,7 @@
             "Internet connection required for the first runtime download (not needed for the full installer version)."
         ],
         "installation_instructions": [
-            "Click the \"Download ApkStart\" button on this page. Your browser saves ApkStart-0.6.11-Setup.exe (1.4 GB), usually to your Downloads folder.",
+            "Click the \"Download ApkStart\" button on this page. Your browser saves ApkStart-0.6.16-Setup.exe (1.4 GB), usually to your Downloads folder.",
             "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
             "When setup finishes, start ApkStart from the Start menu or the desktop shortcut.",
             "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
@@ -2079,6 +2079,122 @@
         "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
+    },
+    {
+        "id": "deepseek-harness-desktop",
+        "name": "DeepSeek Harness Desktop",
+        "slug": "deepseek-harness-desktop",
+        "summary": "An open‑source Windows desktop client that provides a graphical interface for the DeepSeek Harness AI model, with built‑in plugins, skills, SSH access and customizable skins.",
+        "description": [
+            "DeepSeek Harness Desktop lets you interact with the DeepSeek AI model from a Windows desktop application. It bundles the required runtime, includes Git, and offers a range of extensions such as code completion, remote development tools and visual themes. The program is community‑maintained and free to use.",
+            "The application combines the official DeepSeek Harness runtime, web UI and desktop capabilities into a single Windows package. It ships with Node.js and Git, so no separate installations are needed. Users can install plugins, enable AI coding skills, configure remote SSH sessions, and personalize the look with eleven built‑in skins. The client stores its own configuration and does not interfere with any future official DeepSeek desktop releases. All components are released under the BSD‑3‑Clause license."
+        ],
+        "icon": {
+            "text": "D",
+            "color": "#BE123C",
+            "logo": "/assets/icons/deepseek-harness-desktop.png?v=29571209"
+        },
+        "category": "developer-tools",
+        "categories": [
+            "developer-tools"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/ningbainb/deepseek-harness-desktop#license",
+        "official_website": "https://ningbainb.github.io/deepseek-harness-desktop/",
+        "download_page": "https://github.com/ningbainb/deepseek-harness-desktop/releases/tag/desktop-v5.2.0",
+        "repository_url": "https://github.com/ningbainb/deepseek-harness-desktop",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/ningbainb/deepseek-harness-desktop#readme",
+                "note": "Named in the README."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/ningbainb/deepseek-harness-desktop#readme",
+                "note": "Stated in the project README: “支持 **Windows 10 / 11 x64**；”"
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/ningbainb/deepseek-harness-desktop/blob/main/apps/dsh-desktop/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/ningbainb/deepseek-harness-desktop/blob/main/apps/dsh-desktop/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/ningbainb/deepseek-harness-desktop/blob/main/apps/dsh-desktop/package.json",
+                "note": "Built with Electron 44 (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": null,
+        "release_date": null,
+        "release_url": "https://github.com/ningbainb/deepseek-harness-desktop/releases/tag/desktop-v5.2.0",
+        "primary_download": {
+            "url": "https://github.com/ningbainb/deepseek-harness-desktop/releases/download/desktop-v5.2.0/DeepSeek-Harness-Desktop-Setup-5.2.0-x64.exe",
+            "filename": "DeepSeek-Harness-Desktop-Setup-5.2.0-x64.exe",
+            "size": 341400504,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "DeepSeek-Harness-Desktop-5.2.0-arm64.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "ARM64",
+                "url": "https://github.com/ningbainb/deepseek-harness-desktop/releases/download/desktop-v5.2.0/DeepSeek-Harness-Desktop-5.2.0-arm64.zip",
+                "size": 521164300,
+                "sha256": "8515f10c2126adab458566c4258b7886ddc5ecee614bfec390dc1c7a8660c75b"
+            },
+            {
+                "label": "DeepSeek-Harness-Desktop-Setup-5.2.0-x64.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/ningbainb/deepseek-harness-desktop/releases/download/desktop-v5.2.0/DeepSeek-Harness-Desktop-Setup-5.2.0-x64.exe",
+                "size": 341400504,
+                "sha256": "7dffdfff755b5586aececce6ebeec6c2758c2d12f7a2c96528c42c9d576e8cde"
+            }
+        ],
+        "features": [
+            "Interact with DeepSeek AI models through a graphical chat window",
+            "Use built‑in code‑completion and programming skills",
+            "Install and manage plugins and additional AI skills",
+            "Connect to remote machines via SSH directly from the app",
+            "Choose from multiple visual skins and customize the interface",
+            "Access a built‑in task automation system for repetitive workflows",
+            "View full conversation history and export outputs",
+            "System tray icon provides quick access to the client"
+        ],
+        "requirements": [
+            "Runs on Windows x64; the installer includes the required Node.js runtime and Git."
+        ],
+        "installation_instructions": [
+            "Click the \"Download DeepSeek Harness Desktop\" button on this page. Your browser saves DeepSeek-Harness-Desktop-Setup-5.2.0-x64.exe (325.6 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start DeepSeek Harness Desktop from the Start menu or the desktop shortcut."
+        ],
+        "related_software": [],
+        "seo_title": "DeepSeek Harness Desktop Free Download for Windows 10/11",
+        "meta_description": "Download DeepSeek Harness Desktop free for Windows 10/11. An open‑source Windows desktop client that provides a graphical interface for the DeepSeek Harness AI…",
+        "canonical_url": "https://codehimblog.github.io/software/deepseek-harness-desktop/",
+        "date_added": "2026-11-17",
+        "last_verified_at": "2026-11-17",
+        "verification_status": "verified"
     },
     {
         "id": "desktop-bubble-chat",
@@ -3874,7 +3990,7 @@
         "license_family": "permissive",
         "license_url": "https://github.com/gglucass/headroom-desktop#license",
         "official_website": "https://extraheadroom.com",
-        "download_page": "https://github.com/gglucass/headroom-desktop/releases/tag/v0.9.62",
+        "download_page": "https://github.com/gglucass/headroom-desktop/releases/tag/v0.9.63",
         "repository_url": "https://github.com/gglucass/headroom-desktop",
         "supported_operating_systems": {
             "windows-11": {
@@ -3909,25 +4025,25 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "0.9.62",
-        "release_date": "2026-11-12",
-        "release_url": "https://github.com/gglucass/headroom-desktop/releases/tag/v0.9.62",
+        "latest_version": "0.9.63",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/gglucass/headroom-desktop/releases/tag/v0.9.63",
         "primary_download": {
-            "url": "https://github.com/gglucass/headroom-desktop/releases/download/v0.9.62/Headroom_0.9.62_x64-setup.exe",
-            "filename": "Headroom_0.9.62_x64-setup.exe",
-            "size": 9619352,
+            "url": "https://github.com/gglucass/headroom-desktop/releases/download/v0.9.63/Headroom_0.9.63_x64-setup.exe",
+            "filename": "Headroom_0.9.63_x64-setup.exe",
+            "size": 9574576,
             "architecture": "x64",
             "format": "EXE installer"
         },
         "download_assets": [
             {
-                "label": "Headroom_0.9.62_x64-setup.exe",
+                "label": "Headroom_0.9.63_x64-setup.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://github.com/gglucass/headroom-desktop/releases/download/v0.9.62/Headroom_0.9.62_x64-setup.exe",
-                "size": 9619352,
-                "sha256": "bd83f396d228d7d36bda9f3d81f42c417c8f2352ece7c41c820ad926c5813047"
+                "url": "https://github.com/gglucass/headroom-desktop/releases/download/v0.9.63/Headroom_0.9.63_x64-setup.exe",
+                "size": 9574576,
+                "sha256": "fd61b6cf1c40f993246f02eda37b29299e45faf325eec786d9d03ca59f6364b0"
             }
         ],
         "features": [
@@ -3945,7 +4061,7 @@
             "Headroom account with an active subscription"
         ],
         "installation_instructions": [
-            "Click the \"Download Headroom Desktop\" button on this page. Your browser saves Headroom_0.9.62_x64-setup.exe (9.2 MB), usually to your Downloads folder.",
+            "Click the \"Download Headroom Desktop\" button on this page. Your browser saves Headroom_0.9.63_x64-setup.exe (9.1 MB), usually to your Downloads folder.",
             "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
             "When setup finishes, start Headroom Desktop from the Start menu or the desktop shortcut."
         ],
@@ -4512,7 +4628,7 @@
         "license_family": "copyleft",
         "license_url": "https://github.com/julyx10/lap#license",
         "official_website": "https://julyx10.github.io/lap/",
-        "download_page": "https://github.com/julyx10/lap/releases/tag/v0.3.3",
+        "download_page": "https://github.com/julyx10/lap/releases/tag/v0.4.0",
         "repository_url": "https://github.com/julyx10/lap",
         "supported_operating_systems": {
             "windows-11": {
@@ -4547,13 +4663,13 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "0.3.3",
-        "release_date": "2026-10-12",
-        "release_url": "https://github.com/julyx10/lap/releases/tag/v0.3.3",
+        "latest_version": "0.4.0",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/julyx10/lap/releases/tag/v0.4.0",
         "primary_download": {
-            "url": "https://github.com/julyx10/lap/releases/download/v0.3.3/Lap_0.3.3_x64_en-US.msi",
-            "filename": "Lap_0.3.3_x64_en-US.msi",
-            "size": 228179968,
+            "url": "https://github.com/julyx10/lap/releases/download/v0.4.0/Lap_0.4.0_x64_en-US.msi",
+            "filename": "Lap_0.4.0_x64_en-US.msi",
+            "size": 238088192,
             "architecture": "x64",
             "format": "MSI installer"
         },
@@ -4563,36 +4679,36 @@
                 "format": "Archive (contents not confirmed)",
                 "kind": "other",
                 "architecture": "ARM64",
-                "url": "https://github.com/julyx10/lap/releases/download/v0.3.3/Lap_aarch64.app.tar.gz",
-                "size": 202665696,
-                "sha256": "dd24bbecab99e7fa26726bde72c804bab02e2586565c0d15a15ffc6f6df4881c"
+                "url": "https://github.com/julyx10/lap/releases/download/v0.4.0/Lap_aarch64.app.tar.gz",
+                "size": 211567687,
+                "sha256": "097d72675bf5e517b4e1ec9760c5ba8dbd7d8c8e73139ed9c7009a248930c6e1"
             },
             {
                 "label": "Lap_x86_64.app.tar.gz",
                 "format": "Archive (contents not confirmed)",
                 "kind": "other",
                 "architecture": "x64",
-                "url": "https://github.com/julyx10/lap/releases/download/v0.3.3/Lap_x86_64.app.tar.gz",
-                "size": 181256844,
-                "sha256": "4351f1a4ab3a6e0268f24f010e1ba9d5e9f8201941915495b94ce56ad913fca6"
+                "url": "https://github.com/julyx10/lap/releases/download/v0.4.0/Lap_x86_64.app.tar.gz",
+                "size": 225457412,
+                "sha256": "4da483e19de23672ad783018cd7ad9832474d42fc3802764c04164fae0759918"
             },
             {
-                "label": "Lap_0.3.3_arm64_en-US.msi",
+                "label": "Lap_0.4.0_arm64_en-US.msi",
                 "format": "MSI installer",
                 "kind": "installer",
                 "architecture": "ARM64",
-                "url": "https://github.com/julyx10/lap/releases/download/v0.3.3/Lap_0.3.3_arm64_en-US.msi",
-                "size": 259612672,
-                "sha256": "2ccda04b292cf3af11c449ac326ccfd5901277362624d73b968fdfa77f51dc11"
+                "url": "https://github.com/julyx10/lap/releases/download/v0.4.0/Lap_0.4.0_arm64_en-US.msi",
+                "size": 268369920,
+                "sha256": "42b750fbaa17d4d834e585dca170ff951f5054d718d9425fb8d8bcf3d9163656"
             },
             {
-                "label": "Lap_0.3.3_x64_en-US.msi",
+                "label": "Lap_0.4.0_x64_en-US.msi",
                 "format": "MSI installer",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://github.com/julyx10/lap/releases/download/v0.3.3/Lap_0.3.3_x64_en-US.msi",
-                "size": 228179968,
-                "sha256": "eb2f8981387f4cc224216da60df1202c12d57599a24b5b1cdba21900ce13be0a"
+                "url": "https://github.com/julyx10/lap/releases/download/v0.4.0/Lap_0.4.0_x64_en-US.msi",
+                "size": 238088192,
+                "sha256": "e7955de955ac444d42cfa3ecc56935c9f6e7abe3cca6222937525a0a50def058"
             }
         ],
         "features": [
@@ -4608,7 +4724,7 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Click the \"Download Lap\" button on this page. Your browser saves Lap_0.3.3_x64_en-US.msi (217.6 MB), usually to your Downloads folder.",
+            "Click the \"Download Lap\" button on this page. Your browser saves Lap_0.4.0_x64_en-US.msi (227.1 MB), usually to your Downloads folder.",
             "Double-click the downloaded .msi file and follow the setup steps.",
             "When setup finishes, start Lap from the Start menu.",
             "Add your photo folders to start managing your collection."
@@ -8139,7 +8255,7 @@
         "license_family": "copyleft",
         "license_url": "https://github.com/sanchomuzax/PicasaPy#license",
         "official_website": "https://github.com/sanchomuzax/PicasaPy/releases",
-        "download_page": "https://github.com/sanchomuzax/PicasaPy/releases/tag/v1.0.136",
+        "download_page": "https://github.com/sanchomuzax/PicasaPy/releases/tag/v1.0.138",
         "repository_url": "https://github.com/sanchomuzax/PicasaPy",
         "supported_operating_systems": {
             "windows-11": {
@@ -8168,52 +8284,52 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "1.0.136",
+        "latest_version": "1.0.138",
         "release_date": "2026-11-17",
-        "release_url": "https://github.com/sanchomuzax/PicasaPy/releases/tag/v1.0.136",
+        "release_url": "https://github.com/sanchomuzax/PicasaPy/releases/tag/v1.0.138",
         "primary_download": {
-            "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.136/PicasaPy-Setup-1.0.136.exe",
-            "filename": "PicasaPy-Setup-1.0.136.exe",
-            "size": 410492842,
+            "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.138/PicasaPy-Setup-1.0.138.exe",
+            "filename": "PicasaPy-Setup-1.0.138.exe",
+            "size": 410456770,
             "architecture": null,
             "format": "EXE installer"
         },
         "download_assets": [
             {
-                "label": "picasapy-1.0.136.tar.gz",
+                "label": "picasapy-1.0.138.tar.gz",
                 "format": "Archive (contents not confirmed)",
                 "kind": "other",
                 "architecture": null,
-                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.136/picasapy-1.0.136.tar.gz",
-                "size": 44369273,
-                "sha256": "3817a67a2271a0748ed123f60703424bbb27f6ead78a53f044ef1a71cf6ee794"
+                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.138/picasapy-1.0.138.tar.gz",
+                "size": 44378799,
+                "sha256": "15c685845d3efec5d50e1b816868340daabfe51ccf9649fdad4dfb463d7f8a6c"
             },
             {
-                "label": "PicasaPy-Setup-1.0.136.exe",
+                "label": "PicasaPy-Setup-1.0.138.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": null,
-                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.136/PicasaPy-Setup-1.0.136.exe",
-                "size": 410492842,
-                "sha256": "c367425dfcb136d56bb97c5ee0e95018138fe99a11da797eec4d5f3fd436c0d5"
+                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.138/PicasaPy-Setup-1.0.138.exe",
+                "size": 410456770,
+                "sha256": "aff6bafb9026d30c39513ab0e664040a343fb94f82921874d164db96106502d8"
             },
             {
-                "label": "picasapy-windows-1.0.136.zip",
+                "label": "picasapy-windows-1.0.138.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": null,
-                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.136/picasapy-windows-1.0.136.zip",
-                "size": 44719567,
-                "sha256": "6020baab7d58fc613fbb22a6400c099362abcb0b74a7a5afc61b52d3c241453f"
+                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.138/picasapy-windows-1.0.138.zip",
+                "size": 44731864,
+                "sha256": "e7f306b18a036da4866a858ba2962a482bbd78f601abe80c4f17eeb0f4a4bbce"
             },
             {
                 "label": "PicasaPy-windows-x64.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": "x64",
-                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.136/PicasaPy-windows-x64.zip",
-                "size": 518668781,
-                "sha256": "a0757f1a50cdc1cbb4c7dc43cf28eaa75e2722da960c987144881653fb663e4c"
+                "url": "https://github.com/sanchomuzax/PicasaPy/releases/download/v1.0.138/PicasaPy-windows-x64.zip",
+                "size": 518688833,
+                "sha256": "edc9168a30973f85ed1eb8914d1c73d251366c4c78cf60bba8a4b5bf8aa7a557"
             }
         ],
         "features": [
@@ -8226,7 +8342,7 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Click the \"Download PicasaPy\" button on this page. Your browser saves PicasaPy-Setup-1.0.136.exe (391.5 MB), usually to your Downloads folder.",
+            "Click the \"Download PicasaPy\" button on this page. Your browser saves PicasaPy-Setup-1.0.138.exe (391.4 MB), usually to your Downloads folder.",
             "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
             "When setup finishes, start PicasaPy from the Start menu or the desktop shortcut.",
             "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
@@ -8354,6 +8470,137 @@
         "meta_description": "Download Polyphone free for Windows. A free and open-source soundfont editor for creating, editing, and playing musical instrument soundfonts.",
         "canonical_url": "https://codehimblog.github.io/software/polyphone/",
         "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "procraft",
+        "name": "ProCraft",
+        "slug": "procraft",
+        "summary": "ProCraft is an open‑source painting program for Windows that offers pressure‑sensitive brushes, layers, adjustments, animation and 3D painting using its own Rust engine and GPU renderer.",
+        "description": [
+            "ProCraft provides a full‑featured digital canvas for artists who want a free, cross‑platform drawing tool on Windows. It supports modern brush dynamics, layer blending, image adjustments and basic animation, all with hardware‑accelerated rendering.",
+            "ProCraft is built with a Rust graphics engine and uses the wgpu renderer to take advantage of the GPU. The user interface is created with egui, giving a consistent look across desktop platforms. Artists can work with pressure‑sensitive brushes, create multiple layers with blend modes, apply adjustments such as blur or color correction, and even animate frames or paint in 3D space. The application runs as a standard Windows program, available as an MSI installer or a portable ZIP archive. It is released under the Apache‑2.0 license and is free to use."
+        ],
+        "icon": {
+            "text": "P",
+            "color": "#0F766E",
+            "logo": "/assets/icons/procraft.png?v=9a036008"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/artcraft-android/procraft#license",
+        "official_website": null,
+        "download_page": "https://github.com/artcraft-android/procraft/releases/tag/v0.0.6-beta",
+        "repository_url": "https://github.com/artcraft-android/procraft",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/artcraft-android/procraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/artcraft-android/procraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/artcraft-android/procraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/artcraft-android/procraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/artcraft-android/procraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.0.6-beta",
+        "release_date": "2026-11-13",
+        "release_url": "https://github.com/artcraft-android/procraft/releases/tag/v0.0.6-beta",
+        "primary_download": {
+            "url": "https://github.com/artcraft-android/procraft/releases/download/v0.0.6-beta/procraft-0.0.6-beta-windows-x64.msi",
+            "filename": "procraft-0.0.6-beta-windows-x64.msi",
+            "size": 19365888,
+            "architecture": "x64",
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "procraft-0.0.6-beta-windows-arm64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/artcraft-android/procraft/releases/download/v0.0.6-beta/procraft-0.0.6-beta-windows-arm64.msi",
+                "size": 18239488,
+                "sha256": "bb1c9551571068016b4937262d20879d33393e539581d4c2ac773e6732337bc3"
+            },
+            {
+                "label": "procraft-0.0.6-beta-windows-x64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/artcraft-android/procraft/releases/download/v0.0.6-beta/procraft-0.0.6-beta-windows-x64.msi",
+                "size": 19365888,
+                "sha256": "99330ec32337ffdc068e8a47812a9b10c8ffa5a38865bed2802be75e41e34db7"
+            },
+            {
+                "label": "procraft-0.0.6-beta-windows-arm64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/artcraft-android/procraft/releases/download/v0.0.6-beta/procraft-0.0.6-beta-windows-arm64-portable.zip",
+                "size": 22252857,
+                "sha256": "2babc7b2378ff4ade246e2eaf0361f1408b2c087a56c9f8a1b02523bc066388b"
+            },
+            {
+                "label": "procraft-0.0.6-beta-windows-x64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/artcraft-android/procraft/releases/download/v0.0.6-beta/procraft-0.0.6-beta-windows-x64-portable.zip",
+                "size": 23339184,
+                "sha256": "60ff2545546c8a5d6241824886487af06cc0451fe3e34cf64f4b5600496225ac"
+            }
+        ],
+        "features": [
+            "Paint with pressure‑sensitive brushes that respond to tablet input",
+            "Organize artwork using unlimited layers with blend modes",
+            "Apply adjustments like blur, color correction, and transform tools",
+            "Create simple frame‑by‑frame animations directly in the app",
+            "Paint in 3D space using the built‑in 3D brush tools",
+            "Export finished images in common formats such as PNG or JPEG"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download ProCraft\" button on this page. Your browser saves procraft-0.0.6-beta-windows-x64.msi (18.5 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start ProCraft from the Start menu.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "ProCraft Free Download for Windows 10/11",
+        "meta_description": "Download ProCraft free for Windows 10/11. ProCraft is an open‑source painting program for Windows that offers pressure‑sensitive brushes, layers, adjustments,…",
+        "canonical_url": "https://codehimblog.github.io/software/procraft/",
+        "date_added": "2026-11-17",
         "last_verified_at": null,
         "verification_status": "partial"
     },
@@ -9299,7 +9546,7 @@
         "license_family": "copyleft",
         "license_url": "https://github.com/RamazanKara/Rubylight#license",
         "official_website": "https://ramazankara.github.io/Rubylight/",
-        "download_page": "https://github.com/RamazanKara/Rubylight/releases/tag/v4.7.1",
+        "download_page": "https://github.com/RamazanKara/Rubylight/releases/tag/v4.8.0",
         "repository_url": "https://github.com/RamazanKara/Rubylight",
         "supported_operating_systems": {
             "windows-11": {
@@ -9334,52 +9581,52 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "4.7.1",
-        "release_date": "2026-11-16",
-        "release_url": "https://github.com/RamazanKara/Rubylight/releases/tag/v4.7.1",
+        "latest_version": "4.8.0",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/RamazanKara/Rubylight/releases/tag/v4.8.0",
         "primary_download": {
-            "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.7.1/rubylight-nvidia-setup-4.7.1.exe",
-            "filename": "rubylight-nvidia-setup-4.7.1.exe",
-            "size": 54014821,
+            "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.8.0/rubylight-nvidia-setup-4.8.0.exe",
+            "filename": "rubylight-nvidia-setup-4.8.0.exe",
+            "size": 54227368,
             "architecture": null,
             "format": "EXE installer"
         },
         "download_assets": [
             {
-                "label": "rubylight-nvidia-component-4.7.1.zip",
+                "label": "rubylight-nvidia-component-4.8.0.zip",
                 "format": "Archive (contents not confirmed)",
                 "kind": "other",
                 "architecture": null,
-                "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.7.1/rubylight-nvidia-component-4.7.1.zip",
-                "size": 16970831,
-                "sha256": "75f33fbaec3a3ed677a4c9049c148af443f0b1db3ae710743f1de591d186084b"
+                "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.8.0/rubylight-nvidia-component-4.8.0.zip",
+                "size": 16970830,
+                "sha256": "703d6790b9eff075dd6d3ed20d91d62ad41a920d4eb2e2f69d37f4d18ca3ed99"
             },
             {
-                "label": "rubylight-nvidia-setup-4.7.1.exe",
+                "label": "rubylight-nvidia-setup-4.8.0.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": null,
-                "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.7.1/rubylight-nvidia-setup-4.7.1.exe",
-                "size": 54014821,
-                "sha256": "64f272b2b8edc872b5eba54f1a4af64bac4e0038e429e2f3391c41cc8c85a421"
+                "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.8.0/rubylight-nvidia-setup-4.8.0.exe",
+                "size": 54227368,
+                "sha256": "a6ba1ccd076ed89c8c1ca21040f7c4ee0a0ccc8462290189671de950646248a7"
             },
             {
-                "label": "rubylight-setup-4.7.1.exe",
+                "label": "rubylight-setup-4.8.0.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": null,
-                "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.7.1/rubylight-setup-4.7.1.exe",
-                "size": 54014821,
-                "sha256": "64f272b2b8edc872b5eba54f1a4af64bac4e0038e429e2f3391c41cc8c85a421"
+                "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.8.0/rubylight-setup-4.8.0.exe",
+                "size": 54227368,
+                "sha256": "a6ba1ccd076ed89c8c1ca21040f7c4ee0a0ccc8462290189671de950646248a7"
             },
             {
-                "label": "rubylight-4.7.1-windows-x64.zip",
+                "label": "rubylight-4.8.0-windows-x64.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": "x64",
-                "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.7.1/rubylight-4.7.1-windows-x64.zip",
-                "size": 52325360,
-                "sha256": "47da4ebb94ba8035a792831674b1418441de00d2b8c5bf40eacdd5742218d835"
+                "url": "https://github.com/RamazanKara/Rubylight/releases/download/v4.8.0/rubylight-4.8.0-windows-x64.zip",
+                "size": 52527236,
+                "sha256": "a040e61ef8cb1b9eb490543403e62415891c720a4ec039111a60d1a5ddcbe9d2"
             }
         ],
         "features": [
@@ -9394,7 +9641,7 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Click the \"Download Rubylight\" button on this page. Your browser saves rubylight-nvidia-setup-4.7.1.exe (51.5 MB), usually to your Downloads folder.",
+            "Click the \"Download Rubylight\" button on this page. Your browser saves rubylight-nvidia-setup-4.8.0.exe (51.7 MB), usually to your Downloads folder.",
             "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
             "When setup finishes, start Rubylight from the Start menu or the desktop shortcut.",
             "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
@@ -9546,7 +9793,7 @@
         "license_family": "permissive",
         "license_url": "https://github.com/Forward-Future/scarlet#license",
         "official_website": null,
-        "download_page": "https://github.com/Forward-Future/scarlet/releases/tag/v0.1.189",
+        "download_page": "https://github.com/Forward-Future/scarlet/releases/tag/v0.1.200",
         "repository_url": "https://github.com/Forward-Future/scarlet",
         "supported_operating_systems": {
             "windows-11": {
@@ -9581,34 +9828,34 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "0.1.189",
+        "latest_version": "0.1.200",
         "release_date": "2026-11-17",
-        "release_url": "https://github.com/Forward-Future/scarlet/releases/tag/v0.1.189",
+        "release_url": "https://github.com/Forward-Future/scarlet/releases/tag/v0.1.200",
         "primary_download": {
-            "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.189/Scarlet-0.1.189-Windows-x64-Setup.exe",
-            "filename": "Scarlet-0.1.189-Windows-x64-Setup.exe",
-            "size": 161178529,
+            "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.200/Scarlet-0.1.200-Windows-x64-Setup.exe",
+            "filename": "Scarlet-0.1.200-Windows-x64-Setup.exe",
+            "size": 161200373,
             "architecture": "x64",
             "format": "EXE installer"
         },
         "download_assets": [
             {
-                "label": "Scarlet-0.1.189-Windows-x64-Setup.exe",
+                "label": "Scarlet-0.1.200-Windows-x64-Setup.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.189/Scarlet-0.1.189-Windows-x64-Setup.exe",
-                "size": 161178529,
-                "sha256": "453b04e83fc4b3fec3a59c2da4cfa9859d4371e5f920e985c3d4bbffbad2d44c"
+                "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.200/Scarlet-0.1.200-Windows-x64-Setup.exe",
+                "size": 161200373,
+                "sha256": "06c32887e5a73d87ffe02590f8b9c1699ed59c2ccfe4b3231cd443cb44fbaebf"
             },
             {
-                "label": "Scarlet-0.1.189-Windows-x64.msi",
+                "label": "Scarlet-0.1.200-Windows-x64.msi",
                 "format": "MSI installer",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.189/Scarlet-0.1.189-Windows-x64.msi",
-                "size": 230327264,
-                "sha256": "b1dca0911b41eb9b59457e921bb6072d52ac5d741c2de538c6555af6a3adb630"
+                "url": "https://github.com/Forward-Future/scarlet/releases/download/v0.1.200/Scarlet-0.1.200-Windows-x64.msi",
+                "size": 230331360,
+                "sha256": "546e3b6ba6a22bd789e1a4f2a1ab42f7198d4b349da38304563958576355d2a2"
             }
         ],
         "features": [
@@ -9626,7 +9873,7 @@
             "FFmpeg (the installer can add it automatically or you can install it via winget)."
         ],
         "installation_instructions": [
-            "Click the \"Download Scarlet\" button on this page. Your browser saves Scarlet-0.1.189-Windows-x64-Setup.exe (153.7 MB), usually to your Downloads folder.",
+            "Click the \"Download Scarlet\" button on this page. Your browser saves Scarlet-0.1.200-Windows-x64-Setup.exe (153.7 MB), usually to your Downloads folder.",
             "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
             "When setup finishes, start Scarlet from the Start menu or the desktop shortcut."
         ],
@@ -11827,7 +12074,7 @@
         "license_family": "copyleft",
         "license_url": "https://github.com/KuchiSofts/vlc-redesign#license",
         "official_website": "https://kuchisofts.github.io/vlc-redesign/",
-        "download_page": "https://github.com/KuchiSofts/vlc-redesign/releases/tag/v0.7.2",
+        "download_page": "https://github.com/KuchiSofts/vlc-redesign/releases/tag/v0.7.4",
         "repository_url": "https://github.com/KuchiSofts/vlc-redesign",
         "supported_operating_systems": {
             "windows-11": {
@@ -11862,61 +12109,61 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "0.7.2",
-        "release_date": "2026-11-16",
-        "release_url": "https://github.com/KuchiSofts/vlc-redesign/releases/tag/v0.7.2",
+        "latest_version": "0.7.4",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/KuchiSofts/vlc-redesign/releases/tag/v0.7.4",
         "primary_download": {
-            "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.7.2/vlc-redesign-0.7.2-win64-setup.exe",
-            "filename": "vlc-redesign-0.7.2-win64-setup.exe",
-            "size": 65637810,
+            "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.7.4/vlc-redesign-0.7.4-win64-setup.exe",
+            "filename": "vlc-redesign-0.7.4-win64-setup.exe",
+            "size": 65667292,
             "architecture": "x64",
             "format": "EXE installer"
         },
         "download_assets": [
             {
-                "label": "vlc-redesign-0.7.2-win64-setup.exe",
+                "label": "vlc-redesign-0.7.4-win64-setup.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.7.2/vlc-redesign-0.7.2-win64-setup.exe",
-                "size": 65637810,
-                "sha256": "663f5454df94f1e6fa9442bfd7fd397251368b570cf8231ab24125cac51f4fef"
+                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.7.4/vlc-redesign-0.7.4-win64-setup.exe",
+                "size": 65667292,
+                "sha256": "238c7fd44249dfe3341b6a0d7d2075fccf0e5fa907c5eae59762a9fdfea5140f"
             },
             {
-                "label": "vlc-redesign-0.7.2-winarm64-setup.exe",
+                "label": "vlc-redesign-0.7.4-winarm64-setup.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": "ARM64",
-                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.7.2/vlc-redesign-0.7.2-winarm64-setup.exe",
-                "size": 48730624,
-                "sha256": "158b8bd48f1a4394c21c7a00aa6064a046e3906110269d588ff44f10a2a535ad"
+                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.7.4/vlc-redesign-0.7.4-winarm64-setup.exe",
+                "size": 48742660,
+                "sha256": "b3a01eb0c84b2d405259612245630c2673be95fd3155ad97088c3723c19ff144"
             },
             {
-                "label": "vlc-redesign-0.7.2-win64.zip",
+                "label": "vlc-redesign-0.7.4-win64.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": "x64",
-                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.7.2/vlc-redesign-0.7.2-win64.zip",
-                "size": 117914829,
-                "sha256": "dcebb0fd9e72d3d7ed5b312852448ac3767742f377bc1aa4b04db6f5ee5993c7"
+                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.7.4/vlc-redesign-0.7.4-win64.zip",
+                "size": 117943028,
+                "sha256": "d4c80ad51163b598698b0bb28293e5e3f547bf0978b4b386e1c285762a6d39e0"
             },
             {
-                "label": "vlc-redesign-0.7.2-winarm64.zip",
+                "label": "vlc-redesign-0.7.4-winarm64.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": "ARM64",
-                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.7.2/vlc-redesign-0.7.2-winarm64.zip",
-                "size": 87090069,
-                "sha256": "e72d63f55a74b22628e86379ccb30083a5b8e9bf0b5350df1be3559ab70d853d"
+                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.7.4/vlc-redesign-0.7.4-winarm64.zip",
+                "size": 87106917,
+                "sha256": "65c3b8b6feb6c0616d512538f88b2e979f153627e0ea332eb6095e1ba91fffd9"
             },
             {
-                "label": "vlc-redesign-0.7.2-source.tar.gz",
+                "label": "vlc-redesign-0.7.4-source.tar.gz",
                 "format": "Source code archive",
                 "kind": "source",
                 "architecture": null,
-                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.7.2/vlc-redesign-0.7.2-source.tar.gz",
-                "size": 128063298,
-                "sha256": "b2625f0316554b179fe88110bea823f19f9531f1b106b8af6ce0d133139808d3"
+                "url": "https://github.com/KuchiSofts/vlc-redesign/releases/download/v0.7.4/vlc-redesign-0.7.4-source.tar.gz",
+                "size": 128079222,
+                "sha256": "c917ea559ca77274718d17a8905bcf6a0503b6a3c8222b37ac093f7b58e11574"
             }
         ],
         "features": [
@@ -11931,7 +12178,7 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Click the \"Download VLC Media Player Redesign\" button on this page. Your browser saves vlc-redesign-0.7.2-win64-setup.exe (62.6 MB), usually to your Downloads folder.",
+            "Click the \"Download VLC Media Player Redesign\" button on this page. Your browser saves vlc-redesign-0.7.4-win64-setup.exe (62.6 MB), usually to your Downloads folder.",
             "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
             "When setup finishes, start VLC Media Player Redesign from the Start menu or the desktop shortcut.",
             "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
@@ -12659,7 +12906,7 @@
         "license_family": "permissive",
         "license_url": "https://github.com/WeftCut/WeftCut#license",
         "official_website": "https://weftcut.com",
-        "download_page": "https://github.com/WeftCut/WeftCut/releases/tag/v0.8.0",
+        "download_page": "https://github.com/WeftCut/WeftCut/releases/tag/v0.8.1",
         "repository_url": "https://github.com/WeftCut/WeftCut",
         "supported_operating_systems": {
             "windows-11": {
@@ -12694,13 +12941,13 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "0.8.0",
+        "latest_version": "0.8.1",
         "release_date": "2026-11-17",
-        "release_url": "https://github.com/WeftCut/WeftCut/releases/tag/v0.8.0",
+        "release_url": "https://github.com/WeftCut/WeftCut/releases/tag/v0.8.1",
         "primary_download": {
-            "url": "https://github.com/WeftCut/WeftCut/releases/download/v0.8.0/WeftCut-win-x64.exe",
+            "url": "https://github.com/WeftCut/WeftCut/releases/download/v0.8.1/WeftCut-win-x64.exe",
             "filename": "WeftCut-win-x64.exe",
-            "size": 261521336,
+            "size": 261548669,
             "architecture": "x64",
             "format": "EXE (type not confirmed)"
         },
@@ -12710,9 +12957,9 @@
                 "format": "EXE (type not confirmed)",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://github.com/WeftCut/WeftCut/releases/download/v0.8.0/WeftCut-win-x64.exe",
-                "size": 261521336,
-                "sha256": "1179009c1a8005e4f1d117f3991623180ce04b7bbb47a2b8ba6989835bd950b8"
+                "url": "https://github.com/WeftCut/WeftCut/releases/download/v0.8.1/WeftCut-win-x64.exe",
+                "size": 261548669,
+                "sha256": "dfc23f515f6ec9a4bb23ab78080dd942b79036015efc0a958b6af5351e81bf66"
             }
         ],
         "features": [
@@ -12766,7 +13013,7 @@
         "license_family": "permissive",
         "license_url": "https://github.com/RandyNorthrup/WinAppMigrator#license",
         "official_website": "https://randynorthrup.github.io/WinAppMigrator/",
-        "download_page": "https://github.com/RandyNorthrup/WinAppMigrator/releases/tag/v0.7.1",
+        "download_page": "https://github.com/RandyNorthrup/WinAppMigrator/releases/tag/v0.7.2",
         "repository_url": "https://github.com/RandyNorthrup/WinAppMigrator",
         "supported_operating_systems": {
             "windows-11": {
@@ -12801,34 +13048,34 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "0.7.1",
-        "release_date": "2026-11-16",
-        "release_url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/tag/v0.7.1",
+        "latest_version": "0.7.2",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/tag/v0.7.2",
         "primary_download": {
-            "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.7.1/WinAppMigrator-v0.7.1.exe",
-            "filename": "WinAppMigrator-v0.7.1.exe",
-            "size": 36029296,
+            "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.7.2/WinAppMigrator-v0.7.2.exe",
+            "filename": "WinAppMigrator-v0.7.2.exe",
+            "size": 36043120,
             "architecture": null,
             "format": "EXE (type not confirmed)"
         },
         "download_assets": [
             {
-                "label": "WinAppMigrator-v0.7.1.exe",
+                "label": "WinAppMigrator-v0.7.2.exe",
                 "format": "EXE (type not confirmed)",
                 "kind": "installer",
                 "architecture": null,
-                "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.7.1/WinAppMigrator-v0.7.1.exe",
-                "size": 36029296,
-                "sha256": "16b8aee891085d85fc81c9e00efba8f2d1f32e098b7b7f7664f4cef4de44b460"
+                "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.7.2/WinAppMigrator-v0.7.2.exe",
+                "size": 36043120,
+                "sha256": "19da35bf73a0d82f778e0e55e127877e928234a406515d18d4aa6a24de4867c9"
             },
             {
-                "label": "WinAppMigrator-v0.7.1-windows-x64.zip",
+                "label": "WinAppMigrator-v0.7.2-windows-x64.zip",
                 "format": "Portable ZIP",
                 "kind": "portable",
                 "architecture": "x64",
-                "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.7.1/WinAppMigrator-v0.7.1-windows-x64.zip",
-                "size": 16360760,
-                "sha256": "9fa3f556f0f40c5ae87e4bd0a0c6c770d4c15b552d5be601b925232578e08bbd"
+                "url": "https://github.com/RandyNorthrup/WinAppMigrator/releases/download/v0.7.2/WinAppMigrator-v0.7.2-windows-x64.zip",
+                "size": 16365525,
+                "sha256": "6f3c54180fb2ad6a800f3ea8856022605d43d1d5fa6e143cfc24818bc59a7064"
             }
         ],
         "features": [
@@ -12843,7 +13090,7 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Click the \"Download WinAppMigrator\" button on this page. Your browser saves WinAppMigrator-v0.7.1.exe (34.4 MB), usually to your Downloads folder.",
+            "Click the \"Download WinAppMigrator\" button on this page. Your browser saves WinAppMigrator-v0.7.2.exe (34.4 MB), usually to your Downloads folder.",
             "Double-click the downloaded file to start WinAppMigrator. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
             "Optional: move the file to a folder of its own (for example Documents\\WinAppMigrator) so it is easy to find next time.",
             "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
