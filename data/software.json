@@ -12297,6 +12297,121 @@
         "verification_status": "verified"
     },
     {
+        "id": "steamtools",
+        "name": "Watt Toolkit",
+        "slug": "steamtools",
+        "summary": "A free, open‑source toolbox that adds many utilities for Steam and other game platforms, such as account switching, library management, network acceleration and token handling.",
+        "description": [
+            "Watt Toolkit (formerly Steam++) provides a collection of tools that help Windows users manage their Steam, Epic, Ubisoft and other game accounts. It adds features like fast account switching, game library editing, download monitoring, cloud‑save handling and network acceleration, all from a single desktop program.",
+            "The program works with the official Steam client and other game platforms that are already installed on the PC. It lets you quickly change between multiple accounts, edit the names and cover images of games in your library, monitor download progress and shut down the PC when downloads finish, and simulate game runs to earn playtime or card drops without installing the game. It also includes a token manager that stores mobile authenticator codes for Steam, Google, and other services, and it can accelerate access to game stores by running a local reverse proxy. All features are provided through built‑in plugins that can be enabled or disabled by the user."
+        ],
+        "icon": {
+            "text": "S",
+            "color": "#BE123C",
+            "logo": "/assets/icons/steamtools.png?v=2d8b5107"
+        },
+        "category": "productivity-office",
+        "categories": [
+            "productivity-office"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/BeyondDimension/SteamTools#license",
+        "official_website": "https://steampp.net",
+        "download_page": "https://github.com/BeyondDimension/SteamTools/releases/tag/3.2.0",
+        "repository_url": "https://github.com/BeyondDimension/SteamTools",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/BeyondDimension/SteamTools/blob/develop/src/Avalonia.Base.Internals/Avalonia.Base.Internals.csproj",
+                "note": ".NET 11 needs Windows 10 or later."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/BeyondDimension/SteamTools#readme",
+                "note": "Named in the README."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/BeyondDimension/SteamTools/blob/develop/src/Avalonia.Base.Internals/Avalonia.Base.Internals.csproj",
+                "note": ".NET 11 needs Windows 10 or later."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/BeyondDimension/SteamTools/blob/develop/src/Avalonia.Base.Internals/Avalonia.Base.Internals.csproj",
+                "note": ".NET 11 needs Windows 10 or later."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/BeyondDimension/SteamTools/blob/develop/src/Avalonia.Base.Internals/Avalonia.Base.Internals.csproj",
+                "note": ".NET 11 needs Windows 10 or later."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "3.2.0",
+        "release_date": "2026-11-09",
+        "release_url": "https://github.com/BeyondDimension/SteamTools/releases/tag/3.2.0",
+        "primary_download": {
+            "url": "https://github.com/BeyondDimension/SteamTools/releases/download/3.2.0/Steam%2B%2B_v3.2.0_win_x64.exe",
+            "filename": "Steam++_v3.2.0_win_x64.exe",
+            "size": 100465680,
+            "architecture": "x64",
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "Steam++_v3.2.0_win_x64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/BeyondDimension/SteamTools/releases/download/3.2.0/Steam%2B%2B_v3.2.0_win_x64.exe",
+                "size": 100465680,
+                "sha256": "b70fbffe6b58fff35fbe735757914fb359efb104704f259c8e13b83ac8248a3e"
+            },
+            {
+                "label": "Steam++_v3.2.0_win_x64.7z",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/BeyondDimension/SteamTools/releases/download/3.2.0/Steam%2B%2B_v3.2.0_win_x64.7z",
+                "size": 98363079,
+                "sha256": "a48cbbf7e58c92fd8c82514ff968766d85da882743a90ef8aaed1312e8ed4404"
+            }
+        ],
+        "features": [
+            "Switch between multiple Steam, Epic, Ubisoft and other game accounts with a single click.",
+            "Edit game titles and custom cover images in your Steam library.",
+            "Track download progress and automatically shut down the PC when a game finishes downloading.",
+            "Simulate running a game to record playtime or earn Steam card drops without installing it.",
+            "Manage Steam cloud saves, upload or delete files as needed.",
+            "Store and generate mobile authenticator codes for Steam, Google and other services.",
+            "Accelerate access to game store websites using a local proxy.",
+            "Enable or disable individual plugins to customize the toolbox."
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Watt Toolkit\" button on this page. Your browser saves Steam++_v3.2.0_win_x64.exe (95.8 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start Watt Toolkit. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\Watt Toolkit) so it is easy to find next time.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "Watt Toolkit Free Download for Windows 10/11",
+        "meta_description": "Download Watt Toolkit free for Windows 10/11. A free, open‑source toolbox that adds many utilities for Steam and other game platforms, such as account switchin…",
+        "canonical_url": "https://codehimblog.github.io/software/steamtools/",
+        "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "waveflow",
         "name": "WaveFlow",
         "slug": "waveflow",
