@@ -4725,6 +4725,100 @@
         "verification_status": "partial"
     },
     {
+        "id": "mayfly-go",
+        "name": "Mayfly Go",
+        "slug": "mayfly-go",
+        "summary": "A web‑based platform that lets you manage servers, databases, caches, search engines, message queues and containers from a single browser interface.",
+        "description": [
+            "Mayfly Go provides a unified web interface for everyday operations on machines, databases, caches, search engines, vector stores, message queues and Docker containers. It is aimed at system administrators, DBAs and developers who want to perform routine tasks without switching between many separate tools.",
+            "The program shows a resource tree that groups servers, databases, caches and other services. From the browser you can open an interactive SSH terminal, view and edit files, run scripts, schedule tasks and monitor processes on remote machines. Database modules support many SQL dialects and let you edit tables, run queries, compare schemas and synchronize data. Cache and search modules let you browse keys, run commands and manage indexes. Kafka and Docker sections let you control topics, containers and messages. Built‑in features include command safety interception, workflow approval, alert notifications, multi‑channel messaging (email, enterprise chat), and an AI assistant that can suggest commands or automate operations. The platform also records sessions, logs actions and provides audit trails."
+        ],
+        "icon": {
+            "text": "M",
+            "color": "#BE123C",
+            "logo": "/assets/icons/mayfly-go.png?v=14642d6c"
+        },
+        "category": "system-utilities",
+        "categories": [
+            "system-utilities"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/dromara/mayfly-go#license",
+        "official_website": null,
+        "download_page": "https://github.com/dromara/mayfly-go/releases/tag/v1.12.4",
+        "repository_url": "https://github.com/dromara/mayfly-go",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.12.4",
+        "release_date": "2026-11-15",
+        "release_url": "https://github.com/dromara/mayfly-go/releases/tag/v1.12.4",
+        "primary_download": {
+            "url": "https://github.com/dromara/mayfly-go/releases/download/v1.12.4/mayfly-go-windows.zip",
+            "filename": "mayfly-go-windows.zip",
+            "size": 48335700,
+            "architecture": null,
+            "format": "Portable ZIP"
+        },
+        "download_assets": [
+            {
+                "label": "mayfly-go-windows.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/dromara/mayfly-go/releases/download/v1.12.4/mayfly-go-windows.zip",
+                "size": 48335700,
+                "sha256": "4b0623658fd8b2a30fc431619ecb286740b551eaf8447ace2b3fdc66c61adc7b"
+            }
+        ],
+        "features": [
+            "Open a web terminal to run commands on remote servers directly from the browser",
+            "Browse, upload, edit and download files on managed machines",
+            "Use a visual SQL editor to query and modify data in many database types",
+            "Set up command safety rules that block, alert or require approval for risky actions",
+            "Receive alerts and notifications through email, chat apps or built‑in messaging",
+            "Run an AI assistant that can suggest commands and automate routine tasks",
+            "View and control Docker containers and Kafka topics from the same interface"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Mayfly Go\" button on this page. Your browser saves mayfly-go-windows.zip (46.1 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the Mayfly Go program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive."
+        ],
+        "related_software": [],
+        "seo_title": "Mayfly Go Free Download for Windows",
+        "meta_description": "Download Mayfly Go free for Windows. A web‑based platform that lets you manage servers, databases, caches, search engines, message queues and containers from a…",
+        "canonical_url": "https://codehimblog.github.io/software/mayfly-go/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "mcp-windows",
         "name": "Mcp Windows",
         "slug": "mcp-windows",
@@ -10802,6 +10896,101 @@
         "seo_title": "WaveFlow Free Download for Windows",
         "meta_description": "Download WaveFlow free for Windows. WaveFlow is a local‑first music player that organizes and plays the audio files you already own, with high‑resolution playb…",
         "canonical_url": "https://codehimblog.github.io/software/waveflow/",
+        "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "waves",
+        "name": "Waves",
+        "slug": "waves",
+        "summary": "A keyboard‑driven terminal music player that lets you browse, play, tag and download music, with support for Soulseek, MusicBrainz, Last.fm and radio mode.",
+        "description": [
+            "Waves is a console‑based music player designed for users who prefer controlling playback with the keyboard. It organizes your collection, fetches metadata, and can download tracks from Soulseek, all from within a terminal window.",
+            "Waves provides a full‑screen text interface where you can explore your library by artist, album and track. It reads common audio formats such as MP3, FLAC, OGG/OPUS and AAC, and shows album art when available. The program can automatically tag files using MusicBrainz data, rename them, and fetch missing artwork. Integrated with Last.fm, it scrobbles what you listen to and can suggest similar artists in radio mode. A built‑in download manager lets you search and pull music from Soulseek, and you can export selected tracks or whole playlists to another folder or removable drive. All actions are performed with keyboard shortcuts, but mouse clicks also work for navigation and playback control. Settings and the current queue are saved between sessions, so you can pick up where you left off."
+        ],
+        "icon": {
+            "text": "W",
+            "color": "#334155",
+            "logo": null
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/llehouerou/waves#license",
+        "official_website": null,
+        "download_page": "https://github.com/llehouerou/waves/releases/tag/v0.1.50",
+        "repository_url": "https://github.com/llehouerou/waves",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-10": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.1.50",
+        "release_date": "2026-09-21",
+        "release_url": "https://github.com/llehouerou/waves/releases/tag/v0.1.50",
+        "primary_download": {
+            "url": "https://github.com/llehouerou/waves/releases/download/v0.1.50/waves_0.1.50_windows_amd64.zip",
+            "filename": "waves_0.1.50_windows_amd64.zip",
+            "size": 8526253,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
+        "download_assets": [
+            {
+                "label": "waves_0.1.50_windows_amd64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/llehouerou/waves/releases/download/v0.1.50/waves_0.1.50_windows_amd64.zip",
+                "size": 8526253,
+                "sha256": "98f03b5f3392ebc00bf94cd29294333e8b22cc6a91fc40eb53901f5a972ca8a2"
+            }
+        ],
+        "features": [
+            "Browse music library by artist, album and track hierarchy",
+            "Play MP3, FLAC, OGG/OPUS and AAC files with seeking",
+            "Automatic MusicBrainz tagging and album‑art fetching",
+            "Download tracks from Soulseek directly within the app",
+            "Scrobble listening history to Last.fm with offline queue",
+            "Radio mode that streams similar artists continuously",
+            "Create and manage playlists with folder‑style organization",
+            "Export music or playlists to a folder or removable device"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Waves\" button on this page. Your browser saves waves_0.1.50_windows_amd64.zip (8.1 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the Waves program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive."
+        ],
+        "related_software": [],
+        "seo_title": "Waves Free Download for Windows",
+        "meta_description": "Download Waves free for Windows. A keyboard‑driven terminal music player that lets you browse, play, tag and download music, with support for Soulseek, MusicBr…",
+        "canonical_url": "https://codehimblog.github.io/software/waves/",
         "date_added": "2026-11-16",
         "last_verified_at": null,
         "verification_status": "partial"
