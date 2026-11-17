@@ -534,6 +534,123 @@
         "verification_status": "partial"
     },
     {
+        "id": "amber",
+        "name": "Amber",
+        "slug": "amber",
+        "summary": "Amber is a free, open-source non-linear video editor that focuses on speed and ease of use, offering GPU‑accelerated rendering and a lightweight binary.",
+        "description": [
+            "Amber provides a multi‑track timeline with common editing tools, GPU‑based rendering, and hardware video decoding. It aims to run on modest hardware while delivering the features of a modern video editor.",
+            "Amber Video Editor is an open‑source non‑linear video editor built with Qt 6 and FFmpeg. It offers a multi‑track timeline where you can split clips, apply ripple, roll, slip and slide edits, add transitions, and animate keyframes. Rendering uses Qt RHI, allowing GPU acceleration via Vulkan, Metal, Direct3D12 or OpenGL fallback, and it can decode video with hardware support (VAAPI, D3D11VA, VideoToolbox) when available. The editor also supports Frei0r plugins for additional effects. It is released under the GPL‑3.0 license and is free to use."
+        ],
+        "icon": {
+            "text": "A",
+            "color": "#BE123C",
+            "logo": null
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/baptisterajaut/amber#license",
+        "official_website": null,
+        "download_page": "https://github.com/baptisterajaut/amber/releases/tag/v1.8.0",
+        "repository_url": "https://github.com/baptisterajaut/amber",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/baptisterajaut/amber/blob/main/src/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/baptisterajaut/amber/blob/main/src/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/baptisterajaut/amber/blob/main/src/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/baptisterajaut/amber/blob/main/src/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/baptisterajaut/amber/blob/main/src/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.8.0",
+        "release_date": "2026-11-15",
+        "release_url": "https://github.com/baptisterajaut/amber/releases/tag/v1.8.0",
+        "primary_download": {
+            "url": "https://github.com/baptisterajaut/amber/releases/download/v1.8.0/amber-setup.exe",
+            "filename": "amber-setup.exe",
+            "size": 117058617,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "amber-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/baptisterajaut/amber/releases/download/v1.8.0/amber-setup.exe",
+                "size": 117058617,
+                "sha256": "4cf88d16bfdc35b04268d89a9df2bb951ba15deaa282de57390b6d1932da9f3a"
+            },
+            {
+                "label": "amber-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/baptisterajaut/amber/releases/download/v1.8.0/amber-portable.zip",
+                "size": 158505593,
+                "sha256": "0218d0551862e77009b6bb732c876b68d43569e08757a95981f63083e766b56e"
+            }
+        ],
+        "features": [
+            "Multi‑track timeline with clip splitting, ripple, roll, slip and slide tools",
+            "GPU‑accelerated rendering using Qt RHI (Vulkan, Metal, Direct3D12, OpenGL fallback)",
+            "Hardware video decoding with automatic software fallback",
+            "Supports Frei0r effect plugins",
+            "Keyframe animation for effects and transitions",
+            "Simple, lightweight installer (sub‑5 MB binary)"
+        ],
+        "requirements": [
+            "GPU supporting OpenGL 3.2 or higher (Intel HD/Sandy Bridge 2011+, any recent discrete GPU)",
+            "Any x86‑64 CPU",
+            "At least 512 MB of free RAM (more for longer or high‑resolution projects)"
+        ],
+        "installation_instructions": [
+            "Click the \"Download Amber\" button on this page. Your browser saves amber-setup.exe (111.6 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Amber from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "Amber Free Download for Windows 10/11",
+        "meta_description": "Download Amber free for Windows 10/11. Amber is a free, open-source non-linear video editor that focuses on speed and ease of use, offering GPU‑accelerated ren…",
+        "canonical_url": "https://codehimblog.github.io/software/amber/",
+        "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "animeko",
         "name": "Animeko",
         "slug": "animeko",
