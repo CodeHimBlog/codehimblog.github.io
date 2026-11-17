@@ -7752,6 +7752,132 @@
         "verification_status": "partial"
     },
     {
+        "id": "orcaslicer",
+        "name": "OrcaSlicer",
+        "slug": "orcaslicer",
+        "summary": "OrcaSlicer is an open‑source slicer that converts 3D models into printer‑ready G‑code for many desktop and belt 3D printers.",
+        "description": [
+            "OrcaSlicer helps hobbyists and makers prepare 3D prints by slicing models, generating supports, and fine‑tuning printer settings. It works with a wide range of printers and offers a graphical interface for easy use.",
+            "OrcaSlicer is a free, community‑driven program that turns 3D models into the instructions a printer needs. It includes advanced calibration tools, precise wall and seam control, and support for overhangs and custom infill patterns. The software can connect to networked printers such as those running Klipper, PrusaLink, or OctoPrint, allowing you to upload jobs directly. A user‑friendly drag‑and‑drop interface provides ready‑made profiles for many popular printer models, while still letting you adjust speed, layer height, temperature, and other parameters in detail. It also supports belt‑type printers and offers features like mouse‑ear brims and adaptive bed mesh to improve first‑layer adhesion. Being open source, it receives regular updates from its community."
+        ],
+        "icon": {
+            "text": "O",
+            "color": "#1D4ED8",
+            "logo": "/assets/icons/orcaslicer.png?v=5a2fb8bb"
+        },
+        "category": "productivity-office",
+        "categories": [
+            "productivity-office"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU Affero General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/OrcaSlicer/OrcaSlicer#license",
+        "official_website": "https://www.orcaslicer.com",
+        "download_page": "https://github.com/OrcaSlicer/OrcaSlicer/releases/tag/v2.5.1",
+        "repository_url": "https://github.com/OrcaSlicer/OrcaSlicer",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/OrcaSlicer/OrcaSlicer#readme",
+                "note": "Named in the README."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/OrcaSlicer/OrcaSlicer/releases/tag/v2.5.1",
+                "note": "Current Windows download."
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.5.1",
+        "release_date": "2026-11-14",
+        "release_url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/tag/v2.5.1",
+        "primary_download": {
+            "url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v2.5.1/OrcaSlicer_Windows_Installer_V2.5.1_x64.exe",
+            "filename": "OrcaSlicer_Windows_Installer_V2.5.1_x64.exe",
+            "size": 159302224,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "OrcaSlicer_Windows_Installer_V2.5.1_arm64.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v2.5.1/OrcaSlicer_Windows_Installer_V2.5.1_arm64.exe",
+                "size": 144082280,
+                "sha256": "dbc0370ef9d6873d093bcba31b45f40bbb5647aa276666a826aaeb7521791af8"
+            },
+            {
+                "label": "OrcaSlicer_Windows_Installer_V2.5.1_x64.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v2.5.1/OrcaSlicer_Windows_Installer_V2.5.1_x64.exe",
+                "size": 159302224,
+                "sha256": "bfbdcd51fdfe8af1a9922bc0aec979e02c9207ef1934413ad320e7e7ab0818af"
+            },
+            {
+                "label": "OrcaSlicer_Windows_V2.5.1_arm64_portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v2.5.1/OrcaSlicer_Windows_V2.5.1_arm64_portable.zip",
+                "size": 184407191,
+                "sha256": "cebdc5fd938f2cf78c5da5426d5738f14e75b12bf5dc1804fcf9704e6989ac7d"
+            },
+            {
+                "label": "OrcaSlicer_Windows_V2.5.1_x64_portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v2.5.1/OrcaSlicer_Windows_V2.5.1_x64_portable.zip",
+                "size": 201859696,
+                "sha256": "f73194789c9a114974e3587f646bb627fa69c7686d949bf040fdb710c41515e8"
+            }
+        ],
+        "features": [
+            "Convert 3D models into printer‑ready G‑code",
+            "Automatic support generation and overhang handling",
+            "Fine‑tune print speed, layer height, temperature and other settings",
+            "Connect to networked printers (Klipper, PrusaLink, OctoPrint) for direct upload",
+            "Pre‑made printer profiles and drag‑and‑drop interface for easy setup",
+            "Advanced calibration tools such as temperature towers and flow rate tests",
+            "Support for belt/continuous‑Z printers with specialized brims and mesh calibration"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download OrcaSlicer\" button on this page. Your browser saves OrcaSlicer_Windows_Installer_V2.5.1_x64.exe (151.9 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start OrcaSlicer from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [],
+        "seo_title": "OrcaSlicer Free Download for Windows 10/11",
+        "meta_description": "Download OrcaSlicer free for Windows 10/11. OrcaSlicer is an open‑source slicer that converts 3D models into printer‑ready G‑code for many desktop and belt 3D…",
+        "canonical_url": "https://codehimblog.github.io/software/orcaslicer/",
+        "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "phiola",
         "name": "phiola",
         "slug": "phiola",
@@ -10893,6 +11019,230 @@
         "verification_status": "partial"
     },
     {
+        "id": "solidcraft",
+        "name": "SolidCraft",
+        "slug": "solidcraft",
+        "summary": "SolidCraft is an open‑source parametric 3D CAD application written in Rust, allowing you to sketch, constrain, extrude and modify models through a feature timeline.",
+        "description": [
+            "SolidCraft lets you create 3D models by defining sketches and constraints, then building solids that automatically update when dimensions change. It runs on Windows as a native installer or portable zip, and also offers web and other platform versions.",
+            "SolidCraft provides a full‑featured 3D CAD environment for hobbyists, students and professionals who need a free, open‑source tool. You start with 2‑D sketches, add constraints such as dimensions or relationships, and then use operations like extrude, fillet, shell and pattern to create solid parts. All changes are recorded in a timeline, so adjusting a parameter instantly rebuilds the model. The application includes a material library, property calculations, and supports exporting designs for 3D printing or further processing. It also offers a built‑in MCP server that lets AI agents interact with the model, and a web version for quick testing without installation."
+        ],
+        "icon": {
+            "text": "S",
+            "color": "#0F766E",
+            "logo": "/assets/icons/solidcraft.png?v=96f17cb1"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/tangency-labs/solidcraft#license",
+        "official_website": "https://solidcraft.io",
+        "download_page": "https://github.com/tangency-labs/solidcraft/releases/tag/v0.43.0",
+        "repository_url": "https://github.com/tangency-labs/solidcraft",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/tangency-labs/solidcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/tangency-labs/solidcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/tangency-labs/solidcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/tangency-labs/solidcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/tangency-labs/solidcraft/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.43.0",
+        "release_date": "2026-11-16",
+        "release_url": "https://github.com/tangency-labs/solidcraft/releases/tag/v0.43.0",
+        "primary_download": {
+            "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-0.43.0-windows-x64.msi",
+            "filename": "solidcraft-0.43.0-windows-x64.msi",
+            "size": 129826816,
+            "architecture": "x64",
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "solidcraft-web-0.43.0.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-web-0.43.0.zip",
+                "size": 59946448,
+                "sha256": "4c00c05f57fcbc0c7affd455816104d2cc41e7b6e7ebc2c459cd253d402c0bf3"
+            },
+            {
+                "label": "SolidCraft-0.43.0-windows-x64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/SolidCraft-0.43.0-windows-x64.exe",
+                "size": 302881280,
+                "sha256": "799f497db85716b3988006b37f4b9b199e442e5a7afcdceb8116b4c92819af77"
+            },
+            {
+                "label": "solidcraft-0.43.0-windows-arm64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-0.43.0-windows-arm64.msi",
+                "size": 115154944,
+                "sha256": "c9246e21b6e71c8b118d10bf2cc22a36db1683fd265f11f3e3a1e3fd8fb64a89"
+            },
+            {
+                "label": "solidcraft-0.43.0-windows-x64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-0.43.0-windows-x64.msi",
+                "size": 129826816,
+                "sha256": "09c711d6bcaa6828846dd4b1b2fd017f885b17ebdd3d0cb790cf8c297c96d92e"
+            },
+            {
+                "label": "solidcraft-0.43.0-windows-x86.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x86",
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-0.43.0-windows-x86.msi",
+                "size": 115564544,
+                "sha256": "228f52a50c55b69be415a2014c35f3fd2b420e825990f4a368da7740d11d3965"
+            },
+            {
+                "label": "solidcraft-windows-arm64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-windows-arm64.msi",
+                "size": 115154944,
+                "sha256": "c9246e21b6e71c8b118d10bf2cc22a36db1683fd265f11f3e3a1e3fd8fb64a89"
+            },
+            {
+                "label": "solidcraft-windows-x64.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-windows-x64.msi",
+                "size": 129826816,
+                "sha256": "09c711d6bcaa6828846dd4b1b2fd017f885b17ebdd3d0cb790cf8c297c96d92e"
+            },
+            {
+                "label": "solidcraft-windows-x86.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": "x86",
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-windows-x86.msi",
+                "size": 115564544,
+                "sha256": "228f52a50c55b69be415a2014c35f3fd2b420e825990f4a368da7740d11d3965"
+            },
+            {
+                "label": "solidcraft-0.43.0-windows-arm64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-0.43.0-windows-arm64-portable.zip",
+                "size": 156356514,
+                "sha256": "7325f2cb1a799336ec0ef7aa66e46476f3c7977dc06a7429912d39bdca31cd36"
+            },
+            {
+                "label": "solidcraft-0.43.0-windows-x64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-0.43.0-windows-x64-portable.zip",
+                "size": 172801325,
+                "sha256": "ab86d3a146c9d4cf3962c980edc3e3bf52ddb9e55f2d6d1cddeeed0a0b914a6d"
+            },
+            {
+                "label": "solidcraft-0.43.0-windows-x86-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x86",
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-0.43.0-windows-x86-portable.zip",
+                "size": 149781656,
+                "sha256": "bcc4a1e2746335ac644b857e8bdde39880325d05fa3e5ee9680ac7c0d15d8ae7"
+            },
+            {
+                "label": "solidcraft-windows-arm64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-windows-arm64-portable.zip",
+                "size": 156356514,
+                "sha256": "7325f2cb1a799336ec0ef7aa66e46476f3c7977dc06a7429912d39bdca31cd36"
+            },
+            {
+                "label": "solidcraft-windows-x64-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-windows-x64-portable.zip",
+                "size": 172801325,
+                "sha256": "ab86d3a146c9d4cf3962c980edc3e3bf52ddb9e55f2d6d1cddeeed0a0b914a6d"
+            },
+            {
+                "label": "solidcraft-windows-x86-portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x86",
+                "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.43.0/solidcraft-windows-x86-portable.zip",
+                "size": 149781656,
+                "sha256": "bcc4a1e2746335ac644b857e8bdde39880325d05fa3e5ee9680ac7c0d15d8ae7"
+            }
+        ],
+        "features": [
+            "Sketch 2‑D profiles and apply geometric constraints",
+            "Build solids with extrude, fillet, shell and pattern operations",
+            "Parametric timeline that updates the model when dimensions change",
+            "View material properties and mass calculations",
+            "Export models for 3D printing or other CAD tools",
+            "Portable ZIP version for use without installation",
+            "Built‑in MCP server for AI‑driven modeling",
+            "Runs on Windows with signed installer"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download SolidCraft\" button on this page. Your browser saves solidcraft-0.43.0-windows-x64.msi (123.8 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start SolidCraft from the Start menu.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
+            "If Windows SmartScreen warns, choose **More info** and then **Run anyway** to start the program."
+        ],
+        "related_software": [],
+        "seo_title": "SolidCraft Free Download for Windows 10/11",
+        "meta_description": "Download SolidCraft free for Windows 10/11. SolidCraft is an open‑source parametric 3D CAD application written in Rust, allowing you to sketch, constrain, extr…",
+        "canonical_url": "https://codehimblog.github.io/software/solidcraft/",
+        "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "spacewave",
         "name": "Spacewave",
         "slug": "spacewave",
@@ -12845,7 +13195,7 @@
         "license_family": "copyleft",
         "license_url": "https://github.com/InstaZDLL/WaveFlow#license",
         "official_website": "https://waveflow.app",
-        "download_page": "https://github.com/InstaZDLL/WaveFlow/releases/tag/v2.1.0",
+        "download_page": "https://github.com/InstaZDLL/WaveFlow/releases/tag/v2.2.0",
         "repository_url": "https://github.com/InstaZDLL/WaveFlow",
         "supported_operating_systems": {
             "windows-11": {
@@ -12880,34 +13230,34 @@
             }
         },
         "supported_architectures": [],
-        "latest_version": "2.1.0",
-        "release_date": "2026-11-14",
-        "release_url": "https://github.com/InstaZDLL/WaveFlow/releases/tag/v2.1.0",
+        "latest_version": "2.2.0",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/InstaZDLL/WaveFlow/releases/tag/v2.2.0",
         "primary_download": {
-            "url": "https://github.com/InstaZDLL/WaveFlow/releases/download/v2.1.0/WaveFlow_2.1.0_windows-x86_64-setup.exe",
-            "filename": "WaveFlow_2.1.0_windows-x86_64-setup.exe",
-            "size": 24311600,
+            "url": "https://github.com/InstaZDLL/WaveFlow/releases/download/v2.2.0/WaveFlow_2.2.0_windows-x86_64-setup.exe",
+            "filename": "WaveFlow_2.2.0_windows-x86_64-setup.exe",
+            "size": 24459136,
             "architecture": "x64",
             "format": "EXE installer"
         },
         "download_assets": [
             {
-                "label": "WaveFlow_2.1.0_windows-x86_64-setup.exe",
+                "label": "WaveFlow_2.2.0_windows-x86_64-setup.exe",
                 "format": "EXE installer",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://github.com/InstaZDLL/WaveFlow/releases/download/v2.1.0/WaveFlow_2.1.0_windows-x86_64-setup.exe",
-                "size": 24311600,
-                "sha256": "837dd5cc1ed838326ab793e3a4cfb1ce80819b16c053befa8fb54565739c3142"
+                "url": "https://github.com/InstaZDLL/WaveFlow/releases/download/v2.2.0/WaveFlow_2.2.0_windows-x86_64-setup.exe",
+                "size": 24459136,
+                "sha256": "9226e5d655e6b1394538740d81966a13409627155cf53df6a6a3d9893f08d4d3"
             },
             {
-                "label": "WaveFlow_2.1.0_windows-x86_64.msi",
+                "label": "WaveFlow_2.2.0_windows-x86_64.msi",
                 "format": "MSI installer",
                 "kind": "installer",
                 "architecture": "x64",
-                "url": "https://github.com/InstaZDLL/WaveFlow/releases/download/v2.1.0/WaveFlow_2.1.0_windows-x86_64.msi",
-                "size": 34791424,
-                "sha256": "f9c23a1be7b97d35cdf8c8ce9a86df27d4425a475003144bd1546a6493c99ce1"
+                "url": "https://github.com/InstaZDLL/WaveFlow/releases/download/v2.2.0/WaveFlow_2.2.0_windows-x86_64.msi",
+                "size": 34967552,
+                "sha256": "5c3578f69746e2dbab743a8173ec674320b16838e522c1f38587bffe1e4a9750"
             }
         ],
         "features": [
@@ -12923,7 +13273,7 @@
         ],
         "requirements": [],
         "installation_instructions": [
-            "Click the \"Download WaveFlow\" button on this page. Your browser saves WaveFlow_2.1.0_windows-x86_64-setup.exe (23.2 MB), usually to your Downloads folder.",
+            "Click the \"Download WaveFlow\" button on this page. Your browser saves WaveFlow_2.2.0_windows-x86_64-setup.exe (23.3 MB), usually to your Downloads folder.",
             "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
             "When setup finishes, start WaveFlow from the Start menu or the desktop shortcut.",
             "When installation finishes, launch WaveFlow from the Start menu or desktop shortcut.",
