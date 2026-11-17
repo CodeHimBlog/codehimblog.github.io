@@ -1862,9 +1862,9 @@
             "installerclean",
             "astraeus",
             "appgroup",
+            "apkstart",
             "universal-intel-chipset-updater",
-            "universal-intel-wifi-bt-updater",
-            "apkstart"
+            "universal-intel-wifi-bt-updater"
         ],
         "seo_title": "AutoRunManager Free Download for Windows",
         "meta_description": "Download AutoRunManager free for Windows. A utility that lets you view, add, remove, backup and restore programs that run automatically when Windows starts.",
@@ -2238,6 +2238,7 @@
         ],
         "related_software": [
             "ferrumpix",
+            "immage",
             "photoslide",
             "picasapy",
             "rembrandt",
@@ -2246,7 +2247,6 @@
             "rawmakase",
             "open-photo-ai",
             "lightcraft",
-            "rigby2d",
             "formatix",
             "procraft"
         ],
@@ -3522,6 +3522,7 @@
         "related_software": [
             "chroma-app",
             "formatix",
+            "immage",
             "lap",
             "photoslide",
             "picasapy",
@@ -3530,8 +3531,7 @@
             "lightcraft",
             "photocraft",
             "photosplice",
-            "lightzone",
-            "rawmakase"
+            "lightzone"
         ],
         "seo_title": "FerrumPix Free Download for Windows",
         "meta_description": "Download FerrumPix free for Windows. FerrumPix is a desktop photo manager and image editor that lets you organize, view, and edit photos on your computer.",
@@ -3646,9 +3646,9 @@
             "pylon-player",
             "altered-audio-editor",
             "tunefree",
-            "phiola",
             "openfilm",
             "weftcut",
+            "phiola",
             "vlc-portable"
         ],
         "seo_title": "FFmpeg GUI Editor Windows Free Download for Windows 11 and 10",
@@ -4737,6 +4737,7 @@
         "related_software": [
             "chroma-app",
             "ferrumpix",
+            "immage",
             "lap",
             "photoslide",
             "rembrandt",
@@ -4745,8 +4746,7 @@
             "rawmakase",
             "picasapy",
             "photocraft",
-            "photosplice",
-            "open-photo-ai"
+            "photosplice"
         ],
         "seo_title": "Greycard Free Download for Windows",
         "meta_description": "Download Greycard free for Windows. A professional raw photo editor with accurate color, for Linux, macOS and Windows.",
@@ -5117,18 +5117,18 @@
             "Open that folder and double-click the HyCanvas program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive."
         ],
         "related_software": [
+            "immage",
             "ferrumpix",
             "pancakeslicer",
             "photocraft-companion",
             "photoslide",
             "sharex",
             "greycard",
-            "picasapy",
             "rigby2d",
+            "picasapy",
             "chroma-app",
             "photosplice",
-            "open-photo-ai",
-            "procraft"
+            "open-photo-ai"
         ],
         "seo_title": "HyCanvas Free Download for Windows 10/11",
         "meta_description": "Download HyCanvas free for Windows 10/11. An open‑source Canva‑like editor that runs in the browser and can be self‑hosted.",
@@ -5136,6 +5136,137 @@
         "date_added": "2026-11-17",
         "last_verified_at": null,
         "verification_status": "partial"
+    },
+    {
+        "id": "immage",
+        "name": "Immage",
+        "slug": "immage",
+        "summary": "Immage is a raw photo editor that provides familiar panels, sliders and shortcuts for editing photos, built on darktable.",
+        "description": [
+            "Immage offers a straightforward workflow for photographers who prefer editing raw images in folders rather than using a catalog. It brings a selected set of darktable tools into a fixed interface, letting you adjust tone, color, detail and more with an easy‑to‑learn layout.",
+            "Immage is a free, open‑source raw photo editor aimed at photographers who want a simple, folder‑based editing experience. The program includes tone, color, detail and lens correction tools, as well as brushes, gradients, range masks and AI selections for local adjustments. You can heal, clone, apply film simulations, convert negatives, merge HDR images or panoramas, and use presets and film looks. The interface can be switched between Dark, Darktable Grey or Light themes, and custom color themes can be imported. Settings, presets, looks and keywords can be backed up to a single file and restored selectively. Immage can browse folders directly, import from a card, and optionally export to an Immich library. Export options include saving to a folder or Immich album with customizable borders and file‑name templates. Printing supports contact sheets, PDFs and soft‑proofing with your printer’s ICC profile. Edits are saved automatically in XMP side‑car files, leaving originals untouched. The Windows installer lets you choose a per‑user or all‑users installation, and updates are checked daily and can be installed from the Preferences menu."
+        ],
+        "icon": {
+            "text": "I",
+            "color": "#7C3AED",
+            "logo": "/assets/icons/immage.png?v=6dff97d8"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/Rhettus/immage#license",
+        "official_website": "https://immage.photo",
+        "download_page": "https://github.com/Rhettus/immage/releases/tag/v0.45.0",
+        "repository_url": "https://github.com/Rhettus/immage",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Rhettus/immage#readme",
+                "note": "Named in the README."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Rhettus/immage#readme",
+                "note": "Stated in the project README: “Windows 10 or 11, x64”"
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Rhettus/immage/blob/main/app/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Rhettus/immage/blob/main/app/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Rhettus/immage/blob/main/app/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.45.0",
+        "release_date": "2026-11-13",
+        "release_url": "https://github.com/Rhettus/immage/releases/tag/v0.45.0",
+        "primary_download": {
+            "url": "https://github.com/Rhettus/immage/releases/download/v0.45.0/Immage-0.45.0-Windows-x64-setup.exe",
+            "filename": "Immage-0.45.0-Windows-x64-setup.exe",
+            "size": 80235882,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Immage-0.45.0-Windows-x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/Rhettus/immage/releases/download/v0.45.0/Immage-0.45.0-Windows-x64-setup.exe",
+                "size": 80235882,
+                "sha256": "57e5b0dc5d476699362e87ea6107514e3b8da320cda3858571f9075994366a9a"
+            },
+            {
+                "label": "immage-0.45.0-source.tar.gz",
+                "format": "Source code archive",
+                "kind": "source",
+                "architecture": null,
+                "url": "https://github.com/Rhettus/immage/releases/download/v0.45.0/immage-0.45.0-source.tar.gz",
+                "size": 42113009,
+                "sha256": "bf2a8b2b9c20f1f2d5f3dea660d796ccf1489d4079e80fd6bbfd50b1b977e6a4"
+            }
+        ],
+        "features": [
+            "Edit raw photos with tone, color, detail and lens correction tools.",
+            "Make local adjustments using brushes, gradients, range masks and AI selections.",
+            "Apply film simulations, heal/clone, convert negatives, and merge HDR or panoramas.",
+            "Import and export folders, cards, or Immich libraries with customizable templates.",
+            "Save edits automatically in XMP side‑car files, keeping originals unchanged.",
+            "Choose from Dark, Darktable Grey, Light or custom interface themes.",
+            "Back up and restore settings, presets, looks and keywords with a single file.",
+            "Print photos, contact sheets or PDFs with ICC profile and soft‑proof support."
+        ],
+        "requirements": [
+            "Windows 10 or 11, 64‑bit.",
+            "At least 8 GB of RAM; 16 GB and a GPU with OpenCL are recommended.",
+            "No additional runtime required beyond what the installer provides."
+        ],
+        "installation_instructions": [
+            "Click the \"Download Immage\" button on this page. Your browser saves Immage-0.45.0-Windows-x64-setup.exe (76.5 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Immage from the Start menu or the desktop shortcut."
+        ],
+        "related_software": [
+            "chroma-app",
+            "ferrumpix",
+            "photoslide",
+            "picasapy",
+            "rembrandt",
+            "hycanvas",
+            "greycard",
+            "lightcraft",
+            "photocraft",
+            "photosplice",
+            "lightzone",
+            "rawmakase"
+        ],
+        "seo_title": "Immage Free Download for Windows 10/11",
+        "meta_description": "Download Immage free for Windows 10/11. Immage is a raw photo editor that provides familiar panels, sliders and shortcuts for editing photos, built on darktabl…",
+        "canonical_url": "https://codehimblog.github.io/software/immage/",
+        "date_added": "2026-11-17",
+        "last_verified_at": "2026-11-17",
+        "verification_status": "verified"
     },
     {
         "id": "installerclean",
@@ -5983,9 +6114,9 @@
             "lightcraft",
             "lightzone",
             "formatix",
+            "immage",
             "chroma-app",
-            "open-photo-ai",
-            "photocraft"
+            "open-photo-ai"
         ],
         "seo_title": "Lap Free Download for Windows",
         "meta_description": "Download Lap free for Windows. An offline-first photo manager for large local libraries",
@@ -6296,6 +6427,7 @@
         "related_software": [
             "photocraft",
             "ferrumpix",
+            "immage",
             "lightzone",
             "picasapy",
             "rawmakase",
@@ -6304,8 +6436,7 @@
             "chroma-app",
             "photoslide",
             "lap",
-            "solidcraft",
-            "photosplice"
+            "solidcraft"
         ],
         "seo_title": "LightCraft Free Download for Windows",
         "meta_description": "Download LightCraft free for Windows. An open-source non‑destructive photo editor written from scratch in pure Rust.",
@@ -6411,15 +6542,15 @@
             "lightcraft",
             "chroma-app",
             "ferrumpix",
+            "immage",
             "open-photo-ai",
             "photoslide",
             "picasapy",
             "rawmakase",
             "rembrandt",
-            "procraft",
-            "greycard",
             "formatix",
-            "photocraft-companion"
+            "greycard",
+            "procraft"
         ],
         "seo_title": "LightZone Free Download for Windows 11",
         "meta_description": "Download LightZone free for Windows 11. LightZone is a professional‑level digital darkroom and photo editor that works with RAW files and offers non‑destructiv…",
@@ -8488,8 +8619,8 @@
             "voxtype",
             "steamtools",
             "scribe",
-            "deckcraft",
             "youboard",
+            "deckcraft",
             "tizumark-markdown-editor",
             "ciyue",
             "sakura",
@@ -9405,8 +9536,8 @@
             "rembrandt",
             "ferrumpix",
             "photoslide",
-            "photocraft",
-            "lap"
+            "lap",
+            "photocraft"
         ],
         "seo_title": "Open Photo AI Free Download for Windows",
         "meta_description": "Download Open Photo AI free for Windows. An open source alternative to the popular photo AI editor.",
@@ -9529,7 +9660,7 @@
             "skrin",
             "fooyin",
             "metrolist",
-            "nagi"
+            "onlym"
         ],
         "seo_title": "OpenFilm Free Download for Windows",
         "meta_description": "Download OpenFilm free for Windows. An open‑source AI video agent that lets a coding agent generate videos and provides a local editor to modify the results.",
@@ -10064,8 +10195,8 @@
             "traydio",
             "waves",
             "screenrecorder",
-            "polyphone",
             "obs-studio",
+            "polyphone",
             "meowsic"
         ],
         "seo_title": "phiola Free Download for Windows 7",
@@ -10216,12 +10347,12 @@
             "procraft",
             "solidcraft",
             "ferrumpix",
+            "immage",
             "rawmakase",
             "rembrandt",
             "photoslide",
             "picasapy",
-            "greycard",
-            "lightzone"
+            "greycard"
         ],
         "seo_title": "PhotoCraft Free Download for Windows",
         "meta_description": "Download PhotoCraft free for Windows. PhotoCraft is an open‑source photo editor written in Rust that aims to provide Photoshop‑like features such as layers, ma…",
@@ -10466,6 +10597,7 @@
             "chroma-app",
             "ferrumpix",
             "formatix",
+            "immage",
             "lap",
             "picasapy",
             "rembrandt",
@@ -10473,8 +10605,7 @@
             "photocraft",
             "lightzone",
             "rawmakase",
-            "lightcraft",
-            "photosplice"
+            "lightcraft"
         ],
         "seo_title": "PhotoSlide Free Download for Windows 10",
         "meta_description": "Download PhotoSlide free for Windows 10. PhotoSlide is a simple photo management and editing program with a modern JavaFX interface, aimed at users who need ba…",
@@ -10591,6 +10722,7 @@
         "related_software": [
             "photocraft",
             "ferrumpix",
+            "immage",
             "rawmakase",
             "lightzone",
             "greycard",
@@ -10599,8 +10731,7 @@
             "rembrandt",
             "chroma-app",
             "procraft",
-            "hycanvas",
-            "photocraft-companion"
+            "hycanvas"
         ],
         "seo_title": "PhotoSplice Free Download for Windows 10",
         "meta_description": "Download PhotoSplice free for Windows 10. A desktop image editor that replicates classic Adobe Photoshop with full PSD/PSB compatibility.",
@@ -10729,6 +10860,7 @@
         "related_software": [
             "chroma-app",
             "ferrumpix",
+            "immage",
             "lap",
             "photoslide",
             "rembrandt",
@@ -10737,8 +10869,7 @@
             "rawmakase",
             "greycard",
             "photocraft",
-            "open-photo-ai",
-            "photocraft-companion"
+            "open-photo-ai"
         ],
         "seo_title": "PicasaPy Free Download for Windows",
         "meta_description": "Download PicasaPy free for Windows. PicasaPy is a free, open‑source photo manager and editor for Windows that works with the same .picasa.ini format as the ori…",
@@ -10869,7 +11000,7 @@
             "riff",
             "filmcraft",
             "waves",
-            "cutlass"
+            "tunefree"
         ],
         "seo_title": "Polyphone Free Download for Windows",
         "meta_description": "Download Polyphone free for Windows. A free and open-source soundfont editor for creating, editing, and playing musical instrument soundfonts.",
@@ -11007,13 +11138,13 @@
             "lightzone",
             "ferrumpix",
             "chroma-app",
+            "immage",
             "formatix",
             "rigby2d",
             "solidcraft",
             "rembrandt",
             "rawmakase",
-            "lightcraft",
-            "photosplice"
+            "lightcraft"
         ],
         "seo_title": "ProCraft Free Download for Windows 10/11",
         "meta_description": "Download ProCraft free for Windows 10/11. ProCraft is an open‑source painting program for Windows that offers pressure‑sensitive brushes, layers, adjustments,…",
@@ -11534,13 +11665,13 @@
             "photosplice",
             "chroma-app",
             "ferrumpix",
+            "immage",
             "lap",
             "lightzone",
             "open-photo-ai",
             "pancakeslicer",
             "photoslide",
-            "picasapy",
-            "rembrandt"
+            "picasapy"
         ],
         "seo_title": "RAWmakase Free Download for Windows",
         "meta_description": "Download RAWmakase free for Windows. A fast, non‑destructive RAW photo editor with Lightroom‑style controls for Windows.",
@@ -11819,6 +11950,7 @@
         "related_software": [
             "chroma-app",
             "ferrumpix",
+            "immage",
             "lap",
             "photoslide",
             "picasapy",
@@ -11827,8 +11959,7 @@
             "photocraft",
             "lightzone",
             "rawmakase",
-            "photosplice",
-            "open-photo-ai"
+            "photosplice"
         ],
         "seo_title": "Rembrandt Free Download for Windows",
         "meta_description": "Download Rembrandt free for Windows. A free photo editor with RAW support, masks and on‑device AI, requiring no account or subscription.",
@@ -12152,10 +12283,10 @@
             "hycanvas",
             "solidcraft",
             "lightcraft",
+            "immage",
             "lap",
             "photocraft-companion",
-            "pancakeslicer",
-            "picasapy"
+            "pancakeslicer"
         ],
         "seo_title": "Rigby2D Free Download for Windows",
         "meta_description": "Download Rigby2D free for Windows. Open‑source 2D skeletal animation editor for creating and exporting animations for games and film.",
@@ -12551,7 +12682,7 @@
             "filmcraft",
             "ffmpeg-gui-editor-windows",
             "autosubsync",
-            "amber"
+            "vlc-rpc"
         ],
         "seo_title": "Scarlet Free Download for Windows",
         "meta_description": "Download Scarlet free for Windows. Scarlet is an open-source AI video editor for macOS, Windows and Linux.",
@@ -13241,14 +13372,14 @@
             "rigby2d",
             "photocraft-companion",
             "rembrandt",
-            "photocraft",
             "ferrumpix",
+            "photocraft",
             "pancakeslicer",
             "photoslide",
             "solidcraft",
             "picasapy",
-            "lap",
-            "open-photo-ai"
+            "immage",
+            "lap"
         ],
         "seo_title": "SculptForge Free Download for Windows 10/11",
         "meta_description": "Download SculptForge free for Windows 10/11. Free, open‑source 3D sculpting software with brushes, symmetry, AI‑generated brushes and export options for game p…",
@@ -13891,11 +14022,11 @@
             "procraft",
             "rigby2d",
             "rawmakase",
+            "immage",
             "photoslide",
             "open-photo-ai",
             "sculptforge",
             "greycard",
-            "lightzone",
             "photocraft-companion"
         ],
         "seo_title": "SolidCraft Free Download for Windows 10/11",
@@ -14960,8 +15091,8 @@
         "related_software": [
             "fooyin",
             "pymusicplayer",
-            "ffmpeg-gui-editor-windows",
             "pylon-player",
+            "ffmpeg-gui-editor-windows",
             "autosubsync",
             "nagi",
             "polyphone",
@@ -14969,7 +15100,7 @@
             "vlc-win10smtc",
             "screenrecorder",
             "frame-player",
-            "phiola"
+            "af-media-bar"
         ],
         "seo_title": "TuneFree Free Download for Windows 10",
         "meta_description": "Download TuneFree free for Windows 10. A tool that decrypts QQ Music's encrypted .mflac and .mgg files and converts them to MP3 or FLAC on Windows.",
