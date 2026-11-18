@@ -295,8 +295,8 @@
         ],
         "related_software": [
             "fly-island",
-            "mousex-absolute-mouse-control",
             "mouse-point-viewer",
+            "mousex-absolute-mouse-control",
             "astraeus",
             "universal-intel-wifi-bt-updater",
             "winutil-cn",
@@ -821,8 +821,8 @@
         "related_software": [
             "cutlass",
             "filmcraft",
-            "weftcut",
             "reelterminal",
+            "weftcut",
             "l-mpv",
             "auto-editor",
             "riff",
@@ -950,8 +950,8 @@
             "skrin",
             "reelterminal",
             "fooyin",
-            "pylon-player",
             "melodia",
+            "pylon-player",
             "aurora",
             "waves"
         ],
@@ -1364,6 +1364,7 @@
             "voxtype",
             "scribe",
             "loudr",
+            "typewhisper-win",
             "tizumark-markdown-editor",
             "ciyue",
             "dsh-tui",
@@ -1371,8 +1372,7 @@
             "youboard",
             "murmure",
             "codecast",
-            "noobot",
-            "deckcraft"
+            "noobot"
         ],
         "seo_title": "Arara Free Download for Windows 10/11",
         "meta_description": "Download Arara free for Windows 10/11. Arara is a free, open‑source voice dictation app that works locally and pastes transcribed text wherever the cursor is p…",
@@ -1482,8 +1482,8 @@
             "mouse-point-viewer",
             "deskx-wallpaper-engine",
             "aerozoom",
-            "mousex-absolute-mouse-control",
             "appgroup",
+            "mousex-absolute-mouse-control",
             "quiesce",
             "universal-intel-wifi-bt-updater",
             "winutil-cn",
@@ -1596,14 +1596,14 @@
             "ciyue",
             "openecraft",
             "spacewave",
-            "mynotes",
             "codecast",
+            "mynotes",
             "tizumark-markdown-editor",
             "handwriting-ocr-scriptreader",
             "sakura",
             "noobot",
-            "voxtype",
-            "steamtools"
+            "klinechartquant",
+            "voxtype"
         ],
         "seo_title": "Aula Free Download for Windows 10/11",
         "meta_description": "Download Aula free for Windows 10/11. A free, open‑source desktop study app that turns your lecture notes, slides, PDFs or exam files into AI‑generated lessons…",
@@ -1743,9 +1743,9 @@
             "nagi",
             "phiola",
             "waveflow",
-            "waves",
             "traydio",
-            "skrin"
+            "skrin",
+            "waves"
         ],
         "seo_title": "Aurora Free Download for Windows",
         "meta_description": "Download Aurora free for Windows. Aurora is a free, open‑source music player for Windows that plays local files and streams from many services such as Navidrom…",
@@ -1862,11 +1862,11 @@
             "openfilm",
             "reelterminal",
             "scarlet",
+            "weftcut",
             "agentshot",
             "altered-audio-editor",
             "ffmpeg-gui-editor-windows",
             "lossless-cut",
-            "weftcut",
             "amber",
             "filmcraft",
             "obs-studio"
@@ -2221,6 +2221,7 @@
         "related_software": [
             "gptme",
             "pi-rust",
+            "qwen-code",
             "mcp-windows",
             "estella",
             "jenv",
@@ -2228,13 +2229,151 @@
             "windbg-mcp",
             "tokentracker",
             "kjarni",
-            "headroom-desktop",
-            "electerm",
-            "servo"
+            "sheprd",
+            "headroom-desktop"
         ],
         "seo_title": "Axe Free Download for Windows 10/11",
         "meta_description": "Download Axe free for Windows 10/11. A lightweight command‑line tool that runs focused LLM‑powered agents defined in simple configuration files.",
         "canonical_url": "https://codehimblog.github.io/software/axe/",
+        "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "benchup",
+        "name": "BenchUp",
+        "slug": "benchup",
+        "summary": "BenchUp is a free, open‑source 3D modeling program for woodworking and furniture design, letting you plan boards, joints and assemblies with exact measurements.",
+        "description": [
+            "BenchUp provides a desktop 3D editor built with Rust, WebAssembly and WebGPU. It runs on Windows and lets woodworkers create detailed models of shelves, tables, cabinets and other projects before building them.",
+            "The program offers a full set of modeling tools such as select, line, rectangle, circle, polygon, freehand, push/pull, scale, offset, move, rotate, paint, tape measure, protractor and dimensions. Geometry snaps automatically and you can group parts or create reusable components. All changes are undoable and saved locally in portable .bup files, with support for older .k3d and .ketchup projects. You can import SketchUp .skp files and export Wavefront .obj files.",
+            "Woodworking features include a library of joinery types—mortise‑and‑tenon, dovetail, finger, biscuit, domino and more—each with live previews and automatic updates when parts move. The router tool lets you apply edge profiles such as chamfer, bevel, round‑over or bead. Procedural wood material shows grain direction and finishing steps directly on the model. Project estimates can include work rates and drying times.",
+            "The workspace also supports reference volumes for 3D printing limits, fractional‑inch measurements, and AI agents that can assist with modeling tasks."
+        ],
+        "icon": {
+            "text": "B",
+            "color": "#BE123C",
+            "logo": "/assets/icons/benchup.png?v=bdae8fe7"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/BenchUp3D/benchup#license",
+        "official_website": "https://benchup.io/",
+        "download_page": "https://github.com/BenchUp3D/benchup/releases/tag/v0.7.4",
+        "repository_url": "https://github.com/BenchUp3D/benchup",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/BenchUp3D/benchup/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/BenchUp3D/benchup/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/BenchUp3D/benchup/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/BenchUp3D/benchup/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/BenchUp3D/benchup/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.7.4",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/BenchUp3D/benchup/releases/tag/v0.7.4",
+        "primary_download": {
+            "url": "https://github.com/BenchUp3D/benchup/releases/download/v0.7.4/io.github.BenchUp3D.BenchUp-win-x64-Setup.exe",
+            "filename": "io.github.BenchUp3D.BenchUp-win-x64-Setup.exe",
+            "size": 35882048,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "benchup-v0.7.4-wasm.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/BenchUp3D/benchup/releases/download/v0.7.4/benchup-v0.7.4-wasm.zip",
+                "size": 18503029,
+                "sha256": "2027319d342841c8c26008619ea98b40c195bbdd5703c0313def0467406279bf"
+            },
+            {
+                "label": "io.github.BenchUp3D.BenchUp-win-x64-Setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/BenchUp3D/benchup/releases/download/v0.7.4/io.github.BenchUp3D.BenchUp-win-x64-Setup.exe",
+                "size": 35882048,
+                "sha256": "0bcb19221da4089ae92d905aa6d697cbef84070ed82feec9c9e0eae777afa9b4"
+            },
+            {
+                "label": "io.github.BenchUp3D.BenchUp-win-x64-Portable.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/BenchUp3D/benchup/releases/download/v0.7.4/io.github.BenchUp3D.BenchUp-win-x64-Portable.zip",
+                "size": 28332909,
+                "sha256": "b2bc30a80d928d4d1ebfb0b55202e5a8e6236bb842b42c1e40679c30b1f33170"
+            }
+        ],
+        "features": [
+            "Create precise 3D models of furniture parts with exact dimensions.",
+            "Use built‑in wood joinery tools that update automatically when parts move.",
+            "Apply edge profiles with the Router tool for chamfer, bevel, round‑over and more.",
+            "View procedural wood grain and finish previews on each board.",
+            "Import SketchUp files and export models as OBJ.",
+            "Organize parts with groups, reusable components and tags.",
+            "Save projects locally in portable .bup files with autosave.",
+            "Measure angles and distances with protractor and tape‑measure tools."
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download BenchUp\" button on this page. Your browser saves io.github.BenchUp3D.BenchUp-win-x64-Setup.exe (34.2 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start BenchUp from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [
+            "solidcraft",
+            "woohaa3",
+            "rawmakase",
+            "immage",
+            "procraft",
+            "sculptforge",
+            "greycard",
+            "ferrumpix",
+            "pancakeslicer",
+            "hycanvas",
+            "chroma-app",
+            "picasapy"
+        ],
+        "seo_title": "BenchUp Free Download for Windows 10/11",
+        "meta_description": "Download BenchUp free for Windows 10/11. BenchUp is a free, open‑source 3D modeling program for woodworking and furniture design, letting you plan boards, join…",
+        "canonical_url": "https://codehimblog.github.io/software/benchup/",
         "date_added": "2026-11-17",
         "last_verified_at": null,
         "verification_status": "partial"
@@ -2637,9 +2776,9 @@
             "codecast",
             "noobot",
             "lime",
+            "typewhisper-win",
             "sakura",
-            "spacewave",
-            "steamtools"
+            "spacewave"
         ],
         "seo_title": "Ciyue Free Download for Windows",
         "meta_description": "Download Ciyue free for Windows. A cross‑platform dictionary app that can read MDX/MDD, StarDict and ZIM dictionary files.",
@@ -2751,9 +2890,9 @@
             "aula",
             "handwriting-ocr-scriptreader",
             "openecraft",
+            "typewhisper-win",
             "orcaslicer",
-            "voxtype",
-            "steamtools"
+            "voxtype"
         ],
         "seo_title": "Codecast Free Download for Windows 10/11",
         "meta_description": "Download Codecast free for Windows 10/11. Codecast is a desktop workspace that lets teams collaborate with AI coding agents, combining chat, calls, tasks, docu…",
@@ -2894,8 +3033,8 @@
             "altered-audio-editor",
             "auto-editor",
             "ffmpeg-gui-editor-windows",
-            "amber",
             "openfilm",
+            "amber",
             "scarlet",
             "lossless-cut",
             "pylon-player"
@@ -3046,11 +3185,11 @@
             "dsh-tui",
             "arara-voice",
             "scribe",
+            "typewhisper-win",
             "fk-desktop",
+            "klinechartquant",
             "youboard",
-            "loudr",
-            "mynotes",
-            "spacewave"
+            "loudr"
         ],
         "seo_title": "DeckCraft Free Download for Windows 10/11",
         "meta_description": "Download DeckCraft free for Windows 10/11. DeckCraft is an open‑source presentation creator that lets you design, edit and present slide decks with themes, sha…",
@@ -3171,15 +3310,15 @@
             "electerm",
             "gptme",
             "openagentd",
+            "qwen-code",
+            "sheprd",
             "notepad-plus-plus",
             "kjarni",
             "pi-rust",
             "estella",
             "headroom-desktop",
             "yengi",
-            "mcp-windows",
-            "jenv",
-            "windbg-mcp"
+            "mcp-windows"
         ],
         "seo_title": "DeepSeek Harness Desktop Free Download for Windows 10/11",
         "meta_description": "Download DeepSeek Harness Desktop free for Windows 10/11. An open‑source Windows desktop client that provides a graphical interface for the DeepSeek Harness AI…",
@@ -3421,8 +3560,8 @@
             "autorunmanager",
             "fly-island",
             "mayfly-go",
-            "mouse-point-viewer",
             "winutil-cn",
+            "mouse-point-viewer",
             "hardwarevisualizer",
             "apkstart",
             "appgroup",
@@ -3556,12 +3695,12 @@
             "steamtools",
             "arara-voice",
             "tizumark-markdown-editor",
+            "klinechartquant",
             "spacewave",
             "deckcraft",
             "scribe",
             "meron",
-            "codecast",
-            "murmure"
+            "codecast"
         ],
         "seo_title": "dsh-TUI Free Download for Windows 10/11",
         "meta_description": "Download dsh-TUI free for Windows 10/11. An interactive terminal user interface for DeepSeek Harness that adds a pixel‑whale header, live status panels and sho…",
@@ -3731,17 +3870,17 @@
         ],
         "related_software": [
             "deepseek-harness-desktop",
+            "sheprd",
             "pi-rust",
             "openagentd",
             "gptme",
             "mcp-windows",
+            "qwen-code",
             "yengi",
             "axe",
             "notepad-plus-plus",
             "tokentracker",
-            "estella",
-            "windbg-mcp",
-            "jenv"
+            "estella"
         ],
         "seo_title": "electerm Free Download for Windows 7",
         "meta_description": "Download electerm free for Windows 7. Free and open‑source client for terminal, SSH, SFTP, FTP, Telnet, serial port, RDP, VNC and Spice connections.",
@@ -3886,17 +4025,17 @@
         ],
         "related_software": [
             "gptme",
-            "pi-rust",
             "servo",
-            "mcp-windows",
+            "pi-rust",
+            "qwen-code",
             "yengi",
+            "mcp-windows",
             "axe",
             "openagentd",
             "deepseek-harness-desktop",
+            "sheprd",
             "kjarni",
-            "windbg-mcp",
-            "notepad-plus-plus",
-            "electerm"
+            "windbg-mcp"
         ],
         "seo_title": "Estella Free Download for Windows 10/11",
         "meta_description": "Download Estella free for Windows 10/11. Estella is a fast 2D and 3D game engine with a visual editor that can be driven by AI agents and can export projects t…",
@@ -4546,10 +4685,10 @@
             "codecast",
             "voxtype",
             "loudr",
+            "klinechartquant",
             "orcaslicer",
             "steamtools",
-            "scribe",
-            "lime"
+            "scribe"
         ],
         "seo_title": "Fk Desktop Free Download for Windows",
         "meta_description": "Download Fk Desktop free for Windows. Fk Desktop is a Pomodoro timer that follows the original technique closely, offering a classic desktop UI, keyboard short…",
@@ -4829,10 +4968,10 @@
             "tauon",
             "waveflow",
             "meowsic",
+            "pylon-player",
             "pymusicplayer",
             "skrin",
             "waves",
-            "pylon-player",
             "phiola"
         ],
         "seo_title": "Fooyin Free Download for Windows",
@@ -5254,15 +5393,15 @@
             "deepseek-harness-desktop",
             "openagentd",
             "pi-rust",
+            "qwen-code",
             "axe",
             "estella",
             "kjarni",
             "headroom-desktop",
+            "sheprd",
             "notepad-plus-plus",
             "electerm",
-            "yengi",
-            "mcp-windows",
-            "servo"
+            "yengi"
         ],
         "seo_title": "gptme Free Download for Windows 10/11",
         "meta_description": "Download gptme free for Windows 10/11. A personal AI agent that runs in the terminal, able to write code, use the web, run shell commands and more, with suppor…",
@@ -5654,6 +5793,7 @@
             "tokentracker",
             "openagentd",
             "gptme",
+            "qwen-code",
             "kjarni",
             "deepseek-harness-desktop",
             "pi-rust",
@@ -5661,8 +5801,7 @@
             "yengi",
             "windbg-mcp",
             "axe",
-            "notepad-plus-plus",
-            "jenv"
+            "sheprd"
         ],
         "seo_title": "Headroom Desktop Free Download for Windows 10",
         "meta_description": "Download Headroom Desktop free for Windows 10. Headroom Desktop is a tray application that reduces token usage for Claude Code, ChatGPT Codex and similar AI co…",
@@ -6181,9 +6320,9 @@
             "waveflow",
             "animeko",
             "meowsic",
-            "lyrenne",
             "nagi",
-            "pylon-player"
+            "pylon-player",
+            "lyrenne"
         ],
         "seo_title": "IPTVnator Free Download for Windows",
         "meta_description": "Download IPTVnator free for Windows. A free, open‑source IPTV player that lets you watch live TV, movies and series from M3U/M3U8 playlists, Xtream Codes or St…",
@@ -6299,13 +6438,13 @@
             "deepseek-harness-desktop",
             "gptme",
             "openagentd",
+            "sheprd",
             "kjarni",
             "windbg-mcp",
-            "headroom-desktop",
             "tokentracker",
+            "headroom-desktop",
             "yengi",
-            "estella",
-            "notepad-plus-plus"
+            "estella"
         ],
         "seo_title": "Jenv Free Download for Windows",
         "meta_description": "Download Jenv free for Windows. Jenv is a command‑line tool that lets you manage multiple Java versions on your computer, allowing easy switching, adding, and…",
@@ -6602,20 +6741,131 @@
         "related_software": [
             "gptme",
             "deepseek-harness-desktop",
+            "qwen-code",
             "servo",
-            "pi-rust",
             "headroom-desktop",
+            "pi-rust",
             "mcp-windows",
             "estella",
             "yengi",
             "openagentd",
             "axe",
-            "jenv",
             "notepad-plus-plus"
         ],
         "seo_title": "Kjarni Free Download for Windows 10/11",
         "meta_description": "Download Kjarni free for Windows 10/11. Kjarni is a local AI inference engine that lets Windows users run transformer models for tasks like embeddings, classif…",
         "canonical_url": "https://codehimblog.github.io/software/kjarni/",
+        "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "klinechartquant",
+        "name": "KLineChartQuant",
+        "slug": "klinechartquant",
+        "summary": "A high‑performance financial charting program for Windows that displays fast, smooth candlestick charts and lets users add indicators, drawings and AI‑driven analysis.",
+        "description": [
+            "KLineChartQuant is a Windows application that shows financial market charts with very low latency and high frame rates. It is aimed at traders, analysts and anyone who needs to view and interact with K‑line (candlestick) charts quickly and accurately.",
+            "The program provides a charting terminal that renders candlestick charts using Canvas, WebGL or WebGPU, delivering frame times of just a few milliseconds. It supports smooth scrolling at high frame rates and offers crisp rendering that adapts to window resizing. Users can add technical indicators, draw on the chart, and use built‑in AI agents that can control the chart just like a human user, allowing automated analysis and interaction. The interface works with popular web frameworks such as Vue, React and Angular, but the Windows installer packages everything needed to run the application directly on a PC. It is free and open source under the Apache‑2.0 license."
+        ],
+        "icon": {
+            "text": "K",
+            "color": "#BE123C",
+            "logo": "/assets/icons/klinechartquant.png?v=1d930ccc"
+        },
+        "category": "productivity-office",
+        "categories": [
+            "productivity-office"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/363045841/KLineChartQuant#license",
+        "official_website": "https://363045841.github.io/KLineChartQuant/",
+        "download_page": "https://github.com/363045841/KLineChartQuant/releases/tag/v0.11.1-alpha.0",
+        "repository_url": "https://github.com/363045841/KLineChartQuant",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/363045841/KLineChartQuant/releases/tag/v0.11.1-alpha.0",
+                "note": "Current Windows download."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/363045841/KLineChartQuant/releases/tag/v0.11.1-alpha.0",
+                "note": "Current Windows download."
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.11.1-alpha.0",
+        "release_date": "2026-11-09",
+        "release_url": "https://github.com/363045841/KLineChartQuant/releases/tag/v0.11.1-alpha.0",
+        "primary_download": {
+            "url": "https://github.com/363045841/KLineChartQuant/releases/download/v0.11.1-alpha.0/KLineChart.Quant-Setup-0.11.1-alpha.0.exe",
+            "filename": "KLineChart.Quant-Setup-0.11.1-alpha.0.exe",
+            "size": 169606845,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "KLineChart.Quant-Setup-0.11.1-alpha.0.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/363045841/KLineChartQuant/releases/download/v0.11.1-alpha.0/KLineChart.Quant-Setup-0.11.1-alpha.0.exe",
+                "size": 169606845,
+                "sha256": "fc450b844988e43c5f0a5d46d7ecd73edb2ef4a16bca6b83f14dd61bbf1ea7f0"
+            }
+        ],
+        "features": [
+            "Displays candlestick charts with very low latency and high frame rates",
+            "Allows adding and customizing technical indicators",
+            "Supports drawing tools for trend lines, annotations and volume profiles",
+            "Includes an AI agent that can operate the chart automatically",
+            "Works with multiple rendering backends (Canvas, WebGL, WebGPU)",
+            "Provides a responsive interface that adapts to window resizing",
+            "Saves and loads indicator templates for quick reuse"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download KLineChartQuant\" button on this page. Your browser saves KLineChart.Quant-Setup-0.11.1-alpha.0.exe (161.7 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start KLineChartQuant from the Start menu or the desktop shortcut."
+        ],
+        "related_software": [
+            "dsh-tui",
+            "spacewave",
+            "orcaslicer",
+            "steamtools",
+            "sakura",
+            "aula",
+            "handwriting-ocr-scriptreader",
+            "deckcraft",
+            "openecraft",
+            "fk-desktop",
+            "scribe",
+            "codecast"
+        ],
+        "seo_title": "KLineChartQuant Free Download for Windows 10/11",
+        "meta_description": "Download KLineChartQuant free for Windows 10/11. A high‑performance financial charting program for Windows that displays fast, smooth candlestick charts and le…",
+        "canonical_url": "https://codehimblog.github.io/software/klinechartquant/",
         "date_added": "2026-11-17",
         "last_verified_at": null,
         "verification_status": "partial"
@@ -6743,8 +6993,8 @@
             "skrin",
             "amber",
             "pymusicplayer",
-            "iptvnator",
             "pylon-player",
+            "iptvnator",
             "riff",
             "melodia",
             "reelterminal",
@@ -7067,8 +7317,8 @@
             "aula",
             "ferrumpix",
             "metrolist",
+            "typewhisper-win",
             "woohaa3",
-            "murmure",
             "steamtools",
             "deckcraft"
         ],
@@ -7330,13 +7580,13 @@
             "procraft",
             "chroma-app",
             "ferrumpix",
+            "formatix",
             "immage",
             "open-photo-ai",
             "photoslide",
             "picasapy",
             "rawmakase",
             "rembrandt",
-            "formatix",
             "greycard"
         ],
         "seo_title": "LightZone Free Download for Windows 11",
@@ -7469,14 +7719,14 @@
             "orca",
             "noobot",
             "dsh-tui",
+            "typewhisper-win",
             "openecraft",
             "voxtype",
-            "spacewave",
             "loudr",
+            "spacewave",
             "scribe",
             "steamtools",
-            "sakura",
-            "ciyue"
+            "sakura"
         ],
         "seo_title": "Lime Free Download for Windows 10/11",
         "meta_description": "Download Lime free for Windows 10/11. Full-stack AI agent for coding, files, terminals, tools, research, content, multimodal work, and multi-agent workflows.",
@@ -7734,6 +7984,7 @@
         "related_software": [
             "voxtype",
             "scribe",
+            "typewhisper-win",
             "arara-voice",
             "murmure",
             "ciyue",
@@ -7742,8 +7993,7 @@
             "youboard",
             "mynotes",
             "handwriting-ocr-scriptreader",
-            "lime",
-            "aula"
+            "lime"
         ],
         "seo_title": "Loudr Free Download for Windows 10/11",
         "meta_description": "Download Loudr free for Windows 10/11. Offline text‑to‑speech and voice typing tool for Windows that reads selected text aloud and converts spoken words into t…",
@@ -7994,15 +8244,15 @@
             "metrolist",
             "nagi",
             "obs-studio",
+            "waveflow",
             "meowsic",
             "pymusicplayer",
             "riff",
             "af-media-bar",
-            "waveflow",
             "aurora",
             "vlc-win10smtc",
             "pylon-player",
-            "melodia"
+            "waves"
         ],
         "seo_title": "Lyrenne Free Download for Windows",
         "meta_description": "Download Lyrenne free for Windows. A free, open‑source YouTube Music desktop player for Windows.",
@@ -8360,18 +8610,18 @@
             "Use the AI assistant or wincli commands to automate Windows applications."
         ],
         "related_software": [
-            "pi-rust",
             "windbg-mcp",
+            "pi-rust",
+            "sheprd",
             "axe",
             "estella",
             "kjarni",
             "openagentd",
+            "qwen-code",
             "yengi",
-            "deepseek-harness-desktop",
             "electerm",
             "headroom-desktop",
-            "gptme",
-            "jenv"
+            "deepseek-harness-desktop"
         ],
         "seo_title": "Mcp Windows Free Download for Windows",
         "meta_description": "Download Mcp Windows free for Windows. A server that lets AI agents control Windows applications through UI Automation, enabling clicks, typing, and reading of…",
@@ -8634,9 +8884,9 @@
             "pymusicplayer",
             "riff",
             "waves",
+            "traydio",
             "aurora",
             "phiola",
-            "traydio",
             "iptvnator"
         ],
         "seo_title": "Melodia Free Download for Windows",
@@ -9021,8 +9271,8 @@
             "nagi",
             "riff",
             "waves",
-            "aurora",
             "obs-studio",
+            "aurora",
             "motionbox",
             "waveflow",
             "reelterminal",
@@ -9169,7 +9419,8 @@
             "rubylight",
             "openkumite",
             "starluxe",
-            "obs-studio"
+            "obs-studio",
+            "sheprd"
         ],
         "seo_title": "Moonlight Qt Free Download for Windows",
         "meta_description": "Download Moonlight Qt free for Windows. Moonlight Qt is an open‑source client that lets you stream games and desktop sessions from a PC with NVIDIA GameStream…",
@@ -9444,9 +9695,10 @@
             "electerm",
             "mayfly-go",
             "orca",
+            "sheprd",
             "woohaa3",
             "warpinator-windows",
-            "phiola"
+            "qwen-code"
         ],
         "seo_title": "Motty Free Download for Windows 10/11",
         "meta_description": "Download Motty free for Windows 10/11. Motty is a desktop SSH client that combines terminal, SFTP, port forwarding, remote desktop and an AI assistant in a sin…",
@@ -9807,6 +10059,7 @@
             "When setup finishes, start Murmure from the Start menu or the desktop shortcut."
         ],
         "related_software": [
+            "typewhisper-win",
             "loudr",
             "scribe",
             "voxtype",
@@ -9817,8 +10070,7 @@
             "noobot",
             "mynotes",
             "dsh-tui",
-            "sakura",
-            "aula"
+            "sakura"
         ],
         "seo_title": "Murmure Free Download for Windows 10/11",
         "meta_description": "Download Murmure free for Windows 10/11. A privacy‑first speech‑to‑text program that runs entirely on your computer, supporting 25 languages without sending an…",
@@ -9945,8 +10197,8 @@
             "murmure",
             "codecast",
             "openecraft",
-            "lime",
-            "arara-voice"
+            "typewhisper-win",
+            "lime"
         ],
         "seo_title": "MyNotes Free Download for Windows",
         "meta_description": "Download MyNotes free for Windows. A simple notes and reminders application for Windows built with WinUI 3.",
@@ -10419,15 +10671,15 @@
             "deepseek-harness-desktop",
             "gptme",
             "yengi",
+            "sheprd",
+            "qwen-code",
             "kjarni",
             "pi-rust",
             "headroom-desktop",
             "mcp-windows",
             "openagentd",
             "electerm",
-            "estella",
-            "axe",
-            "jenv"
+            "estella"
         ],
         "seo_title": "Notepad++ for Windows – Free Open-Source Code & Text Editor",
         "meta_description": "Notepad++ is a free, open-source code and text editor for Windows. See features, Windows compatibility notes, download formats and official sources.",
@@ -10581,9 +10833,9 @@
             "sharex",
             "animeko",
             "aurora",
-            "altered-audio-editor",
             "lossless-cut",
-            "traydio"
+            "altered-audio-editor",
+            "frame-player"
         ],
         "seo_title": "OBS Studio for Windows – Free Screen Recording & Streaming",
         "meta_description": "OBS Studio is free, open-source screen recording and live streaming software. See features, download formats and official sources for Windows.",
@@ -10709,10 +10961,10 @@
             "lyrenne",
             "vlc-win10smtc",
             "filmcraft",
-            "iptvnator",
             "meowsic",
-            "pymusicplayer",
-            "fooyin"
+            "iptvnator",
+            "fooyin",
+            "pymusicplayer"
         ],
         "seo_title": "OnlyM Free Download for Windows",
         "meta_description": "Download OnlyM free for Windows. Simple Media Player (audio, video and images) for use in meetings.",
@@ -10855,8 +11107,8 @@
             "picasapy",
             "greycard",
             "sharex",
-            "ferrumpix",
             "rembrandt",
+            "ferrumpix",
             "photoslide",
             "photocraft",
             "lap"
@@ -10969,15 +11221,15 @@
             "deepseek-harness-desktop",
             "gptme",
             "pi-rust",
+            "qwen-code",
+            "sheprd",
             "headroom-desktop",
             "windbg-mcp",
             "electerm",
             "tokentracker",
             "estella",
             "axe",
-            "mcp-windows",
-            "kjarni",
-            "yengi"
+            "mcp-windows"
         ],
         "seo_title": "OpenAgentd Free Download for Windows 10/11",
         "meta_description": "Download OpenAgentd free for Windows 10/11. OpenAgentd is a desktop application that runs a coding assistant locally, showing every tool call, file change and…",
@@ -11231,13 +11483,13 @@
             "auto-editor",
             "cutlass",
             "weftcut",
-            "lossless-cut",
             "scarlet",
+            "lossless-cut",
             "pylon-player",
             "altered-audio-editor",
             "skrin",
-            "fooyin",
             "metrolist",
+            "fooyin",
             "onlym"
         ],
         "seo_title": "OpenFilm Free Download for Windows",
@@ -11624,12 +11876,12 @@
             "codecast",
             "deckcraft",
             "loudr",
+            "klinechartquant",
             "tizumark-markdown-editor",
             "fk-desktop",
             "meron",
             "voxtype",
-            "orca",
-            "sakura"
+            "orca"
         ],
         "seo_title": "OrcaSlicer Free Download for Windows 10/11",
         "meta_description": "Download OrcaSlicer free for Windows 10/11. OrcaSlicer is an open‑source slicer that converts 3D models into printer‑ready G‑code for many desktop and belt 3D…",
@@ -11767,14 +12019,14 @@
             "hycanvas",
             "solidcraft",
             "greycard",
-            "lightzone",
             "photocraft",
+            "lightzone",
             "sculptforge",
             "lightcraft",
             "rigby2d",
+            "benchup",
             "open-photo-ai",
-            "procraft",
-            "ferrumpix"
+            "procraft"
         ],
         "seo_title": "PancakeSlicer Free Download for Windows 10/11",
         "meta_description": "Download PancakeSlicer free for Windows 10/11. A self‑hostable slicer for non‑planar 3D printing built on the OrcaSlicer engine.",
@@ -12181,8 +12433,8 @@
             "greycard",
             "sculptforge",
             "rembrandt",
-            "photoslide",
-            "procraft"
+            "procraft",
+            "photoslide"
         ],
         "seo_title": "PhotoCraft Companion Free Download for Windows 10/11",
         "meta_description": "Download PhotoCraft Companion free for Windows 10/11. An extensible companion for the PhotoCraft graphics editor that adds AI-powered tools, a floating tool pa…",
@@ -12426,8 +12678,8 @@
             "ferrumpix",
             "immage",
             "rawmakase",
-            "lightzone",
             "greycard",
+            "lightzone",
             "photoslide",
             "lightcraft",
             "rembrandt",
@@ -12691,11 +12943,11 @@
             "Start creating or editing soundfonts."
         ],
         "related_software": [
+            "agentshot",
             "altered-audio-editor",
             "fooyin",
             "masterpiece",
             "nagi",
-            "agentshot",
             "pymusicplayer",
             "phiola",
             "reelterminal",
@@ -12839,8 +13091,8 @@
             "sculptforge",
             "lightzone",
             "ferrumpix",
-            "immage",
             "chroma-app",
+            "immage",
             "formatix",
             "rigby2d",
             "rembrandt",
@@ -12952,11 +13204,11 @@
             "skrin",
             "vlc-portable",
             "autosubsync",
+            "fooyin",
             "frame-player",
             "nagi",
             "vlc-redesign",
             "waveflow",
-            "fooyin",
             "vlc-win10smtc",
             "waves"
         ],
@@ -13216,6 +13468,121 @@
         "date_added": "2026-11-15",
         "last_verified_at": "2026-11-15",
         "verification_status": "verified"
+    },
+    {
+        "id": "qwen-code",
+        "name": "Qwen Code",
+        "slug": "qwen-code",
+        "summary": "An open-source AI coding agent that can be used from the terminal, desktop app, IDEs, browsers and chat integrations.",
+        "description": [
+            "Qwen Code is a free, open-source AI assistant designed to help developers write, understand and improve code. It works from a command‑line interface, a desktop application, and integrates with popular editors and chat platforms, letting you get coding help wherever you work.",
+            "The program provides an interactive AI agent that can answer questions about a codebase, generate new code, refactor existing files, and explain project structure. It supports multiple AI model providers such as OpenAI, Anthropic, Gemini and local models via Ollama or vLLM, and you can switch providers at runtime. Qwen Code includes features like auto‑memory, skills, sub‑agents and workflow management, making it useful for both simple queries and more complex, multi‑step tasks. It also offers integrations for IDEs like VS Code and JetBrains, as well as chat apps such as Telegram and WeChat, so you can interact with the assistant from the tools you already use."
+        ],
+        "icon": {
+            "text": "Q",
+            "color": "#BE123C",
+            "logo": "/assets/icons/qwen-code.png?v=9ea046f0"
+        },
+        "category": "developer-tools",
+        "categories": [
+            "developer-tools"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/QwenLM/qwen-code#license",
+        "official_website": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
+        "download_page": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.28.0",
+        "repository_url": "https://github.com/QwenLM/qwen-code",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/QwenLM/qwen-code/blob/main/packages/desktop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/QwenLM/qwen-code/blob/main/packages/desktop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/QwenLM/qwen-code/blob/main/packages/desktop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/QwenLM/qwen-code/blob/main/packages/desktop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/QwenLM/qwen-code/blob/main/packages/desktop/src-tauri/tauri.conf.json",
+                "note": "Built with Tauri (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": null,
+        "release_date": null,
+        "release_url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.28.0",
+        "primary_download": {
+            "url": "https://github.com/QwenLM/qwen-code/releases/download/desktop-v0.28.0/Qwen-Code-Desktop_0.28.0_x64-setup.exe",
+            "filename": "Qwen-Code-Desktop_0.28.0_x64-setup.exe",
+            "size": 53940054,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Qwen-Code-Desktop_0.28.0_x64-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/QwenLM/qwen-code/releases/download/desktop-v0.28.0/Qwen-Code-Desktop_0.28.0_x64-setup.exe",
+                "size": 53940054,
+                "sha256": "b5bca3f349a1decd7a39502003bd959812f55cdf1dfdda37bd8320c1f8695037"
+            }
+        ],
+        "features": [
+            "Run the AI assistant directly in a terminal to get coding help on the fly",
+            "Use the desktop application for a graphical interface and chat style interaction",
+            "Integrate with popular IDEs and editors to receive suggestions while coding",
+            "Connect to various AI model providers, including OpenAI, Anthropic, Gemini and local models",
+            "Manage multiple agents, skills and workflows for more complex coding tasks"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Qwen Code\" button on this page. Your browser saves Qwen-Code-Desktop_0.28.0_x64-setup.exe (51.4 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Qwen Code from the Start menu or the desktop shortcut."
+        ],
+        "related_software": [
+            "deepseek-harness-desktop",
+            "gptme",
+            "openagentd",
+            "pi-rust",
+            "axe",
+            "sheprd",
+            "estella",
+            "kjarni",
+            "headroom-desktop",
+            "yengi",
+            "mcp-windows",
+            "electerm"
+        ],
+        "seo_title": "Qwen Code Free Download for Windows 10/11",
+        "meta_description": "Download Qwen Code free for Windows 10/11. An open-source AI coding agent that can be used from the terminal, desktop app, IDEs, browsers and chat integrations.",
+        "canonical_url": "https://codehimblog.github.io/software/qwen-code/",
+        "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
     },
     {
         "id": "rawmakase",
@@ -13505,9 +13872,9 @@
             "lossless-cut",
             "amber",
             "agentshot",
-            "metrolist",
             "frame-player",
-            "l-mpv"
+            "l-mpv",
+            "metrolist"
         ],
         "seo_title": "ReelTerminal Free Download for Windows 10/11",
         "meta_description": "Download ReelTerminal free for Windows 10/11. ReelTerminal is a video editing tool designed for collaborative workflows with AI assistants, letting users edit…",
@@ -14095,16 +14462,16 @@
         "related_software": [
             "gptme",
             "openagentd",
-            "mcp-windows",
+            "qwen-code",
+            "sheprd",
             "axe",
+            "mcp-windows",
             "electerm",
             "estella",
             "deepseek-harness-desktop",
             "kjarni",
             "windbg-mcp",
-            "headroom-desktop",
-            "tokentracker",
-            "yengi"
+            "headroom-desktop"
         ],
         "seo_title": "rpi Free Download for Windows 10/11",
         "meta_description": "Download rpi free for Windows 10/11. A Rust‑native coding‑agent runtime with a terminal interface that lets you run AI‑powered coding sessions and extend funct…",
@@ -14364,13 +14731,13 @@
             "scribe",
             "aula",
             "codecast",
+            "klinechartquant",
             "lime",
             "arara-voice",
             "youboard",
             "murmure",
-            "handwriting-ocr-scriptreader",
-            "ciyue",
-            "tizumark-markdown-editor"
+            "typewhisper-win",
+            "handwriting-ocr-scriptreader"
         ],
         "seo_title": "Sakura Editor Free Download for Windows 10",
         "meta_description": "Download Sakura Editor free for Windows 10. A free, open‑source text editor for Windows with support for many file encodings and customizable features.",
@@ -14499,8 +14866,8 @@
             "openfilm",
             "filmcraft",
             "ffmpeg-gui-editor-windows",
-            "autosubsync",
-            "amber"
+            "amber",
+            "autosubsync"
         ],
         "seo_title": "Scarlet Free Download for Windows",
         "meta_description": "Download Scarlet free for Windows. Scarlet is an open-source AI video editor for macOS, Windows and Linux.",
@@ -14623,11 +14990,11 @@
             "frame-player",
             "pylon-player",
             "vlc-win10smtc",
-            "vlc-redesign",
             "skrin",
+            "vlc-redesign",
             "af-media-bar",
             "riff",
-            "traydio"
+            "fooyin"
         ],
         "seo_title": "Screenbox Free Download for Windows 11 and 10",
         "meta_description": "Download Screenbox free for Windows 11 and 10. LibVLC-based media player for the Universal Windows Platform",
@@ -14756,8 +15123,8 @@
             "obs-studio",
             "phiola",
             "lossless-cut",
-            "ffmpeg-gui-editor-windows",
             "weftcut",
+            "ffmpeg-gui-editor-windows",
             "altered-audio-editor",
             "pymusicplayer",
             "filmcraft",
@@ -14896,15 +15263,15 @@
             "arara-voice",
             "loudr",
             "voxtype",
+            "typewhisper-win",
             "murmure",
             "sakura",
-            "youboard",
             "mynotes",
+            "youboard",
             "dsh-tui",
             "lime",
             "deckcraft",
-            "openecraft",
-            "spacewave"
+            "openecraft"
         ],
         "seo_title": "Scribe Free Download for Windows",
         "meta_description": "Download Scribe free for Windows. Scribe is an offline voice-to-text desktop assistant that lets you dictate, control apps and run custom commands with your vo…",
@@ -15016,13 +15383,13 @@
             "aula",
             "loudr",
             "youboard",
+            "klinechartquant",
             "tizumark-markdown-editor",
             "sakura",
+            "typewhisper-win",
             "scribe",
             "deckcraft",
-            "noobot",
-            "lime",
-            "murmure"
+            "noobot"
         ],
         "seo_title": "ScriptReader Free Download for Windows",
         "meta_description": "Download ScriptReader free for Windows. ScriptReader converts scanned handwritten JPEG images into formatted RTF documents and removes handwritten typos automa…",
@@ -15193,11 +15560,11 @@
             "rembrandt",
             "ferrumpix",
             "photocraft",
+            "benchup",
             "pancakeslicer",
             "immage",
-            "photoslide",
             "picasapy",
-            "solidcraft"
+            "photoslide"
         ],
         "seo_title": "SculptForge Free Download for Windows 10/11",
         "meta_description": "Download SculptForge free for Windows 10/11. Free, open‑source 3D sculpting software with brushes, symmetry, AI‑generated brushes and export options for game p…",
@@ -15324,14 +15691,14 @@
             "kjarni",
             "gptme",
             "pi-rust",
+            "sheprd",
+            "qwen-code",
             "axe",
             "windbg-mcp",
             "yengi",
             "openagentd",
             "mcp-windows",
-            "notepad-plus-plus",
-            "deepseek-harness-desktop",
-            "electerm"
+            "notepad-plus-plus"
         ],
         "seo_title": "Servo Free Download for Windows",
         "meta_description": "Download Servo free for Windows. Servo is an experimental web browser engine written in Rust that can run web pages and be used for testing web technologies on…",
@@ -15481,6 +15848,153 @@
         "meta_description": "ShareX is a free, open-source screenshot and screen recording tool for Windows. See features, download formats and official download sources.",
         "canonical_url": "https://codehimblog.github.io/software/sharex/",
         "date_added": "2026-11-14",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "sheprd",
+        "name": "Sheprd",
+        "slug": "sheprd",
+        "summary": "A native Windows client that lets you view and manage terminal sessions, Git worktrees, and AI agent activity through a local Herdr daemon.",
+        "description": [
+            "Sheprd provides a graphical workspace for working with multiple terminal sessions, repositories and AI agents in one window. It connects to a Herdr daemon to show live terminal output, organize worktrees, and interact with agents.",
+            "Sheprd is a Rust‑based GUI that brings together terminal windows, Git worktrees, and AI agents. The sidebar shows workspaces, repositories, and agents with status indicators. You can open multiple tabs, split panes, and create or delete worktrees directly from the interface. The app lets you review changes, add notes, and send them to agents, as well as annotate web pages and control remote sessions from a phone. Features such as Teleport let you move a worktree with its state to another host. System notifications inform you about agent activity. Sheprd works with the bundled Herdr‑core daemon, so a separate Herdr installation is optional."
+        ],
+        "icon": {
+            "text": "S",
+            "color": "#BE123C",
+            "logo": "/assets/icons/sheprd.png?v=68c46bd1"
+        },
+        "category": "developer-tools",
+        "categories": [
+            "developer-tools"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "Apache License 2.0",
+        "license_family": "permissive",
+        "license_url": "https://github.com/sheprd-labs/sheprd#license",
+        "official_website": "https://sheprd.org",
+        "download_page": "https://github.com/sheprd-labs/sheprd/releases/tag/v20261115.1",
+        "repository_url": "https://github.com/sheprd-labs/sheprd",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/sheprd-labs/sheprd/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/sheprd-labs/sheprd/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/sheprd-labs/sheprd/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/sheprd-labs/sheprd/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/sheprd-labs/sheprd/blob/main/Cargo.toml",
+                "note": "Built with Rust (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "20261115.1",
+        "release_date": "2026-11-15",
+        "release_url": "https://github.com/sheprd-labs/sheprd/releases/tag/v20261115.1",
+        "primary_download": {
+            "url": "https://github.com/sheprd-labs/sheprd/releases/download/v20261115.1/Sheprd-20261115.1-x86_64-pc-windows-msvc-setup.exe",
+            "filename": "Sheprd-20261115.1-x86_64-pc-windows-msvc-setup.exe",
+            "size": 68398400,
+            "architecture": "x64",
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Sheprd-20261115.1-aarch64-pc-windows-msvc-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/sheprd-labs/sheprd/releases/download/v20261115.1/Sheprd-20261115.1-aarch64-pc-windows-msvc-setup.exe",
+                "size": 62322056,
+                "sha256": "f92129e61bc00bcac61f4cb86289d350bb87de1c75794a11604d130f3ea258f6"
+            },
+            {
+                "label": "Sheprd-20261115.1-x86_64-pc-windows-msvc-setup.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/sheprd-labs/sheprd/releases/download/v20261115.1/Sheprd-20261115.1-x86_64-pc-windows-msvc-setup.exe",
+                "size": 68398400,
+                "sha256": "166a7415250fdf9713366ae1a4364be517897fe616f0d58603ec24b091c1e9d4"
+            },
+            {
+                "label": "Sheprd-20261115.1-aarch64-pc-windows-msvc.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/sheprd-labs/sheprd/releases/download/v20261115.1/Sheprd-20261115.1-aarch64-pc-windows-msvc.zip",
+                "size": 93184287,
+                "sha256": "29bd535c101103983517f30e1a9a5dae9647fd8d792c6903010cac9ed6ff7cc0"
+            },
+            {
+                "label": "Sheprd-20261115.1-x86_64-pc-windows-msvc.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/sheprd-labs/sheprd/releases/download/v20261115.1/Sheprd-20261115.1-x86_64-pc-windows-msvc.zip",
+                "size": 100011202,
+                "sha256": "9992307079e2c27252c5f799b8a9566bd12012e20f26131e9ab60a5ef4e683d3"
+            }
+        ],
+        "features": [
+            "View multiple terminal sessions in native tabs and splits",
+            "Organize repositories and Git worktrees from a sidebar",
+            "Interact with AI agents: review changes, add notes, and send feedback",
+            "Move worktrees and their state to another machine with Teleport",
+            "Receive system notifications for agent activity",
+            "Annotate web pages and send annotations to agents",
+            "Control remote workspaces from a phone"
+        ],
+        "requirements": [
+            "Requires an existing Herdr daemon (bundled with the app if not installed separately)."
+        ],
+        "installation_instructions": [
+            "Click the \"Download Sheprd\" button on this page. Your browser saves Sheprd-20261115.1-x86_64-pc-windows-msvc-setup.exe (65.2 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Sheprd from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [
+            "deepseek-harness-desktop",
+            "electerm",
+            "openagentd",
+            "pi-rust",
+            "qwen-code",
+            "mcp-windows",
+            "gptme",
+            "estella",
+            "windbg-mcp",
+            "notepad-plus-plus",
+            "axe",
+            "jenv"
+        ],
+        "seo_title": "Sheprd Free Download for Windows 10/11",
+        "meta_description": "Download Sheprd free for Windows 10/11. A native Windows client that lets you view and manage terminal sessions, Git worktrees, and AI agent activity through a…",
+        "canonical_url": "https://codehimblog.github.io/software/sheprd/",
+        "date_added": "2026-11-17",
         "last_verified_at": null,
         "verification_status": "partial"
     },
@@ -15834,6 +16348,7 @@
             "If Windows SmartScreen warns, choose **More info** and then **Run anyway** to start the program."
         ],
         "related_software": [
+            "benchup",
             "photocraft",
             "lightcraft",
             "pancakeslicer",
@@ -15841,11 +16356,10 @@
             "rigby2d",
             "rawmakase",
             "immage",
-            "photoslide",
             "open-photo-ai",
+            "photoslide",
             "sculptforge",
-            "greycard",
-            "lightzone"
+            "greycard"
         ],
         "seo_title": "SolidCraft Free Download for Windows 10/11",
         "meta_description": "Download SolidCraft free for Windows 10/11. SolidCraft is an open‑source parametric 3D CAD application written in Rust, allowing you to sketch, constrain, extr…",
@@ -15990,7 +16504,7 @@
             "orca",
             "steamtools",
             "arara-voice",
-            "dsh-tui"
+            "voxtype"
         ],
         "seo_title": "Spacewave Free Download for Windows",
         "meta_description": "Download Spacewave free for Windows. Spacewave is a self‑hosted, browser‑based workspace that runs locally without any server, offering encrypted peer‑to‑peer…",
@@ -16638,8 +17152,8 @@
             "aula",
             "orcaslicer",
             "noobot",
-            "orca",
             "steamtools",
+            "orca",
             "handwriting-ocr-scriptreader",
             "spacewave"
         ],
@@ -16766,13 +17280,13 @@
             "axe",
             "windbg-mcp",
             "pi-rust",
+            "qwen-code",
             "mcp-windows",
             "yengi",
             "kjarni",
             "deepseek-harness-desktop",
             "jenv",
-            "electerm",
-            "estella"
+            "sheprd"
         ],
         "seo_title": "Token Tracker Free Download for Windows",
         "meta_description": "Download Token Tracker free for Windows. A local dashboard that tracks token usage and cost for many AI coding tools, with a system‑tray app, desktop pet, widg…",
@@ -17020,12 +17534,12 @@
             "ffmpeg-gui-editor-windows",
             "autosubsync",
             "nagi",
-            "polyphone",
             "waves",
+            "polyphone",
             "vlc-win10smtc",
             "tauon",
             "frame-player",
-            "aurora"
+            "phiola"
         ],
         "seo_title": "TuneFree Free Download for Windows 10",
         "meta_description": "Download TuneFree free for Windows 10. A tool that decrypts QQ Music's encrypted .mflac and .mgg files and converts them to MP3 or FLAC on Windows.",
@@ -17033,6 +17547,128 @@
         "date_added": "2026-11-15",
         "last_verified_at": "2026-11-16",
         "verification_status": "verified"
+    },
+    {
+        "id": "typewhisper-win",
+        "name": "TypeWhisper",
+        "slug": "typewhisper-win",
+        "summary": "Local speech‑to‑text and translation tool for Windows that lets you dictate, transcribe audio files and process the resulting text.",
+        "description": [
+            "TypeWhisper runs on Windows and provides real‑time dictation, audio transcription and text‑processing workflows without sending data to the cloud unless you choose a cloud provider. It works with a global shortcut, shows an overlay with live transcription, and can insert the text directly into any application.",
+            "The program uses a WinUI 3 interface and can operate with local transcription plugins or cloud services. You can record from the microphone or system audio, transcribe recordings, and export the results as plain text or timed subtitles when supported. Built‑in workflows let you rewrite, translate, or otherwise process the transcribed text. Personal terms, corrections and reusable snippets are stored locally, and a history view lets you browse past transcriptions. Additional functionality is available through optional plugins for transcription models, language‑learning models, and other text‑processing actions. An optional local HTTP API and a bundled command‑line client allow external control of the app."
+        ],
+        "icon": {
+            "text": "T",
+            "color": "#2563EB",
+            "logo": "/assets/icons/typewhisper-win.png?v=dd6e9c98"
+        },
+        "category": "productivity-office",
+        "categories": [
+            "productivity-office"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/TypeWhisper/typewhisper-win#license",
+        "official_website": null,
+        "download_page": "https://github.com/TypeWhisper/typewhisper-win/releases/tag/plugin-sherpa-onnx-v1.4.1",
+        "repository_url": "https://github.com/TypeWhisper/typewhisper-win",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/TypeWhisper/typewhisper-win#readme",
+                "note": "Named in the README."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/TypeWhisper/typewhisper-win/blob/main/eng/PluginCatalogVerifier/PluginCatalogVerifier.csproj",
+                "note": ".NET 11 needs Windows 10 or later."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/TypeWhisper/typewhisper-win/blob/main/eng/PluginCatalogVerifier/PluginCatalogVerifier.csproj",
+                "note": ".NET 11 needs Windows 10 or later."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/TypeWhisper/typewhisper-win/blob/main/eng/PluginCatalogVerifier/PluginCatalogVerifier.csproj",
+                "note": ".NET 11 needs Windows 10 or later."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/TypeWhisper/typewhisper-win/blob/main/eng/PluginCatalogVerifier/PluginCatalogVerifier.csproj",
+                "note": ".NET 11 needs Windows 10 or later."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": null,
+        "release_date": null,
+        "release_url": "https://github.com/TypeWhisper/typewhisper-win/releases/tag/plugin-sherpa-onnx-v1.4.1",
+        "primary_download": {
+            "url": "https://github.com/TypeWhisper/typewhisper-win/releases/download/plugin-sherpa-onnx-v1.4.1/com.typewhisper.sherpa-onnx-1.4.1-win-x64.zip",
+            "filename": "com.typewhisper.sherpa-onnx-1.4.1-win-x64.zip",
+            "size": 68069816,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
+        "download_assets": [
+            {
+                "label": "com.typewhisper.sherpa-onnx-1.4.1-win-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/TypeWhisper/typewhisper-win/releases/download/plugin-sherpa-onnx-v1.4.1/com.typewhisper.sherpa-onnx-1.4.1-win-x64.zip",
+                "size": 68069816,
+                "sha256": "c8e71acca25f3a2ac0723382b5a991b61e7e6becd95f6d5804d7a8a6fd2c75d4"
+            }
+        ],
+        "features": [
+            "Dictate into any Windows program using a global shortcut and see live transcription in an overlay.",
+            "Record microphone or system audio and transcribe files to text or subtitles.",
+            "Apply built‑in workflows for translation, rewriting and other text processing.",
+            "Save personal terms, corrections and reusable snippets for quick insertion.",
+            "Extend functionality with optional plugins for different speech models and text‑processing tools.",
+            "Control the app via a local HTTP API or the bundled CLI.",
+            "Automatic insertion of transcribed text according to your output settings."
+        ],
+        "requirements": [
+            "x64 Windows system (minimum build 19041).",
+            ".NET Runtime 10 (for older releases) or .NET Runtime 11 (for current release).",
+            "Internet connection required for first‑time plugin download and model assets.",
+            "At least a few hundred megabytes of free disk space for plugins and model files."
+        ],
+        "installation_instructions": [
+            "Click the \"Download TypeWhisper\" button on this page. Your browser saves com.typewhisper.sherpa-onnx-1.4.1-win-x64.zip (64.9 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the TypeWhisper program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive."
+        ],
+        "related_software": [
+            "murmure",
+            "loudr",
+            "scribe",
+            "arara-voice",
+            "youboard",
+            "lime",
+            "voxtype",
+            "codecast",
+            "steamtools",
+            "deckcraft",
+            "ciyue",
+            "sakura"
+        ],
+        "seo_title": "TypeWhisper Free Download for Windows 10/11",
+        "meta_description": "Download TypeWhisper free for Windows 10/11. Local speech‑to‑text and translation tool for Windows that lets you dictate, transcribe audio files and process th…",
+        "canonical_url": "https://codehimblog.github.io/software/typewhisper-win/",
+        "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
     },
     {
         "id": "universal-intel-chipset-updater",
@@ -17932,6 +18568,7 @@
             "Open Advanced Preferences → Interface → Control Interfaces, check \"Windows SMTC integration\" and save."
         ],
         "related_software": [
+            "vlc-redesign",
             "af-media-bar",
             "pylon-player",
             "pymusicplayer",
@@ -17939,7 +18576,6 @@
             "vlc-lyrics-finder",
             "vlc-portable",
             "lyrenne",
-            "vlc-redesign",
             "vlc-rpc",
             "masterpiece",
             "waves",
@@ -18175,11 +18811,11 @@
             "tizumark-markdown-editor",
             "steamtools",
             "openecraft",
-            "orca",
             "mynotes",
+            "orca",
+            "typewhisper-win",
             "youboard",
-            "spacewave",
-            "codecast"
+            "spacewave"
         ],
         "seo_title": "VoxType Free Download for Windows 10",
         "meta_description": "Download VoxType free for Windows 10. Privacy‑focused open‑source AI voice typing for Windows.",
@@ -18303,8 +18939,7 @@
         ],
         "related_software": [
             "7-zip",
-            "motty",
-            "mayfly-go"
+            "motty"
         ],
         "seo_title": "Warpinator Windows Free Download for Windows 7",
         "meta_description": "Download Warpinator Windows free for Windows 7. An unofficial implementation of Warpinator for Windows.",
@@ -18432,7 +19067,7 @@
             "murmure",
             "mynotes",
             "codecast",
-            "lime"
+            "klinechartquant"
         ],
         "seo_title": "Watt Toolkit Free Download for Windows 10/11",
         "meta_description": "Download Watt Toolkit free for Windows 10/11. A free, open‑source toolbox that adds many utilities for Steam and other game platforms, such as account switchin…",
@@ -18556,14 +19191,14 @@
             "frame-player",
             "melodia",
             "nagi",
+            "lyrenne",
             "af-media-bar",
             "meowsic",
             "pylon-player",
             "pymusicplayer",
             "riff",
             "skrin",
-            "vlc-lyrics-finder",
-            "waves"
+            "vlc-lyrics-finder"
         ],
         "seo_title": "WaveFlow Free Download for Windows",
         "meta_description": "Download WaveFlow free for Windows. WaveFlow is a local‑first music player that organizes and plays the audio files you already own, with high‑resolution playb…",
@@ -18676,9 +19311,9 @@
             "nagi",
             "waveflow",
             "meowsic",
+            "pylon-player",
             "pymusicplayer",
             "riff",
-            "pylon-player",
             "aurora",
             "phiola",
             "lyrenne"
@@ -18794,14 +19429,14 @@
             "filmcraft",
             "scarlet",
             "lossless-cut",
-            "amber",
             "auto-editor",
+            "amber",
             "openfilm",
             "altered-audio-editor",
             "reelterminal",
             "vlc-win10smtc",
             "agentshot",
-            "waves"
+            "ffmpeg-gui-editor-windows"
         ],
         "seo_title": "WeftCut Free Download for Windows",
         "meta_description": "Download WeftCut free for Windows. Free, open-source AI‑driven video editor that lets an AI agent control the timeline just like a human user.",
@@ -19040,13 +19675,13 @@
             "axe",
             "pi-rust",
             "tokentracker",
+            "sheprd",
             "yengi",
-            "gptme",
             "estella",
+            "gptme",
+            "qwen-code",
             "deepseek-harness-desktop",
-            "headroom-desktop",
-            "kjarni",
-            "servo"
+            "headroom-desktop"
         ],
         "seo_title": "windbg-mcp Free Download for Windows",
         "meta_description": "Download windbg-mcp free for Windows. A server that exposes WinDbg/DbgEng debugging capabilities to AI agents via standard input/output or HTTP.",
@@ -19287,9 +19922,9 @@
             "photosplice",
             "rawmakase",
             "photoslide",
+            "benchup",
             "greycard",
-            "lap",
-            "lightzone"
+            "lap"
         ],
         "seo_title": "WooHaa3 Free Download for Windows 10/11",
         "meta_description": "Download WooHaa3 free for Windows 10/11. WooHaa3 is a canvas‑style multimedia creation workspace that lets you combine text, images, audio, video and 3D assets…",
@@ -19404,16 +20039,16 @@
         "related_software": [
             "estella",
             "notepad-plus-plus",
+            "qwen-code",
             "gptme",
             "deepseek-harness-desktop",
             "mcp-windows",
             "kjarni",
             "windbg-mcp",
             "headroom-desktop",
-            "pi-rust",
             "openagentd",
-            "electerm",
-            "tokentracker"
+            "pi-rust",
+            "electerm"
         ],
         "seo_title": "Yengi Free Download for Windows",
         "meta_description": "Download Yengi free for Windows. Yengi is a free, open‑source Windows AI integrated development environment that lets you work with local and cloud large langu…",
@@ -19530,16 +20165,16 @@
         "related_software": [
             "spacewave",
             "meron",
+            "typewhisper-win",
             "codecast",
             "murmure",
             "steamtools",
             "ciyue",
-            "arara-voice",
             "voxtype",
+            "arara-voice",
             "scribe",
             "loudr",
-            "handwriting-ocr-scriptreader",
-            "fk-desktop"
+            "handwriting-ocr-scriptreader"
         ],
         "seo_title": "YouBoard Free Download for Windows",
         "meta_description": "Download YouBoard free for Windows. YouBoard is a local clipboard history manager that records text, images, files and URLs, stores them encrypted on the compu…",
