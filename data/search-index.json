@@ -115,6 +115,17 @@
         ]
     },
     {
+        "slug": "arara-voice",
+        "name": "Arara",
+        "summary": "Arara is a free, open‑source voice dictation app that works locally and pastes transcribed text wherever the cursor is placed.",
+        "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "astraeus",
         "name": "Astraeus",
         "summary": "A native Windows dashboard that slides out from the edge of the screen, providing quick access to media, system controls and widgets.",
@@ -181,6 +192,17 @@
         ]
     },
     {
+        "slug": "axe",
+        "name": "Axe",
+        "summary": "A lightweight command‑line tool that runs focused LLM‑powered agents defined in simple configuration files.",
+        "category": "developer-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "bleachbit",
         "name": "BleachBit",
         "summary": "BleachBit is a system cleaner that removes unnecessary files to free disk space and protect privacy.",
@@ -206,6 +228,17 @@
         "slug": "ciyue",
         "name": "Ciyue",
         "summary": "A cross‑platform dictionary app that can read MDX/MDD, StarDict and ZIM dictionary files.",
+        "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "codecast",
+        "name": "Codecast",
+        "summary": "Codecast is a desktop workspace that lets teams collaborate with AI coding agents, combining chat, calls, tasks, documents and version control in one interface.",
         "category": "productivity-office",
         "keywords": [],
         "os": [
@@ -262,6 +295,17 @@
         "name": "DeskX Wallpaper Engine",
         "summary": "A lightweight Windows utility that lets you set images, GIFs, videos, or HTML pages as live wallpapers and adds draggable interactive widgets with multi‑monitor support.",
         "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "dsh-tui",
+        "name": "dsh-TUI",
+        "summary": "An interactive terminal user interface for DeepSeek Harness that adds a pixel‑whale header, live status panels and shortcut commands to the command line.",
+        "category": "productivity-office",
         "keywords": [],
         "os": [
             "windows-11",
@@ -380,6 +424,17 @@
         ]
     },
     {
+        "slug": "gptme",
+        "name": "gptme",
+        "summary": "A personal AI agent that runs in the terminal, able to write code, use the web, run shell commands and more, with support for many AI models.",
+        "category": "developer-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "greycard",
         "name": "Greycard",
         "summary": "A professional raw photo editor with accurate color, for Linux, macOS and Windows.",
@@ -490,6 +545,17 @@
         ]
     },
     {
+        "slug": "kjarni",
+        "name": "Kjarni",
+        "summary": "Kjarni is a local AI inference engine that lets Windows users run transformer models for tasks like embeddings, classification, search, chat and more, directly on their computer without internet after the first download.",
+        "category": "developer-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "l-mpv",
         "name": "L-MPV",
         "summary": "A modern, lightweight portable video player for Windows built on the MPV engine with a glass‑morphic interface and optional AI upscaling.",
@@ -545,10 +611,32 @@
         ]
     },
     {
+        "slug": "lime",
+        "name": "Lime",
+        "summary": "Full-stack AI agent for coding, files, terminals, tools, research, content, multimodal work, and multi-agent workflows.",
+        "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "lossless-cut",
         "name": "LosslessCut",
         "summary": "A fast, lossless video and audio editor that trims, cuts, merges and remuxes media without re‑encoding.",
         "category": "audio-video",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "loudr",
+        "name": "Loudr",
+        "summary": "Offline text‑to‑speech and voice typing tool for Windows that reads selected text aloud and converts spoken words into typed text.",
+        "category": "productivity-office",
         "keywords": [],
         "os": [
             "windows-11",
@@ -688,6 +776,17 @@
         ]
     },
     {
+        "slug": "motty",
+        "name": "Motty",
+        "summary": "Motty is a desktop SSH client that combines terminal, SFTP, port forwarding, remote desktop and an AI assistant in a single window.",
+        "category": "networking-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "mouse-point-viewer",
         "name": "Mouse Point Viewer",
         "summary": "A desktop application that displays mouse coordinates relative to any window visible on the screen.",
@@ -706,6 +805,17 @@
         "name": "MouseX Absolute Mouse Control",
         "summary": "A lightweight Windows utility that lets you remap mouse buttons, scroll wheels and extra buttons to keyboard shortcuts, chords and repeating macros, with per‑application profiles.",
         "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "murmure",
+        "name": "Murmure",
+        "summary": "A privacy‑first speech‑to‑text program that runs entirely on your computer, supporting 25 languages without sending any data online.",
+        "category": "productivity-office",
         "keywords": [],
         "os": [
             "windows-11",
@@ -807,6 +917,28 @@
         ]
     },
     {
+        "slug": "openagentd",
+        "name": "OpenAgentd",
+        "summary": "OpenAgentd is a desktop application that runs a coding assistant locally, showing every tool call, file change and terminal output while you work on a project.",
+        "category": "developer-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "openecraft",
+        "name": "OpenECraft",
+        "summary": "OpenECraft is an open‑source electrical computer‑aided engineering editor that lets you create schematics, generate reports and design panel layouts in 3D.",
+        "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "openfilm",
         "name": "OpenFilm",
         "summary": "An open‑source AI video agent that lets a coding agent generate videos and provides a local editor to modify the results.",
@@ -822,6 +954,17 @@
         "name": "OpenKumite",
         "summary": "OpenKumite is an open‑source 3D fighting game engine that lets you play converted versions of classic games such as Tekken 3, Tekken 2 and Counter‑Strike on Windows.",
         "category": "games",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "orca",
+        "name": "Orca",
+        "summary": "Orca is a desktop app that lets you run multiple AI coding agents, switch between chat and terminal interfaces, and coordinate their work across local and remote machines.",
+        "category": "productivity-office",
         "keywords": [],
         "os": [
             "windows-11",
@@ -1028,6 +1171,17 @@
         ]
     },
     {
+        "slug": "pi-rust",
+        "name": "rpi",
+        "summary": "A Rust‑native coding‑agent runtime with a terminal interface that lets you run AI‑powered coding sessions and extend functionality with plugins.",
+        "category": "developer-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "rubylight",
         "name": "Rubylight",
         "summary": "Free, open-source game‑streaming host for Windows PCs with AMD Radeon or NVIDIA graphics.",
@@ -1187,6 +1341,17 @@
         "name": "StarLuxe",
         "summary": "A launcher that helps apply ReShade shaders to selected games.",
         "category": "games",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "studev",
+        "name": "StuDev",
+        "summary": "StuDev is an open‑source digital campus platform that provides timetables, classroom availability, navigation and unified search for university students and clubs.",
+        "category": "internet-browsers",
         "keywords": [],
         "os": [
             "windows-11",
@@ -1456,6 +1621,17 @@
             "windows-8-1",
             "windows-8",
             "windows-7"
+        ]
+    },
+    {
+        "slug": "woohaa3",
+        "name": "WooHaa3",
+        "summary": "WooHaa3 is a canvas‑style multimedia creation workspace that lets you combine text, images, audio, video and 3D assets in a single workspace and use AI to generate and edit content.",
+        "category": "graphics",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
         ]
     },
     {
