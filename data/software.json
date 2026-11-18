@@ -167,6 +167,7 @@
         "related_software": [
             "keepassxc",
             "warpinator-windows",
+            "libresvip",
             "notepad-plus-plus",
             "sharex"
         ],
@@ -827,8 +828,8 @@
             "auto-editor",
             "riff",
             "altered-audio-editor",
-            "obs-studio",
             "agentshot",
+            "obs-studio",
             "openfilm",
             "scarlet"
         ],
@@ -1363,8 +1364,8 @@
         "related_software": [
             "voxtype",
             "scribe",
-            "loudr",
             "typewhisper-win",
+            "loudr",
             "tizumark-markdown-editor",
             "ciyue",
             "dsh-tui",
@@ -2095,8 +2096,8 @@
             "pylon-player",
             "frame-player",
             "tunefree",
-            "openfilm",
             "reelterminal",
+            "openfilm",
             "cutlass",
             "tauon",
             "scarlet",
@@ -2228,9 +2229,9 @@
             "openagentd",
             "windbg-mcp",
             "tokentracker",
+            "brovan",
             "kjarni",
-            "sheprd",
-            "headroom-desktop"
+            "sheprd"
         ],
         "seo_title": "Axe Free Download for Windows 10/11",
         "meta_description": "Download Axe free for Windows 10/11. A lightweight command‑line tool that runs focused LLM‑powered agents defined in simple configuration files.",
@@ -2525,6 +2526,133 @@
         "meta_description": "Download BleachBit free for Windows. BleachBit is a system cleaner that removes unnecessary files to free disk space and protect privacy.",
         "canonical_url": "https://codehimblog.github.io/software/bleachbit/",
         "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "brovan",
+        "name": "Brovan",
+        "slug": "brovan",
+        "summary": "Brovan is a user‑mode x86_64 emulator that lets you run, trace and analyze Windows and Linux binaries on Windows, Linux and Android.",
+        "description": [
+            "Brovan provides a safe environment for executing untrusted programs, inspecting system calls, capturing network traffic and rendering graphics through a Vulkan translation layer. It is aimed at reverse engineers, security researchers and anyone who needs to examine how a binary works without running it directly on the host CPU.",
+            "Brovan works as an interactive emulator that can load PE, ELF, memory dumps and raw shellcode. It uses the Unicorn Engine for cross‑platform emulation and can accelerate execution with Windows Hypervisor Platform (WHP) on Windows or KVM on Linux. The built‑in Brovvulk graphics layer translates DirectX calls to Vulkan, allowing some graphical applications and games to run inside the emulator. Additional features include live syscall and API tracing, symbol resolution, DLL monitoring and network socket interception with PCAP export for traffic analysis. The project is early‑stage and focuses on providing a high‑performance, isolated sandbox for binary analysis and safe execution."
+        ],
+        "icon": {
+            "text": "B",
+            "color": "#334155",
+            "logo": null
+        },
+        "category": "developer-tools",
+        "categories": [
+            "developer-tools"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/AdvDebug/Brovan#license",
+        "official_website": null,
+        "download_page": "https://github.com/AdvDebug/Brovan/releases/tag/Brovan_1.1",
+        "repository_url": "https://github.com/AdvDebug/Brovan",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/AdvDebug/Brovan/blob/main/Brovan.Android/Brovan.Android.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/AdvDebug/Brovan/blob/main/Brovan.Android/Brovan.Android.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/AdvDebug/Brovan/blob/main/Brovan.Android/Brovan.Android.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/AdvDebug/Brovan/blob/main/Brovan.Android/Brovan.Android.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/AdvDebug/Brovan/blob/main/Brovan.Android/Brovan.Android.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": null,
+        "release_date": null,
+        "release_url": "https://github.com/AdvDebug/Brovan/releases/tag/Brovan_1.1",
+        "primary_download": {
+            "url": "https://github.com/AdvDebug/Brovan/releases/download/Brovan_1.1/Brovan-win64.zip",
+            "filename": "Brovan-win64.zip",
+            "size": 4252923,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
+        "download_assets": [
+            {
+                "label": "Brovan-linux64.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "x64",
+                "url": "https://github.com/AdvDebug/Brovan/releases/download/Brovan_1.1/Brovan-linux64.zip",
+                "size": 44775911,
+                "sha256": "5b645a79804f2411654c42bd93d647d34597100a06c4e83ee1b0eaadf6e5d736"
+            },
+            {
+                "label": "Brovan-win64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/AdvDebug/Brovan/releases/download/Brovan_1.1/Brovan-win64.zip",
+                "size": 4252923,
+                "sha256": "9a9ad9ae91ad6cf7429975c8b5473ea999c11f2a99fb209e634c9883de437025"
+            }
+        ],
+        "features": [
+            "Load and run Windows PE or Linux ELF binaries without installing them on the host.",
+            "Translate DirectX graphics calls to Vulkan for rendering graphical programs.",
+            "Trace system calls, API functions and loaded DLLs in real time.",
+            "Capture and export network traffic from the emulated program as PCAP files.",
+            "Use hardware acceleration via WHP on Windows or KVM on Linux for faster execution.",
+            "Inspect memory regions and manage allocations during a session.",
+            "Run raw shellcode or memory dumps directly in the emulator.",
+            "Supports cross‑platform execution, allowing Linux binaries to run on Windows."
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Brovan\" button on this page. Your browser saves Brovan-win64.zip (4.1 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the Brovan program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive."
+        ],
+        "related_software": [
+            "openagentd",
+            "jenv",
+            "windbg-mcp",
+            "deepseek-harness-desktop",
+            "axe",
+            "qwen-code",
+            "estella",
+            "kjarni",
+            "sheprd",
+            "mcp-windows",
+            "gptme",
+            "pi-rust"
+        ],
+        "seo_title": "Brovan Free Download for Windows 10/11",
+        "meta_description": "Download Brovan free for Windows 10/11. Brovan is a user‑mode x86_64 emulator that lets you run, trace and analyze Windows and Linux binaries on Windows, Linux…",
+        "canonical_url": "https://codehimblog.github.io/software/brovan/",
+        "date_added": "2026-11-18",
         "last_verified_at": null,
         "verification_status": "partial"
     },
@@ -2892,7 +3020,7 @@
             "openecraft",
             "typewhisper-win",
             "orcaslicer",
-            "voxtype"
+            "steamtools"
         ],
         "seo_title": "Codecast Free Download for Windows 10/11",
         "meta_description": "Download Codecast free for Windows 10/11. Codecast is a desktop workspace that lets teams collaborate with AI coding agents, combining chat, calls, tasks, docu…",
@@ -4025,14 +4153,14 @@
         ],
         "related_software": [
             "gptme",
-            "qwen-code",
             "pi-rust",
             "servo",
-            "mcp-windows",
+            "qwen-code",
             "yengi",
+            "mcp-windows",
             "axe",
-            "openagentd",
             "deepseek-harness-desktop",
+            "openagentd",
             "sheprd",
             "kjarni",
             "windbg-mcp"
@@ -4292,7 +4420,7 @@
             "openfilm",
             "weftcut",
             "vlc-portable",
-            "phiola"
+            "scarlet"
         ],
         "seo_title": "FFmpeg GUI Editor Windows Free Download for Windows 11 and 10",
         "meta_description": "Download FFmpeg GUI Editor Windows free for Windows 11 and 10. A lightweight portable graphical front‑end for FFmpeg that lets Windows users trim, crop, compre…",
@@ -5937,8 +6065,8 @@
             "pi-rust",
             "mcp-windows",
             "yengi",
-            "windbg-mcp",
             "axe",
+            "windbg-mcp",
             "sheprd"
         ],
         "seo_title": "Headroom Desktop Free Download for Windows 10",
@@ -6050,8 +6178,8 @@
             "photoslide",
             "sharex",
             "picasapy",
-            "rigby2d",
             "greycard",
+            "rigby2d",
             "chroma-app",
             "photosplice"
         ],
@@ -6676,17 +6804,17 @@
         ],
         "related_software": [
             "axe",
+            "brovan",
             "mcp-windows",
             "deepseek-harness-desktop",
             "gptme",
-            "sheprd",
             "openagentd",
             "kjarni",
+            "sheprd",
             "windbg-mcp",
             "tokentracker",
             "headroom-desktop",
-            "yengi",
-            "estella"
+            "yengi"
         ],
         "seo_title": "Jenv Free Download for Windows",
         "meta_description": "Download Jenv free for Windows. Jenv is a command‑line tool that lets you manage multiple Java versions on your computer, allowing easy switching, adding, and…",
@@ -6986,8 +7114,8 @@
             "deepseek-harness-desktop",
             "qwen-code",
             "servo",
-            "headroom-desktop",
             "pi-rust",
+            "headroom-desktop",
             "mcp-windows",
             "estella",
             "yengi",
@@ -7563,12 +7691,160 @@
             "typewhisper-win",
             "woohaa3",
             "steamtools",
-            "deckcraft"
+            "deckcraft",
+            "murmure",
+            "ciyue"
         ],
         "seo_title": "LibreGet Free Download for Windows",
         "meta_description": "Download LibreGet free for Windows. LibreGet is a free open‑source download manager and media toolbox for Windows that can download files from courses, YouTube…",
         "canonical_url": "https://codehimblog.github.io/software/libreget/",
         "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "libresvip",
+        "name": "LibreSVIP",
+        "slug": "libresvip",
+        "summary": "A universal converter for many Singing Voice Synthesis project formats.",
+        "description": [
+            "LibreSVIP lets you open and convert singing voice synthesis project files between a wide range of formats. It works on Windows with a ready‑to‑run desktop version, so you don’t need to install Python or other tools.",
+            "The program supports dozens of SVS project formats used by different voice synthesis software. You can load a project, choose a target format, and export the data with a single click. The desktop version provides a graphical interface that guides you through selecting source files, choosing output options, and saving the converted project. It is aimed at singers, voice‑synthesis hobbyists, and anyone who needs to move projects between different SVS tools."
+        ],
+        "icon": {
+            "text": "L",
+            "color": "#2563EB",
+            "logo": "/assets/icons/libresvip.png?v=f2ad4520"
+        },
+        "category": "file-management",
+        "categories": [
+            "file-management"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "MIT License",
+        "license_family": "permissive",
+        "license_url": "https://github.com/SoulMelody/LibreSVIP#license",
+        "official_website": "https://soulmelody.github.io/LibreSVIP/",
+        "download_page": "https://github.com/SoulMelody/LibreSVIP/releases/tag/v2.9.2",
+        "repository_url": "https://github.com/SoulMelody/LibreSVIP",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/SoulMelody/LibreSVIP/releases/tag/v2.9.2",
+                "note": "Current Windows download."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/SoulMelody/LibreSVIP/releases/tag/v2.9.2",
+                "note": "Current Windows download."
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "2.9.2",
+        "release_date": "2026-10-10",
+        "release_url": "https://github.com/SoulMelody/LibreSVIP/releases/tag/v2.9.2",
+        "primary_download": {
+            "url": "https://github.com/SoulMelody/LibreSVIP/releases/download/v2.9.2/LibreSVIP-2.9.2-AMD64.exe",
+            "filename": "LibreSVIP-2.9.2-AMD64.exe",
+            "size": 68274770,
+            "architecture": "x64",
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "LibreSVIP-2.9.2-AMD64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/SoulMelody/LibreSVIP/releases/download/v2.9.2/LibreSVIP-2.9.2-AMD64.exe",
+                "size": 68274770,
+                "sha256": "24fa40bee4c2240dd61890dcdda9922120d29c92a9a16074828f60cda5b01b36"
+            },
+            {
+                "label": "LibreSVIP-2.9.2-ARM64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "ARM64",
+                "url": "https://github.com/SoulMelody/LibreSVIP/releases/download/v2.9.2/LibreSVIP-2.9.2-ARM64.exe",
+                "size": 57373432,
+                "sha256": "8fb382444137a43aa4d33913e21abaac99e6c71e655f601810ffd86db36f92f2"
+            },
+            {
+                "label": "LibreSVIP-msys2-ucrt64-2.9.2-AMD64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/SoulMelody/LibreSVIP/releases/download/v2.9.2/LibreSVIP-msys2-ucrt64-2.9.2-AMD64.exe",
+                "size": 67515336,
+                "sha256": "bf2dcc6a1dff241d2098f8884a81643217104fc6cc6370da3e5c393a1c2ee906"
+            },
+            {
+                "label": "LibreSVIP-CLI-2.9.2.win-amd64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/SoulMelody/LibreSVIP/releases/download/v2.9.2/LibreSVIP-CLI-2.9.2.win-amd64.zip",
+                "size": 37001401,
+                "sha256": "eb4321274f58b4080ffd545b63f0ef9191b0da130664f6bb5de314b6440d9dcd"
+            },
+            {
+                "label": "LibreSVIP-CLI-2.9.2.win-arm64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "ARM64",
+                "url": "https://github.com/SoulMelody/LibreSVIP/releases/download/v2.9.2/LibreSVIP-CLI-2.9.2.win-arm64.zip",
+                "size": 32768156,
+                "sha256": "504013cd3c6ad9003fd5ccd97c262fb3893cc8c7c3c4bbab886ec97e2b051bce"
+            },
+            {
+                "label": "LibreSVIP-CLI-2.9.2.win-x86.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x86",
+                "url": "https://github.com/SoulMelody/LibreSVIP/releases/download/v2.9.2/LibreSVIP-CLI-2.9.2.win-x86.zip",
+                "size": 34237667,
+                "sha256": "10b63b8af2877ba13aac68ac7d6db5cf4a9f6a831e4aaed0518748a1287eff4b"
+            }
+        ],
+        "features": [
+            "Open singing‑voice project files from many different SVS applications",
+            "Convert projects to another format with one click",
+            "Preserve pitch, lyrics, and timing information during conversion",
+            "Simple graphical interface for selecting files and output format",
+            "Works out of the box without requiring Python installation"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download LibreSVIP\" button on this page. Your browser saves LibreSVIP-2.9.2-AMD64.exe (65.1 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start LibreSVIP. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\LibreSVIP) so it is easy to find next time."
+        ],
+        "related_software": [
+            "warpinator-windows",
+            "7-zip",
+            "altered-audio-editor",
+            "phiola"
+        ],
+        "seo_title": "LibreSVIP Free Download for Windows 10/11",
+        "meta_description": "Download LibreSVIP free for Windows 10/11. A universal converter for many Singing Voice Synthesis project formats.",
+        "canonical_url": "https://codehimblog.github.io/software/libresvip/",
+        "date_added": "2026-11-18",
         "last_verified_at": null,
         "verification_status": "partial"
     },
@@ -8226,8 +8502,8 @@
         ],
         "related_software": [
             "voxtype",
-            "scribe",
             "typewhisper-win",
+            "scribe",
             "arara-voice",
             "murmure",
             "ciyue",
@@ -8492,8 +8768,8 @@
             "pymusicplayer",
             "riff",
             "af-media-bar",
-            "aurora",
             "vlc-win10smtc",
+            "aurora",
             "pylon-player",
             "waves"
         ],
@@ -10433,8 +10709,8 @@
         ],
         "related_software": [
             "fk-desktop",
-            "spacewave",
             "aula",
+            "spacewave",
             "voxtype",
             "steamtools",
             "scribe",
@@ -10923,8 +11199,8 @@
             "headroom-desktop",
             "mcp-windows",
             "openagentd",
-            "electerm",
-            "estella"
+            "brovan",
+            "electerm"
         ],
         "seo_title": "Notepad++ for Windows – Free Open-Source Code & Text Editor",
         "meta_description": "Notepad++ is a free, open-source code and text editor for Windows. See features, Windows compatibility notes, download formats and official sources.",
@@ -11472,9 +11748,9 @@
             "windbg-mcp",
             "electerm",
             "tokentracker",
+            "brovan",
             "estella",
-            "axe",
-            "mcp-windows"
+            "axe"
         ],
         "seo_title": "OpenAgentd Free Download for Windows 10/11",
         "meta_description": "Download OpenAgentd free for Windows 10/11. OpenAgentd is a desktop application that runs a coding assistant locally, showing every tool call, file change and…",
@@ -12498,8 +12774,8 @@
             "waveflow",
             "obs-studio",
             "waves",
-            "polyphone",
             "screenrecorder",
+            "polyphone",
             "meowsic"
         ],
         "seo_title": "phiola Free Download for Windows 7",
@@ -12783,7 +13059,7 @@
             "sculptforge",
             "rembrandt",
             "procraft",
-            "photoslide"
+            "ferrumpix"
         ],
         "seo_title": "PhotoCraft Companion Free Download for Windows 10/11",
         "meta_description": "Download PhotoCraft Companion free for Windows 10/11. An extensible companion for the PhotoCraft graphics editor that adds AI-powered tools, a floating tool pa…",
@@ -13920,8 +14196,8 @@
             "axe",
             "sheprd",
             "estella",
-            "kjarni",
             "headroom-desktop",
+            "kjarni",
             "yengi",
             "mcp-windows",
             "electerm"
@@ -14223,7 +14499,7 @@
             "agentshot",
             "frame-player",
             "l-mpv",
-            "polyphone"
+            "metrolist"
         ],
         "seo_title": "ReelTerminal Free Download for Windows 10/11",
         "meta_description": "Download ReelTerminal free for Windows 10/11. ReelTerminal is a video editing tool designed for collaborative workflows with AI assistants, letting users edit…",
@@ -15611,8 +15887,8 @@
         ],
         "related_software": [
             "arara-voice",
-            "loudr",
             "voxtype",
+            "loudr",
             "typewhisper-win",
             "murmure",
             "sakura",
@@ -16046,9 +16322,9 @@
             "axe",
             "windbg-mcp",
             "yengi",
+            "brovan",
             "openagentd",
-            "mcp-windows",
-            "notepad-plus-plus"
+            "mcp-windows"
         ],
         "seo_title": "Servo Free Download for Windows",
         "meta_description": "Download Servo free for Windows. Servo is an experimental web browser engine written in Rust that can run web pages and be used for testing web technologies on…",
@@ -16190,8 +16466,8 @@
             "lap",
             "rembrandt",
             "optiscaler",
-            "lightzone",
             "woohaa3",
+            "lightzone",
             "greycard"
         ],
         "seo_title": "ShareX for Windows – Free Open-Source Screen Capture Tool",
@@ -16339,7 +16615,7 @@
             "windbg-mcp",
             "notepad-plus-plus",
             "axe",
-            "jenv"
+            "servo"
         ],
         "seo_title": "Sheprd Free Download for Windows 10/11",
         "meta_description": "Download Sheprd free for Windows 10/11. A native Windows client that lets you view and manage terminal sessions, Git worktrees, and AI agent activity through a…",
@@ -17888,18 +18164,18 @@
             "If SmartScreen blocks it, click “More info” then “Run anyway”."
         ],
         "related_software": [
-            "fooyin",
             "pymusicplayer",
+            "fooyin",
             "pylon-player",
-            "ffmpeg-gui-editor-windows",
             "autosubsync",
+            "ffmpeg-gui-editor-windows",
             "nagi",
             "waves",
             "polyphone",
             "vlc-win10smtc",
             "tauon",
             "frame-player",
-            "phiola"
+            "screenrecorder"
         ],
         "seo_title": "TuneFree Free Download for Windows 10",
         "meta_description": "Download TuneFree free for Windows 10. A tool that decrypts QQ Music's encrypted .mflac and .mgg files and converts them to MP3 or FLAC on Windows.",
@@ -18018,8 +18294,8 @@
             "lime",
             "voxtype",
             "codecast",
-            "steamtools",
             "deckcraft",
+            "steamtools",
             "ciyue",
             "sakura"
         ],
@@ -18928,13 +19204,13 @@
         ],
         "related_software": [
             "vlc-redesign",
+            "lyrenne",
             "af-media-bar",
             "pylon-player",
             "pymusicplayer",
             "skrin",
             "vlc-lyrics-finder",
             "vlc-portable",
-            "lyrenne",
             "vlc-rpc",
             "masterpiece",
             "waves",
@@ -19052,8 +19328,8 @@
             "metrolist",
             "pymusicplayer",
             "vlc-redesign",
-            "reelterminal",
             "skrin",
+            "reelterminal",
             "polyphone"
         ],
         "seo_title": "VLC-RPC Free Download for Windows 10/11",
@@ -19174,7 +19450,7 @@
             "orca",
             "typewhisper-win",
             "youboard",
-            "spacewave"
+            "codecast"
         ],
         "seo_title": "VoxType Free Download for Windows 10",
         "meta_description": "Download VoxType free for Windows 10. Privacy‑focused open‑source AI voice typing for Windows.",
@@ -19298,6 +19574,7 @@
         ],
         "related_software": [
             "7-zip",
+            "libresvip",
             "motty"
         ],
         "seo_title": "Warpinator Windows Free Download for Windows 7",
@@ -20035,12 +20312,12 @@
             "pi-rust",
             "tokentracker",
             "sheprd",
+            "brovan",
             "yengi",
             "estella",
             "gptme",
             "qwen-code",
-            "deepseek-harness-desktop",
-            "headroom-desktop"
+            "deepseek-harness-desktop"
         ],
         "seo_title": "windbg-mcp Free Download for Windows",
         "meta_description": "Download windbg-mcp free for Windows. A server that exposes WinDbg/DbgEng debugging capabilities to AI agents via standard input/output or HTTP.",
