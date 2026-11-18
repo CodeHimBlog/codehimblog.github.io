@@ -167,6 +167,7 @@
         "related_software": [
             "keepassxc",
             "warpinator-windows",
+            "file-converter-pro",
             "libresvip",
             "notepad-plus-plus",
             "sharex"
@@ -562,10 +563,10 @@
             "reelterminal",
             "lossless-cut",
             "real-video-enhancer",
+            "raidenvideoripper",
             "altered-audio-editor",
             "weftcut",
-            "filmcraft",
-            "frame-player"
+            "filmcraft"
         ],
         "seo_title": "AgentShot Free Download for Windows",
         "meta_description": "Download AgentShot free for Windows. AgentShot is an open‑source AI‑powered video editor that lets you edit footage by speaking commands or pointing at frames,…",
@@ -822,8 +823,8 @@
         "related_software": [
             "cutlass",
             "filmcraft",
-            "reelterminal",
             "weftcut",
+            "reelterminal",
             "l-mpv",
             "auto-editor",
             "riff",
@@ -947,19 +948,136 @@
             "nagi",
             "motionbox",
             "iptvnator",
-            "skrin",
             "obs-studio",
+            "skrin",
             "reelterminal",
             "fooyin",
             "melodia",
-            "pylon-player",
             "aurora",
+            "pylon-player",
             "waves"
         ],
         "seo_title": "Animeko Free Download for Windows",
         "meta_description": "Download Animeko free for Windows. Animeko is a free, open‑source desktop app for tracking, streaming and downloading anime episodes with cloud sync, multiple…",
         "canonical_url": "https://codehimblog.github.io/software/animeko/",
         "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "any-to-any-py",
+        "name": "any_to_any.py",
+        "slug": "any-to-any-py",
+        "summary": "Universal media converter that can convert, merge, concatenate and resize a wide range of audio, video, image and document formats on Windows.",
+        "description": [
+            "any_to_any.py lets you change files from one format to another, combine several files into one, split them or adjust video resolution. It works through a command line, a web page or a simple graphical interface, so you can choose the method that feels most comfortable.",
+            "The program supports many popular formats such as MP3, MP4, M4A, WAV, FLAC, AVI, MKV, PNG, JPG, GIF, PDF and more. You can run it as a command‑line tool for full control, open a local web page to use it from a browser, or launch a drag‑and‑drop GUI that shows progress and advanced options. The GUI lets you select input files or folders, choose the output format, set quality, resize videos, and merge or concatenate files without writing any code. The web interface works the same way but runs in your browser at http://localhost:5000. The tool relies on ffmpeg for the actual conversion, which must be installed separately and added to the system PATH."
+        ],
+        "icon": {
+            "text": "A",
+            "color": "#BE123C",
+            "logo": "/assets/icons/any-to-any-py.png?v=f4085abf"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU Affero General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/MK2112/any_to_any.py#license",
+        "official_website": null,
+        "download_page": "https://github.com/MK2112/any_to_any.py/releases/tag/v1.1.8",
+        "repository_url": "https://github.com/MK2112/any_to_any.py",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/MK2112/any_to_any.py#readme",
+                "note": "Named in the README."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/MK2112/any_to_any.py#readme",
+                "note": "Named in the README."
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.1.8",
+        "release_date": "2026-11-10",
+        "release_url": "https://github.com/MK2112/any_to_any.py/releases/tag/v1.1.8",
+        "primary_download": {
+            "url": "https://github.com/MK2112/any_to_any.py/releases/download/v1.1.8/AnyToAny-1.1.8_windows.zip",
+            "filename": "AnyToAny-1.1.8_windows.zip",
+            "size": 97405422,
+            "architecture": null,
+            "format": "Portable ZIP"
+        },
+        "download_assets": [
+            {
+                "label": "AnyToAny-1.1.8_windows.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/MK2112/any_to_any.py/releases/download/v1.1.8/AnyToAny-1.1.8_windows.zip",
+                "size": 97405422,
+                "sha256": "1d2f95e5c37bb9b9cc20780ee50e11f2c4e82ed6d47f5e44a32cd2cda51fcd08"
+            }
+        ],
+        "features": [
+            "Convert audio, video, image and document files between dozens of formats",
+            "Merge multiple files into one or concatenate them sequentially",
+            "Resize video files and change resolution while converting",
+            "Choose output quality for lossy formats",
+            "Use a simple drag‑and‑drop graphical interface for batch processing",
+            "Access the same features through a local web page or command line",
+            "Supports batch conversion of whole folders",
+            "Preserves metadata such as EXIF, PDF tags and subtitles when possible"
+        ],
+        "requirements": [
+            "Python 3.10 or newer installed",
+            "ffmpeg executable available in the system PATH",
+            "At least a few megabytes of free RAM for processing files"
+        ],
+        "installation_instructions": [
+            "Click the \"Download any_to_any.py\" button on this page. Your browser saves AnyToAny-1.1.8_windows.zip (92.9 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the any_to_any.py program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
+            "After first launch, ensure ffmpeg is installed and its \\bin folder is added to the system PATH as described in the documentation"
+        ],
+        "related_software": [
+            "lossless-cut",
+            "screenbox",
+            "onlym",
+            "pylon-player",
+            "ffmpeg-gui-editor-windows",
+            "phiola",
+            "tunefree",
+            "real-video-enhancer",
+            "videolow",
+            "autosubsync",
+            "skrin",
+            "waveflow"
+        ],
+        "seo_title": "any_to_any.py Free Download for Windows 10/11",
+        "meta_description": "Download any_to_any.py free for Windows 10/11. Universal media converter that can convert, merge, concatenate and resize a wide range of audio, video, image an…",
+        "canonical_url": "https://codehimblog.github.io/software/any-to-any-py/",
+        "date_added": "2026-11-18",
         "last_verified_at": null,
         "verification_status": "partial"
     },
@@ -1604,7 +1722,7 @@
             "sakura",
             "noobot",
             "klinechartquant",
-            "voxtype"
+            "steamtools"
         ],
         "seo_title": "Aula Free Download for Windows 10/11",
         "meta_description": "Download Aula free for Windows 10/11. A free, open‑source desktop study app that turns your lecture notes, slides, PDFs or exam files into AI‑generated lessons…",
@@ -1739,13 +1857,13 @@
             "pymusicplayer",
             "riff",
             "traydio",
+            "skrin",
             "lyrenne",
             "melodia",
             "metrolist",
             "nagi",
             "phiola",
             "waveflow",
-            "skrin",
             "waves"
         ],
         "seo_title": "Aurora Free Download for Windows",
@@ -1863,14 +1981,14 @@
             "openfilm",
             "reelterminal",
             "scarlet",
-            "weftcut",
             "agentshot",
             "altered-audio-editor",
             "ffmpeg-gui-editor-windows",
             "lossless-cut",
+            "weftcut",
+            "raidenvideoripper",
             "videolow",
-            "amber",
-            "filmcraft"
+            "amber"
         ],
         "seo_title": "Auto-Editor Free Download for Windows",
         "meta_description": "Download Auto-Editor free for Windows. A command‑line tool that automatically trims and edits video and audio files based on silence, volume and motion detecti…",
@@ -2094,16 +2212,16 @@
         ],
         "related_software": [
             "pylon-player",
+            "any-to-any-py",
             "frame-player",
             "tunefree",
-            "reelterminal",
             "openfilm",
+            "reelterminal",
+            "scarlet",
             "cutlass",
             "tauon",
-            "scarlet",
             "polyphone",
             "animeko",
-            "videolow",
             "l-mpv"
         ],
         "seo_title": "AutoSubSync Free Download for Windows",
@@ -2365,11 +2483,11 @@
             "immage",
             "procraft",
             "sculptforge",
-            "greycard",
             "ferrumpix",
+            "greycard",
             "pancakeslicer",
-            "chroma-app",
             "hycanvas",
+            "chroma-app",
             "photoslide"
         ],
         "seo_title": "BenchUp Free Download for Windows 10/11",
@@ -2520,7 +2638,7 @@
             "universal-intel-chipset-updater",
             "luciddesk",
             "mouse-point-viewer",
-            "astraeus"
+            "ima-menu"
         ],
         "seo_title": "BleachBit Free Download for Windows",
         "meta_description": "Download BleachBit free for Windows. BleachBit is a system cleaner that removes unnecessary files to free disk space and protect privacy.",
@@ -2646,8 +2764,8 @@
             "kjarni",
             "sheprd",
             "mcp-windows",
-            "gptme",
-            "pi-rust"
+            "pi-rust",
+            "gptme"
         ],
         "seo_title": "Brovan Free Download for Windows 10/11",
         "meta_description": "Download Brovan free for Windows 10/11. Brovan is a user‑mode x86_64 emulator that lets you run, trace and analyze Windows and Linux binaries on Windows, Linux…",
@@ -2763,11 +2881,11 @@
             "picasapy",
             "rembrandt",
             "greycard",
+            "vitrine",
             "lightzone",
             "rawmakase",
             "lightcraft",
-            "formatix",
-            "procraft"
+            "formatix"
         ],
         "seo_title": "Chromasmith Free Download for Windows 10",
         "meta_description": "Download Chromasmith free for Windows 10. Chromasmith is a free offline photo editor that offers film‑style looks, grain, halation, RAW development and basic r…",
@@ -3181,8 +3299,8 @@
             "aula",
             "handwriting-ocr-scriptreader",
             "openecraft",
-            "typewhisper-win",
             "orcaslicer",
+            "typewhisper-win",
             "steamtools"
         ],
         "seo_title": "Codecast Free Download for Windows 10/11",
@@ -3326,9 +3444,9 @@
             "ffmpeg-gui-editor-windows",
             "openfilm",
             "amber",
+            "raidenvideoripper",
             "scarlet",
-            "lossless-cut",
-            "pylon-player"
+            "lossless-cut"
         ],
         "seo_title": "Cutlass Free Download for Windows",
         "meta_description": "Download Cutlass free for Windows. Cutlass is a free, open‑source video editor that lets you edit footage on a timeline and also offers an AI assistant you can…",
@@ -4001,6 +4119,117 @@
         "verification_status": "partial"
     },
     {
+        "id": "dygtube",
+        "name": "DYGTube",
+        "slug": "dygtube",
+        "summary": "Download MP3 and MP4 files from online video services using a simple Windows interface.",
+        "description": [
+            "DYGTube is a free program that lets you save audio (MP3) and video (MP4) files from websites to your computer. It provides a graphical interface that is easy to use for anyone who wants to keep a copy of online media for offline viewing or listening.",
+            "The application runs on Windows and offers a friendly, intuitive window where you can paste a video URL, choose the format (MP3 or MP4), and start the download. It handles the conversion and saving process automatically, so you do not need separate tools. The project is open source under GPL‑2.0 and is free to use."
+        ],
+        "icon": {
+            "text": "D",
+            "color": "#BE123C",
+            "logo": null
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v2.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/JuanBindez/DYGTube#license",
+        "official_website": null,
+        "download_page": "https://github.com/JuanBindez/DYGTube/releases/tag/v8.0.1",
+        "repository_url": "https://github.com/JuanBindez/DYGTube",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/JuanBindez/DYGTube/releases/tag/v8.0.1",
+                "note": "A download is built for this version."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/JuanBindez/DYGTube/releases/tag/v8.0.1",
+                "note": "A download is built for this version."
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "8.0.1",
+        "release_date": "2026-06-23",
+        "release_url": "https://github.com/JuanBindez/DYGTube/releases/tag/v8.0.1",
+        "primary_download": {
+            "url": "https://github.com/JuanBindez/DYGTube/releases/download/v8.0.1/DYGTube-v8.0.1-win10-x86_64.exe",
+            "filename": "DYGTube-v8.0.1-win10-x86_64.exe",
+            "size": 9792670,
+            "architecture": "x64",
+            "format": "EXE (type not confirmed)"
+        },
+        "download_assets": [
+            {
+                "label": "DYGTube-v8.0.1-win10-x86_64.exe",
+                "format": "EXE (type not confirmed)",
+                "kind": "installer",
+                "architecture": "x64",
+                "url": "https://github.com/JuanBindez/DYGTube/releases/download/v8.0.1/DYGTube-v8.0.1-win10-x86_64.exe",
+                "size": 9792670,
+                "sha256": "c9826334b719502463b5354f134a2eb05e5dbd33b34814a2bb68ff7431e8e450"
+            }
+        ],
+        "features": [
+            "Paste a video link and download the audio as MP3.",
+            "Paste a video link and download the video as MP4.",
+            "Simple graphical interface with clear buttons.",
+            "Shows download progress and file size.",
+            "Saves files to a default folder you can change.",
+            "Works without needing to install additional codecs.",
+            "Free and open‑source software."
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download DYGTube\" button on this page. Your browser saves DYGTube-v8.0.1-win10-x86_64.exe (9.3 MB), usually to your Downloads folder.",
+            "Double-click the downloaded file to start DYGTube. It runs without installation; if Windows shows a security prompt, check that the file came from this page before you continue.",
+            "Optional: move the file to a folder of its own (for example Documents\\DYGTube) so it is easy to find next time."
+        ],
+        "related_software": [
+            "raidenvideoripper",
+            "lossless-cut",
+            "skrin",
+            "scarlet",
+            "frame-player",
+            "openfilm",
+            "any-to-any-py",
+            "motionbox",
+            "tunefree",
+            "screenrecorder",
+            "filmcraft",
+            "videolow"
+        ],
+        "seo_title": "DYGTube Free Download for Windows 10/11",
+        "meta_description": "Download DYGTube free for Windows 10/11. Download MP3 and MP4 files from online video services using a simple Windows interface.",
+        "canonical_url": "https://codehimblog.github.io/software/dygtube/",
+        "date_added": "2026-11-18",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "ed-unofficial-patch",
         "name": "ED Unofficial Patch",
         "slug": "ed-unofficial-patch",
@@ -4140,8 +4369,10 @@
             "Press F8 in the game to open the settings menu for the upscaler."
         ],
         "related_software": [
+            "recompia",
             "starluxe",
             "rubylight",
+            "the-last-guardian-definitive",
             "foundation-sunshine",
             "moonlight-qt",
             "openkumite",
@@ -4474,8 +4705,8 @@
             "pi-rust",
             "qwen-code",
             "servo",
-            "mcp-windows",
             "yengi",
+            "mcp-windows",
             "axe",
             "openagentd",
             "deepseek-harness-desktop",
@@ -4620,7 +4851,7 @@
             "lightcraft",
             "photocraft",
             "photosplice",
-            "woohaa3"
+            "vitrine"
         ],
         "seo_title": "FerrumPix Free Download for Windows",
         "meta_description": "Download FerrumPix free for Windows. FerrumPix is a desktop photo manager and image editor that lets you organize, view, and edit photos on your computer.",
@@ -4730,21 +4961,137 @@
             "cutlass",
             "reelterminal",
             "agentshot",
+            "any-to-any-py",
             "auto-editor",
             "lossless-cut",
+            "raidenvideoripper",
             "videolow",
             "pylon-player",
             "altered-audio-editor",
-            "tunefree",
             "openfilm",
-            "weftcut",
-            "vlc-portable"
+            "tunefree"
         ],
         "seo_title": "FFmpeg GUI Editor Windows Free Download for Windows 11 and 10",
         "meta_description": "Download FFmpeg GUI Editor Windows free for Windows 11 and 10. A lightweight portable graphical front‑end for FFmpeg that lets Windows users trim, crop, compre…",
         "canonical_url": "https://codehimblog.github.io/software/ffmpeg-gui-editor-windows/",
         "date_added": "2026-11-15",
         "last_verified_at": "2026-11-15",
+        "verification_status": "verified"
+    },
+    {
+        "id": "file-converter-pro",
+        "name": "File Converter Pro",
+        "slug": "file-converter-pro",
+        "summary": "Free offline all‑in‑one file converter for Windows that handles documents, images, audio and video without uploading anything.",
+        "description": [
+            "File Converter Pro is a desktop program that lets you convert many types of files on your computer. It works without an internet connection and does not send your files anywhere, keeping your data private. The interface supports dark and light themes and shows conversion statistics.",
+            "The application supports converting documents such as PDF, DOCX, ODT and others, image formats including JPEG, PNG, HEIC and AVIF, audio files like MP3 and WAV, and video files such as MP4 and AVI. You can drag and drop files, select multiple items for batch conversion, or use the Windows context‑menu to convert a file directly. The program can watch folders and run scheduled conversions in the background. It includes a statistics dashboard and achievement system that tracks how many files you have converted. All required libraries are bundled, so no separate runtime installation is needed."
+        ],
+        "icon": {
+            "text": "F",
+            "color": "#B45309",
+            "logo": "/assets/icons/file-converter-pro.png?v=553f5def"
+        },
+        "category": "file-management",
+        "categories": [
+            "file-management"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/Hyacinthe-primus/File-Converter-Pro#license",
+        "official_website": "https://file-converter-pro.org/",
+        "download_page": "https://github.com/Hyacinthe-primus/File-Converter-Pro/releases/tag/v1.0.8",
+        "repository_url": "https://github.com/Hyacinthe-primus/File-Converter-Pro",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Hyacinthe-primus/File-Converter-Pro#readme",
+                "note": "Named in the README."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Hyacinthe-primus/File-Converter-Pro#readme",
+                "note": "Stated in the project README: “Windows 10 / 11 (64-bit).”"
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.0.8",
+        "release_date": "2026-11-09",
+        "release_url": "https://github.com/Hyacinthe-primus/File-Converter-Pro/releases/tag/v1.0.8",
+        "primary_download": {
+            "url": "https://github.com/Hyacinthe-primus/File-Converter-Pro/releases/download/v1.0.8/FileConverterPro_Setup_v1.0.8.exe",
+            "filename": "FileConverterPro_Setup_v1.0.8.exe",
+            "size": 130600441,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "File_Converter_Pro_v1.0.8.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": null,
+                "url": "https://github.com/Hyacinthe-primus/File-Converter-Pro/releases/download/v1.0.8/File_Converter_Pro_v1.0.8.zip",
+                "size": 144495655,
+                "sha256": "60cbebf1a465bfa066f9c3202bab38eac428a8144cf3e7f6e1a8b979779fa9d6"
+            },
+            {
+                "label": "FileConverterPro_Setup_v1.0.8.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/Hyacinthe-primus/File-Converter-Pro/releases/download/v1.0.8/FileConverterPro_Setup_v1.0.8.exe",
+                "size": 130600441,
+                "sha256": "c6ecbd39f89a14a9964211987655669989e3edd3586f68f3c5fb05cf58ff541a"
+            }
+        ],
+        "features": [
+            "Convert documents, images, audio and video files in one place",
+            "Drag‑and‑drop or batch conversion for multiple files",
+            "Right‑click any supported file in Windows Explorer to convert instantly",
+            "Folder‑watch mode that automatically converts new files",
+            "Dark and light themes with a modern interface",
+            "Statistics dashboard and gamified achievements",
+            "Offline operation with no internet or telemetry required"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download File Converter Pro\" button on this page. Your browser saves FileConverterPro_Setup_v1.0.8.exe (124.6 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start File Converter Pro from the Start menu or the desktop shortcut."
+        ],
+        "related_software": [
+            "libresvip",
+            "warpinator-windows",
+            "7-zip",
+            "any-to-any-py",
+            "formatix",
+            "libreget",
+            "phiola",
+            "wynpix"
+        ],
+        "seo_title": "File Converter Pro Free Download for Windows 10/11",
+        "meta_description": "Download File Converter Pro free for Windows 10/11. Free offline all‑in‑one file converter for Windows that handles documents, images, audio and video without…",
+        "canonical_url": "https://codehimblog.github.io/software/file-converter-pro/",
+        "date_added": "2026-11-18",
+        "last_verified_at": "2026-11-18",
         "verification_status": "verified"
     },
     {
@@ -4889,9 +5236,9 @@
             "altered-audio-editor",
             "auto-editor",
             "scarlet",
+            "polyphone",
             "onlym",
             "lossless-cut",
-            "polyphone",
             "agentshot",
             "pymusicplayer",
             "melodia"
@@ -5127,9 +5474,9 @@
             "spacewave",
             "youboard",
             "orca",
-            "voxtype",
             "codecast",
             "deckcraft",
+            "voxtype",
             "loudr",
             "klinechartquant",
             "orcaslicer",
@@ -5528,6 +5875,7 @@
             "ferrumpix",
             "optiscaler",
             "photoslide",
+            "wynpix",
             "lightzone",
             "chroma-app",
             "procraft",
@@ -5535,8 +5883,7 @@
             "rawmakase",
             "picasapy",
             "photosplice",
-            "hycanvas",
-            "woohaa3"
+            "hycanvas"
         ],
         "seo_title": "Formatix Image Converter Free Download for Windows",
         "meta_description": "Download Formatix Image Converter free for Windows. A fast, lightweight, offline batch image converter and resizer for Windows that supports many formats and o…",
@@ -5669,14 +6016,15 @@
             "moonlight-qt",
             "rubylight",
             "openkumite",
+            "the-last-guardian-definitive",
             "starluxe",
             "ed-unofficial-patch",
+            "recompia",
             "fly-island",
             "obs-studio",
             "af-media-bar",
-            "orca",
             "motty",
-            "phiola"
+            "orca"
         ],
         "seo_title": "Foundation Sunshine Free Download for Windows 10/11",
         "meta_description": "Download Foundation Sunshine free for Windows 10/11. Foundation Sunshine is a free open‑source remote streaming host that lets you view and control your Window…",
@@ -5840,8 +6188,8 @@
             "pylon-player",
             "skrin",
             "melodia",
-            "iptvnator",
             "aurora",
+            "iptvnator",
             "vlc-portable",
             "reelterminal",
             "onlym"
@@ -6112,13 +6460,13 @@
             "immage",
             "lap",
             "photoslide",
-            "picasapy",
             "rembrandt",
+            "picasapy",
             "lightcraft",
+            "vitrine",
+            "wynpix",
             "lightzone",
-            "rawmakase",
-            "photocraft",
-            "photosplice"
+            "rawmakase"
         ],
         "seo_title": "Greycard Free Download for Windows",
         "meta_description": "Download Greycard free for Windows. A professional raw photo editor with accurate color, for Linux, macOS and Windows.",
@@ -6496,12 +6844,12 @@
             "pancakeslicer",
             "photocraft-companion",
             "photoslide",
+            "vitrine",
             "sharex",
             "picasapy",
             "greycard",
             "rigby2d",
-            "chroma-app",
-            "photosplice"
+            "chroma-app"
         ],
         "seo_title": "HyCanvas Free Download for Windows 10/11",
         "meta_description": "Download HyCanvas free for Windows 10/11. An open‑source Canva‑like editor that runs in the browser and can be self‑hosted.",
@@ -6713,8 +7061,8 @@
             "apkstart",
             "autorunmanager",
             "fly-island",
-            "astraeus",
             "universal-intel-wifi-bt-updater",
+            "astraeus",
             "quiesce",
             "universal-intel-chipset-updater",
             "sucrose"
@@ -6847,8 +7195,8 @@
             "lightcraft",
             "photocraft",
             "photosplice",
-            "lightzone",
-            "rawmakase"
+            "vitrine",
+            "wynpix"
         ],
         "seo_title": "Immage Free Download for Windows 10/11",
         "meta_description": "Download Immage free for Windows 10/11. Immage is a raw photo editor that provides familiar panels, sliders and shortcuts for editing photos, built on darktabl…",
@@ -6986,8 +7334,8 @@
         "related_software": [
             "bleachbit",
             "quiesce",
-            "winutil-cn",
             "universal-intel-chipset-updater",
+            "winutil-cn",
             "mayfly-go",
             "luciddesk",
             "apkstart",
@@ -7241,8 +7589,8 @@
             "deepseek-harness-desktop",
             "gptme",
             "openagentd",
-            "kjarni",
             "sheprd",
+            "kjarni",
             "tokentracker",
             "windbg-mcp",
             "headroom-desktop",
@@ -7797,15 +8145,15 @@
             "skrin",
             "pymusicplayer",
             "amber",
-            "pylon-player",
             "iptvnator",
+            "pylon-player",
             "riff",
             "melodia",
             "vlc-portable",
             "reelterminal",
             "obs-studio",
-            "frame-player",
-            "fooyin"
+            "fooyin",
+            "frame-player"
         ],
         "seo_title": "L-MPV Free Download for Windows 10/11",
         "meta_description": "Download L-MPV free for Windows 10/11. A modern, lightweight portable video player for Windows built on the MPV engine with a glass‑morphic interface and optio…",
@@ -7948,11 +8296,11 @@
             "greycard",
             "rawmakase",
             "lightcraft",
+            "vitrine",
             "lightzone",
             "immage",
             "formatix",
-            "chroma-app",
-            "open-photo-ai"
+            "chroma-app"
         ],
         "seo_title": "Lap Free Download for Windows",
         "meta_description": "Download Lap free for Windows. An offline-first photo manager for large local libraries",
@@ -8118,15 +8466,16 @@
         "related_software": [
             "studev",
             "desktop-bubble-chat",
+            "any-to-any-py",
             "aula",
             "ferrumpix",
+            "file-converter-pro",
             "metrolist",
             "typewhisper-win",
             "woohaa3",
             "steamtools",
             "deckcraft",
-            "murmure",
-            "ciyue"
+            "murmure"
         ],
         "seo_title": "LibreGet Free Download for Windows",
         "meta_description": "Download LibreGet free for Windows. LibreGet is a free open‑source download manager and media toolbox for Windows that can download files from courses, YouTube…",
@@ -8269,10 +8618,11 @@
             "Optional: move the file to a folder of its own (for example Documents\\LibreSVIP) so it is easy to find next time."
         ],
         "related_software": [
+            "file-converter-pro",
             "warpinator-windows",
             "7-zip",
             "altered-audio-editor",
-            "phiola"
+            "any-to-any-py"
         ],
         "seo_title": "LibreSVIP Free Download for Windows 10/11",
         "meta_description": "Download LibreSVIP free for Windows 10/11. A universal converter for many Singing Voice Synthesis project formats.",
@@ -8421,11 +8771,11 @@
             "picasapy",
             "rawmakase",
             "rembrandt",
+            "vitrine",
             "greycard",
             "chroma-app",
-            "photoslide",
             "lap",
-            "solidcraft"
+            "photoslide"
         ],
         "seo_title": "LightCraft Free Download for Windows",
         "meta_description": "Download LightCraft free for Windows. An open-source non‑destructive photo editor written from scratch in pure Rust.",
@@ -8539,7 +8889,7 @@
             "picasapy",
             "rawmakase",
             "rembrandt",
-            "greycard"
+            "vitrine"
         ],
         "seo_title": "LightZone Free Download for Windows 11",
         "meta_description": "Download LightZone free for Windows 11. LightZone is a professional‑level digital darkroom and photo editor that works with RAW files and offers non‑destructiv…",
@@ -8814,6 +9164,7 @@
         ],
         "related_software": [
             "altered-audio-editor",
+            "any-to-any-py",
             "reelterminal",
             "scarlet",
             "videolow",
@@ -8821,10 +9172,9 @@
             "auto-editor",
             "ffmpeg-gui-editor-windows",
             "agentshot",
-            "openfilm",
+            "raidenvideoripper",
             "real-video-enhancer",
-            "cutlass",
-            "skrin"
+            "cutlass"
         ],
         "seo_title": "LosslessCut Free Download for Windows",
         "meta_description": "Download LosslessCut free for Windows. A fast, lossless video and audio editor that trims, cuts, merges and remuxes media without re‑encoding.",
@@ -8943,8 +9293,8 @@
             "sakura",
             "youboard",
             "mynotes",
-            "orcaslicer",
             "lime",
+            "orcaslicer",
             "handwriting-ocr-scriptreader"
         ],
         "seo_title": "Loudr Free Download for Windows 10/11",
@@ -9836,8 +10186,8 @@
             "pymusicplayer",
             "riff",
             "waves",
-            "traydio",
             "iptvnator",
+            "traydio",
             "aurora",
             "phiola"
         ],
@@ -10221,14 +10571,14 @@
             "frame-player",
             "lyrenne",
             "nagi",
+            "obs-studio",
             "riff",
             "waves",
-            "obs-studio",
             "aurora",
             "motionbox",
             "waveflow",
-            "reelterminal",
             "meowsic",
+            "reelterminal",
             "vlc-portable"
         ],
         "seo_title": "Metrolist Free Download for Windows",
@@ -10372,7 +10722,9 @@
             "rubylight",
             "openkumite",
             "starluxe",
+            "the-last-guardian-definitive",
             "ed-unofficial-patch",
+            "recompia",
             "obs-studio",
             "sheprd"
         ],
@@ -10502,8 +10854,8 @@
             "animeko",
             "waveflow",
             "obs-studio",
-            "pylon-player",
             "aurora",
+            "pylon-player",
             "waves",
             "vlc-portable",
             "melodia"
@@ -11020,8 +11372,8 @@
             "voxtype",
             "spacewave",
             "youboard",
-            "steamtools",
             "arara-voice",
+            "steamtools",
             "noobot",
             "mynotes",
             "sakura",
@@ -11143,8 +11495,8 @@
         ],
         "related_software": [
             "fk-desktop",
-            "spacewave",
             "aula",
+            "spacewave",
             "voxtype",
             "steamtools",
             "scribe",
@@ -11266,6 +11618,7 @@
         ],
         "related_software": [
             "altered-audio-editor",
+            "animeko",
             "fooyin",
             "lyrenne",
             "melodia",
@@ -11273,7 +11626,6 @@
             "polyphone",
             "tauon",
             "waveflow",
-            "animeko",
             "meowsic",
             "pylon-player",
             "pymusicplayer"
@@ -11396,9 +11748,9 @@
             "meron",
             "murmure",
             "arara-voice",
-            "tizumark-markdown-editor",
             "ciyue",
-            "aula"
+            "aula",
+            "tizumark-markdown-editor"
         ],
         "seo_title": "Noobot Free Download for Windows 10/11",
         "meta_description": "Download Noobot free for Windows 10/11. Noobot is a self‑hosted AI agent workspace that lets you run chat‑based workflows, use built‑in tools, and create 3D ch…",
@@ -11780,15 +12132,15 @@
         ],
         "related_software": [
             "lyrenne",
+            "metrolist",
             "riff",
             "screenrecorder",
-            "metrolist",
             "phiola",
             "videolow",
             "l-mpv",
             "sharex",
-            "altered-audio-editor",
             "aurora",
+            "altered-audio-editor",
             "animeko",
             "lossless-cut"
         ],
@@ -11909,17 +12261,17 @@
         ],
         "related_software": [
             "skrin",
+            "any-to-any-py",
             "pylon-player",
             "vlc-portable",
             "screenbox",
             "frame-player",
             "lyrenne",
-            "videolow",
             "vlc-win10smtc",
+            "videolow",
             "filmcraft",
             "meowsic",
-            "fooyin",
-            "pymusicplayer"
+            "iptvnator"
         ],
         "seo_title": "OnlyM Free Download for Windows",
         "meta_description": "Download OnlyM free for Windows. Simple Media Player (audio, video and images) for use in meetings.",
@@ -12062,11 +12414,11 @@
             "picasapy",
             "greycard",
             "sharex",
-            "rembrandt",
+            "vitrine",
             "ferrumpix",
+            "rembrandt",
             "photoslide",
-            "photocraft",
-            "lap"
+            "photocraft"
         ],
         "seo_title": "Open Photo AI Free Download for Windows",
         "meta_description": "Download Open Photo AI free for Windows. An open source alternative to the popular photo AI editor.",
@@ -12571,7 +12923,9 @@
         "related_software": [
             "rubylight",
             "moonlight-qt",
+            "the-last-guardian-definitive",
             "foundation-sunshine",
+            "recompia",
             "starluxe",
             "ed-unofficial-patch",
             "estella",
@@ -12668,17 +13022,17 @@
         ],
         "related_software": [
             "formatix",
+            "wynpix",
             "woohaa3",
             "rawmakase",
+            "vitrine",
             "photocraft-companion",
             "greycard",
             "photoslide",
             "photosplice",
             "sculptforge",
             "open-photo-ai",
-            "rigby2d",
-            "sharex",
-            "ferrumpix"
+            "rigby2d"
         ],
         "seo_title": "OptiScaler Free Download for Windows 10/11",
         "meta_description": "Download OptiScaler free for Windows 10/11. OptiScaler lets you replace or add upscaling and frame‑generation technologies in games that already support DLSS,…",
@@ -12933,10 +13287,10 @@
             "noobot",
             "steamtools",
             "codecast",
-            "handwriting-ocr-scriptreader",
             "deckcraft",
-            "loudr",
+            "handwriting-ocr-scriptreader",
             "klinechartquant",
+            "loudr",
             "tizumark-markdown-editor",
             "fk-desktop",
             "meron",
@@ -13078,15 +13432,15 @@
             "rawmakase",
             "hycanvas",
             "solidcraft",
+            "vitrine",
             "greycard",
-            "lightzone",
             "photocraft",
-            "lightcraft",
+            "lightzone",
             "sculptforge",
+            "lightcraft",
             "rigby2d",
             "benchup",
-            "open-photo-ai",
-            "procraft"
+            "open-photo-ai"
         ],
         "seo_title": "PancakeSlicer Free Download for Windows 10/11",
         "meta_description": "Download PancakeSlicer free for Windows 10/11. A self‑hostable slicer for non‑planar 3D printing built on the OrcaSlicer engine.",
@@ -13202,16 +13556,16 @@
         "related_software": [
             "pymusicplayer",
             "traydio",
+            "any-to-any-py",
             "aurora",
             "fooyin",
             "melodia",
             "nagi",
             "waveflow",
             "obs-studio",
-            "screenrecorder",
             "waves",
-            "polyphone",
-            "meowsic"
+            "screenrecorder",
+            "polyphone"
         ],
         "seo_title": "phiola Free Download for Windows 7",
         "meta_description": "Download phiola free for Windows 7. A fast audio player, recorder and converter for Windows that supports many formats and low CPU usage.",
@@ -13488,13 +13842,13 @@
             "open-photo-ai",
             "lightzone",
             "hycanvas",
+            "vitrine",
             "woohaa3",
             "picasapy",
             "greycard",
             "sculptforge",
             "rembrandt",
-            "ferrumpix",
-            "photosplice"
+            "ferrumpix"
         ],
         "seo_title": "PhotoCraft Companion Free Download for Windows 10/11",
         "meta_description": "Download PhotoCraft Companion free for Windows 10/11. An extensible companion for the PhotoCraft graphics editor that adds AI-powered tools, a floating tool pa…",
@@ -13738,14 +14092,14 @@
             "ferrumpix",
             "immage",
             "rawmakase",
+            "wynpix",
             "lightzone",
             "greycard",
             "photoslide",
             "lightcraft",
             "rembrandt",
-            "woohaa3",
-            "chroma-app",
-            "procraft"
+            "vitrine",
+            "woohaa3"
         ],
         "seo_title": "PhotoSplice Free Download for Windows 10",
         "meta_description": "Download PhotoSplice free for Windows 10. A desktop image editor that replicates classic Adobe Photoshop with full PSD/PSB compatibility.",
@@ -13878,12 +14232,12 @@
             "lap",
             "photoslide",
             "rembrandt",
-            "greycard",
             "lightcraft",
+            "vitrine",
+            "greycard",
             "lightzone",
             "rawmakase",
-            "photocraft",
-            "open-photo-ai"
+            "photocraft"
         ],
         "seo_title": "PicasaPy Free Download for Windows",
         "meta_description": "Download PicasaPy free for Windows. PicasaPy is a free, open‑source photo manager and editor for Windows that works with the same .picasa.ini format as the ori…",
@@ -14013,8 +14367,8 @@
             "reelterminal",
             "riff",
             "filmcraft",
-            "waves",
-            "cutlass"
+            "any-to-any-py",
+            "waves"
         ],
         "seo_title": "Polyphone Free Download for Windows",
         "meta_description": "Download Polyphone free for Windows. A free and open-source soundfont editor for creating, editing, and playing musical instrument soundfonts.",
@@ -14148,17 +14502,17 @@
         ],
         "related_software": [
             "photocraft",
-            "sculptforge",
             "lightzone",
+            "sculptforge",
             "ferrumpix",
+            "wynpix",
             "chroma-app",
             "immage",
+            "vitrine",
             "formatix",
             "rigby2d",
-            "rembrandt",
-            "rawmakase",
             "solidcraft",
-            "photosplice"
+            "rembrandt"
         ],
         "seo_title": "ProCraft Free Download for Windows 10/11",
         "meta_description": "Download ProCraft free for Windows 10/11. ProCraft is an open‑source painting program for Windows that offers pressure‑sensitive brushes, layers, adjustments,…",
@@ -14263,14 +14617,14 @@
             "pymusicplayer",
             "skrin",
             "vlc-portable",
+            "any-to-any-py",
             "autosubsync",
             "fooyin",
             "frame-player",
             "nagi",
             "vlc-redesign",
             "waveflow",
-            "lyrenne",
-            "vlc-win10smtc"
+            "lyrenne"
         ],
         "seo_title": "Pylon Player Free Download for Windows",
         "meta_description": "Download Pylon Player free for Windows. A media player built on VLC that offers a calm interface, music library, subtitle timing tools and visual customization…",
@@ -14645,6 +14999,116 @@
         "verification_status": "partial"
     },
     {
+        "id": "raidenvideoripper",
+        "name": "Raiden Video Ripper",
+        "slug": "raidenvideoripper",
+        "summary": "A simple Windows program for trimming videos and converting them to MP4, GIF, WebM or MP3 formats.",
+        "description": [
+            "Raiden Video Ripper lets you open a video file, select the part you want to keep, and export it in a different format. It is built with Qt and uses FFmpeg under the hood, but you only interact with a graphical interface.",
+            "The application provides a straightforward way to cut unwanted sections from a video and then save the result as a common video file such as MP4, an animated GIF, or a WebM clip. It can also extract the audio track and save it as an MP3 file. Newer versions add a watermark overlay, cropping tools, and basic video stabilization. The interface shows a preview of the video timeline so you can set start and end points accurately. It is aimed at users who need quick edits without learning complex video‑editing software."
+        ],
+        "icon": {
+            "text": "R",
+            "color": "#0F766E",
+            "logo": "/assets/icons/raidenvideoripper.png?v=8145323d"
+        },
+        "category": "audio-video",
+        "categories": [
+            "audio-video"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": false,
+        "license": "",
+        "license_family": null,
+        "license_url": null,
+        "official_website": "https://demensdeum.com",
+        "download_page": "https://github.com/zefir1990/RaidenVideoRipper/releases/tag/1.0.4.0",
+        "repository_url": "https://github.com/zefir1990/RaidenVideoRipper",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/zefir1990/RaidenVideoRipper/releases/tag/1.0.4.0",
+                "note": "Current Windows download."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/zefir1990/RaidenVideoRipper/releases/tag/1.0.4.0",
+                "note": "Current Windows download."
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.0.4.0",
+        "release_date": "2026-06-12",
+        "release_url": "https://github.com/zefir1990/RaidenVideoRipper/releases/tag/1.0.4.0",
+        "primary_download": {
+            "url": "https://github.com/zefir1990/RaidenVideoRipper/releases/download/1.0.4.0/RaidenVideoRipperInstaller.exe",
+            "filename": "RaidenVideoRipperInstaller.exe",
+            "size": 147207263,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "RaidenVideoRipperInstaller.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/zefir1990/RaidenVideoRipper/releases/download/1.0.4.0/RaidenVideoRipperInstaller.exe",
+                "size": 147207263,
+                "sha256": "52282e437ad856860f70888d259e3cf7901c2348fcf54d97da947b76e67bebcb"
+            }
+        ],
+        "features": [
+            "Trim any video file to the desired length",
+            "Convert trimmed clips to MP4, GIF, WebM or MP3",
+            "Add a watermark to the exported video",
+            "Crop video frames to focus on a region",
+            "Apply simple video stabilization",
+            "Preview the video and edit points in a visual timeline"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Raiden Video Ripper\" button on this page. Your browser saves RaidenVideoRipperInstaller.exe (140.4 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Raiden Video Ripper from the Start menu or the desktop shortcut."
+        ],
+        "related_software": [
+            "ffmpeg-gui-editor-windows",
+            "auto-editor",
+            "dygtube",
+            "cutlass",
+            "reelterminal",
+            "videolow",
+            "lossless-cut",
+            "agentshot",
+            "scarlet",
+            "altered-audio-editor",
+            "any-to-any-py",
+            "openfilm"
+        ],
+        "seo_title": "Raiden Video Ripper Free Download for Windows 10/11",
+        "meta_description": "Download Raiden Video Ripper free for Windows 10/11. A simple Windows program for trimming videos and converting them to MP4, GIF, WebM or MP3 formats.",
+        "canonical_url": "https://codehimblog.github.io/software/raidenvideoripper/",
+        "date_added": "2026-11-18",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
         "id": "rawmakase",
         "name": "RAWmakase",
         "slug": "rawmakase",
@@ -14926,18 +15390,18 @@
             "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [
+            "any-to-any-py",
             "vlc-rpc",
             "lossless-cut",
             "metrolist",
             "agentshot",
+            "riff",
             "cutlass",
             "videolow",
-            "riff",
             "reelterminal",
             "scarlet",
             "l-mpv",
-            "obs-studio",
-            "ffmpeg-gui-editor-windows"
+            "obs-studio"
         ],
         "seo_title": "REAL Video Enhancer Free Download for Windows 10/11",
         "meta_description": "Download REAL Video Enhancer free for Windows 10/11. Easily interpolate, upscale, decompress and denoise videos.",
@@ -14945,6 +15409,118 @@
         "date_added": "2026-11-18",
         "last_verified_at": "2026-11-18",
         "verification_status": "verified"
+    },
+    {
+        "id": "recompia",
+        "name": "Recompia",
+        "slug": "recompia",
+        "summary": "Pokémon Pokopia (Switch 2) recompiled to run natively on Windows with multiplayer support.",
+        "description": [
+            "Recompia lets you play the fan‑made Pokémon Pokopia game on Windows. It provides a native Windows version of the Switch 2 title and adds online co‑op, community mods and other enhancements.",
+            "The project recompiles the original Pokopia game so it runs directly on Windows without needing an emulator. Once the files are in place, the Recompia launcher starts the game, applies optional mods, and lets you connect with other players over the internet. The software is open source, free and includes a Discord community for support and discussion."
+        ],
+        "icon": {
+            "text": "R",
+            "color": "#BE123C",
+            "logo": "/assets/icons/recompia.png?v=b88a4b26"
+        },
+        "category": "games",
+        "categories": [
+            "games"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/Dittobyte/Recompia#license",
+        "official_website": "https://www.recompia.com",
+        "download_page": "https://github.com/Dittobyte/Recompia/releases/tag/v0.14.2",
+        "repository_url": "https://github.com/Dittobyte/Recompia",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Dittobyte/Recompia/blob/main/tools/shaders/harness/SpirvHarness.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Dittobyte/Recompia/blob/main/tools/shaders/harness/SpirvHarness.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Dittobyte/Recompia/blob/main/tools/shaders/harness/SpirvHarness.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Dittobyte/Recompia/blob/main/tools/shaders/harness/SpirvHarness.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Dittobyte/Recompia/blob/main/tools/shaders/harness/SpirvHarness.csproj",
+                "note": ".NET 10 needs Windows 10 or later."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.14.2",
+        "release_date": "2026-11-18",
+        "release_url": "https://github.com/Dittobyte/Recompia/releases/tag/v0.14.2",
+        "primary_download": {
+            "url": "https://github.com/Dittobyte/Recompia/releases/download/v0.14.2/PokopiaRecomp-0.14.2-win64.zip",
+            "filename": "PokopiaRecomp-0.14.2-win64.zip",
+            "size": 193089287,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
+        "download_assets": [
+            {
+                "label": "PokopiaRecomp-0.14.2-win64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/Dittobyte/Recompia/releases/download/v0.14.2/PokopiaRecomp-0.14.2-win64.zip",
+                "size": 193089287,
+                "sha256": "574b518abe8cdd044dc57b61d7429f4b524c16410842d7d10b6a66ece27cbd78"
+            }
+        ],
+        "features": [
+            "Runs the Pokopia game natively on Windows",
+            "Supports online co‑op play where each player uses their own character",
+            "Includes a built‑in mod browser to install community mods",
+            "Provides a launcher that can update the game files automatically",
+            "Shows community achievements and leaderboards",
+            "Allows you to adjust game settings such as graphics and difficulty"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Recompia\" button on this page. Your browser saves PokopiaRecomp-0.14.2-win64.zip (184.1 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the Recompia program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive.",
+            "The launcher will create a shortcut in the system tray for quick access."
+        ],
+        "related_software": [
+            "rubylight",
+            "ed-unofficial-patch",
+            "openkumite",
+            "the-last-guardian-definitive",
+            "starluxe",
+            "foundation-sunshine",
+            "moonlight-qt"
+        ],
+        "seo_title": "Recompia Free Download for Windows 10/11",
+        "meta_description": "Download Recompia free for Windows 10/11. Pokémon Pokopia (Switch 2) recompiled to run natively on Windows with multiplayer support.",
+        "canonical_url": "https://codehimblog.github.io/software/recompia/",
+        "date_added": "2026-11-18",
+        "last_verified_at": null,
+        "verification_status": "partial"
     },
     {
         "id": "reelterminal",
@@ -15068,9 +15644,9 @@
             "ffmpeg-gui-editor-windows",
             "lossless-cut",
             "amber",
+            "raidenvideoripper",
             "agentshot",
             "frame-player",
-            "l-mpv",
             "metrolist"
         ],
         "seo_title": "ReelTerminal Free Download for Windows 10/11",
@@ -15223,9 +15799,9 @@
             "greycard",
             "lightcraft",
             "photocraft",
+            "vitrine",
             "lightzone",
-            "rawmakase",
-            "photosplice"
+            "rawmakase"
         ],
         "seo_title": "Rembrandt Free Download for Windows",
         "meta_description": "Download Rembrandt free for Windows. A free photo editor with RAW support, masks and on‑device AI, requiring no account or subscription.",
@@ -15542,17 +16118,17 @@
         ],
         "related_software": [
             "chroma-app",
-            "sculptforge",
             "photocraft",
             "procraft",
+            "sculptforge",
             "ferrumpix",
+            "vitrine",
             "hycanvas",
             "solidcraft",
             "lightcraft",
             "immage",
             "lap",
-            "photocraft-companion",
-            "picasapy"
+            "photocraft-companion"
         ],
         "seo_title": "Rigby2D Free Download for Windows",
         "meta_description": "Download Rigby2D free for Windows. Open‑source 2D skeletal animation editor for creating and exporting animations for games and film.",
@@ -15805,9 +16381,11 @@
         "related_software": [
             "foundation-sunshine",
             "moonlight-qt",
+            "recompia",
             "openkumite",
             "starluxe",
             "ed-unofficial-patch",
+            "the-last-guardian-definitive",
             "obs-studio",
             "steamtools"
         ],
@@ -16064,9 +16642,9 @@
             "altered-audio-editor",
             "openfilm",
             "filmcraft",
+            "raidenvideoripper",
             "real-video-enhancer",
-            "ffmpeg-gui-editor-windows",
-            "amber"
+            "ffmpeg-gui-editor-windows"
         ],
         "seo_title": "Scarlet Free Download for Windows",
         "meta_description": "Download Scarlet free for Windows. Scarlet is an open-source AI video editor for macOS, Windows and Linux.",
@@ -16182,6 +16760,7 @@
             "Start Screenbox from the Start menu."
         ],
         "related_software": [
+            "any-to-any-py",
             "lyrenne",
             "onlym",
             "waves",
@@ -16192,8 +16771,7 @@
             "skrin",
             "vlc-redesign",
             "af-media-bar",
-            "riff",
-            "fooyin"
+            "riff"
         ],
         "seo_title": "Screenbox Free Download for Windows 11 and 10",
         "meta_description": "Download Screenbox free for Windows 11 and 10. LibVLC-based media player for the Universal Windows Platform",
@@ -16325,12 +16903,12 @@
             "lossless-cut",
             "weftcut",
             "ffmpeg-gui-editor-windows",
-            "altered-audio-editor",
+            "raidenvideoripper",
             "pymusicplayer",
-            "filmcraft",
             "masterpiece",
-            "vlc-win10smtc",
-            "tunefree"
+            "altered-audio-editor",
+            "filmcraft",
+            "vlc-win10smtc"
         ],
         "seo_title": "ScreenRecorder Free Download for Windows 10",
         "meta_description": "Download ScreenRecorder free for Windows 10. A simple program that records your screen and audio.",
@@ -16580,8 +17158,8 @@
             "codecast",
             "orcaslicer",
             "aula",
-            "loudr",
             "youboard",
+            "loudr",
             "klinechartquant",
             "tizumark-markdown-editor",
             "sakura",
@@ -17036,12 +17614,12 @@
             "hycanvas",
             "picasapy",
             "lightcraft",
+            "vitrine",
             "lap",
             "rembrandt",
             "optiscaler",
             "woohaa3",
-            "lightzone",
-            "greycard"
+            "lightzone"
         ],
         "seo_title": "ShareX for Windows – Free Open-Source Screen Capture Tool",
         "meta_description": "ShareX is a free, open-source screenshot and screen recording tool for Windows. See features, download formats and official download sources.",
@@ -17318,9 +17896,9 @@
             "frame-player",
             "l-mpv",
             "waveflow",
+            "aurora",
             "vlc-lyrics-finder",
             "vlc-win10smtc",
-            "aurora",
             "pymusicplayer"
         ],
         "seo_title": "Skrin Free Download for Windows",
@@ -17821,10 +18399,12 @@
             "In the program, select the game you want to enhance and press Start."
         ],
         "related_software": [
+            "the-last-guardian-definitive",
             "rubylight",
             "openkumite",
             "ed-unofficial-patch",
             "foundation-sunshine",
+            "recompia",
             "moonlight-qt"
         ],
         "seo_title": "StarLuxe Free Download for Windows",
@@ -18093,8 +18673,8 @@
             "hardwarevisualizer",
             "mayfly-go",
             "quiesce",
-            "ima-menu",
             "mousex-absolute-mouse-control",
+            "ima-menu",
             "installerclean",
             "winutil-cn",
             "appgroup",
@@ -18220,8 +18800,8 @@
             "nagi",
             "waveflow",
             "aurora",
-            "meowsic",
             "pymusicplayer",
+            "meowsic",
             "pylon-player",
             "riff",
             "waves",
@@ -18232,6 +18812,114 @@
         "meta_description": "Download Tauon free for Windows. Tauon is a powerful and streamlined music player for the desktop.",
         "canonical_url": "https://codehimblog.github.io/software/tauon/",
         "date_added": "2026-11-16",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "the-last-guardian-definitive",
+        "name": "The Last Guardian Definitive",
+        "slug": "the-last-guardian-definitive",
+        "summary": "A fan-made Windows port of The Last Guardian that adds photo mode, free camera, texture upgrades, controller support and many hidden features.",
+        "description": [
+            "The Last Guardian Definitive is a community project that lets you play the PS4 game on Windows with many enhancements not found in the original release. It requires you to provide your own game files and runs as a portable application.",
+            "The project recreates The Last Guardian for Windows, offering modern graphics options such as DLSS, FSR, HDR, ultrawide resolutions and frame generation. It includes a built‑in photo mode that lets you freeze the world, move a free camera and capture lossless PNG screenshots. The port restores cut content like extra Trico moves, hidden visual effects, and unlocks all in‑game treasures. An optional texture pack generator can improve the original low‑resolution textures, and a launcher lets you pick any start point, change controller mappings, and adjust graphics settings on the fly. The launcher also provides a music player for the game’s soundtrack and a benchmark tool for performance testing."
+        ],
+        "icon": {
+            "text": "T",
+            "color": "#0F766E",
+            "logo": null
+        },
+        "category": "games",
+        "categories": [
+            "games"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": false,
+        "license": "",
+        "license_family": null,
+        "license_url": null,
+        "official_website": null,
+        "download_page": "https://github.com/tabnul/the-last-guardian-definitive/releases/tag/v0.10.1",
+        "repository_url": "https://github.com/tabnul/the-last-guardian-definitive",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/tabnul/the-last-guardian-definitive/releases/tag/v0.10.1",
+                "note": "Named in the release notes."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/tabnul/the-last-guardian-definitive/releases/tag/v0.10.1",
+                "note": "Named in the release notes."
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.10.1",
+        "release_date": "2026-11-17",
+        "release_url": "https://github.com/tabnul/the-last-guardian-definitive/releases/tag/v0.10.1",
+        "primary_download": {
+            "url": "https://github.com/tabnul/the-last-guardian-definitive/releases/download/v0.10.1/tlg-windows-x86_64.zip",
+            "filename": "tlg-windows-x86_64.zip",
+            "size": 107556228,
+            "architecture": "x64",
+            "format": "Portable ZIP"
+        },
+        "download_assets": [
+            {
+                "label": "tlg-windows-x86_64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/tabnul/the-last-guardian-definitive/releases/download/v0.10.1/tlg-windows-x86_64.zip",
+                "size": 107556228,
+                "sha256": "5cc94267f1d8699d8d0f56d55257bedd72465c602a56040aad14d9e24ecd5128"
+            }
+        ],
+        "features": [
+            "Photo mode with free‑camera and lossless PNG screenshots",
+            "Free camera that can stay active while playing",
+            "Optional texture pack that upscales game textures",
+            "Over 200 start points selectable from the launcher",
+            "Controller remapping, dead‑zone adjustment and drift check",
+            "Built‑in music player for the game’s soundtrack",
+            "Benchmark tool that records performance data",
+            "Ability to unlock hidden content such as extra Trico moves and treasures"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download The Last Guardian Definitive\" button on this page. Your browser saves tlg-windows-x86_64.zip (102.6 MB), usually to your Downloads folder.",
+            "Right-click the downloaded file, choose \"Extract All\", and pick a folder (for example Documents or Desktop).",
+            "Open that folder and double-click the The Last Guardian Definitive program file (.exe) to start it. Nothing is installed, so you can also run it from a USB drive."
+        ],
+        "related_software": [
+            "starluxe",
+            "openkumite",
+            "foundation-sunshine",
+            "recompia",
+            "ed-unofficial-patch",
+            "rubylight",
+            "moonlight-qt",
+            "photoslide"
+        ],
+        "seo_title": "The Last Guardian Definitive Free Download for Windows 10/11",
+        "meta_description": "Download The Last Guardian Definitive free for Windows 10/11. A fan-made Windows port of The Last Guardian that adds photo mode, free camera, texture upgrades,…",
+        "canonical_url": "https://codehimblog.github.io/software/the-last-guardian-definitive/",
+        "date_added": "2026-11-18",
         "last_verified_at": null,
         "verification_status": "partial"
     },
@@ -18494,8 +19182,8 @@
             "mcp-windows",
             "yengi",
             "kjarni",
-            "deepseek-harness-desktop",
             "jenv",
+            "deepseek-harness-desktop",
             "sheprd"
         ],
         "seo_title": "Token Tracker Free Download for Windows",
@@ -18738,6 +19426,7 @@
             "If SmartScreen blocks it, click “More info” then “Run anyway”."
         ],
         "related_software": [
+            "any-to-any-py",
             "pymusicplayer",
             "fooyin",
             "pylon-player",
@@ -18747,9 +19436,8 @@
             "waves",
             "polyphone",
             "vlc-win10smtc",
-            "tauon",
-            "frame-player",
-            "phiola"
+            "raidenvideoripper",
+            "dygtube"
         ],
         "seo_title": "TuneFree Free Download for Windows 10",
         "meta_description": "Download TuneFree free for Windows 10. A tool that decrypts QQ Music's encrypted .mflac and .mgg files and converts them to MP3 or FLAC on Windows.",
@@ -18868,8 +19556,8 @@
             "lime",
             "voxtype",
             "codecast",
-            "deckcraft",
             "steamtools",
+            "deckcraft",
             "ciyue",
             "sakura"
         ],
@@ -18982,10 +19670,10 @@
             "bleachbit",
             "appgroup",
             "luciddesk",
-            "fly-island",
             "ima-menu",
+            "fly-island",
             "mayfly-go",
-            "mouse-point-viewer"
+            "autorunmanager"
         ],
         "seo_title": "Universal Intel Chipset Updater Free Download for Windows",
         "meta_description": "Download Universal Intel Chipset Updater free for Windows. A security‑focused tool that automatically detects Intel hardware and installs the latest official c…",
@@ -19356,15 +20044,15 @@
             "lossless-cut",
             "auto-editor",
             "ffmpeg-gui-editor-windows",
+            "any-to-any-py",
+            "raidenvideoripper",
             "obs-studio",
             "onlym",
             "real-video-enhancer",
             "reelterminal",
             "screenrecorder",
             "tauon",
-            "pylon-player",
-            "weftcut",
-            "meowsic"
+            "pylon-player"
         ],
         "seo_title": "VideoLow Free Download for Windows 7/8/8.1/10/11",
         "meta_description": "Download VideoLow free for Windows 7/8/8.1/10/11. VideoLow is a lightweight free GUI for FFmpeg on Windows that lets you compress, transcode and trim video and…",
@@ -19372,6 +20060,139 @@
         "date_added": "2026-11-18",
         "last_verified_at": null,
         "verification_status": "partial"
+    },
+    {
+        "id": "vitrine",
+        "name": "Vitrine",
+        "slug": "vitrine",
+        "summary": "A free, non‑destructive RAW photo editor for Windows that uses GPU acceleration and AI tools for upscaling and motion deblur.",
+        "description": [
+            "Vitrine lets you open RAW files directly from your camera and edit them without changing the original file. All adjustments are saved separately and applied each time you open the image, so the source remains untouched. The interface is a simple dark‑room workspace that focuses on the photo and provides one‑click access to common editing tools.",
+            "Vitrine supports more than 15 camera RAW formats, including CR2, CR3, NEF, ARW, ORF, DNG, RW2 and PEF. It uses a GPU‑accelerated pipeline to give real‑time feedback while you adjust exposure, colour, tone curves, local masks and lens corrections. AI features such as Real‑ESRGAN upscaling and NAFNet motion deblur run on your graphics card, adding high‑quality enlargement and blur removal. The program works entirely offline; no account, subscription or cloud upload is required. You can export the edited image in the format and colour space you need, and the original file is never modified. Vitrine is aimed at users who want a lightweight, free alternative to Lightroom or darktable on Windows."
+        ],
+        "icon": {
+            "text": "V",
+            "color": "#1D4ED8",
+            "logo": "/assets/icons/vitrine.png?v=f3446ed6"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": false,
+        "license": "",
+        "license_family": null,
+        "license_url": null,
+        "official_website": null,
+        "download_page": "https://github.com/Redrum624/vitrine/releases/tag/v1.40.0",
+        "repository_url": "https://github.com/Redrum624/vitrine",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Redrum624/vitrine#readme",
+                "note": "Named in the README."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/Redrum624/vitrine#readme",
+                "note": "Stated in the project README: “- **Windows 10 or 11** (64-bit)”"
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Redrum624/vitrine/blob/main/package.json",
+                "note": "Built with Electron 43 (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Redrum624/vitrine/blob/main/package.json",
+                "note": "Built with Electron 43 (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/Redrum624/vitrine/blob/main/package.json",
+                "note": "Built with Electron 43 (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.40.0",
+        "release_date": "2026-10-15",
+        "release_url": "https://github.com/Redrum624/vitrine/releases/tag/v1.40.0",
+        "primary_download": {
+            "url": "https://github.com/Redrum624/vitrine/releases/download/v1.40.0/Vitrine-Setup-1.40.0.exe",
+            "filename": "Vitrine-Setup-1.40.0.exe",
+            "size": 312072371,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Vitrine-Setup-1.40.0.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/Redrum624/vitrine/releases/download/v1.40.0/Vitrine-Setup-1.40.0.exe",
+                "size": 312072371,
+                "sha256": "055885386ab901f6589acf05938e9e4751c4e9d9597f38ac82a573564917162c"
+            },
+            {
+                "label": "Vitrine-1.40.0-portable.exe",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/Redrum624/vitrine/releases/download/v1.40.0/Vitrine-1.40.0-portable.exe",
+                "size": 311836814,
+                "sha256": "b98fb95af69345db242eaa3e6cc4669b4ab58f990365ee3cf8087ba2eddb09a7"
+            }
+        ],
+        "features": [
+            "Open and edit RAW files from most major camera brands",
+            "Non‑destructive workflow: edits are stored separately and reapplied on reopen",
+            "Real‑time GPU‑accelerated adjustments for fast preview",
+            "AI‑based upscaling and motion deblur directly in the editor",
+            "Simple dark‑room interface with one‑click access to tools",
+            "Export to various formats and colour spaces",
+            "No account, subscription or cloud services required"
+        ],
+        "requirements": [
+            "Windows 10 or 11 (64‑bit)",
+            "Minimum 8 GB RAM (16 GB+ recommended for large RAW files)",
+            "GPU that supports WebGL2 for acceleration"
+        ],
+        "installation_instructions": [
+            "Click the \"Download Vitrine\" button on this page. Your browser saves Vitrine-Setup-1.40.0.exe (297.6 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Vitrine from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder.",
+            "When you run Vitrine for the first time, Windows may show an \"unknown publisher\" warning; choose More info → Run anyway.",
+            "The installed version can check for updates via Help → Check for Updates…"
+        ],
+        "related_software": [
+            "chroma-app",
+            "ferrumpix",
+            "immage",
+            "lightcraft",
+            "picasapy",
+            "rembrandt",
+            "greycard",
+            "lightzone",
+            "rawmakase",
+            "wynpix",
+            "photocraft",
+            "photoslide"
+        ],
+        "seo_title": "Vitrine Free Download for Windows 10/11",
+        "meta_description": "Download Vitrine free for Windows 10/11. A free, non‑destructive RAW photo editor for Windows that uses GPU acceleration and AI tools for upscaling and motion…",
+        "canonical_url": "https://codehimblog.github.io/software/vitrine/",
+        "date_added": "2026-11-18",
+        "last_verified_at": "2026-11-18",
+        "verification_status": "verified"
     },
     {
         "id": "vlc-lyrics-finder",
@@ -19467,8 +20288,8 @@
             "af-media-bar",
             "meowsic",
             "skrin",
-            "vlc-win10smtc",
             "vlc-portable",
+            "vlc-win10smtc",
             "vlc-rpc",
             "vlc-redesign",
             "pylon-player",
@@ -19624,13 +20445,13 @@
             "vlc-win10smtc",
             "vlc-lyrics-finder",
             "screenbox",
-            "lossless-cut",
             "l-mpv",
+            "lossless-cut",
             "onlym",
             "vlc-rpc",
             "af-media-bar",
-            "skrin",
-            "waveflow"
+            "waveflow",
+            "skrin"
         ],
         "seo_title": "VLC Media Player Redesign Free Download for Windows",
         "meta_description": "Download VLC Media Player Redesign free for Windows. An unofficial build of VLC 4 that keeps the original VLC engine and codecs but replaces the interface with…",
@@ -19767,8 +20588,8 @@
             "skrin",
             "vlc-redesign",
             "vlc-rpc",
-            "vlc-win10smtc",
             "vlc-lyrics-finder",
+            "vlc-win10smtc",
             "riff",
             "nagi",
             "onlym",
@@ -19899,8 +20720,8 @@
             "Open Advanced Preferences → Interface → Control Interfaces, check \"Windows SMTC integration\" and save."
         ],
         "related_software": [
-            "vlc-redesign",
             "lyrenne",
+            "vlc-redesign",
             "af-media-bar",
             "pylon-player",
             "pymusicplayer",
@@ -20271,6 +21092,7 @@
         "related_software": [
             "7-zip",
             "libresvip",
+            "file-converter-pro",
             "motty"
         ],
         "seo_title": "Warpinator Windows Free Download for Windows 7",
@@ -20399,7 +21221,7 @@
             "murmure",
             "mynotes",
             "codecast",
-            "klinechartquant"
+            "lime"
         ],
         "seo_title": "Watt Toolkit Free Download for Windows 10/11",
         "meta_description": "Download Watt Toolkit free for Windows 10/11. A free, open‑source toolbox that adds many utilities for Steam and other game platforms, such as account switchin…",
@@ -20761,8 +21583,8 @@
             "filmcraft",
             "scarlet",
             "lossless-cut",
-            "auto-editor",
             "amber",
+            "auto-editor",
             "openfilm",
             "altered-audio-editor",
             "reelterminal",
@@ -21248,8 +22070,8 @@
             "ferrumpix",
             "hycanvas",
             "sculptforge",
-            "chroma-app",
             "photocraft-companion",
+            "chroma-app",
             "photocraft",
             "optiscaler",
             "photosplice",
@@ -21262,6 +22084,152 @@
         "meta_description": "Download WooHaa3 free for Windows 10/11. WooHaa3 is a canvas‑style multimedia creation workspace that lets you combine text, images, audio, video and 3D assets…",
         "canonical_url": "https://codehimblog.github.io/software/woohaa3/",
         "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "wynpix",
+        "name": "Wynpix",
+        "slug": "wynpix",
+        "summary": "A fast, GPU‑accelerated image viewer for Windows that supports modern formats, AI upscaling, HDR tone‑mapping and a batch converter.",
+        "description": [
+            "Wynpix lets you open and view photos quickly, using your graphics card to keep the interface smooth. It can handle many newer image types such as AVIF, HEIC, JPEG XL, RAW and PSD, and it adds extra features like real‑time AI upscaling and 360° panorama viewing.",
+            "Wynpix is designed for everyday Windows users who need a responsive image viewer with extra capabilities. The program runs on the GPU, so scrolling and zooming feel instant. It includes a simple set of editing tools – crop, rotate and resize – and lets you adjust brightness, contrast, saturation and other color settings in real time. Modern image formats that Windows does not support natively are displayed correctly, and a shell extension adds thumbnail previews for these files in Explorer. For larger tasks, Wynpix offers a multi‑threaded batch converter that can resize, rename, adjust colors and apply AI upscaling to many images at once. The viewer also supports 360° spherical panoramas and HDR tone‑mapping, providing accurate color handling based on your monitor’s profile. All settings, shortcuts and themes are customizable, making the program adaptable to personal preferences."
+        ],
+        "icon": {
+            "text": "W",
+            "color": "#0F766E",
+            "logo": null
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/hadoooooouken/Wynpix#license",
+        "official_website": "https://github.com/hadoooooouken/wynpix/releases/latest",
+        "download_page": "https://github.com/hadoooooouken/Wynpix/releases/tag/1.4.1",
+        "repository_url": "https://github.com/hadoooooouken/Wynpix",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/hadoooooouken/Wynpix/blob/main/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/hadoooooouken/Wynpix/blob/main/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/hadoooooouken/Wynpix/blob/main/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/hadoooooouken/Wynpix/blob/main/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/hadoooooouken/Wynpix/blob/main/CMakeLists.txt",
+                "note": "Built with Qt 6 (Windows 10 or later)."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "1.4.1",
+        "release_date": "2026-11-12",
+        "release_url": "https://github.com/hadoooooouken/Wynpix/releases/tag/1.4.1",
+        "primary_download": {
+            "url": "https://github.com/hadoooooouken/Wynpix/releases/download/1.4.1/wynpix-setup_v1.4.1.exe",
+            "filename": "wynpix-setup_v1.4.1.exe",
+            "size": 38024123,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "wynpix-setup_v1.4.1.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/hadoooooouken/Wynpix/releases/download/1.4.1/wynpix-setup_v1.4.1.exe",
+                "size": 38024123,
+                "sha256": "bb64a4bb5e80f480f3d0145de23a1a9b19825a1874c37eaf1d59adfb428fa278"
+            },
+            {
+                "label": "wynpix-setup-sse2_v1.4.1.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/hadoooooouken/Wynpix/releases/download/1.4.1/wynpix-setup-sse2_v1.4.1.exe",
+                "size": 38039414,
+                "sha256": "200c7c9ac5d20527e4e7188b685f24b45a33725e8c3fc4fdb6e1e21a7d56c244"
+            },
+            {
+                "label": "wynpix-portable_v1.4.1.7z",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/hadoooooouken/Wynpix/releases/download/1.4.1/wynpix-portable_v1.4.1.7z",
+                "size": 33483232,
+                "sha256": "d1b705813208bd68eac91bb10d16064edac0721921b2ce97658dd215671ed9f9"
+            },
+            {
+                "label": "wynpix-portable-sse2_v1.4.1.7z",
+                "format": "Portable archive",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/hadoooooouken/Wynpix/releases/download/1.4.1/wynpix-portable-sse2_v1.4.1.7z",
+                "size": 33501920,
+                "sha256": "0807483ede317e66fd41ca06d814e3d12df26ac795272fbac86d574990e54794"
+            }
+        ],
+        "features": [
+            "Fast, GPU‑accelerated viewing of images",
+            "Real‑time AI upscaling of the visible area",
+            "Adjust brightness, contrast, saturation, hue and more with instant feedback",
+            "View 360° spherical panoramas interactively",
+            "Batch convert, resize, rename and apply color adjustments to multiple files",
+            "Explorer thumbnail extension for modern formats such as AVIF, HEIC, JPEG XL, PSD and RAW",
+            "HDR tone‑mapping with several operators",
+            "Simple crop, rotate and resize tools"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Wynpix\" button on this page. Your browser saves wynpix-setup_v1.4.1.exe (36.3 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Wynpix from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [
+            "ferrumpix",
+            "formatix",
+            "immage",
+            "greycard",
+            "vitrine",
+            "lightzone",
+            "rawmakase",
+            "procraft",
+            "photosplice",
+            "lightcraft",
+            "rembrandt",
+            "photoslide"
+        ],
+        "seo_title": "Wynpix Free Download for Windows 10/11",
+        "meta_description": "Download Wynpix free for Windows 10/11. A fast, GPU‑accelerated image viewer for Windows that supports modern formats, AI upscaling, HDR tone‑mapping and a bat…",
+        "canonical_url": "https://codehimblog.github.io/software/wynpix/",
+        "date_added": "2026-11-18",
         "last_verified_at": null,
         "verification_status": "partial"
     },
@@ -21500,8 +22468,8 @@
             "typewhisper-win",
             "codecast",
             "murmure",
-            "steamtools",
             "ciyue",
+            "steamtools",
             "arara-voice",
             "voxtype",
             "scribe",
