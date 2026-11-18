@@ -946,12 +946,12 @@
             "nagi",
             "motionbox",
             "iptvnator",
-            "obs-studio",
             "skrin",
+            "obs-studio",
             "reelterminal",
             "fooyin",
-            "melodia",
             "pylon-player",
+            "melodia",
             "aurora",
             "waves"
         ],
@@ -1592,8 +1592,8 @@
             "When setup finishes, start Aula from the Start menu or the desktop shortcut."
         ],
         "related_software": [
-            "deckcraft",
             "ciyue",
+            "deckcraft",
             "openecraft",
             "spacewave",
             "codecast",
@@ -1603,7 +1603,7 @@
             "sakura",
             "noobot",
             "klinechartquant",
-            "voxtype"
+            "steamtools"
         ],
         "seo_title": "Aula Free Download for Windows 10/11",
         "meta_description": "Download Aula free for Windows 10/11. A free, open‑source desktop study app that turns your lecture notes, slides, PDFs or exam files into AI‑generated lessons…",
@@ -1979,8 +1979,8 @@
         ],
         "related_software": [
             "winutil-cn",
-            "deskx-wallpaper-engine",
             "mousex-absolute-mouse-control",
+            "deskx-wallpaper-engine",
             "quiesce",
             "bleachbit",
             "luciddesk",
@@ -2630,10 +2630,10 @@
         "related_software": [
             "ferrumpix",
             "immage",
+            "open-photo-ai",
             "photoslide",
             "picasapy",
             "rembrandt",
-            "open-photo-ai",
             "greycard",
             "lightzone",
             "rawmakase",
@@ -3560,8 +3560,8 @@
             "autorunmanager",
             "fly-island",
             "mayfly-go",
-            "winutil-cn",
             "mouse-point-viewer",
+            "winutil-cn",
             "hardwarevisualizer",
             "apkstart",
             "appgroup",
@@ -4025,11 +4025,11 @@
         ],
         "related_software": [
             "gptme",
-            "servo",
-            "pi-rust",
             "qwen-code",
-            "yengi",
+            "pi-rust",
+            "servo",
             "mcp-windows",
+            "yengi",
             "axe",
             "openagentd",
             "deepseek-harness-desktop",
@@ -5080,6 +5080,7 @@
         ],
         "related_software": [
             "ferrumpix",
+            "optiscaler",
             "photoslide",
             "lightzone",
             "chroma-app",
@@ -5089,13 +5090,150 @@
             "picasapy",
             "photosplice",
             "woohaa3",
-            "hycanvas",
-            "open-photo-ai"
+            "hycanvas"
         ],
         "seo_title": "Formatix Image Converter Free Download for Windows",
         "meta_description": "Download Formatix Image Converter free for Windows. A fast, lightweight, offline batch image converter and resizer for Windows that supports many formats and o…",
         "canonical_url": "https://codehimblog.github.io/software/formatix/",
         "date_added": "2026-11-15",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "foundation-sunshine",
+        "name": "Foundation Sunshine",
+        "slug": "foundation-sunshine",
+        "summary": "Foundation Sunshine is a free open‑source remote streaming host that lets you view and control your Windows desktop, applications and games from another device with low latency, HDR and controller support.",
+        "description": [
+            "Foundation Sunshine builds on the Sunshine project to provide a self‑hosted streaming server optimized for Windows. Paired with Moonlight clients it delivers a desktop‑like experience over the network, including high‑quality video, audio, controller feedback and file sharing.",
+            "The program runs on your Windows PC and captures the screen, encodes it with hardware acceleration and sends it to a Moonlight client on another device. It supports dynamic HDR, virtual displays, screen calibration, surround sound, microphone pass‑through, DualSense vibration, clipboard sharing and file transfer. All settings, devices and game libraries are managed from a single desktop control panel, making configuration easier for gamers and power users alike. The software is free, open source under GPL‑3.0 and does not require any paid services."
+        ],
+        "icon": {
+            "text": "F",
+            "color": "#1D4ED8",
+            "logo": "/assets/icons/foundation-sunshine.png?v=4fb07870"
+        },
+        "category": "games",
+        "categories": [
+            "games"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/AlkaidLab/foundation-sunshine#license",
+        "official_website": "https://www.alkaidlab.com",
+        "download_page": "https://github.com/AlkaidLab/foundation-sunshine/releases/tag/v2026.1031.121458.%E6%9D%82%E9%B1%BC",
+        "repository_url": "https://github.com/AlkaidLab/foundation-sunshine",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/AlkaidLab/foundation-sunshine/blob/master/gamebar-widget/src/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/AlkaidLab/foundation-sunshine/blob/master/gamebar-widget/src/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/AlkaidLab/foundation-sunshine/blob/master/gamebar-widget/src/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/AlkaidLab/foundation-sunshine/blob/master/gamebar-widget/src/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/AlkaidLab/foundation-sunshine/blob/master/gamebar-widget/src/Package.appxmanifest",
+                "note": "The app manifest sets this as the minimum."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": null,
+        "release_date": null,
+        "release_url": "https://github.com/AlkaidLab/foundation-sunshine/releases/tag/v2026.1031.121458.%E6%9D%82%E9%B1%BC",
+        "primary_download": {
+            "url": "https://github.com/AlkaidLab/foundation-sunshine/releases/download/v2026.1031.121458.%E6%9D%82%E9%B1%BC/Sunshine.v2026.1031.WindowsInstaller.exe",
+            "filename": "Sunshine.v2026.1031.WindowsInstaller.exe",
+            "size": 38630470,
+            "architecture": null,
+            "format": "EXE installer"
+        },
+        "download_assets": [
+            {
+                "label": "Sunshine.Ds5Sidecar.x64.zip",
+                "format": "Archive (contents not confirmed)",
+                "kind": "other",
+                "architecture": "x64",
+                "url": "https://github.com/AlkaidLab/foundation-sunshine/releases/download/v2026.1031.121458.%E6%9D%82%E9%B1%BC/Sunshine.Ds5Sidecar.x64.zip",
+                "size": 93403215,
+                "sha256": "f2d823234a98e04194e0827a01566e172981b7216d6ca5aceeedf0c02ec71ec8"
+            },
+            {
+                "label": "Sunshine.v2026.1031.WindowsInstaller.exe",
+                "format": "EXE installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/AlkaidLab/foundation-sunshine/releases/download/v2026.1031.121458.%E6%9D%82%E9%B1%BC/Sunshine.v2026.1031.WindowsInstaller.exe",
+                "size": 38630470,
+                "sha256": "b7a5ca782b2154660501326bcc0721809182c7738908ab95863de1ff58ef755e"
+            },
+            {
+                "label": "Sunshine.v2026.1031.Portable-x64.zip",
+                "format": "Portable ZIP",
+                "kind": "portable",
+                "architecture": "x64",
+                "url": "https://github.com/AlkaidLab/foundation-sunshine/releases/download/v2026.1031.121458.%E6%9D%82%E9%B1%BC/Sunshine.v2026.1031.Portable-x64.zip",
+                "size": 43632659,
+                "sha256": "2dc96b5abf76fb1d519b3cac4aee50c4450e05c813027955a34c0a0e25a3b6f1"
+            }
+        ],
+        "features": [
+            "Stream the full Windows desktop or individual games to another device",
+            "Low‑latency video with hardware‑accelerated encoding",
+            "HDR10 and dynamic HDR support for vivid colors",
+            "Virtual display creation for dedicated streaming monitors",
+            "DualSense controller vibration and other gamepad feedback",
+            "Surround sound and microphone pass‑through",
+            "Clipboard and file sharing between host and client",
+            "Centralised control panel for appearance, library and settings"
+        ],
+        "requirements": [
+            "Windows 10 22H2 or newer for virtual display support",
+            "A compatible GPU with hardware encoding capabilities",
+            "Network connection for streaming"
+        ],
+        "installation_instructions": [
+            "Click the \"Download Foundation Sunshine\" button on this page. Your browser saves Sunshine.v2026.1031.WindowsInstaller.exe (36.8 MB), usually to your Downloads folder.",
+            "Open the downloaded file and follow the setup steps. Windows may ask for permission to make changes; click Yes.",
+            "When setup finishes, start Foundation Sunshine from the Start menu or the desktop shortcut.",
+            "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
+        ],
+        "related_software": [
+            "moonlight-qt",
+            "rubylight",
+            "openkumite",
+            "starluxe",
+            "fly-island",
+            "obs-studio",
+            "af-media-bar",
+            "orca",
+            "motty"
+        ],
+        "seo_title": "Foundation Sunshine Free Download for Windows 10/11",
+        "meta_description": "Download Foundation Sunshine free for Windows 10/11. Foundation Sunshine is a free open‑source remote streaming host that lets you view and control your Window…",
+        "canonical_url": "https://codehimblog.github.io/software/foundation-sunshine/",
+        "date_added": "2026-11-18",
         "last_verified_at": null,
         "verification_status": "partial"
     },
@@ -5527,8 +5665,8 @@
             "lap",
             "photoslide",
             "rembrandt",
-            "lightcraft",
             "picasapy",
+            "lightcraft",
             "lightzone",
             "rawmakase",
             "photocraft",
@@ -5676,8 +5814,8 @@
             "sucrose",
             "winutil-cn",
             "bleachbit",
-            "universal-intel-wifi-bt-updater",
             "fly-island",
+            "universal-intel-wifi-bt-updater",
             "installerclean",
             "mouse-point-viewer",
             "aerozoom"
@@ -5912,8 +6050,8 @@
             "photoslide",
             "sharex",
             "picasapy",
-            "greycard",
             "rigby2d",
+            "greycard",
             "chroma-app",
             "photosplice"
         ],
@@ -5921,6 +6059,110 @@
         "meta_description": "Download HyCanvas free for Windows 10/11. An open‑source Canva‑like editor that runs in the browser and can be self‑hosted.",
         "canonical_url": "https://codehimblog.github.io/software/hycanvas/",
         "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "hydradragonantivirus",
+        "name": "Hydra Dragon Antivirus",
+        "slug": "hydradragonantivirus",
+        "summary": "An open‑source antivirus and endpoint detection and response tool that combines ClamAV, YARA, machine‑learning analysis and other security components for Windows.",
+        "description": [
+            "Hydra Dragon Antivirus provides real‑time malware detection and analysis on Windows. It bundles several open‑source security engines and adds its own behavioral and machine‑learning checks. The project is aimed at security researchers and advanced users who need a customizable, experimental protection suite.",
+            "The program integrates static and dynamic analysis tools such as ClamAV, YARA, Suricata, Sigma rules, and a machine‑learning engine to scan files and monitor system behavior. It includes components for unpacking, deobfuscating and decompiling suspicious binaries, as well as kernel‑level and hypervisor‑based protection. The software is open source under GPL‑2.0 and is provided free of charge. It is marked as experimental and not ready for production use; the developers advise testing it in a virtual machine first. The project is primarily maintained by a single developer and targets expert malware analysts and security researchers who understand low‑level system components and drivers."
+        ],
+        "icon": {
+            "text": "H",
+            "color": "#0F766E",
+            "logo": "/assets/icons/hydradragonantivirus.png?v=2735a698"
+        },
+        "category": "security",
+        "categories": [
+            "security"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v2.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/HydraDragonAntivirus/HydraDragonAntivirus#license",
+        "official_website": "https://viruskov.com",
+        "download_page": "https://github.com/HydraDragonAntivirus/HydraDragonAntivirus/releases/tag/viruskov-openedr-5",
+        "repository_url": "https://github.com/HydraDragonAntivirus/HydraDragonAntivirus",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/HydraDragonAntivirus/HydraDragonAntivirus/blob/development-version/MegaDumper/MegaDumper/MegaDumper.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/HydraDragonAntivirus/HydraDragonAntivirus/blob/development-version/MegaDumper/MegaDumper/MegaDumper.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
+            },
+            "windows-8-1": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/HydraDragonAntivirus/HydraDragonAntivirus/blob/development-version/MegaDumper/MegaDumper/MegaDumper.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
+            },
+            "windows-8": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/HydraDragonAntivirus/HydraDragonAntivirus/blob/development-version/MegaDumper/MegaDumper/MegaDumper.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
+            },
+            "windows-7": {
+                "status": "not_supported",
+                "verified": true,
+                "source": "https://github.com/HydraDragonAntivirus/HydraDragonAntivirus/blob/development-version/MegaDumper/MegaDumper/MegaDumper.csproj",
+                "note": ".NET 8 needs Windows 10 or later."
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": null,
+        "release_date": null,
+        "release_url": "https://github.com/HydraDragonAntivirus/HydraDragonAntivirus/releases/tag/viruskov-openedr-5",
+        "primary_download": {
+            "url": "https://github.com/HydraDragonAntivirus/HydraDragonAntivirus/releases/download/viruskov-openedr-5/installation.msi",
+            "filename": "installation.msi",
+            "size": 19947520,
+            "architecture": null,
+            "format": "MSI installer"
+        },
+        "download_assets": [
+            {
+                "label": "installation.msi",
+                "format": "MSI installer",
+                "kind": "installer",
+                "architecture": null,
+                "url": "https://github.com/HydraDragonAntivirus/HydraDragonAntivirus/releases/download/viruskov-openedr-5/installation.msi",
+                "size": 19947520,
+                "sha256": "febeedd2b1b0a5b2dfa921adbcb6373b0de1a4abe94a83e7b30b93cf3e9b93c3"
+            }
+        ],
+        "features": [
+            "Scans files in real time using multiple open‑source engines",
+            "Detects malware with YARA and ClamAV signatures",
+            "Applies machine‑learning models for behavioral analysis",
+            "Provides kernel and hypervisor‑level protection layers",
+            "Includes tools for unpacking, deobfuscating and decompiling suspicious files"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click the \"Download Hydra Dragon Antivirus\" button on this page. Your browser saves installation.msi (19.0 MB), usually to your Downloads folder.",
+            "Double-click the downloaded .msi file and follow the setup steps.",
+            "When setup finishes, start Hydra Dragon Antivirus from the Start menu."
+        ],
+        "related_software": [
+            "keepassxc"
+        ],
+        "seo_title": "Hydra Dragon Antivirus Free Download for Windows 10/11",
+        "meta_description": "Download Hydra Dragon Antivirus free for Windows 10/11. An open‑source antivirus and endpoint detection and response tool that combines ClamAV, YARA, machine‑l…",
+        "canonical_url": "https://codehimblog.github.io/software/hydradragonantivirus/",
+        "date_added": "2026-11-18",
         "last_verified_at": null,
         "verification_status": "partial"
     },
@@ -6437,8 +6679,8 @@
             "mcp-windows",
             "deepseek-harness-desktop",
             "gptme",
-            "openagentd",
             "sheprd",
+            "openagentd",
             "kjarni",
             "windbg-mcp",
             "tokentracker",
@@ -6614,6 +6856,7 @@
             "Create a new database and choose a strong master password you will not forget. KeePassXC cannot recover a lost master password."
         ],
         "related_software": [
+            "hydradragonantivirus",
             "7-zip",
             "notepad-plus-plus",
             "youboard"
@@ -6855,8 +7098,8 @@
             "orcaslicer",
             "steamtools",
             "sakura",
-            "aula",
             "handwriting-ocr-scriptreader",
+            "aula",
             "deckcraft",
             "openecraft",
             "fk-desktop",
@@ -8381,7 +8624,7 @@
             "waveflow",
             "screenrecorder",
             "altered-audio-editor",
-            "nagi"
+            "skrin"
         ],
         "seo_title": "Masterpiece Free Download for Windows 10/11",
         "meta_description": "Download Masterpiece free for Windows 10/11. An open‑source pipe organ sample player that works with Hauptwerk and GrandOrgue sample sets.",
@@ -8885,9 +9128,9 @@
             "riff",
             "waves",
             "traydio",
+            "iptvnator",
             "aurora",
-            "phiola",
-            "iptvnator"
+            "phiola"
         ],
         "seo_title": "Melodia Free Download for Windows",
         "meta_description": "Download Melodia free for Windows. A fast, lightweight cross‑platform desktop music player built with Rust and Slint.",
@@ -8997,13 +9240,13 @@
         "related_software": [
             "pylon-player",
             "riff",
+            "pymusicplayer",
             "aurora",
             "fooyin",
             "lyrenne",
             "melodia",
             "nagi",
             "waveflow",
-            "pymusicplayer",
             "vlc-lyrics-finder",
             "waves",
             "phiola"
@@ -9416,6 +9659,7 @@
             "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [
+            "foundation-sunshine",
             "rubylight",
             "openkumite",
             "starluxe",
@@ -9697,6 +9941,7 @@
             "orca",
             "sheprd",
             "woohaa3",
+            "foundation-sunshine",
             "warpinator-windows",
             "qwen-code"
         ],
@@ -10069,8 +10314,8 @@
             "arara-voice",
             "noobot",
             "mynotes",
-            "dsh-tui",
-            "sakura"
+            "sakura",
+            "dsh-tui"
         ],
         "seo_title": "Murmure Free Download for Windows 10/11",
         "meta_description": "Download Murmure free for Windows 10/11. A privacy‑first speech‑to‑text program that runs entirely on your computer, supporting 25 languages without sending an…",
@@ -10318,10 +10563,10 @@
             "polyphone",
             "tauon",
             "waveflow",
-            "animeko",
             "meowsic",
             "pylon-player",
-            "pymusicplayer"
+            "pymusicplayer",
+            "riff"
         ],
         "seo_title": "Nagi Free Download for Windows 11 and 10",
         "meta_description": "Download Nagi free for Windows 11 and 10. A fast, private music player for your local library on Windows, with Navidrome and Jellyfin streaming",
@@ -10831,11 +11076,11 @@
             "phiola",
             "l-mpv",
             "sharex",
-            "animeko",
+            "altered-audio-editor",
             "aurora",
             "lossless-cut",
-            "altered-audio-editor",
-            "frame-player"
+            "animeko",
+            "traydio"
         ],
         "seo_title": "OBS Studio for Windows – Free Screen Recording & Streaming",
         "meta_description": "OBS Studio is free, open-source screen recording and live streaming software. See features, download formats and official sources for Windows.",
@@ -10962,9 +11207,9 @@
             "vlc-win10smtc",
             "filmcraft",
             "meowsic",
-            "iptvnator",
             "fooyin",
-            "pymusicplayer"
+            "pymusicplayer",
+            "iptvnator"
         ],
         "seo_title": "OnlyM Free Download for Windows",
         "meta_description": "Download OnlyM free for Windows. Simple Media Player (audio, video and images) for use in meetings.",
@@ -11358,8 +11603,8 @@
         "related_software": [
             "deckcraft",
             "tizumark-markdown-editor",
-            "dsh-tui",
             "aula",
+            "dsh-tui",
             "lime",
             "voxtype",
             "steamtools",
@@ -11617,6 +11862,7 @@
             "rubylight",
             "moonlight-qt",
             "starluxe",
+            "foundation-sunshine",
             "estella",
             "skrin"
         ],
@@ -11624,6 +11870,109 @@
         "meta_description": "Download OpenKumite free for Windows 10/11. OpenKumite is an open‑source 3D fighting game engine that lets you play converted versions of classic games such as…",
         "canonical_url": "https://codehimblog.github.io/software/openkumite/",
         "date_added": "2026-11-17",
+        "last_verified_at": null,
+        "verification_status": "partial"
+    },
+    {
+        "id": "optiscaler",
+        "name": "OptiScaler",
+        "slug": "optiscaler",
+        "summary": "OptiScaler lets you replace or add upscaling and frame‑generation technologies in games that already support DLSS, FSR or XeSS, giving you more control over image quality and performance.",
+        "description": [
+            "OptiScaler is a free, open‑source utility for Windows that works with games supporting modern upscalers. It can swap one upscaler for another, enable experimental frame generation, and provide many tuning options for sharper or smoother gameplay.",
+            "OptiScaler works by intercepting the upscaler DLLs that games use and substituting them with alternatives such as XeSS, FSR2, FSR3, FSR4 or DLSS. It also adds experimental DX12 frame generation support (OptiFG) and can load ASI plugins for extra features. The program includes a configuration file where users can adjust settings like RCAS, output scaling, DLSS presets, and ratio overrides. Integration with Fakenvapi allows Reflex and latency features on supported hardware. A separate OptiPatcher plugin can enable DLSS inputs without spoofing. The tool is aimed at gamers who want to customize visual fidelity and performance beyond the default options provided by the game."
+        ],
+        "icon": {
+            "text": "O",
+            "color": "#1D4ED8",
+            "logo": "/assets/icons/optiscaler.png?v=c7677ba1"
+        },
+        "category": "graphics",
+        "categories": [
+            "graphics"
+        ],
+        "keywords": [],
+        "is_free": true,
+        "is_open_source": true,
+        "license": "GNU General Public License v3.0",
+        "license_family": "copyleft",
+        "license_url": "https://github.com/optiscaler/OptiScaler#license",
+        "official_website": null,
+        "download_page": "https://github.com/optiscaler/OptiScaler/releases/tag/v0.9.5",
+        "repository_url": "https://github.com/optiscaler/OptiScaler",
+        "supported_operating_systems": {
+            "windows-11": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/optiscaler/OptiScaler/releases/tag/v0.9.5",
+                "note": "Named in the release notes."
+            },
+            "windows-10": {
+                "status": "supported",
+                "verified": true,
+                "source": "https://github.com/optiscaler/OptiScaler/releases/tag/v0.9.5",
+                "note": "Current Windows download."
+            },
+            "windows-8-1": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-8": {
+                "status": "unknown",
+                "verified": false
+            },
+            "windows-7": {
+                "status": "unknown",
+                "verified": false
+            }
+        },
+        "supported_architectures": [],
+        "latest_version": "0.9.5",
+        "release_date": "2026-11-16",
+        "release_url": "https://github.com/optiscaler/OptiScaler/releases/tag/v0.9.5",
+        "primary_download": null,
+        "download_assets": [
+            {
+                "label": "Optiscaler_0.9.5-final.20261116.7z",
+                "format": "7z archive",
+                "kind": "portable",
+                "architecture": null,
+                "url": "https://github.com/optiscaler/OptiScaler/releases/download/v0.9.5/Optiscaler_0.9.5-final.20261116.7z",
+                "size": 70418897,
+                "sha256": "77e3ed76bed04e1fb32bacb5a72799ff172f3da22ed5231c0cf3e84fe6761662"
+            }
+        ],
+        "features": [
+            "Replace a game’s built‑in upscaler with XeSS, FSR2, FSR3, FSR4 or DLSS",
+            "Enable experimental frame generation (OptiFG) in supported DX12 games",
+            "Fine‑tune upscaling settings such as RCAS, output scaling and DLSS presets",
+            "Load ASI plugins for additional enhancements",
+            "Support for Reflex, Anti‑Lag and latency tools via Fakenvapi integration",
+            "Automatic application of game patches for better out‑of‑the‑box experience"
+        ],
+        "requirements": [],
+        "installation_instructions": [
+            "Click \"Go to official download page\" on this page and download the Windows version of OptiScaler.",
+            "Open the downloaded file and follow the setup steps, or extract it first if it is a ZIP file."
+        ],
+        "related_software": [
+            "formatix",
+            "woohaa3",
+            "rawmakase",
+            "photocraft-companion",
+            "greycard",
+            "photoslide",
+            "photosplice",
+            "sculptforge",
+            "open-photo-ai",
+            "rigby2d",
+            "sharex",
+            "ferrumpix"
+        ],
+        "seo_title": "OptiScaler Free Download for Windows 10/11",
+        "meta_description": "Download OptiScaler free for Windows 10/11. OptiScaler lets you replace or add upscaling and frame‑generation technologies in games that already support DLSS,…",
+        "canonical_url": "https://codehimblog.github.io/software/optiscaler/",
+        "date_added": "2026-11-18",
         "last_verified_at": null,
         "verification_status": "partial"
     },
@@ -12019,10 +12368,10 @@
             "hycanvas",
             "solidcraft",
             "greycard",
-            "photocraft",
             "lightzone",
-            "sculptforge",
+            "photocraft",
             "lightcraft",
+            "sculptforge",
             "rigby2d",
             "benchup",
             "open-photo-ai",
@@ -12148,9 +12497,9 @@
             "nagi",
             "waveflow",
             "obs-studio",
-            "screenrecorder",
             "waves",
             "polyphone",
+            "screenrecorder",
             "meowsic"
         ],
         "seo_title": "phiola Free Download for Windows 7",
@@ -12678,8 +13027,8 @@
             "ferrumpix",
             "immage",
             "rawmakase",
-            "greycard",
             "lightzone",
+            "greycard",
             "photoslide",
             "lightcraft",
             "rembrandt",
@@ -12819,9 +13168,9 @@
             "photoslide",
             "rembrandt",
             "lightcraft",
+            "greycard",
             "lightzone",
             "rawmakase",
-            "greycard",
             "photocraft",
             "open-photo-ai"
         ],
@@ -13321,14 +13670,14 @@
             "pylon-player",
             "riff",
             "traydio",
+            "meowsic",
             "altered-audio-editor",
             "aurora",
             "fooyin",
             "lyrenne",
             "melodia",
             "nagi",
-            "phiola",
-            "polyphone"
+            "phiola"
         ],
         "seo_title": "PyMusicPlayer Free Download for Windows",
         "meta_description": "Download PyMusicPlayer free for Windows. A Windows music player with audio analysis, waveform seek bar, and support for many audio formats and internet radio.",
@@ -13874,7 +14223,7 @@
             "agentshot",
             "frame-player",
             "l-mpv",
-            "metrolist"
+            "polyphone"
         ],
         "seo_title": "ReelTerminal Free Download for Windows 10/11",
         "meta_description": "Download ReelTerminal free for Windows 10/11. ReelTerminal is a video editing tool designed for collaborative workflows with AI assistants, letting users edit…",
@@ -14606,6 +14955,7 @@
             "Prefer not to install anything? Download the portable version from the download table above, extract it and run the program from that folder."
         ],
         "related_software": [
+            "foundation-sunshine",
             "moonlight-qt",
             "openkumite",
             "starluxe",
@@ -15130,8 +15480,8 @@
             "filmcraft",
             "masterpiece",
             "vlc-win10smtc",
-            "pylon-player",
-            "tunefree"
+            "tunefree",
+            "pylon-player"
         ],
         "seo_title": "ScreenRecorder Free Download for Windows 10",
         "meta_description": "Download ScreenRecorder free for Windows 10. A simple program that records your screen and audio.",
@@ -15266,8 +15616,8 @@
             "typewhisper-win",
             "murmure",
             "sakura",
-            "mynotes",
             "youboard",
+            "mynotes",
             "dsh-tui",
             "lime",
             "deckcraft",
@@ -15561,10 +15911,10 @@
             "ferrumpix",
             "photocraft",
             "benchup",
+            "optiscaler",
             "pancakeslicer",
             "immage",
-            "picasapy",
-            "photoslide"
+            "picasapy"
         ],
         "seo_title": "SculptForge Free Download for Windows 10/11",
         "meta_description": "Download SculptForge free for Windows 10/11. Free, open‑source 3D sculpting software with brushes, symmetry, AI‑generated brushes and export options for game p…",
@@ -15839,10 +16189,10 @@
             "lightcraft",
             "lap",
             "rembrandt",
+            "optiscaler",
             "lightzone",
             "woohaa3",
-            "greycard",
-            "photoslide"
+            "greycard"
         ],
         "seo_title": "ShareX for Windows – Free Open-Source Screen Capture Tool",
         "meta_description": "ShareX is a free, open-source screenshot and screen recording tool for Windows. See features, download formats and official download sources.",
@@ -16121,8 +16471,8 @@
             "waveflow",
             "vlc-lyrics-finder",
             "vlc-win10smtc",
-            "aurora",
-            "pymusicplayer"
+            "pymusicplayer",
+            "aurora"
         ],
         "seo_title": "Skrin Free Download for Windows",
         "meta_description": "Download Skrin free for Windows. A free, open‑source local media library and video player that organizes movies and TV shows on your computer or NAS without a…",
@@ -16509,10 +16859,10 @@
             "fk-desktop",
             "codecast",
             "aula",
-            "mynotes",
             "orca",
-            "steamtools",
+            "mynotes",
             "arara-voice",
+            "steamtools",
             "voxtype"
         ],
         "seo_title": "Spacewave Free Download for Windows",
@@ -16624,6 +16974,7 @@
         "related_software": [
             "rubylight",
             "openkumite",
+            "foundation-sunshine",
             "moonlight-qt"
         ],
         "seo_title": "StarLuxe Free Download for Windows",
@@ -17892,8 +18243,8 @@
         ],
         "related_software": [
             "universal-intel-chipset-updater",
-            "winutil-cn",
             "quiesce",
+            "winutil-cn",
             "mouse-point-viewer",
             "hardwarevisualizer",
             "apkstart",
@@ -18041,8 +18392,7 @@
         "related_software": [
             "motty",
             "mdns-browser",
-            "steamtools",
-            "meron"
+            "steamtools"
         ],
         "seo_title": "Usque Free Download for Windows",
         "meta_description": "Download Usque free for Windows. An unofficial client for Cloudflare WARP services that provides system VPN, SOCKS5 and HTTP proxy with advanced routing, chain…",
@@ -18146,8 +18496,8 @@
             "meowsic",
             "skrin",
             "vlc-win10smtc",
-            "vlc-rpc",
             "vlc-portable",
+            "vlc-rpc",
             "vlc-redesign",
             "pylon-player",
             "lyrenne",
@@ -18301,8 +18651,8 @@
             "vlc-portable",
             "vlc-win10smtc",
             "vlc-lyrics-finder",
-            "lossless-cut",
             "screenbox",
+            "lossless-cut",
             "l-mpv",
             "onlym",
             "vlc-rpc",
@@ -18443,8 +18793,8 @@
         "related_software": [
             "pylon-player",
             "skrin",
-            "vlc-rpc",
             "vlc-redesign",
+            "vlc-rpc",
             "vlc-win10smtc",
             "vlc-lyrics-finder",
             "riff",
@@ -19928,11 +20278,11 @@
             "photocraft-companion",
             "chroma-app",
             "photocraft",
+            "optiscaler",
             "photosplice",
             "rawmakase",
             "photoslide",
             "benchup",
-            "greycard",
             "lap"
         ],
         "seo_title": "WooHaa3 Free Download for Windows 10/11",
@@ -20179,8 +20529,8 @@
             "murmure",
             "steamtools",
             "ciyue",
-            "voxtype",
             "arara-voice",
+            "voxtype",
             "scribe",
             "loudr",
             "handwriting-ocr-scriptreader"
