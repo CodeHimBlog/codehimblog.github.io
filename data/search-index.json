@@ -137,10 +137,32 @@
         ]
     },
     {
+        "slug": "ariec60870",
+        "name": "ArSee",
+        "summary": "ArSee is a free Windows tool that reads raw IEC 60870-5-101/103/104 traffic and shows it as readable frames, logs, and PDF evidence reports for testing and troubleshooting.",
+        "category": "developer-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "astraeus",
         "name": "Astraeus",
         "summary": "A native Windows dashboard that slides out from the edge of the screen, providing quick access to media, system controls and widgets.",
         "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "audiosync",
+        "name": "AudioSync",
+        "summary": "AudioSync lets you play your computer's sound on multiple AirPlay, Google Cast, Bluetooth and other speakers at the same time, keeping them in sync.",
+        "category": "audio-video",
         "keywords": [],
         "os": [
             "windows-11",
@@ -206,6 +228,28 @@
         "slug": "axe",
         "name": "Axe",
         "summary": "A lightweight command‑line tool that runs focused LLM‑powered agents defined in simple configuration files.",
+        "category": "developer-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "voicerecorder",
+        "name": "AzioVoice Recorder",
+        "summary": "AzioVoice Recorder is a modern Windows app for recording audio from any input device with optional filters and easy file management.",
+        "category": "audio-video",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "basemind",
+        "name": "Basemind",
+        "summary": "Basemind provides a code‑aware context and communication layer for AI coding agents, letting them query code structure, git history, documents and shared memory without loading whole files.",
         "category": "developer-tools",
         "keywords": [],
         "os": [
@@ -280,6 +324,17 @@
         ]
     },
     {
+        "slug": "cliptyper",
+        "name": "ClipTyper",
+        "summary": "Types clipboard text as keystrokes when pasting is not possible, such as in VM consoles, iLO/iDRAC, and remote sessions without a shared clipboard.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "codecast",
         "name": "Codecast",
         "summary": "Codecast is a desktop workspace that lets teams collaborate with AI coding agents, combining chat, calls, tasks, documents and version control in one interface.",
@@ -339,6 +394,28 @@
         "name": "DeskX Wallpaper Engine",
         "summary": "A lightweight Windows utility that lets you set images, GIFs, videos, or HTML pages as live wallpapers and adds draggable interactive widgets with multi‑monitor support.",
         "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "dmrstudio",
+        "name": "DMR Studio",
+        "summary": "DMR Studio is a Windows desktop program that automatically records livestreams, captures and renders chat comments (danmaku), manages recording tasks and can upload the finished videos.",
+        "category": "audio-video",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "docbank",
+        "name": "Docbank",
+        "summary": "Docbank is an open‑source local document vault that stores PDFs, images, text files and other records, makes their text searchable, tracks versions and lets you export verified bundles.",
+        "category": "productivity-office",
         "keywords": [],
         "os": [
             "windows-11",
@@ -424,6 +501,20 @@
         ]
     },
     {
+        "slug": "file2startup",
+        "name": "File 2 Startup",
+        "summary": "A desktop application that lets you add, edit, and remove executable files from the Windows startup list easily.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10",
+            "windows-8-1",
+            "windows-8",
+            "windows-7"
+        ]
+    },
+    {
         "slug": "file-converter-pro",
         "name": "File Converter Pro",
         "summary": "Free offline all‑in‑one file converter for Windows that handles documents, images, audio and video without uploading anything.",
@@ -450,6 +541,17 @@
         "name": "Fk Desktop",
         "summary": "Fk Desktop is a Pomodoro timer that follows the original technique closely, offering a classic desktop UI, keyboard shortcuts and advanced settings for power users.",
         "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "fluentcontrol",
+        "name": "FluentControl",
+        "summary": "A Windows tool that lets you control monitor brightness, contrast, color settings, input source, system volume, microphone and mouse speed from a single panel, with support for multiple monitors and offline use.",
+        "category": "system-utilities",
         "keywords": [],
         "os": [
             "windows-11",
@@ -556,6 +658,17 @@
         ]
     },
     {
+        "slug": "homurareader",
+        "name": "Homura",
+        "summary": "Homura is a local comic, light‑novel and ebook reader for Windows that supports many formats and keeps your reading data on the device.",
+        "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "hycanvas",
         "name": "HyCanvas",
         "summary": "An open‑source Canva‑like editor that runs in the browser and can be self‑hosted.",
@@ -581,6 +694,17 @@
         "slug": "ima-menu",
         "name": "iMA Menu",
         "summary": "iMA Menu adds customizable context‑menu items, theming and a set of handy tools to the Windows desktop.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "imemodepersistence",
+        "name": "IME Mode Persistence",
+        "summary": "A small Windows tray utility that remembers the last input method conversion mode (Chinese/English) when switching windows and can lock specific programs to a chosen input language, even for fullscreen games.",
         "category": "system-utilities",
         "keywords": [],
         "os": [
@@ -692,6 +816,17 @@
         "name": "Lap",
         "summary": "An offline-first photo manager for large local libraries",
         "category": "graphics",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "lastwallpaper",
+        "name": "Last Wallpaper",
+        "summary": "Shows a picture‑of‑the‑day on your desktop from sources such as Bing, NASA, Wikipedia, Copernicus and more.",
+        "category": "system-utilities",
         "keywords": [],
         "os": [
             "windows-11",
@@ -886,6 +1021,17 @@
         ]
     },
     {
+        "slug": "minidock",
+        "name": "MiniDock",
+        "summary": "MiniDock provides a lightweight Dock and a macOS‑style top status bar for Windows, letting you keep frequently used apps, windows, and system information easily accessible.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "moonlight-qt",
         "name": "Moonlight Qt",
         "summary": "Moonlight Qt is an open‑source client that lets you stream games and desktop sessions from a PC with NVIDIA GameStream or Sunshine to your Windows computer.",
@@ -937,6 +1083,17 @@
         "name": "MouseX Absolute Mouse Control",
         "summary": "A lightweight Windows utility that lets you remap mouse buttons, scroll wheels and extra buttons to keyboard shortcuts, chords and repeating macros, with per‑application profiles.",
         "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "mpv-animejanai",
+        "name": "mpv AnimeJaNai",
+        "summary": "Real-time anime upscaling to 4K in mpv with lightweight super-resolution models.",
+        "category": "audio-video",
         "keywords": [],
         "os": [
             "windows-11",
@@ -1071,6 +1228,17 @@
         ]
     },
     {
+        "slug": "opencompare",
+        "name": "OpenCompare",
+        "summary": "OpenCompare is a free desktop tool for comparing and merging files, folders, CSV, JSON and YAML, offering visual diff and sync capabilities.",
+        "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "openecraft",
         "name": "OpenECraft",
         "summary": "OpenECraft is an open‑source electrical computer‑aided engineering editor that lets you create schematics, generate reports and design panel layouts in 3D.",
@@ -1145,6 +1313,31 @@
         "os": [
             "windows-11",
             "windows-10"
+        ]
+    },
+    {
+        "slug": "paperduet",
+        "name": "PaperDuet",
+        "summary": "PaperDuet lets you view a PDF and its AI translation side by side, keeping formulas, figures and tables aligned, and organizes your papers in a visual library.",
+        "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "paths-a-command-line-app-to-manage-path-environment",
+        "name": "PATHS",
+        "summary": "Command-line app to add, remove or clean the PATH and PATHEXT environment variables on Windows.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10",
+            "windows-8-1",
+            "windows-8",
+            "windows-7"
         ]
     },
     {
@@ -1259,6 +1452,17 @@
         ]
     },
     {
+        "slug": "pyas",
+        "name": "PYAS Security",
+        "summary": "A hybrid Windows endpoint security program that combines machine‑learning scanning, YARA rules, cloud analysis and a kernel‑level driver to protect against malware and unwanted behavior.",
+        "category": "security",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "pylon-player",
         "name": "Pylon Player",
         "summary": "A media player built on VLC that offers a calm interface, music library, subtitle timing tools and visual customizations.",
@@ -1318,6 +1522,17 @@
         "name": "RAWmakase",
         "summary": "A fast, non‑destructive RAW photo editor with Lightroom‑style controls for Windows.",
         "category": "graphics",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "readest",
+        "name": "Readest",
+        "summary": "Readest is a free, open‑source ebook reader for Windows that handles many ebook formats, lets you annotate, search, and customize the reading view.",
+        "category": "productivity-office",
         "keywords": [],
         "os": [
             "windows-11",
@@ -1546,6 +1761,17 @@
         ]
     },
     {
+        "slug": "smoothscroll",
+        "name": "SmoothScroll",
+        "summary": "Free smooth-scrolling utility for Windows – velocity-based easing engine with per‑app profiles and zero telemetry.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "smoovplay",
         "name": "SmoovPlay",
         "summary": "SmoovPlay streams console games to your PC and uses AI to generate extra frames, giving smoother playback at higher frame rates.",
@@ -1555,6 +1781,17 @@
             "windows-11",
             "windows-10",
             "windows-8"
+        ]
+    },
+    {
+        "slug": "snapsharp",
+        "name": "SnapSharp",
+        "summary": "SnapSharp is a Windows tool for taking screenshots, annotating them, performing OCR, translating text, removing backgrounds and recording the screen, all with local AI models.",
+        "category": "graphics",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
         ]
     },
     {
@@ -1584,6 +1821,17 @@
         "name": "StarLuxe",
         "summary": "A launcher that helps apply ReShade shaders to selected games.",
         "category": "games",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "streamnook",
+        "name": "StreamNook",
+        "summary": "A native desktop client that lets you watch Twitch, YouTube, Kick and TikTok streams in one window, with chat and emotes integrated.",
+        "category": "audio-video",
         "keywords": [],
         "os": [
             "windows-11",
@@ -1629,6 +1877,17 @@
         "name": "The Last Guardian Definitive",
         "summary": "A fan-made Windows port of The Last Guardian that adds photo mode, free camera, texture upgrades, controller support and many hidden features.",
         "category": "games",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "timetrack",
+        "name": "Timetrack",
+        "summary": "A simple desktop application that lets you record how much time you spend on different projects.",
+        "category": "productivity-office",
         "keywords": [],
         "os": [
             "windows-11",
@@ -1760,6 +2019,17 @@
         ]
     },
     {
+        "slug": "virtualpaper",
+        "name": "VirtualPaper",
+        "summary": "VirtualPaper is a free, open‑source wallpaper application for Windows that lets you use images, videos, GIFs and interactive web wallpapers with built‑in editing, 3D parallax and atmosphere effects.",
+        "category": "graphics",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "vitrine",
         "name": "Vitrine",
         "summary": "A free, non‑destructive RAW photo editor for Windows that uses GPU acceleration and AI tools for upscaling and motion deblur.",
@@ -1886,6 +2156,17 @@
         ]
     },
     {
+        "slug": "webp-converter",
+        "name": "WebP Converter",
+        "summary": "Convert animated WebP images to video formats such as MP4, MKV, WebM, or GIF on Windows.",
+        "category": "audio-video",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "weftcut",
         "name": "WeftCut",
         "summary": "Free, open-source AI‑driven video editor that lets an AI agent control the timeline just like a human user.",
@@ -1915,6 +2196,28 @@
         "name": "windbg-mcp",
         "summary": "A server that exposes WinDbg/DbgEng debugging capabilities to AI agents via standard input/output or HTTP.",
         "category": "developer-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "windows-optimize-harden-debloat-gui",
+        "name": "Windows Optimize Harden Debloat GUI",
+        "summary": "A graphical interface that lets you inspect and run the Windows Optimize Harden Debloat PowerShell script with selectable options.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "winshun",
+        "name": "WinShun",
+        "summary": "WinShun is a free, open‑source Windows search launcher that lets you find files, content inside documents, apps, settings and clipboard history by pressing Ctrl twice.",
+        "category": "productivity-office",
         "keywords": [],
         "os": [
             "windows-11",
