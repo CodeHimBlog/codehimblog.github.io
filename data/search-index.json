@@ -22,6 +22,17 @@
         ]
     },
     {
+        "slug": "adobe-avx2-patch",
+        "name": "Adobe AVX2 Patch",
+        "summary": "A lightweight tool that modifies Adobe installer files so they can be installed on computers whose CPUs lack AVX2 support.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "aerozoom",
         "name": "AeroZoom",
         "summary": "Keyboard‑free screen magnifier for Windows that lets you zoom with the mouse wheel or pinch gestures and provides a panel for presentation‑style controls.",
@@ -51,6 +62,17 @@
         "name": "AgentShot",
         "summary": "AgentShot is an open‑source AI‑powered video editor that lets you edit footage by speaking commands or pointing at frames, creating new versions for each change.",
         "category": "audio-video",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "ai-psd-thumbnails",
+        "name": "ai-psd-thumbnails",
+        "summary": "Adds thumbnail images and preview support in Windows Explorer for Adobe Illustrator, Photoshop, EPS, SVG and PDF files without requiring Adobe software.",
+        "category": "file-management",
         "keywords": [],
         "os": [
             "windows-11",
@@ -95,6 +117,17 @@
         "name": "any_to_any.py",
         "summary": "Universal media converter that can convert, merge, concatenate and resize a wide range of audio, video, image and document formats on Windows.",
         "category": "audio-video",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "sims3-apexradiance",
+        "name": "Apex Radiance",
+        "summary": "A visual and performance mod for The Sims 3 that adds advanced lighting, image effects, shaders and optional engine optimizations.",
+        "category": "games",
         "keywords": [],
         "os": [
             "windows-11",
@@ -346,10 +379,32 @@
         ]
     },
     {
+        "slug": "compositor-windows",
+        "name": "Compositor for Windows",
+        "summary": "A Windows port of the open‑source Compositor image editor, offering layer‑based painting and basic photo‑editing tools in a single‑file project format.",
+        "category": "graphics",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "cutlass",
         "name": "Cutlass",
         "summary": "Cutlass is a free, open‑source video editor that lets you edit footage on a timeline and also offers an AI assistant you can talk to for editing commands.",
         "category": "audio-video",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "dcc-mcp-core",
+        "name": "dcc-mcp-core",
+        "summary": "A control plane that lets AI agents communicate with creative software such as Blender, Maya, Unity and other tools through a shared protocol.",
+        "category": "developer-tools",
         "keywords": [],
         "os": [
             "windows-11",
@@ -416,6 +471,17 @@
         "name": "Docbank",
         "summary": "Docbank is an open‑source local document vault that stores PDFs, images, text files and other records, makes their text searchable, tracks versions and lets you export verified bundles.",
         "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "draw",
+        "name": "DRAW",
+        "summary": "DRAW is a pixel art editor that lets you create and edit pixel graphics and export them as source code.",
+        "category": "graphics",
         "keywords": [],
         "os": [
             "windows-11",
@@ -614,6 +680,28 @@
         ]
     },
     {
+        "slug": "glide",
+        "name": "Glide",
+        "summary": "Glide is a fast Windows image viewer with multi‑tab and multi‑window support, offering many format decoders, overlays, and Explorer integration.",
+        "category": "graphics",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "go2rtc",
+        "name": "go2rtc",
+        "summary": "A lightweight, zero‑dependency application for streaming video and audio from cameras and other sources on Windows.",
+        "category": "networking-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "gptme",
         "name": "gptme",
         "summary": "A personal AI agent that runs in the terminal, able to write code, use the web, run shell commands and more, with support for many AI models.",
@@ -636,6 +724,17 @@
         ]
     },
     {
+        "slug": "gunwall",
+        "name": "GunWall",
+        "summary": "A free, open‑source application firewall for Windows that blocks programs from accessing the internet until you allow them.",
+        "category": "security",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "hardwarevisualizer",
         "name": "HardwareVisualizer",
         "summary": "A cross‑platform hardware monitor with real‑time metrics, local history, and customizable dashboards.",
@@ -651,6 +750,17 @@
         "name": "Headroom Desktop",
         "summary": "Headroom Desktop is a tray application that reduces token usage for Claude Code, ChatGPT Codex and similar AI coding tools by about half.",
         "category": "developer-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "hmbtn-refarmed",
+        "name": "HMBTN ReFarmed",
+        "summary": "A native Windows port of Harvest Moon: Back to Nature that runs from your own game disc image with enhanced graphics and optional co‑op.",
+        "category": "games",
         "keywords": [],
         "os": [
             "windows-11",
@@ -699,6 +809,18 @@
         "os": [
             "windows-11",
             "windows-10"
+        ]
+    },
+    {
+        "slug": "imagemagick",
+        "name": "ImageMagick",
+        "summary": "ImageMagick is a free suite for creating, editing, converting and displaying digital images, supporting hundreds of formats.",
+        "category": "graphics",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10",
+            "windows-7"
         ]
     },
     {
@@ -794,6 +916,17 @@
         "name": "KLineChartQuant",
         "summary": "A high‑performance financial charting program for Windows that displays fast, smooth candlestick charts and lets users add indicators, drawings and AI‑driven analysis.",
         "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "kookapictura",
+        "name": "Kooka Pictura",
+        "summary": "Kooka Pictura is a layered photo editor that can open and save Photoshop PSD/PSB files and supports many common image formats.",
+        "category": "graphics",
         "keywords": [],
         "os": [
             "windows-11",
@@ -1021,6 +1154,17 @@
         ]
     },
     {
+        "slug": "mibeenvr",
+        "name": "MiBee NVR",
+        "summary": "MiBee NVR is a lightweight self‑hosted network video recorder that runs as a single Windows executable and provides a web interface for live view, recording and AI detection of IP cameras.",
+        "category": "audio-video",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "minidock",
         "name": "MiniDock",
         "summary": "MiniDock provides a lightweight Dock and a macOS‑style top status bar for Windows, letting you keep frequently used apps, windows, and system information easily accessible.",
@@ -1134,6 +1278,17 @@
         ]
     },
     {
+        "slug": "nanazip",
+        "name": "NanaZip",
+        "summary": "A modern Windows file archiver based on 7‑Zip, offering a native Windows Store experience and additional features.",
+        "category": "file-management",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "new-pokemon-snap-recomp",
         "name": "New Pokemon Snap Recomp",
         "summary": "A native Windows version of New Pokémon Snap that runs your own legally obtained copy of the Switch game on PC with higher resolutions and frame rates.",
@@ -1180,6 +1335,17 @@
             "programming",
             "notepad plus plus"
         ],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "obs-backgroundremoval",
+        "name": "OBS Background Removal",
+        "summary": "An OBS Studio plugin that removes or replaces the background in portrait video and enhances low‑light scenes using a neural network.",
+        "category": "audio-video",
+        "keywords": [],
         "os": [
             "windows-11",
             "windows-10"
@@ -1243,6 +1409,17 @@
         "name": "OpenCompare",
         "summary": "OpenCompare is a free desktop tool for comparing and merging files, folders, CSV, JSON and YAML, offering visual diff and sync capabilities.",
         "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "open-design",
+        "name": "OpenDesign",
+        "summary": "OpenDesign is a collaborative AI‑powered workspace for creating motion graphics, prototypes, websites, apps, dashboards, presentations, images and videos with your team and AI agents.",
+        "category": "graphics",
         "keywords": [],
         "os": [
             "windows-11",
@@ -1338,6 +1515,17 @@
         ]
     },
     {
+        "slug": "patchy",
+        "name": "Patchy Image Editor",
+        "summary": "An open‑source image editor that aims for Photoshop‑compatible PSD handling and familiar Photoshop‑style workflows.",
+        "category": "graphics",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "paths-a-command-line-app-to-manage-path-environment",
         "name": "PATHS",
         "summary": "Command-line app to add, remove or clean the PATH and PATHEXT environment variables on Windows.",
@@ -1419,10 +1607,32 @@
         ]
     },
     {
+        "slug": "pikado",
+        "name": "Pikado",
+        "summary": "A free, open‑source browser‑based raster and vector image editor that works like Photoshop, with layers, masks, filters and adjustments, all running locally on your computer.",
+        "category": "graphics",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "pipixiv",
         "name": "PiPixiv",
         "summary": "PiPixiv is a third‑party client for the Pixiv art platform that lets you browse illustrations, manga and novels, view rankings, search content and download images on Windows.",
         "category": "internet-browsers",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "pmca-re-reloaded",
+        "name": "PMCA-RE RELOADED",
+        "summary": "A desktop toolkit that lets you view information, install apps, update firmware and edit settings on Sony cameras over USB.",
+        "category": "system-utilities",
         "keywords": [],
         "os": [
             "windows-11",
@@ -1445,6 +1655,17 @@
         "name": "ProCraft",
         "summary": "ProCraft is an open‑source painting program for Windows that offers pressure‑sensitive brushes, layers, adjustments, animation and 3D painting using its own Rust engine and GPU renderer.",
         "category": "graphics",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "properdim",
+        "name": "ProperDim",
+        "summary": "A lightweight screen dimmer for Windows that lets you set custom brightness levels, schedule changes, and use hotkeys.",
+        "category": "system-utilities",
         "keywords": [],
         "os": [
             "windows-11",
@@ -1895,6 +2116,17 @@
         ]
     },
     {
+        "slug": "telescope",
+        "name": "Telescope",
+        "summary": "Turns an Android phone into a webcam for Windows, supporting all lenses and offering manual camera controls, background effects and multi‑phone setups.",
+        "category": "audio-video",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "the-last-guardian-definitive",
         "name": "The Last Guardian Definitive",
         "summary": "A fan-made Windows port of The Last Guardian that adds photo mode, free camera, texture upgrades, controller support and many hidden features.",
@@ -2200,6 +2432,17 @@
         ]
     },
     {
+        "slug": "win-top",
+        "name": "Win-Top",
+        "summary": "Win-Top is a lightweight Windows optimizer and system monitor that helps keep the PC running smoothly by managing memory, startup items, disk space and providing detailed process, GPU and port monitoring.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "winappmigrator",
         "name": "WinAppMigrator",
         "summary": "Creates a single installer from an already installed Windows program, allowing you to move it to another PC even when the original installer is missing.",
@@ -2283,6 +2526,17 @@
         ]
     },
     {
+        "slug": "wristkey",
+        "name": "WristKey",
+        "summary": "Proximity auto‑lock and hands‑free unlock for Windows using an Apple Watch via Bluetooth Low Energy.",
+        "category": "security",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "wynpix",
         "name": "Wynpix",
         "summary": "A fast, GPU‑accelerated image viewer for Windows that supports modern formats, AI upscaling, HDR tone‑mapping and a batch converter.",
@@ -2291,6 +2545,16 @@
         "os": [
             "windows-11",
             "windows-10"
+        ]
+    },
+    {
+        "slug": "xr-gate",
+        "name": "XR Gate",
+        "summary": "An open‑source runtime that lets Windows run VR/AR headsets and controllers that lack native support, providing 6DoF tracking, hand tracking and body tracking for SteamVR and OpenXR applications.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11"
         ]
     },
     {
