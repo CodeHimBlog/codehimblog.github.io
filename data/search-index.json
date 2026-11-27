@@ -91,6 +91,17 @@
         ]
     },
     {
+        "slug": "ailimits",
+        "name": "AI Limits",
+        "summary": "A small native Windows widget that shows live usage limits for various AI services such as Claude, OpenAI Codex, GitHub Copilot and others, directly on the desktop, taskbar or tray.",
+        "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "ai-psd-thumbnails",
         "name": "ai-psd-thumbnails",
         "summary": "Adds thumbnail images and preview support in Windows Explorer for Adobe Illustrator, Photoshop, EPS, SVG and PDF files without requiring Adobe software.",
@@ -1517,6 +1528,17 @@
             "totp",
             "offline password manager"
         ],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "kiro",
+        "name": "Kiro",
+        "summary": "Kiro replaces the Windows taskbar with a customizable notch and dock, adds seasonal themes, an AI assistant, calendar integration, and a game‑boost mode that steps aside when a game goes fullscreen.",
+        "category": "system-utilities",
+        "keywords": [],
         "os": [
             "windows-11",
             "windows-10"
@@ -3360,6 +3382,17 @@
         ]
     },
     {
+        "slug": "virtualdesktopswitcher",
+        "name": "VirtualDesktopSwitcher",
+        "summary": "A lightweight tool that lets you switch and manage virtual desktops with keyboard shortcuts, mouse actions and a on‑screen indicator.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "virtualpaper",
         "name": "VirtualPaper",
         "summary": "VirtualPaper is a free, open‑source wallpaper application for Windows that lets you use images, videos, GIFs and interactive web wallpapers with built‑in editing, 3D parallax and atmosphere effects.",
@@ -3523,6 +3556,17 @@
         "name": "Win-Top",
         "summary": "Win-Top is a lightweight Windows optimizer and system monitor that helps keep the PC running smoothly by managing memory, startup items, disk space and providing detailed process, GPU and port monitoring.",
         "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "win-apk",
+        "name": "Win.apk",
+        "summary": "Run Android apps on Windows as ordinary Windows programs without using an emulator or virtual machine.",
+        "category": "productivity-office",
         "keywords": [],
         "os": [
             "windows-11",
