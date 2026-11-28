@@ -1,5 +1,16 @@
 [
     {
+        "slug": "1-download-manager",
+        "name": "1 Download Manager",
+        "summary": "A free download manager for Windows that handles HTTP, FTP, torrents, YouTube and streaming links with browser extensions, resumable downloads and a built‑in player.",
+        "category": "internet-browsers",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "7-zip",
         "name": "7-Zip",
         "summary": "A free, open-source file archiver for Windows with its own high-compression 7z format and support for many common archive types.",
@@ -192,6 +203,17 @@
         ]
     },
     {
+        "slug": "appcontrol-mcp-go",
+        "name": "AppControl MCP Server",
+        "summary": "A local server that gives AI assistants and IDEs read‑only access to historical resource‑usage and security data collected by the AppControl Windows app.",
+        "category": "developer-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "appgroup",
         "name": "AppGroup",
         "summary": "App Group lets you organize, customize, and launch your apps.",
@@ -214,6 +236,17 @@
         ]
     },
     {
+        "slug": "ardia",
+        "name": "Ardia",
+        "summary": "Ardia is a free, open‑source Chromium‑based web browser that removes ads and trackers, adds a built‑in uBlock Origin, and offers a sidebar with pinned tiles and split‑view panes.",
+        "category": "internet-browsers",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "armgddn-downloader",
         "name": "ARMGDDN Companion",
         "summary": "A desktop download manager that uses rclone to fetch ARMGDDN content with a simple graphical interface.",
@@ -229,6 +262,17 @@
         "name": "ArSee",
         "summary": "ArSee is a free Windows tool that reads raw IEC 60870-5-101/103/104 traffic and shows it as readable frames, logs, and PDF evidence reports for testing and troubleshooting.",
         "category": "developer-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "aseprite-dmi",
+        "name": "Aseprite Dmi",
+        "summary": "A plugin for Aseprite that lets you edit and manage BYOND DMI (Dream Maker icon) files directly within the pixel‑art editor.",
+        "category": "graphics",
         "keywords": [],
         "os": [
             "windows-11",
@@ -891,6 +935,17 @@
         ]
     },
     {
+        "slug": "dune-ii-the-maker",
+        "name": "Dune II - The Maker",
+        "summary": "A remake of the classic Dune II strategy game with higher resolutions, zoom, multiselect and skirmish mode.",
+        "category": "games",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "dupe-clear",
         "name": "Dupe Clear",
         "summary": "A tool that scans folders and helps you delete duplicate files.",
@@ -1042,6 +1097,17 @@
         "name": "Fk Desktop",
         "summary": "Fk Desktop is a Pomodoro timer that follows the original technique closely, offering a classic desktop UI, keyboard shortcuts and advanced settings for power users.",
         "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "floorp",
+        "name": "Floorp",
+        "summary": "A browser built for keeping the Open, Private and Sustainable Web alive, based on Mozilla Firefox.",
+        "category": "internet-browsers",
         "keywords": [],
         "os": [
             "windows-11",
@@ -1474,6 +1540,17 @@
         "name": "Jenv",
         "summary": "Jenv is a command‑line tool that lets you manage multiple Java versions on your computer, allowing easy switching, adding, and removal of JDK installations.",
         "category": "developer-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "jxrconverter",
+        "name": "JXRConverter",
+        "summary": "HDR image converter that can change between many formats such as JPG, JXR, JXL, PNG, AVIF and supports HDR features like Gain Map, HLG, scRGB and PQ, plus animated HDR GIF/PNG/JXL/AVIF creation and video frame extraction.",
+        "category": "graphics",
         "keywords": [],
         "os": [
             "windows-11",
@@ -1974,10 +2051,32 @@
         ]
     },
     {
+        "slug": "models",
+        "name": "models",
+        "summary": "A terminal user interface and command‑line tool for browsing AI models, benchmarks, coding agents and provider status information.",
+        "category": "productivity-office",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "moonlight-qt",
         "name": "Moonlight Qt",
         "summary": "Moonlight Qt is an open‑source client that lets you stream games and desktop sessions from a PC with NVIDIA GameStream or Sunshine to your Windows computer.",
         "category": "games",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "moonlight-web",
+        "name": "Moonlight Web",
+        "summary": "Moonlight Web streams your gaming PC to any device with a modern browser, using its own capture and encode engine for low‑latency video and audio.",
+        "category": "audio-video",
         "keywords": [],
         "os": [
             "windows-11",
@@ -2225,6 +2324,17 @@
         ]
     },
     {
+        "slug": "oled-engine",
+        "name": "OLED Engine",
+        "summary": "Multi-monitor OLED burn‑in protection for Windows with idle dimming, HDR/SDR switching, pixel‑refresh tracking and optional game automation.",
+        "category": "system-utilities",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
         "slug": "onlym",
         "name": "OnlyM",
         "summary": "Simple Media Player (audio, video and images) for use in meetings.",
@@ -2251,6 +2361,17 @@
         "name": "OpenAgentd",
         "summary": "OpenAgentd is a desktop application that runs a coding assistant locally, showing every tool call, file change and terminal output while you work on a project.",
         "category": "developer-tools",
+        "keywords": [],
+        "os": [
+            "windows-11",
+            "windows-10"
+        ]
+    },
+    {
+        "slug": "openbot",
+        "name": "OpenBot",
+        "summary": "A local‑first desktop workspace that lets you run persistent AI agents such as Codex, Claude, Grok and others, with shared file transfers, embedded browser control and task queues.",
+        "category": "productivity-office",
         "keywords": [],
         "os": [
             "windows-11",
